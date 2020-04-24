@@ -69,29 +69,29 @@ const non_default_production = pulumi.output(digitalocean.getProjects({
 
 ## Using GetProjects {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getProjects<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#GetProjectsArgs">GetProjectsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#GetProjectsResult">GetProjectsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_projects(</span>filters=None<span class="p">, </span>sorts=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupProjects<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetProjectsArgs">GetProjectsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#LookupProjectsResult">LookupProjectsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetProjects </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean.GetProjectsResult.html">GetProjectsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.DigitalOcean.GetProjectsArgs.html">GetProjectsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -99,7 +99,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -108,9 +108,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsfilter">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Inputs.<wbr>Get<wbr>Projects<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results.
+    <dd>Filter the results.
 The `filter` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -118,15 +118,15 @@ The `filter` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectssort">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Inputs.<wbr>Get<wbr>Projects<wbr>Sort<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Sort the results.
+    <dd>Sort the results.
 The `sort` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -135,9 +135,9 @@ The `sort` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsfilter">[]Get<wbr>Projects<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results.
+    <dd>Filter the results.
 The `filter` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -145,15 +145,15 @@ The `filter` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectssort">[]Get<wbr>Projects<wbr>Sort</a></span>
     </dt>
-    <dd>{{% md %}}Sort the results.
+    <dd>Sort the results.
 The `sort` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -162,9 +162,9 @@ The `sort` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsfilter">Get<wbr>Projects<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results.
+    <dd>Filter the results.
 The `filter` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -172,15 +172,15 @@ The `filter` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectssort">Get<wbr>Projects<wbr>Sort[]</a></span>
     </dt>
-    <dd>{{% md %}}Sort the results.
+    <dd>Sort the results.
 The `sort` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -189,9 +189,9 @@ The `sort` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsfilter">List[Get<wbr>Projects<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results.
+    <dd>Filter the results.
 The `filter` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -199,12 +199,12 @@ The `filter` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectssort">List[Get<wbr>Projects<wbr>Sort]</a></span>
     </dt>
-    <dd>{{% md %}}Sort the results.
+    <dd>Sort the results.
 The `sort` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -220,7 +220,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -229,8 +229,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -238,7 +238,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsproject">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Outputs.<wbr>Get<wbr>Projects<wbr>Project&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of projects satisfying any `filter` and `sort` criteria. Each project has
+    <dd>A set of projects satisfying any `filter` and `sort` criteria. Each project has
 the following attributes:
 - `id` - The ID of the project
 - `name` - The name of the project
@@ -250,7 +250,7 @@ the following attributes:
 - `owner_id` - The ID of the project owner
 - `created_at` - The date and time when the project was created, (ISO8601)
 - `updated_at` - The date and time when the project was last updated, (ISO8601)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -258,7 +258,7 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsfilter">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Outputs.<wbr>Get<wbr>Projects<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -266,13 +266,13 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectssort">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Outputs.<wbr>Get<wbr>Projects<wbr>Sort&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -281,8 +281,8 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -290,7 +290,7 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsproject">[]Get<wbr>Projects<wbr>Project</a></span>
     </dt>
-    <dd>{{% md %}}A set of projects satisfying any `filter` and `sort` criteria. Each project has
+    <dd>A set of projects satisfying any `filter` and `sort` criteria. Each project has
 the following attributes:
 - `id` - The ID of the project
 - `name` - The name of the project
@@ -302,7 +302,7 @@ the following attributes:
 - `owner_id` - The ID of the project owner
 - `created_at` - The date and time when the project was created, (ISO8601)
 - `updated_at` - The date and time when the project was last updated, (ISO8601)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -310,7 +310,7 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsfilter">[]Get<wbr>Projects<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -318,13 +318,13 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectssort">[]Get<wbr>Projects<wbr>Sort</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -333,8 +333,8 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -342,7 +342,7 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsproject">Get<wbr>Projects<wbr>Project[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of projects satisfying any `filter` and `sort` criteria. Each project has
+    <dd>A set of projects satisfying any `filter` and `sort` criteria. Each project has
 the following attributes:
 - `id` - The ID of the project
 - `name` - The name of the project
@@ -354,7 +354,7 @@ the following attributes:
 - `owner_id` - The ID of the project owner
 - `created_at` - The date and time when the project was created, (ISO8601)
 - `updated_at` - The date and time when the project was last updated, (ISO8601)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -362,7 +362,7 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsfilter">Get<wbr>Projects<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -370,13 +370,13 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectssort">Get<wbr>Projects<wbr>Sort[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -385,8 +385,8 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -394,7 +394,7 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsproject">List[Get<wbr>Projects<wbr>Project]</a></span>
     </dt>
-    <dd>{{% md %}}A set of projects satisfying any `filter` and `sort` criteria. Each project has
+    <dd>A set of projects satisfying any `filter` and `sort` criteria. Each project has
 the following attributes:
 - `id` - The ID of the project
 - `name` - The name of the project
@@ -406,7 +406,7 @@ the following attributes:
 - `owner_id` - The ID of the project owner
 - `created_at` - The date and time when the project was created, (ISO8601)
 - `updated_at` - The date and time when the project was last updated, (ISO8601)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -414,7 +414,7 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectsfilter">List[Get<wbr>Projects<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -422,10 +422,10 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getprojectssort">List[Get<wbr>Projects<wbr>Sort]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -438,18 +438,18 @@ the following attributes:
 
 
 <h4 id="getprojectsfilter">Get<wbr>Projects<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/input/#GetProjectsFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/output/#GetProjectsFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetProjectsFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetProjectsFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -458,9 +458,9 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the projects by this key. This may be one of `name`,
+    <dd>Filter the projects by this key. This may be one of `name`,
 `purpose`, `description`, `environment`, or `is_default`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -468,15 +468,15 @@ the following attributes:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to match against the `key` field. Only retrieves projects
+    <dd>A list of values to match against the `key` field. Only retrieves projects
 where the `key` field takes on one or more of the values provided here.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -485,9 +485,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the projects by this key. This may be one of `name`,
+    <dd>Filter the projects by this key. This may be one of `name`,
 `purpose`, `description`, `environment`, or `is_default`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -495,15 +495,15 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to match against the `key` field. Only retrieves projects
+    <dd>A list of values to match against the `key` field. Only retrieves projects
 where the `key` field takes on one or more of the values provided here.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -512,9 +512,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the projects by this key. This may be one of `name`,
+    <dd>Filter the projects by this key. This may be one of `name`,
 `purpose`, `description`, `environment`, or `is_default`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -522,15 +522,15 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to match against the `key` field. Only retrieves projects
+    <dd>A list of values to match against the `key` field. Only retrieves projects
 where the `key` field takes on one or more of the values provided here.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -539,9 +539,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter the projects by this key. This may be one of `name`,
+    <dd>Filter the projects by this key. This may be one of `name`,
 `purpose`, `description`, `environment`, or `is_default`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -549,30 +549,30 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to match against the `key` field. Only retrieves projects
+    <dd>A list of values to match against the `key` field. Only retrieves projects
 where the `key` field takes on one or more of the values provided here.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getprojectsproject">Get<wbr>Projects<wbr>Project</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/output/#GetProjectsProject">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetProjectsProject">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -581,7 +581,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -589,7 +589,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -597,7 +597,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -605,7 +605,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -613,7 +613,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -621,7 +621,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -629,7 +629,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -637,7 +637,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -645,7 +645,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -653,7 +653,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -661,13 +661,13 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -676,7 +676,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -684,7 +684,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -692,7 +692,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -700,7 +700,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -708,7 +708,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -716,7 +716,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -724,7 +724,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -732,7 +732,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -740,7 +740,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -748,7 +748,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -756,13 +756,13 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -771,7 +771,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -779,7 +779,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -787,7 +787,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -795,7 +795,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -803,7 +803,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -811,7 +811,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -819,7 +819,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -827,7 +827,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -835,7 +835,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -843,7 +843,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -851,13 +851,13 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -866,7 +866,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -874,7 +874,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -882,7 +882,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -890,7 +890,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -898,7 +898,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -906,7 +906,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -914,7 +914,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -922,7 +922,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -930,7 +930,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -938,7 +938,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -946,28 +946,28 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getprojectssort">Get<wbr>Projects<wbr>Sort</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/input/#GetProjectsSort">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/output/#GetProjectsSort">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetProjectsSortArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetProjectsSort">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -976,9 +976,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sort the projects by this key. This may be one of `name`,
+    <dd>Sort the projects by this key. This may be one of `name`,
 `purpose`, `description`, or `environment`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -986,14 +986,14 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The sort direction. This may be either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>The sort direction. This may be either `asc` or `desc`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1002,9 +1002,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sort the projects by this key. This may be one of `name`,
+    <dd>Sort the projects by this key. This may be one of `name`,
 `purpose`, `description`, or `environment`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,14 +1012,14 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The sort direction. This may be either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>The sort direction. This may be either `asc` or `desc`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1028,9 +1028,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sort the projects by this key. This may be one of `name`,
+    <dd>Sort the projects by this key. This may be one of `name`,
 `purpose`, `description`, or `environment`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,14 +1038,14 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The sort direction. This may be either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>The sort direction. This may be either `asc` or `desc`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1054,9 +1054,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sort the projects by this key. This may be one of `name`,
+    <dd>Sort the projects by this key. This may be one of `name`,
 `purpose`, `description`, or `environment`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,11 +1064,11 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The sort direction. This may be either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>The sort direction. This may be either `asc` or `desc`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

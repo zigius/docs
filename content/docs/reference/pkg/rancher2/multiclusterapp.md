@@ -14,26 +14,26 @@ meta_desc: "Explore the MultiClusterApp resource of the Rancher 2 package, inclu
 
 
 ## Create a MultiClusterApp Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#MultiClusterApp">MultiClusterApp</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#MultiClusterAppArgs">MultiClusterAppArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">MultiClusterApp</span><span class="p">(resource_name, opts=None, </span>annotations=None<span class="p">, </span>answers=None<span class="p">, </span>catalog_name=None<span class="p">, </span>labels=None<span class="p">, </span>members=None<span class="p">, </span>name=None<span class="p">, </span>revision_history_limit=None<span class="p">, </span>revision_id=None<span class="p">, </span>roles=None<span class="p">, </span>targets=None<span class="p">, </span>template_name=None<span class="p">, </span>template_version=None<span class="p">, </span>upgrade_strategy=None<span class="p">, </span>wait=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewMultiClusterApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppArgs">MultiClusterAppArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterApp">MultiClusterApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.MultiClusterApp.html">MultiClusterApp</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.MultiClusterAppArgs.html">MultiClusterAppArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the MultiClusterApp resource of the Rancher 2 package, inclu
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the MultiClusterApp resource of the Rancher 2 package, inclu
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the MultiClusterApp resource of the Rancher 2 package, inclu
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the MultiClusterApp resource of the Rancher 2 package, inclu
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## MultiClusterApp Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app roles (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -218,8 +218,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterapptarget">List&lt;Multi<wbr>Cluster<wbr>App<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -227,8 +227,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappanswer">List&lt;Multi<wbr>Cluster<wbr>App<wbr>Answer<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappmember">List&lt;Multi<wbr>Cluster<wbr>App<wbr>Member<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app revision history limit. Default `10` (int)
-{{% /md %}}</dd>
+    <dd>The multi cluster app revision history limit. Default `10` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template version. Default: `latest` (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template version. Default: `latest` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategy">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app upgrade strategy (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>The multi cluster app upgrade strategy (list MaxItems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,14 +317,14 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait until the multi cluster app is active. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Wait until the multi cluster app is active. Default `true` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -333,8 +333,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -342,8 +342,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app roles (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -351,8 +351,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterapptarget">[]Multi<wbr>Cluster<wbr>App<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -360,8 +360,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -369,8 +369,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,8 +378,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappanswer">[]Multi<wbr>Cluster<wbr>App<wbr>Answer</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappmember">[]Multi<wbr>Cluster<wbr>App<wbr>Member</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app revision history limit. Default `10` (int)
-{{% /md %}}</dd>
+    <dd>The multi cluster app revision history limit. Default `10` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template version. Default: `latest` (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template version. Default: `latest` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategy">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app upgrade strategy (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>The multi cluster app upgrade strategy (list MaxItems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,14 +450,14 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait until the multi cluster app is active. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Wait until the multi cluster app is active. Default `true` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -466,8 +466,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -475,8 +475,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app roles (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -484,8 +484,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterapptarget">Multi<wbr>Cluster<wbr>App<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -493,8 +493,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappanswer">Multi<wbr>Cluster<wbr>App<wbr>Answer[]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,8 +520,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,8 +529,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappmember">Multi<wbr>Cluster<wbr>App<wbr>Member[]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,8 +538,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app revision history limit. Default `10` (int)
-{{% /md %}}</dd>
+    <dd>The multi cluster app revision history limit. Default `10` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,8 +556,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,8 +565,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template version. Default: `latest` (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template version. Default: `latest` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategy">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app upgrade strategy (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>The multi cluster app upgrade strategy (list MaxItems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,14 +583,14 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Wait until the multi cluster app is active. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Wait until the multi cluster app is active. Default `true` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -599,8 +599,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -608,8 +608,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app roles (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -617,8 +617,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterapptarget">List[Multi<wbr>Cluster<wbr>App<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -626,8 +626,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,8 +635,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,8 +644,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappanswer">List[Multi<wbr>Cluster<wbr>App<wbr>Answer]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -653,8 +653,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,8 +662,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappmember">List[Multi<wbr>Cluster<wbr>App<wbr>Member]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -671,8 +671,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,8 +680,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app revision history limit. Default `10` (int)
-{{% /md %}}</dd>
+    <dd>The multi cluster app revision history limit. Default `10` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,8 +689,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,8 +698,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template version. Default: `latest` (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template version. Default: `latest` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategy">Dict[Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app upgrade strategy (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>The multi cluster app upgrade strategy (list MaxItems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,11 +716,11 @@ The MultiClusterApp resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait until the multi cluster app is active. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Wait until the multi cluster app is active. Default `true` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -734,7 +734,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -743,7 +743,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -751,14 +751,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -767,7 +767,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -775,14 +775,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -791,7 +791,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -799,14 +799,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -815,7 +815,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -823,11 +823,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -838,25 +838,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing MultiClusterApp Resource {#look-up}
 
 Get an existing MultiClusterApp resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#MultiClusterAppState">MultiClusterAppState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#MultiClusterApp">MultiClusterApp</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>annotations=None<span class="p">, </span>answers=None<span class="p">, </span>catalog_name=None<span class="p">, </span>labels=None<span class="p">, </span>members=None<span class="p">, </span>name=None<span class="p">, </span>revision_history_limit=None<span class="p">, </span>revision_id=None<span class="p">, </span>roles=None<span class="p">, </span>targets=None<span class="p">, </span>template_name=None<span class="p">, </span>template_version=None<span class="p">, </span>template_version_id=None<span class="p">, </span>upgrade_strategy=None<span class="p">, </span>wait=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetMultiClusterApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppState">MultiClusterAppState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterApp">MultiClusterApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.MultiClusterApp.html">MultiClusterApp</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2..MultiClusterAppState.html">MultiClusterAppState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -881,9 +881,9 @@ Get an existing MultiClusterApp resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -896,36 +896,9 @@ Get an existing MultiClusterApp resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -950,13 +923,40 @@ Get an existing MultiClusterApp resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -965,8 +965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappanswer">List&lt;Multi<wbr>Cluster<wbr>App<wbr>Answer<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappmember">List&lt;Multi<wbr>Cluster<wbr>App<wbr>Member<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app revision history limit. Default `10` (int)
-{{% /md %}}</dd>
+    <dd>The multi cluster app revision history limit. Default `10` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app roles (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterapptarget">List&lt;Multi<wbr>Cluster<wbr>App<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template version. Default: `latest` (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template version. Default: `latest` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategy">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app upgrade strategy (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>The multi cluster app upgrade strategy (list MaxItems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,14 +1091,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait until the multi cluster app is active. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Wait until the multi cluster app is active. Default `true` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1107,8 +1107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,8 +1116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappanswer">[]Multi<wbr>Cluster<wbr>App<wbr>Answer</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,8 +1125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,8 +1134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,8 +1143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappmember">[]Multi<wbr>Cluster<wbr>App<wbr>Member</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,8 +1152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,8 +1161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app revision history limit. Default `10` (int)
-{{% /md %}}</dd>
+    <dd>The multi cluster app revision history limit. Default `10` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1170,8 +1170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,8 +1179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app roles (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,8 +1188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterapptarget">[]Multi<wbr>Cluster<wbr>App<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1197,8 +1197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1206,8 +1206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template version. Default: `latest` (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template version. Default: `latest` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,8 +1215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,8 +1224,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategy">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app upgrade strategy (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>The multi cluster app upgrade strategy (list MaxItems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,14 +1233,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait until the multi cluster app is active. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Wait until the multi cluster app is active. Default `true` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1249,8 +1249,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,8 +1258,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappanswer">Multi<wbr>Cluster<wbr>App<wbr>Answer[]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,8 +1267,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,8 +1276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,8 +1285,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappmember">Multi<wbr>Cluster<wbr>App<wbr>Member[]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,8 +1294,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,8 +1303,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app revision history limit. Default `10` (int)
-{{% /md %}}</dd>
+    <dd>The multi cluster app revision history limit. Default `10` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,8 +1312,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1321,8 +1321,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app roles (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1330,8 +1330,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterapptarget">Multi<wbr>Cluster<wbr>App<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,8 +1339,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1348,8 +1348,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template version. Default: `latest` (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template version. Default: `latest` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1357,8 +1357,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1366,8 +1366,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategy">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app upgrade strategy (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>The multi cluster app upgrade strategy (list MaxItems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1375,14 +1375,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Wait until the multi cluster app is active. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Wait until the multi cluster app is active. Default `true` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1391,8 +1391,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,8 +1400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappanswer">List[Multi<wbr>Cluster<wbr>App<wbr>Answer]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1409,8 +1409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1418,8 +1418,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,8 +1427,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappmember">List[Multi<wbr>Cluster<wbr>App<wbr>Member]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app answers (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1436,8 +1436,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1445,8 +1445,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app revision history limit. Default `10` (int)
-{{% /md %}}</dd>
+    <dd>The multi cluster app revision history limit. Default `10` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1454,8 +1454,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1463,8 +1463,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app roles (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1472,8 +1472,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterapptarget">List[Multi<wbr>Cluster<wbr>App<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1481,8 +1481,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1490,8 +1490,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app template version. Default: `latest` (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app template version. Default: `latest` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1499,8 +1499,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1508,8 +1508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategy">Dict[Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy]</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app upgrade strategy (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>The multi cluster app upgrade strategy (list MaxItems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1517,11 +1517,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait until the multi cluster app is active. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Wait until the multi cluster app is active. Default `true` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1536,18 +1536,18 @@ The following state arguments are supported:
 
 
 <h4 id="multiclusterappanswer">Multi<wbr>Cluster<wbr>App<wbr>Answer</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#MultiClusterAppAnswer">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#MultiClusterAppAnswer">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppAnswerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppAnswerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1556,8 +1556,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cluster ID for answer (string)
-{{% /md %}}</dd>
+    <dd>Cluster ID for answer (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1565,8 +1565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Project ID for target (string)
-{{% /md %}}</dd>
+    <dd>Project ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,14 +1574,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key/values for answer (map)
-{{% /md %}}</dd>
+    <dd>Key/values for answer (map)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1590,8 +1590,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cluster ID for answer (string)
-{{% /md %}}</dd>
+    <dd>Cluster ID for answer (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1599,8 +1599,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Project ID for target (string)
-{{% /md %}}</dd>
+    <dd>Project ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1608,14 +1608,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key/values for answer (map)
-{{% /md %}}</dd>
+    <dd>Key/values for answer (map)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1624,8 +1624,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cluster ID for answer (string)
-{{% /md %}}</dd>
+    <dd>Cluster ID for answer (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1633,8 +1633,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Project ID for target (string)
-{{% /md %}}</dd>
+    <dd>Project ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,14 +1642,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key/values for answer (map)
-{{% /md %}}</dd>
+    <dd>Key/values for answer (map)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1658,8 +1658,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cluster ID for answer (string)
-{{% /md %}}</dd>
+    <dd>Cluster ID for answer (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,8 +1667,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Project ID for target (string)
-{{% /md %}}</dd>
+    <dd>Project ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,29 +1676,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key/values for answer (map)
-{{% /md %}}</dd>
+    <dd>Key/values for answer (map)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="multiclusterappmember">Multi<wbr>Cluster<wbr>App<wbr>Member</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#MultiClusterAppMember">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#MultiClusterAppMember">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppMemberArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppMemberOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1707,8 +1707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Member access type. Valid values: `["member" | "owner" | "read-only"]` (string)
-{{% /md %}}</dd>
+    <dd>Member access type. Valid values: `["member" | "owner" | "read-only"]` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1716,8 +1716,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Member group principal id (string)
-{{% /md %}}</dd>
+    <dd>Member group principal id (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,14 +1725,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Member user principal id (string)
-{{% /md %}}</dd>
+    <dd>Member user principal id (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1741,8 +1741,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Member access type. Valid values: `["member" | "owner" | "read-only"]` (string)
-{{% /md %}}</dd>
+    <dd>Member access type. Valid values: `["member" | "owner" | "read-only"]` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,8 +1750,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Member group principal id (string)
-{{% /md %}}</dd>
+    <dd>Member group principal id (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1759,14 +1759,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Member user principal id (string)
-{{% /md %}}</dd>
+    <dd>Member user principal id (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1775,8 +1775,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Member access type. Valid values: `["member" | "owner" | "read-only"]` (string)
-{{% /md %}}</dd>
+    <dd>Member access type. Valid values: `["member" | "owner" | "read-only"]` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1784,8 +1784,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Member group principal id (string)
-{{% /md %}}</dd>
+    <dd>Member group principal id (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1793,14 +1793,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Member user principal id (string)
-{{% /md %}}</dd>
+    <dd>Member user principal id (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1809,8 +1809,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Member access type. Valid values: `["member" | "owner" | "read-only"]` (string)
-{{% /md %}}</dd>
+    <dd>Member access type. Valid values: `["member" | "owner" | "read-only"]` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1818,8 +1818,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Member group principal id (string)
-{{% /md %}}</dd>
+    <dd>Member group principal id (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1827,29 +1827,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Member user principal id (string)
-{{% /md %}}</dd>
+    <dd>Member user principal id (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="multiclusterapptarget">Multi<wbr>Cluster<wbr>App<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#MultiClusterAppTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#MultiClusterAppTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1858,8 +1858,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Project ID for target (string)
-{{% /md %}}</dd>
+    <dd>Project ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1867,8 +1867,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}App ID for target (string)
-{{% /md %}}</dd>
+    <dd>App ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1876,8 +1876,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}App health state for target (string)
-{{% /md %}}</dd>
+    <dd>App health state for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1885,14 +1885,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}App state for target (string)
-{{% /md %}}</dd>
+    <dd>App state for target (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1901,8 +1901,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Project ID for target (string)
-{{% /md %}}</dd>
+    <dd>Project ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1910,8 +1910,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}App ID for target (string)
-{{% /md %}}</dd>
+    <dd>App ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1919,8 +1919,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}App health state for target (string)
-{{% /md %}}</dd>
+    <dd>App health state for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1928,14 +1928,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}App state for target (string)
-{{% /md %}}</dd>
+    <dd>App state for target (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1944,8 +1944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Project ID for target (string)
-{{% /md %}}</dd>
+    <dd>Project ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1953,8 +1953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}App ID for target (string)
-{{% /md %}}</dd>
+    <dd>App ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1962,8 +1962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}App health state for target (string)
-{{% /md %}}</dd>
+    <dd>App health state for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,14 +1971,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}App state for target (string)
-{{% /md %}}</dd>
+    <dd>App state for target (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1987,8 +1987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Project ID for target (string)
-{{% /md %}}</dd>
+    <dd>Project ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,8 +1996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}App ID for target (string)
-{{% /md %}}</dd>
+    <dd>App ID for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,8 +2005,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}App health state for target (string)
-{{% /md %}}</dd>
+    <dd>App health state for target (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2014,29 +2014,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}App state for target (string)
-{{% /md %}}</dd>
+    <dd>App state for target (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="multiclusterappupgradestrategy">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#MultiClusterAppUpgradeStrategy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#MultiClusterAppUpgradeStrategy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppUpgradeStrategyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppUpgradeStrategyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2045,14 +2045,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategyrollingupdate">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Upgrade strategy rolling update (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>Upgrade strategy rolling update (list MaxItems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2061,14 +2061,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategyrollingupdate">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update</a></span>
     </dt>
-    <dd>{{% md %}}Upgrade strategy rolling update (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>Upgrade strategy rolling update (list MaxItems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2077,14 +2077,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategyrollingupdate">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update</a></span>
     </dt>
-    <dd>{{% md %}}Upgrade strategy rolling update (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>Upgrade strategy rolling update (list MaxItems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2093,29 +2093,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#multiclusterappupgradestrategyrollingupdate">Dict[Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update]</a></span>
     </dt>
-    <dd>{{% md %}}Upgrade strategy rolling update (list MaxItems:1)
-{{% /md %}}</dd>
+    <dd>Upgrade strategy rolling update (list MaxItems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="multiclusterappupgradestrategyrollingupdate">Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#MultiClusterAppUpgradeStrategyRollingUpdate">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#MultiClusterAppUpgradeStrategyRollingUpdate">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppUpgradeStrategyRollingUpdateArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#MultiClusterAppUpgradeStrategyRollingUpdateOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2124,8 +2124,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Rolling update batch size. Default `1` (int)
-{{% /md %}}</dd>
+    <dd>Rolling update batch size. Default `1` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2133,14 +2133,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Rolling update interval. Default `1` (int)
-{{% /md %}}</dd>
+    <dd>Rolling update interval. Default `1` (int)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2149,8 +2149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Rolling update batch size. Default `1` (int)
-{{% /md %}}</dd>
+    <dd>Rolling update batch size. Default `1` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2158,14 +2158,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Rolling update interval. Default `1` (int)
-{{% /md %}}</dd>
+    <dd>Rolling update interval. Default `1` (int)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2174,8 +2174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Rolling update batch size. Default `1` (int)
-{{% /md %}}</dd>
+    <dd>Rolling update batch size. Default `1` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2183,14 +2183,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Rolling update interval. Default `1` (int)
-{{% /md %}}</dd>
+    <dd>Rolling update interval. Default `1` (int)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2199,8 +2199,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Rolling update batch size. Default `1` (int)
-{{% /md %}}</dd>
+    <dd>Rolling update batch size. Default `1` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2208,11 +2208,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Rolling update interval. Default `1` (int)
-{{% /md %}}</dd>
+    <dd>Rolling update interval. Default `1` (int)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

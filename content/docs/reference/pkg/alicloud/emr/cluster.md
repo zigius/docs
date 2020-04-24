@@ -20,26 +20,26 @@ Provides a EMR Cluster resource. With this you can create, read, and release  EM
 
 
 ## Create a Cluster Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/emr/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/emr/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Cluster</span><span class="p">(resource_name, opts=None, </span>bootstrap_actions=None<span class="p">, </span>charge_type=None<span class="p">, </span>cluster_type=None<span class="p">, </span>deposit_type=None<span class="p">, </span>eas_enable=None<span class="p">, </span>emr_ver=None<span class="p">, </span>high_availability_enable=None<span class="p">, </span>host_groups=None<span class="p">, </span>is_open_public_ip=None<span class="p">, </span>key_pair_name=None<span class="p">, </span>master_pwd=None<span class="p">, </span>name=None<span class="p">, </span>option_software_lists=None<span class="p">, </span>related_cluster_id=None<span class="p">, </span>security_group_id=None<span class="p">, </span>ssh_enable=None<span class="p">, </span>tags=None<span class="p">, </span>use_local_metadb=None<span class="p">, </span>user_defined_emr_ecs_role=None<span class="p">, </span>vswitch_id=None<span class="p">, </span>zone_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/emr?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/emr?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Emr.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Emr.ClusterArgs.html">ClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -76,9 +76,9 @@ Provides a EMR Cluster resource. With this you can create, read, and release  EM
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -96,9 +96,9 @@ Provides a EMR Cluster resource. With this you can create, read, and release  EM
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -145,9 +145,9 @@ Provides a EMR Cluster resource. With this you can create, read, and release  EM
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -184,7 +184,7 @@ Provides a EMR Cluster resource. With this you can create, read, and release  EM
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Cluster Resource Properties {#properties}
 
@@ -197,7 +197,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -206,8 +206,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -215,8 +215,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
-{{% /md %}}</dd>
+    <dd>EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -224,7 +224,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Zone ID, e.g. cn-huhehaote-a
+    <dd>Zone ID, e.g. cn-huhehaote-a
 * `security_group_id` (Optional, ForceNew) Security Group ID for Cluster, you can also specify this key for each host group.
 * `vswitch_id` (Optional, ForceNew) Global vswitch id, you can also specify it in host group.
 * `option_software_list` (Optional, ForceNew) Optional software list.
@@ -237,7 +237,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 * `key_pair_name` (Optional, ForceNew) Ssh key pair.
 * `deposit_type` (Optional, ForceNew) Cluster deposit type, HALF_MANAGED or FULL_MANAGED.
 * `related_cluster_id` (Optional, ForceNew) This specify the related cluster id, if this cluster is a Gateway.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,7 +245,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbootstrapaction">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Emr.<wbr>Inputs.<wbr>Cluster<wbr>Bootstrap<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,8 +253,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,7 +262,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,7 +270,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,7 +278,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -286,8 +286,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterhostgroup">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Emr.<wbr>Inputs.<wbr>Cluster<wbr>Host<wbr>Group<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
-{{% /md %}}</dd>
+    <dd>Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -295,7 +295,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,7 +303,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,7 +311,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,7 +328,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,7 +336,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,7 +344,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,7 +352,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,8 +360,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -369,7 +369,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,7 +377,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,13 +385,13 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -400,8 +400,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -409,8 +409,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
-{{% /md %}}</dd>
+    <dd>EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -418,7 +418,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Zone ID, e.g. cn-huhehaote-a
+    <dd>Zone ID, e.g. cn-huhehaote-a
 * `security_group_id` (Optional, ForceNew) Security Group ID for Cluster, you can also specify this key for each host group.
 * `vswitch_id` (Optional, ForceNew) Global vswitch id, you can also specify it in host group.
 * `option_software_list` (Optional, ForceNew) Optional software list.
@@ -431,7 +431,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 * `key_pair_name` (Optional, ForceNew) Ssh key pair.
 * `deposit_type` (Optional, ForceNew) Cluster deposit type, HALF_MANAGED or FULL_MANAGED.
 * `related_cluster_id` (Optional, ForceNew) This specify the related cluster id, if this cluster is a Gateway.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,7 +439,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbootstrapaction">[]Cluster<wbr>Bootstrap<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,7 +456,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,7 +464,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,7 +472,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,8 +480,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterhostgroup">[]Cluster<wbr>Host<wbr>Group</a></span>
     </dt>
-    <dd>{{% md %}}Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
-{{% /md %}}</dd>
+    <dd>Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,7 +489,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,7 +497,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,7 +505,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,8 +513,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,7 +522,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,7 +530,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,7 +538,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -546,7 +546,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,8 +554,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,7 +563,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,7 +571,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -579,13 +579,13 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -594,8 +594,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -603,8 +603,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
-{{% /md %}}</dd>
+    <dd>EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -612,7 +612,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Zone ID, e.g. cn-huhehaote-a
+    <dd>Zone ID, e.g. cn-huhehaote-a
 * `security_group_id` (Optional, ForceNew) Security Group ID for Cluster, you can also specify this key for each host group.
 * `vswitch_id` (Optional, ForceNew) Global vswitch id, you can also specify it in host group.
 * `option_software_list` (Optional, ForceNew) Optional software list.
@@ -625,7 +625,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 * `key_pair_name` (Optional, ForceNew) Ssh key pair.
 * `deposit_type` (Optional, ForceNew) Cluster deposit type, HALF_MANAGED or FULL_MANAGED.
 * `related_cluster_id` (Optional, ForceNew) This specify the related cluster id, if this cluster is a Gateway.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -633,7 +633,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbootstrapaction">Cluster<wbr>Bootstrap<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,7 +650,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,7 +658,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,7 +666,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,8 +674,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterhostgroup">Cluster<wbr>Host<wbr>Group[]</a></span>
     </dt>
-    <dd>{{% md %}}Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
-{{% /md %}}</dd>
+    <dd>Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -683,7 +683,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -691,7 +691,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -699,7 +699,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,7 +716,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -724,7 +724,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,7 +732,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,7 +740,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -748,8 +748,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -757,7 +757,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,7 +765,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -773,13 +773,13 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -788,8 +788,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -797,8 +797,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
-{{% /md %}}</dd>
+    <dd>EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -806,7 +806,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Zone ID, e.g. cn-huhehaote-a
+    <dd>Zone ID, e.g. cn-huhehaote-a
 * `security_group_id` (Optional, ForceNew) Security Group ID for Cluster, you can also specify this key for each host group.
 * `vswitch_id` (Optional, ForceNew) Global vswitch id, you can also specify it in host group.
 * `option_software_list` (Optional, ForceNew) Optional software list.
@@ -819,7 +819,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 * `key_pair_name` (Optional, ForceNew) Ssh key pair.
 * `deposit_type` (Optional, ForceNew) Cluster deposit type, HALF_MANAGED or FULL_MANAGED.
 * `related_cluster_id` (Optional, ForceNew) This specify the related cluster id, if this cluster is a Gateway.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -827,7 +827,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbootstrapaction">List[Cluster<wbr>Bootstrap<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,8 +835,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,7 +844,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,7 +852,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -860,7 +860,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterhostgroup">List[Cluster<wbr>Host<wbr>Group]</a></span>
     </dt>
-    <dd>{{% md %}}Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
-{{% /md %}}</dd>
+    <dd>Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,7 +877,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -885,7 +885,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,7 +893,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -901,8 +901,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -910,7 +910,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,7 +918,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,7 +926,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -934,7 +934,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,7 +951,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,7 +959,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,10 +967,10 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -984,7 +984,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -993,13 +993,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1008,13 +1008,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1023,13 +1023,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1038,10 +1038,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1052,25 +1052,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Cluster Resource {#look-up}
 
 Get an existing Cluster resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/emr/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/emr/#Cluster">Cluster</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>bootstrap_actions=None<span class="p">, </span>charge_type=None<span class="p">, </span>cluster_type=None<span class="p">, </span>deposit_type=None<span class="p">, </span>eas_enable=None<span class="p">, </span>emr_ver=None<span class="p">, </span>high_availability_enable=None<span class="p">, </span>host_groups=None<span class="p">, </span>is_open_public_ip=None<span class="p">, </span>key_pair_name=None<span class="p">, </span>master_pwd=None<span class="p">, </span>name=None<span class="p">, </span>option_software_lists=None<span class="p">, </span>related_cluster_id=None<span class="p">, </span>security_group_id=None<span class="p">, </span>ssh_enable=None<span class="p">, </span>tags=None<span class="p">, </span>use_local_metadb=None<span class="p">, </span>user_defined_emr_ecs_role=None<span class="p">, </span>vswitch_id=None<span class="p">, </span>zone_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/emr?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/emr?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Emr.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Emr.ClusterState.html">ClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1095,9 +1095,9 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1110,36 +1110,9 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1164,13 +1137,40 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1179,7 +1179,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbootstrapaction">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Emr.<wbr>Inputs.<wbr>Cluster<wbr>Bootstrap<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,8 +1187,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1196,8 +1196,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,7 +1205,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,7 +1213,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,8 +1221,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
-{{% /md %}}</dd>
+    <dd>EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,7 +1230,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1238,8 +1238,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterhostgroup">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Emr.<wbr>Inputs.<wbr>Cluster<wbr>Host<wbr>Group<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
-{{% /md %}}</dd>
+    <dd>Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,7 +1247,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,7 +1255,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,7 +1263,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1271,8 +1271,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1280,7 +1280,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,7 +1288,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,7 +1296,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1304,7 +1304,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,8 +1312,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1321,7 +1321,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1329,7 +1329,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,7 +1337,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1345,7 +1345,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Zone ID, e.g. cn-huhehaote-a
+    <dd>Zone ID, e.g. cn-huhehaote-a
 * `security_group_id` (Optional, ForceNew) Security Group ID for Cluster, you can also specify this key for each host group.
 * `vswitch_id` (Optional, ForceNew) Global vswitch id, you can also specify it in host group.
 * `option_software_list` (Optional, ForceNew) Optional software list.
@@ -1358,13 +1358,13 @@ The following state arguments are supported:
 * `key_pair_name` (Optional, ForceNew) Ssh key pair.
 * `deposit_type` (Optional, ForceNew) Cluster deposit type, HALF_MANAGED or FULL_MANAGED.
 * `related_cluster_id` (Optional, ForceNew) This specify the related cluster id, if this cluster is a Gateway.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1373,7 +1373,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbootstrapaction">[]Cluster<wbr>Bootstrap<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,8 +1381,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,8 +1390,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1399,7 +1399,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,7 +1407,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1415,8 +1415,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
-{{% /md %}}</dd>
+    <dd>EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1424,7 +1424,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,8 +1432,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterhostgroup">[]Cluster<wbr>Host<wbr>Group</a></span>
     </dt>
-    <dd>{{% md %}}Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
-{{% /md %}}</dd>
+    <dd>Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,7 +1441,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1449,7 +1449,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,7 +1457,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1465,8 +1465,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1474,7 +1474,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,7 +1482,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1490,7 +1490,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,7 +1498,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1506,8 +1506,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,7 +1515,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,7 +1523,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,7 +1531,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1539,7 +1539,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Zone ID, e.g. cn-huhehaote-a
+    <dd>Zone ID, e.g. cn-huhehaote-a
 * `security_group_id` (Optional, ForceNew) Security Group ID for Cluster, you can also specify this key for each host group.
 * `vswitch_id` (Optional, ForceNew) Global vswitch id, you can also specify it in host group.
 * `option_software_list` (Optional, ForceNew) Optional software list.
@@ -1552,13 +1552,13 @@ The following state arguments are supported:
 * `key_pair_name` (Optional, ForceNew) Ssh key pair.
 * `deposit_type` (Optional, ForceNew) Cluster deposit type, HALF_MANAGED or FULL_MANAGED.
 * `related_cluster_id` (Optional, ForceNew) This specify the related cluster id, if this cluster is a Gateway.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1567,7 +1567,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbootstrapaction">Cluster<wbr>Bootstrap<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1575,8 +1575,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,8 +1584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1593,7 +1593,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1601,7 +1601,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1609,8 +1609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
-{{% /md %}}</dd>
+    <dd>EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1618,7 +1618,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,8 +1626,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterhostgroup">Cluster<wbr>Host<wbr>Group[]</a></span>
     </dt>
-    <dd>{{% md %}}Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
-{{% /md %}}</dd>
+    <dd>Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1635,7 +1635,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1643,7 +1643,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,7 +1651,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1659,8 +1659,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1668,7 +1668,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,7 +1676,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,7 +1684,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,7 +1692,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,8 +1700,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,7 +1709,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1717,7 +1717,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,7 +1725,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,7 +1733,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Zone ID, e.g. cn-huhehaote-a
+    <dd>Zone ID, e.g. cn-huhehaote-a
 * `security_group_id` (Optional, ForceNew) Security Group ID for Cluster, you can also specify this key for each host group.
 * `vswitch_id` (Optional, ForceNew) Global vswitch id, you can also specify it in host group.
 * `option_software_list` (Optional, ForceNew) Optional software list.
@@ -1746,13 +1746,13 @@ The following state arguments are supported:
 * `key_pair_name` (Optional, ForceNew) Ssh key pair.
 * `deposit_type` (Optional, ForceNew) Cluster deposit type, HALF_MANAGED or FULL_MANAGED.
 * `related_cluster_id` (Optional, ForceNew) This specify the related cluster id, if this cluster is a Gateway.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1761,7 +1761,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbootstrapaction">List[Cluster<wbr>Bootstrap<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1769,8 +1769,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1778,8 +1778,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>EMR Cluster Type, e.g. HADOOP, KAFKA, DRUID, GATEWAY etc. You can find all valid EMR cluster type in emr web console. Supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1787,7 +1787,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1795,7 +1795,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,8 +1803,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
-{{% /md %}}</dd>
+    <dd>EMR Version, e.g. EMR-3.22.0. You can find the all valid EMR Version in emr web console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,7 +1812,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1820,8 +1820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterhostgroup">List[Cluster<wbr>Host<wbr>Group]</a></span>
     </dt>
-    <dd>{{% md %}}Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
-{{% /md %}}</dd>
+    <dd>Groups of Host, You can specify MASTER as a group, CORE as a group (just like the above example).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1829,7 +1829,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1837,7 +1837,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1845,7 +1845,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1853,8 +1853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1862,7 +1862,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1870,7 +1870,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,7 +1878,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1886,7 +1886,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1894,8 +1894,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1903,7 +1903,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,7 +1911,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1919,7 +1919,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1927,7 +1927,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Zone ID, e.g. cn-huhehaote-a
+    <dd>Zone ID, e.g. cn-huhehaote-a
 * `security_group_id` (Optional, ForceNew) Security Group ID for Cluster, you can also specify this key for each host group.
 * `vswitch_id` (Optional, ForceNew) Global vswitch id, you can also specify it in host group.
 * `option_software_list` (Optional, ForceNew) Optional software list.
@@ -1940,10 +1940,10 @@ The following state arguments are supported:
 * `key_pair_name` (Optional, ForceNew) Ssh key pair.
 * `deposit_type` (Optional, ForceNew) Cluster deposit type, HALF_MANAGED or FULL_MANAGED.
 * `related_cluster_id` (Optional, ForceNew) This specify the related cluster id, if this cluster is a Gateway.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1958,18 +1958,18 @@ The following state arguments are supported:
 
 
 <h4 id="clusterbootstrapaction">Cluster<wbr>Bootstrap<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ClusterBootstrapAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ClusterBootstrapAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/emr?tab=doc#ClusterBootstrapActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/emr?tab=doc#ClusterBootstrapActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1978,8 +1978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action args, e.g. "--a=b".
-{{% /md %}}</dd>
+    <dd>bootstrap action args, e.g. "--a=b".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,8 +1987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,14 +1996,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action path, e.g. "oss://bucket/path".
-{{% /md %}}</dd>
+    <dd>bootstrap action path, e.g. "oss://bucket/path".
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2012,8 +2012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action args, e.g. "--a=b".
-{{% /md %}}</dd>
+    <dd>bootstrap action args, e.g. "--a=b".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2021,8 +2021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2030,14 +2030,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action path, e.g. "oss://bucket/path".
-{{% /md %}}</dd>
+    <dd>bootstrap action path, e.g. "oss://bucket/path".
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2046,8 +2046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action args, e.g. "--a=b".
-{{% /md %}}</dd>
+    <dd>bootstrap action args, e.g. "--a=b".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2055,8 +2055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2064,14 +2064,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action path, e.g. "oss://bucket/path".
-{{% /md %}}</dd>
+    <dd>bootstrap action path, e.g. "oss://bucket/path".
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2080,8 +2080,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action args, e.g. "--a=b".
-{{% /md %}}</dd>
+    <dd>bootstrap action args, e.g. "--a=b".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2089,8 +2089,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action name.
-{{% /md %}}</dd>
+    <dd>bootstrap action name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2098,29 +2098,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}bootstrap action path, e.g. "oss://bucket/path".
-{{% /md %}}</dd>
+    <dd>bootstrap action path, e.g. "oss://bucket/path".
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterhostgroup">Cluster<wbr>Host<wbr>Group</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ClusterHostGroup">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ClusterHostGroup">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/emr?tab=doc#ClusterHostGroupArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/emr?tab=doc#ClusterHostGroupOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2129,8 +2129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Auto renew for prepaid, true of false. Default is false.
-{{% /md %}}</dd>
+    <dd>Auto renew for prepaid, true of false. Default is false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2138,8 +2138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,8 +2147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Data disk capacity.
-{{% /md %}}</dd>
+    <dd>Data disk capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2156,8 +2156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Data disk count.
-{{% /md %}}</dd>
+    <dd>Data disk count.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2165,8 +2165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Data disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,local_disk,cloud_essd.
-{{% /md %}}</dd>
+    <dd>Data disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,local_disk,cloud_essd.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2174,7 +2174,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2182,8 +2182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}host group name.
-{{% /md %}}</dd>
+    <dd>host group name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2191,8 +2191,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}host group type, supported value: MASTER, CORE or TASK, supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>host group type, supported value: MASTER, CORE or TASK, supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2200,8 +2200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance list for cluster scale down. This value follows the json format, e.g. ["instance_id1","instance_id2"]. escape character for " is \".
-{{% /md %}}</dd>
+    <dd>Instance list for cluster scale down. This value follows the json format, e.g. ["instance_id1","instance_id2"]. escape character for " is \".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2209,8 +2209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Host Ecs instance type.
-{{% /md %}}</dd>
+    <dd>Host Ecs instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2218,8 +2218,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Host number in this group.
-{{% /md %}}</dd>
+    <dd>Host number in this group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2227,8 +2227,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If charge type is PrePaid, this should be specified, unit is month. Supported value: 1、2、3、4、5、6、7、8、9、12、24、36.
-{{% /md %}}</dd>
+    <dd>If charge type is PrePaid, this should be specified, unit is month. Supported value: 1、2、3、4、5、6、7、8、9、12、24、36.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2236,8 +2236,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System disk capacity.
-{{% /md %}}</dd>
+    <dd>System disk capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2245,14 +2245,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,cloud_essd.
-{{% /md %}}</dd>
+    <dd>System disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,cloud_essd.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2261,8 +2261,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Auto renew for prepaid, true of false. Default is false.
-{{% /md %}}</dd>
+    <dd>Auto renew for prepaid, true of false. Default is false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2270,8 +2270,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2279,8 +2279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data disk capacity.
-{{% /md %}}</dd>
+    <dd>Data disk capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,8 +2288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data disk count.
-{{% /md %}}</dd>
+    <dd>Data disk count.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2297,8 +2297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,local_disk,cloud_essd.
-{{% /md %}}</dd>
+    <dd>Data disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,local_disk,cloud_essd.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2306,7 +2306,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2314,8 +2314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}host group name.
-{{% /md %}}</dd>
+    <dd>host group name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2323,8 +2323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}host group type, supported value: MASTER, CORE or TASK, supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>host group type, supported value: MASTER, CORE or TASK, supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2332,8 +2332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance list for cluster scale down. This value follows the json format, e.g. ["instance_id1","instance_id2"]. escape character for " is \".
-{{% /md %}}</dd>
+    <dd>Instance list for cluster scale down. This value follows the json format, e.g. ["instance_id1","instance_id2"]. escape character for " is \".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2341,8 +2341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Host Ecs instance type.
-{{% /md %}}</dd>
+    <dd>Host Ecs instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2350,8 +2350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Host number in this group.
-{{% /md %}}</dd>
+    <dd>Host number in this group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,8 +2359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If charge type is PrePaid, this should be specified, unit is month. Supported value: 1、2、3、4、5、6、7、8、9、12、24、36.
-{{% /md %}}</dd>
+    <dd>If charge type is PrePaid, this should be specified, unit is month. Supported value: 1、2、3、4、5、6、7、8、9、12、24、36.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2368,8 +2368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System disk capacity.
-{{% /md %}}</dd>
+    <dd>System disk capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2377,14 +2377,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,cloud_essd.
-{{% /md %}}</dd>
+    <dd>System disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,cloud_essd.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2393,8 +2393,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Auto renew for prepaid, true of false. Default is false.
-{{% /md %}}</dd>
+    <dd>Auto renew for prepaid, true of false. Default is false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2402,8 +2402,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,8 +2411,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data disk capacity.
-{{% /md %}}</dd>
+    <dd>Data disk capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,8 +2420,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data disk count.
-{{% /md %}}</dd>
+    <dd>Data disk count.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2429,8 +2429,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,local_disk,cloud_essd.
-{{% /md %}}</dd>
+    <dd>Data disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,local_disk,cloud_essd.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2438,7 +2438,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2446,8 +2446,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}host group name.
-{{% /md %}}</dd>
+    <dd>host group name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2455,8 +2455,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}host group type, supported value: MASTER, CORE or TASK, supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>host group type, supported value: MASTER, CORE or TASK, supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2464,8 +2464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance list for cluster scale down. This value follows the json format, e.g. ["instance_id1","instance_id2"]. escape character for " is \".
-{{% /md %}}</dd>
+    <dd>Instance list for cluster scale down. This value follows the json format, e.g. ["instance_id1","instance_id2"]. escape character for " is \".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2473,8 +2473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Host Ecs instance type.
-{{% /md %}}</dd>
+    <dd>Host Ecs instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2482,8 +2482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Host number in this group.
-{{% /md %}}</dd>
+    <dd>Host number in this group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2491,8 +2491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If charge type is PrePaid, this should be specified, unit is month. Supported value: 1、2、3、4、5、6、7、8、9、12、24、36.
-{{% /md %}}</dd>
+    <dd>If charge type is PrePaid, this should be specified, unit is month. Supported value: 1、2、3、4、5、6、7、8、9、12、24、36.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2500,8 +2500,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System disk capacity.
-{{% /md %}}</dd>
+    <dd>System disk capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2509,14 +2509,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,cloud_essd.
-{{% /md %}}</dd>
+    <dd>System disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,cloud_essd.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2525,8 +2525,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Auto renew for prepaid, true of false. Default is false.
-{{% /md %}}</dd>
+    <dd>Auto renew for prepaid, true of false. Default is false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2534,8 +2534,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
-{{% /md %}}</dd>
+    <dd>Charge Type for this group of hosts: PostPaid or PrePaid. If this is not specified, charge type will follow global charge_type value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2543,8 +2543,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Data disk capacity.
-{{% /md %}}</dd>
+    <dd>Data disk capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2552,8 +2552,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Data disk count.
-{{% /md %}}</dd>
+    <dd>Data disk count.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2561,8 +2561,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Data disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,local_disk,cloud_essd.
-{{% /md %}}</dd>
+    <dd>Data disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,local_disk,cloud_essd.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2570,7 +2570,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2578,8 +2578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}host group name.
-{{% /md %}}</dd>
+    <dd>host group name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2587,8 +2587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}host group type, supported value: MASTER, CORE or TASK, supported 'GATEWAY' available in 1.61.0+.
-{{% /md %}}</dd>
+    <dd>host group type, supported value: MASTER, CORE or TASK, supported 'GATEWAY' available in 1.61.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2596,8 +2596,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance list for cluster scale down. This value follows the json format, e.g. ["instance_id1","instance_id2"]. escape character for " is \".
-{{% /md %}}</dd>
+    <dd>Instance list for cluster scale down. This value follows the json format, e.g. ["instance_id1","instance_id2"]. escape character for " is \".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2605,8 +2605,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Host Ecs instance type.
-{{% /md %}}</dd>
+    <dd>Host Ecs instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2614,8 +2614,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Host number in this group.
-{{% /md %}}</dd>
+    <dd>Host number in this group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2623,8 +2623,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If charge type is PrePaid, this should be specified, unit is month. Supported value: 1、2、3、4、5、6、7、8、9、12、24、36.
-{{% /md %}}</dd>
+    <dd>If charge type is PrePaid, this should be specified, unit is month. Supported value: 1、2、3、4、5、6、7、8、9、12、24、36.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2632,8 +2632,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System disk capacity.
-{{% /md %}}</dd>
+    <dd>System disk capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2641,11 +2641,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,cloud_essd.
-{{% /md %}}</dd>
+    <dd>System disk type. Supported value: cloud,cloud_efficiency,cloud_ssd,cloud_essd.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

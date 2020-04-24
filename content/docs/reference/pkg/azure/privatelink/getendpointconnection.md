@@ -21,29 +21,29 @@ Use this data source to access the connection status information about an existi
 
 ## Using GetEndpointConnection {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getEndpointConnection<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/privatelink/#GetEndpointConnectionArgs">GetEndpointConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/privatelink/#GetEndpointConnectionResult">GetEndpointConnectionResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_endpoint_connection(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupEndpointConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/privatelink?tab=doc#LookupEndpointConnectionArgs">LookupEndpointConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/privatelink?tab=doc#LookupEndpointConnectionResult">LookupEndpointConnectionResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetEndpointConnection </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Privatelink.GetEndpointConnectionResult.html">GetEndpointConnectionResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.PrivateLink.GetEndpointConnectionArgs.html">GetEndpointConnectionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -51,7 +51,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -60,8 +60,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the private endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -69,14 +69,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Resource Group within which the private endpoint exists.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Resource Group within which the private endpoint exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -85,8 +85,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the private endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -94,14 +94,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Resource Group within which the private endpoint exists.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Resource Group within which the private endpoint exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -110,8 +110,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the private endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -119,14 +119,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Resource Group within which the private endpoint exists.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Resource Group within which the private endpoint exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -135,8 +135,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the private endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -144,11 +144,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Resource Group within which the private endpoint exists.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Resource Group within which the private endpoint exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -164,7 +164,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -173,8 +173,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -182,8 +182,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -191,8 +191,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the private endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -200,7 +200,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getendpointconnectionprivateserviceconnection">List&lt;Get<wbr>Endpoint<wbr>Connection<wbr>Private<wbr>Service<wbr>Connection&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -208,13 +208,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -223,8 +223,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -232,8 +232,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -241,8 +241,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the private endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -250,7 +250,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getendpointconnectionprivateserviceconnection">[]Get<wbr>Endpoint<wbr>Connection<wbr>Private<wbr>Service<wbr>Connection</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -258,13 +258,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -273,8 +273,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -282,8 +282,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -291,8 +291,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the private endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -300,7 +300,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getendpointconnectionprivateserviceconnection">Get<wbr>Endpoint<wbr>Connection<wbr>Private<wbr>Service<wbr>Connection[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -308,13 +308,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -323,8 +323,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -332,8 +332,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -341,8 +341,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the private endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -350,7 +350,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getendpointconnectionprivateserviceconnection">List[Get<wbr>Endpoint<wbr>Connection<wbr>Private<wbr>Service<wbr>Connection]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -358,10 +358,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -374,18 +374,18 @@ The following output properties are available:
 
 
 <h4 id="getendpointconnectionprivateserviceconnection">Get<wbr>Endpoint<wbr>Connection<wbr>Private<wbr>Service<wbr>Connection</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetEndpointConnectionPrivateServiceConnection">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/privatelink?tab=doc#GetEndpointConnectionPrivateServiceConnection">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -394,8 +394,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the private endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -403,8 +403,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was `Rejected`.
-{{% /md %}}</dd>
+    <dd>The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was `Rejected`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -412,13 +412,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are as follows:
+    <dd>Possible values are as follows:
 Value | Meaning
 -- | --
 `Auto-Approved` | The remote resource owner has added you to the `Auto-Approved` RBAC permission list for the remote resource, all private endpoint connection requests will be automatically `Approved`.
 `Deleted state` | The resource owner has `Rejected` the private endpoint connection request and has removed your private endpoint request from the remote resource.
 `request/response message` | If you submitted a manual private endpoint connection request, while in the `Pending` status the `request_response` will display the same text from your `request_message` in the `private_service_connection` block above. If the private endpoint connection request was `Rejected` by the owner of the remote resource, the text for the rejection will be displayed as the `request_response` text, if the private endpoint connection request was `Approved` by the owner of the remote resource, the text for the approval will be displayed as the `request_response` text
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -426,14 +426,14 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the private endpoint request, possible values will be `Pending`, `Approved`, `Rejected`, or `Disconnected`.
-{{% /md %}}</dd>
+    <dd>The current status of the private endpoint request, possible values will be `Pending`, `Approved`, `Rejected`, or `Disconnected`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -442,8 +442,8 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the private endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -451,8 +451,8 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was `Rejected`.
-{{% /md %}}</dd>
+    <dd>The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was `Rejected`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -460,13 +460,13 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are as follows:
+    <dd>Possible values are as follows:
 Value | Meaning
 -- | --
 `Auto-Approved` | The remote resource owner has added you to the `Auto-Approved` RBAC permission list for the remote resource, all private endpoint connection requests will be automatically `Approved`.
 `Deleted state` | The resource owner has `Rejected` the private endpoint connection request and has removed your private endpoint request from the remote resource.
 `request/response message` | If you submitted a manual private endpoint connection request, while in the `Pending` status the `request_response` will display the same text from your `request_message` in the `private_service_connection` block above. If the private endpoint connection request was `Rejected` by the owner of the remote resource, the text for the rejection will be displayed as the `request_response` text, if the private endpoint connection request was `Approved` by the owner of the remote resource, the text for the approval will be displayed as the `request_response` text
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -474,14 +474,14 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the private endpoint request, possible values will be `Pending`, `Approved`, `Rejected`, or `Disconnected`.
-{{% /md %}}</dd>
+    <dd>The current status of the private endpoint request, possible values will be `Pending`, `Approved`, `Rejected`, or `Disconnected`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -490,8 +490,8 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the private endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -499,8 +499,8 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was `Rejected`.
-{{% /md %}}</dd>
+    <dd>The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was `Rejected`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -508,13 +508,13 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are as follows:
+    <dd>Possible values are as follows:
 Value | Meaning
 -- | --
 `Auto-Approved` | The remote resource owner has added you to the `Auto-Approved` RBAC permission list for the remote resource, all private endpoint connection requests will be automatically `Approved`.
 `Deleted state` | The resource owner has `Rejected` the private endpoint connection request and has removed your private endpoint request from the remote resource.
 `request/response message` | If you submitted a manual private endpoint connection request, while in the `Pending` status the `request_response` will display the same text from your `request_message` in the `private_service_connection` block above. If the private endpoint connection request was `Rejected` by the owner of the remote resource, the text for the rejection will be displayed as the `request_response` text, if the private endpoint connection request was `Approved` by the owner of the remote resource, the text for the approval will be displayed as the `request_response` text
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -522,14 +522,14 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the private endpoint request, possible values will be `Pending`, `Approved`, `Rejected`, or `Disconnected`.
-{{% /md %}}</dd>
+    <dd>The current status of the private endpoint request, possible values will be `Pending`, `Approved`, `Rejected`, or `Disconnected`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -538,8 +538,8 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the private endpoint.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the private endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -547,8 +547,8 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was `Rejected`.
-{{% /md %}}</dd>
+    <dd>The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was `Rejected`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -556,13 +556,13 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are as follows:
+    <dd>Possible values are as follows:
 Value | Meaning
 -- | --
 `Auto-Approved` | The remote resource owner has added you to the `Auto-Approved` RBAC permission list for the remote resource, all private endpoint connection requests will be automatically `Approved`.
 `Deleted state` | The resource owner has `Rejected` the private endpoint connection request and has removed your private endpoint request from the remote resource.
 `request/response message` | If you submitted a manual private endpoint connection request, while in the `Pending` status the `request_response` will display the same text from your `request_message` in the `private_service_connection` block above. If the private endpoint connection request was `Rejected` by the owner of the remote resource, the text for the rejection will be displayed as the `request_response` text, if the private endpoint connection request was `Approved` by the owner of the remote resource, the text for the approval will be displayed as the `request_response` text
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -570,11 +570,11 @@ Value | Meaning
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the private endpoint request, possible values will be `Pending`, `Approved`, `Rejected`, or `Disconnected`.
-{{% /md %}}</dd>
+    <dd>The current status of the private endpoint request, possible values will be `Pending`, `Approved`, `Rejected`, or `Disconnected`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

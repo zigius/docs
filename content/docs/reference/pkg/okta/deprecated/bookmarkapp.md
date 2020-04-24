@@ -14,26 +14,26 @@ meta_desc: "Explore the BookmarkApp resource of the deprecated module, including
 
 
 ## Create a BookmarkApp Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#BookmarkApp">BookmarkApp</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#BookmarkAppArgs">BookmarkAppArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">BookmarkApp</span><span class="p">(resource_name, opts=None, </span>auto_submit_toolbar=None<span class="p">, </span>groups=None<span class="p">, </span>hide_ios=None<span class="p">, </span>hide_web=None<span class="p">, </span>label=None<span class="p">, </span>request_integration=None<span class="p">, </span>status=None<span class="p">, </span>url=None<span class="p">, </span>users=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewBookmarkApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#BookmarkAppArgs">BookmarkAppArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#BookmarkApp">BookmarkApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.BookmarkApp.html">BookmarkApp</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.BookmarkAppArgs.html">BookmarkAppArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the BookmarkApp resource of the deprecated module, including
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the BookmarkApp resource of the deprecated module, including
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the BookmarkApp resource of the deprecated module, including
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the BookmarkApp resource of the deprecated module, including
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## BookmarkApp Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,7 +209,7 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -217,8 +217,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,8 +226,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,8 +235,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,8 +244,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,7 +253,7 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,8 +261,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,14 +270,14 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#bookmarkappuser">List&lt;Bookmark<wbr>App<wbr>User<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -286,8 +286,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -295,7 +295,7 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,8 +321,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,7 +339,7 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,8 +347,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,14 +356,14 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#bookmarkappuser">[]Bookmark<wbr>App<wbr>User</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -372,8 +372,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -381,7 +381,7 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,8 +407,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,8 +416,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,7 +425,7 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,8 +433,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,14 +442,14 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#bookmarkappuser">Bookmark<wbr>App<wbr>User[]</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -458,8 +458,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -467,7 +467,7 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,8 +475,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,8 +484,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,8 +493,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,7 +511,7 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,8 +519,8 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,11 +528,11 @@ The BookmarkApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#bookmarkappuser">List[Bookmark<wbr>App<wbr>User]</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -546,7 +546,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -555,7 +555,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -563,8 +563,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -572,14 +572,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -588,7 +588,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -596,8 +596,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -605,14 +605,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -621,7 +621,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -629,8 +629,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -638,14 +638,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -654,7 +654,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -662,8 +662,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -671,11 +671,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -686,25 +686,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing BookmarkApp Resource {#look-up}
 
 Get an existing BookmarkApp resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#BookmarkAppState">BookmarkAppState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#BookmarkApp">BookmarkApp</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>auto_submit_toolbar=None<span class="p">, </span>groups=None<span class="p">, </span>hide_ios=None<span class="p">, </span>hide_web=None<span class="p">, </span>label=None<span class="p">, </span>name=None<span class="p">, </span>request_integration=None<span class="p">, </span>sign_on_mode=None<span class="p">, </span>status=None<span class="p">, </span>url=None<span class="p">, </span>users=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetBookmarkApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#BookmarkAppState">BookmarkAppState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#BookmarkApp">BookmarkApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.BookmarkApp.html">BookmarkApp</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.BookmarkAppState.html">BookmarkAppState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -729,9 +729,9 @@ Get an existing BookmarkApp resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -744,36 +744,9 @@ Get an existing BookmarkApp resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -798,13 +771,40 @@ Get an existing BookmarkApp resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -813,8 +813,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -822,8 +822,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -831,8 +831,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -840,8 +840,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -849,8 +849,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -858,8 +858,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -867,7 +867,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,8 +875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,7 +893,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -901,14 +901,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#bookmarkappuser">List&lt;Bookmark<wbr>App<wbr>User<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -917,8 +917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,8 +953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,8 +962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,7 +971,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,8 +979,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -988,8 +988,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -997,7 +997,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,14 +1005,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#bookmarkappuser">[]Bookmark<wbr>App<wbr>User</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1021,8 +1021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,8 +1039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,7 +1075,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,8 +1083,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1092,8 +1092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1101,7 +1101,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,14 +1109,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#bookmarkappuser">Bookmark<wbr>App<wbr>User[]</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1125,8 +1125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,8 +1134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,8 +1143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,8 +1152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,8 +1161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1170,8 +1170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,7 +1179,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,8 +1187,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1196,8 +1196,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,7 +1205,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,11 +1213,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#bookmarkappuser">List[Bookmark<wbr>App<wbr>User]</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1232,18 +1232,18 @@ The following state arguments are supported:
 
 
 <h4 id="bookmarkappuser">Bookmark<wbr>App<wbr>User</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/input/#BookmarkAppUser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/output/#BookmarkAppUser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#BookmarkAppUserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#BookmarkAppUserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1252,7 +1252,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,7 +1260,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1268,7 +1268,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,13 +1276,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1291,7 +1291,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,7 +1299,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,7 +1307,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,13 +1315,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1330,7 +1330,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1338,7 +1338,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,7 +1346,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,13 +1354,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1369,7 +1369,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,7 +1377,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,7 +1385,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,10 +1393,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

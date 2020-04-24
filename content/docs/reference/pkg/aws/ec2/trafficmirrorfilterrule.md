@@ -62,26 +62,26 @@ const rulein = new aws.ec2.TrafficMirrorFilterRule("rulein", {
 
 
 ## Create a TrafficMirrorFilterRule Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#TrafficMirrorFilterRule">TrafficMirrorFilterRule</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#TrafficMirrorFilterRuleArgs">TrafficMirrorFilterRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">TrafficMirrorFilterRule</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>destination_cidr_block=None<span class="p">, </span>destination_port_range=None<span class="p">, </span>protocol=None<span class="p">, </span>rule_action=None<span class="p">, </span>rule_number=None<span class="p">, </span>source_cidr_block=None<span class="p">, </span>source_port_range=None<span class="p">, </span>traffic_direction=None<span class="p">, </span>traffic_mirror_filter_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewTrafficMirrorFilterRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#TrafficMirrorFilterRuleArgs">TrafficMirrorFilterRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#TrafficMirrorFilterRule">TrafficMirrorFilterRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.TrafficMirrorFilterRule.html">TrafficMirrorFilterRule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.TrafficMirrorFilterRuleArgs.html">TrafficMirrorFilterRuleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -118,9 +118,9 @@ const rulein = new aws.ec2.TrafficMirrorFilterRule("rulein", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -138,9 +138,9 @@ const rulein = new aws.ec2.TrafficMirrorFilterRule("rulein", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -187,9 +187,9 @@ const rulein = new aws.ec2.TrafficMirrorFilterRule("rulein", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -226,7 +226,7 @@ const rulein = new aws.ec2.TrafficMirrorFilterRule("rulein", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## TrafficMirrorFilterRule Resource Properties {#properties}
 
@@ -239,7 +239,7 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -248,8 +248,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The destination CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -257,8 +257,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
-{{% /md %}}</dd>
+    <dd>The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -266,8 +266,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
-{{% /md %}}</dd>
+    <dd>The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -275,8 +275,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The source CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The source CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -284,8 +284,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of traffic to be captured. Valid values are `ingress` and `egress`
-{{% /md %}}</dd>
+    <dd>The direction of traffic to be captured. Valid values are `ingress` and `egress`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -293,8 +293,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the traffic mirror filter to which this rule should be added
-{{% /md %}}</dd>
+    <dd>ID of the traffic mirror filter to which this rule should be added
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,8 +302,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the traffic mirror filter rule.
-{{% /md %}}</dd>
+    <dd>A description of the traffic mirror filter rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,8 +311,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterruledestinationportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Destination<wbr>Port<wbr>Range<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,8 +320,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
-{{% /md %}}</dd>
+    <dd>The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,14 +329,14 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterrulesourceportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Source<wbr>Port<wbr>Range<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -345,8 +345,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The destination CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -354,8 +354,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
-{{% /md %}}</dd>
+    <dd>The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -363,8 +363,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
-{{% /md %}}</dd>
+    <dd>The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -372,8 +372,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The source CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -381,8 +381,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of traffic to be captured. Valid values are `ingress` and `egress`
-{{% /md %}}</dd>
+    <dd>The direction of traffic to be captured. Valid values are `ingress` and `egress`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -390,8 +390,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the traffic mirror filter to which this rule should be added
-{{% /md %}}</dd>
+    <dd>ID of the traffic mirror filter to which this rule should be added
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the traffic mirror filter rule.
-{{% /md %}}</dd>
+    <dd>A description of the traffic mirror filter rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterruledestinationportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Destination<wbr>Port<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
-{{% /md %}}</dd>
+    <dd>The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,14 +426,14 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterrulesourceportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Source<wbr>Port<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -442,8 +442,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The destination CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -451,8 +451,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
-{{% /md %}}</dd>
+    <dd>The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -460,8 +460,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
-{{% /md %}}</dd>
+    <dd>The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -469,8 +469,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The source CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -478,8 +478,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of traffic to be captured. Valid values are `ingress` and `egress`
-{{% /md %}}</dd>
+    <dd>The direction of traffic to be captured. Valid values are `ingress` and `egress`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -487,8 +487,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the traffic mirror filter to which this rule should be added
-{{% /md %}}</dd>
+    <dd>ID of the traffic mirror filter to which this rule should be added
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,8 +496,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the traffic mirror filter rule.
-{{% /md %}}</dd>
+    <dd>A description of the traffic mirror filter rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterruledestinationportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Destination<wbr>Port<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
-{{% /md %}}</dd>
+    <dd>The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,14 +523,14 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterrulesourceportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Source<wbr>Port<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -539,8 +539,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The destination CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -548,8 +548,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
-{{% /md %}}</dd>
+    <dd>The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -557,8 +557,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
-{{% /md %}}</dd>
+    <dd>The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -566,8 +566,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The source CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The source CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -575,8 +575,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The direction of traffic to be captured. Valid values are `ingress` and `egress`
-{{% /md %}}</dd>
+    <dd>The direction of traffic to be captured. Valid values are `ingress` and `egress`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -584,8 +584,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the traffic mirror filter to which this rule should be added
-{{% /md %}}</dd>
+    <dd>ID of the traffic mirror filter to which this rule should be added
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,8 +593,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description of the traffic mirror filter rule.
-{{% /md %}}</dd>
+    <dd>A description of the traffic mirror filter rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,8 +602,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterruledestinationportrange">Dict[Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Destination<wbr>Port<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,8 +611,8 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
-{{% /md %}}</dd>
+    <dd>The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -620,11 +620,11 @@ The TrafficMirrorFilterRule resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterrulesourceportrange">Dict[Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Source<wbr>Port<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -638,7 +638,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -647,13 +647,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -662,13 +662,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -677,13 +677,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -692,10 +692,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -706,25 +706,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing TrafficMirrorFilterRule Resource {#look-up}
 
 Get an existing TrafficMirrorFilterRule resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#TrafficMirrorFilterRuleState">TrafficMirrorFilterRuleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#TrafficMirrorFilterRule">TrafficMirrorFilterRule</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>description=None<span class="p">, </span>destination_cidr_block=None<span class="p">, </span>destination_port_range=None<span class="p">, </span>protocol=None<span class="p">, </span>rule_action=None<span class="p">, </span>rule_number=None<span class="p">, </span>source_cidr_block=None<span class="p">, </span>source_port_range=None<span class="p">, </span>traffic_direction=None<span class="p">, </span>traffic_mirror_filter_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTrafficMirrorFilterRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#TrafficMirrorFilterRuleState">TrafficMirrorFilterRuleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#TrafficMirrorFilterRule">TrafficMirrorFilterRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.TrafficMirrorFilterRule.html">TrafficMirrorFilterRule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.TrafficMirrorFilterRuleState.html">TrafficMirrorFilterRuleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -749,9 +749,9 @@ Get an existing TrafficMirrorFilterRule resource's state with the given name, ID
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -764,36 +764,9 @@ Get an existing TrafficMirrorFilterRule resource's state with the given name, ID
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -818,13 +791,40 @@ Get an existing TrafficMirrorFilterRule resource's state with the given name, ID
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -833,8 +833,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the traffic mirror filter rule.
-{{% /md %}}</dd>
+    <dd>A description of the traffic mirror filter rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -842,8 +842,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The destination CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,8 +851,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterruledestinationportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Destination<wbr>Port<wbr>Range<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -860,8 +860,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
-{{% /md %}}</dd>
+    <dd>The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -869,8 +869,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
-{{% /md %}}</dd>
+    <dd>The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -878,8 +878,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
-{{% /md %}}</dd>
+    <dd>The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -887,8 +887,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The source CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The source CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -896,8 +896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterrulesourceportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Source<wbr>Port<wbr>Range<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,8 +905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of traffic to be captured. Valid values are `ingress` and `egress`
-{{% /md %}}</dd>
+    <dd>The direction of traffic to be captured. Valid values are `ingress` and `egress`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,14 +914,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the traffic mirror filter to which this rule should be added
-{{% /md %}}</dd>
+    <dd>ID of the traffic mirror filter to which this rule should be added
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -930,8 +930,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the traffic mirror filter rule.
-{{% /md %}}</dd>
+    <dd>A description of the traffic mirror filter rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,8 +939,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The destination CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -948,8 +948,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterruledestinationportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Destination<wbr>Port<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -957,8 +957,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
-{{% /md %}}</dd>
+    <dd>The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -966,8 +966,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
-{{% /md %}}</dd>
+    <dd>The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -975,8 +975,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
-{{% /md %}}</dd>
+    <dd>The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -984,8 +984,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The source CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -993,8 +993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterrulesourceportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Source<wbr>Port<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,8 +1002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of traffic to be captured. Valid values are `ingress` and `egress`
-{{% /md %}}</dd>
+    <dd>The direction of traffic to be captured. Valid values are `ingress` and `egress`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,14 +1011,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the traffic mirror filter to which this rule should be added
-{{% /md %}}</dd>
+    <dd>ID of the traffic mirror filter to which this rule should be added
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1027,8 +1027,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the traffic mirror filter rule.
-{{% /md %}}</dd>
+    <dd>A description of the traffic mirror filter rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,8 +1036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The destination CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterruledestinationportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Destination<wbr>Port<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,8 +1054,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
-{{% /md %}}</dd>
+    <dd>The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1063,8 +1063,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
-{{% /md %}}</dd>
+    <dd>The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,8 +1072,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
-{{% /md %}}</dd>
+    <dd>The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The source CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,8 +1090,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterrulesourceportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Source<wbr>Port<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,8 +1099,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of traffic to be captured. Valid values are `ingress` and `egress`
-{{% /md %}}</dd>
+    <dd>The direction of traffic to be captured. Valid values are `ingress` and `egress`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1108,14 +1108,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the traffic mirror filter to which this rule should be added
-{{% /md %}}</dd>
+    <dd>ID of the traffic mirror filter to which this rule should be added
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1124,8 +1124,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description of the traffic mirror filter rule.
-{{% /md %}}</dd>
+    <dd>A description of the traffic mirror filter rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,8 +1133,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The destination CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,8 +1142,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterruledestinationportrange">Dict[Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Destination<wbr>Port<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,8 +1151,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
-{{% /md %}}</dd>
+    <dd>The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,8 +1160,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
-{{% /md %}}</dd>
+    <dd>The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,8 +1169,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
-{{% /md %}}</dd>
+    <dd>The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,8 +1178,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The source CIDR block to assign to the Traffic Mirror rule.
-{{% /md %}}</dd>
+    <dd>The source CIDR block to assign to the Traffic Mirror rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,8 +1187,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#trafficmirrorfilterrulesourceportrange">Dict[Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Source<wbr>Port<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
-{{% /md %}}</dd>
+    <dd>The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1196,8 +1196,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The direction of traffic to be captured. Valid values are `ingress` and `egress`
-{{% /md %}}</dd>
+    <dd>The direction of traffic to be captured. Valid values are `ingress` and `egress`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,11 +1205,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the traffic mirror filter to which this rule should be added
-{{% /md %}}</dd>
+    <dd>ID of the traffic mirror filter to which this rule should be added
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1224,18 +1224,18 @@ The following state arguments are supported:
 
 
 <h4 id="trafficmirrorfilterruledestinationportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Destination<wbr>Port<wbr>Range</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TrafficMirrorFilterRuleDestinationPortRange">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TrafficMirrorFilterRuleDestinationPortRange">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#TrafficMirrorFilterRuleDestinationPortRangeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#TrafficMirrorFilterRuleDestinationPortRangeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1244,8 +1244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Starting port of the range
-{{% /md %}}</dd>
+    <dd>Starting port of the range
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,14 +1253,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Ending port of the range
-{{% /md %}}</dd>
+    <dd>Ending port of the range
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Starting port of the range
-{{% /md %}}</dd>
+    <dd>Starting port of the range
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,14 +1278,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Ending port of the range
-{{% /md %}}</dd>
+    <dd>Ending port of the range
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1294,8 +1294,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Starting port of the range
-{{% /md %}}</dd>
+    <dd>Starting port of the range
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,14 +1303,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Ending port of the range
-{{% /md %}}</dd>
+    <dd>Ending port of the range
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1319,8 +1319,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Starting port of the range
-{{% /md %}}</dd>
+    <dd>Starting port of the range
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,29 +1328,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Ending port of the range
-{{% /md %}}</dd>
+    <dd>Ending port of the range
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="trafficmirrorfilterrulesourceportrange">Traffic<wbr>Mirror<wbr>Filter<wbr>Rule<wbr>Source<wbr>Port<wbr>Range</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TrafficMirrorFilterRuleSourcePortRange">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TrafficMirrorFilterRuleSourcePortRange">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#TrafficMirrorFilterRuleSourcePortRangeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#TrafficMirrorFilterRuleSourcePortRangeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1359,8 +1359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Starting port of the range
-{{% /md %}}</dd>
+    <dd>Starting port of the range
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1368,14 +1368,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Ending port of the range
-{{% /md %}}</dd>
+    <dd>Ending port of the range
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1384,8 +1384,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Starting port of the range
-{{% /md %}}</dd>
+    <dd>Starting port of the range
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,14 +1393,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Ending port of the range
-{{% /md %}}</dd>
+    <dd>Ending port of the range
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1409,8 +1409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Starting port of the range
-{{% /md %}}</dd>
+    <dd>Starting port of the range
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1418,14 +1418,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Ending port of the range
-{{% /md %}}</dd>
+    <dd>Ending port of the range
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1434,8 +1434,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Starting port of the range
-{{% /md %}}</dd>
+    <dd>Starting port of the range
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,11 +1443,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Ending port of the range
-{{% /md %}}</dd>
+    <dd>Ending port of the range
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

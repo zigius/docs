@@ -14,26 +14,26 @@ meta_desc: "Explore the RoleTempalte resource of the Rancher 2 package, includin
 
 
 ## Create a RoleTempalte Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#RoleTempalte">RoleTempalte</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#RoleTempalteArgs">RoleTempalteArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">RoleTempalte</span><span class="p">(resource_name, opts=None, </span>administrative=None<span class="p">, </span>annotations=None<span class="p">, </span>context=None<span class="p">, </span>default_role=None<span class="p">, </span>description=None<span class="p">, </span>external=None<span class="p">, </span>hidden=None<span class="p">, </span>labels=None<span class="p">, </span>locked=None<span class="p">, </span>name=None<span class="p">, </span>role_template_ids=None<span class="p">, </span>rules=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRoleTempalte<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RoleTempalteArgs">RoleTempalteArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RoleTempalte">RoleTempalte</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.RoleTempalte.html">RoleTempalte</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.RoleTempalteArgs.html">RoleTempalteArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the RoleTempalte resource of the Rancher 2 package, includin
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the RoleTempalte resource of the Rancher 2 package, includin
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the RoleTempalte resource of the Rancher 2 package, includin
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the RoleTempalte resource of the Rancher 2 package, includin
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## RoleTempalte Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -200,8 +200,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Administrative role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,8 +209,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for role template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,8 +218,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
-{{% /md %}}</dd>
+    <dd>Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Default role template for new created cluster or project. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Default role template for new created cluster or project. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template description (string)
-{{% /md %}}</dd>
+    <dd>Role template description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}External role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>External role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hidden role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Hidden role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for role template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Locked role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Locked role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template name (string)
-{{% /md %}}</dd>
+    <dd>Role template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Inherit role template IDs (list)
-{{% /md %}}</dd>
+    <dd>Inherit role template IDs (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,14 +299,14 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#roletempalterule">List&lt;Role<wbr>Tempalte<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Role template policy rules (list)
-{{% /md %}}</dd>
+    <dd>Role template policy rules (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -315,8 +315,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Administrative role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,8 +324,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for role template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -333,8 +333,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
-{{% /md %}}</dd>
+    <dd>Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,8 +342,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Default role template for new created cluster or project. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Default role template for new created cluster or project. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,8 +351,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template description (string)
-{{% /md %}}</dd>
+    <dd>Role template description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,8 +360,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}External role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>External role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -369,8 +369,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hidden role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Hidden role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,8 +378,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for role template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Locked role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Locked role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template name (string)
-{{% /md %}}</dd>
+    <dd>Role template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Inherit role template IDs (list)
-{{% /md %}}</dd>
+    <dd>Inherit role template IDs (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,14 +414,14 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#roletempalterule">[]Role<wbr>Tempalte<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Role template policy rules (list)
-{{% /md %}}</dd>
+    <dd>Role template policy rules (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -430,8 +430,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Administrative role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Administrative role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,8 +439,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for role template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,8 +448,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
-{{% /md %}}</dd>
+    <dd>Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,8 +457,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Default role template for new created cluster or project. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Default role template for new created cluster or project. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,8 +466,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template description (string)
-{{% /md %}}</dd>
+    <dd>Role template description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,8 +475,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}External role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>External role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,8 +484,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Hidden role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Hidden role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,8 +493,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for role template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Locked role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Locked role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template name (string)
-{{% /md %}}</dd>
+    <dd>Role template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,8 +520,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Inherit role template IDs (list)
-{{% /md %}}</dd>
+    <dd>Inherit role template IDs (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,14 +529,14 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#roletempalterule">Role<wbr>Tempalte<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}Role template policy rules (list)
-{{% /md %}}</dd>
+    <dd>Role template policy rules (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -545,8 +545,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Administrative role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,8 +554,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for role template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,8 +563,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
-{{% /md %}}</dd>
+    <dd>Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -572,8 +572,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Default role template for new created cluster or project. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Default role template for new created cluster or project. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,8 +581,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Role template description (string)
-{{% /md %}}</dd>
+    <dd>Role template description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,8 +590,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}External role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>External role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,8 +599,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hidden role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Hidden role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,8 +608,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for role template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -617,8 +617,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Locked role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Locked role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,8 +626,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Role template name (string)
-{{% /md %}}</dd>
+    <dd>Role template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,8 +635,8 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Inherit role template IDs (list)
-{{% /md %}}</dd>
+    <dd>Inherit role template IDs (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,11 +644,11 @@ The RoleTempalte resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#roletempalterule">List[Role<wbr>Tempalte<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Role template policy rules (list)
-{{% /md %}}</dd>
+    <dd>Role template policy rules (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -662,7 +662,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -671,8 +671,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Builtin role template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Builtin role template (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -680,13 +680,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -695,8 +695,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Builtin role template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Builtin role template (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -704,13 +704,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -719,8 +719,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Builtin role template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Builtin role template (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -728,13 +728,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -743,8 +743,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Builtin role template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Builtin role template (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -752,10 +752,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -766,25 +766,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing RoleTempalte Resource {#look-up}
 
 Get an existing RoleTempalte resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#RoleTempalteState">RoleTempalteState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#RoleTempalte">RoleTempalte</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>administrative=None<span class="p">, </span>annotations=None<span class="p">, </span>builtin=None<span class="p">, </span>context=None<span class="p">, </span>default_role=None<span class="p">, </span>description=None<span class="p">, </span>external=None<span class="p">, </span>hidden=None<span class="p">, </span>labels=None<span class="p">, </span>locked=None<span class="p">, </span>name=None<span class="p">, </span>role_template_ids=None<span class="p">, </span>rules=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRoleTempalte<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RoleTempalteState">RoleTempalteState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RoleTempalte">RoleTempalte</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.RoleTempalte.html">RoleTempalte</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2..RoleTempalteState.html">RoleTempalteState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -809,9 +809,9 @@ Get an existing RoleTempalte resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -824,36 +824,9 @@ Get an existing RoleTempalte resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -878,13 +851,40 @@ Get an existing RoleTempalte resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -893,8 +893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Administrative role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for role template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,8 +911,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Builtin role template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Builtin role template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,8 +920,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
-{{% /md %}}</dd>
+    <dd>Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,8 +929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Default role template for new created cluster or project. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Default role template for new created cluster or project. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -938,8 +938,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template description (string)
-{{% /md %}}</dd>
+    <dd>Role template description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,8 +947,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}External role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>External role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,8 +956,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hidden role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Hidden role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,8 +965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for role template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Locked role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Locked role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template name (string)
-{{% /md %}}</dd>
+    <dd>Role template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Inherit role template IDs (list)
-{{% /md %}}</dd>
+    <dd>Inherit role template IDs (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,14 +1001,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#roletempalterule">List&lt;Role<wbr>Tempalte<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Role template policy rules (list)
-{{% /md %}}</dd>
+    <dd>Role template policy rules (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1017,8 +1017,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Administrative role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,8 +1026,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for role template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Builtin role template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Builtin role template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
-{{% /md %}}</dd>
+    <dd>Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Default role template for new created cluster or project. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Default role template for new created cluster or project. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template description (string)
-{{% /md %}}</dd>
+    <dd>Role template description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,8 +1071,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}External role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>External role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,8 +1080,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hidden role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Hidden role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,8 +1089,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for role template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,8 +1098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Locked role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Locked role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,8 +1107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template name (string)
-{{% /md %}}</dd>
+    <dd>Role template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,8 +1116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Inherit role template IDs (list)
-{{% /md %}}</dd>
+    <dd>Inherit role template IDs (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,14 +1125,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#roletempalterule">[]Role<wbr>Tempalte<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Role template policy rules (list)
-{{% /md %}}</dd>
+    <dd>Role template policy rules (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1141,8 +1141,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Administrative role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Administrative role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,8 +1150,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for role template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,8 +1159,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Builtin role template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Builtin role template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,8 +1168,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
-{{% /md %}}</dd>
+    <dd>Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,8 +1177,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Default role template for new created cluster or project. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Default role template for new created cluster or project. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,8 +1186,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template description (string)
-{{% /md %}}</dd>
+    <dd>Role template description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,8 +1195,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}External role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>External role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1204,8 +1204,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Hidden role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Hidden role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,8 +1213,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for role template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,8 +1222,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Locked role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Locked role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,8 +1231,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role template name (string)
-{{% /md %}}</dd>
+    <dd>Role template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,8 +1240,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Inherit role template IDs (list)
-{{% /md %}}</dd>
+    <dd>Inherit role template IDs (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,14 +1249,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#roletempalterule">Role<wbr>Tempalte<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}Role template policy rules (list)
-{{% /md %}}</dd>
+    <dd>Role template policy rules (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1265,8 +1265,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Administrative role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,8 +1274,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for role template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1283,8 +1283,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Builtin role template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Builtin role template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,8 +1292,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
-{{% /md %}}</dd>
+    <dd>Role template context. `cluster` and `project` values are supported. Default: `cluster` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,8 +1301,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Default role template for new created cluster or project. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Default role template for new created cluster or project. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1310,8 +1310,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Role template description (string)
-{{% /md %}}</dd>
+    <dd>Role template description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1319,8 +1319,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}External role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>External role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,8 +1328,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hidden role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Hidden role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,8 +1337,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for role template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for role template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,8 +1346,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Locked role template. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Locked role template. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,8 +1355,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Role template name (string)
-{{% /md %}}</dd>
+    <dd>Role template name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1364,8 +1364,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Inherit role template IDs (list)
-{{% /md %}}</dd>
+    <dd>Inherit role template IDs (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,11 +1373,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#roletempalterule">List[Role<wbr>Tempalte<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Role template policy rules (list)
-{{% /md %}}</dd>
+    <dd>Role template policy rules (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1392,18 +1392,18 @@ The following state arguments are supported:
 
 
 <h4 id="roletempalterule">Role<wbr>Tempalte<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#RoleTempalteRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#RoleTempalteRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RoleTempalteRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RoleTempalteRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1412,8 +1412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule api groups (list)
-{{% /md %}}</dd>
+    <dd>Policy rule api groups (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,8 +1421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule non resource urls (list)
-{{% /md %}}</dd>
+    <dd>Policy rule non resource urls (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,8 +1430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule resource names (list)
-{{% /md %}}</dd>
+    <dd>Policy rule resource names (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1439,8 +1439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule resources (list)
-{{% /md %}}</dd>
+    <dd>Policy rule resources (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,14 +1448,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule verbs. `create`, `delete`, `get`, `list`, `patch`, `update`, `watch` and `*` values are supported (list)
-{{% /md %}}</dd>
+    <dd>Policy rule verbs. `create`, `delete`, `get`, `list`, `patch`, `update`, `watch` and `*` values are supported (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule api groups (list)
-{{% /md %}}</dd>
+    <dd>Policy rule api groups (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule non resource urls (list)
-{{% /md %}}</dd>
+    <dd>Policy rule non resource urls (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule resource names (list)
-{{% /md %}}</dd>
+    <dd>Policy rule resource names (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,8 +1491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule resources (list)
-{{% /md %}}</dd>
+    <dd>Policy rule resources (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1500,14 +1500,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule verbs. `create`, `delete`, `get`, `list`, `patch`, `update`, `watch` and `*` values are supported (list)
-{{% /md %}}</dd>
+    <dd>Policy rule verbs. `create`, `delete`, `get`, `list`, `patch`, `update`, `watch` and `*` values are supported (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1516,8 +1516,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule api groups (list)
-{{% /md %}}</dd>
+    <dd>Policy rule api groups (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1525,8 +1525,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule non resource urls (list)
-{{% /md %}}</dd>
+    <dd>Policy rule non resource urls (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1534,8 +1534,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule resource names (list)
-{{% /md %}}</dd>
+    <dd>Policy rule resource names (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1543,8 +1543,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule resources (list)
-{{% /md %}}</dd>
+    <dd>Policy rule resources (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1552,14 +1552,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule verbs. `create`, `delete`, `get`, `list`, `patch`, `update`, `watch` and `*` values are supported (list)
-{{% /md %}}</dd>
+    <dd>Policy rule verbs. `create`, `delete`, `get`, `list`, `patch`, `update`, `watch` and `*` values are supported (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1568,8 +1568,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule api groups (list)
-{{% /md %}}</dd>
+    <dd>Policy rule api groups (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,8 +1577,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule non resource urls (list)
-{{% /md %}}</dd>
+    <dd>Policy rule non resource urls (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule resource names (list)
-{{% /md %}}</dd>
+    <dd>Policy rule resource names (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,8 +1595,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule resources (list)
-{{% /md %}}</dd>
+    <dd>Policy rule resources (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,11 +1604,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Policy rule verbs. `create`, `delete`, `get`, `list`, `patch`, `update`, `watch` and `*` values are supported (list)
-{{% /md %}}</dd>
+    <dd>Policy rule verbs. `create`, `delete`, `get`, `list`, `patch`, `update`, `watch` and `*` values are supported (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

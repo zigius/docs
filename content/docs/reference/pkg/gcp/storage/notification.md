@@ -30,26 +30,26 @@ making this resource dependent on those IAM resources via `depends_on`. This wil
 
 
 ## Create a Notification Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/storage/#Notification">Notification</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/storage/#NotificationArgs">NotificationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Notification</span><span class="p">(resource_name, opts=None, </span>bucket=None<span class="p">, </span>custom_attributes=None<span class="p">, </span>event_types=None<span class="p">, </span>object_name_prefix=None<span class="p">, </span>payload_format=None<span class="p">, </span>topic=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewNotification<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/storage?tab=doc#NotificationArgs">NotificationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/storage?tab=doc#Notification">Notification</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Storage.Notification.html">Notification</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Storage.NotificationArgs.html">NotificationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -86,9 +86,9 @@ making this resource dependent on those IAM resources via `depends_on`. This wil
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -106,9 +106,9 @@ making this resource dependent on those IAM resources via `depends_on`. This wil
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -155,9 +155,9 @@ making this resource dependent on those IAM resources via `depends_on`. This wil
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -194,7 +194,7 @@ making this resource dependent on those IAM resources via `depends_on`. This wil
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Notification Resource Properties {#properties}
 
@@ -207,7 +207,7 @@ The Notification resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -216,8 +216,8 @@ The Notification resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket.
-{{% /md %}}</dd>
+    <dd>The name of the bucket.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -225,8 +225,8 @@ The Notification resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
-{{% /md %}}</dd>
+    <dd>The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -234,11 +234,11 @@ The Notification resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud PubSub topic to which this subscription publishes. Expects either the 
+    <dd>The Cloud PubSub topic to which this subscription publishes. Expects either the 
 topic name, assumed to belong to the default GCP provider project, or the project-level name,
 i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`. If the project is not set in the provider,
 you will need to use the project-level name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
-{{% /md %}}</dd>
+    <dd>A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,8 +255,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
-{{% /md %}}</dd>
+    <dd>List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,14 +264,14 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
-{{% /md %}}</dd>
+    <dd>Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -280,8 +280,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket.
-{{% /md %}}</dd>
+    <dd>The name of the bucket.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -289,8 +289,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
-{{% /md %}}</dd>
+    <dd>The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -298,11 +298,11 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud PubSub topic to which this subscription publishes. Expects either the 
+    <dd>The Cloud PubSub topic to which this subscription publishes. Expects either the 
 topic name, assumed to belong to the default GCP provider project, or the project-level name,
 i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`. If the project is not set in the provider,
 you will need to use the project-level name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
-{{% /md %}}</dd>
+    <dd>A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
-{{% /md %}}</dd>
+    <dd>List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,14 +328,14 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
-{{% /md %}}</dd>
+    <dd>Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -344,8 +344,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket.
-{{% /md %}}</dd>
+    <dd>The name of the bucket.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -353,8 +353,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
-{{% /md %}}</dd>
+    <dd>The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -362,11 +362,11 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud PubSub topic to which this subscription publishes. Expects either the 
+    <dd>The Cloud PubSub topic to which this subscription publishes. Expects either the 
 topic name, assumed to belong to the default GCP provider project, or the project-level name,
 i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`. If the project is not set in the provider,
 you will need to use the project-level name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
-{{% /md %}}</dd>
+    <dd>A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
-{{% /md %}}</dd>
+    <dd>List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,14 +392,14 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
-{{% /md %}}</dd>
+    <dd>Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -408,8 +408,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket.
-{{% /md %}}</dd>
+    <dd>The name of the bucket.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -417,8 +417,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
-{{% /md %}}</dd>
+    <dd>The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -426,11 +426,11 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud PubSub topic to which this subscription publishes. Expects either the 
+    <dd>The Cloud PubSub topic to which this subscription publishes. Expects either the 
 topic name, assumed to belong to the default GCP provider project, or the project-level name,
 i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`. If the project is not set in the provider,
 you will need to use the project-level name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
-{{% /md %}}</dd>
+    <dd>A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
-{{% /md %}}</dd>
+    <dd>List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,11 +456,11 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
-{{% /md %}}</dd>
+    <dd>Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -474,7 +474,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -483,7 +483,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -491,8 +491,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the created notification.
-{{% /md %}}</dd>
+    <dd>The ID of the created notification.
+</dd>
 
     <dt class="property-"
             title="">
@@ -500,14 +500,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -516,7 +516,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -524,8 +524,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the created notification.
-{{% /md %}}</dd>
+    <dd>The ID of the created notification.
+</dd>
 
     <dt class="property-"
             title="">
@@ -533,14 +533,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -549,7 +549,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -557,8 +557,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the created notification.
-{{% /md %}}</dd>
+    <dd>The ID of the created notification.
+</dd>
 
     <dt class="property-"
             title="">
@@ -566,14 +566,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -582,7 +582,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -590,8 +590,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the created notification.
-{{% /md %}}</dd>
+    <dd>The ID of the created notification.
+</dd>
 
     <dt class="property-"
             title="">
@@ -599,11 +599,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -614,25 +614,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Notification Resource {#look-up}
 
 Get an existing Notification resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/storage/#NotificationState">NotificationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/storage/#Notification">Notification</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>bucket=None<span class="p">, </span>custom_attributes=None<span class="p">, </span>event_types=None<span class="p">, </span>notification_id=None<span class="p">, </span>object_name_prefix=None<span class="p">, </span>payload_format=None<span class="p">, </span>self_link=None<span class="p">, </span>topic=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetNotification<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/storage?tab=doc#NotificationState">NotificationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/storage?tab=doc#Notification">Notification</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Storage.Notification.html">Notification</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Storage.NotificationState.html">NotificationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -657,9 +657,9 @@ Get an existing Notification resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -672,36 +672,9 @@ Get an existing Notification resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -726,13 +699,40 @@ Get an existing Notification resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -741,8 +741,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket.
-{{% /md %}}</dd>
+    <dd>The name of the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -750,8 +750,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
-{{% /md %}}</dd>
+    <dd>A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -759,8 +759,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
-{{% /md %}}</dd>
+    <dd>List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,8 +768,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the created notification.
-{{% /md %}}</dd>
+    <dd>The ID of the created notification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -777,8 +777,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
-{{% /md %}}</dd>
+    <dd>Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,8 +786,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
-{{% /md %}}</dd>
+    <dd>The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,8 +795,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -804,17 +804,17 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud PubSub topic to which this subscription publishes. Expects either the 
+    <dd>The Cloud PubSub topic to which this subscription publishes. Expects either the 
 topic name, assumed to belong to the default GCP provider project, or the project-level name,
 i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`. If the project is not set in the provider,
 you will need to use the project-level name.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -823,8 +823,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket.
-{{% /md %}}</dd>
+    <dd>The name of the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,8 +832,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
-{{% /md %}}</dd>
+    <dd>A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,8 +841,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
-{{% /md %}}</dd>
+    <dd>List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the created notification.
-{{% /md %}}</dd>
+    <dd>The ID of the created notification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
-{{% /md %}}</dd>
+    <dd>Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
-{{% /md %}}</dd>
+    <dd>The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,17 +886,17 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud PubSub topic to which this subscription publishes. Expects either the 
+    <dd>The Cloud PubSub topic to which this subscription publishes. Expects either the 
 topic name, assumed to belong to the default GCP provider project, or the project-level name,
 i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`. If the project is not set in the provider,
 you will need to use the project-level name.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -905,8 +905,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket.
-{{% /md %}}</dd>
+    <dd>The name of the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,8 +914,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
-{{% /md %}}</dd>
+    <dd>A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,8 +923,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
-{{% /md %}}</dd>
+    <dd>List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,8 +932,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the created notification.
-{{% /md %}}</dd>
+    <dd>The ID of the created notification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,8 +941,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
-{{% /md %}}</dd>
+    <dd>Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,8 +950,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
-{{% /md %}}</dd>
+    <dd>The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,8 +959,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -968,17 +968,17 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud PubSub topic to which this subscription publishes. Expects either the 
+    <dd>The Cloud PubSub topic to which this subscription publishes. Expects either the 
 topic name, assumed to belong to the default GCP provider project, or the project-level name,
 i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`. If the project is not set in the provider,
 you will need to use the project-level name.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -987,8 +987,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket.
-{{% /md %}}</dd>
+    <dd>The name of the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,8 +996,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
-{{% /md %}}</dd>
+    <dd>A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,8 +1005,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
-{{% /md %}}</dd>
+    <dd>List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `"OBJECT_FINALIZE"`, `"OBJECT_METADATA_UPDATE"`, `"OBJECT_DELETE"`, `"OBJECT_ARCHIVE"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1014,8 +1014,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the created notification.
-{{% /md %}}</dd>
+    <dd>The ID of the created notification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
-{{% /md %}}</dd>
+    <dd>Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
-{{% /md %}}</dd>
+    <dd>The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,8 +1041,8 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,14 +1050,14 @@ you will need to use the project-level name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud PubSub topic to which this subscription publishes. Expects either the 
+    <dd>The Cloud PubSub topic to which this subscription publishes. Expects either the 
 topic name, assumed to belong to the default GCP provider project, or the project-level name,
 i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`. If the project is not set in the provider,
 you will need to use the project-level name.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

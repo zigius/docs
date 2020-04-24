@@ -29,22 +29,22 @@ Use the navigation below to see detailed documentation, including sample code, f
 > please consult the source [`terraform-providers/terraform-provider-google` repo](https://github.com/terraform-providers/terraform-provider-google/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var gcp = require("@pulumi/gcp");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as gcp from "@pulumi/gcp";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

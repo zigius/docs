@@ -19,29 +19,29 @@ Use this data source to access information about an existing Key Vault.
 
 ## Using GetKeyVault {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getKeyVault<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/keyvault/#GetKeyVaultArgs">GetKeyVaultArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/keyvault/#GetKeyVaultResult">GetKeyVaultResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_key_vault(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupKeyVault<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/keyvault?tab=doc#LookupKeyVaultArgs">LookupKeyVaultArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/keyvault?tab=doc#LookupKeyVaultResult">LookupKeyVaultResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetKeyVault </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Keyvault.GetKeyVaultResult.html">GetKeyVaultResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.KeyVault.GetKeyVaultArgs.html">GetKeyVaultArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Key Vault.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Key Vault.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -67,14 +67,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Key Vault exists.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Key Vault exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Key Vault.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Key Vault.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -92,14 +92,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Key Vault exists.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Key Vault exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -108,8 +108,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Key Vault.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Key Vault.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -117,14 +117,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Key Vault exists.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Key Vault exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Key Vault.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Key Vault.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -142,11 +142,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Key Vault exists.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Key Vault exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -162,7 +162,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -171,8 +171,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyvaultaccesspolicy">List&lt;Get<wbr>Key<wbr>Vault<wbr>Access<wbr>Policy&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -180,8 +180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Virtual Machines retrieve certificates stored as secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Virtual Machines retrieve certificates stored as secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -189,8 +189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Disk Encryption retrieve secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Disk Encryption retrieve secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -198,8 +198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Resource Manager retrieve secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Resource Manager retrieve secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -207,8 +207,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -216,8 +216,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Region in which the Key Vault exists.
-{{% /md %}}</dd>
+    <dd>The Azure Region in which the Key Vault exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -225,7 +225,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -233,7 +233,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyvaultnetworkacl">List&lt;Get<wbr>Key<wbr>Vault<wbr>Network<wbr>Acl&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -241,8 +241,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is purge protection enabled on this Key Vault?
-{{% /md %}}</dd>
+    <dd>Is purge protection enabled on this Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -250,7 +250,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -258,8 +258,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the SKU used for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Name of the SKU used for this Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -267,8 +267,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is soft delete enabled on this Key Vault? 
-{{% /md %}}</dd>
+    <dd>Is soft delete enabled on this Key Vault? 
+</dd>
 
     <dt class="property-"
             title="">
@@ -276,8 +276,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Key Vault.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -285,8 +285,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -294,14 +294,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the vault for performing operations on keys and secrets.
-{{% /md %}}</dd>
+    <dd>The URI of the vault for performing operations on keys and secrets.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -310,8 +310,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyvaultaccesspolicy">[]Get<wbr>Key<wbr>Vault<wbr>Access<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}One or more `access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -319,8 +319,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Virtual Machines retrieve certificates stored as secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Virtual Machines retrieve certificates stored as secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -328,8 +328,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Disk Encryption retrieve secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Disk Encryption retrieve secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -337,8 +337,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Resource Manager retrieve secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Resource Manager retrieve secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -346,8 +346,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -355,8 +355,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Region in which the Key Vault exists.
-{{% /md %}}</dd>
+    <dd>The Azure Region in which the Key Vault exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -364,7 +364,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -372,7 +372,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyvaultnetworkacl">[]Get<wbr>Key<wbr>Vault<wbr>Network<wbr>Acl</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -380,8 +380,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is purge protection enabled on this Key Vault?
-{{% /md %}}</dd>
+    <dd>Is purge protection enabled on this Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -389,7 +389,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -397,8 +397,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the SKU used for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Name of the SKU used for this Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -406,8 +406,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is soft delete enabled on this Key Vault? 
-{{% /md %}}</dd>
+    <dd>Is soft delete enabled on this Key Vault? 
+</dd>
 
     <dt class="property-"
             title="">
@@ -415,8 +415,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Key Vault.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -424,8 +424,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -433,14 +433,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the vault for performing operations on keys and secrets.
-{{% /md %}}</dd>
+    <dd>The URI of the vault for performing operations on keys and secrets.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -449,8 +449,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyvaultaccesspolicy">Get<wbr>Key<wbr>Vault<wbr>Access<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -458,8 +458,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Virtual Machines retrieve certificates stored as secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Virtual Machines retrieve certificates stored as secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -467,8 +467,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Disk Encryption retrieve secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Disk Encryption retrieve secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -476,8 +476,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Resource Manager retrieve secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Resource Manager retrieve secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -485,8 +485,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -494,8 +494,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Region in which the Key Vault exists.
-{{% /md %}}</dd>
+    <dd>The Azure Region in which the Key Vault exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -503,7 +503,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -511,7 +511,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyvaultnetworkacl">Get<wbr>Key<wbr>Vault<wbr>Network<wbr>Acl[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -519,8 +519,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is purge protection enabled on this Key Vault?
-{{% /md %}}</dd>
+    <dd>Is purge protection enabled on this Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -528,7 +528,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -536,8 +536,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the SKU used for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Name of the SKU used for this Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -545,8 +545,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is soft delete enabled on this Key Vault? 
-{{% /md %}}</dd>
+    <dd>Is soft delete enabled on this Key Vault? 
+</dd>
 
     <dt class="property-"
             title="">
@@ -554,8 +554,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Key Vault.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -563,8 +563,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -572,14 +572,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the vault for performing operations on keys and secrets.
-{{% /md %}}</dd>
+    <dd>The URI of the vault for performing operations on keys and secrets.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -588,8 +588,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyvaultaccesspolicy">List[Get<wbr>Key<wbr>Vault<wbr>Access<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -597,8 +597,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Virtual Machines retrieve certificates stored as secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Virtual Machines retrieve certificates stored as secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -606,8 +606,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Disk Encryption retrieve secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Disk Encryption retrieve secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -615,8 +615,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can Azure Resource Manager retrieve secrets from the Key Vault?
-{{% /md %}}</dd>
+    <dd>Can Azure Resource Manager retrieve secrets from the Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -624,8 +624,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -633,8 +633,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Region in which the Key Vault exists.
-{{% /md %}}</dd>
+    <dd>The Azure Region in which the Key Vault exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,7 +642,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -650,7 +650,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyvaultnetworkacl">List[Get<wbr>Key<wbr>Vault<wbr>Network<wbr>Acl]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -658,8 +658,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is purge protection enabled on this Key Vault?
-{{% /md %}}</dd>
+    <dd>Is purge protection enabled on this Key Vault?
+</dd>
 
     <dt class="property-"
             title="">
@@ -667,7 +667,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -675,8 +675,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the SKU used for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Name of the SKU used for this Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -684,8 +684,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is soft delete enabled on this Key Vault? 
-{{% /md %}}</dd>
+    <dd>Is soft delete enabled on this Key Vault? 
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,8 +693,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Key Vault.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -702,8 +702,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,11 +711,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the vault for performing operations on keys and secrets.
-{{% /md %}}</dd>
+    <dd>The URI of the vault for performing operations on keys and secrets.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -728,18 +728,18 @@ The following output properties are available:
 
 
 <h4 id="getkeyvaultaccesspolicy">Get<wbr>Key<wbr>Vault<wbr>Access<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetKeyVaultAccessPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/keyvault?tab=doc#GetKeyVaultAccessPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -748,8 +748,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Object ID of a Azure Active Directory Application.
-{{% /md %}}</dd>
+    <dd>The Object ID of a Azure Active Directory Application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -757,8 +757,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of certificate permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of certificate permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -766,8 +766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of key permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of key permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -775,8 +775,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An Object ID of a User, Service Principal or Security Group.
-{{% /md %}}</dd>
+    <dd>An Object ID of a User, Service Principal or Security Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -784,8 +784,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of secret permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of secret permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -793,8 +793,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of storage permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of storage permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -802,14 +802,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -818,8 +818,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Object ID of a Azure Active Directory Application.
-{{% /md %}}</dd>
+    <dd>The Object ID of a Azure Active Directory Application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -827,8 +827,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of certificate permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of certificate permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -836,8 +836,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of key permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of key permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -845,8 +845,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Object ID of a User, Service Principal or Security Group.
-{{% /md %}}</dd>
+    <dd>An Object ID of a User, Service Principal or Security Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -854,8 +854,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of secret permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of secret permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -863,8 +863,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of storage permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of storage permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -872,14 +872,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -888,8 +888,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Object ID of a Azure Active Directory Application.
-{{% /md %}}</dd>
+    <dd>The Object ID of a Azure Active Directory Application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -897,8 +897,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of certificate permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of certificate permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -906,8 +906,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of key permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of key permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -915,8 +915,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Object ID of a User, Service Principal or Security Group.
-{{% /md %}}</dd>
+    <dd>An Object ID of a User, Service Principal or Security Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -924,8 +924,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of secret permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of secret permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -933,8 +933,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of storage permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of storage permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -942,14 +942,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -958,8 +958,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Object ID of a Azure Active Directory Application.
-{{% /md %}}</dd>
+    <dd>The Object ID of a Azure Active Directory Application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -967,8 +967,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of certificate permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of certificate permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -976,8 +976,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of key permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of key permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -985,8 +985,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An Object ID of a User, Service Principal or Security Group.
-{{% /md %}}</dd>
+    <dd>An Object ID of a User, Service Principal or Security Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -994,8 +994,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of secret permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of secret permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1003,8 +1003,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of storage permissions applicable to this Access Policy.
-{{% /md %}}</dd>
+    <dd>A list of storage permissions applicable to this Access Policy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1012,29 +1012,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
-{{% /md %}}</dd>
+    <dd>The Azure Active Directory Tenant ID used to authenticate requests for this Key Vault.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getkeyvaultnetworkacl">Get<wbr>Key<wbr>Vault<wbr>Network<wbr>Acl</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetKeyVaultNetworkAcl">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/keyvault?tab=doc#GetKeyVaultNetworkAcl">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1043,7 +1043,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1051,7 +1051,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1059,7 +1059,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1067,13 +1067,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1082,7 +1082,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1090,7 +1090,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1098,7 +1098,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1106,13 +1106,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1121,7 +1121,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1129,7 +1129,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1137,7 +1137,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1145,13 +1145,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1160,7 +1160,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1168,7 +1168,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1176,7 +1176,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1184,10 +1184,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

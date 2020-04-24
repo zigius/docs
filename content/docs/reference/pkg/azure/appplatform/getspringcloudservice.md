@@ -19,29 +19,29 @@ Use this data source to access information about an existing Spring Cloud Servic
 
 ## Using GetSpringCloudService {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSpringCloudService<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appplatform/#GetSpringCloudServiceArgs">GetSpringCloudServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appplatform/#GetSpringCloudServiceResult">GetSpringCloudServiceResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_spring_cloud_service(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSpringCloudService<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appplatform?tab=doc#LookupSpringCloudServiceArgs">LookupSpringCloudServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appplatform?tab=doc#LookupSpringCloudServiceResult">LookupSpringCloudServiceResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSpringCloudService </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Appplatform.GetSpringCloudServiceResult.html">GetSpringCloudServiceResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppPlatform.GetSpringCloudServiceArgs.html">GetSpringCloudServiceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies The name of the Spring Cloud Service resource.
-{{% /md %}}</dd>
+    <dd>Specifies The name of the Spring Cloud Service resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -67,14 +67,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group where the Spring Cloud Service exists.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group where the Spring Cloud Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies The name of the Spring Cloud Service resource.
-{{% /md %}}</dd>
+    <dd>Specifies The name of the Spring Cloud Service resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -92,14 +92,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group where the Spring Cloud Service exists.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group where the Spring Cloud Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -108,8 +108,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies The name of the Spring Cloud Service resource.
-{{% /md %}}</dd>
+    <dd>Specifies The name of the Spring Cloud Service resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -117,14 +117,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group where the Spring Cloud Service exists.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group where the Spring Cloud Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies The name of the Spring Cloud Service resource.
-{{% /md %}}</dd>
+    <dd>Specifies The name of the Spring Cloud Service resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -142,11 +142,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group where the Spring Cloud Service exists.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group where the Spring Cloud Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -162,7 +162,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -171,8 +171,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsetting">List&lt;Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `config_server_git_setting` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `config_server_git_setting` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -180,8 +180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -189,8 +189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of Spring Cloud Service.
-{{% /md %}}</dd>
+    <dd>The location of Spring Cloud Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -198,8 +198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to identify on the Git repository.
-{{% /md %}}</dd>
+    <dd>The name to identify on the Git repository.
+</dd>
 
     <dt class="property-"
             title="">
@@ -207,7 +207,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -215,14 +215,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to Spring Cloud Service.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to Spring Cloud Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -231,8 +231,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsetting">[]Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}A `config_server_git_setting` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `config_server_git_setting` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -240,8 +240,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -249,8 +249,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of Spring Cloud Service.
-{{% /md %}}</dd>
+    <dd>The location of Spring Cloud Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -258,8 +258,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to identify on the Git repository.
-{{% /md %}}</dd>
+    <dd>The name to identify on the Git repository.
+</dd>
 
     <dt class="property-"
             title="">
@@ -267,7 +267,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -275,14 +275,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to Spring Cloud Service.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to Spring Cloud Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -291,8 +291,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsetting">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}A `config_server_git_setting` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `config_server_git_setting` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -300,8 +300,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -309,8 +309,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of Spring Cloud Service.
-{{% /md %}}</dd>
+    <dd>The location of Spring Cloud Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -318,8 +318,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to identify on the Git repository.
-{{% /md %}}</dd>
+    <dd>The name to identify on the Git repository.
+</dd>
 
     <dt class="property-"
             title="">
@@ -327,7 +327,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -335,14 +335,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to Spring Cloud Service.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to Spring Cloud Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -351,8 +351,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsetting">List[Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}A `config_server_git_setting` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `config_server_git_setting` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -360,8 +360,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -369,8 +369,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location of Spring Cloud Service.
-{{% /md %}}</dd>
+    <dd>The location of Spring Cloud Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -378,8 +378,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name to identify on the Git repository.
-{{% /md %}}</dd>
+    <dd>The name to identify on the Git repository.
+</dd>
 
     <dt class="property-"
             title="">
@@ -387,7 +387,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -395,11 +395,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to Spring Cloud Service.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to Spring Cloud Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -412,18 +412,18 @@ The following output properties are available:
 
 
 <h4 id="getspringcloudserviceconfigservergitsetting">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetSpringCloudServiceConfigServerGitSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appplatform?tab=doc#GetSpringCloudServiceConfigServerGitSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -432,8 +432,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettinghttpbasicauth">List&lt;Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Http<wbr>Basic<wbr>Auth<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `http_basic_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_basic_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -441,8 +441,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
-{{% /md %}}</dd>
+    <dd>The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -450,8 +450,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepository">List&lt;Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `repository` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `repository` blocks as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -459,8 +459,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to search subdirectories of the Git repository.
-{{% /md %}}</dd>
+    <dd>An array of strings used to search subdirectories of the Git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -468,8 +468,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingsshauth">List&lt;Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Ssh<wbr>Auth<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `ssh_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `ssh_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -477,14 +477,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the Git repository
-{{% /md %}}</dd>
+    <dd>The URI of the Git repository
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -493,8 +493,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettinghttpbasicauth">[]Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Http<wbr>Basic<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}A `http_basic_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_basic_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -502,8 +502,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
-{{% /md %}}</dd>
+    <dd>The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -511,8 +511,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepository">[]Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository</a></span>
     </dt>
-    <dd>{{% md %}}One or more `repository` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `repository` blocks as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -520,8 +520,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to search subdirectories of the Git repository.
-{{% /md %}}</dd>
+    <dd>An array of strings used to search subdirectories of the Git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -529,8 +529,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingsshauth">[]Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Ssh<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}A `ssh_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `ssh_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -538,14 +538,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the Git repository
-{{% /md %}}</dd>
+    <dd>The URI of the Git repository
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -554,8 +554,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettinghttpbasicauth">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Http<wbr>Basic<wbr>Auth[]</a></span>
     </dt>
-    <dd>{{% md %}}A `http_basic_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_basic_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -563,8 +563,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
-{{% /md %}}</dd>
+    <dd>The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -572,8 +572,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepository">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `repository` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `repository` blocks as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -581,8 +581,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to search subdirectories of the Git repository.
-{{% /md %}}</dd>
+    <dd>An array of strings used to search subdirectories of the Git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -590,8 +590,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingsshauth">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Ssh<wbr>Auth[]</a></span>
     </dt>
-    <dd>{{% md %}}A `ssh_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `ssh_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -599,14 +599,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the Git repository
-{{% /md %}}</dd>
+    <dd>The URI of the Git repository
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -615,8 +615,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettinghttpbasicauth">List[Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Http<wbr>Basic<wbr>Auth]</a></span>
     </dt>
-    <dd>{{% md %}}A `http_basic_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_basic_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -624,8 +624,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
-{{% /md %}}</dd>
+    <dd>The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -633,8 +633,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepository">List[Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `repository` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `repository` blocks as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -642,8 +642,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to search subdirectories of the Git repository.
-{{% /md %}}</dd>
+    <dd>An array of strings used to search subdirectories of the Git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -651,8 +651,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingsshauth">List[Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Ssh<wbr>Auth]</a></span>
     </dt>
-    <dd>{{% md %}}A `ssh_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `ssh_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -660,29 +660,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the Git repository
-{{% /md %}}</dd>
+    <dd>The URI of the Git repository
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getspringcloudserviceconfigservergitsettinghttpbasicauth">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Http<wbr>Basic<wbr>Auth</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetSpringCloudServiceConfigServerGitSettingHttpBasicAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appplatform?tab=doc#GetSpringCloudServiceConfigServerGitSettingHttpBasicAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -691,8 +691,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The password used to access the Http Basic Authentication Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -700,14 +700,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The username used to access the Http Basic Authentication Git repository server.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -716,8 +716,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The password used to access the Http Basic Authentication Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -725,14 +725,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The username used to access the Http Basic Authentication Git repository server.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -741,8 +741,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The password used to access the Http Basic Authentication Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -750,14 +750,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The username used to access the Http Basic Authentication Git repository server.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -766,8 +766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The password used to access the Http Basic Authentication Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -775,29 +775,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The username used to access the Http Basic Authentication Git repository server.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getspringcloudserviceconfigservergitsettingrepository">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetSpringCloudServiceConfigServerGitSettingRepository">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appplatform?tab=doc#GetSpringCloudServiceConfigServerGitSettingRepository">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -806,8 +806,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepositoryhttpbasicauth">List&lt;Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Http<wbr>Basic<wbr>Auth<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `http_basic_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_basic_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -815,8 +815,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
-{{% /md %}}</dd>
+    <dd>The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -824,8 +824,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies The name of the Spring Cloud Service resource.
-{{% /md %}}</dd>
+    <dd>Specifies The name of the Spring Cloud Service resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -833,8 +833,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to match an application name. For each pattern, use the `{application}/{profile}` format with wildcards.
-{{% /md %}}</dd>
+    <dd>An array of strings used to match an application name. For each pattern, use the `{application}/{profile}` format with wildcards.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -842,8 +842,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to search subdirectories of the Git repository.
-{{% /md %}}</dd>
+    <dd>An array of strings used to search subdirectories of the Git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -851,8 +851,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepositorysshauth">List&lt;Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Ssh<wbr>Auth<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `ssh_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `ssh_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -860,14 +860,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the Git repository
-{{% /md %}}</dd>
+    <dd>The URI of the Git repository
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -876,8 +876,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepositoryhttpbasicauth">[]Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Http<wbr>Basic<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}A `http_basic_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_basic_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -885,8 +885,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
-{{% /md %}}</dd>
+    <dd>The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -894,8 +894,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies The name of the Spring Cloud Service resource.
-{{% /md %}}</dd>
+    <dd>Specifies The name of the Spring Cloud Service resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -903,8 +903,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to match an application name. For each pattern, use the `{application}/{profile}` format with wildcards.
-{{% /md %}}</dd>
+    <dd>An array of strings used to match an application name. For each pattern, use the `{application}/{profile}` format with wildcards.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -912,8 +912,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to search subdirectories of the Git repository.
-{{% /md %}}</dd>
+    <dd>An array of strings used to search subdirectories of the Git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -921,8 +921,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepositorysshauth">[]Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Ssh<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}A `ssh_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `ssh_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -930,14 +930,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the Git repository
-{{% /md %}}</dd>
+    <dd>The URI of the Git repository
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -946,8 +946,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepositoryhttpbasicauth">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Http<wbr>Basic<wbr>Auth[]</a></span>
     </dt>
-    <dd>{{% md %}}A `http_basic_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_basic_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -955,8 +955,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
-{{% /md %}}</dd>
+    <dd>The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -964,8 +964,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies The name of the Spring Cloud Service resource.
-{{% /md %}}</dd>
+    <dd>Specifies The name of the Spring Cloud Service resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -973,8 +973,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to match an application name. For each pattern, use the `{application}/{profile}` format with wildcards.
-{{% /md %}}</dd>
+    <dd>An array of strings used to match an application name. For each pattern, use the `{application}/{profile}` format with wildcards.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -982,8 +982,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to search subdirectories of the Git repository.
-{{% /md %}}</dd>
+    <dd>An array of strings used to search subdirectories of the Git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -991,8 +991,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepositorysshauth">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Ssh<wbr>Auth[]</a></span>
     </dt>
-    <dd>{{% md %}}A `ssh_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `ssh_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1000,14 +1000,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the Git repository
-{{% /md %}}</dd>
+    <dd>The URI of the Git repository
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1016,8 +1016,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepositoryhttpbasicauth">List[Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Http<wbr>Basic<wbr>Auth]</a></span>
     </dt>
-    <dd>{{% md %}}A `http_basic_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_basic_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1025,8 +1025,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
-{{% /md %}}</dd>
+    <dd>The default label of the Git repository, which is a branch name, tag name, or commit-id of the repository
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1034,8 +1034,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies The name of the Spring Cloud Service resource.
-{{% /md %}}</dd>
+    <dd>Specifies The name of the Spring Cloud Service resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1043,8 +1043,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to match an application name. For each pattern, use the `{application}/{profile}` format with wildcards.
-{{% /md %}}</dd>
+    <dd>An array of strings used to match an application name. For each pattern, use the `{application}/{profile}` format with wildcards.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1052,8 +1052,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings used to search subdirectories of the Git repository.
-{{% /md %}}</dd>
+    <dd>An array of strings used to search subdirectories of the Git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1061,8 +1061,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getspringcloudserviceconfigservergitsettingrepositorysshauth">List[Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Ssh<wbr>Auth]</a></span>
     </dt>
-    <dd>{{% md %}}A `ssh_auth` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `ssh_auth` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1070,29 +1070,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the Git repository
-{{% /md %}}</dd>
+    <dd>The URI of the Git repository
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getspringcloudserviceconfigservergitsettingrepositoryhttpbasicauth">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Http<wbr>Basic<wbr>Auth</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appplatform?tab=doc#GetSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1101,8 +1101,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The password used to access the Http Basic Authentication Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1110,14 +1110,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The username used to access the Http Basic Authentication Git repository server.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1126,8 +1126,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The password used to access the Http Basic Authentication Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1135,14 +1135,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The username used to access the Http Basic Authentication Git repository server.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1151,8 +1151,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The password used to access the Http Basic Authentication Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1160,14 +1160,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The username used to access the Http Basic Authentication Git repository server.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1176,8 +1176,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The password used to access the Http Basic Authentication Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1185,29 +1185,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username used to access the Http Basic Authentication Git repository server.
-{{% /md %}}</dd>
+    <dd>The username used to access the Http Basic Authentication Git repository server.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getspringcloudserviceconfigservergitsettingrepositorysshauth">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Repository<wbr>Ssh<wbr>Auth</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetSpringCloudServiceConfigServerGitSettingRepositorySshAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appplatform?tab=doc#GetSpringCloudServiceConfigServerGitSettingRepositorySshAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1216,8 +1216,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key of the Git repository server.
-{{% /md %}}</dd>
+    <dd>The host key of the Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1225,8 +1225,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key algorithm.
-{{% /md %}}</dd>
+    <dd>The host key algorithm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1234,8 +1234,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
-{{% /md %}}</dd>
+    <dd>The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1243,14 +1243,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Config Server instance will fail to start if the host_key does not match.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Config Server instance will fail to start if the host_key does not match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1259,8 +1259,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key of the Git repository server.
-{{% /md %}}</dd>
+    <dd>The host key of the Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1268,8 +1268,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key algorithm.
-{{% /md %}}</dd>
+    <dd>The host key algorithm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1277,8 +1277,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
-{{% /md %}}</dd>
+    <dd>The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1286,14 +1286,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Config Server instance will fail to start if the host_key does not match.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Config Server instance will fail to start if the host_key does not match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1302,8 +1302,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key of the Git repository server.
-{{% /md %}}</dd>
+    <dd>The host key of the Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1311,8 +1311,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key algorithm.
-{{% /md %}}</dd>
+    <dd>The host key algorithm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1320,8 +1320,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
-{{% /md %}}</dd>
+    <dd>The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1329,14 +1329,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Config Server instance will fail to start if the host_key does not match.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Config Server instance will fail to start if the host_key does not match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1345,8 +1345,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The host key of the Git repository server.
-{{% /md %}}</dd>
+    <dd>The host key of the Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1354,8 +1354,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The host key algorithm.
-{{% /md %}}</dd>
+    <dd>The host key algorithm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1363,8 +1363,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
-{{% /md %}}</dd>
+    <dd>The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1372,29 +1372,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Config Server instance will fail to start if the host_key does not match.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Config Server instance will fail to start if the host_key does not match.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getspringcloudserviceconfigservergitsettingsshauth">Get<wbr>Spring<wbr>Cloud<wbr>Service<wbr>Config<wbr>Server<wbr>Git<wbr>Setting<wbr>Ssh<wbr>Auth</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetSpringCloudServiceConfigServerGitSettingSshAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appplatform?tab=doc#GetSpringCloudServiceConfigServerGitSettingSshAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1403,8 +1403,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key of the Git repository server.
-{{% /md %}}</dd>
+    <dd>The host key of the Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1412,8 +1412,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key algorithm.
-{{% /md %}}</dd>
+    <dd>The host key algorithm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1421,8 +1421,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
-{{% /md %}}</dd>
+    <dd>The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1430,14 +1430,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Config Server instance will fail to start if the host_key does not match.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Config Server instance will fail to start if the host_key does not match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1446,8 +1446,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key of the Git repository server.
-{{% /md %}}</dd>
+    <dd>The host key of the Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1455,8 +1455,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key algorithm.
-{{% /md %}}</dd>
+    <dd>The host key algorithm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1464,8 +1464,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
-{{% /md %}}</dd>
+    <dd>The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1473,14 +1473,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Config Server instance will fail to start if the host_key does not match.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Config Server instance will fail to start if the host_key does not match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1489,8 +1489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key of the Git repository server.
-{{% /md %}}</dd>
+    <dd>The host key of the Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1498,8 +1498,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host key algorithm.
-{{% /md %}}</dd>
+    <dd>The host key algorithm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1507,8 +1507,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
-{{% /md %}}</dd>
+    <dd>The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1516,14 +1516,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Config Server instance will fail to start if the host_key does not match.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Config Server instance will fail to start if the host_key does not match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1532,8 +1532,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The host key of the Git repository server.
-{{% /md %}}</dd>
+    <dd>The host key of the Git repository server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1541,8 +1541,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The host key algorithm.
-{{% /md %}}</dd>
+    <dd>The host key algorithm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1550,8 +1550,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
-{{% /md %}}</dd>
+    <dd>The SSH private key to access the Git repository, needed when the URI starts with `git@` or `ssh://`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1559,11 +1559,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Config Server instance will fail to start if the host_key does not match.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Config Server instance will fail to start if the host_key does not match.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

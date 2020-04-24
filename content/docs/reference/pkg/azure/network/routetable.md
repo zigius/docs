@@ -18,26 +18,26 @@ Manages a Route Table
 
 
 ## Create a RouteTable Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#RouteTable">RouteTable</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#RouteTableArgs">RouteTableArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">RouteTable</span><span class="p">(resource_name, opts=None, </span>disable_bgp_route_propagation=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>routes=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRouteTable<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#RouteTableArgs">RouteTableArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#RouteTable">RouteTable</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.RouteTable.html">RouteTable</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.RouteTableArgs.html">RouteTableArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages a Route Table
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages a Route Table
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages a Route Table
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages a Route Table
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## RouteTable Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -213,8 +213,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
-{{% /md %}}</dd>
+    <dd>Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routetableroute">List&lt;Route<wbr>Table<wbr>Route<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing routes. Each object accepts the arguments documented below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing routes. Each object accepts the arguments documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,14 +249,14 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -265,8 +265,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
-{{% /md %}}</dd>
+    <dd>Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routetableroute">[]Route<wbr>Table<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing routes. Each object accepts the arguments documented below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing routes. Each object accepts the arguments documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,14 +310,14 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -326,8 +326,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,8 +335,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
-{{% /md %}}</dd>
+    <dd>Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,8 +344,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routetableroute">Route<wbr>Table<wbr>Route[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing routes. Each object accepts the arguments documented below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing routes. Each object accepts the arguments documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,14 +371,14 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -387,8 +387,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
-{{% /md %}}</dd>
+    <dd>Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routetableroute">List[Route<wbr>Table<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing routes. Each object accepts the arguments documented below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing routes. Each object accepts the arguments documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,11 +432,11 @@ The RouteTable resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -450,7 +450,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -459,7 +459,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -467,14 +467,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Subnets associated with this route table.
-{{% /md %}}</dd>
+    <dd>The collection of Subnets associated with this route table.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -483,7 +483,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -491,14 +491,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Subnets associated with this route table.
-{{% /md %}}</dd>
+    <dd>The collection of Subnets associated with this route table.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -507,7 +507,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -515,14 +515,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Subnets associated with this route table.
-{{% /md %}}</dd>
+    <dd>The collection of Subnets associated with this route table.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -531,7 +531,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -539,11 +539,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Subnets associated with this route table.
-{{% /md %}}</dd>
+    <dd>The collection of Subnets associated with this route table.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -554,25 +554,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing RouteTable Resource {#look-up}
 
 Get an existing RouteTable resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#RouteTableState">RouteTableState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#RouteTable">RouteTable</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>disable_bgp_route_propagation=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>routes=None<span class="p">, </span>subnets=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRouteTable<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#RouteTableState">RouteTableState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#RouteTable">RouteTable</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.RouteTable.html">RouteTable</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.RouteTableState.html">RouteTableState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -597,9 +597,9 @@ Get an existing RouteTable resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -612,36 +612,9 @@ Get an existing RouteTable resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -666,13 +639,40 @@ Get an existing RouteTable resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -681,8 +681,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
-{{% /md %}}</dd>
+    <dd>Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -690,8 +690,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -699,8 +699,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -708,8 +708,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -717,8 +717,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routetableroute">List&lt;Route<wbr>Table<wbr>Route<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing routes. Each object accepts the arguments documented below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing routes. Each object accepts the arguments documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -726,8 +726,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Subnets associated with this route table.
-{{% /md %}}</dd>
+    <dd>The collection of Subnets associated with this route table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -735,14 +735,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -751,8 +751,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
-{{% /md %}}</dd>
+    <dd>Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,8 +760,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,8 +769,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,8 +778,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,8 +787,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routetableroute">[]Route<wbr>Table<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing routes. Each object accepts the arguments documented below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing routes. Each object accepts the arguments documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,8 +796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Subnets associated with this route table.
-{{% /md %}}</dd>
+    <dd>The collection of Subnets associated with this route table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,14 +805,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -821,8 +821,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
-{{% /md %}}</dd>
+    <dd>Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,8 +830,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,8 +839,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,8 +848,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,8 +857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routetableroute">Route<wbr>Table<wbr>Route[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing routes. Each object accepts the arguments documented below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing routes. Each object accepts the arguments documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Subnets associated with this route table.
-{{% /md %}}</dd>
+    <dd>The collection of Subnets associated with this route table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,14 +875,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -891,8 +891,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
-{{% /md %}}</dd>
+    <dd>Boolean flag which controls propagation of routes learned by BGP on that route table. True means disable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,8 +900,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,8 +909,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,8 +918,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,8 +927,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routetableroute">List[Route<wbr>Table<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing routes. Each object accepts the arguments documented below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing routes. Each object accepts the arguments documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,8 +936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Subnets associated with this route table.
-{{% /md %}}</dd>
+    <dd>The collection of Subnets associated with this route table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,11 +945,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -964,18 +964,18 @@ The following state arguments are supported:
 
 
 <h4 id="routetableroute">Route<wbr>Table<wbr>Route</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#RouteTableRoute">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#RouteTableRoute">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#RouteTableRouteArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#RouteTableRouteOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -984,8 +984,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR to which the route applies, such as 10.1.0.0/16
-{{% /md %}}</dd>
+    <dd>The destination CIDR to which the route applies, such as 10.1.0.0/16
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -993,8 +993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1002,8 +1002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Azure hop the packet should be sent to. Possible values are `VirtualNetworkGateway`, `VnetLocal`, `Internet`, `VirtualAppliance` and `None`.
-{{% /md %}}</dd>
+    <dd>The type of Azure hop the packet should be sent to. Possible values are `VirtualNetworkGateway`, `VnetLocal`, `Internet`, `VirtualAppliance` and `None`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,14 +1011,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is `VirtualAppliance`.
-{{% /md %}}</dd>
+    <dd>Contains the IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is `VirtualAppliance`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1027,8 +1027,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR to which the route applies, such as 10.1.0.0/16
-{{% /md %}}</dd>
+    <dd>The destination CIDR to which the route applies, such as 10.1.0.0/16
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1036,8 +1036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1045,8 +1045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Azure hop the packet should be sent to. Possible values are `VirtualNetworkGateway`, `VnetLocal`, `Internet`, `VirtualAppliance` and `None`.
-{{% /md %}}</dd>
+    <dd>The type of Azure hop the packet should be sent to. Possible values are `VirtualNetworkGateway`, `VnetLocal`, `Internet`, `VirtualAppliance` and `None`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,14 +1054,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is `VirtualAppliance`.
-{{% /md %}}</dd>
+    <dd>Contains the IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is `VirtualAppliance`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1070,8 +1070,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR to which the route applies, such as 10.1.0.0/16
-{{% /md %}}</dd>
+    <dd>The destination CIDR to which the route applies, such as 10.1.0.0/16
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1079,8 +1079,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1088,8 +1088,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Azure hop the packet should be sent to. Possible values are `VirtualNetworkGateway`, `VnetLocal`, `Internet`, `VirtualAppliance` and `None`.
-{{% /md %}}</dd>
+    <dd>The type of Azure hop the packet should be sent to. Possible values are `VirtualNetworkGateway`, `VnetLocal`, `Internet`, `VirtualAppliance` and `None`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1097,14 +1097,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is `VirtualAppliance`.
-{{% /md %}}</dd>
+    <dd>Contains the IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is `VirtualAppliance`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1113,8 +1113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination CIDR to which the route applies, such as 10.1.0.0/16
-{{% /md %}}</dd>
+    <dd>The destination CIDR to which the route applies, such as 10.1.0.0/16
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1122,8 +1122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1131,8 +1131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of Azure hop the packet should be sent to. Possible values are `VirtualNetworkGateway`, `VnetLocal`, `Internet`, `VirtualAppliance` and `None`.
-{{% /md %}}</dd>
+    <dd>The type of Azure hop the packet should be sent to. Possible values are `VirtualNetworkGateway`, `VnetLocal`, `Internet`, `VirtualAppliance` and `None`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,11 +1140,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Contains the IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is `VirtualAppliance`.
-{{% /md %}}</dd>
+    <dd>Contains the IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is `VirtualAppliance`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

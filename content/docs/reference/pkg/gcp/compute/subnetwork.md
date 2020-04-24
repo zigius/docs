@@ -43,26 +43,26 @@ To get more information about Subnetwork, see:
 
 
 ## Create a Subnetwork Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Subnetwork">Subnetwork</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#SubnetworkArgs">SubnetworkArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Subnetwork</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>ip_cidr_range=None<span class="p">, </span>log_config=None<span class="p">, </span>name=None<span class="p">, </span>network=None<span class="p">, </span>private_ip_google_access=None<span class="p">, </span>project=None<span class="p">, </span>purpose=None<span class="p">, </span>region=None<span class="p">, </span>role=None<span class="p">, </span>secondary_ip_ranges=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSubnetwork<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SubnetworkArgs">SubnetworkArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Subnetwork">Subnetwork</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Subnetwork.html">Subnetwork</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.SubnetworkArgs.html">SubnetworkArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -99,9 +99,9 @@ To get more information about Subnetwork, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -119,9 +119,9 @@ To get more information about Subnetwork, see:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -168,9 +168,9 @@ To get more information about Subnetwork, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -207,7 +207,7 @@ To get more information about Subnetwork, see:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Subnetwork Resource Properties {#properties}
 
@@ -220,7 +220,7 @@ The Subnetwork resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -229,10 +229,10 @@ The Subnetwork resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
+    <dd>The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
 For example, 10.0.0.0/8 or 192.168.0.0/16. Ranges must be unique and non-overlapping within a network. Only IPv4 is
 supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -240,8 +240,8 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
-{{% /md %}}</dd>
+    <dd>The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,9 +249,9 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource. This field can be set only
+    <dd>An optional description of this resource. Provide this property when you create the resource. This field can be set only
 at resource creation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,9 +259,9 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworklogconfig">Subnetwork<wbr>Log<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
+    <dd>Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
 This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_LOAD_BALANCER'
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,11 +269,11 @@ This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
+    <dd>The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
 long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,9 +281,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
+    <dd>When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
 Google Access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,9 +291,9 @@ Google Access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,10 +301,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
+    <dd>The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
 set to INTERNAL_HTTPS_LOAD_BALANCER is a user-created subnetwork that is reserved for Internal HTTP(S) Load Balancing.
 If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_BALANCER you must also set the role.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the GCP region for this subnetwork.
-{{% /md %}}</dd>
+    <dd>URL of the GCP region for this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,10 +321,10 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
+    <dd>The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
 set to ACTIVE or BACKUP. An ACTIVE subnetwork is one that is currently being used for Internal HTTP(S) Load Balancing. A
 BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently draining.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,19 +332,19 @@ BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworksecondaryiprange">List&lt;Subnetwork<wbr>Secondary<wbr>Ip<wbr>Range<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
+    <dd>An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
 VM must belong to the primary ipCidrRange of the subnetwork. The alias IPs may belong to either primary or secondary
 ranges. **Note**: This field uses [attr-as-block mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html)
 to avoid breaking users during the 0.12 upgrade. To explicitly send a list of zero objects you must use the following
 syntax: 'example=[]' For more details about this behavior, see [this
 section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#defining-a-fixed-object-collection-value).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -353,10 +353,10 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
+    <dd>The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
 For example, 10.0.0.0/8 or 192.168.0.0/16. Ranges must be unique and non-overlapping within a network. Only IPv4 is
 supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -364,8 +364,8 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
-{{% /md %}}</dd>
+    <dd>The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,9 +373,9 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource. This field can be set only
+    <dd>An optional description of this resource. Provide this property when you create the resource. This field can be set only
 at resource creation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,9 +383,9 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworklogconfig">Subnetwork<wbr>Log<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
+    <dd>Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
 This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_LOAD_BALANCER'
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,11 +393,11 @@ This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
+    <dd>The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
 long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,9 +405,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
+    <dd>When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
 Google Access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,9 +415,9 @@ Google Access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,10 +425,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
+    <dd>The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
 set to INTERNAL_HTTPS_LOAD_BALANCER is a user-created subnetwork that is reserved for Internal HTTP(S) Load Balancing.
 If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_BALANCER you must also set the role.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,8 +436,8 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the GCP region for this subnetwork.
-{{% /md %}}</dd>
+    <dd>URL of the GCP region for this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,10 +445,10 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
+    <dd>The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
 set to ACTIVE or BACKUP. An ACTIVE subnetwork is one that is currently being used for Internal HTTP(S) Load Balancing. A
 BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently draining.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,19 +456,19 @@ BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworksecondaryiprange">[]Subnetwork<wbr>Secondary<wbr>Ip<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
+    <dd>An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
 VM must belong to the primary ipCidrRange of the subnetwork. The alias IPs may belong to either primary or secondary
 ranges. **Note**: This field uses [attr-as-block mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html)
 to avoid breaking users during the 0.12 upgrade. To explicitly send a list of zero objects you must use the following
 syntax: 'example=[]' For more details about this behavior, see [this
 section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#defining-a-fixed-object-collection-value).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -477,10 +477,10 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
+    <dd>The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
 For example, 10.0.0.0/8 or 192.168.0.0/16. Ranges must be unique and non-overlapping within a network. Only IPv4 is
 supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -488,8 +488,8 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
-{{% /md %}}</dd>
+    <dd>The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,9 +497,9 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource. This field can be set only
+    <dd>An optional description of this resource. Provide this property when you create the resource. This field can be set only
 at resource creation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,9 +507,9 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworklogconfig">Subnetwork<wbr>Log<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
+    <dd>Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
 This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_LOAD_BALANCER'
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,11 +517,11 @@ This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
+    <dd>The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
 long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,9 +529,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
+    <dd>When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
 Google Access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,9 +539,9 @@ Google Access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -549,10 +549,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
+    <dd>The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
 set to INTERNAL_HTTPS_LOAD_BALANCER is a user-created subnetwork that is reserved for Internal HTTP(S) Load Balancing.
 If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_BALANCER you must also set the role.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,8 +560,8 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the GCP region for this subnetwork.
-{{% /md %}}</dd>
+    <dd>URL of the GCP region for this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,10 +569,10 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
+    <dd>The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
 set to ACTIVE or BACKUP. An ACTIVE subnetwork is one that is currently being used for Internal HTTP(S) Load Balancing. A
 BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently draining.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,19 +580,19 @@ BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworksecondaryiprange">Subnetwork<wbr>Secondary<wbr>Ip<wbr>Range[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
+    <dd>An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
 VM must belong to the primary ipCidrRange of the subnetwork. The alias IPs may belong to either primary or secondary
 ranges. **Note**: This field uses [attr-as-block mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html)
 to avoid breaking users during the 0.12 upgrade. To explicitly send a list of zero objects you must use the following
 syntax: 'example=[]' For more details about this behavior, see [this
 section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#defining-a-fixed-object-collection-value).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -601,10 +601,10 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
+    <dd>The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
 For example, 10.0.0.0/8 or 192.168.0.0/16. Ranges must be unique and non-overlapping within a network. Only IPv4 is
 supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -612,8 +612,8 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
-{{% /md %}}</dd>
+    <dd>The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,9 +621,9 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource. This field can be set only
+    <dd>An optional description of this resource. Provide this property when you create the resource. This field can be set only
 at resource creation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,9 +631,9 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworklogconfig">Dict[Subnetwork<wbr>Log<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
+    <dd>Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
 This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_LOAD_BALANCER'
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,11 +641,11 @@ This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
+    <dd>The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
 long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -653,9 +653,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
+    <dd>When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
 Google Access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -663,9 +663,9 @@ Google Access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -673,10 +673,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
+    <dd>The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
 set to INTERNAL_HTTPS_LOAD_BALANCER is a user-created subnetwork that is reserved for Internal HTTP(S) Load Balancing.
 If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_BALANCER you must also set the role.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -684,8 +684,8 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL of the GCP region for this subnetwork.
-{{% /md %}}</dd>
+    <dd>URL of the GCP region for this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,10 +693,10 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
+    <dd>The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
 set to ACTIVE or BACKUP. An ACTIVE subnetwork is one that is currently being used for Internal HTTP(S) Load Balancing. A
 BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently draining.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,16 +704,16 @@ BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworksecondaryiprange">List[Subnetwork<wbr>Secondary<wbr>Ip<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
+    <dd>An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
 VM must belong to the primary ipCidrRange of the subnetwork. The alias IPs may belong to either primary or secondary
 ranges. **Note**: This field uses [attr-as-block mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html)
 to avoid breaking users during the 0.12 upgrade. To explicitly send a list of zero objects you must use the following
 syntax: 'example=[]' For more details about this behavior, see [this
 section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#defining-a-fixed-object-collection-value).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -727,7 +727,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -736,8 +736,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -745,8 +745,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. This field is used internally during updates of this resource.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This field is not useful for users, and has been removed as an output.{{% /md %}}</p></dd>
+    <dd>Fingerprint of this resource. This field is used internally during updates of this resource.
+<p class="property-message">Deprecated: This field is not useful for users, and has been removed as an output.</p></dd>
 
     <dt class="property-"
             title="">
@@ -754,8 +754,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The gateway address for default routes to reach destination addresses outside this subnetwork.
-{{% /md %}}</dd>
+    <dd>The gateway address for default routes to reach destination addresses outside this subnetwork.
+</dd>
 
     <dt class="property-"
             title="">
@@ -763,7 +763,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -771,14 +771,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -787,8 +787,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -796,8 +796,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. This field is used internally during updates of this resource.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This field is not useful for users, and has been removed as an output.{{% /md %}}</p></dd>
+    <dd>Fingerprint of this resource. This field is used internally during updates of this resource.
+<p class="property-message">Deprecated: This field is not useful for users, and has been removed as an output.</p></dd>
 
     <dt class="property-"
             title="">
@@ -805,8 +805,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The gateway address for default routes to reach destination addresses outside this subnetwork.
-{{% /md %}}</dd>
+    <dd>The gateway address for default routes to reach destination addresses outside this subnetwork.
+</dd>
 
     <dt class="property-"
             title="">
@@ -814,7 +814,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -822,14 +822,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -838,8 +838,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -847,8 +847,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. This field is used internally during updates of this resource.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This field is not useful for users, and has been removed as an output.{{% /md %}}</p></dd>
+    <dd>Fingerprint of this resource. This field is used internally during updates of this resource.
+<p class="property-message">Deprecated: This field is not useful for users, and has been removed as an output.</p></dd>
 
     <dt class="property-"
             title="">
@@ -856,8 +856,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The gateway address for default routes to reach destination addresses outside this subnetwork.
-{{% /md %}}</dd>
+    <dd>The gateway address for default routes to reach destination addresses outside this subnetwork.
+</dd>
 
     <dt class="property-"
             title="">
@@ -865,7 +865,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -873,14 +873,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -889,8 +889,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -898,8 +898,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. This field is used internally during updates of this resource.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This field is not useful for users, and has been removed as an output.{{% /md %}}</p></dd>
+    <dd>Fingerprint of this resource. This field is used internally during updates of this resource.
+<p class="property-message">Deprecated: This field is not useful for users, and has been removed as an output.</p></dd>
 
     <dt class="property-"
             title="">
@@ -907,8 +907,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The gateway address for default routes to reach destination addresses outside this subnetwork.
-{{% /md %}}</dd>
+    <dd>The gateway address for default routes to reach destination addresses outside this subnetwork.
+</dd>
 
     <dt class="property-"
             title="">
@@ -916,7 +916,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -924,11 +924,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -939,25 +939,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Subnetwork Resource {#look-up}
 
 Get an existing Subnetwork resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#SubnetworkState">SubnetworkState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Subnetwork">Subnetwork</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>creation_timestamp=None<span class="p">, </span>description=None<span class="p">, </span>fingerprint=None<span class="p">, </span>gateway_address=None<span class="p">, </span>ip_cidr_range=None<span class="p">, </span>log_config=None<span class="p">, </span>name=None<span class="p">, </span>network=None<span class="p">, </span>private_ip_google_access=None<span class="p">, </span>project=None<span class="p">, </span>purpose=None<span class="p">, </span>region=None<span class="p">, </span>role=None<span class="p">, </span>secondary_ip_ranges=None<span class="p">, </span>self_link=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSubnetwork<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SubnetworkState">SubnetworkState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Subnetwork">Subnetwork</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Subnetwork.html">Subnetwork</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.SubnetworkState.html">SubnetworkState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -982,9 +982,9 @@ Get an existing Subnetwork resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -997,36 +997,9 @@ Get an existing Subnetwork resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1051,13 +1024,40 @@ Get an existing Subnetwork resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,9 +1075,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource. This field can be set only
+    <dd>An optional description of this resource. Provide this property when you create the resource. This field can be set only
 at resource creation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1085,8 +1085,8 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. This field is used internally during updates of this resource.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This field is not useful for users, and has been removed as an output.{{% /md %}}</p></dd>
+    <dd>Fingerprint of this resource. This field is used internally during updates of this resource.
+<p class="property-message">Deprecated: This field is not useful for users, and has been removed as an output.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1094,8 +1094,8 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The gateway address for default routes to reach destination addresses outside this subnetwork.
-{{% /md %}}</dd>
+    <dd>The gateway address for default routes to reach destination addresses outside this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,10 +1103,10 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
+    <dd>The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
 For example, 10.0.0.0/8 or 192.168.0.0/16. Ranges must be unique and non-overlapping within a network. Only IPv4 is
 supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,9 +1114,9 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworklogconfig">Subnetwork<wbr>Log<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
+    <dd>Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
 This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_LOAD_BALANCER'
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1124,11 +1124,11 @@ This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
+    <dd>The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
 long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
-{{% /md %}}</dd>
+    <dd>The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,9 +1145,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
+    <dd>When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
 Google Access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,9 +1155,9 @@ Google Access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,10 +1165,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
+    <dd>The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
 set to INTERNAL_HTTPS_LOAD_BALANCER is a user-created subnetwork that is reserved for Internal HTTP(S) Load Balancing.
 If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_BALANCER you must also set the role.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,8 +1176,8 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the GCP region for this subnetwork.
-{{% /md %}}</dd>
+    <dd>URL of the GCP region for this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,10 +1185,10 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
+    <dd>The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
 set to ACTIVE or BACKUP. An ACTIVE subnetwork is one that is currently being used for Internal HTTP(S) Load Balancing. A
 BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently draining.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1196,13 +1196,13 @@ BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworksecondaryiprange">List&lt;Subnetwork<wbr>Secondary<wbr>Ip<wbr>Range<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
+    <dd>An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
 VM must belong to the primary ipCidrRange of the subnetwork. The alias IPs may belong to either primary or secondary
 ranges. **Note**: This field uses [attr-as-block mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html)
 to avoid breaking users during the 0.12 upgrade. To explicitly send a list of zero objects you must use the following
 syntax: 'example=[]' For more details about this behavior, see [this
 section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#defining-a-fixed-object-collection-value).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,14 +1210,14 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1226,8 +1226,8 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,9 +1235,9 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource. This field can be set only
+    <dd>An optional description of this resource. Provide this property when you create the resource. This field can be set only
 at resource creation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1245,8 +1245,8 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. This field is used internally during updates of this resource.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This field is not useful for users, and has been removed as an output.{{% /md %}}</p></dd>
+    <dd>Fingerprint of this resource. This field is used internally during updates of this resource.
+<p class="property-message">Deprecated: This field is not useful for users, and has been removed as an output.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,8 +1254,8 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The gateway address for default routes to reach destination addresses outside this subnetwork.
-{{% /md %}}</dd>
+    <dd>The gateway address for default routes to reach destination addresses outside this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,10 +1263,10 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
+    <dd>The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
 For example, 10.0.0.0/8 or 192.168.0.0/16. Ranges must be unique and non-overlapping within a network. Only IPv4 is
 supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,9 +1274,9 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworklogconfig">Subnetwork<wbr>Log<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
+    <dd>Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
 This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_LOAD_BALANCER'
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1284,11 +1284,11 @@ This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
+    <dd>The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
 long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
-{{% /md %}}</dd>
+    <dd>The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,9 +1305,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
+    <dd>When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
 Google Access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,9 +1315,9 @@ Google Access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1325,10 +1325,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
+    <dd>The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
 set to INTERNAL_HTTPS_LOAD_BALANCER is a user-created subnetwork that is reserved for Internal HTTP(S) Load Balancing.
 If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_BALANCER you must also set the role.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1336,8 +1336,8 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the GCP region for this subnetwork.
-{{% /md %}}</dd>
+    <dd>URL of the GCP region for this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1345,10 +1345,10 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
+    <dd>The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
 set to ACTIVE or BACKUP. An ACTIVE subnetwork is one that is currently being used for Internal HTTP(S) Load Balancing. A
 BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently draining.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1356,13 +1356,13 @@ BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworksecondaryiprange">[]Subnetwork<wbr>Secondary<wbr>Ip<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
+    <dd>An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
 VM must belong to the primary ipCidrRange of the subnetwork. The alias IPs may belong to either primary or secondary
 ranges. **Note**: This field uses [attr-as-block mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html)
 to avoid breaking users during the 0.12 upgrade. To explicitly send a list of zero objects you must use the following
 syntax: 'example=[]' For more details about this behavior, see [this
 section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#defining-a-fixed-object-collection-value).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1370,14 +1370,14 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1386,8 +1386,8 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,9 +1395,9 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource. This field can be set only
+    <dd>An optional description of this resource. Provide this property when you create the resource. This field can be set only
 at resource creation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1405,8 +1405,8 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. This field is used internally during updates of this resource.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This field is not useful for users, and has been removed as an output.{{% /md %}}</p></dd>
+    <dd>Fingerprint of this resource. This field is used internally during updates of this resource.
+<p class="property-message">Deprecated: This field is not useful for users, and has been removed as an output.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,8 +1414,8 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The gateway address for default routes to reach destination addresses outside this subnetwork.
-{{% /md %}}</dd>
+    <dd>The gateway address for default routes to reach destination addresses outside this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,10 +1423,10 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
+    <dd>The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
 For example, 10.0.0.0/8 or 192.168.0.0/16. Ranges must be unique and non-overlapping within a network. Only IPv4 is
 supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,9 +1434,9 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworklogconfig">Subnetwork<wbr>Log<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
+    <dd>Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
 This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_LOAD_BALANCER'
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1444,11 +1444,11 @@ This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
+    <dd>The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
 long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,8 +1456,8 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
-{{% /md %}}</dd>
+    <dd>The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1465,9 +1465,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
+    <dd>When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
 Google Access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,9 +1475,9 @@ Google Access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1485,10 +1485,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
+    <dd>The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
 set to INTERNAL_HTTPS_LOAD_BALANCER is a user-created subnetwork that is reserved for Internal HTTP(S) Load Balancing.
 If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_BALANCER you must also set the role.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,8 +1496,8 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the GCP region for this subnetwork.
-{{% /md %}}</dd>
+    <dd>URL of the GCP region for this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1505,10 +1505,10 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
+    <dd>The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
 set to ACTIVE or BACKUP. An ACTIVE subnetwork is one that is currently being used for Internal HTTP(S) Load Balancing. A
 BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently draining.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,13 +1516,13 @@ BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworksecondaryiprange">Subnetwork<wbr>Secondary<wbr>Ip<wbr>Range[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
+    <dd>An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
 VM must belong to the primary ipCidrRange of the subnetwork. The alias IPs may belong to either primary or secondary
 ranges. **Note**: This field uses [attr-as-block mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html)
 to avoid breaking users during the 0.12 upgrade. To explicitly send a list of zero objects you must use the following
 syntax: 'example=[]' For more details about this behavior, see [this
 section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#defining-a-fixed-object-collection-value).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1530,14 +1530,14 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1546,8 +1546,8 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1555,9 +1555,9 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource. This field can be set only
+    <dd>An optional description of this resource. Provide this property when you create the resource. This field can be set only
 at resource creation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1565,8 +1565,8 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. This field is used internally during updates of this resource.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This field is not useful for users, and has been removed as an output.{{% /md %}}</p></dd>
+    <dd>Fingerprint of this resource. This field is used internally during updates of this resource.
+<p class="property-message">Deprecated: This field is not useful for users, and has been removed as an output.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,8 +1574,8 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The gateway address for default routes to reach destination addresses outside this subnetwork.
-{{% /md %}}</dd>
+    <dd>The gateway address for default routes to reach destination addresses outside this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1583,10 +1583,10 @@ at resource creation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
+    <dd>The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork.
 For example, 10.0.0.0/8 or 192.168.0.0/16. Ranges must be unique and non-overlapping within a network. Only IPv4 is
 supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,9 +1594,9 @@ supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworklogconfig">Dict[Subnetwork<wbr>Log<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
+    <dd>Denotes the logging options for the subnetwork flow logs. If logging is enabled logs will be exported to Stackdriver.
 This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_LOAD_BALANCER'
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,11 +1604,11 @@ This field cannot be set if the 'purpose' of this subnetwork is 'INTERNAL_HTTPS_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
+    <dd>The name of the resource, provided by the client when initially creating the resource. The name must be 1-63 characters
 long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1616,8 +1616,8 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
-{{% /md %}}</dd>
+    <dd>The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1625,9 +1625,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
+    <dd>When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private
 Google Access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1635,9 +1635,9 @@ Google Access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1645,10 +1645,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
+    <dd>The purpose of the resource. This field can be either PRIVATE or INTERNAL_HTTPS_LOAD_BALANCER. A subnetwork with purpose
 set to INTERNAL_HTTPS_LOAD_BALANCER is a user-created subnetwork that is reserved for Internal HTTP(S) Load Balancing.
 If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_BALANCER you must also set the role.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1656,8 +1656,8 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL of the GCP region for this subnetwork.
-{{% /md %}}</dd>
+    <dd>URL of the GCP region for this subnetwork.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1665,10 +1665,10 @@ If unspecified, the purpose defaults to PRIVATE. If set to INTERNAL_HTTPS_LOAD_B
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
+    <dd>The role of subnetwork. Currently, this field is only used when purpose = INTERNAL_HTTPS_LOAD_BALANCER. The value can be
 set to ACTIVE or BACKUP. An ACTIVE subnetwork is one that is currently being used for Internal HTTP(S) Load Balancing. A
 BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently draining.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,13 +1676,13 @@ BACKUP subnetwork is one that is ready to be promoted to ACTIVE or is currently 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#subnetworksecondaryiprange">List[Subnetwork<wbr>Secondary<wbr>Ip<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
+    <dd>An array of configurations for secondary IP ranges for VM instances contained in this subnetwork. The primary IP of such
 VM must belong to the primary ipCidrRange of the subnetwork. The alias IPs may belong to either primary or secondary
 ranges. **Note**: This field uses [attr-as-block mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html)
 to avoid breaking users during the 0.12 upgrade. To explicitly send a list of zero objects you must use the following
 syntax: 'example=[]' For more details about this behavior, see [this
 section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#defining-a-fixed-object-collection-value).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,11 +1690,11 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1709,18 +1709,18 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
 
 
 <h4 id="subnetworklogconfig">Subnetwork<wbr>Log<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#SubnetworkLogConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#SubnetworkLogConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SubnetworkLogConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SubnetworkLogConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1729,7 +1729,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1737,7 +1737,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1745,13 +1745,13 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1760,7 +1760,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1768,7 +1768,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1776,13 +1776,13 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1791,7 +1791,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,7 +1799,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1807,13 +1807,13 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1822,7 +1822,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1830,7 +1830,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1838,28 +1838,28 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="subnetworksecondaryiprange">Subnetwork<wbr>Secondary<wbr>Ip<wbr>Range</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#SubnetworkSecondaryIpRange">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#SubnetworkSecondaryIpRange">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SubnetworkSecondaryIpRangeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SubnetworkSecondaryIpRangeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1868,7 +1868,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1876,13 +1876,13 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1891,7 +1891,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1899,13 +1899,13 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1914,7 +1914,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1922,13 +1922,13 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1937,7 +1937,7 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1945,10 +1945,10 @@ section](https://www.terraform.io/docs/configuration/attr-as-blocks.html#definin
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

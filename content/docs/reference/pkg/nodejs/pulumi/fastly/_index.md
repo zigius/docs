@@ -16,22 +16,22 @@ git_sha: "d0297b9ec6b4a115f1ad580f03348ab5ade3ef17"
 > please consult the source [`terraform-providers/terraform-provider-fastly` repo](https://github.com/terraform-providers/terraform-provider-fastly/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var fastly = require("@pulumi/fastly");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as fastly from "@pulumi/fastly";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

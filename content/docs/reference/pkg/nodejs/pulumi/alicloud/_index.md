@@ -16,22 +16,22 @@ git_sha: "ddf2ae47f435dcf52990d7ddba62e8b2641c977d"
 > please consult the source [`terraform-providers/terraform-provider-alicloud` repo](https://github.com/terraform-providers/terraform-provider-alicloud/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var alicloud = require("@pulumi/alicloud");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as alicloud from "@pulumi/alicloud";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

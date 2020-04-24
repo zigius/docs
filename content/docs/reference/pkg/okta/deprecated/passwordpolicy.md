@@ -14,26 +14,26 @@ meta_desc: "Explore the PasswordPolicy resource of the deprecated module, includ
 
 
 ## Create a PasswordPolicy Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#PasswordPolicy">PasswordPolicy</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#PasswordPolicyArgs">PasswordPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">PasswordPolicy</span><span class="p">(resource_name, opts=None, </span>auth_provider=None<span class="p">, </span>description=None<span class="p">, </span>email_recovery=None<span class="p">, </span>groups_includeds=None<span class="p">, </span>name=None<span class="p">, </span>password_auto_unlock_minutes=None<span class="p">, </span>password_dictionary_lookup=None<span class="p">, </span>password_exclude_first_name=None<span class="p">, </span>password_exclude_last_name=None<span class="p">, </span>password_exclude_username=None<span class="p">, </span>password_expire_warn_days=None<span class="p">, </span>password_history_count=None<span class="p">, </span>password_max_age_days=None<span class="p">, </span>password_max_lockout_attempts=None<span class="p">, </span>password_min_age_minutes=None<span class="p">, </span>password_min_length=None<span class="p">, </span>password_min_lowercase=None<span class="p">, </span>password_min_number=None<span class="p">, </span>password_min_symbol=None<span class="p">, </span>password_min_uppercase=None<span class="p">, </span>password_show_lockout_failures=None<span class="p">, </span>priority=None<span class="p">, </span>question_min_length=None<span class="p">, </span>question_recovery=None<span class="p">, </span>recovery_email_token=None<span class="p">, </span>skip_unlock=None<span class="p">, </span>sms_recovery=None<span class="p">, </span>status=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewPasswordPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#PasswordPolicyArgs">PasswordPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#PasswordPolicy">PasswordPolicy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.PasswordPolicy.html">PasswordPolicy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.PasswordPolicyArgs.html">PasswordPolicyArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the PasswordPolicy resource of the deprecated module, includ
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the PasswordPolicy resource of the deprecated module, includ
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the PasswordPolicy resource of the deprecated module, includ
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the PasswordPolicy resource of the deprecated module, includ
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## PasswordPolicy Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -200,8 +200,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication Provider: OKTA or ACTIVE_DIRECTORY.
-{{% /md %}}</dd>
+    <dd>Authentication Provider: OKTA or ACTIVE_DIRECTORY.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,8 +209,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Description
-{{% /md %}}</dd>
+    <dd>Policy Description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,8 +218,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable email password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable email password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs to Include
-{{% /md %}}</dd>
+    <dd>List of Group IDs to Include
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Name
-{{% /md %}}</dd>
+    <dd>Policy Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of minutes before a locked account is unlocked: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of minutes before a locked account is unlocked: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Check Passwords Against Common Password Dictionary.
-{{% /md %}}</dd>
+    <dd>Check Passwords Against Common Password Dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}User firstName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User firstName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}User lastName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User lastName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the user name must be excluded from the password.
-{{% /md %}}</dd>
+    <dd>If the user name must be excluded from the password.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a user will be warned before password expiry: 0 = no warning.
-{{% /md %}}</dd>
+    <dd>Length in days a user will be warned before password expiry: 0 = no warning.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of distinct passwords that must be created before they can be reused: 0 = none.
-{{% /md %}}</dd>
+    <dd>Number of distinct passwords that must be created before they can be reused: 0 = none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a password is valid before expiry: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Length in days a password is valid before expiry: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum time interval in minutes between password changes: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Minimum time interval in minutes between password changes: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,8 +335,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum password length.
-{{% /md %}}</dd>
+    <dd>Minimum password length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,8 +344,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If a user should be informed when their account is locked.
-{{% /md %}}</dd>
+    <dd>If a user should be informed when their account is locked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,9 +389,9 @@ The PasswordPolicy resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
+    <dd>Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
 priority is provided. API defaults it to the last/lowest if not there.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Min length of the password recovery question answer.
-{{% /md %}}</dd>
+    <dd>Min length of the password recovery question answer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable security question password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable security question password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Lifetime in minutes of the recovery email token.
-{{% /md %}}</dd>
+    <dd>Lifetime in minutes of the recovery email token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,9 +426,9 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
+    <dd>When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
 Windows account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,8 +436,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable SMS password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable SMS password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,14 +445,14 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Status: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Policy Status: ACTIVE or INACTIVE.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -461,8 +461,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication Provider: OKTA or ACTIVE_DIRECTORY.
-{{% /md %}}</dd>
+    <dd>Authentication Provider: OKTA or ACTIVE_DIRECTORY.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Description
-{{% /md %}}</dd>
+    <dd>Policy Description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable email password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable email password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs to Include
-{{% /md %}}</dd>
+    <dd>List of Group IDs to Include
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Name
-{{% /md %}}</dd>
+    <dd>Policy Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of minutes before a locked account is unlocked: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of minutes before a locked account is unlocked: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Check Passwords Against Common Password Dictionary.
-{{% /md %}}</dd>
+    <dd>Check Passwords Against Common Password Dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}User firstName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User firstName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,8 +533,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}User lastName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User lastName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the user name must be excluded from the password.
-{{% /md %}}</dd>
+    <dd>If the user name must be excluded from the password.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a user will be warned before password expiry: 0 = no warning.
-{{% /md %}}</dd>
+    <dd>Length in days a user will be warned before password expiry: 0 = no warning.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,8 +560,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of distinct passwords that must be created before they can be reused: 0 = none.
-{{% /md %}}</dd>
+    <dd>Number of distinct passwords that must be created before they can be reused: 0 = none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,8 +569,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a password is valid before expiry: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Length in days a password is valid before expiry: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -578,8 +578,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,8 +587,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum time interval in minutes between password changes: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Minimum time interval in minutes between password changes: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -596,8 +596,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum password length.
-{{% /md %}}</dd>
+    <dd>Minimum password length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,8 +605,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,8 +614,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,8 +632,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If a user should be informed when their account is locked.
-{{% /md %}}</dd>
+    <dd>If a user should be informed when their account is locked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,9 +650,9 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
+    <dd>Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
 priority is provided. API defaults it to the last/lowest if not there.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -660,8 +660,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Min length of the password recovery question answer.
-{{% /md %}}</dd>
+    <dd>Min length of the password recovery question answer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,8 +669,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable security question password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable security question password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -678,8 +678,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Lifetime in minutes of the recovery email token.
-{{% /md %}}</dd>
+    <dd>Lifetime in minutes of the recovery email token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -687,9 +687,9 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
+    <dd>When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
 Windows account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -697,8 +697,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable SMS password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable SMS password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -706,14 +706,14 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Status: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Policy Status: ACTIVE or INACTIVE.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -722,8 +722,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication Provider: OKTA or ACTIVE_DIRECTORY.
-{{% /md %}}</dd>
+    <dd>Authentication Provider: OKTA or ACTIVE_DIRECTORY.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,8 +731,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Description
-{{% /md %}}</dd>
+    <dd>Policy Description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,8 +740,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable email password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable email password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,8 +749,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs to Include
-{{% /md %}}</dd>
+    <dd>List of Group IDs to Include
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,8 +758,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Name
-{{% /md %}}</dd>
+    <dd>Policy Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,8 +767,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of minutes before a locked account is unlocked: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of minutes before a locked account is unlocked: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,8 +776,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Check Passwords Against Common Password Dictionary.
-{{% /md %}}</dd>
+    <dd>Check Passwords Against Common Password Dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,8 +785,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}User firstName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User firstName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,8 +794,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}User lastName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User lastName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,8 +803,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the user name must be excluded from the password.
-{{% /md %}}</dd>
+    <dd>If the user name must be excluded from the password.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -812,8 +812,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a user will be warned before password expiry: 0 = no warning.
-{{% /md %}}</dd>
+    <dd>Length in days a user will be warned before password expiry: 0 = no warning.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -821,8 +821,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of distinct passwords that must be created before they can be reused: 0 = none.
-{{% /md %}}</dd>
+    <dd>Number of distinct passwords that must be created before they can be reused: 0 = none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,8 +830,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a password is valid before expiry: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Length in days a password is valid before expiry: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,8 +839,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,8 +848,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Minimum time interval in minutes between password changes: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Minimum time interval in minutes between password changes: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,8 +857,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Minimum password length.
-{{% /md %}}</dd>
+    <dd>Minimum password length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,8 +875,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,8 +893,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If a user should be informed when their account is locked.
-{{% /md %}}</dd>
+    <dd>If a user should be informed when their account is locked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,9 +911,9 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
+    <dd>Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
 priority is provided. API defaults it to the last/lowest if not there.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,8 +921,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Min length of the password recovery question answer.
-{{% /md %}}</dd>
+    <dd>Min length of the password recovery question answer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -930,8 +930,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable security question password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable security question password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,8 +939,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Lifetime in minutes of the recovery email token.
-{{% /md %}}</dd>
+    <dd>Lifetime in minutes of the recovery email token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -948,9 +948,9 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
+    <dd>When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
 Windows account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,8 +958,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable SMS password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable SMS password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,14 +967,14 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Status: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Policy Status: ACTIVE or INACTIVE.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -983,8 +983,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authentication Provider: OKTA or ACTIVE_DIRECTORY.
-{{% /md %}}</dd>
+    <dd>Authentication Provider: OKTA or ACTIVE_DIRECTORY.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Policy Description
-{{% /md %}}</dd>
+    <dd>Policy Description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable email password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable email password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs to Include
-{{% /md %}}</dd>
+    <dd>List of Group IDs to Include
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Policy Name
-{{% /md %}}</dd>
+    <dd>Policy Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of minutes before a locked account is unlocked: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of minutes before a locked account is unlocked: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Check Passwords Against Common Password Dictionary.
-{{% /md %}}</dd>
+    <dd>Check Passwords Against Common Password Dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}User firstName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User firstName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}User lastName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User lastName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the user name must be excluded from the password.
-{{% /md %}}</dd>
+    <dd>If the user name must be excluded from the password.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a user will be warned before password expiry: 0 = no warning.
-{{% /md %}}</dd>
+    <dd>Length in days a user will be warned before password expiry: 0 = no warning.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of distinct passwords that must be created before they can be reused: 0 = none.
-{{% /md %}}</dd>
+    <dd>Number of distinct passwords that must be created before they can be reused: 0 = none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a password is valid before expiry: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Length in days a password is valid before expiry: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Minimum time interval in minutes between password changes: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Minimum time interval in minutes between password changes: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Minimum password length.
-{{% /md %}}</dd>
+    <dd>Minimum password length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,8 +1145,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If a user should be informed when their account is locked.
-{{% /md %}}</dd>
+    <dd>If a user should be informed when their account is locked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,9 +1172,9 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
+    <dd>Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
 priority is provided. API defaults it to the last/lowest if not there.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,8 +1182,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Min length of the password recovery question answer.
-{{% /md %}}</dd>
+    <dd>Min length of the password recovery question answer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,8 +1191,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable security question password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable security question password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,8 +1200,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Lifetime in minutes of the recovery email token.
-{{% /md %}}</dd>
+    <dd>Lifetime in minutes of the recovery email token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,9 +1209,9 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
+    <dd>When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
 Windows account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable SMS password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable SMS password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,11 +1228,11 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Policy Status: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Policy Status: ACTIVE or INACTIVE.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1246,7 +1246,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1255,13 +1255,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1270,13 +1270,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1285,13 +1285,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1300,10 +1300,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1314,25 +1314,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing PasswordPolicy Resource {#look-up}
 
 Get an existing PasswordPolicy resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#PasswordPolicyState">PasswordPolicyState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#PasswordPolicy">PasswordPolicy</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>auth_provider=None<span class="p">, </span>description=None<span class="p">, </span>email_recovery=None<span class="p">, </span>groups_includeds=None<span class="p">, </span>name=None<span class="p">, </span>password_auto_unlock_minutes=None<span class="p">, </span>password_dictionary_lookup=None<span class="p">, </span>password_exclude_first_name=None<span class="p">, </span>password_exclude_last_name=None<span class="p">, </span>password_exclude_username=None<span class="p">, </span>password_expire_warn_days=None<span class="p">, </span>password_history_count=None<span class="p">, </span>password_max_age_days=None<span class="p">, </span>password_max_lockout_attempts=None<span class="p">, </span>password_min_age_minutes=None<span class="p">, </span>password_min_length=None<span class="p">, </span>password_min_lowercase=None<span class="p">, </span>password_min_number=None<span class="p">, </span>password_min_symbol=None<span class="p">, </span>password_min_uppercase=None<span class="p">, </span>password_show_lockout_failures=None<span class="p">, </span>priority=None<span class="p">, </span>question_min_length=None<span class="p">, </span>question_recovery=None<span class="p">, </span>recovery_email_token=None<span class="p">, </span>skip_unlock=None<span class="p">, </span>sms_recovery=None<span class="p">, </span>status=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPasswordPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#PasswordPolicyState">PasswordPolicyState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#PasswordPolicy">PasswordPolicy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.PasswordPolicy.html">PasswordPolicy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.PasswordPolicyState.html">PasswordPolicyState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1357,9 +1357,9 @@ Get an existing PasswordPolicy resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1372,36 +1372,9 @@ Get an existing PasswordPolicy resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1426,13 +1399,40 @@ Get an existing PasswordPolicy resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1441,8 +1441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication Provider: OKTA or ACTIVE_DIRECTORY.
-{{% /md %}}</dd>
+    <dd>Authentication Provider: OKTA or ACTIVE_DIRECTORY.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,8 +1450,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Description
-{{% /md %}}</dd>
+    <dd>Policy Description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1459,8 +1459,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable email password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable email password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,8 +1468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs to Include
-{{% /md %}}</dd>
+    <dd>List of Group IDs to Include
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,8 +1477,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Name
-{{% /md %}}</dd>
+    <dd>Policy Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,8 +1486,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of minutes before a locked account is unlocked: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of minutes before a locked account is unlocked: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,8 +1495,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Check Passwords Against Common Password Dictionary.
-{{% /md %}}</dd>
+    <dd>Check Passwords Against Common Password Dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}User firstName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User firstName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,8 +1513,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}User lastName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User lastName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,8 +1522,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the user name must be excluded from the password.
-{{% /md %}}</dd>
+    <dd>If the user name must be excluded from the password.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,8 +1531,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a user will be warned before password expiry: 0 = no warning.
-{{% /md %}}</dd>
+    <dd>Length in days a user will be warned before password expiry: 0 = no warning.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,8 +1540,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of distinct passwords that must be created before they can be reused: 0 = none.
-{{% /md %}}</dd>
+    <dd>Number of distinct passwords that must be created before they can be reused: 0 = none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,8 +1549,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a password is valid before expiry: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Length in days a password is valid before expiry: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1558,8 +1558,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,8 +1567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum time interval in minutes between password changes: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Minimum time interval in minutes between password changes: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,8 +1576,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum password length.
-{{% /md %}}</dd>
+    <dd>Minimum password length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1585,8 +1585,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,8 +1594,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,8 +1603,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1612,8 +1612,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1621,8 +1621,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If a user should be informed when their account is locked.
-{{% /md %}}</dd>
+    <dd>If a user should be informed when their account is locked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1630,9 +1630,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
+    <dd>Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
 priority is provided. API defaults it to the last/lowest if not there.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,8 +1640,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Min length of the password recovery question answer.
-{{% /md %}}</dd>
+    <dd>Min length of the password recovery question answer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,8 +1649,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable security question password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable security question password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,8 +1658,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Lifetime in minutes of the recovery email token.
-{{% /md %}}</dd>
+    <dd>Lifetime in minutes of the recovery email token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,9 +1667,9 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
+    <dd>When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
 Windows account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1677,8 +1677,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable SMS password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable SMS password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1686,14 +1686,14 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Status: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Policy Status: ACTIVE or INACTIVE.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1702,8 +1702,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication Provider: OKTA or ACTIVE_DIRECTORY.
-{{% /md %}}</dd>
+    <dd>Authentication Provider: OKTA or ACTIVE_DIRECTORY.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1711,8 +1711,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Description
-{{% /md %}}</dd>
+    <dd>Policy Description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1720,8 +1720,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable email password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable email password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1729,8 +1729,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs to Include
-{{% /md %}}</dd>
+    <dd>List of Group IDs to Include
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1738,8 +1738,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Name
-{{% /md %}}</dd>
+    <dd>Policy Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1747,8 +1747,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of minutes before a locked account is unlocked: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of minutes before a locked account is unlocked: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1756,8 +1756,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Check Passwords Against Common Password Dictionary.
-{{% /md %}}</dd>
+    <dd>Check Passwords Against Common Password Dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1765,8 +1765,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}User firstName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User firstName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,8 +1774,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}User lastName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User lastName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,8 +1783,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the user name must be excluded from the password.
-{{% /md %}}</dd>
+    <dd>If the user name must be excluded from the password.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1792,8 +1792,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a user will be warned before password expiry: 0 = no warning.
-{{% /md %}}</dd>
+    <dd>Length in days a user will be warned before password expiry: 0 = no warning.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1801,8 +1801,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of distinct passwords that must be created before they can be reused: 0 = none.
-{{% /md %}}</dd>
+    <dd>Number of distinct passwords that must be created before they can be reused: 0 = none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,8 +1810,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a password is valid before expiry: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Length in days a password is valid before expiry: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1819,8 +1819,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1828,8 +1828,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum time interval in minutes between password changes: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Minimum time interval in minutes between password changes: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1837,8 +1837,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum password length.
-{{% /md %}}</dd>
+    <dd>Minimum password length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,8 +1846,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,8 +1855,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1864,8 +1864,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1873,8 +1873,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1882,8 +1882,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If a user should be informed when their account is locked.
-{{% /md %}}</dd>
+    <dd>If a user should be informed when their account is locked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1891,9 +1891,9 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
+    <dd>Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
 priority is provided. API defaults it to the last/lowest if not there.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1901,8 +1901,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Min length of the password recovery question answer.
-{{% /md %}}</dd>
+    <dd>Min length of the password recovery question answer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1910,8 +1910,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable security question password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable security question password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1919,8 +1919,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Lifetime in minutes of the recovery email token.
-{{% /md %}}</dd>
+    <dd>Lifetime in minutes of the recovery email token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1928,9 +1928,9 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
+    <dd>When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
 Windows account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,8 +1938,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable SMS password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable SMS password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,14 +1947,14 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Status: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Policy Status: ACTIVE or INACTIVE.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1963,8 +1963,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication Provider: OKTA or ACTIVE_DIRECTORY.
-{{% /md %}}</dd>
+    <dd>Authentication Provider: OKTA or ACTIVE_DIRECTORY.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1972,8 +1972,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Description
-{{% /md %}}</dd>
+    <dd>Policy Description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1981,8 +1981,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable email password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable email password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1990,8 +1990,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs to Include
-{{% /md %}}</dd>
+    <dd>List of Group IDs to Include
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1999,8 +1999,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Name
-{{% /md %}}</dd>
+    <dd>Policy Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2008,8 +2008,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of minutes before a locked account is unlocked: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of minutes before a locked account is unlocked: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2017,8 +2017,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Check Passwords Against Common Password Dictionary.
-{{% /md %}}</dd>
+    <dd>Check Passwords Against Common Password Dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2026,8 +2026,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}User firstName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User firstName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2035,8 +2035,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}User lastName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User lastName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2044,8 +2044,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the user name must be excluded from the password.
-{{% /md %}}</dd>
+    <dd>If the user name must be excluded from the password.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2053,8 +2053,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a user will be warned before password expiry: 0 = no warning.
-{{% /md %}}</dd>
+    <dd>Length in days a user will be warned before password expiry: 0 = no warning.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2062,8 +2062,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of distinct passwords that must be created before they can be reused: 0 = none.
-{{% /md %}}</dd>
+    <dd>Number of distinct passwords that must be created before they can be reused: 0 = none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2071,8 +2071,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a password is valid before expiry: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Length in days a password is valid before expiry: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2080,8 +2080,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2089,8 +2089,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Minimum time interval in minutes between password changes: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Minimum time interval in minutes between password changes: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2098,8 +2098,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Minimum password length.
-{{% /md %}}</dd>
+    <dd>Minimum password length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,8 +2107,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2116,8 +2116,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,8 +2125,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2134,8 +2134,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,8 +2143,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If a user should be informed when their account is locked.
-{{% /md %}}</dd>
+    <dd>If a user should be informed when their account is locked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2152,9 +2152,9 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
+    <dd>Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
 priority is provided. API defaults it to the last/lowest if not there.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2162,8 +2162,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Min length of the password recovery question answer.
-{{% /md %}}</dd>
+    <dd>Min length of the password recovery question answer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2171,8 +2171,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable security question password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable security question password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2180,8 +2180,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Lifetime in minutes of the recovery email token.
-{{% /md %}}</dd>
+    <dd>Lifetime in minutes of the recovery email token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2189,9 +2189,9 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
+    <dd>When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
 Windows account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2199,8 +2199,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable SMS password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable SMS password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2208,14 +2208,14 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Policy Status: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Policy Status: ACTIVE or INACTIVE.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2224,8 +2224,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authentication Provider: OKTA or ACTIVE_DIRECTORY.
-{{% /md %}}</dd>
+    <dd>Authentication Provider: OKTA or ACTIVE_DIRECTORY.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2233,8 +2233,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Policy Description
-{{% /md %}}</dd>
+    <dd>Policy Description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2242,8 +2242,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable email password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable email password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2251,8 +2251,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs to Include
-{{% /md %}}</dd>
+    <dd>List of Group IDs to Include
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2260,8 +2260,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Policy Name
-{{% /md %}}</dd>
+    <dd>Policy Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2269,8 +2269,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of minutes before a locked account is unlocked: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of minutes before a locked account is unlocked: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2278,8 +2278,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Check Passwords Against Common Password Dictionary.
-{{% /md %}}</dd>
+    <dd>Check Passwords Against Common Password Dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2287,8 +2287,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}User firstName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User firstName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2296,8 +2296,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}User lastName attribute must be excluded from the password
-{{% /md %}}</dd>
+    <dd>User lastName attribute must be excluded from the password
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2305,8 +2305,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the user name must be excluded from the password.
-{{% /md %}}</dd>
+    <dd>If the user name must be excluded from the password.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2314,8 +2314,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a user will be warned before password expiry: 0 = no warning.
-{{% /md %}}</dd>
+    <dd>Length in days a user will be warned before password expiry: 0 = no warning.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2323,8 +2323,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of distinct passwords that must be created before they can be reused: 0 = none.
-{{% /md %}}</dd>
+    <dd>Number of distinct passwords that must be created before they can be reused: 0 = none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2332,8 +2332,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Length in days a password is valid before expiry: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Length in days a password is valid before expiry: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2341,8 +2341,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2350,8 +2350,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Minimum time interval in minutes between password changes: 0 = no limit.
-{{% /md %}}</dd>
+    <dd>Minimum time interval in minutes between password changes: 0 = no limit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,8 +2359,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Minimum password length.
-{{% /md %}}</dd>
+    <dd>Minimum password length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2368,8 +2368,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one lower case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2377,8 +2377,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one number: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2386,8 +2386,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2395,8 +2395,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
-{{% /md %}}</dd>
+    <dd>If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default = 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2404,8 +2404,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If a user should be informed when their account is locked.
-{{% /md %}}</dd>
+    <dd>If a user should be informed when their account is locked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2413,9 +2413,9 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
+    <dd>Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid
 priority is provided. API defaults it to the last/lowest if not there.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2423,8 +2423,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Min length of the password recovery question answer.
-{{% /md %}}</dd>
+    <dd>Min length of the password recovery question answer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2432,8 +2432,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable security question password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable security question password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2441,8 +2441,8 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Lifetime in minutes of the recovery email token.
-{{% /md %}}</dd>
+    <dd>Lifetime in minutes of the recovery email token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2450,9 +2450,9 @@ priority is provided. API defaults it to the last/lowest if not there.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
+    <dd>When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's
 Windows account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2460,8 +2460,8 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enable or disable SMS password recovery: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Enable or disable SMS password recovery: ACTIVE or INACTIVE.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2469,11 +2469,11 @@ Windows account.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Policy Status: ACTIVE or INACTIVE.
-{{% /md %}}</dd>
+    <dd>Policy Status: ACTIVE or INACTIVE.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

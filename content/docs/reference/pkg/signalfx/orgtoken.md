@@ -42,26 +42,26 @@ const myteamkey0 = new signalfx.OrgToken("myteamkey0", {
 
 
 ## Create a OrgToken Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/#OrgToken">OrgToken</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/#OrgTokenArgs">OrgTokenArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">OrgToken</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>description=None<span class="p">, </span>disabled=None<span class="p">, </span>dpm_limits=None<span class="p">, </span>host_or_usage_limits=None<span class="p">, </span>name=None<span class="p">, </span>notifications=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewOrgToken<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#OrgTokenArgs">OrgTokenArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#OrgToken">OrgToken</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.Signalfx.OrgToken.html">OrgToken</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.SignalFx.OrgTokenArgs.html">OrgTokenArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -98,9 +98,9 @@ const myteamkey0 = new signalfx.OrgToken("myteamkey0", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -118,9 +118,9 @@ const myteamkey0 = new signalfx.OrgToken("myteamkey0", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -167,9 +167,9 @@ const myteamkey0 = new signalfx.OrgToken("myteamkey0", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -206,7 +206,7 @@ const myteamkey0 = new signalfx.OrgToken("myteamkey0", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## OrgToken Resource Properties {#properties}
 
@@ -219,7 +219,7 @@ The OrgToken resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -228,8 +228,8 @@ The OrgToken resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the token.
-{{% /md %}}</dd>
+    <dd>Description of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,8 +237,8 @@ The OrgToken resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ The OrgToken resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokendpmlimits">Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Org<wbr>Token<wbr>Dpm<wbr>Limits<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specify DPM-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify DPM-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,8 +255,8 @@ The OrgToken resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokenhostorusagelimits">Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Org<wbr>Token<wbr>Host<wbr>Or<wbr>Usage<wbr>Limits<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specify Usage-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify Usage-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ The OrgToken resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the token.
-{{% /md %}}</dd>
+    <dd>Name of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,15 +273,15 @@ The OrgToken resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of strings specifying where notifications will be sent when an incident occurs. See
+    <dd>List of strings specifying where notifications will be sent when an incident occurs. See
 https://developers.signalfx.com/v2/docs/detector-model#notifications-models for more info
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -290,8 +290,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the token.
-{{% /md %}}</dd>
+    <dd>Description of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokendpmlimits">Org<wbr>Token<wbr>Dpm<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Specify DPM-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify DPM-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokenhostorusagelimits">Org<wbr>Token<wbr>Host<wbr>Or<wbr>Usage<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Specify Usage-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify Usage-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the token.
-{{% /md %}}</dd>
+    <dd>Name of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,15 +335,15 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of strings specifying where notifications will be sent when an incident occurs. See
+    <dd>List of strings specifying where notifications will be sent when an incident occurs. See
 https://developers.signalfx.com/v2/docs/detector-model#notifications-models for more info
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -352,8 +352,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the token.
-{{% /md %}}</dd>
+    <dd>Description of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,8 +361,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,8 +370,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokendpmlimits">Org<wbr>Token<wbr>Dpm<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Specify DPM-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify DPM-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokenhostorusagelimits">Org<wbr>Token<wbr>Host<wbr>Or<wbr>Usage<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Specify Usage-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify Usage-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the token.
-{{% /md %}}</dd>
+    <dd>Name of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,15 +397,15 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of strings specifying where notifications will be sent when an incident occurs. See
+    <dd>List of strings specifying where notifications will be sent when an incident occurs. See
 https://developers.signalfx.com/v2/docs/detector-model#notifications-models for more info
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -414,8 +414,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the token.
-{{% /md %}}</dd>
+    <dd>Description of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokendpmlimits">Dict[Org<wbr>Token<wbr>Dpm<wbr>Limits]</a></span>
     </dt>
-    <dd>{{% md %}}Specify DPM-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify DPM-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokenhostorusagelimits">Dict[Org<wbr>Token<wbr>Host<wbr>Or<wbr>Usage<wbr>Limits]</a></span>
     </dt>
-    <dd>{{% md %}}Specify Usage-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify Usage-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,8 +450,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the token.
-{{% /md %}}</dd>
+    <dd>Name of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,12 +459,12 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of strings specifying where notifications will be sent when an incident occurs. See
+    <dd>List of strings specifying where notifications will be sent when an incident occurs. See
 https://developers.signalfx.com/v2/docs/detector-model#notifications-models for more info
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -478,7 +478,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -487,7 +487,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -495,13 +495,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -510,7 +510,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -518,13 +518,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -533,7 +533,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -541,13 +541,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -556,7 +556,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -564,10 +564,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -578,25 +578,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing OrgToken Resource {#look-up}
 
 Get an existing OrgToken resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/#OrgTokenState">OrgTokenState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/#OrgToken">OrgToken</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>description=None<span class="p">, </span>disabled=None<span class="p">, </span>dpm_limits=None<span class="p">, </span>host_or_usage_limits=None<span class="p">, </span>name=None<span class="p">, </span>notifications=None<span class="p">, </span>secret=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetOrgToken<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#OrgTokenState">OrgTokenState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#OrgToken">OrgToken</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.Signalfx.OrgToken.html">OrgToken</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.Signalfx..OrgTokenState.html">OrgTokenState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -621,9 +621,9 @@ Get an existing OrgToken resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -636,36 +636,9 @@ Get an existing OrgToken resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -690,13 +663,40 @@ Get an existing OrgToken resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -705,8 +705,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the token.
-{{% /md %}}</dd>
+    <dd>Description of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -714,8 +714,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,8 +723,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokendpmlimits">Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Org<wbr>Token<wbr>Dpm<wbr>Limits<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specify DPM-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify DPM-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,8 +732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokenhostorusagelimits">Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Org<wbr>Token<wbr>Host<wbr>Or<wbr>Usage<wbr>Limits<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specify Usage-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify Usage-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,8 +741,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the token.
-{{% /md %}}</dd>
+    <dd>Name of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -750,9 +750,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of strings specifying where notifications will be sent when an incident occurs. See
+    <dd>List of strings specifying where notifications will be sent when an incident occurs. See
 https://developers.signalfx.com/v2/docs/detector-model#notifications-models for more info
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,13 +760,13 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -775,8 +775,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the token.
-{{% /md %}}</dd>
+    <dd>Description of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -784,8 +784,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -793,8 +793,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokendpmlimits">Org<wbr>Token<wbr>Dpm<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Specify DPM-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify DPM-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -802,8 +802,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokenhostorusagelimits">Org<wbr>Token<wbr>Host<wbr>Or<wbr>Usage<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Specify Usage-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify Usage-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -811,8 +811,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the token.
-{{% /md %}}</dd>
+    <dd>Name of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -820,9 +820,9 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of strings specifying where notifications will be sent when an incident occurs. See
+    <dd>List of strings specifying where notifications will be sent when an incident occurs. See
 https://developers.signalfx.com/v2/docs/detector-model#notifications-models for more info
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,13 +830,13 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -845,8 +845,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the token.
-{{% /md %}}</dd>
+    <dd>Description of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -854,8 +854,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -863,8 +863,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokendpmlimits">Org<wbr>Token<wbr>Dpm<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Specify DPM-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify DPM-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -872,8 +872,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokenhostorusagelimits">Org<wbr>Token<wbr>Host<wbr>Or<wbr>Usage<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Specify Usage-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify Usage-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -881,8 +881,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the token.
-{{% /md %}}</dd>
+    <dd>Name of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -890,9 +890,9 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of strings specifying where notifications will be sent when an incident occurs. See
+    <dd>List of strings specifying where notifications will be sent when an incident occurs. See
 https://developers.signalfx.com/v2/docs/detector-model#notifications-models for more info
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,13 +900,13 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -915,8 +915,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the token.
-{{% /md %}}</dd>
+    <dd>Description of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,8 +924,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Flag that controls enabling the token. If set to `true`, the token is disabled, and you can't use it for authentication. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,8 +933,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokendpmlimits">Dict[Org<wbr>Token<wbr>Dpm<wbr>Limits]</a></span>
     </dt>
-    <dd>{{% md %}}Specify DPM-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify DPM-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#orgtokenhostorusagelimits">Dict[Org<wbr>Token<wbr>Host<wbr>Or<wbr>Usage<wbr>Limits]</a></span>
     </dt>
-    <dd>{{% md %}}Specify Usage-based limits for this token.
-{{% /md %}}</dd>
+    <dd>Specify Usage-based limits for this token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,8 +951,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the token.
-{{% /md %}}</dd>
+    <dd>Name of the token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,9 +960,9 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of strings specifying where notifications will be sent when an incident occurs. See
+    <dd>List of strings specifying where notifications will be sent when an incident occurs. See
 https://developers.signalfx.com/v2/docs/detector-model#notifications-models for more info
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,10 +970,10 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -988,18 +988,18 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
 
 
 <h4 id="orgtokendpmlimits">Org<wbr>Token<wbr>Dpm<wbr>Limits</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#OrgTokenDpmLimits">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#OrgTokenDpmLimits">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#OrgTokenDpmLimitsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#OrgTokenDpmLimitsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1008,8 +1008,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The datapoints per minute (dpm) limit for this token. If you exceed this limit, SignalFx sends out an alert.
-{{% /md %}}</dd>
+    <dd>The datapoints per minute (dpm) limit for this token. If you exceed this limit, SignalFx sends out an alert.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1017,14 +1017,14 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}DPM level at which SignalFx sends the notification for this token. If you don't specify a notification, SignalFx sends the generic notification.
-{{% /md %}}</dd>
+    <dd>DPM level at which SignalFx sends the notification for this token. If you don't specify a notification, SignalFx sends the generic notification.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1033,8 +1033,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The datapoints per minute (dpm) limit for this token. If you exceed this limit, SignalFx sends out an alert.
-{{% /md %}}</dd>
+    <dd>The datapoints per minute (dpm) limit for this token. If you exceed this limit, SignalFx sends out an alert.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,14 +1042,14 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}DPM level at which SignalFx sends the notification for this token. If you don't specify a notification, SignalFx sends the generic notification.
-{{% /md %}}</dd>
+    <dd>DPM level at which SignalFx sends the notification for this token. If you don't specify a notification, SignalFx sends the generic notification.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1058,8 +1058,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The datapoints per minute (dpm) limit for this token. If you exceed this limit, SignalFx sends out an alert.
-{{% /md %}}</dd>
+    <dd>The datapoints per minute (dpm) limit for this token. If you exceed this limit, SignalFx sends out an alert.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,14 +1067,14 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}DPM level at which SignalFx sends the notification for this token. If you don't specify a notification, SignalFx sends the generic notification.
-{{% /md %}}</dd>
+    <dd>DPM level at which SignalFx sends the notification for this token. If you don't specify a notification, SignalFx sends the generic notification.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1083,8 +1083,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The datapoints per minute (dpm) limit for this token. If you exceed this limit, SignalFx sends out an alert.
-{{% /md %}}</dd>
+    <dd>The datapoints per minute (dpm) limit for this token. If you exceed this limit, SignalFx sends out an alert.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1092,29 +1092,29 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}DPM level at which SignalFx sends the notification for this token. If you don't specify a notification, SignalFx sends the generic notification.
-{{% /md %}}</dd>
+    <dd>DPM level at which SignalFx sends the notification for this token. If you don't specify a notification, SignalFx sends the generic notification.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="orgtokenhostorusagelimits">Org<wbr>Token<wbr>Host<wbr>Or<wbr>Usage<wbr>Limits</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#OrgTokenHostOrUsageLimits">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#OrgTokenHostOrUsageLimits">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#OrgTokenHostOrUsageLimitsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#OrgTokenHostOrUsageLimitsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1123,8 +1123,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Max number of Docker containers that can use this token
-{{% /md %}}</dd>
+    <dd>Max number of Docker containers that can use this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1132,8 +1132,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for Docker containers
-{{% /md %}}</dd>
+    <dd>Notification threshold for Docker containers
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,8 +1141,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Max number of custom metrics that can be sent with this token
-{{% /md %}}</dd>
+    <dd>Max number of custom metrics that can be sent with this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,8 +1150,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for custom metrics
-{{% /md %}}</dd>
+    <dd>Notification threshold for custom metrics
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,8 +1159,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Max number of hi-res metrics that can be sent with this toke
-{{% /md %}}</dd>
+    <dd>Max number of hi-res metrics that can be sent with this toke
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,8 +1168,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for hi-res metrics
-{{% /md %}}</dd>
+    <dd>Notification threshold for hi-res metrics
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,8 +1177,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Max number of hosts that can use this token
-{{% /md %}}</dd>
+    <dd>Max number of hosts that can use this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,14 +1186,14 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for hosts
-{{% /md %}}</dd>
+    <dd>Notification threshold for hosts
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1202,8 +1202,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Max number of Docker containers that can use this token
-{{% /md %}}</dd>
+    <dd>Max number of Docker containers that can use this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,8 +1211,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for Docker containers
-{{% /md %}}</dd>
+    <dd>Notification threshold for Docker containers
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1220,8 +1220,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Max number of custom metrics that can be sent with this token
-{{% /md %}}</dd>
+    <dd>Max number of custom metrics that can be sent with this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,8 +1229,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for custom metrics
-{{% /md %}}</dd>
+    <dd>Notification threshold for custom metrics
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1238,8 +1238,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Max number of hi-res metrics that can be sent with this toke
-{{% /md %}}</dd>
+    <dd>Max number of hi-res metrics that can be sent with this toke
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,8 +1247,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for hi-res metrics
-{{% /md %}}</dd>
+    <dd>Notification threshold for hi-res metrics
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,8 +1256,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Max number of hosts that can use this token
-{{% /md %}}</dd>
+    <dd>Max number of hosts that can use this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1265,14 +1265,14 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for hosts
-{{% /md %}}</dd>
+    <dd>Notification threshold for hosts
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1281,8 +1281,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Max number of Docker containers that can use this token
-{{% /md %}}</dd>
+    <dd>Max number of Docker containers that can use this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,8 +1290,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for Docker containers
-{{% /md %}}</dd>
+    <dd>Notification threshold for Docker containers
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,8 +1299,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Max number of custom metrics that can be sent with this token
-{{% /md %}}</dd>
+    <dd>Max number of custom metrics that can be sent with this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1308,8 +1308,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for custom metrics
-{{% /md %}}</dd>
+    <dd>Notification threshold for custom metrics
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1317,8 +1317,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Max number of hi-res metrics that can be sent with this toke
-{{% /md %}}</dd>
+    <dd>Max number of hi-res metrics that can be sent with this toke
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1326,8 +1326,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for hi-res metrics
-{{% /md %}}</dd>
+    <dd>Notification threshold for hi-res metrics
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1335,8 +1335,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Max number of hosts that can use this token
-{{% /md %}}</dd>
+    <dd>Max number of hosts that can use this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1344,14 +1344,14 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for hosts
-{{% /md %}}</dd>
+    <dd>Notification threshold for hosts
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1360,8 +1360,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Max number of Docker containers that can use this token
-{{% /md %}}</dd>
+    <dd>Max number of Docker containers that can use this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,8 +1369,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for Docker containers
-{{% /md %}}</dd>
+    <dd>Notification threshold for Docker containers
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,8 +1378,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Max number of custom metrics that can be sent with this token
-{{% /md %}}</dd>
+    <dd>Max number of custom metrics that can be sent with this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1387,8 +1387,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for custom metrics
-{{% /md %}}</dd>
+    <dd>Notification threshold for custom metrics
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1396,8 +1396,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Max number of hi-res metrics that can be sent with this toke
-{{% /md %}}</dd>
+    <dd>Max number of hi-res metrics that can be sent with this toke
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1405,8 +1405,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for hi-res metrics
-{{% /md %}}</dd>
+    <dd>Notification threshold for hi-res metrics
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,8 +1414,8 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Max number of hosts that can use this token
-{{% /md %}}</dd>
+    <dd>Max number of hosts that can use this token
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,11 +1423,11 @@ https://developers.signalfx.com/v2/docs/detector-model#notifications-models for 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold for hosts
-{{% /md %}}</dd>
+    <dd>Notification threshold for hosts
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

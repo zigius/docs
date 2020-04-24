@@ -16,29 +16,29 @@ Use this data source to access information about an existing NAT Gateway.
 
 ## Using GetNatGateway {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getNatGateway<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#GetNatGatewayArgs">GetNatGatewayArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#GetNatGatewayResult">GetNatGatewayResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_nat_gateway(</span>name=None<span class="p">, </span>public_ip_address_ids=None<span class="p">, </span>public_ip_prefix_ids=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupNatGateway<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#LookupNatGatewayArgs">LookupNatGatewayArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#LookupNatGatewayResult">LookupNatGatewayResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetNatGateway </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.GetNatGatewayResult.html">GetNatGatewayResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.GetNatGatewayArgs.html">GetNatGatewayArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -46,7 +46,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -55,8 +55,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the NAT Gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -64,8 +64,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group where the NAT Gateway exists.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group where the NAT Gateway exists.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -73,8 +73,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Address resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Address resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -82,14 +82,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -98,8 +98,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the NAT Gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -107,8 +107,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group where the NAT Gateway exists.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group where the NAT Gateway exists.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -116,8 +116,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Address resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Address resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -125,14 +125,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -141,8 +141,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the NAT Gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -150,8 +150,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group where the NAT Gateway exists.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group where the NAT Gateway exists.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -159,8 +159,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Address resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Address resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -168,14 +168,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -184,8 +184,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the NAT Gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -193,8 +193,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group where the NAT Gateway exists.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group where the NAT Gateway exists.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -202,8 +202,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Address resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Address resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -211,11 +211,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -231,7 +231,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -240,8 +240,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -249,8 +249,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The idle timeout in minutes which is used for the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The idle timeout in minutes which is used for the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -258,8 +258,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location where the NAT Gateway exists.
-{{% /md %}}</dd>
+    <dd>The location where the NAT Gateway exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -267,7 +267,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -275,8 +275,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Address resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Address resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -284,8 +284,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -293,7 +293,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -301,8 +301,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Resource GUID of the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The Resource GUID of the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -310,8 +310,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU used by the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The SKU used by the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -319,8 +319,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -328,14 +328,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones which the NAT Gateway exists in.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones which the NAT Gateway exists in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -344,8 +344,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -353,8 +353,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The idle timeout in minutes which is used for the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The idle timeout in minutes which is used for the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -362,8 +362,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location where the NAT Gateway exists.
-{{% /md %}}</dd>
+    <dd>The location where the NAT Gateway exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -371,7 +371,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -379,8 +379,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Address resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Address resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -388,8 +388,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -397,7 +397,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -405,8 +405,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Resource GUID of the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The Resource GUID of the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -414,8 +414,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU used by the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The SKU used by the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -423,8 +423,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -432,14 +432,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones which the NAT Gateway exists in.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones which the NAT Gateway exists in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -448,8 +448,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -457,8 +457,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The idle timeout in minutes which is used for the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The idle timeout in minutes which is used for the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -466,8 +466,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location where the NAT Gateway exists.
-{{% /md %}}</dd>
+    <dd>The location where the NAT Gateway exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -475,7 +475,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -483,8 +483,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Address resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Address resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -492,8 +492,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -501,7 +501,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -509,8 +509,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Resource GUID of the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The Resource GUID of the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -518,8 +518,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU used by the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The SKU used by the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -527,8 +527,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -536,14 +536,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones which the NAT Gateway exists in.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones which the NAT Gateway exists in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -552,8 +552,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -561,8 +561,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The idle timeout in minutes which is used for the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The idle timeout in minutes which is used for the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -570,8 +570,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location where the NAT Gateway exists.
-{{% /md %}}</dd>
+    <dd>The location where the NAT Gateway exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -579,7 +579,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -587,8 +587,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Address resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Address resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -596,8 +596,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
-{{% /md %}}</dd>
+    <dd>A list of existing Public IP Prefix resource IDs which the NAT Gateway is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -605,7 +605,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -613,8 +613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Resource GUID of the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The Resource GUID of the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU used by the NAT Gateway.
-{{% /md %}}</dd>
+    <dd>The SKU used by the NAT Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,8 +631,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -640,11 +640,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones which the NAT Gateway exists in.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones which the NAT Gateway exists in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

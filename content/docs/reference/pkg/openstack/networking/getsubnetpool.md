@@ -32,29 +32,29 @@ const subnetpool1 = pulumi.output(openstack.networking.getSubnetPool({
 
 ## Using GetSubnetPool {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSubnetPool<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#GetSubnetPoolArgs">GetSubnetPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#GetSubnetPoolResult">GetSubnetPoolResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_subnet_pool(</span>address_scope_id=None<span class="p">, </span>default_prefixlen=None<span class="p">, </span>default_quota=None<span class="p">, </span>description=None<span class="p">, </span>ip_version=None<span class="p">, </span>is_default=None<span class="p">, </span>max_prefixlen=None<span class="p">, </span>min_prefixlen=None<span class="p">, </span>name=None<span class="p">, </span>project_id=None<span class="p">, </span>region=None<span class="p">, </span>shared=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSubnetPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#LookupSubnetPoolArgs">LookupSubnetPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#LookupSubnetPoolResult">LookupSubnetPoolResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSubnetPool </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.GetSubnetPoolResult.html">GetSubnetPoolResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Networking.GetSubnetPoolArgs.html">GetSubnetPoolArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -71,9 +71,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope that subnetpools
+    <dd>The Neutron address scope that subnetpools
 is assigned to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -81,9 +81,9 @@ is assigned to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool default prefix
+    <dd>The size of the subnetpool default prefix
 length.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -91,9 +91,9 @@ length.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that
+    <dd>The per-project quota on the prefix space that
 can be allocated from the subnetpool for project subnets.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -101,8 +101,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
-{{% /md %}}</dd>
+    <dd>The human-readable description for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -110,8 +110,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -119,8 +119,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the subnetpool is default subnetpool or not.
-{{% /md %}}</dd>
+    <dd>Whether the subnetpool is default subnetpool or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -128,8 +128,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool max prefix length.
-{{% /md %}}</dd>
+    <dd>The size of the subnetpool max prefix length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -137,8 +137,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool min prefix length.
-{{% /md %}}</dd>
+    <dd>The size of the subnetpool min prefix length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -146,8 +146,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The name of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -155,8 +155,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The owner of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -164,10 +164,10 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to retrieve a subnetpool id. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -175,8 +175,8 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this subnetpool is shared across all projects.
-{{% /md %}}</dd>
+    <dd>Whether this subnetpool is shared across all projects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -184,14 +184,14 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of subnetpool tags to filter.
-{{% /md %}}</dd>
+    <dd>The list of subnetpool tags to filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -200,9 +200,9 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope that subnetpools
+    <dd>The Neutron address scope that subnetpools
 is assigned to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -210,9 +210,9 @@ is assigned to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool default prefix
+    <dd>The size of the subnetpool default prefix
 length.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -220,9 +220,9 @@ length.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that
+    <dd>The per-project quota on the prefix space that
 can be allocated from the subnetpool for project subnets.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,8 +230,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
-{{% /md %}}</dd>
+    <dd>The human-readable description for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,8 +239,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,8 +248,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the subnetpool is default subnetpool or not.
-{{% /md %}}</dd>
+    <dd>Whether the subnetpool is default subnetpool or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,8 +257,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool max prefix length.
-{{% /md %}}</dd>
+    <dd>The size of the subnetpool max prefix length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool min prefix length.
-{{% /md %}}</dd>
+    <dd>The size of the subnetpool min prefix length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The name of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The owner of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,10 +293,10 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to retrieve a subnetpool id. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,8 +304,8 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this subnetpool is shared across all projects.
-{{% /md %}}</dd>
+    <dd>Whether this subnetpool is shared across all projects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,14 +313,14 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of subnetpool tags to filter.
-{{% /md %}}</dd>
+    <dd>The list of subnetpool tags to filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -329,9 +329,9 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope that subnetpools
+    <dd>The Neutron address scope that subnetpools
 is assigned to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,9 +339,9 @@ is assigned to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool default prefix
+    <dd>The size of the subnetpool default prefix
 length.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,9 +349,9 @@ length.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that
+    <dd>The per-project quota on the prefix space that
 can be allocated from the subnetpool for project subnets.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,8 +359,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
-{{% /md %}}</dd>
+    <dd>The human-readable description for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,8 +368,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,8 +377,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the subnetpool is default subnetpool or not.
-{{% /md %}}</dd>
+    <dd>Whether the subnetpool is default subnetpool or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool max prefix length.
-{{% /md %}}</dd>
+    <dd>The size of the subnetpool max prefix length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool min prefix length.
-{{% /md %}}</dd>
+    <dd>The size of the subnetpool min prefix length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The name of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The owner of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,10 +422,10 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to retrieve a subnetpool id. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,8 +433,8 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether this subnetpool is shared across all projects.
-{{% /md %}}</dd>
+    <dd>Whether this subnetpool is shared across all projects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,14 +442,14 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of subnetpool tags to filter.
-{{% /md %}}</dd>
+    <dd>The list of subnetpool tags to filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -458,9 +458,9 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope that subnetpools
+    <dd>The Neutron address scope that subnetpools
 is assigned to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,9 +468,9 @@ is assigned to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool default prefix
+    <dd>The size of the subnetpool default prefix
 length.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,9 +478,9 @@ length.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that
+    <dd>The per-project quota on the prefix space that
 can be allocated from the subnetpool for project subnets.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
-{{% /md %}}</dd>
+    <dd>The human-readable description for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the subnetpool is default subnetpool or not.
-{{% /md %}}</dd>
+    <dd>Whether the subnetpool is default subnetpool or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool max prefix length.
-{{% /md %}}</dd>
+    <dd>The size of the subnetpool max prefix length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the subnetpool min prefix length.
-{{% /md %}}</dd>
+    <dd>The size of the subnetpool min prefix length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,8 +533,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The name of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The owner of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,10 +551,10 @@ can be allocated from the subnetpool for project subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to retrieve a subnetpool id. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this subnetpool is shared across all projects.
-{{% /md %}}</dd>
+    <dd>Whether this subnetpool is shared across all projects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,11 +571,11 @@ A Networking client is needed to retrieve a subnetpool id. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of subnetpool tags to filter.
-{{% /md %}}</dd>
+    <dd>The list of subnetpool tags to filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -591,7 +591,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -600,9 +600,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
+    <dd>See Argument Reference above.
 * `ip_version` -The IP protocol version.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -610,8 +610,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The set of string tags applied on the subnetpool.
-{{% /md %}}</dd>
+    <dd>The set of string tags applied on the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -619,8 +619,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -628,8 +628,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -637,8 +637,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -646,8 +646,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -655,8 +655,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -664,7 +664,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -672,8 +672,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -681,8 +681,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -690,8 +690,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -699,8 +699,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -708,8 +708,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -717,8 +717,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -726,8 +726,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -735,8 +735,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -744,8 +744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -753,8 +753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,13 +762,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -777,9 +777,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
+    <dd>See Argument Reference above.
 * `ip_version` -The IP protocol version.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -787,8 +787,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The set of string tags applied on the subnetpool.
-{{% /md %}}</dd>
+    <dd>The set of string tags applied on the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -796,8 +796,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -805,8 +805,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -814,8 +814,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -823,8 +823,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -832,8 +832,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -841,7 +841,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -849,8 +849,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -858,8 +858,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -867,8 +867,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -876,8 +876,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -885,8 +885,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -894,8 +894,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -903,8 +903,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -912,8 +912,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -921,8 +921,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -930,8 +930,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -939,13 +939,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -954,9 +954,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
+    <dd>See Argument Reference above.
 * `ip_version` -The IP protocol version.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -964,8 +964,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The set of string tags applied on the subnetpool.
-{{% /md %}}</dd>
+    <dd>The set of string tags applied on the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -973,8 +973,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -982,8 +982,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -991,8 +991,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1000,8 +1000,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1009,8 +1009,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1018,7 +1018,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1026,8 +1026,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1035,8 +1035,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1044,8 +1044,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1053,8 +1053,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1062,8 +1062,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1071,8 +1071,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1080,8 +1080,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1089,8 +1089,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1098,8 +1098,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1107,8 +1107,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1116,13 +1116,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1131,9 +1131,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
+    <dd>See Argument Reference above.
 * `ip_version` -The IP protocol version.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1141,8 +1141,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The set of string tags applied on the subnetpool.
-{{% /md %}}</dd>
+    <dd>The set of string tags applied on the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1150,8 +1150,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1159,8 +1159,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1168,8 +1168,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1177,8 +1177,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1186,8 +1186,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1195,7 +1195,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1203,8 +1203,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1212,8 +1212,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1221,8 +1221,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1230,8 +1230,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1239,8 +1239,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1248,8 +1248,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1257,8 +1257,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1266,8 +1266,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1275,8 +1275,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1284,8 +1284,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1293,10 +1293,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

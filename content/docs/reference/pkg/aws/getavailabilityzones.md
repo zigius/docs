@@ -64,29 +64,29 @@ const example = pulumi.output(aws.getAvailabilityZones({
 
 ## Using GetAvailabilityZones {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAvailabilityZones<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAvailabilityZonesArgs">GetAvailabilityZonesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAvailabilityZonesResult">GetAvailabilityZonesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_availability_zones(</span>all_availability_zones=None<span class="p">, </span>blacklisted_names=None<span class="p">, </span>blacklisted_zone_ids=None<span class="p">, </span>filters=None<span class="p">, </span>group_names=None<span class="p">, </span>state=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAvailabilityZones<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAvailabilityZonesArgs">GetAvailabilityZonesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#LookupAvailabilityZonesResult">LookupAvailabilityZonesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAvailabilityZones </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAvailabilityZonesResult.html">GetAvailabilityZonesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAvailabilityZonesArgs.html">GetAvailabilityZonesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -94,7 +94,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -103,8 +103,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set to `true` to include all Availability Zones and Local Zones regardless of your opt in status.
-{{% /md %}}</dd>
+    <dd>Set to `true` to include all Availability Zones and Local Zones regardless of your opt in status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -112,8 +112,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of blacklisted Availability Zone names.
-{{% /md %}}</dd>
+    <dd>List of blacklisted Availability Zone names.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -121,8 +121,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of blacklisted Availability Zone IDs.
-{{% /md %}}</dd>
+    <dd>List of blacklisted Availability Zone IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -130,8 +130,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">List&lt;Get<wbr>Availability<wbr>Zones<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) for filtering. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) for filtering. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -139,7 +139,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -147,17 +147,17 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows to filter list of Availability Zones based on their
+    <dd>Allows to filter list of Availability Zones based on their
 current state. Can be either `"available"`, `"information"`, `"impaired"` or
 `"unavailable"`. By default the list includes a complete set of Availability Zones
 to which the underlying AWS account has access, regardless of their state.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -166,8 +166,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set to `true` to include all Availability Zones and Local Zones regardless of your opt in status.
-{{% /md %}}</dd>
+    <dd>Set to `true` to include all Availability Zones and Local Zones regardless of your opt in status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -175,8 +175,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of blacklisted Availability Zone names.
-{{% /md %}}</dd>
+    <dd>List of blacklisted Availability Zone names.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -184,8 +184,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of blacklisted Availability Zone IDs.
-{{% /md %}}</dd>
+    <dd>List of blacklisted Availability Zone IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -193,8 +193,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">[]Get<wbr>Availability<wbr>Zones<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) for filtering. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) for filtering. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -202,7 +202,7 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -210,17 +210,17 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows to filter list of Availability Zones based on their
+    <dd>Allows to filter list of Availability Zones based on their
 current state. Can be either `"available"`, `"information"`, `"impaired"` or
 `"unavailable"`. By default the list includes a complete set of Availability Zones
 to which the underlying AWS account has access, regardless of their state.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -229,8 +229,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Set to `true` to include all Availability Zones and Local Zones regardless of your opt in status.
-{{% /md %}}</dd>
+    <dd>Set to `true` to include all Availability Zones and Local Zones regardless of your opt in status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -238,8 +238,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of blacklisted Availability Zone names.
-{{% /md %}}</dd>
+    <dd>List of blacklisted Availability Zone names.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -247,8 +247,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of blacklisted Availability Zone IDs.
-{{% /md %}}</dd>
+    <dd>List of blacklisted Availability Zone IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,8 +256,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">Get<wbr>Availability<wbr>Zones<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) for filtering. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) for filtering. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,7 +265,7 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,17 +273,17 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows to filter list of Availability Zones based on their
+    <dd>Allows to filter list of Availability Zones based on their
 current state. Can be either `"available"`, `"information"`, `"impaired"` or
 `"unavailable"`. By default the list includes a complete set of Availability Zones
 to which the underlying AWS account has access, regardless of their state.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -292,8 +292,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set to `true` to include all Availability Zones and Local Zones regardless of your opt in status.
-{{% /md %}}</dd>
+    <dd>Set to `true` to include all Availability Zones and Local Zones regardless of your opt in status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of blacklisted Availability Zone names.
-{{% /md %}}</dd>
+    <dd>List of blacklisted Availability Zone names.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of blacklisted Availability Zone IDs.
-{{% /md %}}</dd>
+    <dd>List of blacklisted Availability Zone IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">List[Get<wbr>Availability<wbr>Zones<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) for filtering. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) for filtering. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,7 +328,7 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,14 +336,14 @@ to which the underlying AWS account has access, regardless of their state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Allows to filter list of Availability Zones based on their
+    <dd>Allows to filter list of Availability Zones based on their
 current state. Can be either `"available"`, `"information"`, `"impaired"` or
 `"unavailable"`. By default the list includes a complete set of Availability Zones
 to which the underlying AWS account has access, regardless of their state.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -359,7 +359,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -368,8 +368,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -377,8 +377,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the Availability Zone names available to the account.
-{{% /md %}}</dd>
+    <dd>A list of the Availability Zone names available to the account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -386,8 +386,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the Availability Zone IDs available to the account.
-{{% /md %}}</dd>
+    <dd>A list of the Availability Zone IDs available to the account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -395,7 +395,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -403,7 +403,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -411,7 +411,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -419,7 +419,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">List&lt;Get<wbr>Availability<wbr>Zones<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -427,7 +427,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -435,13 +435,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -450,8 +450,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -459,8 +459,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the Availability Zone names available to the account.
-{{% /md %}}</dd>
+    <dd>A list of the Availability Zone names available to the account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -468,8 +468,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the Availability Zone IDs available to the account.
-{{% /md %}}</dd>
+    <dd>A list of the Availability Zone IDs available to the account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -477,7 +477,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -485,7 +485,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -493,7 +493,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -501,7 +501,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">[]Get<wbr>Availability<wbr>Zones<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -509,7 +509,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -517,13 +517,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -532,8 +532,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -541,8 +541,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the Availability Zone names available to the account.
-{{% /md %}}</dd>
+    <dd>A list of the Availability Zone names available to the account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -550,8 +550,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the Availability Zone IDs available to the account.
-{{% /md %}}</dd>
+    <dd>A list of the Availability Zone IDs available to the account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -559,7 +559,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -567,7 +567,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -575,7 +575,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -583,7 +583,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">Get<wbr>Availability<wbr>Zones<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -591,7 +591,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -599,13 +599,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -614,8 +614,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -623,8 +623,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the Availability Zone names available to the account.
-{{% /md %}}</dd>
+    <dd>A list of the Availability Zone names available to the account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -632,8 +632,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the Availability Zone IDs available to the account.
-{{% /md %}}</dd>
+    <dd>A list of the Availability Zone IDs available to the account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -641,7 +641,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -649,7 +649,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -657,7 +657,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -665,7 +665,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">List[Get<wbr>Availability<wbr>Zones<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -673,7 +673,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -681,10 +681,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -697,18 +697,18 @@ The following output properties are available:
 
 
 <h4 id="getavailabilityzonesfilter">Get<wbr>Availability<wbr>Zones<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetAvailabilityZonesFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetAvailabilityZonesFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAvailabilityZonesFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAvailabilityZonesFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -717,8 +717,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeAvailabilityZones API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeAvailabilityZones API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -726,14 +726,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
-{{% /md %}}</dd>
+    <dd>Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -742,8 +742,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeAvailabilityZones API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeAvailabilityZones API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -751,14 +751,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
-{{% /md %}}</dd>
+    <dd>Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -767,8 +767,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeAvailabilityZones API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeAvailabilityZones API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -776,14 +776,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
-{{% /md %}}</dd>
+    <dd>Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -792,8 +792,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeAvailabilityZones API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeAvailabilityZones API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -801,11 +801,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
-{{% /md %}}</dd>
+    <dd>Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -63,26 +63,26 @@ const defaultInstance = new gcp.compute.Instance("default", {
 
 
 ## Create a Instance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Instance">Instance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Instance</span><span class="p">(resource_name, opts=None, </span>allow_stopping_for_update=None<span class="p">, </span>attached_disks=None<span class="p">, </span>boot_disk=None<span class="p">, </span>can_ip_forward=None<span class="p">, </span>deletion_protection=None<span class="p">, </span>description=None<span class="p">, </span>desired_status=None<span class="p">, </span>enable_display=None<span class="p">, </span>guest_accelerators=None<span class="p">, </span>hostname=None<span class="p">, </span>labels=None<span class="p">, </span>machine_type=None<span class="p">, </span>metadata=None<span class="p">, </span>metadata_startup_script=None<span class="p">, </span>min_cpu_platform=None<span class="p">, </span>name=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>project=None<span class="p">, </span>scheduling=None<span class="p">, </span>scratch_disks=None<span class="p">, </span>service_account=None<span class="p">, </span>shielded_instance_config=None<span class="p">, </span>tags=None<span class="p">, </span>zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Instance.html">Instance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.InstanceArgs.html">InstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -119,9 +119,9 @@ const defaultInstance = new gcp.compute.Instance("default", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -139,9 +139,9 @@ const defaultInstance = new gcp.compute.Instance("default", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -188,9 +188,9 @@ const defaultInstance = new gcp.compute.Instance("default", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -227,7 +227,7 @@ const defaultInstance = new gcp.compute.Instance("default", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Instance Resource Properties {#properties}
 
@@ -240,7 +240,7 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -249,9 +249,9 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdisk">Instance<wbr>Boot<wbr>Disk<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance.
+    <dd>The boot disk for the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -259,8 +259,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -268,9 +268,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterface">List&lt;Instance<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Networks to attach to the instance. This can
+    <dd>Networks to attach to the instance. This can
 be specified multiple times. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,9 +278,9 @@ be specified multiple times. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, allows this prvider to stop the instance to update its properties.
+    <dd>If true, allows this prvider to stop the instance to update its properties.
 If you try to update a property that requires stopping the instance without setting this field, the update will fail.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,8 +288,8 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceattacheddisk">List&lt;Instance<wbr>Attached<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,10 +297,10 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow sending and receiving of
+    <dd>Whether to allow sending and receiving of
 packets with non-matching source or destination IPs.
 This defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,9 +308,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable deletion protection on this instance. Defaults to false.
+    <dd>Enable deletion protection on this instance. Defaults to false.
 **Note:** you must disable deletion protection before removing the resource (e.g., via `pulumi destroy`), or the instance cannot be deleted and the provider run will not complete successfully.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,8 +318,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of this resource.
-{{% /md %}}</dd>
+    <dd>A brief description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,9 +327,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired status of the instance. Either
+    <dd>Desired status of the instance. Either
 `"RUNNING"` or `"TERMINATED"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,9 +337,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
+    <dd>Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,9 +347,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceguestaccelerator">List&lt;Instance<wbr>Guest<wbr>Accelerator<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure documented below.
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure documented below.
 **Note:** GPU accelerators can only be used with `on_host_maintenance` option set to TERMINATE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,10 +357,10 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
+    <dd>A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
 Valid format is a series of labels 1-63 characters long matching the regular expression `a-z`, concatenated with periods.
 The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,8 +368,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,10 +377,10 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs to make available from
+    <dd>Metadata key/value pairs to make available from
 within the instance. Ssh keys attached in the Cloud Console will be removed.
 Add them to your config in order to keep them attached to your instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,7 +388,7 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An alternative to using the
+    <dd>An alternative to using the
 startup-script metadata key, except this one forces the instance to be
 recreated (thus re-running the script) if it is changed. This replaces the
 startup-script metadata key on the created instance and thus the two
@@ -399,7 +399,7 @@ will be set, but `metadata.startup-script` will not - if you choose to use the
 other mechanism, you will see a diff immediately after import, which will cause a
 destroy/recreate operation.  You may want to modify your state file manually
 using `pulumi stack` commands, depending on your use case.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,10 +407,10 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
+    <dd>Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
 `Intel Haswell` or `Intel Skylake`. See the complete list [here](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,9 +418,9 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,9 +428,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,9 +438,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescheduling">Instance<wbr>Scheduling<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy to use. More details about
+    <dd>The scheduling strategy to use. More details about
 this configuration option are detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,9 +448,9 @@ this configuration option are detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescratchdisk">List&lt;Instance<wbr>Scratch<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Scratch disks to attach to the instance. This can be
+    <dd>Scratch disks to attach to the instance. This can be
 specified multiple times for multiple scratch disks. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,10 +458,10 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceserviceaccount">Instance<wbr>Service<wbr>Account<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Service account to attach to the instance.
+    <dd>Service account to attach to the instance.
 Structure is documented below.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,9 +469,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceshieldedinstanceconfig">Instance<wbr>Shielded<wbr>Instance<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
+    <dd>Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
 **Note**: `shielded_instance_config` can only be used with boot images with shielded vm support. See the complete list [here](https://cloud.google.com/compute/docs/images#shielded-images).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to attach to the instance.
-{{% /md %}}</dd>
+    <dd>A list of tags to attach to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,14 +488,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that the machine should be created in.
-{{% /md %}}</dd>
+    <dd>The zone that the machine should be created in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -504,9 +504,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdisk">Instance<wbr>Boot<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance.
+    <dd>The boot disk for the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -514,8 +514,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -523,9 +523,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterface">[]Instance<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}Networks to attach to the instance. This can
+    <dd>Networks to attach to the instance. This can
 be specified multiple times. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,9 +533,9 @@ be specified multiple times. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, allows this prvider to stop the instance to update its properties.
+    <dd>If true, allows this prvider to stop the instance to update its properties.
 If you try to update a property that requires stopping the instance without setting this field, the update will fail.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -543,8 +543,8 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceattacheddisk">[]Instance<wbr>Attached<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -552,10 +552,10 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow sending and receiving of
+    <dd>Whether to allow sending and receiving of
 packets with non-matching source or destination IPs.
 This defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,9 +563,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable deletion protection on this instance. Defaults to false.
+    <dd>Enable deletion protection on this instance. Defaults to false.
 **Note:** you must disable deletion protection before removing the resource (e.g., via `pulumi destroy`), or the instance cannot be deleted and the provider run will not complete successfully.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,8 +573,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of this resource.
-{{% /md %}}</dd>
+    <dd>A brief description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,9 +582,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired status of the instance. Either
+    <dd>Desired status of the instance. Either
 `"RUNNING"` or `"TERMINATED"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,9 +592,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
+    <dd>Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,9 +602,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceguestaccelerator">[]Instance<wbr>Guest<wbr>Accelerator</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure documented below.
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure documented below.
 **Note:** GPU accelerators can only be used with `on_host_maintenance` option set to TERMINATE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,10 +612,10 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
+    <dd>A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
 Valid format is a series of labels 1-63 characters long matching the regular expression `a-z`, concatenated with periods.
 The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,10 +632,10 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs to make available from
+    <dd>Metadata key/value pairs to make available from
 within the instance. Ssh keys attached in the Cloud Console will be removed.
 Add them to your config in order to keep them attached to your instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -643,7 +643,7 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An alternative to using the
+    <dd>An alternative to using the
 startup-script metadata key, except this one forces the instance to be
 recreated (thus re-running the script) if it is changed. This replaces the
 startup-script metadata key on the created instance and thus the two
@@ -654,7 +654,7 @@ will be set, but `metadata.startup-script` will not - if you choose to use the
 other mechanism, you will see a diff immediately after import, which will cause a
 destroy/recreate operation.  You may want to modify your state file manually
 using `pulumi stack` commands, depending on your use case.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,10 +662,10 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
+    <dd>Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
 `Intel Haswell` or `Intel Skylake`. See the complete list [here](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -673,9 +673,9 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -683,9 +683,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,9 +693,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescheduling">Instance<wbr>Scheduling</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy to use. More details about
+    <dd>The scheduling strategy to use. More details about
 this configuration option are detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -703,9 +703,9 @@ this configuration option are detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescratchdisk">[]Instance<wbr>Scratch<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}Scratch disks to attach to the instance. This can be
+    <dd>Scratch disks to attach to the instance. This can be
 specified multiple times for multiple scratch disks. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,10 +713,10 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceserviceaccount">Instance<wbr>Service<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}Service account to attach to the instance.
+    <dd>Service account to attach to the instance.
 Structure is documented below.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -724,9 +724,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceshieldedinstanceconfig">Instance<wbr>Shielded<wbr>Instance<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
+    <dd>Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
 **Note**: `shielded_instance_config` can only be used with boot images with shielded vm support. See the complete list [here](https://cloud.google.com/compute/docs/images#shielded-images).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -734,8 +734,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to attach to the instance.
-{{% /md %}}</dd>
+    <dd>A list of tags to attach to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,14 +743,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that the machine should be created in.
-{{% /md %}}</dd>
+    <dd>The zone that the machine should be created in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -759,9 +759,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdisk">Instance<wbr>Boot<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance.
+    <dd>The boot disk for the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -769,8 +769,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -778,9 +778,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterface">Instance<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}Networks to attach to the instance. This can
+    <dd>Networks to attach to the instance. This can
 be specified multiple times. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,9 +788,9 @@ be specified multiple times. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, allows this prvider to stop the instance to update its properties.
+    <dd>If true, allows this prvider to stop the instance to update its properties.
 If you try to update a property that requires stopping the instance without setting this field, the update will fail.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceattacheddisk">Instance<wbr>Attached<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,10 +807,10 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow sending and receiving of
+    <dd>Whether to allow sending and receiving of
 packets with non-matching source or destination IPs.
 This defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,9 +818,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable deletion protection on this instance. Defaults to false.
+    <dd>Enable deletion protection on this instance. Defaults to false.
 **Note:** you must disable deletion protection before removing the resource (e.g., via `pulumi destroy`), or the instance cannot be deleted and the provider run will not complete successfully.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,8 +828,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of this resource.
-{{% /md %}}</dd>
+    <dd>A brief description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,9 +837,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired status of the instance. Either
+    <dd>Desired status of the instance. Either
 `"RUNNING"` or `"TERMINATED"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -847,9 +847,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
+    <dd>Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,9 +857,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceguestaccelerator">Instance<wbr>Guest<wbr>Accelerator[]</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure documented below.
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure documented below.
 **Note:** GPU accelerators can only be used with `on_host_maintenance` option set to TERMINATE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -867,10 +867,10 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
+    <dd>A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
 Valid format is a series of labels 1-63 characters long matching the regular expression `a-z`, concatenated with periods.
 The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -878,8 +878,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -887,10 +887,10 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs to make available from
+    <dd>Metadata key/value pairs to make available from
 within the instance. Ssh keys attached in the Cloud Console will be removed.
 Add them to your config in order to keep them attached to your instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,7 +898,7 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An alternative to using the
+    <dd>An alternative to using the
 startup-script metadata key, except this one forces the instance to be
 recreated (thus re-running the script) if it is changed. This replaces the
 startup-script metadata key on the created instance and thus the two
@@ -909,7 +909,7 @@ will be set, but `metadata.startup-script` will not - if you choose to use the
 other mechanism, you will see a diff immediately after import, which will cause a
 destroy/recreate operation.  You may want to modify your state file manually
 using `pulumi stack` commands, depending on your use case.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,10 +917,10 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
+    <dd>Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
 `Intel Haswell` or `Intel Skylake`. See the complete list [here](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -928,9 +928,9 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -938,9 +938,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -948,9 +948,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescheduling">Instance<wbr>Scheduling</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy to use. More details about
+    <dd>The scheduling strategy to use. More details about
 this configuration option are detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,9 +958,9 @@ this configuration option are detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescratchdisk">Instance<wbr>Scratch<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}Scratch disks to attach to the instance. This can be
+    <dd>Scratch disks to attach to the instance. This can be
 specified multiple times for multiple scratch disks. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -968,10 +968,10 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceserviceaccount">Instance<wbr>Service<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}Service account to attach to the instance.
+    <dd>Service account to attach to the instance.
 Structure is documented below.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,9 +979,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceshieldedinstanceconfig">Instance<wbr>Shielded<wbr>Instance<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
+    <dd>Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
 **Note**: `shielded_instance_config` can only be used with boot images with shielded vm support. See the complete list [here](https://cloud.google.com/compute/docs/images#shielded-images).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,8 +989,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to attach to the instance.
-{{% /md %}}</dd>
+    <dd>A list of tags to attach to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,14 +998,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that the machine should be created in.
-{{% /md %}}</dd>
+    <dd>The zone that the machine should be created in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1014,9 +1014,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdisk">Dict[Instance<wbr>Boot<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance.
+    <dd>The boot disk for the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1024,8 +1024,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1033,9 +1033,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterface">List[Instance<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}Networks to attach to the instance. This can
+    <dd>Networks to attach to the instance. This can
 be specified multiple times. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1043,9 +1043,9 @@ be specified multiple times. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, allows this prvider to stop the instance to update its properties.
+    <dd>If true, allows this prvider to stop the instance to update its properties.
 If you try to update a property that requires stopping the instance without setting this field, the update will fail.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceattacheddisk">List[Instance<wbr>Attached<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,10 +1062,10 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow sending and receiving of
+    <dd>Whether to allow sending and receiving of
 packets with non-matching source or destination IPs.
 This defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,9 +1073,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable deletion protection on this instance. Defaults to false.
+    <dd>Enable deletion protection on this instance. Defaults to false.
 **Note:** you must disable deletion protection before removing the resource (e.g., via `pulumi destroy`), or the instance cannot be deleted and the provider run will not complete successfully.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,8 +1083,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of this resource.
-{{% /md %}}</dd>
+    <dd>A brief description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1092,9 +1092,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Desired status of the instance. Either
+    <dd>Desired status of the instance. Either
 `"RUNNING"` or `"TERMINATED"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,9 +1102,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
+    <dd>Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,9 +1112,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceguestaccelerator">List[Instance<wbr>Guest<wbr>Accelerator]</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure documented below.
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure documented below.
 **Note:** GPU accelerators can only be used with `on_host_maintenance` option set to TERMINATE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,10 +1122,10 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
+    <dd>A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
 Valid format is a series of labels 1-63 characters long matching the regular expression `a-z`, concatenated with periods.
 The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,8 +1133,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,10 +1142,10 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs to make available from
+    <dd>Metadata key/value pairs to make available from
 within the instance. Ssh keys attached in the Cloud Console will be removed.
 Add them to your config in order to keep them attached to your instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,7 +1153,7 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An alternative to using the
+    <dd>An alternative to using the
 startup-script metadata key, except this one forces the instance to be
 recreated (thus re-running the script) if it is changed. This replaces the
 startup-script metadata key on the created instance and thus the two
@@ -1164,7 +1164,7 @@ will be set, but `metadata.startup-script` will not - if you choose to use the
 other mechanism, you will see a diff immediately after import, which will cause a
 destroy/recreate operation.  You may want to modify your state file manually
 using `pulumi stack` commands, depending on your use case.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,10 +1172,10 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
+    <dd>Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
 `Intel Haswell` or `Intel Skylake`. See the complete list [here](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,9 +1183,9 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,9 +1193,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,9 +1203,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescheduling">Dict[Instance<wbr>Scheduling]</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy to use. More details about
+    <dd>The scheduling strategy to use. More details about
 this configuration option are detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,9 +1213,9 @@ this configuration option are detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescratchdisk">List[Instance<wbr>Scratch<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}Scratch disks to attach to the instance. This can be
+    <dd>Scratch disks to attach to the instance. This can be
 specified multiple times for multiple scratch disks. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1223,10 +1223,10 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceserviceaccount">Dict[Instance<wbr>Service<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}Service account to attach to the instance.
+    <dd>Service account to attach to the instance.
 Structure is documented below.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,9 +1234,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceshieldedinstanceconfig">Dict[Instance<wbr>Shielded<wbr>Instance<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
+    <dd>Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
 **Note**: `shielded_instance_config` can only be used with boot images with shielded vm support. See the complete list [here](https://cloud.google.com/compute/docs/images#shielded-images).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to attach to the instance.
-{{% /md %}}</dd>
+    <dd>A list of tags to attach to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,11 +1253,11 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone that the machine should be created in.
-{{% /md %}}</dd>
+    <dd>The zone that the machine should be created in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1271,7 +1271,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1280,8 +1280,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1289,7 +1289,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1297,7 +1297,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1305,8 +1305,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1314,8 +1314,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1323,8 +1323,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1332,8 +1332,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1341,14 +1341,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1357,8 +1357,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1366,7 +1366,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1374,7 +1374,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1382,8 +1382,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1391,8 +1391,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1400,8 +1400,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1409,8 +1409,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1418,14 +1418,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1434,8 +1434,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1443,7 +1443,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1451,7 +1451,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1459,8 +1459,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1468,8 +1468,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1477,8 +1477,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1486,8 +1486,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1495,14 +1495,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1511,8 +1511,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1520,7 +1520,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1528,7 +1528,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1536,8 +1536,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1545,8 +1545,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1554,8 +1554,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1563,8 +1563,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1572,11 +1572,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1587,25 +1587,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Instance Resource {#look-up}
 
 Get an existing Instance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Instance">Instance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>allow_stopping_for_update=None<span class="p">, </span>attached_disks=None<span class="p">, </span>boot_disk=None<span class="p">, </span>can_ip_forward=None<span class="p">, </span>cpu_platform=None<span class="p">, </span>current_status=None<span class="p">, </span>deletion_protection=None<span class="p">, </span>description=None<span class="p">, </span>desired_status=None<span class="p">, </span>enable_display=None<span class="p">, </span>guest_accelerators=None<span class="p">, </span>hostname=None<span class="p">, </span>instance_id=None<span class="p">, </span>label_fingerprint=None<span class="p">, </span>labels=None<span class="p">, </span>machine_type=None<span class="p">, </span>metadata=None<span class="p">, </span>metadata_fingerprint=None<span class="p">, </span>metadata_startup_script=None<span class="p">, </span>min_cpu_platform=None<span class="p">, </span>name=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>project=None<span class="p">, </span>scheduling=None<span class="p">, </span>scratch_disks=None<span class="p">, </span>self_link=None<span class="p">, </span>service_account=None<span class="p">, </span>shielded_instance_config=None<span class="p">, </span>tags=None<span class="p">, </span>tags_fingerprint=None<span class="p">, </span>zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Instance.html">Instance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.InstanceState.html">InstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1630,9 +1630,9 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1645,36 +1645,9 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1699,13 +1672,40 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1714,9 +1714,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, allows this prvider to stop the instance to update its properties.
+    <dd>If true, allows this prvider to stop the instance to update its properties.
 If you try to update a property that requires stopping the instance without setting this field, the update will fail.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1724,8 +1724,8 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceattacheddisk">List&lt;Instance<wbr>Attached<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,9 +1733,9 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdisk">Instance<wbr>Boot<wbr>Disk<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance.
+    <dd>The boot disk for the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,10 +1743,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow sending and receiving of
+    <dd>Whether to allow sending and receiving of
 packets with non-matching source or destination IPs.
 This defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,8 +1754,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,7 +1763,7 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1771,9 +1771,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable deletion protection on this instance. Defaults to false.
+    <dd>Enable deletion protection on this instance. Defaults to false.
 **Note:** you must disable deletion protection before removing the resource (e.g., via `pulumi destroy`), or the instance cannot be deleted and the provider run will not complete successfully.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1781,8 +1781,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of this resource.
-{{% /md %}}</dd>
+    <dd>A brief description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1790,9 +1790,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired status of the instance. Either
+    <dd>Desired status of the instance. Either
 `"RUNNING"` or `"TERMINATED"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1800,9 +1800,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
+    <dd>Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,9 +1810,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceguestaccelerator">List&lt;Instance<wbr>Guest<wbr>Accelerator<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure documented below.
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure documented below.
 **Note:** GPU accelerators can only be used with `on_host_maintenance` option set to TERMINATE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1820,10 +1820,10 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
+    <dd>A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
 Valid format is a series of labels 1-63 characters long matching the regular expression `a-z`, concatenated with periods.
 The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,8 +1831,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,8 +1840,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1849,8 +1849,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1858,8 +1858,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1867,10 +1867,10 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs to make available from
+    <dd>Metadata key/value pairs to make available from
 within the instance. Ssh keys attached in the Cloud Console will be removed.
 Add them to your config in order to keep them attached to your instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,8 +1878,8 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1887,7 +1887,7 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An alternative to using the
+    <dd>An alternative to using the
 startup-script metadata key, except this one forces the instance to be
 recreated (thus re-running the script) if it is changed. This replaces the
 startup-script metadata key on the created instance and thus the two
@@ -1898,7 +1898,7 @@ will be set, but `metadata.startup-script` will not - if you choose to use the
 other mechanism, you will see a diff immediately after import, which will cause a
 destroy/recreate operation.  You may want to modify your state file manually
 using `pulumi stack` commands, depending on your use case.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1906,10 +1906,10 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
+    <dd>Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
 `Intel Haswell` or `Intel Skylake`. See the complete list [here](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1917,9 +1917,9 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1927,9 +1927,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterface">List&lt;Instance<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Networks to attach to the instance. This can
+    <dd>Networks to attach to the instance. This can
 be specified multiple times. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,9 +1937,9 @@ be specified multiple times. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,9 +1947,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescheduling">Instance<wbr>Scheduling<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy to use. More details about
+    <dd>The scheduling strategy to use. More details about
 this configuration option are detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1957,9 +1957,9 @@ this configuration option are detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescratchdisk">List&lt;Instance<wbr>Scratch<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Scratch disks to attach to the instance. This can be
+    <dd>Scratch disks to attach to the instance. This can be
 specified multiple times for multiple scratch disks. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1967,8 +1967,8 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,10 +1976,10 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceserviceaccount">Instance<wbr>Service<wbr>Account<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Service account to attach to the instance.
+    <dd>Service account to attach to the instance.
 Structure is documented below.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,9 +1987,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceshieldedinstanceconfig">Instance<wbr>Shielded<wbr>Instance<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
+    <dd>Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
 **Note**: `shielded_instance_config` can only be used with boot images with shielded vm support. See the complete list [here](https://cloud.google.com/compute/docs/images#shielded-images).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1997,8 +1997,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to attach to the instance.
-{{% /md %}}</dd>
+    <dd>A list of tags to attach to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2006,8 +2006,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2015,14 +2015,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that the machine should be created in.
-{{% /md %}}</dd>
+    <dd>The zone that the machine should be created in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2031,9 +2031,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, allows this prvider to stop the instance to update its properties.
+    <dd>If true, allows this prvider to stop the instance to update its properties.
 If you try to update a property that requires stopping the instance without setting this field, the update will fail.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2041,8 +2041,8 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceattacheddisk">[]Instance<wbr>Attached<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2050,9 +2050,9 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdisk">Instance<wbr>Boot<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance.
+    <dd>The boot disk for the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2060,10 +2060,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow sending and receiving of
+    <dd>Whether to allow sending and receiving of
 packets with non-matching source or destination IPs.
 This defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2071,8 +2071,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2080,7 +2080,7 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2088,9 +2088,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable deletion protection on this instance. Defaults to false.
+    <dd>Enable deletion protection on this instance. Defaults to false.
 **Note:** you must disable deletion protection before removing the resource (e.g., via `pulumi destroy`), or the instance cannot be deleted and the provider run will not complete successfully.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2098,8 +2098,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of this resource.
-{{% /md %}}</dd>
+    <dd>A brief description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,9 +2107,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired status of the instance. Either
+    <dd>Desired status of the instance. Either
 `"RUNNING"` or `"TERMINATED"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2117,9 +2117,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
+    <dd>Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2127,9 +2127,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceguestaccelerator">[]Instance<wbr>Guest<wbr>Accelerator</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure documented below.
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure documented below.
 **Note:** GPU accelerators can only be used with `on_host_maintenance` option set to TERMINATE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2137,10 +2137,10 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
+    <dd>A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
 Valid format is a series of labels 1-63 characters long matching the regular expression `a-z`, concatenated with periods.
 The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2148,8 +2148,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2157,8 +2157,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2166,8 +2166,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2175,8 +2175,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2184,10 +2184,10 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs to make available from
+    <dd>Metadata key/value pairs to make available from
 within the instance. Ssh keys attached in the Cloud Console will be removed.
 Add them to your config in order to keep them attached to your instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2195,8 +2195,8 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2204,7 +2204,7 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An alternative to using the
+    <dd>An alternative to using the
 startup-script metadata key, except this one forces the instance to be
 recreated (thus re-running the script) if it is changed. This replaces the
 startup-script metadata key on the created instance and thus the two
@@ -2215,7 +2215,7 @@ will be set, but `metadata.startup-script` will not - if you choose to use the
 other mechanism, you will see a diff immediately after import, which will cause a
 destroy/recreate operation.  You may want to modify your state file manually
 using `pulumi stack` commands, depending on your use case.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2223,10 +2223,10 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
+    <dd>Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
 `Intel Haswell` or `Intel Skylake`. See the complete list [here](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2234,9 +2234,9 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2244,9 +2244,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterface">[]Instance<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}Networks to attach to the instance. This can
+    <dd>Networks to attach to the instance. This can
 be specified multiple times. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2254,9 +2254,9 @@ be specified multiple times. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2264,9 +2264,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescheduling">Instance<wbr>Scheduling</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy to use. More details about
+    <dd>The scheduling strategy to use. More details about
 this configuration option are detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2274,9 +2274,9 @@ this configuration option are detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescratchdisk">[]Instance<wbr>Scratch<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}Scratch disks to attach to the instance. This can be
+    <dd>Scratch disks to attach to the instance. This can be
 specified multiple times for multiple scratch disks. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2284,8 +2284,8 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2293,10 +2293,10 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceserviceaccount">Instance<wbr>Service<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}Service account to attach to the instance.
+    <dd>Service account to attach to the instance.
 Structure is documented below.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2304,9 +2304,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceshieldedinstanceconfig">Instance<wbr>Shielded<wbr>Instance<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
+    <dd>Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
 **Note**: `shielded_instance_config` can only be used with boot images with shielded vm support. See the complete list [here](https://cloud.google.com/compute/docs/images#shielded-images).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2314,8 +2314,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to attach to the instance.
-{{% /md %}}</dd>
+    <dd>A list of tags to attach to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2323,8 +2323,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2332,14 +2332,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that the machine should be created in.
-{{% /md %}}</dd>
+    <dd>The zone that the machine should be created in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2348,9 +2348,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, allows this prvider to stop the instance to update its properties.
+    <dd>If true, allows this prvider to stop the instance to update its properties.
 If you try to update a property that requires stopping the instance without setting this field, the update will fail.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2358,8 +2358,8 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceattacheddisk">Instance<wbr>Attached<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2367,9 +2367,9 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdisk">Instance<wbr>Boot<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance.
+    <dd>The boot disk for the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2377,10 +2377,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow sending and receiving of
+    <dd>Whether to allow sending and receiving of
 packets with non-matching source or destination IPs.
 This defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2388,8 +2388,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2397,7 +2397,7 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2405,9 +2405,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable deletion protection on this instance. Defaults to false.
+    <dd>Enable deletion protection on this instance. Defaults to false.
 **Note:** you must disable deletion protection before removing the resource (e.g., via `pulumi destroy`), or the instance cannot be deleted and the provider run will not complete successfully.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2415,8 +2415,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of this resource.
-{{% /md %}}</dd>
+    <dd>A brief description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2424,9 +2424,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired status of the instance. Either
+    <dd>Desired status of the instance. Either
 `"RUNNING"` or `"TERMINATED"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2434,9 +2434,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
+    <dd>Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2444,9 +2444,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceguestaccelerator">Instance<wbr>Guest<wbr>Accelerator[]</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure documented below.
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure documented below.
 **Note:** GPU accelerators can only be used with `on_host_maintenance` option set to TERMINATE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2454,10 +2454,10 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
+    <dd>A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
 Valid format is a series of labels 1-63 characters long matching the regular expression `a-z`, concatenated with periods.
 The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2465,8 +2465,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2474,8 +2474,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2483,8 +2483,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,8 +2492,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2501,10 +2501,10 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs to make available from
+    <dd>Metadata key/value pairs to make available from
 within the instance. Ssh keys attached in the Cloud Console will be removed.
 Add them to your config in order to keep them attached to your instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2512,8 +2512,8 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2521,7 +2521,7 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An alternative to using the
+    <dd>An alternative to using the
 startup-script metadata key, except this one forces the instance to be
 recreated (thus re-running the script) if it is changed. This replaces the
 startup-script metadata key on the created instance and thus the two
@@ -2532,7 +2532,7 @@ will be set, but `metadata.startup-script` will not - if you choose to use the
 other mechanism, you will see a diff immediately after import, which will cause a
 destroy/recreate operation.  You may want to modify your state file manually
 using `pulumi stack` commands, depending on your use case.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2540,10 +2540,10 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
+    <dd>Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
 `Intel Haswell` or `Intel Skylake`. See the complete list [here](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2551,9 +2551,9 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2561,9 +2561,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterface">Instance<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}Networks to attach to the instance. This can
+    <dd>Networks to attach to the instance. This can
 be specified multiple times. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2571,9 +2571,9 @@ be specified multiple times. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2581,9 +2581,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescheduling">Instance<wbr>Scheduling</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy to use. More details about
+    <dd>The scheduling strategy to use. More details about
 this configuration option are detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2591,9 +2591,9 @@ this configuration option are detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescratchdisk">Instance<wbr>Scratch<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}Scratch disks to attach to the instance. This can be
+    <dd>Scratch disks to attach to the instance. This can be
 specified multiple times for multiple scratch disks. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2601,8 +2601,8 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2610,10 +2610,10 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceserviceaccount">Instance<wbr>Service<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}Service account to attach to the instance.
+    <dd>Service account to attach to the instance.
 Structure is documented below.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2621,9 +2621,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceshieldedinstanceconfig">Instance<wbr>Shielded<wbr>Instance<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
+    <dd>Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
 **Note**: `shielded_instance_config` can only be used with boot images with shielded vm support. See the complete list [here](https://cloud.google.com/compute/docs/images#shielded-images).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2631,8 +2631,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to attach to the instance.
-{{% /md %}}</dd>
+    <dd>A list of tags to attach to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2640,8 +2640,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2649,14 +2649,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that the machine should be created in.
-{{% /md %}}</dd>
+    <dd>The zone that the machine should be created in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2665,9 +2665,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, allows this prvider to stop the instance to update its properties.
+    <dd>If true, allows this prvider to stop the instance to update its properties.
 If you try to update a property that requires stopping the instance without setting this field, the update will fail.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2675,8 +2675,8 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceattacheddisk">List[Instance<wbr>Attached<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Additional disks to attach to the instance. Can be repeated multiple times for multiple disks. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2684,9 +2684,9 @@ If you try to update a property that requires stopping the instance without sett
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdisk">Dict[Instance<wbr>Boot<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance.
+    <dd>The boot disk for the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2694,10 +2694,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow sending and receiving of
+    <dd>Whether to allow sending and receiving of
 packets with non-matching source or destination IPs.
 This defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2705,8 +2705,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2714,7 +2714,7 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2722,9 +2722,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable deletion protection on this instance. Defaults to false.
+    <dd>Enable deletion protection on this instance. Defaults to false.
 **Note:** you must disable deletion protection before removing the resource (e.g., via `pulumi destroy`), or the instance cannot be deleted and the provider run will not complete successfully.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2732,8 +2732,8 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of this resource.
-{{% /md %}}</dd>
+    <dd>A brief description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2741,9 +2741,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Desired status of the instance. Either
+    <dd>Desired status of the instance. Either
 `"RUNNING"` or `"TERMINATED"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2751,9 +2751,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
+    <dd>Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver) on this instance.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2761,9 +2761,9 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceguestaccelerator">List[Instance<wbr>Guest<wbr>Accelerator]</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure documented below.
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure documented below.
 **Note:** GPU accelerators can only be used with `on_host_maintenance` option set to TERMINATE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2771,10 +2771,10 @@ This defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
+    <dd>A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid.
 Valid format is a series of labels 1-63 characters long matching the regular expression `a-z`, concatenated with periods.
 The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2782,8 +2782,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2791,8 +2791,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2800,8 +2800,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2809,8 +2809,8 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2818,10 +2818,10 @@ The entire hostname must not exceed 253 characters. Changing this forces a new r
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs to make available from
+    <dd>Metadata key/value pairs to make available from
 within the instance. Ssh keys attached in the Cloud Console will be removed.
 Add them to your config in order to keep them attached to your instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2829,8 +2829,8 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2838,7 +2838,7 @@ Add them to your config in order to keep them attached to your instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An alternative to using the
+    <dd>An alternative to using the
 startup-script metadata key, except this one forces the instance to be
 recreated (thus re-running the script) if it is changed. This replaces the
 startup-script metadata key on the created instance and thus the two
@@ -2849,7 +2849,7 @@ will be set, but `metadata.startup-script` will not - if you choose to use the
 other mechanism, you will see a diff immediately after import, which will cause a
 destroy/recreate operation.  You may want to modify your state file manually
 using `pulumi stack` commands, depending on your use case.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2857,10 +2857,10 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
+    <dd>Specifies a minimum CPU platform for the VM instance. Applicable values are the friendly names of CPU platforms, such as
 `Intel Haswell` or `Intel Skylake`. See the complete list [here](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2868,9 +2868,9 @@ using `pulumi stack` commands, depending on your use case.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2878,9 +2878,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterface">List[Instance<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}Networks to attach to the instance. This can
+    <dd>Networks to attach to the instance. This can
 be specified multiple times. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2888,9 +2888,9 @@ be specified multiple times. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2898,9 +2898,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescheduling">Dict[Instance<wbr>Scheduling]</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy to use. More details about
+    <dd>The scheduling strategy to use. More details about
 this configuration option are detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2908,9 +2908,9 @@ this configuration option are detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancescratchdisk">List[Instance<wbr>Scratch<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}Scratch disks to attach to the instance. This can be
+    <dd>Scratch disks to attach to the instance. This can be
 specified multiple times for multiple scratch disks. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2918,8 +2918,8 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2927,10 +2927,10 @@ specified multiple times for multiple scratch disks. Structure is documented bel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceserviceaccount">Dict[Instance<wbr>Service<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}Service account to attach to the instance.
+    <dd>Service account to attach to the instance.
 Structure is documented below.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2938,9 +2938,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceshieldedinstanceconfig">Dict[Instance<wbr>Shielded<wbr>Instance<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
+    <dd>Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm) on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Defaults to disabled. Structure is documented below.
 **Note**: `shielded_instance_config` can only be used with boot images with shielded vm support. See the complete list [here](https://cloud.google.com/compute/docs/images#shielded-images).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2948,8 +2948,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to attach to the instance.
-{{% /md %}}</dd>
+    <dd>A list of tags to attach to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2957,8 +2957,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2966,11 +2966,11 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone that the machine should be created in.
-{{% /md %}}</dd>
+    <dd>The zone that the machine should be created in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2985,18 +2985,18 @@ Structure is documented below.
 
 
 <h4 id="instanceattacheddisk">Instance<wbr>Attached<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceAttachedDisk">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceAttachedDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceAttachedDiskArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceAttachedDiskOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3005,8 +3005,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk to attach to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk to attach to this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3014,9 +3014,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk will be accessible
+    <dd>Name with which the attached disk will be accessible
 under `/dev/disk/by-id/google-*`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3024,11 +3024,11 @@ under `/dev/disk/by-id/google-*`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A 256-bit [customer-supplied encryption key]
+    <dd>A 256-bit [customer-supplied encryption key]
 (https://cloud.google.com/compute/docs/disks/customer-supplied-encryption),
 encoded in [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
 to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3036,7 +3036,7 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3044,10 +3044,10 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The self_link of the encryption key that is
+    <dd>The self_link of the encryption key that is
 stored in Google Cloud KMS to encrypt this disk. Only one of `kms_key_self_link`
 and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3055,17 +3055,17 @@ and `disk_encryption_key_raw` may be set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
+    <dd>Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
 If you have a persistent disk with data that you want to share
 between multiple instances, detach it from any read-write instances and
 attach it to one or more instances in read-only mode.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3074,8 +3074,8 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk to attach to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk to attach to this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3083,9 +3083,9 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk will be accessible
+    <dd>Name with which the attached disk will be accessible
 under `/dev/disk/by-id/google-*`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3093,11 +3093,11 @@ under `/dev/disk/by-id/google-*`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A 256-bit [customer-supplied encryption key]
+    <dd>A 256-bit [customer-supplied encryption key]
 (https://cloud.google.com/compute/docs/disks/customer-supplied-encryption),
 encoded in [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
 to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3105,7 +3105,7 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3113,10 +3113,10 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The self_link of the encryption key that is
+    <dd>The self_link of the encryption key that is
 stored in Google Cloud KMS to encrypt this disk. Only one of `kms_key_self_link`
 and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3124,17 +3124,17 @@ and `disk_encryption_key_raw` may be set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
+    <dd>Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
 If you have a persistent disk with data that you want to share
 between multiple instances, detach it from any read-write instances and
 attach it to one or more instances in read-only mode.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3143,8 +3143,8 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk to attach to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk to attach to this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3152,9 +3152,9 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk will be accessible
+    <dd>Name with which the attached disk will be accessible
 under `/dev/disk/by-id/google-*`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3162,11 +3162,11 @@ under `/dev/disk/by-id/google-*`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A 256-bit [customer-supplied encryption key]
+    <dd>A 256-bit [customer-supplied encryption key]
 (https://cloud.google.com/compute/docs/disks/customer-supplied-encryption),
 encoded in [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
 to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3174,7 +3174,7 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3182,10 +3182,10 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The self_link of the encryption key that is
+    <dd>The self_link of the encryption key that is
 stored in Google Cloud KMS to encrypt this disk. Only one of `kms_key_self_link`
 and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3193,17 +3193,17 @@ and `disk_encryption_key_raw` may be set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
+    <dd>Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
 If you have a persistent disk with data that you want to share
 between multiple instances, detach it from any read-write instances and
 attach it to one or more instances in read-only mode.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3212,8 +3212,8 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk to attach to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk to attach to this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3221,9 +3221,9 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk will be accessible
+    <dd>Name with which the attached disk will be accessible
 under `/dev/disk/by-id/google-*`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3231,11 +3231,11 @@ under `/dev/disk/by-id/google-*`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A 256-bit [customer-supplied encryption key]
+    <dd>A 256-bit [customer-supplied encryption key]
 (https://cloud.google.com/compute/docs/disks/customer-supplied-encryption),
 encoded in [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
 to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3243,7 +3243,7 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3251,10 +3251,10 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The self_link of the encryption key that is
+    <dd>The self_link of the encryption key that is
 stored in Google Cloud KMS to encrypt this disk. Only one of `kms_key_self_link`
 and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3262,32 +3262,32 @@ and `disk_encryption_key_raw` may be set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
+    <dd>Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
 If you have a persistent disk with data that you want to share
 between multiple instances, detach it from any read-write instances and
 attach it to one or more instances in read-only mode.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancebootdisk">Instance<wbr>Boot<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceBootDisk">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceBootDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceBootDiskArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceBootDiskOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3296,9 +3296,9 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the disk will be auto-deleted when the instance
+    <dd>Whether the disk will be auto-deleted when the instance
 is deleted. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3306,9 +3306,9 @@ is deleted. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk will be accessible
+    <dd>Name with which the attached disk will be accessible
 under `/dev/disk/by-id/google-*`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3316,11 +3316,11 @@ under `/dev/disk/by-id/google-*`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A 256-bit [customer-supplied encryption key]
+    <dd>A 256-bit [customer-supplied encryption key]
 (https://cloud.google.com/compute/docs/disks/customer-supplied-encryption),
 encoded in [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
 to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3328,7 +3328,7 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3336,10 +3336,10 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdiskinitializeparams">Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Params<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Parameters for a new disk that will be created
+    <dd>Parameters for a new disk that will be created
 alongside the new instance. Either `initialize_params` or `source` must be set.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3347,10 +3347,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The self_link of the encryption key that is
+    <dd>The self_link of the encryption key that is
 stored in Google Cloud KMS to encrypt this disk. Only one of `kms_key_self_link`
 and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3358,11 +3358,11 @@ and `disk_encryption_key_raw` may be set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
+    <dd>Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
 If you have a persistent disk with data that you want to share
 between multiple instances, detach it from any read-write instances and
 attach it to one or more instances in read-only mode.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3370,14 +3370,14 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk to attach to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk to attach to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3386,9 +3386,9 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the disk will be auto-deleted when the instance
+    <dd>Whether the disk will be auto-deleted when the instance
 is deleted. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3396,9 +3396,9 @@ is deleted. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk will be accessible
+    <dd>Name with which the attached disk will be accessible
 under `/dev/disk/by-id/google-*`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3406,11 +3406,11 @@ under `/dev/disk/by-id/google-*`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A 256-bit [customer-supplied encryption key]
+    <dd>A 256-bit [customer-supplied encryption key]
 (https://cloud.google.com/compute/docs/disks/customer-supplied-encryption),
 encoded in [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
 to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3418,7 +3418,7 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3426,10 +3426,10 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdiskinitializeparams">Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Params</a></span>
     </dt>
-    <dd>{{% md %}}Parameters for a new disk that will be created
+    <dd>Parameters for a new disk that will be created
 alongside the new instance. Either `initialize_params` or `source` must be set.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3437,10 +3437,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The self_link of the encryption key that is
+    <dd>The self_link of the encryption key that is
 stored in Google Cloud KMS to encrypt this disk. Only one of `kms_key_self_link`
 and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3448,11 +3448,11 @@ and `disk_encryption_key_raw` may be set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
+    <dd>Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
 If you have a persistent disk with data that you want to share
 between multiple instances, detach it from any read-write instances and
 attach it to one or more instances in read-only mode.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3460,14 +3460,14 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk to attach to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk to attach to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3476,9 +3476,9 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the disk will be auto-deleted when the instance
+    <dd>Whether the disk will be auto-deleted when the instance
 is deleted. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3486,9 +3486,9 @@ is deleted. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk will be accessible
+    <dd>Name with which the attached disk will be accessible
 under `/dev/disk/by-id/google-*`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3496,11 +3496,11 @@ under `/dev/disk/by-id/google-*`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A 256-bit [customer-supplied encryption key]
+    <dd>A 256-bit [customer-supplied encryption key]
 (https://cloud.google.com/compute/docs/disks/customer-supplied-encryption),
 encoded in [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
 to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3508,7 +3508,7 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3516,10 +3516,10 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdiskinitializeparams">Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Params</a></span>
     </dt>
-    <dd>{{% md %}}Parameters for a new disk that will be created
+    <dd>Parameters for a new disk that will be created
 alongside the new instance. Either `initialize_params` or `source` must be set.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3527,10 +3527,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The self_link of the encryption key that is
+    <dd>The self_link of the encryption key that is
 stored in Google Cloud KMS to encrypt this disk. Only one of `kms_key_self_link`
 and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3538,11 +3538,11 @@ and `disk_encryption_key_raw` may be set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
+    <dd>Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
 If you have a persistent disk with data that you want to share
 between multiple instances, detach it from any read-write instances and
 attach it to one or more instances in read-only mode.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3550,14 +3550,14 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk to attach to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk to attach to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3566,9 +3566,9 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the disk will be auto-deleted when the instance
+    <dd>Whether the disk will be auto-deleted when the instance
 is deleted. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3576,9 +3576,9 @@ is deleted. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk will be accessible
+    <dd>Name with which the attached disk will be accessible
 under `/dev/disk/by-id/google-*`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3586,11 +3586,11 @@ under `/dev/disk/by-id/google-*`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A 256-bit [customer-supplied encryption key]
+    <dd>A 256-bit [customer-supplied encryption key]
 (https://cloud.google.com/compute/docs/disks/customer-supplied-encryption),
 encoded in [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
 to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3598,7 +3598,7 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3606,10 +3606,10 @@ to encrypt this disk. Only one of `kms_key_self_link` and `disk_encryption_key_r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancebootdiskinitializeparams">Dict[Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Params]</a></span>
     </dt>
-    <dd>{{% md %}}Parameters for a new disk that will be created
+    <dd>Parameters for a new disk that will be created
 alongside the new instance. Either `initialize_params` or `source` must be set.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3617,10 +3617,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The self_link of the encryption key that is
+    <dd>The self_link of the encryption key that is
 stored in Google Cloud KMS to encrypt this disk. Only one of `kms_key_self_link`
 and `disk_encryption_key_raw` may be set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3628,11 +3628,11 @@ and `disk_encryption_key_raw` may be set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
+    <dd>Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
 If you have a persistent disk with data that you want to share
 between multiple instances, detach it from any read-write instances and
 attach it to one or more instances in read-only mode.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3640,29 +3640,29 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk to attach to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk to attach to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancebootdiskinitializeparams">Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Params</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceBootDiskInitializeParams">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceBootDiskInitializeParams">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceBootDiskInitializeParamsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceBootDiskInitializeParamsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3671,7 +3671,7 @@ attach it to one or more instances in read-only mode.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The image from which to initialize this disk. This can be
+    <dd>The image from which to initialize this disk. This can be
 one of: the image's `self_link`, `projects/{project}/global/images/{image}`,
 `projects/{project}/global/images/family/{family}`, `global/images/{image}`,
 `global/images/family/{family}`, `family/{family}`, `{project}/{family}`,
@@ -3680,7 +3680,7 @@ images names must include the family name. If they don't, use the
 [gcp.compute.Image data source](https://www.terraform.io/docs/providers/google/d/datasource_compute_image.html).
 For instance, the image `centos-6-v20180104` includes its family name `centos-6`.
 These images can be referred by family name here.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3688,8 +3688,8 @@ These images can be referred by family name here.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3697,9 +3697,9 @@ These images can be referred by family name here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image in gigabytes. If not specified, it
+    <dd>The size of the image in gigabytes. If not specified, it
 will inherit the size of its base image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3707,14 +3707,14 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3723,7 +3723,7 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image from which to initialize this disk. This can be
+    <dd>The image from which to initialize this disk. This can be
 one of: the image's `self_link`, `projects/{project}/global/images/{image}`,
 `projects/{project}/global/images/family/{family}`, `global/images/{image}`,
 `global/images/family/{family}`, `family/{family}`, `{project}/{family}`,
@@ -3732,7 +3732,7 @@ images names must include the family name. If they don't, use the
 [gcp.compute.Image data source](https://www.terraform.io/docs/providers/google/d/datasource_compute_image.html).
 For instance, the image `centos-6-v20180104` includes its family name `centos-6`.
 These images can be referred by family name here.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3740,8 +3740,8 @@ These images can be referred by family name here.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3749,9 +3749,9 @@ These images can be referred by family name here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image in gigabytes. If not specified, it
+    <dd>The size of the image in gigabytes. If not specified, it
 will inherit the size of its base image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3759,14 +3759,14 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3775,7 +3775,7 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image from which to initialize this disk. This can be
+    <dd>The image from which to initialize this disk. This can be
 one of: the image's `self_link`, `projects/{project}/global/images/{image}`,
 `projects/{project}/global/images/family/{family}`, `global/images/{image}`,
 `global/images/family/{family}`, `family/{family}`, `{project}/{family}`,
@@ -3784,7 +3784,7 @@ images names must include the family name. If they don't, use the
 [gcp.compute.Image data source](https://www.terraform.io/docs/providers/google/d/datasource_compute_image.html).
 For instance, the image `centos-6-v20180104` includes its family name `centos-6`.
 These images can be referred by family name here.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3792,8 +3792,8 @@ These images can be referred by family name here.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3801,9 +3801,9 @@ These images can be referred by family name here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image in gigabytes. If not specified, it
+    <dd>The size of the image in gigabytes. If not specified, it
 will inherit the size of its base image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3811,14 +3811,14 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3827,7 +3827,7 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The image from which to initialize this disk. This can be
+    <dd>The image from which to initialize this disk. This can be
 one of: the image's `self_link`, `projects/{project}/global/images/{image}`,
 `projects/{project}/global/images/family/{family}`, `global/images/{image}`,
 `global/images/family/{family}`, `family/{family}`, `{project}/{family}`,
@@ -3836,7 +3836,7 @@ images names must include the family name. If they don't, use the
 [gcp.compute.Image data source](https://www.terraform.io/docs/providers/google/d/datasource_compute_image.html).
 For instance, the image `centos-6-v20180104` includes its family name `centos-6`.
 These images can be referred by family name here.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3844,8 +3844,8 @@ These images can be referred by family name here.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of key/value label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A map of key/value label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3853,9 +3853,9 @@ These images can be referred by family name here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image in gigabytes. If not specified, it
+    <dd>The size of the image in gigabytes. If not specified, it
 will inherit the size of its base image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3863,29 +3863,29 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instanceguestaccelerator">Instance<wbr>Guest<wbr>Accelerator</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceGuestAccelerator">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceGuestAccelerator">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGuestAcceleratorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGuestAcceleratorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3894,8 +3894,8 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the guest accelerator cards exposed to this instance.
-{{% /md %}}</dd>
+    <dd>The number of the guest accelerator cards exposed to this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3903,14 +3903,14 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3919,8 +3919,8 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the guest accelerator cards exposed to this instance.
-{{% /md %}}</dd>
+    <dd>The number of the guest accelerator cards exposed to this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3928,14 +3928,14 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3944,8 +3944,8 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of the guest accelerator cards exposed to this instance.
-{{% /md %}}</dd>
+    <dd>The number of the guest accelerator cards exposed to this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3953,14 +3953,14 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3969,8 +3969,8 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of the guest accelerator cards exposed to this instance.
-{{% /md %}}</dd>
+    <dd>The number of the guest accelerator cards exposed to this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3978,29 +3978,29 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancenetworkinterface">Instance<wbr>Network<wbr>Interface</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceNetworkInterface">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceNetworkInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceNetworkInterfaceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceNetworkInterfaceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4009,13 +4009,13 @@ will inherit the size of its base image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterfaceaccessconfig">List&lt;Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Access configurations, i.e. IPs via which this
+    <dd>Access configurations, i.e. IPs via which this
 instance can be accessed via the Internet. Omit to ensure that the instance
 is not accessible from the Internet. If omitted, ssh will not
 work unless this provider can send traffic to the instance's network (e.g. via
 tunnel or because it is running on another cloud instance on that network).
 This block can be repeated multiple times. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4023,10 +4023,10 @@ This block can be repeated multiple times. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterfacealiasiprange">List&lt;Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An
+    <dd>An
 array of alias IP ranges for this network interface. Can only be specified for network
 interfaces on subnet-mode networks. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4034,9 +4034,9 @@ interfaces on subnet-mode networks. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4044,9 +4044,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the network to attach this interface to.
+    <dd>The name or self_link of the network to attach this interface to.
 Either `network` or `subnetwork` must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4054,9 +4054,9 @@ Either `network` or `subnetwork` must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address to assign to the instance. If
+    <dd>The private IP address to assign to the instance. If
 empty, the address will be automatically assigned.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4064,10 +4064,10 @@ empty, the address will be automatically assigned.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the subnetwork to attach this
+    <dd>The name or self_link of the subnetwork to attach this
 interface to. The subnetwork must exist in the same region this instance will be
 created in. Either `network` or `subnetwork` must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4075,17 +4075,17 @@ created in. Either `network` or `subnetwork` must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the subnetwork belongs.
+    <dd>The project in which the subnetwork belongs.
 If the `subnetwork` is a self_link, this field is ignored in favor of the project
 defined in the subnetwork self_link. If the `subnetwork` is a name and this
 field is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4094,13 +4094,13 @@ field is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterfaceaccessconfig">[]Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Access configurations, i.e. IPs via which this
+    <dd>Access configurations, i.e. IPs via which this
 instance can be accessed via the Internet. Omit to ensure that the instance
 is not accessible from the Internet. If omitted, ssh will not
 work unless this provider can send traffic to the instance's network (e.g. via
 tunnel or because it is running on another cloud instance on that network).
 This block can be repeated multiple times. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4108,10 +4108,10 @@ This block can be repeated multiple times. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterfacealiasiprange">[]Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}An
+    <dd>An
 array of alias IP ranges for this network interface. Can only be specified for network
 interfaces on subnet-mode networks. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4119,9 +4119,9 @@ interfaces on subnet-mode networks. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4129,9 +4129,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the network to attach this interface to.
+    <dd>The name or self_link of the network to attach this interface to.
 Either `network` or `subnetwork` must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4139,9 +4139,9 @@ Either `network` or `subnetwork` must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address to assign to the instance. If
+    <dd>The private IP address to assign to the instance. If
 empty, the address will be automatically assigned.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4149,10 +4149,10 @@ empty, the address will be automatically assigned.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the subnetwork to attach this
+    <dd>The name or self_link of the subnetwork to attach this
 interface to. The subnetwork must exist in the same region this instance will be
 created in. Either `network` or `subnetwork` must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4160,17 +4160,17 @@ created in. Either `network` or `subnetwork` must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the subnetwork belongs.
+    <dd>The project in which the subnetwork belongs.
 If the `subnetwork` is a self_link, this field is ignored in favor of the project
 defined in the subnetwork self_link. If the `subnetwork` is a name and this
 field is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4179,13 +4179,13 @@ field is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterfaceaccessconfig">Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}Access configurations, i.e. IPs via which this
+    <dd>Access configurations, i.e. IPs via which this
 instance can be accessed via the Internet. Omit to ensure that the instance
 is not accessible from the Internet. If omitted, ssh will not
 work unless this provider can send traffic to the instance's network (e.g. via
 tunnel or because it is running on another cloud instance on that network).
 This block can be repeated multiple times. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4193,10 +4193,10 @@ This block can be repeated multiple times. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterfacealiasiprange">Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range[]</a></span>
     </dt>
-    <dd>{{% md %}}An
+    <dd>An
 array of alias IP ranges for this network interface. Can only be specified for network
 interfaces on subnet-mode networks. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4204,9 +4204,9 @@ interfaces on subnet-mode networks. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4214,9 +4214,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the network to attach this interface to.
+    <dd>The name or self_link of the network to attach this interface to.
 Either `network` or `subnetwork` must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4224,9 +4224,9 @@ Either `network` or `subnetwork` must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address to assign to the instance. If
+    <dd>The private IP address to assign to the instance. If
 empty, the address will be automatically assigned.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4234,10 +4234,10 @@ empty, the address will be automatically assigned.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the subnetwork to attach this
+    <dd>The name or self_link of the subnetwork to attach this
 interface to. The subnetwork must exist in the same region this instance will be
 created in. Either `network` or `subnetwork` must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4245,17 +4245,17 @@ created in. Either `network` or `subnetwork` must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the subnetwork belongs.
+    <dd>The project in which the subnetwork belongs.
 If the `subnetwork` is a self_link, this field is ignored in favor of the project
 defined in the subnetwork self_link. If the `subnetwork` is a name and this
 field is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4264,13 +4264,13 @@ field is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterfaceaccessconfig">List[Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Access configurations, i.e. IPs via which this
+    <dd>Access configurations, i.e. IPs via which this
 instance can be accessed via the Internet. Omit to ensure that the instance
 is not accessible from the Internet. If omitted, ssh will not
 work unless this provider can send traffic to the instance's network (e.g. via
 tunnel or because it is running on another cloud instance on that network).
 This block can be repeated multiple times. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4278,10 +4278,10 @@ This block can be repeated multiple times. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancenetworkinterfacealiasiprange">List[Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}An
+    <dd>An
 array of alias IP ranges for this network interface. Can only be specified for network
 interfaces on subnet-mode networks. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4289,9 +4289,9 @@ interfaces on subnet-mode networks. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by GCE.
+    <dd>A unique name for the resource, required by GCE.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4299,9 +4299,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the network to attach this interface to.
+    <dd>The name or self_link of the network to attach this interface to.
 Either `network` or `subnetwork` must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4309,9 +4309,9 @@ Either `network` or `subnetwork` must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address to assign to the instance. If
+    <dd>The private IP address to assign to the instance. If
 empty, the address will be automatically assigned.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4319,10 +4319,10 @@ empty, the address will be automatically assigned.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the subnetwork to attach this
+    <dd>The name or self_link of the subnetwork to attach this
 interface to. The subnetwork must exist in the same region this instance will be
 created in. Either `network` or `subnetwork` must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4330,32 +4330,32 @@ created in. Either `network` or `subnetwork` must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the subnetwork belongs.
+    <dd>The project in which the subnetwork belongs.
 If the `subnetwork` is a self_link, this field is ignored in favor of the project
 defined in the subnetwork self_link. If the `subnetwork` is a name and this
 field is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancenetworkinterfaceaccessconfig">Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceNetworkInterfaceAccessConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceNetworkInterfaceAccessConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceNetworkInterfaceAccessConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceNetworkInterfaceAccessConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4364,9 +4364,9 @@ field is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address that will be 1:1 mapped to the instance's
+    <dd>The IP address that will be 1:1 mapped to the instance's
 network ip. If not given, one will be generated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4374,10 +4374,10 @@ network ip. If not given, one will be generated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [networking tier][network-tier] used for configuring this instance.
+    <dd>The [networking tier][network-tier] used for configuring this instance.
 This field can take the following values: PREMIUM or STANDARD. If this field is
 not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4385,17 +4385,17 @@ not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS domain name for the public PTR record.
+    <dd>The DNS domain name for the public PTR record.
 To set this field on an instance, you must be verified as the owner of the domain.
 See [the docs](https://cloud.google.com/compute/docs/instances/create-ptr-record) for how
 to become verified as a domain owner.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4404,9 +4404,9 @@ to become verified as a domain owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address that will be 1:1 mapped to the instance's
+    <dd>The IP address that will be 1:1 mapped to the instance's
 network ip. If not given, one will be generated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4414,10 +4414,10 @@ network ip. If not given, one will be generated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [networking tier][network-tier] used for configuring this instance.
+    <dd>The [networking tier][network-tier] used for configuring this instance.
 This field can take the following values: PREMIUM or STANDARD. If this field is
 not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4425,17 +4425,17 @@ not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS domain name for the public PTR record.
+    <dd>The DNS domain name for the public PTR record.
 To set this field on an instance, you must be verified as the owner of the domain.
 See [the docs](https://cloud.google.com/compute/docs/instances/create-ptr-record) for how
 to become verified as a domain owner.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4444,9 +4444,9 @@ to become verified as a domain owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address that will be 1:1 mapped to the instance's
+    <dd>The IP address that will be 1:1 mapped to the instance's
 network ip. If not given, one will be generated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4454,10 +4454,10 @@ network ip. If not given, one will be generated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [networking tier][network-tier] used for configuring this instance.
+    <dd>The [networking tier][network-tier] used for configuring this instance.
 This field can take the following values: PREMIUM or STANDARD. If this field is
 not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4465,17 +4465,17 @@ not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS domain name for the public PTR record.
+    <dd>The DNS domain name for the public PTR record.
 To set this field on an instance, you must be verified as the owner of the domain.
 See [the docs](https://cloud.google.com/compute/docs/instances/create-ptr-record) for how
 to become verified as a domain owner.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4484,9 +4484,9 @@ to become verified as a domain owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP address that will be 1:1 mapped to the instance's
+    <dd>The IP address that will be 1:1 mapped to the instance's
 network ip. If not given, one will be generated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4494,10 +4494,10 @@ network ip. If not given, one will be generated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [networking tier][network-tier] used for configuring this instance.
+    <dd>The [networking tier][network-tier] used for configuring this instance.
 This field can take the following values: PREMIUM or STANDARD. If this field is
 not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4505,32 +4505,32 @@ not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS domain name for the public PTR record.
+    <dd>The DNS domain name for the public PTR record.
 To set this field on an instance, you must be verified as the owner of the domain.
 See [the docs](https://cloud.google.com/compute/docs/instances/create-ptr-record) for how
 to become verified as a domain owner.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancenetworkinterfacealiasiprange">Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceNetworkInterfaceAliasIpRange">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceNetworkInterfaceAliasIpRange">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceNetworkInterfaceAliasIpRangeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceNetworkInterfaceAliasIpRangeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4539,11 +4539,11 @@ to become verified as a domain owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP CIDR range represented by this alias IP range. This IP CIDR range
+    <dd>The IP CIDR range represented by this alias IP range. This IP CIDR range
 must belong to the specified subnetwork and cannot contain IP addresses reserved by
 system or used by other network interfaces. This range may be a single IP address
 (e.g. 10.2.3.4), a netmask (e.g. /24) or a CIDR format string (e.g. 10.1.2.0/24).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4551,16 +4551,16 @@ system or used by other network interfaces. This range may be a single IP addres
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork secondary range name specifying
+    <dd>The subnetwork secondary range name specifying
 the secondary range from which to allocate the IP CIDR range for this alias IP
 range. If left unspecified, the primary range of the subnetwork will be used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4569,11 +4569,11 @@ range. If left unspecified, the primary range of the subnetwork will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP CIDR range represented by this alias IP range. This IP CIDR range
+    <dd>The IP CIDR range represented by this alias IP range. This IP CIDR range
 must belong to the specified subnetwork and cannot contain IP addresses reserved by
 system or used by other network interfaces. This range may be a single IP address
 (e.g. 10.2.3.4), a netmask (e.g. /24) or a CIDR format string (e.g. 10.1.2.0/24).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4581,16 +4581,16 @@ system or used by other network interfaces. This range may be a single IP addres
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork secondary range name specifying
+    <dd>The subnetwork secondary range name specifying
 the secondary range from which to allocate the IP CIDR range for this alias IP
 range. If left unspecified, the primary range of the subnetwork will be used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4599,11 +4599,11 @@ range. If left unspecified, the primary range of the subnetwork will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP CIDR range represented by this alias IP range. This IP CIDR range
+    <dd>The IP CIDR range represented by this alias IP range. This IP CIDR range
 must belong to the specified subnetwork and cannot contain IP addresses reserved by
 system or used by other network interfaces. This range may be a single IP address
 (e.g. 10.2.3.4), a netmask (e.g. /24) or a CIDR format string (e.g. 10.1.2.0/24).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4611,16 +4611,16 @@ system or used by other network interfaces. This range may be a single IP addres
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork secondary range name specifying
+    <dd>The subnetwork secondary range name specifying
 the secondary range from which to allocate the IP CIDR range for this alias IP
 range. If left unspecified, the primary range of the subnetwork will be used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4629,11 +4629,11 @@ range. If left unspecified, the primary range of the subnetwork will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP CIDR range represented by this alias IP range. This IP CIDR range
+    <dd>The IP CIDR range represented by this alias IP range. This IP CIDR range
 must belong to the specified subnetwork and cannot contain IP addresses reserved by
 system or used by other network interfaces. This range may be a single IP address
 (e.g. 10.2.3.4), a netmask (e.g. /24) or a CIDR format string (e.g. 10.1.2.0/24).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4641,31 +4641,31 @@ system or used by other network interfaces. This range may be a single IP addres
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork secondary range name specifying
+    <dd>The subnetwork secondary range name specifying
 the secondary range from which to allocate the IP CIDR range for this alias IP
 range. If left unspecified, the primary range of the subnetwork will be used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancescheduling">Instance<wbr>Scheduling</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceScheduling">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceScheduling">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceSchedulingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceSchedulingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4674,10 +4674,10 @@ range. If left unspecified, the primary range of the subnetwork will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance should be
+    <dd>Specifies if the instance should be
 restarted if it was terminated by Compute Engine (not a user).
 Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4685,12 +4685,12 @@ Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceschedulingnodeaffinity">List&lt;Instance<wbr>Scheduling<wbr>Node<wbr>Affinity<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies node affinities or anti-affinities
+    <dd>Specifies node affinities or anti-affinities
 to determine which sole-tenant nodes your instances and managed instance
 groups will use as host systems. Read more on sole-tenant node creation
 [here](https://cloud.google.com/compute/docs/nodes/create-nodes).
 Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4698,10 +4698,10 @@ Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes maintenance behavior for the
+    <dd>Describes maintenance behavior for the
 instance. Can be MIGRATE or TERMINATE, for more info, read
 [here](https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4709,16 +4709,16 @@ instance. Can be MIGRATE or TERMINATE, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance is preemptible.
+    <dd>Specifies if the instance is preemptible.
 If this field is set to true, then `automatic_restart` must be
 set to false.  Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4727,10 +4727,10 @@ set to false.  Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance should be
+    <dd>Specifies if the instance should be
 restarted if it was terminated by Compute Engine (not a user).
 Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4738,12 +4738,12 @@ Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceschedulingnodeaffinity">[]Instance<wbr>Scheduling<wbr>Node<wbr>Affinity</a></span>
     </dt>
-    <dd>{{% md %}}Specifies node affinities or anti-affinities
+    <dd>Specifies node affinities or anti-affinities
 to determine which sole-tenant nodes your instances and managed instance
 groups will use as host systems. Read more on sole-tenant node creation
 [here](https://cloud.google.com/compute/docs/nodes/create-nodes).
 Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4751,10 +4751,10 @@ Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes maintenance behavior for the
+    <dd>Describes maintenance behavior for the
 instance. Can be MIGRATE or TERMINATE, for more info, read
 [here](https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4762,16 +4762,16 @@ instance. Can be MIGRATE or TERMINATE, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance is preemptible.
+    <dd>Specifies if the instance is preemptible.
 If this field is set to true, then `automatic_restart` must be
 set to false.  Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4780,10 +4780,10 @@ set to false.  Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance should be
+    <dd>Specifies if the instance should be
 restarted if it was terminated by Compute Engine (not a user).
 Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4791,12 +4791,12 @@ Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceschedulingnodeaffinity">Instance<wbr>Scheduling<wbr>Node<wbr>Affinity[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies node affinities or anti-affinities
+    <dd>Specifies node affinities or anti-affinities
 to determine which sole-tenant nodes your instances and managed instance
 groups will use as host systems. Read more on sole-tenant node creation
 [here](https://cloud.google.com/compute/docs/nodes/create-nodes).
 Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4804,10 +4804,10 @@ Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes maintenance behavior for the
+    <dd>Describes maintenance behavior for the
 instance. Can be MIGRATE or TERMINATE, for more info, read
 [here](https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4815,16 +4815,16 @@ instance. Can be MIGRATE or TERMINATE, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance is preemptible.
+    <dd>Specifies if the instance is preemptible.
 If this field is set to true, then `automatic_restart` must be
 set to false.  Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4833,10 +4833,10 @@ set to false.  Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance should be
+    <dd>Specifies if the instance should be
 restarted if it was terminated by Compute Engine (not a user).
 Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4844,12 +4844,12 @@ Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceschedulingnodeaffinity">List[Instance<wbr>Scheduling<wbr>Node<wbr>Affinity]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies node affinities or anti-affinities
+    <dd>Specifies node affinities or anti-affinities
 to determine which sole-tenant nodes your instances and managed instance
 groups will use as host systems. Read more on sole-tenant node creation
 [here](https://cloud.google.com/compute/docs/nodes/create-nodes).
 Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4857,10 +4857,10 @@ Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Describes maintenance behavior for the
+    <dd>Describes maintenance behavior for the
 instance. Can be MIGRATE or TERMINATE, for more info, read
 [here](https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4868,31 +4868,31 @@ instance. Can be MIGRATE or TERMINATE, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance is preemptible.
+    <dd>Specifies if the instance is preemptible.
 If this field is set to true, then `automatic_restart` must be
 set to false.  Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instanceschedulingnodeaffinity">Instance<wbr>Scheduling<wbr>Node<wbr>Affinity</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceSchedulingNodeAffinity">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceSchedulingNodeAffinity">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceSchedulingNodeAffinityArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceSchedulingNodeAffinityOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4901,8 +4901,8 @@ set to false.  Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key for the node affinity label.
-{{% /md %}}</dd>
+    <dd>The key for the node affinity label.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4910,9 +4910,9 @@ set to false.  Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The operator. Can be `IN` for node-affinities
+    <dd>The operator. Can be `IN` for node-affinities
 or `NOT_IN` for anti-affinities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4920,13 +4920,13 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4935,8 +4935,8 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key for the node affinity label.
-{{% /md %}}</dd>
+    <dd>The key for the node affinity label.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4944,9 +4944,9 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The operator. Can be `IN` for node-affinities
+    <dd>The operator. Can be `IN` for node-affinities
 or `NOT_IN` for anti-affinities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4954,13 +4954,13 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4969,8 +4969,8 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key for the node affinity label.
-{{% /md %}}</dd>
+    <dd>The key for the node affinity label.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4978,9 +4978,9 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The operator. Can be `IN` for node-affinities
+    <dd>The operator. Can be `IN` for node-affinities
 or `NOT_IN` for anti-affinities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4988,13 +4988,13 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5003,8 +5003,8 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key for the node affinity label.
-{{% /md %}}</dd>
+    <dd>The key for the node affinity label.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5012,9 +5012,9 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The operator. Can be `IN` for node-affinities
+    <dd>The operator. Can be `IN` for node-affinities
 or `NOT_IN` for anti-affinities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5022,28 +5022,28 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancescratchdisk">Instance<wbr>Scratch<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceScratchDisk">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceScratchDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceScratchDiskArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceScratchDiskOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5052,14 +5052,14 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk interface to use for attaching this disk; either SCSI or NVME.
-{{% /md %}}</dd>
+    <dd>The disk interface to use for attaching this disk; either SCSI or NVME.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5068,14 +5068,14 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk interface to use for attaching this disk; either SCSI or NVME.
-{{% /md %}}</dd>
+    <dd>The disk interface to use for attaching this disk; either SCSI or NVME.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5084,14 +5084,14 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk interface to use for attaching this disk; either SCSI or NVME.
-{{% /md %}}</dd>
+    <dd>The disk interface to use for attaching this disk; either SCSI or NVME.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5100,29 +5100,29 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The disk interface to use for attaching this disk; either SCSI or NVME.
-{{% /md %}}</dd>
+    <dd>The disk interface to use for attaching this disk; either SCSI or NVME.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instanceserviceaccount">Instance<wbr>Service<wbr>Account</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceServiceAccount">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceServiceAccount">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceServiceAccountArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceServiceAccountOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5131,11 +5131,11 @@ or `NOT_IN` for anti-affinities.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of service scopes. Both OAuth2 URLs and gcloud
+    <dd>A list of service scopes. Both OAuth2 URLs and gcloud
 short names are supported. To allow full access to all Cloud APIs, use the
 `cloud-platform` scope. See a complete list of scopes [here](https://cloud.google.com/sdk/gcloud/reference/alpha/compute/instances/set-scopes#--scopes).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5143,16 +5143,16 @@ short names are supported. To allow full access to all Cloud APIs, use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account e-mail address. If not given, the
+    <dd>The service account e-mail address. If not given, the
 default Google Compute Engine service account is used.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5161,11 +5161,11 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of service scopes. Both OAuth2 URLs and gcloud
+    <dd>A list of service scopes. Both OAuth2 URLs and gcloud
 short names are supported. To allow full access to all Cloud APIs, use the
 `cloud-platform` scope. See a complete list of scopes [here](https://cloud.google.com/sdk/gcloud/reference/alpha/compute/instances/set-scopes#--scopes).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5173,16 +5173,16 @@ short names are supported. To allow full access to all Cloud APIs, use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account e-mail address. If not given, the
+    <dd>The service account e-mail address. If not given, the
 default Google Compute Engine service account is used.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5191,11 +5191,11 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of service scopes. Both OAuth2 URLs and gcloud
+    <dd>A list of service scopes. Both OAuth2 URLs and gcloud
 short names are supported. To allow full access to all Cloud APIs, use the
 `cloud-platform` scope. See a complete list of scopes [here](https://cloud.google.com/sdk/gcloud/reference/alpha/compute/instances/set-scopes#--scopes).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5203,16 +5203,16 @@ short names are supported. To allow full access to all Cloud APIs, use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account e-mail address. If not given, the
+    <dd>The service account e-mail address. If not given, the
 default Google Compute Engine service account is used.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5221,11 +5221,11 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of service scopes. Both OAuth2 URLs and gcloud
+    <dd>A list of service scopes. Both OAuth2 URLs and gcloud
 short names are supported. To allow full access to all Cloud APIs, use the
 `cloud-platform` scope. See a complete list of scopes [here](https://cloud.google.com/sdk/gcloud/reference/alpha/compute/instances/set-scopes#--scopes).
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5233,31 +5233,31 @@ short names are supported. To allow full access to all Cloud APIs, use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service account e-mail address. If not given, the
+    <dd>The service account e-mail address. If not given, the
 default Google Compute Engine service account is used.
 **Note**: `allow_stopping_for_update` must be set to true or your instance must have a `desired_status` of `TERMINATED` in order to update this field.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instanceshieldedinstanceconfig">Instance<wbr>Shielded<wbr>Instance<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceShieldedInstanceConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceShieldedInstanceConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceShieldedInstanceConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceShieldedInstanceConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5266,8 +5266,8 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}-- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.
-{{% /md %}}</dd>
+    <dd>-- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5275,8 +5275,8 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}-- Verify the digital signature of all boot components, and halt the boot process if signature verification fails. Defaults to false.
-{{% /md %}}</dd>
+    <dd>-- Verify the digital signature of all boot components, and halt the boot process if signature verification fails. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5284,14 +5284,14 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}-- Use a virtualized trusted platform module, which is a specialized computer chip you can use to encrypt objects like keys and certificates. Defaults to true.
-{{% /md %}}</dd>
+    <dd>-- Use a virtualized trusted platform module, which is a specialized computer chip you can use to encrypt objects like keys and certificates. Defaults to true.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5300,8 +5300,8 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}-- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.
-{{% /md %}}</dd>
+    <dd>-- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5309,8 +5309,8 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}-- Verify the digital signature of all boot components, and halt the boot process if signature verification fails. Defaults to false.
-{{% /md %}}</dd>
+    <dd>-- Verify the digital signature of all boot components, and halt the boot process if signature verification fails. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5318,14 +5318,14 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}-- Use a virtualized trusted platform module, which is a specialized computer chip you can use to encrypt objects like keys and certificates. Defaults to true.
-{{% /md %}}</dd>
+    <dd>-- Use a virtualized trusted platform module, which is a specialized computer chip you can use to encrypt objects like keys and certificates. Defaults to true.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5334,8 +5334,8 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}-- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.
-{{% /md %}}</dd>
+    <dd>-- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5343,8 +5343,8 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}-- Verify the digital signature of all boot components, and halt the boot process if signature verification fails. Defaults to false.
-{{% /md %}}</dd>
+    <dd>-- Verify the digital signature of all boot components, and halt the boot process if signature verification fails. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5352,14 +5352,14 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}-- Use a virtualized trusted platform module, which is a specialized computer chip you can use to encrypt objects like keys and certificates. Defaults to true.
-{{% /md %}}</dd>
+    <dd>-- Use a virtualized trusted platform module, which is a specialized computer chip you can use to encrypt objects like keys and certificates. Defaults to true.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5368,8 +5368,8 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}-- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.
-{{% /md %}}</dd>
+    <dd>-- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5377,8 +5377,8 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}-- Verify the digital signature of all boot components, and halt the boot process if signature verification fails. Defaults to false.
-{{% /md %}}</dd>
+    <dd>-- Verify the digital signature of all boot components, and halt the boot process if signature verification fails. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5386,11 +5386,11 @@ default Google Compute Engine service account is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}-- Use a virtualized trusted platform module, which is a specialized computer chip you can use to encrypt objects like keys and certificates. Defaults to true.
-{{% /md %}}</dd>
+    <dd>-- Use a virtualized trusted platform module, which is a specialized computer chip you can use to encrypt objects like keys and certificates. Defaults to true.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -16,22 +16,22 @@ git_sha: "d3b171d10b806b0e9b07045b16f0ad5d481bfa38"
 > please consult the source [`terraform-providers/terraform-provider-docker` repo](https://github.com/terraform-providers/terraform-provider-docker/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var docker = require("@pulumi/docker");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as docker from "@pulumi/docker";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

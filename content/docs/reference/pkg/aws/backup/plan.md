@@ -35,26 +35,26 @@ const example = new aws.backup.Plan("example", {
 
 
 ## Create a Plan Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/backup/#Plan">Plan</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/backup/#PlanArgs">PlanArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Plan</span><span class="p">(resource_name, opts=None, </span>name=None<span class="p">, </span>rules=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewPlan<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanArgs">PlanArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#Plan">Plan</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Backup.Plan.html">Plan</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Backup.PlanArgs.html">PlanArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -91,9 +91,9 @@ const example = new aws.backup.Plan("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -111,9 +111,9 @@ const example = new aws.backup.Plan("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -160,9 +160,9 @@ const example = new aws.backup.Plan("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -199,7 +199,7 @@ const example = new aws.backup.Plan("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Plan Resource Properties {#properties}
 
@@ -212,7 +212,7 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -221,8 +221,8 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrule">List&lt;Plan<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A rule object that specifies a scheduled task that is used to back up a selection of resources.
-{{% /md %}}</dd>
+    <dd>A rule object that specifies a scheduled task that is used to back up a selection of resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,8 +230,8 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of a backup plan.
-{{% /md %}}</dd>
+    <dd>The display name of a backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,14 +239,14 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the plans you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the plans you create.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -255,8 +255,8 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrule">[]Plan<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A rule object that specifies a scheduled task that is used to back up a selection of resources.
-{{% /md %}}</dd>
+    <dd>A rule object that specifies a scheduled task that is used to back up a selection of resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of a backup plan.
-{{% /md %}}</dd>
+    <dd>The display name of a backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,14 +273,14 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the plans you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the plans you create.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -289,8 +289,8 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrule">Plan<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A rule object that specifies a scheduled task that is used to back up a selection of resources.
-{{% /md %}}</dd>
+    <dd>A rule object that specifies a scheduled task that is used to back up a selection of resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,8 +298,8 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of a backup plan.
-{{% /md %}}</dd>
+    <dd>The display name of a backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,14 +307,14 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the plans you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the plans you create.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -323,8 +323,8 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrule">List[Plan<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A rule object that specifies a scheduled task that is used to back up a selection of resources.
-{{% /md %}}</dd>
+    <dd>A rule object that specifies a scheduled task that is used to back up a selection of resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The display name of a backup plan.
-{{% /md %}}</dd>
+    <dd>The display name of a backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,11 +341,11 @@ The Plan resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the plans you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the plans you create.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -359,7 +359,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -368,8 +368,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the backup plan.
-{{% /md %}}</dd>
+    <dd>The ARN of the backup plan.
+</dd>
 
     <dt class="property-"
             title="">
@@ -377,7 +377,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -385,14 +385,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
-{{% /md %}}</dd>
+    <dd>Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -401,8 +401,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the backup plan.
-{{% /md %}}</dd>
+    <dd>The ARN of the backup plan.
+</dd>
 
     <dt class="property-"
             title="">
@@ -410,7 +410,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -418,14 +418,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
-{{% /md %}}</dd>
+    <dd>Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -434,8 +434,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the backup plan.
-{{% /md %}}</dd>
+    <dd>The ARN of the backup plan.
+</dd>
 
     <dt class="property-"
             title="">
@@ -443,7 +443,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -451,14 +451,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
-{{% /md %}}</dd>
+    <dd>Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -467,8 +467,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the backup plan.
-{{% /md %}}</dd>
+    <dd>The ARN of the backup plan.
+</dd>
 
     <dt class="property-"
             title="">
@@ -476,7 +476,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -484,11 +484,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
-{{% /md %}}</dd>
+    <dd>Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -499,25 +499,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Plan Resource {#look-up}
 
 Get an existing Plan resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/backup/#PlanState">PlanState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/backup/#Plan">Plan</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>name=None<span class="p">, </span>rules=None<span class="p">, </span>tags=None<span class="p">, </span>version=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPlan<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanState">PlanState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#Plan">Plan</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Backup.Plan.html">Plan</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Backup.PlanState.html">PlanState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -542,9 +542,9 @@ Get an existing Plan resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -557,36 +557,9 @@ Get an existing Plan resource's state with the given name, ID, and optional extr
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -611,13 +584,40 @@ Get an existing Plan resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -626,8 +626,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the backup plan.
-{{% /md %}}</dd>
+    <dd>The ARN of the backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,8 +635,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of a backup plan.
-{{% /md %}}</dd>
+    <dd>The display name of a backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,8 +644,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrule">List&lt;Plan<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A rule object that specifies a scheduled task that is used to back up a selection of resources.
-{{% /md %}}</dd>
+    <dd>A rule object that specifies a scheduled task that is used to back up a selection of resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -653,8 +653,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the plans you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the plans you create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,14 +662,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
-{{% /md %}}</dd>
+    <dd>Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -678,8 +678,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the backup plan.
-{{% /md %}}</dd>
+    <dd>The ARN of the backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -687,8 +687,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of a backup plan.
-{{% /md %}}</dd>
+    <dd>The display name of a backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -696,8 +696,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrule">[]Plan<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A rule object that specifies a scheduled task that is used to back up a selection of resources.
-{{% /md %}}</dd>
+    <dd>A rule object that specifies a scheduled task that is used to back up a selection of resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -705,8 +705,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the plans you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the plans you create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -714,14 +714,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
-{{% /md %}}</dd>
+    <dd>Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -730,8 +730,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the backup plan.
-{{% /md %}}</dd>
+    <dd>The ARN of the backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -739,8 +739,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of a backup plan.
-{{% /md %}}</dd>
+    <dd>The display name of a backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -748,8 +748,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrule">Plan<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A rule object that specifies a scheduled task that is used to back up a selection of resources.
-{{% /md %}}</dd>
+    <dd>A rule object that specifies a scheduled task that is used to back up a selection of resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -757,8 +757,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the plans you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the plans you create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -766,14 +766,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
-{{% /md %}}</dd>
+    <dd>Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -782,8 +782,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the backup plan.
-{{% /md %}}</dd>
+    <dd>The ARN of the backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -791,8 +791,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The display name of a backup plan.
-{{% /md %}}</dd>
+    <dd>The display name of a backup plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -800,8 +800,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrule">List[Plan<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A rule object that specifies a scheduled task that is used to back up a selection of resources.
-{{% /md %}}</dd>
+    <dd>A rule object that specifies a scheduled task that is used to back up a selection of resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,8 +809,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the plans you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the plans you create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,11 +818,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
-{{% /md %}}</dd>
+    <dd>Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -837,18 +837,18 @@ The following state arguments are supported:
 
 
 <h4 id="planrule">Plan<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#PlanRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#PlanRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -857,8 +857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An display name for a backup rule.
-{{% /md %}}</dd>
+    <dd>An display name for a backup rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -866,8 +866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a logical container where backups are stored.
-{{% /md %}}</dd>
+    <dd>The name of a logical container where backups are stored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,8 +875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
-{{% /md %}}</dd>
+    <dd>The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulecopyaction">List&lt;Plan<wbr>Rule<wbr>Copy<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with copy operation settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with copy operation settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,8 +893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulelifecycle">Plan<wbr>Rule<wbr>Lifecycle<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
-{{% /md %}}</dd>
+    <dd>The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the resources that you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the resources that you create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,8 +911,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A CRON expression specifying when AWS Backup initiates a backup job.
-{{% /md %}}</dd>
+    <dd>A CRON expression specifying when AWS Backup initiates a backup job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,14 +920,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time in minutes before beginning a backup.
-{{% /md %}}</dd>
+    <dd>The amount of time in minutes before beginning a backup.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -936,8 +936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An display name for a backup rule.
-{{% /md %}}</dd>
+    <dd>An display name for a backup rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -945,8 +945,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a logical container where backups are stored.
-{{% /md %}}</dd>
+    <dd>The name of a logical container where backups are stored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
-{{% /md %}}</dd>
+    <dd>The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulecopyaction">[]Plan<wbr>Rule<wbr>Copy<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with copy operation settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with copy operation settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,8 +972,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulelifecycle">Plan<wbr>Rule<wbr>Lifecycle</a></span>
     </dt>
-    <dd>{{% md %}}The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
-{{% /md %}}</dd>
+    <dd>The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,8 +981,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the resources that you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the resources that you create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A CRON expression specifying when AWS Backup initiates a backup job.
-{{% /md %}}</dd>
+    <dd>A CRON expression specifying when AWS Backup initiates a backup job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,14 +999,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time in minutes before beginning a backup.
-{{% /md %}}</dd>
+    <dd>The amount of time in minutes before beginning a backup.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1015,8 +1015,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An display name for a backup rule.
-{{% /md %}}</dd>
+    <dd>An display name for a backup rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1024,8 +1024,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a logical container where backups are stored.
-{{% /md %}}</dd>
+    <dd>The name of a logical container where backups are stored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,8 +1033,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
-{{% /md %}}</dd>
+    <dd>The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,8 +1042,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulecopyaction">Plan<wbr>Rule<wbr>Copy<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with copy operation settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with copy operation settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,8 +1051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulelifecycle">Plan<wbr>Rule<wbr>Lifecycle</a></span>
     </dt>
-    <dd>{{% md %}}The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
-{{% /md %}}</dd>
+    <dd>The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the resources that you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the resources that you create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A CRON expression specifying when AWS Backup initiates a backup job.
-{{% /md %}}</dd>
+    <dd>A CRON expression specifying when AWS Backup initiates a backup job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,14 +1078,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time in minutes before beginning a backup.
-{{% /md %}}</dd>
+    <dd>The amount of time in minutes before beginning a backup.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1094,8 +1094,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An display name for a backup rule.
-{{% /md %}}</dd>
+    <dd>An display name for a backup rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1103,8 +1103,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of a logical container where backups are stored.
-{{% /md %}}</dd>
+    <dd>The name of a logical container where backups are stored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,8 +1112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
-{{% /md %}}</dd>
+    <dd>The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,8 +1121,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulecopyaction">List[Plan<wbr>Rule<wbr>Copy<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with copy operation settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with copy operation settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,8 +1130,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulelifecycle">Dict[Plan<wbr>Rule<wbr>Lifecycle]</a></span>
     </dt>
-    <dd>{{% md %}}The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
-{{% /md %}}</dd>
+    <dd>The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1139,8 +1139,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Metadata that you can assign to help organize the resources that you create.
-{{% /md %}}</dd>
+    <dd>Metadata that you can assign to help organize the resources that you create.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,8 +1148,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A CRON expression specifying when AWS Backup initiates a backup job.
-{{% /md %}}</dd>
+    <dd>A CRON expression specifying when AWS Backup initiates a backup job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1157,29 +1157,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time in minutes before beginning a backup.
-{{% /md %}}</dd>
+    <dd>The amount of time in minutes before beginning a backup.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="planrulecopyaction">Plan<wbr>Rule<wbr>Copy<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#PlanRuleCopyAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#PlanRuleCopyAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanRuleCopyActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanRuleCopyActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1188,8 +1188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.
-{{% /md %}}</dd>
+    <dd>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1197,14 +1197,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulecopyactionlifecycle">Plan<wbr>Rule<wbr>Copy<wbr>Action<wbr>Lifecycle<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
-{{% /md %}}</dd>
+    <dd>The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1213,8 +1213,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.
-{{% /md %}}</dd>
+    <dd>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,14 +1222,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulecopyactionlifecycle">Plan<wbr>Rule<wbr>Copy<wbr>Action<wbr>Lifecycle</a></span>
     </dt>
-    <dd>{{% md %}}The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
-{{% /md %}}</dd>
+    <dd>The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1238,8 +1238,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.
-{{% /md %}}</dd>
+    <dd>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,14 +1247,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulecopyactionlifecycle">Plan<wbr>Rule<wbr>Copy<wbr>Action<wbr>Lifecycle</a></span>
     </dt>
-    <dd>{{% md %}}The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
-{{% /md %}}</dd>
+    <dd>The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1263,8 +1263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.
-{{% /md %}}</dd>
+    <dd>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,29 +1272,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#planrulecopyactionlifecycle">Dict[Plan<wbr>Rule<wbr>Copy<wbr>Action<wbr>Lifecycle]</a></span>
     </dt>
-    <dd>{{% md %}}The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
-{{% /md %}}</dd>
+    <dd>The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="planrulecopyactionlifecycle">Plan<wbr>Rule<wbr>Copy<wbr>Action<wbr>Lifecycle</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#PlanRuleCopyActionLifecycle">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#PlanRuleCopyActionLifecycle">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanRuleCopyActionLifecycleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanRuleCopyActionLifecycleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1303,8 +1303,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is moved to cold storage.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is moved to cold storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,14 +1312,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1328,8 +1328,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is moved to cold storage.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is moved to cold storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,14 +1337,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1353,8 +1353,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is moved to cold storage.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is moved to cold storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1362,14 +1362,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1378,8 +1378,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is moved to cold storage.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is moved to cold storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1387,29 +1387,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="planrulelifecycle">Plan<wbr>Rule<wbr>Lifecycle</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#PlanRuleLifecycle">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#PlanRuleLifecycle">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanRuleLifecycleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/backup?tab=doc#PlanRuleLifecycleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1418,8 +1418,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is moved to cold storage.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is moved to cold storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,14 +1427,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1443,8 +1443,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is moved to cold storage.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is moved to cold storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,14 +1452,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1468,8 +1468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is moved to cold storage.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is moved to cold storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,14 +1477,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1493,8 +1493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is moved to cold storage.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is moved to cold storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,11 +1502,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

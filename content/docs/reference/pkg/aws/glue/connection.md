@@ -61,26 +61,26 @@ const example = new aws.glue.Connection("example", {
 
 
 ## Create a Connection Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#Connection">Connection</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#ConnectionArgs">ConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Connection</span><span class="p">(resource_name, opts=None, </span>catalog_id=None<span class="p">, </span>connection_properties=None<span class="p">, </span>connection_type=None<span class="p">, </span>description=None<span class="p">, </span>match_criterias=None<span class="p">, </span>name=None<span class="p">, </span>physical_connection_requirements=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#ConnectionArgs">ConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#Connection">Connection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.Connection.html">Connection</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.ConnectionArgs.html">ConnectionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -117,9 +117,9 @@ const example = new aws.glue.Connection("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -137,9 +137,9 @@ const example = new aws.glue.Connection("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -186,9 +186,9 @@ const example = new aws.glue.Connection("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -225,7 +225,7 @@ const example = new aws.glue.Connection("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Connection Resource Properties {#properties}
 
@@ -238,7 +238,7 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -247,8 +247,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of key-value pairs used as parameters for this connection.
-{{% /md %}}</dd>
+    <dd>A map of key-value pairs used as parameters for this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,8 +256,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
-{{% /md %}}</dd>
+    <dd>The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,8 +265,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the connection. Defaults to `JBDC`.
-{{% /md %}}</dd>
+    <dd>The type of the connection. Defaults to `JBDC`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the connection.
-{{% /md %}}</dd>
+    <dd>Description of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of criteria that can be used in selecting this connection.
-{{% /md %}}</dd>
+    <dd>A list of criteria that can be used in selecting this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection.
-{{% /md %}}</dd>
+    <dd>The name of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,14 +301,14 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#connectionphysicalconnectionrequirements">Connection<wbr>Physical<wbr>Connection<wbr>Requirements<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
-{{% /md %}}</dd>
+    <dd>A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -317,8 +317,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of key-value pairs used as parameters for this connection.
-{{% /md %}}</dd>
+    <dd>A map of key-value pairs used as parameters for this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
-{{% /md %}}</dd>
+    <dd>The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,8 +335,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the connection. Defaults to `JBDC`.
-{{% /md %}}</dd>
+    <dd>The type of the connection. Defaults to `JBDC`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,8 +344,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the connection.
-{{% /md %}}</dd>
+    <dd>Description of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of criteria that can be used in selecting this connection.
-{{% /md %}}</dd>
+    <dd>A list of criteria that can be used in selecting this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection.
-{{% /md %}}</dd>
+    <dd>The name of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,14 +371,14 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#connectionphysicalconnectionrequirements">Connection<wbr>Physical<wbr>Connection<wbr>Requirements</a></span>
     </dt>
-    <dd>{{% md %}}A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
-{{% /md %}}</dd>
+    <dd>A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -387,8 +387,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of key-value pairs used as parameters for this connection.
-{{% /md %}}</dd>
+    <dd>A map of key-value pairs used as parameters for this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
-{{% /md %}}</dd>
+    <dd>The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the connection. Defaults to `JBDC`.
-{{% /md %}}</dd>
+    <dd>The type of the connection. Defaults to `JBDC`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the connection.
-{{% /md %}}</dd>
+    <dd>Description of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of criteria that can be used in selecting this connection.
-{{% /md %}}</dd>
+    <dd>A list of criteria that can be used in selecting this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection.
-{{% /md %}}</dd>
+    <dd>The name of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,14 +441,14 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#connectionphysicalconnectionrequirements">Connection<wbr>Physical<wbr>Connection<wbr>Requirements</a></span>
     </dt>
-    <dd>{{% md %}}A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
-{{% /md %}}</dd>
+    <dd>A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -457,8 +457,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of key-value pairs used as parameters for this connection.
-{{% /md %}}</dd>
+    <dd>A map of key-value pairs used as parameters for this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,8 +466,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
-{{% /md %}}</dd>
+    <dd>The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,8 +475,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the connection. Defaults to `JBDC`.
-{{% /md %}}</dd>
+    <dd>The type of the connection. Defaults to `JBDC`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,8 +484,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the connection.
-{{% /md %}}</dd>
+    <dd>Description of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,8 +493,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of criteria that can be used in selecting this connection.
-{{% /md %}}</dd>
+    <dd>A list of criteria that can be used in selecting this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection.
-{{% /md %}}</dd>
+    <dd>The name of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,11 +511,11 @@ The Connection resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#connectionphysicalconnectionrequirements">Dict[Connection<wbr>Physical<wbr>Connection<wbr>Requirements]</a></span>
     </dt>
-    <dd>{{% md %}}A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
-{{% /md %}}</dd>
+    <dd>A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -529,7 +529,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -538,13 +538,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -553,13 +553,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -568,13 +568,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -583,10 +583,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -597,25 +597,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Connection Resource {#look-up}
 
 Get an existing Connection resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#ConnectionState">ConnectionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#Connection">Connection</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>catalog_id=None<span class="p">, </span>connection_properties=None<span class="p">, </span>connection_type=None<span class="p">, </span>description=None<span class="p">, </span>match_criterias=None<span class="p">, </span>name=None<span class="p">, </span>physical_connection_requirements=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#ConnectionState">ConnectionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#Connection">Connection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.Connection.html">Connection</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.ConnectionState.html">ConnectionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -640,9 +640,9 @@ Get an existing Connection resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -655,36 +655,9 @@ Get an existing Connection resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -709,13 +682,40 @@ Get an existing Connection resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -724,8 +724,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
-{{% /md %}}</dd>
+    <dd>The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,8 +733,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of key-value pairs used as parameters for this connection.
-{{% /md %}}</dd>
+    <dd>A map of key-value pairs used as parameters for this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,8 +742,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the connection. Defaults to `JBDC`.
-{{% /md %}}</dd>
+    <dd>The type of the connection. Defaults to `JBDC`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,8 +751,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the connection.
-{{% /md %}}</dd>
+    <dd>Description of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,8 +760,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of criteria that can be used in selecting this connection.
-{{% /md %}}</dd>
+    <dd>A list of criteria that can be used in selecting this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,8 +769,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection.
-{{% /md %}}</dd>
+    <dd>The name of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,14 +778,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#connectionphysicalconnectionrequirements">Connection<wbr>Physical<wbr>Connection<wbr>Requirements<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
-{{% /md %}}</dd>
+    <dd>A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -794,8 +794,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
-{{% /md %}}</dd>
+    <dd>The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,8 +803,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of key-value pairs used as parameters for this connection.
-{{% /md %}}</dd>
+    <dd>A map of key-value pairs used as parameters for this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -812,8 +812,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the connection. Defaults to `JBDC`.
-{{% /md %}}</dd>
+    <dd>The type of the connection. Defaults to `JBDC`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -821,8 +821,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the connection.
-{{% /md %}}</dd>
+    <dd>Description of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,8 +830,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of criteria that can be used in selecting this connection.
-{{% /md %}}</dd>
+    <dd>A list of criteria that can be used in selecting this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,8 +839,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection.
-{{% /md %}}</dd>
+    <dd>The name of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,14 +848,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#connectionphysicalconnectionrequirements">Connection<wbr>Physical<wbr>Connection<wbr>Requirements</a></span>
     </dt>
-    <dd>{{% md %}}A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
-{{% /md %}}</dd>
+    <dd>A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -864,8 +864,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
-{{% /md %}}</dd>
+    <dd>The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,8 +873,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of key-value pairs used as parameters for this connection.
-{{% /md %}}</dd>
+    <dd>A map of key-value pairs used as parameters for this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,8 +882,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the connection. Defaults to `JBDC`.
-{{% /md %}}</dd>
+    <dd>The type of the connection. Defaults to `JBDC`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,8 +891,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the connection.
-{{% /md %}}</dd>
+    <dd>Description of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,8 +900,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of criteria that can be used in selecting this connection.
-{{% /md %}}</dd>
+    <dd>A list of criteria that can be used in selecting this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,8 +909,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection.
-{{% /md %}}</dd>
+    <dd>The name of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,14 +918,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#connectionphysicalconnectionrequirements">Connection<wbr>Physical<wbr>Connection<wbr>Requirements</a></span>
     </dt>
-    <dd>{{% md %}}A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
-{{% /md %}}</dd>
+    <dd>A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -934,8 +934,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
-{{% /md %}}</dd>
+    <dd>The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -943,8 +943,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of key-value pairs used as parameters for this connection.
-{{% /md %}}</dd>
+    <dd>A map of key-value pairs used as parameters for this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -952,8 +952,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the connection. Defaults to `JBDC`.
-{{% /md %}}</dd>
+    <dd>The type of the connection. Defaults to `JBDC`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -961,8 +961,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the connection.
-{{% /md %}}</dd>
+    <dd>Description of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,8 +970,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of criteria that can be used in selecting this connection.
-{{% /md %}}</dd>
+    <dd>A list of criteria that can be used in selecting this connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,8 +979,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection.
-{{% /md %}}</dd>
+    <dd>The name of the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -988,11 +988,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#connectionphysicalconnectionrequirements">Dict[Connection<wbr>Physical<wbr>Connection<wbr>Requirements]</a></span>
     </dt>
-    <dd>{{% md %}}A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
-{{% /md %}}</dd>
+    <dd>A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1007,18 +1007,18 @@ The following state arguments are supported:
 
 
 <h4 id="connectionphysicalconnectionrequirements">Connection<wbr>Physical<wbr>Connection<wbr>Requirements</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ConnectionPhysicalConnectionRequirements">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ConnectionPhysicalConnectionRequirements">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#ConnectionPhysicalConnectionRequirementsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#ConnectionPhysicalConnectionRequirementsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1027,8 +1027,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the connection. This field is redundant and implied by `subnet_id`, but is currently an api requirement.
-{{% /md %}}</dd>
+    <dd>The availability zone of the connection. This field is redundant and implied by `subnet_id`, but is currently an api requirement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,8 +1036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The security group ID list used by the connection.
-{{% /md %}}</dd>
+    <dd>The security group ID list used by the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,14 +1045,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnet ID used by the connection.
-{{% /md %}}</dd>
+    <dd>The subnet ID used by the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1061,8 +1061,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the connection. This field is redundant and implied by `subnet_id`, but is currently an api requirement.
-{{% /md %}}</dd>
+    <dd>The availability zone of the connection. This field is redundant and implied by `subnet_id`, but is currently an api requirement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1070,8 +1070,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The security group ID list used by the connection.
-{{% /md %}}</dd>
+    <dd>The security group ID list used by the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1079,14 +1079,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnet ID used by the connection.
-{{% /md %}}</dd>
+    <dd>The subnet ID used by the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1095,8 +1095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the connection. This field is redundant and implied by `subnet_id`, but is currently an api requirement.
-{{% /md %}}</dd>
+    <dd>The availability zone of the connection. This field is redundant and implied by `subnet_id`, but is currently an api requirement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1104,8 +1104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The security group ID list used by the connection.
-{{% /md %}}</dd>
+    <dd>The security group ID list used by the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1113,14 +1113,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnet ID used by the connection.
-{{% /md %}}</dd>
+    <dd>The subnet ID used by the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1129,8 +1129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the connection. This field is redundant and implied by `subnet_id`, but is currently an api requirement.
-{{% /md %}}</dd>
+    <dd>The availability zone of the connection. This field is redundant and implied by `subnet_id`, but is currently an api requirement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The security group ID list used by the connection.
-{{% /md %}}</dd>
+    <dd>The security group ID list used by the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,11 +1147,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The subnet ID used by the connection.
-{{% /md %}}</dd>
+    <dd>The subnet ID used by the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

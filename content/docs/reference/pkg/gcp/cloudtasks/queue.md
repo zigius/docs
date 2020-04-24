@@ -28,26 +28,26 @@ const defaultQueue = new gcp.cloudtasks.Queue("default", {
 
 
 ## Create a Queue Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/cloudtasks/#Queue">Queue</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/cloudtasks/#QueueArgs">QueueArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Queue</span><span class="p">(resource_name, opts=None, </span>app_engine_routing_override=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>rate_limits=None<span class="p">, </span>retry_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewQueue<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#QueueArgs">QueueArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#Queue">Queue</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.CloudTasks.Queue.html">Queue</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.CloudTasks.QueueArgs.html">QueueArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -84,9 +84,9 @@ const defaultQueue = new gcp.cloudtasks.Queue("default", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -104,9 +104,9 @@ const defaultQueue = new gcp.cloudtasks.Queue("default", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -153,9 +153,9 @@ const defaultQueue = new gcp.cloudtasks.Queue("default", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -192,7 +192,7 @@ const defaultQueue = new gcp.cloudtasks.Queue("default", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Queue Resource Properties {#properties}
 
@@ -205,7 +205,7 @@ The Queue resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -214,8 +214,8 @@ The Queue resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the queue
-{{% /md %}}</dd>
+    <dd>The location of the queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -223,8 +223,8 @@ The Queue resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueappengineroutingoverride">Queue<wbr>App<wbr>Engine<wbr>Routing<wbr>Override<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
-{{% /md %}}</dd>
+    <dd>Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -232,8 +232,8 @@ The Queue resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The queue name.
-{{% /md %}}</dd>
+    <dd>The queue name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -241,9 +241,9 @@ The Queue resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,11 +251,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueratelimits">Queue<wbr>Rate<wbr>Limits<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
+    <dd>Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
 User-specified throttling: rateLimits, retryConfig, and the queue's state. * System throttling due to 429 (Too Many
 Requests) or 503 (Service Unavailable) responses from the worker, high error rates, or to smooth sudden large traffic
 spikes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,14 +263,14 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueretryconfig">Queue<wbr>Retry<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Settings that determine the retry behavior.
-{{% /md %}}</dd>
+    <dd>Settings that determine the retry behavior.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -279,8 +279,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the queue
-{{% /md %}}</dd>
+    <dd>The location of the queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,8 +288,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueappengineroutingoverride">Queue<wbr>App<wbr>Engine<wbr>Routing<wbr>Override</a></span>
     </dt>
-    <dd>{{% md %}}Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
-{{% /md %}}</dd>
+    <dd>Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,8 +297,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The queue name.
-{{% /md %}}</dd>
+    <dd>The queue name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,9 +306,9 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -316,11 +316,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueratelimits">Queue<wbr>Rate<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
+    <dd>Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
 User-specified throttling: rateLimits, retryConfig, and the queue's state. * System throttling due to 429 (Too Many
 Requests) or 503 (Service Unavailable) responses from the worker, high error rates, or to smooth sudden large traffic
 spikes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,14 +328,14 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueretryconfig">Queue<wbr>Retry<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Settings that determine the retry behavior.
-{{% /md %}}</dd>
+    <dd>Settings that determine the retry behavior.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -344,8 +344,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the queue
-{{% /md %}}</dd>
+    <dd>The location of the queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueappengineroutingoverride">Queue<wbr>App<wbr>Engine<wbr>Routing<wbr>Override</a></span>
     </dt>
-    <dd>{{% md %}}Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
-{{% /md %}}</dd>
+    <dd>Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The queue name.
-{{% /md %}}</dd>
+    <dd>The queue name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,9 +371,9 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,11 +381,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueratelimits">Queue<wbr>Rate<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
+    <dd>Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
 User-specified throttling: rateLimits, retryConfig, and the queue's state. * System throttling due to 429 (Too Many
 Requests) or 503 (Service Unavailable) responses from the worker, high error rates, or to smooth sudden large traffic
 spikes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,14 +393,14 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueretryconfig">Queue<wbr>Retry<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Settings that determine the retry behavior.
-{{% /md %}}</dd>
+    <dd>Settings that determine the retry behavior.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -409,8 +409,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location of the queue
-{{% /md %}}</dd>
+    <dd>The location of the queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,8 +418,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueappengineroutingoverride">Dict[Queue<wbr>App<wbr>Engine<wbr>Routing<wbr>Override]</a></span>
     </dt>
-    <dd>{{% md %}}Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
-{{% /md %}}</dd>
+    <dd>Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,8 +427,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The queue name.
-{{% /md %}}</dd>
+    <dd>The queue name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,9 +436,9 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,11 +446,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueratelimits">Dict[Queue<wbr>Rate<wbr>Limits]</a></span>
     </dt>
-    <dd>{{% md %}}Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
+    <dd>Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
 User-specified throttling: rateLimits, retryConfig, and the queue's state. * System throttling due to 429 (Too Many
 Requests) or 503 (Service Unavailable) responses from the worker, high error rates, or to smooth sudden large traffic
 spikes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,11 +458,11 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueretryconfig">Dict[Queue<wbr>Retry<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Settings that determine the retry behavior.
-{{% /md %}}</dd>
+    <dd>Settings that determine the retry behavior.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -476,7 +476,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -485,13 +485,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -500,13 +500,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -515,13 +515,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -530,10 +530,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -544,25 +544,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Queue Resource {#look-up}
 
 Get an existing Queue resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/cloudtasks/#QueueState">QueueState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/cloudtasks/#Queue">Queue</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>app_engine_routing_override=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>rate_limits=None<span class="p">, </span>retry_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetQueue<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#QueueState">QueueState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#Queue">Queue</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.CloudTasks.Queue.html">Queue</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.CloudTasks.QueueState.html">QueueState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -587,9 +587,9 @@ Get an existing Queue resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -602,36 +602,9 @@ Get an existing Queue resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -656,13 +629,40 @@ Get an existing Queue resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -671,8 +671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueappengineroutingoverride">Queue<wbr>App<wbr>Engine<wbr>Routing<wbr>Override<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
-{{% /md %}}</dd>
+    <dd>Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,8 +680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the queue
-{{% /md %}}</dd>
+    <dd>The location of the queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,8 +689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The queue name.
-{{% /md %}}</dd>
+    <dd>The queue name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,9 +698,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -708,11 +708,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueratelimits">Queue<wbr>Rate<wbr>Limits<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
+    <dd>Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
 User-specified throttling: rateLimits, retryConfig, and the queue's state. * System throttling due to 429 (Too Many
 Requests) or 503 (Service Unavailable) responses from the worker, high error rates, or to smooth sudden large traffic
 spikes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -720,14 +720,14 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueretryconfig">Queue<wbr>Retry<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Settings that determine the retry behavior.
-{{% /md %}}</dd>
+    <dd>Settings that determine the retry behavior.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -736,8 +736,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueappengineroutingoverride">Queue<wbr>App<wbr>Engine<wbr>Routing<wbr>Override</a></span>
     </dt>
-    <dd>{{% md %}}Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
-{{% /md %}}</dd>
+    <dd>Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -745,8 +745,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the queue
-{{% /md %}}</dd>
+    <dd>The location of the queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -754,8 +754,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The queue name.
-{{% /md %}}</dd>
+    <dd>The queue name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -763,9 +763,9 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -773,11 +773,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueratelimits">Queue<wbr>Rate<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
+    <dd>Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
 User-specified throttling: rateLimits, retryConfig, and the queue's state. * System throttling due to 429 (Too Many
 Requests) or 503 (Service Unavailable) responses from the worker, high error rates, or to smooth sudden large traffic
 spikes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,14 +785,14 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueretryconfig">Queue<wbr>Retry<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Settings that determine the retry behavior.
-{{% /md %}}</dd>
+    <dd>Settings that determine the retry behavior.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -801,8 +801,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueappengineroutingoverride">Queue<wbr>App<wbr>Engine<wbr>Routing<wbr>Override</a></span>
     </dt>
-    <dd>{{% md %}}Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
-{{% /md %}}</dd>
+    <dd>Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -810,8 +810,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the queue
-{{% /md %}}</dd>
+    <dd>The location of the queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -819,8 +819,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The queue name.
-{{% /md %}}</dd>
+    <dd>The queue name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,9 +828,9 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -838,11 +838,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueratelimits">Queue<wbr>Rate<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
+    <dd>Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
 User-specified throttling: rateLimits, retryConfig, and the queue's state. * System throttling due to 429 (Too Many
 Requests) or 503 (Service Unavailable) responses from the worker, high error rates, or to smooth sudden large traffic
 spikes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,14 +850,14 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueretryconfig">Queue<wbr>Retry<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Settings that determine the retry behavior.
-{{% /md %}}</dd>
+    <dd>Settings that determine the retry behavior.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -866,8 +866,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueappengineroutingoverride">Dict[Queue<wbr>App<wbr>Engine<wbr>Routing<wbr>Override]</a></span>
     </dt>
-    <dd>{{% md %}}Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
-{{% /md %}}</dd>
+    <dd>Overrides for task-level appEngineRouting. These settings apply only to App Engine tasks in this queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,8 +875,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location of the queue
-{{% /md %}}</dd>
+    <dd>The location of the queue
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The queue name.
-{{% /md %}}</dd>
+    <dd>The queue name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,9 +893,9 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -903,11 +903,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueratelimits">Dict[Queue<wbr>Rate<wbr>Limits]</a></span>
     </dt>
-    <dd>{{% md %}}Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
+    <dd>Rate limits for task dispatches. The queue's actual dispatch rate is the result of: * Number of tasks in the queue *
 User-specified throttling: rateLimits, retryConfig, and the queue's state. * System throttling due to 429 (Too Many
 Requests) or 503 (Service Unavailable) responses from the worker, high error rates, or to smooth sudden large traffic
 spikes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,11 +915,11 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#queueretryconfig">Dict[Queue<wbr>Retry<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Settings that determine the retry behavior.
-{{% /md %}}</dd>
+    <dd>Settings that determine the retry behavior.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -934,18 +934,18 @@ spikes.
 
 
 <h4 id="queueappengineroutingoverride">Queue<wbr>App<wbr>Engine<wbr>Routing<wbr>Override</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#QueueAppEngineRoutingOverride">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#QueueAppEngineRoutingOverride">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#QueueAppEngineRoutingOverrideArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#QueueAppEngineRoutingOverrideOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -954,7 +954,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,7 +962,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,7 +970,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,13 +978,13 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -993,7 +993,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,7 +1001,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1009,7 +1009,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1017,13 +1017,13 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1032,7 +1032,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1040,7 +1040,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,7 +1048,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1056,13 +1056,13 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1071,7 +1071,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1079,7 +1079,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,7 +1087,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,28 +1095,28 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="queueratelimits">Queue<wbr>Rate<wbr>Limits</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#QueueRateLimits">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#QueueRateLimits">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#QueueRateLimitsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#QueueRateLimitsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1125,7 +1125,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,7 +1133,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,13 +1141,13 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1156,7 +1156,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,7 +1164,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,13 +1172,13 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1187,7 +1187,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,7 +1195,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,13 +1203,13 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1218,7 +1218,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,7 +1226,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,28 +1234,28 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="queueretryconfig">Queue<wbr>Retry<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#QueueRetryConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#QueueRetryConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#QueueRetryConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudtasks?tab=doc#QueueRetryConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1264,7 +1264,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,7 +1272,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1280,7 +1280,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,7 +1288,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,13 +1296,13 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1311,7 +1311,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1319,7 +1319,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1327,7 +1327,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1335,7 +1335,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,13 +1343,13 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1358,7 +1358,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1366,7 +1366,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1374,7 +1374,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,7 +1382,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,13 +1390,13 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1405,7 +1405,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1413,7 +1413,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,7 +1421,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1429,7 +1429,7 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,10 +1437,10 @@ spikes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

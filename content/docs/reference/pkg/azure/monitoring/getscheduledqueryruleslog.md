@@ -35,29 +35,29 @@ export const queryRuleId = example.id;
 
 ## Using GetScheduledQueryRulesLog {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getScheduledQueryRulesLog<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/monitoring/#GetScheduledQueryRulesLogArgs">GetScheduledQueryRulesLogArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/monitoring/#GetScheduledQueryRulesLogResult">GetScheduledQueryRulesLogResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_scheduled_query_rules_log(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupScheduledQueryRulesLog<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#LookupScheduledQueryRulesLogArgs">LookupScheduledQueryRulesLogArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#LookupScheduledQueryRulesLogResult">LookupScheduledQueryRulesLogResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetScheduledQueryRulesLog </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Monitoring.GetScheduledQueryRulesLogResult.html">GetScheduledQueryRulesLogResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Monitoring.GetScheduledQueryRulesLogArgs.html">GetScheduledQueryRulesLogArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -65,7 +65,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -74,8 +74,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the scheduled query rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -83,14 +83,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group where the scheduled query rule is located.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group where the scheduled query rule is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -99,8 +99,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the scheduled query rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -108,14 +108,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group where the scheduled query rule is located.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group where the scheduled query rule is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -124,8 +124,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the scheduled query rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -133,14 +133,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group where the scheduled query rule is located.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group where the scheduled query rule is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -149,8 +149,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the scheduled query rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -158,11 +158,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group where the scheduled query rule is located.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group where the scheduled query rule is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -178,7 +178,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -187,7 +187,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -195,8 +195,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscheduledqueryruleslogcriteria">List&lt;Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `criteria` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `criteria` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -204,8 +204,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-"
             title="">
@@ -213,8 +213,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -222,8 +222,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -231,8 +231,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -240,7 +240,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -248,8 +248,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dimension.
-{{% /md %}}</dd>
+    <dd>Name of the dimension.
+</dd>
 
     <dt class="property-"
             title="">
@@ -257,7 +257,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -265,13 +265,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -280,7 +280,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -288,8 +288,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscheduledqueryruleslogcriteria">[]Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria</a></span>
     </dt>
-    <dd>{{% md %}}A `criteria` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `criteria` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -297,8 +297,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-"
             title="">
@@ -306,8 +306,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -315,8 +315,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -324,8 +324,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -333,7 +333,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -341,8 +341,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dimension.
-{{% /md %}}</dd>
+    <dd>Name of the dimension.
+</dd>
 
     <dt class="property-"
             title="">
@@ -350,7 +350,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -358,13 +358,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -373,7 +373,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -381,8 +381,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscheduledqueryruleslogcriteria">Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria[]</a></span>
     </dt>
-    <dd>{{% md %}}A `criteria` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `criteria` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -390,8 +390,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-"
             title="">
@@ -399,8 +399,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -408,8 +408,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -417,8 +417,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -426,7 +426,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -434,8 +434,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dimension.
-{{% /md %}}</dd>
+    <dd>Name of the dimension.
+</dd>
 
     <dt class="property-"
             title="">
@@ -443,7 +443,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -451,13 +451,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -466,7 +466,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -474,8 +474,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscheduledqueryruleslogcriteria">List[Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria]</a></span>
     </dt>
-    <dd>{{% md %}}A `criteria` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `criteria` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -483,8 +483,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-"
             title="">
@@ -492,8 +492,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -501,8 +501,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -510,8 +510,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -519,7 +519,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -527,8 +527,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dimension.
-{{% /md %}}</dd>
+    <dd>Name of the dimension.
+</dd>
 
     <dt class="property-"
             title="">
@@ -536,7 +536,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -544,10 +544,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -560,18 +560,18 @@ The following output properties are available:
 
 
 <h4 id="getscheduledqueryruleslogcriteria">Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetScheduledQueryRulesLogCriteria">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetScheduledQueryRulesLogCriteria">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -580,8 +580,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscheduledqueryruleslogcriteriadimension">List&lt;Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria<wbr>Dimension<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `dimension` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `dimension` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -589,14 +589,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the metric.
-{{% /md %}}</dd>
+    <dd>Name of the metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -605,8 +605,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscheduledqueryruleslogcriteriadimension">[]Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria<wbr>Dimension</a></span>
     </dt>
-    <dd>{{% md %}}A `dimension` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `dimension` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -614,14 +614,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the metric.
-{{% /md %}}</dd>
+    <dd>Name of the metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -630,8 +630,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscheduledqueryruleslogcriteriadimension">Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria<wbr>Dimension[]</a></span>
     </dt>
-    <dd>{{% md %}}A `dimension` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `dimension` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -639,14 +639,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the metric.
-{{% /md %}}</dd>
+    <dd>Name of the metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -655,8 +655,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscheduledqueryruleslogcriteriadimension">List[Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria<wbr>Dimension]</a></span>
     </dt>
-    <dd>{{% md %}}A `dimension` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `dimension` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -664,29 +664,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the metric.
-{{% /md %}}</dd>
+    <dd>Name of the metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getscheduledqueryruleslogcriteriadimension">Get<wbr>Scheduled<wbr>Query<wbr>Rules<wbr>Log<wbr>Criteria<wbr>Dimension</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetScheduledQueryRulesLogCriteriaDimension">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetScheduledQueryRulesLogCriteriaDimension">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -695,8 +695,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the scheduled query rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -704,8 +704,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Operator for dimension values.
-{{% /md %}}</dd>
+    <dd>Operator for dimension values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -713,14 +713,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of dimension values.
-{{% /md %}}</dd>
+    <dd>List of dimension values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -729,8 +729,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the scheduled query rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -738,8 +738,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Operator for dimension values.
-{{% /md %}}</dd>
+    <dd>Operator for dimension values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -747,14 +747,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of dimension values.
-{{% /md %}}</dd>
+    <dd>List of dimension values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -763,8 +763,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the scheduled query rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -772,8 +772,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Operator for dimension values.
-{{% /md %}}</dd>
+    <dd>Operator for dimension values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -781,14 +781,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of dimension values.
-{{% /md %}}</dd>
+    <dd>List of dimension values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -797,8 +797,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the scheduled query rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -806,8 +806,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Operator for dimension values.
-{{% /md %}}</dd>
+    <dd>Operator for dimension values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -815,11 +815,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of dimension values.
-{{% /md %}}</dd>
+    <dd>List of dimension values.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

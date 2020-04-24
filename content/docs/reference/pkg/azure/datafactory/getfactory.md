@@ -19,29 +19,29 @@ Use this data source to access information about an existing Azure Data Factory 
 
 ## Using GetFactory {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getFactory<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/datafactory/#GetFactoryArgs">GetFactoryArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/datafactory/#GetFactoryResult">GetFactoryResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_factory(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupFactory<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/datafactory?tab=doc#LookupFactoryArgs">LookupFactoryArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/datafactory?tab=doc#LookupFactoryResult">LookupFactoryResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetFactory </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Datafactory.GetFactoryResult.html">GetFactoryResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.DataFactory.GetFactoryArgs.html">GetFactoryArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Data Factory to retrieve information about. 
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Data Factory to retrieve information about. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -67,14 +67,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group where the Data Factory exists.
-{{% /md %}}</dd>
+    <dd>The name of the resource group where the Data Factory exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Data Factory to retrieve information about. 
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Data Factory to retrieve information about. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -92,14 +92,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group where the Data Factory exists.
-{{% /md %}}</dd>
+    <dd>The name of the resource group where the Data Factory exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -108,8 +108,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Data Factory to retrieve information about. 
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Data Factory to retrieve information about. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -117,14 +117,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group where the Data Factory exists.
-{{% /md %}}</dd>
+    <dd>The name of the resource group where the Data Factory exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Data Factory to retrieve information about. 
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Data Factory to retrieve information about. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -142,11 +142,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group where the Data Factory exists.
-{{% /md %}}</dd>
+    <dd>The name of the resource group where the Data Factory exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -162,7 +162,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -171,8 +171,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactorygithubconfiguration">List&lt;Get<wbr>Factory<wbr>Github<wbr>Configuration&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `github_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `github_configuration` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -180,8 +180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -189,8 +189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactoryidentity">List&lt;Get<wbr>Factory<wbr>Identity&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -198,8 +198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the resource exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the resource exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -207,7 +207,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -215,7 +215,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -223,9 +223,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the resource.
+    <dd>A mapping of tags assigned to the resource.
 ---
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -233,14 +233,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactoryvstsconfiguration">List&lt;Get<wbr>Factory<wbr>Vsts<wbr>Configuration&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `vsts_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `vsts_configuration` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -249,8 +249,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactorygithubconfiguration">[]Get<wbr>Factory<wbr>Github<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `github_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `github_configuration` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -258,8 +258,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -267,8 +267,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactoryidentity">[]Get<wbr>Factory<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -276,8 +276,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the resource exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the resource exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -285,7 +285,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -293,7 +293,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -301,9 +301,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the resource.
+    <dd>A mapping of tags assigned to the resource.
 ---
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -311,14 +311,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactoryvstsconfiguration">[]Get<wbr>Factory<wbr>Vsts<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `vsts_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `vsts_configuration` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -327,8 +327,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactorygithubconfiguration">Get<wbr>Factory<wbr>Github<wbr>Configuration[]</a></span>
     </dt>
-    <dd>{{% md %}}A `github_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `github_configuration` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -336,8 +336,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -345,8 +345,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactoryidentity">Get<wbr>Factory<wbr>Identity[]</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -354,8 +354,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the resource exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the resource exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -363,7 +363,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -371,7 +371,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -379,9 +379,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the resource.
+    <dd>A mapping of tags assigned to the resource.
 ---
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -389,14 +389,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactoryvstsconfiguration">Get<wbr>Factory<wbr>Vsts<wbr>Configuration[]</a></span>
     </dt>
-    <dd>{{% md %}}A `vsts_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `vsts_configuration` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -405,8 +405,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactorygithubconfiguration">List[Get<wbr>Factory<wbr>Github<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A `github_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `github_configuration` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -414,8 +414,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -423,8 +423,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactoryidentity">List[Get<wbr>Factory<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -432,8 +432,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the resource exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the resource exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -441,7 +441,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -449,7 +449,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -457,9 +457,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the resource.
+    <dd>A mapping of tags assigned to the resource.
 ---
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -467,11 +467,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfactoryvstsconfiguration">List[Get<wbr>Factory<wbr>Vsts<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A `vsts_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `vsts_configuration` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -484,18 +484,18 @@ The following output properties are available:
 
 
 <h4 id="getfactorygithubconfiguration">Get<wbr>Factory<wbr>Github<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetFactoryGithubConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/datafactory?tab=doc#GetFactoryGithubConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -504,8 +504,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VSTS account name.
-{{% /md %}}</dd>
+    <dd>The VSTS account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -513,8 +513,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The branch of the repository to get code from.
-{{% /md %}}</dd>
+    <dd>The branch of the repository to get code from.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -522,8 +522,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The GitHub Enterprise host name. 
-{{% /md %}}</dd>
+    <dd>The GitHub Enterprise host name. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -531,8 +531,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the git repository.
-{{% /md %}}</dd>
+    <dd>The name of the git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -540,14 +540,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The root folder within the repository.
-{{% /md %}}</dd>
+    <dd>The root folder within the repository.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -556,8 +556,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VSTS account name.
-{{% /md %}}</dd>
+    <dd>The VSTS account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -565,8 +565,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The branch of the repository to get code from.
-{{% /md %}}</dd>
+    <dd>The branch of the repository to get code from.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -574,8 +574,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The GitHub Enterprise host name. 
-{{% /md %}}</dd>
+    <dd>The GitHub Enterprise host name. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -583,8 +583,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the git repository.
-{{% /md %}}</dd>
+    <dd>The name of the git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -592,14 +592,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The root folder within the repository.
-{{% /md %}}</dd>
+    <dd>The root folder within the repository.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -608,8 +608,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VSTS account name.
-{{% /md %}}</dd>
+    <dd>The VSTS account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -617,8 +617,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The branch of the repository to get code from.
-{{% /md %}}</dd>
+    <dd>The branch of the repository to get code from.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -626,8 +626,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The GitHub Enterprise host name. 
-{{% /md %}}</dd>
+    <dd>The GitHub Enterprise host name. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -635,8 +635,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the git repository.
-{{% /md %}}</dd>
+    <dd>The name of the git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -644,14 +644,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The root folder within the repository.
-{{% /md %}}</dd>
+    <dd>The root folder within the repository.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -660,8 +660,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VSTS account name.
-{{% /md %}}</dd>
+    <dd>The VSTS account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -669,8 +669,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The branch of the repository to get code from.
-{{% /md %}}</dd>
+    <dd>The branch of the repository to get code from.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -678,8 +678,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The GitHub Enterprise host name. 
-{{% /md %}}</dd>
+    <dd>The GitHub Enterprise host name. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -687,8 +687,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the git repository.
-{{% /md %}}</dd>
+    <dd>The name of the git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -696,29 +696,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The root folder within the repository.
-{{% /md %}}</dd>
+    <dd>The root folder within the repository.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getfactoryidentity">Get<wbr>Factory<wbr>Identity</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetFactoryIdentity">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/datafactory?tab=doc#GetFactoryIdentity">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -727,8 +727,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Principal (Client) in Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The ID of the Principal (Client) in Azure Active Directory.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -736,8 +736,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID associated with the VSTS account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID associated with the VSTS account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -745,14 +745,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identity type of the Data Factory.
-{{% /md %}}</dd>
+    <dd>The identity type of the Data Factory.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -761,8 +761,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Principal (Client) in Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The ID of the Principal (Client) in Azure Active Directory.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -770,8 +770,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID associated with the VSTS account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID associated with the VSTS account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -779,14 +779,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identity type of the Data Factory.
-{{% /md %}}</dd>
+    <dd>The identity type of the Data Factory.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -795,8 +795,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Principal (Client) in Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The ID of the Principal (Client) in Azure Active Directory.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -804,8 +804,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID associated with the VSTS account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID associated with the VSTS account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -813,14 +813,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identity type of the Data Factory.
-{{% /md %}}</dd>
+    <dd>The identity type of the Data Factory.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -829,8 +829,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Principal (Client) in Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The ID of the Principal (Client) in Azure Active Directory.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -838,8 +838,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID associated with the VSTS account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID associated with the VSTS account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -847,29 +847,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identity type of the Data Factory.
-{{% /md %}}</dd>
+    <dd>The identity type of the Data Factory.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getfactoryvstsconfiguration">Get<wbr>Factory<wbr>Vsts<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetFactoryVstsConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/datafactory?tab=doc#GetFactoryVstsConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -878,8 +878,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VSTS account name.
-{{% /md %}}</dd>
+    <dd>The VSTS account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -887,8 +887,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The branch of the repository to get code from.
-{{% /md %}}</dd>
+    <dd>The branch of the repository to get code from.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -896,8 +896,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the VSTS project.
-{{% /md %}}</dd>
+    <dd>The name of the VSTS project.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -905,8 +905,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the git repository.
-{{% /md %}}</dd>
+    <dd>The name of the git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -914,8 +914,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The root folder within the repository.
-{{% /md %}}</dd>
+    <dd>The root folder within the repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -923,14 +923,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID associated with the VSTS account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID associated with the VSTS account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -939,8 +939,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VSTS account name.
-{{% /md %}}</dd>
+    <dd>The VSTS account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -948,8 +948,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The branch of the repository to get code from.
-{{% /md %}}</dd>
+    <dd>The branch of the repository to get code from.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -957,8 +957,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the VSTS project.
-{{% /md %}}</dd>
+    <dd>The name of the VSTS project.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -966,8 +966,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the git repository.
-{{% /md %}}</dd>
+    <dd>The name of the git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -975,8 +975,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The root folder within the repository.
-{{% /md %}}</dd>
+    <dd>The root folder within the repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -984,14 +984,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID associated with the VSTS account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID associated with the VSTS account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1000,8 +1000,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VSTS account name.
-{{% /md %}}</dd>
+    <dd>The VSTS account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1009,8 +1009,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The branch of the repository to get code from.
-{{% /md %}}</dd>
+    <dd>The branch of the repository to get code from.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1018,8 +1018,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the VSTS project.
-{{% /md %}}</dd>
+    <dd>The name of the VSTS project.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1027,8 +1027,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the git repository.
-{{% /md %}}</dd>
+    <dd>The name of the git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1036,8 +1036,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The root folder within the repository.
-{{% /md %}}</dd>
+    <dd>The root folder within the repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1045,14 +1045,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID associated with the VSTS account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID associated with the VSTS account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1061,8 +1061,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VSTS account name.
-{{% /md %}}</dd>
+    <dd>The VSTS account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1070,8 +1070,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The branch of the repository to get code from.
-{{% /md %}}</dd>
+    <dd>The branch of the repository to get code from.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1079,8 +1079,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the VSTS project.
-{{% /md %}}</dd>
+    <dd>The name of the VSTS project.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1088,8 +1088,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the git repository.
-{{% /md %}}</dd>
+    <dd>The name of the git repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1097,8 +1097,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The root folder within the repository.
-{{% /md %}}</dd>
+    <dd>The root folder within the repository.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1106,11 +1106,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID associated with the VSTS account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID associated with the VSTS account.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -48,26 +48,26 @@ const role = new aws.iam.Role("r", {
 
 
 ## Create a Model Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/sagemaker/#Model">Model</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/sagemaker/#ModelArgs">ModelArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Model</span><span class="p">(resource_name, opts=None, </span>containers=None<span class="p">, </span>enable_network_isolation=None<span class="p">, </span>execution_role_arn=None<span class="p">, </span>name=None<span class="p">, </span>primary_container=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewModel<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#ModelArgs">ModelArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#Model">Model</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Sagemaker.Model.html">Model</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Sagemaker.ModelArgs.html">ModelArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -104,9 +104,9 @@ const role = new aws.iam.Role("r", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -124,9 +124,9 @@ const role = new aws.iam.Role("r", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -173,9 +173,9 @@ const role = new aws.iam.Role("r", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -212,7 +212,7 @@ const role = new aws.iam.Role("r", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Model Resource Properties {#properties}
 
@@ -225,7 +225,7 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -234,8 +234,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A role that SageMaker can assume to access model artifacts and docker images for deployment.
-{{% /md %}}</dd>
+    <dd>A role that SageMaker can assume to access model artifacts and docker images for deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -243,8 +243,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelcontainer">List&lt;Model<wbr>Container<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -252,8 +252,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
-{{% /md %}}</dd>
+    <dd>Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,8 +261,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,8 +270,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelprimarycontainer">Model<wbr>Primary<wbr>Container<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,8 +279,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,14 +288,14 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelvpcconfig">Model<wbr>Vpc<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
-{{% /md %}}</dd>
+    <dd>Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -304,8 +304,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A role that SageMaker can assume to access model artifacts and docker images for deployment.
-{{% /md %}}</dd>
+    <dd>A role that SageMaker can assume to access model artifacts and docker images for deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,8 +313,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelcontainer">[]Model<wbr>Container</a></span>
     </dt>
-    <dd>{{% md %}}Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
-{{% /md %}}</dd>
+    <dd>Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,8 +331,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,8 +340,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelprimarycontainer">Model<wbr>Primary<wbr>Container</a></span>
     </dt>
-    <dd>{{% md %}}The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,8 +349,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,14 +358,14 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelvpcconfig">Model<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
-{{% /md %}}</dd>
+    <dd>Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -374,8 +374,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A role that SageMaker can assume to access model artifacts and docker images for deployment.
-{{% /md %}}</dd>
+    <dd>A role that SageMaker can assume to access model artifacts and docker images for deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelcontainer">Model<wbr>Container[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,8 +392,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
-{{% /md %}}</dd>
+    <dd>Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,8 +401,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -410,8 +410,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelprimarycontainer">Model<wbr>Primary<wbr>Container</a></span>
     </dt>
-    <dd>{{% md %}}The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,8 +419,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,14 +428,14 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelvpcconfig">Model<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
-{{% /md %}}</dd>
+    <dd>Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -444,8 +444,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A role that SageMaker can assume to access model artifacts and docker images for deployment.
-{{% /md %}}</dd>
+    <dd>A role that SageMaker can assume to access model artifacts and docker images for deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -453,8 +453,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelcontainer">List[Model<wbr>Container]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,8 +462,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
-{{% /md %}}</dd>
+    <dd>Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -471,8 +471,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,8 +480,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelprimarycontainer">Dict[Model<wbr>Primary<wbr>Container]</a></span>
     </dt>
-    <dd>{{% md %}}The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,8 +489,8 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,11 +498,11 @@ The Model resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelvpcconfig">Dict[Model<wbr>Vpc<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
-{{% /md %}}</dd>
+    <dd>Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -516,7 +516,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -525,8 +525,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) assigned by AWS to this model.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) assigned by AWS to this model.
+</dd>
 
     <dt class="property-"
             title="">
@@ -534,13 +534,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -549,8 +549,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) assigned by AWS to this model.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) assigned by AWS to this model.
+</dd>
 
     <dt class="property-"
             title="">
@@ -558,13 +558,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -573,8 +573,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) assigned by AWS to this model.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) assigned by AWS to this model.
+</dd>
 
     <dt class="property-"
             title="">
@@ -582,13 +582,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -597,8 +597,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) assigned by AWS to this model.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) assigned by AWS to this model.
+</dd>
 
     <dt class="property-"
             title="">
@@ -606,10 +606,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -620,25 +620,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Model Resource {#look-up}
 
 Get an existing Model resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/sagemaker/#ModelState">ModelState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/sagemaker/#Model">Model</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>containers=None<span class="p">, </span>enable_network_isolation=None<span class="p">, </span>execution_role_arn=None<span class="p">, </span>name=None<span class="p">, </span>primary_container=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetModel<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#ModelState">ModelState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#Model">Model</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Sagemaker.Model.html">Model</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Sagemaker.ModelState.html">ModelState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -663,9 +663,9 @@ Get an existing Model resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -678,36 +678,9 @@ Get an existing Model resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -732,13 +705,40 @@ Get an existing Model resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -747,8 +747,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) assigned by AWS to this model.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) assigned by AWS to this model.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,8 +756,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelcontainer">List&lt;Model<wbr>Container<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,8 +765,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
-{{% /md %}}</dd>
+    <dd>Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,8 +774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A role that SageMaker can assume to access model artifacts and docker images for deployment.
-{{% /md %}}</dd>
+    <dd>A role that SageMaker can assume to access model artifacts and docker images for deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,8 +783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,8 +792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelprimarycontainer">Model<wbr>Primary<wbr>Container<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,8 +801,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -810,14 +810,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelvpcconfig">Model<wbr>Vpc<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
-{{% /md %}}</dd>
+    <dd>Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -826,8 +826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) assigned by AWS to this model.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) assigned by AWS to this model.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,8 +835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelcontainer">[]Model<wbr>Container</a></span>
     </dt>
-    <dd>{{% md %}}Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,8 +844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
-{{% /md %}}</dd>
+    <dd>Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -853,8 +853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A role that SageMaker can assume to access model artifacts and docker images for deployment.
-{{% /md %}}</dd>
+    <dd>A role that SageMaker can assume to access model artifacts and docker images for deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -862,8 +862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,8 +871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelprimarycontainer">Model<wbr>Primary<wbr>Container</a></span>
     </dt>
-    <dd>{{% md %}}The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,8 +880,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -889,14 +889,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelvpcconfig">Model<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
-{{% /md %}}</dd>
+    <dd>Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -905,8 +905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) assigned by AWS to this model.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) assigned by AWS to this model.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,8 +914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelcontainer">Model<wbr>Container[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,8 +923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
-{{% /md %}}</dd>
+    <dd>Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,8 +932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A role that SageMaker can assume to access model artifacts and docker images for deployment.
-{{% /md %}}</dd>
+    <dd>A role that SageMaker can assume to access model artifacts and docker images for deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,8 +941,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,8 +950,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelprimarycontainer">Model<wbr>Primary<wbr>Container</a></span>
     </dt>
-    <dd>{{% md %}}The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,8 +959,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -968,14 +968,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelvpcconfig">Model<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
-{{% /md %}}</dd>
+    <dd>Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -984,8 +984,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) assigned by AWS to this model.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) assigned by AWS to this model.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -993,8 +993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelcontainer">List[Model<wbr>Container]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>Specifies containers in the inference pipeline. If not specified, the `primary_container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,8 +1002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
-{{% /md %}}</dd>
+    <dd>Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A role that SageMaker can assume to access model artifacts and docker images for deployment.
-{{% /md %}}</dd>
+    <dd>A role that SageMaker can assume to access model artifacts and docker images for deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,8 +1020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,8 +1029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelprimarycontainer">Dict[Model<wbr>Primary<wbr>Container]</a></span>
     </dt>
-    <dd>{{% md %}}The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
-{{% /md %}}</dd>
+    <dd>The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,8 +1038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,11 +1047,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#modelvpcconfig">Dict[Model<wbr>Vpc<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
-{{% /md %}}</dd>
+    <dd>Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1066,18 +1066,18 @@ The following state arguments are supported:
 
 
 <h4 id="modelcontainer">Model<wbr>Container</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ModelContainer">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ModelContainer">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#ModelContainerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#ModelContainerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1086,8 +1086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The registry path where the inference code image is stored in Amazon ECR.
-{{% /md %}}</dd>
+    <dd>The registry path where the inference code image is stored in Amazon ECR.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,8 +1095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for the container.
-{{% /md %}}</dd>
+    <dd>The DNS host name for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1104,9 +1104,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Environment variables for the Docker container.
+    <dd>Environment variables for the Docker container.
 A list of key value pairs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,14 +1114,14 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL for the S3 location where model artifacts are stored.
-{{% /md %}}</dd>
+    <dd>The URL for the S3 location where model artifacts are stored.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1130,8 +1130,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The registry path where the inference code image is stored in Amazon ECR.
-{{% /md %}}</dd>
+    <dd>The registry path where the inference code image is stored in Amazon ECR.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1139,8 +1139,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for the container.
-{{% /md %}}</dd>
+    <dd>The DNS host name for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,9 +1148,9 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Environment variables for the Docker container.
+    <dd>Environment variables for the Docker container.
 A list of key value pairs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1158,14 +1158,14 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL for the S3 location where model artifacts are stored.
-{{% /md %}}</dd>
+    <dd>The URL for the S3 location where model artifacts are stored.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1174,8 +1174,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The registry path where the inference code image is stored in Amazon ECR.
-{{% /md %}}</dd>
+    <dd>The registry path where the inference code image is stored in Amazon ECR.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,8 +1183,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for the container.
-{{% /md %}}</dd>
+    <dd>The DNS host name for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1192,9 +1192,9 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Environment variables for the Docker container.
+    <dd>Environment variables for the Docker container.
 A list of key value pairs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,14 +1202,14 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL for the S3 location where model artifacts are stored.
-{{% /md %}}</dd>
+    <dd>The URL for the S3 location where model artifacts are stored.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1218,8 +1218,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The registry path where the inference code image is stored in Amazon ECR.
-{{% /md %}}</dd>
+    <dd>The registry path where the inference code image is stored in Amazon ECR.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1227,8 +1227,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for the container.
-{{% /md %}}</dd>
+    <dd>The DNS host name for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,9 +1236,9 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Environment variables for the Docker container.
+    <dd>Environment variables for the Docker container.
 A list of key value pairs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,29 +1246,29 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL for the S3 location where model artifacts are stored.
-{{% /md %}}</dd>
+    <dd>The URL for the S3 location where model artifacts are stored.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="modelprimarycontainer">Model<wbr>Primary<wbr>Container</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ModelPrimaryContainer">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ModelPrimaryContainer">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#ModelPrimaryContainerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#ModelPrimaryContainerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1277,8 +1277,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The registry path where the inference code image is stored in Amazon ECR.
-{{% /md %}}</dd>
+    <dd>The registry path where the inference code image is stored in Amazon ECR.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,8 +1286,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for the container.
-{{% /md %}}</dd>
+    <dd>The DNS host name for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,9 +1295,9 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Environment variables for the Docker container.
+    <dd>Environment variables for the Docker container.
 A list of key value pairs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,14 +1305,14 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL for the S3 location where model artifacts are stored.
-{{% /md %}}</dd>
+    <dd>The URL for the S3 location where model artifacts are stored.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1321,8 +1321,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The registry path where the inference code image is stored in Amazon ECR.
-{{% /md %}}</dd>
+    <dd>The registry path where the inference code image is stored in Amazon ECR.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1330,8 +1330,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for the container.
-{{% /md %}}</dd>
+    <dd>The DNS host name for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,9 +1339,9 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Environment variables for the Docker container.
+    <dd>Environment variables for the Docker container.
 A list of key value pairs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,14 +1349,14 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL for the S3 location where model artifacts are stored.
-{{% /md %}}</dd>
+    <dd>The URL for the S3 location where model artifacts are stored.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1365,8 +1365,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The registry path where the inference code image is stored in Amazon ECR.
-{{% /md %}}</dd>
+    <dd>The registry path where the inference code image is stored in Amazon ECR.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1374,8 +1374,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for the container.
-{{% /md %}}</dd>
+    <dd>The DNS host name for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1383,9 +1383,9 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Environment variables for the Docker container.
+    <dd>Environment variables for the Docker container.
 A list of key value pairs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,14 +1393,14 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL for the S3 location where model artifacts are stored.
-{{% /md %}}</dd>
+    <dd>The URL for the S3 location where model artifacts are stored.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1409,8 +1409,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The registry path where the inference code image is stored in Amazon ECR.
-{{% /md %}}</dd>
+    <dd>The registry path where the inference code image is stored in Amazon ECR.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1418,8 +1418,8 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for the container.
-{{% /md %}}</dd>
+    <dd>The DNS host name for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,9 +1427,9 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Environment variables for the Docker container.
+    <dd>Environment variables for the Docker container.
 A list of key value pairs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,29 +1437,29 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL for the S3 location where model artifacts are stored.
-{{% /md %}}</dd>
+    <dd>The URL for the S3 location where model artifacts are stored.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="modelvpcconfig">Model<wbr>Vpc<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ModelVpcConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ModelVpcConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#ModelVpcConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/sagemaker?tab=doc#ModelVpcConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1468,7 +1468,7 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1476,13 +1476,13 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1491,7 +1491,7 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1499,13 +1499,13 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1514,7 +1514,7 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1522,13 +1522,13 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1537,7 +1537,7 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1545,10 +1545,10 @@ A list of key value pairs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

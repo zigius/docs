@@ -46,26 +46,26 @@ large files efficiently.
 
 
 ## Create a LayerVersion Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#LayerVersion">LayerVersion</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#LayerVersionArgs">LayerVersionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">LayerVersion</span><span class="p">(resource_name, opts=None, </span>code=None<span class="p">, </span>compatible_runtimes=None<span class="p">, </span>description=None<span class="p">, </span>layer_name=None<span class="p">, </span>license_info=None<span class="p">, </span>s3_bucket=None<span class="p">, </span>s3_key=None<span class="p">, </span>s3_object_version=None<span class="p">, </span>source_code_hash=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewLayerVersion<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#LayerVersionArgs">LayerVersionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#LayerVersion">LayerVersion</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.LayerVersion.html">LayerVersion</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.LayerVersionArgs.html">LayerVersionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -102,9 +102,9 @@ large files efficiently.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -122,9 +122,9 @@ large files efficiently.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -171,9 +171,9 @@ large files efficiently.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -210,7 +210,7 @@ large files efficiently.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## LayerVersion Resource Properties {#properties}
 
@@ -223,7 +223,7 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -232,8 +232,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Layer
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -241,8 +241,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,8 +250,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
-{{% /md %}}</dd>
+    <dd>A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,8 +259,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Layer does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Layer does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,8 +268,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}License info for your Lambda Layer. See [License Info][3].
-{{% /md %}}</dd>
+    <dd>License info for your Lambda Layer. See [License Info][3].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,8 +277,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -286,8 +286,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -295,8 +295,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,14 +304,14 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -320,8 +320,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Layer
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,8 +329,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Archive">pulumi.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,8 +338,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
-{{% /md %}}</dd>
+    <dd>A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,8 +347,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Layer does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Layer does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,8 +356,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}License info for your Lambda Layer. See [License Info][3].
-{{% /md %}}</dd>
+    <dd>License info for your Lambda Layer. See [License Info][3].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,14 +392,14 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -408,8 +408,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Layer
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Archive">pulumi.asset.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,8 +426,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
-{{% /md %}}</dd>
+    <dd>A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,8 +435,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Layer does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Layer does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -444,8 +444,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}License info for your Lambda Layer. See [License Info][3].
-{{% /md %}}</dd>
+    <dd>License info for your Lambda Layer. See [License Info][3].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -453,8 +453,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,8 +462,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -471,8 +471,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,14 +480,14 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -496,8 +496,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Layer
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">pulumi.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
-{{% /md %}}</dd>
+    <dd>A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Layer does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Layer does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,8 +532,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}License info for your Lambda Layer. See [License Info][3].
-{{% /md %}}</dd>
+    <dd>License info for your Lambda Layer. See [License Info][3].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,8 +541,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,8 +550,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,8 +559,8 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,11 +568,11 @@ The LayerVersion resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -586,7 +586,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -595,8 +595,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer with version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer with version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,8 +604,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was created.
-{{% /md %}}</dd>
+    <dd>The date this resource was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -613,7 +613,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -621,8 +621,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer without version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer without version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -630,8 +630,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -639,14 +639,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This Lamba Layer version.
-{{% /md %}}</dd>
+    <dd>This Lamba Layer version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -655,8 +655,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer with version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer with version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -664,8 +664,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was created.
-{{% /md %}}</dd>
+    <dd>The date this resource was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -673,7 +673,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -681,8 +681,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer without version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer without version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -690,8 +690,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -699,14 +699,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This Lamba Layer version.
-{{% /md %}}</dd>
+    <dd>This Lamba Layer version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -715,8 +715,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer with version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer with version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -724,8 +724,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was created.
-{{% /md %}}</dd>
+    <dd>The date this resource was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -733,7 +733,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -741,8 +741,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer without version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer without version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -750,8 +750,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -759,14 +759,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This Lamba Layer version.
-{{% /md %}}</dd>
+    <dd>This Lamba Layer version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -775,8 +775,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer with version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer with version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -784,8 +784,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was created.
-{{% /md %}}</dd>
+    <dd>The date this resource was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -793,7 +793,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -801,8 +801,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer without version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer without version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -810,8 +810,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -819,11 +819,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This Lamba Layer version.
-{{% /md %}}</dd>
+    <dd>This Lamba Layer version.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -834,25 +834,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing LayerVersion Resource {#look-up}
 
 Get an existing LayerVersion resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#LayerVersionState">LayerVersionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#LayerVersion">LayerVersion</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>code=None<span class="p">, </span>compatible_runtimes=None<span class="p">, </span>created_date=None<span class="p">, </span>description=None<span class="p">, </span>layer_arn=None<span class="p">, </span>layer_name=None<span class="p">, </span>license_info=None<span class="p">, </span>s3_bucket=None<span class="p">, </span>s3_key=None<span class="p">, </span>s3_object_version=None<span class="p">, </span>source_code_hash=None<span class="p">, </span>source_code_size=None<span class="p">, </span>version=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLayerVersion<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#LayerVersionState">LayerVersionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#LayerVersion">LayerVersion</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.LayerVersion.html">LayerVersion</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.LayerVersionState.html">LayerVersionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -877,9 +877,9 @@ Get an existing LayerVersion resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -892,36 +892,9 @@ Get an existing LayerVersion resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -946,13 +919,40 @@ Get an existing LayerVersion resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -961,8 +961,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer with version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer with version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,8 +970,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,8 +979,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
-{{% /md %}}</dd>
+    <dd>A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -988,8 +988,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was created.
-{{% /md %}}</dd>
+    <dd>The date this resource was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -997,8 +997,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Layer does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Layer does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1006,8 +1006,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer without version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer without version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1015,8 +1015,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Layer
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1024,8 +1024,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}License info for your Lambda Layer. See [License Info][3].
-{{% /md %}}</dd>
+    <dd>License info for your Lambda Layer. See [License Info][3].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,8 +1033,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,8 +1042,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,8 +1051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,14 +1078,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This Lamba Layer version.
-{{% /md %}}</dd>
+    <dd>This Lamba Layer version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1094,8 +1094,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer with version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer with version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,8 +1103,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Archive">pulumi.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,8 +1112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
-{{% /md %}}</dd>
+    <dd>A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,8 +1121,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was created.
-{{% /md %}}</dd>
+    <dd>The date this resource was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,8 +1130,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Layer does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Layer does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1139,8 +1139,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer without version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer without version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,8 +1148,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Layer
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1157,8 +1157,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}License info for your Lambda Layer. See [License Info][3].
-{{% /md %}}</dd>
+    <dd>License info for your Lambda Layer. See [License Info][3].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1166,8 +1166,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,8 +1175,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,8 +1184,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,14 +1211,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This Lamba Layer version.
-{{% /md %}}</dd>
+    <dd>This Lamba Layer version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1227,8 +1227,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer with version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer with version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,8 +1236,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Archive">pulumi.asset.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,8 +1245,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
-{{% /md %}}</dd>
+    <dd>A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,8 +1254,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was created.
-{{% /md %}}</dd>
+    <dd>The date this resource was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,8 +1263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Layer does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Layer does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,8 +1272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer without version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer without version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,8 +1281,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Layer
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,8 +1290,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}License info for your Lambda Layer. See [License Info][3].
-{{% /md %}}</dd>
+    <dd>License info for your Lambda Layer. See [License Info][3].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,8 +1299,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1308,8 +1308,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1317,8 +1317,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1326,8 +1326,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1335,8 +1335,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1344,14 +1344,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This Lamba Layer version.
-{{% /md %}}</dd>
+    <dd>This Lamba Layer version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1360,8 +1360,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer with version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer with version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,8 +1369,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">pulumi.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,8 +1378,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
-{{% /md %}}</dd>
+    <dd>A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1387,8 +1387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was created.
-{{% /md %}}</dd>
+    <dd>The date this resource was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1396,8 +1396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Layer does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Layer does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1405,8 +1405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Lambda Layer without version.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Lambda Layer without version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,8 +1414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Layer
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,8 +1423,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}License info for your Lambda Layer. See [License Info][3].
-{{% /md %}}</dd>
+    <dd>License info for your Lambda Layer. See [License Info][3].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,8 +1432,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,8 +1441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,8 +1450,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1459,8 +1459,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,8 +1468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,11 +1477,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This Lamba Layer version.
-{{% /md %}}</dd>
+    <dd>This Lamba Layer version.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -77,26 +77,26 @@ const test = new aws.dms.ReplicationInstance("test", {
 
 
 ## Create a ReplicationInstance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dms/#ReplicationInstance">ReplicationInstance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dms/#ReplicationInstanceArgs">ReplicationInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ReplicationInstance</span><span class="p">(resource_name, opts=None, </span>allocated_storage=None<span class="p">, </span>apply_immediately=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>availability_zone=None<span class="p">, </span>engine_version=None<span class="p">, </span>kms_key_arn=None<span class="p">, </span>multi_az=None<span class="p">, </span>preferred_maintenance_window=None<span class="p">, </span>publicly_accessible=None<span class="p">, </span>replication_instance_class=None<span class="p">, </span>replication_instance_id=None<span class="p">, </span>replication_subnet_group_id=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewReplicationInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dms?tab=doc#ReplicationInstanceArgs">ReplicationInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dms?tab=doc#ReplicationInstance">ReplicationInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dms.ReplicationInstance.html">ReplicationInstance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dms.ReplicationInstanceArgs.html">ReplicationInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -133,9 +133,9 @@ const test = new aws.dms.ReplicationInstance("test", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -153,9 +153,9 @@ const test = new aws.dms.ReplicationInstance("test", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -202,9 +202,9 @@ const test = new aws.dms.ReplicationInstance("test", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -241,7 +241,7 @@ const test = new aws.dms.ReplicationInstance("test", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ReplicationInstance Resource Properties {#properties}
 
@@ -254,7 +254,7 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -263,8 +263,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -272,8 +272,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication instance identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication instance identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of storage (in gigabytes) to be initially allocated for the replication instance.
-{{% /md %}}</dd>
+    <dd>The amount of storage (in gigabytes) to be initially allocated for the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the replication instance will be created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the replication instance will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The engine version number of the replication instance.
-{{% /md %}}</dd>
+    <dd>The engine version number of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,8 +335,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,8 +344,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with the replication instance.
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,14 +380,14 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -396,8 +396,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -405,8 +405,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication instance identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication instance identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of storage (in gigabytes) to be initially allocated for the replication instance.
-{{% /md %}}</dd>
+    <dd>The amount of storage (in gigabytes) to be initially allocated for the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the replication instance will be created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the replication instance will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,8 +450,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The engine version number of the replication instance.
-{{% /md %}}</dd>
+    <dd>The engine version number of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with the replication instance.
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,14 +513,14 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -529,8 +529,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -538,8 +538,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication instance identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication instance identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of storage (in gigabytes) to be initially allocated for the replication instance.
-{{% /md %}}</dd>
+    <dd>The amount of storage (in gigabytes) to be initially allocated for the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,8 +556,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,8 +565,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the replication instance will be created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the replication instance will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,8 +583,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The engine version number of the replication instance.
-{{% /md %}}</dd>
+    <dd>The engine version number of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with the replication instance.
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,14 +646,14 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -662,8 +662,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -671,8 +671,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The replication instance identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication instance identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,8 +680,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of storage (in gigabytes) to be initially allocated for the replication instance.
-{{% /md %}}</dd>
+    <dd>The amount of storage (in gigabytes) to be initially allocated for the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,8 +689,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,8 +698,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the replication instance will be created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the replication instance will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,8 +716,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The engine version number of the replication instance.
-{{% /md %}}</dd>
+    <dd>The engine version number of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -725,8 +725,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -734,8 +734,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,8 +743,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -752,8 +752,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,8 +761,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with the replication instance.
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -770,8 +770,8 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -779,11 +779,11 @@ The ReplicationInstance resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -797,7 +797,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -806,7 +806,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -814,8 +814,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the replication instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the replication instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -823,8 +823,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the private IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the private IP addresses of the replication instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -832,14 +832,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the public IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the public IP addresses of the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -848,7 +848,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -856,8 +856,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the replication instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the replication instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -865,8 +865,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the private IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the private IP addresses of the replication instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -874,14 +874,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the public IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the public IP addresses of the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -890,7 +890,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -898,8 +898,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the replication instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the replication instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -907,8 +907,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the private IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the private IP addresses of the replication instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -916,14 +916,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the public IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the public IP addresses of the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -932,7 +932,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -940,8 +940,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the replication instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the replication instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -949,8 +949,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the private IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the private IP addresses of the replication instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -958,11 +958,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the public IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the public IP addresses of the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -973,25 +973,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ReplicationInstance Resource {#look-up}
 
 Get an existing ReplicationInstance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dms/#ReplicationInstanceState">ReplicationInstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dms/#ReplicationInstance">ReplicationInstance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>allocated_storage=None<span class="p">, </span>apply_immediately=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>availability_zone=None<span class="p">, </span>engine_version=None<span class="p">, </span>kms_key_arn=None<span class="p">, </span>multi_az=None<span class="p">, </span>preferred_maintenance_window=None<span class="p">, </span>publicly_accessible=None<span class="p">, </span>replication_instance_arn=None<span class="p">, </span>replication_instance_class=None<span class="p">, </span>replication_instance_id=None<span class="p">, </span>replication_instance_private_ips=None<span class="p">, </span>replication_instance_public_ips=None<span class="p">, </span>replication_subnet_group_id=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetReplicationInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dms?tab=doc#ReplicationInstanceState">ReplicationInstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dms?tab=doc#ReplicationInstance">ReplicationInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dms.ReplicationInstance.html">ReplicationInstance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dms.ReplicationInstanceState.html">ReplicationInstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1016,9 +1016,9 @@ Get an existing ReplicationInstance resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1031,36 +1031,9 @@ Get an existing ReplicationInstance resource's state with the given name, ID, an
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1085,13 +1058,40 @@ Get an existing ReplicationInstance resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1100,8 +1100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of storage (in gigabytes) to be initially allocated for the replication instance.
-{{% /md %}}</dd>
+    <dd>The amount of storage (in gigabytes) to be initially allocated for the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the replication instance will be created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the replication instance will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The engine version number of the replication instance.
-{{% /md %}}</dd>
+    <dd>The engine version number of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,8 +1145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the replication instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,8 +1190,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,8 +1199,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication instance identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication instance identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the private IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the private IP addresses of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the public IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the public IP addresses of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with the replication instance.
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,14 +1244,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1260,8 +1260,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of storage (in gigabytes) to be initially allocated for the replication instance.
-{{% /md %}}</dd>
+    <dd>The amount of storage (in gigabytes) to be initially allocated for the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the replication instance will be created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the replication instance will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The engine version number of the replication instance.
-{{% /md %}}</dd>
+    <dd>The engine version number of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,8 +1341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the replication instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,8 +1359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication instance identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication instance identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1368,8 +1368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the private IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the private IP addresses of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,8 +1377,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the public IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the public IP addresses of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1386,8 +1386,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with the replication instance.
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,8 +1395,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1404,14 +1404,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1420,8 +1420,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of storage (in gigabytes) to be initially allocated for the replication instance.
-{{% /md %}}</dd>
+    <dd>The amount of storage (in gigabytes) to be initially allocated for the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1429,8 +1429,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1438,8 +1438,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1447,8 +1447,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the replication instance will be created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the replication instance will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,8 +1456,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The engine version number of the replication instance.
-{{% /md %}}</dd>
+    <dd>The engine version number of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1465,8 +1465,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1474,8 +1474,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1483,8 +1483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,8 +1492,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,8 +1501,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the replication instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1510,8 +1510,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,8 +1519,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication instance identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication instance identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,8 +1528,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the private IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the private IP addresses of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1537,8 +1537,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the public IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the public IP addresses of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1546,8 +1546,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with the replication instance.
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1555,8 +1555,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1564,14 +1564,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1580,8 +1580,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of storage (in gigabytes) to be initially allocated for the replication instance.
-{{% /md %}}</dd>
+    <dd>The amount of storage (in gigabytes) to be initially allocated for the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1589,8 +1589,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1598,8 +1598,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1607,8 +1607,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the replication instance will be created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the replication instance will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1616,8 +1616,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The engine version number of the replication instance.
-{{% /md %}}</dd>
+    <dd>The engine version number of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1625,8 +1625,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1634,8 +1634,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1643,8 +1643,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1652,8 +1652,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1661,8 +1661,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the replication instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1670,8 +1670,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1679,8 +1679,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The replication instance identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication instance identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1688,8 +1688,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the private IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the private IP addresses of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1697,8 +1697,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the public IP addresses of the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of the public IP addresses of the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1706,8 +1706,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with the replication instance.
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with the replication instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1715,8 +1715,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1724,11 +1724,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
-{{% /md %}}</dd>
+    <dd>A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

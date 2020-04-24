@@ -42,26 +42,26 @@ To get more information about Route, see:
 
 
 ## Create a Route Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Route">Route</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#RouteArgs">RouteArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Route</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>dest_range=None<span class="p">, </span>name=None<span class="p">, </span>network=None<span class="p">, </span>next_hop_gateway=None<span class="p">, </span>next_hop_ilb=None<span class="p">, </span>next_hop_instance=None<span class="p">, </span>next_hop_instance_zone=None<span class="p">, </span>next_hop_ip=None<span class="p">, </span>next_hop_vpn_tunnel=None<span class="p">, </span>priority=None<span class="p">, </span>project=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRoute<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#RouteArgs">RouteArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Route">Route</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Route.html">Route</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.RouteArgs.html">RouteArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -98,9 +98,9 @@ To get more information about Route, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -118,9 +118,9 @@ To get more information about Route, see:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -167,9 +167,9 @@ To get more information about Route, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -206,7 +206,7 @@ To get more information about Route, see:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Route Resource Properties {#properties}
 
@@ -219,7 +219,7 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -228,8 +228,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
-{{% /md %}}</dd>
+    <dd>The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -237,8 +237,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network that this route applies to.
-{{% /md %}}</dd>
+    <dd>The network that this route applies to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource. Provide this property when you create the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,11 +255,11 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,12 +267,12 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
+    <dd>URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
 or partial valid URL: *
 'https://www.googleapis.com/compute/v1/projects/project/global/gateways/default-internet-gateway' *
 'projects/project/global/gateways/default-internet-gateway' * 'global/gateways/default-internet-gateway' * The string
 'default-internet-gateway'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,12 +280,12 @@ or partial valid URL: *
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
+    <dd>The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
 specify the forwarding rule as a partial or full URL. For example, the following are all valid URLs:
 https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
 regions/region/forwardingRules/forwardingRule Note that this can only be used when the destinationRange is a public
 (non-RFC 1918) IP CIDR range.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,11 +293,11 @@ regions/region/forwardingRules/forwardingRule Note that this can only be used wh
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
+    <dd>URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
 'https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance' *
 'projects/project/zones/zone/instances/instance' * 'zones/zone/instances/instance' * Just the instance name, with the
 zone in 'next_hop_instance_zone'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,11 +305,11 @@ zone in 'next_hop_instance_zone'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional when `next_hop_instance` is
+    <dd>(Optional when `next_hop_instance` is
 specified)  The zone of the instance specified in
 `next_hop_instance`.  Omit if `next_hop_instance` is specified as
 a URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address of an instance that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>Network IP address of an instance that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a VpnTunnel that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a VpnTunnel that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,10 +335,10 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
+    <dd>The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
 prefix length. In the case of two routes with equal prefix length, the one with the lowest-numbered priority value wins.
 Default value is 1000. Valid range is 0 through 65535.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,9 +346,9 @@ Default value is 1000. Valid range is 0 through 65535.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,14 +356,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance tags to which this route applies.
-{{% /md %}}</dd>
+    <dd>A list of instance tags to which this route applies.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -372,8 +372,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
-{{% /md %}}</dd>
+    <dd>The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -381,8 +381,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network that this route applies to.
-{{% /md %}}</dd>
+    <dd>The network that this route applies to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,8 +390,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource. Provide this property when you create the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,11 +399,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,12 +411,12 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
+    <dd>URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
 or partial valid URL: *
 'https://www.googleapis.com/compute/v1/projects/project/global/gateways/default-internet-gateway' *
 'projects/project/global/gateways/default-internet-gateway' * 'global/gateways/default-internet-gateway' * The string
 'default-internet-gateway'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,12 +424,12 @@ or partial valid URL: *
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
+    <dd>The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
 specify the forwarding rule as a partial or full URL. For example, the following are all valid URLs:
 https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
 regions/region/forwardingRules/forwardingRule Note that this can only be used when the destinationRange is a public
 (non-RFC 1918) IP CIDR range.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,11 +437,11 @@ regions/region/forwardingRules/forwardingRule Note that this can only be used wh
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
+    <dd>URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
 'https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance' *
 'projects/project/zones/zone/instances/instance' * 'zones/zone/instances/instance' * Just the instance name, with the
 zone in 'next_hop_instance_zone'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,11 +449,11 @@ zone in 'next_hop_instance_zone'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional when `next_hop_instance` is
+    <dd>(Optional when `next_hop_instance` is
 specified)  The zone of the instance specified in
 `next_hop_instance`.  Omit if `next_hop_instance` is specified as
 a URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address of an instance that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>Network IP address of an instance that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a VpnTunnel that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a VpnTunnel that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,10 +479,10 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
+    <dd>The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
 prefix length. In the case of two routes with equal prefix length, the one with the lowest-numbered priority value wins.
 Default value is 1000. Valid range is 0 through 65535.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,9 +490,9 @@ Default value is 1000. Valid range is 0 through 65535.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,14 +500,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance tags to which this route applies.
-{{% /md %}}</dd>
+    <dd>A list of instance tags to which this route applies.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -516,8 +516,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
-{{% /md %}}</dd>
+    <dd>The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -525,8 +525,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network that this route applies to.
-{{% /md %}}</dd>
+    <dd>The network that this route applies to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -534,8 +534,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource. Provide this property when you create the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -543,11 +543,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,12 +555,12 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
+    <dd>URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
 or partial valid URL: *
 'https://www.googleapis.com/compute/v1/projects/project/global/gateways/default-internet-gateway' *
 'projects/project/global/gateways/default-internet-gateway' * 'global/gateways/default-internet-gateway' * The string
 'default-internet-gateway'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,12 +568,12 @@ or partial valid URL: *
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
+    <dd>The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
 specify the forwarding rule as a partial or full URL. For example, the following are all valid URLs:
 https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
 regions/region/forwardingRules/forwardingRule Note that this can only be used when the destinationRange is a public
 (non-RFC 1918) IP CIDR range.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,11 +581,11 @@ regions/region/forwardingRules/forwardingRule Note that this can only be used wh
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
+    <dd>URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
 'https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance' *
 'projects/project/zones/zone/instances/instance' * 'zones/zone/instances/instance' * Just the instance name, with the
 zone in 'next_hop_instance_zone'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,11 +593,11 @@ zone in 'next_hop_instance_zone'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional when `next_hop_instance` is
+    <dd>(Optional when `next_hop_instance` is
 specified)  The zone of the instance specified in
 `next_hop_instance`.  Omit if `next_hop_instance` is specified as
 a URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,8 +605,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address of an instance that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>Network IP address of an instance that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,8 +614,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a VpnTunnel that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a VpnTunnel that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,10 +623,10 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
+    <dd>The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
 prefix length. In the case of two routes with equal prefix length, the one with the lowest-numbered priority value wins.
 Default value is 1000. Valid range is 0 through 65535.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -634,9 +634,9 @@ Default value is 1000. Valid range is 0 through 65535.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,14 +644,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance tags to which this route applies.
-{{% /md %}}</dd>
+    <dd>A list of instance tags to which this route applies.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -660,8 +660,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
-{{% /md %}}</dd>
+    <dd>The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -669,8 +669,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network that this route applies to.
-{{% /md %}}</dd>
+    <dd>The network that this route applies to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -678,8 +678,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource. Provide this property when you create the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -687,11 +687,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -699,12 +699,12 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
+    <dd>URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
 or partial valid URL: *
 'https://www.googleapis.com/compute/v1/projects/project/global/gateways/default-internet-gateway' *
 'projects/project/global/gateways/default-internet-gateway' * 'global/gateways/default-internet-gateway' * The string
 'default-internet-gateway'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,12 +712,12 @@ or partial valid URL: *
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
+    <dd>The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
 specify the forwarding rule as a partial or full URL. For example, the following are all valid URLs:
 https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
 regions/region/forwardingRules/forwardingRule Note that this can only be used when the destinationRange is a public
 (non-RFC 1918) IP CIDR range.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -725,11 +725,11 @@ regions/region/forwardingRules/forwardingRule Note that this can only be used wh
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
+    <dd>URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
 'https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance' *
 'projects/project/zones/zone/instances/instance' * 'zones/zone/instances/instance' * Just the instance name, with the
 zone in 'next_hop_instance_zone'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -737,11 +737,11 @@ zone in 'next_hop_instance_zone'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Optional when `next_hop_instance` is
+    <dd>(Optional when `next_hop_instance` is
 specified)  The zone of the instance specified in
 `next_hop_instance`.  Omit if `next_hop_instance` is specified as
 a URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,8 +749,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address of an instance that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>Network IP address of an instance that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,8 +758,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL to a VpnTunnel that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a VpnTunnel that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,10 +767,10 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
+    <dd>The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
 prefix length. In the case of two routes with equal prefix length, the one with the lowest-numbered priority value wins.
 Default value is 1000. Valid range is 0 through 65535.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,9 +778,9 @@ Default value is 1000. Valid range is 0 through 65535.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,11 +788,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance tags to which this route applies.
-{{% /md %}}</dd>
+    <dd>A list of instance tags to which this route applies.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -806,7 +806,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -815,7 +815,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -823,8 +823,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a Network that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a Network that should handle matching packets.
+</dd>
 
     <dt class="property-"
             title="">
@@ -832,14 +832,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -848,7 +848,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -856,8 +856,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a Network that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a Network that should handle matching packets.
+</dd>
 
     <dt class="property-"
             title="">
@@ -865,14 +865,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -881,7 +881,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -889,8 +889,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a Network that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a Network that should handle matching packets.
+</dd>
 
     <dt class="property-"
             title="">
@@ -898,14 +898,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -914,7 +914,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -922,8 +922,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL to a Network that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a Network that should handle matching packets.
+</dd>
 
     <dt class="property-"
             title="">
@@ -931,11 +931,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -946,25 +946,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Route Resource {#look-up}
 
 Get an existing Route resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#RouteState">RouteState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Route">Route</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>description=None<span class="p">, </span>dest_range=None<span class="p">, </span>name=None<span class="p">, </span>network=None<span class="p">, </span>next_hop_gateway=None<span class="p">, </span>next_hop_ilb=None<span class="p">, </span>next_hop_instance=None<span class="p">, </span>next_hop_instance_zone=None<span class="p">, </span>next_hop_ip=None<span class="p">, </span>next_hop_network=None<span class="p">, </span>next_hop_vpn_tunnel=None<span class="p">, </span>priority=None<span class="p">, </span>project=None<span class="p">, </span>self_link=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRoute<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#RouteState">RouteState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Route">Route</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Route.html">Route</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.RouteState.html">RouteState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -989,9 +989,9 @@ Get an existing Route resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1004,36 +1004,9 @@ Get an existing Route resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1058,13 +1031,40 @@ Get an existing Route resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1073,8 +1073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource. Provide this property when you create the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
-{{% /md %}}</dd>
+    <dd>The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,11 +1091,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,8 +1103,8 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network that this route applies to.
-{{% /md %}}</dd>
+    <dd>The network that this route applies to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,12 +1112,12 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
+    <dd>URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
 or partial valid URL: *
 'https://www.googleapis.com/compute/v1/projects/project/global/gateways/default-internet-gateway' *
 'projects/project/global/gateways/default-internet-gateway' * 'global/gateways/default-internet-gateway' * The string
 'default-internet-gateway'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,12 +1125,12 @@ or partial valid URL: *
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
+    <dd>The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
 specify the forwarding rule as a partial or full URL. For example, the following are all valid URLs:
 https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
 regions/region/forwardingRules/forwardingRule Note that this can only be used when the destinationRange is a public
 (non-RFC 1918) IP CIDR range.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,11 +1138,11 @@ regions/region/forwardingRules/forwardingRule Note that this can only be used wh
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
+    <dd>URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
 'https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance' *
 'projects/project/zones/zone/instances/instance' * 'zones/zone/instances/instance' * Just the instance name, with the
 zone in 'next_hop_instance_zone'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,11 +1150,11 @@ zone in 'next_hop_instance_zone'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional when `next_hop_instance` is
+    <dd>(Optional when `next_hop_instance` is
 specified)  The zone of the instance specified in
 `next_hop_instance`.  Omit if `next_hop_instance` is specified as
 a URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1162,8 +1162,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address of an instance that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>Network IP address of an instance that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1171,8 +1171,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a Network that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a Network that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,8 +1180,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a VpnTunnel that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a VpnTunnel that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1189,10 +1189,10 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
+    <dd>The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
 prefix length. In the case of two routes with equal prefix length, the one with the lowest-numbered priority value wins.
 Default value is 1000. Valid range is 0 through 65535.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,9 +1200,9 @@ Default value is 1000. Valid range is 0 through 65535.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,8 +1210,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,14 +1219,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance tags to which this route applies.
-{{% /md %}}</dd>
+    <dd>A list of instance tags to which this route applies.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1235,8 +1235,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource. Provide this property when you create the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
-{{% /md %}}</dd>
+    <dd>The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,11 +1253,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1265,8 +1265,8 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network that this route applies to.
-{{% /md %}}</dd>
+    <dd>The network that this route applies to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,12 +1274,12 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
+    <dd>URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
 or partial valid URL: *
 'https://www.googleapis.com/compute/v1/projects/project/global/gateways/default-internet-gateway' *
 'projects/project/global/gateways/default-internet-gateway' * 'global/gateways/default-internet-gateway' * The string
 'default-internet-gateway'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,12 +1287,12 @@ or partial valid URL: *
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
+    <dd>The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
 specify the forwarding rule as a partial or full URL. For example, the following are all valid URLs:
 https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
 regions/region/forwardingRules/forwardingRule Note that this can only be used when the destinationRange is a public
 (non-RFC 1918) IP CIDR range.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1300,11 +1300,11 @@ regions/region/forwardingRules/forwardingRule Note that this can only be used wh
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
+    <dd>URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
 'https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance' *
 'projects/project/zones/zone/instances/instance' * 'zones/zone/instances/instance' * Just the instance name, with the
 zone in 'next_hop_instance_zone'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,11 +1312,11 @@ zone in 'next_hop_instance_zone'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional when `next_hop_instance` is
+    <dd>(Optional when `next_hop_instance` is
 specified)  The zone of the instance specified in
 `next_hop_instance`.  Omit if `next_hop_instance` is specified as
 a URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,8 +1324,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address of an instance that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>Network IP address of an instance that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,8 +1333,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a Network that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a Network that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,8 +1342,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a VpnTunnel that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a VpnTunnel that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1351,10 +1351,10 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
+    <dd>The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
 prefix length. In the case of two routes with equal prefix length, the one with the lowest-numbered priority value wins.
 Default value is 1000. Valid range is 0 through 65535.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1362,9 +1362,9 @@ Default value is 1000. Valid range is 0 through 65535.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,8 +1372,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,14 +1381,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance tags to which this route applies.
-{{% /md %}}</dd>
+    <dd>A list of instance tags to which this route applies.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1397,8 +1397,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource. Provide this property when you create the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1406,8 +1406,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
-{{% /md %}}</dd>
+    <dd>The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1415,11 +1415,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,8 +1427,8 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network that this route applies to.
-{{% /md %}}</dd>
+    <dd>The network that this route applies to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1436,12 +1436,12 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
+    <dd>URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
 or partial valid URL: *
 'https://www.googleapis.com/compute/v1/projects/project/global/gateways/default-internet-gateway' *
 'projects/project/global/gateways/default-internet-gateway' * 'global/gateways/default-internet-gateway' * The string
 'default-internet-gateway'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1449,12 +1449,12 @@ or partial valid URL: *
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
+    <dd>The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
 specify the forwarding rule as a partial or full URL. For example, the following are all valid URLs:
 https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
 regions/region/forwardingRules/forwardingRule Note that this can only be used when the destinationRange is a public
 (non-RFC 1918) IP CIDR range.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,11 +1462,11 @@ regions/region/forwardingRules/forwardingRule Note that this can only be used wh
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
+    <dd>URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
 'https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance' *
 'projects/project/zones/zone/instances/instance' * 'zones/zone/instances/instance' * Just the instance name, with the
 zone in 'next_hop_instance_zone'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1474,11 +1474,11 @@ zone in 'next_hop_instance_zone'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional when `next_hop_instance` is
+    <dd>(Optional when `next_hop_instance` is
 specified)  The zone of the instance specified in
 `next_hop_instance`.  Omit if `next_hop_instance` is specified as
 a URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,8 +1486,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address of an instance that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>Network IP address of an instance that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,8 +1495,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a Network that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a Network that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to a VpnTunnel that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a VpnTunnel that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,10 +1513,10 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
+    <dd>The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
 prefix length. In the case of two routes with equal prefix length, the one with the lowest-numbered priority value wins.
 Default value is 1000. Valid range is 0 through 65535.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,9 +1524,9 @@ Default value is 1000. Valid range is 0 through 65535.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1534,8 +1534,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1543,14 +1543,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance tags to which this route applies.
-{{% /md %}}</dd>
+    <dd>A list of instance tags to which this route applies.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1559,8 +1559,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource. Provide this property when you create the resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource. Provide this property when you create the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,8 +1568,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
-{{% /md %}}</dd>
+    <dd>The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,11 +1577,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1589,8 +1589,8 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network that this route applies to.
-{{% /md %}}</dd>
+    <dd>The network that this route applies to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1598,12 +1598,12 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
+    <dd>URL to a gateway that should handle matching packets. Currently, you can only specify the internet gateway, using a full
 or partial valid URL: *
 'https://www.googleapis.com/compute/v1/projects/project/global/gateways/default-internet-gateway' *
 'projects/project/global/gateways/default-internet-gateway' * 'global/gateways/default-internet-gateway' * The string
 'default-internet-gateway'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1611,12 +1611,12 @@ or partial valid URL: *
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
+    <dd>The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. You can only
 specify the forwarding rule as a partial or full URL. For example, the following are all valid URLs:
 https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
 regions/region/forwardingRules/forwardingRule Note that this can only be used when the destinationRange is a public
 (non-RFC 1918) IP CIDR range.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1624,11 +1624,11 @@ regions/region/forwardingRules/forwardingRule Note that this can only be used wh
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
+    <dd>URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: *
 'https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance' *
 'projects/project/zones/zone/instances/instance' * 'zones/zone/instances/instance' * Just the instance name, with the
 zone in 'next_hop_instance_zone'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1636,11 +1636,11 @@ zone in 'next_hop_instance_zone'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Optional when `next_hop_instance` is
+    <dd>(Optional when `next_hop_instance` is
 specified)  The zone of the instance specified in
 `next_hop_instance`.  Omit if `next_hop_instance` is specified as
 a URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1648,8 +1648,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address of an instance that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>Network IP address of an instance that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1657,8 +1657,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL to a Network that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a Network that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1666,8 +1666,8 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL to a VpnTunnel that should handle matching packets.
-{{% /md %}}</dd>
+    <dd>URL to a VpnTunnel that should handle matching packets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1675,10 +1675,10 @@ a URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
+    <dd>The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal
 prefix length. In the case of two routes with equal prefix length, the one with the lowest-numbered priority value wins.
 Default value is 1000. Valid range is 0 through 65535.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1686,9 +1686,9 @@ Default value is 1000. Valid range is 0 through 65535.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,11 +1705,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance tags to which this route applies.
-{{% /md %}}</dd>
+    <dd>A list of instance tags to which this route applies.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

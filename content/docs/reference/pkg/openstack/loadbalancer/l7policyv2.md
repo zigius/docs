@@ -56,26 +56,26 @@ const l7policy1 = new openstack.loadbalancer.L7PolicyV2("l7policy_1", {
 
 
 ## Create a L7PolicyV2 Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#L7PolicyV2">L7PolicyV2</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#L7PolicyV2Args">L7PolicyV2Args</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">L7PolicyV2</span><span class="p">(resource_name, opts=None, </span>action=None<span class="p">, </span>admin_state_up=None<span class="p">, </span>description=None<span class="p">, </span>listener_id=None<span class="p">, </span>name=None<span class="p">, </span>position=None<span class="p">, </span>redirect_pool_id=None<span class="p">, </span>redirect_url=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewL7PolicyV2<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#L7PolicyV2Args">L7PolicyV2Args</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#L7PolicyV2">L7PolicyV2</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.LoadBalancer.L7PolicyV2.html">L7PolicyV2</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.LoadBalancer.L7PolicyV2Args.html">L7PolicyV2Args</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -112,9 +112,9 @@ const l7policy1 = new openstack.loadbalancer.L7PolicyV2("l7policy_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -132,9 +132,9 @@ const l7policy1 = new openstack.loadbalancer.L7PolicyV2("l7policy_1", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -181,9 +181,9 @@ const l7policy1 = new openstack.loadbalancer.L7PolicyV2("l7policy_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -220,7 +220,7 @@ const l7policy1 = new openstack.loadbalancer.L7PolicyV2("l7policy_1", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## L7PolicyV2 Resource Properties {#properties}
 
@@ -233,7 +233,7 @@ The L7PolicyV2 resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -242,9 +242,9 @@ The L7PolicyV2 resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The L7 Policy action - can either be REDIRECT\_TO\_POOL,
+    <dd>The L7 Policy action - can either be REDIRECT\_TO\_POOL,
 REDIRECT\_TO\_URL or REJECT.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -252,9 +252,9 @@ REDIRECT\_TO\_URL or REJECT.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the L7 Policy will be associated with.
+    <dd>The Listener on which the L7 Policy will be associated with.
 Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,9 +262,9 @@ Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the L7 Policy.
+    <dd>The administrative state of the L7 Policy.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the L7 Policy.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the L7 Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,9 +281,9 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the L7 Policy. Does not have
+    <dd>Human-readable name for the L7 Policy. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of this policy on the listener. Positions start at 1.
-{{% /md %}}</dd>
+    <dd>The position of this policy on the listener. Positions start at 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,9 +300,9 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to the
+    <dd>Requests matching this policy will be redirected to the
 pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,9 +310,9 @@ pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to this URL.
+    <dd>Requests matching this policy will be redirected to this URL.
 Only valid if action is REDIRECT\_TO\_URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,11 +320,11 @@ Only valid if action is REDIRECT\_TO\_URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,16 +332,16 @@ L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the L7 Policy.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -350,9 +350,9 @@ other than their own. Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The L7 Policy action - can either be REDIRECT\_TO\_POOL,
+    <dd>The L7 Policy action - can either be REDIRECT\_TO\_POOL,
 REDIRECT\_TO\_URL or REJECT.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -360,9 +360,9 @@ REDIRECT\_TO\_URL or REJECT.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the L7 Policy will be associated with.
+    <dd>The Listener on which the L7 Policy will be associated with.
 Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,9 +370,9 @@ Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the L7 Policy.
+    <dd>The administrative state of the L7 Policy.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the L7 Policy.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the L7 Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,9 +389,9 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the L7 Policy. Does not have
+    <dd>Human-readable name for the L7 Policy. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of this policy on the listener. Positions start at 1.
-{{% /md %}}</dd>
+    <dd>The position of this policy on the listener. Positions start at 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,9 +408,9 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to the
+    <dd>Requests matching this policy will be redirected to the
 pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,9 +418,9 @@ pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to this URL.
+    <dd>Requests matching this policy will be redirected to this URL.
 Only valid if action is REDIRECT\_TO\_URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,11 +428,11 @@ Only valid if action is REDIRECT\_TO\_URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,16 +440,16 @@ L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the L7 Policy.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -458,9 +458,9 @@ other than their own. Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The L7 Policy action - can either be REDIRECT\_TO\_POOL,
+    <dd>The L7 Policy action - can either be REDIRECT\_TO\_POOL,
 REDIRECT\_TO\_URL or REJECT.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -468,9 +468,9 @@ REDIRECT\_TO\_URL or REJECT.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the L7 Policy will be associated with.
+    <dd>The Listener on which the L7 Policy will be associated with.
 Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,9 +478,9 @@ Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the L7 Policy.
+    <dd>The administrative state of the L7 Policy.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the L7 Policy.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the L7 Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,9 +497,9 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the L7 Policy. Does not have
+    <dd>Human-readable name for the L7 Policy. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,8 +507,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The position of this policy on the listener. Positions start at 1.
-{{% /md %}}</dd>
+    <dd>The position of this policy on the listener. Positions start at 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -516,9 +516,9 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to the
+    <dd>Requests matching this policy will be redirected to the
 pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,9 +526,9 @@ pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to this URL.
+    <dd>Requests matching this policy will be redirected to this URL.
 Only valid if action is REDIRECT\_TO\_URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,11 +536,11 @@ Only valid if action is REDIRECT\_TO\_URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,16 +548,16 @@ L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the L7 Policy.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -566,9 +566,9 @@ other than their own. Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The L7 Policy action - can either be REDIRECT\_TO\_POOL,
+    <dd>The L7 Policy action - can either be REDIRECT\_TO\_POOL,
 REDIRECT\_TO\_URL or REJECT.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -576,9 +576,9 @@ REDIRECT\_TO\_URL or REJECT.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the L7 Policy will be associated with.
+    <dd>The Listener on which the L7 Policy will be associated with.
 Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -586,9 +586,9 @@ Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the L7 Policy.
+    <dd>The administrative state of the L7 Policy.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -596,8 +596,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the L7 Policy.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the L7 Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,9 +605,9 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the L7 Policy. Does not have
+    <dd>Human-readable name for the L7 Policy. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -615,8 +615,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The position of this policy on the listener. Positions start at 1.
-{{% /md %}}</dd>
+    <dd>The position of this policy on the listener. Positions start at 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -624,9 +624,9 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to the
+    <dd>Requests matching this policy will be redirected to the
 pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -634,9 +634,9 @@ pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to this URL.
+    <dd>Requests matching this policy will be redirected to this URL.
 Only valid if action is REDIRECT\_TO\_URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,11 +644,11 @@ Only valid if action is REDIRECT\_TO\_URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,13 +656,13 @@ L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the L7 Policy.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -676,7 +676,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -685,13 +685,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -700,13 +700,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -715,13 +715,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -730,10 +730,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -744,25 +744,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing L7PolicyV2 Resource {#look-up}
 
 Get an existing L7PolicyV2 resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#L7PolicyV2State">L7PolicyV2State</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#L7PolicyV2">L7PolicyV2</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>action=None<span class="p">, </span>admin_state_up=None<span class="p">, </span>description=None<span class="p">, </span>listener_id=None<span class="p">, </span>name=None<span class="p">, </span>position=None<span class="p">, </span>redirect_pool_id=None<span class="p">, </span>redirect_url=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetL7PolicyV2<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#L7PolicyV2State">L7PolicyV2State</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#L7PolicyV2">L7PolicyV2</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.LoadBalancer.L7PolicyV2.html">L7PolicyV2</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.LoadBalancer.L7PolicyV2State.html">L7PolicyV2State</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -787,9 +787,9 @@ Get an existing L7PolicyV2 resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -802,36 +802,9 @@ Get an existing L7PolicyV2 resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -856,13 +829,40 @@ Get an existing L7PolicyV2 resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -871,9 +871,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The L7 Policy action - can either be REDIRECT\_TO\_POOL,
+    <dd>The L7 Policy action - can either be REDIRECT\_TO\_POOL,
 REDIRECT\_TO\_URL or REJECT.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -881,9 +881,9 @@ REDIRECT\_TO\_URL or REJECT.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the L7 Policy.
+    <dd>The administrative state of the L7 Policy.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,8 +891,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the L7 Policy.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the L7 Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,9 +900,9 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the L7 Policy will be associated with.
+    <dd>The Listener on which the L7 Policy will be associated with.
 Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -910,9 +910,9 @@ Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the L7 Policy. Does not have
+    <dd>Human-readable name for the L7 Policy. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,8 +920,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of this policy on the listener. Positions start at 1.
-{{% /md %}}</dd>
+    <dd>The position of this policy on the listener. Positions start at 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,9 +929,9 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to the
+    <dd>Requests matching this policy will be redirected to the
 pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,9 +939,9 @@ pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to this URL.
+    <dd>Requests matching this policy will be redirected to this URL.
 Only valid if action is REDIRECT\_TO\_URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -949,11 +949,11 @@ Only valid if action is REDIRECT\_TO\_URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -961,16 +961,16 @@ L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the L7 Policy.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -979,9 +979,9 @@ other than their own. Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The L7 Policy action - can either be REDIRECT\_TO\_POOL,
+    <dd>The L7 Policy action - can either be REDIRECT\_TO\_POOL,
 REDIRECT\_TO\_URL or REJECT.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,9 +989,9 @@ REDIRECT\_TO\_URL or REJECT.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the L7 Policy.
+    <dd>The administrative state of the L7 Policy.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,8 +999,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the L7 Policy.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the L7 Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1008,9 +1008,9 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the L7 Policy will be associated with.
+    <dd>The Listener on which the L7 Policy will be associated with.
 Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1018,9 +1018,9 @@ Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the L7 Policy. Does not have
+    <dd>Human-readable name for the L7 Policy. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of this policy on the listener. Positions start at 1.
-{{% /md %}}</dd>
+    <dd>The position of this policy on the listener. Positions start at 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,9 +1037,9 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to the
+    <dd>Requests matching this policy will be redirected to the
 pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,9 +1047,9 @@ pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to this URL.
+    <dd>Requests matching this policy will be redirected to this URL.
 Only valid if action is REDIRECT\_TO\_URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,11 +1057,11 @@ Only valid if action is REDIRECT\_TO\_URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,16 +1069,16 @@ L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the L7 Policy.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1087,9 +1087,9 @@ other than their own. Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The L7 Policy action - can either be REDIRECT\_TO\_POOL,
+    <dd>The L7 Policy action - can either be REDIRECT\_TO\_POOL,
 REDIRECT\_TO\_URL or REJECT.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1097,9 +1097,9 @@ REDIRECT\_TO\_URL or REJECT.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the L7 Policy.
+    <dd>The administrative state of the L7 Policy.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,8 +1107,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the L7 Policy.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the L7 Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,9 +1116,9 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the L7 Policy will be associated with.
+    <dd>The Listener on which the L7 Policy will be associated with.
 Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1126,9 +1126,9 @@ Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the L7 Policy. Does not have
+    <dd>Human-readable name for the L7 Policy. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The position of this policy on the listener. Positions start at 1.
-{{% /md %}}</dd>
+    <dd>The position of this policy on the listener. Positions start at 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,9 +1145,9 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to the
+    <dd>Requests matching this policy will be redirected to the
 pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,9 +1155,9 @@ pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to this URL.
+    <dd>Requests matching this policy will be redirected to this URL.
 Only valid if action is REDIRECT\_TO\_URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,11 +1165,11 @@ Only valid if action is REDIRECT\_TO\_URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,16 +1177,16 @@ L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the L7 Policy.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1195,9 +1195,9 @@ other than their own. Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The L7 Policy action - can either be REDIRECT\_TO\_POOL,
+    <dd>The L7 Policy action - can either be REDIRECT\_TO\_POOL,
 REDIRECT\_TO\_URL or REJECT.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,9 +1205,9 @@ REDIRECT\_TO\_URL or REJECT.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the L7 Policy.
+    <dd>The administrative state of the L7 Policy.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,8 +1215,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the L7 Policy.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the L7 Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,9 +1224,9 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the L7 Policy will be associated with.
+    <dd>The Listener on which the L7 Policy will be associated with.
 Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,9 +1234,9 @@ Changing this creates a new L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the L7 Policy. Does not have
+    <dd>Human-readable name for the L7 Policy. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The position of this policy on the listener. Positions start at 1.
-{{% /md %}}</dd>
+    <dd>The position of this policy on the listener. Positions start at 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,9 +1253,9 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to the
+    <dd>Requests matching this policy will be redirected to the
 pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,9 +1263,9 @@ pool with this ID. Only valid if action is REDIRECT\_TO\_POOL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Requests matching this policy will be redirected to this URL.
+    <dd>Requests matching this policy will be redirected to this URL.
 Only valid if action is REDIRECT\_TO\_URL.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,11 +1273,11 @@ Only valid if action is REDIRECT\_TO\_URL.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,13 +1285,13 @@ L7 Policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the L7 Policy.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new L7 Policy.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

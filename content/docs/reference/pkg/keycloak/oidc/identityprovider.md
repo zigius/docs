@@ -14,26 +14,26 @@ meta_desc: "Explore the IdentityProvider resource of the oidc module, including 
 
 
 ## Create a IdentityProvider Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/keycloak/oidc/#IdentityProvider">IdentityProvider</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/keycloak/oidc/#IdentityProviderArgs">IdentityProviderArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">IdentityProvider</span><span class="p">(resource_name, opts=None, </span>accepts_prompt_none_forward_from_client=None<span class="p">, </span>add_read_token_role_on_create=None<span class="p">, </span>alias=None<span class="p">, </span>authenticate_by_default=None<span class="p">, </span>authorization_url=None<span class="p">, </span>backchannel_supported=None<span class="p">, </span>client_id=None<span class="p">, </span>client_secret=None<span class="p">, </span>default_scopes=None<span class="p">, </span>display_name=None<span class="p">, </span>enabled=None<span class="p">, </span>extra_config=None<span class="p">, </span>first_broker_login_flow_alias=None<span class="p">, </span>hide_on_login_page=None<span class="p">, </span>jwks_url=None<span class="p">, </span>link_only=None<span class="p">, </span>login_hint=None<span class="p">, </span>logout_url=None<span class="p">, </span>post_broker_login_flow_alias=None<span class="p">, </span>provider_id=None<span class="p">, </span>realm=None<span class="p">, </span>store_token=None<span class="p">, </span>token_url=None<span class="p">, </span>trust_email=None<span class="p">, </span>ui_locales=None<span class="p">, </span>user_info_url=None<span class="p">, </span>validate_signature=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewIdentityProvider<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-keycloak/sdk/v2/go/keycloak/oidc?tab=doc#IdentityProviderArgs">IdentityProviderArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-keycloak/sdk/v2/go/keycloak/oidc?tab=doc#IdentityProvider">IdentityProvider</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Keycloak/Pulumi.Keycloak.Oidc.IdentityProvider.html">IdentityProvider</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Keycloak/Pulumi.Keycloak.Oidc.IdentityProviderArgs.html">IdentityProviderArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the IdentityProvider resource of the oidc module, including 
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the IdentityProvider resource of the oidc module, including 
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the IdentityProvider resource of the oidc module, including 
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the IdentityProvider resource of the oidc module, including 
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## IdentityProvider Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The IdentityProvider resource accepts the following [input]({{< relref "/docs/in
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The IdentityProvider resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
-{{% /md %}}</dd>
+    <dd>The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The IdentityProvider resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OIDC authorization URL.
-{{% /md %}}</dd>
+    <dd>OIDC authorization URL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -218,8 +218,8 @@ The IdentityProvider resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Client ID.
-{{% /md %}}</dd>
+    <dd>Client ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -227,8 +227,8 @@ The IdentityProvider resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Client Secret.
-{{% /md %}}</dd>
+    <dd>Client Secret.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -236,8 +236,8 @@ The IdentityProvider resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Realm Name
-{{% /md %}}</dd>
+    <dd>Realm Name
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -245,8 +245,8 @@ The IdentityProvider resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Token URL.
-{{% /md %}}</dd>
+    <dd>Token URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,10 +254,10 @@ The IdentityProvider resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
+    <dd>This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
 case that client sends a request with prompt=none and user is not yet authenticated, the error will not be directly
 returned to client, but the request with prompt=none will be forwarded to this identity provider.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,8 +265,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
-{{% /md %}}</dd>
+    <dd>Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable authenticate users by default.
-{{% /md %}}</dd>
+    <dd>Enable/disable authenticate users by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the external IDP support backchannel logout?
-{{% /md %}}</dd>
+    <dd>Does the external IDP support backchannel logout?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
-{{% /md %}}</dd>
+    <dd>The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Friendly name for Identity Providers.
-{{% /md %}}</dd>
+    <dd>Friendly name for Identity Providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable this identity provider.
-{{% /md %}}</dd>
+    <dd>Enable/disable this identity provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,7 +319,7 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,9 +327,9 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
+    <dd>Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
 that there is not yet existing Keycloak account linked with the authenticated identity provider account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hide On Login Page.
-{{% /md %}}</dd>
+    <dd>Hide On Login Page.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON Web Key Set URL
-{{% /md %}}</dd>
+    <dd>JSON Web Key Set URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,9 +355,9 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
+    <dd>If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
 want to allow login from the provider, but want to integrate with a provider
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Login Hint.
-{{% /md %}}</dd>
+    <dd>Login Hint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Logout URL
-{{% /md %}}</dd>
+    <dd>Logout URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,11 +383,11 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
+    <dd>Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
 additional verification of each user authenticated with this identity provider (for example OTP). Leave this empty if
 you don't want any additional authenticators to be triggered after login with this identity provider. Also note, that
 authenticator implementations must assume that user is already set in ClientSession as identity provider already set it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}provider id, is always oidc, unless you have a custom implementation
-{{% /md %}}</dd>
+    <dd>provider id, is always oidc, unless you have a custom implementation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if tokens must be stored after authenticating users.
-{{% /md %}}</dd>
+    <dd>Enable/disable if tokens must be stored after authenticating users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
-{{% /md %}}</dd>
+    <dd>If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Pass current locale to identity provider
-{{% /md %}}</dd>
+    <dd>Pass current locale to identity provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,8 +431,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User Info URL
-{{% /md %}}</dd>
+    <dd>User Info URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,14 +440,14 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable signature validation of external IDP signatures.
-{{% /md %}}</dd>
+    <dd>Enable/disable signature validation of external IDP signatures.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -456,8 +456,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
-{{% /md %}}</dd>
+    <dd>The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -465,8 +465,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OIDC authorization URL.
-{{% /md %}}</dd>
+    <dd>OIDC authorization URL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -474,8 +474,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client ID.
-{{% /md %}}</dd>
+    <dd>Client ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -483,8 +483,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client Secret.
-{{% /md %}}</dd>
+    <dd>Client Secret.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -492,8 +492,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Realm Name
-{{% /md %}}</dd>
+    <dd>Realm Name
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -501,8 +501,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Token URL.
-{{% /md %}}</dd>
+    <dd>Token URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,10 +510,10 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
+    <dd>This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
 case that client sends a request with prompt=none and user is not yet authenticated, the error will not be directly
 returned to client, but the request with prompt=none will be forwarded to this identity provider.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -521,8 +521,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
-{{% /md %}}</dd>
+    <dd>Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,8 +530,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable authenticate users by default.
-{{% /md %}}</dd>
+    <dd>Enable/disable authenticate users by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,8 +539,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the external IDP support backchannel logout?
-{{% /md %}}</dd>
+    <dd>Does the external IDP support backchannel logout?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
-{{% /md %}}</dd>
+    <dd>The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Friendly name for Identity Providers.
-{{% /md %}}</dd>
+    <dd>Friendly name for Identity Providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable this identity provider.
-{{% /md %}}</dd>
+    <dd>Enable/disable this identity provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,7 +575,7 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,9 +583,9 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
+    <dd>Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
 that there is not yet existing Keycloak account linked with the authenticated identity provider account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,8 +593,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hide On Login Page.
-{{% /md %}}</dd>
+    <dd>Hide On Login Page.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,8 +602,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON Web Key Set URL
-{{% /md %}}</dd>
+    <dd>JSON Web Key Set URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,9 +611,9 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
+    <dd>If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
 want to allow login from the provider, but want to integrate with a provider
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,8 +621,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Login Hint.
-{{% /md %}}</dd>
+    <dd>Login Hint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -630,8 +630,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Logout URL
-{{% /md %}}</dd>
+    <dd>Logout URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -639,11 +639,11 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
+    <dd>Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
 additional verification of each user authenticated with this identity provider (for example OTP). Leave this empty if
 you don't want any additional authenticators to be triggered after login with this identity provider. Also note, that
 authenticator implementations must assume that user is already set in ClientSession as identity provider already set it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,8 +651,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}provider id, is always oidc, unless you have a custom implementation
-{{% /md %}}</dd>
+    <dd>provider id, is always oidc, unless you have a custom implementation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -660,8 +660,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if tokens must be stored after authenticating users.
-{{% /md %}}</dd>
+    <dd>Enable/disable if tokens must be stored after authenticating users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,8 +669,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
-{{% /md %}}</dd>
+    <dd>If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -678,8 +678,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Pass current locale to identity provider
-{{% /md %}}</dd>
+    <dd>Pass current locale to identity provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -687,8 +687,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User Info URL
-{{% /md %}}</dd>
+    <dd>User Info URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -696,14 +696,14 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable signature validation of external IDP signatures.
-{{% /md %}}</dd>
+    <dd>Enable/disable signature validation of external IDP signatures.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -712,8 +712,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
-{{% /md %}}</dd>
+    <dd>The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -721,8 +721,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OIDC authorization URL.
-{{% /md %}}</dd>
+    <dd>OIDC authorization URL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -730,8 +730,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client ID.
-{{% /md %}}</dd>
+    <dd>Client ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -739,8 +739,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client Secret.
-{{% /md %}}</dd>
+    <dd>Client Secret.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -748,8 +748,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Realm Name
-{{% /md %}}</dd>
+    <dd>Realm Name
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -757,8 +757,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Token URL.
-{{% /md %}}</dd>
+    <dd>Token URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -766,10 +766,10 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
+    <dd>This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
 case that client sends a request with prompt=none and user is not yet authenticated, the error will not be directly
 returned to client, but the request with prompt=none will be forwarded to this identity provider.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -777,8 +777,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
-{{% /md %}}</dd>
+    <dd>Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,8 +786,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable authenticate users by default.
-{{% /md %}}</dd>
+    <dd>Enable/disable authenticate users by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,8 +795,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Does the external IDP support backchannel logout?
-{{% /md %}}</dd>
+    <dd>Does the external IDP support backchannel logout?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -804,8 +804,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
-{{% /md %}}</dd>
+    <dd>The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -813,8 +813,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Friendly name for Identity Providers.
-{{% /md %}}</dd>
+    <dd>Friendly name for Identity Providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -822,8 +822,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable this identity provider.
-{{% /md %}}</dd>
+    <dd>Enable/disable this identity provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -831,7 +831,7 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,9 +839,9 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
+    <dd>Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
 that there is not yet existing Keycloak account linked with the authenticated identity provider account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -849,8 +849,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Hide On Login Page.
-{{% /md %}}</dd>
+    <dd>Hide On Login Page.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -858,8 +858,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON Web Key Set URL
-{{% /md %}}</dd>
+    <dd>JSON Web Key Set URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -867,9 +867,9 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
+    <dd>If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
 want to allow login from the provider, but want to integrate with a provider
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Login Hint.
-{{% /md %}}</dd>
+    <dd>Login Hint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Logout URL
-{{% /md %}}</dd>
+    <dd>Logout URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,11 +895,11 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
+    <dd>Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
 additional verification of each user authenticated with this identity provider (for example OTP). Leave this empty if
 you don't want any additional authenticators to be triggered after login with this identity provider. Also note, that
 authenticator implementations must assume that user is already set in ClientSession as identity provider already set it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,8 +907,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}provider id, is always oidc, unless you have a custom implementation
-{{% /md %}}</dd>
+    <dd>provider id, is always oidc, unless you have a custom implementation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -916,8 +916,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if tokens must be stored after authenticating users.
-{{% /md %}}</dd>
+    <dd>Enable/disable if tokens must be stored after authenticating users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -925,8 +925,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
-{{% /md %}}</dd>
+    <dd>If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -934,8 +934,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Pass current locale to identity provider
-{{% /md %}}</dd>
+    <dd>Pass current locale to identity provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -943,8 +943,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User Info URL
-{{% /md %}}</dd>
+    <dd>User Info URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -952,14 +952,14 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable signature validation of external IDP signatures.
-{{% /md %}}</dd>
+    <dd>Enable/disable signature validation of external IDP signatures.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -968,8 +968,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
-{{% /md %}}</dd>
+    <dd>The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -977,8 +977,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OIDC authorization URL.
-{{% /md %}}</dd>
+    <dd>OIDC authorization URL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -986,8 +986,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Client ID.
-{{% /md %}}</dd>
+    <dd>Client ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -995,8 +995,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Client Secret.
-{{% /md %}}</dd>
+    <dd>Client Secret.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1004,8 +1004,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Realm Name
-{{% /md %}}</dd>
+    <dd>Realm Name
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1013,8 +1013,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Token URL.
-{{% /md %}}</dd>
+    <dd>Token URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1022,10 +1022,10 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
+    <dd>This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
 case that client sends a request with prompt=none and user is not yet authenticated, the error will not be directly
 returned to client, but the request with prompt=none will be forwarded to this identity provider.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,8 +1033,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
-{{% /md %}}</dd>
+    <dd>Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,8 +1042,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable authenticate users by default.
-{{% /md %}}</dd>
+    <dd>Enable/disable authenticate users by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,8 +1051,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the external IDP support backchannel logout?
-{{% /md %}}</dd>
+    <dd>Does the external IDP support backchannel logout?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
-{{% /md %}}</dd>
+    <dd>The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Friendly name for Identity Providers.
-{{% /md %}}</dd>
+    <dd>Friendly name for Identity Providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,8 +1078,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable this identity provider.
-{{% /md %}}</dd>
+    <dd>Enable/disable this identity provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,7 +1087,7 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,9 +1095,9 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
+    <dd>Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
 that there is not yet existing Keycloak account linked with the authenticated identity provider account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,8 +1105,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hide On Login Page.
-{{% /md %}}</dd>
+    <dd>Hide On Login Page.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,8 +1114,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}JSON Web Key Set URL
-{{% /md %}}</dd>
+    <dd>JSON Web Key Set URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,9 +1123,9 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
+    <dd>If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
 want to allow login from the provider, but want to integrate with a provider
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,8 +1133,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Login Hint.
-{{% /md %}}</dd>
+    <dd>Login Hint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,8 +1142,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Logout URL
-{{% /md %}}</dd>
+    <dd>Logout URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,11 +1151,11 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
+    <dd>Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
 additional verification of each user authenticated with this identity provider (for example OTP). Leave this empty if
 you don't want any additional authenticators to be triggered after login with this identity provider. Also note, that
 authenticator implementations must assume that user is already set in ClientSession as identity provider already set it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}provider id, is always oidc, unless you have a custom implementation
-{{% /md %}}</dd>
+    <dd>provider id, is always oidc, unless you have a custom implementation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if tokens must be stored after authenticating users.
-{{% /md %}}</dd>
+    <dd>Enable/disable if tokens must be stored after authenticating users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
-{{% /md %}}</dd>
+    <dd>If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,8 +1190,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Pass current locale to identity provider
-{{% /md %}}</dd>
+    <dd>Pass current locale to identity provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,8 +1199,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User Info URL
-{{% /md %}}</dd>
+    <dd>User Info URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,11 +1208,11 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable signature validation of external IDP signatures.
-{{% /md %}}</dd>
+    <dd>Enable/disable signature validation of external IDP signatures.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1226,7 +1226,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1235,7 +1235,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1243,14 +1243,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal Identity Provider Id
-{{% /md %}}</dd>
+    <dd>Internal Identity Provider Id
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1259,7 +1259,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1267,14 +1267,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal Identity Provider Id
-{{% /md %}}</dd>
+    <dd>Internal Identity Provider Id
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1283,7 +1283,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1291,14 +1291,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal Identity Provider Id
-{{% /md %}}</dd>
+    <dd>Internal Identity Provider Id
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1307,7 +1307,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1315,11 +1315,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Internal Identity Provider Id
-{{% /md %}}</dd>
+    <dd>Internal Identity Provider Id
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1330,25 +1330,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing IdentityProvider Resource {#look-up}
 
 Get an existing IdentityProvider resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/keycloak/oidc/#IdentityProviderState">IdentityProviderState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/keycloak/oidc/#IdentityProvider">IdentityProvider</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>accepts_prompt_none_forward_from_client=None<span class="p">, </span>add_read_token_role_on_create=None<span class="p">, </span>alias=None<span class="p">, </span>authenticate_by_default=None<span class="p">, </span>authorization_url=None<span class="p">, </span>backchannel_supported=None<span class="p">, </span>client_id=None<span class="p">, </span>client_secret=None<span class="p">, </span>default_scopes=None<span class="p">, </span>display_name=None<span class="p">, </span>enabled=None<span class="p">, </span>extra_config=None<span class="p">, </span>first_broker_login_flow_alias=None<span class="p">, </span>hide_on_login_page=None<span class="p">, </span>internal_id=None<span class="p">, </span>jwks_url=None<span class="p">, </span>link_only=None<span class="p">, </span>login_hint=None<span class="p">, </span>logout_url=None<span class="p">, </span>post_broker_login_flow_alias=None<span class="p">, </span>provider_id=None<span class="p">, </span>realm=None<span class="p">, </span>store_token=None<span class="p">, </span>token_url=None<span class="p">, </span>trust_email=None<span class="p">, </span>ui_locales=None<span class="p">, </span>user_info_url=None<span class="p">, </span>validate_signature=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIdentityProvider<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-keycloak/sdk/v2/go/keycloak/oidc?tab=doc#IdentityProviderState">IdentityProviderState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-keycloak/sdk/v2/go/keycloak/oidc?tab=doc#IdentityProvider">IdentityProvider</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Keycloak/Pulumi.Keycloak.Oidc.IdentityProvider.html">IdentityProvider</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Keycloak/Pulumi.Keycloak.Oidc.IdentityProviderState.html">IdentityProviderState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1373,9 +1373,9 @@ Get an existing IdentityProvider resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1388,36 +1388,9 @@ Get an existing IdentityProvider resource's state with the given name, ID, and o
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1442,13 +1415,40 @@ Get an existing IdentityProvider resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1457,10 +1457,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
+    <dd>This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
 case that client sends a request with prompt=none and user is not yet authenticated, the error will not be directly
 returned to client, but the request with prompt=none will be forwarded to this identity provider.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,8 +1468,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
-{{% /md %}}</dd>
+    <dd>Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,8 +1477,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
-{{% /md %}}</dd>
+    <dd>The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,8 +1486,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable authenticate users by default.
-{{% /md %}}</dd>
+    <dd>Enable/disable authenticate users by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,8 +1495,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OIDC authorization URL.
-{{% /md %}}</dd>
+    <dd>OIDC authorization URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the external IDP support backchannel logout?
-{{% /md %}}</dd>
+    <dd>Does the external IDP support backchannel logout?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,8 +1513,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Client ID.
-{{% /md %}}</dd>
+    <dd>Client ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,8 +1522,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Client Secret.
-{{% /md %}}</dd>
+    <dd>Client Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,8 +1531,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
-{{% /md %}}</dd>
+    <dd>The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,8 +1540,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Friendly name for Identity Providers.
-{{% /md %}}</dd>
+    <dd>Friendly name for Identity Providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,8 +1549,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable this identity provider.
-{{% /md %}}</dd>
+    <dd>Enable/disable this identity provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1558,7 +1558,7 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1566,9 +1566,9 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
+    <dd>Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
 that there is not yet existing Keycloak account linked with the authenticated identity provider account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,8 +1576,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hide On Login Page.
-{{% /md %}}</dd>
+    <dd>Hide On Login Page.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1585,8 +1585,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal Identity Provider Id
-{{% /md %}}</dd>
+    <dd>Internal Identity Provider Id
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,8 +1594,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON Web Key Set URL
-{{% /md %}}</dd>
+    <dd>JSON Web Key Set URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,9 +1603,9 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
+    <dd>If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
 want to allow login from the provider, but want to integrate with a provider
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,8 +1613,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Login Hint.
-{{% /md %}}</dd>
+    <dd>Login Hint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Logout URL
-{{% /md %}}</dd>
+    <dd>Logout URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,11 +1631,11 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
+    <dd>Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
 additional verification of each user authenticated with this identity provider (for example OTP). Leave this empty if
 you don't want any additional authenticators to be triggered after login with this identity provider. Also note, that
 authenticator implementations must assume that user is already set in ClientSession as identity provider already set it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1643,8 +1643,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}provider id, is always oidc, unless you have a custom implementation
-{{% /md %}}</dd>
+    <dd>provider id, is always oidc, unless you have a custom implementation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1652,8 +1652,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Realm Name
-{{% /md %}}</dd>
+    <dd>Realm Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1661,8 +1661,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if tokens must be stored after authenticating users.
-{{% /md %}}</dd>
+    <dd>Enable/disable if tokens must be stored after authenticating users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1670,8 +1670,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Token URL.
-{{% /md %}}</dd>
+    <dd>Token URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1679,8 +1679,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
-{{% /md %}}</dd>
+    <dd>If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1688,8 +1688,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Pass current locale to identity provider
-{{% /md %}}</dd>
+    <dd>Pass current locale to identity provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1697,8 +1697,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User Info URL
-{{% /md %}}</dd>
+    <dd>User Info URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1706,14 +1706,14 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable signature validation of external IDP signatures.
-{{% /md %}}</dd>
+    <dd>Enable/disable signature validation of external IDP signatures.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1722,10 +1722,10 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
+    <dd>This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
 case that client sends a request with prompt=none and user is not yet authenticated, the error will not be directly
 returned to client, but the request with prompt=none will be forwarded to this identity provider.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,8 +1733,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
-{{% /md %}}</dd>
+    <dd>Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1742,8 +1742,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
-{{% /md %}}</dd>
+    <dd>The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1751,8 +1751,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable authenticate users by default.
-{{% /md %}}</dd>
+    <dd>Enable/disable authenticate users by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,8 +1760,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OIDC authorization URL.
-{{% /md %}}</dd>
+    <dd>OIDC authorization URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1769,8 +1769,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the external IDP support backchannel logout?
-{{% /md %}}</dd>
+    <dd>Does the external IDP support backchannel logout?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1778,8 +1778,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client ID.
-{{% /md %}}</dd>
+    <dd>Client ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1787,8 +1787,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client Secret.
-{{% /md %}}</dd>
+    <dd>Client Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1796,8 +1796,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
-{{% /md %}}</dd>
+    <dd>The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1805,8 +1805,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Friendly name for Identity Providers.
-{{% /md %}}</dd>
+    <dd>Friendly name for Identity Providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1814,8 +1814,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable this identity provider.
-{{% /md %}}</dd>
+    <dd>Enable/disable this identity provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1823,7 +1823,7 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,9 +1831,9 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
+    <dd>Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
 that there is not yet existing Keycloak account linked with the authenticated identity provider account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1841,8 +1841,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hide On Login Page.
-{{% /md %}}</dd>
+    <dd>Hide On Login Page.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1850,8 +1850,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal Identity Provider Id
-{{% /md %}}</dd>
+    <dd>Internal Identity Provider Id
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1859,8 +1859,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON Web Key Set URL
-{{% /md %}}</dd>
+    <dd>JSON Web Key Set URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1868,9 +1868,9 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
+    <dd>If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
 want to allow login from the provider, but want to integrate with a provider
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,8 +1878,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Login Hint.
-{{% /md %}}</dd>
+    <dd>Login Hint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1887,8 +1887,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Logout URL
-{{% /md %}}</dd>
+    <dd>Logout URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1896,11 +1896,11 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
+    <dd>Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
 additional verification of each user authenticated with this identity provider (for example OTP). Leave this empty if
 you don't want any additional authenticators to be triggered after login with this identity provider. Also note, that
 authenticator implementations must assume that user is already set in ClientSession as identity provider already set it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1908,8 +1908,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}provider id, is always oidc, unless you have a custom implementation
-{{% /md %}}</dd>
+    <dd>provider id, is always oidc, unless you have a custom implementation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1917,8 +1917,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Realm Name
-{{% /md %}}</dd>
+    <dd>Realm Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1926,8 +1926,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if tokens must be stored after authenticating users.
-{{% /md %}}</dd>
+    <dd>Enable/disable if tokens must be stored after authenticating users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1935,8 +1935,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Token URL.
-{{% /md %}}</dd>
+    <dd>Token URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1944,8 +1944,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
-{{% /md %}}</dd>
+    <dd>If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1953,8 +1953,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Pass current locale to identity provider
-{{% /md %}}</dd>
+    <dd>Pass current locale to identity provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1962,8 +1962,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User Info URL
-{{% /md %}}</dd>
+    <dd>User Info URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,14 +1971,14 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable signature validation of external IDP signatures.
-{{% /md %}}</dd>
+    <dd>Enable/disable signature validation of external IDP signatures.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1987,10 +1987,10 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
+    <dd>This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
 case that client sends a request with prompt=none and user is not yet authenticated, the error will not be directly
 returned to client, but the request with prompt=none will be forwarded to this identity provider.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1998,8 +1998,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
-{{% /md %}}</dd>
+    <dd>Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2007,8 +2007,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
-{{% /md %}}</dd>
+    <dd>The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2016,8 +2016,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable authenticate users by default.
-{{% /md %}}</dd>
+    <dd>Enable/disable authenticate users by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2025,8 +2025,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OIDC authorization URL.
-{{% /md %}}</dd>
+    <dd>OIDC authorization URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2034,8 +2034,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Does the external IDP support backchannel logout?
-{{% /md %}}</dd>
+    <dd>Does the external IDP support backchannel logout?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2043,8 +2043,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client ID.
-{{% /md %}}</dd>
+    <dd>Client ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2052,8 +2052,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client Secret.
-{{% /md %}}</dd>
+    <dd>Client Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2061,8 +2061,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
-{{% /md %}}</dd>
+    <dd>The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2070,8 +2070,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Friendly name for Identity Providers.
-{{% /md %}}</dd>
+    <dd>Friendly name for Identity Providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2079,8 +2079,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable this identity provider.
-{{% /md %}}</dd>
+    <dd>Enable/disable this identity provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2088,7 +2088,7 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2096,9 +2096,9 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
+    <dd>Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
 that there is not yet existing Keycloak account linked with the authenticated identity provider account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2106,8 +2106,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Hide On Login Page.
-{{% /md %}}</dd>
+    <dd>Hide On Login Page.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2115,8 +2115,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal Identity Provider Id
-{{% /md %}}</dd>
+    <dd>Internal Identity Provider Id
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2124,8 +2124,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON Web Key Set URL
-{{% /md %}}</dd>
+    <dd>JSON Web Key Set URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2133,9 +2133,9 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
+    <dd>If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
 want to allow login from the provider, but want to integrate with a provider
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,8 +2143,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Login Hint.
-{{% /md %}}</dd>
+    <dd>Login Hint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2152,8 +2152,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Logout URL
-{{% /md %}}</dd>
+    <dd>Logout URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2161,11 +2161,11 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
+    <dd>Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
 additional verification of each user authenticated with this identity provider (for example OTP). Leave this empty if
 you don't want any additional authenticators to be triggered after login with this identity provider. Also note, that
 authenticator implementations must assume that user is already set in ClientSession as identity provider already set it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2173,8 +2173,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}provider id, is always oidc, unless you have a custom implementation
-{{% /md %}}</dd>
+    <dd>provider id, is always oidc, unless you have a custom implementation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2182,8 +2182,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Realm Name
-{{% /md %}}</dd>
+    <dd>Realm Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2191,8 +2191,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if tokens must be stored after authenticating users.
-{{% /md %}}</dd>
+    <dd>Enable/disable if tokens must be stored after authenticating users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2200,8 +2200,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Token URL.
-{{% /md %}}</dd>
+    <dd>Token URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2209,8 +2209,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
-{{% /md %}}</dd>
+    <dd>If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2218,8 +2218,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Pass current locale to identity provider
-{{% /md %}}</dd>
+    <dd>Pass current locale to identity provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2227,8 +2227,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User Info URL
-{{% /md %}}</dd>
+    <dd>User Info URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2236,14 +2236,14 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable signature validation of external IDP signatures.
-{{% /md %}}</dd>
+    <dd>Enable/disable signature validation of external IDP signatures.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2252,10 +2252,10 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
+    <dd>This is just used together with Identity Provider Authenticator or when kc_idp_hint points to this identity provider. In
 case that client sends a request with prompt=none and user is not yet authenticated, the error will not be directly
 returned to client, but the request with prompt=none will be forwarded to this identity provider.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2263,8 +2263,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
-{{% /md %}}</dd>
+    <dd>Enable/disable if new users can read any stored tokens. This assigns the broker.read-token role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2272,8 +2272,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
-{{% /md %}}</dd>
+    <dd>The alias uniquely identifies an identity provider and it is also used to build the redirect uri.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2281,8 +2281,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable authenticate users by default.
-{{% /md %}}</dd>
+    <dd>Enable/disable authenticate users by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2290,8 +2290,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OIDC authorization URL.
-{{% /md %}}</dd>
+    <dd>OIDC authorization URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2299,8 +2299,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the external IDP support backchannel logout?
-{{% /md %}}</dd>
+    <dd>Does the external IDP support backchannel logout?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2308,8 +2308,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Client ID.
-{{% /md %}}</dd>
+    <dd>Client ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2317,8 +2317,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Client Secret.
-{{% /md %}}</dd>
+    <dd>Client Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2326,8 +2326,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
-{{% /md %}}</dd>
+    <dd>The scopes to be sent when asking for authorization. It can be a space-separated list of scopes. Defaults to 'openid'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,8 +2335,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Friendly name for Identity Providers.
-{{% /md %}}</dd>
+    <dd>Friendly name for Identity Providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2344,8 +2344,8 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable this identity provider.
-{{% /md %}}</dd>
+    <dd>Enable/disable this identity provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2353,7 +2353,7 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2361,9 +2361,9 @@ returned to client, but the request with prompt=none will be forwarded to this i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
+    <dd>Alias of authentication flow, which is triggered after first login with this identity provider. Term 'First Login' means
 that there is not yet existing Keycloak account linked with the authenticated identity provider account.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,8 +2371,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Hide On Login Page.
-{{% /md %}}</dd>
+    <dd>Hide On Login Page.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,8 +2380,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Internal Identity Provider Id
-{{% /md %}}</dd>
+    <dd>Internal Identity Provider Id
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2389,8 +2389,8 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}JSON Web Key Set URL
-{{% /md %}}</dd>
+    <dd>JSON Web Key Set URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2398,9 +2398,9 @@ that there is not yet existing Keycloak account linked with the authenticated id
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
+    <dd>If true, users cannot log in through this provider. They can only link to this provider. This is useful if you don't
 want to allow login from the provider, but want to integrate with a provider
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2408,8 +2408,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Login Hint.
-{{% /md %}}</dd>
+    <dd>Login Hint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,8 +2417,8 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Logout URL
-{{% /md %}}</dd>
+    <dd>Logout URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2426,11 +2426,11 @@ want to allow login from the provider, but want to integrate with a provider
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
+    <dd>Alias of authentication flow, which is triggered after each login with this identity provider. Useful if you want
 additional verification of each user authenticated with this identity provider (for example OTP). Leave this empty if
 you don't want any additional authenticators to be triggered after login with this identity provider. Also note, that
 authenticator implementations must assume that user is already set in ClientSession as identity provider already set it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2438,8 +2438,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}provider id, is always oidc, unless you have a custom implementation
-{{% /md %}}</dd>
+    <dd>provider id, is always oidc, unless you have a custom implementation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2447,8 +2447,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Realm Name
-{{% /md %}}</dd>
+    <dd>Realm Name
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2456,8 +2456,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable if tokens must be stored after authenticating users.
-{{% /md %}}</dd>
+    <dd>Enable/disable if tokens must be stored after authenticating users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2465,8 +2465,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Token URL.
-{{% /md %}}</dd>
+    <dd>Token URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2474,8 +2474,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
-{{% /md %}}</dd>
+    <dd>If enabled then email provided by this provider is not verified even if verification is enabled for the realm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2483,8 +2483,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Pass current locale to identity provider
-{{% /md %}}</dd>
+    <dd>Pass current locale to identity provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,8 +2492,8 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User Info URL
-{{% /md %}}</dd>
+    <dd>User Info URL
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2501,11 +2501,11 @@ authenticator implementations must assume that user is already set in ClientSess
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable/disable signature validation of external IDP signatures.
-{{% /md %}}</dd>
+    <dd>Enable/disable signature validation of external IDP signatures.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

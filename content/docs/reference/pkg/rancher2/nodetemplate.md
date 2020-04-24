@@ -72,26 +72,26 @@ const fooNodeTemplate = new rancher2.NodeTemplate("foo", {
 
 
 ## Create a NodeTemplate Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#NodeTemplate">NodeTemplate</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#NodeTemplateArgs">NodeTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">NodeTemplate</span><span class="p">(resource_name, opts=None, </span>amazonec2_config=None<span class="p">, </span>annotations=None<span class="p">, </span>auth_certificate_authority=None<span class="p">, </span>auth_key=None<span class="p">, </span>azure_config=None<span class="p">, </span>cloud_credential_id=None<span class="p">, </span>description=None<span class="p">, </span>digitalocean_config=None<span class="p">, </span>driver_id=None<span class="p">, </span>engine_env=None<span class="p">, </span>engine_insecure_registries=None<span class="p">, </span>engine_install_url=None<span class="p">, </span>engine_label=None<span class="p">, </span>engine_opt=None<span class="p">, </span>engine_registry_mirrors=None<span class="p">, </span>engine_storage_driver=None<span class="p">, </span>labels=None<span class="p">, </span>linode_config=None<span class="p">, </span>name=None<span class="p">, </span>opennebula_config=None<span class="p">, </span>openstack_config=None<span class="p">, </span>use_internal_ip_address=None<span class="p">, </span>vsphere_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewNodeTemplate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateArgs">NodeTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplate">NodeTemplate</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.NodeTemplate.html">NodeTemplate</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.NodeTemplateArgs.html">NodeTemplateArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -128,9 +128,9 @@ const fooNodeTemplate = new rancher2.NodeTemplate("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -148,9 +148,9 @@ const fooNodeTemplate = new rancher2.NodeTemplate("foo", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -197,9 +197,9 @@ const fooNodeTemplate = new rancher2.NodeTemplate("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -236,7 +236,7 @@ const fooNodeTemplate = new rancher2.NodeTemplate("foo", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## NodeTemplate Resource Properties {#properties}
 
@@ -249,7 +249,7 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -258,8 +258,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateamazonec2config">Node<wbr>Template<wbr>Amazonec2Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth certificate authority for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth certificate authority for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth key for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth key for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateazureconfig">Node<wbr>Template<wbr>Azure<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Description for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,8 +321,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatedigitaloceanconfig">Node<wbr>Template<wbr>Digitalocean<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Digitalocean config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Digitalocean config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
-{{% /md %}}</dd>
+    <dd>The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,8 +339,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Engine environment for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine environment for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,8 +348,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Insecure registry for the node template (list)
-{{% /md %}}</dd>
+    <dd>Insecure registry for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,8 +357,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
-{{% /md %}}</dd>
+    <dd>Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -366,8 +366,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Engine label for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine label for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,8 +375,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Engine options for the node template (map)
-{{% /md %}}</dd>
+    <dd>Engine options for the node template (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,8 +384,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Engine registry mirror for the node template (list)
-{{% /md %}}</dd>
+    <dd>Engine registry mirror for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,8 +393,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,8 +402,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,8 +411,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatelinodeconfig">Node<wbr>Template<wbr>Linode<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Node Template (string)
-{{% /md %}}</dd>
+    <dd>The name of the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopennebulaconfig">Node<wbr>Template<wbr>Opennebula<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Opennebula config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopenstackconfig">Node<wbr>Template<wbr>Openstack<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Openstack config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Openstack config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (bool)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,14 +456,14 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatevsphereconfig">Node<wbr>Template<wbr>Vsphere<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Node Template (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -472,8 +472,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateamazonec2config">Node<wbr>Template<wbr>Amazonec2Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,8 +481,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,8 +490,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth certificate authority for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth certificate authority for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,8 +499,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth key for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth key for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateazureconfig">Node<wbr>Template<wbr>Azure<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Description for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatedigitaloceanconfig">Node<wbr>Template<wbr>Digitalocean<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Digitalocean config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Digitalocean config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
-{{% /md %}}</dd>
+    <dd>The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,8 +553,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Engine environment for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine environment for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Insecure registry for the node template (list)
-{{% /md %}}</dd>
+    <dd>Insecure registry for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,8 +571,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
-{{% /md %}}</dd>
+    <dd>Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,8 +580,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Engine label for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine label for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -589,8 +589,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Engine options for the node template (map)
-{{% /md %}}</dd>
+    <dd>Engine options for the node template (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,8 +598,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Engine registry mirror for the node template (list)
-{{% /md %}}</dd>
+    <dd>Engine registry mirror for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -607,8 +607,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,8 +616,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -625,8 +625,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatelinodeconfig">Node<wbr>Template<wbr>Linode<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -634,8 +634,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Node Template (string)
-{{% /md %}}</dd>
+    <dd>The name of the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -643,8 +643,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopennebulaconfig">Node<wbr>Template<wbr>Opennebula<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Opennebula config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -652,8 +652,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopenstackconfig">Node<wbr>Template<wbr>Openstack<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Openstack config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Openstack config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -661,8 +661,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (bool)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -670,14 +670,14 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatevsphereconfig">Node<wbr>Template<wbr>Vsphere<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Node Template (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -686,8 +686,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateamazonec2config">Node<wbr>Template<wbr>Amazonec2Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,8 +695,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,8 +704,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth certificate authority for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth certificate authority for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,8 +713,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth key for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth key for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,8 +722,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateazureconfig">Node<wbr>Template<wbr>Azure<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,8 +731,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,8 +740,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Description for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,8 +749,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatedigitaloceanconfig">Node<wbr>Template<wbr>Digitalocean<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Digitalocean config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Digitalocean config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,8 +758,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
-{{% /md %}}</dd>
+    <dd>The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,8 +767,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Engine environment for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine environment for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,8 +776,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Insecure registry for the node template (list)
-{{% /md %}}</dd>
+    <dd>Insecure registry for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,8 +785,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
-{{% /md %}}</dd>
+    <dd>Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,8 +794,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Engine label for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine label for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,8 +803,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Engine options for the node template (map)
-{{% /md %}}</dd>
+    <dd>Engine options for the node template (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -812,8 +812,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Engine registry mirror for the node template (list)
-{{% /md %}}</dd>
+    <dd>Engine registry mirror for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -821,8 +821,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,8 +830,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,8 +839,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatelinodeconfig">Node<wbr>Template<wbr>Linode<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,8 +848,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Node Template (string)
-{{% /md %}}</dd>
+    <dd>The name of the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,8 +857,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopennebulaconfig">Node<wbr>Template<wbr>Opennebula<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Opennebula config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopenstackconfig">Node<wbr>Template<wbr>Openstack<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Openstack config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Openstack config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,8 +875,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (bool)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,14 +884,14 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatevsphereconfig">Node<wbr>Template<wbr>Vsphere<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Node Template (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -900,8 +900,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateamazonec2config">Dict[Node<wbr>Template<wbr>Amazonec2Config]</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,8 +909,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,8 +918,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Auth certificate authority for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth certificate authority for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,8 +927,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Auth key for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth key for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,8 +936,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateazureconfig">Dict[Node<wbr>Template<wbr>Azure<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,8 +945,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Description for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatedigitaloceanconfig">Dict[Node<wbr>Template<wbr>Digitalocean<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Digitalocean config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Digitalocean config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,8 +972,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
-{{% /md %}}</dd>
+    <dd>The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,8 +981,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Engine environment for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine environment for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Insecure registry for the node template (list)
-{{% /md %}}</dd>
+    <dd>Insecure registry for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,8 +999,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
-{{% /md %}}</dd>
+    <dd>Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1008,8 +1008,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Engine label for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine label for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1017,8 +1017,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Engine options for the node template (map)
-{{% /md %}}</dd>
+    <dd>Engine options for the node template (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,8 +1026,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Engine registry mirror for the node template (list)
-{{% /md %}}</dd>
+    <dd>Engine registry mirror for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatelinodeconfig">Dict[Node<wbr>Template<wbr>Linode<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Node Template (string)
-{{% /md %}}</dd>
+    <dd>The name of the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,8 +1071,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopennebulaconfig">Dict[Node<wbr>Template<wbr>Opennebula<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Opennebula config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,8 +1080,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopenstackconfig">Dict[Node<wbr>Template<wbr>Openstack<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Openstack config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Openstack config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,8 +1089,8 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (bool)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,11 +1098,11 @@ The NodeTemplate resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatevsphereconfig">Dict[Node<wbr>Template<wbr>Vsphere<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Node Template (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1116,7 +1116,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1125,8 +1125,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the node template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the node template (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -1134,13 +1134,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1149,8 +1149,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the node template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the node template (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -1158,13 +1158,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1173,8 +1173,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the node template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the node template (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -1182,13 +1182,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1197,8 +1197,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the node template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the node template (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -1206,10 +1206,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1220,25 +1220,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing NodeTemplate Resource {#look-up}
 
 Get an existing NodeTemplate resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#NodeTemplateState">NodeTemplateState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#NodeTemplate">NodeTemplate</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>amazonec2_config=None<span class="p">, </span>annotations=None<span class="p">, </span>auth_certificate_authority=None<span class="p">, </span>auth_key=None<span class="p">, </span>azure_config=None<span class="p">, </span>cloud_credential_id=None<span class="p">, </span>description=None<span class="p">, </span>digitalocean_config=None<span class="p">, </span>driver=None<span class="p">, </span>driver_id=None<span class="p">, </span>engine_env=None<span class="p">, </span>engine_insecure_registries=None<span class="p">, </span>engine_install_url=None<span class="p">, </span>engine_label=None<span class="p">, </span>engine_opt=None<span class="p">, </span>engine_registry_mirrors=None<span class="p">, </span>engine_storage_driver=None<span class="p">, </span>labels=None<span class="p">, </span>linode_config=None<span class="p">, </span>name=None<span class="p">, </span>opennebula_config=None<span class="p">, </span>openstack_config=None<span class="p">, </span>use_internal_ip_address=None<span class="p">, </span>vsphere_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetNodeTemplate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateState">NodeTemplateState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplate">NodeTemplate</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.NodeTemplate.html">NodeTemplate</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2..NodeTemplateState.html">NodeTemplateState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1263,9 +1263,9 @@ Get an existing NodeTemplate resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1278,36 +1278,9 @@ Get an existing NodeTemplate resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1332,13 +1305,40 @@ Get an existing NodeTemplate resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1347,8 +1347,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateamazonec2config">Node<wbr>Template<wbr>Amazonec2Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1356,8 +1356,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1365,8 +1365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth certificate authority for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth certificate authority for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1374,8 +1374,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth key for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth key for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1383,8 +1383,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateazureconfig">Node<wbr>Template<wbr>Azure<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1392,8 +1392,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,8 +1401,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Description for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,8 +1410,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatedigitaloceanconfig">Node<wbr>Template<wbr>Digitalocean<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Digitalocean config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Digitalocean config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the node template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
-{{% /md %}}</dd>
+    <dd>The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,8 +1437,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Engine environment for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine environment for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,8 +1446,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Insecure registry for the node template (list)
-{{% /md %}}</dd>
+    <dd>Insecure registry for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1455,8 +1455,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
-{{% /md %}}</dd>
+    <dd>Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Engine label for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine label for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Engine options for the node template (map)
-{{% /md %}}</dd>
+    <dd>Engine options for the node template (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Engine registry mirror for the node template (list)
-{{% /md %}}</dd>
+    <dd>Engine registry mirror for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,8 +1491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1500,8 +1500,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1509,8 +1509,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatelinodeconfig">Node<wbr>Template<wbr>Linode<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1518,8 +1518,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Node Template (string)
-{{% /md %}}</dd>
+    <dd>The name of the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1527,8 +1527,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopennebulaconfig">Node<wbr>Template<wbr>Opennebula<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Opennebula config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1536,8 +1536,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopenstackconfig">Node<wbr>Template<wbr>Openstack<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Openstack config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Openstack config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,8 +1545,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (bool)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1554,14 +1554,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatevsphereconfig">Node<wbr>Template<wbr>Vsphere<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Node Template (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1570,8 +1570,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateamazonec2config">Node<wbr>Template<wbr>Amazonec2Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1579,8 +1579,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,8 +1588,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth certificate authority for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth certificate authority for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,8 +1597,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth key for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth key for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1606,8 +1606,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateazureconfig">Node<wbr>Template<wbr>Azure<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1615,8 +1615,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1624,8 +1624,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Description for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1633,8 +1633,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatedigitaloceanconfig">Node<wbr>Template<wbr>Digitalocean<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Digitalocean config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Digitalocean config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,8 +1642,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the node template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,8 +1651,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
-{{% /md %}}</dd>
+    <dd>The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,8 +1660,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Engine environment for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine environment for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,8 +1669,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Insecure registry for the node template (list)
-{{% /md %}}</dd>
+    <dd>Insecure registry for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
-{{% /md %}}</dd>
+    <dd>Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,8 +1687,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Engine label for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine label for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Engine options for the node template (map)
-{{% /md %}}</dd>
+    <dd>Engine options for the node template (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,8 +1705,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Engine registry mirror for the node template (list)
-{{% /md %}}</dd>
+    <dd>Engine registry mirror for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1714,8 +1714,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,8 +1723,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1732,8 +1732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatelinodeconfig">Node<wbr>Template<wbr>Linode<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1741,8 +1741,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Node Template (string)
-{{% /md %}}</dd>
+    <dd>The name of the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,8 +1750,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopennebulaconfig">Node<wbr>Template<wbr>Opennebula<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Opennebula config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1759,8 +1759,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopenstackconfig">Node<wbr>Template<wbr>Openstack<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Openstack config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Openstack config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1768,8 +1768,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (bool)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1777,14 +1777,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatevsphereconfig">Node<wbr>Template<wbr>Vsphere<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Node Template (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1793,8 +1793,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateamazonec2config">Node<wbr>Template<wbr>Amazonec2Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1802,8 +1802,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1811,8 +1811,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth certificate authority for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth certificate authority for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1820,8 +1820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth key for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth key for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1829,8 +1829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateazureconfig">Node<wbr>Template<wbr>Azure<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1838,8 +1838,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1847,8 +1847,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Description for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1856,8 +1856,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatedigitaloceanconfig">Node<wbr>Template<wbr>Digitalocean<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Digitalocean config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Digitalocean config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,8 +1865,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the node template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1874,8 +1874,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
-{{% /md %}}</dd>
+    <dd>The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1883,8 +1883,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Engine environment for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine environment for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1892,8 +1892,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Insecure registry for the node template (list)
-{{% /md %}}</dd>
+    <dd>Insecure registry for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1901,8 +1901,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
-{{% /md %}}</dd>
+    <dd>Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1910,8 +1910,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Engine label for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine label for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1919,8 +1919,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Engine options for the node template (map)
-{{% /md %}}</dd>
+    <dd>Engine options for the node template (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1928,8 +1928,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Engine registry mirror for the node template (list)
-{{% /md %}}</dd>
+    <dd>Engine registry mirror for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,8 +1937,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1946,8 +1946,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1955,8 +1955,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatelinodeconfig">Node<wbr>Template<wbr>Linode<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1964,8 +1964,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Node Template (string)
-{{% /md %}}</dd>
+    <dd>The name of the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1973,8 +1973,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopennebulaconfig">Node<wbr>Template<wbr>Opennebula<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Opennebula config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1982,8 +1982,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopenstackconfig">Node<wbr>Template<wbr>Openstack<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Openstack config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Openstack config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1991,8 +1991,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (bool)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2000,14 +2000,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatevsphereconfig">Node<wbr>Template<wbr>Vsphere<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Node Template (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2016,8 +2016,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateamazonec2config">Dict[Node<wbr>Template<wbr>Amazonec2Config]</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2025,8 +2025,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2034,8 +2034,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Auth certificate authority for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth certificate authority for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2043,8 +2043,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Auth key for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Auth key for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2052,8 +2052,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateazureconfig">Dict[Node<wbr>Template<wbr>Azure<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2061,8 +2061,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Cloud credential ID for the Node Template. Required from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2070,8 +2070,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Node Template (string)
-{{% /md %}}</dd>
+    <dd>Description for the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2079,8 +2079,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatedigitaloceanconfig">Dict[Node<wbr>Template<wbr>Digitalocean<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Digitalocean config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Digitalocean config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2088,8 +2088,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the node template (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2097,8 +2097,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
-{{% /md %}}</dd>
+    <dd>The node driver id used by the node template. It's required if the node driver isn't built in Rancher (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2106,8 +2106,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Engine environment for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine environment for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2115,8 +2115,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Insecure registry for the node template (list)
-{{% /md %}}</dd>
+    <dd>Insecure registry for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2124,8 +2124,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
-{{% /md %}}</dd>
+    <dd>Docker engine install URL for the node template. Default `https://releases.rancher.com/install-docker/18.09.sh`. Available install docker versions at `https://github.com/rancher/install-docker` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2133,8 +2133,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Engine label for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine label for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2142,8 +2142,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Engine options for the node template (map)
-{{% /md %}}</dd>
+    <dd>Engine options for the node template (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2151,8 +2151,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Engine registry mirror for the node template (list)
-{{% /md %}}</dd>
+    <dd>Engine registry mirror for the node template (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2160,8 +2160,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (string)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2169,8 +2169,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Template object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Template object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2178,8 +2178,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatelinodeconfig">Dict[Node<wbr>Template<wbr>Linode<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2187,8 +2187,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Node Template (string)
-{{% /md %}}</dd>
+    <dd>The name of the Node Template (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2196,8 +2196,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopennebulaconfig">Dict[Node<wbr>Template<wbr>Opennebula<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Opennebula config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2205,8 +2205,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplateopenstackconfig">Dict[Node<wbr>Template<wbr>Openstack<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Openstack config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Openstack config for the Node Template (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2214,8 +2214,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Engine storage driver for the node template (bool)
-{{% /md %}}</dd>
+    <dd>Engine storage driver for the node template (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2223,11 +2223,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nodetemplatevsphereconfig">Dict[Node<wbr>Template<wbr>Vsphere<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Node Template (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Node Template (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2242,18 +2242,18 @@ The following state arguments are supported:
 
 
 <h4 id="nodetemplateamazonec2config">Node<wbr>Template<wbr>Amazonec2Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NodeTemplateAmazonec2Config">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NodeTemplateAmazonec2Config">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateAmazonec2ConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateAmazonec2ConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2262,8 +2262,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS machine image (string)
-{{% /md %}}</dd>
+    <dd>AWS machine image (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2271,8 +2271,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2280,8 +2280,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC security group. (list)
-{{% /md %}}</dd>
+    <dd>AWS VPC security group. (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2289,8 +2289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC subnet id (string)
-{{% /md %}}</dd>
+    <dd>AWS VPC subnet id (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2298,8 +2298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC id. (string)
-{{% /md %}}</dd>
+    <dd>AWS VPC id. (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2307,8 +2307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS zone for instance (i.e. a,b,c,d,e) (string)
-{{% /md %}}</dd>
+    <dd>AWS zone for instance (i.e. a,b,c,d,e) (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2316,8 +2316,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS access key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>AWS access key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2325,8 +2325,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS spot instance duration in minutes (60, 120, 180, 240, 300, or 360). Default `0` (string)
-{{% /md %}}</dd>
+    <dd>AWS spot instance duration in minutes (60, 120, 180, 240, 300, or 360). Default `0` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2334,8 +2334,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS root device name. Default `/dev/sda1` (string)
-{{% /md %}}</dd>
+    <dd>AWS root device name. Default `/dev/sda1` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2343,8 +2343,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Optional endpoint URL (hostname only or fully qualified URI) (string)
-{{% /md %}}</dd>
+    <dd>Optional endpoint URL (hostname only or fully qualified URI) (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2352,8 +2352,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS IAM Instance Profile (string)
-{{% /md %}}</dd>
+    <dd>AWS IAM Instance Profile (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2361,8 +2361,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable SSL when sending requests (bool)
-{{% /md %}}</dd>
+    <dd>Disable SSL when sending requests (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2370,8 +2370,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2379,8 +2379,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack keypair to use to SSH to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack keypair to use to SSH to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2388,8 +2388,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable monitoring for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable monitoring for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2397,8 +2397,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Make the specified port number accessible from the Internet. (list)
-{{% /md %}}</dd>
+    <dd>Make the specified port number accessible from the Internet. (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2406,8 +2406,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Only use a private IP address. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Only use a private IP address. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2415,8 +2415,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this flag to request spot instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Set this flag to request spot instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2424,8 +2424,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set retry count for recoverable failures (use -1 to disable). Default `5` (string)
-{{% /md %}}</dd>
+    <dd>Set retry count for recoverable failures (use -1 to disable). Default `5` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2433,8 +2433,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS root disk size (in GB). Default `16` (string)
-{{% /md %}}</dd>
+    <dd>AWS root disk size (in GB). Default `16` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2442,8 +2442,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS secret key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>AWS secret key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2451,8 +2451,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Skip adding default rules to security groups (bool)
-{{% /md %}}</dd>
+    <dd>Skip adding default rules to security groups (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2460,8 +2460,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS Session Token (string)
-{{% /md %}}</dd>
+    <dd>AWS Session Token (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2469,8 +2469,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS spot instance bid price (in dollar). Default `0.50` (string)
-{{% /md %}}</dd>
+    <dd>AWS spot instance bid price (in dollar). Default `0.50` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2478,8 +2478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH Key for Instance (string)
-{{% /md %}}</dd>
+    <dd>SSH Key for Instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2487,8 +2487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2496,8 +2496,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2505,8 +2505,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create an EBS optimized instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Create an EBS optimized instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2514,8 +2514,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force the usage of private IP address. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Force the usage of private IP address. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2523,8 +2523,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with cloud-init user-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with cloud-init user-data (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2532,14 +2532,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon EBS volume type. Default `gp2` (string)
-{{% /md %}}</dd>
+    <dd>Amazon EBS volume type. Default `gp2` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2548,8 +2548,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS machine image (string)
-{{% /md %}}</dd>
+    <dd>AWS machine image (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2557,8 +2557,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2566,8 +2566,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC security group. (list)
-{{% /md %}}</dd>
+    <dd>AWS VPC security group. (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2575,8 +2575,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC subnet id (string)
-{{% /md %}}</dd>
+    <dd>AWS VPC subnet id (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2584,8 +2584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC id. (string)
-{{% /md %}}</dd>
+    <dd>AWS VPC id. (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2593,8 +2593,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS zone for instance (i.e. a,b,c,d,e) (string)
-{{% /md %}}</dd>
+    <dd>AWS zone for instance (i.e. a,b,c,d,e) (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2602,8 +2602,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS access key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>AWS access key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2611,8 +2611,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS spot instance duration in minutes (60, 120, 180, 240, 300, or 360). Default `0` (string)
-{{% /md %}}</dd>
+    <dd>AWS spot instance duration in minutes (60, 120, 180, 240, 300, or 360). Default `0` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2620,8 +2620,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS root device name. Default `/dev/sda1` (string)
-{{% /md %}}</dd>
+    <dd>AWS root device name. Default `/dev/sda1` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2629,8 +2629,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Optional endpoint URL (hostname only or fully qualified URI) (string)
-{{% /md %}}</dd>
+    <dd>Optional endpoint URL (hostname only or fully qualified URI) (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2638,8 +2638,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS IAM Instance Profile (string)
-{{% /md %}}</dd>
+    <dd>AWS IAM Instance Profile (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2647,8 +2647,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable SSL when sending requests (bool)
-{{% /md %}}</dd>
+    <dd>Disable SSL when sending requests (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2656,8 +2656,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2665,8 +2665,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack keypair to use to SSH to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack keypair to use to SSH to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2674,8 +2674,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable monitoring for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable monitoring for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2683,8 +2683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Make the specified port number accessible from the Internet. (list)
-{{% /md %}}</dd>
+    <dd>Make the specified port number accessible from the Internet. (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2692,8 +2692,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Only use a private IP address. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Only use a private IP address. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2701,8 +2701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this flag to request spot instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Set this flag to request spot instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2710,8 +2710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set retry count for recoverable failures (use -1 to disable). Default `5` (string)
-{{% /md %}}</dd>
+    <dd>Set retry count for recoverable failures (use -1 to disable). Default `5` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2719,8 +2719,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS root disk size (in GB). Default `16` (string)
-{{% /md %}}</dd>
+    <dd>AWS root disk size (in GB). Default `16` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2728,8 +2728,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS secret key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>AWS secret key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2737,8 +2737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Skip adding default rules to security groups (bool)
-{{% /md %}}</dd>
+    <dd>Skip adding default rules to security groups (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2746,8 +2746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS Session Token (string)
-{{% /md %}}</dd>
+    <dd>AWS Session Token (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2755,8 +2755,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS spot instance bid price (in dollar). Default `0.50` (string)
-{{% /md %}}</dd>
+    <dd>AWS spot instance bid price (in dollar). Default `0.50` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2764,8 +2764,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH Key for Instance (string)
-{{% /md %}}</dd>
+    <dd>SSH Key for Instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2773,8 +2773,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2782,8 +2782,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2791,8 +2791,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create an EBS optimized instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Create an EBS optimized instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2800,8 +2800,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force the usage of private IP address. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Force the usage of private IP address. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2809,8 +2809,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with cloud-init user-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with cloud-init user-data (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2818,14 +2818,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon EBS volume type. Default `gp2` (string)
-{{% /md %}}</dd>
+    <dd>Amazon EBS volume type. Default `gp2` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2834,8 +2834,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS machine image (string)
-{{% /md %}}</dd>
+    <dd>AWS machine image (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2843,8 +2843,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2852,8 +2852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC security group. (list)
-{{% /md %}}</dd>
+    <dd>AWS VPC security group. (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2861,8 +2861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC subnet id (string)
-{{% /md %}}</dd>
+    <dd>AWS VPC subnet id (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2870,8 +2870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC id. (string)
-{{% /md %}}</dd>
+    <dd>AWS VPC id. (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2879,8 +2879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS zone for instance (i.e. a,b,c,d,e) (string)
-{{% /md %}}</dd>
+    <dd>AWS zone for instance (i.e. a,b,c,d,e) (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2888,8 +2888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS access key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>AWS access key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2897,8 +2897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS spot instance duration in minutes (60, 120, 180, 240, 300, or 360). Default `0` (string)
-{{% /md %}}</dd>
+    <dd>AWS spot instance duration in minutes (60, 120, 180, 240, 300, or 360). Default `0` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2906,8 +2906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS root device name. Default `/dev/sda1` (string)
-{{% /md %}}</dd>
+    <dd>AWS root device name. Default `/dev/sda1` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2915,8 +2915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Optional endpoint URL (hostname only or fully qualified URI) (string)
-{{% /md %}}</dd>
+    <dd>Optional endpoint URL (hostname only or fully qualified URI) (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2924,8 +2924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS IAM Instance Profile (string)
-{{% /md %}}</dd>
+    <dd>AWS IAM Instance Profile (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2933,8 +2933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Disable SSL when sending requests (bool)
-{{% /md %}}</dd>
+    <dd>Disable SSL when sending requests (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2942,8 +2942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2951,8 +2951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack keypair to use to SSH to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack keypair to use to SSH to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2960,8 +2960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable monitoring for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable monitoring for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2969,8 +2969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Make the specified port number accessible from the Internet. (list)
-{{% /md %}}</dd>
+    <dd>Make the specified port number accessible from the Internet. (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2978,8 +2978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Only use a private IP address. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Only use a private IP address. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2987,8 +2987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Set this flag to request spot instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Set this flag to request spot instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2996,8 +2996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set retry count for recoverable failures (use -1 to disable). Default `5` (string)
-{{% /md %}}</dd>
+    <dd>Set retry count for recoverable failures (use -1 to disable). Default `5` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3005,8 +3005,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS root disk size (in GB). Default `16` (string)
-{{% /md %}}</dd>
+    <dd>AWS root disk size (in GB). Default `16` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3014,8 +3014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS secret key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>AWS secret key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3023,8 +3023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Skip adding default rules to security groups (bool)
-{{% /md %}}</dd>
+    <dd>Skip adding default rules to security groups (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3032,8 +3032,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS Session Token (string)
-{{% /md %}}</dd>
+    <dd>AWS Session Token (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3041,8 +3041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS spot instance bid price (in dollar). Default `0.50` (string)
-{{% /md %}}</dd>
+    <dd>AWS spot instance bid price (in dollar). Default `0.50` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3050,8 +3050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH Key for Instance (string)
-{{% /md %}}</dd>
+    <dd>SSH Key for Instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3059,8 +3059,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3068,8 +3068,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3077,8 +3077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Create an EBS optimized instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Create an EBS optimized instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3086,8 +3086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Force the usage of private IP address. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Force the usage of private IP address. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3095,8 +3095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with cloud-init user-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with cloud-init user-data (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3104,14 +3104,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon EBS volume type. Default `gp2` (string)
-{{% /md %}}</dd>
+    <dd>Amazon EBS volume type. Default `gp2` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3120,8 +3120,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS machine image (string)
-{{% /md %}}</dd>
+    <dd>AWS machine image (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3129,8 +3129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3138,8 +3138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC security group. (list)
-{{% /md %}}</dd>
+    <dd>AWS VPC security group. (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3147,8 +3147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC subnet id (string)
-{{% /md %}}</dd>
+    <dd>AWS VPC subnet id (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3156,8 +3156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS VPC id. (string)
-{{% /md %}}</dd>
+    <dd>AWS VPC id. (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3165,8 +3165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS zone for instance (i.e. a,b,c,d,e) (string)
-{{% /md %}}</dd>
+    <dd>AWS zone for instance (i.e. a,b,c,d,e) (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3174,8 +3174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS access key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>AWS access key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3183,8 +3183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS spot instance duration in minutes (60, 120, 180, 240, 300, or 360). Default `0` (string)
-{{% /md %}}</dd>
+    <dd>AWS spot instance duration in minutes (60, 120, 180, 240, 300, or 360). Default `0` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3192,8 +3192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS root device name. Default `/dev/sda1` (string)
-{{% /md %}}</dd>
+    <dd>AWS root device name. Default `/dev/sda1` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3201,8 +3201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Optional endpoint URL (hostname only or fully qualified URI) (string)
-{{% /md %}}</dd>
+    <dd>Optional endpoint URL (hostname only or fully qualified URI) (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3210,8 +3210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS IAM Instance Profile (string)
-{{% /md %}}</dd>
+    <dd>AWS IAM Instance Profile (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3219,8 +3219,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable SSL when sending requests (bool)
-{{% /md %}}</dd>
+    <dd>Disable SSL when sending requests (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3228,8 +3228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3237,8 +3237,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack keypair to use to SSH to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack keypair to use to SSH to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3246,8 +3246,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable monitoring for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable monitoring for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3255,8 +3255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Make the specified port number accessible from the Internet. (list)
-{{% /md %}}</dd>
+    <dd>Make the specified port number accessible from the Internet. (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3264,8 +3264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Only use a private IP address. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Only use a private IP address. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3273,8 +3273,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this flag to request spot instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Set this flag to request spot instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3282,8 +3282,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set retry count for recoverable failures (use -1 to disable). Default `5` (string)
-{{% /md %}}</dd>
+    <dd>Set retry count for recoverable failures (use -1 to disable). Default `5` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3291,8 +3291,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS root disk size (in GB). Default `16` (string)
-{{% /md %}}</dd>
+    <dd>AWS root disk size (in GB). Default `16` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3300,8 +3300,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS secret key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>AWS secret key. Required on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3309,8 +3309,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Skip adding default rules to security groups (bool)
-{{% /md %}}</dd>
+    <dd>Skip adding default rules to security groups (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3318,8 +3318,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS Session Token (string)
-{{% /md %}}</dd>
+    <dd>AWS Session Token (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3327,8 +3327,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS spot instance bid price (in dollar). Default `0.50` (string)
-{{% /md %}}</dd>
+    <dd>AWS spot instance bid price (in dollar). Default `0.50` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3336,8 +3336,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SSH Key for Instance (string)
-{{% /md %}}</dd>
+    <dd>SSH Key for Instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3345,8 +3345,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3354,8 +3354,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3363,8 +3363,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create an EBS optimized instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Create an EBS optimized instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3372,8 +3372,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force the usage of private IP address. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Force the usage of private IP address. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3381,8 +3381,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with cloud-init user-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with cloud-init user-data (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3390,29 +3390,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon EBS volume type. Default `gp2` (string)
-{{% /md %}}</dd>
+    <dd>Amazon EBS volume type. Default `gp2` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="nodetemplateazureconfig">Node<wbr>Template<wbr>Azure<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NodeTemplateAzureConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NodeTemplateAzureConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateAzureConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateAzureConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3421,8 +3421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Availability Set to place the virtual machine into. Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Availability Set to place the virtual machine into. Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3430,8 +3430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3439,8 +3439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3448,8 +3448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with custom-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with custom-data (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3457,8 +3457,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of disk for docker VM (in MB). Default `20480` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of disk for docker VM (in MB). Default `20480` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3466,8 +3466,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique DNS label for the public IP adddress (string)
-{{% /md %}}</dd>
+    <dd>A unique DNS label for the public IP adddress (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3475,8 +3475,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker Port. Default `2376` (string)
-{{% /md %}}</dd>
+    <dd>Docker Port. Default `2376` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3484,9 +3484,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure environment (e.g. AzurePublicCloud, AzureChinaCloud). Default `AzurePublicCloud` (string)
+    <dd>Azure environment (e.g. AzurePublicCloud, AzureChinaCloud). Default `AzurePublicCloud` (string)
 `fault_domain_count` - (Optional) Fault domain count to use for availability set. Default `3` (string)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3494,7 +3494,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3502,8 +3502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3511,8 +3511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure region to create the virtual machine. Default `westus` (string)
-{{% /md %}}</dd>
+    <dd>Azure region to create the virtual machine. Default `westus` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3520,8 +3520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Configures VM and availability set for managed disks. Just for Rancher v2.3.x and above. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Configures VM and availability set for managed disks. Just for Rancher v2.3.x and above. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3529,8 +3529,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not create a public IP address for the machine. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Do not create a public IP address for the machine. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3538,8 +3538,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Make the specified port number accessible from the Internet. (list)
-{{% /md %}}</dd>
+    <dd>Make the specified port number accessible from the Internet. (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3547,8 +3547,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a static private IP address for the machine. (string)
-{{% /md %}}</dd>
+    <dd>Specify a static private IP address for the machine. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3556,8 +3556,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Resource Group name (will be created if missing). Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Resource Group name (will be created if missing). Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3565,8 +3565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean size. Default `s-1vcpu-1gb` (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean size. Default `s-1vcpu-1gb` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3574,8 +3574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3583,8 +3583,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Assign a static public IP address to the machine. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Assign a static public IP address to the machine. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3592,8 +3592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of Storage Account to host the OS Disk for the machine. Default `Standard_LRS` (string)
-{{% /md %}}</dd>
+    <dd>Type of Storage Account to host the OS Disk for the machine. Default `Standard_LRS` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3601,8 +3601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subnet Name to be used within the Virtual Network. Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Subnet Name to be used within the Virtual Network. Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3610,8 +3610,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Private CIDR block to be used for the new subnet, should comply RFC 1918. Default `192.168.0.0/16` (string)
-{{% /md %}}</dd>
+    <dd>Private CIDR block to be used for the new subnet, should comply RFC 1918. Default `192.168.0.0/16` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3619,8 +3619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subscription ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Subscription ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3628,8 +3628,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Update domain count to use for availability set. Default `5` (string)
-{{% /md %}}</dd>
+    <dd>Update domain count to use for availability set. Default `5` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3637,8 +3637,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use private IP address of the machine to connect. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Use private IP address of the machine to connect. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3646,14 +3646,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format). Default `docker-machine-vnet` (string)
-{{% /md %}}</dd>
+    <dd>Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format). Default `docker-machine-vnet` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3662,8 +3662,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Availability Set to place the virtual machine into. Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Availability Set to place the virtual machine into. Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3671,8 +3671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3680,8 +3680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3689,8 +3689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with custom-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with custom-data (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3698,8 +3698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of disk for docker VM (in MB). Default `20480` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of disk for docker VM (in MB). Default `20480` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3707,8 +3707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique DNS label for the public IP adddress (string)
-{{% /md %}}</dd>
+    <dd>A unique DNS label for the public IP adddress (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3716,8 +3716,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker Port. Default `2376` (string)
-{{% /md %}}</dd>
+    <dd>Docker Port. Default `2376` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3725,9 +3725,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure environment (e.g. AzurePublicCloud, AzureChinaCloud). Default `AzurePublicCloud` (string)
+    <dd>Azure environment (e.g. AzurePublicCloud, AzureChinaCloud). Default `AzurePublicCloud` (string)
 `fault_domain_count` - (Optional) Fault domain count to use for availability set. Default `3` (string)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3735,7 +3735,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3743,8 +3743,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3752,8 +3752,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure region to create the virtual machine. Default `westus` (string)
-{{% /md %}}</dd>
+    <dd>Azure region to create the virtual machine. Default `westus` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3761,8 +3761,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Configures VM and availability set for managed disks. Just for Rancher v2.3.x and above. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Configures VM and availability set for managed disks. Just for Rancher v2.3.x and above. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3770,8 +3770,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not create a public IP address for the machine. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Do not create a public IP address for the machine. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3779,8 +3779,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Make the specified port number accessible from the Internet. (list)
-{{% /md %}}</dd>
+    <dd>Make the specified port number accessible from the Internet. (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3788,8 +3788,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a static private IP address for the machine. (string)
-{{% /md %}}</dd>
+    <dd>Specify a static private IP address for the machine. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3797,8 +3797,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Resource Group name (will be created if missing). Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Resource Group name (will be created if missing). Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3806,8 +3806,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean size. Default `s-1vcpu-1gb` (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean size. Default `s-1vcpu-1gb` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3815,8 +3815,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3824,8 +3824,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Assign a static public IP address to the machine. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Assign a static public IP address to the machine. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3833,8 +3833,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of Storage Account to host the OS Disk for the machine. Default `Standard_LRS` (string)
-{{% /md %}}</dd>
+    <dd>Type of Storage Account to host the OS Disk for the machine. Default `Standard_LRS` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3842,8 +3842,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subnet Name to be used within the Virtual Network. Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Subnet Name to be used within the Virtual Network. Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3851,8 +3851,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Private CIDR block to be used for the new subnet, should comply RFC 1918. Default `192.168.0.0/16` (string)
-{{% /md %}}</dd>
+    <dd>Private CIDR block to be used for the new subnet, should comply RFC 1918. Default `192.168.0.0/16` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3860,8 +3860,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subscription ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Subscription ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3869,8 +3869,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Update domain count to use for availability set. Default `5` (string)
-{{% /md %}}</dd>
+    <dd>Update domain count to use for availability set. Default `5` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3878,8 +3878,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use private IP address of the machine to connect. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Use private IP address of the machine to connect. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3887,14 +3887,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format). Default `docker-machine-vnet` (string)
-{{% /md %}}</dd>
+    <dd>Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format). Default `docker-machine-vnet` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3903,8 +3903,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Availability Set to place the virtual machine into. Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Availability Set to place the virtual machine into. Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3912,8 +3912,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3921,8 +3921,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3930,8 +3930,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with custom-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with custom-data (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3939,8 +3939,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of disk for docker VM (in MB). Default `20480` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of disk for docker VM (in MB). Default `20480` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3948,8 +3948,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique DNS label for the public IP adddress (string)
-{{% /md %}}</dd>
+    <dd>A unique DNS label for the public IP adddress (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3957,8 +3957,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker Port. Default `2376` (string)
-{{% /md %}}</dd>
+    <dd>Docker Port. Default `2376` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3966,9 +3966,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure environment (e.g. AzurePublicCloud, AzureChinaCloud). Default `AzurePublicCloud` (string)
+    <dd>Azure environment (e.g. AzurePublicCloud, AzureChinaCloud). Default `AzurePublicCloud` (string)
 `fault_domain_count` - (Optional) Fault domain count to use for availability set. Default `3` (string)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3976,7 +3976,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3984,8 +3984,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3993,8 +3993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure region to create the virtual machine. Default `westus` (string)
-{{% /md %}}</dd>
+    <dd>Azure region to create the virtual machine. Default `westus` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4002,8 +4002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Configures VM and availability set for managed disks. Just for Rancher v2.3.x and above. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Configures VM and availability set for managed disks. Just for Rancher v2.3.x and above. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4011,8 +4011,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not create a public IP address for the machine. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Do not create a public IP address for the machine. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4020,8 +4020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Make the specified port number accessible from the Internet. (list)
-{{% /md %}}</dd>
+    <dd>Make the specified port number accessible from the Internet. (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4029,8 +4029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a static private IP address for the machine. (string)
-{{% /md %}}</dd>
+    <dd>Specify a static private IP address for the machine. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4038,8 +4038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Resource Group name (will be created if missing). Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Resource Group name (will be created if missing). Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4047,8 +4047,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean size. Default `s-1vcpu-1gb` (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean size. Default `s-1vcpu-1gb` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4056,8 +4056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4065,8 +4065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Assign a static public IP address to the machine. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Assign a static public IP address to the machine. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4074,8 +4074,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of Storage Account to host the OS Disk for the machine. Default `Standard_LRS` (string)
-{{% /md %}}</dd>
+    <dd>Type of Storage Account to host the OS Disk for the machine. Default `Standard_LRS` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4083,8 +4083,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subnet Name to be used within the Virtual Network. Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Subnet Name to be used within the Virtual Network. Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4092,8 +4092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Private CIDR block to be used for the new subnet, should comply RFC 1918. Default `192.168.0.0/16` (string)
-{{% /md %}}</dd>
+    <dd>Private CIDR block to be used for the new subnet, should comply RFC 1918. Default `192.168.0.0/16` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4101,8 +4101,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subscription ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Subscription ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4110,8 +4110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Update domain count to use for availability set. Default `5` (string)
-{{% /md %}}</dd>
+    <dd>Update domain count to use for availability set. Default `5` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4119,8 +4119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Use private IP address of the machine to connect. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Use private IP address of the machine to connect. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4128,14 +4128,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format). Default `docker-machine-vnet` (string)
-{{% /md %}}</dd>
+    <dd>Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format). Default `docker-machine-vnet` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4144,8 +4144,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Availability Set to place the virtual machine into. Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Availability Set to place the virtual machine into. Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4153,8 +4153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4162,8 +4162,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4171,8 +4171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with custom-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with custom-data (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4180,8 +4180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of disk for docker VM (in MB). Default `20480` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of disk for docker VM (in MB). Default `20480` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4189,8 +4189,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique DNS label for the public IP adddress (string)
-{{% /md %}}</dd>
+    <dd>A unique DNS label for the public IP adddress (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4198,8 +4198,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Docker Port. Default `2376` (string)
-{{% /md %}}</dd>
+    <dd>Docker Port. Default `2376` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4207,9 +4207,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure environment (e.g. AzurePublicCloud, AzureChinaCloud). Default `AzurePublicCloud` (string)
+    <dd>Azure environment (e.g. AzurePublicCloud, AzureChinaCloud). Default `AzurePublicCloud` (string)
 `fault_domain_count` - (Optional) Fault domain count to use for availability set. Default `3` (string)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4217,7 +4217,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4225,8 +4225,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4234,8 +4234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure region to create the virtual machine. Default `westus` (string)
-{{% /md %}}</dd>
+    <dd>Azure region to create the virtual machine. Default `westus` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4243,8 +4243,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Configures VM and availability set for managed disks. Just for Rancher v2.3.x and above. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Configures VM and availability set for managed disks. Just for Rancher v2.3.x and above. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4252,8 +4252,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not create a public IP address for the machine. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Do not create a public IP address for the machine. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4261,8 +4261,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Make the specified port number accessible from the Internet. (list)
-{{% /md %}}</dd>
+    <dd>Make the specified port number accessible from the Internet. (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4270,8 +4270,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify a static private IP address for the machine. (string)
-{{% /md %}}</dd>
+    <dd>Specify a static private IP address for the machine. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4279,8 +4279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Resource Group name (will be created if missing). Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Resource Group name (will be created if missing). Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4288,8 +4288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean size. Default `s-1vcpu-1gb` (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean size. Default `s-1vcpu-1gb` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4297,8 +4297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4306,8 +4306,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Assign a static public IP address to the machine. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Assign a static public IP address to the machine. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4315,8 +4315,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of Storage Account to host the OS Disk for the machine. Default `Standard_LRS` (string)
-{{% /md %}}</dd>
+    <dd>Type of Storage Account to host the OS Disk for the machine. Default `Standard_LRS` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4324,8 +4324,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subnet Name to be used within the Virtual Network. Default `docker-machine` (string)
-{{% /md %}}</dd>
+    <dd>Azure Subnet Name to be used within the Virtual Network. Default `docker-machine` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4333,8 +4333,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Private CIDR block to be used for the new subnet, should comply RFC 1918. Default `192.168.0.0/16` (string)
-{{% /md %}}</dd>
+    <dd>Private CIDR block to be used for the new subnet, should comply RFC 1918. Default `192.168.0.0/16` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4342,8 +4342,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subscription ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Azure Subscription ID. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4351,8 +4351,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Update domain count to use for availability set. Default `5` (string)
-{{% /md %}}</dd>
+    <dd>Update domain count to use for availability set. Default `5` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4360,8 +4360,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use private IP address of the machine to connect. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Use private IP address of the machine to connect. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4369,29 +4369,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format). Default `docker-machine-vnet` (string)
-{{% /md %}}</dd>
+    <dd>Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format). Default `docker-machine-vnet` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="nodetemplatedigitaloceanconfig">Node<wbr>Template<wbr>Digitalocean<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NodeTemplateDigitaloceanConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NodeTemplateDigitaloceanConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateDigitaloceanConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateDigitaloceanConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4400,8 +4400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean access token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean access token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4409,8 +4409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable backups for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable backups for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4418,8 +4418,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4427,8 +4427,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable ipv6 for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable ipv6 for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4436,8 +4436,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable monitoring for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable monitoring for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4445,8 +4445,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable private networking for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable private networking for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4454,8 +4454,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4463,8 +4463,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean size. Default `s-1vcpu-1gb` (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean size. Default `s-1vcpu-1gb` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4472,8 +4472,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH key fingerprint (string)
-{{% /md %}}</dd>
+    <dd>SSH key fingerprint (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4481,8 +4481,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH private key path (string)
-{{% /md %}}</dd>
+    <dd>SSH private key path (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4490,8 +4490,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4499,8 +4499,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4508,8 +4508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4517,14 +4517,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with cloud-init user-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with cloud-init user-data (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4533,8 +4533,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean access token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean access token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4542,8 +4542,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable backups for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable backups for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4551,8 +4551,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4560,8 +4560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable ipv6 for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable ipv6 for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4569,8 +4569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable monitoring for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable monitoring for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4578,8 +4578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable private networking for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable private networking for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4587,8 +4587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4596,8 +4596,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean size. Default `s-1vcpu-1gb` (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean size. Default `s-1vcpu-1gb` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4605,8 +4605,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH key fingerprint (string)
-{{% /md %}}</dd>
+    <dd>SSH key fingerprint (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4614,8 +4614,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH private key path (string)
-{{% /md %}}</dd>
+    <dd>SSH private key path (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4623,8 +4623,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4632,8 +4632,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4641,8 +4641,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4650,14 +4650,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with cloud-init user-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with cloud-init user-data (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4666,8 +4666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean access token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean access token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4675,8 +4675,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable backups for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable backups for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4684,8 +4684,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4693,8 +4693,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable ipv6 for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable ipv6 for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4702,8 +4702,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable monitoring for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable monitoring for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4711,8 +4711,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable private networking for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable private networking for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4720,8 +4720,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4729,8 +4729,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean size. Default `s-1vcpu-1gb` (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean size. Default `s-1vcpu-1gb` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4738,8 +4738,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH key fingerprint (string)
-{{% /md %}}</dd>
+    <dd>SSH key fingerprint (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4747,8 +4747,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH private key path (string)
-{{% /md %}}</dd>
+    <dd>SSH private key path (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4756,8 +4756,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4765,8 +4765,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4774,8 +4774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4783,14 +4783,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with cloud-init user-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with cloud-init user-data (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4799,8 +4799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean access token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean access token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4808,8 +4808,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable backups for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable backups for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4817,8 +4817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4826,8 +4826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable ipv6 for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable ipv6 for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4835,8 +4835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable monitoring for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable monitoring for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4844,8 +4844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable private networking for droplet. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable private networking for droplet. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4853,8 +4853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4862,8 +4862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Digital Ocean size. Default `s-1vcpu-1gb` (string)
-{{% /md %}}</dd>
+    <dd>Digital Ocean size. Default `s-1vcpu-1gb` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4871,8 +4871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SSH key fingerprint (string)
-{{% /md %}}</dd>
+    <dd>SSH key fingerprint (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4880,8 +4880,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SSH private key path (string)
-{{% /md %}}</dd>
+    <dd>SSH private key path (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4889,8 +4889,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4898,8 +4898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4907,8 +4907,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4916,29 +4916,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to file with cloud-init user-data (string)
-{{% /md %}}</dd>
+    <dd>Path to file with cloud-init user-data (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="nodetemplatelinodeconfig">Node<wbr>Template<wbr>Linode<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NodeTemplateLinodeConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NodeTemplateLinodeConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateLinodeConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateLinodeConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4947,8 +4947,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode user accounts (seperated by commas) whose Linode SSH keys will be permitted root access to the created node. (string)
-{{% /md %}}</dd>
+    <dd>Linode user accounts (seperated by commas) whose Linode SSH keys will be permitted root access to the created node. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4956,8 +4956,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create private IP for the instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Create private IP for the instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4965,8 +4965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker Port. Default `2376` (string)
-{{% /md %}}</dd>
+    <dd>Docker Port. Default `2376` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4974,8 +4974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4983,8 +4983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4992,8 +4992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode Instance Label. (string)
-{{% /md %}}</dd>
+    <dd>Linode Instance Label. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5001,8 +5001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5010,8 +5010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Root Password (string)
-{{% /md %}}</dd>
+    <dd>Root Password (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5019,8 +5019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5028,8 +5028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5037,8 +5037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode StackScript to use to create the instance. (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode StackScript to use to create the instance. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5046,8 +5046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON string specifying data for the selected StackScript. (string)
-{{% /md %}}</dd>
+    <dd>A JSON string specifying data for the selected StackScript. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5055,8 +5055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode Instance Swap Size (MB). Default `512` (string)
-{{% /md %}}</dd>
+    <dd>Linode Instance Swap Size (MB). Default `512` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5064,8 +5064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5073,8 +5073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode API token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Linode API token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5082,14 +5082,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix the User-Agent in Linode API calls with some 'product/version' (string)
-{{% /md %}}</dd>
+    <dd>Prefix the User-Agent in Linode API calls with some 'product/version' (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5098,8 +5098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode user accounts (seperated by commas) whose Linode SSH keys will be permitted root access to the created node. (string)
-{{% /md %}}</dd>
+    <dd>Linode user accounts (seperated by commas) whose Linode SSH keys will be permitted root access to the created node. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5107,8 +5107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create private IP for the instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Create private IP for the instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5116,8 +5116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker Port. Default `2376` (string)
-{{% /md %}}</dd>
+    <dd>Docker Port. Default `2376` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5125,8 +5125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5134,8 +5134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5143,8 +5143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode Instance Label. (string)
-{{% /md %}}</dd>
+    <dd>Linode Instance Label. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5152,8 +5152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5161,8 +5161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Root Password (string)
-{{% /md %}}</dd>
+    <dd>Root Password (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5170,8 +5170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5179,8 +5179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5188,8 +5188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode StackScript to use to create the instance. (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode StackScript to use to create the instance. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5197,8 +5197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON string specifying data for the selected StackScript. (string)
-{{% /md %}}</dd>
+    <dd>A JSON string specifying data for the selected StackScript. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5206,8 +5206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode Instance Swap Size (MB). Default `512` (string)
-{{% /md %}}</dd>
+    <dd>Linode Instance Swap Size (MB). Default `512` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5215,8 +5215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5224,8 +5224,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode API token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Linode API token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5233,14 +5233,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix the User-Agent in Linode API calls with some 'product/version' (string)
-{{% /md %}}</dd>
+    <dd>Prefix the User-Agent in Linode API calls with some 'product/version' (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5249,8 +5249,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode user accounts (seperated by commas) whose Linode SSH keys will be permitted root access to the created node. (string)
-{{% /md %}}</dd>
+    <dd>Linode user accounts (seperated by commas) whose Linode SSH keys will be permitted root access to the created node. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5258,8 +5258,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Create private IP for the instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Create private IP for the instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5267,8 +5267,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker Port. Default `2376` (string)
-{{% /md %}}</dd>
+    <dd>Docker Port. Default `2376` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5276,8 +5276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5285,8 +5285,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5294,8 +5294,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode Instance Label. (string)
-{{% /md %}}</dd>
+    <dd>Linode Instance Label. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5303,8 +5303,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5312,8 +5312,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Root Password (string)
-{{% /md %}}</dd>
+    <dd>Root Password (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5321,8 +5321,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5330,8 +5330,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5339,8 +5339,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode StackScript to use to create the instance. (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode StackScript to use to create the instance. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5348,8 +5348,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON string specifying data for the selected StackScript. (string)
-{{% /md %}}</dd>
+    <dd>A JSON string specifying data for the selected StackScript. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5357,8 +5357,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode Instance Swap Size (MB). Default `512` (string)
-{{% /md %}}</dd>
+    <dd>Linode Instance Swap Size (MB). Default `512` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5366,8 +5366,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5375,8 +5375,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode API token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Linode API token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5384,14 +5384,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix the User-Agent in Linode API calls with some 'product/version' (string)
-{{% /md %}}</dd>
+    <dd>Prefix the User-Agent in Linode API calls with some 'product/version' (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5400,8 +5400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Linode user accounts (seperated by commas) whose Linode SSH keys will be permitted root access to the created node. (string)
-{{% /md %}}</dd>
+    <dd>Linode user accounts (seperated by commas) whose Linode SSH keys will be permitted root access to the created node. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5409,8 +5409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create private IP for the instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Create private IP for the instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5418,8 +5418,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Docker Port. Default `2376` (string)
-{{% /md %}}</dd>
+    <dd>Docker Port. Default `2376` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5427,8 +5427,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance image which determines the OS distribution and base files. Default `linode/ubuntu18.04` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5436,8 +5436,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode Instance type which determines CPU, memory, disk size, etc. Default `g6-standard-4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5445,8 +5445,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Linode Instance Label. (string)
-{{% /md %}}</dd>
+    <dd>Linode Instance Label. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5454,8 +5454,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5463,8 +5463,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Root Password (string)
-{{% /md %}}</dd>
+    <dd>Root Password (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5472,8 +5472,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5481,8 +5481,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5490,8 +5490,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Linode StackScript to use to create the instance. (string)
-{{% /md %}}</dd>
+    <dd>Specifies the Linode StackScript to use to create the instance. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5499,8 +5499,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A JSON string specifying data for the selected StackScript. (string)
-{{% /md %}}</dd>
+    <dd>A JSON string specifying data for the selected StackScript. (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5508,8 +5508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Linode Instance Swap Size (MB). Default `512` (string)
-{{% /md %}}</dd>
+    <dd>Linode Instance Swap Size (MB). Default `512` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5517,8 +5517,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5526,8 +5526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Linode API token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>Linode API token. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5535,29 +5535,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Prefix the User-Agent in Linode API calls with some 'product/version' (string)
-{{% /md %}}</dd>
+    <dd>Prefix the User-Agent in Linode API calls with some 'product/version' (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="nodetemplateopennebulaconfig">Node<wbr>Template<wbr>Opennebula<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NodeTemplateOpennebulaConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NodeTemplateOpennebulaConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateOpennebulaConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateOpennebulaConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5566,8 +5566,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5575,8 +5575,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set the user for the XML-RPC API authentication (string)
-{{% /md %}}</dd>
+    <dd>Set the user for the XML-RPC API authentication (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5584,8 +5584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set the url for the Opennebula XML-RPC API (string)
-{{% /md %}}</dd>
+    <dd>Set the url for the Opennebula XML-RPC API (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5593,8 +5593,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Size of the Volatile disk in MB - only for b2d (string)
-{{% /md %}}</dd>
+    <dd>Size of the Volatile disk in MB - only for b2d (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5602,8 +5602,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}CPU value for the VM (string)
-{{% /md %}}</dd>
+    <dd>CPU value for the VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5611,8 +5611,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Dev prefix to use for the images. E.g.: 'vd', 'sd', 'hd' (string)
-{{% /md %}}</dd>
+    <dd>Dev prefix to use for the images. E.g.: 'vd', 'sd', 'hd' (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5620,8 +5620,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}VNC is enabled by default. Disable it with this flag (bool)
-{{% /md %}}</dd>
+    <dd>VNC is enabled by default. Disable it with this flag (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5629,8 +5629,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Size of the disk for the VM in MB (string)
-{{% /md %}}</dd>
+    <dd>Size of the disk for the VM in MB (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5638,8 +5638,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image id to use for the instance. Conflicts with `image_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image id to use for the instance. Conflicts with `image_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5647,8 +5647,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image name to use for the instance. Conflicts with `image_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image name to use for the instance. Conflicts with `image_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5656,9 +5656,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Owner of the image to use as the VM OS (string)
+    <dd>Owner of the image to use as the VM OS (string)
 * `memory`- (Optional) Size of the memory for the VM in MB (string)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5666,7 +5666,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5674,8 +5674,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula network ID to connect the machine to. Conflicts with `network_name` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula network ID to connect the machine to. Conflicts with `network_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5683,8 +5683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula network to connect the machine to. Conflicts with `network_id` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula network to connect the machine to. Conflicts with `network_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5692,8 +5692,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula user ID of the Network to connect the machine to (string)
-{{% /md %}}</dd>
+    <dd>Opennebula user ID of the Network to connect the machine to (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5701,8 +5701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5710,8 +5710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula template ID to use. Conflicts with `template_name` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula template ID to use. Conflicts with `template_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5719,8 +5719,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Opennbula template to use. Conflicts with `template_id` (string)
-{{% /md %}}</dd>
+    <dd>Name of the Opennbula template to use. Conflicts with `template_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5728,14 +5728,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}VCPUs for the VM (string)
-{{% /md %}}</dd>
+    <dd>VCPUs for the VM (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5744,8 +5744,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5753,8 +5753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set the user for the XML-RPC API authentication (string)
-{{% /md %}}</dd>
+    <dd>Set the user for the XML-RPC API authentication (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5762,8 +5762,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set the url for the Opennebula XML-RPC API (string)
-{{% /md %}}</dd>
+    <dd>Set the url for the Opennebula XML-RPC API (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5771,8 +5771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Size of the Volatile disk in MB - only for b2d (string)
-{{% /md %}}</dd>
+    <dd>Size of the Volatile disk in MB - only for b2d (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5780,8 +5780,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}CPU value for the VM (string)
-{{% /md %}}</dd>
+    <dd>CPU value for the VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5789,8 +5789,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Dev prefix to use for the images. E.g.: 'vd', 'sd', 'hd' (string)
-{{% /md %}}</dd>
+    <dd>Dev prefix to use for the images. E.g.: 'vd', 'sd', 'hd' (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5798,8 +5798,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}VNC is enabled by default. Disable it with this flag (bool)
-{{% /md %}}</dd>
+    <dd>VNC is enabled by default. Disable it with this flag (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5807,8 +5807,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Size of the disk for the VM in MB (string)
-{{% /md %}}</dd>
+    <dd>Size of the disk for the VM in MB (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5816,8 +5816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image id to use for the instance. Conflicts with `image_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image id to use for the instance. Conflicts with `image_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5825,8 +5825,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image name to use for the instance. Conflicts with `image_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image name to use for the instance. Conflicts with `image_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5834,9 +5834,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Owner of the image to use as the VM OS (string)
+    <dd>Owner of the image to use as the VM OS (string)
 * `memory`- (Optional) Size of the memory for the VM in MB (string)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5844,7 +5844,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5852,8 +5852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula network ID to connect the machine to. Conflicts with `network_name` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula network ID to connect the machine to. Conflicts with `network_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5861,8 +5861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula network to connect the machine to. Conflicts with `network_id` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula network to connect the machine to. Conflicts with `network_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5870,8 +5870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula user ID of the Network to connect the machine to (string)
-{{% /md %}}</dd>
+    <dd>Opennebula user ID of the Network to connect the machine to (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5879,8 +5879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5888,8 +5888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula template ID to use. Conflicts with `template_name` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula template ID to use. Conflicts with `template_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5897,8 +5897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Opennbula template to use. Conflicts with `template_id` (string)
-{{% /md %}}</dd>
+    <dd>Name of the Opennbula template to use. Conflicts with `template_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5906,14 +5906,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}VCPUs for the VM (string)
-{{% /md %}}</dd>
+    <dd>VCPUs for the VM (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5922,8 +5922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5931,8 +5931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set the user for the XML-RPC API authentication (string)
-{{% /md %}}</dd>
+    <dd>Set the user for the XML-RPC API authentication (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5940,8 +5940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set the url for the Opennebula XML-RPC API (string)
-{{% /md %}}</dd>
+    <dd>Set the url for the Opennebula XML-RPC API (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5949,8 +5949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Size of the Volatile disk in MB - only for b2d (string)
-{{% /md %}}</dd>
+    <dd>Size of the Volatile disk in MB - only for b2d (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5958,8 +5958,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}CPU value for the VM (string)
-{{% /md %}}</dd>
+    <dd>CPU value for the VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5967,8 +5967,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Dev prefix to use for the images. E.g.: 'vd', 'sd', 'hd' (string)
-{{% /md %}}</dd>
+    <dd>Dev prefix to use for the images. E.g.: 'vd', 'sd', 'hd' (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5976,8 +5976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}VNC is enabled by default. Disable it with this flag (bool)
-{{% /md %}}</dd>
+    <dd>VNC is enabled by default. Disable it with this flag (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5985,8 +5985,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Size of the disk for the VM in MB (string)
-{{% /md %}}</dd>
+    <dd>Size of the disk for the VM in MB (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5994,8 +5994,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image id to use for the instance. Conflicts with `image_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image id to use for the instance. Conflicts with `image_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6003,8 +6003,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image name to use for the instance. Conflicts with `image_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image name to use for the instance. Conflicts with `image_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6012,9 +6012,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Owner of the image to use as the VM OS (string)
+    <dd>Owner of the image to use as the VM OS (string)
 * `memory`- (Optional) Size of the memory for the VM in MB (string)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6022,7 +6022,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6030,8 +6030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula network ID to connect the machine to. Conflicts with `network_name` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula network ID to connect the machine to. Conflicts with `network_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6039,8 +6039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula network to connect the machine to. Conflicts with `network_id` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula network to connect the machine to. Conflicts with `network_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6048,8 +6048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula user ID of the Network to connect the machine to (string)
-{{% /md %}}</dd>
+    <dd>Opennebula user ID of the Network to connect the machine to (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6057,8 +6057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6066,8 +6066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula template ID to use. Conflicts with `template_name` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula template ID to use. Conflicts with `template_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6075,8 +6075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Opennbula template to use. Conflicts with `template_id` (string)
-{{% /md %}}</dd>
+    <dd>Name of the Opennbula template to use. Conflicts with `template_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6084,14 +6084,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}VCPUs for the VM (string)
-{{% /md %}}</dd>
+    <dd>VCPUs for the VM (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6100,8 +6100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6109,8 +6109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set the user for the XML-RPC API authentication (string)
-{{% /md %}}</dd>
+    <dd>Set the user for the XML-RPC API authentication (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6118,8 +6118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set the url for the Opennebula XML-RPC API (string)
-{{% /md %}}</dd>
+    <dd>Set the url for the Opennebula XML-RPC API (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6127,8 +6127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Size of the Volatile disk in MB - only for b2d (string)
-{{% /md %}}</dd>
+    <dd>Size of the Volatile disk in MB - only for b2d (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6136,8 +6136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}CPU value for the VM (string)
-{{% /md %}}</dd>
+    <dd>CPU value for the VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6145,8 +6145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Dev prefix to use for the images. E.g.: 'vd', 'sd', 'hd' (string)
-{{% /md %}}</dd>
+    <dd>Dev prefix to use for the images. E.g.: 'vd', 'sd', 'hd' (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6154,8 +6154,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}VNC is enabled by default. Disable it with this flag (bool)
-{{% /md %}}</dd>
+    <dd>VNC is enabled by default. Disable it with this flag (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6163,8 +6163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Size of the disk for the VM in MB (string)
-{{% /md %}}</dd>
+    <dd>Size of the disk for the VM in MB (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6172,8 +6172,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image id to use for the instance. Conflicts with `image_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image id to use for the instance. Conflicts with `image_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6181,8 +6181,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image name to use for the instance. Conflicts with `image_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image name to use for the instance. Conflicts with `image_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6190,9 +6190,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Owner of the image to use as the VM OS (string)
+    <dd>Owner of the image to use as the VM OS (string)
 * `memory`- (Optional) Size of the memory for the VM in MB (string)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6200,7 +6200,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6208,8 +6208,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula network ID to connect the machine to. Conflicts with `network_name` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula network ID to connect the machine to. Conflicts with `network_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6217,8 +6217,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula network to connect the machine to. Conflicts with `network_id` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula network to connect the machine to. Conflicts with `network_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6226,8 +6226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula user ID of the Network to connect the machine to (string)
-{{% /md %}}</dd>
+    <dd>Opennebula user ID of the Network to connect the machine to (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6235,8 +6235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6244,8 +6244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Opennebula template ID to use. Conflicts with `template_name` (string)
-{{% /md %}}</dd>
+    <dd>Opennebula template ID to use. Conflicts with `template_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6253,8 +6253,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Opennbula template to use. Conflicts with `template_id` (string)
-{{% /md %}}</dd>
+    <dd>Name of the Opennbula template to use. Conflicts with `template_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6262,29 +6262,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}VCPUs for the VM (string)
-{{% /md %}}</dd>
+    <dd>VCPUs for the VM (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="nodetemplateopenstackconfig">Node<wbr>Template<wbr>Openstack<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NodeTemplateOpenstackConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NodeTemplateOpenstackConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateOpenstackConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateOpenstackConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6293,8 +6293,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack authentication URL (string)
-{{% /md %}}</dd>
+    <dd>OpenStack authentication URL (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6302,8 +6302,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack availability zone (string)
-{{% /md %}}</dd>
+    <dd>OpenStack availability zone (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6311,8 +6311,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6320,8 +6320,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6329,7 +6329,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6337,8 +6337,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate bundle to verify against (string)
-{{% /md %}}</dd>
+    <dd>CA certificate bundle to verify against (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6346,8 +6346,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables the OpenStack config drive for the instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enables the OpenStack config drive for the instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6355,8 +6355,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack domain ID. Identity v3 only. Conflicts with `domain_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack domain ID. Identity v3 only. Conflicts with `domain_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6364,8 +6364,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack domain name. Identity v3 only. Conflicts with `domain_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack domain name. Identity v3 only. Conflicts with `domain_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6373,8 +6373,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack endpoint type. adminURL, internalURL or publicURL (string)
-{{% /md %}}</dd>
+    <dd>OpenStack endpoint type. adminURL, internalURL or publicURL (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6382,8 +6382,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack flavor id to use for the instance. Conflicts with `flavor_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack flavor id to use for the instance. Conflicts with `flavor_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6391,8 +6391,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack flavor name to use for the instance. Conflicts with `flavor_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack flavor name to use for the instance. Conflicts with `flavor_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6400,8 +6400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack floating IP pool to get an IP from to assign to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack floating IP pool to get an IP from to assign to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6409,8 +6409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image id to use for the instance. Conflicts with `image_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image id to use for the instance. Conflicts with `image_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6418,8 +6418,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image name to use for the instance. Conflicts with `image_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image name to use for the instance. Conflicts with `image_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6427,8 +6427,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable TLS credential checking. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Disable TLS credential checking. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6436,8 +6436,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack version of IP address assigned for the machine Default `4` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack version of IP address assigned for the machine Default `4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6445,8 +6445,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack keypair to use to SSH to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack keypair to use to SSH to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6454,8 +6454,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack network id the machine will be connected on. Conflicts with `net_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack network id the machine will be connected on. Conflicts with `net_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6463,8 +6463,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack network name the machine will be connected on. Conflicts with `net_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack network name the machine will be connected on. Conflicts with `net_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6472,8 +6472,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use the nova networking services instead of neutron (string)
-{{% /md %}}</dd>
+    <dd>Use the nova networking services instead of neutron (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6481,8 +6481,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6490,8 +6490,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Private key content to use for SSH (string)
-{{% /md %}}</dd>
+    <dd>Private key content to use for SSH (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6499,8 +6499,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack comma separated security groups for the machine (string)
-{{% /md %}}</dd>
+    <dd>OpenStack comma separated security groups for the machine (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6508,8 +6508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6517,8 +6517,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6526,8 +6526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack tenant id. Conflicts with `tenant_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack tenant id. Conflicts with `tenant_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6535,8 +6535,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack tenant name. Conflicts with `tenant_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack tenant name. Conflicts with `tenant_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6544,14 +6544,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}File containing an openstack userdata script (string)
-{{% /md %}}</dd>
+    <dd>File containing an openstack userdata script (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6560,8 +6560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack authentication URL (string)
-{{% /md %}}</dd>
+    <dd>OpenStack authentication URL (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6569,8 +6569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack availability zone (string)
-{{% /md %}}</dd>
+    <dd>OpenStack availability zone (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6578,8 +6578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6587,8 +6587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6596,7 +6596,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6604,8 +6604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate bundle to verify against (string)
-{{% /md %}}</dd>
+    <dd>CA certificate bundle to verify against (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6613,8 +6613,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables the OpenStack config drive for the instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enables the OpenStack config drive for the instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6622,8 +6622,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack domain ID. Identity v3 only. Conflicts with `domain_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack domain ID. Identity v3 only. Conflicts with `domain_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6631,8 +6631,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack domain name. Identity v3 only. Conflicts with `domain_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack domain name. Identity v3 only. Conflicts with `domain_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6640,8 +6640,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack endpoint type. adminURL, internalURL or publicURL (string)
-{{% /md %}}</dd>
+    <dd>OpenStack endpoint type. adminURL, internalURL or publicURL (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6649,8 +6649,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack flavor id to use for the instance. Conflicts with `flavor_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack flavor id to use for the instance. Conflicts with `flavor_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6658,8 +6658,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack flavor name to use for the instance. Conflicts with `flavor_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack flavor name to use for the instance. Conflicts with `flavor_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6667,8 +6667,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack floating IP pool to get an IP from to assign to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack floating IP pool to get an IP from to assign to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6676,8 +6676,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image id to use for the instance. Conflicts with `image_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image id to use for the instance. Conflicts with `image_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6685,8 +6685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image name to use for the instance. Conflicts with `image_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image name to use for the instance. Conflicts with `image_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6694,8 +6694,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable TLS credential checking. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Disable TLS credential checking. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6703,8 +6703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack version of IP address assigned for the machine Default `4` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack version of IP address assigned for the machine Default `4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6712,8 +6712,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack keypair to use to SSH to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack keypair to use to SSH to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6721,8 +6721,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack network id the machine will be connected on. Conflicts with `net_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack network id the machine will be connected on. Conflicts with `net_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6730,8 +6730,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack network name the machine will be connected on. Conflicts with `net_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack network name the machine will be connected on. Conflicts with `net_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6739,8 +6739,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use the nova networking services instead of neutron (string)
-{{% /md %}}</dd>
+    <dd>Use the nova networking services instead of neutron (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6748,8 +6748,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6757,8 +6757,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Private key content to use for SSH (string)
-{{% /md %}}</dd>
+    <dd>Private key content to use for SSH (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6766,8 +6766,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack comma separated security groups for the machine (string)
-{{% /md %}}</dd>
+    <dd>OpenStack comma separated security groups for the machine (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6775,8 +6775,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6784,8 +6784,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6793,8 +6793,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack tenant id. Conflicts with `tenant_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack tenant id. Conflicts with `tenant_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6802,8 +6802,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack tenant name. Conflicts with `tenant_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack tenant name. Conflicts with `tenant_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6811,14 +6811,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}File containing an openstack userdata script (string)
-{{% /md %}}</dd>
+    <dd>File containing an openstack userdata script (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6827,8 +6827,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack authentication URL (string)
-{{% /md %}}</dd>
+    <dd>OpenStack authentication URL (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6836,8 +6836,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack availability zone (string)
-{{% /md %}}</dd>
+    <dd>OpenStack availability zone (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6845,8 +6845,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6854,8 +6854,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6863,7 +6863,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6871,8 +6871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate bundle to verify against (string)
-{{% /md %}}</dd>
+    <dd>CA certificate bundle to verify against (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6880,8 +6880,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables the OpenStack config drive for the instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enables the OpenStack config drive for the instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6889,8 +6889,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack domain ID. Identity v3 only. Conflicts with `domain_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack domain ID. Identity v3 only. Conflicts with `domain_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6898,8 +6898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack domain name. Identity v3 only. Conflicts with `domain_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack domain name. Identity v3 only. Conflicts with `domain_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6907,8 +6907,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack endpoint type. adminURL, internalURL or publicURL (string)
-{{% /md %}}</dd>
+    <dd>OpenStack endpoint type. adminURL, internalURL or publicURL (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6916,8 +6916,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack flavor id to use for the instance. Conflicts with `flavor_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack flavor id to use for the instance. Conflicts with `flavor_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6925,8 +6925,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack flavor name to use for the instance. Conflicts with `flavor_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack flavor name to use for the instance. Conflicts with `flavor_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6934,8 +6934,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack floating IP pool to get an IP from to assign to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack floating IP pool to get an IP from to assign to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6943,8 +6943,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image id to use for the instance. Conflicts with `image_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image id to use for the instance. Conflicts with `image_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6952,8 +6952,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image name to use for the instance. Conflicts with `image_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image name to use for the instance. Conflicts with `image_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6961,8 +6961,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Disable TLS credential checking. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Disable TLS credential checking. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6970,8 +6970,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack version of IP address assigned for the machine Default `4` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack version of IP address assigned for the machine Default `4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6979,8 +6979,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack keypair to use to SSH to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack keypair to use to SSH to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6988,8 +6988,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack network id the machine will be connected on. Conflicts with `net_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack network id the machine will be connected on. Conflicts with `net_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6997,8 +6997,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack network name the machine will be connected on. Conflicts with `net_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack network name the machine will be connected on. Conflicts with `net_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7006,8 +7006,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Use the nova networking services instead of neutron (string)
-{{% /md %}}</dd>
+    <dd>Use the nova networking services instead of neutron (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7015,8 +7015,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7024,8 +7024,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Private key content to use for SSH (string)
-{{% /md %}}</dd>
+    <dd>Private key content to use for SSH (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7033,8 +7033,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack comma separated security groups for the machine (string)
-{{% /md %}}</dd>
+    <dd>OpenStack comma separated security groups for the machine (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7042,8 +7042,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7051,8 +7051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7060,8 +7060,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack tenant id. Conflicts with `tenant_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack tenant id. Conflicts with `tenant_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7069,8 +7069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack tenant name. Conflicts with `tenant_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack tenant name. Conflicts with `tenant_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7078,14 +7078,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}File containing an openstack userdata script (string)
-{{% /md %}}</dd>
+    <dd>File containing an openstack userdata script (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7094,8 +7094,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack authentication URL (string)
-{{% /md %}}</dd>
+    <dd>OpenStack authentication URL (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7103,8 +7103,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack availability zone (string)
-{{% /md %}}</dd>
+    <dd>OpenStack availability zone (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7112,8 +7112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack region name (string)
-{{% /md %}}</dd>
+    <dd>OpenStack region name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7121,8 +7121,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7130,7 +7130,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7138,8 +7138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate bundle to verify against (string)
-{{% /md %}}</dd>
+    <dd>CA certificate bundle to verify against (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7147,8 +7147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables the OpenStack config drive for the instance. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enables the OpenStack config drive for the instance. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7156,8 +7156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack domain ID. Identity v3 only. Conflicts with `domain_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack domain ID. Identity v3 only. Conflicts with `domain_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7165,8 +7165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack domain name. Identity v3 only. Conflicts with `domain_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack domain name. Identity v3 only. Conflicts with `domain_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7174,8 +7174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack endpoint type. adminURL, internalURL or publicURL (string)
-{{% /md %}}</dd>
+    <dd>OpenStack endpoint type. adminURL, internalURL or publicURL (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7183,8 +7183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack flavor id to use for the instance. Conflicts with `flavor_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack flavor id to use for the instance. Conflicts with `flavor_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7192,8 +7192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack flavor name to use for the instance. Conflicts with `flavor_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack flavor name to use for the instance. Conflicts with `flavor_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7201,8 +7201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack floating IP pool to get an IP from to assign to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack floating IP pool to get an IP from to assign to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7210,8 +7210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image id to use for the instance. Conflicts with `image_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image id to use for the instance. Conflicts with `image_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7219,8 +7219,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack image name to use for the instance. Conflicts with `image_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack image name to use for the instance. Conflicts with `image_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7228,8 +7228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable TLS credential checking. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Disable TLS credential checking. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7237,8 +7237,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack version of IP address assigned for the machine Default `4` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack version of IP address assigned for the machine Default `4` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7246,8 +7246,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack keypair to use to SSH to the instance (string)
-{{% /md %}}</dd>
+    <dd>OpenStack keypair to use to SSH to the instance (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7255,8 +7255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack network id the machine will be connected on. Conflicts with `net_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack network id the machine will be connected on. Conflicts with `net_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7264,8 +7264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack network name the machine will be connected on. Conflicts with `net_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack network name the machine will be connected on. Conflicts with `net_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7273,8 +7273,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use the nova networking services instead of neutron (string)
-{{% /md %}}</dd>
+    <dd>Use the nova networking services instead of neutron (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7282,8 +7282,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7291,8 +7291,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Private key content to use for SSH (string)
-{{% /md %}}</dd>
+    <dd>Private key content to use for SSH (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7300,8 +7300,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack comma separated security groups for the machine (string)
-{{% /md %}}</dd>
+    <dd>OpenStack comma separated security groups for the machine (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7309,8 +7309,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7318,8 +7318,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7327,8 +7327,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack tenant name. Conflicts with `tenant_id` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack tenant name. Conflicts with `tenant_id` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7336,8 +7336,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack tenant id. Conflicts with `tenant_name` (string)
-{{% /md %}}</dd>
+    <dd>OpenStack tenant id. Conflicts with `tenant_name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7345,29 +7345,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}File containing an openstack userdata script (string)
-{{% /md %}}</dd>
+    <dd>File containing an openstack userdata script (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="nodetemplatevsphereconfig">Node<wbr>Template<wbr>Vsphere<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NodeTemplateVsphereConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NodeTemplateVsphereConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateVsphereConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NodeTemplateVsphereConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -7376,8 +7376,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere URL for boot2docker iso image. Default `https://releases.rancher.com/os/latest/rancheros-vmware.iso` (string)
-{{% /md %}}</dd>
+    <dd>vSphere URL for boot2docker iso image. Default `https://releases.rancher.com/os/latest/rancheros-vmware.iso` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7385,8 +7385,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vm configuration parameters (used for guestinfo) (list)
-{{% /md %}}</dd>
+    <dd>vSphere vm configuration parameters (used for guestinfo) (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7394,8 +7394,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If you choose creation type clone a name of what you want to clone is required. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If you choose creation type clone a name of what you want to clone is required. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7403,8 +7403,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filepath to a cloud-config yaml file to put into the ISO user-data. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>Filepath to a cloud-config yaml file to put into the ISO user-data. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7412,8 +7412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere cloud-init file or url to set in the guestinfo (string)
-{{% /md %}}</dd>
+    <dd>vSphere cloud-init file or url to set in the guestinfo (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7421,8 +7421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If you choose to clone from a content library template specify the name of the library. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If you choose to clone from a content library template specify the name of the library. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7430,8 +7430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere CPU number for docker VM. Default `2` (string)
-{{% /md %}}</dd>
+    <dd>vSphere CPU number for docker VM. Default `2` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7439,8 +7439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy. Default `legacy`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy. Default `legacy`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7448,8 +7448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}vSphere custom attributes, format key/value e.g. `200=my custom value`. From Rancher v2.3.3 (List)
-{{% /md %}}</dd>
+    <dd>vSphere custom attributes, format key/value e.g. `200=my custom value`. From Rancher v2.3.3 (List)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7457,8 +7457,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datacenter for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere datacenter for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7466,8 +7466,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datastore for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere datastore for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7475,8 +7475,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datastore cluster for virtual machine. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>vSphere datastore cluster for virtual machine. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7484,8 +7484,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of disk for docker VM (in MB). Default `20480` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of disk for docker VM (in MB). Default `20480` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7493,8 +7493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere folder for the docker VM. This folder must already exist in the datacenter (string)
-{{% /md %}}</dd>
+    <dd>vSphere folder for the docker VM. This folder must already exist in the datacenter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7502,8 +7502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere compute resource where the docker VM will be instantiated. This can be omitted if using a cluster with DRS (string)
-{{% /md %}}</dd>
+    <dd>vSphere compute resource where the docker VM will be instantiated. This can be omitted if using a cluster with DRS (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7511,8 +7511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of memory for docker VM (in MB). Default `2048` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of memory for docker VM (in MB). Default `2048` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7520,8 +7520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}vSphere network where the docker VM will be attached (list)
-{{% /md %}}</dd>
+    <dd>vSphere network where the docker VM will be attached (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7529,8 +7529,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7538,8 +7538,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere resource pool for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere resource pool for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7547,8 +7547,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh password. Default `tcuser`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh password. Default `tcuser`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7556,8 +7556,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7565,8 +7565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7574,8 +7574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image the uploaded keys will need chown'ed. Default `staff`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image the uploaded keys will need chown'ed. Default `staff`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7583,8 +7583,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7592,8 +7592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7601,8 +7601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp IP allocation policy. Supported values are: `dhcp`, `fixed`, `transient` and `fixedAllocated` (string)
-{{% /md %}}</dd>
+    <dd>vSphere vApp IP allocation policy. Supported values are: `dhcp`, `fixed`, `transient` and `fixedAllocated` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7610,8 +7610,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp IP protocol for this deployment. Supported values are: `IPv4` and `IPv6` (string)
-{{% /md %}}</dd>
+    <dd>vSphere vApp IP protocol for this deployment. Supported values are: `IPv4` and `IPv6` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7619,8 +7619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp properties (list)
-{{% /md %}}</dd>
+    <dd>vSphere vApp properties (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7628,8 +7628,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere OVF environment transports to use for properties. Supported values are: `iso` and `com.vmware.guestInfo` (string)
-{{% /md %}}</dd>
+    <dd>vSphere OVF environment transports to use for properties. Supported values are: `iso` and `com.vmware.guestInfo` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7637,8 +7637,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere IP/hostname for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere IP/hostname for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7646,14 +7646,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere Port for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x. Default `443` (string)
-{{% /md %}}</dd>
+    <dd>vSphere Port for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x. Default `443` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -7662,8 +7662,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere URL for boot2docker iso image. Default `https://releases.rancher.com/os/latest/rancheros-vmware.iso` (string)
-{{% /md %}}</dd>
+    <dd>vSphere URL for boot2docker iso image. Default `https://releases.rancher.com/os/latest/rancheros-vmware.iso` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7671,8 +7671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vm configuration parameters (used for guestinfo) (list)
-{{% /md %}}</dd>
+    <dd>vSphere vm configuration parameters (used for guestinfo) (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7680,8 +7680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If you choose creation type clone a name of what you want to clone is required. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If you choose creation type clone a name of what you want to clone is required. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7689,8 +7689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filepath to a cloud-config yaml file to put into the ISO user-data. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>Filepath to a cloud-config yaml file to put into the ISO user-data. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7698,8 +7698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere cloud-init file or url to set in the guestinfo (string)
-{{% /md %}}</dd>
+    <dd>vSphere cloud-init file or url to set in the guestinfo (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7707,8 +7707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If you choose to clone from a content library template specify the name of the library. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If you choose to clone from a content library template specify the name of the library. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7716,8 +7716,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere CPU number for docker VM. Default `2` (string)
-{{% /md %}}</dd>
+    <dd>vSphere CPU number for docker VM. Default `2` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7725,8 +7725,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy. Default `legacy`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy. Default `legacy`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7734,8 +7734,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere custom attributes, format key/value e.g. `200=my custom value`. From Rancher v2.3.3 (List)
-{{% /md %}}</dd>
+    <dd>vSphere custom attributes, format key/value e.g. `200=my custom value`. From Rancher v2.3.3 (List)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7743,8 +7743,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datacenter for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere datacenter for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7752,8 +7752,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datastore for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere datastore for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7761,8 +7761,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datastore cluster for virtual machine. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>vSphere datastore cluster for virtual machine. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7770,8 +7770,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of disk for docker VM (in MB). Default `20480` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of disk for docker VM (in MB). Default `20480` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7779,8 +7779,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere folder for the docker VM. This folder must already exist in the datacenter (string)
-{{% /md %}}</dd>
+    <dd>vSphere folder for the docker VM. This folder must already exist in the datacenter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7788,8 +7788,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere compute resource where the docker VM will be instantiated. This can be omitted if using a cluster with DRS (string)
-{{% /md %}}</dd>
+    <dd>vSphere compute resource where the docker VM will be instantiated. This can be omitted if using a cluster with DRS (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7797,8 +7797,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of memory for docker VM (in MB). Default `2048` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of memory for docker VM (in MB). Default `2048` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7806,8 +7806,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere network where the docker VM will be attached (list)
-{{% /md %}}</dd>
+    <dd>vSphere network where the docker VM will be attached (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7815,8 +7815,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7824,8 +7824,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere resource pool for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere resource pool for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7833,8 +7833,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh password. Default `tcuser`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh password. Default `tcuser`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7842,8 +7842,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7851,8 +7851,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7860,8 +7860,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image the uploaded keys will need chown'ed. Default `staff`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image the uploaded keys will need chown'ed. Default `staff`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7869,8 +7869,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7878,8 +7878,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7887,8 +7887,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp IP allocation policy. Supported values are: `dhcp`, `fixed`, `transient` and `fixedAllocated` (string)
-{{% /md %}}</dd>
+    <dd>vSphere vApp IP allocation policy. Supported values are: `dhcp`, `fixed`, `transient` and `fixedAllocated` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7896,8 +7896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp IP protocol for this deployment. Supported values are: `IPv4` and `IPv6` (string)
-{{% /md %}}</dd>
+    <dd>vSphere vApp IP protocol for this deployment. Supported values are: `IPv4` and `IPv6` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7905,8 +7905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp properties (list)
-{{% /md %}}</dd>
+    <dd>vSphere vApp properties (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7914,8 +7914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere OVF environment transports to use for properties. Supported values are: `iso` and `com.vmware.guestInfo` (string)
-{{% /md %}}</dd>
+    <dd>vSphere OVF environment transports to use for properties. Supported values are: `iso` and `com.vmware.guestInfo` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7923,8 +7923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere IP/hostname for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere IP/hostname for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7932,14 +7932,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere Port for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x. Default `443` (string)
-{{% /md %}}</dd>
+    <dd>vSphere Port for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x. Default `443` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -7948,8 +7948,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere URL for boot2docker iso image. Default `https://releases.rancher.com/os/latest/rancheros-vmware.iso` (string)
-{{% /md %}}</dd>
+    <dd>vSphere URL for boot2docker iso image. Default `https://releases.rancher.com/os/latest/rancheros-vmware.iso` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7957,8 +7957,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vm configuration parameters (used for guestinfo) (list)
-{{% /md %}}</dd>
+    <dd>vSphere vm configuration parameters (used for guestinfo) (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7966,8 +7966,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If you choose creation type clone a name of what you want to clone is required. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If you choose creation type clone a name of what you want to clone is required. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7975,8 +7975,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filepath to a cloud-config yaml file to put into the ISO user-data. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>Filepath to a cloud-config yaml file to put into the ISO user-data. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7984,8 +7984,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere cloud-init file or url to set in the guestinfo (string)
-{{% /md %}}</dd>
+    <dd>vSphere cloud-init file or url to set in the guestinfo (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7993,8 +7993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If you choose to clone from a content library template specify the name of the library. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If you choose to clone from a content library template specify the name of the library. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8002,8 +8002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere CPU number for docker VM. Default `2` (string)
-{{% /md %}}</dd>
+    <dd>vSphere CPU number for docker VM. Default `2` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8011,8 +8011,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy. Default `legacy`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy. Default `legacy`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8020,8 +8020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere custom attributes, format key/value e.g. `200=my custom value`. From Rancher v2.3.3 (List)
-{{% /md %}}</dd>
+    <dd>vSphere custom attributes, format key/value e.g. `200=my custom value`. From Rancher v2.3.3 (List)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8029,8 +8029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datacenter for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere datacenter for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8038,8 +8038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datastore for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere datastore for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8047,8 +8047,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datastore cluster for virtual machine. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>vSphere datastore cluster for virtual machine. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8056,8 +8056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of disk for docker VM (in MB). Default `20480` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of disk for docker VM (in MB). Default `20480` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8065,8 +8065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere folder for the docker VM. This folder must already exist in the datacenter (string)
-{{% /md %}}</dd>
+    <dd>vSphere folder for the docker VM. This folder must already exist in the datacenter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8074,8 +8074,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere compute resource where the docker VM will be instantiated. This can be omitted if using a cluster with DRS (string)
-{{% /md %}}</dd>
+    <dd>vSphere compute resource where the docker VM will be instantiated. This can be omitted if using a cluster with DRS (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8083,8 +8083,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of memory for docker VM (in MB). Default `2048` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of memory for docker VM (in MB). Default `2048` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8092,8 +8092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere network where the docker VM will be attached (list)
-{{% /md %}}</dd>
+    <dd>vSphere network where the docker VM will be attached (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8101,8 +8101,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8110,8 +8110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere resource pool for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere resource pool for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8119,8 +8119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh password. Default `tcuser`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh password. Default `tcuser`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8128,8 +8128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8137,8 +8137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8146,8 +8146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image the uploaded keys will need chown'ed. Default `staff`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image the uploaded keys will need chown'ed. Default `staff`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8155,8 +8155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8164,8 +8164,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8173,8 +8173,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp IP allocation policy. Supported values are: `dhcp`, `fixed`, `transient` and `fixedAllocated` (string)
-{{% /md %}}</dd>
+    <dd>vSphere vApp IP allocation policy. Supported values are: `dhcp`, `fixed`, `transient` and `fixedAllocated` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8182,8 +8182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp IP protocol for this deployment. Supported values are: `IPv4` and `IPv6` (string)
-{{% /md %}}</dd>
+    <dd>vSphere vApp IP protocol for this deployment. Supported values are: `IPv4` and `IPv6` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8191,8 +8191,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp properties (list)
-{{% /md %}}</dd>
+    <dd>vSphere vApp properties (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8200,8 +8200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere OVF environment transports to use for properties. Supported values are: `iso` and `com.vmware.guestInfo` (string)
-{{% /md %}}</dd>
+    <dd>vSphere OVF environment transports to use for properties. Supported values are: `iso` and `com.vmware.guestInfo` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8209,8 +8209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere IP/hostname for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere IP/hostname for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8218,14 +8218,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere Port for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x. Default `443` (string)
-{{% /md %}}</dd>
+    <dd>vSphere Port for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x. Default `443` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -8234,8 +8234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere URL for boot2docker iso image. Default `https://releases.rancher.com/os/latest/rancheros-vmware.iso` (string)
-{{% /md %}}</dd>
+    <dd>vSphere URL for boot2docker iso image. Default `https://releases.rancher.com/os/latest/rancheros-vmware.iso` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8243,8 +8243,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vm configuration parameters (used for guestinfo) (list)
-{{% /md %}}</dd>
+    <dd>vSphere vm configuration parameters (used for guestinfo) (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8252,8 +8252,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If you choose creation type clone a name of what you want to clone is required. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If you choose creation type clone a name of what you want to clone is required. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8261,8 +8261,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filepath to a cloud-config yaml file to put into the ISO user-data. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>Filepath to a cloud-config yaml file to put into the ISO user-data. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8270,8 +8270,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere cloud-init file or url to set in the guestinfo (string)
-{{% /md %}}</dd>
+    <dd>vSphere cloud-init file or url to set in the guestinfo (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8279,8 +8279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If you choose to clone from a content library template specify the name of the library. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If you choose to clone from a content library template specify the name of the library. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8288,8 +8288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere CPU number for docker VM. Default `2` (string)
-{{% /md %}}</dd>
+    <dd>vSphere CPU number for docker VM. Default `2` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8297,8 +8297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy. Default `legacy`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy. Default `legacy`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8306,8 +8306,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere custom attributes, format key/value e.g. `200=my custom value`. From Rancher v2.3.3 (List)
-{{% /md %}}</dd>
+    <dd>vSphere custom attributes, format key/value e.g. `200=my custom value`. From Rancher v2.3.3 (List)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8315,8 +8315,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datacenter for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere datacenter for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8324,8 +8324,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datastore for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere datastore for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8333,8 +8333,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere datastore cluster for virtual machine. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>vSphere datastore cluster for virtual machine. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8342,8 +8342,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of disk for docker VM (in MB). Default `20480` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of disk for docker VM (in MB). Default `20480` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8351,8 +8351,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere folder for the docker VM. This folder must already exist in the datacenter (string)
-{{% /md %}}</dd>
+    <dd>vSphere folder for the docker VM. This folder must already exist in the datacenter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8360,8 +8360,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere compute resource where the docker VM will be instantiated. This can be omitted if using a cluster with DRS (string)
-{{% /md %}}</dd>
+    <dd>vSphere compute resource where the docker VM will be instantiated. This can be omitted if using a cluster with DRS (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8369,8 +8369,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere size of memory for docker VM (in MB). Default `2048` (string)
-{{% /md %}}</dd>
+    <dd>vSphere size of memory for docker VM (in MB). Default `2048` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8378,8 +8378,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere network where the docker VM will be attached (list)
-{{% /md %}}</dd>
+    <dd>vSphere network where the docker VM will be attached (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8387,8 +8387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere password. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8396,8 +8396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere resource pool for docker VM (string)
-{{% /md %}}</dd>
+    <dd>vSphere resource pool for docker VM (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8405,8 +8405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh password. Default `tcuser`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh password. Default `tcuser`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8414,8 +8414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh port. Default `22`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8423,8 +8423,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image you can specify the ssh user. Default `docker`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8432,8 +8432,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using a non-B2D image the uploaded keys will need chown'ed. Default `staff`. From Rancher v2.3.3 (string)
-{{% /md %}}</dd>
+    <dd>If using a non-B2D image the uploaded keys will need chown'ed. Default `staff`. From Rancher v2.3.3 (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8441,8 +8441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
-{{% /md %}}</dd>
+    <dd>vSphere tags id e.g. `urn:xxx`. From Rancher v2.3.3 (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8450,8 +8450,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere username. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8459,8 +8459,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp IP allocation policy. Supported values are: `dhcp`, `fixed`, `transient` and `fixedAllocated` (string)
-{{% /md %}}</dd>
+    <dd>vSphere vApp IP allocation policy. Supported values are: `dhcp`, `fixed`, `transient` and `fixedAllocated` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8468,8 +8468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp IP protocol for this deployment. Supported values are: `IPv4` and `IPv6` (string)
-{{% /md %}}</dd>
+    <dd>vSphere vApp IP protocol for this deployment. Supported values are: `IPv4` and `IPv6` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8477,8 +8477,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere vApp properties (list)
-{{% /md %}}</dd>
+    <dd>vSphere vApp properties (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8486,8 +8486,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere OVF environment transports to use for properties. Supported values are: `iso` and `com.vmware.guestInfo` (string)
-{{% /md %}}</dd>
+    <dd>vSphere OVF environment transports to use for properties. Supported values are: `iso` and `com.vmware.guestInfo` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8495,8 +8495,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere IP/hostname for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
-{{% /md %}}</dd>
+    <dd>vSphere IP/hostname for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8504,11 +8504,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere Port for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x. Default `443` (string)
-{{% /md %}}</dd>
+    <dd>vSphere Port for vCenter. Mandatory on Rancher v2.0.x and v2.1.x. Use `rancher2..CloudCredential` from Rancher v2.2.x. Default `443` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

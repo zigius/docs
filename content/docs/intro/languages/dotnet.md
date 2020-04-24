@@ -55,7 +55,7 @@ Before using Pulumi for .NET, you will need to install both Pulumi and .NET Core
 
 ## Example
 
-{{% choosable language csharp %}}
+
 For example, this C# program provisions an Azure resource group and storage account:
 
 ```csharp
@@ -93,9 +93,9 @@ public MyStack : Stack
 }
 ```
 
-{{% /choosable %}}
 
-{{% choosable language fsharp %}}
+
+
 For example, this F# program provisions an Azure resource group and storage account:
 
 ```fsharp
@@ -125,9 +125,9 @@ let main _ =
   Deployment.run infra
 ```
 
-{{% /choosable %}}
 
-{{% choosable language visualbasic %}}
+
+
 For example, this Visual Basic program provisions an Azure resource group and storage account:
 
 ```vb
@@ -161,15 +161,15 @@ Module Program
 End Module
 ```
 
-{{% /choosable %}}
+
 
 ## C\#, F\#, and VB Templates
 
 As of version 1.5, Pulumi supports .NET Core 3.1. You can write Pulumi programs in your favorite .NET language to get additional verification and tooling benefits. The fastest way to get started is to use a template. The template will autogenerate a set of files and initialize a Pulumi project. The getting started guides shown above will help do this on your cloud of choice, but this section describes doing so independently.
 
-{{< chooser language "csharp,fsharp,visualbasic" >}}
 
-{{% choosable language csharp %}}
+
+
 You can write Pulumi programs in **C#**. From an empty directory, create a new C# project:
 
 ```bash
@@ -186,9 +186,9 @@ This `csharp` template is cloud agnostic, and you will need to install NuGet pac
 * `pulumi new aws-csharp`: creates a starter AWS C# project
 * `pulumi new azure-csharp`: creates a starter Azure C# project
 * `pulumi new gcp-csharp`: creates a starter Google Cloud C# project
-{{% /choosable %}}
 
-{{% choosable language fsharp %}}
+
+
 You can write Pulumi programs in **F#**. From an empty directory, create a new F# project:
 
 ```bash
@@ -205,9 +205,9 @@ This `fsharp` template is cloud agnostic, and you will need to install NuGet pac
 * `pulumi new aws-fsharp`: creates a starter AWS F# project
 * `pulumi new azure-fsharp`: creates a starter Azure F# project
 * `pulumi new gcp-fsharp`: creates a starter Google Cloud F# project
-{{% /choosable %}}
 
-{{% choosable language visualbasic %}}
+
+
 You can write Pulumi programs in **Visual Basic**. From an empty directory, create a new Visual Basic project:
 
 ```bash
@@ -224,9 +224,9 @@ This `visualbasic` template is cloud agnostic, and you will need to install NuGe
 * `pulumi new aws-visualbasic`: creates a starter AWS Visual Basic project
 * `pulumi new azure-visualbasic`: creates a starter Azure Visual Basic project
 * `pulumi new gcp-visualbasic`: creates a starter Google Cloud Visual Basic project
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ## .NET Core Tools
 

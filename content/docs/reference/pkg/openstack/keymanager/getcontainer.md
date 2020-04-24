@@ -32,29 +32,29 @@ const example = pulumi.output(openstack.keymanager.getContainer({
 
 ## Using GetContainer {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getContainer<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/keymanager/#GetContainerArgs">GetContainerArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/keymanager/#GetContainerResult">GetContainerResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_container(</span>name=None<span class="p">, </span>region=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupContainer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#LookupContainerArgs">LookupContainerArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#LookupContainerResult">LookupContainerResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetContainer </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Keymanager.GetContainerResult.html">GetContainerResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.KeyManager.GetContainerArgs.html">GetContainerArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,16 +80,16 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to fetch a container. If omitted, the `region`
 argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -98,8 +98,8 @@ argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -107,16 +107,16 @@ argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to fetch a container. If omitted, the `region`
 argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -125,8 +125,8 @@ argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -134,16 +134,16 @@ argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to fetch a container. If omitted, the `region`
 argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -152,8 +152,8 @@ argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -161,13 +161,13 @@ argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to fetch a container. If omitted, the `region`
 argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -183,7 +183,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -192,9 +192,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontaineracl">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Key<wbr>Manager.<wbr>Outputs.<wbr>Get<wbr>Container<wbr>Acl&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of ACLs assigned to a container. The `read` structure is
+    <dd>The list of ACLs assigned to a container. The `read` structure is
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -202,9 +202,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontainerconsumer">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Key<wbr>Manager.<wbr>Outputs.<wbr>Get<wbr>Container<wbr>Consumer&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of the container consumers. The structure is described
+    <dd>The list of the container consumers. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -212,8 +212,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container reference / where to find the container.
-{{% /md %}}</dd>
+    <dd>The container reference / where to find the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -221,8 +221,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -230,8 +230,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the container.
-{{% /md %}}</dd>
+    <dd>The creator of the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -239,8 +239,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -248,9 +248,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontainersecretref">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Key<wbr>Manager.<wbr>Outputs.<wbr>Get<wbr>Container<wbr>Secret<wbr>Ref&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries containing references to secrets. The
+    <dd>A set of dictionaries containing references to secrets. The
 structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -258,8 +258,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the container.
-{{% /md %}}</dd>
+    <dd>The status of the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -267,8 +267,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container type.
-{{% /md %}}</dd>
+    <dd>The container type.
+</dd>
 
     <dt class="property-"
             title="">
@@ -276,8 +276,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -285,8 +285,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the consumer.
-{{% /md %}}</dd>
+    <dd>The name of the consumer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -294,14 +294,14 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -310,9 +310,9 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontaineracl">[]Get<wbr>Container<wbr>Acl</a></span>
     </dt>
-    <dd>{{% md %}}The list of ACLs assigned to a container. The `read` structure is
+    <dd>The list of ACLs assigned to a container. The `read` structure is
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -320,9 +320,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontainerconsumer">[]Get<wbr>Container<wbr>Consumer</a></span>
     </dt>
-    <dd>{{% md %}}The list of the container consumers. The structure is described
+    <dd>The list of the container consumers. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -330,8 +330,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container reference / where to find the container.
-{{% /md %}}</dd>
+    <dd>The container reference / where to find the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -339,8 +339,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -348,8 +348,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the container.
-{{% /md %}}</dd>
+    <dd>The creator of the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -357,8 +357,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -366,9 +366,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontainersecretref">[]Get<wbr>Container<wbr>Secret<wbr>Ref</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries containing references to secrets. The
+    <dd>A set of dictionaries containing references to secrets. The
 structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -376,8 +376,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the container.
-{{% /md %}}</dd>
+    <dd>The status of the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -385,8 +385,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container type.
-{{% /md %}}</dd>
+    <dd>The container type.
+</dd>
 
     <dt class="property-"
             title="">
@@ -394,8 +394,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -403,8 +403,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the consumer.
-{{% /md %}}</dd>
+    <dd>The name of the consumer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -412,14 +412,14 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -428,9 +428,9 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontaineracl">Get<wbr>Container<wbr>Acl[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of ACLs assigned to a container. The `read` structure is
+    <dd>The list of ACLs assigned to a container. The `read` structure is
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -438,9 +438,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontainerconsumer">Get<wbr>Container<wbr>Consumer[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of the container consumers. The structure is described
+    <dd>The list of the container consumers. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -448,8 +448,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container reference / where to find the container.
-{{% /md %}}</dd>
+    <dd>The container reference / where to find the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -457,8 +457,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -466,8 +466,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the container.
-{{% /md %}}</dd>
+    <dd>The creator of the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -475,8 +475,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -484,9 +484,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontainersecretref">Get<wbr>Container<wbr>Secret<wbr>Ref[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries containing references to secrets. The
+    <dd>A set of dictionaries containing references to secrets. The
 structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -494,8 +494,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the container.
-{{% /md %}}</dd>
+    <dd>The status of the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -503,8 +503,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container type.
-{{% /md %}}</dd>
+    <dd>The container type.
+</dd>
 
     <dt class="property-"
             title="">
@@ -512,8 +512,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -521,8 +521,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the consumer.
-{{% /md %}}</dd>
+    <dd>The name of the consumer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -530,14 +530,14 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -546,9 +546,9 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontaineracl">List[Get<wbr>Container<wbr>Acl]</a></span>
     </dt>
-    <dd>{{% md %}}The list of ACLs assigned to a container. The `read` structure is
+    <dd>The list of ACLs assigned to a container. The `read` structure is
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -556,9 +556,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontainerconsumer">List[Get<wbr>Container<wbr>Consumer]</a></span>
     </dt>
-    <dd>{{% md %}}The list of the container consumers. The structure is described
+    <dd>The list of the container consumers. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -566,8 +566,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container reference / where to find the container.
-{{% /md %}}</dd>
+    <dd>The container reference / where to find the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -575,8 +575,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -584,8 +584,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the container.
-{{% /md %}}</dd>
+    <dd>The creator of the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -593,8 +593,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -602,9 +602,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontainersecretref">List[Get<wbr>Container<wbr>Secret<wbr>Ref]</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries containing references to secrets. The
+    <dd>A set of dictionaries containing references to secrets. The
 structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -612,8 +612,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the container.
-{{% /md %}}</dd>
+    <dd>The status of the container.
+</dd>
 
     <dt class="property-"
             title="">
@@ -621,8 +621,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container type.
-{{% /md %}}</dd>
+    <dd>The container type.
+</dd>
 
     <dt class="property-"
             title="">
@@ -630,8 +630,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -639,8 +639,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the consumer.
-{{% /md %}}</dd>
+    <dd>The name of the consumer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -648,11 +648,11 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -665,18 +665,18 @@ structure is described below.
 
 
 <h4 id="getcontaineracl">Get<wbr>Container<wbr>Acl</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#GetContainerAcl">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#GetContainerAcl">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -685,13 +685,13 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontaineraclread">Pulumi.<wbr>Open<wbr>Stack.<wbr>Key<wbr>Manager.<wbr>Inputs.<wbr>Get<wbr>Container<wbr>Acl<wbr>Read<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -700,13 +700,13 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontaineraclread">Get<wbr>Container<wbr>Acl<wbr>Read</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -715,13 +715,13 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontaineraclread">Get<wbr>Container<wbr>Acl<wbr>Read</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -730,28 +730,28 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcontaineraclread">Dict[Get<wbr>Container<wbr>Acl<wbr>Read]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getcontaineraclread">Get<wbr>Container<wbr>Acl<wbr>Read</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#GetContainerAclRead">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#GetContainerAclRead">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -760,8 +760,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -769,8 +769,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,8 +778,8 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the container is accessible project wide.
-{{% /md %}}</dd>
+    <dd>Whether the container is accessible project wide.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,15 +787,15 @@ structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of user IDs, which are allowed to access the container,
+    <dd>The list of user IDs, which are allowed to access the container,
 when `project_access` is set to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -804,8 +804,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -813,8 +813,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -822,8 +822,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the container is accessible project wide.
-{{% /md %}}</dd>
+    <dd>Whether the container is accessible project wide.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -831,15 +831,15 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of user IDs, which are allowed to access the container,
+    <dd>The list of user IDs, which are allowed to access the container,
 when `project_access` is set to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -848,8 +848,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -857,8 +857,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the container is accessible project wide.
-{{% /md %}}</dd>
+    <dd>Whether the container is accessible project wide.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,15 +875,15 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of user IDs, which are allowed to access the container,
+    <dd>The list of user IDs, which are allowed to access the container,
 when `project_access` is set to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -892,8 +892,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -901,8 +901,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the container ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the container ACL was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -910,8 +910,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the container is accessible project wide.
-{{% /md %}}</dd>
+    <dd>Whether the container is accessible project wide.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,30 +919,30 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of user IDs, which are allowed to access the container,
+    <dd>The list of user IDs, which are allowed to access the container,
 when `project_access` is set to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getcontainerconsumer">Get<wbr>Container<wbr>Consumer</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#GetContainerConsumer">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#GetContainerConsumer">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -951,8 +951,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,14 +960,14 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The consumer URL.
-{{% /md %}}</dd>
+    <dd>The consumer URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -976,8 +976,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,14 +985,14 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The consumer URL.
-{{% /md %}}</dd>
+    <dd>The consumer URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1001,8 +1001,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,14 +1010,14 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The consumer URL.
-{{% /md %}}</dd>
+    <dd>The consumer URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1026,8 +1026,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,29 +1035,29 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The consumer URL.
-{{% /md %}}</dd>
+    <dd>The consumer URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getcontainersecretref">Get<wbr>Container<wbr>Secret<wbr>Ref</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#GetContainerSecretRef">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#GetContainerSecretRef">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1066,8 +1066,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,14 +1075,14 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret, URL.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret, URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1091,8 +1091,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,14 +1100,14 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret, URL.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret, URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1116,8 +1116,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,14 +1125,14 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret, URL.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret, URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1141,8 +1141,8 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Container name.
-{{% /md %}}</dd>
+    <dd>The Container name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,11 +1150,11 @@ when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret, URL.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret, URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

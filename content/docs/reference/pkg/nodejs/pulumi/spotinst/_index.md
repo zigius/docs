@@ -16,22 +16,22 @@ git_sha: "bbd2964daa900852c619723f84aac76589fabcbf"
 > please consult the source [`terraform-providers/terraform-provider-spotinst` repo](https://github.com/terraform-providers/terraform-provider-spotinst/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var spotinst = require("@pulumi/spotinst");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as spotinst from "@pulumi/spotinst";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

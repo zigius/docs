@@ -44,26 +44,26 @@ const jiraMyteamXX = new signalfx.jira.Integration("jira_myteamXX", {
 
 
 ## Create a Integration Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/jira/#Integration">Integration</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/jira/#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Integration</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>api_token=None<span class="p">, </span>assignee_display_name=None<span class="p">, </span>assignee_name=None<span class="p">, </span>auth_method=None<span class="p">, </span>base_url=None<span class="p">, </span>enabled=None<span class="p">, </span>issue_type=None<span class="p">, </span>name=None<span class="p">, </span>password=None<span class="p">, </span>project_key=None<span class="p">, </span>user_email=None<span class="p">, </span>username=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewIntegration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/jira?tab=doc#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/jira?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.Signalfx.Jira.Integration.html">Integration</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.SignalFx.Jira.IntegrationArgs.html">IntegrationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -100,9 +100,9 @@ const jiraMyteamXX = new signalfx.jira.Integration("jira_myteamXX", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -120,9 +120,9 @@ const jiraMyteamXX = new signalfx.jira.Integration("jira_myteamXX", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -169,9 +169,9 @@ const jiraMyteamXX = new signalfx.jira.Integration("jira_myteamXX", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -208,7 +208,7 @@ const jiraMyteamXX = new signalfx.jira.Integration("jira_myteamXX", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Integration Resource Properties {#properties}
 
@@ -221,7 +221,7 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -230,8 +230,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira user name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira user name for the assignee.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -239,8 +239,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
-{{% /md %}}</dd>
+    <dd>Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -248,8 +248,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base URL of the Jira instance that's integrated with SignalFx.
-{{% /md %}}</dd>
+    <dd>Base URL of the Jira instance that's integrated with SignalFx.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -257,8 +257,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the integration is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the integration is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -266,8 +266,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
-{{% /md %}}</dd>
+    <dd>Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -275,8 +275,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
-{{% /md %}}</dd>
+    <dd>Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The API token for the user email
-{{% /md %}}</dd>
+    <dd>The API token for the user email
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira display name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira display name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,8 +302,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the integration.
-{{% /md %}}</dd>
+    <dd>Name of the integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,8 +311,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Password used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,8 +320,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Email address used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,14 +329,14 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User name used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>User name used to authenticate the Jira integration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -345,8 +345,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira user name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira user name for the assignee.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -354,8 +354,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
-{{% /md %}}</dd>
+    <dd>Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -363,8 +363,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base URL of the Jira instance that's integrated with SignalFx.
-{{% /md %}}</dd>
+    <dd>Base URL of the Jira instance that's integrated with SignalFx.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -372,8 +372,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the integration is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the integration is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -381,8 +381,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
-{{% /md %}}</dd>
+    <dd>Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -390,8 +390,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
-{{% /md %}}</dd>
+    <dd>Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API token for the user email
-{{% /md %}}</dd>
+    <dd>The API token for the user email
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira display name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira display name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the integration.
-{{% /md %}}</dd>
+    <dd>Name of the integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,8 +426,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Password used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,8 +435,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Email address used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -444,14 +444,14 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User name used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>User name used to authenticate the Jira integration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -460,8 +460,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira user name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira user name for the assignee.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -469,8 +469,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
-{{% /md %}}</dd>
+    <dd>Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -478,8 +478,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base URL of the Jira instance that's integrated with SignalFx.
-{{% /md %}}</dd>
+    <dd>Base URL of the Jira instance that's integrated with SignalFx.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -487,8 +487,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the integration is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the integration is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -496,8 +496,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
-{{% /md %}}</dd>
+    <dd>Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -505,8 +505,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
-{{% /md %}}</dd>
+    <dd>Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API token for the user email
-{{% /md %}}</dd>
+    <dd>The API token for the user email
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira display name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira display name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,8 +532,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the integration.
-{{% /md %}}</dd>
+    <dd>Name of the integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,8 +541,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Password used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,8 +550,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Email address used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,14 +559,14 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User name used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>User name used to authenticate the Jira integration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -575,8 +575,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Jira user name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira user name for the assignee.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -584,8 +584,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
-{{% /md %}}</dd>
+    <dd>Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -593,8 +593,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base URL of the Jira instance that's integrated with SignalFx.
-{{% /md %}}</dd>
+    <dd>Base URL of the Jira instance that's integrated with SignalFx.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -602,8 +602,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the integration is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the integration is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -611,8 +611,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
-{{% /md %}}</dd>
+    <dd>Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -620,8 +620,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
-{{% /md %}}</dd>
+    <dd>Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,8 +629,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The API token for the user email
-{{% /md %}}</dd>
+    <dd>The API token for the user email
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,8 +638,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Jira display name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira display name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,8 +647,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the integration.
-{{% /md %}}</dd>
+    <dd>Name of the integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,8 +656,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Password used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,8 +665,8 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Email address used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Email address used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,11 +674,11 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User name used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>User name used to authenticate the Jira integration.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -692,7 +692,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -701,13 +701,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -716,13 +716,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -731,13 +731,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -746,10 +746,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -760,25 +760,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Integration Resource {#look-up}
 
 Get an existing Integration resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/jira/#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/jira/#Integration">Integration</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>api_token=None<span class="p">, </span>assignee_display_name=None<span class="p">, </span>assignee_name=None<span class="p">, </span>auth_method=None<span class="p">, </span>base_url=None<span class="p">, </span>enabled=None<span class="p">, </span>issue_type=None<span class="p">, </span>name=None<span class="p">, </span>password=None<span class="p">, </span>project_key=None<span class="p">, </span>user_email=None<span class="p">, </span>username=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIntegration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/jira?tab=doc#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/jira?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.Signalfx.Jira.Integration.html">Integration</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.Signalfx.Jira.IntegrationState.html">IntegrationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -803,9 +803,9 @@ Get an existing Integration resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -818,36 +818,9 @@ Get an existing Integration resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -872,13 +845,40 @@ Get an existing Integration resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -887,8 +887,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The API token for the user email
-{{% /md %}}</dd>
+    <dd>The API token for the user email
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -896,8 +896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira display name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira display name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,8 +905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira user name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira user name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,8 +914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
-{{% /md %}}</dd>
+    <dd>Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,8 +923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base URL of the Jira instance that's integrated with SignalFx.
-{{% /md %}}</dd>
+    <dd>Base URL of the Jira instance that's integrated with SignalFx.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,8 +932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the integration is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the integration is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,8 +941,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
-{{% /md %}}</dd>
+    <dd>Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,8 +950,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the integration.
-{{% /md %}}</dd>
+    <dd>Name of the integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,8 +959,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Password used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -968,8 +968,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
-{{% /md %}}</dd>
+    <dd>Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -977,8 +977,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Email address used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -986,14 +986,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User name used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>User name used to authenticate the Jira integration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1002,8 +1002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API token for the user email
-{{% /md %}}</dd>
+    <dd>The API token for the user email
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira display name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira display name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,8 +1020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira user name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira user name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,8 +1029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
-{{% /md %}}</dd>
+    <dd>Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,8 +1038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base URL of the Jira instance that's integrated with SignalFx.
-{{% /md %}}</dd>
+    <dd>Base URL of the Jira instance that's integrated with SignalFx.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,8 +1047,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the integration is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the integration is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1056,8 +1056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
-{{% /md %}}</dd>
+    <dd>Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1065,8 +1065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the integration.
-{{% /md %}}</dd>
+    <dd>Name of the integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1074,8 +1074,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Password used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,8 +1083,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
-{{% /md %}}</dd>
+    <dd>Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1092,8 +1092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Email address used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1101,14 +1101,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User name used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>User name used to authenticate the Jira integration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1117,8 +1117,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API token for the user email
-{{% /md %}}</dd>
+    <dd>The API token for the user email
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1126,8 +1126,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira display name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira display name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1135,8 +1135,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira user name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira user name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,8 +1144,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
-{{% /md %}}</dd>
+    <dd>Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,8 +1153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base URL of the Jira instance that's integrated with SignalFx.
-{{% /md %}}</dd>
+    <dd>Base URL of the Jira instance that's integrated with SignalFx.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1162,8 +1162,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the integration is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the integration is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1171,8 +1171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
-{{% /md %}}</dd>
+    <dd>Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,8 +1180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the integration.
-{{% /md %}}</dd>
+    <dd>Name of the integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1189,8 +1189,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Password used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,8 +1198,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
-{{% /md %}}</dd>
+    <dd>Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,8 +1207,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Email address used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,14 +1216,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User name used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>User name used to authenticate the Jira integration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1232,8 +1232,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The API token for the user email
-{{% /md %}}</dd>
+    <dd>The API token for the user email
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1241,8 +1241,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Jira display name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira display name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1250,8 +1250,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Jira user name for the assignee.
-{{% /md %}}</dd>
+    <dd>Jira user name for the assignee.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1259,8 +1259,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
-{{% /md %}}</dd>
+    <dd>Authentication method used when creating the Jira integration. One of `EmailAndToken` (using `user_email` and `api_token`) or `UsernameAndPassword` (using `username` and `password`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1268,8 +1268,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base URL of the Jira instance that's integrated with SignalFx.
-{{% /md %}}</dd>
+    <dd>Base URL of the Jira instance that's integrated with SignalFx.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1277,8 +1277,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the integration is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the integration is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,8 +1286,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
-{{% /md %}}</dd>
+    <dd>Issue type (for example, Story) for tickets that Jira creates for detector notifications. SignalFx validates issue types, so you must specify a type that's valid for the Jira project specified in `projectKey`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,8 +1295,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the integration.
-{{% /md %}}</dd>
+    <dd>Name of the integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1304,8 +1304,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Password used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1313,8 +1313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
-{{% /md %}}</dd>
+    <dd>Jira key of an existing project. When Jira creates a new ticket for a detector notification, the ticket is assigned to this project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,8 +1322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Email address used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>Email address used to authenticate the Jira integration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1331,11 +1331,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User name used to authenticate the Jira integration.
-{{% /md %}}</dd>
+    <dd>User name used to authenticate the Jira integration.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

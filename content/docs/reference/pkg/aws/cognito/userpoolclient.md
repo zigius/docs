@@ -105,26 +105,26 @@ const testUserPoolClient = new aws.cognito.UserPoolClient("test", {
 
 
 ## Create a UserPoolClient Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPoolClient">UserPoolClient</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPoolClientArgs">UserPoolClientArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">UserPoolClient</span><span class="p">(resource_name, opts=None, </span>allowed_oauth_flows=None<span class="p">, </span>allowed_oauth_flows_user_pool_client=None<span class="p">, </span>allowed_oauth_scopes=None<span class="p">, </span>analytics_configuration=None<span class="p">, </span>callback_urls=None<span class="p">, </span>default_redirect_uri=None<span class="p">, </span>explicit_auth_flows=None<span class="p">, </span>generate_secret=None<span class="p">, </span>logout_urls=None<span class="p">, </span>name=None<span class="p">, </span>prevent_user_existence_errors=None<span class="p">, </span>read_attributes=None<span class="p">, </span>refresh_token_validity=None<span class="p">, </span>supported_identity_providers=None<span class="p">, </span>user_pool_id=None<span class="p">, </span>write_attributes=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewUserPoolClient<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolClientArgs">UserPoolClientArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolClient">UserPoolClient</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPoolClient.html">UserPoolClient</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPoolClientArgs.html">UserPoolClientArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -161,9 +161,9 @@ const testUserPoolClient = new aws.cognito.UserPoolClient("test", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -181,9 +181,9 @@ const testUserPoolClient = new aws.cognito.UserPoolClient("test", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -230,9 +230,9 @@ const testUserPoolClient = new aws.cognito.UserPoolClient("test", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -269,7 +269,7 @@ const testUserPoolClient = new aws.cognito.UserPoolClient("test", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## UserPoolClient Resource Properties {#properties}
 
@@ -282,7 +282,7 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -291,8 +291,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user pool the client belongs to.
-{{% /md %}}</dd>
+    <dd>The user pool the client belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth flows (code, implicit, client_credentials).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth flows (code, implicit, client_credentials).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
-{{% /md %}}</dd>
+    <dd>Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,8 +318,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,8 +327,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolclientanalyticsconfiguration">User<wbr>Pool<wbr>Client<wbr>Analytics<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
-{{% /md %}}</dd>
+    <dd>The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,8 +336,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed callback URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed callback URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,8 +345,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default redirect URI. Must be in the list of callback URLs.
-{{% /md %}}</dd>
+    <dd>The default redirect URI. Must be in the list of callback URLs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,8 +354,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
-{{% /md %}}</dd>
+    <dd>List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -363,8 +363,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should an application secret be generated.
-{{% /md %}}</dd>
+    <dd>Should an application secret be generated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,8 +372,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed logout URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed logout URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,8 +381,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the application client.
-{{% /md %}}</dd>
+    <dd>The name of the application client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,8 +390,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
-{{% /md %}}</dd>
+    <dd>Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can read from.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can read from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time limit in days refresh tokens are valid for.
-{{% /md %}}</dd>
+    <dd>The time limit in days refresh tokens are valid for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of provider names for the identity providers that are supported on this client.
-{{% /md %}}</dd>
+    <dd>List of provider names for the identity providers that are supported on this client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,14 +426,14 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can write to.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can write to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -442,8 +442,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user pool the client belongs to.
-{{% /md %}}</dd>
+    <dd>The user pool the client belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -451,8 +451,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth flows (code, implicit, client_credentials).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth flows (code, implicit, client_credentials).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -460,8 +460,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
-{{% /md %}}</dd>
+    <dd>Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,8 +469,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,8 +478,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolclientanalyticsconfiguration">User<wbr>Pool<wbr>Client<wbr>Analytics<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
-{{% /md %}}</dd>
+    <dd>The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,8 +487,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed callback URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed callback URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,8 +496,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default redirect URI. Must be in the list of callback URLs.
-{{% /md %}}</dd>
+    <dd>The default redirect URI. Must be in the list of callback URLs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
-{{% /md %}}</dd>
+    <dd>List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should an application secret be generated.
-{{% /md %}}</dd>
+    <dd>Should an application secret be generated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed logout URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed logout URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,8 +532,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the application client.
-{{% /md %}}</dd>
+    <dd>The name of the application client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,8 +541,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
-{{% /md %}}</dd>
+    <dd>Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,8 +550,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can read from.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can read from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,8 +559,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time limit in days refresh tokens are valid for.
-{{% /md %}}</dd>
+    <dd>The time limit in days refresh tokens are valid for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,8 +568,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of provider names for the identity providers that are supported on this client.
-{{% /md %}}</dd>
+    <dd>List of provider names for the identity providers that are supported on this client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -577,14 +577,14 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can write to.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can write to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -593,8 +593,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user pool the client belongs to.
-{{% /md %}}</dd>
+    <dd>The user pool the client belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,8 +602,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth flows (code, implicit, client_credentials).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth flows (code, implicit, client_credentials).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,8 +611,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
-{{% /md %}}</dd>
+    <dd>Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -620,8 +620,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,8 +629,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolclientanalyticsconfiguration">User<wbr>Pool<wbr>Client<wbr>Analytics<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
-{{% /md %}}</dd>
+    <dd>The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,8 +638,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed callback URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed callback URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,8 +647,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default redirect URI. Must be in the list of callback URLs.
-{{% /md %}}</dd>
+    <dd>The default redirect URI. Must be in the list of callback URLs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,8 +656,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
-{{% /md %}}</dd>
+    <dd>List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,8 +665,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should an application secret be generated.
-{{% /md %}}</dd>
+    <dd>Should an application secret be generated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,8 +674,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed logout URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed logout URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -683,8 +683,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the application client.
-{{% /md %}}</dd>
+    <dd>The name of the application client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -692,8 +692,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
-{{% /md %}}</dd>
+    <dd>Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -701,8 +701,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can read from.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can read from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,8 +710,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time limit in days refresh tokens are valid for.
-{{% /md %}}</dd>
+    <dd>The time limit in days refresh tokens are valid for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -719,8 +719,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of provider names for the identity providers that are supported on this client.
-{{% /md %}}</dd>
+    <dd>List of provider names for the identity providers that are supported on this client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -728,14 +728,14 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can write to.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can write to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -744,8 +744,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user pool the client belongs to.
-{{% /md %}}</dd>
+    <dd>The user pool the client belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -753,8 +753,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth flows (code, implicit, client_credentials).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth flows (code, implicit, client_credentials).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -762,8 +762,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
-{{% /md %}}</dd>
+    <dd>Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -771,8 +771,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,8 +780,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolclientanalyticsconfiguration">Dict[User<wbr>Pool<wbr>Client<wbr>Analytics<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
-{{% /md %}}</dd>
+    <dd>The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,8 +789,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed callback URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed callback URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default redirect URI. Must be in the list of callback URLs.
-{{% /md %}}</dd>
+    <dd>The default redirect URI. Must be in the list of callback URLs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,8 +807,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
-{{% /md %}}</dd>
+    <dd>List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should an application secret be generated.
-{{% /md %}}</dd>
+    <dd>Should an application secret be generated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,8 +825,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed logout URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed logout URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,8 +834,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the application client.
-{{% /md %}}</dd>
+    <dd>The name of the application client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,8 +843,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
-{{% /md %}}</dd>
+    <dd>Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,8 +852,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can read from.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can read from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,8 +861,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time limit in days refresh tokens are valid for.
-{{% /md %}}</dd>
+    <dd>The time limit in days refresh tokens are valid for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,8 +870,8 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of provider names for the identity providers that are supported on this client.
-{{% /md %}}</dd>
+    <dd>List of provider names for the identity providers that are supported on this client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -879,11 +879,11 @@ The UserPoolClient resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can write to.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can write to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -897,7 +897,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -906,8 +906,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret of the user pool client.
-{{% /md %}}</dd>
+    <dd>The client secret of the user pool client.
+</dd>
 
     <dt class="property-"
             title="">
@@ -915,13 +915,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -930,8 +930,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret of the user pool client.
-{{% /md %}}</dd>
+    <dd>The client secret of the user pool client.
+</dd>
 
     <dt class="property-"
             title="">
@@ -939,13 +939,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -954,8 +954,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret of the user pool client.
-{{% /md %}}</dd>
+    <dd>The client secret of the user pool client.
+</dd>
 
     <dt class="property-"
             title="">
@@ -963,13 +963,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -978,8 +978,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client secret of the user pool client.
-{{% /md %}}</dd>
+    <dd>The client secret of the user pool client.
+</dd>
 
     <dt class="property-"
             title="">
@@ -987,10 +987,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1001,25 +1001,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing UserPoolClient Resource {#look-up}
 
 Get an existing UserPoolClient resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPoolClientState">UserPoolClientState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPoolClient">UserPoolClient</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>allowed_oauth_flows=None<span class="p">, </span>allowed_oauth_flows_user_pool_client=None<span class="p">, </span>allowed_oauth_scopes=None<span class="p">, </span>analytics_configuration=None<span class="p">, </span>callback_urls=None<span class="p">, </span>client_secret=None<span class="p">, </span>default_redirect_uri=None<span class="p">, </span>explicit_auth_flows=None<span class="p">, </span>generate_secret=None<span class="p">, </span>logout_urls=None<span class="p">, </span>name=None<span class="p">, </span>prevent_user_existence_errors=None<span class="p">, </span>read_attributes=None<span class="p">, </span>refresh_token_validity=None<span class="p">, </span>supported_identity_providers=None<span class="p">, </span>user_pool_id=None<span class="p">, </span>write_attributes=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetUserPoolClient<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolClientState">UserPoolClientState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolClient">UserPoolClient</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPoolClient.html">UserPoolClient</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPoolClientState.html">UserPoolClientState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1044,9 +1044,9 @@ Get an existing UserPoolClient resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1059,36 +1059,9 @@ Get an existing UserPoolClient resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1113,13 +1086,40 @@ Get an existing UserPoolClient resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1128,8 +1128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth flows (code, implicit, client_credentials).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth flows (code, implicit, client_credentials).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,8 +1137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
-{{% /md %}}</dd>
+    <dd>Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1146,8 +1146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolclientanalyticsconfiguration">User<wbr>Pool<wbr>Client<wbr>Analytics<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
-{{% /md %}}</dd>
+    <dd>The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,8 +1164,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed callback URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed callback URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,8 +1173,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret of the user pool client.
-{{% /md %}}</dd>
+    <dd>The client secret of the user pool client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,8 +1182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default redirect URI. Must be in the list of callback URLs.
-{{% /md %}}</dd>
+    <dd>The default redirect URI. Must be in the list of callback URLs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,8 +1191,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
-{{% /md %}}</dd>
+    <dd>List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,8 +1200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should an application secret be generated.
-{{% /md %}}</dd>
+    <dd>Should an application secret be generated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,8 +1209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed logout URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed logout URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1218,8 +1218,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the application client.
-{{% /md %}}</dd>
+    <dd>The name of the application client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1227,8 +1227,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
-{{% /md %}}</dd>
+    <dd>Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,8 +1236,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can read from.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can read from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,8 +1245,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time limit in days refresh tokens are valid for.
-{{% /md %}}</dd>
+    <dd>The time limit in days refresh tokens are valid for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,8 +1254,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of provider names for the identity providers that are supported on this client.
-{{% /md %}}</dd>
+    <dd>List of provider names for the identity providers that are supported on this client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,8 +1263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user pool the client belongs to.
-{{% /md %}}</dd>
+    <dd>The user pool the client belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,14 +1272,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can write to.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can write to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1288,8 +1288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth flows (code, implicit, client_credentials).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth flows (code, implicit, client_credentials).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,8 +1297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
-{{% /md %}}</dd>
+    <dd>Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,8 +1306,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,8 +1315,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolclientanalyticsconfiguration">User<wbr>Pool<wbr>Client<wbr>Analytics<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
-{{% /md %}}</dd>
+    <dd>The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,8 +1324,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed callback URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed callback URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,8 +1333,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret of the user pool client.
-{{% /md %}}</dd>
+    <dd>The client secret of the user pool client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,8 +1342,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default redirect URI. Must be in the list of callback URLs.
-{{% /md %}}</dd>
+    <dd>The default redirect URI. Must be in the list of callback URLs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1351,8 +1351,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
-{{% /md %}}</dd>
+    <dd>List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1360,8 +1360,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should an application secret be generated.
-{{% /md %}}</dd>
+    <dd>Should an application secret be generated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,8 +1369,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed logout URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed logout URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,8 +1378,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the application client.
-{{% /md %}}</dd>
+    <dd>The name of the application client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1387,8 +1387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
-{{% /md %}}</dd>
+    <dd>Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1396,8 +1396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can read from.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can read from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1405,8 +1405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time limit in days refresh tokens are valid for.
-{{% /md %}}</dd>
+    <dd>The time limit in days refresh tokens are valid for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,8 +1414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of provider names for the identity providers that are supported on this client.
-{{% /md %}}</dd>
+    <dd>List of provider names for the identity providers that are supported on this client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,8 +1423,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user pool the client belongs to.
-{{% /md %}}</dd>
+    <dd>The user pool the client belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,14 +1432,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can write to.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can write to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1448,8 +1448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth flows (code, implicit, client_credentials).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth flows (code, implicit, client_credentials).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,8 +1457,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
-{{% /md %}}</dd>
+    <dd>Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,8 +1466,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,8 +1475,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolclientanalyticsconfiguration">User<wbr>Pool<wbr>Client<wbr>Analytics<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
-{{% /md %}}</dd>
+    <dd>The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,8 +1484,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed callback URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed callback URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1493,8 +1493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret of the user pool client.
-{{% /md %}}</dd>
+    <dd>The client secret of the user pool client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,8 +1502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default redirect URI. Must be in the list of callback URLs.
-{{% /md %}}</dd>
+    <dd>The default redirect URI. Must be in the list of callback URLs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,8 +1511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
-{{% /md %}}</dd>
+    <dd>List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,8 +1520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should an application secret be generated.
-{{% /md %}}</dd>
+    <dd>Should an application secret be generated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,8 +1529,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed logout URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed logout URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,8 +1538,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the application client.
-{{% /md %}}</dd>
+    <dd>The name of the application client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1547,8 +1547,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
-{{% /md %}}</dd>
+    <dd>Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1556,8 +1556,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can read from.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can read from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1565,8 +1565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time limit in days refresh tokens are valid for.
-{{% /md %}}</dd>
+    <dd>The time limit in days refresh tokens are valid for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,8 +1574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of provider names for the identity providers that are supported on this client.
-{{% /md %}}</dd>
+    <dd>List of provider names for the identity providers that are supported on this client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1583,8 +1583,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user pool the client belongs to.
-{{% /md %}}</dd>
+    <dd>The user pool the client belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1592,14 +1592,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can write to.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can write to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1608,8 +1608,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth flows (code, implicit, client_credentials).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth flows (code, implicit, client_credentials).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,8 +1617,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
-{{% /md %}}</dd>
+    <dd>Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,8 +1626,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
-{{% /md %}}</dd>
+    <dd>List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1635,8 +1635,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolclientanalyticsconfiguration">Dict[User<wbr>Pool<wbr>Client<wbr>Analytics<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
-{{% /md %}}</dd>
+    <dd>The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1644,8 +1644,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed callback URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed callback URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1653,8 +1653,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client secret of the user pool client.
-{{% /md %}}</dd>
+    <dd>The client secret of the user pool client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1662,8 +1662,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default redirect URI. Must be in the list of callback URLs.
-{{% /md %}}</dd>
+    <dd>The default redirect URI. Must be in the list of callback URLs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1671,8 +1671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
-{{% /md %}}</dd>
+    <dd>List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1680,8 +1680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should an application secret be generated.
-{{% /md %}}</dd>
+    <dd>Should an application secret be generated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1689,8 +1689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of allowed logout URLs for the identity providers.
-{{% /md %}}</dd>
+    <dd>List of allowed logout URLs for the identity providers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1698,8 +1698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the application client.
-{{% /md %}}</dd>
+    <dd>The name of the application client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1707,8 +1707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
-{{% /md %}}</dd>
+    <dd>Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1716,8 +1716,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can read from.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can read from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,8 +1725,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time limit in days refresh tokens are valid for.
-{{% /md %}}</dd>
+    <dd>The time limit in days refresh tokens are valid for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1734,8 +1734,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of provider names for the identity providers that are supported on this client.
-{{% /md %}}</dd>
+    <dd>List of provider names for the identity providers that are supported on this client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,8 +1743,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user pool the client belongs to.
-{{% /md %}}</dd>
+    <dd>The user pool the client belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1752,11 +1752,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of user pool attributes the application client can write to.
-{{% /md %}}</dd>
+    <dd>List of user pool attributes the application client can write to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1771,18 +1771,18 @@ The following state arguments are supported:
 
 
 <h4 id="userpoolclientanalyticsconfiguration">User<wbr>Pool<wbr>Client<wbr>Analytics<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#UserPoolClientAnalyticsConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#UserPoolClientAnalyticsConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolClientAnalyticsConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolClientAnalyticsConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1791,8 +1791,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The application ID for an Amazon Pinpoint application.
-{{% /md %}}</dd>
+    <dd>The application ID for an Amazon Pinpoint application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1800,8 +1800,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID for the Analytics Configuration.
-{{% /md %}}</dd>
+    <dd>An ID for the Analytics Configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1809,8 +1809,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1818,14 +1818,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
-{{% /md %}}</dd>
+    <dd>If set to `true`, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1834,8 +1834,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application ID for an Amazon Pinpoint application.
-{{% /md %}}</dd>
+    <dd>The application ID for an Amazon Pinpoint application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1843,8 +1843,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID for the Analytics Configuration.
-{{% /md %}}</dd>
+    <dd>An ID for the Analytics Configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1852,8 +1852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1861,14 +1861,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
-{{% /md %}}</dd>
+    <dd>If set to `true`, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1877,8 +1877,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application ID for an Amazon Pinpoint application.
-{{% /md %}}</dd>
+    <dd>The application ID for an Amazon Pinpoint application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1886,8 +1886,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID for the Analytics Configuration.
-{{% /md %}}</dd>
+    <dd>An ID for the Analytics Configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1895,8 +1895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1904,14 +1904,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
-{{% /md %}}</dd>
+    <dd>If set to `true`, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1920,8 +1920,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The application ID for an Amazon Pinpoint application.
-{{% /md %}}</dd>
+    <dd>The application ID for an Amazon Pinpoint application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1929,8 +1929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An ID for the Analytics Configuration.
-{{% /md %}}</dd>
+    <dd>An ID for the Analytics Configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1938,8 +1938,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,11 +1947,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
-{{% /md %}}</dd>
+    <dd>If set to `true`, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

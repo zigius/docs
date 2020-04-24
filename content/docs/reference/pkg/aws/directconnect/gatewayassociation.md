@@ -98,26 +98,26 @@ A full example of how to create a VPN Gateway in one AWS account, create a Direc
 
 
 ## Create a GatewayAssociation Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociation">GatewayAssociation</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationArgs">GatewayAssociationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">GatewayAssociation</span><span class="p">(resource_name, opts=None, </span>allowed_prefixes=None<span class="p">, </span>associated_gateway_id=None<span class="p">, </span>associated_gateway_owner_account_id=None<span class="p">, </span>dx_gateway_id=None<span class="p">, </span>proposal_id=None<span class="p">, </span>vpn_gateway_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewGatewayAssociation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationArgs">GatewayAssociationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociation">GatewayAssociation</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociation.html">GatewayAssociation</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationArgs.html">GatewayAssociationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -154,9 +154,9 @@ A full example of how to create a VPN Gateway in one AWS account, create a Direc
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -174,9 +174,9 @@ A full example of how to create a VPN Gateway in one AWS account, create a Direc
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -223,9 +223,9 @@ A full example of how to create a VPN Gateway in one AWS account, create a Direc
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -262,7 +262,7 @@ A full example of how to create a VPN Gateway in one AWS account, create a Direc
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## GatewayAssociation Resource Properties {#properties}
 
@@ -275,7 +275,7 @@ The GatewayAssociation resource accepts the following [input]({{< relref "/docs/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -284,8 +284,8 @@ The GatewayAssociation resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ The GatewayAssociation resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
-{{% /md %}}</dd>
+    <dd>VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,9 +302,9 @@ The GatewayAssociation resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,9 +312,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,9 +322,9 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association proposal.
+    <dd>The ID of the Direct Connect gateway association proposal.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -332,15 +332,15 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    <dd>*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;associated_gateway_id&#39; argument instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use &#39;associated_gateway_id&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -349,8 +349,8 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,8 +358,8 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
-{{% /md %}}</dd>
+    <dd>VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,9 +367,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,9 +377,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,9 +387,9 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association proposal.
+    <dd>The ID of the Direct Connect gateway association proposal.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -397,15 +397,15 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    <dd>*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;associated_gateway_id&#39; argument instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use &#39;associated_gateway_id&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -414,8 +414,8 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
-{{% /md %}}</dd>
+    <dd>VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,9 +432,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,9 +442,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,9 +452,9 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association proposal.
+    <dd>The ID of the Direct Connect gateway association proposal.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -462,15 +462,15 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    <dd>*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;associated_gateway_id&#39; argument instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use &#39;associated_gateway_id&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -479,8 +479,8 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
-{{% /md %}}</dd>
+    <dd>VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,9 +497,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,9 +507,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,9 +517,9 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association proposal.
+    <dd>The ID of the Direct Connect gateway association proposal.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -527,12 +527,12 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    <dd>*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;associated_gateway_id&#39; argument instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use &#39;associated_gateway_id&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -546,7 +546,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -555,8 +555,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
-{{% /md %}}</dd>
+    <dd>The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,8 +564,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway association.
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,8 +573,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the Direct Connect gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -582,13 +582,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -597,8 +597,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
-{{% /md %}}</dd>
+    <dd>The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -606,8 +606,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway association.
+</dd>
 
     <dt class="property-"
             title="">
@@ -615,8 +615,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the Direct Connect gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -624,13 +624,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -639,8 +639,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
-{{% /md %}}</dd>
+    <dd>The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -648,8 +648,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway association.
+</dd>
 
     <dt class="property-"
             title="">
@@ -657,8 +657,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the Direct Connect gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -666,13 +666,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -681,8 +681,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
-{{% /md %}}</dd>
+    <dd>The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -690,8 +690,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway association.
+</dd>
 
     <dt class="property-"
             title="">
@@ -699,8 +699,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the Direct Connect gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -708,10 +708,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -722,25 +722,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing GatewayAssociation Resource {#look-up}
 
 Get an existing GatewayAssociation resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationState">GatewayAssociationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociation">GatewayAssociation</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>allowed_prefixes=None<span class="p">, </span>associated_gateway_id=None<span class="p">, </span>associated_gateway_owner_account_id=None<span class="p">, </span>associated_gateway_type=None<span class="p">, </span>dx_gateway_association_id=None<span class="p">, </span>dx_gateway_id=None<span class="p">, </span>dx_gateway_owner_account_id=None<span class="p">, </span>proposal_id=None<span class="p">, </span>vpn_gateway_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetGatewayAssociation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationState">GatewayAssociationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociation">GatewayAssociation</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociation.html">GatewayAssociation</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationState.html">GatewayAssociationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -765,9 +765,9 @@ Get an existing GatewayAssociation resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -780,36 +780,9 @@ Get an existing GatewayAssociation resource's state with the given name, ID, and
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -834,13 +807,40 @@ Get an existing GatewayAssociation resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -849,8 +849,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
-{{% /md %}}</dd>
+    <dd>VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -858,9 +858,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,9 +868,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -878,8 +878,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
-{{% /md %}}</dd>
+    <dd>The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -887,8 +887,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway association.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -896,8 +896,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,8 +905,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,9 +914,9 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association proposal.
+    <dd>The ID of the Direct Connect gateway association proposal.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -924,15 +924,15 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    <dd>*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;associated_gateway_id&#39; argument instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use &#39;associated_gateway_id&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -941,8 +941,8 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
-{{% /md %}}</dd>
+    <dd>VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,9 +950,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,9 +960,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,8 +970,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
-{{% /md %}}</dd>
+    <dd>The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,8 +979,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway association.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -988,8 +988,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -997,8 +997,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1006,9 +1006,9 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association proposal.
+    <dd>The ID of the Direct Connect gateway association proposal.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1016,15 +1016,15 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    <dd>*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;associated_gateway_id&#39; argument instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use &#39;associated_gateway_id&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1033,8 +1033,8 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
-{{% /md %}}</dd>
+    <dd>VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,9 +1042,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1052,9 +1052,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
-{{% /md %}}</dd>
+    <dd>The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,8 +1071,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway association.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,8 +1080,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,8 +1089,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,9 +1098,9 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association proposal.
+    <dd>The ID of the Direct Connect gateway association proposal.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1108,15 +1108,15 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    <dd>*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;associated_gateway_id&#39; argument instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use &#39;associated_gateway_id&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1125,8 +1125,8 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
-{{% /md %}}</dd>
+    <dd>VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,9 +1134,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,9 +1144,9 @@ Used for single account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    <dd>The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
-{{% /md %}}</dd>
+    <dd>The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway association.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the Direct Connect gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the Direct Connect gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,9 +1190,9 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Direct Connect gateway association proposal.
+    <dd>The ID of the Direct Connect gateway association proposal.
 Used for cross-account Direct Connect gateway associations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1200,12 +1200,12 @@ Used for cross-account Direct Connect gateway associations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    <dd>*Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
 Used for single account Direct Connect gateway associations.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;associated_gateway_id&#39; argument instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use &#39;associated_gateway_id&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

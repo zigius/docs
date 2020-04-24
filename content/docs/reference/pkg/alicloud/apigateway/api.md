@@ -14,26 +14,26 @@ meta_desc: "Explore the Api resource of the apigateway module, including example
 
 
 ## Create a Api Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/apigateway/#Api">Api</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/apigateway/#ApiArgs">ApiArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Api</span><span class="p">(resource_name, opts=None, </span>auth_type=None<span class="p">, </span>constant_parameters=None<span class="p">, </span>description=None<span class="p">, </span>fc_service_config=None<span class="p">, </span>group_id=None<span class="p">, </span>http_service_config=None<span class="p">, </span>http_vpc_service_config=None<span class="p">, </span>mock_service_config=None<span class="p">, </span>name=None<span class="p">, </span>request_config=None<span class="p">, </span>request_parameters=None<span class="p">, </span>service_type=None<span class="p">, </span>stage_names=None<span class="p">, </span>system_parameters=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewApi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiArgs">ApiArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#Api">Api</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.ApiGateway.Api.html">Api</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.ApiGateway.ApiArgs.html">ApiArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Api resource of the apigateway module, including example
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Api resource of the apigateway module, including example
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Api resource of the apigateway module, including example
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Api resource of the apigateway module, including example
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Api Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization Type including APP and ANONYMOUS. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The authorization Type including APP and ANONYMOUS. Defaults to null.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -218,8 +218,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The api gateway that the api belongs to. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The api gateway that the api belongs to. Defaults to null.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -227,8 +227,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Request<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Request_config defines how users can send requests to your API.
-{{% /md %}}</dd>
+    <dd>Request_config defines how users can send requests to your API.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -236,8 +236,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apiconstantparameter">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Constant<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}constant_parameters defines the constant parameters of the api.
-{{% /md %}}</dd>
+    <dd>constant_parameters defines the constant parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apifcserviceconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Fc<wbr>Service<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}fc_service_config defines the config when service_type selected 'FunctionCompute'.
-{{% /md %}}</dd>
+    <dd>fc_service_config defines the config when service_type selected 'FunctionCompute'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpserviceconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Http<wbr>Service<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'HTTP'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'HTTP'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpvpcserviceconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Http<wbr>Vpc<wbr>Service<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
-{{% /md %}}</dd>
+    <dd>http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apimockserviceconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Mock<wbr>Service<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'MOCK'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'MOCK'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestparameter">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Request<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}request_parameters defines the request parameters of the api.
-{{% /md %}}</dd>
+    <dd>request_parameters defines the request parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
-{{% /md %}}</dd>
+    <dd>Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,14 +317,14 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apisystemparameter">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>System<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}system_parameters defines the system parameters of the api.
-{{% /md %}}</dd>
+    <dd>system_parameters defines the system parameters of the api.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -333,8 +333,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization Type including APP and ANONYMOUS. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The authorization Type including APP and ANONYMOUS. Defaults to null.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -342,8 +342,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -351,8 +351,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The api gateway that the api belongs to. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The api gateway that the api belongs to. Defaults to null.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -360,8 +360,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestconfig">Api<wbr>Request<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Request_config defines how users can send requests to your API.
-{{% /md %}}</dd>
+    <dd>Request_config defines how users can send requests to your API.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -369,8 +369,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,8 +378,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apiconstantparameter">[]Api<wbr>Constant<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}constant_parameters defines the constant parameters of the api.
-{{% /md %}}</dd>
+    <dd>constant_parameters defines the constant parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apifcserviceconfig">Api<wbr>Fc<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}fc_service_config defines the config when service_type selected 'FunctionCompute'.
-{{% /md %}}</dd>
+    <dd>fc_service_config defines the config when service_type selected 'FunctionCompute'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpserviceconfig">Api<wbr>Http<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'HTTP'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'HTTP'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpvpcserviceconfig">Api<wbr>Http<wbr>Vpc<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
-{{% /md %}}</dd>
+    <dd>http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apimockserviceconfig">Api<wbr>Mock<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'MOCK'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'MOCK'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestparameter">[]Api<wbr>Request<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}request_parameters defines the request parameters of the api.
-{{% /md %}}</dd>
+    <dd>request_parameters defines the request parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
-{{% /md %}}</dd>
+    <dd>Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,14 +450,14 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apisystemparameter">[]Api<wbr>System<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}system_parameters defines the system parameters of the api.
-{{% /md %}}</dd>
+    <dd>system_parameters defines the system parameters of the api.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -466,8 +466,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization Type including APP and ANONYMOUS. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The authorization Type including APP and ANONYMOUS. Defaults to null.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -475,8 +475,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -484,8 +484,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The api gateway that the api belongs to. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The api gateway that the api belongs to. Defaults to null.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -493,8 +493,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestconfig">Api<wbr>Request<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Request_config defines how users can send requests to your API.
-{{% /md %}}</dd>
+    <dd>Request_config defines how users can send requests to your API.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -502,8 +502,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apiconstantparameter">Api<wbr>Constant<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}constant_parameters defines the constant parameters of the api.
-{{% /md %}}</dd>
+    <dd>constant_parameters defines the constant parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,8 +520,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apifcserviceconfig">Api<wbr>Fc<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}fc_service_config defines the config when service_type selected 'FunctionCompute'.
-{{% /md %}}</dd>
+    <dd>fc_service_config defines the config when service_type selected 'FunctionCompute'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,8 +529,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpserviceconfig">Api<wbr>Http<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'HTTP'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'HTTP'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,8 +538,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpvpcserviceconfig">Api<wbr>Http<wbr>Vpc<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
-{{% /md %}}</dd>
+    <dd>http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apimockserviceconfig">Api<wbr>Mock<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'MOCK'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'MOCK'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,8 +556,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,8 +565,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestparameter">Api<wbr>Request<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}request_parameters defines the request parameters of the api.
-{{% /md %}}</dd>
+    <dd>request_parameters defines the request parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
-{{% /md %}}</dd>
+    <dd>Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,14 +583,14 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apisystemparameter">Api<wbr>System<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}system_parameters defines the system parameters of the api.
-{{% /md %}}</dd>
+    <dd>system_parameters defines the system parameters of the api.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -599,8 +599,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The authorization Type including APP and ANONYMOUS. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The authorization Type including APP and ANONYMOUS. Defaults to null.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -608,8 +608,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -617,8 +617,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The api gateway that the api belongs to. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The api gateway that the api belongs to. Defaults to null.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -626,8 +626,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestconfig">Dict[Api<wbr>Request<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Request_config defines how users can send requests to your API.
-{{% /md %}}</dd>
+    <dd>Request_config defines how users can send requests to your API.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -635,8 +635,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,8 +644,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apiconstantparameter">List[Api<wbr>Constant<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}constant_parameters defines the constant parameters of the api.
-{{% /md %}}</dd>
+    <dd>constant_parameters defines the constant parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -653,8 +653,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apifcserviceconfig">Dict[Api<wbr>Fc<wbr>Service<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}fc_service_config defines the config when service_type selected 'FunctionCompute'.
-{{% /md %}}</dd>
+    <dd>fc_service_config defines the config when service_type selected 'FunctionCompute'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,8 +662,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpserviceconfig">Dict[Api<wbr>Http<wbr>Service<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'HTTP'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'HTTP'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -671,8 +671,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpvpcserviceconfig">Dict[Api<wbr>Http<wbr>Vpc<wbr>Service<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
-{{% /md %}}</dd>
+    <dd>http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,8 +680,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apimockserviceconfig">Dict[Api<wbr>Mock<wbr>Service<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'MOCK'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'MOCK'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,8 +689,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,8 +698,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestparameter">List[Api<wbr>Request<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}request_parameters defines the request parameters of the api.
-{{% /md %}}</dd>
+    <dd>request_parameters defines the request parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
-{{% /md %}}</dd>
+    <dd>Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,11 +716,11 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apisystemparameter">List[Api<wbr>System<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}system_parameters defines the system parameters of the api.
-{{% /md %}}</dd>
+    <dd>system_parameters defines the system parameters of the api.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -734,7 +734,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -743,8 +743,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the api of api gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the api of api gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -752,13 +752,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -767,8 +767,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the api of api gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the api of api gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -776,13 +776,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -791,8 +791,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the api of api gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the api of api gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -800,13 +800,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -815,8 +815,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the api of api gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the api of api gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -824,10 +824,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -838,25 +838,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Api Resource {#look-up}
 
 Get an existing Api resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/apigateway/#ApiState">ApiState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/apigateway/#Api">Api</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>api_id=None<span class="p">, </span>auth_type=None<span class="p">, </span>constant_parameters=None<span class="p">, </span>description=None<span class="p">, </span>fc_service_config=None<span class="p">, </span>group_id=None<span class="p">, </span>http_service_config=None<span class="p">, </span>http_vpc_service_config=None<span class="p">, </span>mock_service_config=None<span class="p">, </span>name=None<span class="p">, </span>request_config=None<span class="p">, </span>request_parameters=None<span class="p">, </span>service_type=None<span class="p">, </span>stage_names=None<span class="p">, </span>system_parameters=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetApi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiState">ApiState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#Api">Api</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.ApiGateway.Api.html">Api</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.ApiGateway.ApiState.html">ApiState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -881,9 +881,9 @@ Get an existing Api resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -896,36 +896,9 @@ Get an existing Api resource's state with the given name, ID, and optional extra
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -950,13 +923,40 @@ Get an existing Api resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -965,8 +965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the api of api gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the api of api gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization Type including APP and ANONYMOUS. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The authorization Type including APP and ANONYMOUS. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apiconstantparameter">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Constant<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}constant_parameters defines the constant parameters of the api.
-{{% /md %}}</dd>
+    <dd>constant_parameters defines the constant parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apifcserviceconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Fc<wbr>Service<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}fc_service_config defines the config when service_type selected 'FunctionCompute'.
-{{% /md %}}</dd>
+    <dd>fc_service_config defines the config when service_type selected 'FunctionCompute'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The api gateway that the api belongs to. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The api gateway that the api belongs to. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpserviceconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Http<wbr>Service<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'HTTP'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'HTTP'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpvpcserviceconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Http<wbr>Vpc<wbr>Service<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
-{{% /md %}}</dd>
+    <dd>http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apimockserviceconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Mock<wbr>Service<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'MOCK'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'MOCK'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Request<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Request_config defines how users can send requests to your API.
-{{% /md %}}</dd>
+    <dd>Request_config defines how users can send requests to your API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestparameter">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>Request<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}request_parameters defines the request parameters of the api.
-{{% /md %}}</dd>
+    <dd>request_parameters defines the request parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
-{{% /md %}}</dd>
+    <dd>Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,14 +1091,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apisystemparameter">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Api<wbr>Gateway.<wbr>Inputs.<wbr>Api<wbr>System<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}system_parameters defines the system parameters of the api.
-{{% /md %}}</dd>
+    <dd>system_parameters defines the system parameters of the api.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1107,8 +1107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the api of api gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the api of api gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,8 +1116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization Type including APP and ANONYMOUS. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The authorization Type including APP and ANONYMOUS. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,8 +1125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apiconstantparameter">[]Api<wbr>Constant<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}constant_parameters defines the constant parameters of the api.
-{{% /md %}}</dd>
+    <dd>constant_parameters defines the constant parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,8 +1134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,8 +1143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apifcserviceconfig">Api<wbr>Fc<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}fc_service_config defines the config when service_type selected 'FunctionCompute'.
-{{% /md %}}</dd>
+    <dd>fc_service_config defines the config when service_type selected 'FunctionCompute'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,8 +1152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The api gateway that the api belongs to. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The api gateway that the api belongs to. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,8 +1161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpserviceconfig">Api<wbr>Http<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'HTTP'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'HTTP'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1170,8 +1170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpvpcserviceconfig">Api<wbr>Http<wbr>Vpc<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
-{{% /md %}}</dd>
+    <dd>http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,8 +1179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apimockserviceconfig">Api<wbr>Mock<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'MOCK'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'MOCK'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,8 +1188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1197,8 +1197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestconfig">Api<wbr>Request<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Request_config defines how users can send requests to your API.
-{{% /md %}}</dd>
+    <dd>Request_config defines how users can send requests to your API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1206,8 +1206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestparameter">[]Api<wbr>Request<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}request_parameters defines the request parameters of the api.
-{{% /md %}}</dd>
+    <dd>request_parameters defines the request parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,8 +1215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,8 +1224,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
-{{% /md %}}</dd>
+    <dd>Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,14 +1233,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apisystemparameter">[]Api<wbr>System<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}system_parameters defines the system parameters of the api.
-{{% /md %}}</dd>
+    <dd>system_parameters defines the system parameters of the api.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1249,8 +1249,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the api of api gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the api of api gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,8 +1258,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization Type including APP and ANONYMOUS. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The authorization Type including APP and ANONYMOUS. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,8 +1267,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apiconstantparameter">Api<wbr>Constant<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}constant_parameters defines the constant parameters of the api.
-{{% /md %}}</dd>
+    <dd>constant_parameters defines the constant parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,8 +1276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,8 +1285,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apifcserviceconfig">Api<wbr>Fc<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}fc_service_config defines the config when service_type selected 'FunctionCompute'.
-{{% /md %}}</dd>
+    <dd>fc_service_config defines the config when service_type selected 'FunctionCompute'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,8 +1294,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The api gateway that the api belongs to. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The api gateway that the api belongs to. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,8 +1303,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpserviceconfig">Api<wbr>Http<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'HTTP'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'HTTP'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,8 +1312,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpvpcserviceconfig">Api<wbr>Http<wbr>Vpc<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
-{{% /md %}}</dd>
+    <dd>http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1321,8 +1321,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apimockserviceconfig">Api<wbr>Mock<wbr>Service<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'MOCK'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'MOCK'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1330,8 +1330,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,8 +1339,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestconfig">Api<wbr>Request<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Request_config defines how users can send requests to your API.
-{{% /md %}}</dd>
+    <dd>Request_config defines how users can send requests to your API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1348,8 +1348,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestparameter">Api<wbr>Request<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}request_parameters defines the request parameters of the api.
-{{% /md %}}</dd>
+    <dd>request_parameters defines the request parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1357,8 +1357,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1366,8 +1366,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
-{{% /md %}}</dd>
+    <dd>Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1375,14 +1375,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apisystemparameter">Api<wbr>System<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}system_parameters defines the system parameters of the api.
-{{% /md %}}</dd>
+    <dd>system_parameters defines the system parameters of the api.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1391,8 +1391,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the api of api gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the api of api gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,8 +1400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The authorization Type including APP and ANONYMOUS. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The authorization Type including APP and ANONYMOUS. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1409,8 +1409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apiconstantparameter">List[Api<wbr>Constant<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}constant_parameters defines the constant parameters of the api.
-{{% /md %}}</dd>
+    <dd>constant_parameters defines the constant parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1418,8 +1418,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,8 +1427,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apifcserviceconfig">Dict[Api<wbr>Fc<wbr>Service<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}fc_service_config defines the config when service_type selected 'FunctionCompute'.
-{{% /md %}}</dd>
+    <dd>fc_service_config defines the config when service_type selected 'FunctionCompute'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1436,8 +1436,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The api gateway that the api belongs to. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The api gateway that the api belongs to. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1445,8 +1445,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpserviceconfig">Dict[Api<wbr>Http<wbr>Service<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'HTTP'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'HTTP'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1454,8 +1454,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apihttpvpcserviceconfig">Dict[Api<wbr>Http<wbr>Vpc<wbr>Service<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
-{{% /md %}}</dd>
+    <dd>http_vpc_service_config defines the config when service_type selected 'HTTP-VPC'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1463,8 +1463,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apimockserviceconfig">Dict[Api<wbr>Mock<wbr>Service<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}http_service_config defines the config when service_type selected 'MOCK'.
-{{% /md %}}</dd>
+    <dd>http_service_config defines the config when service_type selected 'MOCK'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1472,8 +1472,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1481,8 +1481,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestconfig">Dict[Api<wbr>Request<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Request_config defines how users can send requests to your API.
-{{% /md %}}</dd>
+    <dd>Request_config defines how users can send requests to your API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1490,8 +1490,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apirequestparameter">List[Api<wbr>Request<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}request_parameters defines the request parameters of the api.
-{{% /md %}}</dd>
+    <dd>request_parameters defines the request parameters of the api.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1499,8 +1499,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
-{{% /md %}}</dd>
+    <dd>The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1508,8 +1508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
-{{% /md %}}</dd>
+    <dd>Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1517,11 +1517,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apisystemparameter">List[Api<wbr>System<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}system_parameters defines the system parameters of the api.
-{{% /md %}}</dd>
+    <dd>system_parameters defines the system parameters of the api.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1536,18 +1536,18 @@ The following state arguments are supported:
 
 
 <h4 id="apiconstantparameter">Api<wbr>Constant<wbr>Parameter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ApiConstantParameter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ApiConstantParameter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiConstantParameterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiConstantParameterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1556,8 +1556,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1565,8 +1565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1574,8 +1574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Constant parameter value.
-{{% /md %}}</dd>
+    <dd>Constant parameter value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1583,14 +1583,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1599,8 +1599,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1608,8 +1608,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1617,8 +1617,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Constant parameter value.
-{{% /md %}}</dd>
+    <dd>Constant parameter value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,14 +1626,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1642,8 +1642,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1651,8 +1651,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1660,8 +1660,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Constant parameter value.
-{{% /md %}}</dd>
+    <dd>Constant parameter value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,14 +1669,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1685,8 +1685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1694,8 +1694,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1703,8 +1703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Constant parameter value.
-{{% /md %}}</dd>
+    <dd>Constant parameter value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1712,29 +1712,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="apifcserviceconfig">Api<wbr>Fc<wbr>Service<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ApiFcServiceConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ApiFcServiceConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiFcServiceConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiFcServiceConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1743,8 +1743,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The function name of function compute service.
-{{% /md %}}</dd>
+    <dd>The function name of function compute service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1752,8 +1752,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region that the function compute service belongs to.
-{{% /md %}}</dd>
+    <dd>The region that the function compute service belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1761,8 +1761,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service name of function compute service.
-{{% /md %}}</dd>
+    <dd>The service name of function compute service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1770,8 +1770,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1779,14 +1779,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}RAM role arn attached to the Function Compute service. This governs both who / what can invoke your Function, as well as what resources our Function has access to. See [User Permissions](https://www.alibabacloud.com/help/doc-detail/52885.htm) for more details.
-{{% /md %}}</dd>
+    <dd>RAM role arn attached to the Function Compute service. This governs both who / what can invoke your Function, as well as what resources our Function has access to. See [User Permissions](https://www.alibabacloud.com/help/doc-detail/52885.htm) for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1795,8 +1795,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function name of function compute service.
-{{% /md %}}</dd>
+    <dd>The function name of function compute service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1804,8 +1804,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region that the function compute service belongs to.
-{{% /md %}}</dd>
+    <dd>The region that the function compute service belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1813,8 +1813,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service name of function compute service.
-{{% /md %}}</dd>
+    <dd>The service name of function compute service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1822,8 +1822,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,14 +1831,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}RAM role arn attached to the Function Compute service. This governs both who / what can invoke your Function, as well as what resources our Function has access to. See [User Permissions](https://www.alibabacloud.com/help/doc-detail/52885.htm) for more details.
-{{% /md %}}</dd>
+    <dd>RAM role arn attached to the Function Compute service. This governs both who / what can invoke your Function, as well as what resources our Function has access to. See [User Permissions](https://www.alibabacloud.com/help/doc-detail/52885.htm) for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1847,8 +1847,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function name of function compute service.
-{{% /md %}}</dd>
+    <dd>The function name of function compute service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1856,8 +1856,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region that the function compute service belongs to.
-{{% /md %}}</dd>
+    <dd>The region that the function compute service belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1865,8 +1865,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service name of function compute service.
-{{% /md %}}</dd>
+    <dd>The service name of function compute service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1874,8 +1874,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1883,14 +1883,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}RAM role arn attached to the Function Compute service. This governs both who / what can invoke your Function, as well as what resources our Function has access to. See [User Permissions](https://www.alibabacloud.com/help/doc-detail/52885.htm) for more details.
-{{% /md %}}</dd>
+    <dd>RAM role arn attached to the Function Compute service. This governs both who / what can invoke your Function, as well as what resources our Function has access to. See [User Permissions](https://www.alibabacloud.com/help/doc-detail/52885.htm) for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1899,8 +1899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The function name of function compute service.
-{{% /md %}}</dd>
+    <dd>The function name of function compute service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1908,8 +1908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region that the function compute service belongs to.
-{{% /md %}}</dd>
+    <dd>The region that the function compute service belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1917,8 +1917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service name of function compute service.
-{{% /md %}}</dd>
+    <dd>The service name of function compute service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1926,8 +1926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1935,29 +1935,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}RAM role arn attached to the Function Compute service. This governs both who / what can invoke your Function, as well as what resources our Function has access to. See [User Permissions](https://www.alibabacloud.com/help/doc-detail/52885.htm) for more details.
-{{% /md %}}</dd>
+    <dd>RAM role arn attached to the Function Compute service. This governs both who / what can invoke your Function, as well as what resources our Function has access to. See [User Permissions](https://www.alibabacloud.com/help/doc-detail/52885.htm) for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="apihttpserviceconfig">Api<wbr>Http<wbr>Service<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ApiHttpServiceConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ApiHttpServiceConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiHttpServiceConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiHttpServiceConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1966,8 +1966,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of backend service.
-{{% /md %}}</dd>
+    <dd>The address of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1975,8 +1975,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1984,8 +1984,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1993,8 +1993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2002,13 +2002,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2017,8 +2017,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of backend service.
-{{% /md %}}</dd>
+    <dd>The address of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2026,8 +2026,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2035,8 +2035,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2044,8 +2044,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2053,13 +2053,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2068,8 +2068,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of backend service.
-{{% /md %}}</dd>
+    <dd>The address of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2077,8 +2077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2086,8 +2086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2095,8 +2095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2104,13 +2104,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2119,8 +2119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The address of backend service.
-{{% /md %}}</dd>
+    <dd>The address of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2128,8 +2128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2137,8 +2137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2146,8 +2146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2155,28 +2155,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="apihttpvpcserviceconfig">Api<wbr>Http<wbr>Vpc<wbr>Service<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ApiHttpVpcServiceConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ApiHttpVpcServiceConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiHttpVpcServiceConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiHttpVpcServiceConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2185,8 +2185,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2194,8 +2194,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2203,8 +2203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2212,8 +2212,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2221,13 +2221,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2236,8 +2236,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2245,8 +2245,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2254,8 +2254,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2263,8 +2263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2272,13 +2272,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2287,8 +2287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2296,8 +2296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2305,8 +2305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2314,8 +2314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2323,13 +2323,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2338,8 +2338,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2347,8 +2347,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2356,8 +2356,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2365,8 +2365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Backend service time-out time; unit: millisecond.
-{{% /md %}}</dd>
+    <dd>Backend service time-out time; unit: millisecond.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2374,28 +2374,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="apimockserviceconfig">Api<wbr>Mock<wbr>Service<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ApiMockServiceConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ApiMockServiceConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiMockServiceConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiMockServiceConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2404,8 +2404,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The result of the mock service.
-{{% /md %}}</dd>
+    <dd>The result of the mock service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2413,13 +2413,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2428,8 +2428,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The result of the mock service.
-{{% /md %}}</dd>
+    <dd>The result of the mock service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2437,13 +2437,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2452,8 +2452,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The result of the mock service.
-{{% /md %}}</dd>
+    <dd>The result of the mock service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2461,13 +2461,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2476,8 +2476,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The result of the mock service.
-{{% /md %}}</dd>
+    <dd>The result of the mock service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2485,28 +2485,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="apirequestconfig">Api<wbr>Request<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ApiRequestConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ApiRequestConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiRequestConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiRequestConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2515,8 +2515,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2524,8 +2524,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The mode of the parameters between request parameters and service parameters, which support the values of 'MAPPING' and 'PASSTHROUGH'
-{{% /md %}}</dd>
+    <dd>The mode of the parameters between request parameters and service parameters, which support the values of 'MAPPING' and 'PASSTHROUGH'
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2533,8 +2533,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2542,8 +2542,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol of api which supports values of 'HTTP','HTTPS' or 'HTTP,HTTPS'
-{{% /md %}}</dd>
+    <dd>The protocol of api which supports values of 'HTTP','HTTPS' or 'HTTP,HTTPS'
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2551,14 +2551,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The body format of the api, which support the values of 'STREAM' and 'FORM'
-{{% /md %}}</dd>
+    <dd>The body format of the api, which support the values of 'STREAM' and 'FORM'
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2567,8 +2567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2576,8 +2576,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mode of the parameters between request parameters and service parameters, which support the values of 'MAPPING' and 'PASSTHROUGH'
-{{% /md %}}</dd>
+    <dd>The mode of the parameters between request parameters and service parameters, which support the values of 'MAPPING' and 'PASSTHROUGH'
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2585,8 +2585,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2594,8 +2594,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol of api which supports values of 'HTTP','HTTPS' or 'HTTP,HTTPS'
-{{% /md %}}</dd>
+    <dd>The protocol of api which supports values of 'HTTP','HTTPS' or 'HTTP,HTTPS'
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2603,14 +2603,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The body format of the api, which support the values of 'STREAM' and 'FORM'
-{{% /md %}}</dd>
+    <dd>The body format of the api, which support the values of 'STREAM' and 'FORM'
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2619,8 +2619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2628,8 +2628,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mode of the parameters between request parameters and service parameters, which support the values of 'MAPPING' and 'PASSTHROUGH'
-{{% /md %}}</dd>
+    <dd>The mode of the parameters between request parameters and service parameters, which support the values of 'MAPPING' and 'PASSTHROUGH'
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2637,8 +2637,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2646,8 +2646,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol of api which supports values of 'HTTP','HTTPS' or 'HTTP,HTTPS'
-{{% /md %}}</dd>
+    <dd>The protocol of api which supports values of 'HTTP','HTTPS' or 'HTTP,HTTPS'
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2655,14 +2655,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The body format of the api, which support the values of 'STREAM' and 'FORM'
-{{% /md %}}</dd>
+    <dd>The body format of the api, which support the values of 'STREAM' and 'FORM'
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2671,8 +2671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The http method of backend service.
-{{% /md %}}</dd>
+    <dd>The http method of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2680,8 +2680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The mode of the parameters between request parameters and service parameters, which support the values of 'MAPPING' and 'PASSTHROUGH'
-{{% /md %}}</dd>
+    <dd>The mode of the parameters between request parameters and service parameters, which support the values of 'MAPPING' and 'PASSTHROUGH'
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2689,8 +2689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of backend service.
-{{% /md %}}</dd>
+    <dd>The path of backend service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2698,8 +2698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol of api which supports values of 'HTTP','HTTPS' or 'HTTP,HTTPS'
-{{% /md %}}</dd>
+    <dd>The protocol of api which supports values of 'HTTP','HTTPS' or 'HTTP,HTTPS'
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2707,29 +2707,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The body format of the api, which support the values of 'STREAM' and 'FORM'
-{{% /md %}}</dd>
+    <dd>The body format of the api, which support the values of 'STREAM' and 'FORM'
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="apirequestparameter">Api<wbr>Request<wbr>Parameter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ApiRequestParameter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ApiRequestParameter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiRequestParameterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiRequestParameterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2738,8 +2738,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2747,8 +2747,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter location; values: BODY, HEAD, QUERY, and PATH.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter location; values: BODY, HEAD, QUERY, and PATH.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2756,8 +2756,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2765,8 +2765,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter name.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2774,8 +2774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Parameter required or not; values: REQUIRED and OPTIONAL.
-{{% /md %}}</dd>
+    <dd>Parameter required or not; values: REQUIRED and OPTIONAL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2783,8 +2783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Parameter type which supports values of 'STRING','INT','BOOLEAN','LONG',"FLOAT" and "DOUBLE"
-{{% /md %}}</dd>
+    <dd>Parameter type which supports values of 'STRING','INT','BOOLEAN','LONG',"FLOAT" and "DOUBLE"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2792,8 +2792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default value of the parameter.
-{{% /md %}}</dd>
+    <dd>The default value of the parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2801,14 +2801,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2817,8 +2817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2826,8 +2826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter location; values: BODY, HEAD, QUERY, and PATH.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter location; values: BODY, HEAD, QUERY, and PATH.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2835,8 +2835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2844,8 +2844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter name.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2853,8 +2853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Parameter required or not; values: REQUIRED and OPTIONAL.
-{{% /md %}}</dd>
+    <dd>Parameter required or not; values: REQUIRED and OPTIONAL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2862,8 +2862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Parameter type which supports values of 'STRING','INT','BOOLEAN','LONG',"FLOAT" and "DOUBLE"
-{{% /md %}}</dd>
+    <dd>Parameter type which supports values of 'STRING','INT','BOOLEAN','LONG',"FLOAT" and "DOUBLE"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2871,8 +2871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default value of the parameter.
-{{% /md %}}</dd>
+    <dd>The default value of the parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2880,14 +2880,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2896,8 +2896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2905,8 +2905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter location; values: BODY, HEAD, QUERY, and PATH.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter location; values: BODY, HEAD, QUERY, and PATH.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2914,8 +2914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2923,8 +2923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter name.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2932,8 +2932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Parameter required or not; values: REQUIRED and OPTIONAL.
-{{% /md %}}</dd>
+    <dd>Parameter required or not; values: REQUIRED and OPTIONAL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2941,8 +2941,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Parameter type which supports values of 'STRING','INT','BOOLEAN','LONG',"FLOAT" and "DOUBLE"
-{{% /md %}}</dd>
+    <dd>Parameter type which supports values of 'STRING','INT','BOOLEAN','LONG',"FLOAT" and "DOUBLE"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2950,8 +2950,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default value of the parameter.
-{{% /md %}}</dd>
+    <dd>The default value of the parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2959,14 +2959,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2975,8 +2975,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2984,8 +2984,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter location; values: BODY, HEAD, QUERY, and PATH.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter location; values: BODY, HEAD, QUERY, and PATH.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2993,8 +2993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3002,8 +3002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter name.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3011,8 +3011,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Parameter required or not; values: REQUIRED and OPTIONAL.
-{{% /md %}}</dd>
+    <dd>Parameter required or not; values: REQUIRED and OPTIONAL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3020,8 +3020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Parameter type which supports values of 'STRING','INT','BOOLEAN','LONG',"FLOAT" and "DOUBLE"
-{{% /md %}}</dd>
+    <dd>Parameter type which supports values of 'STRING','INT','BOOLEAN','LONG',"FLOAT" and "DOUBLE"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3029,8 +3029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default value of the parameter.
-{{% /md %}}</dd>
+    <dd>The default value of the parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3038,29 +3038,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of Constant parameter.
-{{% /md %}}</dd>
+    <dd>The description of Constant parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="apisystemparameter">Api<wbr>System<wbr>Parameter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ApiSystemParameter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ApiSystemParameter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiSystemParameterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/apigateway?tab=doc#ApiSystemParameterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3069,8 +3069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3078,8 +3078,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3087,14 +3087,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter name.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3103,8 +3103,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3112,8 +3112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3121,14 +3121,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter name.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3137,8 +3137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3146,8 +3146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3155,14 +3155,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter name.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3171,8 +3171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System parameter location; values: 'HEAD' and 'QUERY'.
-{{% /md %}}</dd>
+    <dd>System parameter location; values: 'HEAD' and 'QUERY'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3180,8 +3180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
-{{% /md %}}</dd>
+    <dd>System parameter name which supports values including in [system parameter list](https://www.alibabacloud.com/help/doc-detail/43677.html)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3189,11 +3189,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Backend service's parameter name.
-{{% /md %}}</dd>
+    <dd>Backend service's parameter name.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

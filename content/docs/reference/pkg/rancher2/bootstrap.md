@@ -14,26 +14,26 @@ meta_desc: "Explore the Bootstrap resource of the Rancher 2 package, including e
 
 
 ## Create a Bootstrap Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#Bootstrap">Bootstrap</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#BootstrapArgs">BootstrapArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Bootstrap</span><span class="p">(resource_name, opts=None, </span>current_password=None<span class="p">, </span>password=None<span class="p">, </span>telemetry=None<span class="p">, </span>token_ttl=None<span class="p">, </span>token_update=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewBootstrap<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#BootstrapArgs">BootstrapArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#Bootstrap">Bootstrap</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.Bootstrap.html">Bootstrap</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.BootstrapArgs.html">BootstrapArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Bootstrap resource of the Rancher 2 package, including e
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Bootstrap resource of the Rancher 2 package, including e
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Bootstrap resource of the Rancher 2 package, including e
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Bootstrap resource of the Rancher 2 package, including e
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Bootstrap Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -200,8 +200,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
-{{% /md %}}</dd>
+    <dd>Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,8 +209,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for Admin user or random generated if empty (string)
-{{% /md %}}</dd>
+    <dd>Password for Admin user or random generated if empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,8 +218,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Send telemetry anonymous data. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Send telemetry anonymous data. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}TTL in seconds for generated admin token. Default: `0`  (int)
-{{% /md %}}</dd>
+    <dd>TTL in seconds for generated admin token. Default: `0`  (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,14 +236,14 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Regenerate admin token. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Regenerate admin token. Default: `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -252,8 +252,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
-{{% /md %}}</dd>
+    <dd>Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,8 +261,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for Admin user or random generated if empty (string)
-{{% /md %}}</dd>
+    <dd>Password for Admin user or random generated if empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,8 +270,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Send telemetry anonymous data. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Send telemetry anonymous data. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,8 +279,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}TTL in seconds for generated admin token. Default: `0`  (int)
-{{% /md %}}</dd>
+    <dd>TTL in seconds for generated admin token. Default: `0`  (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,14 +288,14 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Regenerate admin token. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Regenerate admin token. Default: `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -304,8 +304,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
-{{% /md %}}</dd>
+    <dd>Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,8 +313,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for Admin user or random generated if empty (string)
-{{% /md %}}</dd>
+    <dd>Password for Admin user or random generated if empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Send telemetry anonymous data. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Send telemetry anonymous data. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,8 +331,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}TTL in seconds for generated admin token. Default: `0`  (int)
-{{% /md %}}</dd>
+    <dd>TTL in seconds for generated admin token. Default: `0`  (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,14 +340,14 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Regenerate admin token. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Regenerate admin token. Default: `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -356,8 +356,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
-{{% /md %}}</dd>
+    <dd>Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password for Admin user or random generated if empty (string)
-{{% /md %}}</dd>
+    <dd>Password for Admin user or random generated if empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Send telemetry anonymous data. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Send telemetry anonymous data. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}TTL in seconds for generated admin token. Default: `0`  (int)
-{{% /md %}}</dd>
+    <dd>TTL in seconds for generated admin token. Default: `0`  (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,11 +392,11 @@ The Bootstrap resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Regenerate admin token. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Regenerate admin token. Default: `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -410,7 +410,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -419,7 +419,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -427,8 +427,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token as helper. Should be empty (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -436,8 +436,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token id as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token id as helper. Should be empty (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -445,8 +445,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token for Admin User (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -454,8 +454,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token id for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token id for Admin User (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -463,8 +463,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) URL set as server-url (string)
-{{% /md %}}</dd>
+    <dd>(Computed) URL set as server-url (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -472,14 +472,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Admin username (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Admin username (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -488,7 +488,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -496,8 +496,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token as helper. Should be empty (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -505,8 +505,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token id as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token id as helper. Should be empty (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -514,8 +514,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token for Admin User (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -523,8 +523,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token id for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token id for Admin User (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -532,8 +532,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) URL set as server-url (string)
-{{% /md %}}</dd>
+    <dd>(Computed) URL set as server-url (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -541,14 +541,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Admin username (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Admin username (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -557,7 +557,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -565,8 +565,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token as helper. Should be empty (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -574,8 +574,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token id as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token id as helper. Should be empty (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -583,8 +583,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token for Admin User (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -592,8 +592,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token id for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token id for Admin User (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -601,8 +601,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) URL set as server-url (string)
-{{% /md %}}</dd>
+    <dd>(Computed) URL set as server-url (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -610,14 +610,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Admin username (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Admin username (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -626,7 +626,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -634,8 +634,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token as helper. Should be empty (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -643,8 +643,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token id as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token id as helper. Should be empty (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -652,8 +652,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token for Admin User (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -661,8 +661,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token id for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token id for Admin User (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -670,8 +670,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) URL set as server-url (string)
-{{% /md %}}</dd>
+    <dd>(Computed) URL set as server-url (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -679,11 +679,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Admin username (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Admin username (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -694,25 +694,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Bootstrap Resource {#look-up}
 
 Get an existing Bootstrap resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#BootstrapState">BootstrapState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#Bootstrap">Bootstrap</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>current_password=None<span class="p">, </span>password=None<span class="p">, </span>telemetry=None<span class="p">, </span>temp_token=None<span class="p">, </span>temp_token_id=None<span class="p">, </span>token=None<span class="p">, </span>token_id=None<span class="p">, </span>token_ttl=None<span class="p">, </span>token_update=None<span class="p">, </span>url=None<span class="p">, </span>user=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetBootstrap<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#BootstrapState">BootstrapState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#Bootstrap">Bootstrap</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.Bootstrap.html">Bootstrap</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2..BootstrapState.html">BootstrapState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -737,9 +737,9 @@ Get an existing Bootstrap resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -752,36 +752,9 @@ Get an existing Bootstrap resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -806,13 +779,40 @@ Get an existing Bootstrap resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -821,8 +821,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
-{{% /md %}}</dd>
+    <dd>Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,8 +830,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for Admin user or random generated if empty (string)
-{{% /md %}}</dd>
+    <dd>Password for Admin user or random generated if empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,8 +839,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Send telemetry anonymous data. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Send telemetry anonymous data. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,8 +848,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token as helper. Should be empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,8 +857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token id as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token id as helper. Should be empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token for Admin User (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,8 +875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token id for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token id for Admin User (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}TTL in seconds for generated admin token. Default: `0`  (int)
-{{% /md %}}</dd>
+    <dd>TTL in seconds for generated admin token. Default: `0`  (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,8 +893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Regenerate admin token. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Regenerate admin token. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) URL set as server-url (string)
-{{% /md %}}</dd>
+    <dd>(Computed) URL set as server-url (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,14 +911,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Admin username (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Admin username (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -927,8 +927,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
-{{% /md %}}</dd>
+    <dd>Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,8 +936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for Admin user or random generated if empty (string)
-{{% /md %}}</dd>
+    <dd>Password for Admin user or random generated if empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,8 +945,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Send telemetry anonymous data. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Send telemetry anonymous data. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token as helper. Should be empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token id as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token id as helper. Should be empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,8 +972,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token for Admin User (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,8 +981,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token id for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token id for Admin User (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}TTL in seconds for generated admin token. Default: `0`  (int)
-{{% /md %}}</dd>
+    <dd>TTL in seconds for generated admin token. Default: `0`  (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,8 +999,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Regenerate admin token. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Regenerate admin token. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1008,8 +1008,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) URL set as server-url (string)
-{{% /md %}}</dd>
+    <dd>(Computed) URL set as server-url (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1017,14 +1017,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Admin username (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Admin username (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1033,8 +1033,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
-{{% /md %}}</dd>
+    <dd>Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,8 +1042,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for Admin user or random generated if empty (string)
-{{% /md %}}</dd>
+    <dd>Password for Admin user or random generated if empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,8 +1051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Send telemetry anonymous data. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Send telemetry anonymous data. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token as helper. Should be empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token id as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token id as helper. Should be empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,8 +1078,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token for Admin User (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,8 +1087,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token id for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token id for Admin User (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1096,8 +1096,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}TTL in seconds for generated admin token. Default: `0`  (int)
-{{% /md %}}</dd>
+    <dd>TTL in seconds for generated admin token. Default: `0`  (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,8 +1105,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Regenerate admin token. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Regenerate admin token. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,8 +1114,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) URL set as server-url (string)
-{{% /md %}}</dd>
+    <dd>(Computed) URL set as server-url (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,14 +1123,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Admin username (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Admin username (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1139,8 +1139,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
-{{% /md %}}</dd>
+    <dd>Current password for Admin user. Just needed for recover if admin password has been changed from other resources and token is expired (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,8 +1148,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password for Admin user or random generated if empty (string)
-{{% /md %}}</dd>
+    <dd>Password for Admin user or random generated if empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1157,8 +1157,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Send telemetry anonymous data. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Send telemetry anonymous data. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1166,8 +1166,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token as helper. Should be empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,8 +1175,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API temporary token id as helper. Should be empty (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API temporary token id as helper. Should be empty (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,8 +1184,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token for Admin User (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Generated API token id for Admin User (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Generated API token id for Admin User (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}TTL in seconds for generated admin token. Default: `0`  (int)
-{{% /md %}}</dd>
+    <dd>TTL in seconds for generated admin token. Default: `0`  (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,8 +1211,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Regenerate admin token. Default: `false` (bool)
-{{% /md %}}</dd>
+    <dd>Regenerate admin token. Default: `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1220,8 +1220,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) URL set as server-url (string)
-{{% /md %}}</dd>
+    <dd>(Computed) URL set as server-url (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,11 +1229,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Admin username (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Admin username (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

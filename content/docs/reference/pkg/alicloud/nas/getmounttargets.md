@@ -37,29 +37,29 @@ export const alicloudNasMountTargetsId = mt.targets[0].id;
 
 ## Using GetMountTargets {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getMountTargets<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/nas/#GetMountTargetsArgs">GetMountTargetsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/nas/#GetMountTargetsResult">GetMountTargetsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_mount_targets(</span>access_group_name=None<span class="p">, </span>file_system_id=None<span class="p">, </span>ids=None<span class="p">, </span>mount_target_domain=None<span class="p">, </span>output_file=None<span class="p">, </span>type=None<span class="p">, </span>vpc_id=None<span class="p">, </span>vswitch_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupMountTargets<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/nas?tab=doc#LookupMountTargetsArgs">LookupMountTargetsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/nas?tab=doc#LookupMountTargetsResult">LookupMountTargetsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetMountTargets </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Nas.GetMountTargetsResult.html">GetMountTargetsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Nas.GetMountTargetsArgs.html">GetMountTargetsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -67,7 +67,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -76,8 +76,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FileSystem that owns the MountTarget.
-{{% /md %}}</dd>
+    <dd>The ID of the FileSystem that owns the MountTarget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -85,8 +85,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -94,8 +94,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomain.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -103,8 +103,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific MountTargetDomain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Filter results by a specific MountTargetDomain.
+<p class="property-message">Deprecated: Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -112,7 +112,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -120,8 +120,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific NetworkType.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific NetworkType.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -129,8 +129,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VpcId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VpcId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -138,14 +138,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VSwitchId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VSwitchId.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -154,8 +154,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FileSystem that owns the MountTarget.
-{{% /md %}}</dd>
+    <dd>The ID of the FileSystem that owns the MountTarget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -163,8 +163,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -172,8 +172,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomain.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -181,8 +181,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific MountTargetDomain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Filter results by a specific MountTargetDomain.
+<p class="property-message">Deprecated: Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -190,7 +190,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -198,8 +198,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific NetworkType.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific NetworkType.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -207,8 +207,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VpcId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VpcId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -216,14 +216,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VSwitchId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VSwitchId.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -232,8 +232,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FileSystem that owns the MountTarget.
-{{% /md %}}</dd>
+    <dd>The ID of the FileSystem that owns the MountTarget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -241,8 +241,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,8 +250,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomain.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -259,8 +259,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific MountTargetDomain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Filter results by a specific MountTargetDomain.
+<p class="property-message">Deprecated: Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,7 +268,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific NetworkType.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific NetworkType.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VpcId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VpcId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,14 +294,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VSwitchId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VSwitchId.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -310,8 +310,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FileSystem that owns the MountTarget.
-{{% /md %}}</dd>
+    <dd>The ID of the FileSystem that owns the MountTarget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,8 +328,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomain.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -337,8 +337,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific MountTargetDomain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Filter results by a specific MountTargetDomain.
+<p class="property-message">Deprecated: Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,7 +346,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,8 +354,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific NetworkType.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific NetworkType.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -363,8 +363,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VpcId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VpcId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,11 +372,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VSwitchId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VSwitchId.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -392,7 +392,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -401,7 +401,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -409,8 +409,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -418,8 +418,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -427,8 +427,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmounttargetstarget">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Nas.<wbr>Outputs.<wbr>Get<wbr>Mount<wbr>Targets<wbr>Target&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomains. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomains. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -436,8 +436,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AccessGroup of The MountTarget.
-{{% /md %}}</dd>
+    <dd>AccessGroup of The MountTarget.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -445,9 +445,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}MountTargetDomain of the MountTarget.
+    <dd>MountTargetDomain of the MountTarget.
 * `type`- NetworkType of The MountTarget.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.</p></dd>
 
     <dt class="property-"
             title="">
@@ -455,7 +455,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -463,7 +463,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -471,8 +471,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}VpcId of The MountTarget.
-{{% /md %}}</dd>
+    <dd>VpcId of The MountTarget.
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,14 +480,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}VSwitchId of The MountTarget.
-{{% /md %}}</dd>
+    <dd>VSwitchId of The MountTarget.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -496,7 +496,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -504,8 +504,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -513,8 +513,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -522,8 +522,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmounttargetstarget">[]Get<wbr>Mount<wbr>Targets<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomains. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomains. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -531,8 +531,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AccessGroup of The MountTarget.
-{{% /md %}}</dd>
+    <dd>AccessGroup of The MountTarget.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -540,9 +540,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}MountTargetDomain of the MountTarget.
+    <dd>MountTargetDomain of the MountTarget.
 * `type`- NetworkType of The MountTarget.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.</p></dd>
 
     <dt class="property-"
             title="">
@@ -550,7 +550,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -558,7 +558,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -566,8 +566,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}VpcId of The MountTarget.
-{{% /md %}}</dd>
+    <dd>VpcId of The MountTarget.
+</dd>
 
     <dt class="property-"
             title="">
@@ -575,14 +575,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}VSwitchId of The MountTarget.
-{{% /md %}}</dd>
+    <dd>VSwitchId of The MountTarget.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -591,7 +591,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -599,8 +599,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,8 +617,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmounttargetstarget">Get<wbr>Mount<wbr>Targets<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomains. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomains. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -626,8 +626,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AccessGroup of The MountTarget.
-{{% /md %}}</dd>
+    <dd>AccessGroup of The MountTarget.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -635,9 +635,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}MountTargetDomain of the MountTarget.
+    <dd>MountTargetDomain of the MountTarget.
 * `type`- NetworkType of The MountTarget.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.</p></dd>
 
     <dt class="property-"
             title="">
@@ -645,7 +645,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -653,7 +653,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -661,8 +661,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}VpcId of The MountTarget.
-{{% /md %}}</dd>
+    <dd>VpcId of The MountTarget.
+</dd>
 
     <dt class="property-"
             title="">
@@ -670,14 +670,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}VSwitchId of The MountTarget.
-{{% /md %}}</dd>
+    <dd>VSwitchId of The MountTarget.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -686,7 +686,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -694,8 +694,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -703,8 +703,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -712,8 +712,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmounttargetstarget">List[Get<wbr>Mount<wbr>Targets<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}A list of MountTargetDomains. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of MountTargetDomains. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -721,8 +721,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AccessGroup of The MountTarget.
-{{% /md %}}</dd>
+    <dd>AccessGroup of The MountTarget.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -730,9 +730,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}MountTargetDomain of the MountTarget.
+    <dd>MountTargetDomain of the MountTarget.
 * `type`- NetworkType of The MountTarget.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Field &#39;mount_target_domain&#39; has been deprecated from provider version 1.53.0. New field &#39;ids&#39; replaces it.</p></dd>
 
     <dt class="property-"
             title="">
@@ -740,7 +740,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -748,7 +748,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -756,8 +756,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}VpcId of The MountTarget.
-{{% /md %}}</dd>
+    <dd>VpcId of The MountTarget.
+</dd>
 
     <dt class="property-"
             title="">
@@ -765,11 +765,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}VSwitchId of The MountTarget.
-{{% /md %}}</dd>
+    <dd>VSwitchId of The MountTarget.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -782,18 +782,18 @@ The following output properties are available:
 
 
 <h4 id="getmounttargetstarget">Get<wbr>Mount<wbr>Targets<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetMountTargetsTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/nas?tab=doc#GetMountTargetsTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -802,8 +802,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -811,8 +811,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>ID of the MountTargetDomain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -820,8 +820,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific MountTargetDomain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -829,8 +829,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific NetworkType.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific NetworkType.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -838,8 +838,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VpcId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VpcId.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -847,14 +847,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VSwitchId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VSwitchId.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -863,8 +863,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -872,8 +872,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>ID of the MountTargetDomain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -881,8 +881,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific MountTargetDomain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -890,8 +890,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific NetworkType.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific NetworkType.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -899,8 +899,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VpcId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VpcId.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -908,14 +908,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VSwitchId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VSwitchId.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -924,8 +924,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -933,8 +933,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>ID of the MountTargetDomain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -942,8 +942,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific MountTargetDomain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -951,8 +951,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific NetworkType.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific NetworkType.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -960,8 +960,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VpcId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VpcId.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -969,14 +969,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VSwitchId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VSwitchId.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -985,8 +985,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -994,8 +994,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>ID of the MountTargetDomain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1003,8 +1003,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific MountTargetDomain.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific MountTargetDomain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1012,8 +1012,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific NetworkType.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific NetworkType.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1021,8 +1021,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VpcId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VpcId.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1030,11 +1030,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific VSwitchId.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific VSwitchId.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

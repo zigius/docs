@@ -18,26 +18,26 @@ Manages a Connection for a Virtual Hub.
 
 
 ## Create a VirtualHubConnection Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#VirtualHubConnection">VirtualHubConnection</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#VirtualHubConnectionArgs">VirtualHubConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">VirtualHubConnection</span><span class="p">(resource_name, opts=None, </span>hub_to_vitual_network_traffic_allowed=None<span class="p">, </span>internet_security_enabled=None<span class="p">, </span>name=None<span class="p">, </span>remote_virtual_network_id=None<span class="p">, </span>virtual_hub_id=None<span class="p">, </span>vitual_network_to_hub_gateways_traffic_allowed=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewVirtualHubConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualHubConnectionArgs">VirtualHubConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualHubConnection">VirtualHubConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.VirtualHubConnection.html">VirtualHubConnection</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.VirtualHubConnectionArgs.html">VirtualHubConnectionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages a Connection for a Virtual Hub.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages a Connection for a Virtual Hub.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages a Connection for a Virtual Hub.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages a Connection for a Virtual Hub.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## VirtualHubConnection Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,14 +249,14 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -265,8 +265,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -274,8 +274,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,14 +310,14 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -326,8 +326,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -335,8 +335,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,8 +344,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,14 +371,14 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -387,8 +387,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -396,8 +396,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,11 +432,11 @@ The VirtualHubConnection resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -450,7 +450,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -459,13 +459,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -474,13 +474,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -489,13 +489,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -504,10 +504,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -518,25 +518,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing VirtualHubConnection Resource {#look-up}
 
 Get an existing VirtualHubConnection resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#VirtualHubConnectionState">VirtualHubConnectionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#VirtualHubConnection">VirtualHubConnection</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>hub_to_vitual_network_traffic_allowed=None<span class="p">, </span>internet_security_enabled=None<span class="p">, </span>name=None<span class="p">, </span>remote_virtual_network_id=None<span class="p">, </span>virtual_hub_id=None<span class="p">, </span>vitual_network_to_hub_gateways_traffic_allowed=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetVirtualHubConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualHubConnectionState">VirtualHubConnectionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualHubConnection">VirtualHubConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.VirtualHubConnection.html">VirtualHubConnection</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.VirtualHubConnectionState.html">VirtualHubConnectionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -561,9 +561,9 @@ Get an existing VirtualHubConnection resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -576,36 +576,9 @@ Get an existing VirtualHubConnection resource's state with the given name, ID, a
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -630,13 +603,40 @@ Get an existing VirtualHubConnection resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -645,8 +645,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -654,8 +654,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -663,8 +663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -672,8 +672,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -681,8 +681,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -690,14 +690,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -706,8 +706,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -715,8 +715,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -724,8 +724,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,8 +733,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,8 +742,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,14 +751,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -767,8 +767,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,8 +776,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,8 +785,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,8 +794,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,8 +803,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -812,14 +812,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -828,8 +828,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Virtual Hub traffic allowed to transit via the Remote Virtual Network? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,8 +837,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,8 +846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Connection, which must be unique within the Virtual Hub. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,8 +855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network which the Virtual Hub should be connected to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,8 +864,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Hub within which this connection should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,11 +873,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Remote Virtual Network traffic allowed to transit the Hub's Virtual Network Gateway's? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

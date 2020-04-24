@@ -39,29 +39,29 @@ export const firstScalingRule = scalingconfigurationsDs.configurations[0].id;
 
 ## Using GetScalingConfigurations {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getScalingConfigurations<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#GetScalingConfigurationsArgs">GetScalingConfigurationsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#GetScalingConfigurationsResult">GetScalingConfigurationsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_scaling_configurations(</span>ids=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>scaling_group_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupScalingConfigurations<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#LookupScalingConfigurationsArgs">LookupScalingConfigurationsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#LookupScalingConfigurationsResult">LookupScalingConfigurationsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetScalingConfigurations </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.GetScalingConfigurationsResult.html">GetScalingConfigurationsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ess.GetScalingConfigurationsArgs.html">GetScalingConfigurationsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -69,7 +69,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -78,8 +78,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration IDs.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -87,8 +87,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting scaling configurations by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting scaling configurations by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -96,7 +96,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -104,14 +104,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the scaling configurations belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the scaling configurations belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -120,8 +120,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration IDs.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -129,8 +129,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting scaling configurations by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting scaling configurations by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -138,7 +138,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -146,14 +146,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the scaling configurations belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the scaling configurations belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -162,8 +162,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration IDs.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -171,8 +171,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting scaling configurations by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting scaling configurations by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -180,7 +180,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -188,14 +188,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the scaling configurations belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the scaling configurations belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -204,8 +204,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration IDs.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -213,8 +213,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting scaling configurations by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting scaling configurations by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,7 +222,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,11 +230,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the scaling configurations belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the scaling configurations belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -250,7 +250,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -259,8 +259,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalingconfigurationsconfiguration">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Outputs.<wbr>Get<wbr>Scaling<wbr>Configurations<wbr>Configuration&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling rules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of scaling rules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -268,8 +268,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -277,8 +277,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration ids.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -286,8 +286,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration names.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -295,7 +295,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -303,7 +303,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -311,14 +311,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -327,8 +327,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalingconfigurationsconfiguration">[]Get<wbr>Scaling<wbr>Configurations<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling rules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of scaling rules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -336,8 +336,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -345,8 +345,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration ids.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -354,8 +354,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration names.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -363,7 +363,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -371,7 +371,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -379,14 +379,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -395,8 +395,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalingconfigurationsconfiguration">Get<wbr>Scaling<wbr>Configurations<wbr>Configuration[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling rules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of scaling rules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -404,8 +404,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -413,8 +413,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration ids.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -422,8 +422,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration names.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -431,7 +431,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -439,7 +439,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -447,14 +447,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -463,8 +463,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalingconfigurationsconfiguration">List[Get<wbr>Scaling<wbr>Configurations<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling rules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of scaling rules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -472,8 +472,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -481,8 +481,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration ids.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -490,8 +490,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling configuration names.
-{{% /md %}}</dd>
+    <dd>A list of scaling configuration names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -499,7 +499,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -507,7 +507,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -515,11 +515,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -532,18 +532,18 @@ The following output properties are available:
 
 
 <h4 id="getscalingconfigurationsconfiguration">Get<wbr>Scaling<wbr>Configurations<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetScalingConfigurationsConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#GetScalingConfigurationsConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -552,8 +552,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Creation time of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -561,8 +561,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalingconfigurationsconfigurationdatadisk">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Inputs.<wbr>Get<wbr>Scaling<wbr>Configurations<wbr>Configuration<wbr>Data<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Data disks of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Data disks of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -570,8 +570,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling rule.
-{{% /md %}}</dd>
+    <dd>ID of the scaling rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -579,8 +579,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Image ID of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Image ID of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -588,8 +588,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Instance type of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -597,8 +597,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Internet charge type of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet charge type of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -606,8 +606,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Internet max bandwidth in of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet max bandwidth in of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -615,8 +615,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Internet max bandwidth of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet max bandwidth of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -624,8 +624,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Lifecycle state of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Lifecycle state of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -633,8 +633,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Name of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -642,8 +642,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the scaling configurations belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the scaling configurations belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -651,8 +651,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Security group ID of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Security group ID of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -660,8 +660,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}System disk category of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>System disk category of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -669,14 +669,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}System disk size of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>System disk size of the scaling configuration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -685,8 +685,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Creation time of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -694,8 +694,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalingconfigurationsconfigurationdatadisk">[]Get<wbr>Scaling<wbr>Configurations<wbr>Configuration<wbr>Data<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}Data disks of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Data disks of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -703,8 +703,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling rule.
-{{% /md %}}</dd>
+    <dd>ID of the scaling rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -712,8 +712,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Image ID of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Image ID of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -721,8 +721,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Instance type of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -730,8 +730,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internet charge type of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet charge type of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -739,8 +739,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Internet max bandwidth in of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet max bandwidth in of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -748,8 +748,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Internet max bandwidth of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet max bandwidth of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -757,8 +757,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Lifecycle state of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Lifecycle state of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -766,8 +766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Name of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -775,8 +775,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the scaling configurations belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the scaling configurations belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -784,8 +784,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Security group ID of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Security group ID of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -793,8 +793,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}System disk category of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>System disk category of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -802,14 +802,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}System disk size of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>System disk size of the scaling configuration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -818,8 +818,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Creation time of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -827,8 +827,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalingconfigurationsconfigurationdatadisk">Get<wbr>Scaling<wbr>Configurations<wbr>Configuration<wbr>Data<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}Data disks of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Data disks of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -836,8 +836,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling rule.
-{{% /md %}}</dd>
+    <dd>ID of the scaling rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -845,8 +845,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Image ID of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Image ID of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -854,8 +854,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Instance type of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -863,8 +863,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internet charge type of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet charge type of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -872,8 +872,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Internet max bandwidth in of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet max bandwidth in of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -881,8 +881,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Internet max bandwidth of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet max bandwidth of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -890,8 +890,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Lifecycle state of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Lifecycle state of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -899,8 +899,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Name of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -908,8 +908,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the scaling configurations belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the scaling configurations belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -917,8 +917,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Security group ID of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Security group ID of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -926,8 +926,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}System disk category of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>System disk category of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -935,14 +935,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}System disk size of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>System disk size of the scaling configuration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -951,8 +951,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Creation time of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -960,8 +960,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalingconfigurationsconfigurationdatadisk">List[Get<wbr>Scaling<wbr>Configurations<wbr>Configuration<wbr>Data<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}Data disks of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Data disks of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -969,8 +969,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling rule.
-{{% /md %}}</dd>
+    <dd>ID of the scaling rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -978,8 +978,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Image ID of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Image ID of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -987,8 +987,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Instance type of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -996,8 +996,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Internet charge type of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet charge type of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1005,8 +1005,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Internet max bandwidth in of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet max bandwidth in of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1014,8 +1014,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Internet max bandwidth of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Internet max bandwidth of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1023,8 +1023,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Lifecycle state of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Lifecycle state of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1032,8 +1032,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Name of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1041,8 +1041,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the scaling configurations belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the scaling configurations belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1050,8 +1050,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Security group ID of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>Security group ID of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1059,8 +1059,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}System disk category of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>System disk category of the scaling configuration.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1068,29 +1068,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}System disk size of the scaling configuration.
-{{% /md %}}</dd>
+    <dd>System disk size of the scaling configuration.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getscalingconfigurationsconfigurationdatadisk">Get<wbr>Scaling<wbr>Configurations<wbr>Configuration<wbr>Data<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetScalingConfigurationsConfigurationDataDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#GetScalingConfigurationsConfigurationDataDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1099,8 +1099,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Category of data disk.
-{{% /md %}}</dd>
+    <dd>Category of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1108,8 +1108,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Delete_with_instance attribute of data disk.
-{{% /md %}}</dd>
+    <dd>Delete_with_instance attribute of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1117,8 +1117,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Device attribute of data disk.
-{{% /md %}}</dd>
+    <dd>Device attribute of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1126,8 +1126,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of data disk.
-{{% /md %}}</dd>
+    <dd>Size of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1135,14 +1135,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Size of data disk.
-{{% /md %}}</dd>
+    <dd>Size of data disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1151,8 +1151,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Category of data disk.
-{{% /md %}}</dd>
+    <dd>Category of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,8 +1160,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Delete_with_instance attribute of data disk.
-{{% /md %}}</dd>
+    <dd>Delete_with_instance attribute of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,8 +1169,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Device attribute of data disk.
-{{% /md %}}</dd>
+    <dd>Device attribute of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,8 +1178,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of data disk.
-{{% /md %}}</dd>
+    <dd>Size of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,14 +1187,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Size of data disk.
-{{% /md %}}</dd>
+    <dd>Size of data disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1203,8 +1203,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Category of data disk.
-{{% /md %}}</dd>
+    <dd>Category of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1212,8 +1212,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Delete_with_instance attribute of data disk.
-{{% /md %}}</dd>
+    <dd>Delete_with_instance attribute of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,8 +1221,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Device attribute of data disk.
-{{% /md %}}</dd>
+    <dd>Device attribute of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,8 +1230,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Size of data disk.
-{{% /md %}}</dd>
+    <dd>Size of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,14 +1239,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Size of data disk.
-{{% /md %}}</dd>
+    <dd>Size of data disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1255,8 +1255,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Category of data disk.
-{{% /md %}}</dd>
+    <dd>Category of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,8 +1264,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Delete_with_instance attribute of data disk.
-{{% /md %}}</dd>
+    <dd>Delete_with_instance attribute of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,8 +1273,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Device attribute of data disk.
-{{% /md %}}</dd>
+    <dd>Device attribute of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1282,8 +1282,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Size of data disk.
-{{% /md %}}</dd>
+    <dd>Size of data disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1291,11 +1291,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Size of data disk.
-{{% /md %}}</dd>
+    <dd>Size of data disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

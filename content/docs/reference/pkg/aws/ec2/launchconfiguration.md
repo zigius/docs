@@ -182,26 +182,26 @@ configuration, resource recreation can be manually triggered by using the
 
 
 ## Create a LaunchConfiguration Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchConfiguration">LaunchConfiguration</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchConfigurationArgs">LaunchConfigurationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">LaunchConfiguration</span><span class="p">(resource_name, opts=None, </span>associate_public_ip_address=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>enable_monitoring=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_type=None<span class="p">, </span>key_name=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>placement_tenancy=None<span class="p">, </span>root_block_device=None<span class="p">, </span>security_groups=None<span class="p">, </span>spot_price=None<span class="p">, </span>user_data=None<span class="p">, </span>user_data_base64=None<span class="p">, </span>vpc_classic_link_id=None<span class="p">, </span>vpc_classic_link_security_groups=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewLaunchConfiguration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfigurationArgs">LaunchConfigurationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfiguration">LaunchConfiguration</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchConfiguration.html">LaunchConfiguration</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchConfigurationArgs.html">LaunchConfigurationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -238,9 +238,9 @@ configuration, resource recreation can be manually triggered by using the
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -258,9 +258,9 @@ configuration, resource recreation can be manually triggered by using the
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -307,9 +307,9 @@ configuration, resource recreation can be manually triggered by using the
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -346,7 +346,7 @@ configuration, resource recreation can be manually triggered by using the
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## LaunchConfiguration Resource Properties {#properties}
 
@@ -359,7 +359,7 @@ The LaunchConfiguration resource accepts the following [input]({{< relref "/docs
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -368,8 +368,8 @@ The LaunchConfiguration resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 image ID to launch.
-{{% /md %}}</dd>
+    <dd>The EC2 image ID to launch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -377,8 +377,8 @@ The LaunchConfiguration resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of instance to launch.
-{{% /md %}}</dd>
+    <dd>The size of instance to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ The LaunchConfiguration resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with an instance in a VPC.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with an instance in a VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,9 +395,9 @@ The LaunchConfiguration resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationebsblockdevice">List&lt;Launch<wbr>Configuration<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables/disables detailed monitoring. This is enabled by default.
-{{% /md %}}</dd>
+    <dd>Enables/disables detailed monitoring. This is enabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,9 +423,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationephemeralblockdevice">List&lt;Launch<wbr>Configuration<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,9 +433,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name attribute of the IAM instance profile to associate
+    <dd>The name attribute of the IAM instance profile to associate
 with launched instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name that should be used for the instance.
-{{% /md %}}</dd>
+    <dd>The key name that should be used for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,9 +452,9 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration. If you leave
+    <dd>The name of the launch configuration. If you leave
 this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,9 +462,9 @@ this blank, this provider will auto-generate a unique name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,10 +472,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance. Valid values are
+    <dd>The tenancy of the instance. Valid values are
 `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
 for more details
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,9 +483,9 @@ for more details
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationrootblockdevice">Launch<wbr>Configuration<wbr>Root<wbr>Block<wbr>Device<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,8 +493,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of associated security group IDS.
-{{% /md %}}</dd>
+    <dd>A list of associated security group IDS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price to use for reserving spot instances.
-{{% /md %}}</dd>
+    <dd>The maximum price to use for reserving spot instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
-{{% /md %}}</dd>
+    <dd>The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,8 +520,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
-{{% /md %}}</dd>
+    <dd>Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,8 +529,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
-{{% /md %}}</dd>
+    <dd>The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,14 +538,14 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
-{{% /md %}}</dd>
+    <dd>The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -554,8 +554,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 image ID to launch.
-{{% /md %}}</dd>
+    <dd>The EC2 image ID to launch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -563,8 +563,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of instance to launch.
-{{% /md %}}</dd>
+    <dd>The size of instance to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -572,8 +572,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with an instance in a VPC.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with an instance in a VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,9 +581,9 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationebsblockdevice">[]Launch<wbr>Configuration<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -591,8 +591,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,8 +600,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables/disables detailed monitoring. This is enabled by default.
-{{% /md %}}</dd>
+    <dd>Enables/disables detailed monitoring. This is enabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -609,9 +609,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationephemeralblockdevice">[]Launch<wbr>Configuration<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,9 +619,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The name attribute of the IAM instance profile to associate
+    <dd>The name attribute of the IAM instance profile to associate
 with launched instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,8 +629,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name that should be used for the instance.
-{{% /md %}}</dd>
+    <dd>The key name that should be used for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,9 +638,9 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration. If you leave
+    <dd>The name of the launch configuration. If you leave
 this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -648,9 +648,9 @@ this blank, this provider will auto-generate a unique name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,10 +658,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance. Valid values are
+    <dd>The tenancy of the instance. Valid values are
 `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
 for more details
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,9 +669,9 @@ for more details
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationrootblockdevice">Launch<wbr>Configuration<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -679,8 +679,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of associated security group IDS.
-{{% /md %}}</dd>
+    <dd>A list of associated security group IDS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -688,8 +688,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price to use for reserving spot instances.
-{{% /md %}}</dd>
+    <dd>The maximum price to use for reserving spot instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -697,8 +697,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
-{{% /md %}}</dd>
+    <dd>The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -706,8 +706,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
-{{% /md %}}</dd>
+    <dd>Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -715,8 +715,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
-{{% /md %}}</dd>
+    <dd>The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -724,14 +724,14 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
-{{% /md %}}</dd>
+    <dd>The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -740,8 +740,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 image ID to launch.
-{{% /md %}}</dd>
+    <dd>The EC2 image ID to launch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -749,8 +749,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of instance to launch.
-{{% /md %}}</dd>
+    <dd>The size of instance to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,8 +758,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with an instance in a VPC.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with an instance in a VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,9 +767,9 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationebsblockdevice">Launch<wbr>Configuration<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -777,8 +777,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,8 +786,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables/disables detailed monitoring. This is enabled by default.
-{{% /md %}}</dd>
+    <dd>Enables/disables detailed monitoring. This is enabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,9 +795,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationephemeralblockdevice">Launch<wbr>Configuration<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,9 +805,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type">string | Instance<wbr>Profile</span>
     </dt>
-    <dd>{{% md %}}The name attribute of the IAM instance profile to associate
+    <dd>The name attribute of the IAM instance profile to associate
 with launched instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -815,8 +815,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name that should be used for the instance.
-{{% /md %}}</dd>
+    <dd>The key name that should be used for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -824,9 +824,9 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration. If you leave
+    <dd>The name of the launch configuration. If you leave
 this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,9 +834,9 @@ this blank, this provider will auto-generate a unique name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,10 +844,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance. Valid values are
+    <dd>The tenancy of the instance. Valid values are
 `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
 for more details
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,9 +855,9 @@ for more details
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationrootblockdevice">Launch<wbr>Configuration<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -865,8 +865,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of associated security group IDS.
-{{% /md %}}</dd>
+    <dd>A list of associated security group IDS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -874,8 +874,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price to use for reserving spot instances.
-{{% /md %}}</dd>
+    <dd>The maximum price to use for reserving spot instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,8 +883,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
-{{% /md %}}</dd>
+    <dd>The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -892,8 +892,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
-{{% /md %}}</dd>
+    <dd>Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -901,8 +901,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
-{{% /md %}}</dd>
+    <dd>The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -910,14 +910,14 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
-{{% /md %}}</dd>
+    <dd>The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -926,8 +926,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 image ID to launch.
-{{% /md %}}</dd>
+    <dd>The EC2 image ID to launch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -935,8 +935,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The size of instance to launch.
-{{% /md %}}</dd>
+    <dd>The size of instance to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with an instance in a VPC.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with an instance in a VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,9 +953,9 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationebsblockdevice">List[Launch<wbr>Configuration<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,8 +972,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables/disables detailed monitoring. This is enabled by default.
-{{% /md %}}</dd>
+    <dd>Enables/disables detailed monitoring. This is enabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,9 +981,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationephemeralblockdevice">List[Launch<wbr>Configuration<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,9 +991,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The name attribute of the IAM instance profile to associate
+    <dd>The name attribute of the IAM instance profile to associate
 with launched instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key name that should be used for the instance.
-{{% /md %}}</dd>
+    <dd>The key name that should be used for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,9 +1010,9 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration. If you leave
+    <dd>The name of the launch configuration. If you leave
 this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,9 +1020,9 @@ this blank, this provider will auto-generate a unique name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,10 +1030,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance. Valid values are
+    <dd>The tenancy of the instance. Valid values are
 `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
 for more details
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,9 +1041,9 @@ for more details
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationrootblockdevice">Dict[Launch<wbr>Configuration<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,8 +1051,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of associated security group IDS.
-{{% /md %}}</dd>
+    <dd>A list of associated security group IDS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price to use for reserving spot instances.
-{{% /md %}}</dd>
+    <dd>The maximum price to use for reserving spot instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
-{{% /md %}}</dd>
+    <dd>The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,8 +1078,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
-{{% /md %}}</dd>
+    <dd>Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,8 +1087,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
-{{% /md %}}</dd>
+    <dd>The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1096,11 +1096,11 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
-{{% /md %}}</dd>
+    <dd>The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1114,7 +1114,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1123,8 +1123,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the launch configuration.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the launch configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1132,13 +1132,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1147,8 +1147,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the launch configuration.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the launch configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1156,13 +1156,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1171,8 +1171,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the launch configuration.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the launch configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1180,13 +1180,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1195,8 +1195,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the launch configuration.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the launch configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1204,10 +1204,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1218,25 +1218,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing LaunchConfiguration Resource {#look-up}
 
 Get an existing LaunchConfiguration resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchConfigurationState">LaunchConfigurationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchConfiguration">LaunchConfiguration</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>associate_public_ip_address=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>enable_monitoring=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_type=None<span class="p">, </span>key_name=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>placement_tenancy=None<span class="p">, </span>root_block_device=None<span class="p">, </span>security_groups=None<span class="p">, </span>spot_price=None<span class="p">, </span>user_data=None<span class="p">, </span>user_data_base64=None<span class="p">, </span>vpc_classic_link_id=None<span class="p">, </span>vpc_classic_link_security_groups=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLaunchConfiguration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfigurationState">LaunchConfigurationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfiguration">LaunchConfiguration</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchConfiguration.html">LaunchConfiguration</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchConfigurationState.html">LaunchConfigurationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1261,9 +1261,9 @@ Get an existing LaunchConfiguration resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1276,36 +1276,9 @@ Get an existing LaunchConfiguration resource's state with the given name, ID, an
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1330,13 +1303,40 @@ Get an existing LaunchConfiguration resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1345,8 +1345,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the launch configuration.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the launch configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,8 +1354,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with an instance in a VPC.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with an instance in a VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1363,9 +1363,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationebsblockdevice">List&lt;Launch<wbr>Configuration<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,8 +1373,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,8 +1382,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables/disables detailed monitoring. This is enabled by default.
-{{% /md %}}</dd>
+    <dd>Enables/disables detailed monitoring. This is enabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1391,9 +1391,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationephemeralblockdevice">List&lt;Launch<wbr>Configuration<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,9 +1401,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name attribute of the IAM instance profile to associate
+    <dd>The name attribute of the IAM instance profile to associate
 with launched instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1411,8 +1411,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 image ID to launch.
-{{% /md %}}</dd>
+    <dd>The EC2 image ID to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1420,8 +1420,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of instance to launch.
-{{% /md %}}</dd>
+    <dd>The size of instance to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1429,8 +1429,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name that should be used for the instance.
-{{% /md %}}</dd>
+    <dd>The key name that should be used for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1438,9 +1438,9 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration. If you leave
+    <dd>The name of the launch configuration. If you leave
 this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,9 +1448,9 @@ this blank, this provider will auto-generate a unique name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1458,10 +1458,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance. Valid values are
+    <dd>The tenancy of the instance. Valid values are
 `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
 for more details
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1469,9 +1469,9 @@ for more details
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationrootblockdevice">Launch<wbr>Configuration<wbr>Root<wbr>Block<wbr>Device<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1479,8 +1479,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of associated security group IDS.
-{{% /md %}}</dd>
+    <dd>A list of associated security group IDS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1488,8 +1488,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price to use for reserving spot instances.
-{{% /md %}}</dd>
+    <dd>The maximum price to use for reserving spot instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1497,8 +1497,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
-{{% /md %}}</dd>
+    <dd>The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1506,8 +1506,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
-{{% /md %}}</dd>
+    <dd>Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,8 +1515,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
-{{% /md %}}</dd>
+    <dd>The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,14 +1524,14 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
-{{% /md %}}</dd>
+    <dd>The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1540,8 +1540,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the launch configuration.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the launch configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,8 +1549,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with an instance in a VPC.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with an instance in a VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1558,9 +1558,9 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationebsblockdevice">[]Launch<wbr>Configuration<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,8 +1568,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,8 +1577,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables/disables detailed monitoring. This is enabled by default.
-{{% /md %}}</dd>
+    <dd>Enables/disables detailed monitoring. This is enabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,9 +1586,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationephemeralblockdevice">[]Launch<wbr>Configuration<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,9 +1596,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The name attribute of the IAM instance profile to associate
+    <dd>The name attribute of the IAM instance profile to associate
 with launched instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1606,8 +1606,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 image ID to launch.
-{{% /md %}}</dd>
+    <dd>The EC2 image ID to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1615,8 +1615,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of instance to launch.
-{{% /md %}}</dd>
+    <dd>The size of instance to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1624,8 +1624,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name that should be used for the instance.
-{{% /md %}}</dd>
+    <dd>The key name that should be used for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1633,9 +1633,9 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration. If you leave
+    <dd>The name of the launch configuration. If you leave
 this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1643,9 +1643,9 @@ this blank, this provider will auto-generate a unique name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1653,10 +1653,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance. Valid values are
+    <dd>The tenancy of the instance. Valid values are
 `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
 for more details
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1664,9 +1664,9 @@ for more details
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationrootblockdevice">Launch<wbr>Configuration<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,8 +1674,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of associated security group IDS.
-{{% /md %}}</dd>
+    <dd>A list of associated security group IDS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,8 +1683,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price to use for reserving spot instances.
-{{% /md %}}</dd>
+    <dd>The maximum price to use for reserving spot instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,8 +1692,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
-{{% /md %}}</dd>
+    <dd>The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,8 +1701,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
-{{% /md %}}</dd>
+    <dd>Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1710,8 +1710,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
-{{% /md %}}</dd>
+    <dd>The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1719,14 +1719,14 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
-{{% /md %}}</dd>
+    <dd>The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1735,8 +1735,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the launch configuration.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the launch configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1744,8 +1744,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with an instance in a VPC.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with an instance in a VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1753,9 +1753,9 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationebsblockdevice">Launch<wbr>Configuration<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,8 +1763,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1772,8 +1772,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables/disables detailed monitoring. This is enabled by default.
-{{% /md %}}</dd>
+    <dd>Enables/disables detailed monitoring. This is enabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1781,9 +1781,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationephemeralblockdevice">Launch<wbr>Configuration<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1791,9 +1791,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type">string | Instance<wbr>Profile</span>
     </dt>
-    <dd>{{% md %}}The name attribute of the IAM instance profile to associate
+    <dd>The name attribute of the IAM instance profile to associate
 with launched instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1801,8 +1801,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 image ID to launch.
-{{% /md %}}</dd>
+    <dd>The EC2 image ID to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,8 +1810,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of instance to launch.
-{{% /md %}}</dd>
+    <dd>The size of instance to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1819,8 +1819,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name that should be used for the instance.
-{{% /md %}}</dd>
+    <dd>The key name that should be used for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1828,9 +1828,9 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration. If you leave
+    <dd>The name of the launch configuration. If you leave
 this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1838,9 +1838,9 @@ this blank, this provider will auto-generate a unique name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1848,10 +1848,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance. Valid values are
+    <dd>The tenancy of the instance. Valid values are
 `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
 for more details
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1859,9 +1859,9 @@ for more details
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationrootblockdevice">Launch<wbr>Configuration<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1869,8 +1869,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of associated security group IDS.
-{{% /md %}}</dd>
+    <dd>A list of associated security group IDS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,8 +1878,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price to use for reserving spot instances.
-{{% /md %}}</dd>
+    <dd>The maximum price to use for reserving spot instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1887,8 +1887,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
-{{% /md %}}</dd>
+    <dd>The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1896,8 +1896,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
-{{% /md %}}</dd>
+    <dd>Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1905,8 +1905,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
-{{% /md %}}</dd>
+    <dd>The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1914,14 +1914,14 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
-{{% /md %}}</dd>
+    <dd>The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1930,8 +1930,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the launch configuration.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the launch configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1939,8 +1939,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with an instance in a VPC.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with an instance in a VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1948,9 +1948,9 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationebsblockdevice">List[Launch<wbr>Configuration<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1958,8 +1958,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1967,8 +1967,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables/disables detailed monitoring. This is enabled by default.
-{{% /md %}}</dd>
+    <dd>Enables/disables detailed monitoring. This is enabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,9 +1976,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationephemeralblockdevice">List[Launch<wbr>Configuration<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1986,9 +1986,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The name attribute of the IAM instance profile to associate
+    <dd>The name attribute of the IAM instance profile to associate
 with launched instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,8 +1996,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 image ID to launch.
-{{% /md %}}</dd>
+    <dd>The EC2 image ID to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,8 +2005,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The size of instance to launch.
-{{% /md %}}</dd>
+    <dd>The size of instance to launch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2014,8 +2014,8 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key name that should be used for the instance.
-{{% /md %}}</dd>
+    <dd>The key name that should be used for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2023,9 +2023,9 @@ with launched instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration. If you leave
+    <dd>The name of the launch configuration. If you leave
 this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2033,9 +2033,9 @@ this blank, this provider will auto-generate a unique name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2043,10 +2043,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance. Valid values are
+    <dd>The tenancy of the instance. Valid values are
 `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
 for more details
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2054,9 +2054,9 @@ for more details
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchconfigurationrootblockdevice">Dict[Launch<wbr>Configuration<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2064,8 +2064,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of associated security group IDS.
-{{% /md %}}</dd>
+    <dd>A list of associated security group IDS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2073,8 +2073,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price to use for reserving spot instances.
-{{% /md %}}</dd>
+    <dd>The maximum price to use for reserving spot instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2082,8 +2082,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
-{{% /md %}}</dd>
+    <dd>The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2091,8 +2091,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
-{{% /md %}}</dd>
+    <dd>Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2100,8 +2100,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
-{{% /md %}}</dd>
+    <dd>The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2109,11 +2109,11 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
-{{% /md %}}</dd>
+    <dd>The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2128,18 +2128,18 @@ device of the instance. See Block Devices below for details.
 
 
 <h4 id="launchconfigurationebsblockdevice">Launch<wbr>Configuration<wbr>Ebs<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchConfigurationEbsBlockDevice">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchConfigurationEbsBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfigurationEbsBlockDeviceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfigurationEbsBlockDeviceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2148,7 +2148,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2156,7 +2156,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2164,7 +2164,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2172,7 +2172,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2180,7 +2180,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2188,7 +2188,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2196,7 +2196,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2204,13 +2204,13 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2219,7 +2219,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2227,7 +2227,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2235,7 +2235,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2243,7 +2243,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2251,7 +2251,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2259,7 +2259,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2267,7 +2267,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2275,13 +2275,13 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2290,7 +2290,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2298,7 +2298,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2306,7 +2306,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2314,7 +2314,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2322,7 +2322,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2330,7 +2330,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2338,7 +2338,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2346,13 +2346,13 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2361,7 +2361,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2369,7 +2369,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2377,7 +2377,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2385,7 +2385,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2393,7 +2393,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2401,7 +2401,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2409,7 +2409,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,28 +2417,28 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchconfigurationephemeralblockdevice">Launch<wbr>Configuration<wbr>Ephemeral<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchConfigurationEphemeralBlockDevice">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchConfigurationEphemeralBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfigurationEphemeralBlockDeviceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfigurationEphemeralBlockDeviceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2447,7 +2447,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2455,13 +2455,13 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2470,7 +2470,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2478,13 +2478,13 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2493,7 +2493,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2501,13 +2501,13 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2516,7 +2516,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2524,28 +2524,28 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchconfigurationrootblockdevice">Launch<wbr>Configuration<wbr>Root<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchConfigurationRootBlockDevice">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchConfigurationRootBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfigurationRootBlockDeviceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchConfigurationRootBlockDeviceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2554,7 +2554,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2562,7 +2562,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2570,7 +2570,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2578,7 +2578,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2586,13 +2586,13 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2601,7 +2601,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2609,7 +2609,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2617,7 +2617,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2625,7 +2625,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2633,13 +2633,13 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2648,7 +2648,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2656,7 +2656,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2664,7 +2664,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2672,7 +2672,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2680,13 +2680,13 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2695,7 +2695,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2703,7 +2703,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2711,7 +2711,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2719,7 +2719,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2727,10 +2727,10 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

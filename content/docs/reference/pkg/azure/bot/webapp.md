@@ -38,26 +38,26 @@ const exampleWebApp = new azure.bot.WebApp("example", {
 
 
 ## Create a WebApp Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/bot/#WebApp">WebApp</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/bot/#WebAppArgs">WebAppArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">WebApp</span><span class="p">(resource_name, opts=None, </span>developer_app_insights_api_key=None<span class="p">, </span>developer_app_insights_application_id=None<span class="p">, </span>developer_app_insights_key=None<span class="p">, </span>display_name=None<span class="p">, </span>endpoint=None<span class="p">, </span>location=None<span class="p">, </span>luis_app_ids=None<span class="p">, </span>luis_key=None<span class="p">, </span>microsoft_app_id=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>sku=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewWebApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/bot?tab=doc#WebAppArgs">WebAppArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/bot?tab=doc#WebApp">WebApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Bot.WebApp.html">WebApp</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Bot.WebAppArgs.html">WebAppArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -94,9 +94,9 @@ const exampleWebApp = new azure.bot.WebApp("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -114,9 +114,9 @@ const exampleWebApp = new azure.bot.WebApp("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -163,9 +163,9 @@ const exampleWebApp = new azure.bot.WebApp("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -202,7 +202,7 @@ const exampleWebApp = new azure.bot.WebApp("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## WebApp Resource Properties {#properties}
 
@@ -215,7 +215,7 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -224,8 +224,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -233,8 +233,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -242,8 +242,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights API Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights API Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Application ID to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Application ID to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
-{{% /md %}}</dd>
+    <dd>The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Web App Bot endpoint.
-{{% /md %}}</dd>
+    <dd>The Web App Bot endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of LUIS App IDs to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>A list of LUIS App IDs to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The LUIS key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The LUIS key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,14 +332,14 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -348,8 +348,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -357,8 +357,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -366,8 +366,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,8 +375,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights API Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights API Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,8 +384,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Application ID to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Application ID to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,8 +393,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,8 +402,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
-{{% /md %}}</dd>
+    <dd>The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,8 +411,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Web App Bot endpoint.
-{{% /md %}}</dd>
+    <dd>The Web App Bot endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of LUIS App IDs to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>A list of LUIS App IDs to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The LUIS key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The LUIS key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,14 +456,14 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -472,8 +472,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -481,8 +481,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -490,8 +490,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,8 +499,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights API Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights API Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Application ID to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Application ID to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
-{{% /md %}}</dd>
+    <dd>The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Web App Bot endpoint.
-{{% /md %}}</dd>
+    <dd>The Web App Bot endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,8 +553,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of LUIS App IDs to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>A list of LUIS App IDs to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The LUIS key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The LUIS key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,8 +571,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,14 +580,14 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -596,8 +596,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -605,8 +605,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -614,8 +614,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights API Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights API Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,8 +632,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Application ID to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Application ID to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
-{{% /md %}}</dd>
+    <dd>The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,8 +659,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Web App Bot endpoint.
-{{% /md %}}</dd>
+    <dd>The Web App Bot endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,8 +668,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -677,8 +677,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of LUIS App IDs to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>A list of LUIS App IDs to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The LUIS key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The LUIS key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,8 +695,8 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,11 +704,11 @@ The WebApp resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -722,7 +722,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -731,13 +731,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -746,13 +746,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -761,13 +761,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -776,10 +776,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -790,25 +790,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing WebApp Resource {#look-up}
 
 Get an existing WebApp resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/bot/#WebAppState">WebAppState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/bot/#WebApp">WebApp</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>developer_app_insights_api_key=None<span class="p">, </span>developer_app_insights_application_id=None<span class="p">, </span>developer_app_insights_key=None<span class="p">, </span>display_name=None<span class="p">, </span>endpoint=None<span class="p">, </span>location=None<span class="p">, </span>luis_app_ids=None<span class="p">, </span>luis_key=None<span class="p">, </span>microsoft_app_id=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>sku=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetWebApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/bot?tab=doc#WebAppState">WebAppState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/bot?tab=doc#WebApp">WebApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Bot.WebApp.html">WebApp</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Bot.WebAppState.html">WebAppState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -833,9 +833,9 @@ Get an existing WebApp resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -848,36 +848,9 @@ Get an existing WebApp resource's state with the given name, ID, and optional ex
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -902,13 +875,40 @@ Get an existing WebApp resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -917,8 +917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights API Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights API Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Application ID to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Application ID to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
-{{% /md %}}</dd>
+    <dd>The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,8 +953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Web App Bot endpoint.
-{{% /md %}}</dd>
+    <dd>The Web App Bot endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,8 +962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,8 +971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of LUIS App IDs to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>A list of LUIS App IDs to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,8 +980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The LUIS key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The LUIS key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,8 +989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,8 +998,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1007,8 +1007,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1016,8 +1016,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1025,14 +1025,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1041,8 +1041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights API Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights API Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,8 +1050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Application ID to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Application ID to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1059,8 +1059,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1068,8 +1068,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
-{{% /md %}}</dd>
+    <dd>The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1077,8 +1077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Web App Bot endpoint.
-{{% /md %}}</dd>
+    <dd>The Web App Bot endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1086,8 +1086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,8 +1095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of LUIS App IDs to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>A list of LUIS App IDs to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1104,8 +1104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The LUIS key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The LUIS key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1113,8 +1113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,8 +1122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,8 +1131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,8 +1140,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1149,14 +1149,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1165,8 +1165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights API Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights API Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,8 +1174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Application ID to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Application ID to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,8 +1183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1192,8 +1192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
-{{% /md %}}</dd>
+    <dd>The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1201,8 +1201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Web App Bot endpoint.
-{{% /md %}}</dd>
+    <dd>The Web App Bot endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,8 +1210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of LUIS App IDs to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>A list of LUIS App IDs to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,8 +1228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The LUIS key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The LUIS key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1237,8 +1237,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,8 +1246,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,8 +1255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,8 +1264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,14 +1273,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1289,8 +1289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights API Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights API Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1298,8 +1298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Application ID to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Application ID to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,8 +1307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Application Insights Key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The Application Insights Key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1316,8 +1316,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
-{{% /md %}}</dd>
+    <dd>The name of the Web App Bot will be displayed as. This defaults to `name` if not specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1325,8 +1325,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Web App Bot endpoint.
-{{% /md %}}</dd>
+    <dd>The Web App Bot endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1334,8 +1334,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,8 +1343,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of LUIS App IDs to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>A list of LUIS App IDs to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1352,8 +1352,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The LUIS key to associate with the Web App Bot.
-{{% /md %}}</dd>
+    <dd>The LUIS key to associate with the Web App Bot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,8 +1361,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1370,8 +1370,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Web App Bot. Changing this forces a new resource to be created. Must be globally unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1379,8 +1379,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,8 +1388,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The SKU of the Web App Bot. Valid values include `F0` or `S1`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1397,11 +1397,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

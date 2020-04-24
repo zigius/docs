@@ -37,29 +37,29 @@ export const firstLifecycleHook = ds.hooks[0].id;
 
 ## Using GetLifecycleHooks {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getLifecycleHooks<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#GetLifecycleHooksArgs">GetLifecycleHooksArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#GetLifecycleHooksResult">GetLifecycleHooksResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_lifecycle_hooks(</span>ids=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>scaling_group_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupLifecycleHooks<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#LookupLifecycleHooksArgs">LookupLifecycleHooksArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#LookupLifecycleHooksResult">LookupLifecycleHooksResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetLifecycleHooks </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.GetLifecycleHooksResult.html">GetLifecycleHooksResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ess.GetLifecycleHooksArgs.html">GetLifecycleHooksArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -67,7 +67,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -76,8 +76,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook IDs.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -85,8 +85,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting lifecycle hook by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting lifecycle hook by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -94,7 +94,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -102,14 +102,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the lifecycle hooks belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the lifecycle hooks belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -118,8 +118,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook IDs.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -127,8 +127,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting lifecycle hook by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting lifecycle hook by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -136,7 +136,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -144,14 +144,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the lifecycle hooks belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the lifecycle hooks belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -160,8 +160,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook IDs.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -169,8 +169,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting lifecycle hook by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting lifecycle hook by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -178,7 +178,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -186,14 +186,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the lifecycle hooks belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the lifecycle hooks belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -202,8 +202,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook IDs.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -211,8 +211,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting lifecycle hook by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting lifecycle hook by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -220,7 +220,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,11 +228,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the lifecycle hooks belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the lifecycle hooks belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -248,7 +248,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -257,8 +257,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlifecyclehookshook">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Outputs.<wbr>Get<wbr>Lifecycle<wbr>Hooks<wbr>Hook&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hooks. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hooks. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -266,8 +266,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -275,8 +275,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook ids.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -284,8 +284,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook names.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -293,7 +293,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -301,7 +301,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -309,14 +309,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -325,8 +325,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlifecyclehookshook">[]Get<wbr>Lifecycle<wbr>Hooks<wbr>Hook</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hooks. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hooks. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -334,8 +334,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -343,8 +343,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook ids.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -352,8 +352,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook names.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -361,7 +361,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -369,7 +369,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -377,14 +377,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -393,8 +393,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlifecyclehookshook">Get<wbr>Lifecycle<wbr>Hooks<wbr>Hook[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hooks. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hooks. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -402,8 +402,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -411,8 +411,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook ids.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -420,8 +420,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook names.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -429,7 +429,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -437,7 +437,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -445,14 +445,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -461,8 +461,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlifecyclehookshook">List[Get<wbr>Lifecycle<wbr>Hooks<wbr>Hook]</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hooks. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hooks. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -470,8 +470,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -479,8 +479,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook ids.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -488,8 +488,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of lifecycle hook names.
-{{% /md %}}</dd>
+    <dd>A list of lifecycle hook names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -497,7 +497,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -505,7 +505,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -513,11 +513,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -530,18 +530,18 @@ The following output properties are available:
 
 
 <h4 id="getlifecyclehookshook">Get<wbr>Lifecycle<wbr>Hooks<wbr>Hook</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetLifecycleHooksHook">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#GetLifecycleHooksHook">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -550,8 +550,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses. 
-{{% /md %}}</dd>
+    <dd>Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -559,8 +559,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the default_result parameter.
-{{% /md %}}</dd>
+    <dd>Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the default_result parameter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -568,8 +568,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the lifecycle hook.
-{{% /md %}}</dd>
+    <dd>ID of the lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -577,8 +577,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of Scaling activity attached to lifecycle hook.
-{{% /md %}}</dd>
+    <dd>Type of Scaling activity attached to lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -586,8 +586,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the lifecycle hook.
-{{% /md %}}</dd>
+    <dd>Name of the lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -595,8 +595,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Arn of notification target.
-{{% /md %}}</dd>
+    <dd>The Arn of notification target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -604,8 +604,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Additional information that you want to include when Auto Scaling sends a message to the notification target.
-{{% /md %}}</dd>
+    <dd>Additional information that you want to include when Auto Scaling sends a message to the notification target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -613,14 +613,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the lifecycle hooks belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the lifecycle hooks belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -629,8 +629,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses. 
-{{% /md %}}</dd>
+    <dd>Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -638,8 +638,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the default_result parameter.
-{{% /md %}}</dd>
+    <dd>Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the default_result parameter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -647,8 +647,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the lifecycle hook.
-{{% /md %}}</dd>
+    <dd>ID of the lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -656,8 +656,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of Scaling activity attached to lifecycle hook.
-{{% /md %}}</dd>
+    <dd>Type of Scaling activity attached to lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -665,8 +665,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the lifecycle hook.
-{{% /md %}}</dd>
+    <dd>Name of the lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -674,8 +674,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Arn of notification target.
-{{% /md %}}</dd>
+    <dd>The Arn of notification target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -683,8 +683,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Additional information that you want to include when Auto Scaling sends a message to the notification target.
-{{% /md %}}</dd>
+    <dd>Additional information that you want to include when Auto Scaling sends a message to the notification target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -692,14 +692,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the lifecycle hooks belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the lifecycle hooks belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -708,8 +708,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses. 
-{{% /md %}}</dd>
+    <dd>Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -717,8 +717,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the default_result parameter.
-{{% /md %}}</dd>
+    <dd>Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the default_result parameter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -726,8 +726,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the lifecycle hook.
-{{% /md %}}</dd>
+    <dd>ID of the lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -735,8 +735,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of Scaling activity attached to lifecycle hook.
-{{% /md %}}</dd>
+    <dd>Type of Scaling activity attached to lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -744,8 +744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the lifecycle hook.
-{{% /md %}}</dd>
+    <dd>Name of the lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -753,8 +753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Arn of notification target.
-{{% /md %}}</dd>
+    <dd>The Arn of notification target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -762,8 +762,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Additional information that you want to include when Auto Scaling sends a message to the notification target.
-{{% /md %}}</dd>
+    <dd>Additional information that you want to include when Auto Scaling sends a message to the notification target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -771,14 +771,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the lifecycle hooks belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the lifecycle hooks belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -787,8 +787,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses. 
-{{% /md %}}</dd>
+    <dd>Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -796,8 +796,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the default_result parameter.
-{{% /md %}}</dd>
+    <dd>Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the default_result parameter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -805,8 +805,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the lifecycle hook.
-{{% /md %}}</dd>
+    <dd>ID of the lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -814,8 +814,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of Scaling activity attached to lifecycle hook.
-{{% /md %}}</dd>
+    <dd>Type of Scaling activity attached to lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -823,8 +823,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the lifecycle hook.
-{{% /md %}}</dd>
+    <dd>Name of the lifecycle hook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -832,8 +832,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Arn of notification target.
-{{% /md %}}</dd>
+    <dd>The Arn of notification target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -841,8 +841,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Additional information that you want to include when Auto Scaling sends a message to the notification target.
-{{% /md %}}</dd>
+    <dd>Additional information that you want to include when Auto Scaling sends a message to the notification target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -850,11 +850,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the lifecycle hooks belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the lifecycle hooks belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

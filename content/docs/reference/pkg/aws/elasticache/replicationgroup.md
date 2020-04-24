@@ -109,26 +109,26 @@ for full details on using Replication Groups.
 
 
 ## Create a ReplicationGroup Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroup">ReplicationGroup</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroupArgs">ReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ReplicationGroup</span><span class="p">(resource_name, opts=None, </span>apply_immediately=None<span class="p">, </span>at_rest_encryption_enabled=None<span class="p">, </span>auth_token=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>automatic_failover_enabled=None<span class="p">, </span>availability_zones=None<span class="p">, </span>cluster_mode=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>node_type=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>number_cache_clusters=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>port=None<span class="p">, </span>replication_group_description=None<span class="p">, </span>replication_group_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>security_group_names=None<span class="p">, </span>snapshot_arns=None<span class="p">, </span>snapshot_name=None<span class="p">, </span>snapshot_retention_limit=None<span class="p">, </span>snapshot_window=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, </span>transit_encryption_enabled=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewReplicationGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroupArgs">ReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroup">ReplicationGroup</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroup.html">ReplicationGroup</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroupArgs.html">ReplicationGroupArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -165,9 +165,9 @@ for full details on using Replication Groups.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -185,9 +185,9 @@ for full details on using Replication Groups.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -234,9 +234,9 @@ for full details on using Replication Groups.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -273,7 +273,7 @@ for full details on using Replication Groups.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ReplicationGroup Resource Properties {#properties}
 
@@ -286,7 +286,7 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -295,8 +295,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-created description for the replication group.
-{{% /md %}}</dd>
+    <dd>A user-created description for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,8 +304,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,8 +313,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,8 +331,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,8 +340,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,8 +349,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
-{{% /md %}}</dd>
+    <dd>A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,8 +358,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
-{{% /md %}}</dd>
+    <dd>Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,8 +367,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
-{{% /md %}}</dd>
+    <dd>The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the cache engine to be used for the cache clusters in this replication group.
-{{% /md %}}</dd>
+    <dd>The version number of the cache engine to be used for the cache clusters in this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,10 +394,10 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when maintenance
+    <dd>Specifies the weekly time range for when maintenance
 on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
 The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes in the node group.
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the nodes in the node group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,10 +414,10 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send ElastiCache notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,8 +425,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
-{{% /md %}}</dd>
+    <dd>The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,8 +434,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
-{{% /md %}}</dd>
+    <dd>The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
-{{% /md %}}</dd>
+    <dd>The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,8 +452,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication group identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication group identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
-{{% /md %}}</dd>
+    <dd>One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of cache security group names to associate with this replication group.
-{{% /md %}}</dd>
+    <dd>A list of cache security group names to associate with this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,10 +479,10 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A single-element string list containing an
+    <dd>A single-element string list containing an
 Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
 Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,8 +490,8 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
-{{% /md %}}</dd>
+    <dd>The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,12 +499,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of days for which ElastiCache will
+    <dd>The number of days for which ElastiCache will
 retain automatic cache cluster snapshots before deleting them. For example, if you set
 SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
 before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
 Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -512,9 +512,9 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range (in UTC) during which ElastiCache will
+    <dd>The daily time range (in UTC) during which ElastiCache will
 begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,8 +522,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache subnet group to be used for the replication group.
-{{% /md %}}</dd>
+    <dd>The name of the cache subnet group to be used for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -531,8 +531,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -540,14 +540,14 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption in transit.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption in transit.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -556,8 +556,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-created description for the replication group.
-{{% /md %}}</dd>
+    <dd>A user-created description for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,8 +565,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,8 +583,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
-{{% /md %}}</dd>
+    <dd>A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode</a></span>
     </dt>
-    <dd>{{% md %}}Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
-{{% /md %}}</dd>
+    <dd>Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
-{{% /md %}}</dd>
+    <dd>The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the cache engine to be used for the cache clusters in this replication group.
-{{% /md %}}</dd>
+    <dd>The version number of the cache engine to be used for the cache clusters in this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,8 +646,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,10 +655,10 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when maintenance
+    <dd>Specifies the weekly time range for when maintenance
 on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
 The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,8 +666,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes in the node group.
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the nodes in the node group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,10 +675,10 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send ElastiCache notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
-{{% /md %}}</dd>
+    <dd>The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,8 +695,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
-{{% /md %}}</dd>
+    <dd>The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,8 +704,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
-{{% /md %}}</dd>
+    <dd>The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,8 +713,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication group identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication group identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,8 +722,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
-{{% /md %}}</dd>
+    <dd>One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,8 +731,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of cache security group names to associate with this replication group.
-{{% /md %}}</dd>
+    <dd>A list of cache security group names to associate with this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,10 +740,10 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A single-element string list containing an
+    <dd>A single-element string list containing an
 Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
 Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,8 +751,8 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
-{{% /md %}}</dd>
+    <dd>The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,12 +760,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of days for which ElastiCache will
+    <dd>The number of days for which ElastiCache will
 retain automatic cache cluster snapshots before deleting them. For example, if you set
 SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
 before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
 Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -773,9 +773,9 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range (in UTC) during which ElastiCache will
+    <dd>The daily time range (in UTC) during which ElastiCache will
 begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,8 +783,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache subnet group to be used for the replication group.
-{{% /md %}}</dd>
+    <dd>The name of the cache subnet group to be used for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,8 +792,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,14 +801,14 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption in transit.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption in transit.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -817,8 +817,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-created description for the replication group.
-{{% /md %}}</dd>
+    <dd>A user-created description for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -826,8 +826,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,8 +835,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,8 +844,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -853,8 +853,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -862,8 +862,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,8 +871,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
-{{% /md %}}</dd>
+    <dd>A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,8 +880,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode</a></span>
     </dt>
-    <dd>{{% md %}}Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
-{{% /md %}}</dd>
+    <dd>Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -889,8 +889,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
-{{% /md %}}</dd>
+    <dd>The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,8 +898,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the cache engine to be used for the cache clusters in this replication group.
-{{% /md %}}</dd>
+    <dd>The version number of the cache engine to be used for the cache clusters in this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,8 +907,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -916,10 +916,10 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when maintenance
+    <dd>Specifies the weekly time range for when maintenance
 on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
 The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,8 +927,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes in the node group.
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the nodes in the node group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,10 +936,10 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send ElastiCache notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,8 +947,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
-{{% /md %}}</dd>
+    <dd>The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,8 +956,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
-{{% /md %}}</dd>
+    <dd>The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,8 +965,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
-{{% /md %}}</dd>
+    <dd>The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication group identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication group identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
-{{% /md %}}</dd>
+    <dd>One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of cache security group names to associate with this replication group.
-{{% /md %}}</dd>
+    <dd>A list of cache security group names to associate with this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,10 +1001,10 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A single-element string list containing an
+    <dd>A single-element string list containing an
 Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
 Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,8 +1012,8 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
-{{% /md %}}</dd>
+    <dd>The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,12 +1021,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of days for which ElastiCache will
+    <dd>The number of days for which ElastiCache will
 retain automatic cache cluster snapshots before deleting them. For example, if you set
 SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
 before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
 Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1034,9 +1034,9 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range (in UTC) during which ElastiCache will
+    <dd>The daily time range (in UTC) during which ElastiCache will
 begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache subnet group to be used for the replication group.
-{{% /md %}}</dd>
+    <dd>The name of the cache subnet group to be used for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,14 +1062,14 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption in transit.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption in transit.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1078,8 +1078,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A user-created description for the replication group.
-{{% /md %}}</dd>
+    <dd>A user-created description for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,8 +1087,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1096,8 +1096,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,8 +1105,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,8 +1114,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,8 +1123,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1132,8 +1132,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
-{{% /md %}}</dd>
+    <dd>A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,8 +1141,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Dict[Replication<wbr>Group<wbr>Cluster<wbr>Mode]</a></span>
     </dt>
-    <dd>{{% md %}}Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
-{{% /md %}}</dd>
+    <dd>Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,8 +1150,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
-{{% /md %}}</dd>
+    <dd>The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,8 +1159,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the cache engine to be used for the cache clusters in this replication group.
-{{% /md %}}</dd>
+    <dd>The version number of the cache engine to be used for the cache clusters in this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,8 +1168,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,10 +1177,10 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when maintenance
+    <dd>Specifies the weekly time range for when maintenance
 on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
 The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,8 +1188,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes in the node group.
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the nodes in the node group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1197,10 +1197,10 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send ElastiCache notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
-{{% /md %}}</dd>
+    <dd>The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
-{{% /md %}}</dd>
+    <dd>The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
-{{% /md %}}</dd>
+    <dd>The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The replication group identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication group identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
-{{% /md %}}</dd>
+    <dd>One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,8 +1253,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of cache security group names to associate with this replication group.
-{{% /md %}}</dd>
+    <dd>A list of cache security group names to associate with this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,10 +1262,10 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A single-element string list containing an
+    <dd>A single-element string list containing an
 Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
 Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,8 +1273,8 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
-{{% /md %}}</dd>
+    <dd>The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1282,12 +1282,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of days for which ElastiCache will
+    <dd>The number of days for which ElastiCache will
 retain automatic cache cluster snapshots before deleting them. For example, if you set
 SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
 before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
 Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,9 +1295,9 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range (in UTC) during which ElastiCache will
+    <dd>The daily time range (in UTC) during which ElastiCache will
 begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache subnet group to be used for the replication group.
-{{% /md %}}</dd>
+    <dd>The name of the cache subnet group to be used for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,11 +1323,11 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption in transit.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption in transit.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1341,7 +1341,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1350,8 +1350,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the replication group configuration endpoint when cluster mode is enabled.
-{{% /md %}}</dd>
+    <dd>The address of the replication group configuration endpoint when cluster mode is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1359,7 +1359,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1367,8 +1367,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of all the nodes that are part of this replication group.
-{{% /md %}}</dd>
+    <dd>The identifiers of all the nodes that are part of this replication group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1376,14 +1376,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
-{{% /md %}}</dd>
+    <dd>(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1392,8 +1392,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the replication group configuration endpoint when cluster mode is enabled.
-{{% /md %}}</dd>
+    <dd>The address of the replication group configuration endpoint when cluster mode is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1401,7 +1401,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1409,8 +1409,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of all the nodes that are part of this replication group.
-{{% /md %}}</dd>
+    <dd>The identifiers of all the nodes that are part of this replication group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1418,14 +1418,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
-{{% /md %}}</dd>
+    <dd>(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1434,8 +1434,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the replication group configuration endpoint when cluster mode is enabled.
-{{% /md %}}</dd>
+    <dd>The address of the replication group configuration endpoint when cluster mode is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1443,7 +1443,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1451,8 +1451,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of all the nodes that are part of this replication group.
-{{% /md %}}</dd>
+    <dd>The identifiers of all the nodes that are part of this replication group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1460,14 +1460,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
-{{% /md %}}</dd>
+    <dd>(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1476,8 +1476,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The address of the replication group configuration endpoint when cluster mode is enabled.
-{{% /md %}}</dd>
+    <dd>The address of the replication group configuration endpoint when cluster mode is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1485,7 +1485,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1493,8 +1493,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of all the nodes that are part of this replication group.
-{{% /md %}}</dd>
+    <dd>The identifiers of all the nodes that are part of this replication group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1502,11 +1502,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
-{{% /md %}}</dd>
+    <dd>(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1517,25 +1517,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ReplicationGroup Resource {#look-up}
 
 Get an existing ReplicationGroup resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroupState">ReplicationGroupState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroup">ReplicationGroup</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>apply_immediately=None<span class="p">, </span>at_rest_encryption_enabled=None<span class="p">, </span>auth_token=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>automatic_failover_enabled=None<span class="p">, </span>availability_zones=None<span class="p">, </span>cluster_mode=None<span class="p">, </span>configuration_endpoint_address=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>member_clusters=None<span class="p">, </span>node_type=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>number_cache_clusters=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>port=None<span class="p">, </span>primary_endpoint_address=None<span class="p">, </span>replication_group_description=None<span class="p">, </span>replication_group_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>security_group_names=None<span class="p">, </span>snapshot_arns=None<span class="p">, </span>snapshot_name=None<span class="p">, </span>snapshot_retention_limit=None<span class="p">, </span>snapshot_window=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, </span>transit_encryption_enabled=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetReplicationGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroupState">ReplicationGroupState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroup">ReplicationGroup</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroup.html">ReplicationGroup</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroupState.html">ReplicationGroupState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1560,9 +1560,9 @@ Get an existing ReplicationGroup resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1575,36 +1575,9 @@ Get an existing ReplicationGroup resource's state with the given name, ID, and o
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1629,13 +1602,40 @@ Get an existing ReplicationGroup resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1644,8 +1644,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1653,8 +1653,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1662,8 +1662,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1671,8 +1671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1680,8 +1680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1689,8 +1689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
-{{% /md %}}</dd>
+    <dd>A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1698,8 +1698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
-{{% /md %}}</dd>
+    <dd>Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1707,8 +1707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the replication group configuration endpoint when cluster mode is enabled.
-{{% /md %}}</dd>
+    <dd>The address of the replication group configuration endpoint when cluster mode is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1716,8 +1716,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
-{{% /md %}}</dd>
+    <dd>The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,8 +1725,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the cache engine to be used for the cache clusters in this replication group.
-{{% /md %}}</dd>
+    <dd>The version number of the cache engine to be used for the cache clusters in this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1734,8 +1734,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,10 +1743,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when maintenance
+    <dd>Specifies the weekly time range for when maintenance
 on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
 The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,8 +1754,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of all the nodes that are part of this replication group.
-{{% /md %}}</dd>
+    <dd>The identifiers of all the nodes that are part of this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,8 +1763,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes in the node group.
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the nodes in the node group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1772,10 +1772,10 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send ElastiCache notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,8 +1783,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
-{{% /md %}}</dd>
+    <dd>The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1792,8 +1792,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
-{{% /md %}}</dd>
+    <dd>The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1801,8 +1801,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
-{{% /md %}}</dd>
+    <dd>The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,8 +1810,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
-{{% /md %}}</dd>
+    <dd>(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1819,8 +1819,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-created description for the replication group.
-{{% /md %}}</dd>
+    <dd>A user-created description for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1828,8 +1828,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication group identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication group identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1837,8 +1837,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
-{{% /md %}}</dd>
+    <dd>One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,8 +1846,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of cache security group names to associate with this replication group.
-{{% /md %}}</dd>
+    <dd>A list of cache security group names to associate with this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,10 +1855,10 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A single-element string list containing an
+    <dd>A single-element string list containing an
 Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
 Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1866,8 +1866,8 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
-{{% /md %}}</dd>
+    <dd>The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1875,12 +1875,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of days for which ElastiCache will
+    <dd>The number of days for which ElastiCache will
 retain automatic cache cluster snapshots before deleting them. For example, if you set
 SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
 before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
 Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1888,9 +1888,9 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range (in UTC) during which ElastiCache will
+    <dd>The daily time range (in UTC) during which ElastiCache will
 begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1898,8 +1898,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache subnet group to be used for the replication group.
-{{% /md %}}</dd>
+    <dd>The name of the cache subnet group to be used for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1907,8 +1907,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1916,14 +1916,14 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption in transit.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption in transit.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1932,8 +1932,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,8 +1941,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,8 +1950,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1959,8 +1959,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1968,8 +1968,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1977,8 +1977,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
-{{% /md %}}</dd>
+    <dd>A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1986,8 +1986,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode</a></span>
     </dt>
-    <dd>{{% md %}}Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
-{{% /md %}}</dd>
+    <dd>Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1995,8 +1995,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the replication group configuration endpoint when cluster mode is enabled.
-{{% /md %}}</dd>
+    <dd>The address of the replication group configuration endpoint when cluster mode is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2004,8 +2004,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
-{{% /md %}}</dd>
+    <dd>The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2013,8 +2013,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the cache engine to be used for the cache clusters in this replication group.
-{{% /md %}}</dd>
+    <dd>The version number of the cache engine to be used for the cache clusters in this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2022,8 +2022,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2031,10 +2031,10 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when maintenance
+    <dd>Specifies the weekly time range for when maintenance
 on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
 The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2042,8 +2042,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of all the nodes that are part of this replication group.
-{{% /md %}}</dd>
+    <dd>The identifiers of all the nodes that are part of this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2051,8 +2051,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes in the node group.
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the nodes in the node group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2060,10 +2060,10 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send ElastiCache notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2071,8 +2071,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
-{{% /md %}}</dd>
+    <dd>The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2080,8 +2080,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
-{{% /md %}}</dd>
+    <dd>The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2089,8 +2089,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
-{{% /md %}}</dd>
+    <dd>The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2098,8 +2098,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
-{{% /md %}}</dd>
+    <dd>(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,8 +2107,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-created description for the replication group.
-{{% /md %}}</dd>
+    <dd>A user-created description for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2116,8 +2116,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication group identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication group identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,8 +2125,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
-{{% /md %}}</dd>
+    <dd>One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2134,8 +2134,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of cache security group names to associate with this replication group.
-{{% /md %}}</dd>
+    <dd>A list of cache security group names to associate with this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,10 +2143,10 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A single-element string list containing an
+    <dd>A single-element string list containing an
 Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
 Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2154,8 +2154,8 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
-{{% /md %}}</dd>
+    <dd>The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2163,12 +2163,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of days for which ElastiCache will
+    <dd>The number of days for which ElastiCache will
 retain automatic cache cluster snapshots before deleting them. For example, if you set
 SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
 before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
 Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2176,9 +2176,9 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range (in UTC) during which ElastiCache will
+    <dd>The daily time range (in UTC) during which ElastiCache will
 begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2186,8 +2186,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache subnet group to be used for the replication group.
-{{% /md %}}</dd>
+    <dd>The name of the cache subnet group to be used for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2195,8 +2195,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2204,14 +2204,14 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption in transit.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption in transit.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2220,8 +2220,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2229,8 +2229,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2238,8 +2238,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2247,8 +2247,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2256,8 +2256,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2265,8 +2265,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
-{{% /md %}}</dd>
+    <dd>A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2274,8 +2274,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode</a></span>
     </dt>
-    <dd>{{% md %}}Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
-{{% /md %}}</dd>
+    <dd>Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2283,8 +2283,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the replication group configuration endpoint when cluster mode is enabled.
-{{% /md %}}</dd>
+    <dd>The address of the replication group configuration endpoint when cluster mode is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2292,8 +2292,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
-{{% /md %}}</dd>
+    <dd>The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2301,8 +2301,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the cache engine to be used for the cache clusters in this replication group.
-{{% /md %}}</dd>
+    <dd>The version number of the cache engine to be used for the cache clusters in this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2310,8 +2310,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2319,10 +2319,10 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when maintenance
+    <dd>Specifies the weekly time range for when maintenance
 on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
 The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2330,8 +2330,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of all the nodes that are part of this replication group.
-{{% /md %}}</dd>
+    <dd>The identifiers of all the nodes that are part of this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2339,8 +2339,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes in the node group.
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the nodes in the node group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2348,10 +2348,10 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send ElastiCache notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,8 +2359,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
-{{% /md %}}</dd>
+    <dd>The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2368,8 +2368,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
-{{% /md %}}</dd>
+    <dd>The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2377,8 +2377,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
-{{% /md %}}</dd>
+    <dd>The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2386,8 +2386,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
-{{% /md %}}</dd>
+    <dd>(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2395,8 +2395,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-created description for the replication group.
-{{% /md %}}</dd>
+    <dd>A user-created description for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2404,8 +2404,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The replication group identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication group identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2413,8 +2413,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
-{{% /md %}}</dd>
+    <dd>One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2422,8 +2422,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of cache security group names to associate with this replication group.
-{{% /md %}}</dd>
+    <dd>A list of cache security group names to associate with this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2431,10 +2431,10 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A single-element string list containing an
+    <dd>A single-element string list containing an
 Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
 Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2442,8 +2442,8 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
-{{% /md %}}</dd>
+    <dd>The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2451,12 +2451,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of days for which ElastiCache will
+    <dd>The number of days for which ElastiCache will
 retain automatic cache cluster snapshots before deleting them. For example, if you set
 SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
 before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
 Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2464,9 +2464,9 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range (in UTC) during which ElastiCache will
+    <dd>The daily time range (in UTC) during which ElastiCache will
 begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2474,8 +2474,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache subnet group to be used for the replication group.
-{{% /md %}}</dd>
+    <dd>The name of the cache subnet group to be used for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2483,8 +2483,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,14 +2492,14 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption in transit.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption in transit.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2508,8 +2508,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether any modifications are applied immediately, or during the next maintenance window. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2517,8 +2517,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2526,8 +2526,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The password used to access a password protected server. Can be specified only if `transit_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,8 +2535,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a minor engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2544,8 +2544,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2553,8 +2553,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
-{{% /md %}}</dd>
+    <dd>A list of EC2 availability zones in which the replication group's cache clusters will be created. The order of the availability zones in the list is not important.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2562,8 +2562,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Dict[Replication<wbr>Group<wbr>Cluster<wbr>Mode]</a></span>
     </dt>
-    <dd>{{% md %}}Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
-{{% /md %}}</dd>
+    <dd>Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2571,8 +2571,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The address of the replication group configuration endpoint when cluster mode is enabled.
-{{% /md %}}</dd>
+    <dd>The address of the replication group configuration endpoint when cluster mode is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2580,8 +2580,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
-{{% /md %}}</dd>
+    <dd>The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2589,8 +2589,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the cache engine to be used for the cache clusters in this replication group.
-{{% /md %}}</dd>
+    <dd>The version number of the cache engine to be used for the cache clusters in this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2598,8 +2598,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
-{{% /md %}}</dd>
+    <dd>The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `at_rest_encryption_enabled = true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2607,10 +2607,10 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when maintenance
+    <dd>Specifies the weekly time range for when maintenance
 on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
 The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2618,8 +2618,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of all the nodes that are part of this replication group.
-{{% /md %}}</dd>
+    <dd>The identifiers of all the nodes that are part of this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2627,8 +2627,8 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes in the node group.
-{{% /md %}}</dd>
+    <dd>The compute and memory capacity of the nodes in the node group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2636,10 +2636,10 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send ElastiCache notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2647,8 +2647,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
-{{% /md %}}</dd>
+    <dd>The number of cache clusters (primary and replicas) this replication group will have. If Multi-AZ is enabled, the value of this parameter must be at least 2. Updates will occur before other modifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2656,8 +2656,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
-{{% /md %}}</dd>
+    <dd>The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2665,8 +2665,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
-{{% /md %}}</dd>
+    <dd>The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2674,8 +2674,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
-{{% /md %}}</dd>
+    <dd>(Redis only) The address of the endpoint for the primary node in the replication group, if the cluster mode is disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2683,8 +2683,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A user-created description for the replication group.
-{{% /md %}}</dd>
+    <dd>A user-created description for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2692,8 +2692,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The replication group identifier. This parameter is stored as a lowercase string.
-{{% /md %}}</dd>
+    <dd>The replication group identifier. This parameter is stored as a lowercase string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2701,8 +2701,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
-{{% /md %}}</dd>
+    <dd>One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2710,8 +2710,8 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of cache security group names to associate with this replication group.
-{{% /md %}}</dd>
+    <dd>A list of cache security group names to associate with this replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2719,10 +2719,10 @@ SNS topic to send ElastiCache notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A single-element string list containing an
+    <dd>A single-element string list containing an
 Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
 Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2730,8 +2730,8 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
-{{% /md %}}</dd>
+    <dd>The name of a snapshot from which to restore data into the new node group. Changing the `snapshot_name` forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2739,12 +2739,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of days for which ElastiCache will
+    <dd>The number of days for which ElastiCache will
 retain automatic cache cluster snapshots before deleting them. For example, if you set
 SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
 before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
 Please note that setting a `snapshot_retention_limit` is not supported on cache.t1.micro or cache.t2.* cache nodes
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2752,9 +2752,9 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range (in UTC) during which ElastiCache will
+    <dd>The daily time range (in UTC) during which ElastiCache will
 begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period. Example: `05:00-09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2762,8 +2762,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cache subnet group to be used for the replication group.
-{{% /md %}}</dd>
+    <dd>The name of the cache subnet group to be used for the replication group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2771,8 +2771,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2780,11 +2780,11 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption in transit.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption in transit.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2799,18 +2799,18 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
 
 <h4 id="replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ReplicationGroupClusterMode">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ReplicationGroupClusterMode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroupClusterModeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroupClusterModeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2819,8 +2819,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
-{{% /md %}}</dd>
+    <dd>Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2828,14 +2828,14 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
-{{% /md %}}</dd>
+    <dd>Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2844,8 +2844,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
-{{% /md %}}</dd>
+    <dd>Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2853,14 +2853,14 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
-{{% /md %}}</dd>
+    <dd>Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2869,8 +2869,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
-{{% /md %}}</dd>
+    <dd>Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2878,14 +2878,14 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
-{{% /md %}}</dd>
+    <dd>Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2894,8 +2894,8 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
-{{% /md %}}</dd>
+    <dd>Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2903,11 +2903,11 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
-{{% /md %}}</dd>
+    <dd>Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

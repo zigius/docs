@@ -104,26 +104,26 @@ const sampleComputeEnvironment = new aws.batch.ComputeEnvironment("sample", {
 
 
 ## Create a ComputeEnvironment Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/batch/#ComputeEnvironment">ComputeEnvironment</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/batch/#ComputeEnvironmentArgs">ComputeEnvironmentArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ComputeEnvironment</span><span class="p">(resource_name, opts=None, </span>compute_environment_name=None<span class="p">, </span>compute_environment_name_prefix=None<span class="p">, </span>compute_resources=None<span class="p">, </span>service_role=None<span class="p">, </span>state=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewComputeEnvironment<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#ComputeEnvironmentArgs">ComputeEnvironmentArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#ComputeEnvironment">ComputeEnvironment</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Batch.ComputeEnvironment.html">ComputeEnvironment</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Batch.ComputeEnvironmentArgs.html">ComputeEnvironmentArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -160,9 +160,9 @@ const sampleComputeEnvironment = new aws.batch.ComputeEnvironment("sample", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -180,9 +180,9 @@ const sampleComputeEnvironment = new aws.batch.ComputeEnvironment("sample", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -229,9 +229,9 @@ const sampleComputeEnvironment = new aws.batch.ComputeEnvironment("sample", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -268,7 +268,7 @@ const sampleComputeEnvironment = new aws.batch.ComputeEnvironment("sample", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ComputeEnvironment Resource Properties {#properties}
 
@@ -281,7 +281,7 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -290,8 +290,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
-{{% /md %}}</dd>
+    <dd>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -299,8 +299,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresources">Compute<wbr>Environment<wbr>Compute<wbr>Resources<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
-{{% /md %}}</dd>
+    <dd>Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,14 +335,14 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
-{{% /md %}}</dd>
+    <dd>The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -351,8 +351,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
-{{% /md %}}</dd>
+    <dd>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -360,8 +360,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -369,8 +369,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,8 +378,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresources">Compute<wbr>Environment<wbr>Compute<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
-{{% /md %}}</dd>
+    <dd>Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,14 +396,14 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
-{{% /md %}}</dd>
+    <dd>The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -412,8 +412,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
-{{% /md %}}</dd>
+    <dd>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -421,8 +421,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,8 +430,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,8 +439,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,8 +448,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresources">Compute<wbr>Environment<wbr>Compute<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
-{{% /md %}}</dd>
+    <dd>Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,14 +457,14 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
-{{% /md %}}</dd>
+    <dd>The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -473,8 +473,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
-{{% /md %}}</dd>
+    <dd>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -482,8 +482,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,8 +491,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,8 +500,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresources">Dict[Compute<wbr>Environment<wbr>Compute<wbr>Resources]</a></span>
     </dt>
-    <dd>{{% md %}}Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
-{{% /md %}}</dd>
+    <dd>Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,11 +518,11 @@ The ComputeEnvironment resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
-{{% /md %}}</dd>
+    <dd>The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -536,7 +536,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -545,8 +545,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the compute environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -554,8 +554,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -563,7 +563,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -571,8 +571,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the compute environment (for example, CREATING or VALID).
-{{% /md %}}</dd>
+    <dd>The current status of the compute environment (for example, CREATING or VALID).
+</dd>
 
     <dt class="property-"
             title="">
@@ -580,14 +580,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A short, human-readable string to provide additional details about the current status of the compute environment.
-{{% /md %}}</dd>
+    <dd>A short, human-readable string to provide additional details about the current status of the compute environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -596,8 +596,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the compute environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -605,8 +605,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -614,7 +614,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the compute environment (for example, CREATING or VALID).
-{{% /md %}}</dd>
+    <dd>The current status of the compute environment (for example, CREATING or VALID).
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,14 +631,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A short, human-readable string to provide additional details about the current status of the compute environment.
-{{% /md %}}</dd>
+    <dd>A short, human-readable string to provide additional details about the current status of the compute environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -647,8 +647,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the compute environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -656,8 +656,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -665,7 +665,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -673,8 +673,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the compute environment (for example, CREATING or VALID).
-{{% /md %}}</dd>
+    <dd>The current status of the compute environment (for example, CREATING or VALID).
+</dd>
 
     <dt class="property-"
             title="">
@@ -682,14 +682,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A short, human-readable string to provide additional details about the current status of the compute environment.
-{{% /md %}}</dd>
+    <dd>A short, human-readable string to provide additional details about the current status of the compute environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -698,8 +698,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the compute environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -707,8 +707,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -716,7 +716,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -724,8 +724,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the compute environment (for example, CREATING or VALID).
-{{% /md %}}</dd>
+    <dd>The current status of the compute environment (for example, CREATING or VALID).
+</dd>
 
     <dt class="property-"
             title="">
@@ -733,11 +733,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A short, human-readable string to provide additional details about the current status of the compute environment.
-{{% /md %}}</dd>
+    <dd>A short, human-readable string to provide additional details about the current status of the compute environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -748,25 +748,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ComputeEnvironment Resource {#look-up}
 
 Get an existing ComputeEnvironment resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/batch/#ComputeEnvironmentState">ComputeEnvironmentState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/batch/#ComputeEnvironment">ComputeEnvironment</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>compute_environment_name=None<span class="p">, </span>compute_environment_name_prefix=None<span class="p">, </span>compute_resources=None<span class="p">, </span>ecs_cluster_arn=None<span class="p">, </span>service_role=None<span class="p">, </span>state=None<span class="p">, </span>status=None<span class="p">, </span>status_reason=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetComputeEnvironment<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#ComputeEnvironmentState">ComputeEnvironmentState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#ComputeEnvironment">ComputeEnvironment</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Batch.ComputeEnvironment.html">ComputeEnvironment</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Batch.ComputeEnvironmentState.html">ComputeEnvironmentState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -791,9 +791,9 @@ Get an existing ComputeEnvironment resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -806,36 +806,9 @@ Get an existing ComputeEnvironment resource's state with the given name, ID, and
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -860,13 +833,40 @@ Get an existing ComputeEnvironment resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -875,8 +875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,8 +893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresources">Compute<wbr>Environment<wbr>Compute<wbr>Resources<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
-{{% /md %}}</dd>
+    <dd>Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,8 +911,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,8 +920,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
-{{% /md %}}</dd>
+    <dd>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,8 +929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
-{{% /md %}}</dd>
+    <dd>The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -938,8 +938,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the compute environment (for example, CREATING or VALID).
-{{% /md %}}</dd>
+    <dd>The current status of the compute environment (for example, CREATING or VALID).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,8 +947,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A short, human-readable string to provide additional details about the current status of the compute environment.
-{{% /md %}}</dd>
+    <dd>A short, human-readable string to provide additional details about the current status of the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,14 +956,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -972,8 +972,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,8 +981,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,8 +999,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresources">Compute<wbr>Environment<wbr>Compute<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
-{{% /md %}}</dd>
+    <dd>Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1008,8 +1008,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1017,8 +1017,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
-{{% /md %}}</dd>
+    <dd>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,8 +1026,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
-{{% /md %}}</dd>
+    <dd>The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the compute environment (for example, CREATING or VALID).
-{{% /md %}}</dd>
+    <dd>The current status of the compute environment (for example, CREATING or VALID).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A short, human-readable string to provide additional details about the current status of the compute environment.
-{{% /md %}}</dd>
+    <dd>A short, human-readable string to provide additional details about the current status of the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,14 +1053,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1069,8 +1069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,8 +1078,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,8 +1087,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1096,8 +1096,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresources">Compute<wbr>Environment<wbr>Compute<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
-{{% /md %}}</dd>
+    <dd>Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,8 +1105,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,8 +1114,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
-{{% /md %}}</dd>
+    <dd>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,8 +1123,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
-{{% /md %}}</dd>
+    <dd>The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1132,8 +1132,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the compute environment (for example, CREATING or VALID).
-{{% /md %}}</dd>
+    <dd>The current status of the compute environment (for example, CREATING or VALID).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,8 +1141,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A short, human-readable string to provide additional details about the current status of the compute environment.
-{{% /md %}}</dd>
+    <dd>A short, human-readable string to provide additional details about the current status of the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,14 +1150,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1166,8 +1166,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,8 +1175,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
-{{% /md %}}</dd>
+    <dd>The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,8 +1184,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique compute environment name beginning with the specified prefix. Conflicts with `compute_environment_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresources">Dict[Compute<wbr>Environment<wbr>Compute<wbr>Resources]</a></span>
     </dt>
-    <dd>{{% md %}}Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
-{{% /md %}}</dd>
+    <dd>Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,8 +1211,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
-{{% /md %}}</dd>
+    <dd>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1220,8 +1220,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
-{{% /md %}}</dd>
+    <dd>The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,8 +1229,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current status of the compute environment (for example, CREATING or VALID).
-{{% /md %}}</dd>
+    <dd>The current status of the compute environment (for example, CREATING or VALID).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1238,8 +1238,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A short, human-readable string to provide additional details about the current status of the compute environment.
-{{% /md %}}</dd>
+    <dd>A short, human-readable string to provide additional details about the current status of the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,11 +1247,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1266,18 +1266,18 @@ The following state arguments are supported:
 
 
 <h4 id="computeenvironmentcomputeresources">Compute<wbr>Environment<wbr>Compute<wbr>Resources</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ComputeEnvironmentComputeResources">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ComputeEnvironmentComputeResources">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#ComputeEnvironmentComputeResourcesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#ComputeEnvironmentComputeResourcesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1286,8 +1286,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1295,8 +1295,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance types that may be launched.
-{{% /md %}}</dd>
+    <dd>A list of instance types that may be launched.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1304,8 +1304,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of EC2 vCPUs that an environment can reach.
-{{% /md %}}</dd>
+    <dd>The maximum number of EC2 vCPUs that an environment can reach.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1313,8 +1313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of EC2 vCPUs that an environment should maintain.
-{{% /md %}}</dd>
+    <dd>The minimum number of EC2 vCPUs that an environment should maintain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1322,8 +1322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 security group that are associated with instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>A list of EC2 security group that are associated with instances launched in the compute environment.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1331,8 +1331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC subnets into which the compute resources are launched.
-{{% /md %}}</dd>
+    <dd>A list of VPC subnets into which the compute resources are launched.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1340,8 +1340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,8 +1349,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
-{{% /md %}}</dd>
+    <dd>The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1358,8 +1358,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
-{{% /md %}}</dd>
+    <dd>Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,8 +1367,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired number of EC2 vCPUS in the compute environment.
-{{% /md %}}</dd>
+    <dd>The desired number of EC2 vCPUS in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,8 +1376,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 key pair that is used for instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>The EC2 key pair that is used for instances launched in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,8 +1385,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1394,8 +1394,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresourceslaunchtemplate">Compute<wbr>Environment<wbr>Compute<wbr>Resources<wbr>Launch<wbr>Template<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The launch template to use for your compute resources. See details below.
-{{% /md %}}</dd>
+    <dd>The launch template to use for your compute resources. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,8 +1403,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1412,14 +1412,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value pair tags to be applied to resources that are launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>Key-value pair tags to be applied to resources that are launched in the compute environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1428,8 +1428,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1437,8 +1437,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance types that may be launched.
-{{% /md %}}</dd>
+    <dd>A list of instance types that may be launched.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1446,8 +1446,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of EC2 vCPUs that an environment can reach.
-{{% /md %}}</dd>
+    <dd>The maximum number of EC2 vCPUs that an environment can reach.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1455,8 +1455,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of EC2 vCPUs that an environment should maintain.
-{{% /md %}}</dd>
+    <dd>The minimum number of EC2 vCPUs that an environment should maintain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 security group that are associated with instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>A list of EC2 security group that are associated with instances launched in the compute environment.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1473,8 +1473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC subnets into which the compute resources are launched.
-{{% /md %}}</dd>
+    <dd>A list of VPC subnets into which the compute resources are launched.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1482,8 +1482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,8 +1491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
-{{% /md %}}</dd>
+    <dd>The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1500,8 +1500,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
-{{% /md %}}</dd>
+    <dd>Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1509,8 +1509,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired number of EC2 vCPUS in the compute environment.
-{{% /md %}}</dd>
+    <dd>The desired number of EC2 vCPUS in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1518,8 +1518,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 key pair that is used for instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>The EC2 key pair that is used for instances launched in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1527,8 +1527,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1536,8 +1536,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresourceslaunchtemplate">Compute<wbr>Environment<wbr>Compute<wbr>Resources<wbr>Launch<wbr>Template</a></span>
     </dt>
-    <dd>{{% md %}}The launch template to use for your compute resources. See details below.
-{{% /md %}}</dd>
+    <dd>The launch template to use for your compute resources. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,8 +1545,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1554,14 +1554,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value pair tags to be applied to resources that are launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>Key-value pair tags to be applied to resources that are launched in the compute environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1570,8 +1570,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1579,8 +1579,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance types that may be launched.
-{{% /md %}}</dd>
+    <dd>A list of instance types that may be launched.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1588,8 +1588,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of EC2 vCPUs that an environment can reach.
-{{% /md %}}</dd>
+    <dd>The maximum number of EC2 vCPUs that an environment can reach.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1597,8 +1597,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of EC2 vCPUs that an environment should maintain.
-{{% /md %}}</dd>
+    <dd>The minimum number of EC2 vCPUs that an environment should maintain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1606,8 +1606,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 security group that are associated with instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>A list of EC2 security group that are associated with instances launched in the compute environment.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1615,8 +1615,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC subnets into which the compute resources are launched.
-{{% /md %}}</dd>
+    <dd>A list of VPC subnets into which the compute resources are launched.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1624,8 +1624,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1633,8 +1633,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
-{{% /md %}}</dd>
+    <dd>The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,8 +1642,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
-{{% /md %}}</dd>
+    <dd>Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,8 +1651,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The desired number of EC2 vCPUS in the compute environment.
-{{% /md %}}</dd>
+    <dd>The desired number of EC2 vCPUS in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,8 +1660,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 key pair that is used for instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>The EC2 key pair that is used for instances launched in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,8 +1669,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresourceslaunchtemplate">Compute<wbr>Environment<wbr>Compute<wbr>Resources<wbr>Launch<wbr>Template</a></span>
     </dt>
-    <dd>{{% md %}}The launch template to use for your compute resources. See details below.
-{{% /md %}}</dd>
+    <dd>The launch template to use for your compute resources. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,8 +1687,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,14 +1696,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value pair tags to be applied to resources that are launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>Key-value pair tags to be applied to resources that are launched in the compute environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1712,8 +1712,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1721,8 +1721,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance types that may be launched.
-{{% /md %}}</dd>
+    <dd>A list of instance types that may be launched.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1730,8 +1730,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of EC2 vCPUs that an environment can reach.
-{{% /md %}}</dd>
+    <dd>The maximum number of EC2 vCPUs that an environment can reach.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1739,8 +1739,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of EC2 vCPUs that an environment should maintain.
-{{% /md %}}</dd>
+    <dd>The minimum number of EC2 vCPUs that an environment should maintain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1748,8 +1748,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EC2 security group that are associated with instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>A list of EC2 security group that are associated with instances launched in the compute environment.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1757,8 +1757,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC subnets into which the compute resources are launched.
-{{% /md %}}</dd>
+    <dd>A list of VPC subnets into which the compute resources are launched.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1766,8 +1766,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of compute environment. Valid items are `EC2` or `SPOT`.
-{{% /md %}}</dd>
+    <dd>The type of compute environment. Valid items are `EC2` or `SPOT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1775,8 +1775,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
-{{% /md %}}</dd>
+    <dd>The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1784,8 +1784,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
-{{% /md %}}</dd>
+    <dd>Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1793,8 +1793,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The desired number of EC2 vCPUS in the compute environment.
-{{% /md %}}</dd>
+    <dd>The desired number of EC2 vCPUS in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1802,8 +1802,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 key pair that is used for instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>The EC2 key pair that is used for instances launched in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1811,8 +1811,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1820,8 +1820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#computeenvironmentcomputeresourceslaunchtemplate">Dict[Compute<wbr>Environment<wbr>Compute<wbr>Resources<wbr>Launch<wbr>Template]</a></span>
     </dt>
-    <dd>{{% md %}}The launch template to use for your compute resources. See details below.
-{{% /md %}}</dd>
+    <dd>The launch template to use for your compute resources. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1829,8 +1829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1838,29 +1838,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value pair tags to be applied to resources that are launched in the compute environment.
-{{% /md %}}</dd>
+    <dd>Key-value pair tags to be applied to resources that are launched in the compute environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="computeenvironmentcomputeresourceslaunchtemplate">Compute<wbr>Environment<wbr>Compute<wbr>Resources<wbr>Launch<wbr>Template</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ComputeEnvironmentComputeResourcesLaunchTemplate">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ComputeEnvironmentComputeResourcesLaunchTemplate">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#ComputeEnvironmentComputeResourcesLaunchTemplateArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#ComputeEnvironmentComputeResourcesLaunchTemplateOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1869,8 +1869,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the launch template. You must specify either the launch template ID or launch template name in the request, but not both.
-{{% /md %}}</dd>
+    <dd>ID of the launch template. You must specify either the launch template ID or launch template name in the request, but not both.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,8 +1878,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the launch template.
-{{% /md %}}</dd>
+    <dd>Name of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1887,14 +1887,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the launch template. Default: The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The version number of the launch template. Default: The default version of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1903,8 +1903,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the launch template. You must specify either the launch template ID or launch template name in the request, but not both.
-{{% /md %}}</dd>
+    <dd>ID of the launch template. You must specify either the launch template ID or launch template name in the request, but not both.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1912,8 +1912,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the launch template.
-{{% /md %}}</dd>
+    <dd>Name of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1921,14 +1921,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the launch template. Default: The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The version number of the launch template. Default: The default version of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1937,8 +1937,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the launch template. You must specify either the launch template ID or launch template name in the request, but not both.
-{{% /md %}}</dd>
+    <dd>ID of the launch template. You must specify either the launch template ID or launch template name in the request, but not both.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1946,8 +1946,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the launch template.
-{{% /md %}}</dd>
+    <dd>Name of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1955,14 +1955,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the launch template. Default: The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The version number of the launch template. Default: The default version of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1971,8 +1971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the launch template. You must specify either the launch template ID or launch template name in the request, but not both.
-{{% /md %}}</dd>
+    <dd>ID of the launch template. You must specify either the launch template ID or launch template name in the request, but not both.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1980,8 +1980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the launch template.
-{{% /md %}}</dd>
+    <dd>Name of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1989,11 +1989,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version number of the launch template. Default: The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The version number of the launch template. Default: The default version of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

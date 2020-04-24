@@ -18,26 +18,26 @@ Manages a Stream Analytics Stream Input Blob.
 
 
 ## Create a StreamInputBlob Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/streamanalytics/#StreamInputBlob">StreamInputBlob</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/streamanalytics/#StreamInputBlobArgs">StreamInputBlobArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">StreamInputBlob</span><span class="p">(resource_name, opts=None, </span>date_format=None<span class="p">, </span>name=None<span class="p">, </span>path_pattern=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>serialization=None<span class="p">, </span>storage_account_key=None<span class="p">, </span>storage_account_name=None<span class="p">, </span>storage_container_name=None<span class="p">, </span>stream_analytics_job_name=None<span class="p">, </span>time_format=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewStreamInputBlob<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/streamanalytics?tab=doc#StreamInputBlobArgs">StreamInputBlobArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/streamanalytics?tab=doc#StreamInputBlob">StreamInputBlob</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.StreamAnalytics.StreamInputBlob.html">StreamInputBlob</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.StreamAnalytics.StreamInputBlobArgs.html">StreamInputBlobArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages a Stream Analytics Stream Input Blob.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages a Stream Analytics Stream Input Blob.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages a Stream Analytics Stream Input Blob.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages a Stream Analytics Stream Input Blob.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## StreamInputBlob Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
-{{% /md %}}</dd>
+    <dd>The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
-{{% /md %}}</dd>
+    <dd>The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -231,8 +231,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#streaminputblobserialization">Stream<wbr>Input<wbr>Blob<wbr>Serialization<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `serialization` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `serialization` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -240,8 +240,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to this Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -249,8 +249,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -258,8 +258,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Container within the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Container within the Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -267,8 +267,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Analytics Job. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Analytics Job. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -276,8 +276,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
-{{% /md %}}</dd>
+    <dd>The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,14 +285,14 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Input Blob. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Input Blob. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -301,8 +301,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
-{{% /md %}}</dd>
+    <dd>The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -310,8 +310,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
-{{% /md %}}</dd>
+    <dd>The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -319,8 +319,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -328,8 +328,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#streaminputblobserialization">Stream<wbr>Input<wbr>Blob<wbr>Serialization</a></span>
     </dt>
-    <dd>{{% md %}}A `serialization` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `serialization` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -337,8 +337,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to this Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -346,8 +346,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -355,8 +355,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Container within the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Container within the Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -364,8 +364,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Analytics Job. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Analytics Job. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -373,8 +373,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
-{{% /md %}}</dd>
+    <dd>The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,14 +382,14 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Input Blob. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Input Blob. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -398,8 +398,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
-{{% /md %}}</dd>
+    <dd>The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -407,8 +407,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
-{{% /md %}}</dd>
+    <dd>The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -416,8 +416,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -425,8 +425,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#streaminputblobserialization">Stream<wbr>Input<wbr>Blob<wbr>Serialization</a></span>
     </dt>
-    <dd>{{% md %}}A `serialization` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `serialization` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -434,8 +434,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to this Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -443,8 +443,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -452,8 +452,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Container within the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Container within the Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -461,8 +461,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Analytics Job. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Analytics Job. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -470,8 +470,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
-{{% /md %}}</dd>
+    <dd>The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,14 +479,14 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Input Blob. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Input Blob. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -495,8 +495,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
-{{% /md %}}</dd>
+    <dd>The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -504,8 +504,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
-{{% /md %}}</dd>
+    <dd>The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -513,8 +513,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -522,8 +522,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#streaminputblobserialization">Dict[Stream<wbr>Input<wbr>Blob<wbr>Serialization]</a></span>
     </dt>
-    <dd>{{% md %}}A `serialization` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `serialization` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -531,8 +531,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to this Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -540,8 +540,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -549,8 +549,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Container within the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Container within the Storage Account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -558,8 +558,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Analytics Job. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Analytics Job. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -567,8 +567,8 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
-{{% /md %}}</dd>
+    <dd>The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,11 +576,11 @@ The StreamInputBlob resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Input Blob. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Input Blob. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -594,7 +594,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -603,13 +603,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -618,13 +618,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -633,13 +633,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -648,10 +648,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -662,25 +662,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing StreamInputBlob Resource {#look-up}
 
 Get an existing StreamInputBlob resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/streamanalytics/#StreamInputBlobState">StreamInputBlobState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/streamanalytics/#StreamInputBlob">StreamInputBlob</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>date_format=None<span class="p">, </span>name=None<span class="p">, </span>path_pattern=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>serialization=None<span class="p">, </span>storage_account_key=None<span class="p">, </span>storage_account_name=None<span class="p">, </span>storage_container_name=None<span class="p">, </span>stream_analytics_job_name=None<span class="p">, </span>time_format=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetStreamInputBlob<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/streamanalytics?tab=doc#StreamInputBlobState">StreamInputBlobState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/streamanalytics?tab=doc#StreamInputBlob">StreamInputBlob</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.StreamAnalytics.StreamInputBlob.html">StreamInputBlob</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.StreamAnalytics.StreamInputBlobState.html">StreamInputBlobState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -705,9 +705,9 @@ Get an existing StreamInputBlob resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -720,36 +720,9 @@ Get an existing StreamInputBlob resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -774,13 +747,40 @@ Get an existing StreamInputBlob resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -789,8 +789,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
-{{% /md %}}</dd>
+    <dd>The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Input Blob. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Input Blob. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,8 +807,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
-{{% /md %}}</dd>
+    <dd>The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,8 +825,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#streaminputblobserialization">Stream<wbr>Input<wbr>Blob<wbr>Serialization<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `serialization` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `serialization` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,8 +834,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to this Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,8 +843,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,8 +852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Container within the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Container within the Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,8 +861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Analytics Job. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Analytics Job. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,14 +870,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
-{{% /md %}}</dd>
+    <dd>The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -886,8 +886,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
-{{% /md %}}</dd>
+    <dd>The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Input Blob. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Input Blob. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
-{{% /md %}}</dd>
+    <dd>The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,8 +913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -922,8 +922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#streaminputblobserialization">Stream<wbr>Input<wbr>Blob<wbr>Serialization</a></span>
     </dt>
-    <dd>{{% md %}}A `serialization` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `serialization` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,8 +931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to this Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,8 +940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -949,8 +949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Container within the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Container within the Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,8 +958,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Analytics Job. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Analytics Job. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,14 +967,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
-{{% /md %}}</dd>
+    <dd>The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
-{{% /md %}}</dd>
+    <dd>The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Input Blob. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Input Blob. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
-{{% /md %}}</dd>
+    <dd>The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#streaminputblobserialization">Stream<wbr>Input<wbr>Blob<wbr>Serialization</a></span>
     </dt>
-    <dd>{{% md %}}A `serialization` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `serialization` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to this Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Container within the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Container within the Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Analytics Job. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Analytics Job. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,14 +1064,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
-{{% /md %}}</dd>
+    <dd>The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1080,8 +1080,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
-{{% /md %}}</dd>
+    <dd>The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,8 +1089,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Input Blob. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Input Blob. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,8 +1098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
-{{% /md %}}</dd>
+    <dd>The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,8 +1107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,8 +1116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#streaminputblobserialization">Dict[Stream<wbr>Input<wbr>Blob<wbr>Serialization]</a></span>
     </dt>
-    <dd>{{% md %}}A `serialization` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `serialization` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,8 +1125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to this Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,8 +1134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,8 +1143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Container within the Storage Account.
-{{% /md %}}</dd>
+    <dd>The name of the Container within the Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,8 +1152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Stream Analytics Job. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Stream Analytics Job. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,11 +1161,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
-{{% /md %}}</dd>
+    <dd>The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1180,18 +1180,18 @@ The following state arguments are supported:
 
 
 <h4 id="streaminputblobserialization">Stream<wbr>Input<wbr>Blob<wbr>Serialization</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#StreamInputBlobSerialization">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#StreamInputBlobSerialization">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/streamanalytics?tab=doc#StreamInputBlobSerializationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/streamanalytics?tab=doc#StreamInputBlobSerializationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1200,8 +1200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.
-{{% /md %}}</dd>
+    <dd>The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,8 +1209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.
-{{% /md %}}</dd>
+    <dd>The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1218,14 +1218,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The delimiter that will be used to separate comma-separated value (CSV) records. Possible values are ` ` (space), `,` (comma), `   ` (tab), `|` (pipe) and `;`.
-{{% /md %}}</dd>
+    <dd>The delimiter that will be used to separate comma-separated value (CSV) records. Possible values are ` ` (space), `,` (comma), `   ` (tab), `|` (pipe) and `;`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1234,8 +1234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.
-{{% /md %}}</dd>
+    <dd>The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,8 +1243,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.
-{{% /md %}}</dd>
+    <dd>The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,14 +1252,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The delimiter that will be used to separate comma-separated value (CSV) records. Possible values are ` ` (space), `,` (comma), `   ` (tab), `|` (pipe) and `;`.
-{{% /md %}}</dd>
+    <dd>The delimiter that will be used to separate comma-separated value (CSV) records. Possible values are ` ` (space), `,` (comma), `   ` (tab), `|` (pipe) and `;`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1268,8 +1268,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.
-{{% /md %}}</dd>
+    <dd>The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1277,8 +1277,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.
-{{% /md %}}</dd>
+    <dd>The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,14 +1286,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The delimiter that will be used to separate comma-separated value (CSV) records. Possible values are ` ` (space), `,` (comma), `   ` (tab), `|` (pipe) and `;`.
-{{% /md %}}</dd>
+    <dd>The delimiter that will be used to separate comma-separated value (CSV) records. Possible values are ` ` (space), `,` (comma), `   ` (tab), `|` (pipe) and `;`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1302,8 +1302,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.
-{{% /md %}}</dd>
+    <dd>The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,8 +1311,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.
-{{% /md %}}</dd>
+    <dd>The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1320,11 +1320,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The delimiter that will be used to separate comma-separated value (CSV) records. Possible values are ` ` (space), `,` (comma), `   ` (tab), `|` (pipe) and `;`.
-{{% /md %}}</dd>
+    <dd>The delimiter that will be used to separate comma-separated value (CSV) records. Possible values are ` ` (space), `,` (comma), `   ` (tab), `|` (pipe) and `;`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

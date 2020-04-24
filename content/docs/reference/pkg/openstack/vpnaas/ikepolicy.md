@@ -29,26 +29,26 @@ const policy1 = new openstack.vpnaas.IkePolicy("policy_1", {});
 
 
 ## Create a IkePolicy Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/vpnaas/#IkePolicy">IkePolicy</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/vpnaas/#IkePolicyArgs">IkePolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">IkePolicy</span><span class="p">(resource_name, opts=None, </span>auth_algorithm=None<span class="p">, </span>description=None<span class="p">, </span>encryption_algorithm=None<span class="p">, </span>ike_version=None<span class="p">, </span>lifetimes=None<span class="p">, </span>name=None<span class="p">, </span>pfs=None<span class="p">, </span>phase1_negotiation_mode=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, </span>value_specs=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewIkePolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#IkePolicyArgs">IkePolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#IkePolicy">IkePolicy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.VPNaaS.IkePolicy.html">IkePolicy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.VPNaaS.IkePolicyArgs.html">IkePolicyArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -85,9 +85,9 @@ const policy1 = new openstack.vpnaas.IkePolicy("policy_1", {});
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -105,9 +105,9 @@ const policy1 = new openstack.vpnaas.IkePolicy("policy_1", {});
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -154,9 +154,9 @@ const policy1 = new openstack.vpnaas.IkePolicy("policy_1", {});
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -193,7 +193,7 @@ const policy1 = new openstack.vpnaas.IkePolicy("policy_1", {});
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## IkePolicy Resource Properties {#properties}
 
@@ -206,7 +206,7 @@ The IkePolicy resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -215,9 +215,9 @@ The IkePolicy resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
+    <dd>The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
 Default is sha1. Changing this updates the algorithm of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -225,9 +225,9 @@ Default is sha1. Changing this updates the algorithm of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the policy.
+    <dd>The human-readable description for the policy.
 Changing this updates the description of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,9 +235,9 @@ Changing this updates the description of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
+    <dd>The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
 The default value is aes-128. Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,9 +245,9 @@ The default value is aes-128. Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is v1 or v2. Default is v1.
+    <dd>The IKE mode. A valid value is v1 or v2. Default is v1.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,12 +255,12 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ikepolicylifetime">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>VPNaa<wbr>S.<wbr>Inputs.<wbr>Ike<wbr>Policy<wbr>Lifetime<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The lifetime of the security association. Consists of Unit and Value.
+    <dd>The lifetime of the security association. Consists of Unit and Value.
 - `unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes.
 Default is seconds.
 - `value` - (Optional) The value for the lifetime of the security association. Must be a positive integer.
 Default is 3600.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,9 +268,9 @@ Default is 3600.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy. Changing this updates the name of
+    <dd>The name of the policy. Changing this updates the name of
 the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,9 +278,9 @@ the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
+    <dd>The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,9 +288,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is main, which is the default.
+    <dd>The IKE mode. A valid value is main, which is the default.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,11 +298,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VPN service. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,9 +310,9 @@ service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the policy. Required if admin wants to
+    <dd>The owner of the policy. Required if admin wants to
 create a service for another policy. Changing this creates a new policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,14 +320,14 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -336,9 +336,9 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
+    <dd>The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
 Default is sha1. Changing this updates the algorithm of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,9 +346,9 @@ Default is sha1. Changing this updates the algorithm of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the policy.
+    <dd>The human-readable description for the policy.
 Changing this updates the description of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,9 +356,9 @@ Changing this updates the description of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
+    <dd>The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
 The default value is aes-128. Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -366,9 +366,9 @@ The default value is aes-128. Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is v1 or v2. Default is v1.
+    <dd>The IKE mode. A valid value is v1 or v2. Default is v1.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,12 +376,12 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ikepolicylifetime">[]Ike<wbr>Policy<wbr>Lifetime</a></span>
     </dt>
-    <dd>{{% md %}}The lifetime of the security association. Consists of Unit and Value.
+    <dd>The lifetime of the security association. Consists of Unit and Value.
 - `unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes.
 Default is seconds.
 - `value` - (Optional) The value for the lifetime of the security association. Must be a positive integer.
 Default is 3600.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,9 +389,9 @@ Default is 3600.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy. Changing this updates the name of
+    <dd>The name of the policy. Changing this updates the name of
 the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,9 +399,9 @@ the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
+    <dd>The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,9 +409,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is main, which is the default.
+    <dd>The IKE mode. A valid value is main, which is the default.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,11 +419,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VPN service. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,9 +431,9 @@ service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the policy. Required if admin wants to
+    <dd>The owner of the policy. Required if admin wants to
 create a service for another policy. Changing this creates a new policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,14 +441,14 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -457,9 +457,9 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
+    <dd>The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
 Default is sha1. Changing this updates the algorithm of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,9 +467,9 @@ Default is sha1. Changing this updates the algorithm of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the policy.
+    <dd>The human-readable description for the policy.
 Changing this updates the description of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,9 +477,9 @@ Changing this updates the description of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
+    <dd>The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
 The default value is aes-128. Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,9 +487,9 @@ The default value is aes-128. Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is v1 or v2. Default is v1.
+    <dd>The IKE mode. A valid value is v1 or v2. Default is v1.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,12 +497,12 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ikepolicylifetime">Ike<wbr>Policy<wbr>Lifetime[]</a></span>
     </dt>
-    <dd>{{% md %}}The lifetime of the security association. Consists of Unit and Value.
+    <dd>The lifetime of the security association. Consists of Unit and Value.
 - `unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes.
 Default is seconds.
 - `value` - (Optional) The value for the lifetime of the security association. Must be a positive integer.
 Default is 3600.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,9 +510,9 @@ Default is 3600.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy. Changing this updates the name of
+    <dd>The name of the policy. Changing this updates the name of
 the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,9 +520,9 @@ the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
+    <dd>The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,9 +530,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is main, which is the default.
+    <dd>The IKE mode. A valid value is main, which is the default.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -540,11 +540,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VPN service. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -552,9 +552,9 @@ service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the policy. Required if admin wants to
+    <dd>The owner of the policy. Required if admin wants to
 create a service for another policy. Changing this creates a new policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,14 +562,14 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -578,9 +578,9 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
+    <dd>The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
 Default is sha1. Changing this updates the algorithm of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -588,9 +588,9 @@ Default is sha1. Changing this updates the algorithm of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the policy.
+    <dd>The human-readable description for the policy.
 Changing this updates the description of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,9 +598,9 @@ Changing this updates the description of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
+    <dd>The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
 The default value is aes-128. Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,9 +608,9 @@ The default value is aes-128. Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is v1 or v2. Default is v1.
+    <dd>The IKE mode. A valid value is v1 or v2. Default is v1.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,12 +618,12 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ikepolicylifetime">List[Ike<wbr>Policy<wbr>Lifetime]</a></span>
     </dt>
-    <dd>{{% md %}}The lifetime of the security association. Consists of Unit and Value.
+    <dd>The lifetime of the security association. Consists of Unit and Value.
 - `unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes.
 Default is seconds.
 - `value` - (Optional) The value for the lifetime of the security association. Must be a positive integer.
 Default is 3600.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,9 +631,9 @@ Default is 3600.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy. Changing this updates the name of
+    <dd>The name of the policy. Changing this updates the name of
 the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,9 +641,9 @@ the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
+    <dd>The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,9 +651,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is main, which is the default.
+    <dd>The IKE mode. A valid value is main, which is the default.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -661,11 +661,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VPN service. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -673,9 +673,9 @@ service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the policy. Required if admin wants to
+    <dd>The owner of the policy. Required if admin wants to
 create a service for another policy. Changing this creates a new policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -683,11 +683,11 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -701,7 +701,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -710,13 +710,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -725,13 +725,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -740,13 +740,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -755,10 +755,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -769,25 +769,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing IkePolicy Resource {#look-up}
 
 Get an existing IkePolicy resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/vpnaas/#IkePolicyState">IkePolicyState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/vpnaas/#IkePolicy">IkePolicy</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>auth_algorithm=None<span class="p">, </span>description=None<span class="p">, </span>encryption_algorithm=None<span class="p">, </span>ike_version=None<span class="p">, </span>lifetimes=None<span class="p">, </span>name=None<span class="p">, </span>pfs=None<span class="p">, </span>phase1_negotiation_mode=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, </span>value_specs=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIkePolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#IkePolicyState">IkePolicyState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#IkePolicy">IkePolicy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.VPNaaS.IkePolicy.html">IkePolicy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.VPNaaS.IkePolicyState.html">IkePolicyState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -812,9 +812,9 @@ Get an existing IkePolicy resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -827,36 +827,9 @@ Get an existing IkePolicy resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -881,13 +854,40 @@ Get an existing IkePolicy resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -896,9 +896,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
+    <dd>The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
 Default is sha1. Changing this updates the algorithm of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,9 +906,9 @@ Default is sha1. Changing this updates the algorithm of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the policy.
+    <dd>The human-readable description for the policy.
 Changing this updates the description of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -916,9 +916,9 @@ Changing this updates the description of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
+    <dd>The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
 The default value is aes-128. Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,9 +926,9 @@ The default value is aes-128. Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is v1 or v2. Default is v1.
+    <dd>The IKE mode. A valid value is v1 or v2. Default is v1.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,12 +936,12 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ikepolicylifetime">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>VPNaa<wbr>S.<wbr>Inputs.<wbr>Ike<wbr>Policy<wbr>Lifetime<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The lifetime of the security association. Consists of Unit and Value.
+    <dd>The lifetime of the security association. Consists of Unit and Value.
 - `unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes.
 Default is seconds.
 - `value` - (Optional) The value for the lifetime of the security association. Must be a positive integer.
 Default is 3600.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -949,9 +949,9 @@ Default is 3600.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy. Changing this updates the name of
+    <dd>The name of the policy. Changing this updates the name of
 the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,9 +959,9 @@ the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
+    <dd>The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -969,9 +969,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is main, which is the default.
+    <dd>The IKE mode. A valid value is main, which is the default.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,11 +979,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VPN service. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,9 +991,9 @@ service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the policy. Required if admin wants to
+    <dd>The owner of the policy. Required if admin wants to
 create a service for another policy. Changing this creates a new policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,14 +1001,14 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1017,9 +1017,9 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
+    <dd>The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
 Default is sha1. Changing this updates the algorithm of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1027,9 +1027,9 @@ Default is sha1. Changing this updates the algorithm of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the policy.
+    <dd>The human-readable description for the policy.
 Changing this updates the description of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,9 +1037,9 @@ Changing this updates the description of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
+    <dd>The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
 The default value is aes-128. Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,9 +1047,9 @@ The default value is aes-128. Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is v1 or v2. Default is v1.
+    <dd>The IKE mode. A valid value is v1 or v2. Default is v1.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,12 +1057,12 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ikepolicylifetime">[]Ike<wbr>Policy<wbr>Lifetime</a></span>
     </dt>
-    <dd>{{% md %}}The lifetime of the security association. Consists of Unit and Value.
+    <dd>The lifetime of the security association. Consists of Unit and Value.
 - `unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes.
 Default is seconds.
 - `value` - (Optional) The value for the lifetime of the security association. Must be a positive integer.
 Default is 3600.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1070,9 +1070,9 @@ Default is 3600.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy. Changing this updates the name of
+    <dd>The name of the policy. Changing this updates the name of
 the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,9 +1080,9 @@ the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
+    <dd>The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,9 +1090,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is main, which is the default.
+    <dd>The IKE mode. A valid value is main, which is the default.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,11 +1100,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VPN service. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,9 +1112,9 @@ service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the policy. Required if admin wants to
+    <dd>The owner of the policy. Required if admin wants to
 create a service for another policy. Changing this creates a new policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,14 +1122,14 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1138,9 +1138,9 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
+    <dd>The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
 Default is sha1. Changing this updates the algorithm of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,9 +1148,9 @@ Default is sha1. Changing this updates the algorithm of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the policy.
+    <dd>The human-readable description for the policy.
 Changing this updates the description of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1158,9 +1158,9 @@ Changing this updates the description of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
+    <dd>The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
 The default value is aes-128. Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,9 +1168,9 @@ The default value is aes-128. Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is v1 or v2. Default is v1.
+    <dd>The IKE mode. A valid value is v1 or v2. Default is v1.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,12 +1178,12 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ikepolicylifetime">Ike<wbr>Policy<wbr>Lifetime[]</a></span>
     </dt>
-    <dd>{{% md %}}The lifetime of the security association. Consists of Unit and Value.
+    <dd>The lifetime of the security association. Consists of Unit and Value.
 - `unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes.
 Default is seconds.
 - `value` - (Optional) The value for the lifetime of the security association. Must be a positive integer.
 Default is 3600.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,9 +1191,9 @@ Default is 3600.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy. Changing this updates the name of
+    <dd>The name of the policy. Changing this updates the name of
 the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1201,9 +1201,9 @@ the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
+    <dd>The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,9 +1211,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is main, which is the default.
+    <dd>The IKE mode. A valid value is main, which is the default.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,11 +1221,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VPN service. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,9 +1233,9 @@ service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the policy. Required if admin wants to
+    <dd>The owner of the policy. Required if admin wants to
 create a service for another policy. Changing this creates a new policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,14 +1243,14 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1259,9 +1259,9 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
+    <dd>The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.
 Default is sha1. Changing this updates the algorithm of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,9 +1269,9 @@ Default is sha1. Changing this updates the algorithm of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the policy.
+    <dd>The human-readable description for the policy.
 Changing this updates the description of the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1279,9 +1279,9 @@ Changing this updates the description of the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
+    <dd>The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.
 The default value is aes-128. Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1289,9 +1289,9 @@ The default value is aes-128. Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is v1 or v2. Default is v1.
+    <dd>The IKE mode. A valid value is v1 or v2. Default is v1.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,12 +1299,12 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ikepolicylifetime">List[Ike<wbr>Policy<wbr>Lifetime]</a></span>
     </dt>
-    <dd>{{% md %}}The lifetime of the security association. Consists of Unit and Value.
+    <dd>The lifetime of the security association. Consists of Unit and Value.
 - `unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes.
 Default is seconds.
 - `value` - (Optional) The value for the lifetime of the security association. Must be a positive integer.
 Default is 3600.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,9 +1312,9 @@ Default is 3600.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy. Changing this updates the name of
+    <dd>The name of the policy. Changing this updates the name of
 the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,9 +1322,9 @@ the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
+    <dd>The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,9 +1332,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IKE mode. A valid value is main, which is the default.
+    <dd>The IKE mode. A valid value is main, which is the default.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,11 +1342,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VPN service. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,9 +1354,9 @@ service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the policy. Required if admin wants to
+    <dd>The owner of the policy. Required if admin wants to
 create a service for another policy. Changing this creates a new policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1364,11 +1364,11 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1383,18 +1383,18 @@ create a service for another policy. Changing this creates a new policy.
 
 
 <h4 id="ikepolicylifetime">Ike<wbr>Policy<wbr>Lifetime</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#IkePolicyLifetime">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#IkePolicyLifetime">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#IkePolicyLifetimeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#IkePolicyLifetimeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1403,7 +1403,7 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1411,13 +1411,13 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1426,7 +1426,7 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,13 +1434,13 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1449,7 +1449,7 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,13 +1457,13 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1472,7 +1472,7 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1480,10 +1480,10 @@ create a service for another policy. Changing this creates a new policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

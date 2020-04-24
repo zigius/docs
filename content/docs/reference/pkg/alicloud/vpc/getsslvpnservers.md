@@ -35,29 +35,29 @@ const foo = pulumi.output(alicloud.vpc.getSslVpnServers({
 
 ## Using GetSslVpnServers {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSslVpnServers<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/vpc/#GetSslVpnServersArgs">GetSslVpnServersArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/vpc/#GetSslVpnServersResult">GetSslVpnServersResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_ssl_vpn_servers(</span>ids=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>vpn_gateway_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSslVpnServers<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/vpc?tab=doc#LookupSslVpnServersArgs">LookupSslVpnServersArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/vpc?tab=doc#LookupSslVpnServersResult">LookupSslVpnServersResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSslVpnServers </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Vpc.GetSslVpnServersResult.html">GetSslVpnServersResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Vpc.GetSslVpnServersArgs.html">GetSslVpnServersArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -65,7 +65,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -74,8 +74,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}IDs of the SSL-VPN servers.
-{{% /md %}}</dd>
+    <dd>IDs of the SSL-VPN servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string of SSL-VPN server name.
-{{% /md %}}</dd>
+    <dd>A regex string of SSL-VPN server name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -92,8 +92,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Save the result to the file.
-{{% /md %}}</dd>
+    <dd>Save the result to the file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -101,14 +101,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Use the VPN gateway ID as the search key.
-{{% /md %}}</dd>
+    <dd>Use the VPN gateway ID as the search key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -117,8 +117,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}IDs of the SSL-VPN servers.
-{{% /md %}}</dd>
+    <dd>IDs of the SSL-VPN servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -126,8 +126,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string of SSL-VPN server name.
-{{% /md %}}</dd>
+    <dd>A regex string of SSL-VPN server name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -135,8 +135,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Save the result to the file.
-{{% /md %}}</dd>
+    <dd>Save the result to the file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -144,14 +144,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Use the VPN gateway ID as the search key.
-{{% /md %}}</dd>
+    <dd>Use the VPN gateway ID as the search key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -160,8 +160,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}IDs of the SSL-VPN servers.
-{{% /md %}}</dd>
+    <dd>IDs of the SSL-VPN servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -169,8 +169,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string of SSL-VPN server name.
-{{% /md %}}</dd>
+    <dd>A regex string of SSL-VPN server name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -178,8 +178,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Save the result to the file.
-{{% /md %}}</dd>
+    <dd>Save the result to the file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -187,14 +187,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Use the VPN gateway ID as the search key.
-{{% /md %}}</dd>
+    <dd>Use the VPN gateway ID as the search key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -203,8 +203,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}IDs of the SSL-VPN servers.
-{{% /md %}}</dd>
+    <dd>IDs of the SSL-VPN servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -212,8 +212,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string of SSL-VPN server name.
-{{% /md %}}</dd>
+    <dd>A regex string of SSL-VPN server name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -221,8 +221,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Save the result to the file.
-{{% /md %}}</dd>
+    <dd>Save the result to the file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,11 +230,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Use the VPN gateway ID as the search key.
-{{% /md %}}</dd>
+    <dd>Use the VPN gateway ID as the search key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -250,7 +250,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -259,8 +259,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -268,8 +268,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN server IDs.
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN server IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -277,8 +277,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN server names.
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN server names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -286,8 +286,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsslvpnserversserver">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Vpc.<wbr>Outputs.<wbr>Get<wbr>Ssl<wbr>Vpn<wbr>Servers<wbr>Server&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN servers. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN servers. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -295,7 +295,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -303,7 +303,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -311,14 +311,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN gateway instance.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN gateway instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -327,8 +327,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -336,8 +336,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN server IDs.
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN server IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -345,8 +345,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN server names.
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN server names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -354,8 +354,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsslvpnserversserver">[]Get<wbr>Ssl<wbr>Vpn<wbr>Servers<wbr>Server</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN servers. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN servers. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -363,7 +363,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -371,7 +371,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -379,14 +379,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN gateway instance.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN gateway instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -395,8 +395,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -404,8 +404,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN server IDs.
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN server IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -413,8 +413,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN server names.
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN server names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -422,8 +422,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsslvpnserversserver">Get<wbr>Ssl<wbr>Vpn<wbr>Servers<wbr>Server[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN servers. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN servers. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -431,7 +431,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -439,7 +439,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -447,14 +447,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN gateway instance.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN gateway instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -463,8 +463,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -472,8 +472,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN server IDs.
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN server IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -481,8 +481,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN server names.
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN server names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -490,8 +490,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsslvpnserversserver">List[Get<wbr>Ssl<wbr>Vpn<wbr>Servers<wbr>Server]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSL-VPN servers. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of SSL-VPN servers. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -499,7 +499,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -507,7 +507,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -515,11 +515,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN gateway instance.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN gateway instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -532,18 +532,18 @@ The following output properties are available:
 
 
 <h4 id="getsslvpnserversserver">Get<wbr>Ssl<wbr>Vpn<wbr>Servers<wbr>Server</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetSslVpnServersServer">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/vpc?tab=doc#GetSslVpnServersServer">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -552,8 +552,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm used.
-{{% /md %}}</dd>
+    <dd>The encryption algorithm used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -561,8 +561,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address pool of the client.
-{{% /md %}}</dd>
+    <dd>The IP address pool of the client.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -570,8 +570,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to compress.
-{{% /md %}}</dd>
+    <dd>Whether to compress.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -579,8 +579,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of current connections.
-{{% /md %}}</dd>
+    <dd>The number of current connections.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -588,8 +588,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time of creation.
-{{% /md %}}</dd>
+    <dd>The time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -597,8 +597,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The ID of the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -606,8 +606,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP.
-{{% /md %}}</dd>
+    <dd>The public IP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -615,8 +615,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The local subnet of the VPN connection.
-{{% /md %}}</dd>
+    <dd>The local subnet of the VPN connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -624,8 +624,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of connections.
-{{% /md %}}</dd>
+    <dd>The maximum number of connections.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -633,8 +633,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The name of the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -642,8 +642,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The port used by the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -651,8 +651,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The protocol used by the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -660,14 +660,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Use the VPN gateway ID as the search key.
-{{% /md %}}</dd>
+    <dd>Use the VPN gateway ID as the search key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -676,8 +676,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm used.
-{{% /md %}}</dd>
+    <dd>The encryption algorithm used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -685,8 +685,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address pool of the client.
-{{% /md %}}</dd>
+    <dd>The IP address pool of the client.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -694,8 +694,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to compress.
-{{% /md %}}</dd>
+    <dd>Whether to compress.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -703,8 +703,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of current connections.
-{{% /md %}}</dd>
+    <dd>The number of current connections.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -712,8 +712,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time of creation.
-{{% /md %}}</dd>
+    <dd>The time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -721,8 +721,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The ID of the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -730,8 +730,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP.
-{{% /md %}}</dd>
+    <dd>The public IP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -739,8 +739,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The local subnet of the VPN connection.
-{{% /md %}}</dd>
+    <dd>The local subnet of the VPN connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -748,8 +748,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of connections.
-{{% /md %}}</dd>
+    <dd>The maximum number of connections.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -757,8 +757,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The name of the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -766,8 +766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The port used by the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -775,8 +775,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The protocol used by the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -784,14 +784,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Use the VPN gateway ID as the search key.
-{{% /md %}}</dd>
+    <dd>Use the VPN gateway ID as the search key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -800,8 +800,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm used.
-{{% /md %}}</dd>
+    <dd>The encryption algorithm used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -809,8 +809,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address pool of the client.
-{{% /md %}}</dd>
+    <dd>The IP address pool of the client.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -818,8 +818,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to compress.
-{{% /md %}}</dd>
+    <dd>Whether to compress.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -827,8 +827,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of current connections.
-{{% /md %}}</dd>
+    <dd>The number of current connections.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -836,8 +836,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time of creation.
-{{% /md %}}</dd>
+    <dd>The time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -845,8 +845,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The ID of the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -854,8 +854,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP.
-{{% /md %}}</dd>
+    <dd>The public IP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -863,8 +863,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The local subnet of the VPN connection.
-{{% /md %}}</dd>
+    <dd>The local subnet of the VPN connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -872,8 +872,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of connections.
-{{% /md %}}</dd>
+    <dd>The maximum number of connections.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -881,8 +881,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The name of the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -890,8 +890,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The port used by the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -899,8 +899,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The protocol used by the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -908,14 +908,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Use the VPN gateway ID as the search key.
-{{% /md %}}</dd>
+    <dd>Use the VPN gateway ID as the search key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -924,8 +924,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The encryption algorithm used.
-{{% /md %}}</dd>
+    <dd>The encryption algorithm used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -933,8 +933,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP address pool of the client.
-{{% /md %}}</dd>
+    <dd>The IP address pool of the client.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -942,8 +942,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to compress.
-{{% /md %}}</dd>
+    <dd>Whether to compress.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -951,8 +951,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of current connections.
-{{% /md %}}</dd>
+    <dd>The number of current connections.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -960,8 +960,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time of creation.
-{{% /md %}}</dd>
+    <dd>The time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -969,8 +969,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The ID of the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -978,8 +978,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public IP.
-{{% /md %}}</dd>
+    <dd>The public IP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -987,8 +987,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The local subnet of the VPN connection.
-{{% /md %}}</dd>
+    <dd>The local subnet of the VPN connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -996,8 +996,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of connections.
-{{% /md %}}</dd>
+    <dd>The maximum number of connections.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1005,8 +1005,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The name of the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1014,8 +1014,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The port used by the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1023,8 +1023,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the SSL-VPN server.
-{{% /md %}}</dd>
+    <dd>The protocol used by the SSL-VPN server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1032,11 +1032,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Use the VPN gateway ID as the search key.
-{{% /md %}}</dd>
+    <dd>Use the VPN gateway ID as the search key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

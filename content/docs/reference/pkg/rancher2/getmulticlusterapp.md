@@ -32,29 +32,29 @@ const foo = pulumi.output(rancher2.getMultiClusterApp({
 
 ## Using GetMultiClusterApp {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getMultiClusterApp<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#GetMultiClusterAppArgs">GetMultiClusterAppArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#GetMultiClusterAppResult">GetMultiClusterAppResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_multi_cluster_app(</span>name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupMultiClusterApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#GetMultiClusterAppArgs">GetMultiClusterAppArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#LookupMultiClusterAppResult">LookupMultiClusterAppResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetMultiClusterApp </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.GetMultiClusterAppResult.html">GetMultiClusterAppResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.GetMultiClusterAppArgs.html">GetMultiClusterAppArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -71,14 +71,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -87,14 +87,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -103,14 +103,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -119,11 +119,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The multi cluster app name (string)
-{{% /md %}}</dd>
+    <dd>The multi cluster app name (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -139,7 +139,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -148,8 +148,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -157,8 +157,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappanswer">List&lt;Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Answer&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app answers (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -166,8 +166,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -175,8 +175,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -184,8 +184,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -193,8 +193,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappmember">List&lt;Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Member&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app members (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app members (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -202,7 +202,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -210,8 +210,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app revision history limit (int)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app revision history limit (int)
+</dd>
 
     <dt class="property-"
             title="">
@@ -219,8 +219,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -228,8 +228,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app roles (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -237,8 +237,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterapptarget">List&lt;Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Target&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -246,8 +246,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template name (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -255,8 +255,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -264,8 +264,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -273,14 +273,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappupgradestrategy">List&lt;Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app upgrade strategy (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app upgrade strategy (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -289,8 +289,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -298,8 +298,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappanswer">[]Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Answer</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app answers (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -307,8 +307,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -316,8 +316,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -325,8 +325,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -334,8 +334,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappmember">[]Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Member</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app members (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app members (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -343,7 +343,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -351,8 +351,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app revision history limit (int)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app revision history limit (int)
+</dd>
 
     <dt class="property-"
             title="">
@@ -360,8 +360,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -369,8 +369,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app roles (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -378,8 +378,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterapptarget">[]Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -387,8 +387,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template name (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -396,8 +396,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -405,8 +405,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -414,14 +414,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappupgradestrategy">[]Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app upgrade strategy (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app upgrade strategy (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -430,8 +430,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -439,8 +439,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappanswer">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Answer[]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app answers (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -448,8 +448,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -457,8 +457,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -466,8 +466,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -475,8 +475,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappmember">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Member[]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app members (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app members (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -484,7 +484,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -492,8 +492,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app revision history limit (int)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app revision history limit (int)
+</dd>
 
     <dt class="property-"
             title="">
@@ -501,8 +501,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -510,8 +510,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app roles (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -519,8 +519,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterapptarget">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -528,8 +528,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template name (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,8 +537,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,8 +546,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -555,14 +555,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappupgradestrategy">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy[]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app upgrade strategy (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app upgrade strategy (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -571,8 +571,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for multi cluster app object (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -580,8 +580,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappanswer">List[Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Answer]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app answers (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app answers (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -589,8 +589,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app catalog name (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app catalog name (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -598,8 +598,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -607,8 +607,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for multi cluster app object (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for multi cluster app object (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -616,8 +616,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappmember">List[Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Member]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app members (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app members (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -625,7 +625,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -633,8 +633,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app revision history limit (int)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app revision history limit (int)
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,8 +642,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Current revision id for the multi cluster app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Current revision id for the multi cluster app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,8 +651,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app roles (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app roles (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -660,8 +660,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterapptarget">List[Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app target projects (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app target projects (list)
+</dd>
 
     <dt class="property-"
             title="">
@@ -669,8 +669,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template name (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template name (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -678,8 +678,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -687,8 +687,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app template version ID (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app template version ID (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -696,11 +696,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappupgradestrategy">List[Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy]</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The multi cluster app upgrade strategy (list)
-{{% /md %}}</dd>
+    <dd>(Computed) The multi cluster app upgrade strategy (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -713,18 +713,18 @@ The following output properties are available:
 
 
 <h4 id="getmulticlusterappanswer">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Answer</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#GetMultiClusterAppAnswer">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#GetMultiClusterAppAnswer">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -733,7 +733,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -741,7 +741,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -749,13 +749,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -764,7 +764,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -772,7 +772,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -780,13 +780,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -795,7 +795,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -803,7 +803,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -811,13 +811,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -826,7 +826,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -834,7 +834,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -842,28 +842,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getmulticlusterappmember">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Member</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#GetMultiClusterAppMember">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#GetMultiClusterAppMember">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -872,7 +872,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,7 +880,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -888,13 +888,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -903,7 +903,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,7 +911,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,13 +919,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -934,7 +934,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,7 +942,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,13 +950,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -965,7 +965,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -973,7 +973,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,28 +981,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getmulticlusterapptarget">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#GetMultiClusterAppTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#GetMultiClusterAppTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1011,7 +1011,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1019,7 +1019,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1027,7 +1027,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1035,13 +1035,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1050,7 +1050,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1058,7 +1058,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1066,7 +1066,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1074,13 +1074,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1089,7 +1089,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1097,7 +1097,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1105,7 +1105,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1113,13 +1113,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1128,7 +1128,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1136,7 +1136,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1144,7 +1144,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1152,28 +1152,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getmulticlusterappupgradestrategy">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#GetMultiClusterAppUpgradeStrategy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#GetMultiClusterAppUpgradeStrategy">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1182,13 +1182,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappupgradestrategyrollingupdate">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1197,13 +1197,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappupgradestrategyrollingupdate">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1212,13 +1212,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappupgradestrategyrollingupdate">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1227,28 +1227,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getmulticlusterappupgradestrategyrollingupdate">Dict[Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getmulticlusterappupgradestrategyrollingupdate">Get<wbr>Multi<wbr>Cluster<wbr>App<wbr>Upgrade<wbr>Strategy<wbr>Rolling<wbr>Update</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#GetMultiClusterAppUpgradeStrategyRollingUpdate">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#GetMultiClusterAppUpgradeStrategyRollingUpdate">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1257,7 +1257,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1265,13 +1265,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1280,7 +1280,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,13 +1288,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1303,7 +1303,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,13 +1311,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1326,7 +1326,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1334,10 +1334,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

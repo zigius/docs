@@ -52,26 +52,26 @@ resources:
 
 
 ## Create a StackV1 Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/orchestration/#StackV1">StackV1</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/orchestration/#StackV1Args">StackV1Args</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">StackV1</span><span class="p">(resource_name, opts=None, </span>capabilities=None<span class="p">, </span>creation_time=None<span class="p">, </span>description=None<span class="p">, </span>disable_rollback=None<span class="p">, </span>environment_opts=None<span class="p">, </span>name=None<span class="p">, </span>notification_topics=None<span class="p">, </span>outputs=None<span class="p">, </span>parameters=None<span class="p">, </span>region=None<span class="p">, </span>status=None<span class="p">, </span>status_reason=None<span class="p">, </span>tags=None<span class="p">, </span>template_description=None<span class="p">, </span>template_opts=None<span class="p">, </span>timeout=None<span class="p">, </span>updated_time=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewStackV1<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/orchestration?tab=doc#StackV1Args">StackV1Args</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/orchestration?tab=doc#StackV1">StackV1</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Orchestration.StackV1.html">StackV1</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Orchestration.StackV1Args.html">StackV1Args</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -108,9 +108,9 @@ resources:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -128,9 +128,9 @@ resources:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -177,9 +177,9 @@ resources:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -216,7 +216,7 @@ resources:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## StackV1 Resource Properties {#properties}
 
@@ -229,7 +229,7 @@ The StackV1 resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -238,11 +238,11 @@ The StackV1 resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Template key/value pairs to associate with the
+    <dd>Template key/value pairs to associate with the
 stack which contains either the template file or url.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Template Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,8 +250,8 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of stack capabilities for stack.
-{{% /md %}}</dd>
+    <dd>List of stack capabilities for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,11 +259,11 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was created. The date
+    <dd>The date and time when the resource was created. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,10 +280,10 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables deletion of all stack
+    <dd>Enables or disables deletion of all stack
 resources when a stack creation fails. Default is true, meaning all
 resources are not deleted when stack creation fails.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,11 +291,11 @@ resources are not deleted when stack creation fails.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Environment key/value pairs to associate with
+    <dd>Environment key/value pairs to associate with
 the stack which contains details for the environment of the stack.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Environment Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,9 +303,9 @@ Environment Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the stack. It must start with an
+    <dd>A unique name for the stack. It must start with an
 alphabetic character. Changing this updates the stack's name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,8 +313,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of notification topics for stack.
-{{% /md %}}</dd>
+    <dd>List of notification topics for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackv1output">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Orchestration.<wbr>Inputs.<wbr>Stack<wbr>V1Output<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of stack outputs.
-{{% /md %}}</dd>
+    <dd>A list of stack outputs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,9 +331,9 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}User-defined key/value pairs as parameters to pass
+    <dd>User-defined key/value pairs as parameters to pass
 to the template. Changing this updates the existing stack parameters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,10 +341,10 @@ to the template. Changing this updates the existing stack parameters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to create the stack. If
+    <dd>The region in which to create the stack. If
 omitted, the `region` argument of the provider is used. Changing this
 creates a new stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,8 +352,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the stack.
-{{% /md %}}</dd>
+    <dd>The status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,8 +361,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the current status of the stack.
-{{% /md %}}</dd>
+    <dd>The reason for the current status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,8 +370,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to assosciate with the Stack
-{{% /md %}}</dd>
+    <dd>A list of tags to assosciate with the Stack
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack template.
-{{% /md %}}</dd>
+    <dd>The description of the stack template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for stack action in minutes.
-{{% /md %}}</dd>
+    <dd>The timeout for stack action in minutes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,17 +397,17 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was updated. The date
+    <dd>The date and time when the resource was updated. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -416,11 +416,11 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Template key/value pairs to associate with the
+    <dd>Template key/value pairs to associate with the
 stack which contains either the template file or url.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Template Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of stack capabilities for stack.
-{{% /md %}}</dd>
+    <dd>List of stack capabilities for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,11 +437,11 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was created. The date
+    <dd>The date and time when the resource was created. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,8 +449,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,10 +458,10 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables deletion of all stack
+    <dd>Enables or disables deletion of all stack
 resources when a stack creation fails. Default is true, meaning all
 resources are not deleted when stack creation fails.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,11 +469,11 @@ resources are not deleted when stack creation fails.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Environment key/value pairs to associate with
+    <dd>Environment key/value pairs to associate with
 the stack which contains details for the environment of the stack.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Environment Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,9 +481,9 @@ Environment Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the stack. It must start with an
+    <dd>A unique name for the stack. It must start with an
 alphabetic character. Changing this updates the stack's name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,8 +491,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of notification topics for stack.
-{{% /md %}}</dd>
+    <dd>List of notification topics for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,8 +500,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackv1output">[]Stack<wbr>V1Output</a></span>
     </dt>
-    <dd>{{% md %}}A list of stack outputs.
-{{% /md %}}</dd>
+    <dd>A list of stack outputs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,9 +509,9 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}User-defined key/value pairs as parameters to pass
+    <dd>User-defined key/value pairs as parameters to pass
 to the template. Changing this updates the existing stack parameters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,10 +519,10 @@ to the template. Changing this updates the existing stack parameters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to create the stack. If
+    <dd>The region in which to create the stack. If
 omitted, the `region` argument of the provider is used. Changing this
 creates a new stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,8 +530,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the stack.
-{{% /md %}}</dd>
+    <dd>The status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,8 +539,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the current status of the stack.
-{{% /md %}}</dd>
+    <dd>The reason for the current status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to assosciate with the Stack
-{{% /md %}}</dd>
+    <dd>A list of tags to assosciate with the Stack
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack template.
-{{% /md %}}</dd>
+    <dd>The description of the stack template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for stack action in minutes.
-{{% /md %}}</dd>
+    <dd>The timeout for stack action in minutes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,17 +575,17 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was updated. The date
+    <dd>The date and time when the resource was updated. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -594,11 +594,11 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Template key/value pairs to associate with the
+    <dd>Template key/value pairs to associate with the
 stack which contains either the template file or url.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Template Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -606,8 +606,8 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of stack capabilities for stack.
-{{% /md %}}</dd>
+    <dd>List of stack capabilities for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -615,11 +615,11 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was created. The date
+    <dd>The date and time when the resource was created. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,8 +627,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -636,10 +636,10 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables deletion of all stack
+    <dd>Enables or disables deletion of all stack
 resources when a stack creation fails. Default is true, meaning all
 resources are not deleted when stack creation fails.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,11 +647,11 @@ resources are not deleted when stack creation fails.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Environment key/value pairs to associate with
+    <dd>Environment key/value pairs to associate with
 the stack which contains details for the environment of the stack.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Environment Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,9 +659,9 @@ Environment Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the stack. It must start with an
+    <dd>A unique name for the stack. It must start with an
 alphabetic character. Changing this updates the stack's name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,8 +669,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of notification topics for stack.
-{{% /md %}}</dd>
+    <dd>List of notification topics for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -678,8 +678,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackv1output">Stack<wbr>V1Output[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of stack outputs.
-{{% /md %}}</dd>
+    <dd>A list of stack outputs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -687,9 +687,9 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}User-defined key/value pairs as parameters to pass
+    <dd>User-defined key/value pairs as parameters to pass
 to the template. Changing this updates the existing stack parameters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -697,10 +697,10 @@ to the template. Changing this updates the existing stack parameters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to create the stack. If
+    <dd>The region in which to create the stack. If
 omitted, the `region` argument of the provider is used. Changing this
 creates a new stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -708,8 +708,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the stack.
-{{% /md %}}</dd>
+    <dd>The status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -717,8 +717,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the current status of the stack.
-{{% /md %}}</dd>
+    <dd>The reason for the current status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -726,8 +726,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to assosciate with the Stack
-{{% /md %}}</dd>
+    <dd>A list of tags to assosciate with the Stack
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -735,8 +735,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack template.
-{{% /md %}}</dd>
+    <dd>The description of the stack template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -744,8 +744,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for stack action in minutes.
-{{% /md %}}</dd>
+    <dd>The timeout for stack action in minutes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -753,17 +753,17 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was updated. The date
+    <dd>The date and time when the resource was updated. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -772,11 +772,11 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Template key/value pairs to associate with the
+    <dd>Template key/value pairs to associate with the
 stack which contains either the template file or url.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Template Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -784,8 +784,8 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of stack capabilities for stack.
-{{% /md %}}</dd>
+    <dd>List of stack capabilities for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -793,11 +793,11 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was created. The date
+    <dd>The date and time when the resource was created. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,10 +814,10 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables deletion of all stack
+    <dd>Enables or disables deletion of all stack
 resources when a stack creation fails. Default is true, meaning all
 resources are not deleted when stack creation fails.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,11 +825,11 @@ resources are not deleted when stack creation fails.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Environment key/value pairs to associate with
+    <dd>Environment key/value pairs to associate with
 the stack which contains details for the environment of the stack.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Environment Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,9 +837,9 @@ Environment Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the stack. It must start with an
+    <dd>A unique name for the stack. It must start with an
 alphabetic character. Changing this updates the stack's name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -847,8 +847,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of notification topics for stack.
-{{% /md %}}</dd>
+    <dd>List of notification topics for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -856,8 +856,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackv1output">List[Stack<wbr>V1Output]</a></span>
     </dt>
-    <dd>{{% md %}}A list of stack outputs.
-{{% /md %}}</dd>
+    <dd>A list of stack outputs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -865,9 +865,9 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}User-defined key/value pairs as parameters to pass
+    <dd>User-defined key/value pairs as parameters to pass
 to the template. Changing this updates the existing stack parameters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,10 +875,10 @@ to the template. Changing this updates the existing stack parameters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to create the stack. If
+    <dd>The region in which to create the stack. If
 omitted, the `region` argument of the provider is used. Changing this
 creates a new stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the stack.
-{{% /md %}}</dd>
+    <dd>The status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the current status of the stack.
-{{% /md %}}</dd>
+    <dd>The reason for the current status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to assosciate with the Stack
-{{% /md %}}</dd>
+    <dd>A list of tags to assosciate with the Stack
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,8 +913,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack template.
-{{% /md %}}</dd>
+    <dd>The description of the stack template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -922,8 +922,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for stack action in minutes.
-{{% /md %}}</dd>
+    <dd>The timeout for stack action in minutes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,14 +931,14 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was updated. The date
+    <dd>The date and time when the resource was updated. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -952,7 +952,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -961,13 +961,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -976,13 +976,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -991,13 +991,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1006,10 +1006,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1020,25 +1020,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing StackV1 Resource {#look-up}
 
 Get an existing StackV1 resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/orchestration/#StackV1State">StackV1State</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/orchestration/#StackV1">StackV1</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>capabilities=None<span class="p">, </span>creation_time=None<span class="p">, </span>description=None<span class="p">, </span>disable_rollback=None<span class="p">, </span>environment_opts=None<span class="p">, </span>name=None<span class="p">, </span>notification_topics=None<span class="p">, </span>outputs=None<span class="p">, </span>parameters=None<span class="p">, </span>region=None<span class="p">, </span>status=None<span class="p">, </span>status_reason=None<span class="p">, </span>tags=None<span class="p">, </span>template_description=None<span class="p">, </span>template_opts=None<span class="p">, </span>timeout=None<span class="p">, </span>updated_time=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetStackV1<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/orchestration?tab=doc#StackV1State">StackV1State</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/orchestration?tab=doc#StackV1">StackV1</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Orchestration.StackV1.html">StackV1</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Orchestration.StackV1State.html">StackV1State</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1063,9 +1063,9 @@ Get an existing StackV1 resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1078,36 +1078,9 @@ Get an existing StackV1 resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1132,13 +1105,40 @@ Get an existing StackV1 resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1147,8 +1147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of stack capabilities for stack.
-{{% /md %}}</dd>
+    <dd>List of stack capabilities for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,11 +1156,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was created. The date
+    <dd>The date and time when the resource was created. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,8 +1168,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,10 +1177,10 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables deletion of all stack
+    <dd>Enables or disables deletion of all stack
 resources when a stack creation fails. Default is true, meaning all
 resources are not deleted when stack creation fails.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,11 +1188,11 @@ resources are not deleted when stack creation fails.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Environment key/value pairs to associate with
+    <dd>Environment key/value pairs to associate with
 the stack which contains details for the environment of the stack.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Environment Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,9 +1200,9 @@ Environment Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the stack. It must start with an
+    <dd>A unique name for the stack. It must start with an
 alphabetic character. Changing this updates the stack's name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,8 +1210,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of notification topics for stack.
-{{% /md %}}</dd>
+    <dd>List of notification topics for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackv1output">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Orchestration.<wbr>Inputs.<wbr>Stack<wbr>V1Output<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of stack outputs.
-{{% /md %}}</dd>
+    <dd>A list of stack outputs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,9 +1228,9 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}User-defined key/value pairs as parameters to pass
+    <dd>User-defined key/value pairs as parameters to pass
 to the template. Changing this updates the existing stack parameters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1238,10 +1238,10 @@ to the template. Changing this updates the existing stack parameters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to create the stack. If
+    <dd>The region in which to create the stack. If
 omitted, the `region` argument of the provider is used. Changing this
 creates a new stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,8 +1249,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the stack.
-{{% /md %}}</dd>
+    <dd>The status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,8 +1258,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the current status of the stack.
-{{% /md %}}</dd>
+    <dd>The reason for the current status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,8 +1267,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to assosciate with the Stack
-{{% /md %}}</dd>
+    <dd>A list of tags to assosciate with the Stack
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,8 +1276,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack template.
-{{% /md %}}</dd>
+    <dd>The description of the stack template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,11 +1285,11 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Template key/value pairs to associate with the
+    <dd>Template key/value pairs to associate with the
 stack which contains either the template file or url.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Template Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,8 +1297,8 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for stack action in minutes.
-{{% /md %}}</dd>
+    <dd>The timeout for stack action in minutes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,17 +1306,17 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was updated. The date
+    <dd>The date and time when the resource was updated. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1325,8 +1325,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of stack capabilities for stack.
-{{% /md %}}</dd>
+    <dd>List of stack capabilities for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1334,11 +1334,11 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was created. The date
+    <dd>The date and time when the resource was created. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,8 +1346,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,10 +1355,10 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables deletion of all stack
+    <dd>Enables or disables deletion of all stack
 resources when a stack creation fails. Default is true, meaning all
 resources are not deleted when stack creation fails.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1366,11 +1366,11 @@ resources are not deleted when stack creation fails.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Environment key/value pairs to associate with
+    <dd>Environment key/value pairs to associate with
 the stack which contains details for the environment of the stack.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Environment Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,9 +1378,9 @@ Environment Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the stack. It must start with an
+    <dd>A unique name for the stack. It must start with an
 alphabetic character. Changing this updates the stack's name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,8 +1388,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of notification topics for stack.
-{{% /md %}}</dd>
+    <dd>List of notification topics for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1397,8 +1397,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackv1output">[]Stack<wbr>V1Output</a></span>
     </dt>
-    <dd>{{% md %}}A list of stack outputs.
-{{% /md %}}</dd>
+    <dd>A list of stack outputs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1406,9 +1406,9 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}User-defined key/value pairs as parameters to pass
+    <dd>User-defined key/value pairs as parameters to pass
 to the template. Changing this updates the existing stack parameters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1416,10 +1416,10 @@ to the template. Changing this updates the existing stack parameters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to create the stack. If
+    <dd>The region in which to create the stack. If
 omitted, the `region` argument of the provider is used. Changing this
 creates a new stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,8 +1427,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the stack.
-{{% /md %}}</dd>
+    <dd>The status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1436,8 +1436,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the current status of the stack.
-{{% /md %}}</dd>
+    <dd>The reason for the current status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1445,8 +1445,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to assosciate with the Stack
-{{% /md %}}</dd>
+    <dd>A list of tags to assosciate with the Stack
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1454,8 +1454,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack template.
-{{% /md %}}</dd>
+    <dd>The description of the stack template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1463,11 +1463,11 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Template key/value pairs to associate with the
+    <dd>Template key/value pairs to associate with the
 stack which contains either the template file or url.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Template Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,8 +1475,8 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for stack action in minutes.
-{{% /md %}}</dd>
+    <dd>The timeout for stack action in minutes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,17 +1484,17 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was updated. The date
+    <dd>The date and time when the resource was updated. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1503,8 +1503,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of stack capabilities for stack.
-{{% /md %}}</dd>
+    <dd>List of stack capabilities for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,11 +1512,11 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was created. The date
+    <dd>The date and time when the resource was created. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,8 +1524,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,10 +1533,10 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables deletion of all stack
+    <dd>Enables or disables deletion of all stack
 resources when a stack creation fails. Default is true, meaning all
 resources are not deleted when stack creation fails.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1544,11 +1544,11 @@ resources are not deleted when stack creation fails.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Environment key/value pairs to associate with
+    <dd>Environment key/value pairs to associate with
 the stack which contains details for the environment of the stack.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Environment Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1556,9 +1556,9 @@ Environment Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the stack. It must start with an
+    <dd>A unique name for the stack. It must start with an
 alphabetic character. Changing this updates the stack's name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1566,8 +1566,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of notification topics for stack.
-{{% /md %}}</dd>
+    <dd>List of notification topics for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1575,8 +1575,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackv1output">Stack<wbr>V1Output[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of stack outputs.
-{{% /md %}}</dd>
+    <dd>A list of stack outputs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,9 +1584,9 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}User-defined key/value pairs as parameters to pass
+    <dd>User-defined key/value pairs as parameters to pass
 to the template. Changing this updates the existing stack parameters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,10 +1594,10 @@ to the template. Changing this updates the existing stack parameters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to create the stack. If
+    <dd>The region in which to create the stack. If
 omitted, the `region` argument of the provider is used. Changing this
 creates a new stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,8 +1605,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the stack.
-{{% /md %}}</dd>
+    <dd>The status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1614,8 +1614,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the current status of the stack.
-{{% /md %}}</dd>
+    <dd>The reason for the current status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1623,8 +1623,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to assosciate with the Stack
-{{% /md %}}</dd>
+    <dd>A list of tags to assosciate with the Stack
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1632,8 +1632,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack template.
-{{% /md %}}</dd>
+    <dd>The description of the stack template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,11 +1641,11 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Template key/value pairs to associate with the
+    <dd>Template key/value pairs to associate with the
 stack which contains either the template file or url.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Template Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1653,8 +1653,8 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for stack action in minutes.
-{{% /md %}}</dd>
+    <dd>The timeout for stack action in minutes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1662,17 +1662,17 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was updated. The date
+    <dd>The date and time when the resource was updated. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1681,8 +1681,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of stack capabilities for stack.
-{{% /md %}}</dd>
+    <dd>List of stack capabilities for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,11 +1690,11 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was created. The date
+    <dd>The date and time when the resource was created. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1702,8 +1702,8 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1711,10 +1711,10 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables deletion of all stack
+    <dd>Enables or disables deletion of all stack
 resources when a stack creation fails. Default is true, meaning all
 resources are not deleted when stack creation fails.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1722,11 +1722,11 @@ resources are not deleted when stack creation fails.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Environment key/value pairs to associate with
+    <dd>Environment key/value pairs to associate with
 the stack which contains details for the environment of the stack.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Environment Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1734,9 +1734,9 @@ Environment Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the stack. It must start with an
+    <dd>A unique name for the stack. It must start with an
 alphabetic character. Changing this updates the stack's name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1744,8 +1744,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of notification topics for stack.
-{{% /md %}}</dd>
+    <dd>List of notification topics for stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1753,8 +1753,8 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackv1output">List[Stack<wbr>V1Output]</a></span>
     </dt>
-    <dd>{{% md %}}A list of stack outputs.
-{{% /md %}}</dd>
+    <dd>A list of stack outputs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1762,9 +1762,9 @@ alphabetic character. Changing this updates the stack's name.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}User-defined key/value pairs as parameters to pass
+    <dd>User-defined key/value pairs as parameters to pass
 to the template. Changing this updates the existing stack parameters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1772,10 +1772,10 @@ to the template. Changing this updates the existing stack parameters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to create the stack. If
+    <dd>The region in which to create the stack. If
 omitted, the `region` argument of the provider is used. Changing this
 creates a new stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,8 +1783,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the stack.
-{{% /md %}}</dd>
+    <dd>The status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1792,8 +1792,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the current status of the stack.
-{{% /md %}}</dd>
+    <dd>The reason for the current status of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1801,8 +1801,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tags to assosciate with the Stack
-{{% /md %}}</dd>
+    <dd>A list of tags to assosciate with the Stack
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,8 +1810,8 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack template.
-{{% /md %}}</dd>
+    <dd>The description of the stack template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1819,11 +1819,11 @@ creates a new stack.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Template key/value pairs to associate with the
+    <dd>Template key/value pairs to associate with the
 stack which contains either the template file or url.
 Allowed keys: Bin, URL, Files. Changing this updates the existing stack
 Template Opts.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,8 +1831,8 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for stack action in minutes.
-{{% /md %}}</dd>
+    <dd>The timeout for stack action in minutes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,14 +1840,14 @@ Template Opts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date and time when the resource was updated. The date
+    <dd>The date and time when the resource was updated. The date
 and time stamp format is ISO 8601: CCYY-MM-DDThh:mm:ss±hh:mm
 For example, 2015-08-27T09:49:58-05:00. The ±hh:mm value, if included,
 is the time zone as an offset from UTC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1862,18 +1862,18 @@ is the time zone as an offset from UTC.
 
 
 <h4 id="stackv1output">Stack<wbr>V1Output</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#StackV1Output">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#StackV1Output">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/orchestration?tab=doc#StackV1OutputArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/orchestration?tab=doc#StackV1OutputOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1882,7 +1882,7 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1890,7 +1890,7 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1898,14 +1898,14 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1914,7 +1914,7 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1922,7 +1922,7 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1930,14 +1930,14 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1946,7 +1946,7 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1954,7 +1954,7 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1962,14 +1962,14 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1978,7 +1978,7 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1986,7 +1986,7 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,11 +1994,11 @@ is the time zone as an offset from UTC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stack resource.
-{{% /md %}}</dd>
+    <dd>The description of the stack resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

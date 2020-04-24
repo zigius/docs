@@ -15,29 +15,29 @@ meta_desc: "Explore the GetKeyPrefix function of the Consul package, including e
 
 ## Using GetKeyPrefix {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getKeyPrefix<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#GetKeyPrefixArgs">GetKeyPrefixArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#GetKeyPrefixResult">GetKeyPrefixResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_key_prefix(</span>datacenter=None<span class="p">, </span>namespace=None<span class="p">, </span>path_prefix=None<span class="p">, </span>subkey_collection=None<span class="p">, </span>token=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupKeyPrefix<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetKeyPrefixArgs">GetKeyPrefixArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#LookupKeyPrefixResult">LookupKeyPrefixResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetKeyPrefix </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul.GetKeyPrefixResult.html">GetKeyPrefixResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul.GetKeyPrefixArgs.html">GetKeyPrefixArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -45,7 +45,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -54,10 +54,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the common prefix shared by all keys
+    <dd>Specifies the common prefix shared by all keys
 that will be read by this data source instance. In most cases, this will
 end with a slash to read a "folder" of subkeys.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -65,9 +65,9 @@ end with a slash to read a "folder" of subkeys.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -75,8 +75,8 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the keys within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the keys within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -84,9 +84,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyprefixsubkeycollection">List&lt;Get<wbr>Key<wbr>Prefix<wbr>Subkey<wbr>Collection<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a subkey in Consul to be read. Supported
+    <dd>Specifies a subkey in Consul to be read. Supported
 values documented below. Multiple blocks supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -94,15 +94,15 @@ values documented below. Multiple blocks supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ACL token to use. This overrides the
+    <dd>The ACL token to use. This overrides the
 token that the agent provides by default.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -111,10 +111,10 @@ token that the agent provides by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the common prefix shared by all keys
+    <dd>Specifies the common prefix shared by all keys
 that will be read by this data source instance. In most cases, this will
 end with a slash to read a "folder" of subkeys.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -122,9 +122,9 @@ end with a slash to read a "folder" of subkeys.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -132,8 +132,8 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the keys within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the keys within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -141,9 +141,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyprefixsubkeycollection">[]Get<wbr>Key<wbr>Prefix<wbr>Subkey<wbr>Collection</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a subkey in Consul to be read. Supported
+    <dd>Specifies a subkey in Consul to be read. Supported
 values documented below. Multiple blocks supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -151,15 +151,15 @@ values documented below. Multiple blocks supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ACL token to use. This overrides the
+    <dd>The ACL token to use. This overrides the
 token that the agent provides by default.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -168,10 +168,10 @@ token that the agent provides by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the common prefix shared by all keys
+    <dd>Specifies the common prefix shared by all keys
 that will be read by this data source instance. In most cases, this will
 end with a slash to read a "folder" of subkeys.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -179,9 +179,9 @@ end with a slash to read a "folder" of subkeys.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -189,8 +189,8 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the keys within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the keys within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -198,9 +198,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyprefixsubkeycollection">Get<wbr>Key<wbr>Prefix<wbr>Subkey<wbr>Collection[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a subkey in Consul to be read. Supported
+    <dd>Specifies a subkey in Consul to be read. Supported
 values documented below. Multiple blocks supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -208,15 +208,15 @@ values documented below. Multiple blocks supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ACL token to use. This overrides the
+    <dd>The ACL token to use. This overrides the
 token that the agent provides by default.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -225,10 +225,10 @@ token that the agent provides by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the common prefix shared by all keys
+    <dd>Specifies the common prefix shared by all keys
 that will be read by this data source instance. In most cases, this will
 end with a slash to read a "folder" of subkeys.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,9 +236,9 @@ end with a slash to read a "folder" of subkeys.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the keys within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the keys within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,9 +255,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyprefixsubkeycollection">List[Get<wbr>Key<wbr>Prefix<wbr>Subkey<wbr>Collection]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a subkey in Consul to be read. Supported
+    <dd>Specifies a subkey in Consul to be read. Supported
 values documented below. Multiple blocks supported.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,12 +265,12 @@ values documented below. Multiple blocks supported.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ACL token to use. This overrides the
+    <dd>The ACL token to use. This overrides the
 token that the agent provides by default.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -286,7 +286,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -295,8 +295,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter the keys are being read from.
-{{% /md %}}</dd>
+    <dd>The datacenter the keys are being read from.
+</dd>
 
     <dt class="property-"
             title="">
@@ -304,8 +304,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -313,10 +313,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the common prefix shared by all keys being read.
+    <dd>the common prefix shared by all keys being read.
 * `var.<name>` - For each name given, the corresponding attribute
 has the value of the key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -324,9 +324,9 @@ has the value of the key.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of the subkeys and values is set if no `subkey`
+    <dd>A map of the subkeys and values is set if no `subkey`
 block is provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -334,7 +334,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -342,7 +342,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -350,7 +350,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyprefixsubkeycollection">List&lt;Get<wbr>Key<wbr>Prefix<wbr>Subkey<wbr>Collection&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -358,13 +358,13 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -373,8 +373,8 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter the keys are being read from.
-{{% /md %}}</dd>
+    <dd>The datacenter the keys are being read from.
+</dd>
 
     <dt class="property-"
             title="">
@@ -382,8 +382,8 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -391,10 +391,10 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the common prefix shared by all keys being read.
+    <dd>the common prefix shared by all keys being read.
 * `var.<name>` - For each name given, the corresponding attribute
 has the value of the key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -402,9 +402,9 @@ has the value of the key.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of the subkeys and values is set if no `subkey`
+    <dd>A map of the subkeys and values is set if no `subkey`
 block is provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -412,7 +412,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -420,7 +420,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -428,7 +428,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyprefixsubkeycollection">[]Get<wbr>Key<wbr>Prefix<wbr>Subkey<wbr>Collection</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -436,13 +436,13 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -451,8 +451,8 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter the keys are being read from.
-{{% /md %}}</dd>
+    <dd>The datacenter the keys are being read from.
+</dd>
 
     <dt class="property-"
             title="">
@@ -460,8 +460,8 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -469,10 +469,10 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the common prefix shared by all keys being read.
+    <dd>the common prefix shared by all keys being read.
 * `var.<name>` - For each name given, the corresponding attribute
 has the value of the key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,9 +480,9 @@ has the value of the key.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of the subkeys and values is set if no `subkey`
+    <dd>A map of the subkeys and values is set if no `subkey`
 block is provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -490,7 +490,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -498,7 +498,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -506,7 +506,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyprefixsubkeycollection">Get<wbr>Key<wbr>Prefix<wbr>Subkey<wbr>Collection[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -514,13 +514,13 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -529,8 +529,8 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter the keys are being read from.
-{{% /md %}}</dd>
+    <dd>The datacenter the keys are being read from.
+</dd>
 
     <dt class="property-"
             title="">
@@ -538,8 +538,8 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -547,10 +547,10 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the common prefix shared by all keys being read.
+    <dd>the common prefix shared by all keys being read.
 * `var.<name>` - For each name given, the corresponding attribute
 has the value of the key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -558,9 +558,9 @@ has the value of the key.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of the subkeys and values is set if no `subkey`
+    <dd>A map of the subkeys and values is set if no `subkey`
 block is provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -568,7 +568,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -576,7 +576,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -584,7 +584,7 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getkeyprefixsubkeycollection">List[Get<wbr>Key<wbr>Prefix<wbr>Subkey<wbr>Collection]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -592,10 +592,10 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -608,18 +608,18 @@ block is provided.
 
 
 <h4 id="getkeyprefixsubkeycollection">Get<wbr>Key<wbr>Prefix<wbr>Subkey<wbr>Collection</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/input/#GetKeyPrefixSubkeyCollection">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/output/#GetKeyPrefixSubkeyCollection">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetKeyPrefixSubkeyCollectionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetKeyPrefixSubkeyCollection">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -628,10 +628,10 @@ block is provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the name of the key. This value of the
+    <dd>This is the name of the key. This value of the
 key is exposed as `var.<name>`. This is not the path of the subkey
 in Consul.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -639,10 +639,10 @@ in Consul.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the subkey path in Consul (which will be appended
+    <dd>This is the subkey path in Consul (which will be appended
 to the given `path_prefix`) to construct the full key that will be used
 to read the value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,15 +650,15 @@ to read the value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the default value to set for `var.<name>`
+    <dd>This is the default value to set for `var.<name>`
 if the key does not exist in Consul. Defaults to an empty string.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -667,10 +667,10 @@ if the key does not exist in Consul. Defaults to an empty string.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the name of the key. This value of the
+    <dd>This is the name of the key. This value of the
 key is exposed as `var.<name>`. This is not the path of the subkey
 in Consul.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -678,10 +678,10 @@ in Consul.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the subkey path in Consul (which will be appended
+    <dd>This is the subkey path in Consul (which will be appended
 to the given `path_prefix`) to construct the full key that will be used
 to read the value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,15 +689,15 @@ to read the value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the default value to set for `var.<name>`
+    <dd>This is the default value to set for `var.<name>`
 if the key does not exist in Consul. Defaults to an empty string.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -706,10 +706,10 @@ if the key does not exist in Consul. Defaults to an empty string.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the name of the key. This value of the
+    <dd>This is the name of the key. This value of the
 key is exposed as `var.<name>`. This is not the path of the subkey
 in Consul.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -717,10 +717,10 @@ in Consul.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the subkey path in Consul (which will be appended
+    <dd>This is the subkey path in Consul (which will be appended
 to the given `path_prefix`) to construct the full key that will be used
 to read the value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -728,15 +728,15 @@ to read the value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the default value to set for `var.<name>`
+    <dd>This is the default value to set for `var.<name>`
 if the key does not exist in Consul. Defaults to an empty string.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -745,10 +745,10 @@ if the key does not exist in Consul. Defaults to an empty string.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This is the name of the key. This value of the
+    <dd>This is the name of the key. This value of the
 key is exposed as `var.<name>`. This is not the path of the subkey
 in Consul.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -756,10 +756,10 @@ in Consul.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This is the subkey path in Consul (which will be appended
+    <dd>This is the subkey path in Consul (which will be appended
 to the given `path_prefix`) to construct the full key that will be used
 to read the value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,12 +767,12 @@ to read the value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This is the default value to set for `var.<name>`
+    <dd>This is the default value to set for `var.<name>`
 if the key does not exist in Consul. Defaults to an empty string.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

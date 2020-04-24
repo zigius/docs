@@ -16,22 +16,22 @@ git_sha: "04f5ece2daeecb4c0529cef57e622c59fb2d17c4"
 > please consult the source [`terraform-providers/terraform-provider-vault` repo](https://github.com/terraform-providers/terraform-provider-vault/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var vault = require("@pulumi/vault");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as vault from "@pulumi/vault";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

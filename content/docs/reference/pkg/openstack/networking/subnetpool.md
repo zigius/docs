@@ -58,26 +58,26 @@ const subnet1 = new openstack.networking.Subnet("subnet_1", {
 
 
 ## Create a SubnetPool Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#SubnetPool">SubnetPool</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#SubnetPoolArgs">SubnetPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SubnetPool</span><span class="p">(resource_name, opts=None, </span>address_scope_id=None<span class="p">, </span>default_prefixlen=None<span class="p">, </span>default_quota=None<span class="p">, </span>description=None<span class="p">, </span>ip_version=None<span class="p">, </span>is_default=None<span class="p">, </span>max_prefixlen=None<span class="p">, </span>min_prefixlen=None<span class="p">, </span>name=None<span class="p">, </span>prefixes=None<span class="p">, </span>project_id=None<span class="p">, </span>region=None<span class="p">, </span>shared=None<span class="p">, </span>tags=None<span class="p">, </span>value_specs=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSubnetPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#SubnetPoolArgs">SubnetPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#SubnetPool">SubnetPool</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.SubnetPool.html">SubnetPool</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Networking.SubnetPoolArgs.html">SubnetPoolArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -114,9 +114,9 @@ const subnet1 = new openstack.networking.Subnet("subnet_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -134,9 +134,9 @@ const subnet1 = new openstack.networking.Subnet("subnet_1", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -183,9 +183,9 @@ const subnet1 = new openstack.networking.Subnet("subnet_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -222,7 +222,7 @@ const subnet1 = new openstack.networking.Subnet("subnet_1", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## SubnetPool Resource Properties {#properties}
 
@@ -235,7 +235,7 @@ The SubnetPool resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -244,12 +244,12 @@ The SubnetPool resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet prefixes to assign to the subnetpool.
+    <dd>A list of subnet prefixes to assign to the subnetpool.
 Neutron API merges adjacent prefixes and treats them as a single prefix. Each
 subnet prefix must be unique among all subnet prefixes in all subnetpools that
 are associated with the address scope. Changing this updates the prefixes list
 of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,10 +257,10 @@ of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope to assign to the
+    <dd>The Neutron address scope to assign to the
 subnetpool. Changing this updates the address scope id of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,11 +268,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the prefix to allocate when the cidr
+    <dd>The size of the prefix to allocate when the cidr
 or prefixlen attributes are omitted when you create the subnet. Defaults to the
 MinPrefixLen. Changing this updates the default prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,10 +280,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that can be
+    <dd>The per-project quota on the prefix space that can be
 allocated from the subnetpool for project subnets. Changing this updates the
 default quota of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,9 +291,9 @@ default quota of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
+    <dd>The human-readable description for the subnetpool.
 Changing this updates the description of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,10 +310,10 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the subnetpool is default
+    <dd>Indicates whether the subnetpool is default
 subnetpool or not. Changing this updates the default status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,11 +321,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum prefix size that can be allocated from
+    <dd>The maximum prefix size that can be allocated from
 the subnetpool. For IPv4 subnetpools, default is 32. For IPv6 subnetpools,
 default is 128. Changing this updates the max prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -333,10 +333,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The smallest prefix that can be allocated from a
+    <dd>The smallest prefix that can be allocated from a
 subnetpool. For IPv4 subnetpools, default is 8. For IPv6 subnetpools, default
 is 64. Changing this updates the min prefixlen of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,9 +344,9 @@ is 64. Changing this updates the min prefixlen of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool. Changing this updates the name of
+    <dd>The name of the subnetpool. Changing this updates the name of
 the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,9 +354,9 @@ the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool. Required if admin wants to
+    <dd>The owner of the subnetpool. Required if admin wants to
 create a subnetpool for another project. Changing this creates a new subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,11 +364,11 @@ create a subnetpool for another project. Changing this creates a new subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a Neutron subnetpool. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,10 +376,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this subnetpool is shared across
+    <dd>Indicates whether this subnetpool is shared across
 all projects. Changing this updates the shared status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the subnetpool.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,14 +396,14 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -412,12 +412,12 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet prefixes to assign to the subnetpool.
+    <dd>A list of subnet prefixes to assign to the subnetpool.
 Neutron API merges adjacent prefixes and treats them as a single prefix. Each
 subnet prefix must be unique among all subnet prefixes in all subnetpools that
 are associated with the address scope. Changing this updates the prefixes list
 of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,10 +425,10 @@ of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope to assign to the
+    <dd>The Neutron address scope to assign to the
 subnetpool. Changing this updates the address scope id of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,11 +436,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the prefix to allocate when the cidr
+    <dd>The size of the prefix to allocate when the cidr
 or prefixlen attributes are omitted when you create the subnet. Defaults to the
 MinPrefixLen. Changing this updates the default prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,10 +448,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that can be
+    <dd>The per-project quota on the prefix space that can be
 allocated from the subnetpool for project subnets. Changing this updates the
 default quota of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,9 +459,9 @@ default quota of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
+    <dd>The human-readable description for the subnetpool.
 Changing this updates the description of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,8 +469,8 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,10 +478,10 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the subnetpool is default
+    <dd>Indicates whether the subnetpool is default
 subnetpool or not. Changing this updates the default status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,11 +489,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum prefix size that can be allocated from
+    <dd>The maximum prefix size that can be allocated from
 the subnetpool. For IPv4 subnetpools, default is 32. For IPv6 subnetpools,
 default is 128. Changing this updates the max prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -501,10 +501,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The smallest prefix that can be allocated from a
+    <dd>The smallest prefix that can be allocated from a
 subnetpool. For IPv4 subnetpools, default is 8. For IPv6 subnetpools, default
 is 64. Changing this updates the min prefixlen of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -512,9 +512,9 @@ is 64. Changing this updates the min prefixlen of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool. Changing this updates the name of
+    <dd>The name of the subnetpool. Changing this updates the name of
 the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,9 +522,9 @@ the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool. Required if admin wants to
+    <dd>The owner of the subnetpool. Required if admin wants to
 create a subnetpool for another project. Changing this creates a new subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,11 +532,11 @@ create a subnetpool for another project. Changing this creates a new subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a Neutron subnetpool. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,10 +544,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this subnetpool is shared across
+    <dd>Indicates whether this subnetpool is shared across
 all projects. Changing this updates the shared status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,8 +555,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the subnetpool.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -564,14 +564,14 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -580,12 +580,12 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet prefixes to assign to the subnetpool.
+    <dd>A list of subnet prefixes to assign to the subnetpool.
 Neutron API merges adjacent prefixes and treats them as a single prefix. Each
 subnet prefix must be unique among all subnet prefixes in all subnetpools that
 are associated with the address scope. Changing this updates the prefixes list
 of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,10 +593,10 @@ of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope to assign to the
+    <dd>The Neutron address scope to assign to the
 subnetpool. Changing this updates the address scope id of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,11 +604,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the prefix to allocate when the cidr
+    <dd>The size of the prefix to allocate when the cidr
 or prefixlen attributes are omitted when you create the subnet. Defaults to the
 MinPrefixLen. Changing this updates the default prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,10 +616,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that can be
+    <dd>The per-project quota on the prefix space that can be
 allocated from the subnetpool for project subnets. Changing this updates the
 default quota of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,9 +627,9 @@ default quota of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
+    <dd>The human-readable description for the subnetpool.
 Changing this updates the description of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,10 +646,10 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the subnetpool is default
+    <dd>Indicates whether the subnetpool is default
 subnetpool or not. Changing this updates the default status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -657,11 +657,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum prefix size that can be allocated from
+    <dd>The maximum prefix size that can be allocated from
 the subnetpool. For IPv4 subnetpools, default is 32. For IPv6 subnetpools,
 default is 128. Changing this updates the max prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,10 +669,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The smallest prefix that can be allocated from a
+    <dd>The smallest prefix that can be allocated from a
 subnetpool. For IPv4 subnetpools, default is 8. For IPv6 subnetpools, default
 is 64. Changing this updates the min prefixlen of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,9 +680,9 @@ is 64. Changing this updates the min prefixlen of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool. Changing this updates the name of
+    <dd>The name of the subnetpool. Changing this updates the name of
 the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -690,9 +690,9 @@ the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool. Required if admin wants to
+    <dd>The owner of the subnetpool. Required if admin wants to
 create a subnetpool for another project. Changing this creates a new subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -700,11 +700,11 @@ create a subnetpool for another project. Changing this creates a new subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a Neutron subnetpool. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,10 +712,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this subnetpool is shared across
+    <dd>Indicates whether this subnetpool is shared across
 all projects. Changing this updates the shared status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,8 +723,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the subnetpool.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,14 +732,14 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -748,12 +748,12 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet prefixes to assign to the subnetpool.
+    <dd>A list of subnet prefixes to assign to the subnetpool.
 Neutron API merges adjacent prefixes and treats them as a single prefix. Each
 subnet prefix must be unique among all subnet prefixes in all subnetpools that
 are associated with the address scope. Changing this updates the prefixes list
 of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,10 +761,10 @@ of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope to assign to the
+    <dd>The Neutron address scope to assign to the
 subnetpool. Changing this updates the address scope id of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -772,11 +772,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the prefix to allocate when the cidr
+    <dd>The size of the prefix to allocate when the cidr
 or prefixlen attributes are omitted when you create the subnet. Defaults to the
 MinPrefixLen. Changing this updates the default prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -784,10 +784,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that can be
+    <dd>The per-project quota on the prefix space that can be
 allocated from the subnetpool for project subnets. Changing this updates the
 default quota of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,9 +795,9 @@ default quota of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
+    <dd>The human-readable description for the subnetpool.
 Changing this updates the description of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,10 +814,10 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the subnetpool is default
+    <dd>Indicates whether the subnetpool is default
 subnetpool or not. Changing this updates the default status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,11 +825,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum prefix size that can be allocated from
+    <dd>The maximum prefix size that can be allocated from
 the subnetpool. For IPv4 subnetpools, default is 32. For IPv6 subnetpools,
 default is 128. Changing this updates the max prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,10 +837,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The smallest prefix that can be allocated from a
+    <dd>The smallest prefix that can be allocated from a
 subnetpool. For IPv4 subnetpools, default is 8. For IPv6 subnetpools, default
 is 64. Changing this updates the min prefixlen of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,9 +848,9 @@ is 64. Changing this updates the min prefixlen of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool. Changing this updates the name of
+    <dd>The name of the subnetpool. Changing this updates the name of
 the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -858,9 +858,9 @@ the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool. Required if admin wants to
+    <dd>The owner of the subnetpool. Required if admin wants to
 create a subnetpool for another project. Changing this creates a new subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,11 +868,11 @@ create a subnetpool for another project. Changing this creates a new subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a Neutron subnetpool. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,10 +880,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this subnetpool is shared across
+    <dd>Indicates whether this subnetpool is shared across
 all projects. Changing this updates the shared status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,8 +891,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the subnetpool.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,11 +900,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -918,7 +918,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -927,9 +927,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the subnetpool, which have been
+    <dd>The collection of tags assigned on the subnetpool, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -937,8 +937,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -946,7 +946,7 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -954,8 +954,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -963,14 +963,14 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -979,9 +979,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the subnetpool, which have been
+    <dd>The collection of tags assigned on the subnetpool, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -989,8 +989,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -998,7 +998,7 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1006,8 +1006,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1015,14 +1015,14 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1031,9 +1031,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the subnetpool, which have been
+    <dd>The collection of tags assigned on the subnetpool, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1041,8 +1041,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1050,7 +1050,7 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1058,8 +1058,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1067,14 +1067,14 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1083,9 +1083,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the subnetpool, which have been
+    <dd>The collection of tags assigned on the subnetpool, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1093,8 +1093,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1102,7 +1102,7 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1110,8 +1110,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1119,11 +1119,11 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1134,25 +1134,25 @@ explicitly and implicitly added.
 ## Look up an Existing SubnetPool Resource {#look-up}
 
 Get an existing SubnetPool resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#SubnetPoolState">SubnetPoolState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#SubnetPool">SubnetPool</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>address_scope_id=None<span class="p">, </span>all_tags=None<span class="p">, </span>created_at=None<span class="p">, </span>default_prefixlen=None<span class="p">, </span>default_quota=None<span class="p">, </span>description=None<span class="p">, </span>ip_version=None<span class="p">, </span>is_default=None<span class="p">, </span>max_prefixlen=None<span class="p">, </span>min_prefixlen=None<span class="p">, </span>name=None<span class="p">, </span>prefixes=None<span class="p">, </span>project_id=None<span class="p">, </span>region=None<span class="p">, </span>revision_number=None<span class="p">, </span>shared=None<span class="p">, </span>tags=None<span class="p">, </span>updated_at=None<span class="p">, </span>value_specs=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSubnetPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#SubnetPoolState">SubnetPoolState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#SubnetPool">SubnetPool</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.SubnetPool.html">SubnetPool</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.SubnetPoolState.html">SubnetPoolState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1177,9 +1177,9 @@ Get an existing SubnetPool resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1192,36 +1192,9 @@ Get an existing SubnetPool resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1246,13 +1219,40 @@ Get an existing SubnetPool resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1261,10 +1261,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope to assign to the
+    <dd>The Neutron address scope to assign to the
 subnetpool. Changing this updates the address scope id of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,9 +1272,9 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the subnetpool, which have been
+    <dd>The collection of tags assigned on the subnetpool, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1282,8 +1282,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1291,11 +1291,11 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the prefix to allocate when the cidr
+    <dd>The size of the prefix to allocate when the cidr
 or prefixlen attributes are omitted when you create the subnet. Defaults to the
 MinPrefixLen. Changing this updates the default prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,10 +1303,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that can be
+    <dd>The per-project quota on the prefix space that can be
 allocated from the subnetpool for project subnets. Changing this updates the
 default quota of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,9 +1314,9 @@ default quota of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
+    <dd>The human-readable description for the subnetpool.
 Changing this updates the description of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,8 +1324,8 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,10 +1333,10 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the subnetpool is default
+    <dd>Indicates whether the subnetpool is default
 subnetpool or not. Changing this updates the default status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1344,11 +1344,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum prefix size that can be allocated from
+    <dd>The maximum prefix size that can be allocated from
 the subnetpool. For IPv4 subnetpools, default is 32. For IPv6 subnetpools,
 default is 128. Changing this updates the max prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1356,10 +1356,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The smallest prefix that can be allocated from a
+    <dd>The smallest prefix that can be allocated from a
 subnetpool. For IPv4 subnetpools, default is 8. For IPv6 subnetpools, default
 is 64. Changing this updates the min prefixlen of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,9 +1367,9 @@ is 64. Changing this updates the min prefixlen of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool. Changing this updates the name of
+    <dd>The name of the subnetpool. Changing this updates the name of
 the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,12 +1377,12 @@ the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet prefixes to assign to the subnetpool.
+    <dd>A list of subnet prefixes to assign to the subnetpool.
 Neutron API merges adjacent prefixes and treats them as a single prefix. Each
 subnet prefix must be unique among all subnet prefixes in all subnetpools that
 are associated with the address scope. Changing this updates the prefixes list
 of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,9 +1390,9 @@ of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool. Required if admin wants to
+    <dd>The owner of the subnetpool. Required if admin wants to
 create a subnetpool for another project. Changing this creates a new subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,11 +1400,11 @@ create a subnetpool for another project. Changing this creates a new subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a Neutron subnetpool. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1412,8 +1412,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,10 +1421,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this subnetpool is shared across
+    <dd>Indicates whether this subnetpool is shared across
 all projects. Changing this updates the shared status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,8 +1432,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the subnetpool.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,8 +1441,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,14 +1450,14 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1466,10 +1466,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope to assign to the
+    <dd>The Neutron address scope to assign to the
 subnetpool. Changing this updates the address scope id of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,9 +1477,9 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the subnetpool, which have been
+    <dd>The collection of tags assigned on the subnetpool, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1487,8 +1487,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,11 +1496,11 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the prefix to allocate when the cidr
+    <dd>The size of the prefix to allocate when the cidr
 or prefixlen attributes are omitted when you create the subnet. Defaults to the
 MinPrefixLen. Changing this updates the default prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1508,10 +1508,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that can be
+    <dd>The per-project quota on the prefix space that can be
 allocated from the subnetpool for project subnets. Changing this updates the
 default quota of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,9 +1519,9 @@ default quota of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
+    <dd>The human-readable description for the subnetpool.
 Changing this updates the description of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,8 +1529,8 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,10 +1538,10 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the subnetpool is default
+    <dd>Indicates whether the subnetpool is default
 subnetpool or not. Changing this updates the default status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,11 +1549,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum prefix size that can be allocated from
+    <dd>The maximum prefix size that can be allocated from
 the subnetpool. For IPv4 subnetpools, default is 32. For IPv6 subnetpools,
 default is 128. Changing this updates the max prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1561,10 +1561,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The smallest prefix that can be allocated from a
+    <dd>The smallest prefix that can be allocated from a
 subnetpool. For IPv4 subnetpools, default is 8. For IPv6 subnetpools, default
 is 64. Changing this updates the min prefixlen of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1572,9 +1572,9 @@ is 64. Changing this updates the min prefixlen of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool. Changing this updates the name of
+    <dd>The name of the subnetpool. Changing this updates the name of
 the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1582,12 +1582,12 @@ the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet prefixes to assign to the subnetpool.
+    <dd>A list of subnet prefixes to assign to the subnetpool.
 Neutron API merges adjacent prefixes and treats them as a single prefix. Each
 subnet prefix must be unique among all subnet prefixes in all subnetpools that
 are associated with the address scope. Changing this updates the prefixes list
 of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,9 +1595,9 @@ of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool. Required if admin wants to
+    <dd>The owner of the subnetpool. Required if admin wants to
 create a subnetpool for another project. Changing this creates a new subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,11 +1605,11 @@ create a subnetpool for another project. Changing this creates a new subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a Neutron subnetpool. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,8 +1617,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,10 +1626,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this subnetpool is shared across
+    <dd>Indicates whether this subnetpool is shared across
 all projects. Changing this updates the shared status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,8 +1637,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the subnetpool.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1646,8 +1646,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1655,14 +1655,14 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1671,10 +1671,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope to assign to the
+    <dd>The Neutron address scope to assign to the
 subnetpool. Changing this updates the address scope id of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1682,9 +1682,9 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the subnetpool, which have been
+    <dd>The collection of tags assigned on the subnetpool, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,8 +1692,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,11 +1701,11 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the prefix to allocate when the cidr
+    <dd>The size of the prefix to allocate when the cidr
 or prefixlen attributes are omitted when you create the subnet. Defaults to the
 MinPrefixLen. Changing this updates the default prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1713,10 +1713,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that can be
+    <dd>The per-project quota on the prefix space that can be
 allocated from the subnetpool for project subnets. Changing this updates the
 default quota of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1724,9 +1724,9 @@ default quota of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
+    <dd>The human-readable description for the subnetpool.
 Changing this updates the description of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1734,8 +1734,8 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,10 +1743,10 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the subnetpool is default
+    <dd>Indicates whether the subnetpool is default
 subnetpool or not. Changing this updates the default status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,11 +1754,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum prefix size that can be allocated from
+    <dd>The maximum prefix size that can be allocated from
 the subnetpool. For IPv4 subnetpools, default is 32. For IPv6 subnetpools,
 default is 128. Changing this updates the max prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1766,10 +1766,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The smallest prefix that can be allocated from a
+    <dd>The smallest prefix that can be allocated from a
 subnetpool. For IPv4 subnetpools, default is 8. For IPv6 subnetpools, default
 is 64. Changing this updates the min prefixlen of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1777,9 +1777,9 @@ is 64. Changing this updates the min prefixlen of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool. Changing this updates the name of
+    <dd>The name of the subnetpool. Changing this updates the name of
 the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1787,12 +1787,12 @@ the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet prefixes to assign to the subnetpool.
+    <dd>A list of subnet prefixes to assign to the subnetpool.
 Neutron API merges adjacent prefixes and treats them as a single prefix. Each
 subnet prefix must be unique among all subnet prefixes in all subnetpools that
 are associated with the address scope. Changing this updates the prefixes list
 of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1800,9 +1800,9 @@ of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool. Required if admin wants to
+    <dd>The owner of the subnetpool. Required if admin wants to
 create a subnetpool for another project. Changing this creates a new subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,11 +1810,11 @@ create a subnetpool for another project. Changing this creates a new subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a Neutron subnetpool. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,8 +1822,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,10 +1831,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this subnetpool is shared across
+    <dd>Indicates whether this subnetpool is shared across
 all projects. Changing this updates the shared status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1842,8 +1842,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the subnetpool.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1851,8 +1851,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,14 +1860,14 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1876,10 +1876,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Neutron address scope to assign to the
+    <dd>The Neutron address scope to assign to the
 subnetpool. Changing this updates the address scope id of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1887,9 +1887,9 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the subnetpool, which have been
+    <dd>The collection of tags assigned on the subnetpool, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1897,8 +1897,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1906,11 +1906,11 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the prefix to allocate when the cidr
+    <dd>The size of the prefix to allocate when the cidr
 or prefixlen attributes are omitted when you create the subnet. Defaults to the
 MinPrefixLen. Changing this updates the default prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1918,10 +1918,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The per-project quota on the prefix space that can be
+    <dd>The per-project quota on the prefix space that can be
 allocated from the subnetpool for project subnets. Changing this updates the
 default quota of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,9 +1929,9 @@ default quota of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the subnetpool.
+    <dd>The human-readable description for the subnetpool.
 Changing this updates the description of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1939,8 +1939,8 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol version.
-{{% /md %}}</dd>
+    <dd>The IP protocol version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1948,10 +1948,10 @@ Changing this updates the description of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the subnetpool is default
+    <dd>Indicates whether the subnetpool is default
 subnetpool or not. Changing this updates the default status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1959,11 +1959,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum prefix size that can be allocated from
+    <dd>The maximum prefix size that can be allocated from
 the subnetpool. For IPv4 subnetpools, default is 32. For IPv6 subnetpools,
 default is 128. Changing this updates the max prefixlen of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,10 +1971,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The smallest prefix that can be allocated from a
+    <dd>The smallest prefix that can be allocated from a
 subnetpool. For IPv4 subnetpools, default is 8. For IPv6 subnetpools, default
 is 64. Changing this updates the min prefixlen of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1982,9 +1982,9 @@ is 64. Changing this updates the min prefixlen of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the subnetpool. Changing this updates the name of
+    <dd>The name of the subnetpool. Changing this updates the name of
 the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1992,12 +1992,12 @@ the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet prefixes to assign to the subnetpool.
+    <dd>A list of subnet prefixes to assign to the subnetpool.
 Neutron API merges adjacent prefixes and treats them as a single prefix. Each
 subnet prefix must be unique among all subnet prefixes in all subnetpools that
 are associated with the address scope. Changing this updates the prefixes list
 of the existing subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,9 +2005,9 @@ of the existing subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the subnetpool. Required if admin wants to
+    <dd>The owner of the subnetpool. Required if admin wants to
 create a subnetpool for another project. Changing this creates a new subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2015,11 +2015,11 @@ create a subnetpool for another project. Changing this creates a new subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a Neutron subnetpool. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2027,8 +2027,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The revision number of the subnetpool.
-{{% /md %}}</dd>
+    <dd>The revision number of the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2036,10 +2036,10 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this subnetpool is shared across
+    <dd>Indicates whether this subnetpool is shared across
 all projects. Changing this updates the shared status of the existing
 subnetpool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2047,8 +2047,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the subnetpool.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the subnetpool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2056,8 +2056,8 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which subnetpool was created.
-{{% /md %}}</dd>
+    <dd>The time at which subnetpool was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2065,11 +2065,11 @@ subnetpool.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -49,26 +49,26 @@ const bat = new aws.autoscaling.Policy("bat", {
 
 
 ## Create a Policy Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#Policy">Policy</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#PolicyArgs">PolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Policy</span><span class="p">(resource_name, opts=None, </span>adjustment_type=None<span class="p">, </span>autoscaling_group_name=None<span class="p">, </span>cooldown=None<span class="p">, </span>estimated_instance_warmup=None<span class="p">, </span>metric_aggregation_type=None<span class="p">, </span>min_adjustment_magnitude=None<span class="p">, </span>name=None<span class="p">, </span>policy_type=None<span class="p">, </span>scaling_adjustment=None<span class="p">, </span>step_adjustments=None<span class="p">, </span>target_tracking_configuration=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyArgs">PolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#Policy">Policy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.Policy.html">Policy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.PolicyArgs.html">PolicyArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -105,9 +105,9 @@ const bat = new aws.autoscaling.Policy("bat", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -125,9 +125,9 @@ const bat = new aws.autoscaling.Policy("bat", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -174,9 +174,9 @@ const bat = new aws.autoscaling.Policy("bat", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -213,7 +213,7 @@ const bat = new aws.autoscaling.Policy("bat", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Policy Resource Properties {#properties}
 
@@ -226,7 +226,7 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -235,8 +235,8 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the autoscaling group.
-{{% /md %}}</dd>
+    <dd>The name of the autoscaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,8 +244,8 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,8 +253,8 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,8 +262,8 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
-{{% /md %}}</dd>
+    <dd>The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
-{{% /md %}}</dd>
+    <dd>The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,7 +280,7 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,8 +288,8 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,8 +297,8 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
-{{% /md %}}</dd>
+    <dd>The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,10 +306,10 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,9 +317,9 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">List&lt;Policy<wbr>Step<wbr>Adjustment<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of adjustments that manage
+    <dd>A set of adjustments that manage
 group scaling. These have the following structure:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,14 +327,14 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A target tracking policy. These have the following structure:
-{{% /md %}}</dd>
+    <dd>A target tracking policy. These have the following structure:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -343,8 +343,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the autoscaling group.
-{{% /md %}}</dd>
+    <dd>The name of the autoscaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,8 +352,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,8 +361,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,8 +370,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
-{{% /md %}}</dd>
+    <dd>The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
-{{% /md %}}</dd>
+    <dd>The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,7 +388,7 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
-{{% /md %}}</dd>
+    <dd>The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,10 +414,10 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,9 +425,9 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">[]Policy<wbr>Step<wbr>Adjustment</a></span>
     </dt>
-    <dd>{{% md %}}A set of adjustments that manage
+    <dd>A set of adjustments that manage
 group scaling. These have the following structure:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,14 +435,14 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A target tracking policy. These have the following structure:
-{{% /md %}}</dd>
+    <dd>A target tracking policy. These have the following structure:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -451,8 +451,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the autoscaling group.
-{{% /md %}}</dd>
+    <dd>The name of the autoscaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -460,8 +460,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,8 +469,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,8 +478,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
-{{% /md %}}</dd>
+    <dd>The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,8 +487,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
-{{% /md %}}</dd>
+    <dd>The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,7 +496,7 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,8 +513,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
-{{% /md %}}</dd>
+    <dd>The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,10 +522,10 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,9 +533,9 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">Policy<wbr>Step<wbr>Adjustment[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of adjustments that manage
+    <dd>A set of adjustments that manage
 group scaling. These have the following structure:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -543,14 +543,14 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A target tracking policy. These have the following structure:
-{{% /md %}}</dd>
+    <dd>A target tracking policy. These have the following structure:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -559,8 +559,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the autoscaling group.
-{{% /md %}}</dd>
+    <dd>The name of the autoscaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,8 +568,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -577,8 +577,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -586,8 +586,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
-{{% /md %}}</dd>
+    <dd>The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,8 +595,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
-{{% /md %}}</dd>
+    <dd>The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,7 +604,7 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,8 +612,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,8 +621,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
-{{% /md %}}</dd>
+    <dd>The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -630,10 +630,10 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,9 +641,9 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">List[Policy<wbr>Step<wbr>Adjustment]</a></span>
     </dt>
-    <dd>{{% md %}}A set of adjustments that manage
+    <dd>A set of adjustments that manage
 group scaling. These have the following structure:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,11 +651,11 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Dict[Policy<wbr>Target<wbr>Tracking<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A target tracking policy. These have the following structure:
-{{% /md %}}</dd>
+    <dd>A target tracking policy. These have the following structure:
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -669,7 +669,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -678,8 +678,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN assigned by AWS to the scaling policy.
-{{% /md %}}</dd>
+    <dd>The ARN assigned by AWS to the scaling policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -687,13 +687,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -702,8 +702,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN assigned by AWS to the scaling policy.
-{{% /md %}}</dd>
+    <dd>The ARN assigned by AWS to the scaling policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,13 +711,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -726,8 +726,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN assigned by AWS to the scaling policy.
-{{% /md %}}</dd>
+    <dd>The ARN assigned by AWS to the scaling policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -735,13 +735,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -750,8 +750,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN assigned by AWS to the scaling policy.
-{{% /md %}}</dd>
+    <dd>The ARN assigned by AWS to the scaling policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -759,10 +759,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -773,25 +773,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Policy Resource {#look-up}
 
 Get an existing Policy resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#PolicyState">PolicyState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#Policy">Policy</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>adjustment_type=None<span class="p">, </span>arn=None<span class="p">, </span>autoscaling_group_name=None<span class="p">, </span>cooldown=None<span class="p">, </span>estimated_instance_warmup=None<span class="p">, </span>metric_aggregation_type=None<span class="p">, </span>min_adjustment_magnitude=None<span class="p">, </span>name=None<span class="p">, </span>policy_type=None<span class="p">, </span>scaling_adjustment=None<span class="p">, </span>step_adjustments=None<span class="p">, </span>target_tracking_configuration=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyState">PolicyState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#Policy">Policy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.Policy.html">Policy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.PolicyState.html">PolicyState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -816,9 +816,9 @@ Get an existing Policy resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -831,36 +831,9 @@ Get an existing Policy resource's state with the given name, ID, and optional ex
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -885,13 +858,40 @@ Get an existing Policy resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -900,8 +900,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,8 +909,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN assigned by AWS to the scaling policy.
-{{% /md %}}</dd>
+    <dd>The ARN assigned by AWS to the scaling policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,8 +918,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the autoscaling group.
-{{% /md %}}</dd>
+    <dd>The name of the autoscaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,8 +927,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,8 +936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
-{{% /md %}}</dd>
+    <dd>The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,8 +945,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
-{{% /md %}}</dd>
+    <dd>The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,7 +954,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,8 +962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,8 +971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
-{{% /md %}}</dd>
+    <dd>The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,10 +980,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,9 +991,9 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">List&lt;Policy<wbr>Step<wbr>Adjustment<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of adjustments that manage
+    <dd>A set of adjustments that manage
 group scaling. These have the following structure:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,14 +1001,14 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A target tracking policy. These have the following structure:
-{{% /md %}}</dd>
+    <dd>A target tracking policy. These have the following structure:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1017,8 +1017,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,8 +1026,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN assigned by AWS to the scaling policy.
-{{% /md %}}</dd>
+    <dd>The ARN assigned by AWS to the scaling policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the autoscaling group.
-{{% /md %}}</dd>
+    <dd>The name of the autoscaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
-{{% /md %}}</dd>
+    <dd>The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
-{{% /md %}}</dd>
+    <dd>The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,7 +1071,7 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1079,8 +1079,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1088,8 +1088,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
-{{% /md %}}</dd>
+    <dd>The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1097,10 +1097,10 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1108,9 +1108,9 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">[]Policy<wbr>Step<wbr>Adjustment</a></span>
     </dt>
-    <dd>{{% md %}}A set of adjustments that manage
+    <dd>A set of adjustments that manage
 group scaling. These have the following structure:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,14 +1118,14 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A target tracking policy. These have the following structure:
-{{% /md %}}</dd>
+    <dd>A target tracking policy. These have the following structure:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1134,8 +1134,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,8 +1143,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN assigned by AWS to the scaling policy.
-{{% /md %}}</dd>
+    <dd>The ARN assigned by AWS to the scaling policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,8 +1152,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the autoscaling group.
-{{% /md %}}</dd>
+    <dd>The name of the autoscaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,8 +1161,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1170,8 +1170,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
-{{% /md %}}</dd>
+    <dd>The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,8 +1179,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
-{{% /md %}}</dd>
+    <dd>The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,7 +1188,7 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1196,8 +1196,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,8 +1205,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
-{{% /md %}}</dd>
+    <dd>The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1214,10 +1214,10 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,9 +1225,9 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">Policy<wbr>Step<wbr>Adjustment[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of adjustments that manage
+    <dd>A set of adjustments that manage
 group scaling. These have the following structure:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,14 +1235,14 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A target tracking policy. These have the following structure:
-{{% /md %}}</dd>
+    <dd>A target tracking policy. These have the following structure:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1251,8 +1251,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN assigned by AWS to the scaling policy.
-{{% /md %}}</dd>
+    <dd>The ARN assigned by AWS to the scaling policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the autoscaling group.
-{{% /md %}}</dd>
+    <dd>The name of the autoscaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
-{{% /md %}}</dd>
+    <dd>The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
-{{% /md %}}</dd>
+    <dd>The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,7 +1305,7 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1313,8 +1313,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,8 +1322,8 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
-{{% /md %}}</dd>
+    <dd>The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1331,10 +1331,10 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,9 +1342,9 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">List[Policy<wbr>Step<wbr>Adjustment]</a></span>
     </dt>
-    <dd>{{% md %}}A set of adjustments that manage
+    <dd>A set of adjustments that manage
 group scaling. These have the following structure:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1352,11 +1352,11 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Dict[Policy<wbr>Target<wbr>Tracking<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A target tracking policy. These have the following structure:
-{{% /md %}}</dd>
+    <dd>A target tracking policy. These have the following structure:
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1371,18 +1371,18 @@ group scaling. These have the following structure:
 
 
 <h4 id="policystepadjustment">Policy<wbr>Step<wbr>Adjustment</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#PolicyStepAdjustment">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#PolicyStepAdjustment">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyStepAdjustmentArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyStepAdjustmentOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1391,10 +1391,10 @@ group scaling. These have the following structure:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1402,10 +1402,10 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The lower bound for the
+    <dd>The lower bound for the
 difference between the alarm threshold and the CloudWatch metric.
 Without a value, AWS will treat this bound as infinity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1413,17 +1413,17 @@ Without a value, AWS will treat this bound as infinity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The upper bound for the
+    <dd>The upper bound for the
 difference between the alarm threshold and the CloudWatch metric.
 Without a value, AWS will treat this bound as infinity. The upper bound
 must be greater than the lower bound.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1432,10 +1432,10 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,10 +1443,10 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The lower bound for the
+    <dd>The lower bound for the
 difference between the alarm threshold and the CloudWatch metric.
 Without a value, AWS will treat this bound as infinity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1454,17 +1454,17 @@ Without a value, AWS will treat this bound as infinity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The upper bound for the
+    <dd>The upper bound for the
 difference between the alarm threshold and the CloudWatch metric.
 Without a value, AWS will treat this bound as infinity. The upper bound
 must be greater than the lower bound.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1473,10 +1473,10 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,10 +1484,10 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The lower bound for the
+    <dd>The lower bound for the
 difference between the alarm threshold and the CloudWatch metric.
 Without a value, AWS will treat this bound as infinity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,17 +1495,17 @@ Without a value, AWS will treat this bound as infinity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The upper bound for the
+    <dd>The upper bound for the
 difference between the alarm threshold and the CloudWatch metric.
 Without a value, AWS will treat this bound as infinity. The upper bound
 must be greater than the lower bound.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1514,10 +1514,10 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of members by which to
+    <dd>The number of members by which to
 scale, when the adjustment bounds are breached. A positive value scales
 up. A negative value scales down.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1525,10 +1525,10 @@ up. A negative value scales down.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The lower bound for the
+    <dd>The lower bound for the
 difference between the alarm threshold and the CloudWatch metric.
 Without a value, AWS will treat this bound as infinity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1536,32 +1536,32 @@ Without a value, AWS will treat this bound as infinity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The upper bound for the
+    <dd>The upper bound for the
 difference between the alarm threshold and the CloudWatch metric.
 Without a value, AWS will treat this bound as infinity. The upper bound
 must be greater than the lower bound.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#PolicyTargetTrackingConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#PolicyTargetTrackingConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyTargetTrackingConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyTargetTrackingConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1570,8 +1570,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The target value for the metric.
-{{% /md %}}</dd>
+    <dd>The target value for the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1579,8 +1579,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A customized metric. Conflicts with `predefined_metric_specification`.
-{{% /md %}}</dd>
+    <dd>A customized metric. Conflicts with `predefined_metric_specification`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,8 +1588,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether scale in by the target tracking policy is disabled.
-{{% /md %}}</dd>
+    <dd>Indicates whether scale in by the target tracking policy is disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,14 +1597,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationpredefinedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Predefined<wbr>Metric<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A predefined metric. Conflicts with `customized_metric_specification`.
-{{% /md %}}</dd>
+    <dd>A predefined metric. Conflicts with `customized_metric_specification`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1613,8 +1613,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The target value for the metric.
-{{% /md %}}</dd>
+    <dd>The target value for the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}A customized metric. Conflicts with `predefined_metric_specification`.
-{{% /md %}}</dd>
+    <dd>A customized metric. Conflicts with `predefined_metric_specification`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,8 +1631,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether scale in by the target tracking policy is disabled.
-{{% /md %}}</dd>
+    <dd>Indicates whether scale in by the target tracking policy is disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,14 +1640,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationpredefinedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Predefined<wbr>Metric<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}A predefined metric. Conflicts with `customized_metric_specification`.
-{{% /md %}}</dd>
+    <dd>A predefined metric. Conflicts with `customized_metric_specification`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1656,8 +1656,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The target value for the metric.
-{{% /md %}}</dd>
+    <dd>The target value for the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1665,8 +1665,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}A customized metric. Conflicts with `predefined_metric_specification`.
-{{% /md %}}</dd>
+    <dd>A customized metric. Conflicts with `predefined_metric_specification`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,8 +1674,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether scale in by the target tracking policy is disabled.
-{{% /md %}}</dd>
+    <dd>Indicates whether scale in by the target tracking policy is disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,14 +1683,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationpredefinedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Predefined<wbr>Metric<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}A predefined metric. Conflicts with `customized_metric_specification`.
-{{% /md %}}</dd>
+    <dd>A predefined metric. Conflicts with `customized_metric_specification`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1699,8 +1699,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The target value for the metric.
-{{% /md %}}</dd>
+    <dd>The target value for the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1708,8 +1708,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecification">Dict[Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}A customized metric. Conflicts with `predefined_metric_specification`.
-{{% /md %}}</dd>
+    <dd>A customized metric. Conflicts with `predefined_metric_specification`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1717,8 +1717,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether scale in by the target tracking policy is disabled.
-{{% /md %}}</dd>
+    <dd>Indicates whether scale in by the target tracking policy is disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1726,29 +1726,29 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationpredefinedmetricspecification">Dict[Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Predefined<wbr>Metric<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}A predefined metric. Conflicts with `customized_metric_specification`.
-{{% /md %}}</dd>
+    <dd>A predefined metric. Conflicts with `customized_metric_specification`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="policytargettrackingconfigurationcustomizedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#PolicyTargetTrackingConfigurationCustomizedMetricSpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#PolicyTargetTrackingConfigurationCustomizedMetricSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyTargetTrackingConfigurationCustomizedMetricSpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1757,8 +1757,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the metric.
-{{% /md %}}</dd>
+    <dd>The name of the metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1766,8 +1766,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace of the metric.
-{{% /md %}}</dd>
+    <dd>The namespace of the metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1775,8 +1775,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic of the metric.
-{{% /md %}}</dd>
+    <dd>The statistic of the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1784,8 +1784,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecificationmetricdimension">List&lt;Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Metric<wbr>Dimension<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The dimensions of the metric.
-{{% /md %}}</dd>
+    <dd>The dimensions of the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1793,14 +1793,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit of the metric.
-{{% /md %}}</dd>
+    <dd>The unit of the metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1809,8 +1809,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the metric.
-{{% /md %}}</dd>
+    <dd>The name of the metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1818,8 +1818,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace of the metric.
-{{% /md %}}</dd>
+    <dd>The namespace of the metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1827,8 +1827,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic of the metric.
-{{% /md %}}</dd>
+    <dd>The statistic of the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1836,8 +1836,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecificationmetricdimension">[]Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Metric<wbr>Dimension</a></span>
     </dt>
-    <dd>{{% md %}}The dimensions of the metric.
-{{% /md %}}</dd>
+    <dd>The dimensions of the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1845,14 +1845,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit of the metric.
-{{% /md %}}</dd>
+    <dd>The unit of the metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1861,8 +1861,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the metric.
-{{% /md %}}</dd>
+    <dd>The name of the metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1870,8 +1870,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace of the metric.
-{{% /md %}}</dd>
+    <dd>The namespace of the metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1879,8 +1879,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic of the metric.
-{{% /md %}}</dd>
+    <dd>The statistic of the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1888,8 +1888,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecificationmetricdimension">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Metric<wbr>Dimension[]</a></span>
     </dt>
-    <dd>{{% md %}}The dimensions of the metric.
-{{% /md %}}</dd>
+    <dd>The dimensions of the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1897,14 +1897,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit of the metric.
-{{% /md %}}</dd>
+    <dd>The unit of the metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1913,8 +1913,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the metric.
-{{% /md %}}</dd>
+    <dd>The name of the metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1922,8 +1922,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace of the metric.
-{{% /md %}}</dd>
+    <dd>The namespace of the metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1931,8 +1931,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The statistic of the metric.
-{{% /md %}}</dd>
+    <dd>The statistic of the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1940,8 +1940,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecificationmetricdimension">List[Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Metric<wbr>Dimension]</a></span>
     </dt>
-    <dd>{{% md %}}The dimensions of the metric.
-{{% /md %}}</dd>
+    <dd>The dimensions of the metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1949,29 +1949,29 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unit of the metric.
-{{% /md %}}</dd>
+    <dd>The unit of the metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="policytargettrackingconfigurationcustomizedmetricspecificationmetricdimension">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Metric<wbr>Dimension</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1980,8 +1980,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1989,14 +1989,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the dimension.
-{{% /md %}}</dd>
+    <dd>The value of the dimension.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2005,8 +2005,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2014,14 +2014,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the dimension.
-{{% /md %}}</dd>
+    <dd>The value of the dimension.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2030,8 +2030,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2039,14 +2039,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the dimension.
-{{% /md %}}</dd>
+    <dd>The value of the dimension.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2055,8 +2055,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the dimension.
-{{% /md %}}</dd>
+    <dd>The name of the dimension.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2064,29 +2064,29 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value of the dimension.
-{{% /md %}}</dd>
+    <dd>The value of the dimension.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="policytargettrackingconfigurationpredefinedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Predefined<wbr>Metric<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#PolicyTargetTrackingConfigurationPredefinedMetricSpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#PolicyTargetTrackingConfigurationPredefinedMetricSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyTargetTrackingConfigurationPredefinedMetricSpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2095,8 +2095,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The metric type.
-{{% /md %}}</dd>
+    <dd>The metric type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2104,14 +2104,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the resource associated with the metric type.
-{{% /md %}}</dd>
+    <dd>Identifies the resource associated with the metric type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2120,8 +2120,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The metric type.
-{{% /md %}}</dd>
+    <dd>The metric type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2129,14 +2129,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the resource associated with the metric type.
-{{% /md %}}</dd>
+    <dd>Identifies the resource associated with the metric type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2145,8 +2145,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The metric type.
-{{% /md %}}</dd>
+    <dd>The metric type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2154,14 +2154,14 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the resource associated with the metric type.
-{{% /md %}}</dd>
+    <dd>Identifies the resource associated with the metric type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2170,8 +2170,8 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The metric type.
-{{% /md %}}</dd>
+    <dd>The metric type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2179,11 +2179,11 @@ must be greater than the lower bound.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the resource associated with the metric type.
-{{% /md %}}</dd>
+    <dd>Identifies the resource associated with the metric type.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

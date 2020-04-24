@@ -32,29 +32,29 @@ const sharenetwork1 = pulumi.output(openstack.sharedfilesystem.getShareNetwork({
 
 ## Using GetShareNetwork {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getShareNetwork<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#GetShareNetworkArgs">GetShareNetworkArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#GetShareNetworkResult">GetShareNetworkResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_share_network(</span>description=None<span class="p">, </span>ip_version=None<span class="p">, </span>name=None<span class="p">, </span>network_type=None<span class="p">, </span>neutron_net_id=None<span class="p">, </span>neutron_subnet_id=None<span class="p">, </span>region=None<span class="p">, </span>security_service_id=None<span class="p">, </span>segmentation_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupShareNetwork<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#LookupShareNetworkArgs">LookupShareNetworkArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#LookupShareNetworkResult">LookupShareNetworkResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetShareNetwork </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Sharedfilesystem.GetShareNetworkResult.html">GetShareNetworkResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.SharedFileSystem.GetShareNetworkArgs.html">GetShareNetworkArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description of the share network.
-{{% /md %}}</dd>
+    <dd>The human-readable description of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,8 +80,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The IP version of the share network. Can either be 4 or 6.
-{{% /md %}}</dd>
+    <dd>The IP version of the share network. Can either be 4 or 6.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -89,8 +89,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share network.
-{{% /md %}}</dd>
+    <dd>The name of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -98,9 +98,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share network type. Can either be VLAN, VXLAN,
+    <dd>The share network type. Can either be VLAN, VXLAN,
 GRE, or flat.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -108,8 +108,8 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The neutron network UUID of the share network.
-{{% /md %}}</dd>
+    <dd>The neutron network UUID of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -117,8 +117,8 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The neutron subnet UUID of the share network.
-{{% /md %}}</dd>
+    <dd>The neutron subnet UUID of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -126,10 +126,10 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to read a share network. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -137,9 +137,9 @@ A Shared File System client is needed to read a share network. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The security service IDs associated with
+    <dd>The security service IDs associated with
 the share network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -147,14 +147,14 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The share network segmentation ID.
-{{% /md %}}</dd>
+    <dd>The share network segmentation ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -163,8 +163,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description of the share network.
-{{% /md %}}</dd>
+    <dd>The human-readable description of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -172,8 +172,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The IP version of the share network. Can either be 4 or 6.
-{{% /md %}}</dd>
+    <dd>The IP version of the share network. Can either be 4 or 6.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -181,8 +181,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share network.
-{{% /md %}}</dd>
+    <dd>The name of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -190,9 +190,9 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share network type. Can either be VLAN, VXLAN,
+    <dd>The share network type. Can either be VLAN, VXLAN,
 GRE, or flat.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -200,8 +200,8 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The neutron network UUID of the share network.
-{{% /md %}}</dd>
+    <dd>The neutron network UUID of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,8 +209,8 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The neutron subnet UUID of the share network.
-{{% /md %}}</dd>
+    <dd>The neutron subnet UUID of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,10 +218,10 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to read a share network. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -229,9 +229,9 @@ A Shared File System client is needed to read a share network. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The security service IDs associated with
+    <dd>The security service IDs associated with
 the share network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,14 +239,14 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The share network segmentation ID.
-{{% /md %}}</dd>
+    <dd>The share network segmentation ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -255,8 +255,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description of the share network.
-{{% /md %}}</dd>
+    <dd>The human-readable description of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The IP version of the share network. Can either be 4 or 6.
-{{% /md %}}</dd>
+    <dd>The IP version of the share network. Can either be 4 or 6.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,8 +273,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share network.
-{{% /md %}}</dd>
+    <dd>The name of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,9 +282,9 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share network type. Can either be VLAN, VXLAN,
+    <dd>The share network type. Can either be VLAN, VXLAN,
 GRE, or flat.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The neutron network UUID of the share network.
-{{% /md %}}</dd>
+    <dd>The neutron network UUID of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The neutron subnet UUID of the share network.
-{{% /md %}}</dd>
+    <dd>The neutron subnet UUID of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,10 +310,10 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to read a share network. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,9 +321,9 @@ A Shared File System client is needed to read a share network. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The security service IDs associated with
+    <dd>The security service IDs associated with
 the share network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,14 +331,14 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The share network segmentation ID.
-{{% /md %}}</dd>
+    <dd>The share network segmentation ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -347,8 +347,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description of the share network.
-{{% /md %}}</dd>
+    <dd>The human-readable description of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,8 +356,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The IP version of the share network. Can either be 4 or 6.
-{{% /md %}}</dd>
+    <dd>The IP version of the share network. Can either be 4 or 6.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share network.
-{{% /md %}}</dd>
+    <dd>The name of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,9 +374,9 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share network type. Can either be VLAN, VXLAN,
+    <dd>The share network type. Can either be VLAN, VXLAN,
 GRE, or flat.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,8 +384,8 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The neutron network UUID of the share network.
-{{% /md %}}</dd>
+    <dd>The neutron network UUID of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,8 +393,8 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The neutron subnet UUID of the share network.
-{{% /md %}}</dd>
+    <dd>The neutron subnet UUID of the share network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,10 +402,10 @@ GRE, or flat.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to read a share network. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,9 +413,9 @@ A Shared File System client is needed to read a share network. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The security service IDs associated with
+    <dd>The security service IDs associated with
 the share network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,11 +423,11 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The share network segmentation ID.
-{{% /md %}}</dd>
+    <dd>The share network segmentation ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -443,7 +443,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -452,8 +452,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -461,8 +461,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -470,8 +470,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -479,8 +479,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -488,8 +488,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -497,8 +497,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -506,8 +506,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -515,8 +515,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -524,8 +524,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share Network.
-{{% /md %}}</dd>
+    <dd>The owner of the Share Network.
+</dd>
 
     <dt class="property-"
             title="">
@@ -533,8 +533,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -542,9 +542,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of security service IDs associated with
+    <dd>The list of security service IDs associated with
 the share network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -552,8 +552,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -561,14 +561,14 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -577,8 +577,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -586,8 +586,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,8 +604,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -613,8 +613,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,8 +631,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -640,8 +640,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -649,8 +649,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share Network.
-{{% /md %}}</dd>
+    <dd>The owner of the Share Network.
+</dd>
 
     <dt class="property-"
             title="">
@@ -658,8 +658,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -667,9 +667,9 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of security service IDs associated with
+    <dd>The list of security service IDs associated with
 the share network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -677,8 +677,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -686,14 +686,14 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -702,8 +702,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,8 +711,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -720,8 +720,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -729,8 +729,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -738,8 +738,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -747,8 +747,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -756,8 +756,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -765,8 +765,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -774,8 +774,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share Network.
-{{% /md %}}</dd>
+    <dd>The owner of the Share Network.
+</dd>
 
     <dt class="property-"
             title="">
@@ -783,8 +783,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -792,9 +792,9 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of security service IDs associated with
+    <dd>The list of security service IDs associated with
 the share network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -802,8 +802,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -811,14 +811,14 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -827,8 +827,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -836,8 +836,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -845,8 +845,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -854,8 +854,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -863,8 +863,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -872,8 +872,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -881,8 +881,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -890,8 +890,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -899,8 +899,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share Network.
-{{% /md %}}</dd>
+    <dd>The owner of the Share Network.
+</dd>
 
     <dt class="property-"
             title="">
@@ -908,8 +908,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -917,9 +917,9 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of security service IDs associated with
+    <dd>The list of security service IDs associated with
 the share network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -927,8 +927,8 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -936,11 +936,11 @@ the share network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

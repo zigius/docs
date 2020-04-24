@@ -18,26 +18,26 @@ Use this resource to map alert policies to alert channels in New Relic.
 
 
 ## Create a AlertPolicyChannel Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/newrelic/#AlertPolicyChannel">AlertPolicyChannel</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/newrelic/#AlertPolicyChannelArgs">AlertPolicyChannelArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AlertPolicyChannel</span><span class="p">(resource_name, opts=None, </span>channel_id=None<span class="p">, </span>channel_ids=None<span class="p">, </span>policy_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAlertPolicyChannel<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#AlertPolicyChannelArgs">AlertPolicyChannelArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#AlertPolicyChannel">AlertPolicyChannel</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Newrelic/Pulumi.Newrelic.AlertPolicyChannel.html">AlertPolicyChannel</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Newrelic/Pulumi.NewRelic.AlertPolicyChannelArgs.html">AlertPolicyChannelArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Use this resource to map alert policies to alert channels in New Relic.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Use this resource to map alert policies to alert channels in New Relic.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Use this resource to map alert policies to alert channels in New Relic.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Use this resource to map alert policies to alert channels in New Relic.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## AlertPolicyChannel Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The AlertPolicyChannel resource accepts the following [input]({{< relref "/docs/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The AlertPolicyChannel resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy.
-{{% /md %}}</dd>
+    <dd>The ID of the policy.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -213,8 +213,8 @@ The AlertPolicyChannel resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated. The ID of the channel. Please use the channel_ids argument instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `channel_ids` argument instead{{% /md %}}</p></dd>
+    <dd>Deprecated. The ID of the channel. Please use the channel_ids argument instead.
+<p class="property-message">Deprecated: use `channel_ids` argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,15 +222,15 @@ The AlertPolicyChannel resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;int&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
+    <dd>Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
 drift your Terraform state.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -239,8 +239,8 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy.
-{{% /md %}}</dd>
+    <dd>The ID of the policy.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -248,8 +248,8 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated. The ID of the channel. Please use the channel_ids argument instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `channel_ids` argument instead{{% /md %}}</p></dd>
+    <dd>Deprecated. The ID of the channel. Please use the channel_ids argument instead.
+<p class="property-message">Deprecated: use `channel_ids` argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,15 +257,15 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">[]int</a></span>
     </dt>
-    <dd>{{% md %}}Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
+    <dd>Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
 drift your Terraform state.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -274,8 +274,8 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy.
-{{% /md %}}</dd>
+    <dd>The ID of the policy.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -283,8 +283,8 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated. The ID of the channel. Please use the channel_ids argument instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `channel_ids` argument instead{{% /md %}}</p></dd>
+    <dd>Deprecated. The ID of the channel. Please use the channel_ids argument instead.
+<p class="property-message">Deprecated: use `channel_ids` argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,15 +292,15 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number[]</a></span>
     </dt>
-    <dd>{{% md %}}Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
+    <dd>Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
 drift your Terraform state.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -309,8 +309,8 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy.
-{{% /md %}}</dd>
+    <dd>The ID of the policy.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -318,8 +318,8 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated. The ID of the channel. Please use the channel_ids argument instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `channel_ids` argument instead{{% /md %}}</p></dd>
+    <dd>Deprecated. The ID of the channel. Please use the channel_ids argument instead.
+<p class="property-message">Deprecated: use `channel_ids` argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,12 +327,12 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[Integer]</a></span>
     </dt>
-    <dd>{{% md %}}Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
+    <dd>Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
 drift your Terraform state.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -346,7 +346,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -355,13 +355,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -370,13 +370,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -385,13 +385,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -400,10 +400,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -414,25 +414,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing AlertPolicyChannel Resource {#look-up}
 
 Get an existing AlertPolicyChannel resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/newrelic/#AlertPolicyChannelState">AlertPolicyChannelState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/newrelic/#AlertPolicyChannel">AlertPolicyChannel</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>channel_id=None<span class="p">, </span>channel_ids=None<span class="p">, </span>policy_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAlertPolicyChannel<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#AlertPolicyChannelState">AlertPolicyChannelState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#AlertPolicyChannel">AlertPolicyChannel</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Newrelic/Pulumi.Newrelic.AlertPolicyChannel.html">AlertPolicyChannel</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Newrelic/Pulumi.Newrelic..AlertPolicyChannelState.html">AlertPolicyChannelState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -457,9 +457,9 @@ Get an existing AlertPolicyChannel resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -472,36 +472,9 @@ Get an existing AlertPolicyChannel resource's state with the given name, ID, and
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -526,13 +499,40 @@ Get an existing AlertPolicyChannel resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -541,8 +541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated. The ID of the channel. Please use the channel_ids argument instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `channel_ids` argument instead{{% /md %}}</p></dd>
+    <dd>Deprecated. The ID of the channel. Please use the channel_ids argument instead.
+<p class="property-message">Deprecated: use `channel_ids` argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,9 +550,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;int&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
+    <dd>Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
 drift your Terraform state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,14 +560,14 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy.
-{{% /md %}}</dd>
+    <dd>The ID of the policy.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -576,8 +576,8 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated. The ID of the channel. Please use the channel_ids argument instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `channel_ids` argument instead{{% /md %}}</p></dd>
+    <dd>Deprecated. The ID of the channel. Please use the channel_ids argument instead.
+<p class="property-message">Deprecated: use `channel_ids` argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,9 +585,9 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">[]int</a></span>
     </dt>
-    <dd>{{% md %}}Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
+    <dd>Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
 drift your Terraform state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,14 +595,14 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy.
-{{% /md %}}</dd>
+    <dd>The ID of the policy.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -611,8 +611,8 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated. The ID of the channel. Please use the channel_ids argument instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `channel_ids` argument instead{{% /md %}}</p></dd>
+    <dd>Deprecated. The ID of the channel. Please use the channel_ids argument instead.
+<p class="property-message">Deprecated: use `channel_ids` argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -620,9 +620,9 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number[]</a></span>
     </dt>
-    <dd>{{% md %}}Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
+    <dd>Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
 drift your Terraform state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -630,14 +630,14 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy.
-{{% /md %}}</dd>
+    <dd>The ID of the policy.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -646,8 +646,8 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated. The ID of the channel. Please use the channel_ids argument instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `channel_ids` argument instead{{% /md %}}</p></dd>
+    <dd>Deprecated. The ID of the channel. Please use the channel_ids argument instead.
+<p class="property-message">Deprecated: use `channel_ids` argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,9 +655,9 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[Integer]</a></span>
     </dt>
-    <dd>{{% md %}}Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
+    <dd>Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid
 drift your Terraform state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,11 +665,11 @@ drift your Terraform state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy.
-{{% /md %}}</dd>
+    <dd>The ID of the policy.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

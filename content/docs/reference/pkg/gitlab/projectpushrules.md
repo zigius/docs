@@ -20,26 +20,26 @@ documentation](https://docs.gitlab.com/ce/push_rules/push_rules.html#push-rules)
 
 
 ## Create a ProjectPushRules Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gitlab/#ProjectPushRules">ProjectPushRules</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gitlab/#ProjectPushRulesArgs">ProjectPushRulesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ProjectPushRules</span><span class="p">(resource_name, opts=None, </span>author_email_regex=None<span class="p">, </span>branch_name_regex=None<span class="p">, </span>commit_message_regex=None<span class="p">, </span>deny_delete_tag=None<span class="p">, </span>file_name_regex=None<span class="p">, </span>max_file_size=None<span class="p">, </span>member_check=None<span class="p">, </span>prevent_secrets=None<span class="p">, </span>project=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewProjectPushRules<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gitlab/sdk/v2/go/gitlab/?tab=doc#ProjectPushRulesArgs">ProjectPushRulesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gitlab/sdk/v2/go/gitlab/?tab=doc#ProjectPushRules">ProjectPushRules</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gitlab/Pulumi.Gitlab.ProjectPushRules.html">ProjectPushRules</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gitlab/Pulumi.GitLab.ProjectPushRulesArgs.html">ProjectPushRulesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -76,9 +76,9 @@ documentation](https://docs.gitlab.com/ce/push_rules/push_rules.html#push-rules)
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -96,9 +96,9 @@ documentation](https://docs.gitlab.com/ce/push_rules/push_rules.html#push-rules)
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -145,9 +145,9 @@ documentation](https://docs.gitlab.com/ce/push_rules/push_rules.html#push-rules)
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -184,7 +184,7 @@ documentation](https://docs.gitlab.com/ce/push_rules/push_rules.html#push-rules)
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ProjectPushRules Resource Properties {#properties}
 
@@ -197,7 +197,7 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -206,8 +206,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or id of the project to add the push rules to.
-{{% /md %}}</dd>
+    <dd>The name or id of the project to add the push rules to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -215,8 +215,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit author emails must match this regex, e.g. "@my-company.com$"
-{{% /md %}}</dd>
+    <dd>All commit author emails must match this regex, e.g. "@my-company.com$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -224,8 +224,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}All branch names must match this regex, e.g. "(feature|hotfix)\/*"
-{{% /md %}}</dd>
+    <dd>All branch names must match this regex, e.g. "(feature|hotfix)\/*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit messages must match this regex, e.g. "Fixed \d+\..*"
-{{% /md %}}</dd>
+    <dd>All commit messages must match this regex, e.g. "Fixed \d+\..*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Deny deleting a tag
-{{% /md %}}</dd>
+    <dd>Deny deleting a tag
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}All commited filenames must not match this regex, e.g. "(jar|exe)$"
-{{% /md %}}</dd>
+    <dd>All commited filenames must not match this regex, e.g. "(jar|exe)$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum file size (MB)
-{{% /md %}}</dd>
+    <dd>Maximum file size (MB)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Restrict commits by author (email) to existing GitLab users
-{{% /md %}}</dd>
+    <dd>Restrict commits by author (email) to existing GitLab users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,14 +278,14 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}GitLab will reject any files that are likely to contain secrets
-{{% /md %}}</dd>
+    <dd>GitLab will reject any files that are likely to contain secrets
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -294,8 +294,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or id of the project to add the push rules to.
-{{% /md %}}</dd>
+    <dd>The name or id of the project to add the push rules to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit author emails must match this regex, e.g. "@my-company.com$"
-{{% /md %}}</dd>
+    <dd>All commit author emails must match this regex, e.g. "@my-company.com$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}All branch names must match this regex, e.g. "(feature|hotfix)\/*"
-{{% /md %}}</dd>
+    <dd>All branch names must match this regex, e.g. "(feature|hotfix)\/*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,8 +321,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit messages must match this regex, e.g. "Fixed \d+\..*"
-{{% /md %}}</dd>
+    <dd>All commit messages must match this regex, e.g. "Fixed \d+\..*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Deny deleting a tag
-{{% /md %}}</dd>
+    <dd>Deny deleting a tag
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,8 +339,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commited filenames must not match this regex, e.g. "(jar|exe)$"
-{{% /md %}}</dd>
+    <dd>All commited filenames must not match this regex, e.g. "(jar|exe)$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,8 +348,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum file size (MB)
-{{% /md %}}</dd>
+    <dd>Maximum file size (MB)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,8 +357,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Restrict commits by author (email) to existing GitLab users
-{{% /md %}}</dd>
+    <dd>Restrict commits by author (email) to existing GitLab users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -366,14 +366,14 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}GitLab will reject any files that are likely to contain secrets
-{{% /md %}}</dd>
+    <dd>GitLab will reject any files that are likely to contain secrets
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -382,8 +382,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or id of the project to add the push rules to.
-{{% /md %}}</dd>
+    <dd>The name or id of the project to add the push rules to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit author emails must match this regex, e.g. "@my-company.com$"
-{{% /md %}}</dd>
+    <dd>All commit author emails must match this regex, e.g. "@my-company.com$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}All branch names must match this regex, e.g. "(feature|hotfix)\/*"
-{{% /md %}}</dd>
+    <dd>All branch names must match this regex, e.g. "(feature|hotfix)\/*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit messages must match this regex, e.g. "Fixed \d+\..*"
-{{% /md %}}</dd>
+    <dd>All commit messages must match this regex, e.g. "Fixed \d+\..*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,8 +418,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Deny deleting a tag
-{{% /md %}}</dd>
+    <dd>Deny deleting a tag
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,8 +427,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commited filenames must not match this regex, e.g. "(jar|exe)$"
-{{% /md %}}</dd>
+    <dd>All commited filenames must not match this regex, e.g. "(jar|exe)$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,8 +436,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum file size (MB)
-{{% /md %}}</dd>
+    <dd>Maximum file size (MB)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,8 +445,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Restrict commits by author (email) to existing GitLab users
-{{% /md %}}</dd>
+    <dd>Restrict commits by author (email) to existing GitLab users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,14 +454,14 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}GitLab will reject any files that are likely to contain secrets
-{{% /md %}}</dd>
+    <dd>GitLab will reject any files that are likely to contain secrets
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -470,8 +470,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or id of the project to add the push rules to.
-{{% /md %}}</dd>
+    <dd>The name or id of the project to add the push rules to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}All commit author emails must match this regex, e.g. "@my-company.com$"
-{{% /md %}}</dd>
+    <dd>All commit author emails must match this regex, e.g. "@my-company.com$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}All branch names must match this regex, e.g. "(feature|hotfix)\/*"
-{{% /md %}}</dd>
+    <dd>All branch names must match this regex, e.g. "(feature|hotfix)\/*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}All commit messages must match this regex, e.g. "Fixed \d+\..*"
-{{% /md %}}</dd>
+    <dd>All commit messages must match this regex, e.g. "Fixed \d+\..*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Deny deleting a tag
-{{% /md %}}</dd>
+    <dd>Deny deleting a tag
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}All commited filenames must not match this regex, e.g. "(jar|exe)$"
-{{% /md %}}</dd>
+    <dd>All commited filenames must not match this regex, e.g. "(jar|exe)$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum file size (MB)
-{{% /md %}}</dd>
+    <dd>Maximum file size (MB)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,8 +533,8 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Restrict commits by author (email) to existing GitLab users
-{{% /md %}}</dd>
+    <dd>Restrict commits by author (email) to existing GitLab users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,11 +542,11 @@ The ProjectPushRules resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}GitLab will reject any files that are likely to contain secrets
-{{% /md %}}</dd>
+    <dd>GitLab will reject any files that are likely to contain secrets
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -560,7 +560,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -569,13 +569,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -584,13 +584,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -599,13 +599,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -614,10 +614,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -628,25 +628,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ProjectPushRules Resource {#look-up}
 
 Get an existing ProjectPushRules resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gitlab/#ProjectPushRulesState">ProjectPushRulesState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gitlab/#ProjectPushRules">ProjectPushRules</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>author_email_regex=None<span class="p">, </span>branch_name_regex=None<span class="p">, </span>commit_message_regex=None<span class="p">, </span>deny_delete_tag=None<span class="p">, </span>file_name_regex=None<span class="p">, </span>max_file_size=None<span class="p">, </span>member_check=None<span class="p">, </span>prevent_secrets=None<span class="p">, </span>project=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetProjectPushRules<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gitlab/sdk/v2/go/gitlab/?tab=doc#ProjectPushRulesState">ProjectPushRulesState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gitlab/sdk/v2/go/gitlab/?tab=doc#ProjectPushRules">ProjectPushRules</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gitlab/Pulumi.Gitlab.ProjectPushRules.html">ProjectPushRules</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gitlab/Pulumi.Gitlab..ProjectPushRulesState.html">ProjectPushRulesState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -671,9 +671,9 @@ Get an existing ProjectPushRules resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -686,36 +686,9 @@ Get an existing ProjectPushRules resource's state with the given name, ID, and o
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -740,13 +713,40 @@ Get an existing ProjectPushRules resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -755,8 +755,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit author emails must match this regex, e.g. "@my-company.com$"
-{{% /md %}}</dd>
+    <dd>All commit author emails must match this regex, e.g. "@my-company.com$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -764,8 +764,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}All branch names must match this regex, e.g. "(feature|hotfix)\/*"
-{{% /md %}}</dd>
+    <dd>All branch names must match this regex, e.g. "(feature|hotfix)\/*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -773,8 +773,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit messages must match this regex, e.g. "Fixed \d+\..*"
-{{% /md %}}</dd>
+    <dd>All commit messages must match this regex, e.g. "Fixed \d+\..*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -782,8 +782,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Deny deleting a tag
-{{% /md %}}</dd>
+    <dd>Deny deleting a tag
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -791,8 +791,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}All commited filenames must not match this regex, e.g. "(jar|exe)$"
-{{% /md %}}</dd>
+    <dd>All commited filenames must not match this regex, e.g. "(jar|exe)$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -800,8 +800,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum file size (MB)
-{{% /md %}}</dd>
+    <dd>Maximum file size (MB)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,8 +809,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Restrict commits by author (email) to existing GitLab users
-{{% /md %}}</dd>
+    <dd>Restrict commits by author (email) to existing GitLab users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,8 +818,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}GitLab will reject any files that are likely to contain secrets
-{{% /md %}}</dd>
+    <dd>GitLab will reject any files that are likely to contain secrets
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -827,14 +827,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or id of the project to add the push rules to.
-{{% /md %}}</dd>
+    <dd>The name or id of the project to add the push rules to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -843,8 +843,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit author emails must match this regex, e.g. "@my-company.com$"
-{{% /md %}}</dd>
+    <dd>All commit author emails must match this regex, e.g. "@my-company.com$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,8 +852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}All branch names must match this regex, e.g. "(feature|hotfix)\/*"
-{{% /md %}}</dd>
+    <dd>All branch names must match this regex, e.g. "(feature|hotfix)\/*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,8 +861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit messages must match this regex, e.g. "Fixed \d+\..*"
-{{% /md %}}</dd>
+    <dd>All commit messages must match this regex, e.g. "Fixed \d+\..*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,8 +870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Deny deleting a tag
-{{% /md %}}</dd>
+    <dd>Deny deleting a tag
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -879,8 +879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commited filenames must not match this regex, e.g. "(jar|exe)$"
-{{% /md %}}</dd>
+    <dd>All commited filenames must not match this regex, e.g. "(jar|exe)$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -888,8 +888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum file size (MB)
-{{% /md %}}</dd>
+    <dd>Maximum file size (MB)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -897,8 +897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Restrict commits by author (email) to existing GitLab users
-{{% /md %}}</dd>
+    <dd>Restrict commits by author (email) to existing GitLab users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,8 +906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}GitLab will reject any files that are likely to contain secrets
-{{% /md %}}</dd>
+    <dd>GitLab will reject any files that are likely to contain secrets
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,14 +915,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or id of the project to add the push rules to.
-{{% /md %}}</dd>
+    <dd>The name or id of the project to add the push rules to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -931,8 +931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit author emails must match this regex, e.g. "@my-company.com$"
-{{% /md %}}</dd>
+    <dd>All commit author emails must match this regex, e.g. "@my-company.com$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,8 +940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}All branch names must match this regex, e.g. "(feature|hotfix)\/*"
-{{% /md %}}</dd>
+    <dd>All branch names must match this regex, e.g. "(feature|hotfix)\/*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -949,8 +949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commit messages must match this regex, e.g. "Fixed \d+\..*"
-{{% /md %}}</dd>
+    <dd>All commit messages must match this regex, e.g. "Fixed \d+\..*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,8 +958,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Deny deleting a tag
-{{% /md %}}</dd>
+    <dd>Deny deleting a tag
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,8 +967,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}All commited filenames must not match this regex, e.g. "(jar|exe)$"
-{{% /md %}}</dd>
+    <dd>All commited filenames must not match this regex, e.g. "(jar|exe)$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -976,8 +976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum file size (MB)
-{{% /md %}}</dd>
+    <dd>Maximum file size (MB)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,8 +985,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Restrict commits by author (email) to existing GitLab users
-{{% /md %}}</dd>
+    <dd>Restrict commits by author (email) to existing GitLab users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -994,8 +994,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}GitLab will reject any files that are likely to contain secrets
-{{% /md %}}</dd>
+    <dd>GitLab will reject any files that are likely to contain secrets
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1003,14 +1003,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or id of the project to add the push rules to.
-{{% /md %}}</dd>
+    <dd>The name or id of the project to add the push rules to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1019,8 +1019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}All commit author emails must match this regex, e.g. "@my-company.com$"
-{{% /md %}}</dd>
+    <dd>All commit author emails must match this regex, e.g. "@my-company.com$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}All branch names must match this regex, e.g. "(feature|hotfix)\/*"
-{{% /md %}}</dd>
+    <dd>All branch names must match this regex, e.g. "(feature|hotfix)\/*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}All commit messages must match this regex, e.g. "Fixed \d+\..*"
-{{% /md %}}</dd>
+    <dd>All commit messages must match this regex, e.g. "Fixed \d+\..*"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Deny deleting a tag
-{{% /md %}}</dd>
+    <dd>Deny deleting a tag
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}All commited filenames must not match this regex, e.g. "(jar|exe)$"
-{{% /md %}}</dd>
+    <dd>All commited filenames must not match this regex, e.g. "(jar|exe)$"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum file size (MB)
-{{% /md %}}</dd>
+    <dd>Maximum file size (MB)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Restrict commits by author (email) to existing GitLab users
-{{% /md %}}</dd>
+    <dd>Restrict commits by author (email) to existing GitLab users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}GitLab will reject any files that are likely to contain secrets
-{{% /md %}}</dd>
+    <dd>GitLab will reject any files that are likely to contain secrets
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,11 +1091,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or id of the project to add the push rules to.
-{{% /md %}}</dd>
+    <dd>The name or id of the project to add the push rules to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

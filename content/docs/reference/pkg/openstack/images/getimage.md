@@ -36,29 +36,29 @@ const ubuntu = pulumi.output(openstack.images.getImage({
 
 ## Using GetImage {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getImage<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/images/#GetImageArgs">GetImageArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/images/#GetImageResult">GetImageResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_image(</span>member_status=None<span class="p">, </span>most_recent=None<span class="p">, </span>name=None<span class="p">, </span>owner=None<span class="p">, </span>properties=None<span class="p">, </span>region=None<span class="p">, </span>size_max=None<span class="p">, </span>size_min=None<span class="p">, </span>sort_direction=None<span class="p">, </span>sort_key=None<span class="p">, </span>tag=None<span class="p">, </span>visibility=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupImage<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/images?tab=doc#LookupImageArgs">LookupImageArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/images?tab=doc#LookupImageResult">LookupImageResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetImage </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Images.GetImageResult.html">GetImageResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Images.GetImageArgs.html">GetImageArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -66,7 +66,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -75,9 +75,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. Must be one of
+    <dd>The status of the image. Must be one of
 "accepted", "pending", "rejected", or "all".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -85,9 +85,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -95,8 +95,8 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -104,8 +104,8 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner (UUID) of the image.
-{{% /md %}}</dd>
+    <dd>The owner (UUID) of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -113,9 +113,9 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}a map of key/value pairs to match an image with.
+    <dd>a map of key/value pairs to match an image with.
 All specified properties must be matched.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -123,11 +123,11 @@ All specified properties must be matched.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -135,8 +135,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size (in bytes) of the image to return.
-{{% /md %}}</dd>
+    <dd>The maximum size (in bytes) of the image to return.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -144,8 +144,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size (in bytes) of the image to return.
-{{% /md %}}</dd>
+    <dd>The minimum size (in bytes) of the image to return.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -153,8 +153,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Order the results in either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>Order the results in either `asc` or `desc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -162,8 +162,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sort images based on a certain key. Defaults to `name`.
-{{% /md %}}</dd>
+    <dd>Sort images based on a certain key. Defaults to `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -171,8 +171,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Search for images with a specific tag.
-{{% /md %}}</dd>
+    <dd>Search for images with a specific tag.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -180,15 +180,15 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". Defaults to "private".
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -197,9 +197,9 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. Must be one of
+    <dd>The status of the image. Must be one of
 "accepted", "pending", "rejected", or "all".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -207,9 +207,9 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -217,8 +217,8 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,8 +226,8 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner (UUID) of the image.
-{{% /md %}}</dd>
+    <dd>The owner (UUID) of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,9 +235,9 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}a map of key/value pairs to match an image with.
+    <dd>a map of key/value pairs to match an image with.
 All specified properties must be matched.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,11 +245,11 @@ All specified properties must be matched.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,8 +257,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size (in bytes) of the image to return.
-{{% /md %}}</dd>
+    <dd>The maximum size (in bytes) of the image to return.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size (in bytes) of the image to return.
-{{% /md %}}</dd>
+    <dd>The minimum size (in bytes) of the image to return.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Order the results in either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>Order the results in either `asc` or `desc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sort images based on a certain key. Defaults to `name`.
-{{% /md %}}</dd>
+    <dd>Sort images based on a certain key. Defaults to `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Search for images with a specific tag.
-{{% /md %}}</dd>
+    <dd>Search for images with a specific tag.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,15 +302,15 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". Defaults to "private".
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -319,9 +319,9 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. Must be one of
+    <dd>The status of the image. Must be one of
 "accepted", "pending", "rejected", or "all".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,9 +329,9 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,8 +339,8 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,8 +348,8 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner (UUID) of the image.
-{{% /md %}}</dd>
+    <dd>The owner (UUID) of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,9 +357,9 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}a map of key/value pairs to match an image with.
+    <dd>a map of key/value pairs to match an image with.
 All specified properties must be matched.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,11 +367,11 @@ All specified properties must be matched.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size (in bytes) of the image to return.
-{{% /md %}}</dd>
+    <dd>The maximum size (in bytes) of the image to return.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size (in bytes) of the image to return.
-{{% /md %}}</dd>
+    <dd>The minimum size (in bytes) of the image to return.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Order the results in either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>Order the results in either `asc` or `desc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,8 +406,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sort images based on a certain key. Defaults to `name`.
-{{% /md %}}</dd>
+    <dd>Sort images based on a certain key. Defaults to `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,8 +415,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Search for images with a specific tag.
-{{% /md %}}</dd>
+    <dd>Search for images with a specific tag.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,15 +424,15 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". Defaults to "private".
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -441,9 +441,9 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. Must be one of
+    <dd>The status of the image. Must be one of
 "accepted", "pending", "rejected", or "all".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -451,9 +451,9 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner (UUID) of the image.
-{{% /md %}}</dd>
+    <dd>The owner (UUID) of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,9 +479,9 @@ recent image.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}a map of key/value pairs to match an image with.
+    <dd>a map of key/value pairs to match an image with.
 All specified properties must be matched.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,11 +489,11 @@ All specified properties must be matched.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -501,8 +501,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size (in bytes) of the image to return.
-{{% /md %}}</dd>
+    <dd>The maximum size (in bytes) of the image to return.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,8 +510,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size (in bytes) of the image to return.
-{{% /md %}}</dd>
+    <dd>The minimum size (in bytes) of the image to return.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,8 +519,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Order the results in either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>Order the results in either `asc` or `desc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,8 +528,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sort images based on a certain key. Defaults to `name`.
-{{% /md %}}</dd>
+    <dd>Sort images based on a certain key. Defaults to `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,8 +537,8 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Search for images with a specific tag.
-{{% /md %}}</dd>
+    <dd>Search for images with a specific tag.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -546,12 +546,12 @@ is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". Defaults to "private".
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -567,7 +567,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -576,8 +576,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -585,7 +585,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -593,10 +593,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
+    <dd>The date the image was created.
 * `container_format`: The format of the image's container.
 * `disk_format`: The format of the image's disk.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,7 +604,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -612,9 +612,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance endpoint that represent the
+    <dd>the trailing path after the glance endpoint that represent the
 location of the image or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ location of the image or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,10 +631,10 @@ location of the image or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,8 +642,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum amount of disk space required to use the image.
-{{% /md %}}</dd>
+    <dd>The minimum amount of disk space required to use the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,8 +651,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum amount of ram required to use the image.
-{{% /md %}}</dd>
+    <dd>The minimum amount of ram required to use the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -660,8 +660,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the image is protected.
-{{% /md %}}</dd>
+    <dd>Whether or not the image is protected.
+</dd>
 
     <dt class="property-"
             title="">
@@ -669,7 +669,7 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -677,9 +677,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -687,8 +687,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image (in bytes).
-{{% /md %}}</dd>
+    <dd>The size of the image (in bytes).
+</dd>
 
     <dt class="property-"
             title="">
@@ -696,8 +696,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The tags list of the image.
-{{% /md %}}</dd>
+    <dd>The tags list of the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -705,8 +705,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -714,7 +714,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -722,7 +722,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -730,7 +730,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -738,7 +738,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -746,8 +746,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Freeform information about the image.
-{{% /md %}}</dd>
+    <dd>Freeform information about the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -755,7 +755,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -763,7 +763,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -771,7 +771,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -779,7 +779,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -787,7 +787,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -795,13 +795,13 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -810,8 +810,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -819,7 +819,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -827,10 +827,10 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
+    <dd>The date the image was created.
 * `container_format`: The format of the image's container.
 * `disk_format`: The format of the image's disk.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -838,7 +838,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -846,9 +846,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance endpoint that represent the
+    <dd>the trailing path after the glance endpoint that represent the
 location of the image or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -856,8 +856,8 @@ location of the image or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -865,10 +865,10 @@ location of the image or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -876,8 +876,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum amount of disk space required to use the image.
-{{% /md %}}</dd>
+    <dd>The minimum amount of disk space required to use the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -885,8 +885,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum amount of ram required to use the image.
-{{% /md %}}</dd>
+    <dd>The minimum amount of ram required to use the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -894,8 +894,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the image is protected.
-{{% /md %}}</dd>
+    <dd>Whether or not the image is protected.
+</dd>
 
     <dt class="property-"
             title="">
@@ -903,7 +903,7 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -911,9 +911,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -921,8 +921,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image (in bytes).
-{{% /md %}}</dd>
+    <dd>The size of the image (in bytes).
+</dd>
 
     <dt class="property-"
             title="">
@@ -930,8 +930,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The tags list of the image.
-{{% /md %}}</dd>
+    <dd>The tags list of the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,7 +948,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -956,7 +956,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -964,7 +964,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -972,7 +972,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -980,8 +980,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Freeform information about the image.
-{{% /md %}}</dd>
+    <dd>Freeform information about the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -989,7 +989,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -997,7 +997,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1005,7 +1005,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1013,7 +1013,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1021,7 +1021,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1029,13 +1029,13 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1044,8 +1044,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1053,7 +1053,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1061,10 +1061,10 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
+    <dd>The date the image was created.
 * `container_format`: The format of the image's container.
 * `disk_format`: The format of the image's disk.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1072,7 +1072,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1080,9 +1080,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance endpoint that represent the
+    <dd>the trailing path after the glance endpoint that represent the
 location of the image or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1090,8 +1090,8 @@ location of the image or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1099,10 +1099,10 @@ location of the image or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1110,8 +1110,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The minimum amount of disk space required to use the image.
-{{% /md %}}</dd>
+    <dd>The minimum amount of disk space required to use the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1119,8 +1119,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The minimum amount of ram required to use the image.
-{{% /md %}}</dd>
+    <dd>The minimum amount of ram required to use the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1128,8 +1128,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the image is protected.
-{{% /md %}}</dd>
+    <dd>Whether or not the image is protected.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1137,7 +1137,7 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1145,9 +1145,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1155,8 +1155,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image (in bytes).
-{{% /md %}}</dd>
+    <dd>The size of the image (in bytes).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1164,8 +1164,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The tags list of the image.
-{{% /md %}}</dd>
+    <dd>The tags list of the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1173,8 +1173,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1182,7 +1182,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1190,7 +1190,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1198,7 +1198,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1206,7 +1206,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1214,8 +1214,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Freeform information about the image.
-{{% /md %}}</dd>
+    <dd>Freeform information about the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1223,7 +1223,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1231,7 +1231,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1239,7 +1239,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1247,7 +1247,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1255,7 +1255,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1263,13 +1263,13 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1278,8 +1278,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1287,7 +1287,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1295,10 +1295,10 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
+    <dd>The date the image was created.
 * `container_format`: The format of the image's container.
 * `disk_format`: The format of the image's disk.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1306,7 +1306,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1314,9 +1314,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance endpoint that represent the
+    <dd>the trailing path after the glance endpoint that represent the
 location of the image or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1324,8 +1324,8 @@ location of the image or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1333,10 +1333,10 @@ location of the image or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1344,8 +1344,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The minimum amount of disk space required to use the image.
-{{% /md %}}</dd>
+    <dd>The minimum amount of disk space required to use the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1353,8 +1353,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The minimum amount of ram required to use the image.
-{{% /md %}}</dd>
+    <dd>The minimum amount of ram required to use the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1362,8 +1362,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the image is protected.
-{{% /md %}}</dd>
+    <dd>Whether or not the image is protected.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1371,7 +1371,7 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1379,9 +1379,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1389,8 +1389,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image (in bytes).
-{{% /md %}}</dd>
+    <dd>The size of the image (in bytes).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1398,8 +1398,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The tags list of the image.
-{{% /md %}}</dd>
+    <dd>The tags list of the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1407,8 +1407,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1416,7 +1416,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1424,7 +1424,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1432,7 +1432,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1440,7 +1440,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1448,8 +1448,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Freeform information about the image.
-{{% /md %}}</dd>
+    <dd>Freeform information about the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1457,7 +1457,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1465,7 +1465,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1473,7 +1473,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1481,7 +1481,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1489,7 +1489,7 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1497,10 +1497,10 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -78,26 +78,26 @@ const tfenvtest = new aws.elasticbeanstalk.Environment("tfenvtest", {
 
 
 ## Create a Environment Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticbeanstalk/#Environment">Environment</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticbeanstalk/#EnvironmentArgs">EnvironmentArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Environment</span><span class="p">(resource_name, opts=None, </span>application=None<span class="p">, </span>cname_prefix=None<span class="p">, </span>description=None<span class="p">, </span>name=None<span class="p">, </span>platform_arn=None<span class="p">, </span>poll_interval=None<span class="p">, </span>settings=None<span class="p">, </span>solution_stack_name=None<span class="p">, </span>tags=None<span class="p">, </span>template_name=None<span class="p">, </span>tier=None<span class="p">, </span>version=None<span class="p">, </span>wait_for_ready_timeout=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewEnvironment<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticbeanstalk?tab=doc#EnvironmentArgs">EnvironmentArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticbeanstalk?tab=doc#Environment">Environment</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticBeanstalk.Environment.html">Environment</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticBeanstalk.EnvironmentArgs.html">EnvironmentArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -134,9 +134,9 @@ const tfenvtest = new aws.elasticbeanstalk.Environment("tfenvtest", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -154,9 +154,9 @@ const tfenvtest = new aws.elasticbeanstalk.Environment("tfenvtest", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -203,9 +203,9 @@ const tfenvtest = new aws.elasticbeanstalk.Environment("tfenvtest", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -242,7 +242,7 @@ const tfenvtest = new aws.elasticbeanstalk.Environment("tfenvtest", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Environment Resource Properties {#properties}
 
@@ -255,7 +255,7 @@ The Environment resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -264,9 +264,9 @@ The Environment resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Name of the application that contains the version
+    <dd>Name of the application that contains the version
 to be deployed
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,9 +274,9 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to use for the fully qualified DNS name of
+    <dd>Prefix to use for the fully qualified DNS name of
 the Environment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Short description of the Environment
-{{% /md %}}</dd>
+    <dd>Short description of the Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,9 +293,9 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,9 +303,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    <dd>The [ARN][2] of the Elastic Beanstalk [Platform][3]
 to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,11 +313,11 @@ to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time between polling the AWS API to
+    <dd>The time between polling the AWS API to
 check if changes have been applied. Use this to adjust the rate of API calls
 for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
 use the default behavior, which is an exponential backoff
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -325,10 +325,10 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentsetting">List&lt;Environment<wbr>Setting<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Option settings to configure the new Environment. These
+    <dd>Option settings to configure the new Environment. These
 override specific values that are set as defaults. The format is detailed
 below in Option Settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,9 +336,9 @@ below in Option Settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A solution stack to base your environment
+    <dd>A solution stack to base your environment
 off of. Example stacks can be found in the [Amazon API documentation][1]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A set of tags to apply to the Environment.
-{{% /md %}}</dd>
+    <dd>A set of tags to apply to the Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,9 +355,9 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Configuration
+    <dd>The name of the Elastic Beanstalk Configuration
 template to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,9 +365,9 @@ template to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic Beanstalk Environment tier. Valid values are `Worker`
+    <dd>Elastic Beanstalk Environment tier. Valid values are `Worker`
 or `WebServer`. If tier is left blank `WebServer` will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,9 +375,9 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Application Version
+    <dd>The name of the Elastic Beanstalk Application Version
 to use in deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,17 +385,17 @@ to use in deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum
+    <dd>The maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for an Elastic Beanstalk Environment to be in a ready state before timing
 out.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -404,9 +404,9 @@ out.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}Name of the application that contains the version
+    <dd>Name of the application that contains the version
 to be deployed
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,9 +414,9 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to use for the fully qualified DNS name of
+    <dd>Prefix to use for the fully qualified DNS name of
 the Environment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,8 +424,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Short description of the Environment
-{{% /md %}}</dd>
+    <dd>Short description of the Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,9 +433,9 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,9 +443,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    <dd>The [ARN][2] of the Elastic Beanstalk [Platform][3]
 to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -453,11 +453,11 @@ to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time between polling the AWS API to
+    <dd>The time between polling the AWS API to
 check if changes have been applied. Use this to adjust the rate of API calls
 for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
 use the default behavior, which is an exponential backoff
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,10 +465,10 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentsetting">[]Environment<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}Option settings to configure the new Environment. These
+    <dd>Option settings to configure the new Environment. These
 override specific values that are set as defaults. The format is detailed
 below in Option Settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,9 +476,9 @@ below in Option Settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A solution stack to base your environment
+    <dd>A solution stack to base your environment
 off of. Example stacks can be found in the [Amazon API documentation][1]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A set of tags to apply to the Environment.
-{{% /md %}}</dd>
+    <dd>A set of tags to apply to the Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,9 +495,9 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Configuration
+    <dd>The name of the Elastic Beanstalk Configuration
 template to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,9 +505,9 @@ template to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic Beanstalk Environment tier. Valid values are `Worker`
+    <dd>Elastic Beanstalk Environment tier. Valid values are `Worker`
 or `WebServer`. If tier is left blank `WebServer` will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,9 +515,9 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Application Version
+    <dd>The name of the Elastic Beanstalk Application Version
 to use in deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -525,17 +525,17 @@ to use in deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum
+    <dd>The maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for an Elastic Beanstalk Environment to be in a ready state before timing
 out.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -544,9 +544,9 @@ out.
         <span class="property-indicator"></span>
         <span class="property-type">string | Application</span>
     </dt>
-    <dd>{{% md %}}Name of the application that contains the version
+    <dd>Name of the application that contains the version
 to be deployed
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,9 +554,9 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to use for the fully qualified DNS name of
+    <dd>Prefix to use for the fully qualified DNS name of
 the Environment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -564,8 +564,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Short description of the Environment
-{{% /md %}}</dd>
+    <dd>Short description of the Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,9 +573,9 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,9 +583,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    <dd>The [ARN][2] of the Elastic Beanstalk [Platform][3]
 to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,11 +593,11 @@ to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time between polling the AWS API to
+    <dd>The time between polling the AWS API to
 check if changes have been applied. Use this to adjust the rate of API calls
 for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
 use the default behavior, which is an exponential backoff
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,10 +605,10 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentsetting">Environment<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}Option settings to configure the new Environment. These
+    <dd>Option settings to configure the new Environment. These
 override specific values that are set as defaults. The format is detailed
 below in Option Settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,9 +616,9 @@ below in Option Settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A solution stack to base your environment
+    <dd>A solution stack to base your environment
 off of. Example stacks can be found in the [Amazon API documentation][1]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,8 +626,8 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A set of tags to apply to the Environment.
-{{% /md %}}</dd>
+    <dd>A set of tags to apply to the Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,9 +635,9 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Configuration
+    <dd>The name of the Elastic Beanstalk Configuration
 template to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -645,9 +645,9 @@ template to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic Beanstalk Environment tier. Valid values are `Worker`
+    <dd>Elastic Beanstalk Environment tier. Valid values are `Worker`
 or `WebServer`. If tier is left blank `WebServer` will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,9 +655,9 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type">Application<wbr>Version</span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Application Version
+    <dd>The name of the Elastic Beanstalk Application Version
 to use in deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,17 +665,17 @@ to use in deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum
+    <dd>The maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for an Elastic Beanstalk Environment to be in a ready state before timing
 out.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -684,9 +684,9 @@ out.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}Name of the application that contains the version
+    <dd>Name of the application that contains the version
 to be deployed
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -694,9 +694,9 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to use for the fully qualified DNS name of
+    <dd>Prefix to use for the fully qualified DNS name of
 the Environment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,8 +704,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Short description of the Environment
-{{% /md %}}</dd>
+    <dd>Short description of the Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,9 +713,9 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,9 +723,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    <dd>The [ARN][2] of the Elastic Beanstalk [Platform][3]
 to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,11 +733,11 @@ to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time between polling the AWS API to
+    <dd>The time between polling the AWS API to
 check if changes have been applied. Use this to adjust the rate of API calls
 for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
 use the default behavior, which is an exponential backoff
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -745,10 +745,10 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentsetting">List[Environment<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}Option settings to configure the new Environment. These
+    <dd>Option settings to configure the new Environment. These
 override specific values that are set as defaults. The format is detailed
 below in Option Settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,9 +756,9 @@ below in Option Settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A solution stack to base your environment
+    <dd>A solution stack to base your environment
 off of. Example stacks can be found in the [Amazon API documentation][1]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -766,8 +766,8 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A set of tags to apply to the Environment.
-{{% /md %}}</dd>
+    <dd>A set of tags to apply to the Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -775,9 +775,9 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Configuration
+    <dd>The name of the Elastic Beanstalk Configuration
 template to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,9 +785,9 @@ template to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Elastic Beanstalk Environment tier. Valid values are `Worker`
+    <dd>Elastic Beanstalk Environment tier. Valid values are `Worker`
 or `WebServer`. If tier is left blank `WebServer` will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,9 +795,9 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Application Version
+    <dd>The name of the Elastic Beanstalk Application Version
 to use in deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,14 +805,14 @@ to use in deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum
+    <dd>The maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for an Elastic Beanstalk Environment to be in a ready state before timing
 out.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -826,7 +826,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -835,10 +835,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentallsetting">List&lt;Environment<wbr>All<wbr>Setting&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of all option settings configured in this Environment. These
+    <dd>List of all option settings configured in this Environment. These
 are a combination of default settings and their overrides from `setting` in
 the configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -846,7 +846,7 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -854,8 +854,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The autoscaling groups used by this Environment.
-{{% /md %}}</dd>
+    <dd>The autoscaling groups used by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -863,8 +863,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified DNS name for this Environment.
-{{% /md %}}</dd>
+    <dd>Fully qualified DNS name for this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -872,8 +872,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to the Load Balancer for this Environment
-{{% /md %}}</dd>
+    <dd>The URL to the Load Balancer for this Environment
+</dd>
 
     <dt class="property-"
             title="">
@@ -881,7 +881,7 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -889,8 +889,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Instances used by this Environment.
-{{% /md %}}</dd>
+    <dd>Instances used by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -898,8 +898,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Launch configurations in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Launch configurations in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -907,8 +907,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Elastic load balancers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Elastic load balancers in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -916,8 +916,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}SQS queues in use by this Environment.
-{{% /md %}}</dd>
+    <dd>SQS queues in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -925,14 +925,14 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Autoscaling triggers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Autoscaling triggers in use by this Environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -941,10 +941,10 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentallsetting">[]Environment<wbr>All<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}List of all option settings configured in this Environment. These
+    <dd>List of all option settings configured in this Environment. These
 are a combination of default settings and their overrides from `setting` in
 the configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -952,7 +952,7 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -960,8 +960,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The autoscaling groups used by this Environment.
-{{% /md %}}</dd>
+    <dd>The autoscaling groups used by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -969,8 +969,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified DNS name for this Environment.
-{{% /md %}}</dd>
+    <dd>Fully qualified DNS name for this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -978,8 +978,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to the Load Balancer for this Environment
-{{% /md %}}</dd>
+    <dd>The URL to the Load Balancer for this Environment
+</dd>
 
     <dt class="property-"
             title="">
@@ -987,7 +987,7 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -995,8 +995,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Instances used by this Environment.
-{{% /md %}}</dd>
+    <dd>Instances used by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1004,8 +1004,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Launch configurations in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Launch configurations in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1013,8 +1013,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic load balancers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Elastic load balancers in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1022,8 +1022,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}SQS queues in use by this Environment.
-{{% /md %}}</dd>
+    <dd>SQS queues in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1031,14 +1031,14 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Autoscaling triggers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Autoscaling triggers in use by this Environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1047,10 +1047,10 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentallsetting">Environment<wbr>All<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}List of all option settings configured in this Environment. These
+    <dd>List of all option settings configured in this Environment. These
 are a combination of default settings and their overrides from `setting` in
 the configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1058,7 +1058,7 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1066,8 +1066,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The autoscaling groups used by this Environment.
-{{% /md %}}</dd>
+    <dd>The autoscaling groups used by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1075,8 +1075,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified DNS name for this Environment.
-{{% /md %}}</dd>
+    <dd>Fully qualified DNS name for this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1084,8 +1084,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to the Load Balancer for this Environment
-{{% /md %}}</dd>
+    <dd>The URL to the Load Balancer for this Environment
+</dd>
 
     <dt class="property-"
             title="">
@@ -1093,7 +1093,7 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1101,8 +1101,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Instances used by this Environment.
-{{% /md %}}</dd>
+    <dd>Instances used by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1110,8 +1110,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Launch configurations in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Launch configurations in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1119,8 +1119,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Elastic load balancers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Elastic load balancers in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1128,8 +1128,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}SQS queues in use by this Environment.
-{{% /md %}}</dd>
+    <dd>SQS queues in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1137,14 +1137,14 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Autoscaling triggers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Autoscaling triggers in use by this Environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1153,10 +1153,10 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentallsetting">List[Environment<wbr>All<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}List of all option settings configured in this Environment. These
+    <dd>List of all option settings configured in this Environment. These
 are a combination of default settings and their overrides from `setting` in
 the configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1164,7 +1164,7 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1172,8 +1172,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The autoscaling groups used by this Environment.
-{{% /md %}}</dd>
+    <dd>The autoscaling groups used by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1181,8 +1181,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified DNS name for this Environment.
-{{% /md %}}</dd>
+    <dd>Fully qualified DNS name for this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1190,8 +1190,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL to the Load Balancer for this Environment
-{{% /md %}}</dd>
+    <dd>The URL to the Load Balancer for this Environment
+</dd>
 
     <dt class="property-"
             title="">
@@ -1199,7 +1199,7 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1207,8 +1207,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Instances used by this Environment.
-{{% /md %}}</dd>
+    <dd>Instances used by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1216,8 +1216,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Launch configurations in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Launch configurations in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1225,8 +1225,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Elastic load balancers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Elastic load balancers in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1234,8 +1234,8 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}SQS queues in use by this Environment.
-{{% /md %}}</dd>
+    <dd>SQS queues in use by this Environment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1243,11 +1243,11 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Autoscaling triggers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Autoscaling triggers in use by this Environment.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1258,25 +1258,25 @@ the configuration.
 ## Look up an Existing Environment Resource {#look-up}
 
 Get an existing Environment resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticbeanstalk/#EnvironmentState">EnvironmentState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticbeanstalk/#Environment">Environment</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>all_settings=None<span class="p">, </span>application=None<span class="p">, </span>arn=None<span class="p">, </span>autoscaling_groups=None<span class="p">, </span>cname=None<span class="p">, </span>cname_prefix=None<span class="p">, </span>description=None<span class="p">, </span>endpoint_url=None<span class="p">, </span>instances=None<span class="p">, </span>launch_configurations=None<span class="p">, </span>load_balancers=None<span class="p">, </span>name=None<span class="p">, </span>platform_arn=None<span class="p">, </span>poll_interval=None<span class="p">, </span>queues=None<span class="p">, </span>settings=None<span class="p">, </span>solution_stack_name=None<span class="p">, </span>tags=None<span class="p">, </span>template_name=None<span class="p">, </span>tier=None<span class="p">, </span>triggers=None<span class="p">, </span>version=None<span class="p">, </span>wait_for_ready_timeout=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetEnvironment<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticbeanstalk?tab=doc#EnvironmentState">EnvironmentState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticbeanstalk?tab=doc#Environment">Environment</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticBeanstalk.Environment.html">Environment</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticBeanstalk.EnvironmentState.html">EnvironmentState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1301,9 +1301,9 @@ Get an existing Environment resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1316,36 +1316,9 @@ Get an existing Environment resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1370,13 +1343,40 @@ Get an existing Environment resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1385,10 +1385,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentallsetting">List&lt;Environment<wbr>All<wbr>Setting<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of all option settings configured in this Environment. These
+    <dd>List of all option settings configured in this Environment. These
 are a combination of default settings and their overrides from `setting` in
 the configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1396,9 +1396,9 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Name of the application that contains the version
+    <dd>Name of the application that contains the version
 to be deployed
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1406,7 +1406,7 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,8 +1414,8 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The autoscaling groups used by this Environment.
-{{% /md %}}</dd>
+    <dd>The autoscaling groups used by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,8 +1423,8 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified DNS name for this Environment.
-{{% /md %}}</dd>
+    <dd>Fully qualified DNS name for this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,9 +1432,9 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to use for the fully qualified DNS name of
+    <dd>Prefix to use for the fully qualified DNS name of
 the Environment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,8 +1442,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Short description of the Environment
-{{% /md %}}</dd>
+    <dd>Short description of the Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1451,8 +1451,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to the Load Balancer for this Environment
-{{% /md %}}</dd>
+    <dd>The URL to the Load Balancer for this Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,8 +1460,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Instances used by this Environment.
-{{% /md %}}</dd>
+    <dd>Instances used by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1469,8 +1469,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Launch configurations in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Launch configurations in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1478,8 +1478,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Elastic load balancers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Elastic load balancers in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1487,9 +1487,9 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1497,9 +1497,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    <dd>The [ARN][2] of the Elastic Beanstalk [Platform][3]
 to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,11 +1507,11 @@ to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time between polling the AWS API to
+    <dd>The time between polling the AWS API to
 check if changes have been applied. Use this to adjust the rate of API calls
 for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
 use the default behavior, which is an exponential backoff
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,8 +1519,8 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}SQS queues in use by this Environment.
-{{% /md %}}</dd>
+    <dd>SQS queues in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,10 +1528,10 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentsetting">List&lt;Environment<wbr>Setting<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Option settings to configure the new Environment. These
+    <dd>Option settings to configure the new Environment. These
 override specific values that are set as defaults. The format is detailed
 below in Option Settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1539,9 +1539,9 @@ below in Option Settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A solution stack to base your environment
+    <dd>A solution stack to base your environment
 off of. Example stacks can be found in the [Amazon API documentation][1]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,8 +1549,8 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A set of tags to apply to the Environment.
-{{% /md %}}</dd>
+    <dd>A set of tags to apply to the Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1558,9 +1558,9 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Configuration
+    <dd>The name of the Elastic Beanstalk Configuration
 template to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,9 +1568,9 @@ template to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic Beanstalk Environment tier. Valid values are `Worker`
+    <dd>Elastic Beanstalk Environment tier. Valid values are `Worker`
 or `WebServer`. If tier is left blank `WebServer` will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1578,8 +1578,8 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Autoscaling triggers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Autoscaling triggers in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1587,9 +1587,9 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Application Version
+    <dd>The name of the Elastic Beanstalk Application Version
 to use in deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,17 +1597,17 @@ to use in deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum
+    <dd>The maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for an Elastic Beanstalk Environment to be in a ready state before timing
 out.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1616,10 +1616,10 @@ out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentallsetting">[]Environment<wbr>All<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}List of all option settings configured in this Environment. These
+    <dd>List of all option settings configured in this Environment. These
 are a combination of default settings and their overrides from `setting` in
 the configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1627,9 +1627,9 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}Name of the application that contains the version
+    <dd>Name of the application that contains the version
 to be deployed
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,7 +1637,7 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1645,8 +1645,8 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The autoscaling groups used by this Environment.
-{{% /md %}}</dd>
+    <dd>The autoscaling groups used by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1654,8 +1654,8 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified DNS name for this Environment.
-{{% /md %}}</dd>
+    <dd>Fully qualified DNS name for this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1663,9 +1663,9 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to use for the fully qualified DNS name of
+    <dd>Prefix to use for the fully qualified DNS name of
 the Environment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1673,8 +1673,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Short description of the Environment
-{{% /md %}}</dd>
+    <dd>Short description of the Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1682,8 +1682,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to the Load Balancer for this Environment
-{{% /md %}}</dd>
+    <dd>The URL to the Load Balancer for this Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1691,8 +1691,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Instances used by this Environment.
-{{% /md %}}</dd>
+    <dd>Instances used by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,8 +1700,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Launch configurations in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Launch configurations in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,8 +1709,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic load balancers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Elastic load balancers in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,9 +1718,9 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1728,9 +1728,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    <dd>The [ARN][2] of the Elastic Beanstalk [Platform][3]
 to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1738,11 +1738,11 @@ to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time between polling the AWS API to
+    <dd>The time between polling the AWS API to
 check if changes have been applied. Use this to adjust the rate of API calls
 for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
 use the default behavior, which is an exponential backoff
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,8 +1750,8 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}SQS queues in use by this Environment.
-{{% /md %}}</dd>
+    <dd>SQS queues in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1759,10 +1759,10 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentsetting">[]Environment<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}Option settings to configure the new Environment. These
+    <dd>Option settings to configure the new Environment. These
 override specific values that are set as defaults. The format is detailed
 below in Option Settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1770,9 +1770,9 @@ below in Option Settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A solution stack to base your environment
+    <dd>A solution stack to base your environment
 off of. Example stacks can be found in the [Amazon API documentation][1]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1780,8 +1780,8 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A set of tags to apply to the Environment.
-{{% /md %}}</dd>
+    <dd>A set of tags to apply to the Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1789,9 +1789,9 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Configuration
+    <dd>The name of the Elastic Beanstalk Configuration
 template to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,9 +1799,9 @@ template to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic Beanstalk Environment tier. Valid values are `Worker`
+    <dd>Elastic Beanstalk Environment tier. Valid values are `Worker`
 or `WebServer`. If tier is left blank `WebServer` will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1809,8 +1809,8 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Autoscaling triggers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Autoscaling triggers in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1818,9 +1818,9 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Application Version
+    <dd>The name of the Elastic Beanstalk Application Version
 to use in deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1828,17 +1828,17 @@ to use in deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum
+    <dd>The maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for an Elastic Beanstalk Environment to be in a ready state before timing
 out.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1847,10 +1847,10 @@ out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentallsetting">Environment<wbr>All<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}List of all option settings configured in this Environment. These
+    <dd>List of all option settings configured in this Environment. These
 are a combination of default settings and their overrides from `setting` in
 the configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1858,9 +1858,9 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type">string | Application</span>
     </dt>
-    <dd>{{% md %}}Name of the application that contains the version
+    <dd>Name of the application that contains the version
 to be deployed
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1868,7 +1868,7 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1876,8 +1876,8 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The autoscaling groups used by this Environment.
-{{% /md %}}</dd>
+    <dd>The autoscaling groups used by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1885,8 +1885,8 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified DNS name for this Environment.
-{{% /md %}}</dd>
+    <dd>Fully qualified DNS name for this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1894,9 +1894,9 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to use for the fully qualified DNS name of
+    <dd>Prefix to use for the fully qualified DNS name of
 the Environment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1904,8 +1904,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Short description of the Environment
-{{% /md %}}</dd>
+    <dd>Short description of the Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1913,8 +1913,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to the Load Balancer for this Environment
-{{% /md %}}</dd>
+    <dd>The URL to the Load Balancer for this Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1922,8 +1922,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Instances used by this Environment.
-{{% /md %}}</dd>
+    <dd>Instances used by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1931,8 +1931,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Launch configurations in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Launch configurations in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1940,8 +1940,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Elastic load balancers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Elastic load balancers in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1949,9 +1949,9 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1959,9 +1959,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    <dd>The [ARN][2] of the Elastic Beanstalk [Platform][3]
 to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1969,11 +1969,11 @@ to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time between polling the AWS API to
+    <dd>The time between polling the AWS API to
 check if changes have been applied. Use this to adjust the rate of API calls
 for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
 use the default behavior, which is an exponential backoff
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1981,8 +1981,8 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}SQS queues in use by this Environment.
-{{% /md %}}</dd>
+    <dd>SQS queues in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1990,10 +1990,10 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentsetting">Environment<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}Option settings to configure the new Environment. These
+    <dd>Option settings to configure the new Environment. These
 override specific values that are set as defaults. The format is detailed
 below in Option Settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2001,9 +2001,9 @@ below in Option Settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A solution stack to base your environment
+    <dd>A solution stack to base your environment
 off of. Example stacks can be found in the [Amazon API documentation][1]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2011,8 +2011,8 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A set of tags to apply to the Environment.
-{{% /md %}}</dd>
+    <dd>A set of tags to apply to the Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2020,9 +2020,9 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Configuration
+    <dd>The name of the Elastic Beanstalk Configuration
 template to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2030,9 +2030,9 @@ template to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic Beanstalk Environment tier. Valid values are `Worker`
+    <dd>Elastic Beanstalk Environment tier. Valid values are `Worker`
 or `WebServer`. If tier is left blank `WebServer` will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2040,8 +2040,8 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Autoscaling triggers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Autoscaling triggers in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2049,9 +2049,9 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type">Application<wbr>Version</span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Application Version
+    <dd>The name of the Elastic Beanstalk Application Version
 to use in deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2059,17 +2059,17 @@ to use in deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum
+    <dd>The maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for an Elastic Beanstalk Environment to be in a ready state before timing
 out.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2078,10 +2078,10 @@ out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentallsetting">List[Environment<wbr>All<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}List of all option settings configured in this Environment. These
+    <dd>List of all option settings configured in this Environment. These
 are a combination of default settings and their overrides from `setting` in
 the configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2089,9 +2089,9 @@ the configuration.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}Name of the application that contains the version
+    <dd>Name of the application that contains the version
 to be deployed
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2099,7 +2099,7 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,8 +2107,8 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The autoscaling groups used by this Environment.
-{{% /md %}}</dd>
+    <dd>The autoscaling groups used by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2116,8 +2116,8 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified DNS name for this Environment.
-{{% /md %}}</dd>
+    <dd>Fully qualified DNS name for this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,9 +2125,9 @@ to be deployed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to use for the fully qualified DNS name of
+    <dd>Prefix to use for the fully qualified DNS name of
 the Environment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2135,8 +2135,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Short description of the Environment
-{{% /md %}}</dd>
+    <dd>Short description of the Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2144,8 +2144,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL to the Load Balancer for this Environment
-{{% /md %}}</dd>
+    <dd>The URL to the Load Balancer for this Environment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2153,8 +2153,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Instances used by this Environment.
-{{% /md %}}</dd>
+    <dd>Instances used by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2162,8 +2162,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Launch configurations in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Launch configurations in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2171,8 +2171,8 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Elastic load balancers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Elastic load balancers in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2180,9 +2180,9 @@ the Environment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2190,9 +2190,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    <dd>The [ARN][2] of the Elastic Beanstalk [Platform][3]
 to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2200,11 +2200,11 @@ to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time between polling the AWS API to
+    <dd>The time between polling the AWS API to
 check if changes have been applied. Use this to adjust the rate of API calls
 for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
 use the default behavior, which is an exponential backoff
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2212,8 +2212,8 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}SQS queues in use by this Environment.
-{{% /md %}}</dd>
+    <dd>SQS queues in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2221,10 +2221,10 @@ use the default behavior, which is an exponential backoff
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#environmentsetting">List[Environment<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}Option settings to configure the new Environment. These
+    <dd>Option settings to configure the new Environment. These
 override specific values that are set as defaults. The format is detailed
 below in Option Settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2232,9 +2232,9 @@ below in Option Settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A solution stack to base your environment
+    <dd>A solution stack to base your environment
 off of. Example stacks can be found in the [Amazon API documentation][1]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2242,8 +2242,8 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A set of tags to apply to the Environment.
-{{% /md %}}</dd>
+    <dd>A set of tags to apply to the Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2251,9 +2251,9 @@ off of. Example stacks can be found in the [Amazon API documentation][1]
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Configuration
+    <dd>The name of the Elastic Beanstalk Configuration
 template to use in deployment
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2261,9 +2261,9 @@ template to use in deployment
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Elastic Beanstalk Environment tier. Valid values are `Worker`
+    <dd>Elastic Beanstalk Environment tier. Valid values are `Worker`
 or `WebServer`. If tier is left blank `WebServer` will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2271,8 +2271,8 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Autoscaling triggers in use by this Environment.
-{{% /md %}}</dd>
+    <dd>Autoscaling triggers in use by this Environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2280,9 +2280,9 @@ or `WebServer`. If tier is left blank `WebServer` will be used.
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The name of the Elastic Beanstalk Application Version
+    <dd>The name of the Elastic Beanstalk Application Version
 to use in deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2290,14 +2290,14 @@ to use in deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum
+    <dd>The maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for an Elastic Beanstalk Environment to be in a ready state before timing
 out.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2312,18 +2312,18 @@ out.
 
 
 <h4 id="environmentallsetting">Environment<wbr>All<wbr>Setting</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#EnvironmentAllSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticbeanstalk?tab=doc#EnvironmentAllSettingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2332,9 +2332,9 @@ out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2342,7 +2342,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2350,7 +2350,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2358,13 +2358,13 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2373,9 +2373,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2383,7 +2383,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2391,7 +2391,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2399,13 +2399,13 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2414,9 +2414,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2424,7 +2424,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2432,7 +2432,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2440,13 +2440,13 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2455,9 +2455,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2465,7 +2465,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2473,7 +2473,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2481,28 +2481,28 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="environmentsetting">Environment<wbr>Setting</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#EnvironmentSetting">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#EnvironmentSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticbeanstalk?tab=doc#EnvironmentSettingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticbeanstalk?tab=doc#EnvironmentSettingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2511,9 +2511,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2521,7 +2521,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2529,7 +2529,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2537,13 +2537,13 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2552,9 +2552,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2562,7 +2562,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2570,7 +2570,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2578,13 +2578,13 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2593,9 +2593,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2603,7 +2603,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2611,7 +2611,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2619,13 +2619,13 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2634,9 +2634,9 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for this Environment. This name is used
+    <dd>A unique name for this Environment. This name is used
 in the application URL
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2644,7 +2644,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2652,7 +2652,7 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2660,10 +2660,10 @@ in the application URL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

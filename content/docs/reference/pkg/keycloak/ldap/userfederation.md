@@ -88,26 +88,26 @@ The following arguments are supported:
 
 
 ## Create a UserFederation Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/keycloak/ldap/#UserFederation">UserFederation</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/keycloak/ldap/#UserFederationArgs">UserFederationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">UserFederation</span><span class="p">(resource_name, opts=None, </span>batch_size_for_sync=None<span class="p">, </span>bind_credential=None<span class="p">, </span>bind_dn=None<span class="p">, </span>cache_policy=None<span class="p">, </span>changed_sync_period=None<span class="p">, </span>connection_timeout=None<span class="p">, </span>connection_url=None<span class="p">, </span>custom_user_search_filter=None<span class="p">, </span>edit_mode=None<span class="p">, </span>enabled=None<span class="p">, </span>full_sync_period=None<span class="p">, </span>import_enabled=None<span class="p">, </span>name=None<span class="p">, </span>pagination=None<span class="p">, </span>priority=None<span class="p">, </span>rdn_ldap_attribute=None<span class="p">, </span>read_timeout=None<span class="p">, </span>realm_id=None<span class="p">, </span>search_scope=None<span class="p">, </span>sync_registrations=None<span class="p">, </span>use_truststore_spi=None<span class="p">, </span>user_object_classes=None<span class="p">, </span>username_ldap_attribute=None<span class="p">, </span>users_dn=None<span class="p">, </span>uuid_ldap_attribute=None<span class="p">, </span>validate_password_policy=None<span class="p">, </span>vendor=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewUserFederation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-keycloak/sdk/v2/go/keycloak/ldap?tab=doc#UserFederationArgs">UserFederationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-keycloak/sdk/v2/go/keycloak/ldap?tab=doc#UserFederation">UserFederation</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Keycloak/Pulumi.Keycloak.Ldap.UserFederation.html">UserFederation</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Keycloak/Pulumi.Keycloak.Ldap.UserFederationArgs.html">UserFederationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -144,9 +144,9 @@ The following arguments are supported:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -164,9 +164,9 @@ The following arguments are supported:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -213,9 +213,9 @@ The following arguments are supported:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -252,7 +252,7 @@ The following arguments are supported:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## UserFederation Resource Properties {#properties}
 
@@ -265,7 +265,7 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -274,8 +274,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Connection URL to the LDAP server.
-{{% /md %}}</dd>
+    <dd>Connection URL to the LDAP server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -283,8 +283,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the relative distinguished name.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the relative distinguished name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -292,8 +292,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The realm this provider will provide user federation for.
-{{% /md %}}</dd>
+    <dd>The realm this provider will provide user federation for.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -301,8 +301,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}All values of LDAP objectClass attribute for users in LDAP.
-{{% /md %}}</dd>
+    <dd>All values of LDAP objectClass attribute for users in LDAP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -310,8 +310,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the Keycloak username.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the Keycloak username.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -319,8 +319,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Full DN of LDAP tree where your users are.
-{{% /md %}}</dd>
+    <dd>Full DN of LDAP tree where your users are.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -328,8 +328,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of users to sync within a single transaction.
-{{% /md %}}</dd>
+    <dd>The number of users to sync within a single transaction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of LDAP admin.
-{{% /md %}}</dd>
+    <dd>Password of LDAP admin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of LDAP admin, which will be used by Keycloak to access LDAP server.
-{{% /md %}}</dd>
+    <dd>DN of LDAP admin, which will be used by Keycloak to access LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,7 +364,7 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,9 +372,9 @@ The UserFederation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
+    <dd>How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
 sync.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP connection timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP connection timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
-{{% /md %}}</dd>
+    <dd>Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When false, this provider will not be used when performing queries for users.
-{{% /md %}}</dd>
+    <dd>When false, this provider will not be used when performing queries for users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,8 +418,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
-{{% /md %}}</dd>
+    <dd>How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,8 +427,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, LDAP users will be imported into the Keycloak database.
-{{% /md %}}</dd>
+    <dd>When true, LDAP users will be imported into the Keycloak database.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,8 +436,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Display name of the provider when displayed in the console.
-{{% /md %}}</dd>
+    <dd>Display name of the provider when displayed in the console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,8 +445,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak assumes the LDAP server supports pagination.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak assumes the LDAP server supports pagination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,8 +454,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority of this provider when looking up users. Lower values are first.
-{{% /md %}}</dd>
+    <dd>Priority of this provider when looking up users. Lower values are first.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,8 +463,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP read timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP read timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,8 +472,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
-{{% /md %}}</dd>
+    <dd>ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,8 +481,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, newly created users will be synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>When true, newly created users will be synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,7 +490,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,8 +498,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak will validate passwords using the realm policy before updating it.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak will validate passwords using the realm policy before updating it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,14 +507,14 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
-{{% /md %}}</dd>
+    <dd>LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -523,8 +523,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Connection URL to the LDAP server.
-{{% /md %}}</dd>
+    <dd>Connection URL to the LDAP server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -532,8 +532,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the relative distinguished name.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the relative distinguished name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -541,8 +541,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The realm this provider will provide user federation for.
-{{% /md %}}</dd>
+    <dd>The realm this provider will provide user federation for.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -550,8 +550,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}All values of LDAP objectClass attribute for users in LDAP.
-{{% /md %}}</dd>
+    <dd>All values of LDAP objectClass attribute for users in LDAP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -559,8 +559,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the Keycloak username.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the Keycloak username.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -568,8 +568,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Full DN of LDAP tree where your users are.
-{{% /md %}}</dd>
+    <dd>Full DN of LDAP tree where your users are.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -577,8 +577,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -586,8 +586,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of users to sync within a single transaction.
-{{% /md %}}</dd>
+    <dd>The number of users to sync within a single transaction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,8 +595,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of LDAP admin.
-{{% /md %}}</dd>
+    <dd>Password of LDAP admin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,8 +604,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of LDAP admin, which will be used by Keycloak to access LDAP server.
-{{% /md %}}</dd>
+    <dd>DN of LDAP admin, which will be used by Keycloak to access LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,7 +613,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,9 +621,9 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
+    <dd>How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
 sync.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,8 +631,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP connection timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP connection timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -640,8 +640,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
-{{% /md %}}</dd>
+    <dd>Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,8 +649,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,8 +658,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When false, this provider will not be used when performing queries for users.
-{{% /md %}}</dd>
+    <dd>When false, this provider will not be used when performing queries for users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -667,8 +667,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
-{{% /md %}}</dd>
+    <dd>How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -676,8 +676,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, LDAP users will be imported into the Keycloak database.
-{{% /md %}}</dd>
+    <dd>When true, LDAP users will be imported into the Keycloak database.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -685,8 +685,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Display name of the provider when displayed in the console.
-{{% /md %}}</dd>
+    <dd>Display name of the provider when displayed in the console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -694,8 +694,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak assumes the LDAP server supports pagination.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak assumes the LDAP server supports pagination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -703,8 +703,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority of this provider when looking up users. Lower values are first.
-{{% /md %}}</dd>
+    <dd>Priority of this provider when looking up users. Lower values are first.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,8 +712,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP read timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP read timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,8 +721,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
-{{% /md %}}</dd>
+    <dd>ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -730,8 +730,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, newly created users will be synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>When true, newly created users will be synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -739,7 +739,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,8 +747,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak will validate passwords using the realm policy before updating it.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak will validate passwords using the realm policy before updating it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,14 +756,14 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
-{{% /md %}}</dd>
+    <dd>LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -772,8 +772,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Connection URL to the LDAP server.
-{{% /md %}}</dd>
+    <dd>Connection URL to the LDAP server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -781,8 +781,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the relative distinguished name.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the relative distinguished name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -790,8 +790,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The realm this provider will provide user federation for.
-{{% /md %}}</dd>
+    <dd>The realm this provider will provide user federation for.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -799,8 +799,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}All values of LDAP objectClass attribute for users in LDAP.
-{{% /md %}}</dd>
+    <dd>All values of LDAP objectClass attribute for users in LDAP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -808,8 +808,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the Keycloak username.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the Keycloak username.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -817,8 +817,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Full DN of LDAP tree where your users are.
-{{% /md %}}</dd>
+    <dd>Full DN of LDAP tree where your users are.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -826,8 +826,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,8 +835,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of users to sync within a single transaction.
-{{% /md %}}</dd>
+    <dd>The number of users to sync within a single transaction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,8 +844,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of LDAP admin.
-{{% /md %}}</dd>
+    <dd>Password of LDAP admin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -853,8 +853,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of LDAP admin, which will be used by Keycloak to access LDAP server.
-{{% /md %}}</dd>
+    <dd>DN of LDAP admin, which will be used by Keycloak to access LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -862,7 +862,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,9 +870,9 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
+    <dd>How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
 sync.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,8 +880,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP connection timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP connection timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -889,8 +889,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
-{{% /md %}}</dd>
+    <dd>Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,8 +898,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,8 +907,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When false, this provider will not be used when performing queries for users.
-{{% /md %}}</dd>
+    <dd>When false, this provider will not be used when performing queries for users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -916,8 +916,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
-{{% /md %}}</dd>
+    <dd>How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -925,8 +925,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When true, LDAP users will be imported into the Keycloak database.
-{{% /md %}}</dd>
+    <dd>When true, LDAP users will be imported into the Keycloak database.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -934,8 +934,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Display name of the provider when displayed in the console.
-{{% /md %}}</dd>
+    <dd>Display name of the provider when displayed in the console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -943,8 +943,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak assumes the LDAP server supports pagination.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak assumes the LDAP server supports pagination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -952,8 +952,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Priority of this provider when looking up users. Lower values are first.
-{{% /md %}}</dd>
+    <dd>Priority of this provider when looking up users. Lower values are first.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -961,8 +961,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP read timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP read timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,8 +970,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
-{{% /md %}}</dd>
+    <dd>ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,8 +979,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When true, newly created users will be synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>When true, newly created users will be synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -988,7 +988,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,8 +996,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak will validate passwords using the realm policy before updating it.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak will validate passwords using the realm policy before updating it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,14 +1005,14 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
-{{% /md %}}</dd>
+    <dd>LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1021,8 +1021,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Connection URL to the LDAP server.
-{{% /md %}}</dd>
+    <dd>Connection URL to the LDAP server.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1030,8 +1030,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the relative distinguished name.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the relative distinguished name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1039,8 +1039,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The realm this provider will provide user federation for.
-{{% /md %}}</dd>
+    <dd>The realm this provider will provide user federation for.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1048,8 +1048,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}All values of LDAP objectClass attribute for users in LDAP.
-{{% /md %}}</dd>
+    <dd>All values of LDAP objectClass attribute for users in LDAP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1057,8 +1057,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the Keycloak username.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the Keycloak username.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1066,8 +1066,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Full DN of LDAP tree where your users are.
-{{% /md %}}</dd>
+    <dd>Full DN of LDAP tree where your users are.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1075,8 +1075,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of users to sync within a single transaction.
-{{% /md %}}</dd>
+    <dd>The number of users to sync within a single transaction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password of LDAP admin.
-{{% /md %}}</dd>
+    <dd>Password of LDAP admin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}DN of LDAP admin, which will be used by Keycloak to access LDAP server.
-{{% /md %}}</dd>
+    <dd>DN of LDAP admin, which will be used by Keycloak to access LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,7 +1111,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,9 +1119,9 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
+    <dd>How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
 sync.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,8 +1129,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}LDAP connection timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP connection timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
-{{% /md %}}</dd>
+    <dd>Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,8 +1147,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,8 +1156,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When false, this provider will not be used when performing queries for users.
-{{% /md %}}</dd>
+    <dd>When false, this provider will not be used when performing queries for users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,8 +1165,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
-{{% /md %}}</dd>
+    <dd>How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,8 +1174,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, LDAP users will be imported into the Keycloak database.
-{{% /md %}}</dd>
+    <dd>When true, LDAP users will be imported into the Keycloak database.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,8 +1183,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Display name of the provider when displayed in the console.
-{{% /md %}}</dd>
+    <dd>Display name of the provider when displayed in the console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1192,8 +1192,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak assumes the LDAP server supports pagination.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak assumes the LDAP server supports pagination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1201,8 +1201,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Priority of this provider when looking up users. Lower values are first.
-{{% /md %}}</dd>
+    <dd>Priority of this provider when looking up users. Lower values are first.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,8 +1210,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}LDAP read timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP read timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
-{{% /md %}}</dd>
+    <dd>ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,8 +1228,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, newly created users will be synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>When true, newly created users will be synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1237,7 +1237,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,8 +1245,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak will validate passwords using the realm policy before updating it.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak will validate passwords using the realm policy before updating it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,11 +1254,11 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
-{{% /md %}}</dd>
+    <dd>LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1272,7 +1272,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1281,13 +1281,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1296,13 +1296,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1311,13 +1311,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1326,10 +1326,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1340,25 +1340,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing UserFederation Resource {#look-up}
 
 Get an existing UserFederation resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/keycloak/ldap/#UserFederationState">UserFederationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/keycloak/ldap/#UserFederation">UserFederation</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>batch_size_for_sync=None<span class="p">, </span>bind_credential=None<span class="p">, </span>bind_dn=None<span class="p">, </span>cache_policy=None<span class="p">, </span>changed_sync_period=None<span class="p">, </span>connection_timeout=None<span class="p">, </span>connection_url=None<span class="p">, </span>custom_user_search_filter=None<span class="p">, </span>edit_mode=None<span class="p">, </span>enabled=None<span class="p">, </span>full_sync_period=None<span class="p">, </span>import_enabled=None<span class="p">, </span>name=None<span class="p">, </span>pagination=None<span class="p">, </span>priority=None<span class="p">, </span>rdn_ldap_attribute=None<span class="p">, </span>read_timeout=None<span class="p">, </span>realm_id=None<span class="p">, </span>search_scope=None<span class="p">, </span>sync_registrations=None<span class="p">, </span>use_truststore_spi=None<span class="p">, </span>user_object_classes=None<span class="p">, </span>username_ldap_attribute=None<span class="p">, </span>users_dn=None<span class="p">, </span>uuid_ldap_attribute=None<span class="p">, </span>validate_password_policy=None<span class="p">, </span>vendor=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetUserFederation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-keycloak/sdk/v2/go/keycloak/ldap?tab=doc#UserFederationState">UserFederationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-keycloak/sdk/v2/go/keycloak/ldap?tab=doc#UserFederation">UserFederation</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Keycloak/Pulumi.Keycloak.Ldap.UserFederation.html">UserFederation</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Keycloak/Pulumi.Keycloak.Ldap.UserFederationState.html">UserFederationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1383,9 +1383,9 @@ Get an existing UserFederation resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1398,36 +1398,9 @@ Get an existing UserFederation resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1452,13 +1425,40 @@ Get an existing UserFederation resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1467,8 +1467,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of users to sync within a single transaction.
-{{% /md %}}</dd>
+    <dd>The number of users to sync within a single transaction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1476,8 +1476,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of LDAP admin.
-{{% /md %}}</dd>
+    <dd>Password of LDAP admin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1485,8 +1485,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of LDAP admin, which will be used by Keycloak to access LDAP server.
-{{% /md %}}</dd>
+    <dd>DN of LDAP admin, which will be used by Keycloak to access LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,7 +1494,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,9 +1502,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
+    <dd>How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
 sync.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,8 +1512,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP connection timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP connection timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1521,8 +1521,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Connection URL to the LDAP server.
-{{% /md %}}</dd>
+    <dd>Connection URL to the LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1530,8 +1530,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
-{{% /md %}}</dd>
+    <dd>Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1539,8 +1539,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1548,8 +1548,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When false, this provider will not be used when performing queries for users.
-{{% /md %}}</dd>
+    <dd>When false, this provider will not be used when performing queries for users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1557,8 +1557,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
-{{% /md %}}</dd>
+    <dd>How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1566,8 +1566,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, LDAP users will be imported into the Keycloak database.
-{{% /md %}}</dd>
+    <dd>When true, LDAP users will be imported into the Keycloak database.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1575,8 +1575,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Display name of the provider when displayed in the console.
-{{% /md %}}</dd>
+    <dd>Display name of the provider when displayed in the console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,8 +1584,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak assumes the LDAP server supports pagination.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak assumes the LDAP server supports pagination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1593,8 +1593,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority of this provider when looking up users. Lower values are first.
-{{% /md %}}</dd>
+    <dd>Priority of this provider when looking up users. Lower values are first.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1602,8 +1602,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the relative distinguished name.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the relative distinguished name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1611,8 +1611,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP read timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP read timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1620,8 +1620,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The realm this provider will provide user federation for.
-{{% /md %}}</dd>
+    <dd>The realm this provider will provide user federation for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1629,8 +1629,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
-{{% /md %}}</dd>
+    <dd>ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1638,8 +1638,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, newly created users will be synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>When true, newly created users will be synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1647,7 +1647,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1655,8 +1655,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}All values of LDAP objectClass attribute for users in LDAP.
-{{% /md %}}</dd>
+    <dd>All values of LDAP objectClass attribute for users in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1664,8 +1664,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the Keycloak username.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the Keycloak username.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1673,8 +1673,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Full DN of LDAP tree where your users are.
-{{% /md %}}</dd>
+    <dd>Full DN of LDAP tree where your users are.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1682,8 +1682,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1691,8 +1691,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak will validate passwords using the realm policy before updating it.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak will validate passwords using the realm policy before updating it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,14 +1700,14 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
-{{% /md %}}</dd>
+    <dd>LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1716,8 +1716,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of users to sync within a single transaction.
-{{% /md %}}</dd>
+    <dd>The number of users to sync within a single transaction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,8 +1725,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of LDAP admin.
-{{% /md %}}</dd>
+    <dd>Password of LDAP admin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1734,8 +1734,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of LDAP admin, which will be used by Keycloak to access LDAP server.
-{{% /md %}}</dd>
+    <dd>DN of LDAP admin, which will be used by Keycloak to access LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,7 +1743,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1751,9 +1751,9 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
+    <dd>How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
 sync.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1761,8 +1761,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP connection timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP connection timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1770,8 +1770,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Connection URL to the LDAP server.
-{{% /md %}}</dd>
+    <dd>Connection URL to the LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1779,8 +1779,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
-{{% /md %}}</dd>
+    <dd>Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1788,8 +1788,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1797,8 +1797,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When false, this provider will not be used when performing queries for users.
-{{% /md %}}</dd>
+    <dd>When false, this provider will not be used when performing queries for users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1806,8 +1806,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
-{{% /md %}}</dd>
+    <dd>How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1815,8 +1815,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, LDAP users will be imported into the Keycloak database.
-{{% /md %}}</dd>
+    <dd>When true, LDAP users will be imported into the Keycloak database.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1824,8 +1824,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Display name of the provider when displayed in the console.
-{{% /md %}}</dd>
+    <dd>Display name of the provider when displayed in the console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1833,8 +1833,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak assumes the LDAP server supports pagination.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak assumes the LDAP server supports pagination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1842,8 +1842,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority of this provider when looking up users. Lower values are first.
-{{% /md %}}</dd>
+    <dd>Priority of this provider when looking up users. Lower values are first.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1851,8 +1851,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the relative distinguished name.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the relative distinguished name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,8 +1860,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP read timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP read timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1869,8 +1869,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The realm this provider will provide user federation for.
-{{% /md %}}</dd>
+    <dd>The realm this provider will provide user federation for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,8 +1878,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
-{{% /md %}}</dd>
+    <dd>ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1887,8 +1887,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, newly created users will be synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>When true, newly created users will be synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1896,7 +1896,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1904,8 +1904,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}All values of LDAP objectClass attribute for users in LDAP.
-{{% /md %}}</dd>
+    <dd>All values of LDAP objectClass attribute for users in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1913,8 +1913,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the Keycloak username.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the Keycloak username.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1922,8 +1922,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Full DN of LDAP tree where your users are.
-{{% /md %}}</dd>
+    <dd>Full DN of LDAP tree where your users are.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1931,8 +1931,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1940,8 +1940,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak will validate passwords using the realm policy before updating it.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak will validate passwords using the realm policy before updating it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1949,14 +1949,14 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
-{{% /md %}}</dd>
+    <dd>LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1965,8 +1965,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of users to sync within a single transaction.
-{{% /md %}}</dd>
+    <dd>The number of users to sync within a single transaction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1974,8 +1974,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of LDAP admin.
-{{% /md %}}</dd>
+    <dd>Password of LDAP admin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1983,8 +1983,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of LDAP admin, which will be used by Keycloak to access LDAP server.
-{{% /md %}}</dd>
+    <dd>DN of LDAP admin, which will be used by Keycloak to access LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1992,7 +1992,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2000,9 +2000,9 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
+    <dd>How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
 sync.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2010,8 +2010,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP connection timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP connection timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,8 +2019,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Connection URL to the LDAP server.
-{{% /md %}}</dd>
+    <dd>Connection URL to the LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2028,8 +2028,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
-{{% /md %}}</dd>
+    <dd>Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2037,8 +2037,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2046,8 +2046,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When false, this provider will not be used when performing queries for users.
-{{% /md %}}</dd>
+    <dd>When false, this provider will not be used when performing queries for users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2055,8 +2055,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
-{{% /md %}}</dd>
+    <dd>How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2064,8 +2064,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When true, LDAP users will be imported into the Keycloak database.
-{{% /md %}}</dd>
+    <dd>When true, LDAP users will be imported into the Keycloak database.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2073,8 +2073,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Display name of the provider when displayed in the console.
-{{% /md %}}</dd>
+    <dd>Display name of the provider when displayed in the console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2082,8 +2082,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak assumes the LDAP server supports pagination.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak assumes the LDAP server supports pagination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2091,8 +2091,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Priority of this provider when looking up users. Lower values are first.
-{{% /md %}}</dd>
+    <dd>Priority of this provider when looking up users. Lower values are first.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2100,8 +2100,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the relative distinguished name.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the relative distinguished name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2109,8 +2109,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP read timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP read timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2118,8 +2118,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The realm this provider will provide user federation for.
-{{% /md %}}</dd>
+    <dd>The realm this provider will provide user federation for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2127,8 +2127,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
-{{% /md %}}</dd>
+    <dd>ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2136,8 +2136,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When true, newly created users will be synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>When true, newly created users will be synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,7 +2145,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2153,8 +2153,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}All values of LDAP objectClass attribute for users in LDAP.
-{{% /md %}}</dd>
+    <dd>All values of LDAP objectClass attribute for users in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2162,8 +2162,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the Keycloak username.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the Keycloak username.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2171,8 +2171,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Full DN of LDAP tree where your users are.
-{{% /md %}}</dd>
+    <dd>Full DN of LDAP tree where your users are.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2180,8 +2180,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2189,8 +2189,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak will validate passwords using the realm policy before updating it.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak will validate passwords using the realm policy before updating it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2198,14 +2198,14 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
-{{% /md %}}</dd>
+    <dd>LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2214,8 +2214,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of users to sync within a single transaction.
-{{% /md %}}</dd>
+    <dd>The number of users to sync within a single transaction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2223,8 +2223,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password of LDAP admin.
-{{% /md %}}</dd>
+    <dd>Password of LDAP admin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2232,8 +2232,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}DN of LDAP admin, which will be used by Keycloak to access LDAP server.
-{{% /md %}}</dd>
+    <dd>DN of LDAP admin, which will be used by Keycloak to access LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2241,7 +2241,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2249,9 +2249,9 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
+    <dd>How frequently Keycloak should sync changed LDAP users, in seconds. Omit this property to disable periodic changed users
 sync.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2259,8 +2259,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}LDAP connection timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP connection timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2268,8 +2268,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Connection URL to the LDAP server.
-{{% /md %}}</dd>
+    <dd>Connection URL to the LDAP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2277,8 +2277,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
-{{% /md %}}</dd>
+    <dd>Additional LDAP filter for filtering searched users. Must begin with '(' and end with ')'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2286,8 +2286,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>READ_ONLY and WRITABLE are self-explanatory. UNSYNCED allows user data to be imported but not synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2295,8 +2295,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When false, this provider will not be used when performing queries for users.
-{{% /md %}}</dd>
+    <dd>When false, this provider will not be used when performing queries for users.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2304,8 +2304,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
-{{% /md %}}</dd>
+    <dd>How frequently Keycloak should sync all LDAP users, in seconds. Omit this property to disable periodic full sync.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2313,8 +2313,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, LDAP users will be imported into the Keycloak database.
-{{% /md %}}</dd>
+    <dd>When true, LDAP users will be imported into the Keycloak database.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2322,8 +2322,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Display name of the provider when displayed in the console.
-{{% /md %}}</dd>
+    <dd>Display name of the provider when displayed in the console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2331,8 +2331,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak assumes the LDAP server supports pagination.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak assumes the LDAP server supports pagination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2340,8 +2340,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Priority of this provider when looking up users. Lower values are first.
-{{% /md %}}</dd>
+    <dd>Priority of this provider when looking up users. Lower values are first.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2349,8 +2349,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the relative distinguished name.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the relative distinguished name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2358,8 +2358,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}LDAP read timeout (duration string)
-{{% /md %}}</dd>
+    <dd>LDAP read timeout (duration string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2367,8 +2367,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The realm this provider will provide user federation for.
-{{% /md %}}</dd>
+    <dd>The realm this provider will provide user federation for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2376,8 +2376,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
-{{% /md %}}</dd>
+    <dd>ONE_LEVEL: only search for users in the DN specified by user_dn. SUBTREE: search entire LDAP subtree.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2385,8 +2385,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, newly created users will be synced back to LDAP.
-{{% /md %}}</dd>
+    <dd>When true, newly created users will be synced back to LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2394,7 +2394,7 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2402,8 +2402,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}All values of LDAP objectClass attribute for users in LDAP.
-{{% /md %}}</dd>
+    <dd>All values of LDAP objectClass attribute for users in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,8 +2411,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as the Keycloak username.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as the Keycloak username.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,8 +2420,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Full DN of LDAP tree where your users are.
-{{% /md %}}</dd>
+    <dd>Full DN of LDAP tree where your users are.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2429,8 +2429,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
-{{% /md %}}</dd>
+    <dd>Name of the LDAP attribute to use as a unique object identifier for objects in LDAP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2438,8 +2438,8 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When true, Keycloak will validate passwords using the realm policy before updating it.
-{{% /md %}}</dd>
+    <dd>When true, Keycloak will validate passwords using the realm policy before updating it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2447,11 +2447,11 @@ sync.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
-{{% /md %}}</dd>
+    <dd>LDAP vendor. I am almost certain this field does nothing, but the UI indicates that it is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

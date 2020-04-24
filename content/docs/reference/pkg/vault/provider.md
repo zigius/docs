@@ -18,26 +18,26 @@ construction to achieve fine-grained programmatic control over provider settings
 
 
 ## Create a Provider Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/#Provider">Provider</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/#ProviderArgs">ProviderArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Provider</span><span class="p">(resource_name, opts=None, </span>add_address_to_env=None<span class="p">, </span>address=None<span class="p">, </span>auth_logins=None<span class="p">, </span>ca_cert_dir=None<span class="p">, </span>ca_cert_file=None<span class="p">, </span>client_auths=None<span class="p">, </span>max_lease_ttl_seconds=None<span class="p">, </span>max_retries=None<span class="p">, </span>namespace=None<span class="p">, </span>skip_tls_verify=None<span class="p">, </span>token=None<span class="p">, </span>token_name=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewProvider<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/?tab=doc#ProviderArgs">ProviderArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/?tab=doc#Provider">Provider</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Provider.html">Provider</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Pulumi.VaultArgs.html">ProviderArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ construction to achieve fine-grained programmatic control over provider settings
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ construction to achieve fine-grained programmatic control over provider settings
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ construction to achieve fine-grained programmatic control over provider settings
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ construction to achieve fine-grained programmatic control over provider settings
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Provider Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -204,8 +204,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If true, adds the value of the `address` argument to the Terraform process environment.
-{{% /md %}}</dd>
+    <dd>If true, adds the value of the `address` argument to the Terraform process environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -213,8 +213,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the root of the target Vault server.
-{{% /md %}}</dd>
+    <dd>URL of the root of the target Vault server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerauthlogin">List&lt;Provider<wbr>Auth<wbr>Login<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Login to vault with an existing auth method using auth/<mount>/login
-{{% /md %}}</dd>
+    <dd>Login to vault with an existing auth method using auth/<mount>/login
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to directory containing CA certificate files to validate the server's certificate.
-{{% /md %}}</dd>
+    <dd>Path to directory containing CA certificate files to validate the server's certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to a CA certificate file to validate the server's certificate.
-{{% /md %}}</dd>
+    <dd>Path to a CA certificate file to validate the server's certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerclientauth">List&lt;Provider<wbr>Client<wbr>Auth<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Client authentication credentials.
-{{% /md %}}</dd>
+    <dd>Client authentication credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum TTL for secret leases requested by this provider
-{{% /md %}}</dd>
+    <dd>Maximum TTL for secret leases requested by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of retries when a 5xx error code is encountered.
-{{% /md %}}</dd>
+    <dd>Maximum number of retries when a 5xx error code is encountered.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to use. Available only for Vault Enterprise
-{{% /md %}}</dd>
+    <dd>The namespace to use. Available only for Vault Enterprise
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this to true only if the target Vault server is an insecure development instance.
-{{% /md %}}</dd>
+    <dd>Set this to true only if the target Vault server is an insecure development instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Token to use to authenticate to Vault.
-{{% /md %}}</dd>
+    <dd>Token to use to authenticate to Vault.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,14 +303,14 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Token name to use for creating the Vault child token.
-{{% /md %}}</dd>
+    <dd>Token name to use for creating the Vault child token.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -319,8 +319,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If true, adds the value of the `address` argument to the Terraform process environment.
-{{% /md %}}</dd>
+    <dd>If true, adds the value of the `address` argument to the Terraform process environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,8 +328,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the root of the target Vault server.
-{{% /md %}}</dd>
+    <dd>URL of the root of the target Vault server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerauthlogin">[]Provider<wbr>Auth<wbr>Login</a></span>
     </dt>
-    <dd>{{% md %}}Login to vault with an existing auth method using auth/<mount>/login
-{{% /md %}}</dd>
+    <dd>Login to vault with an existing auth method using auth/<mount>/login
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to directory containing CA certificate files to validate the server's certificate.
-{{% /md %}}</dd>
+    <dd>Path to directory containing CA certificate files to validate the server's certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to a CA certificate file to validate the server's certificate.
-{{% /md %}}</dd>
+    <dd>Path to a CA certificate file to validate the server's certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerclientauth">[]Provider<wbr>Client<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}Client authentication credentials.
-{{% /md %}}</dd>
+    <dd>Client authentication credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum TTL for secret leases requested by this provider
-{{% /md %}}</dd>
+    <dd>Maximum TTL for secret leases requested by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of retries when a 5xx error code is encountered.
-{{% /md %}}</dd>
+    <dd>Maximum number of retries when a 5xx error code is encountered.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to use. Available only for Vault Enterprise
-{{% /md %}}</dd>
+    <dd>The namespace to use. Available only for Vault Enterprise
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this to true only if the target Vault server is an insecure development instance.
-{{% /md %}}</dd>
+    <dd>Set this to true only if the target Vault server is an insecure development instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Token to use to authenticate to Vault.
-{{% /md %}}</dd>
+    <dd>Token to use to authenticate to Vault.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,14 +418,14 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Token name to use for creating the Vault child token.
-{{% /md %}}</dd>
+    <dd>Token name to use for creating the Vault child token.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -434,8 +434,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If true, adds the value of the `address` argument to the Terraform process environment.
-{{% /md %}}</dd>
+    <dd>If true, adds the value of the `address` argument to the Terraform process environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the root of the target Vault server.
-{{% /md %}}</dd>
+    <dd>URL of the root of the target Vault server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,8 +452,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerauthlogin">Provider<wbr>Auth<wbr>Login[]</a></span>
     </dt>
-    <dd>{{% md %}}Login to vault with an existing auth method using auth/<mount>/login
-{{% /md %}}</dd>
+    <dd>Login to vault with an existing auth method using auth/<mount>/login
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to directory containing CA certificate files to validate the server's certificate.
-{{% /md %}}</dd>
+    <dd>Path to directory containing CA certificate files to validate the server's certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to a CA certificate file to validate the server's certificate.
-{{% /md %}}</dd>
+    <dd>Path to a CA certificate file to validate the server's certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerclientauth">Provider<wbr>Client<wbr>Auth[]</a></span>
     </dt>
-    <dd>{{% md %}}Client authentication credentials.
-{{% /md %}}</dd>
+    <dd>Client authentication credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum TTL for secret leases requested by this provider
-{{% /md %}}</dd>
+    <dd>Maximum TTL for secret leases requested by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of retries when a 5xx error code is encountered.
-{{% /md %}}</dd>
+    <dd>Maximum number of retries when a 5xx error code is encountered.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to use. Available only for Vault Enterprise
-{{% /md %}}</dd>
+    <dd>The namespace to use. Available only for Vault Enterprise
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Set this to true only if the target Vault server is an insecure development instance.
-{{% /md %}}</dd>
+    <dd>Set this to true only if the target Vault server is an insecure development instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Token to use to authenticate to Vault.
-{{% /md %}}</dd>
+    <dd>Token to use to authenticate to Vault.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,14 +533,14 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Token name to use for creating the Vault child token.
-{{% /md %}}</dd>
+    <dd>Token name to use for creating the Vault child token.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -549,8 +549,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If true, adds the value of the `address` argument to the Terraform process environment.
-{{% /md %}}</dd>
+    <dd>If true, adds the value of the `address` argument to the Terraform process environment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -558,8 +558,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL of the root of the target Vault server.
-{{% /md %}}</dd>
+    <dd>URL of the root of the target Vault server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -567,8 +567,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerauthlogin">List[Provider<wbr>Auth<wbr>Login]</a></span>
     </dt>
-    <dd>{{% md %}}Login to vault with an existing auth method using auth/<mount>/login
-{{% /md %}}</dd>
+    <dd>Login to vault with an existing auth method using auth/<mount>/login
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,8 +576,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to directory containing CA certificate files to validate the server's certificate.
-{{% /md %}}</dd>
+    <dd>Path to directory containing CA certificate files to validate the server's certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,8 +585,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to a CA certificate file to validate the server's certificate.
-{{% /md %}}</dd>
+    <dd>Path to a CA certificate file to validate the server's certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -594,8 +594,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerclientauth">List[Provider<wbr>Client<wbr>Auth]</a></span>
     </dt>
-    <dd>{{% md %}}Client authentication credentials.
-{{% /md %}}</dd>
+    <dd>Client authentication credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,8 +603,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum TTL for secret leases requested by this provider
-{{% /md %}}</dd>
+    <dd>Maximum TTL for secret leases requested by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,8 +612,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of retries when a 5xx error code is encountered.
-{{% /md %}}</dd>
+    <dd>Maximum number of retries when a 5xx error code is encountered.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,8 +621,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to use. Available only for Vault Enterprise
-{{% /md %}}</dd>
+    <dd>The namespace to use. Available only for Vault Enterprise
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -630,8 +630,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this to true only if the target Vault server is an insecure development instance.
-{{% /md %}}</dd>
+    <dd>Set this to true only if the target Vault server is an insecure development instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -639,8 +639,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Token to use to authenticate to Vault.
-{{% /md %}}</dd>
+    <dd>Token to use to authenticate to Vault.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -648,11 +648,11 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Token name to use for creating the Vault child token.
-{{% /md %}}</dd>
+    <dd>Token name to use for creating the Vault child token.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -666,7 +666,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -675,13 +675,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -690,13 +690,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -705,13 +705,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -720,10 +720,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -739,18 +739,18 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 <h4 id="providerauthlogin">Provider<wbr>Auth<wbr>Login</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#ProviderAuthLogin">input</a>   API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/?tab=doc#ProviderAuthLoginArgs">input</a>   API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -759,7 +759,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,7 +767,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -775,13 +775,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -790,7 +790,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,7 +798,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -806,13 +806,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -821,7 +821,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -829,7 +829,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,13 +837,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -852,7 +852,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -860,7 +860,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,28 +868,28 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="providerclientauth">Provider<wbr>Client<wbr>Auth</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#ProviderClientAuth">input</a>   API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/?tab=doc#ProviderClientAuthArgs">input</a>   API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -898,7 +898,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -906,13 +906,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -921,7 +921,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -929,13 +929,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -944,7 +944,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -952,13 +952,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -967,7 +967,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -975,10 +975,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

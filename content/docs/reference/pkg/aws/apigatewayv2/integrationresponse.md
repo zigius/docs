@@ -36,26 +36,26 @@ const example = new aws.apigatewayv2.IntegrationResponse("example", {
 
 
 ## Create a IntegrationResponse Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#IntegrationResponse">IntegrationResponse</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#IntegrationResponseArgs">IntegrationResponseArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">IntegrationResponse</span><span class="p">(resource_name, opts=None, </span>api_id=None<span class="p">, </span>content_handling_strategy=None<span class="p">, </span>integration_id=None<span class="p">, </span>integration_response_key=None<span class="p">, </span>response_templates=None<span class="p">, </span>template_selection_expression=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewIntegrationResponse<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#IntegrationResponseArgs">IntegrationResponseArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#IntegrationResponse">IntegrationResponse</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.IntegrationResponse.html">IntegrationResponse</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.IntegrationResponseArgs.html">IntegrationResponseArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -92,9 +92,9 @@ const example = new aws.apigatewayv2.IntegrationResponse("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -112,9 +112,9 @@ const example = new aws.apigatewayv2.IntegrationResponse("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -161,9 +161,9 @@ const example = new aws.apigatewayv2.IntegrationResponse("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -200,7 +200,7 @@ const example = new aws.apigatewayv2.IntegrationResponse("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## IntegrationResponse Resource Properties {#properties}
 
@@ -213,7 +213,7 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -222,8 +222,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The API identifier.
-{{% /md %}}</dd>
+    <dd>The API identifier.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -231,8 +231,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -240,8 +240,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The integration response key.
-{{% /md %}}</dd>
+    <dd>The integration response key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
-{{% /md %}}</dd>
+    <dd>How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
-{{% /md %}}</dd>
+    <dd>A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,14 +267,14 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
-{{% /md %}}</dd>
+    <dd>The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -283,8 +283,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API identifier.
-{{% /md %}}</dd>
+    <dd>The API identifier.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -292,8 +292,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -301,8 +301,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The integration response key.
-{{% /md %}}</dd>
+    <dd>The integration response key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
-{{% /md %}}</dd>
+    <dd>How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
-{{% /md %}}</dd>
+    <dd>A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,14 +328,14 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
-{{% /md %}}</dd>
+    <dd>The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -344,8 +344,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API identifier.
-{{% /md %}}</dd>
+    <dd>The API identifier.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -353,8 +353,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -362,8 +362,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The integration response key.
-{{% /md %}}</dd>
+    <dd>The integration response key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
-{{% /md %}}</dd>
+    <dd>How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
-{{% /md %}}</dd>
+    <dd>A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,14 +389,14 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
-{{% /md %}}</dd>
+    <dd>The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -405,8 +405,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The API identifier.
-{{% /md %}}</dd>
+    <dd>The API identifier.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -414,8 +414,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -423,8 +423,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The integration response key.
-{{% /md %}}</dd>
+    <dd>The integration response key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
-{{% /md %}}</dd>
+    <dd>How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
-{{% /md %}}</dd>
+    <dd>A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,11 +450,11 @@ The IntegrationResponse resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
-{{% /md %}}</dd>
+    <dd>The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -468,7 +468,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -477,13 +477,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -492,13 +492,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -507,13 +507,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -522,10 +522,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -536,25 +536,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing IntegrationResponse Resource {#look-up}
 
 Get an existing IntegrationResponse resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#IntegrationResponseState">IntegrationResponseState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#IntegrationResponse">IntegrationResponse</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>api_id=None<span class="p">, </span>content_handling_strategy=None<span class="p">, </span>integration_id=None<span class="p">, </span>integration_response_key=None<span class="p">, </span>response_templates=None<span class="p">, </span>template_selection_expression=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIntegrationResponse<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#IntegrationResponseState">IntegrationResponseState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#IntegrationResponse">IntegrationResponse</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.IntegrationResponse.html">IntegrationResponse</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.IntegrationResponseState.html">IntegrationResponseState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -579,9 +579,9 @@ Get an existing IntegrationResponse resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -594,36 +594,9 @@ Get an existing IntegrationResponse resource's state with the given name, ID, an
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -648,13 +621,40 @@ Get an existing IntegrationResponse resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -663,8 +663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The API identifier.
-{{% /md %}}</dd>
+    <dd>The API identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -672,8 +672,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
-{{% /md %}}</dd>
+    <dd>How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -681,8 +681,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -690,8 +690,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The integration response key.
-{{% /md %}}</dd>
+    <dd>The integration response key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -699,8 +699,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
-{{% /md %}}</dd>
+    <dd>A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -708,14 +708,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
-{{% /md %}}</dd>
+    <dd>The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -724,8 +724,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API identifier.
-{{% /md %}}</dd>
+    <dd>The API identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,8 +733,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
-{{% /md %}}</dd>
+    <dd>How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,8 +742,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,8 +751,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The integration response key.
-{{% /md %}}</dd>
+    <dd>The integration response key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,8 +760,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
-{{% /md %}}</dd>
+    <dd>A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,14 +769,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
-{{% /md %}}</dd>
+    <dd>The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -785,8 +785,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API identifier.
-{{% /md %}}</dd>
+    <dd>The API identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,8 +794,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
-{{% /md %}}</dd>
+    <dd>How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,8 +803,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -812,8 +812,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The integration response key.
-{{% /md %}}</dd>
+    <dd>The integration response key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -821,8 +821,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
-{{% /md %}}</dd>
+    <dd>A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,14 +830,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
-{{% /md %}}</dd>
+    <dd>The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -846,8 +846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The API identifier.
-{{% /md %}}</dd>
+    <dd>The API identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,8 +855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
-{{% /md %}}</dd>
+    <dd>How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,8 +864,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.apigatewayv2.Integration`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,8 +873,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The integration response key.
-{{% /md %}}</dd>
+    <dd>The integration response key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,8 +882,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
-{{% /md %}}</dd>
+    <dd>A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,11 +891,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
-{{% /md %}}</dd>
+    <dd>The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

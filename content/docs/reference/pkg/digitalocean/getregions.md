@@ -67,29 +67,29 @@ const available = pulumi.output(digitalocean.getRegions({
 
 ## Using GetRegions {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getRegions<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#GetRegionsArgs">GetRegionsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#GetRegionsResult">GetRegionsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_regions(</span>filters=None<span class="p">, </span>sorts=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupRegions<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetRegionsArgs">GetRegionsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#LookupRegionsResult">LookupRegionsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetRegions </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean.GetRegionsResult.html">GetRegionsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.DigitalOcean.GetRegionsArgs.html">GetRegionsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -97,7 +97,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -106,9 +106,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsfilter">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Inputs.<wbr>Get<wbr>Regions<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results.
+    <dd>Filter the results.
 The `filter` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -116,15 +116,15 @@ The `filter` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionssort">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Inputs.<wbr>Get<wbr>Regions<wbr>Sort<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Sort the results.
+    <dd>Sort the results.
 The `sort` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -133,9 +133,9 @@ The `sort` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsfilter">[]Get<wbr>Regions<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results.
+    <dd>Filter the results.
 The `filter` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -143,15 +143,15 @@ The `filter` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionssort">[]Get<wbr>Regions<wbr>Sort</a></span>
     </dt>
-    <dd>{{% md %}}Sort the results.
+    <dd>Sort the results.
 The `sort` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -160,9 +160,9 @@ The `sort` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsfilter">Get<wbr>Regions<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results.
+    <dd>Filter the results.
 The `filter` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -170,15 +170,15 @@ The `filter` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionssort">Get<wbr>Regions<wbr>Sort[]</a></span>
     </dt>
-    <dd>{{% md %}}Sort the results.
+    <dd>Sort the results.
 The `sort` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -187,9 +187,9 @@ The `sort` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsfilter">List[Get<wbr>Regions<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results.
+    <dd>Filter the results.
 The `filter` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -197,12 +197,12 @@ The `filter` block is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionssort">List[Get<wbr>Regions<wbr>Sort]</a></span>
     </dt>
-    <dd>{{% md %}}Sort the results.
+    <dd>Sort the results.
 The `sort` block is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -218,7 +218,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -227,8 +227,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -236,13 +236,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsregion">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Outputs.<wbr>Get<wbr>Regions<wbr>Region&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of regions satisfying any `filter` and `sort` criteria. Each region has the following attributes:  
+    <dd>A set of regions satisfying any `filter` and `sort` criteria. Each region has the following attributes:  
 - `slug` - A human-readable string that is used as a unique identifier for each region.
 - `name` - The display name of the region.
 - `available` - A boolean value that represents whether new Droplets can be created in this region.
 - `sizes` - A set of identifying slugs for the Droplet sizes available in this region.
 - `features` - A set of features available in this region.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -250,7 +250,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsfilter">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Outputs.<wbr>Get<wbr>Regions<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -258,13 +258,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionssort">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Outputs.<wbr>Get<wbr>Regions<wbr>Sort&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -273,8 +273,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -282,13 +282,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsregion">[]Get<wbr>Regions<wbr>Region</a></span>
     </dt>
-    <dd>{{% md %}}A set of regions satisfying any `filter` and `sort` criteria. Each region has the following attributes:  
+    <dd>A set of regions satisfying any `filter` and `sort` criteria. Each region has the following attributes:  
 - `slug` - A human-readable string that is used as a unique identifier for each region.
 - `name` - The display name of the region.
 - `available` - A boolean value that represents whether new Droplets can be created in this region.
 - `sizes` - A set of identifying slugs for the Droplet sizes available in this region.
 - `features` - A set of features available in this region.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -296,7 +296,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsfilter">[]Get<wbr>Regions<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -304,13 +304,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionssort">[]Get<wbr>Regions<wbr>Sort</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -319,8 +319,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -328,13 +328,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsregion">Get<wbr>Regions<wbr>Region[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of regions satisfying any `filter` and `sort` criteria. Each region has the following attributes:  
+    <dd>A set of regions satisfying any `filter` and `sort` criteria. Each region has the following attributes:  
 - `slug` - A human-readable string that is used as a unique identifier for each region.
 - `name` - The display name of the region.
 - `available` - A boolean value that represents whether new Droplets can be created in this region.
 - `sizes` - A set of identifying slugs for the Droplet sizes available in this region.
 - `features` - A set of features available in this region.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -342,7 +342,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsfilter">Get<wbr>Regions<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -350,13 +350,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionssort">Get<wbr>Regions<wbr>Sort[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -365,8 +365,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -374,13 +374,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsregion">List[Get<wbr>Regions<wbr>Region]</a></span>
     </dt>
-    <dd>{{% md %}}A set of regions satisfying any `filter` and `sort` criteria. Each region has the following attributes:  
+    <dd>A set of regions satisfying any `filter` and `sort` criteria. Each region has the following attributes:  
 - `slug` - A human-readable string that is used as a unique identifier for each region.
 - `name` - The display name of the region.
 - `available` - A boolean value that represents whether new Droplets can be created in this region.
 - `sizes` - A set of identifying slugs for the Droplet sizes available in this region.
 - `features` - A set of features available in this region.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -388,7 +388,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionsfilter">List[Get<wbr>Regions<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -396,10 +396,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregionssort">List[Get<wbr>Regions<wbr>Sort]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -412,18 +412,18 @@ The following output properties are available:
 
 
 <h4 id="getregionsfilter">Get<wbr>Regions<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/input/#GetRegionsFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/output/#GetRegionsFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetRegionsFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetRegionsFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -432,9 +432,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the regions by this key. This may be one of `slug`,
+    <dd>Filter the regions by this key. This may be one of `slug`,
 `name`, `available`, `features`, or `sizes`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -442,15 +442,15 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to match against the `key` field. Only retrieves regions
+    <dd>A list of values to match against the `key` field. Only retrieves regions
 where the `key` field takes on one or more of the values provided here.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -459,9 +459,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the regions by this key. This may be one of `slug`,
+    <dd>Filter the regions by this key. This may be one of `slug`,
 `name`, `available`, `features`, or `sizes`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -469,15 +469,15 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to match against the `key` field. Only retrieves regions
+    <dd>A list of values to match against the `key` field. Only retrieves regions
 where the `key` field takes on one or more of the values provided here.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -486,9 +486,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the regions by this key. This may be one of `slug`,
+    <dd>Filter the regions by this key. This may be one of `slug`,
 `name`, `available`, `features`, or `sizes`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -496,15 +496,15 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to match against the `key` field. Only retrieves regions
+    <dd>A list of values to match against the `key` field. Only retrieves regions
 where the `key` field takes on one or more of the values provided here.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -513,9 +513,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter the regions by this key. This may be one of `slug`,
+    <dd>Filter the regions by this key. This may be one of `slug`,
 `name`, `available`, `features`, or `sizes`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -523,30 +523,30 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to match against the `key` field. Only retrieves regions
+    <dd>A list of values to match against the `key` field. Only retrieves regions
 where the `key` field takes on one or more of the values provided here.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getregionsregion">Get<wbr>Regions<wbr>Region</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/output/#GetRegionsRegion">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetRegionsRegion">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -555,7 +555,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -563,7 +563,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -571,7 +571,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -579,7 +579,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -587,13 +587,13 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -602,7 +602,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -610,7 +610,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -618,7 +618,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -626,7 +626,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -634,13 +634,13 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -649,7 +649,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -657,7 +657,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -665,7 +665,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -673,7 +673,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -681,13 +681,13 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -696,7 +696,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -704,7 +704,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -712,7 +712,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -720,7 +720,7 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -728,28 +728,28 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getregionssort">Get<wbr>Regions<wbr>Sort</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/input/#GetRegionsSort">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/output/#GetRegionsSort">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetRegionsSortArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetRegionsSort">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -758,9 +758,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sort the regions by this key. This may be one of `slug`,
+    <dd>Sort the regions by this key. This may be one of `slug`,
 `name`, or `available`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,14 +768,14 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The sort direction. This may be either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>The sort direction. This may be either `asc` or `desc`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -784,9 +784,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sort the regions by this key. This may be one of `slug`,
+    <dd>Sort the regions by this key. This may be one of `slug`,
 `name`, or `available`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,14 +794,14 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The sort direction. This may be either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>The sort direction. This may be either `asc` or `desc`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -810,9 +810,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sort the regions by this key. This may be one of `slug`,
+    <dd>Sort the regions by this key. This may be one of `slug`,
 `name`, or `available`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -820,14 +820,14 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The sort direction. This may be either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>The sort direction. This may be either `asc` or `desc`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -836,9 +836,9 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sort the regions by this key. This may be one of `slug`,
+    <dd>Sort the regions by this key. This may be one of `slug`,
 `name`, or `available`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,11 +846,11 @@ where the `key` field takes on one or more of the values provided here.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The sort direction. This may be either `asc` or `desc`.
-{{% /md %}}</dd>
+    <dd>The sort direction. This may be either `asc` or `desc`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -13,26 +13,26 @@ block_external_search_index: true
 
 
 ## Create a Integration Resource
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/pagerduty/#Integration">Integration</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/pagerduty/#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Integration</span><span class="p">(resource_name, opts=None, </span>api_token=None<span class="p">, </span>individual_services=None<span class="p">, </span>schedules=None<span class="p">, </span>services=None<span class="p">, </span>subdomain=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewIntegration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/pagerduty?tab=doc#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/pagerduty?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.PagerDuty.Integration.html">Integration</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.PagerDuty.IntegrationArgs.html">IntegrationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -69,9 +69,9 @@ block_external_search_index: true
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -89,9 +89,9 @@ block_external_search_index: true
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -138,9 +138,9 @@ block_external_search_index: true
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -177,14 +177,14 @@ block_external_search_index: true
 
 </dl>
 
-{{% /choosable %}}
+
 
 #### Resource Arguments
 
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -193,8 +193,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty account’s personalized subdomain name.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty account’s personalized subdomain name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -202,8 +202,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty API token.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty API token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -211,8 +211,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
-{{% /md %}}</dd>
+    <dd>Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -220,8 +220,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Array of your schedule URLs.
-{{% /md %}}</dd>
+    <dd>Array of your schedule URLs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -229,14 +229,14 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#integrationservice">List&lt;Integration<wbr>Service<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object{{% /md %}}</p></dd>
+    <dd>Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
+<p class="property-message">Deprecated: set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -245,8 +245,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty account’s personalized subdomain name.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty account’s personalized subdomain name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty API token.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty API token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
-{{% /md %}}</dd>
+    <dd>Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Array of your schedule URLs.
-{{% /md %}}</dd>
+    <dd>Array of your schedule URLs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -281,14 +281,14 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#integrationservice">[]Integration<wbr>Service</a></span>
     </dt>
-    <dd>{{% md %}}Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object{{% /md %}}</p></dd>
+    <dd>Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
+<p class="property-message">Deprecated: set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -297,8 +297,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty account’s personalized subdomain name.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty account’s personalized subdomain name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,8 +306,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty API token.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty API token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,8 +315,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
-{{% /md %}}</dd>
+    <dd>Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,8 +324,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Array of your schedule URLs.
-{{% /md %}}</dd>
+    <dd>Array of your schedule URLs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -333,14 +333,14 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#integrationservice">Integration<wbr>Service[]</a></span>
     </dt>
-    <dd>{{% md %}}Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object{{% /md %}}</p></dd>
+    <dd>Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
+<p class="property-message">Deprecated: set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -349,8 +349,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty account’s personalized subdomain name.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty account’s personalized subdomain name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,8 +358,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty API token.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty API token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,8 +367,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
-{{% /md %}}</dd>
+    <dd>Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Array of your schedule URLs.
-{{% /md %}}</dd>
+    <dd>Array of your schedule URLs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -385,11 +385,11 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#integrationservice">List[Integration<wbr>Service]</a></span>
     </dt>
-    <dd>{{% md %}}Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object{{% /md %}}</p></dd>
+    <dd>Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
+<p class="property-message">Deprecated: set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object</p></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -403,25 +403,25 @@ block_external_search_index: true
 ## Look up an Existing Integration Resource
 
 Get an existing Integration resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/pagerduty/#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/pagerduty/#Integration">Integration</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>api_token=None<span class="p">, </span>individual_services=None<span class="p">, </span>schedules=None<span class="p">, </span>services=None<span class="p">, </span>subdomain=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIntegration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/pagerduty?tab=doc#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/pagerduty?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.PagerDuty.Integration.html">Integration</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.PagerDuty.IntegrationState.html">IntegrationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -446,9 +446,9 @@ Get an existing Integration resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -461,36 +461,9 @@ Get an existing Integration resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -515,13 +488,40 @@ Get an existing Integration resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -530,8 +530,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty API token.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty API token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,8 +539,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
-{{% /md %}}</dd>
+    <dd>Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Array of your schedule URLs.
-{{% /md %}}</dd>
+    <dd>Array of your schedule URLs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -557,8 +557,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#integrationservice">List&lt;Integration<wbr>Service<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object{{% /md %}}</p></dd>
+    <dd>Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
+<p class="property-message">Deprecated: set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,14 +566,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty account’s personalized subdomain name.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty account’s personalized subdomain name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -582,8 +582,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty API token.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty API token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -591,8 +591,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
-{{% /md %}}</dd>
+    <dd>Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,8 +600,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Array of your schedule URLs.
-{{% /md %}}</dd>
+    <dd>Array of your schedule URLs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -609,8 +609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#integrationservice">[]Integration<wbr>Service</a></span>
     </dt>
-    <dd>{{% md %}}Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object{{% /md %}}</p></dd>
+    <dd>Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
+<p class="property-message">Deprecated: set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,14 +618,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty account’s personalized subdomain name.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty account’s personalized subdomain name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -634,8 +634,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty API token.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty API token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -643,8 +643,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
-{{% /md %}}</dd>
+    <dd>Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -652,8 +652,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Array of your schedule URLs.
-{{% /md %}}</dd>
+    <dd>Array of your schedule URLs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -661,8 +661,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#integrationservice">Integration<wbr>Service[]</a></span>
     </dt>
-    <dd>{{% md %}}Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object{{% /md %}}</p></dd>
+    <dd>Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
+<p class="property-message">Deprecated: set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -670,14 +670,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty account’s personalized subdomain name.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty account’s personalized subdomain name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -686,8 +686,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty API token.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty API token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,8 +695,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
-{{% /md %}}</dd>
+    <dd>Boolean to specify whether or not individual service objects specified by [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource are to be used. Mutually exclusive with `services` key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,8 +704,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Array of your schedule URLs.
-{{% /md %}}</dd>
+    <dd>Array of your schedule URLs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -713,8 +713,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#integrationservice">List[Integration<wbr>Service]</a></span>
     </dt>
-    <dd>{{% md %}}Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object{{% /md %}}</p></dd>
+    <dd>Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog.pagerduty.ServiceObject](https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html) resource. Note that `individual_services` must be set to `true` to ignore the `service` attribute and use individual services properly.
+<p class="property-message">Deprecated: set &#34;individual_services&#34; to true and use datadog_pagerduty_integration_service_object</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,11 +722,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Your PagerDuty account’s personalized subdomain name.
-{{% /md %}}</dd>
+    <dd>Your PagerDuty account’s personalized subdomain name.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -740,18 +740,18 @@ The following state arguments are supported:
 ## Supporting Types
 
 <h4>Integration<wbr>Service</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#IntegrationService">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#IntegrationService">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/pagerduty?tab=doc#IntegrationServiceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/pagerduty?tab=doc#IntegrationServiceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -760,8 +760,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Your Service name associated service key in Pagerduty.
-{{% /md %}}</dd>
+    <dd>Your Service name associated service key in Pagerduty.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -769,14 +769,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Your Service name in PagerDuty.
-{{% /md %}}</dd>
+    <dd>Your Service name in PagerDuty.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -785,8 +785,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your Service name associated service key in Pagerduty.
-{{% /md %}}</dd>
+    <dd>Your Service name associated service key in Pagerduty.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -794,14 +794,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your Service name in PagerDuty.
-{{% /md %}}</dd>
+    <dd>Your Service name in PagerDuty.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -810,8 +810,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your Service name associated service key in Pagerduty.
-{{% /md %}}</dd>
+    <dd>Your Service name associated service key in Pagerduty.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -819,14 +819,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Your Service name in PagerDuty.
-{{% /md %}}</dd>
+    <dd>Your Service name in PagerDuty.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -835,8 +835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Your Service name associated service key in Pagerduty.
-{{% /md %}}</dd>
+    <dd>Your Service name associated service key in Pagerduty.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -844,11 +844,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Your Service name in PagerDuty.
-{{% /md %}}</dd>
+    <dd>Your Service name in PagerDuty.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -14,26 +14,26 @@ meta_desc: "Explore the Backend resource of the azure module, including examples
 
 
 ## Create a Backend Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/azure/#Backend">Backend</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/azure/#BackendArgs">BackendArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Backend</span><span class="p">(resource_name, opts=None, </span>client_id=None<span class="p">, </span>client_secret=None<span class="p">, </span>description=None<span class="p">, </span>environment=None<span class="p">, </span>path=None<span class="p">, </span>subscription_id=None<span class="p">, </span>tenant_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewBackend<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/azure?tab=doc#BackendArgs">BackendArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/azure?tab=doc#Backend">Backend</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Azure.Backend.html">Backend</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Azure.BackendArgs.html">BackendArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Backend resource of the azure module, including examples
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Backend resource of the azure module, including examples
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Backend resource of the azure module, including examples
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Backend resource of the azure module, including examples
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Backend Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Backend resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The Backend resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The subscription id for the Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The subscription id for the Azure Active Directory.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The Backend resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenant id for the Azure Active Directory organization.
-{{% /md %}}</dd>
+    <dd>The tenant id for the Azure Active Directory organization.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,9 +218,9 @@ The Backend resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
+    <dd>The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
 required.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,8 +228,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret for credentials to query the Azure APIs
-{{% /md %}}</dd>
+    <dd>The client secret for credentials to query the Azure APIs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,8 +237,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-friendly description of the mount for the backend.
-{{% /md %}}</dd>
+    <dd>Human-friendly description of the mount for the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
-{{% /md %}}</dd>
+    <dd>The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,14 +255,14 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the backend at.
-{{% /md %}}</dd>
+    <dd>Path to mount the backend at.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -271,8 +271,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subscription id for the Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The subscription id for the Azure Active Directory.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -280,8 +280,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenant id for the Azure Active Directory organization.
-{{% /md %}}</dd>
+    <dd>The tenant id for the Azure Active Directory organization.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,9 +289,9 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
+    <dd>The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
 required.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret for credentials to query the Azure APIs
-{{% /md %}}</dd>
+    <dd>The client secret for credentials to query the Azure APIs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-friendly description of the mount for the backend.
-{{% /md %}}</dd>
+    <dd>Human-friendly description of the mount for the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
-{{% /md %}}</dd>
+    <dd>The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,14 +326,14 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the backend at.
-{{% /md %}}</dd>
+    <dd>Path to mount the backend at.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -342,8 +342,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subscription id for the Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The subscription id for the Azure Active Directory.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -351,8 +351,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenant id for the Azure Active Directory organization.
-{{% /md %}}</dd>
+    <dd>The tenant id for the Azure Active Directory organization.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,9 +360,9 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
+    <dd>The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
 required.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,8 +370,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret for credentials to query the Azure APIs
-{{% /md %}}</dd>
+    <dd>The client secret for credentials to query the Azure APIs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-friendly description of the mount for the backend.
-{{% /md %}}</dd>
+    <dd>Human-friendly description of the mount for the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
-{{% /md %}}</dd>
+    <dd>The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,14 +397,14 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the backend at.
-{{% /md %}}</dd>
+    <dd>Path to mount the backend at.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -413,8 +413,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The subscription id for the Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The subscription id for the Azure Active Directory.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -422,8 +422,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tenant id for the Azure Active Directory organization.
-{{% /md %}}</dd>
+    <dd>The tenant id for the Azure Active Directory organization.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,9 +431,9 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
+    <dd>The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
 required.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client secret for credentials to query the Azure APIs
-{{% /md %}}</dd>
+    <dd>The client secret for credentials to query the Azure APIs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,8 +450,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-friendly description of the mount for the backend.
-{{% /md %}}</dd>
+    <dd>Human-friendly description of the mount for the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
-{{% /md %}}</dd>
+    <dd>The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,11 +468,11 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the backend at.
-{{% /md %}}</dd>
+    <dd>Path to mount the backend at.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -486,7 +486,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -495,13 +495,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -510,13 +510,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -525,13 +525,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -540,10 +540,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -554,25 +554,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Backend Resource {#look-up}
 
 Get an existing Backend resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/azure/#BackendState">BackendState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/azure/#Backend">Backend</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>client_id=None<span class="p">, </span>client_secret=None<span class="p">, </span>description=None<span class="p">, </span>environment=None<span class="p">, </span>path=None<span class="p">, </span>subscription_id=None<span class="p">, </span>tenant_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetBackend<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/azure?tab=doc#BackendState">BackendState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/azure?tab=doc#Backend">Backend</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Azure.Backend.html">Backend</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Azure.BackendState.html">BackendState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -597,9 +597,9 @@ Get an existing Backend resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -612,36 +612,9 @@ Get an existing Backend resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -666,13 +639,40 @@ Get an existing Backend resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -681,9 +681,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
+    <dd>The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
 required.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -691,8 +691,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret for credentials to query the Azure APIs
-{{% /md %}}</dd>
+    <dd>The client secret for credentials to query the Azure APIs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -700,8 +700,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-friendly description of the mount for the backend.
-{{% /md %}}</dd>
+    <dd>Human-friendly description of the mount for the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -709,8 +709,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
-{{% /md %}}</dd>
+    <dd>The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -718,8 +718,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the backend at.
-{{% /md %}}</dd>
+    <dd>Path to mount the backend at.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -727,8 +727,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The subscription id for the Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The subscription id for the Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -736,14 +736,14 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenant id for the Azure Active Directory organization.
-{{% /md %}}</dd>
+    <dd>The tenant id for the Azure Active Directory organization.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -752,9 +752,9 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
+    <dd>The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
 required.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -762,8 +762,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret for credentials to query the Azure APIs
-{{% /md %}}</dd>
+    <dd>The client secret for credentials to query the Azure APIs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -771,8 +771,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-friendly description of the mount for the backend.
-{{% /md %}}</dd>
+    <dd>Human-friendly description of the mount for the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,8 +780,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
-{{% /md %}}</dd>
+    <dd>The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,8 +789,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the backend at.
-{{% /md %}}</dd>
+    <dd>Path to mount the backend at.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subscription id for the Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The subscription id for the Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,14 +807,14 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenant id for the Azure Active Directory organization.
-{{% /md %}}</dd>
+    <dd>The tenant id for the Azure Active Directory organization.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -823,9 +823,9 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
+    <dd>The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
 required.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -833,8 +833,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret for credentials to query the Azure APIs
-{{% /md %}}</dd>
+    <dd>The client secret for credentials to query the Azure APIs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -842,8 +842,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-friendly description of the mount for the backend.
-{{% /md %}}</dd>
+    <dd>Human-friendly description of the mount for the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,8 +851,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
-{{% /md %}}</dd>
+    <dd>The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -860,8 +860,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the backend at.
-{{% /md %}}</dd>
+    <dd>Path to mount the backend at.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -869,8 +869,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subscription id for the Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The subscription id for the Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -878,14 +878,14 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenant id for the Azure Active Directory organization.
-{{% /md %}}</dd>
+    <dd>The tenant id for the Azure Active Directory organization.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -894,9 +894,9 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
+    <dd>The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are
 required.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client secret for credentials to query the Azure APIs
-{{% /md %}}</dd>
+    <dd>The client secret for credentials to query the Azure APIs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,8 +913,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-friendly description of the mount for the backend.
-{{% /md %}}</dd>
+    <dd>Human-friendly description of the mount for the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -922,8 +922,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
-{{% /md %}}</dd>
+    <dd>The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,8 +931,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the backend at.
-{{% /md %}}</dd>
+    <dd>Path to mount the backend at.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,8 +940,8 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The subscription id for the Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The subscription id for the Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -949,11 +949,11 @@ required.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tenant id for the Azure Active Directory organization.
-{{% /md %}}</dd>
+    <dd>The tenant id for the Azure Active Directory organization.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

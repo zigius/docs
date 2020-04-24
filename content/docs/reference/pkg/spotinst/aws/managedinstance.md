@@ -14,26 +14,26 @@ meta_desc: "Explore the ManagedInstance resource of the aws module, including ex
 
 
 ## Create a ManagedInstance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/spotinst/aws/#ManagedInstance">ManagedInstance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/spotinst/aws/#ManagedInstanceArgs">ManagedInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ManagedInstance</span><span class="p">(resource_name, opts=None, </span>auto_healing=None<span class="p">, </span>block_devices_mode=None<span class="p">, </span>cpu_credits=None<span class="p">, </span>description=None<span class="p">, </span>draining_timeout=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>elastic_ip=None<span class="p">, </span>enable_monitoring=None<span class="p">, </span>fall_back_to_od=None<span class="p">, </span>grace_period=None<span class="p">, </span>health_check_type=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_types=None<span class="p">, </span>integration_route53=None<span class="p">, </span>key_pair=None<span class="p">, </span>life_cycle=None<span class="p">, </span>load_balancers=None<span class="p">, </span>name=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>optimization_windows=None<span class="p">, </span>orientation=None<span class="p">, </span>persist_block_devices=None<span class="p">, </span>persist_private_ip=None<span class="p">, </span>persist_root_device=None<span class="p">, </span>placement_tenancy=None<span class="p">, </span>preferred_type=None<span class="p">, </span>private_ip=None<span class="p">, </span>product=None<span class="p">, </span>region=None<span class="p">, </span>revert_to_spot=None<span class="p">, </span>scheduled_tasks=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>shutdown_script=None<span class="p">, </span>subnet_ids=None<span class="p">, </span>tags=None<span class="p">, </span>unhealthy_duration=None<span class="p">, </span>user_data=None<span class="p">, </span>utilize_reserved_instances=None<span class="p">, </span>vpc_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewManagedInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceArgs">ManagedInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstance">ManagedInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Spotinst/Pulumi.Spotinst.Aws.ManagedInstance.html">ManagedInstance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Spotinst/Pulumi.SpotInst.Aws.ManagedInstanceArgs.html">ManagedInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the ManagedInstance resource of the aws module, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the ManagedInstance resource of the aws module, including ex
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the ManagedInstance resource of the aws module, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the ManagedInstance resource of the aws module, including ex
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ManagedInstance Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The ManagedInstance resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The ManagedInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the image used to launch the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The ManagedInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of available instance types for instance.
-{{% /md %}}</dd>
+    <dd>Comma separated list of available instance types for instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -218,8 +218,8 @@ The ManagedInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its Data volumes. 
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its Data volumes. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -227,8 +227,8 @@ The ManagedInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
-{{% /md %}}</dd>
+    <dd>Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -236,8 +236,8 @@ The ManagedInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of subnet identifiers for your instance.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of subnet identifiers for your instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -245,7 +245,7 @@ The ManagedInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,8 +253,8 @@ The ManagedInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
-{{% /md %}}</dd>
+    <dd>Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,9 +262,9 @@ The ManagedInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
+    <dd>Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
 Default: `"onLaunch"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,9 +272,9 @@ Default: `"onLaunch"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}cpuCredits can have one of two values: “unlimited”, “standard”.
+    <dd>cpuCredits can have one of two values: “unlimited”, “standard”.
 Default: unlimited
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,8 +282,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance description.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,9 +300,9 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
+    <dd>Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic IP Allocation Id to associate to the instance.
-{{% /md %}}</dd>
+    <dd>Elastic IP Allocation Id to associate to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,9 +319,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Describes whether instance Enhanced Monitoring is enabled.
+    <dd>Describes whether instance Enhanced Monitoring is enabled.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,7 +329,7 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,9 +346,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
+    <dd>The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
 Default: `“EC2”`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,8 +356,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set IAM profile to instance. Set only one of ARN or Name.
-{{% /md %}}</dd>
+    <dd>Set IAM profile to instance. Set only one of ARN or Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,7 +365,7 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53">Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Integration<wbr>Route53Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Key Pair to attach to the instances.
-{{% /md %}}</dd>
+    <dd>Specify a Key Pair to attach to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,9 +382,9 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set lifecycle, valid values: `“spot”`, `“on_demand”`.
+    <dd>Set lifecycle, valid values: `“spot”`, `“on_demand”`.
 Default `"spot"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,7 +392,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceloadbalancer">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Load<wbr>Balancer<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,7 +409,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancenetworkinterface">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
-{{% /md %}}</dd>
+    <dd>When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,9 +426,9 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
+    <dd>Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
 Default: `"availabilityOriented"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,8 +436,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its private IP.  
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its private IP.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,8 +445,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its root device volumes.
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its root device volumes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,9 +454,9 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: "default", "dedicated"
+    <dd>Valid values: "default", "dedicated"
 Default: default
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,8 +464,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
-{{% /md %}}</dd>
+    <dd>Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -473,8 +473,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Private IP Allocation Id to associate to the instance. 
-{{% /md %}}</dd>
+    <dd>Private IP Allocation Id to associate to the instance. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,8 +482,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS region your group will be created in.
-{{% /md %}}</dd>
+    <dd>The AWS region your group will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,7 +491,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancereverttospot">Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Revert<wbr>To<wbr>Spot<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,7 +499,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancescheduledtask">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Scheduled<wbr>Task<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,8 +507,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more security group IDs.
-{{% /md %}}</dd>
+    <dd>One or more security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -516,8 +516,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded shutdown script to execute prior to instance termination.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded shutdown script to execute prior to instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -525,8 +525,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancetag">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Tag<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set tags for the instance. Items should be unique.
-{{% /md %}}</dd>
+    <dd>Set tags for the instance. Items should be unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -534,8 +534,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -543,8 +543,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded MIME user data to make available to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -552,15 +552,15 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
+    <dd>In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
 Default: `"false"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -569,8 +569,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the image used to launch the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -578,8 +578,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of available instance types for instance.
-{{% /md %}}</dd>
+    <dd>Comma separated list of available instance types for instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -587,8 +587,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its Data volumes. 
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its Data volumes. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -596,8 +596,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
-{{% /md %}}</dd>
+    <dd>Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -605,8 +605,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of subnet identifiers for your instance.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of subnet identifiers for your instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -614,7 +614,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -622,8 +622,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
-{{% /md %}}</dd>
+    <dd>Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,9 +631,9 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
+    <dd>Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
 Default: `"onLaunch"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,9 +641,9 @@ Default: `"onLaunch"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}cpuCredits can have one of two values: “unlimited”, “standard”.
+    <dd>cpuCredits can have one of two values: “unlimited”, “standard”.
 Default: unlimited
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,8 +651,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance description.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -660,8 +660,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,9 +669,9 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
+    <dd>Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -679,8 +679,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic IP Allocation Id to associate to the instance.
-{{% /md %}}</dd>
+    <dd>Elastic IP Allocation Id to associate to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -688,9 +688,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Describes whether instance Enhanced Monitoring is enabled.
+    <dd>Describes whether instance Enhanced Monitoring is enabled.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,7 +698,7 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -706,8 +706,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -715,9 +715,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
+    <dd>The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
 Default: `“EC2”`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -725,8 +725,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set IAM profile to instance. Set only one of ARN or Name.
-{{% /md %}}</dd>
+    <dd>Set IAM profile to instance. Set only one of ARN or Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -734,7 +734,7 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53">Managed<wbr>Instance<wbr>Integration<wbr>Route53</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,8 +742,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Key Pair to attach to the instances.
-{{% /md %}}</dd>
+    <dd>Specify a Key Pair to attach to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,9 +751,9 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set lifecycle, valid values: `“spot”`, `“on_demand”`.
+    <dd>Set lifecycle, valid values: `“spot”`, `“on_demand”`.
 Default `"spot"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,7 +761,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceloadbalancer">[]Managed<wbr>Instance<wbr>Load<wbr>Balancer</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,8 +769,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,7 +778,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancenetworkinterface">[]Managed<wbr>Instance<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,8 +786,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
-{{% /md %}}</dd>
+    <dd>When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,9 +795,9 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
+    <dd>Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
 Default: `"availabilityOriented"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its private IP.  
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its private IP.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its root device volumes.
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its root device volumes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,9 +823,9 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: "default", "dedicated"
+    <dd>Valid values: "default", "dedicated"
 Default: default
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -833,8 +833,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
-{{% /md %}}</dd>
+    <dd>Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -842,8 +842,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Private IP Allocation Id to associate to the instance. 
-{{% /md %}}</dd>
+    <dd>Private IP Allocation Id to associate to the instance. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,8 +851,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS region your group will be created in.
-{{% /md %}}</dd>
+    <dd>The AWS region your group will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -860,7 +860,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancereverttospot">Managed<wbr>Instance<wbr>Revert<wbr>To<wbr>Spot</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,7 +868,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancescheduledtask">[]Managed<wbr>Instance<wbr>Scheduled<wbr>Task</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -876,8 +876,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more security group IDs.
-{{% /md %}}</dd>
+    <dd>One or more security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -885,8 +885,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded shutdown script to execute prior to instance termination.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded shutdown script to execute prior to instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -894,8 +894,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancetag">[]Managed<wbr>Instance<wbr>Tag</a></span>
     </dt>
-    <dd>{{% md %}}Set tags for the instance. Items should be unique.
-{{% /md %}}</dd>
+    <dd>Set tags for the instance. Items should be unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -903,8 +903,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -912,8 +912,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded MIME user data to make available to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,15 +921,15 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
+    <dd>In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
 Default: `"false"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -938,8 +938,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the image used to launch the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -947,8 +947,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of available instance types for instance.
-{{% /md %}}</dd>
+    <dd>Comma separated list of available instance types for instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -956,8 +956,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its Data volumes. 
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its Data volumes. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -965,8 +965,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
-{{% /md %}}</dd>
+    <dd>Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -974,8 +974,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of subnet identifiers for your instance.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of subnet identifiers for your instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -983,7 +983,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,8 +991,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
-{{% /md %}}</dd>
+    <dd>Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1000,9 +1000,9 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
+    <dd>Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
 Default: `"onLaunch"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,9 +1010,9 @@ Default: `"onLaunch"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}cpuCredits can have one of two values: “unlimited”, “standard”.
+    <dd>cpuCredits can have one of two values: “unlimited”, “standard”.
 Default: unlimited
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,8 +1020,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance description.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,8 +1029,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,9 +1038,9 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
+    <dd>Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,8 +1048,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic IP Allocation Id to associate to the instance.
-{{% /md %}}</dd>
+    <dd>Elastic IP Allocation Id to associate to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,9 +1057,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Describes whether instance Enhanced Monitoring is enabled.
+    <dd>Describes whether instance Enhanced Monitoring is enabled.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,7 +1067,7 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,8 +1075,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,9 +1084,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
+    <dd>The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
 Default: `“EC2”`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1094,8 +1094,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set IAM profile to instance. Set only one of ARN or Name.
-{{% /md %}}</dd>
+    <dd>Set IAM profile to instance. Set only one of ARN or Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,7 +1103,7 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53">Managed<wbr>Instance<wbr>Integration<wbr>Route53</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Key Pair to attach to the instances.
-{{% /md %}}</dd>
+    <dd>Specify a Key Pair to attach to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,9 +1120,9 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set lifecycle, valid values: `“spot”`, `“on_demand”`.
+    <dd>Set lifecycle, valid values: `“spot”`, `“on_demand”`.
 Default `"spot"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,7 +1130,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceloadbalancer">Managed<wbr>Instance<wbr>Load<wbr>Balancer[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,7 +1147,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancenetworkinterface">Managed<wbr>Instance<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
-{{% /md %}}</dd>
+    <dd>When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,9 +1164,9 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
+    <dd>Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
 Default: `"availabilityOriented"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,8 +1174,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its private IP.  
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its private IP.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,8 +1183,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its root device volumes.
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its root device volumes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1192,9 +1192,9 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: "default", "dedicated"
+    <dd>Valid values: "default", "dedicated"
 Default: default
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
-{{% /md %}}</dd>
+    <dd>Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,8 +1211,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Private IP Allocation Id to associate to the instance. 
-{{% /md %}}</dd>
+    <dd>Private IP Allocation Id to associate to the instance. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1220,8 +1220,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS region your group will be created in.
-{{% /md %}}</dd>
+    <dd>The AWS region your group will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,7 +1229,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancereverttospot">Managed<wbr>Instance<wbr>Revert<wbr>To<wbr>Spot</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1237,7 +1237,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancescheduledtask">Managed<wbr>Instance<wbr>Scheduled<wbr>Task[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,8 +1245,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more security group IDs.
-{{% /md %}}</dd>
+    <dd>One or more security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,8 +1254,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded shutdown script to execute prior to instance termination.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded shutdown script to execute prior to instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,8 +1263,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancetag">Managed<wbr>Instance<wbr>Tag[]</a></span>
     </dt>
-    <dd>{{% md %}}Set tags for the instance. Items should be unique.
-{{% /md %}}</dd>
+    <dd>Set tags for the instance. Items should be unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,8 +1272,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,8 +1281,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded MIME user data to make available to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,15 +1290,15 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
+    <dd>In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
 Default: `"false"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1307,8 +1307,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the image used to launch the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1316,8 +1316,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of available instance types for instance.
-{{% /md %}}</dd>
+    <dd>Comma separated list of available instance types for instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1325,8 +1325,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its Data volumes. 
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its Data volumes. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1334,8 +1334,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
-{{% /md %}}</dd>
+    <dd>Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1343,8 +1343,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of subnet identifiers for your instance.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of subnet identifiers for your instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1352,7 +1352,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1360,8 +1360,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
-{{% /md %}}</dd>
+    <dd>Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,9 +1369,9 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
+    <dd>Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
 Default: `"onLaunch"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1379,9 +1379,9 @@ Default: `"onLaunch"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}cpuCredits can have one of two values: “unlimited”, “standard”.
+    <dd>cpuCredits can have one of two values: “unlimited”, “standard”.
 Default: unlimited
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,8 +1389,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance description.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,9 +1407,9 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
+    <dd>Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,8 +1417,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Elastic IP Allocation Id to associate to the instance.
-{{% /md %}}</dd>
+    <dd>Elastic IP Allocation Id to associate to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1426,9 +1426,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Describes whether instance Enhanced Monitoring is enabled.
+    <dd>Describes whether instance Enhanced Monitoring is enabled.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1436,7 +1436,7 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1444,8 +1444,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1453,9 +1453,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
+    <dd>The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
 Default: `“EC2”`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1463,8 +1463,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set IAM profile to instance. Set only one of ARN or Name.
-{{% /md %}}</dd>
+    <dd>Set IAM profile to instance. Set only one of ARN or Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1472,7 +1472,7 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53">Dict[Managed<wbr>Instance<wbr>Integration<wbr>Route53]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1480,8 +1480,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Key Pair to attach to the instances.
-{{% /md %}}</dd>
+    <dd>Specify a Key Pair to attach to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1489,9 +1489,9 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set lifecycle, valid values: `“spot”`, `“on_demand”`.
+    <dd>Set lifecycle, valid values: `“spot”`, `“on_demand”`.
 Default `"spot"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1499,7 +1499,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceloadbalancer">List[Managed<wbr>Instance<wbr>Load<wbr>Balancer]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,8 +1507,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,7 +1516,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancenetworkinterface">List[Managed<wbr>Instance<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,8 +1524,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
-{{% /md %}}</dd>
+    <dd>When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,9 +1533,9 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
+    <dd>Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
 Default: `"availabilityOriented"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1543,8 +1543,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its private IP.  
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its private IP.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1552,8 +1552,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its root device volumes.
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its root device volumes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1561,9 +1561,9 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: "default", "dedicated"
+    <dd>Valid values: "default", "dedicated"
 Default: default
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,8 +1571,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
-{{% /md %}}</dd>
+    <dd>Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1580,8 +1580,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Private IP Allocation Id to associate to the instance. 
-{{% /md %}}</dd>
+    <dd>Private IP Allocation Id to associate to the instance. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1589,8 +1589,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS region your group will be created in.
-{{% /md %}}</dd>
+    <dd>The AWS region your group will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1598,7 +1598,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancereverttospot">Dict[Managed<wbr>Instance<wbr>Revert<wbr>To<wbr>Spot]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1606,7 +1606,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancescheduledtask">List[Managed<wbr>Instance<wbr>Scheduled<wbr>Task]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1614,8 +1614,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more security group IDs.
-{{% /md %}}</dd>
+    <dd>One or more security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1623,8 +1623,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded shutdown script to execute prior to instance termination.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded shutdown script to execute prior to instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1632,8 +1632,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancetag">List[Managed<wbr>Instance<wbr>Tag]</a></span>
     </dt>
-    <dd>{{% md %}}Set tags for the instance. Items should be unique.
-{{% /md %}}</dd>
+    <dd>Set tags for the instance. Items should be unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,8 +1641,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1650,8 +1650,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded MIME user data to make available to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1659,12 +1659,12 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
+    <dd>In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
 Default: `"false"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1678,7 +1678,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1687,13 +1687,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1702,13 +1702,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1717,13 +1717,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1732,10 +1732,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1746,25 +1746,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ManagedInstance Resource {#look-up}
 
 Get an existing ManagedInstance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/spotinst/aws/#ManagedInstanceState">ManagedInstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/spotinst/aws/#ManagedInstance">ManagedInstance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>auto_healing=None<span class="p">, </span>block_devices_mode=None<span class="p">, </span>cpu_credits=None<span class="p">, </span>description=None<span class="p">, </span>draining_timeout=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>elastic_ip=None<span class="p">, </span>enable_monitoring=None<span class="p">, </span>fall_back_to_od=None<span class="p">, </span>grace_period=None<span class="p">, </span>health_check_type=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_types=None<span class="p">, </span>integration_route53=None<span class="p">, </span>key_pair=None<span class="p">, </span>life_cycle=None<span class="p">, </span>load_balancers=None<span class="p">, </span>name=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>optimization_windows=None<span class="p">, </span>orientation=None<span class="p">, </span>persist_block_devices=None<span class="p">, </span>persist_private_ip=None<span class="p">, </span>persist_root_device=None<span class="p">, </span>placement_tenancy=None<span class="p">, </span>preferred_type=None<span class="p">, </span>private_ip=None<span class="p">, </span>product=None<span class="p">, </span>region=None<span class="p">, </span>revert_to_spot=None<span class="p">, </span>scheduled_tasks=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>shutdown_script=None<span class="p">, </span>subnet_ids=None<span class="p">, </span>tags=None<span class="p">, </span>unhealthy_duration=None<span class="p">, </span>user_data=None<span class="p">, </span>utilize_reserved_instances=None<span class="p">, </span>vpc_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetManagedInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceState">ManagedInstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstance">ManagedInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Spotinst/Pulumi.Spotinst.Aws.ManagedInstance.html">ManagedInstance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Spotinst/Pulumi.Spotinst.Aws.ManagedInstanceState.html">ManagedInstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1789,9 +1789,9 @@ Get an existing ManagedInstance resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1804,36 +1804,9 @@ Get an existing ManagedInstance resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1858,13 +1831,40 @@ Get an existing ManagedInstance resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1873,8 +1873,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
-{{% /md %}}</dd>
+    <dd>Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1882,9 +1882,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
+    <dd>Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
 Default: `"onLaunch"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1892,9 +1892,9 @@ Default: `"onLaunch"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}cpuCredits can have one of two values: “unlimited”, “standard”.
+    <dd>cpuCredits can have one of two values: “unlimited”, “standard”.
 Default: unlimited
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,8 +1902,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance description.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,8 +1911,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,9 +1920,9 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
+    <dd>Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1930,8 +1930,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic IP Allocation Id to associate to the instance.
-{{% /md %}}</dd>
+    <dd>Elastic IP Allocation Id to associate to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1939,9 +1939,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Describes whether instance Enhanced Monitoring is enabled.
+    <dd>Describes whether instance Enhanced Monitoring is enabled.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1949,7 +1949,7 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1957,8 +1957,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1966,9 +1966,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
+    <dd>The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
 Default: `“EC2”`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,8 +1976,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set IAM profile to instance. Set only one of ARN or Name.
-{{% /md %}}</dd>
+    <dd>Set IAM profile to instance. Set only one of ARN or Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,8 +1985,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the image used to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,8 +1994,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of available instance types for instance.
-{{% /md %}}</dd>
+    <dd>Comma separated list of available instance types for instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2003,7 +2003,7 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53">Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Integration<wbr>Route53Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2011,8 +2011,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Key Pair to attach to the instances.
-{{% /md %}}</dd>
+    <dd>Specify a Key Pair to attach to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2020,9 +2020,9 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set lifecycle, valid values: `“spot”`, `“on_demand”`.
+    <dd>Set lifecycle, valid values: `“spot”`, `“on_demand”`.
 Default `"spot"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2030,7 +2030,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceloadbalancer">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Load<wbr>Balancer<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2038,8 +2038,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2047,7 +2047,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancenetworkinterface">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2055,8 +2055,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
-{{% /md %}}</dd>
+    <dd>When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2064,9 +2064,9 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
+    <dd>Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
 Default: `"availabilityOriented"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,8 +2074,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its Data volumes. 
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its Data volumes. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2083,8 +2083,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its private IP.  
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its private IP.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2092,8 +2092,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its root device volumes.
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its root device volumes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2101,9 +2101,9 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: "default", "dedicated"
+    <dd>Valid values: "default", "dedicated"
 Default: default
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2111,8 +2111,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
-{{% /md %}}</dd>
+    <dd>Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2120,8 +2120,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Private IP Allocation Id to associate to the instance. 
-{{% /md %}}</dd>
+    <dd>Private IP Allocation Id to associate to the instance. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2129,8 +2129,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
-{{% /md %}}</dd>
+    <dd>Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2138,8 +2138,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS region your group will be created in.
-{{% /md %}}</dd>
+    <dd>The AWS region your group will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,7 +2147,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancereverttospot">Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Revert<wbr>To<wbr>Spot<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2155,7 +2155,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancescheduledtask">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Scheduled<wbr>Task<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2163,8 +2163,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more security group IDs.
-{{% /md %}}</dd>
+    <dd>One or more security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2172,8 +2172,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded shutdown script to execute prior to instance termination.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded shutdown script to execute prior to instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2181,8 +2181,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of subnet identifiers for your instance.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of subnet identifiers for your instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2190,8 +2190,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancetag">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Tag<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set tags for the instance. Items should be unique.
-{{% /md %}}</dd>
+    <dd>Set tags for the instance. Items should be unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2199,8 +2199,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2208,8 +2208,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded MIME user data to make available to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2217,9 +2217,9 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
+    <dd>In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
 Default: `"false"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2227,13 +2227,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2242,8 +2242,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
-{{% /md %}}</dd>
+    <dd>Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2251,9 +2251,9 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
+    <dd>Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
 Default: `"onLaunch"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2261,9 +2261,9 @@ Default: `"onLaunch"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}cpuCredits can have one of two values: “unlimited”, “standard”.
+    <dd>cpuCredits can have one of two values: “unlimited”, “standard”.
 Default: unlimited
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2271,8 +2271,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance description.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2280,8 +2280,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2289,9 +2289,9 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
+    <dd>Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2299,8 +2299,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic IP Allocation Id to associate to the instance.
-{{% /md %}}</dd>
+    <dd>Elastic IP Allocation Id to associate to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2308,9 +2308,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Describes whether instance Enhanced Monitoring is enabled.
+    <dd>Describes whether instance Enhanced Monitoring is enabled.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2318,7 +2318,7 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2326,8 +2326,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,9 +2335,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
+    <dd>The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
 Default: `“EC2”`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2345,8 +2345,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set IAM profile to instance. Set only one of ARN or Name.
-{{% /md %}}</dd>
+    <dd>Set IAM profile to instance. Set only one of ARN or Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2354,8 +2354,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the image used to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2363,8 +2363,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of available instance types for instance.
-{{% /md %}}</dd>
+    <dd>Comma separated list of available instance types for instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2372,7 +2372,7 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53">Managed<wbr>Instance<wbr>Integration<wbr>Route53</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,8 +2380,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Key Pair to attach to the instances.
-{{% /md %}}</dd>
+    <dd>Specify a Key Pair to attach to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2389,9 +2389,9 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set lifecycle, valid values: `“spot”`, `“on_demand”`.
+    <dd>Set lifecycle, valid values: `“spot”`, `“on_demand”`.
 Default `"spot"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2399,7 +2399,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceloadbalancer">[]Managed<wbr>Instance<wbr>Load<wbr>Balancer</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2407,8 +2407,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2416,7 +2416,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancenetworkinterface">[]Managed<wbr>Instance<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2424,8 +2424,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
-{{% /md %}}</dd>
+    <dd>When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2433,9 +2433,9 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
+    <dd>Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
 Default: `"availabilityOriented"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2443,8 +2443,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its Data volumes. 
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its Data volumes. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2452,8 +2452,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its private IP.  
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its private IP.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2461,8 +2461,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its root device volumes.
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its root device volumes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2470,9 +2470,9 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: "default", "dedicated"
+    <dd>Valid values: "default", "dedicated"
 Default: default
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2480,8 +2480,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
-{{% /md %}}</dd>
+    <dd>Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2489,8 +2489,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Private IP Allocation Id to associate to the instance. 
-{{% /md %}}</dd>
+    <dd>Private IP Allocation Id to associate to the instance. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2498,8 +2498,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
-{{% /md %}}</dd>
+    <dd>Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2507,8 +2507,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS region your group will be created in.
-{{% /md %}}</dd>
+    <dd>The AWS region your group will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2516,7 +2516,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancereverttospot">Managed<wbr>Instance<wbr>Revert<wbr>To<wbr>Spot</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2524,7 +2524,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancescheduledtask">[]Managed<wbr>Instance<wbr>Scheduled<wbr>Task</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2532,8 +2532,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more security group IDs.
-{{% /md %}}</dd>
+    <dd>One or more security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2541,8 +2541,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded shutdown script to execute prior to instance termination.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded shutdown script to execute prior to instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2550,8 +2550,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of subnet identifiers for your instance.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of subnet identifiers for your instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2559,8 +2559,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancetag">[]Managed<wbr>Instance<wbr>Tag</a></span>
     </dt>
-    <dd>{{% md %}}Set tags for the instance. Items should be unique.
-{{% /md %}}</dd>
+    <dd>Set tags for the instance. Items should be unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2568,8 +2568,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2577,8 +2577,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded MIME user data to make available to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2586,9 +2586,9 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
+    <dd>In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
 Default: `"false"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2596,13 +2596,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2611,8 +2611,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
-{{% /md %}}</dd>
+    <dd>Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2620,9 +2620,9 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
+    <dd>Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
 Default: `"onLaunch"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2630,9 +2630,9 @@ Default: `"onLaunch"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}cpuCredits can have one of two values: “unlimited”, “standard”.
+    <dd>cpuCredits can have one of two values: “unlimited”, “standard”.
 Default: unlimited
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2640,8 +2640,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance description.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2649,8 +2649,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2658,9 +2658,9 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
+    <dd>Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2668,8 +2668,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Elastic IP Allocation Id to associate to the instance.
-{{% /md %}}</dd>
+    <dd>Elastic IP Allocation Id to associate to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2677,9 +2677,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Describes whether instance Enhanced Monitoring is enabled.
+    <dd>Describes whether instance Enhanced Monitoring is enabled.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2687,7 +2687,7 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2695,8 +2695,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2704,9 +2704,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
+    <dd>The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
 Default: `“EC2”`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2714,8 +2714,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set IAM profile to instance. Set only one of ARN or Name.
-{{% /md %}}</dd>
+    <dd>Set IAM profile to instance. Set only one of ARN or Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2723,8 +2723,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the image used to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2732,8 +2732,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of available instance types for instance.
-{{% /md %}}</dd>
+    <dd>Comma separated list of available instance types for instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2741,7 +2741,7 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53">Managed<wbr>Instance<wbr>Integration<wbr>Route53</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2749,8 +2749,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Key Pair to attach to the instances.
-{{% /md %}}</dd>
+    <dd>Specify a Key Pair to attach to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2758,9 +2758,9 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set lifecycle, valid values: `“spot”`, `“on_demand”`.
+    <dd>Set lifecycle, valid values: `“spot”`, `“on_demand”`.
 Default `"spot"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2768,7 +2768,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceloadbalancer">Managed<wbr>Instance<wbr>Load<wbr>Balancer[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2776,8 +2776,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2785,7 +2785,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancenetworkinterface">Managed<wbr>Instance<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2793,8 +2793,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
-{{% /md %}}</dd>
+    <dd>When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2802,9 +2802,9 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
+    <dd>Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
 Default: `"availabilityOriented"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2812,8 +2812,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its Data volumes. 
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its Data volumes. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2821,8 +2821,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its private IP.  
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its private IP.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2830,8 +2830,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its root device volumes.
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its root device volumes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2839,9 +2839,9 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: "default", "dedicated"
+    <dd>Valid values: "default", "dedicated"
 Default: default
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2849,8 +2849,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
-{{% /md %}}</dd>
+    <dd>Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2858,8 +2858,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Private IP Allocation Id to associate to the instance. 
-{{% /md %}}</dd>
+    <dd>Private IP Allocation Id to associate to the instance. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2867,8 +2867,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
-{{% /md %}}</dd>
+    <dd>Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2876,8 +2876,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS region your group will be created in.
-{{% /md %}}</dd>
+    <dd>The AWS region your group will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2885,7 +2885,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancereverttospot">Managed<wbr>Instance<wbr>Revert<wbr>To<wbr>Spot</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2893,7 +2893,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancescheduledtask">Managed<wbr>Instance<wbr>Scheduled<wbr>Task[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2901,8 +2901,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more security group IDs.
-{{% /md %}}</dd>
+    <dd>One or more security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2910,8 +2910,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded shutdown script to execute prior to instance termination.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded shutdown script to execute prior to instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2919,8 +2919,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of subnet identifiers for your instance.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of subnet identifiers for your instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2928,8 +2928,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancetag">Managed<wbr>Instance<wbr>Tag[]</a></span>
     </dt>
-    <dd>{{% md %}}Set tags for the instance. Items should be unique.
-{{% /md %}}</dd>
+    <dd>Set tags for the instance. Items should be unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2937,8 +2937,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2946,8 +2946,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded MIME user data to make available to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2955,9 +2955,9 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
+    <dd>In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
 Default: `"false"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2965,13 +2965,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2980,8 +2980,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
-{{% /md %}}</dd>
+    <dd>Enable the auto healing which auto replaces the instance in case the health check fails, default: `“true”`. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2989,9 +2989,9 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
+    <dd>Determine the way we attach the data volumes to the data devices. Valid values: `"reattach"`, `"onLaunch"`.
 Default: `"onLaunch"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2999,9 +2999,9 @@ Default: `"onLaunch"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}cpuCredits can have one of two values: “unlimited”, “standard”.
+    <dd>cpuCredits can have one of two values: “unlimited”, “standard”.
 Default: unlimited
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3009,8 +3009,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance description.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3018,8 +3018,8 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow the instance be drained from incoming TCP connections and detached from ELB before terminating it, during a scale down operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3027,9 +3027,9 @@ Default: unlimited
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
+    <dd>Enable EBS optimization for supported instance which is not enabled by default. Note - additional charges will be applied.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3037,8 +3037,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Elastic IP Allocation Id to associate to the instance.
-{{% /md %}}</dd>
+    <dd>Elastic IP Allocation Id to associate to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3046,9 +3046,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Describes whether instance Enhanced Monitoring is enabled.
+    <dd>Describes whether instance Enhanced Monitoring is enabled.
 Default: false
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3056,7 +3056,7 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3064,8 +3064,8 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after the instance has launched to starts and check its health, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3073,9 +3073,9 @@ Default: false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
+    <dd>The service to use for the health check. Valid values: `“EC2”`, `“ELB”`, `“TARGET_GROUP”`, `“MULTAI_TARGET_SET”`.
 Default: `“EC2”`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3083,8 +3083,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set IAM profile to instance. Set only one of ARN or Name.
-{{% /md %}}</dd>
+    <dd>Set IAM profile to instance. Set only one of ARN or Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3092,8 +3092,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the image used to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3101,8 +3101,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of available instance types for instance.
-{{% /md %}}</dd>
+    <dd>Comma separated list of available instance types for instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3110,7 +3110,7 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53">Dict[Managed<wbr>Instance<wbr>Integration<wbr>Route53]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3118,8 +3118,8 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Key Pair to attach to the instances.
-{{% /md %}}</dd>
+    <dd>Specify a Key Pair to attach to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3127,9 +3127,9 @@ Default: `“EC2”`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set lifecycle, valid values: `“spot”`, `“on_demand”`.
+    <dd>Set lifecycle, valid values: `“spot”`, `“on_demand”`.
 Default `"spot"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3137,7 +3137,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceloadbalancer">List[Managed<wbr>Instance<wbr>Load<wbr>Balancer]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3145,8 +3145,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3154,7 +3154,7 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancenetworkinterface">List[Managed<wbr>Instance<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3162,8 +3162,8 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
-{{% /md %}}</dd>
+    <dd>When performAt is 'timeWindow': must specify a list of 'timeWindows' with at least one time window Each string is in the format of - ddd:hh:mm-ddd:hh:mm ddd = day of week = Sun | Mon | Tue | Wed | Thu | Fri | Sat hh = hour 24 = 0 -23 mm = minute = 0 - 59.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3171,9 +3171,9 @@ Default `"spot"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
+    <dd>Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"availabilityOriented"`, `"cheapest"`.
 Default: `"availabilityOriented"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3181,8 +3181,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its Data volumes. 
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its Data volumes. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3190,8 +3190,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its private IP.  
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its private IP.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3199,8 +3199,8 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the instance maintain its root device volumes.
-{{% /md %}}</dd>
+    <dd>Should the instance maintain its root device volumes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3208,9 +3208,9 @@ Default: `"availabilityOriented"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: "default", "dedicated"
+    <dd>Valid values: "default", "dedicated"
 Default: default
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3218,8 +3218,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
-{{% /md %}}</dd>
+    <dd>Preferred instance types for the instance. We will automatically select optional similar instance types to ensure optimized cost efficiency
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3227,8 +3227,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Private IP Allocation Id to associate to the instance. 
-{{% /md %}}</dd>
+    <dd>Private IP Allocation Id to associate to the instance. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3236,8 +3236,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
-{{% /md %}}</dd>
+    <dd>Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`, `"Red Hat Enterprise Linux"`, `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`,  `"Red Hat Enterprise Linux (Amazon VPC)"`.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3245,8 +3245,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS region your group will be created in.
-{{% /md %}}</dd>
+    <dd>The AWS region your group will be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3254,7 +3254,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancereverttospot">Dict[Managed<wbr>Instance<wbr>Revert<wbr>To<wbr>Spot]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3262,7 +3262,7 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancescheduledtask">List[Managed<wbr>Instance<wbr>Scheduled<wbr>Task]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3270,8 +3270,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more security group IDs.
-{{% /md %}}</dd>
+    <dd>One or more security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3279,8 +3279,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded shutdown script to execute prior to instance termination.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded shutdown script to execute prior to instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3288,8 +3288,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of subnet identifiers for your instance.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of subnet identifiers for your instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3297,8 +3297,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstancetag">List[Managed<wbr>Instance<wbr>Tag]</a></span>
     </dt>
-    <dd>{{% md %}}Set tags for the instance. Items should be unique.
-{{% /md %}}</dd>
+    <dd>Set tags for the instance. Items should be unique.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3306,8 +3306,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, an existing instance should remain active after becoming unhealthy. After the set time out the instance will be replaced, default `“120"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3315,8 +3315,8 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded MIME user data to make available to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3324,9 +3324,9 @@ Default: default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
+    <dd>In case of any available Reserved Instances, Managed Instance will utilize them before purchasing Spot instances.
 Default: `"false"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3334,10 +3334,10 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -3352,18 +3352,18 @@ Default: `"false"`.
 
 
 <h4 id="managedinstanceintegrationroute53">Managed<wbr>Instance<wbr>Integration<wbr>Route53</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#ManagedInstanceIntegrationRoute53">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#ManagedInstanceIntegrationRoute53">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceIntegrationRoute53Args">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceIntegrationRoute53Output">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3372,13 +3372,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53domain">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3387,13 +3387,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53domain">[]Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3402,13 +3402,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53domain">Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3417,28 +3417,28 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53domain">List[Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedinstanceintegrationroute53domain">Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#ManagedInstanceIntegrationRoute53Domain">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#ManagedInstanceIntegrationRoute53Domain">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceIntegrationRoute53DomainArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceIntegrationRoute53DomainOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3447,7 +3447,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3455,7 +3455,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53domainrecordset">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain<wbr>Record<wbr>Set<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3463,13 +3463,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3478,7 +3478,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3486,7 +3486,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53domainrecordset">[]Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain<wbr>Record<wbr>Set</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3494,13 +3494,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3509,7 +3509,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3517,7 +3517,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53domainrecordset">Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain<wbr>Record<wbr>Set[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3525,13 +3525,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3540,7 +3540,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3548,7 +3548,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedinstanceintegrationroute53domainrecordset">List[Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain<wbr>Record<wbr>Set]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3556,28 +3556,28 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedinstanceintegrationroute53domainrecordset">Managed<wbr>Instance<wbr>Integration<wbr>Route53Domain<wbr>Record<wbr>Set</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#ManagedInstanceIntegrationRoute53DomainRecordSet">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#ManagedInstanceIntegrationRoute53DomainRecordSet">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceIntegrationRoute53DomainRecordSetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceIntegrationRoute53DomainRecordSetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3586,8 +3586,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3595,13 +3595,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3610,8 +3610,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3619,13 +3619,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3634,8 +3634,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3643,13 +3643,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3658,8 +3658,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3667,28 +3667,28 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedinstanceloadbalancer">Managed<wbr>Instance<wbr>Load<wbr>Balancer</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#ManagedInstanceLoadBalancer">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#ManagedInstanceLoadBalancer">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceLoadBalancerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceLoadBalancerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3697,7 +3697,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3705,7 +3705,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3713,7 +3713,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3721,7 +3721,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3729,7 +3729,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3737,8 +3737,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3746,13 +3746,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3761,7 +3761,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3769,7 +3769,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3777,7 +3777,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3785,7 +3785,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3793,7 +3793,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3801,8 +3801,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3810,13 +3810,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3825,7 +3825,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3833,7 +3833,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3841,7 +3841,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3849,7 +3849,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3857,7 +3857,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3865,8 +3865,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3874,13 +3874,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3889,7 +3889,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3897,7 +3897,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3905,7 +3905,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3913,7 +3913,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3921,7 +3921,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3929,8 +3929,8 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ManagedInstance name.
-{{% /md %}}</dd>
+    <dd>The ManagedInstance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3938,28 +3938,28 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedinstancenetworkinterface">Managed<wbr>Instance<wbr>Network<wbr>Interface</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#ManagedInstanceNetworkInterface">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#ManagedInstanceNetworkInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceNetworkInterfaceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceNetworkInterfaceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3968,7 +3968,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3976,7 +3976,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3984,13 +3984,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3999,7 +3999,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4007,7 +4007,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4015,13 +4015,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4030,7 +4030,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4038,7 +4038,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4046,13 +4046,13 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4061,7 +4061,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4069,7 +4069,7 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4077,28 +4077,28 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedinstancereverttospot">Managed<wbr>Instance<wbr>Revert<wbr>To<wbr>Spot</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#ManagedInstanceRevertToSpot">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#ManagedInstanceRevertToSpot">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceRevertToSpotArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceRevertToSpotOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4107,15 +4107,15 @@ Default: `"false"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: “always”, “never”, "timeWindow".
+    <dd>Valid values: “always”, “never”, "timeWindow".
 Default `"never"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4124,15 +4124,15 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: “always”, “never”, "timeWindow".
+    <dd>Valid values: “always”, “never”, "timeWindow".
 Default `"never"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4141,15 +4141,15 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: “always”, “never”, "timeWindow".
+    <dd>Valid values: “always”, “never”, "timeWindow".
 Default `"never"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4158,30 +4158,30 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values: “always”, “never”, "timeWindow".
+    <dd>Valid values: “always”, “never”, "timeWindow".
 Default `"never"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedinstancescheduledtask">Managed<wbr>Instance<wbr>Scheduled<wbr>Task</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#ManagedInstanceScheduledTask">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#ManagedInstanceScheduledTask">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceScheduledTaskArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceScheduledTaskOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4190,7 +4190,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4198,7 +4198,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4206,7 +4206,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4214,7 +4214,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4222,13 +4222,13 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4237,7 +4237,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4245,7 +4245,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4253,7 +4253,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4261,7 +4261,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4269,13 +4269,13 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4284,7 +4284,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4292,7 +4292,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4300,7 +4300,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4308,7 +4308,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4316,13 +4316,13 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4331,7 +4331,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4339,7 +4339,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4347,7 +4347,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4355,7 +4355,7 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4363,28 +4363,28 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedinstancetag">Managed<wbr>Instance<wbr>Tag</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#ManagedInstanceTag">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#ManagedInstanceTag">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceTagArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#ManagedInstanceTagOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4393,8 +4393,8 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Tag's key.
-{{% /md %}}</dd>
+    <dd>Tag's key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4402,14 +4402,14 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Tag's name.
-{{% /md %}}</dd>
+    <dd>Tag's name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4418,8 +4418,8 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Tag's key.
-{{% /md %}}</dd>
+    <dd>Tag's key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4427,14 +4427,14 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Tag's name.
-{{% /md %}}</dd>
+    <dd>Tag's name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4443,8 +4443,8 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Tag's key.
-{{% /md %}}</dd>
+    <dd>Tag's key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4452,14 +4452,14 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Tag's name.
-{{% /md %}}</dd>
+    <dd>Tag's name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4468,8 +4468,8 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Tag's key.
-{{% /md %}}</dd>
+    <dd>Tag's key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4477,11 +4477,11 @@ Default `"never"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Tag's name.
-{{% /md %}}</dd>
+    <dd>Tag's name.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -14,26 +14,26 @@ meta_desc: "Explore the DatastoreCluster resource of the vSphere package, includ
 
 
 ## Create a DatastoreCluster Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#DatastoreCluster">DatastoreCluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#DatastoreClusterArgs">DatastoreClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">DatastoreCluster</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>custom_attributes=None<span class="p">, </span>datacenter_id=None<span class="p">, </span>folder=None<span class="p">, </span>name=None<span class="p">, </span>sdrs_advanced_options=None<span class="p">, </span>sdrs_automation_level=None<span class="p">, </span>sdrs_default_intra_vm_affinity=None<span class="p">, </span>sdrs_enabled=None<span class="p">, </span>sdrs_free_space_threshold=None<span class="p">, </span>sdrs_free_space_threshold_mode=None<span class="p">, </span>sdrs_free_space_utilization_difference=None<span class="p">, </span>sdrs_io_balance_automation_level=None<span class="p">, </span>sdrs_io_latency_threshold=None<span class="p">, </span>sdrs_io_load_balance_enabled=None<span class="p">, </span>sdrs_io_load_imbalance_threshold=None<span class="p">, </span>sdrs_io_reservable_iops_threshold=None<span class="p">, </span>sdrs_io_reservable_percent_threshold=None<span class="p">, </span>sdrs_io_reservable_threshold_mode=None<span class="p">, </span>sdrs_load_balance_interval=None<span class="p">, </span>sdrs_policy_enforcement_automation_level=None<span class="p">, </span>sdrs_rule_enforcement_automation_level=None<span class="p">, </span>sdrs_space_balance_automation_level=None<span class="p">, </span>sdrs_space_utilization_threshold=None<span class="p">, </span>sdrs_vm_evacuation_automation_level=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDatastoreCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#DatastoreClusterArgs">DatastoreClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#DatastoreCluster">DatastoreCluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.Vsphere.DatastoreCluster.html">DatastoreCluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.VSphere.DatastoreClusterArgs.html">DatastoreClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the DatastoreCluster resource of the vSphere package, includ
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the DatastoreCluster resource of the vSphere package, includ
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the DatastoreCluster resource of the vSphere package, includ
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the DatastoreCluster resource of the vSphere package, includ
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## DatastoreCluster Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The DatastoreCluster resource accepts the following [input]({{< relref "/docs/in
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,10 +200,10 @@ The DatastoreCluster resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the datastore cluster in. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -211,11 +211,11 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -223,8 +223,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the datastore cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the datastore cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -232,8 +232,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore cluster.
-{{% /md %}}</dd>
+    <dd>The name of the datastore cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -241,8 +241,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Advanced configuration options for storage DRS.
-{{% /md %}}</dd>
+    <dd>Advanced configuration options for storage DRS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,9 +250,9 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The global automation level for all
+    <dd>The global automation level for all
 virtual machines in this datastore cluster. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,9 +260,9 @@ virtual machines in this datastore cluster. Default: `manual`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, all disks in a
+    <dd>When `true`, all disks in a
 single virtual machine will be kept on the same datastore. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,9 +270,9 @@ single virtual machine will be kept on the same datastore. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Storage DRS for this datastore cluster.
+    <dd>Enable Storage DRS for this datastore cluster.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,11 +280,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use.
+    <dd>The free space threshold to use.
 When set to `utilization`, `drs_space_utilization_threshold` is used, and
 when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
 `utilization`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,9 +292,9 @@ when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
+    <dd>The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
 freeSpace, drs_free_space_threshold is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,10 +302,10 @@ freeSpace, drs_free_space_threshold is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of difference between space utilization in datastores before storage
 DRS makes decisions to balance the space. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,9 +313,9 @@ DRS makes decisions to balance the space. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting I/O load imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,10 +323,10 @@ automation settings when correcting I/O load imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The I/O latency threshold, in
+    <dd>The I/O latency threshold, in
 milliseconds, that storage DRS uses to make recommendations to move disks
 from this datastore. Default: `15` seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -334,9 +334,9 @@ from this datastore. Default: `15` seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable I/O load balancing for
+    <dd>Enable I/O load balancing for
 this datastore cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,10 +344,10 @@ this datastore cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The difference between load
+    <dd>The difference between load
 in datastores in the cluster before storage DRS makes recommendations to
 balance the load. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,13 +355,13 @@ balance the load. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of reservable
+    <dd>The threshold of reservable
 IOPS of all virtual machines on the datastore before storage DRS makes
 recommendations to move VMs off of a datastore. Note that this setting should
 only be set if `sdrs_io_reservable_percent_threshold` cannot make an accurate
 estimate of the capacity of the datastores in your cluster, and should be set
 to roughly 50-60% of the worst case peak performance of the backing LUNs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -369,11 +369,11 @@ to roughly 50-60% of the worst case peak performance of the backing LUNs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of actual estimated performance of the datastore (in IOPS) that
 storage DRS uses to make recommendations to move VMs off of a datastore when
 the total reservable IOPS exceeds the threshold. Default: `60` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,11 +381,11 @@ the total reservable IOPS exceeds the threshold. Default: `60` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The reservable IOPS
+    <dd>The reservable IOPS
 threshold setting to use, `sdrs_io_reservable_percent_threshold` in the event
 of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
 `manual`. Default: `automatic`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,9 +393,9 @@ of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The storage DRS poll interval, in
+    <dd>The storage DRS poll interval, in
 minutes. Default: `480` minutes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,9 +403,9 @@ minutes. Default: `480` minutes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting storage and VM policy violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,9 +413,9 @@ automation settings when correcting storage and VM policy violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting affinity rule violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,9 +423,9 @@ automation settings when correcting affinity rule violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting disk space imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,8 +433,8 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
-{{% /md %}}</dd>
+    <dd>The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,9 +442,9 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when generating recommendations for datastore evacuation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,15 +452,15 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -469,10 +469,10 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the datastore cluster in. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,11 +480,11 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,8 +492,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the datastore cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the datastore cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -501,8 +501,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore cluster.
-{{% /md %}}</dd>
+    <dd>The name of the datastore cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,8 +510,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Advanced configuration options for storage DRS.
-{{% /md %}}</dd>
+    <dd>Advanced configuration options for storage DRS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,9 +519,9 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The global automation level for all
+    <dd>The global automation level for all
 virtual machines in this datastore cluster. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,9 +529,9 @@ virtual machines in this datastore cluster. Default: `manual`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, all disks in a
+    <dd>When `true`, all disks in a
 single virtual machine will be kept on the same datastore. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,9 +539,9 @@ single virtual machine will be kept on the same datastore. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Storage DRS for this datastore cluster.
+    <dd>Enable Storage DRS for this datastore cluster.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -549,11 +549,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use.
+    <dd>The free space threshold to use.
 When set to `utilization`, `drs_space_utilization_threshold` is used, and
 when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
 `utilization`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -561,9 +561,9 @@ when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
+    <dd>The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
 freeSpace, drs_free_space_threshold is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,10 +571,10 @@ freeSpace, drs_free_space_threshold is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of difference between space utilization in datastores before storage
 DRS makes decisions to balance the space. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,9 +582,9 @@ DRS makes decisions to balance the space. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting I/O load imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,10 +592,10 @@ automation settings when correcting I/O load imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The I/O latency threshold, in
+    <dd>The I/O latency threshold, in
 milliseconds, that storage DRS uses to make recommendations to move disks
 from this datastore. Default: `15` seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,9 +603,9 @@ from this datastore. Default: `15` seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable I/O load balancing for
+    <dd>Enable I/O load balancing for
 this datastore cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,10 +613,10 @@ this datastore cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The difference between load
+    <dd>The difference between load
 in datastores in the cluster before storage DRS makes recommendations to
 balance the load. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -624,13 +624,13 @@ balance the load. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of reservable
+    <dd>The threshold of reservable
 IOPS of all virtual machines on the datastore before storage DRS makes
 recommendations to move VMs off of a datastore. Note that this setting should
 only be set if `sdrs_io_reservable_percent_threshold` cannot make an accurate
 estimate of the capacity of the datastores in your cluster, and should be set
 to roughly 50-60% of the worst case peak performance of the backing LUNs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,11 +638,11 @@ to roughly 50-60% of the worst case peak performance of the backing LUNs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of actual estimated performance of the datastore (in IOPS) that
 storage DRS uses to make recommendations to move VMs off of a datastore when
 the total reservable IOPS exceeds the threshold. Default: `60` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,11 +650,11 @@ the total reservable IOPS exceeds the threshold. Default: `60` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reservable IOPS
+    <dd>The reservable IOPS
 threshold setting to use, `sdrs_io_reservable_percent_threshold` in the event
 of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
 `manual`. Default: `automatic`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,9 +662,9 @@ of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The storage DRS poll interval, in
+    <dd>The storage DRS poll interval, in
 minutes. Default: `480` minutes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -672,9 +672,9 @@ minutes. Default: `480` minutes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting storage and VM policy violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -682,9 +682,9 @@ automation settings when correcting storage and VM policy violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting affinity rule violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -692,9 +692,9 @@ automation settings when correcting affinity rule violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting disk space imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -702,8 +702,8 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
-{{% /md %}}</dd>
+    <dd>The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,9 +711,9 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when generating recommendations for datastore evacuation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,15 +721,15 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -738,10 +738,10 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the datastore cluster in. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,11 +749,11 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,8 +761,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the datastore cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the datastore cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -770,8 +770,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore cluster.
-{{% /md %}}</dd>
+    <dd>The name of the datastore cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -779,8 +779,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Advanced configuration options for storage DRS.
-{{% /md %}}</dd>
+    <dd>Advanced configuration options for storage DRS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,9 +788,9 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The global automation level for all
+    <dd>The global automation level for all
 virtual machines in this datastore cluster. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,9 +798,9 @@ virtual machines in this datastore cluster. Default: `manual`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, all disks in a
+    <dd>When `true`, all disks in a
 single virtual machine will be kept on the same datastore. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -808,9 +808,9 @@ single virtual machine will be kept on the same datastore. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable Storage DRS for this datastore cluster.
+    <dd>Enable Storage DRS for this datastore cluster.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,11 +818,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use.
+    <dd>The free space threshold to use.
 When set to `utilization`, `drs_space_utilization_threshold` is used, and
 when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
 `utilization`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,9 +830,9 @@ when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
+    <dd>The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
 freeSpace, drs_free_space_threshold is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -840,10 +840,10 @@ freeSpace, drs_free_space_threshold is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of difference between space utilization in datastores before storage
 DRS makes decisions to balance the space. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,9 +851,9 @@ DRS makes decisions to balance the space. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting I/O load imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,10 +861,10 @@ automation settings when correcting I/O load imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The I/O latency threshold, in
+    <dd>The I/O latency threshold, in
 milliseconds, that storage DRS uses to make recommendations to move disks
 from this datastore. Default: `15` seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -872,9 +872,9 @@ from this datastore. Default: `15` seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable I/O load balancing for
+    <dd>Enable I/O load balancing for
 this datastore cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,10 +882,10 @@ this datastore cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The difference between load
+    <dd>The difference between load
 in datastores in the cluster before storage DRS makes recommendations to
 balance the load. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,13 +893,13 @@ balance the load. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of reservable
+    <dd>The threshold of reservable
 IOPS of all virtual machines on the datastore before storage DRS makes
 recommendations to move VMs off of a datastore. Note that this setting should
 only be set if `sdrs_io_reservable_percent_threshold` cannot make an accurate
 estimate of the capacity of the datastores in your cluster, and should be set
 to roughly 50-60% of the worst case peak performance of the backing LUNs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,11 +907,11 @@ to roughly 50-60% of the worst case peak performance of the backing LUNs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of actual estimated performance of the datastore (in IOPS) that
 storage DRS uses to make recommendations to move VMs off of a datastore when
 the total reservable IOPS exceeds the threshold. Default: `60` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,11 +919,11 @@ the total reservable IOPS exceeds the threshold. Default: `60` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reservable IOPS
+    <dd>The reservable IOPS
 threshold setting to use, `sdrs_io_reservable_percent_threshold` in the event
 of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
 `manual`. Default: `automatic`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,9 +931,9 @@ of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The storage DRS poll interval, in
+    <dd>The storage DRS poll interval, in
 minutes. Default: `480` minutes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,9 +941,9 @@ minutes. Default: `480` minutes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting storage and VM policy violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,9 +951,9 @@ automation settings when correcting storage and VM policy violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting affinity rule violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -961,9 +961,9 @@ automation settings when correcting affinity rule violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting disk space imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,8 +971,8 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
-{{% /md %}}</dd>
+    <dd>The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,9 +980,9 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when generating recommendations for datastore evacuation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,15 +990,15 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1007,10 +1007,10 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the datastore cluster in. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1018,11 +1018,11 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the datastore cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the datastore cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,8 +1039,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore cluster.
-{{% /md %}}</dd>
+    <dd>The name of the datastore cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,8 +1048,8 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Advanced configuration options for storage DRS.
-{{% /md %}}</dd>
+    <dd>Advanced configuration options for storage DRS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,9 +1057,9 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The global automation level for all
+    <dd>The global automation level for all
 virtual machines in this datastore cluster. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,9 +1067,9 @@ virtual machines in this datastore cluster. Default: `manual`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, all disks in a
+    <dd>When `true`, all disks in a
 single virtual machine will be kept on the same datastore. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1077,9 +1077,9 @@ single virtual machine will be kept on the same datastore. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Storage DRS for this datastore cluster.
+    <dd>Enable Storage DRS for this datastore cluster.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,11 +1087,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use.
+    <dd>The free space threshold to use.
 When set to `utilization`, `drs_space_utilization_threshold` is used, and
 when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
 `utilization`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,9 +1099,9 @@ when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
+    <dd>The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
 freeSpace, drs_free_space_threshold is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,10 +1109,10 @@ freeSpace, drs_free_space_threshold is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of difference between space utilization in datastores before storage
 DRS makes decisions to balance the space. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,9 +1120,9 @@ DRS makes decisions to balance the space. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting I/O load imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,10 +1130,10 @@ automation settings when correcting I/O load imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The I/O latency threshold, in
+    <dd>The I/O latency threshold, in
 milliseconds, that storage DRS uses to make recommendations to move disks
 from this datastore. Default: `15` seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,9 +1141,9 @@ from this datastore. Default: `15` seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable I/O load balancing for
+    <dd>Enable I/O load balancing for
 this datastore cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,10 +1151,10 @@ this datastore cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The difference between load
+    <dd>The difference between load
 in datastores in the cluster before storage DRS makes recommendations to
 balance the load. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1162,13 +1162,13 @@ balance the load. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of reservable
+    <dd>The threshold of reservable
 IOPS of all virtual machines on the datastore before storage DRS makes
 recommendations to move VMs off of a datastore. Note that this setting should
 only be set if `sdrs_io_reservable_percent_threshold` cannot make an accurate
 estimate of the capacity of the datastores in your cluster, and should be set
 to roughly 50-60% of the worst case peak performance of the backing LUNs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,11 +1176,11 @@ to roughly 50-60% of the worst case peak performance of the backing LUNs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of actual estimated performance of the datastore (in IOPS) that
 storage DRS uses to make recommendations to move VMs off of a datastore when
 the total reservable IOPS exceeds the threshold. Default: `60` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,11 +1188,11 @@ the total reservable IOPS exceeds the threshold. Default: `60` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The reservable IOPS
+    <dd>The reservable IOPS
 threshold setting to use, `sdrs_io_reservable_percent_threshold` in the event
 of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
 `manual`. Default: `automatic`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,9 +1200,9 @@ of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The storage DRS poll interval, in
+    <dd>The storage DRS poll interval, in
 minutes. Default: `480` minutes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,9 +1210,9 @@ minutes. Default: `480` minutes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting storage and VM policy violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1220,9 +1220,9 @@ automation settings when correcting storage and VM policy violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting affinity rule violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,9 +1230,9 @@ automation settings when correcting affinity rule violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting disk space imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,8 +1240,8 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
-{{% /md %}}</dd>
+    <dd>The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,9 +1249,9 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when generating recommendations for datastore evacuation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1259,12 +1259,12 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1278,7 +1278,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1287,13 +1287,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1302,13 +1302,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1317,13 +1317,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1332,10 +1332,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1346,25 +1346,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing DatastoreCluster Resource {#look-up}
 
 Get an existing DatastoreCluster resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#DatastoreClusterState">DatastoreClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#DatastoreCluster">DatastoreCluster</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>custom_attributes=None<span class="p">, </span>datacenter_id=None<span class="p">, </span>folder=None<span class="p">, </span>name=None<span class="p">, </span>sdrs_advanced_options=None<span class="p">, </span>sdrs_automation_level=None<span class="p">, </span>sdrs_default_intra_vm_affinity=None<span class="p">, </span>sdrs_enabled=None<span class="p">, </span>sdrs_free_space_threshold=None<span class="p">, </span>sdrs_free_space_threshold_mode=None<span class="p">, </span>sdrs_free_space_utilization_difference=None<span class="p">, </span>sdrs_io_balance_automation_level=None<span class="p">, </span>sdrs_io_latency_threshold=None<span class="p">, </span>sdrs_io_load_balance_enabled=None<span class="p">, </span>sdrs_io_load_imbalance_threshold=None<span class="p">, </span>sdrs_io_reservable_iops_threshold=None<span class="p">, </span>sdrs_io_reservable_percent_threshold=None<span class="p">, </span>sdrs_io_reservable_threshold_mode=None<span class="p">, </span>sdrs_load_balance_interval=None<span class="p">, </span>sdrs_policy_enforcement_automation_level=None<span class="p">, </span>sdrs_rule_enforcement_automation_level=None<span class="p">, </span>sdrs_space_balance_automation_level=None<span class="p">, </span>sdrs_space_utilization_threshold=None<span class="p">, </span>sdrs_vm_evacuation_automation_level=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDatastoreCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#DatastoreClusterState">DatastoreClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#DatastoreCluster">DatastoreCluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.Vsphere.DatastoreCluster.html">DatastoreCluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.Vsphere..DatastoreClusterState.html">DatastoreClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1389,9 +1389,9 @@ Get an existing DatastoreCluster resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1404,36 +1404,9 @@ Get an existing DatastoreCluster resource's state with the given name, ID, and o
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1458,13 +1431,40 @@ Get an existing DatastoreCluster resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1473,11 +1473,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1485,10 +1485,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the datastore cluster in. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,8 +1496,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the datastore cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the datastore cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1505,8 +1505,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore cluster.
-{{% /md %}}</dd>
+    <dd>The name of the datastore cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1514,8 +1514,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Advanced configuration options for storage DRS.
-{{% /md %}}</dd>
+    <dd>Advanced configuration options for storage DRS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,9 +1523,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The global automation level for all
+    <dd>The global automation level for all
 virtual machines in this datastore cluster. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,9 +1533,9 @@ virtual machines in this datastore cluster. Default: `manual`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, all disks in a
+    <dd>When `true`, all disks in a
 single virtual machine will be kept on the same datastore. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1543,9 +1543,9 @@ single virtual machine will be kept on the same datastore. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Storage DRS for this datastore cluster.
+    <dd>Enable Storage DRS for this datastore cluster.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1553,11 +1553,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use.
+    <dd>The free space threshold to use.
 When set to `utilization`, `drs_space_utilization_threshold` is used, and
 when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
 `utilization`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1565,9 +1565,9 @@ when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
+    <dd>The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
 freeSpace, drs_free_space_threshold is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1575,10 +1575,10 @@ freeSpace, drs_free_space_threshold is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of difference between space utilization in datastores before storage
 DRS makes decisions to balance the space. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,9 +1586,9 @@ DRS makes decisions to balance the space. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting I/O load imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,10 +1596,10 @@ automation settings when correcting I/O load imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The I/O latency threshold, in
+    <dd>The I/O latency threshold, in
 milliseconds, that storage DRS uses to make recommendations to move disks
 from this datastore. Default: `15` seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1607,9 +1607,9 @@ from this datastore. Default: `15` seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable I/O load balancing for
+    <dd>Enable I/O load balancing for
 this datastore cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,10 +1617,10 @@ this datastore cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The difference between load
+    <dd>The difference between load
 in datastores in the cluster before storage DRS makes recommendations to
 balance the load. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,13 +1628,13 @@ balance the load. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of reservable
+    <dd>The threshold of reservable
 IOPS of all virtual machines on the datastore before storage DRS makes
 recommendations to move VMs off of a datastore. Note that this setting should
 only be set if `sdrs_io_reservable_percent_threshold` cannot make an accurate
 estimate of the capacity of the datastores in your cluster, and should be set
 to roughly 50-60% of the worst case peak performance of the backing LUNs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,11 +1642,11 @@ to roughly 50-60% of the worst case peak performance of the backing LUNs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of actual estimated performance of the datastore (in IOPS) that
 storage DRS uses to make recommendations to move VMs off of a datastore when
 the total reservable IOPS exceeds the threshold. Default: `60` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1654,11 +1654,11 @@ the total reservable IOPS exceeds the threshold. Default: `60` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The reservable IOPS
+    <dd>The reservable IOPS
 threshold setting to use, `sdrs_io_reservable_percent_threshold` in the event
 of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
 `manual`. Default: `automatic`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1666,9 +1666,9 @@ of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The storage DRS poll interval, in
+    <dd>The storage DRS poll interval, in
 minutes. Default: `480` minutes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,9 +1676,9 @@ minutes. Default: `480` minutes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting storage and VM policy violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1686,9 +1686,9 @@ automation settings when correcting storage and VM policy violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting affinity rule violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,9 +1696,9 @@ automation settings when correcting affinity rule violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting disk space imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1706,8 +1706,8 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
-{{% /md %}}</dd>
+    <dd>The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1715,9 +1715,9 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when generating recommendations for datastore evacuation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,15 +1725,15 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1742,11 +1742,11 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,10 +1754,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the datastore cluster in. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1765,8 +1765,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the datastore cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the datastore cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,8 +1774,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore cluster.
-{{% /md %}}</dd>
+    <dd>The name of the datastore cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,8 +1783,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Advanced configuration options for storage DRS.
-{{% /md %}}</dd>
+    <dd>Advanced configuration options for storage DRS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1792,9 +1792,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The global automation level for all
+    <dd>The global automation level for all
 virtual machines in this datastore cluster. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1802,9 +1802,9 @@ virtual machines in this datastore cluster. Default: `manual`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, all disks in a
+    <dd>When `true`, all disks in a
 single virtual machine will be kept on the same datastore. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,9 +1812,9 @@ single virtual machine will be kept on the same datastore. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Storage DRS for this datastore cluster.
+    <dd>Enable Storage DRS for this datastore cluster.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,11 +1822,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use.
+    <dd>The free space threshold to use.
 When set to `utilization`, `drs_space_utilization_threshold` is used, and
 when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
 `utilization`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1834,9 +1834,9 @@ when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
+    <dd>The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
 freeSpace, drs_free_space_threshold is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,10 +1844,10 @@ freeSpace, drs_free_space_threshold is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of difference between space utilization in datastores before storage
 DRS makes decisions to balance the space. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,9 +1855,9 @@ DRS makes decisions to balance the space. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting I/O load imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,10 +1865,10 @@ automation settings when correcting I/O load imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The I/O latency threshold, in
+    <dd>The I/O latency threshold, in
 milliseconds, that storage DRS uses to make recommendations to move disks
 from this datastore. Default: `15` seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1876,9 +1876,9 @@ from this datastore. Default: `15` seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable I/O load balancing for
+    <dd>Enable I/O load balancing for
 this datastore cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1886,10 +1886,10 @@ this datastore cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The difference between load
+    <dd>The difference between load
 in datastores in the cluster before storage DRS makes recommendations to
 balance the load. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1897,13 +1897,13 @@ balance the load. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of reservable
+    <dd>The threshold of reservable
 IOPS of all virtual machines on the datastore before storage DRS makes
 recommendations to move VMs off of a datastore. Note that this setting should
 only be set if `sdrs_io_reservable_percent_threshold` cannot make an accurate
 estimate of the capacity of the datastores in your cluster, and should be set
 to roughly 50-60% of the worst case peak performance of the backing LUNs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,11 +1911,11 @@ to roughly 50-60% of the worst case peak performance of the backing LUNs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of actual estimated performance of the datastore (in IOPS) that
 storage DRS uses to make recommendations to move VMs off of a datastore when
 the total reservable IOPS exceeds the threshold. Default: `60` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1923,11 +1923,11 @@ the total reservable IOPS exceeds the threshold. Default: `60` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reservable IOPS
+    <dd>The reservable IOPS
 threshold setting to use, `sdrs_io_reservable_percent_threshold` in the event
 of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
 `manual`. Default: `automatic`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1935,9 +1935,9 @@ of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The storage DRS poll interval, in
+    <dd>The storage DRS poll interval, in
 minutes. Default: `480` minutes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1945,9 +1945,9 @@ minutes. Default: `480` minutes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting storage and VM policy violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1955,9 +1955,9 @@ automation settings when correcting storage and VM policy violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting affinity rule violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1965,9 +1965,9 @@ automation settings when correcting affinity rule violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting disk space imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1975,8 +1975,8 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
-{{% /md %}}</dd>
+    <dd>The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1984,9 +1984,9 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when generating recommendations for datastore evacuation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,15 +1994,15 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2011,11 +2011,11 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2023,10 +2023,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the datastore cluster in. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2034,8 +2034,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the datastore cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the datastore cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2043,8 +2043,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore cluster.
-{{% /md %}}</dd>
+    <dd>The name of the datastore cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2052,8 +2052,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Advanced configuration options for storage DRS.
-{{% /md %}}</dd>
+    <dd>Advanced configuration options for storage DRS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2061,9 +2061,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The global automation level for all
+    <dd>The global automation level for all
 virtual machines in this datastore cluster. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2071,9 +2071,9 @@ virtual machines in this datastore cluster. Default: `manual`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, all disks in a
+    <dd>When `true`, all disks in a
 single virtual machine will be kept on the same datastore. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2081,9 +2081,9 @@ single virtual machine will be kept on the same datastore. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable Storage DRS for this datastore cluster.
+    <dd>Enable Storage DRS for this datastore cluster.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2091,11 +2091,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use.
+    <dd>The free space threshold to use.
 When set to `utilization`, `drs_space_utilization_threshold` is used, and
 when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
 `utilization`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2103,9 +2103,9 @@ when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
+    <dd>The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
 freeSpace, drs_free_space_threshold is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2113,10 +2113,10 @@ freeSpace, drs_free_space_threshold is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of difference between space utilization in datastores before storage
 DRS makes decisions to balance the space. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2124,9 +2124,9 @@ DRS makes decisions to balance the space. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting I/O load imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2134,10 +2134,10 @@ automation settings when correcting I/O load imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The I/O latency threshold, in
+    <dd>The I/O latency threshold, in
 milliseconds, that storage DRS uses to make recommendations to move disks
 from this datastore. Default: `15` seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,9 +2145,9 @@ from this datastore. Default: `15` seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable I/O load balancing for
+    <dd>Enable I/O load balancing for
 this datastore cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2155,10 +2155,10 @@ this datastore cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The difference between load
+    <dd>The difference between load
 in datastores in the cluster before storage DRS makes recommendations to
 balance the load. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2166,13 +2166,13 @@ balance the load. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of reservable
+    <dd>The threshold of reservable
 IOPS of all virtual machines on the datastore before storage DRS makes
 recommendations to move VMs off of a datastore. Note that this setting should
 only be set if `sdrs_io_reservable_percent_threshold` cannot make an accurate
 estimate of the capacity of the datastores in your cluster, and should be set
 to roughly 50-60% of the worst case peak performance of the backing LUNs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2180,11 +2180,11 @@ to roughly 50-60% of the worst case peak performance of the backing LUNs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of actual estimated performance of the datastore (in IOPS) that
 storage DRS uses to make recommendations to move VMs off of a datastore when
 the total reservable IOPS exceeds the threshold. Default: `60` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2192,11 +2192,11 @@ the total reservable IOPS exceeds the threshold. Default: `60` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reservable IOPS
+    <dd>The reservable IOPS
 threshold setting to use, `sdrs_io_reservable_percent_threshold` in the event
 of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
 `manual`. Default: `automatic`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2204,9 +2204,9 @@ of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The storage DRS poll interval, in
+    <dd>The storage DRS poll interval, in
 minutes. Default: `480` minutes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2214,9 +2214,9 @@ minutes. Default: `480` minutes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting storage and VM policy violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2224,9 +2224,9 @@ automation settings when correcting storage and VM policy violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting affinity rule violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2234,9 +2234,9 @@ automation settings when correcting affinity rule violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting disk space imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2244,8 +2244,8 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
-{{% /md %}}</dd>
+    <dd>The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2253,9 +2253,9 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when generating recommendations for datastore evacuation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2263,15 +2263,15 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2280,11 +2280,11 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2292,10 +2292,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the datastore cluster in. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2303,8 +2303,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the datastore cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the datastore cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2312,8 +2312,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore cluster.
-{{% /md %}}</dd>
+    <dd>The name of the datastore cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2321,8 +2321,8 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Advanced configuration options for storage DRS.
-{{% /md %}}</dd>
+    <dd>Advanced configuration options for storage DRS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2330,9 +2330,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The global automation level for all
+    <dd>The global automation level for all
 virtual machines in this datastore cluster. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2340,9 +2340,9 @@ virtual machines in this datastore cluster. Default: `manual`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, all disks in a
+    <dd>When `true`, all disks in a
 single virtual machine will be kept on the same datastore. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2350,9 +2350,9 @@ single virtual machine will be kept on the same datastore. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Storage DRS for this datastore cluster.
+    <dd>Enable Storage DRS for this datastore cluster.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2360,11 +2360,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use.
+    <dd>The free space threshold to use.
 When set to `utilization`, `drs_space_utilization_threshold` is used, and
 when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
 `utilization`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2372,9 +2372,9 @@ when set to `freeSpace`, `drs_free_space_threshold` is used. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
+    <dd>The free space threshold to use. When set to utilization, drs_space_utilization_threshold is used, and when set to
 freeSpace, drs_free_space_threshold is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2382,10 +2382,10 @@ freeSpace, drs_free_space_threshold is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of difference between space utilization in datastores before storage
 DRS makes decisions to balance the space. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2393,9 +2393,9 @@ DRS makes decisions to balance the space. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting I/O load imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2403,10 +2403,10 @@ automation settings when correcting I/O load imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The I/O latency threshold, in
+    <dd>The I/O latency threshold, in
 milliseconds, that storage DRS uses to make recommendations to move disks
 from this datastore. Default: `15` seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2414,9 +2414,9 @@ from this datastore. Default: `15` seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable I/O load balancing for
+    <dd>Enable I/O load balancing for
 this datastore cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2424,10 +2424,10 @@ this datastore cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The difference between load
+    <dd>The difference between load
 in datastores in the cluster before storage DRS makes recommendations to
 balance the load. Default: `5` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2435,13 +2435,13 @@ balance the load. Default: `5` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of reservable
+    <dd>The threshold of reservable
 IOPS of all virtual machines on the datastore before storage DRS makes
 recommendations to move VMs off of a datastore. Note that this setting should
 only be set if `sdrs_io_reservable_percent_threshold` cannot make an accurate
 estimate of the capacity of the datastores in your cluster, and should be set
 to roughly 50-60% of the worst case peak performance of the backing LUNs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2449,11 +2449,11 @@ to roughly 50-60% of the worst case peak performance of the backing LUNs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in
+    <dd>The threshold, in
 percent, of actual estimated performance of the datastore (in IOPS) that
 storage DRS uses to make recommendations to move VMs off of a datastore when
 the total reservable IOPS exceeds the threshold. Default: `60` percent.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2461,11 +2461,11 @@ the total reservable IOPS exceeds the threshold. Default: `60` percent.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The reservable IOPS
+    <dd>The reservable IOPS
 threshold setting to use, `sdrs_io_reservable_percent_threshold` in the event
 of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
 `manual`. Default: `automatic`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2473,9 +2473,9 @@ of `automatic`, or `sdrs_io_reservable_iops_threshold` in the event of
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The storage DRS poll interval, in
+    <dd>The storage DRS poll interval, in
 minutes. Default: `480` minutes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2483,9 +2483,9 @@ minutes. Default: `480` minutes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting storage and VM policy violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2493,9 +2493,9 @@ automation settings when correcting storage and VM policy violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting affinity rule violations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2503,9 +2503,9 @@ automation settings when correcting affinity rule violations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when correcting disk space imbalances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2513,8 +2513,8 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
-{{% /md %}}</dd>
+    <dd>The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2522,9 +2522,9 @@ automation settings when correcting disk space imbalances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides the default
+    <dd>Overrides the default
 automation settings when generating recommendations for datastore evacuation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2532,12 +2532,12 @@ automation settings when generating recommendations for datastore evacuation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

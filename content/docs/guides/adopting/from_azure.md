@@ -23,9 +23,9 @@ For instance, let's say your infrastructure team has provisioned your Azure stor
 
 Instead, you can look up that ARM deployment by name and use one of its output values. The following example reads a deployment by its fully qualified ID and then uses the exported `storageAccountName` value to upload a private zipfile to blob storage, containing a `wwwroot/` directory locally:
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 let azure = require("@pulumi/azure");
@@ -52,8 +52,8 @@ module.exports = {
 };
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as azure from "@pulumi/azure";
@@ -78,8 +78,8 @@ const blob = new azure.storage.ZipBlob("myBlob", {
 export const blobUrl = blob.url;
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi
@@ -104,8 +104,8 @@ blob = azure.storage.ZipBlob('myBlob',
 pulumi.export('blob_url', blob.url)
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 package main
@@ -151,8 +151,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Collections.Generic;
@@ -194,9 +194,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 All we need to do is run `pulumi up` and the Pulumi runtime will know how to query the ARM deployment to retrieve its output values. In this case, the deployment and all of its resources are treated entirely as read-only, and Pulumi will never attempt to modify any of them.
 
@@ -219,9 +219,9 @@ The Pulumi Azure package [provides an ARM TemplateDeployment]({{< relref "/docs/
 
 For instance, this code deploys a simple ARM template using the given parameters, and exports the resulting Storage Account name:
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 let pulumi = require("@pulumi/pulumi");
@@ -285,8 +285,8 @@ module.exports = {
 };
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
@@ -348,8 +348,8 @@ const deployment = new azure.core.TemplateDeployment("myStorageDeployment", {
 export const storageAccountName = deployment.outputs["storageAccountName"];
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi
@@ -411,8 +411,8 @@ deployment = azure.core.TemplateDeployment('myStorageDeployment',
 pulumi.export('storage_account_name', deployment.outputs["storageAccountName"])
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 package main
@@ -490,8 +490,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Collections.Generic;
@@ -567,9 +567,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 > We could have just as well read the template off disk, instead of putting it right in the source code.
 
@@ -608,9 +608,9 @@ Our example below will result in a Pulumi program that creates a Storage Account
 
 To adopt the ARM resources under Pulumi's control, we will rewrite the ARM template in code, and use `import` IDs. For this example, recall that our Storage Account name was `"e9ejbnipspvecstorage"`. Also, in this example, there is just one resource, so we can simply delete the ARM template and deployment in its entirety and replace it with a Pulumi definition of the Storage Account. In cases where multiple resources exist, you can delete them one by one, until the ARM deployment is eventually empty.
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 let azure = require("@pulumi/azure");
@@ -629,8 +629,8 @@ module.exports = {
 };
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
@@ -648,8 +648,8 @@ const storageAccount = new azure.storage.Account("myStorageAccount", {
 export const storageAccountName = storageAccount.name;
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi
@@ -668,8 +668,8 @@ storage_account = azure.storage.Account('myStorageAccount'
 pulumi.export('storage_account_name', storage_account.name)
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 package main
@@ -706,8 +706,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Collections.Generic;
@@ -746,9 +746,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 > Notice here that we've used the fully qualified resource ID for the import, `"/subscriptions/0292631f-7a9b-4142-90b2-96badd5eafa8/resourceGroups/myrg8fd69ec2/providers/Microsoft.Storage/storageAccounts/e9ejbnipspvecstorage"`. If you're having trouble locating this, please consult the Azure CLI or console.
 

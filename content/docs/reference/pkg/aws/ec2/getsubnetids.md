@@ -21,29 +21,29 @@ This resource can be useful for getting back a set of subnet ids for a vpc.
 
 ## Using GetSubnetIds {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSubnetIds<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetSubnetIdsArgs">GetSubnetIdsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetSubnetIdsResult">GetSubnetIdsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_subnet_ids(</span>filters=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSubnetIds<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupSubnetIdsArgs">LookupSubnetIdsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupSubnetIdsResult">LookupSubnetIdsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSubnetIds </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetSubnetIdsResult.html">GetSubnetIdsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetSubnetIdsArgs.html">GetSubnetIdsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -51,7 +51,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -60,8 +60,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC ID that you want to filter from.
-{{% /md %}}</dd>
+    <dd>The VPC ID that you want to filter from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -69,8 +69,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsubnetidsfilter">List&lt;Get<wbr>Subnet<wbr>Ids<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -78,15 +78,15 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired subnets.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -95,8 +95,8 @@ a pair on the desired subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC ID that you want to filter from.
-{{% /md %}}</dd>
+    <dd>The VPC ID that you want to filter from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -104,8 +104,8 @@ a pair on the desired subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsubnetidsfilter">[]Get<wbr>Subnet<wbr>Ids<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -113,15 +113,15 @@ a pair on the desired subnets.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired subnets.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -130,8 +130,8 @@ a pair on the desired subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC ID that you want to filter from.
-{{% /md %}}</dd>
+    <dd>The VPC ID that you want to filter from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -139,8 +139,8 @@ a pair on the desired subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsubnetidsfilter">Get<wbr>Subnet<wbr>Ids<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -148,15 +148,15 @@ a pair on the desired subnets.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired subnets.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -165,8 +165,8 @@ a pair on the desired subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VPC ID that you want to filter from.
-{{% /md %}}</dd>
+    <dd>The VPC ID that you want to filter from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -174,8 +174,8 @@ a pair on the desired subnets.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsubnetidsfilter">List[Get<wbr>Subnet<wbr>Ids<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -183,12 +183,12 @@ a pair on the desired subnets.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired subnets.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -204,7 +204,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -213,8 +213,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -222,8 +222,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of all the subnet ids found. This data source will fail if none are found.
-{{% /md %}}</dd>
+    <dd>A set of all the subnet ids found. This data source will fail if none are found.
+</dd>
 
     <dt class="property-"
             title="">
@@ -231,7 +231,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -239,7 +239,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -247,13 +247,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsubnetidsfilter">List&lt;Get<wbr>Subnet<wbr>Ids<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -262,8 +262,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -271,8 +271,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A set of all the subnet ids found. This data source will fail if none are found.
-{{% /md %}}</dd>
+    <dd>A set of all the subnet ids found. This data source will fail if none are found.
+</dd>
 
     <dt class="property-"
             title="">
@@ -280,7 +280,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -288,7 +288,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -296,13 +296,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsubnetidsfilter">[]Get<wbr>Subnet<wbr>Ids<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -311,8 +311,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -320,8 +320,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of all the subnet ids found. This data source will fail if none are found.
-{{% /md %}}</dd>
+    <dd>A set of all the subnet ids found. This data source will fail if none are found.
+</dd>
 
     <dt class="property-"
             title="">
@@ -329,7 +329,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -337,7 +337,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -345,13 +345,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsubnetidsfilter">Get<wbr>Subnet<wbr>Ids<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -360,8 +360,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -369,8 +369,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A set of all the subnet ids found. This data source will fail if none are found.
-{{% /md %}}</dd>
+    <dd>A set of all the subnet ids found. This data source will fail if none are found.
+</dd>
 
     <dt class="property-"
             title="">
@@ -378,7 +378,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -386,7 +386,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -394,10 +394,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsubnetidsfilter">List[Get<wbr>Subnet<wbr>Ids<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -410,18 +410,18 @@ The following output properties are available:
 
 
 <h4 id="getsubnetidsfilter">Get<wbr>Subnet<wbr>Ids<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetSubnetIdsFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetSubnetIdsFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetSubnetIdsFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetSubnetIdsFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -430,10 +430,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html).
 For example, if matching against tag `Name`, use:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -441,15 +441,15 @@ For example, if matching against tag `Name`, use:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 Subnet IDs will be selected if any one of the given values match.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -458,10 +458,10 @@ Subnet IDs will be selected if any one of the given values match.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html).
 For example, if matching against tag `Name`, use:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -469,15 +469,15 @@ For example, if matching against tag `Name`, use:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 Subnet IDs will be selected if any one of the given values match.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -486,10 +486,10 @@ Subnet IDs will be selected if any one of the given values match.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html).
 For example, if matching against tag `Name`, use:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -497,15 +497,15 @@ For example, if matching against tag `Name`, use:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 Subnet IDs will be selected if any one of the given values match.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -514,10 +514,10 @@ Subnet IDs will be selected if any one of the given values match.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html).
 For example, if matching against tag `Name`, use:
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -525,12 +525,12 @@ For example, if matching against tag `Name`, use:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 Subnet IDs will be selected if any one of the given values match.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -32,26 +32,26 @@ const router1 = new openstack.networking.Router("router_1", {
 
 
 ## Create a Router Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#Router">Router</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#RouterArgs">RouterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Router</span><span class="p">(resource_name, opts=None, </span>admin_state_up=None<span class="p">, </span>availability_zone_hints=None<span class="p">, </span>description=None<span class="p">, </span>distributed=None<span class="p">, </span>enable_snat=None<span class="p">, </span>external_fixed_ips=None<span class="p">, </span>external_gateway=None<span class="p">, </span>external_network_id=None<span class="p">, </span>name=None<span class="p">, </span>region=None<span class="p">, </span>tags=None<span class="p">, </span>tenant_id=None<span class="p">, </span>value_specs=None<span class="p">, </span>vendor_options=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRouter<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#RouterArgs">RouterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#Router">Router</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.Router.html">Router</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Networking.RouterArgs.html">RouterArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -88,9 +88,9 @@ const router1 = new openstack.networking.Router("router_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -108,9 +108,9 @@ const router1 = new openstack.networking.Router("router_1", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -157,9 +157,9 @@ const router1 = new openstack.networking.Router("router_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -196,7 +196,7 @@ const router1 = new openstack.networking.Router("router_1", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Router Resource Properties {#properties}
 
@@ -209,7 +209,7 @@ The Router resource accepts the following [input]({{< relref "/docs/intro/concep
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -218,10 +218,10 @@ The Router resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the router
+    <dd>Administrative up/down status for the router
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -229,10 +229,10 @@ The Router resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An availability zone is used to make 
+    <dd>An availability zone is used to make 
 network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing
 this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the router.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,10 +249,10 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not to create a
+    <dd>Indicates whether or not to create a
 distributed router. The default policy setting in Neutron restricts
 usage of this property to administrative users only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,12 +260,12 @@ usage of this property to administrative users only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Source NAT for the router. Valid values are
+    <dd>Enable Source NAT for the router. Valid values are
 "true" or "false". An `external_network_id` has to be set in order to
 set this property. Changing this updates the `enable_snat` of the router.
 Setting this value **requires** an **ext-gw-mode** extension to be enabled
 in OpenStack Neutron.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,11 +273,11 @@ in OpenStack Neutron.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routerexternalfixedip">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Router<wbr>External<wbr>Fixed<wbr>Ip<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An external fixed IP for the router. This
+    <dd>An external fixed IP for the router. This
 can be repeated. The structure is described below. An `external_network_id`
 has to be set in order to set this property. Changing this updates the
 external fixed IPs of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -285,12 +285,12 @@ external fixed IPs of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 network UUID of an external gateway for the router. A router with an
 external gateway is required if any compute instances or load balancers
 will be using floating IPs. Changing this updates the external gateway
 of an existing router.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use external_network_id instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use external_network_id instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,11 +298,11 @@ of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network UUID of an external gateway
+    <dd>The network UUID of an external gateway
 for the router. A router with an external gateway is required if any
 compute instances or load balancers will be using floating IPs. Changing
 this updates the external gateway of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,9 +310,9 @@ this updates the external gateway of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the router. Changing this
+    <dd>A unique name for the router. Changing this
 updates the `name` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,11 +320,11 @@ updates the `name` of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a router. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the router.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,9 +341,9 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the floating IP. Required if admin wants
+    <dd>The owner of the floating IP. Required if admin wants
 to create a router for another tenant. Changing this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,8 +351,8 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional driver-specific options.
-{{% /md %}}</dd>
+    <dd>Map of additional driver-specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,15 +360,15 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routervendoroptions">Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Router<wbr>Vendor<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Map of additional vendor-specific options.
+    <dd>Map of additional vendor-specific options.
 Supported options are described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -377,10 +377,10 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the router
+    <dd>Administrative up/down status for the router
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,10 +388,10 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An availability zone is used to make 
+    <dd>An availability zone is used to make 
 network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing
 this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the router.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,10 +408,10 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not to create a
+    <dd>Indicates whether or not to create a
 distributed router. The default policy setting in Neutron restricts
 usage of this property to administrative users only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,12 +419,12 @@ usage of this property to administrative users only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Source NAT for the router. Valid values are
+    <dd>Enable Source NAT for the router. Valid values are
 "true" or "false". An `external_network_id` has to be set in order to
 set this property. Changing this updates the `enable_snat` of the router.
 Setting this value **requires** an **ext-gw-mode** extension to be enabled
 in OpenStack Neutron.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,11 +432,11 @@ in OpenStack Neutron.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routerexternalfixedip">[]Router<wbr>External<wbr>Fixed<wbr>Ip</a></span>
     </dt>
-    <dd>{{% md %}}An external fixed IP for the router. This
+    <dd>An external fixed IP for the router. This
 can be repeated. The structure is described below. An `external_network_id`
 has to be set in order to set this property. Changing this updates the
 external fixed IPs of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -444,12 +444,12 @@ external fixed IPs of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 network UUID of an external gateway for the router. A router with an
 external gateway is required if any compute instances or load balancers
 will be using floating IPs. Changing this updates the external gateway
 of an existing router.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use external_network_id instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use external_network_id instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,11 +457,11 @@ of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network UUID of an external gateway
+    <dd>The network UUID of an external gateway
 for the router. A router with an external gateway is required if any
 compute instances or load balancers will be using floating IPs. Changing
 this updates the external gateway of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,9 +469,9 @@ this updates the external gateway of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the router. Changing this
+    <dd>A unique name for the router. Changing this
 updates the `name` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,11 +479,11 @@ updates the `name` of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a router. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,8 +491,8 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the router.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,9 +500,9 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the floating IP. Required if admin wants
+    <dd>The owner of the floating IP. Required if admin wants
 to create a router for another tenant. Changing this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,8 +510,8 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional driver-specific options.
-{{% /md %}}</dd>
+    <dd>Map of additional driver-specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,15 +519,15 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routervendoroptions">Router<wbr>Vendor<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Map of additional vendor-specific options.
+    <dd>Map of additional vendor-specific options.
 Supported options are described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -536,10 +536,10 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the router
+    <dd>Administrative up/down status for the router
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,10 +547,10 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An availability zone is used to make 
+    <dd>An availability zone is used to make 
 network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing
 this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -558,8 +558,8 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the router.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -567,10 +567,10 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not to create a
+    <dd>Indicates whether or not to create a
 distributed router. The default policy setting in Neutron restricts
 usage of this property to administrative users only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -578,12 +578,12 @@ usage of this property to administrative users only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable Source NAT for the router. Valid values are
+    <dd>Enable Source NAT for the router. Valid values are
 "true" or "false". An `external_network_id` has to be set in order to
 set this property. Changing this updates the `enable_snat` of the router.
 Setting this value **requires** an **ext-gw-mode** extension to be enabled
 in OpenStack Neutron.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -591,11 +591,11 @@ in OpenStack Neutron.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routerexternalfixedip">Router<wbr>External<wbr>Fixed<wbr>Ip[]</a></span>
     </dt>
-    <dd>{{% md %}}An external fixed IP for the router. This
+    <dd>An external fixed IP for the router. This
 can be repeated. The structure is described below. An `external_network_id`
 has to be set in order to set this property. Changing this updates the
 external fixed IPs of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -603,12 +603,12 @@ external fixed IPs of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 network UUID of an external gateway for the router. A router with an
 external gateway is required if any compute instances or load balancers
 will be using floating IPs. Changing this updates the external gateway
 of an existing router.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use external_network_id instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use external_network_id instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,11 +616,11 @@ of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network UUID of an external gateway
+    <dd>The network UUID of an external gateway
 for the router. A router with an external gateway is required if any
 compute instances or load balancers will be using floating IPs. Changing
 this updates the external gateway of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,9 +628,9 @@ this updates the external gateway of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the router. Changing this
+    <dd>A unique name for the router. Changing this
 updates the `name` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,11 +638,11 @@ updates the `name` of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a router. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the router.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,9 +659,9 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the floating IP. Required if admin wants
+    <dd>The owner of the floating IP. Required if admin wants
 to create a router for another tenant. Changing this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,8 +669,8 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional driver-specific options.
-{{% /md %}}</dd>
+    <dd>Map of additional driver-specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -678,15 +678,15 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routervendoroptions">Router<wbr>Vendor<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Map of additional vendor-specific options.
+    <dd>Map of additional vendor-specific options.
 Supported options are described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -695,10 +695,10 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the router
+    <dd>Administrative up/down status for the router
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -706,10 +706,10 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An availability zone is used to make 
+    <dd>An availability zone is used to make 
 network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing
 this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -717,8 +717,8 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the router.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -726,10 +726,10 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not to create a
+    <dd>Indicates whether or not to create a
 distributed router. The default policy setting in Neutron restricts
 usage of this property to administrative users only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -737,12 +737,12 @@ usage of this property to administrative users only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Source NAT for the router. Valid values are
+    <dd>Enable Source NAT for the router. Valid values are
 "true" or "false". An `external_network_id` has to be set in order to
 set this property. Changing this updates the `enable_snat` of the router.
 Setting this value **requires** an **ext-gw-mode** extension to be enabled
 in OpenStack Neutron.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -750,11 +750,11 @@ in OpenStack Neutron.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routerexternalfixedip">List[Router<wbr>External<wbr>Fixed<wbr>Ip]</a></span>
     </dt>
-    <dd>{{% md %}}An external fixed IP for the router. This
+    <dd>An external fixed IP for the router. This
 can be repeated. The structure is described below. An `external_network_id`
 has to be set in order to set this property. Changing this updates the
 external fixed IPs of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -762,12 +762,12 @@ external fixed IPs of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 network UUID of an external gateway for the router. A router with an
 external gateway is required if any compute instances or load balancers
 will be using floating IPs. Changing this updates the external gateway
 of an existing router.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use external_network_id instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use external_network_id instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -775,11 +775,11 @@ of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network UUID of an external gateway
+    <dd>The network UUID of an external gateway
 for the router. A router with an external gateway is required if any
 compute instances or load balancers will be using floating IPs. Changing
 this updates the external gateway of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,9 +787,9 @@ this updates the external gateway of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the router. Changing this
+    <dd>A unique name for the router. Changing this
 updates the `name` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -797,11 +797,11 @@ updates the `name` of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a router. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,8 +809,8 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the router.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,9 +818,9 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the floating IP. Required if admin wants
+    <dd>The owner of the floating IP. Required if admin wants
 to create a router for another tenant. Changing this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,8 +828,8 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional driver-specific options.
-{{% /md %}}</dd>
+    <dd>Map of additional driver-specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,12 +837,12 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routervendoroptions">Dict[Router<wbr>Vendor<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Map of additional vendor-specific options.
+    <dd>Map of additional vendor-specific options.
 Supported options are described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -856,7 +856,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -865,9 +865,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the router, which have been
+    <dd>The collection of tags assigned on the router, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -875,13 +875,13 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -890,9 +890,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the router, which have been
+    <dd>The collection of tags assigned on the router, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -900,13 +900,13 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -915,9 +915,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the router, which have been
+    <dd>The collection of tags assigned on the router, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -925,13 +925,13 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -940,9 +940,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the router, which have been
+    <dd>The collection of tags assigned on the router, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -950,10 +950,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -964,25 +964,25 @@ explicitly and implicitly added.
 ## Look up an Existing Router Resource {#look-up}
 
 Get an existing Router resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#RouterState">RouterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#Router">Router</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>admin_state_up=None<span class="p">, </span>all_tags=None<span class="p">, </span>availability_zone_hints=None<span class="p">, </span>description=None<span class="p">, </span>distributed=None<span class="p">, </span>enable_snat=None<span class="p">, </span>external_fixed_ips=None<span class="p">, </span>external_gateway=None<span class="p">, </span>external_network_id=None<span class="p">, </span>name=None<span class="p">, </span>region=None<span class="p">, </span>tags=None<span class="p">, </span>tenant_id=None<span class="p">, </span>value_specs=None<span class="p">, </span>vendor_options=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRouter<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#RouterState">RouterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#Router">Router</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.Router.html">Router</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.RouterState.html">RouterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1007,9 +1007,9 @@ Get an existing Router resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1022,36 +1022,9 @@ Get an existing Router resource's state with the given name, ID, and optional ex
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1076,13 +1049,40 @@ Get an existing Router resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1091,10 +1091,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the router
+    <dd>Administrative up/down status for the router
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,9 +1102,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the router, which have been
+    <dd>The collection of tags assigned on the router, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,10 +1112,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An availability zone is used to make 
+    <dd>An availability zone is used to make 
 network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing
 this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,8 +1123,8 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the router.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1132,10 +1132,10 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not to create a
+    <dd>Indicates whether or not to create a
 distributed router. The default policy setting in Neutron restricts
 usage of this property to administrative users only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,12 +1143,12 @@ usage of this property to administrative users only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Source NAT for the router. Valid values are
+    <dd>Enable Source NAT for the router. Valid values are
 "true" or "false". An `external_network_id` has to be set in order to
 set this property. Changing this updates the `enable_snat` of the router.
 Setting this value **requires** an **ext-gw-mode** extension to be enabled
 in OpenStack Neutron.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,11 +1156,11 @@ in OpenStack Neutron.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routerexternalfixedip">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Router<wbr>External<wbr>Fixed<wbr>Ip<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An external fixed IP for the router. This
+    <dd>An external fixed IP for the router. This
 can be repeated. The structure is described below. An `external_network_id`
 has to be set in order to set this property. Changing this updates the
 external fixed IPs of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1168,12 +1168,12 @@ external fixed IPs of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 network UUID of an external gateway for the router. A router with an
 external gateway is required if any compute instances or load balancers
 will be using floating IPs. Changing this updates the external gateway
 of an existing router.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use external_network_id instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use external_network_id instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,11 +1181,11 @@ of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network UUID of an external gateway
+    <dd>The network UUID of an external gateway
 for the router. A router with an external gateway is required if any
 compute instances or load balancers will be using floating IPs. Changing
 this updates the external gateway of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,9 +1193,9 @@ this updates the external gateway of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the router. Changing this
+    <dd>A unique name for the router. Changing this
 updates the `name` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,11 +1203,11 @@ updates the `name` of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a router. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,8 +1215,8 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the router.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,9 +1224,9 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the floating IP. Required if admin wants
+    <dd>The owner of the floating IP. Required if admin wants
 to create a router for another tenant. Changing this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,8 +1234,8 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional driver-specific options.
-{{% /md %}}</dd>
+    <dd>Map of additional driver-specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,15 +1243,15 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routervendoroptions">Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Router<wbr>Vendor<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Map of additional vendor-specific options.
+    <dd>Map of additional vendor-specific options.
 Supported options are described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1260,10 +1260,10 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the router
+    <dd>Administrative up/down status for the router
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1271,9 +1271,9 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the router, which have been
+    <dd>The collection of tags assigned on the router, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,10 +1281,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An availability zone is used to make 
+    <dd>An availability zone is used to make 
 network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing
 this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,8 +1292,8 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the router.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,10 +1301,10 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not to create a
+    <dd>Indicates whether or not to create a
 distributed router. The default policy setting in Neutron restricts
 usage of this property to administrative users only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,12 +1312,12 @@ usage of this property to administrative users only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Source NAT for the router. Valid values are
+    <dd>Enable Source NAT for the router. Valid values are
 "true" or "false". An `external_network_id` has to be set in order to
 set this property. Changing this updates the `enable_snat` of the router.
 Setting this value **requires** an **ext-gw-mode** extension to be enabled
 in OpenStack Neutron.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1325,11 +1325,11 @@ in OpenStack Neutron.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routerexternalfixedip">[]Router<wbr>External<wbr>Fixed<wbr>Ip</a></span>
     </dt>
-    <dd>{{% md %}}An external fixed IP for the router. This
+    <dd>An external fixed IP for the router. This
 can be repeated. The structure is described below. An `external_network_id`
 has to be set in order to set this property. Changing this updates the
 external fixed IPs of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1337,12 +1337,12 @@ external fixed IPs of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 network UUID of an external gateway for the router. A router with an
 external gateway is required if any compute instances or load balancers
 will be using floating IPs. Changing this updates the external gateway
 of an existing router.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use external_network_id instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use external_network_id instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,11 +1350,11 @@ of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network UUID of an external gateway
+    <dd>The network UUID of an external gateway
 for the router. A router with an external gateway is required if any
 compute instances or load balancers will be using floating IPs. Changing
 this updates the external gateway of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1362,9 +1362,9 @@ this updates the external gateway of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the router. Changing this
+    <dd>A unique name for the router. Changing this
 updates the `name` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,11 +1372,11 @@ updates the `name` of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a router. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1384,8 +1384,8 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the router.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,9 +1393,9 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the floating IP. Required if admin wants
+    <dd>The owner of the floating IP. Required if admin wants
 to create a router for another tenant. Changing this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,8 +1403,8 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional driver-specific options.
-{{% /md %}}</dd>
+    <dd>Map of additional driver-specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1412,15 +1412,15 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routervendoroptions">Router<wbr>Vendor<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Map of additional vendor-specific options.
+    <dd>Map of additional vendor-specific options.
 Supported options are described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1429,10 +1429,10 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the router
+    <dd>Administrative up/down status for the router
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1440,9 +1440,9 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the router, which have been
+    <dd>The collection of tags assigned on the router, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,10 +1450,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An availability zone is used to make 
+    <dd>An availability zone is used to make 
 network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing
 this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,8 +1461,8 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the router.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1470,10 +1470,10 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not to create a
+    <dd>Indicates whether or not to create a
 distributed router. The default policy setting in Neutron restricts
 usage of this property to administrative users only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1481,12 +1481,12 @@ usage of this property to administrative users only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable Source NAT for the router. Valid values are
+    <dd>Enable Source NAT for the router. Valid values are
 "true" or "false". An `external_network_id` has to be set in order to
 set this property. Changing this updates the `enable_snat` of the router.
 Setting this value **requires** an **ext-gw-mode** extension to be enabled
 in OpenStack Neutron.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,11 +1494,11 @@ in OpenStack Neutron.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routerexternalfixedip">Router<wbr>External<wbr>Fixed<wbr>Ip[]</a></span>
     </dt>
-    <dd>{{% md %}}An external fixed IP for the router. This
+    <dd>An external fixed IP for the router. This
 can be repeated. The structure is described below. An `external_network_id`
 has to be set in order to set this property. Changing this updates the
 external fixed IPs of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1506,12 +1506,12 @@ external fixed IPs of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 network UUID of an external gateway for the router. A router with an
 external gateway is required if any compute instances or load balancers
 will be using floating IPs. Changing this updates the external gateway
 of an existing router.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use external_network_id instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use external_network_id instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,11 +1519,11 @@ of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network UUID of an external gateway
+    <dd>The network UUID of an external gateway
 for the router. A router with an external gateway is required if any
 compute instances or load balancers will be using floating IPs. Changing
 this updates the external gateway of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,9 +1531,9 @@ this updates the external gateway of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the router. Changing this
+    <dd>A unique name for the router. Changing this
 updates the `name` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,11 +1541,11 @@ updates the `name` of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a router. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1553,8 +1553,8 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the router.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,9 +1562,9 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the floating IP. Required if admin wants
+    <dd>The owner of the floating IP. Required if admin wants
 to create a router for another tenant. Changing this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1572,8 +1572,8 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional driver-specific options.
-{{% /md %}}</dd>
+    <dd>Map of additional driver-specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1581,15 +1581,15 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routervendoroptions">Router<wbr>Vendor<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Map of additional vendor-specific options.
+    <dd>Map of additional vendor-specific options.
 Supported options are described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1598,10 +1598,10 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the router
+    <dd>Administrative up/down status for the router
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1609,9 +1609,9 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the router, which have been
+    <dd>The collection of tags assigned on the router, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,10 +1619,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An availability zone is used to make 
+    <dd>An availability zone is used to make 
 network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing
 this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1630,8 +1630,8 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the router.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1639,10 +1639,10 @@ this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not to create a
+    <dd>Indicates whether or not to create a
 distributed router. The default policy setting in Neutron restricts
 usage of this property to administrative users only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1650,12 +1650,12 @@ usage of this property to administrative users only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable Source NAT for the router. Valid values are
+    <dd>Enable Source NAT for the router. Valid values are
 "true" or "false". An `external_network_id` has to be set in order to
 set this property. Changing this updates the `enable_snat` of the router.
 Setting this value **requires** an **ext-gw-mode** extension to be enabled
 in OpenStack Neutron.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1663,11 +1663,11 @@ in OpenStack Neutron.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routerexternalfixedip">List[Router<wbr>External<wbr>Fixed<wbr>Ip]</a></span>
     </dt>
-    <dd>{{% md %}}An external fixed IP for the router. This
+    <dd>An external fixed IP for the router. This
 can be repeated. The structure is described below. An `external_network_id`
 has to be set in order to set this property. Changing this updates the
 external fixed IPs of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1675,12 +1675,12 @@ external fixed IPs of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 network UUID of an external gateway for the router. A router with an
 external gateway is required if any compute instances or load balancers
 will be using floating IPs. Changing this updates the external gateway
 of an existing router.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use external_network_id instead{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use external_network_id instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1688,11 +1688,11 @@ of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network UUID of an external gateway
+    <dd>The network UUID of an external gateway
 for the router. A router with an external gateway is required if any
 compute instances or load balancers will be using floating IPs. Changing
 this updates the external gateway of the router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,9 +1700,9 @@ this updates the external gateway of the router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the router. Changing this
+    <dd>A unique name for the router. Changing this
 updates the `name` of an existing router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1710,11 +1710,11 @@ updates the `name` of an existing router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a router. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1722,8 +1722,8 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the router.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1731,9 +1731,9 @@ router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the floating IP. Required if admin wants
+    <dd>The owner of the floating IP. Required if admin wants
 to create a router for another tenant. Changing this creates a new router.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1741,8 +1741,8 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional driver-specific options.
-{{% /md %}}</dd>
+    <dd>Map of additional driver-specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,12 +1750,12 @@ to create a router for another tenant. Changing this creates a new router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routervendoroptions">Dict[Router<wbr>Vendor<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Map of additional vendor-specific options.
+    <dd>Map of additional vendor-specific options.
 Supported options are described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1770,18 +1770,18 @@ Supported options are described below.
 
 
 <h4 id="routerexternalfixedip">Router<wbr>External<wbr>Fixed<wbr>Ip</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#RouterExternalFixedIp">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#RouterExternalFixedIp">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#RouterExternalFixedIpArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#RouterExternalFixedIpOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1790,8 +1790,8 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address to set on the router.
-{{% /md %}}</dd>
+    <dd>The IP address to set on the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,14 +1799,14 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet in which the fixed IP belongs to.
-{{% /md %}}</dd>
+    <dd>Subnet in which the fixed IP belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1815,8 +1815,8 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address to set on the router.
-{{% /md %}}</dd>
+    <dd>The IP address to set on the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1824,14 +1824,14 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet in which the fixed IP belongs to.
-{{% /md %}}</dd>
+    <dd>Subnet in which the fixed IP belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1840,8 +1840,8 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address to set on the router.
-{{% /md %}}</dd>
+    <dd>The IP address to set on the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1849,14 +1849,14 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet in which the fixed IP belongs to.
-{{% /md %}}</dd>
+    <dd>Subnet in which the fixed IP belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1865,8 +1865,8 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP address to set on the router.
-{{% /md %}}</dd>
+    <dd>The IP address to set on the router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1874,29 +1874,29 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Subnet in which the fixed IP belongs to.
-{{% /md %}}</dd>
+    <dd>Subnet in which the fixed IP belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routervendoroptions">Router<wbr>Vendor<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#RouterVendorOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#RouterVendorOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#RouterVendorOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#RouterVendorOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1905,15 +1905,15 @@ Supported options are described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to control whether
+    <dd>Boolean to control whether
 the Router gateway is assigned during creation or updated after creation.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1922,15 +1922,15 @@ the Router gateway is assigned during creation or updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to control whether
+    <dd>Boolean to control whether
 the Router gateway is assigned during creation or updated after creation.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1939,15 +1939,15 @@ the Router gateway is assigned during creation or updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to control whether
+    <dd>Boolean to control whether
 the Router gateway is assigned during creation or updated after creation.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1956,12 +1956,12 @@ the Router gateway is assigned during creation or updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to control whether
+    <dd>Boolean to control whether
 the Router gateway is assigned during creation or updated after creation.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -56,26 +56,26 @@ const test = new vault.aws.AuthBackendRoleTag("test", {
 
 
 ## Create a AuthBackendRoleTag Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/aws/#AuthBackendRoleTag">AuthBackendRoleTag</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/aws/#AuthBackendRoleTagArgs">AuthBackendRoleTagArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AuthBackendRoleTag</span><span class="p">(resource_name, opts=None, </span>allow_instance_migration=None<span class="p">, </span>backend=None<span class="p">, </span>disallow_reauthentication=None<span class="p">, </span>instance_id=None<span class="p">, </span>max_ttl=None<span class="p">, </span>policies=None<span class="p">, </span>role=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAuthBackendRoleTag<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/aws?tab=doc#AuthBackendRoleTagArgs">AuthBackendRoleTagArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/aws?tab=doc#AuthBackendRoleTag">AuthBackendRoleTag</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Aws.AuthBackendRoleTag.html">AuthBackendRoleTag</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Aws.AuthBackendRoleTagArgs.html">AuthBackendRoleTagArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -112,9 +112,9 @@ const test = new vault.aws.AuthBackendRoleTag("test", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -132,9 +132,9 @@ const test = new vault.aws.AuthBackendRoleTag("test", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -181,9 +181,9 @@ const test = new vault.aws.AuthBackendRoleTag("test", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -220,7 +220,7 @@ const test = new vault.aws.AuthBackendRoleTag("test", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## AuthBackendRoleTag Resource Properties {#properties}
 
@@ -233,7 +233,7 @@ The AuthBackendRoleTag resource accepts the following [input]({{< relref "/docs/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -242,9 +242,9 @@ The AuthBackendRoleTag resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS auth backend role to read
+    <dd>The name of the AWS auth backend role to read
 role tags from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -252,8 +252,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, allows migration of the underlying instances where the client resides. Use with caution.
-{{% /md %}}</dd>
+    <dd>If set, allows migration of the underlying instances where the client resides. Use with caution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,9 +261,9 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS auth backend to
+    <dd>The path to the AWS auth backend to
 read role tags from, with no leading or trailing `/`s. Defaults to "aws".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, only allows a single token to be granted per instance ID.
-{{% /md %}}</dd>
+    <dd>If set, only allows a single token to be granted per instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,8 +280,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
-{{% /md %}}</dd>
+    <dd>Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,8 +289,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum TTL of the tokens issued using this role.
-{{% /md %}}</dd>
+    <dd>The maximum TTL of the tokens issued using this role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,14 +298,14 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The policies to be associated with the tag. Must be a subset of the policies associated with the role.
-{{% /md %}}</dd>
+    <dd>The policies to be associated with the tag. Must be a subset of the policies associated with the role.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -314,9 +314,9 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS auth backend role to read
+    <dd>The name of the AWS auth backend role to read
 role tags from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,8 +324,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, allows migration of the underlying instances where the client resides. Use with caution.
-{{% /md %}}</dd>
+    <dd>If set, allows migration of the underlying instances where the client resides. Use with caution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -333,9 +333,9 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS auth backend to
+    <dd>The path to the AWS auth backend to
 read role tags from, with no leading or trailing `/`s. Defaults to "aws".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,8 +343,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, only allows a single token to be granted per instance ID.
-{{% /md %}}</dd>
+    <dd>If set, only allows a single token to be granted per instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,8 +352,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
-{{% /md %}}</dd>
+    <dd>Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,8 +361,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum TTL of the tokens issued using this role.
-{{% /md %}}</dd>
+    <dd>The maximum TTL of the tokens issued using this role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,14 +370,14 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The policies to be associated with the tag. Must be a subset of the policies associated with the role.
-{{% /md %}}</dd>
+    <dd>The policies to be associated with the tag. Must be a subset of the policies associated with the role.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -386,9 +386,9 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS auth backend role to read
+    <dd>The name of the AWS auth backend role to read
 role tags from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, allows migration of the underlying instances where the client resides. Use with caution.
-{{% /md %}}</dd>
+    <dd>If set, allows migration of the underlying instances where the client resides. Use with caution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,9 +405,9 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS auth backend to
+    <dd>The path to the AWS auth backend to
 read role tags from, with no leading or trailing `/`s. Defaults to "aws".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,8 +415,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, only allows a single token to be granted per instance ID.
-{{% /md %}}</dd>
+    <dd>If set, only allows a single token to be granted per instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,8 +424,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
-{{% /md %}}</dd>
+    <dd>Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,8 +433,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum TTL of the tokens issued using this role.
-{{% /md %}}</dd>
+    <dd>The maximum TTL of the tokens issued using this role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,14 +442,14 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The policies to be associated with the tag. Must be a subset of the policies associated with the role.
-{{% /md %}}</dd>
+    <dd>The policies to be associated with the tag. Must be a subset of the policies associated with the role.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -458,9 +458,9 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS auth backend role to read
+    <dd>The name of the AWS auth backend role to read
 role tags from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, allows migration of the underlying instances where the client resides. Use with caution.
-{{% /md %}}</dd>
+    <dd>If set, allows migration of the underlying instances where the client resides. Use with caution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,9 +477,9 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS auth backend to
+    <dd>The path to the AWS auth backend to
 read role tags from, with no leading or trailing `/`s. Defaults to "aws".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,8 +487,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, only allows a single token to be granted per instance ID.
-{{% /md %}}</dd>
+    <dd>If set, only allows a single token to be granted per instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,8 +496,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
-{{% /md %}}</dd>
+    <dd>Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum TTL of the tokens issued using this role.
-{{% /md %}}</dd>
+    <dd>The maximum TTL of the tokens issued using this role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,11 +514,11 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The policies to be associated with the tag. Must be a subset of the policies associated with the role.
-{{% /md %}}</dd>
+    <dd>The policies to be associated with the tag. Must be a subset of the policies associated with the role.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -532,7 +532,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -541,7 +541,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -549,8 +549,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key of the role tag.
-{{% /md %}}</dd>
+    <dd>The key of the role tag.
+</dd>
 
     <dt class="property-"
             title="">
@@ -558,14 +558,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to set the role key.
-{{% /md %}}</dd>
+    <dd>The value to set the role key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -574,7 +574,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -582,8 +582,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key of the role tag.
-{{% /md %}}</dd>
+    <dd>The key of the role tag.
+</dd>
 
     <dt class="property-"
             title="">
@@ -591,14 +591,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to set the role key.
-{{% /md %}}</dd>
+    <dd>The value to set the role key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -607,7 +607,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -615,8 +615,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key of the role tag.
-{{% /md %}}</dd>
+    <dd>The key of the role tag.
+</dd>
 
     <dt class="property-"
             title="">
@@ -624,14 +624,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to set the role key.
-{{% /md %}}</dd>
+    <dd>The value to set the role key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -640,7 +640,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -648,8 +648,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key of the role tag.
-{{% /md %}}</dd>
+    <dd>The key of the role tag.
+</dd>
 
     <dt class="property-"
             title="">
@@ -657,11 +657,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value to set the role key.
-{{% /md %}}</dd>
+    <dd>The value to set the role key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -672,25 +672,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing AuthBackendRoleTag Resource {#look-up}
 
 Get an existing AuthBackendRoleTag resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/aws/#AuthBackendRoleTagState">AuthBackendRoleTagState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/aws/#AuthBackendRoleTag">AuthBackendRoleTag</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>allow_instance_migration=None<span class="p">, </span>backend=None<span class="p">, </span>disallow_reauthentication=None<span class="p">, </span>instance_id=None<span class="p">, </span>max_ttl=None<span class="p">, </span>policies=None<span class="p">, </span>role=None<span class="p">, </span>tag_key=None<span class="p">, </span>tag_value=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAuthBackendRoleTag<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/aws?tab=doc#AuthBackendRoleTagState">AuthBackendRoleTagState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/aws?tab=doc#AuthBackendRoleTag">AuthBackendRoleTag</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Aws.AuthBackendRoleTag.html">AuthBackendRoleTag</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Aws.AuthBackendRoleTagState.html">AuthBackendRoleTagState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -715,9 +715,9 @@ Get an existing AuthBackendRoleTag resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -730,36 +730,9 @@ Get an existing AuthBackendRoleTag resource's state with the given name, ID, and
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -784,13 +757,40 @@ Get an existing AuthBackendRoleTag resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -799,8 +799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, allows migration of the underlying instances where the client resides. Use with caution.
-{{% /md %}}</dd>
+    <dd>If set, allows migration of the underlying instances where the client resides. Use with caution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -808,9 +808,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS auth backend to
+    <dd>The path to the AWS auth backend to
 read role tags from, with no leading or trailing `/`s. Defaults to "aws".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,8 +818,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, only allows a single token to be granted per instance ID.
-{{% /md %}}</dd>
+    <dd>If set, only allows a single token to be granted per instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -827,8 +827,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
-{{% /md %}}</dd>
+    <dd>Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -836,8 +836,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum TTL of the tokens issued using this role.
-{{% /md %}}</dd>
+    <dd>The maximum TTL of the tokens issued using this role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -845,8 +845,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The policies to be associated with the tag. Must be a subset of the policies associated with the role.
-{{% /md %}}</dd>
+    <dd>The policies to be associated with the tag. Must be a subset of the policies associated with the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -854,9 +854,9 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS auth backend role to read
+    <dd>The name of the AWS auth backend role to read
 role tags from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,8 +864,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key of the role tag.
-{{% /md %}}</dd>
+    <dd>The key of the role tag.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,14 +873,14 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to set the role key.
-{{% /md %}}</dd>
+    <dd>The value to set the role key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -889,8 +889,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, allows migration of the underlying instances where the client resides. Use with caution.
-{{% /md %}}</dd>
+    <dd>If set, allows migration of the underlying instances where the client resides. Use with caution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,9 +898,9 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS auth backend to
+    <dd>The path to the AWS auth backend to
 read role tags from, with no leading or trailing `/`s. Defaults to "aws".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -908,8 +908,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, only allows a single token to be granted per instance ID.
-{{% /md %}}</dd>
+    <dd>If set, only allows a single token to be granted per instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
-{{% /md %}}</dd>
+    <dd>Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum TTL of the tokens issued using this role.
-{{% /md %}}</dd>
+    <dd>The maximum TTL of the tokens issued using this role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The policies to be associated with the tag. Must be a subset of the policies associated with the role.
-{{% /md %}}</dd>
+    <dd>The policies to be associated with the tag. Must be a subset of the policies associated with the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,9 +944,9 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS auth backend role to read
+    <dd>The name of the AWS auth backend role to read
 role tags from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key of the role tag.
-{{% /md %}}</dd>
+    <dd>The key of the role tag.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,14 +963,14 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to set the role key.
-{{% /md %}}</dd>
+    <dd>The value to set the role key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -979,8 +979,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, allows migration of the underlying instances where the client resides. Use with caution.
-{{% /md %}}</dd>
+    <dd>If set, allows migration of the underlying instances where the client resides. Use with caution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -988,9 +988,9 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS auth backend to
+    <dd>The path to the AWS auth backend to
 read role tags from, with no leading or trailing `/`s. Defaults to "aws".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,8 +998,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, only allows a single token to be granted per instance ID.
-{{% /md %}}</dd>
+    <dd>If set, only allows a single token to be granted per instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1007,8 +1007,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
-{{% /md %}}</dd>
+    <dd>Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1016,8 +1016,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum TTL of the tokens issued using this role.
-{{% /md %}}</dd>
+    <dd>The maximum TTL of the tokens issued using this role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1025,8 +1025,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The policies to be associated with the tag. Must be a subset of the policies associated with the role.
-{{% /md %}}</dd>
+    <dd>The policies to be associated with the tag. Must be a subset of the policies associated with the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1034,9 +1034,9 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS auth backend role to read
+    <dd>The name of the AWS auth backend role to read
 role tags from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key of the role tag.
-{{% /md %}}</dd>
+    <dd>The key of the role tag.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,14 +1053,14 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to set the role key.
-{{% /md %}}</dd>
+    <dd>The value to set the role key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1069,8 +1069,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, allows migration of the underlying instances where the client resides. Use with caution.
-{{% /md %}}</dd>
+    <dd>If set, allows migration of the underlying instances where the client resides. Use with caution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,9 +1078,9 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS auth backend to
+    <dd>The path to the AWS auth backend to
 read role tags from, with no leading or trailing `/`s. Defaults to "aws".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1088,8 +1088,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, only allows a single token to be granted per instance ID.
-{{% /md %}}</dd>
+    <dd>If set, only allows a single token to be granted per instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1097,8 +1097,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
-{{% /md %}}</dd>
+    <dd>Instance ID for which this tag is intended for. If set, the created tag can only be used by the instance with the given ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1106,8 +1106,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum TTL of the tokens issued using this role.
-{{% /md %}}</dd>
+    <dd>The maximum TTL of the tokens issued using this role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,8 +1115,8 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The policies to be associated with the tag. Must be a subset of the policies associated with the role.
-{{% /md %}}</dd>
+    <dd>The policies to be associated with the tag. Must be a subset of the policies associated with the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1124,9 +1124,9 @@ read role tags from, with no leading or trailing `/`s. Defaults to "aws".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS auth backend role to read
+    <dd>The name of the AWS auth backend role to read
 role tags from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,8 +1134,8 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key of the role tag.
-{{% /md %}}</dd>
+    <dd>The key of the role tag.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,11 +1143,11 @@ role tags from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value to set the role key.
-{{% /md %}}</dd>
+    <dd>The value to set the role key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

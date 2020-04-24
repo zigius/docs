@@ -44,26 +44,26 @@ A `patch_schedule` block supports the following:
 
 
 ## Create a Cache Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/redis/#Cache">Cache</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/redis/#CacheArgs">CacheArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Cache</span><span class="p">(resource_name, opts=None, </span>capacity=None<span class="p">, </span>enable_non_ssl_port=None<span class="p">, </span>family=None<span class="p">, </span>location=None<span class="p">, </span>minimum_tls_version=None<span class="p">, </span>name=None<span class="p">, </span>patch_schedules=None<span class="p">, </span>private_static_ip_address=None<span class="p">, </span>redis_configuration=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>shard_count=None<span class="p">, </span>sku_name=None<span class="p">, </span>subnet_id=None<span class="p">, </span>tags=None<span class="p">, </span>zones=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCache<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#CacheArgs">CacheArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#Cache">Cache</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Redis.Cache.html">Cache</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Redis.CacheArgs.html">CacheArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -100,9 +100,9 @@ A `patch_schedule` block supports the following:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -120,9 +120,9 @@ A `patch_schedule` block supports the following:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -169,9 +169,9 @@ A `patch_schedule` block supports the following:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -208,7 +208,7 @@ A `patch_schedule` block supports the following:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Cache Resource Properties {#properties}
 
@@ -221,7 +221,7 @@ The Cache resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -230,8 +230,8 @@ The Cache resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
-{{% /md %}}</dd>
+    <dd>The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -239,8 +239,8 @@ The Cache resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -248,9 +248,9 @@ The Cache resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Redis instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -258,8 +258,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the non-SSL port (6379) - disabled by default.
-{{% /md %}}</dd>
+    <dd>Enable the non-SSL port (6379) - disabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the resource group.
-{{% /md %}}</dd>
+    <dd>The location of the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.  Defaults to `1.0`.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.  Defaults to `1.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,9 +294,9 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis instance. Changing this forces a
+    <dd>The name of the Redis instance. Changing this forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,8 +304,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cachepatchschedule">List&lt;Cache<wbr>Patch<wbr>Schedule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,8 +313,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cacheredisconfiguration">Cache<wbr>Redis<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,8 +331,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,8 +340,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,8 +349,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,14 +358,14 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -374,8 +374,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
-{{% /md %}}</dd>
+    <dd>The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -383,8 +383,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -392,9 +392,9 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Redis instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -402,8 +402,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,8 +411,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the non-SSL port (6379) - disabled by default.
-{{% /md %}}</dd>
+    <dd>Enable the non-SSL port (6379) - disabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the resource group.
-{{% /md %}}</dd>
+    <dd>The location of the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.  Defaults to `1.0`.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.  Defaults to `1.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,9 +438,9 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis instance. Changing this forces a
+    <dd>The name of the Redis instance. Changing this forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,8 +448,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cachepatchschedule">[]Cache<wbr>Patch<wbr>Schedule</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,8 +457,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,8 +466,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cacheredisconfiguration">Cache<wbr>Redis<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,8 +475,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,8 +484,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,8 +493,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,14 +502,14 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -518,8 +518,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
-{{% /md %}}</dd>
+    <dd>The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -527,8 +527,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -536,9 +536,9 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Redis instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -546,8 +546,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,8 +555,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable the non-SSL port (6379) - disabled by default.
-{{% /md %}}</dd>
+    <dd>Enable the non-SSL port (6379) - disabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -564,8 +564,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the resource group.
-{{% /md %}}</dd>
+    <dd>The location of the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,8 +573,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.  Defaults to `1.0`.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.  Defaults to `1.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,9 +582,9 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis instance. Changing this forces a
+    <dd>The name of the Redis instance. Changing this forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cachepatchschedule">Cache<wbr>Patch<wbr>Schedule[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cacheredisconfiguration">Cache<wbr>Redis<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,14 +646,14 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -662,8 +662,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
-{{% /md %}}</dd>
+    <dd>The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -671,8 +671,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -680,9 +680,9 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Redis instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -690,8 +690,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -699,8 +699,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the non-SSL port (6379) - disabled by default.
-{{% /md %}}</dd>
+    <dd>Enable the non-SSL port (6379) - disabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -708,8 +708,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location of the resource group.
-{{% /md %}}</dd>
+    <dd>The location of the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -717,8 +717,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.  Defaults to `1.0`.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.  Defaults to `1.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -726,9 +726,9 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis instance. Changing this forces a
+    <dd>The name of the Redis instance. Changing this forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -736,8 +736,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cachepatchschedule">List[Cache<wbr>Patch<wbr>Schedule]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -745,8 +745,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -754,8 +754,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cacheredisconfiguration">Dict[Cache<wbr>Redis<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -763,8 +763,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -772,8 +772,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -781,8 +781,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -790,11 +790,11 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -808,7 +808,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -817,8 +817,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -826,7 +826,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -834,8 +834,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -843,8 +843,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -852,8 +852,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -861,8 +861,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -870,8 +870,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -879,14 +879,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -895,8 +895,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -904,7 +904,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -912,8 +912,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -921,8 +921,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -930,8 +930,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,8 +948,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -957,14 +957,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -973,8 +973,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -982,7 +982,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -990,8 +990,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -999,8 +999,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1008,8 +1008,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1017,8 +1017,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1026,8 +1026,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1035,14 +1035,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1051,8 +1051,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1060,7 +1060,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1068,8 +1068,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1077,8 +1077,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1086,8 +1086,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1095,8 +1095,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1104,8 +1104,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1113,11 +1113,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1128,25 +1128,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Cache Resource {#look-up}
 
 Get an existing Cache resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/redis/#CacheState">CacheState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/redis/#Cache">Cache</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>capacity=None<span class="p">, </span>enable_non_ssl_port=None<span class="p">, </span>family=None<span class="p">, </span>hostname=None<span class="p">, </span>location=None<span class="p">, </span>minimum_tls_version=None<span class="p">, </span>name=None<span class="p">, </span>patch_schedules=None<span class="p">, </span>port=None<span class="p">, </span>primary_access_key=None<span class="p">, </span>primary_connection_string=None<span class="p">, </span>private_static_ip_address=None<span class="p">, </span>redis_configuration=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>secondary_access_key=None<span class="p">, </span>secondary_connection_string=None<span class="p">, </span>shard_count=None<span class="p">, </span>sku_name=None<span class="p">, </span>ssl_port=None<span class="p">, </span>subnet_id=None<span class="p">, </span>tags=None<span class="p">, </span>zones=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCache<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#CacheState">CacheState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#Cache">Cache</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Redis.Cache.html">Cache</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Redis.CacheState.html">CacheState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1171,9 +1171,9 @@ Get an existing Cache resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1186,36 +1186,9 @@ Get an existing Cache resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1240,13 +1213,40 @@ Get an existing Cache resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1255,8 +1255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
-{{% /md %}}</dd>
+    <dd>The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,8 +1264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the non-SSL port (6379) - disabled by default.
-{{% /md %}}</dd>
+    <dd>Enable the non-SSL port (6379) - disabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,8 +1273,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1282,8 +1282,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1291,8 +1291,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the resource group.
-{{% /md %}}</dd>
+    <dd>The location of the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1300,8 +1300,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.  Defaults to `1.0`.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.  Defaults to `1.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1309,9 +1309,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis instance. Changing this forces a
+    <dd>The name of the Redis instance. Changing this forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1319,8 +1319,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cachepatchschedule">List&lt;Cache<wbr>Patch<wbr>Schedule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,8 +1328,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,8 +1337,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,8 +1346,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,8 +1355,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1364,8 +1364,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cacheredisconfiguration">Cache<wbr>Redis<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,9 +1373,9 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Redis instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1383,8 +1383,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1392,8 +1392,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,8 +1401,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,8 +1410,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,8 +1437,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,14 +1446,14 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1462,8 +1462,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
-{{% /md %}}</dd>
+    <dd>The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,8 +1471,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the non-SSL port (6379) - disabled by default.
-{{% /md %}}</dd>
+    <dd>Enable the non-SSL port (6379) - disabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1480,8 +1480,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1489,8 +1489,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,8 +1498,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the resource group.
-{{% /md %}}</dd>
+    <dd>The location of the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,8 +1507,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.  Defaults to `1.0`.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.  Defaults to `1.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,9 +1516,9 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis instance. Changing this forces a
+    <dd>The name of the Redis instance. Changing this forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1526,8 +1526,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cachepatchschedule">[]Cache<wbr>Patch<wbr>Schedule</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1535,8 +1535,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1544,8 +1544,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1553,8 +1553,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,8 +1562,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,8 +1571,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cacheredisconfiguration">Cache<wbr>Redis<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1580,9 +1580,9 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Redis instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1590,8 +1590,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1599,8 +1599,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1608,8 +1608,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,8 +1617,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,8 +1626,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1635,8 +1635,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1644,8 +1644,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1653,14 +1653,14 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1669,8 +1669,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
-{{% /md %}}</dd>
+    <dd>The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable the non-SSL port (6379) - disabled by default.
-{{% /md %}}</dd>
+    <dd>Enable the non-SSL port (6379) - disabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,8 +1687,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,8 +1705,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the resource group.
-{{% /md %}}</dd>
+    <dd>The location of the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1714,8 +1714,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.  Defaults to `1.0`.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.  Defaults to `1.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,9 +1723,9 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis instance. Changing this forces a
+    <dd>The name of the Redis instance. Changing this forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,8 +1733,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cachepatchschedule">Cache<wbr>Patch<wbr>Schedule[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1742,8 +1742,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1751,8 +1751,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,8 +1760,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1769,8 +1769,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1778,8 +1778,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cacheredisconfiguration">Cache<wbr>Redis<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1787,9 +1787,9 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Redis instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1797,8 +1797,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1806,8 +1806,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1815,8 +1815,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1824,8 +1824,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1833,8 +1833,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1842,8 +1842,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1851,8 +1851,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,14 +1860,14 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1876,8 +1876,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
-{{% /md %}}</dd>
+    <dd>The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `family` are `1, 2, 3, 4`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1885,8 +1885,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable the non-SSL port (6379) - disabled by default.
-{{% /md %}}</dd>
+    <dd>Enable the non-SSL port (6379) - disabled by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1894,8 +1894,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1903,8 +1903,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1912,8 +1912,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location of the resource group.
-{{% /md %}}</dd>
+    <dd>The location of the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1921,8 +1921,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.  Defaults to `1.0`.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.  Defaults to `1.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1930,9 +1930,9 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis instance. Changing this forces a
+    <dd>The name of the Redis instance. Changing this forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1940,8 +1940,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cachepatchschedule">List[Cache<wbr>Patch<wbr>Schedule]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1949,8 +1949,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1958,8 +1958,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1967,8 +1967,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,8 +1976,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,8 +1985,8 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cacheredisconfiguration">Dict[Cache<wbr>Redis<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,9 +1994,9 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Redis instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2004,8 +2004,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2013,8 +2013,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2022,8 +2022,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2031,8 +2031,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2040,8 +2040,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2049,8 +2049,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2058,8 +2058,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2067,11 +2067,11 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2086,18 +2086,18 @@ create the Redis instance.
 
 
 <h4 id="cachepatchschedule">Cache<wbr>Patch<wbr>Schedule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#CachePatchSchedule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#CachePatchSchedule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#CachePatchScheduleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#CachePatchScheduleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2106,7 +2106,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2114,13 +2114,13 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2129,7 +2129,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2137,13 +2137,13 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2152,7 +2152,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2160,13 +2160,13 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2175,7 +2175,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2183,28 +2183,28 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="cacheredisconfiguration">Cache<wbr>Redis<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#CacheRedisConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#CacheRedisConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#CacheRedisConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#CacheRedisConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2213,7 +2213,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2221,7 +2221,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2229,7 +2229,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2237,8 +2237,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `false`, the Redis instance will be accessible without authentication. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>If set to `false`, the Redis instance will be accessible without authentication. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2246,8 +2246,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Returns the max number of connected clients at the same time.
-{{% /md %}}</dd>
+    <dd>Returns the max number of connected clients at the same time.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2255,8 +2255,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved to accommodate for memory fragmentation. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved to accommodate for memory fragmentation. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2264,8 +2264,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The max-memory delta for this Redis instance. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>The max-memory delta for this Redis instance. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2273,8 +2273,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How Redis will select what to remove when `maxmemory` is reached. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>How Redis will select what to remove when `maxmemory` is reached. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2282,8 +2282,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved for non-cache usage e.g. failover. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved for non-cache usage e.g. failover. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2291,8 +2291,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyspace notifications allows clients to subscribe to Pub/Sub channels in order to receive events affecting the Redis data set in some way. [Reference](https://redis.io/topics/notifications#configuration)
-{{% /md %}}</dd>
+    <dd>Keyspace notifications allows clients to subscribe to Pub/Sub channels in order to receive events affecting the Redis data set in some way. [Reference](https://redis.io/topics/notifications#configuration)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2300,8 +2300,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Backup Enabled? Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>Is Backup Enabled? Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2309,8 +2309,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Backup Frequency in Minutes. Only supported on Premium SKU's. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.
-{{% /md %}}</dd>
+    <dd>The Backup Frequency in Minutes. Only supported on Premium SKU's. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2318,8 +2318,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of snapshots to create as a backup. Only supported for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The maximum number of snapshots to create as a backup. Only supported for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2327,14 +2327,14 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String to the Storage Account. Only supported for Premium SKU's. In the format: `DefaultEndpointsProtocol=https;BlobEndpoint=${azurerm_storage_account.example.primary_blob_endpoint};AccountName=${azurerm_storage_account.example.name};AccountKey=${azurerm_storage_account.example.primary_access_key}`.
-{{% /md %}}</dd>
+    <dd>The Connection String to the Storage Account. Only supported for Premium SKU's. In the format: `DefaultEndpointsProtocol=https;BlobEndpoint=${azurerm_storage_account.example.primary_blob_endpoint};AccountName=${azurerm_storage_account.example.name};AccountKey=${azurerm_storage_account.example.primary_access_key}`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2343,7 +2343,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2351,7 +2351,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,7 +2359,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2367,8 +2367,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `false`, the Redis instance will be accessible without authentication. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>If set to `false`, the Redis instance will be accessible without authentication. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2376,8 +2376,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Returns the max number of connected clients at the same time.
-{{% /md %}}</dd>
+    <dd>Returns the max number of connected clients at the same time.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2385,8 +2385,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved to accommodate for memory fragmentation. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved to accommodate for memory fragmentation. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2394,8 +2394,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The max-memory delta for this Redis instance. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>The max-memory delta for this Redis instance. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2403,8 +2403,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How Redis will select what to remove when `maxmemory` is reached. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>How Redis will select what to remove when `maxmemory` is reached. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2412,8 +2412,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved for non-cache usage e.g. failover. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved for non-cache usage e.g. failover. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2421,8 +2421,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyspace notifications allows clients to subscribe to Pub/Sub channels in order to receive events affecting the Redis data set in some way. [Reference](https://redis.io/topics/notifications#configuration)
-{{% /md %}}</dd>
+    <dd>Keyspace notifications allows clients to subscribe to Pub/Sub channels in order to receive events affecting the Redis data set in some way. [Reference](https://redis.io/topics/notifications#configuration)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2430,8 +2430,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Backup Enabled? Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>Is Backup Enabled? Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2439,8 +2439,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Backup Frequency in Minutes. Only supported on Premium SKU's. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.
-{{% /md %}}</dd>
+    <dd>The Backup Frequency in Minutes. Only supported on Premium SKU's. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2448,8 +2448,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of snapshots to create as a backup. Only supported for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The maximum number of snapshots to create as a backup. Only supported for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2457,14 +2457,14 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String to the Storage Account. Only supported for Premium SKU's. In the format: `DefaultEndpointsProtocol=https;BlobEndpoint=${azurerm_storage_account.example.primary_blob_endpoint};AccountName=${azurerm_storage_account.example.name};AccountKey=${azurerm_storage_account.example.primary_access_key}`.
-{{% /md %}}</dd>
+    <dd>The Connection String to the Storage Account. Only supported for Premium SKU's. In the format: `DefaultEndpointsProtocol=https;BlobEndpoint=${azurerm_storage_account.example.primary_blob_endpoint};AccountName=${azurerm_storage_account.example.name};AccountKey=${azurerm_storage_account.example.primary_access_key}`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2473,7 +2473,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2481,7 +2481,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2489,7 +2489,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2497,8 +2497,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to `false`, the Redis instance will be accessible without authentication. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>If set to `false`, the Redis instance will be accessible without authentication. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2506,8 +2506,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Returns the max number of connected clients at the same time.
-{{% /md %}}</dd>
+    <dd>Returns the max number of connected clients at the same time.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2515,8 +2515,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved to accommodate for memory fragmentation. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved to accommodate for memory fragmentation. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2524,8 +2524,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The max-memory delta for this Redis instance. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>The max-memory delta for this Redis instance. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2533,8 +2533,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How Redis will select what to remove when `maxmemory` is reached. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>How Redis will select what to remove when `maxmemory` is reached. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2542,8 +2542,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved for non-cache usage e.g. failover. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved for non-cache usage e.g. failover. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2551,8 +2551,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyspace notifications allows clients to subscribe to Pub/Sub channels in order to receive events affecting the Redis data set in some way. [Reference](https://redis.io/topics/notifications#configuration)
-{{% /md %}}</dd>
+    <dd>Keyspace notifications allows clients to subscribe to Pub/Sub channels in order to receive events affecting the Redis data set in some way. [Reference](https://redis.io/topics/notifications#configuration)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2560,8 +2560,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is Backup Enabled? Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>Is Backup Enabled? Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2569,8 +2569,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Backup Frequency in Minutes. Only supported on Premium SKU's. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.
-{{% /md %}}</dd>
+    <dd>The Backup Frequency in Minutes. Only supported on Premium SKU's. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2578,8 +2578,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of snapshots to create as a backup. Only supported for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The maximum number of snapshots to create as a backup. Only supported for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2587,14 +2587,14 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String to the Storage Account. Only supported for Premium SKU's. In the format: `DefaultEndpointsProtocol=https;BlobEndpoint=${azurerm_storage_account.example.primary_blob_endpoint};AccountName=${azurerm_storage_account.example.name};AccountKey=${azurerm_storage_account.example.primary_access_key}`.
-{{% /md %}}</dd>
+    <dd>The Connection String to the Storage Account. Only supported for Premium SKU's. In the format: `DefaultEndpointsProtocol=https;BlobEndpoint=${azurerm_storage_account.example.primary_blob_endpoint};AccountName=${azurerm_storage_account.example.name};AccountKey=${azurerm_storage_account.example.primary_access_key}`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2603,7 +2603,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2611,7 +2611,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2619,7 +2619,7 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2627,8 +2627,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `false`, the Redis instance will be accessible without authentication. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>If set to `false`, the Redis instance will be accessible without authentication. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2636,8 +2636,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Returns the max number of connected clients at the same time.
-{{% /md %}}</dd>
+    <dd>Returns the max number of connected clients at the same time.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2645,8 +2645,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved to accommodate for memory fragmentation. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved to accommodate for memory fragmentation. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2654,8 +2654,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The max-memory delta for this Redis instance. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>The max-memory delta for this Redis instance. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2663,8 +2663,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How Redis will select what to remove when `maxmemory` is reached. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>How Redis will select what to remove when `maxmemory` is reached. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2672,8 +2672,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved for non-cache usage e.g. failover. Defaults are shown below.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved for non-cache usage e.g. failover. Defaults are shown below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2681,8 +2681,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyspace notifications allows clients to subscribe to Pub/Sub channels in order to receive events affecting the Redis data set in some way. [Reference](https://redis.io/topics/notifications#configuration)
-{{% /md %}}</dd>
+    <dd>Keyspace notifications allows clients to subscribe to Pub/Sub channels in order to receive events affecting the Redis data set in some way. [Reference](https://redis.io/topics/notifications#configuration)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2690,8 +2690,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Backup Enabled? Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>Is Backup Enabled? Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2699,8 +2699,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Backup Frequency in Minutes. Only supported on Premium SKU's. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.
-{{% /md %}}</dd>
+    <dd>The Backup Frequency in Minutes. Only supported on Premium SKU's. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2708,8 +2708,8 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of snapshots to create as a backup. Only supported for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The maximum number of snapshots to create as a backup. Only supported for Premium SKU's.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2717,11 +2717,11 @@ create the Redis instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String to the Storage Account. Only supported for Premium SKU's. In the format: `DefaultEndpointsProtocol=https;BlobEndpoint=${azurerm_storage_account.example.primary_blob_endpoint};AccountName=${azurerm_storage_account.example.name};AccountKey=${azurerm_storage_account.example.primary_access_key}`.
-{{% /md %}}</dd>
+    <dd>The Connection String to the Storage Account. Only supported for Premium SKU's. In the format: `DefaultEndpointsProtocol=https;BlobEndpoint=${azurerm_storage_account.example.primary_blob_endpoint};AccountName=${azurerm_storage_account.example.name};AccountKey=${azurerm_storage_account.example.primary_access_key}`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

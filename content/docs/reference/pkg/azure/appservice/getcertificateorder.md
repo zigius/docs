@@ -19,29 +19,29 @@ Use this data source to access information about an existing App Service Certifi
 
 ## Using GetCertificateOrder {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getCertificateOrder<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appservice/#GetCertificateOrderArgs">GetCertificateOrderArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appservice/#GetCertificateOrderResult">GetCertificateOrderResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_certificate_order(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupCertificateOrder<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#LookupCertificateOrderArgs">LookupCertificateOrderArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#LookupCertificateOrderResult">LookupCertificateOrderResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetCertificateOrder </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Appservice.GetCertificateOrderResult.html">GetCertificateOrderResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppService.GetCertificateOrderArgs.html">GetCertificateOrderArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -67,14 +67,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where the App Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -92,14 +92,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where the App Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -108,8 +108,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -117,14 +117,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where the App Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -142,11 +142,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where the App Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -162,7 +162,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -171,8 +171,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Reasons why App Service Certificate is not renewable at the current moment.
-{{% /md %}}</dd>
+    <dd>Reasons why App Service Certificate is not renewable at the current moment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -180,8 +180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}true if the certificate should be automatically renewed when it expires; otherwise, false.
-{{% /md %}}</dd>
+    <dd>true if the certificate should be automatically renewed when it expires; otherwise, false.
+</dd>
 
     <dt class="property-"
             title="">
@@ -189,8 +189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcertificateordercertificate">List&lt;Get<wbr>Certificate<wbr>Order<wbr>Certificate&gt;</a></span>
     </dt>
-    <dd>{{% md %}}State of the Key Vault secret. A `certificates` block as defined below.
-{{% /md %}}</dd>
+    <dd>State of the Key Vault secret. A `certificates` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -198,8 +198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Last CSR that was created for this order.
-{{% /md %}}</dd>
+    <dd>Last CSR that was created for this order.
+</dd>
 
     <dt class="property-"
             title="">
@@ -207,8 +207,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Distinguished Name for the App Service Certificate Order.
-{{% /md %}}</dd>
+    <dd>The Distinguished Name for the App Service Certificate Order.
+</dd>
 
     <dt class="property-"
             title="">
@@ -216,8 +216,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain verification token.
-{{% /md %}}</dd>
+    <dd>Domain verification token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -225,8 +225,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate expiration time.
-{{% /md %}}</dd>
+    <dd>Certificate expiration time.
+</dd>
 
     <dt class="property-"
             title="">
@@ -234,8 +234,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -243,8 +243,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint intermediate certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint intermediate certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -252,8 +252,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the private key is external or not.
-{{% /md %}}</dd>
+    <dd>Whether the private key is external or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -261,8 +261,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Certificate key size.
-{{% /md %}}</dd>
+    <dd>Certificate key size.
+</dd>
 
     <dt class="property-"
             title="">
@@ -270,8 +270,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -279,7 +279,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -287,8 +287,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate product type, such as `Standard` or `WildCard`.
-{{% /md %}}</dd>
+    <dd>Certificate product type, such as `Standard` or `WildCard`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -296,7 +296,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -304,8 +304,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint for root certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint for root certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -313,8 +313,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint for signed certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint for signed certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -322,8 +322,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current order status.
-{{% /md %}}</dd>
+    <dd>Current order status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -331,8 +331,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -340,14 +340,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Duration in years (must be between 1 and 3).
-{{% /md %}}</dd>
+    <dd>Duration in years (must be between 1 and 3).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -356,8 +356,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Reasons why App Service Certificate is not renewable at the current moment.
-{{% /md %}}</dd>
+    <dd>Reasons why App Service Certificate is not renewable at the current moment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -365,8 +365,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}true if the certificate should be automatically renewed when it expires; otherwise, false.
-{{% /md %}}</dd>
+    <dd>true if the certificate should be automatically renewed when it expires; otherwise, false.
+</dd>
 
     <dt class="property-"
             title="">
@@ -374,8 +374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcertificateordercertificate">[]Get<wbr>Certificate<wbr>Order<wbr>Certificate</a></span>
     </dt>
-    <dd>{{% md %}}State of the Key Vault secret. A `certificates` block as defined below.
-{{% /md %}}</dd>
+    <dd>State of the Key Vault secret. A `certificates` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -383,8 +383,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Last CSR that was created for this order.
-{{% /md %}}</dd>
+    <dd>Last CSR that was created for this order.
+</dd>
 
     <dt class="property-"
             title="">
@@ -392,8 +392,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Distinguished Name for the App Service Certificate Order.
-{{% /md %}}</dd>
+    <dd>The Distinguished Name for the App Service Certificate Order.
+</dd>
 
     <dt class="property-"
             title="">
@@ -401,8 +401,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain verification token.
-{{% /md %}}</dd>
+    <dd>Domain verification token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -410,8 +410,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate expiration time.
-{{% /md %}}</dd>
+    <dd>Certificate expiration time.
+</dd>
 
     <dt class="property-"
             title="">
@@ -419,8 +419,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -428,8 +428,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint intermediate certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint intermediate certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -437,8 +437,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the private key is external or not.
-{{% /md %}}</dd>
+    <dd>Whether the private key is external or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -446,8 +446,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Certificate key size.
-{{% /md %}}</dd>
+    <dd>Certificate key size.
+</dd>
 
     <dt class="property-"
             title="">
@@ -455,8 +455,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -464,7 +464,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -472,8 +472,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate product type, such as `Standard` or `WildCard`.
-{{% /md %}}</dd>
+    <dd>Certificate product type, such as `Standard` or `WildCard`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -481,7 +481,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -489,8 +489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint for root certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint for root certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -498,8 +498,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint for signed certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint for signed certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -507,8 +507,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current order status.
-{{% /md %}}</dd>
+    <dd>Current order status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -516,8 +516,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -525,14 +525,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Duration in years (must be between 1 and 3).
-{{% /md %}}</dd>
+    <dd>Duration in years (must be between 1 and 3).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -541,8 +541,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Reasons why App Service Certificate is not renewable at the current moment.
-{{% /md %}}</dd>
+    <dd>Reasons why App Service Certificate is not renewable at the current moment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -550,8 +550,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}true if the certificate should be automatically renewed when it expires; otherwise, false.
-{{% /md %}}</dd>
+    <dd>true if the certificate should be automatically renewed when it expires; otherwise, false.
+</dd>
 
     <dt class="property-"
             title="">
@@ -559,8 +559,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcertificateordercertificate">Get<wbr>Certificate<wbr>Order<wbr>Certificate[]</a></span>
     </dt>
-    <dd>{{% md %}}State of the Key Vault secret. A `certificates` block as defined below.
-{{% /md %}}</dd>
+    <dd>State of the Key Vault secret. A `certificates` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -568,8 +568,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Last CSR that was created for this order.
-{{% /md %}}</dd>
+    <dd>Last CSR that was created for this order.
+</dd>
 
     <dt class="property-"
             title="">
@@ -577,8 +577,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Distinguished Name for the App Service Certificate Order.
-{{% /md %}}</dd>
+    <dd>The Distinguished Name for the App Service Certificate Order.
+</dd>
 
     <dt class="property-"
             title="">
@@ -586,8 +586,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain verification token.
-{{% /md %}}</dd>
+    <dd>Domain verification token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate expiration time.
-{{% /md %}}</dd>
+    <dd>Certificate expiration time.
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,8 +604,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -613,8 +613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint intermediate certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint intermediate certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the private key is external or not.
-{{% /md %}}</dd>
+    <dd>Whether the private key is external or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,8 +631,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Certificate key size.
-{{% /md %}}</dd>
+    <dd>Certificate key size.
+</dd>
 
     <dt class="property-"
             title="">
@@ -640,8 +640,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -649,7 +649,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -657,8 +657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate product type, such as `Standard` or `WildCard`.
-{{% /md %}}</dd>
+    <dd>Certificate product type, such as `Standard` or `WildCard`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -666,7 +666,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -674,8 +674,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint for root certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint for root certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -683,8 +683,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint for signed certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint for signed certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -692,8 +692,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current order status.
-{{% /md %}}</dd>
+    <dd>Current order status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -701,8 +701,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -710,14 +710,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Duration in years (must be between 1 and 3).
-{{% /md %}}</dd>
+    <dd>Duration in years (must be between 1 and 3).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -726,8 +726,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Reasons why App Service Certificate is not renewable at the current moment.
-{{% /md %}}</dd>
+    <dd>Reasons why App Service Certificate is not renewable at the current moment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -735,8 +735,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}true if the certificate should be automatically renewed when it expires; otherwise, false.
-{{% /md %}}</dd>
+    <dd>true if the certificate should be automatically renewed when it expires; otherwise, false.
+</dd>
 
     <dt class="property-"
             title="">
@@ -744,8 +744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcertificateordercertificate">List[Get<wbr>Certificate<wbr>Order<wbr>Certificate]</a></span>
     </dt>
-    <dd>{{% md %}}State of the Key Vault secret. A `certificates` block as defined below.
-{{% /md %}}</dd>
+    <dd>State of the Key Vault secret. A `certificates` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -753,8 +753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Last CSR that was created for this order.
-{{% /md %}}</dd>
+    <dd>Last CSR that was created for this order.
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,8 +762,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Distinguished Name for the App Service Certificate Order.
-{{% /md %}}</dd>
+    <dd>The Distinguished Name for the App Service Certificate Order.
+</dd>
 
     <dt class="property-"
             title="">
@@ -771,8 +771,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain verification token.
-{{% /md %}}</dd>
+    <dd>Domain verification token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -780,8 +780,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Certificate expiration time.
-{{% /md %}}</dd>
+    <dd>Certificate expiration time.
+</dd>
 
     <dt class="property-"
             title="">
@@ -789,8 +789,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -798,8 +798,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint intermediate certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint intermediate certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -807,8 +807,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the private key is external or not.
-{{% /md %}}</dd>
+    <dd>Whether the private key is external or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -816,8 +816,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Certificate key size.
-{{% /md %}}</dd>
+    <dd>Certificate key size.
+</dd>
 
     <dt class="property-"
             title="">
@@ -825,8 +825,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -834,7 +834,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -842,8 +842,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Certificate product type, such as `Standard` or `WildCard`.
-{{% /md %}}</dd>
+    <dd>Certificate product type, such as `Standard` or `WildCard`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -851,7 +851,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -859,8 +859,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint for root certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint for root certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -868,8 +868,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Certificate thumbprint for signed certificate.
-{{% /md %}}</dd>
+    <dd>Certificate thumbprint for signed certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -877,8 +877,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current order status.
-{{% /md %}}</dd>
+    <dd>Current order status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -886,8 +886,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -895,11 +895,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Duration in years (must be between 1 and 3).
-{{% /md %}}</dd>
+    <dd>Duration in years (must be between 1 and 3).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -912,18 +912,18 @@ The following output properties are available:
 
 
 <h4 id="getcertificateordercertificate">Get<wbr>Certificate<wbr>Order<wbr>Certificate</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetCertificateOrderCertificate">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#GetCertificateOrderCertificate">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -932,8 +932,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service Certificate.
-{{% /md %}}</dd>
+    <dd>The name of the App Service Certificate.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -941,8 +941,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Key Vault resource Id.
-{{% /md %}}</dd>
+    <dd>Key Vault resource Id.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -950,8 +950,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Key Vault secret name.
-{{% /md %}}</dd>
+    <dd>Key Vault secret name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -959,14 +959,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the Key Vault secret.
-{{% /md %}}</dd>
+    <dd>Status of the Key Vault secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -975,8 +975,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service Certificate.
-{{% /md %}}</dd>
+    <dd>The name of the App Service Certificate.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -984,8 +984,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key Vault resource Id.
-{{% /md %}}</dd>
+    <dd>Key Vault resource Id.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -993,8 +993,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key Vault secret name.
-{{% /md %}}</dd>
+    <dd>Key Vault secret name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1002,14 +1002,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the Key Vault secret.
-{{% /md %}}</dd>
+    <dd>Status of the Key Vault secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1018,8 +1018,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service Certificate.
-{{% /md %}}</dd>
+    <dd>The name of the App Service Certificate.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1027,8 +1027,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key Vault resource Id.
-{{% /md %}}</dd>
+    <dd>Key Vault resource Id.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1036,8 +1036,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key Vault secret name.
-{{% /md %}}</dd>
+    <dd>Key Vault secret name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1045,14 +1045,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the Key Vault secret.
-{{% /md %}}</dd>
+    <dd>Status of the Key Vault secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1061,8 +1061,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service Certificate.
-{{% /md %}}</dd>
+    <dd>The name of the App Service Certificate.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1070,8 +1070,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Key Vault secret name.
-{{% /md %}}</dd>
+    <dd>Key Vault secret name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1079,8 +1079,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Key Vault resource Id.
-{{% /md %}}</dd>
+    <dd>Key Vault resource Id.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1088,11 +1088,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of the Key Vault secret.
-{{% /md %}}</dd>
+    <dd>Status of the Key Vault secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

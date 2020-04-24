@@ -14,26 +14,26 @@ meta_desc: "Explore the Registry resource of the Rancher 2 package, including ex
 
 
 ## Create a Registry Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#Registry">Registry</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#RegistryArgs">RegistryArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Registry</span><span class="p">(resource_name, opts=None, </span>annotations=None<span class="p">, </span>description=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>namespace_id=None<span class="p">, </span>project_id=None<span class="p">, </span>registries=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRegistry<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RegistryArgs">RegistryArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#Registry">Registry</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.Registry.html">Registry</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.RegistryArgs.html">RegistryArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Registry resource of the Rancher 2 package, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Registry resource of the Rancher 2 package, including ex
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Registry resource of the Rancher 2 package, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Registry resource of the Rancher 2 package, including ex
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Registry Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where to assign the registry (string)
-{{% /md %}}</dd>
+    <dd>The project id where to assign the registry (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryregistry">List&lt;Registry<wbr>Registry<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Registries data for registry (list)
-{{% /md %}}</dd>
+    <dd>Registries data for registry (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,8 +218,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A registry description (string)
-{{% /md %}}</dd>
+    <dd>A registry description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the registry (string)
-{{% /md %}}</dd>
+    <dd>The name of the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,14 +254,14 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace id where to assign the namespaced registry (string)
-{{% /md %}}</dd>
+    <dd>The namespace id where to assign the namespaced registry (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -270,8 +270,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where to assign the registry (string)
-{{% /md %}}</dd>
+    <dd>The project id where to assign the registry (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -279,8 +279,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryregistry">[]Registry<wbr>Registry</a></span>
     </dt>
-    <dd>{{% md %}}Registries data for registry (list)
-{{% /md %}}</dd>
+    <dd>Registries data for registry (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,8 +288,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,8 +297,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A registry description (string)
-{{% /md %}}</dd>
+    <dd>A registry description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,8 +306,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,8 +315,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the registry (string)
-{{% /md %}}</dd>
+    <dd>The name of the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,14 +324,14 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace id where to assign the namespaced registry (string)
-{{% /md %}}</dd>
+    <dd>The namespace id where to assign the namespaced registry (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -340,8 +340,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where to assign the registry (string)
-{{% /md %}}</dd>
+    <dd>The project id where to assign the registry (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -349,8 +349,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryregistry">Registry<wbr>Registry[]</a></span>
     </dt>
-    <dd>{{% md %}}Registries data for registry (list)
-{{% /md %}}</dd>
+    <dd>Registries data for registry (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,8 +358,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,8 +367,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A registry description (string)
-{{% /md %}}</dd>
+    <dd>A registry description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the registry (string)
-{{% /md %}}</dd>
+    <dd>The name of the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,14 +394,14 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace id where to assign the namespaced registry (string)
-{{% /md %}}</dd>
+    <dd>The namespace id where to assign the namespaced registry (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -410,8 +410,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project id where to assign the registry (string)
-{{% /md %}}</dd>
+    <dd>The project id where to assign the registry (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -419,8 +419,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryregistry">List[Registry<wbr>Registry]</a></span>
     </dt>
-    <dd>{{% md %}}Registries data for registry (list)
-{{% /md %}}</dd>
+    <dd>Registries data for registry (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,8 +437,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A registry description (string)
-{{% /md %}}</dd>
+    <dd>A registry description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,8 +446,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,8 +455,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the registry (string)
-{{% /md %}}</dd>
+    <dd>The name of the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,11 +464,11 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace id where to assign the namespaced registry (string)
-{{% /md %}}</dd>
+    <dd>The namespace id where to assign the namespaced registry (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -482,7 +482,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -491,13 +491,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -506,13 +506,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -521,13 +521,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -536,10 +536,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -550,25 +550,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Registry Resource {#look-up}
 
 Get an existing Registry resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#RegistryState">RegistryState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#Registry">Registry</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>annotations=None<span class="p">, </span>description=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>namespace_id=None<span class="p">, </span>project_id=None<span class="p">, </span>registries=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRegistry<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RegistryState">RegistryState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#Registry">Registry</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.Registry.html">Registry</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2..RegistryState.html">RegistryState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -593,9 +593,9 @@ Get an existing Registry resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -608,36 +608,9 @@ Get an existing Registry resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -662,13 +635,40 @@ Get an existing Registry resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -677,8 +677,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A registry description (string)
-{{% /md %}}</dd>
+    <dd>A registry description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,8 +695,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,8 +704,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the registry (string)
-{{% /md %}}</dd>
+    <dd>The name of the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,8 +713,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace id where to assign the namespaced registry (string)
-{{% /md %}}</dd>
+    <dd>The namespace id where to assign the namespaced registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,8 +722,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where to assign the registry (string)
-{{% /md %}}</dd>
+    <dd>The project id where to assign the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,14 +731,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryregistry">List&lt;Registry<wbr>Registry<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Registries data for registry (list)
-{{% /md %}}</dd>
+    <dd>Registries data for registry (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -747,8 +747,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,8 +756,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A registry description (string)
-{{% /md %}}</dd>
+    <dd>A registry description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,8 +765,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,8 +774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the registry (string)
-{{% /md %}}</dd>
+    <dd>The name of the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,8 +783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace id where to assign the namespaced registry (string)
-{{% /md %}}</dd>
+    <dd>The namespace id where to assign the namespaced registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,8 +792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where to assign the registry (string)
-{{% /md %}}</dd>
+    <dd>The project id where to assign the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,14 +801,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryregistry">[]Registry<wbr>Registry</a></span>
     </dt>
-    <dd>{{% md %}}Registries data for registry (list)
-{{% /md %}}</dd>
+    <dd>Registries data for registry (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -817,8 +817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -826,8 +826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A registry description (string)
-{{% /md %}}</dd>
+    <dd>A registry description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,8 +835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,8 +844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the registry (string)
-{{% /md %}}</dd>
+    <dd>The name of the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -853,8 +853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace id where to assign the namespaced registry (string)
-{{% /md %}}</dd>
+    <dd>The namespace id where to assign the namespaced registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -862,8 +862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where to assign the registry (string)
-{{% /md %}}</dd>
+    <dd>The project id where to assign the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,14 +871,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryregistry">Registry<wbr>Registry[]</a></span>
     </dt>
-    <dd>{{% md %}}Registries data for registry (list)
-{{% /md %}}</dd>
+    <dd>Registries data for registry (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -887,8 +887,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -896,8 +896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A registry description (string)
-{{% /md %}}</dd>
+    <dd>A registry description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,8 +905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Registry object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Registry object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,8 +914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the registry (string)
-{{% /md %}}</dd>
+    <dd>The name of the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,8 +923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace id where to assign the namespaced registry (string)
-{{% /md %}}</dd>
+    <dd>The namespace id where to assign the namespaced registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,8 +932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project id where to assign the registry (string)
-{{% /md %}}</dd>
+    <dd>The project id where to assign the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,11 +941,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryregistry">List[Registry<wbr>Registry]</a></span>
     </dt>
-    <dd>{{% md %}}Registries data for registry (list)
-{{% /md %}}</dd>
+    <dd>Registries data for registry (list)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -960,18 +960,18 @@ The following state arguments are supported:
 
 
 <h4 id="registryregistry">Registry<wbr>Registry</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#RegistryRegistry">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#RegistryRegistry">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RegistryRegistryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#RegistryRegistryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -980,8 +980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Address for registry.
-{{% /md %}}</dd>
+    <dd>Address for registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,8 +989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for the registry (string)
-{{% /md %}}</dd>
+    <dd>Password for the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,14 +998,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username for the registry (string)
-{{% /md %}}</dd>
+    <dd>Username for the registry (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1014,8 +1014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Address for registry.
-{{% /md %}}</dd>
+    <dd>Address for registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for the registry (string)
-{{% /md %}}</dd>
+    <dd>Password for the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,14 +1032,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username for the registry (string)
-{{% /md %}}</dd>
+    <dd>Username for the registry (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Address for registry.
-{{% /md %}}</dd>
+    <dd>Address for registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for the registry (string)
-{{% /md %}}</dd>
+    <dd>Password for the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,14 +1066,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username for the registry (string)
-{{% /md %}}</dd>
+    <dd>Username for the registry (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1082,8 +1082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Address for registry.
-{{% /md %}}</dd>
+    <dd>Address for registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password for the registry (string)
-{{% /md %}}</dd>
+    <dd>Password for the registry (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,11 +1100,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username for the registry (string)
-{{% /md %}}</dd>
+    <dd>Username for the registry (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

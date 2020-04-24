@@ -101,26 +101,26 @@ const example = new aws.glue.Crawler("example", {
 
 
 ## Create a Crawler Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#Crawler">Crawler</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#CrawlerArgs">CrawlerArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Crawler</span><span class="p">(resource_name, opts=None, </span>catalog_targets=None<span class="p">, </span>classifiers=None<span class="p">, </span>configuration=None<span class="p">, </span>database_name=None<span class="p">, </span>description=None<span class="p">, </span>dynamodb_targets=None<span class="p">, </span>jdbc_targets=None<span class="p">, </span>name=None<span class="p">, </span>role=None<span class="p">, </span>s3_targets=None<span class="p">, </span>schedule=None<span class="p">, </span>schema_change_policy=None<span class="p">, </span>security_configuration=None<span class="p">, </span>table_prefix=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCrawler<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerArgs">CrawlerArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#Crawler">Crawler</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.Crawler.html">Crawler</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.CrawlerArgs.html">CrawlerArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -157,9 +157,9 @@ const example = new aws.glue.Crawler("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -177,9 +177,9 @@ const example = new aws.glue.Crawler("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -226,9 +226,9 @@ const example = new aws.glue.Crawler("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -265,7 +265,7 @@ const example = new aws.glue.Crawler("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Crawler Resource Properties {#properties}
 
@@ -278,7 +278,7 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -287,8 +287,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Glue database where results are written.
-{{% /md %}}</dd>
+    <dd>Glue database where results are written.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -296,8 +296,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
-{{% /md %}}</dd>
+    <dd>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,7 +305,7 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlercatalogtarget">List&lt;Crawler<wbr>Catalog<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,8 +313,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
-{{% /md %}}</dd>
+    <dd>List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON string of configuration information.
-{{% /md %}}</dd>
+    <dd>JSON string of configuration information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,8 +331,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the crawler.
-{{% /md %}}</dd>
+    <dd>Description of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,8 +340,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerdynamodbtarget">List&lt;Crawler<wbr>Dynamodb<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of nested DynamoDB target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested DynamoDB target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,8 +349,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerjdbctarget">List&lt;Crawler<wbr>Jdbc<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of nested JBDC target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested JBDC target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,8 +358,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the crawler.
-{{% /md %}}</dd>
+    <dd>Name of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,8 +367,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlers3target">List&lt;Crawler<wbr>S3Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List nested Amazon S3 target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List nested Amazon S3 target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
-{{% /md %}}</dd>
+    <dd>A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerschemachangepolicy">Crawler<wbr>Schema<wbr>Change<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Policy for the crawler's update and deletion behavior.
-{{% /md %}}</dd>
+    <dd>Policy for the crawler's update and deletion behavior.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,8 +394,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of Security Configuration to be used by the crawler
-{{% /md %}}</dd>
+    <dd>The name of Security Configuration to be used by the crawler
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,8 +403,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The table prefix used for catalog tables that are created.
-{{% /md %}}</dd>
+    <dd>The table prefix used for catalog tables that are created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,14 +412,14 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -428,8 +428,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Glue database where results are written.
-{{% /md %}}</dd>
+    <dd>Glue database where results are written.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -437,8 +437,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
-{{% /md %}}</dd>
+    <dd>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,7 +446,7 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlercatalogtarget">[]Crawler<wbr>Catalog<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,8 +454,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
-{{% /md %}}</dd>
+    <dd>List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,8 +463,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON string of configuration information.
-{{% /md %}}</dd>
+    <dd>JSON string of configuration information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,8 +472,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the crawler.
-{{% /md %}}</dd>
+    <dd>Description of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,8 +481,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerdynamodbtarget">[]Crawler<wbr>Dynamodb<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}List of nested DynamoDB target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested DynamoDB target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,8 +490,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerjdbctarget">[]Crawler<wbr>Jdbc<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}List of nested JBDC target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested JBDC target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,8 +499,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the crawler.
-{{% /md %}}</dd>
+    <dd>Name of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlers3target">[]Crawler<wbr>S3Target</a></span>
     </dt>
-    <dd>{{% md %}}List nested Amazon S3 target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List nested Amazon S3 target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
-{{% /md %}}</dd>
+    <dd>A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerschemachangepolicy">Crawler<wbr>Schema<wbr>Change<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}Policy for the crawler's update and deletion behavior.
-{{% /md %}}</dd>
+    <dd>Policy for the crawler's update and deletion behavior.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of Security Configuration to be used by the crawler
-{{% /md %}}</dd>
+    <dd>The name of Security Configuration to be used by the crawler
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The table prefix used for catalog tables that are created.
-{{% /md %}}</dd>
+    <dd>The table prefix used for catalog tables that are created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,14 +553,14 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -569,8 +569,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Glue database where results are written.
-{{% /md %}}</dd>
+    <dd>Glue database where results are written.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -578,8 +578,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
-{{% /md %}}</dd>
+    <dd>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,7 +587,7 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlercatalogtarget">Crawler<wbr>Catalog<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,8 +595,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
-{{% /md %}}</dd>
+    <dd>List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,8 +604,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON string of configuration information.
-{{% /md %}}</dd>
+    <dd>JSON string of configuration information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,8 +613,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the crawler.
-{{% /md %}}</dd>
+    <dd>Description of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -622,8 +622,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerdynamodbtarget">Crawler<wbr>Dynamodb<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested DynamoDB target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested DynamoDB target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,8 +631,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerjdbctarget">Crawler<wbr>Jdbc<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested JBDC target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested JBDC target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -640,8 +640,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the crawler.
-{{% /md %}}</dd>
+    <dd>Name of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,8 +649,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlers3target">Crawler<wbr>S3Target[]</a></span>
     </dt>
-    <dd>{{% md %}}List nested Amazon S3 target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List nested Amazon S3 target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,8 +658,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
-{{% /md %}}</dd>
+    <dd>A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -667,8 +667,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerschemachangepolicy">Crawler<wbr>Schema<wbr>Change<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}Policy for the crawler's update and deletion behavior.
-{{% /md %}}</dd>
+    <dd>Policy for the crawler's update and deletion behavior.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -676,8 +676,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of Security Configuration to be used by the crawler
-{{% /md %}}</dd>
+    <dd>The name of Security Configuration to be used by the crawler
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -685,8 +685,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The table prefix used for catalog tables that are created.
-{{% /md %}}</dd>
+    <dd>The table prefix used for catalog tables that are created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -694,14 +694,14 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -710,8 +710,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Glue database where results are written.
-{{% /md %}}</dd>
+    <dd>Glue database where results are written.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -719,8 +719,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
-{{% /md %}}</dd>
+    <dd>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -728,7 +728,7 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlercatalogtarget">List[Crawler<wbr>Catalog<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -736,8 +736,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
-{{% /md %}}</dd>
+    <dd>List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -745,8 +745,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}JSON string of configuration information.
-{{% /md %}}</dd>
+    <dd>JSON string of configuration information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -754,8 +754,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the crawler.
-{{% /md %}}</dd>
+    <dd>Description of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -763,8 +763,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerdynamodbtarget">List[Crawler<wbr>Dynamodb<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested DynamoDB target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested DynamoDB target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -772,8 +772,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerjdbctarget">List[Crawler<wbr>Jdbc<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested JBDC target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested JBDC target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -781,8 +781,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the crawler.
-{{% /md %}}</dd>
+    <dd>Name of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -790,8 +790,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlers3target">List[Crawler<wbr>S3Target]</a></span>
     </dt>
-    <dd>{{% md %}}List nested Amazon S3 target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List nested Amazon S3 target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -799,8 +799,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
-{{% /md %}}</dd>
+    <dd>A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -808,8 +808,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerschemachangepolicy">Dict[Crawler<wbr>Schema<wbr>Change<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}Policy for the crawler's update and deletion behavior.
-{{% /md %}}</dd>
+    <dd>Policy for the crawler's update and deletion behavior.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -817,8 +817,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of Security Configuration to be used by the crawler
-{{% /md %}}</dd>
+    <dd>The name of Security Configuration to be used by the crawler
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -826,8 +826,8 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The table prefix used for catalog tables that are created.
-{{% /md %}}</dd>
+    <dd>The table prefix used for catalog tables that are created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,11 +835,11 @@ The Crawler resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -853,7 +853,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -862,8 +862,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the crawler 
-{{% /md %}}</dd>
+    <dd>The ARN of the crawler 
+</dd>
 
     <dt class="property-"
             title="">
@@ -871,13 +871,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -886,8 +886,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the crawler 
-{{% /md %}}</dd>
+    <dd>The ARN of the crawler 
+</dd>
 
     <dt class="property-"
             title="">
@@ -895,13 +895,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -910,8 +910,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the crawler 
-{{% /md %}}</dd>
+    <dd>The ARN of the crawler 
+</dd>
 
     <dt class="property-"
             title="">
@@ -919,13 +919,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -934,8 +934,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the crawler 
-{{% /md %}}</dd>
+    <dd>The ARN of the crawler 
+</dd>
 
     <dt class="property-"
             title="">
@@ -943,10 +943,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -957,25 +957,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Crawler Resource {#look-up}
 
 Get an existing Crawler resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#CrawlerState">CrawlerState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#Crawler">Crawler</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>catalog_targets=None<span class="p">, </span>classifiers=None<span class="p">, </span>configuration=None<span class="p">, </span>database_name=None<span class="p">, </span>description=None<span class="p">, </span>dynamodb_targets=None<span class="p">, </span>jdbc_targets=None<span class="p">, </span>name=None<span class="p">, </span>role=None<span class="p">, </span>s3_targets=None<span class="p">, </span>schedule=None<span class="p">, </span>schema_change_policy=None<span class="p">, </span>security_configuration=None<span class="p">, </span>table_prefix=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCrawler<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerState">CrawlerState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#Crawler">Crawler</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.Crawler.html">Crawler</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.CrawlerState.html">CrawlerState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1000,9 +1000,9 @@ Get an existing Crawler resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1015,36 +1015,9 @@ Get an existing Crawler resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1069,13 +1042,40 @@ Get an existing Crawler resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1084,8 +1084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the crawler 
-{{% /md %}}</dd>
+    <dd>The ARN of the crawler 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,7 +1093,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlercatalogtarget">List&lt;Crawler<wbr>Catalog<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1101,8 +1101,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
-{{% /md %}}</dd>
+    <dd>List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,8 +1110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON string of configuration information.
-{{% /md %}}</dd>
+    <dd>JSON string of configuration information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,8 +1119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Glue database where results are written.
-{{% /md %}}</dd>
+    <dd>Glue database where results are written.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1128,8 +1128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the crawler.
-{{% /md %}}</dd>
+    <dd>Description of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,8 +1137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerdynamodbtarget">List&lt;Crawler<wbr>Dynamodb<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of nested DynamoDB target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested DynamoDB target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1146,8 +1146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerjdbctarget">List&lt;Crawler<wbr>Jdbc<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of nested JBDC target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested JBDC target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the crawler.
-{{% /md %}}</dd>
+    <dd>Name of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,8 +1164,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
-{{% /md %}}</dd>
+    <dd>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,8 +1173,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlers3target">List&lt;Crawler<wbr>S3Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List nested Amazon S3 target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List nested Amazon S3 target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,8 +1182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
-{{% /md %}}</dd>
+    <dd>A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,8 +1191,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerschemachangepolicy">Crawler<wbr>Schema<wbr>Change<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Policy for the crawler's update and deletion behavior.
-{{% /md %}}</dd>
+    <dd>Policy for the crawler's update and deletion behavior.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,8 +1200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of Security Configuration to be used by the crawler
-{{% /md %}}</dd>
+    <dd>The name of Security Configuration to be used by the crawler
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,8 +1209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The table prefix used for catalog tables that are created.
-{{% /md %}}</dd>
+    <dd>The table prefix used for catalog tables that are created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1218,14 +1218,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1234,8 +1234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the crawler 
-{{% /md %}}</dd>
+    <dd>The ARN of the crawler 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,7 +1243,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlercatalogtarget">[]Crawler<wbr>Catalog<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1251,8 +1251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
-{{% /md %}}</dd>
+    <dd>List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON string of configuration information.
-{{% /md %}}</dd>
+    <dd>JSON string of configuration information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Glue database where results are written.
-{{% /md %}}</dd>
+    <dd>Glue database where results are written.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the crawler.
-{{% /md %}}</dd>
+    <dd>Description of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerdynamodbtarget">[]Crawler<wbr>Dynamodb<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}List of nested DynamoDB target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested DynamoDB target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerjdbctarget">[]Crawler<wbr>Jdbc<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}List of nested JBDC target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested JBDC target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the crawler.
-{{% /md %}}</dd>
+    <dd>Name of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
-{{% /md %}}</dd>
+    <dd>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlers3target">[]Crawler<wbr>S3Target</a></span>
     </dt>
-    <dd>{{% md %}}List nested Amazon S3 target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List nested Amazon S3 target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
-{{% /md %}}</dd>
+    <dd>A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,8 +1341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerschemachangepolicy">Crawler<wbr>Schema<wbr>Change<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}Policy for the crawler's update and deletion behavior.
-{{% /md %}}</dd>
+    <dd>Policy for the crawler's update and deletion behavior.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of Security Configuration to be used by the crawler
-{{% /md %}}</dd>
+    <dd>The name of Security Configuration to be used by the crawler
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,8 +1359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The table prefix used for catalog tables that are created.
-{{% /md %}}</dd>
+    <dd>The table prefix used for catalog tables that are created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1368,14 +1368,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1384,8 +1384,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the crawler 
-{{% /md %}}</dd>
+    <dd>The ARN of the crawler 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,7 +1393,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlercatalogtarget">Crawler<wbr>Catalog<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,8 +1401,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
-{{% /md %}}</dd>
+    <dd>List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,8 +1410,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON string of configuration information.
-{{% /md %}}</dd>
+    <dd>JSON string of configuration information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Glue database where results are written.
-{{% /md %}}</dd>
+    <dd>Glue database where results are written.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the crawler.
-{{% /md %}}</dd>
+    <dd>Description of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,8 +1437,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerdynamodbtarget">Crawler<wbr>Dynamodb<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested DynamoDB target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested DynamoDB target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,8 +1446,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerjdbctarget">Crawler<wbr>Jdbc<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested JBDC target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested JBDC target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1455,8 +1455,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the crawler.
-{{% /md %}}</dd>
+    <dd>Name of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
-{{% /md %}}</dd>
+    <dd>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlers3target">Crawler<wbr>S3Target[]</a></span>
     </dt>
-    <dd>{{% md %}}List nested Amazon S3 target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List nested Amazon S3 target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
-{{% /md %}}</dd>
+    <dd>A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,8 +1491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerschemachangepolicy">Crawler<wbr>Schema<wbr>Change<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}Policy for the crawler's update and deletion behavior.
-{{% /md %}}</dd>
+    <dd>Policy for the crawler's update and deletion behavior.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1500,8 +1500,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of Security Configuration to be used by the crawler
-{{% /md %}}</dd>
+    <dd>The name of Security Configuration to be used by the crawler
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1509,8 +1509,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The table prefix used for catalog tables that are created.
-{{% /md %}}</dd>
+    <dd>The table prefix used for catalog tables that are created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1518,14 +1518,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1534,8 +1534,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the crawler 
-{{% /md %}}</dd>
+    <dd>The ARN of the crawler 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1543,7 +1543,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlercatalogtarget">List[Crawler<wbr>Catalog<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,8 +1551,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
-{{% /md %}}</dd>
+    <dd>List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1560,8 +1560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}JSON string of configuration information.
-{{% /md %}}</dd>
+    <dd>JSON string of configuration information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1569,8 +1569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Glue database where results are written.
-{{% /md %}}</dd>
+    <dd>Glue database where results are written.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1578,8 +1578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the crawler.
-{{% /md %}}</dd>
+    <dd>Description of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1587,8 +1587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerdynamodbtarget">List[Crawler<wbr>Dynamodb<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested DynamoDB target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested DynamoDB target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,8 +1596,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerjdbctarget">List[Crawler<wbr>Jdbc<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested JBDC target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List of nested JBDC target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,8 +1605,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the crawler.
-{{% /md %}}</dd>
+    <dd>Name of the crawler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1614,8 +1614,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
-{{% /md %}}</dd>
+    <dd>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1623,8 +1623,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlers3target">List[Crawler<wbr>S3Target]</a></span>
     </dt>
-    <dd>{{% md %}}List nested Amazon S3 target arguments. See below.
-{{% /md %}}</dd>
+    <dd>List nested Amazon S3 target arguments. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1632,8 +1632,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
-{{% /md %}}</dd>
+    <dd>A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,8 +1641,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crawlerschemachangepolicy">Dict[Crawler<wbr>Schema<wbr>Change<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}Policy for the crawler's update and deletion behavior.
-{{% /md %}}</dd>
+    <dd>Policy for the crawler's update and deletion behavior.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1650,8 +1650,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of Security Configuration to be used by the crawler
-{{% /md %}}</dd>
+    <dd>The name of Security Configuration to be used by the crawler
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1659,8 +1659,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The table prefix used for catalog tables that are created.
-{{% /md %}}</dd>
+    <dd>The table prefix used for catalog tables that are created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1668,11 +1668,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1687,18 +1687,18 @@ The following state arguments are supported:
 
 
 <h4 id="crawlercatalogtarget">Crawler<wbr>Catalog<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#CrawlerCatalogTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#CrawlerCatalogTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerCatalogTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerCatalogTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1707,8 +1707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Glue database to be synchronized.
-{{% /md %}}</dd>
+    <dd>The name of the Glue database to be synchronized.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1716,14 +1716,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of catalog tables to be synchronized.
-{{% /md %}}</dd>
+    <dd>A list of catalog tables to be synchronized.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1732,8 +1732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Glue database to be synchronized.
-{{% /md %}}</dd>
+    <dd>The name of the Glue database to be synchronized.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1741,14 +1741,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of catalog tables to be synchronized.
-{{% /md %}}</dd>
+    <dd>A list of catalog tables to be synchronized.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1757,8 +1757,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Glue database to be synchronized.
-{{% /md %}}</dd>
+    <dd>The name of the Glue database to be synchronized.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1766,14 +1766,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of catalog tables to be synchronized.
-{{% /md %}}</dd>
+    <dd>A list of catalog tables to be synchronized.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1782,8 +1782,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Glue database to be synchronized.
-{{% /md %}}</dd>
+    <dd>The name of the Glue database to be synchronized.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1791,29 +1791,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of catalog tables to be synchronized.
-{{% /md %}}</dd>
+    <dd>A list of catalog tables to be synchronized.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="crawlerdynamodbtarget">Crawler<wbr>Dynamodb<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#CrawlerDynamodbTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#CrawlerDynamodbTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerDynamodbTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerDynamodbTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1822,14 +1822,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table to crawl.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table to crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1838,14 +1838,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table to crawl.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table to crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1854,14 +1854,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table to crawl.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table to crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1870,29 +1870,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table to crawl.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table to crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="crawlerjdbctarget">Crawler<wbr>Jdbc<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#CrawlerJdbcTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#CrawlerJdbcTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerJdbcTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerJdbcTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1901,8 +1901,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection to use to connect to the JDBC target.
-{{% /md %}}</dd>
+    <dd>The name of the connection to use to connect to the JDBC target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1910,8 +1910,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of the JDBC target.
-{{% /md %}}</dd>
+    <dd>The path of the JDBC target.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1919,14 +1919,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of glob patterns used to exclude from the crawl.
-{{% /md %}}</dd>
+    <dd>A list of glob patterns used to exclude from the crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1935,8 +1935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection to use to connect to the JDBC target.
-{{% /md %}}</dd>
+    <dd>The name of the connection to use to connect to the JDBC target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1944,8 +1944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of the JDBC target.
-{{% /md %}}</dd>
+    <dd>The path of the JDBC target.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1953,14 +1953,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of glob patterns used to exclude from the crawl.
-{{% /md %}}</dd>
+    <dd>A list of glob patterns used to exclude from the crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1969,8 +1969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection to use to connect to the JDBC target.
-{{% /md %}}</dd>
+    <dd>The name of the connection to use to connect to the JDBC target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1978,8 +1978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of the JDBC target.
-{{% /md %}}</dd>
+    <dd>The path of the JDBC target.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,14 +1987,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of glob patterns used to exclude from the crawl.
-{{% /md %}}</dd>
+    <dd>A list of glob patterns used to exclude from the crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2003,8 +2003,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection to use to connect to the JDBC target.
-{{% /md %}}</dd>
+    <dd>The name of the connection to use to connect to the JDBC target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2012,8 +2012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of the JDBC target.
-{{% /md %}}</dd>
+    <dd>The path of the JDBC target.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2021,29 +2021,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of glob patterns used to exclude from the crawl.
-{{% /md %}}</dd>
+    <dd>A list of glob patterns used to exclude from the crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="crawlers3target">Crawler<wbr>S3Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#CrawlerS3Target">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#CrawlerS3Target">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerS3TargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerS3TargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2052,8 +2052,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table to crawl.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table to crawl.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2061,14 +2061,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of glob patterns used to exclude from the crawl.
-{{% /md %}}</dd>
+    <dd>A list of glob patterns used to exclude from the crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2077,8 +2077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table to crawl.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table to crawl.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2086,14 +2086,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of glob patterns used to exclude from the crawl.
-{{% /md %}}</dd>
+    <dd>A list of glob patterns used to exclude from the crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2102,8 +2102,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table to crawl.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table to crawl.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2111,14 +2111,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of glob patterns used to exclude from the crawl.
-{{% /md %}}</dd>
+    <dd>A list of glob patterns used to exclude from the crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2127,8 +2127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table to crawl.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table to crawl.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2136,29 +2136,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of glob patterns used to exclude from the crawl.
-{{% /md %}}</dd>
+    <dd>A list of glob patterns used to exclude from the crawl.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="crawlerschemachangepolicy">Crawler<wbr>Schema<wbr>Change<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#CrawlerSchemaChangePolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#CrawlerSchemaChangePolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerSchemaChangePolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#CrawlerSchemaChangePolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2167,8 +2167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
-{{% /md %}}</dd>
+    <dd>The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2176,14 +2176,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The update behavior when the crawler finds a changed schema. Valid values: `LOG` or `UPDATE_IN_DATABASE`. Defaults to `UPDATE_IN_DATABASE`.
-{{% /md %}}</dd>
+    <dd>The update behavior when the crawler finds a changed schema. Valid values: `LOG` or `UPDATE_IN_DATABASE`. Defaults to `UPDATE_IN_DATABASE`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2192,8 +2192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
-{{% /md %}}</dd>
+    <dd>The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2201,14 +2201,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The update behavior when the crawler finds a changed schema. Valid values: `LOG` or `UPDATE_IN_DATABASE`. Defaults to `UPDATE_IN_DATABASE`.
-{{% /md %}}</dd>
+    <dd>The update behavior when the crawler finds a changed schema. Valid values: `LOG` or `UPDATE_IN_DATABASE`. Defaults to `UPDATE_IN_DATABASE`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2217,8 +2217,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
-{{% /md %}}</dd>
+    <dd>The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2226,14 +2226,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The update behavior when the crawler finds a changed schema. Valid values: `LOG` or `UPDATE_IN_DATABASE`. Defaults to `UPDATE_IN_DATABASE`.
-{{% /md %}}</dd>
+    <dd>The update behavior when the crawler finds a changed schema. Valid values: `LOG` or `UPDATE_IN_DATABASE`. Defaults to `UPDATE_IN_DATABASE`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2242,8 +2242,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
-{{% /md %}}</dd>
+    <dd>The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2251,11 +2251,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The update behavior when the crawler finds a changed schema. Valid values: `LOG` or `UPDATE_IN_DATABASE`. Defaults to `UPDATE_IN_DATABASE`.
-{{% /md %}}</dd>
+    <dd>The update behavior when the crawler finds a changed schema. Valid values: `LOG` or `UPDATE_IN_DATABASE`. Defaults to `UPDATE_IN_DATABASE`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

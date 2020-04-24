@@ -50,26 +50,26 @@ const id = new vault.appRole.AuthBackendRoleSecretID("id", {
 
 
 ## Create a AuthBackendRoleSecretID Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/appRole/#AuthBackendRoleSecretID">AuthBackendRoleSecretID</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/appRole/#AuthBackendRoleSecretIDArgs">AuthBackendRoleSecretIDArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AuthBackendRoleSecretID</span><span class="p">(resource_name, opts=None, </span>backend=None<span class="p">, </span>cidr_lists=None<span class="p">, </span>metadata=None<span class="p">, </span>role_name=None<span class="p">, </span>secret_id=None<span class="p">, </span>wrapping_ttl=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAuthBackendRoleSecretID<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/appRole?tab=doc#AuthBackendRoleSecretIDArgs">AuthBackendRoleSecretIDArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/appRole?tab=doc#AuthBackendRoleSecretID">AuthBackendRoleSecretID</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.AppRole.AuthBackendRoleSecretID.html">AuthBackendRoleSecretID</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.AppRole.AuthBackendRoleSecretIDArgs.html">AuthBackendRoleSecretIDArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -106,9 +106,9 @@ const id = new vault.appRole.AuthBackendRoleSecretID("id", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -126,9 +126,9 @@ const id = new vault.appRole.AuthBackendRoleSecretID("id", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -175,9 +175,9 @@ const id = new vault.appRole.AuthBackendRoleSecretID("id", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -214,7 +214,7 @@ const id = new vault.appRole.AuthBackendRoleSecretID("id", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## AuthBackendRoleSecretID Resource Properties {#properties}
 
@@ -227,7 +227,7 @@ The AuthBackendRoleSecretID resource accepts the following [input]({{< relref "/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -236,8 +236,8 @@ The AuthBackendRoleSecretID resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role to create the SecretID for.
-{{% /md %}}</dd>
+    <dd>The name of the role to create the SecretID for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The AuthBackendRoleSecretID resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique name of the auth backend to configure.
-{{% /md %}}</dd>
+    <dd>Unique name of the auth backend to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,9 +254,9 @@ The AuthBackendRoleSecretID resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}If set, specifies blocks of IP addresses which can
+    <dd>If set, specifies blocks of IP addresses which can
 perform the login operation using this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,9 +264,9 @@ perform the login operation using this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON-encoded string containing metadata in
+    <dd>A JSON-encoded string containing metadata in
 key-value pairs to be set on tokens issued with this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,9 +274,9 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SecretID to be created. If set, uses "Push"
+    <dd>The SecretID to be created. If set, uses "Push"
 mode.  Defaults to Vault auto-generating SecretIDs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,17 +284,17 @@ mode.  Defaults to Vault auto-generating SecretIDs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, the SecretID response will be
+    <dd>If set, the SecretID response will be
 [response-wrapped](https://www.vaultproject.io/docs/concepts/response-wrapping.html)
 and available for the duration specified. Only a single unwrapping of the
 token is allowed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -303,8 +303,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role to create the SecretID for.
-{{% /md %}}</dd>
+    <dd>The name of the role to create the SecretID for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique name of the auth backend to configure.
-{{% /md %}}</dd>
+    <dd>Unique name of the auth backend to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,9 +321,9 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}If set, specifies blocks of IP addresses which can
+    <dd>If set, specifies blocks of IP addresses which can
 perform the login operation using this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,9 +331,9 @@ perform the login operation using this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON-encoded string containing metadata in
+    <dd>A JSON-encoded string containing metadata in
 key-value pairs to be set on tokens issued with this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,9 +341,9 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SecretID to be created. If set, uses "Push"
+    <dd>The SecretID to be created. If set, uses "Push"
 mode.  Defaults to Vault auto-generating SecretIDs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,17 +351,17 @@ mode.  Defaults to Vault auto-generating SecretIDs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, the SecretID response will be
+    <dd>If set, the SecretID response will be
 [response-wrapped](https://www.vaultproject.io/docs/concepts/response-wrapping.html)
 and available for the duration specified. Only a single unwrapping of the
 token is allowed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -370,8 +370,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role to create the SecretID for.
-{{% /md %}}</dd>
+    <dd>The name of the role to create the SecretID for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique name of the auth backend to configure.
-{{% /md %}}</dd>
+    <dd>Unique name of the auth backend to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,9 +388,9 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}If set, specifies blocks of IP addresses which can
+    <dd>If set, specifies blocks of IP addresses which can
 perform the login operation using this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,9 +398,9 @@ perform the login operation using this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON-encoded string containing metadata in
+    <dd>A JSON-encoded string containing metadata in
 key-value pairs to be set on tokens issued with this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,9 +408,9 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SecretID to be created. If set, uses "Push"
+    <dd>The SecretID to be created. If set, uses "Push"
 mode.  Defaults to Vault auto-generating SecretIDs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,17 +418,17 @@ mode.  Defaults to Vault auto-generating SecretIDs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, the SecretID response will be
+    <dd>If set, the SecretID response will be
 [response-wrapped](https://www.vaultproject.io/docs/concepts/response-wrapping.html)
 and available for the duration specified. Only a single unwrapping of the
 token is allowed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -437,8 +437,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role to create the SecretID for.
-{{% /md %}}</dd>
+    <dd>The name of the role to create the SecretID for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,8 +446,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Unique name of the auth backend to configure.
-{{% /md %}}</dd>
+    <dd>Unique name of the auth backend to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,9 +455,9 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}If set, specifies blocks of IP addresses which can
+    <dd>If set, specifies blocks of IP addresses which can
 perform the login operation using this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,9 +465,9 @@ perform the login operation using this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A JSON-encoded string containing metadata in
+    <dd>A JSON-encoded string containing metadata in
 key-value pairs to be set on tokens issued with this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,9 +475,9 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SecretID to be created. If set, uses "Push"
+    <dd>The SecretID to be created. If set, uses "Push"
 mode.  Defaults to Vault auto-generating SecretIDs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -485,14 +485,14 @@ mode.  Defaults to Vault auto-generating SecretIDs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If set, the SecretID response will be
+    <dd>If set, the SecretID response will be
 [response-wrapped](https://www.vaultproject.io/docs/concepts/response-wrapping.html)
 and available for the duration specified. Only a single unwrapping of the
 token is allowed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -506,7 +506,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -515,8 +515,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for this SecretID that can be safely logged.
-{{% /md %}}</dd>
+    <dd>The unique ID for this SecretID that can be safely logged.
+</dd>
 
     <dt class="property-"
             title="">
@@ -524,7 +524,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -532,9 +532,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for the response-wrapped SecretID that can
+    <dd>The unique ID for the response-wrapped SecretID that can
 be safely logged.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -542,14 +542,14 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The token used to retrieve a response-wrapped SecretID.
-{{% /md %}}</dd>
+    <dd>The token used to retrieve a response-wrapped SecretID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -558,8 +558,8 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for this SecretID that can be safely logged.
-{{% /md %}}</dd>
+    <dd>The unique ID for this SecretID that can be safely logged.
+</dd>
 
     <dt class="property-"
             title="">
@@ -567,7 +567,7 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -575,9 +575,9 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for the response-wrapped SecretID that can
+    <dd>The unique ID for the response-wrapped SecretID that can
 be safely logged.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -585,14 +585,14 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The token used to retrieve a response-wrapped SecretID.
-{{% /md %}}</dd>
+    <dd>The token used to retrieve a response-wrapped SecretID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -601,8 +601,8 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for this SecretID that can be safely logged.
-{{% /md %}}</dd>
+    <dd>The unique ID for this SecretID that can be safely logged.
+</dd>
 
     <dt class="property-"
             title="">
@@ -610,7 +610,7 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -618,9 +618,9 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for the response-wrapped SecretID that can
+    <dd>The unique ID for the response-wrapped SecretID that can
 be safely logged.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -628,14 +628,14 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The token used to retrieve a response-wrapped SecretID.
-{{% /md %}}</dd>
+    <dd>The token used to retrieve a response-wrapped SecretID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -644,8 +644,8 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for this SecretID that can be safely logged.
-{{% /md %}}</dd>
+    <dd>The unique ID for this SecretID that can be safely logged.
+</dd>
 
     <dt class="property-"
             title="">
@@ -653,7 +653,7 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -661,9 +661,9 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for the response-wrapped SecretID that can
+    <dd>The unique ID for the response-wrapped SecretID that can
 be safely logged.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -671,11 +671,11 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The token used to retrieve a response-wrapped SecretID.
-{{% /md %}}</dd>
+    <dd>The token used to retrieve a response-wrapped SecretID.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -686,25 +686,25 @@ be safely logged.
 ## Look up an Existing AuthBackendRoleSecretID Resource {#look-up}
 
 Get an existing AuthBackendRoleSecretID resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/appRole/#AuthBackendRoleSecretIDState">AuthBackendRoleSecretIDState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/appRole/#AuthBackendRoleSecretID">AuthBackendRoleSecretID</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>accessor=None<span class="p">, </span>backend=None<span class="p">, </span>cidr_lists=None<span class="p">, </span>metadata=None<span class="p">, </span>role_name=None<span class="p">, </span>secret_id=None<span class="p">, </span>wrapping_accessor=None<span class="p">, </span>wrapping_token=None<span class="p">, </span>wrapping_ttl=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAuthBackendRoleSecretID<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/appRole?tab=doc#AuthBackendRoleSecretIDState">AuthBackendRoleSecretIDState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/appRole?tab=doc#AuthBackendRoleSecretID">AuthBackendRoleSecretID</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.AppRole.AuthBackendRoleSecretID.html">AuthBackendRoleSecretID</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.AppRole.AuthBackendRoleSecretIDState.html">AuthBackendRoleSecretIDState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -729,9 +729,9 @@ Get an existing AuthBackendRoleSecretID resource's state with the given name, ID
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -744,36 +744,9 @@ Get an existing AuthBackendRoleSecretID resource's state with the given name, ID
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -798,13 +771,40 @@ Get an existing AuthBackendRoleSecretID resource's state with the given name, ID
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -813,8 +813,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for this SecretID that can be safely logged.
-{{% /md %}}</dd>
+    <dd>The unique ID for this SecretID that can be safely logged.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -822,8 +822,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique name of the auth backend to configure.
-{{% /md %}}</dd>
+    <dd>Unique name of the auth backend to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -831,9 +831,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}If set, specifies blocks of IP addresses which can
+    <dd>If set, specifies blocks of IP addresses which can
 perform the login operation using this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,9 +841,9 @@ perform the login operation using this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON-encoded string containing metadata in
+    <dd>A JSON-encoded string containing metadata in
 key-value pairs to be set on tokens issued with this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,8 +851,8 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role to create the SecretID for.
-{{% /md %}}</dd>
+    <dd>The name of the role to create the SecretID for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -860,9 +860,9 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SecretID to be created. If set, uses "Push"
+    <dd>The SecretID to be created. If set, uses "Push"
 mode.  Defaults to Vault auto-generating SecretIDs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,9 +870,9 @@ mode.  Defaults to Vault auto-generating SecretIDs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for the response-wrapped SecretID that can
+    <dd>The unique ID for the response-wrapped SecretID that can
 be safely logged.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,8 +880,8 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The token used to retrieve a response-wrapped SecretID.
-{{% /md %}}</dd>
+    <dd>The token used to retrieve a response-wrapped SecretID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -889,17 +889,17 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, the SecretID response will be
+    <dd>If set, the SecretID response will be
 [response-wrapped](https://www.vaultproject.io/docs/concepts/response-wrapping.html)
 and available for the duration specified. Only a single unwrapping of the
 token is allowed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -908,8 +908,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for this SecretID that can be safely logged.
-{{% /md %}}</dd>
+    <dd>The unique ID for this SecretID that can be safely logged.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique name of the auth backend to configure.
-{{% /md %}}</dd>
+    <dd>Unique name of the auth backend to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,9 +926,9 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}If set, specifies blocks of IP addresses which can
+    <dd>If set, specifies blocks of IP addresses which can
 perform the login operation using this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,9 +936,9 @@ perform the login operation using this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON-encoded string containing metadata in
+    <dd>A JSON-encoded string containing metadata in
 key-value pairs to be set on tokens issued with this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -946,8 +946,8 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role to create the SecretID for.
-{{% /md %}}</dd>
+    <dd>The name of the role to create the SecretID for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -955,9 +955,9 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SecretID to be created. If set, uses "Push"
+    <dd>The SecretID to be created. If set, uses "Push"
 mode.  Defaults to Vault auto-generating SecretIDs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,9 +965,9 @@ mode.  Defaults to Vault auto-generating SecretIDs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for the response-wrapped SecretID that can
+    <dd>The unique ID for the response-wrapped SecretID that can
 be safely logged.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -975,8 +975,8 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The token used to retrieve a response-wrapped SecretID.
-{{% /md %}}</dd>
+    <dd>The token used to retrieve a response-wrapped SecretID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -984,17 +984,17 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, the SecretID response will be
+    <dd>If set, the SecretID response will be
 [response-wrapped](https://www.vaultproject.io/docs/concepts/response-wrapping.html)
 and available for the duration specified. Only a single unwrapping of the
 token is allowed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1003,8 +1003,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for this SecretID that can be safely logged.
-{{% /md %}}</dd>
+    <dd>The unique ID for this SecretID that can be safely logged.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,8 +1012,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique name of the auth backend to configure.
-{{% /md %}}</dd>
+    <dd>Unique name of the auth backend to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,9 +1021,9 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}If set, specifies blocks of IP addresses which can
+    <dd>If set, specifies blocks of IP addresses which can
 perform the login operation using this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1031,9 +1031,9 @@ perform the login operation using this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON-encoded string containing metadata in
+    <dd>A JSON-encoded string containing metadata in
 key-value pairs to be set on tokens issued with this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,8 +1041,8 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role to create the SecretID for.
-{{% /md %}}</dd>
+    <dd>The name of the role to create the SecretID for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,9 +1050,9 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SecretID to be created. If set, uses "Push"
+    <dd>The SecretID to be created. If set, uses "Push"
 mode.  Defaults to Vault auto-generating SecretIDs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,9 +1060,9 @@ mode.  Defaults to Vault auto-generating SecretIDs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for the response-wrapped SecretID that can
+    <dd>The unique ID for the response-wrapped SecretID that can
 be safely logged.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1070,8 +1070,8 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The token used to retrieve a response-wrapped SecretID.
-{{% /md %}}</dd>
+    <dd>The token used to retrieve a response-wrapped SecretID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1079,17 +1079,17 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, the SecretID response will be
+    <dd>If set, the SecretID response will be
 [response-wrapped](https://www.vaultproject.io/docs/concepts/response-wrapping.html)
 and available for the duration specified. Only a single unwrapping of the
 token is allowed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1098,8 +1098,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for this SecretID that can be safely logged.
-{{% /md %}}</dd>
+    <dd>The unique ID for this SecretID that can be safely logged.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,8 +1107,8 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Unique name of the auth backend to configure.
-{{% /md %}}</dd>
+    <dd>Unique name of the auth backend to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,9 +1116,9 @@ token is allowed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}If set, specifies blocks of IP addresses which can
+    <dd>If set, specifies blocks of IP addresses which can
 perform the login operation using this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1126,9 +1126,9 @@ perform the login operation using this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A JSON-encoded string containing metadata in
+    <dd>A JSON-encoded string containing metadata in
 key-value pairs to be set on tokens issued with this SecretID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role to create the SecretID for.
-{{% /md %}}</dd>
+    <dd>The name of the role to create the SecretID for.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,9 +1145,9 @@ key-value pairs to be set on tokens issued with this SecretID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SecretID to be created. If set, uses "Push"
+    <dd>The SecretID to be created. If set, uses "Push"
 mode.  Defaults to Vault auto-generating SecretIDs.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,9 +1155,9 @@ mode.  Defaults to Vault auto-generating SecretIDs.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID for the response-wrapped SecretID that can
+    <dd>The unique ID for the response-wrapped SecretID that can
 be safely logged.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,8 +1165,8 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The token used to retrieve a response-wrapped SecretID.
-{{% /md %}}</dd>
+    <dd>The token used to retrieve a response-wrapped SecretID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,14 +1174,14 @@ be safely logged.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If set, the SecretID response will be
+    <dd>If set, the SecretID response will be
 [response-wrapped](https://www.vaultproject.io/docs/concepts/response-wrapping.html)
 and available for the duration specified. Only a single unwrapping of the
 token is allowed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

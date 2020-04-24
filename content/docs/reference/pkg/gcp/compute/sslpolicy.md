@@ -46,26 +46,26 @@ const custom_ssl_policy = new gcp.compute.SSLPolicy("custom-ssl-policy", {
 
 
 ## Create a SSLPolicy Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#SSLPolicy">SSLPolicy</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#SSLPolicyArgs">SSLPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SSLPolicy</span><span class="p">(resource_name, opts=None, </span>custom_features=None<span class="p">, </span>description=None<span class="p">, </span>min_tls_version=None<span class="p">, </span>name=None<span class="p">, </span>profile=None<span class="p">, </span>project=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSSLPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SSLPolicyArgs">SSLPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SSLPolicy">SSLPolicy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.SSLPolicy.html">SSLPolicy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.SSLPolicyArgs.html">SSLPolicyArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -102,9 +102,9 @@ const custom_ssl_policy = new gcp.compute.SSLPolicy("custom-ssl-policy", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -122,9 +122,9 @@ const custom_ssl_policy = new gcp.compute.SSLPolicy("custom-ssl-policy", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -171,9 +171,9 @@ const custom_ssl_policy = new gcp.compute.SSLPolicy("custom-ssl-policy", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -210,7 +210,7 @@ const custom_ssl_policy = new gcp.compute.SSLPolicy("custom-ssl-policy", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## SSLPolicy Resource Properties {#properties}
 
@@ -223,7 +223,7 @@ The SSLPolicy resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -232,13 +232,13 @@ The SSLPolicy resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for which
 ciphers are available to use. **Note**: this argument *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,9 +255,9 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
+    <dd>The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
 This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,11 +265,11 @@ This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,13 +277,13 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for information
 on what cipher suites each profile provides. If 'CUSTOM' is used, the 'custom_features' attribute **must be set**.
 Default is 'COMPATIBLE'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,15 +291,15 @@ Default is 'COMPATIBLE'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -308,13 +308,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for which
 ciphers are available to use. **Note**: this argument *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,9 +331,9 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
+    <dd>The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
 This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,11 +341,11 @@ This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,13 +353,13 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for information
 on what cipher suites each profile provides. If 'CUSTOM' is used, the 'custom_features' attribute **must be set**.
 Default is 'COMPATIBLE'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,15 +367,15 @@ Default is 'COMPATIBLE'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -384,13 +384,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for which
 ciphers are available to use. **Note**: this argument *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,9 +407,9 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
+    <dd>The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
 This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,11 +417,11 @@ This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,13 +429,13 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for information
 on what cipher suites each profile provides. If 'CUSTOM' is used, the 'custom_features' attribute **must be set**.
 Default is 'COMPATIBLE'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,15 +443,15 @@ Default is 'COMPATIBLE'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -460,13 +460,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for which
 ciphers are available to use. **Note**: this argument *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,9 +483,9 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
+    <dd>The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
 This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,11 +493,11 @@ This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,13 +505,13 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for information
 on what cipher suites each profile provides. If 'CUSTOM' is used, the 'custom_features' attribute **must be set**.
 Default is 'COMPATIBLE'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,12 +519,12 @@ Default is 'COMPATIBLE'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -538,7 +538,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -547,8 +547,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -556,8 +556,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of features enabled in the SSL policy.
-{{% /md %}}</dd>
+    <dd>The list of features enabled in the SSL policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -565,8 +565,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
-{{% /md %}}</dd>
+    <dd>Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
+</dd>
 
     <dt class="property-"
             title="">
@@ -574,7 +574,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -582,14 +582,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -598,8 +598,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -607,8 +607,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of features enabled in the SSL policy.
-{{% /md %}}</dd>
+    <dd>The list of features enabled in the SSL policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -616,8 +616,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
-{{% /md %}}</dd>
+    <dd>Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
+</dd>
 
     <dt class="property-"
             title="">
@@ -625,7 +625,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -633,14 +633,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -649,8 +649,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -658,8 +658,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of features enabled in the SSL policy.
-{{% /md %}}</dd>
+    <dd>The list of features enabled in the SSL policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -667,8 +667,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
-{{% /md %}}</dd>
+    <dd>Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
+</dd>
 
     <dt class="property-"
             title="">
@@ -676,7 +676,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -684,14 +684,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -700,8 +700,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -709,8 +709,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of features enabled in the SSL policy.
-{{% /md %}}</dd>
+    <dd>The list of features enabled in the SSL policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -718,8 +718,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
-{{% /md %}}</dd>
+    <dd>Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
+</dd>
 
     <dt class="property-"
             title="">
@@ -727,7 +727,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -735,11 +735,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -750,25 +750,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing SSLPolicy Resource {#look-up}
 
 Get an existing SSLPolicy resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#SSLPolicyState">SSLPolicyState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#SSLPolicy">SSLPolicy</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>creation_timestamp=None<span class="p">, </span>custom_features=None<span class="p">, </span>description=None<span class="p">, </span>enabled_features=None<span class="p">, </span>fingerprint=None<span class="p">, </span>min_tls_version=None<span class="p">, </span>name=None<span class="p">, </span>profile=None<span class="p">, </span>project=None<span class="p">, </span>self_link=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSSLPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SSLPolicyState">SSLPolicyState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SSLPolicy">SSLPolicy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.SSLPolicy.html">SSLPolicy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.SSLPolicyState.html">SSLPolicyState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -793,9 +793,9 @@ Get an existing SSLPolicy resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -808,36 +808,9 @@ Get an existing SSLPolicy resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -862,13 +835,40 @@ Get an existing SSLPolicy resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -877,8 +877,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,13 +886,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for which
 ciphers are available to use. **Note**: this argument *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,8 +900,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,8 +909,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of features enabled in the SSL policy.
-{{% /md %}}</dd>
+    <dd>The list of features enabled in the SSL policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,8 +918,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
-{{% /md %}}</dd>
+    <dd>Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,9 +927,9 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
+    <dd>The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
 This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -937,11 +937,11 @@ This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -949,13 +949,13 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for information
 on what cipher suites each profile provides. If 'CUSTOM' is used, the 'custom_features' attribute **must be set**.
 Default is 'COMPATIBLE'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,9 +963,9 @@ Default is 'COMPATIBLE'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -973,14 +973,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -989,8 +989,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,13 +998,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for which
 ciphers are available to use. **Note**: this argument *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,8 +1012,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,8 +1021,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of features enabled in the SSL policy.
-{{% /md %}}</dd>
+    <dd>The list of features enabled in the SSL policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
-{{% /md %}}</dd>
+    <dd>Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,9 +1039,9 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
+    <dd>The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
 This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1049,11 +1049,11 @@ This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1061,13 +1061,13 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for information
 on what cipher suites each profile provides. If 'CUSTOM' is used, the 'custom_features' attribute **must be set**.
 Default is 'COMPATIBLE'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,9 +1075,9 @@ Default is 'COMPATIBLE'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1085,14 +1085,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1101,8 +1101,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,13 +1110,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for which
 ciphers are available to use. **Note**: this argument *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1124,8 +1124,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,8 +1133,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of features enabled in the SSL policy.
-{{% /md %}}</dd>
+    <dd>The list of features enabled in the SSL policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,8 +1142,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
-{{% /md %}}</dd>
+    <dd>Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,9 +1151,9 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
+    <dd>The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
 This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,11 +1161,11 @@ This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,13 +1173,13 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for information
 on what cipher suites each profile provides. If 'CUSTOM' is used, the 'custom_features' attribute **must be set**.
 Default is 'COMPATIBLE'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,9 +1187,9 @@ Default is 'COMPATIBLE'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1197,14 +1197,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1213,8 +1213,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,13 +1222,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for which
 ciphers are available to use. **Note**: this argument *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,8 +1236,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,8 +1245,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of features enabled in the SSL policy.
-{{% /md %}}</dd>
+    <dd>The list of features enabled in the SSL policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,8 +1254,8 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
-{{% /md %}}</dd>
+    <dd>Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,9 +1263,9 @@ ciphers are available to use. **Note**: this argument *must* be present when usi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
+    <dd>The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer.
 This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,11 +1273,11 @@ This can be one of 'TLS_1_0', 'TLS_1_1', 'TLS_1_2'. Default is 'TLS_1_0'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,13 +1285,13 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
+    <dd>Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. This
 can be one of 'COMPATIBLE', 'MODERN', 'RESTRICTED', or 'CUSTOM'. If using 'CUSTOM', the set of SSL features to enable
 must be specified in the 'customFeatures' field. See the [official
 documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport) for information
 on what cipher suites each profile provides. If 'CUSTOM' is used, the 'custom_features' attribute **must be set**.
 Default is 'COMPATIBLE'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,9 +1299,9 @@ Default is 'COMPATIBLE'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1309,11 +1309,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -20,26 +20,26 @@ Creates a table resource in a dataset for Google BigQuery. For more information 
 
 
 ## Create a Table Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/bigquery/#Table">Table</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/bigquery/#TableArgs">TableArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Table</span><span class="p">(resource_name, opts=None, </span>clusterings=None<span class="p">, </span>dataset_id=None<span class="p">, </span>description=None<span class="p">, </span>encryption_configuration=None<span class="p">, </span>expiration_time=None<span class="p">, </span>external_data_configuration=None<span class="p">, </span>friendly_name=None<span class="p">, </span>labels=None<span class="p">, </span>project=None<span class="p">, </span>range_partitioning=None<span class="p">, </span>schema=None<span class="p">, </span>table_id=None<span class="p">, </span>time_partitioning=None<span class="p">, </span>view=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewTable<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableArgs">TableArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#Table">Table</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.BigQuery.Table.html">Table</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.BigQuery.TableArgs.html">TableArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -76,9 +76,9 @@ Creates a table resource in a dataset for Google BigQuery. For more information 
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -96,9 +96,9 @@ Creates a table resource in a dataset for Google BigQuery. For more information 
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -145,9 +145,9 @@ Creates a table resource in a dataset for Google BigQuery. For more information 
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -184,7 +184,7 @@ Creates a table resource in a dataset for Google BigQuery. For more information 
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Table Resource Properties {#properties}
 
@@ -197,7 +197,7 @@ The Table resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -206,9 +206,9 @@ The Table resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The dataset ID to create the table in.
+    <dd>The dataset ID to create the table in.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -216,9 +216,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID for the resource.
+    <dd>A unique ID for the resource.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,10 +226,10 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies column names to use for data clustering.
+    <dd>Specifies column names to use for data clustering.
 Up to four top-level columns are allowed, and should be specified in
 descending priority order.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,8 +237,8 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The field description.
-{{% /md %}}</dd>
+    <dd>The field description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,10 +246,10 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableencryptionconfiguration">Table<wbr>Encryption<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the table should be encrypted.
+    <dd>Specifies how the table should be encrypted.
 If left blank, the table will be encrypted with a Google-managed key; that process
 is transparent to the user.  Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,11 +257,11 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table expires, in
+    <dd>The time when this table expires, in
 milliseconds since the epoch. If not present, the table will persist
 indefinitely. Expired tables will be deleted and their storage
 reclaimed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,11 +269,11 @@ reclaimed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfiguration">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Describes the data format,
+    <dd>Describes the data format,
 location, and other properties of a table stored outside of BigQuery.
 By defining these properties, the data source can then be queried as
 if it were a standard BigQuery table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive name for the table.
-{{% /md %}}</dd>
+    <dd>A descriptive name for the table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of labels to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of labels to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,9 +299,9 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,9 +309,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioning">Table<wbr>Range<wbr>Partitioning<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures range-based
+    <dd>If specified, configures range-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,7 +319,7 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON schema for the table. Schema is required
+    <dd>A JSON schema for the table. Schema is required
 for CSV and JSON formats and is disallowed for Google Cloud
 Bigtable, Cloud Datastore backups, and Avro formats when using
 external tables. For more information see the
@@ -330,7 +330,7 @@ If the API returns a different value for the same schema, e.g. it
 switched the order of values or replaced `STRUCT` field type with `RECORD`
 field type, we currently cannot suppress the recurring diff this causes.
 As a workaround, we recommend using the schema as returned by the API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,9 +338,9 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tabletimepartitioning">Table<wbr>Time<wbr>Partitioning<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures time-based
+    <dd>If specified, configures time-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,15 +348,15 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableview">Table<wbr>View<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures this table as a view.
+    <dd>If specified, configures this table as a view.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -365,9 +365,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The dataset ID to create the table in.
+    <dd>The dataset ID to create the table in.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -375,9 +375,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID for the resource.
+    <dd>A unique ID for the resource.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,10 +385,10 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies column names to use for data clustering.
+    <dd>Specifies column names to use for data clustering.
 Up to four top-level columns are allowed, and should be specified in
 descending priority order.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field description.
-{{% /md %}}</dd>
+    <dd>The field description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,10 +405,10 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableencryptionconfiguration">Table<wbr>Encryption<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the table should be encrypted.
+    <dd>Specifies how the table should be encrypted.
 If left blank, the table will be encrypted with a Google-managed key; that process
 is transparent to the user.  Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,11 +416,11 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table expires, in
+    <dd>The time when this table expires, in
 milliseconds since the epoch. If not present, the table will persist
 indefinitely. Expired tables will be deleted and their storage
 reclaimed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,11 +428,11 @@ reclaimed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfiguration">Table<wbr>External<wbr>Data<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Describes the data format,
+    <dd>Describes the data format,
 location, and other properties of a table stored outside of BigQuery.
 By defining these properties, the data source can then be queried as
 if it were a standard BigQuery table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,8 +440,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive name for the table.
-{{% /md %}}</dd>
+    <dd>A descriptive name for the table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,8 +449,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of labels to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of labels to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,9 +458,9 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,9 +468,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioning">Table<wbr>Range<wbr>Partitioning</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures range-based
+    <dd>If specified, configures range-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,7 +478,7 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON schema for the table. Schema is required
+    <dd>A JSON schema for the table. Schema is required
 for CSV and JSON formats and is disallowed for Google Cloud
 Bigtable, Cloud Datastore backups, and Avro formats when using
 external tables. For more information see the
@@ -489,7 +489,7 @@ If the API returns a different value for the same schema, e.g. it
 switched the order of values or replaced `STRUCT` field type with `RECORD`
 field type, we currently cannot suppress the recurring diff this causes.
 As a workaround, we recommend using the schema as returned by the API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,9 +497,9 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tabletimepartitioning">Table<wbr>Time<wbr>Partitioning</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures time-based
+    <dd>If specified, configures time-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,15 +507,15 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableview">Table<wbr>View</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures this table as a view.
+    <dd>If specified, configures this table as a view.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -524,9 +524,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The dataset ID to create the table in.
+    <dd>The dataset ID to create the table in.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -534,9 +534,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID for the resource.
+    <dd>A unique ID for the resource.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,10 +544,10 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies column names to use for data clustering.
+    <dd>Specifies column names to use for data clustering.
 Up to four top-level columns are allowed, and should be specified in
 descending priority order.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,8 +555,8 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field description.
-{{% /md %}}</dd>
+    <dd>The field description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -564,10 +564,10 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableencryptionconfiguration">Table<wbr>Encryption<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the table should be encrypted.
+    <dd>Specifies how the table should be encrypted.
 If left blank, the table will be encrypted with a Google-managed key; that process
 is transparent to the user.  Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,11 +575,11 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table expires, in
+    <dd>The time when this table expires, in
 milliseconds since the epoch. If not present, the table will persist
 indefinitely. Expired tables will be deleted and their storage
 reclaimed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,11 +587,11 @@ reclaimed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfiguration">Table<wbr>External<wbr>Data<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Describes the data format,
+    <dd>Describes the data format,
 location, and other properties of a table stored outside of BigQuery.
 By defining these properties, the data source can then be queried as
 if it were a standard BigQuery table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,8 +599,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive name for the table.
-{{% /md %}}</dd>
+    <dd>A descriptive name for the table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,8 +608,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of labels to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of labels to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -617,9 +617,9 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,9 +627,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioning">Table<wbr>Range<wbr>Partitioning</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures range-based
+    <dd>If specified, configures range-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,7 +637,7 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON schema for the table. Schema is required
+    <dd>A JSON schema for the table. Schema is required
 for CSV and JSON formats and is disallowed for Google Cloud
 Bigtable, Cloud Datastore backups, and Avro formats when using
 external tables. For more information see the
@@ -648,7 +648,7 @@ If the API returns a different value for the same schema, e.g. it
 switched the order of values or replaced `STRUCT` field type with `RECORD`
 field type, we currently cannot suppress the recurring diff this causes.
 As a workaround, we recommend using the schema as returned by the API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,9 +656,9 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tabletimepartitioning">Table<wbr>Time<wbr>Partitioning</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures time-based
+    <dd>If specified, configures time-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,15 +666,15 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableview">Table<wbr>View</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures this table as a view.
+    <dd>If specified, configures this table as a view.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -683,9 +683,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The dataset ID to create the table in.
+    <dd>The dataset ID to create the table in.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -693,9 +693,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID for the resource.
+    <dd>A unique ID for the resource.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -703,10 +703,10 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies column names to use for data clustering.
+    <dd>Specifies column names to use for data clustering.
 Up to four top-level columns are allowed, and should be specified in
 descending priority order.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -714,8 +714,8 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The field description.
-{{% /md %}}</dd>
+    <dd>The field description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,10 +723,10 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableencryptionconfiguration">Dict[Table<wbr>Encryption<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the table should be encrypted.
+    <dd>Specifies how the table should be encrypted.
 If left blank, the table will be encrypted with a Google-managed key; that process
 is transparent to the user.  Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -734,11 +734,11 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table expires, in
+    <dd>The time when this table expires, in
 milliseconds since the epoch. If not present, the table will persist
 indefinitely. Expired tables will be deleted and their storage
 reclaimed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -746,11 +746,11 @@ reclaimed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfiguration">Dict[Table<wbr>External<wbr>Data<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Describes the data format,
+    <dd>Describes the data format,
 location, and other properties of a table stored outside of BigQuery.
 By defining these properties, the data source can then be queried as
 if it were a standard BigQuery table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,8 +758,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive name for the table.
-{{% /md %}}</dd>
+    <dd>A descriptive name for the table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,8 +767,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of labels to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of labels to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,9 +776,9 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,9 +786,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioning">Dict[Table<wbr>Range<wbr>Partitioning]</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures range-based
+    <dd>If specified, configures range-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,7 +796,7 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A JSON schema for the table. Schema is required
+    <dd>A JSON schema for the table. Schema is required
 for CSV and JSON formats and is disallowed for Google Cloud
 Bigtable, Cloud Datastore backups, and Avro formats when using
 external tables. For more information see the
@@ -807,7 +807,7 @@ If the API returns a different value for the same schema, e.g. it
 switched the order of values or replaced `STRUCT` field type with `RECORD`
 field type, we currently cannot suppress the recurring diff this causes.
 As a workaround, we recommend using the schema as returned by the API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -815,9 +815,9 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tabletimepartitioning">Dict[Table<wbr>Time<wbr>Partitioning]</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures time-based
+    <dd>If specified, configures time-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,12 +825,12 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableview">Dict[Table<wbr>View]</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures this table as a view.
+    <dd>If specified, configures this table as a view.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -844,7 +844,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -853,8 +853,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was created, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was created, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -862,8 +862,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A hash of the resource.
-{{% /md %}}</dd>
+    <dd>A hash of the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -871,7 +871,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -879,8 +879,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was last modified, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was last modified, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -888,8 +888,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The geographic location where the table resides. This value is inherited from the dataset.
-{{% /md %}}</dd>
+    <dd>The geographic location where the table resides. This value is inherited from the dataset.
+</dd>
 
     <dt class="property-"
             title="">
@@ -897,8 +897,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of this table in bytes, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The size of this table in bytes, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -906,8 +906,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of bytes in the table that are considered "long-term storage".
-{{% /md %}}</dd>
+    <dd>The number of bytes in the table that are considered "long-term storage".
+</dd>
 
     <dt class="property-"
             title="">
@@ -915,8 +915,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows of data in this table, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The number of rows of data in this table, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -924,8 +924,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -933,15 +933,15 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -950,8 +950,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was created, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was created, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -959,8 +959,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hash of the resource.
-{{% /md %}}</dd>
+    <dd>A hash of the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -968,7 +968,7 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -976,8 +976,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was last modified, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was last modified, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -985,8 +985,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The geographic location where the table resides. This value is inherited from the dataset.
-{{% /md %}}</dd>
+    <dd>The geographic location where the table resides. This value is inherited from the dataset.
+</dd>
 
     <dt class="property-"
             title="">
@@ -994,8 +994,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of this table in bytes, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The size of this table in bytes, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1003,8 +1003,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of bytes in the table that are considered "long-term storage".
-{{% /md %}}</dd>
+    <dd>The number of bytes in the table that are considered "long-term storage".
+</dd>
 
     <dt class="property-"
             title="">
@@ -1012,8 +1012,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows of data in this table, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The number of rows of data in this table, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1021,8 +1021,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1030,15 +1030,15 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1047,8 +1047,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was created, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was created, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1056,8 +1056,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hash of the resource.
-{{% /md %}}</dd>
+    <dd>A hash of the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1065,7 +1065,7 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1073,8 +1073,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was last modified, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was last modified, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1082,8 +1082,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The geographic location where the table resides. This value is inherited from the dataset.
-{{% /md %}}</dd>
+    <dd>The geographic location where the table resides. This value is inherited from the dataset.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1091,8 +1091,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of this table in bytes, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The size of this table in bytes, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1100,8 +1100,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of bytes in the table that are considered "long-term storage".
-{{% /md %}}</dd>
+    <dd>The number of bytes in the table that are considered "long-term storage".
+</dd>
 
     <dt class="property-"
             title="">
@@ -1109,8 +1109,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows of data in this table, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The number of rows of data in this table, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1118,8 +1118,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1127,15 +1127,15 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1144,8 +1144,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was created, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was created, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1153,8 +1153,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A hash of the resource.
-{{% /md %}}</dd>
+    <dd>A hash of the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1162,7 +1162,7 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1170,8 +1170,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was last modified, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was last modified, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1179,8 +1179,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The geographic location where the table resides. This value is inherited from the dataset.
-{{% /md %}}</dd>
+    <dd>The geographic location where the table resides. This value is inherited from the dataset.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1188,8 +1188,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of this table in bytes, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The size of this table in bytes, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1197,8 +1197,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of bytes in the table that are considered "long-term storage".
-{{% /md %}}</dd>
+    <dd>The number of bytes in the table that are considered "long-term storage".
+</dd>
 
     <dt class="property-"
             title="">
@@ -1206,8 +1206,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows of data in this table, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The number of rows of data in this table, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1215,8 +1215,8 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1224,12 +1224,12 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1240,25 +1240,25 @@ one partition per day based on data loading time.
 ## Look up an Existing Table Resource {#look-up}
 
 Get an existing Table resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/bigquery/#TableState">TableState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/bigquery/#Table">Table</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>clusterings=None<span class="p">, </span>creation_time=None<span class="p">, </span>dataset_id=None<span class="p">, </span>description=None<span class="p">, </span>encryption_configuration=None<span class="p">, </span>etag=None<span class="p">, </span>expiration_time=None<span class="p">, </span>external_data_configuration=None<span class="p">, </span>friendly_name=None<span class="p">, </span>labels=None<span class="p">, </span>last_modified_time=None<span class="p">, </span>location=None<span class="p">, </span>num_bytes=None<span class="p">, </span>num_long_term_bytes=None<span class="p">, </span>num_rows=None<span class="p">, </span>project=None<span class="p">, </span>range_partitioning=None<span class="p">, </span>schema=None<span class="p">, </span>self_link=None<span class="p">, </span>table_id=None<span class="p">, </span>time_partitioning=None<span class="p">, </span>type=None<span class="p">, </span>view=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTable<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableState">TableState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#Table">Table</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.BigQuery.Table.html">Table</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.BigQuery.TableState.html">TableState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1283,9 +1283,9 @@ Get an existing Table resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1298,36 +1298,9 @@ Get an existing Table resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1352,13 +1325,40 @@ Get an existing Table resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1367,10 +1367,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies column names to use for data clustering.
+    <dd>Specifies column names to use for data clustering.
 Up to four top-level columns are allowed, and should be specified in
 descending priority order.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,8 +1378,8 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was created, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was created, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1387,9 +1387,9 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The dataset ID to create the table in.
+    <dd>The dataset ID to create the table in.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1397,8 +1397,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The field description.
-{{% /md %}}</dd>
+    <dd>The field description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1406,10 +1406,10 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableencryptionconfiguration">Table<wbr>Encryption<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the table should be encrypted.
+    <dd>Specifies how the table should be encrypted.
 If left blank, the table will be encrypted with a Google-managed key; that process
 is transparent to the user.  Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,8 +1417,8 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A hash of the resource.
-{{% /md %}}</dd>
+    <dd>A hash of the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1426,11 +1426,11 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table expires, in
+    <dd>The time when this table expires, in
 milliseconds since the epoch. If not present, the table will persist
 indefinitely. Expired tables will be deleted and their storage
 reclaimed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1438,11 +1438,11 @@ reclaimed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfiguration">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Describes the data format,
+    <dd>Describes the data format,
 location, and other properties of a table stored outside of BigQuery.
 By defining these properties, the data source can then be queried as
 if it were a standard BigQuery table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,8 +1450,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive name for the table.
-{{% /md %}}</dd>
+    <dd>A descriptive name for the table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1459,8 +1459,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of labels to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of labels to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,8 +1468,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was last modified, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was last modified, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,8 +1477,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The geographic location where the table resides. This value is inherited from the dataset.
-{{% /md %}}</dd>
+    <dd>The geographic location where the table resides. This value is inherited from the dataset.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,8 +1486,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of this table in bytes, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The size of this table in bytes, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,8 +1495,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of bytes in the table that are considered "long-term storage".
-{{% /md %}}</dd>
+    <dd>The number of bytes in the table that are considered "long-term storage".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows of data in this table, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The number of rows of data in this table, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,9 +1513,9 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,9 +1523,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioning">Table<wbr>Range<wbr>Partitioning<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures range-based
+    <dd>If specified, configures range-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,7 +1533,7 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON schema for the table. Schema is required
+    <dd>A JSON schema for the table. Schema is required
 for CSV and JSON formats and is disallowed for Google Cloud
 Bigtable, Cloud Datastore backups, and Avro formats when using
 external tables. For more information see the
@@ -1544,7 +1544,7 @@ If the API returns a different value for the same schema, e.g. it
 switched the order of values or replaced `STRUCT` field type with `RECORD`
 field type, we currently cannot suppress the recurring diff this causes.
 As a workaround, we recommend using the schema as returned by the API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1552,8 +1552,8 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1561,9 +1561,9 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID for the resource.
+    <dd>A unique ID for the resource.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,9 +1571,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tabletimepartitioning">Table<wbr>Time<wbr>Partitioning<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures time-based
+    <dd>If specified, configures time-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1581,9 +1581,9 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1591,15 +1591,15 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableview">Table<wbr>View<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures this table as a view.
+    <dd>If specified, configures this table as a view.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1608,10 +1608,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies column names to use for data clustering.
+    <dd>Specifies column names to use for data clustering.
 Up to four top-level columns are allowed, and should be specified in
 descending priority order.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,8 +1619,8 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was created, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was created, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,9 +1628,9 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The dataset ID to create the table in.
+    <dd>The dataset ID to create the table in.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1638,8 +1638,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field description.
-{{% /md %}}</dd>
+    <dd>The field description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1647,10 +1647,10 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableencryptionconfiguration">Table<wbr>Encryption<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the table should be encrypted.
+    <dd>Specifies how the table should be encrypted.
 If left blank, the table will be encrypted with a Google-managed key; that process
 is transparent to the user.  Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,8 +1658,8 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hash of the resource.
-{{% /md %}}</dd>
+    <dd>A hash of the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,11 +1667,11 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table expires, in
+    <dd>The time when this table expires, in
 milliseconds since the epoch. If not present, the table will persist
 indefinitely. Expired tables will be deleted and their storage
 reclaimed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1679,11 +1679,11 @@ reclaimed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfiguration">Table<wbr>External<wbr>Data<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Describes the data format,
+    <dd>Describes the data format,
 location, and other properties of a table stored outside of BigQuery.
 By defining these properties, the data source can then be queried as
 if it were a standard BigQuery table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1691,8 +1691,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive name for the table.
-{{% /md %}}</dd>
+    <dd>A descriptive name for the table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,8 +1700,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of labels to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of labels to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,8 +1709,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was last modified, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was last modified, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,8 +1718,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The geographic location where the table resides. This value is inherited from the dataset.
-{{% /md %}}</dd>
+    <dd>The geographic location where the table resides. This value is inherited from the dataset.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1727,8 +1727,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of this table in bytes, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The size of this table in bytes, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,8 +1736,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of bytes in the table that are considered "long-term storage".
-{{% /md %}}</dd>
+    <dd>The number of bytes in the table that are considered "long-term storage".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1745,8 +1745,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows of data in this table, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The number of rows of data in this table, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,9 +1754,9 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,9 +1764,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioning">Table<wbr>Range<wbr>Partitioning</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures range-based
+    <dd>If specified, configures range-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,7 +1774,7 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON schema for the table. Schema is required
+    <dd>A JSON schema for the table. Schema is required
 for CSV and JSON formats and is disallowed for Google Cloud
 Bigtable, Cloud Datastore backups, and Avro formats when using
 external tables. For more information see the
@@ -1785,7 +1785,7 @@ If the API returns a different value for the same schema, e.g. it
 switched the order of values or replaced `STRUCT` field type with `RECORD`
 field type, we currently cannot suppress the recurring diff this causes.
 As a workaround, we recommend using the schema as returned by the API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1793,8 +1793,8 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1802,9 +1802,9 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID for the resource.
+    <dd>A unique ID for the resource.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,9 +1812,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tabletimepartitioning">Table<wbr>Time<wbr>Partitioning</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures time-based
+    <dd>If specified, configures time-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,9 +1822,9 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1832,15 +1832,15 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableview">Table<wbr>View</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures this table as a view.
+    <dd>If specified, configures this table as a view.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1849,10 +1849,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies column names to use for data clustering.
+    <dd>Specifies column names to use for data clustering.
 Up to four top-level columns are allowed, and should be specified in
 descending priority order.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,8 +1860,8 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was created, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was created, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1869,9 +1869,9 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The dataset ID to create the table in.
+    <dd>The dataset ID to create the table in.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1879,8 +1879,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field description.
-{{% /md %}}</dd>
+    <dd>The field description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1888,10 +1888,10 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableencryptionconfiguration">Table<wbr>Encryption<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the table should be encrypted.
+    <dd>Specifies how the table should be encrypted.
 If left blank, the table will be encrypted with a Google-managed key; that process
 is transparent to the user.  Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1899,8 +1899,8 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hash of the resource.
-{{% /md %}}</dd>
+    <dd>A hash of the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1908,11 +1908,11 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table expires, in
+    <dd>The time when this table expires, in
 milliseconds since the epoch. If not present, the table will persist
 indefinitely. Expired tables will be deleted and their storage
 reclaimed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,11 +1920,11 @@ reclaimed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfiguration">Table<wbr>External<wbr>Data<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Describes the data format,
+    <dd>Describes the data format,
 location, and other properties of a table stored outside of BigQuery.
 By defining these properties, the data source can then be queried as
 if it were a standard BigQuery table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1932,8 +1932,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive name for the table.
-{{% /md %}}</dd>
+    <dd>A descriptive name for the table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,8 +1941,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of labels to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of labels to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,8 +1950,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was last modified, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was last modified, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1959,8 +1959,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The geographic location where the table resides. This value is inherited from the dataset.
-{{% /md %}}</dd>
+    <dd>The geographic location where the table resides. This value is inherited from the dataset.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1968,8 +1968,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of this table in bytes, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The size of this table in bytes, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1977,8 +1977,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of bytes in the table that are considered "long-term storage".
-{{% /md %}}</dd>
+    <dd>The number of bytes in the table that are considered "long-term storage".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1986,8 +1986,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows of data in this table, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The number of rows of data in this table, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1995,9 +1995,9 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,9 +2005,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioning">Table<wbr>Range<wbr>Partitioning</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures range-based
+    <dd>If specified, configures range-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2015,7 +2015,7 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON schema for the table. Schema is required
+    <dd>A JSON schema for the table. Schema is required
 for CSV and JSON formats and is disallowed for Google Cloud
 Bigtable, Cloud Datastore backups, and Avro formats when using
 external tables. For more information see the
@@ -2026,7 +2026,7 @@ If the API returns a different value for the same schema, e.g. it
 switched the order of values or replaced `STRUCT` field type with `RECORD`
 field type, we currently cannot suppress the recurring diff this causes.
 As a workaround, we recommend using the schema as returned by the API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2034,8 +2034,8 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2043,9 +2043,9 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID for the resource.
+    <dd>A unique ID for the resource.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2053,9 +2053,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tabletimepartitioning">Table<wbr>Time<wbr>Partitioning</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures time-based
+    <dd>If specified, configures time-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2063,9 +2063,9 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2073,15 +2073,15 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableview">Table<wbr>View</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures this table as a view.
+    <dd>If specified, configures this table as a view.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2090,10 +2090,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies column names to use for data clustering.
+    <dd>Specifies column names to use for data clustering.
 Up to four top-level columns are allowed, and should be specified in
 descending priority order.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2101,8 +2101,8 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was created, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was created, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2110,9 +2110,9 @@ descending priority order.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The dataset ID to create the table in.
+    <dd>The dataset ID to create the table in.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2120,8 +2120,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The field description.
-{{% /md %}}</dd>
+    <dd>The field description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2129,10 +2129,10 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableencryptionconfiguration">Dict[Table<wbr>Encryption<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the table should be encrypted.
+    <dd>Specifies how the table should be encrypted.
 If left blank, the table will be encrypted with a Google-managed key; that process
 is transparent to the user.  Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2140,8 +2140,8 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A hash of the resource.
-{{% /md %}}</dd>
+    <dd>A hash of the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2149,11 +2149,11 @@ is transparent to the user.  Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table expires, in
+    <dd>The time when this table expires, in
 milliseconds since the epoch. If not present, the table will persist
 indefinitely. Expired tables will be deleted and their storage
 reclaimed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2161,11 +2161,11 @@ reclaimed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfiguration">Dict[Table<wbr>External<wbr>Data<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Describes the data format,
+    <dd>Describes the data format,
 location, and other properties of a table stored outside of BigQuery.
 By defining these properties, the data source can then be queried as
 if it were a standard BigQuery table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2173,8 +2173,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive name for the table.
-{{% /md %}}</dd>
+    <dd>A descriptive name for the table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2182,8 +2182,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of labels to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of labels to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2191,8 +2191,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time when this table was last modified, in milliseconds since the epoch.
-{{% /md %}}</dd>
+    <dd>The time when this table was last modified, in milliseconds since the epoch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2200,8 +2200,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The geographic location where the table resides. This value is inherited from the dataset.
-{{% /md %}}</dd>
+    <dd>The geographic location where the table resides. This value is inherited from the dataset.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2209,8 +2209,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of this table in bytes, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The size of this table in bytes, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2218,8 +2218,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of bytes in the table that are considered "long-term storage".
-{{% /md %}}</dd>
+    <dd>The number of bytes in the table that are considered "long-term storage".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2227,8 +2227,8 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows of data in this table, excluding any data in the streaming buffer.
-{{% /md %}}</dd>
+    <dd>The number of rows of data in this table, excluding any data in the streaming buffer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2236,9 +2236,9 @@ if it were a standard BigQuery table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2246,9 +2246,9 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioning">Dict[Table<wbr>Range<wbr>Partitioning]</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures range-based
+    <dd>If specified, configures range-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2256,7 +2256,7 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A JSON schema for the table. Schema is required
+    <dd>A JSON schema for the table. Schema is required
 for CSV and JSON formats and is disallowed for Google Cloud
 Bigtable, Cloud Datastore backups, and Avro formats when using
 external tables. For more information see the
@@ -2267,7 +2267,7 @@ If the API returns a different value for the same schema, e.g. it
 switched the order of values or replaced `STRUCT` field type with `RECORD`
 field type, we currently cannot suppress the recurring diff this causes.
 As a workaround, we recommend using the schema as returned by the API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2275,8 +2275,8 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2284,9 +2284,9 @@ As a workaround, we recommend using the schema as returned by the API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID for the resource.
+    <dd>A unique ID for the resource.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2294,9 +2294,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tabletimepartitioning">Dict[Table<wbr>Time<wbr>Partitioning]</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures time-based
+    <dd>If specified, configures time-based
 partitioning for this table. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2304,9 +2304,9 @@ partitioning for this table. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2314,12 +2314,12 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableview">Dict[Table<wbr>View]</a></span>
     </dt>
-    <dd>{{% md %}}If specified, configures this table as a view.
+    <dd>If specified, configures this table as a view.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2334,18 +2334,18 @@ Structure is documented below.
 
 
 <h4 id="tableencryptionconfiguration">Table<wbr>Encryption<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#TableEncryptionConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#TableEncryptionConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableEncryptionConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableEncryptionConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2354,18 +2354,18 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The self link or full name of a key which should be used to
+    <dd>The self link or full name of a key which should be used to
 encrypt this table.  Note that the default bigquery service account will need to have
 encrypt/decrypt permissions on this key - you may want to see the
 `gcp.bigquery.getDefaultServiceAccount` datasource and the
 `gcp.kms.CryptoKeyIAMBinding` resource.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2374,18 +2374,18 @@ encrypt/decrypt permissions on this key - you may want to see the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The self link or full name of a key which should be used to
+    <dd>The self link or full name of a key which should be used to
 encrypt this table.  Note that the default bigquery service account will need to have
 encrypt/decrypt permissions on this key - you may want to see the
 `gcp.bigquery.getDefaultServiceAccount` datasource and the
 `gcp.kms.CryptoKeyIAMBinding` resource.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2394,18 +2394,18 @@ encrypt/decrypt permissions on this key - you may want to see the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The self link or full name of a key which should be used to
+    <dd>The self link or full name of a key which should be used to
 encrypt this table.  Note that the default bigquery service account will need to have
 encrypt/decrypt permissions on this key - you may want to see the
 `gcp.bigquery.getDefaultServiceAccount` datasource and the
 `gcp.kms.CryptoKeyIAMBinding` resource.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2414,33 +2414,33 @@ encrypt/decrypt permissions on this key - you may want to see the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The self link or full name of a key which should be used to
+    <dd>The self link or full name of a key which should be used to
 encrypt this table.  Note that the default bigquery service account will need to have
 encrypt/decrypt permissions on this key - you may want to see the
 `gcp.bigquery.getDefaultServiceAccount` datasource and the
 `gcp.kms.CryptoKeyIAMBinding` resource.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tableexternaldataconfiguration">Table<wbr>External<wbr>Data<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#TableExternalDataConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#TableExternalDataConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableExternalDataConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableExternalDataConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2449,9 +2449,9 @@ encrypt/decrypt permissions on this key - you may want to see the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}- Let BigQuery try to autodetect the schema
+    <dd>- Let BigQuery try to autodetect the schema
 and format of the table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2459,12 +2459,12 @@ and format of the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The data format. Supported values are:
+    <dd>The data format. Supported values are:
 "CSV", "GOOGLE_SHEETS", "NEWLINE_DELIMITED_JSON", "AVRO", "PARQUET",
 and "DATSTORE_BACKUP". To use "GOOGLE_SHEETS"
 the `scopes` must include
 "https://www.googleapis.com/auth/drive.readonly".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2472,9 +2472,9 @@ the `scopes` must include
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the fully-qualified URIs that point to
+    <dd>A list of the fully-qualified URIs that point to
 your data in Google Cloud.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2482,9 +2482,9 @@ your data in Google Cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The compression type of the data source.
+    <dd>The compression type of the data source.
 Valid values are "NONE" or "GZIP".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,9 +2492,9 @@ Valid values are "NONE" or "GZIP".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfigurationcsvoptions">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Csv<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Additional properties to set if
+    <dd>Additional properties to set if
 `source_format` is set to "CSV". Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2502,10 +2502,10 @@ Valid values are "NONE" or "GZIP".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfigurationgooglesheetsoptions">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Google<wbr>Sheets<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Additional options if
+    <dd>Additional options if
 `source_format` is set to "GOOGLE_SHEETS". Structure is
 documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2513,13 +2513,13 @@ documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should
+    <dd>Indicates if BigQuery should
 allow extra values that are not represented in the table schema.
 If true, the extra values are ignored. If false, records with
 extra columns are treated as bad records, and if there are too
 many bad records, an invalid error is returned in the job result.
 The default value is false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2527,15 +2527,15 @@ The default value is false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of bad records that
+    <dd>The maximum number of bad records that
 BigQuery can ignore when reading data.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2544,9 +2544,9 @@ BigQuery can ignore when reading data.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}- Let BigQuery try to autodetect the schema
+    <dd>- Let BigQuery try to autodetect the schema
 and format of the table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2554,12 +2554,12 @@ and format of the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The data format. Supported values are:
+    <dd>The data format. Supported values are:
 "CSV", "GOOGLE_SHEETS", "NEWLINE_DELIMITED_JSON", "AVRO", "PARQUET",
 and "DATSTORE_BACKUP". To use "GOOGLE_SHEETS"
 the `scopes` must include
 "https://www.googleapis.com/auth/drive.readonly".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2567,9 +2567,9 @@ the `scopes` must include
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the fully-qualified URIs that point to
+    <dd>A list of the fully-qualified URIs that point to
 your data in Google Cloud.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2577,9 +2577,9 @@ your data in Google Cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compression type of the data source.
+    <dd>The compression type of the data source.
 Valid values are "NONE" or "GZIP".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2587,9 +2587,9 @@ Valid values are "NONE" or "GZIP".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfigurationcsvoptions">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Csv<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Additional properties to set if
+    <dd>Additional properties to set if
 `source_format` is set to "CSV". Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2597,10 +2597,10 @@ Valid values are "NONE" or "GZIP".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfigurationgooglesheetsoptions">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Google<wbr>Sheets<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Additional options if
+    <dd>Additional options if
 `source_format` is set to "GOOGLE_SHEETS". Structure is
 documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2608,13 +2608,13 @@ documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should
+    <dd>Indicates if BigQuery should
 allow extra values that are not represented in the table schema.
 If true, the extra values are ignored. If false, records with
 extra columns are treated as bad records, and if there are too
 many bad records, an invalid error is returned in the job result.
 The default value is false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2622,15 +2622,15 @@ The default value is false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of bad records that
+    <dd>The maximum number of bad records that
 BigQuery can ignore when reading data.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2639,9 +2639,9 @@ BigQuery can ignore when reading data.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}- Let BigQuery try to autodetect the schema
+    <dd>- Let BigQuery try to autodetect the schema
 and format of the table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2649,12 +2649,12 @@ and format of the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The data format. Supported values are:
+    <dd>The data format. Supported values are:
 "CSV", "GOOGLE_SHEETS", "NEWLINE_DELIMITED_JSON", "AVRO", "PARQUET",
 and "DATSTORE_BACKUP". To use "GOOGLE_SHEETS"
 the `scopes` must include
 "https://www.googleapis.com/auth/drive.readonly".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2662,9 +2662,9 @@ the `scopes` must include
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the fully-qualified URIs that point to
+    <dd>A list of the fully-qualified URIs that point to
 your data in Google Cloud.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2672,9 +2672,9 @@ your data in Google Cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compression type of the data source.
+    <dd>The compression type of the data source.
 Valid values are "NONE" or "GZIP".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2682,9 +2682,9 @@ Valid values are "NONE" or "GZIP".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfigurationcsvoptions">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Csv<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Additional properties to set if
+    <dd>Additional properties to set if
 `source_format` is set to "CSV". Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2692,10 +2692,10 @@ Valid values are "NONE" or "GZIP".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfigurationgooglesheetsoptions">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Google<wbr>Sheets<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Additional options if
+    <dd>Additional options if
 `source_format` is set to "GOOGLE_SHEETS". Structure is
 documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2703,13 +2703,13 @@ documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should
+    <dd>Indicates if BigQuery should
 allow extra values that are not represented in the table schema.
 If true, the extra values are ignored. If false, records with
 extra columns are treated as bad records, and if there are too
 many bad records, an invalid error is returned in the job result.
 The default value is false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2717,15 +2717,15 @@ The default value is false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of bad records that
+    <dd>The maximum number of bad records that
 BigQuery can ignore when reading data.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2734,9 +2734,9 @@ BigQuery can ignore when reading data.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}- Let BigQuery try to autodetect the schema
+    <dd>- Let BigQuery try to autodetect the schema
 and format of the table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2744,12 +2744,12 @@ and format of the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The data format. Supported values are:
+    <dd>The data format. Supported values are:
 "CSV", "GOOGLE_SHEETS", "NEWLINE_DELIMITED_JSON", "AVRO", "PARQUET",
 and "DATSTORE_BACKUP". To use "GOOGLE_SHEETS"
 the `scopes` must include
 "https://www.googleapis.com/auth/drive.readonly".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2757,9 +2757,9 @@ the `scopes` must include
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the fully-qualified URIs that point to
+    <dd>A list of the fully-qualified URIs that point to
 your data in Google Cloud.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2767,9 +2767,9 @@ your data in Google Cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The compression type of the data source.
+    <dd>The compression type of the data source.
 Valid values are "NONE" or "GZIP".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2777,9 +2777,9 @@ Valid values are "NONE" or "GZIP".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfigurationcsvoptions">Dict[Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Csv<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Additional properties to set if
+    <dd>Additional properties to set if
 `source_format` is set to "CSV". Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2787,10 +2787,10 @@ Valid values are "NONE" or "GZIP".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableexternaldataconfigurationgooglesheetsoptions">Dict[Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Google<wbr>Sheets<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Additional options if
+    <dd>Additional options if
 `source_format` is set to "GOOGLE_SHEETS". Structure is
 documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2798,13 +2798,13 @@ documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should
+    <dd>Indicates if BigQuery should
 allow extra values that are not represented in the table schema.
 If true, the extra values are ignored. If false, records with
 extra columns are treated as bad records, and if there are too
 many bad records, an invalid error is returned in the job result.
 The default value is false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2812,30 +2812,30 @@ The default value is false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of bad records that
+    <dd>The maximum number of bad records that
 BigQuery can ignore when reading data.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tableexternaldataconfigurationcsvoptions">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Csv<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#TableExternalDataConfigurationCsvOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#TableExternalDataConfigurationCsvOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableExternalDataConfigurationCsvOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableExternalDataConfigurationCsvOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2844,14 +2844,14 @@ BigQuery can ignore when reading data.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value that is used to quote data sections in a
+    <dd>The value that is used to quote data sections in a
 CSV file. If your data does not contain quoted sections, set the
 property value to an empty string. If your data contains quoted newline
 characters, you must also set the `allow_quoted_newlines` property to true.
 The API-side default is `"`, specified in the provider escaped as `\"`. Due to
 limitations with default values, this value is required to be
 explicitly set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2859,9 +2859,9 @@ explicitly set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should accept rows
+    <dd>Indicates if BigQuery should accept rows
 that are missing trailing optional columns.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2869,10 +2869,10 @@ that are missing trailing optional columns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should allow
+    <dd>Indicates if BigQuery should allow
 quoted data sections that contain newline characters in a CSV file.
 The default value is false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2880,9 +2880,9 @@ The default value is false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The character encoding of the data. The supported
+    <dd>The character encoding of the data. The supported
 values are UTF-8 or ISO-8859-1.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2890,8 +2890,8 @@ values are UTF-8 or ISO-8859-1.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The separator for fields in a CSV file.
-{{% /md %}}</dd>
+    <dd>The separator for fields in a CSV file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2899,16 +2899,16 @@ values are UTF-8 or ISO-8859-1.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows at the top of the sheet
+    <dd>The number of rows at the top of the sheet
 that BigQuery will skip when reading the data. At least one of `range` or
 `skip_leading_rows` must be set.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2917,14 +2917,14 @@ that BigQuery will skip when reading the data. At least one of `range` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value that is used to quote data sections in a
+    <dd>The value that is used to quote data sections in a
 CSV file. If your data does not contain quoted sections, set the
 property value to an empty string. If your data contains quoted newline
 characters, you must also set the `allow_quoted_newlines` property to true.
 The API-side default is `"`, specified in the provider escaped as `\"`. Due to
 limitations with default values, this value is required to be
 explicitly set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2932,9 +2932,9 @@ explicitly set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should accept rows
+    <dd>Indicates if BigQuery should accept rows
 that are missing trailing optional columns.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2942,10 +2942,10 @@ that are missing trailing optional columns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should allow
+    <dd>Indicates if BigQuery should allow
 quoted data sections that contain newline characters in a CSV file.
 The default value is false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2953,9 +2953,9 @@ The default value is false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The character encoding of the data. The supported
+    <dd>The character encoding of the data. The supported
 values are UTF-8 or ISO-8859-1.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2963,8 +2963,8 @@ values are UTF-8 or ISO-8859-1.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The separator for fields in a CSV file.
-{{% /md %}}</dd>
+    <dd>The separator for fields in a CSV file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2972,16 +2972,16 @@ values are UTF-8 or ISO-8859-1.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows at the top of the sheet
+    <dd>The number of rows at the top of the sheet
 that BigQuery will skip when reading the data. At least one of `range` or
 `skip_leading_rows` must be set.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2990,14 +2990,14 @@ that BigQuery will skip when reading the data. At least one of `range` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value that is used to quote data sections in a
+    <dd>The value that is used to quote data sections in a
 CSV file. If your data does not contain quoted sections, set the
 property value to an empty string. If your data contains quoted newline
 characters, you must also set the `allow_quoted_newlines` property to true.
 The API-side default is `"`, specified in the provider escaped as `\"`. Due to
 limitations with default values, this value is required to be
 explicitly set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3005,9 +3005,9 @@ explicitly set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should accept rows
+    <dd>Indicates if BigQuery should accept rows
 that are missing trailing optional columns.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3015,10 +3015,10 @@ that are missing trailing optional columns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should allow
+    <dd>Indicates if BigQuery should allow
 quoted data sections that contain newline characters in a CSV file.
 The default value is false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3026,9 +3026,9 @@ The default value is false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The character encoding of the data. The supported
+    <dd>The character encoding of the data. The supported
 values are UTF-8 or ISO-8859-1.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3036,8 +3036,8 @@ values are UTF-8 or ISO-8859-1.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The separator for fields in a CSV file.
-{{% /md %}}</dd>
+    <dd>The separator for fields in a CSV file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3045,16 +3045,16 @@ values are UTF-8 or ISO-8859-1.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows at the top of the sheet
+    <dd>The number of rows at the top of the sheet
 that BigQuery will skip when reading the data. At least one of `range` or
 `skip_leading_rows` must be set.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3063,14 +3063,14 @@ that BigQuery will skip when reading the data. At least one of `range` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value that is used to quote data sections in a
+    <dd>The value that is used to quote data sections in a
 CSV file. If your data does not contain quoted sections, set the
 property value to an empty string. If your data contains quoted newline
 characters, you must also set the `allow_quoted_newlines` property to true.
 The API-side default is `"`, specified in the provider escaped as `\"`. Due to
 limitations with default values, this value is required to be
 explicitly set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3078,9 +3078,9 @@ explicitly set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should accept rows
+    <dd>Indicates if BigQuery should accept rows
 that are missing trailing optional columns.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3088,10 +3088,10 @@ that are missing trailing optional columns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if BigQuery should allow
+    <dd>Indicates if BigQuery should allow
 quoted data sections that contain newline characters in a CSV file.
 The default value is false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3099,9 +3099,9 @@ The default value is false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The character encoding of the data. The supported
+    <dd>The character encoding of the data. The supported
 values are UTF-8 or ISO-8859-1.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3109,8 +3109,8 @@ values are UTF-8 or ISO-8859-1.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The separator for fields in a CSV file.
-{{% /md %}}</dd>
+    <dd>The separator for fields in a CSV file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3118,31 +3118,31 @@ values are UTF-8 or ISO-8859-1.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows at the top of the sheet
+    <dd>The number of rows at the top of the sheet
 that BigQuery will skip when reading the data. At least one of `range` or
 `skip_leading_rows` must be set.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tableexternaldataconfigurationgooglesheetsoptions">Table<wbr>External<wbr>Data<wbr>Configuration<wbr>Google<wbr>Sheets<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#TableExternalDataConfigurationGoogleSheetsOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#TableExternalDataConfigurationGoogleSheetsOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableExternalDataConfigurationGoogleSheetsOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableExternalDataConfigurationGoogleSheetsOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3151,9 +3151,9 @@ that BigQuery will skip when reading the data. At least one of `range` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Information required to partition based on ranges.
+    <dd>Information required to partition based on ranges.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3161,16 +3161,16 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows at the top of the sheet
+    <dd>The number of rows at the top of the sheet
 that BigQuery will skip when reading the data. At least one of `range` or
 `skip_leading_rows` must be set.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3179,9 +3179,9 @@ that BigQuery will skip when reading the data. At least one of `range` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Information required to partition based on ranges.
+    <dd>Information required to partition based on ranges.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3189,16 +3189,16 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows at the top of the sheet
+    <dd>The number of rows at the top of the sheet
 that BigQuery will skip when reading the data. At least one of `range` or
 `skip_leading_rows` must be set.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3207,9 +3207,9 @@ that BigQuery will skip when reading the data. At least one of `range` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Information required to partition based on ranges.
+    <dd>Information required to partition based on ranges.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3217,16 +3217,16 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows at the top of the sheet
+    <dd>The number of rows at the top of the sheet
 that BigQuery will skip when reading the data. At least one of `range` or
 `skip_leading_rows` must be set.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3235,9 +3235,9 @@ that BigQuery will skip when reading the data. At least one of `range` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Information required to partition based on ranges.
+    <dd>Information required to partition based on ranges.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3245,31 +3245,31 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of rows at the top of the sheet
+    <dd>The number of rows at the top of the sheet
 that BigQuery will skip when reading the data. At least one of `range` or
 `skip_leading_rows` must be set.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tablerangepartitioning">Table<wbr>Range<wbr>Partitioning</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#TableRangePartitioning">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#TableRangePartitioning">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableRangePartitioningArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableRangePartitioningOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3278,9 +3278,9 @@ that BigQuery will skip when reading the data. At least one of `range` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The field used to determine how to create a range-based
+    <dd>The field used to determine how to create a range-based
 partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3288,15 +3288,15 @@ partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioningrange">Table<wbr>Range<wbr>Partitioning<wbr>Range<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Information required to partition based on ranges.
+    <dd>Information required to partition based on ranges.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3305,9 +3305,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field used to determine how to create a range-based
+    <dd>The field used to determine how to create a range-based
 partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3315,15 +3315,15 @@ partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioningrange">Table<wbr>Range<wbr>Partitioning<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}Information required to partition based on ranges.
+    <dd>Information required to partition based on ranges.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3332,9 +3332,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field used to determine how to create a range-based
+    <dd>The field used to determine how to create a range-based
 partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3342,15 +3342,15 @@ partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioningrange">Table<wbr>Range<wbr>Partitioning<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}Information required to partition based on ranges.
+    <dd>Information required to partition based on ranges.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3359,9 +3359,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The field used to determine how to create a range-based
+    <dd>The field used to determine how to create a range-based
 partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3369,30 +3369,30 @@ partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablerangepartitioningrange">Dict[Table<wbr>Range<wbr>Partitioning<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}Information required to partition based on ranges.
+    <dd>Information required to partition based on ranges.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tablerangepartitioningrange">Table<wbr>Range<wbr>Partitioning<wbr>Range</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#TableRangePartitioningRange">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#TableRangePartitioningRange">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableRangePartitioningRangeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableRangePartitioningRangeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3401,8 +3401,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}End of the range partitioning, exclusive.
-{{% /md %}}</dd>
+    <dd>End of the range partitioning, exclusive.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3410,8 +3410,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The width of each range within the partition.
-{{% /md %}}</dd>
+    <dd>The width of each range within the partition.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3419,14 +3419,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Start of the range partitioning, inclusive.
-{{% /md %}}</dd>
+    <dd>Start of the range partitioning, inclusive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3435,8 +3435,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}End of the range partitioning, exclusive.
-{{% /md %}}</dd>
+    <dd>End of the range partitioning, exclusive.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3444,8 +3444,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The width of each range within the partition.
-{{% /md %}}</dd>
+    <dd>The width of each range within the partition.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3453,14 +3453,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Start of the range partitioning, inclusive.
-{{% /md %}}</dd>
+    <dd>Start of the range partitioning, inclusive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3469,8 +3469,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}End of the range partitioning, exclusive.
-{{% /md %}}</dd>
+    <dd>End of the range partitioning, exclusive.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3478,8 +3478,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The width of each range within the partition.
-{{% /md %}}</dd>
+    <dd>The width of each range within the partition.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3487,14 +3487,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Start of the range partitioning, inclusive.
-{{% /md %}}</dd>
+    <dd>Start of the range partitioning, inclusive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3503,8 +3503,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}End of the range partitioning, exclusive.
-{{% /md %}}</dd>
+    <dd>End of the range partitioning, exclusive.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3512,8 +3512,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The width of each range within the partition.
-{{% /md %}}</dd>
+    <dd>The width of each range within the partition.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3521,29 +3521,29 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Start of the range partitioning, inclusive.
-{{% /md %}}</dd>
+    <dd>Start of the range partitioning, inclusive.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tabletimepartitioning">Table<wbr>Time<wbr>Partitioning</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#TableTimePartitioning">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#TableTimePartitioning">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableTimePartitioningArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableTimePartitioningOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3552,9 +3552,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3562,9 +3562,9 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of milliseconds for which to keep the
+    <dd>Number of milliseconds for which to keep the
 storage for a partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3572,9 +3572,9 @@ storage for a partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The field used to determine how to create a range-based
+    <dd>The field used to determine how to create a range-based
 partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3582,16 +3582,16 @@ partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to true, queries over this table
+    <dd>If set to true, queries over this table
 require a partition filter that can be used for partition elimination to be
 specified.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3600,9 +3600,9 @@ specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3610,9 +3610,9 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of milliseconds for which to keep the
+    <dd>Number of milliseconds for which to keep the
 storage for a partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3620,9 +3620,9 @@ storage for a partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field used to determine how to create a range-based
+    <dd>The field used to determine how to create a range-based
 partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3630,16 +3630,16 @@ partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to true, queries over this table
+    <dd>If set to true, queries over this table
 require a partition filter that can be used for partition elimination to be
 specified.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3648,9 +3648,9 @@ specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3658,9 +3658,9 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of milliseconds for which to keep the
+    <dd>Number of milliseconds for which to keep the
 storage for a partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3668,9 +3668,9 @@ storage for a partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field used to determine how to create a range-based
+    <dd>The field used to determine how to create a range-based
 partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3678,16 +3678,16 @@ partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to true, queries over this table
+    <dd>If set to true, queries over this table
 require a partition filter that can be used for partition elimination to be
 specified.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3696,9 +3696,9 @@ specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The only type supported is DAY, which will generate
+    <dd>The only type supported is DAY, which will generate
 one partition per day based on data loading time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3706,9 +3706,9 @@ one partition per day based on data loading time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of milliseconds for which to keep the
+    <dd>Number of milliseconds for which to keep the
 storage for a partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3716,9 +3716,9 @@ storage for a partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The field used to determine how to create a range-based
+    <dd>The field used to determine how to create a range-based
 partition.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3726,31 +3726,31 @@ partition.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to true, queries over this table
+    <dd>If set to true, queries over this table
 require a partition filter that can be used for partition elimination to be
 specified.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tableview">Table<wbr>View</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#TableView">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#TableView">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableViewArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/bigquery?tab=doc#TableViewOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3759,8 +3759,8 @@ specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A query that BigQuery executes when the view is referenced.
-{{% /md %}}</dd>
+    <dd>A query that BigQuery executes when the view is referenced.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3768,15 +3768,15 @@ specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use BigQuery's legacy SQL for this view.
+    <dd>Specifies whether to use BigQuery's legacy SQL for this view.
 The default value is true. If set to false, the view will use BigQuery's standard SQL.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3785,8 +3785,8 @@ The default value is true. If set to false, the view will use BigQuery's standar
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A query that BigQuery executes when the view is referenced.
-{{% /md %}}</dd>
+    <dd>A query that BigQuery executes when the view is referenced.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3794,15 +3794,15 @@ The default value is true. If set to false, the view will use BigQuery's standar
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use BigQuery's legacy SQL for this view.
+    <dd>Specifies whether to use BigQuery's legacy SQL for this view.
 The default value is true. If set to false, the view will use BigQuery's standard SQL.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3811,8 +3811,8 @@ The default value is true. If set to false, the view will use BigQuery's standar
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A query that BigQuery executes when the view is referenced.
-{{% /md %}}</dd>
+    <dd>A query that BigQuery executes when the view is referenced.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3820,15 +3820,15 @@ The default value is true. If set to false, the view will use BigQuery's standar
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use BigQuery's legacy SQL for this view.
+    <dd>Specifies whether to use BigQuery's legacy SQL for this view.
 The default value is true. If set to false, the view will use BigQuery's standard SQL.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3837,8 +3837,8 @@ The default value is true. If set to false, the view will use BigQuery's standar
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A query that BigQuery executes when the view is referenced.
-{{% /md %}}</dd>
+    <dd>A query that BigQuery executes when the view is referenced.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3846,12 +3846,12 @@ The default value is true. If set to false, the view will use BigQuery's standar
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use BigQuery's legacy SQL for this view.
+    <dd>Specifies whether to use BigQuery's legacy SQL for this view.
 The default value is true. If set to false, the view will use BigQuery's standard SQL.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

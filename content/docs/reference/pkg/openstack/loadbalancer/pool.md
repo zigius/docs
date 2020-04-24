@@ -37,26 +37,26 @@ const pool1 = new openstack.loadbalancer.Pool("pool_1", {
 
 
 ## Create a Pool Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#Pool">Pool</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#PoolArgs">PoolArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Pool</span><span class="p">(resource_name, opts=None, </span>admin_state_up=None<span class="p">, </span>description=None<span class="p">, </span>lb_method=None<span class="p">, </span>listener_id=None<span class="p">, </span>loadbalancer_id=None<span class="p">, </span>name=None<span class="p">, </span>persistence=None<span class="p">, </span>protocol=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#PoolArgs">PoolArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#Pool">Pool</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.LoadBalancer.Pool.html">Pool</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.LoadBalancer.PoolArgs.html">PoolArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -93,9 +93,9 @@ const pool1 = new openstack.loadbalancer.Pool("pool_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -113,9 +113,9 @@ const pool1 = new openstack.loadbalancer.Pool("pool_1", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -162,9 +162,9 @@ const pool1 = new openstack.loadbalancer.Pool("pool_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -201,7 +201,7 @@ const pool1 = new openstack.loadbalancer.Pool("pool_1", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Pool Resource Properties {#properties}
 
@@ -214,7 +214,7 @@ The Pool resource accepts the following [input]({{< relref "/docs/intro/concepts
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -223,10 +223,10 @@ The Pool resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancing algorithm to
+    <dd>The load balancing algorithm to
 distribute traffic to the pool's members. Must be one of
 ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -234,9 +234,9 @@ ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol - can either be TCP, HTTP, HTTPS, PROXY
+    <dd>The protocol - can either be TCP, HTTP, HTTPS, PROXY
 or UDP (supported only in Octavia). Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,9 +244,9 @@ or UDP (supported only in Octavia). Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the pool.
+    <dd>The administrative state of the pool.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,10 +263,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the members of the pool
+    <dd>The Listener on which the members of the pool
 will be associated with. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,10 +274,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancer on which to provision this
+    <dd>The load balancer on which to provision this
 pool. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable name for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,10 +294,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#poolpersistence">Pulumi.<wbr>Open<wbr>Stack.<wbr>Load<wbr>Balancer.<wbr>Inputs.<wbr>Pool<wbr>Persistence<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Omit this field to prevent session persistence.  Indicates
+    <dd>Omit this field to prevent session persistence.  Indicates
 whether connections in the same session will be processed by the same Pool
 member or not. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,11 +305,11 @@ member or not. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,16 +317,16 @@ pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the pool.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -335,10 +335,10 @@ other than their own. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancing algorithm to
+    <dd>The load balancing algorithm to
 distribute traffic to the pool's members. Must be one of
 ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -346,9 +346,9 @@ ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol - can either be TCP, HTTP, HTTPS, PROXY
+    <dd>The protocol - can either be TCP, HTTP, HTTPS, PROXY
 or UDP (supported only in Octavia). Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,9 +356,9 @@ or UDP (supported only in Octavia). Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the pool.
+    <dd>The administrative state of the pool.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -366,8 +366,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,10 +375,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the members of the pool
+    <dd>The Listener on which the members of the pool
 will be associated with. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,10 +386,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancer on which to provision this
+    <dd>The load balancer on which to provision this
 pool. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable name for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,10 +406,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#poolpersistence">Pool<wbr>Persistence</a></span>
     </dt>
-    <dd>{{% md %}}Omit this field to prevent session persistence.  Indicates
+    <dd>Omit this field to prevent session persistence.  Indicates
 whether connections in the same session will be processed by the same Pool
 member or not. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,11 +417,11 @@ member or not. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,16 +429,16 @@ pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the pool.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -447,10 +447,10 @@ other than their own. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancing algorithm to
+    <dd>The load balancing algorithm to
 distribute traffic to the pool's members. Must be one of
 ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -458,9 +458,9 @@ ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol - can either be TCP, HTTP, HTTPS, PROXY
+    <dd>The protocol - can either be TCP, HTTP, HTTPS, PROXY
 or UDP (supported only in Octavia). Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,9 +468,9 @@ or UDP (supported only in Octavia). Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the pool.
+    <dd>The administrative state of the pool.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,8 +478,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,10 +487,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the members of the pool
+    <dd>The Listener on which the members of the pool
 will be associated with. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,10 +498,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancer on which to provision this
+    <dd>The load balancer on which to provision this
 pool. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable name for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,10 +518,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#poolpersistence">Pool<wbr>Persistence</a></span>
     </dt>
-    <dd>{{% md %}}Omit this field to prevent session persistence.  Indicates
+    <dd>Omit this field to prevent session persistence.  Indicates
 whether connections in the same session will be processed by the same Pool
 member or not. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,11 +529,11 @@ member or not. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,16 +541,16 @@ pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the pool.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -559,10 +559,10 @@ other than their own. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The load balancing algorithm to
+    <dd>The load balancing algorithm to
 distribute traffic to the pool's members. Must be one of
 ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -570,9 +570,9 @@ ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol - can either be TCP, HTTP, HTTPS, PROXY
+    <dd>The protocol - can either be TCP, HTTP, HTTPS, PROXY
 or UDP (supported only in Octavia). Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,9 +580,9 @@ or UDP (supported only in Octavia). Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the pool.
+    <dd>The administrative state of the pool.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,8 +590,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,10 +599,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the members of the pool
+    <dd>The Listener on which the members of the pool
 will be associated with. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,10 +610,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The load balancer on which to provision this
+    <dd>The load balancer on which to provision this
 pool. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,8 +621,8 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable name for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -630,10 +630,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#poolpersistence">Dict[Pool<wbr>Persistence]</a></span>
     </dt>
-    <dd>{{% md %}}Omit this field to prevent session persistence.  Indicates
+    <dd>Omit this field to prevent session persistence.  Indicates
 whether connections in the same session will be processed by the same Pool
 member or not. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,11 +641,11 @@ member or not. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -653,13 +653,13 @@ pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the pool.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -673,7 +673,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -682,13 +682,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -697,13 +697,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -712,13 +712,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -727,10 +727,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -741,25 +741,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Pool Resource {#look-up}
 
 Get an existing Pool resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#PoolState">PoolState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#Pool">Pool</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>admin_state_up=None<span class="p">, </span>description=None<span class="p">, </span>lb_method=None<span class="p">, </span>listener_id=None<span class="p">, </span>loadbalancer_id=None<span class="p">, </span>name=None<span class="p">, </span>persistence=None<span class="p">, </span>protocol=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#PoolState">PoolState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#Pool">Pool</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.LoadBalancer.Pool.html">Pool</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.LoadBalancer.PoolState.html">PoolState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -784,9 +784,9 @@ Get an existing Pool resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -799,36 +799,9 @@ Get an existing Pool resource's state with the given name, ID, and optional extr
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -853,13 +826,40 @@ Get an existing Pool resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -868,9 +868,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the pool.
+    <dd>The administrative state of the pool.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -878,8 +878,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -887,10 +887,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancing algorithm to
+    <dd>The load balancing algorithm to
 distribute traffic to the pool's members. Must be one of
 ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,10 +898,10 @@ ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the members of the pool
+    <dd>The Listener on which the members of the pool
 will be associated with. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,10 +909,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancer on which to provision this
+    <dd>The load balancer on which to provision this
 pool. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,8 +920,8 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable name for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,10 +929,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#poolpersistence">Pulumi.<wbr>Open<wbr>Stack.<wbr>Load<wbr>Balancer.<wbr>Inputs.<wbr>Pool<wbr>Persistence<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Omit this field to prevent session persistence.  Indicates
+    <dd>Omit this field to prevent session persistence.  Indicates
 whether connections in the same session will be processed by the same Pool
 member or not. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,9 +940,9 @@ member or not. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol - can either be TCP, HTTP, HTTPS, PROXY
+    <dd>The protocol - can either be TCP, HTTP, HTTPS, PROXY
 or UDP (supported only in Octavia). Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,11 +950,11 @@ or UDP (supported only in Octavia). Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,16 +962,16 @@ pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the pool.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -980,9 +980,9 @@ other than their own. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the pool.
+    <dd>The administrative state of the pool.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,10 +999,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancing algorithm to
+    <dd>The load balancing algorithm to
 distribute traffic to the pool's members. Must be one of
 ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,10 +1010,10 @@ ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the members of the pool
+    <dd>The Listener on which the members of the pool
 will be associated with. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,10 +1021,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancer on which to provision this
+    <dd>The load balancer on which to provision this
 pool. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable name for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,10 +1041,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#poolpersistence">Pool<wbr>Persistence</a></span>
     </dt>
-    <dd>{{% md %}}Omit this field to prevent session persistence.  Indicates
+    <dd>Omit this field to prevent session persistence.  Indicates
 whether connections in the same session will be processed by the same Pool
 member or not. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1052,9 +1052,9 @@ member or not. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol - can either be TCP, HTTP, HTTPS, PROXY
+    <dd>The protocol - can either be TCP, HTTP, HTTPS, PROXY
 or UDP (supported only in Octavia). Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,11 +1062,11 @@ or UDP (supported only in Octavia). Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1074,16 +1074,16 @@ pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the pool.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1092,9 +1092,9 @@ other than their own. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the pool.
+    <dd>The administrative state of the pool.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,10 +1111,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancing algorithm to
+    <dd>The load balancing algorithm to
 distribute traffic to the pool's members. Must be one of
 ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,10 +1122,10 @@ ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the members of the pool
+    <dd>The Listener on which the members of the pool
 will be associated with. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,10 +1133,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The load balancer on which to provision this
+    <dd>The load balancer on which to provision this
 pool. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,8 +1144,8 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable name for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,10 +1153,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#poolpersistence">Pool<wbr>Persistence</a></span>
     </dt>
-    <dd>{{% md %}}Omit this field to prevent session persistence.  Indicates
+    <dd>Omit this field to prevent session persistence.  Indicates
 whether connections in the same session will be processed by the same Pool
 member or not. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,9 +1164,9 @@ member or not. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol - can either be TCP, HTTP, HTTPS, PROXY
+    <dd>The protocol - can either be TCP, HTTP, HTTPS, PROXY
 or UDP (supported only in Octavia). Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,11 +1174,11 @@ or UDP (supported only in Octavia). Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,16 +1186,16 @@ pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the pool.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1204,9 +1204,9 @@ other than their own. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the pool.
+    <dd>The administrative state of the pool.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1214,8 +1214,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable description for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1223,10 +1223,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The load balancing algorithm to
+    <dd>The load balancing algorithm to
 distribute traffic to the pool's members. Must be one of
 ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,10 +1234,10 @@ ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Listener on which the members of the pool
+    <dd>The Listener on which the members of the pool
 will be associated with. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,10 +1245,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The load balancer on which to provision this
+    <dd>The load balancer on which to provision this
 pool. Changing this creates a new pool.
 Note:  One of LoadbalancerID or ListenerID must be provided.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,8 +1256,8 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the pool.
-{{% /md %}}</dd>
+    <dd>Human-readable name for the pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1265,10 +1265,10 @@ Note:  One of LoadbalancerID or ListenerID must be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#poolpersistence">Dict[Pool<wbr>Persistence]</a></span>
     </dt>
-    <dd>{{% md %}}Omit this field to prevent session persistence.  Indicates
+    <dd>Omit this field to prevent session persistence.  Indicates
 whether connections in the same session will be processed by the same Pool
 member or not. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,9 +1276,9 @@ member or not. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol - can either be TCP, HTTP, HTTPS, PROXY
+    <dd>The protocol - can either be TCP, HTTP, HTTPS, PROXY
 or UDP (supported only in Octavia). Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,11 +1286,11 @@ or UDP (supported only in Octavia). Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 pool.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1298,13 +1298,13 @@ pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the pool.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new pool.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1319,18 +1319,18 @@ other than their own. Changing this creates a new pool.
 
 
 <h4 id="poolpersistence">Pool<wbr>Persistence</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#PoolPersistence">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#PoolPersistence">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#PoolPersistenceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#PoolPersistenceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1339,9 +1339,9 @@ other than their own. Changing this creates a new pool.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of persistence mode. The current specification
+    <dd>The type of persistence mode. The current specification
 supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,15 +1349,15 @@ supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie if persistence mode is set
+    <dd>The name of the cookie if persistence mode is set
 appropriately. Required if `type = APP_COOKIE`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1366,9 +1366,9 @@ appropriately. Required if `type = APP_COOKIE`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of persistence mode. The current specification
+    <dd>The type of persistence mode. The current specification
 supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,15 +1376,15 @@ supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie if persistence mode is set
+    <dd>The name of the cookie if persistence mode is set
 appropriately. Required if `type = APP_COOKIE`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1393,9 +1393,9 @@ appropriately. Required if `type = APP_COOKIE`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of persistence mode. The current specification
+    <dd>The type of persistence mode. The current specification
 supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,15 +1403,15 @@ supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie if persistence mode is set
+    <dd>The name of the cookie if persistence mode is set
 appropriately. Required if `type = APP_COOKIE`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1420,9 +1420,9 @@ appropriately. Required if `type = APP_COOKIE`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of persistence mode. The current specification
+    <dd>The type of persistence mode. The current specification
 supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,12 +1430,12 @@ supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie if persistence mode is set
+    <dd>The name of the cookie if persistence mode is set
 appropriately. Required if `type = APP_COOKIE`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

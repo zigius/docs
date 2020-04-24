@@ -26,22 +26,22 @@ If this is your first time using this package, these two resources may be helpfu
 Use the navigation below to see detailed documentation for each of the supported Kubernetes resources.
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var kubernetes = require("@pulumi/kubernetes");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as kubernetes from "@pulumi/kubernetes";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

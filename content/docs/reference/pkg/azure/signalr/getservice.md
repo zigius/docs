@@ -33,29 +33,29 @@ const example = pulumi.output(azure.signalr.getService({
 
 ## Using GetService {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getService<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/signalr/#GetServiceArgs">GetServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/signalr/#GetServiceResult">GetServiceResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_service(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupService<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/signalr?tab=doc#LookupServiceArgs">LookupServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/signalr?tab=doc#LookupServiceResult">LookupServiceResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetService </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Signalr.GetServiceResult.html">GetServiceResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.SignalR.GetServiceArgs.html">GetServiceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -63,7 +63,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -72,8 +72,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the SignalR service.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the SignalR service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -81,14 +81,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the SignalR service is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the SignalR service is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -97,8 +97,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the SignalR service.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the SignalR service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -106,14 +106,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the SignalR service is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the SignalR service is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -122,8 +122,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the SignalR service.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the SignalR service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -131,14 +131,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the SignalR service is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the SignalR service is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -147,8 +147,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the SignalR service.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the SignalR service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -156,11 +156,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the SignalR service is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the SignalR service is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -176,7 +176,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -185,8 +185,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The FQDN of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The FQDN of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -194,8 +194,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -203,8 +203,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible IP of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The publicly accessible IP of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -212,8 +212,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the SignalR service exists.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the SignalR service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -221,7 +221,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -229,8 +229,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The primary access key of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -238,8 +238,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -247,8 +247,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible port of the SignalR service which is designed for browser/client use.
-{{% /md %}}</dd>
+    <dd>The publicly accessible port of the SignalR service which is designed for browser/client use.
+</dd>
 
     <dt class="property-"
             title="">
@@ -256,7 +256,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -264,8 +264,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The secondary access key of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -273,8 +273,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -282,8 +282,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible port of the SignalR service which is designed for customer server side use.
-{{% /md %}}</dd>
+    <dd>The publicly accessible port of the SignalR service which is designed for customer server side use.
+</dd>
 
     <dt class="property-"
             title="">
@@ -291,13 +291,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -306,8 +306,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The FQDN of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The FQDN of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -315,8 +315,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -324,8 +324,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible IP of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The publicly accessible IP of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -333,8 +333,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the SignalR service exists.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the SignalR service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -342,7 +342,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -350,8 +350,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The primary access key of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -359,8 +359,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -368,8 +368,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible port of the SignalR service which is designed for browser/client use.
-{{% /md %}}</dd>
+    <dd>The publicly accessible port of the SignalR service which is designed for browser/client use.
+</dd>
 
     <dt class="property-"
             title="">
@@ -377,7 +377,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -385,8 +385,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The secondary access key of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -394,8 +394,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -403,8 +403,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible port of the SignalR service which is designed for customer server side use.
-{{% /md %}}</dd>
+    <dd>The publicly accessible port of the SignalR service which is designed for customer server side use.
+</dd>
 
     <dt class="property-"
             title="">
@@ -412,13 +412,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -427,8 +427,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The FQDN of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The FQDN of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -436,8 +436,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -445,8 +445,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible IP of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The publicly accessible IP of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -454,8 +454,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the SignalR service exists.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the SignalR service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -463,7 +463,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -471,8 +471,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The primary access key of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,8 +480,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -489,8 +489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible port of the SignalR service which is designed for browser/client use.
-{{% /md %}}</dd>
+    <dd>The publicly accessible port of the SignalR service which is designed for browser/client use.
+</dd>
 
     <dt class="property-"
             title="">
@@ -498,7 +498,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -506,8 +506,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The secondary access key of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -515,8 +515,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -524,8 +524,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible port of the SignalR service which is designed for customer server side use.
-{{% /md %}}</dd>
+    <dd>The publicly accessible port of the SignalR service which is designed for customer server side use.
+</dd>
 
     <dt class="property-"
             title="">
@@ -533,13 +533,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -548,8 +548,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The FQDN of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The FQDN of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -557,8 +557,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -566,8 +566,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible IP of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The publicly accessible IP of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -575,8 +575,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the SignalR service exists.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the SignalR service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -584,7 +584,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -592,8 +592,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The primary access key of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -601,8 +601,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -610,8 +610,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible port of the SignalR service which is designed for browser/client use.
-{{% /md %}}</dd>
+    <dd>The publicly accessible port of the SignalR service which is designed for browser/client use.
+</dd>
 
     <dt class="property-"
             title="">
@@ -619,7 +619,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -627,8 +627,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The secondary access key of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -636,8 +636,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the SignalR service.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the SignalR service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -645,8 +645,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The publicly accessible port of the SignalR service which is designed for customer server side use.
-{{% /md %}}</dd>
+    <dd>The publicly accessible port of the SignalR service which is designed for customer server side use.
+</dd>
 
     <dt class="property-"
             title="">
@@ -654,10 +654,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

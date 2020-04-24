@@ -16,22 +16,22 @@ git_sha: "e99ffdf446e65e7c12ea7b590a79bba86ac736b1"
 > please consult the source [`terraform-providers/terraform-provider-openstack` repo](https://github.com/terraform-providers/terraform-provider-openstack/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var openstack = require("@pulumi/openstack");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as openstack from "@pulumi/openstack";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

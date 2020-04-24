@@ -20,26 +20,26 @@ block_external_search_index: true
 
 
 ## Create a Registry Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/iot/#Registry">Registry</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/iot/#RegistryArgs">RegistryArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Registry</span><span class="p">(resource_name, opts=None, </span>credentials=None<span class="p">, </span>event_notification_configs=None<span class="p">, </span>http_config=None<span class="p">, </span>log_level=None<span class="p">, </span>mqtt_config=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>region=None<span class="p">, </span>state_notification_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRegistry<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryArgs">RegistryArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#Registry">Registry</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Iot.Registry.html">Registry</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Iot.RegistryArgs.html">RegistryArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -76,9 +76,9 @@ block_external_search_index: true
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -96,9 +96,9 @@ block_external_search_index: true
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -145,9 +145,9 @@ block_external_search_index: true
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -184,7 +184,7 @@ block_external_search_index: true
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Registry Resource Properties {#properties}
 
@@ -197,7 +197,7 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -206,8 +206,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredential">List&lt;Registry<wbr>Credential<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of public key certificates to authenticate devices. Structure is documented below. 
-{{% /md %}}</dd>
+    <dd>List of public key certificates to authenticate devices. Structure is documented below. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -215,9 +215,9 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryeventnotificationconfigitem">List&lt;Registry<wbr>Event<wbr>Notification<wbr>Config<wbr>Item<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of configurations for event notification, such as
+    <dd>List of configurations for event notification, such as
 PubSub topics to publish device events to. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -225,8 +225,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryhttpconfig">Registry<wbr>Http<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate HTTP. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate HTTP. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -234,7 +234,7 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrymqttconfig">Registry<wbr>Mqtt<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate MQTT. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate MQTT. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,9 +251,9 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by device registry.
+    <dd>A unique name for the resource, required by device registry.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,8 +261,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,8 +270,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,14 +279,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrystatenotificationconfig">Registry<wbr>State<wbr>Notification<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A PubSub topic to publish device state updates. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>A PubSub topic to publish device state updates. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -295,8 +295,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredential">[]Registry<wbr>Credential</a></span>
     </dt>
-    <dd>{{% md %}}List of public key certificates to authenticate devices. Structure is documented below. 
-{{% /md %}}</dd>
+    <dd>List of public key certificates to authenticate devices. Structure is documented below. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,9 +304,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryeventnotificationconfigitem">[]Registry<wbr>Event<wbr>Notification<wbr>Config<wbr>Item</a></span>
     </dt>
-    <dd>{{% md %}}List of configurations for event notification, such as
+    <dd>List of configurations for event notification, such as
 PubSub topics to publish device events to. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryhttpconfig">Registry<wbr>Http<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate HTTP. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate HTTP. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,7 +323,7 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,8 +331,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrymqttconfig">Registry<wbr>Mqtt<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate MQTT. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate MQTT. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,9 +340,9 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by device registry.
+    <dd>A unique name for the resource, required by device registry.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,8 +350,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,8 +359,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,14 +368,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrystatenotificationconfig">Registry<wbr>State<wbr>Notification<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A PubSub topic to publish device state updates. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>A PubSub topic to publish device state updates. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -384,8 +384,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredential">Registry<wbr>Credential[]</a></span>
     </dt>
-    <dd>{{% md %}}List of public key certificates to authenticate devices. Structure is documented below. 
-{{% /md %}}</dd>
+    <dd>List of public key certificates to authenticate devices. Structure is documented below. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,9 +393,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryeventnotificationconfigitem">Registry<wbr>Event<wbr>Notification<wbr>Config<wbr>Item[]</a></span>
     </dt>
-    <dd>{{% md %}}List of configurations for event notification, such as
+    <dd>List of configurations for event notification, such as
 PubSub topics to publish device events to. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,8 +403,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryhttpconfig">Registry<wbr>Http<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate HTTP. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate HTTP. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,7 +412,7 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrymqttconfig">Registry<wbr>Mqtt<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate MQTT. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate MQTT. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,9 +429,9 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by device registry.
+    <dd>A unique name for the resource, required by device registry.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,8 +439,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,8 +448,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,14 +457,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrystatenotificationconfig">Registry<wbr>State<wbr>Notification<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A PubSub topic to publish device state updates. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>A PubSub topic to publish device state updates. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -473,8 +473,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredential">List[Registry<wbr>Credential]</a></span>
     </dt>
-    <dd>{{% md %}}List of public key certificates to authenticate devices. Structure is documented below. 
-{{% /md %}}</dd>
+    <dd>List of public key certificates to authenticate devices. Structure is documented below. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,9 +482,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryeventnotificationconfigitem">List[Registry<wbr>Event<wbr>Notification<wbr>Config<wbr>Item]</a></span>
     </dt>
-    <dd>{{% md %}}List of configurations for event notification, such as
+    <dd>List of configurations for event notification, such as
 PubSub topics to publish device events to. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,8 +492,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryhttpconfig">Dict[Registry<wbr>Http<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate HTTP. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate HTTP. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -501,7 +501,7 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrymqttconfig">Dict[Registry<wbr>Mqtt<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate MQTT. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate MQTT. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,9 +518,9 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by device registry.
+    <dd>A unique name for the resource, required by device registry.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,8 +528,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,8 +537,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -546,11 +546,11 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrystatenotificationconfig">Dict[Registry<wbr>State<wbr>Notification<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A PubSub topic to publish device state updates. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>A PubSub topic to publish device state updates. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -564,7 +564,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -573,13 +573,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -588,13 +588,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -603,13 +603,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -618,10 +618,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -632,25 +632,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Registry Resource {#look-up}
 
 Get an existing Registry resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/iot/#RegistryState">RegistryState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/iot/#Registry">Registry</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>credentials=None<span class="p">, </span>event_notification_configs=None<span class="p">, </span>http_config=None<span class="p">, </span>log_level=None<span class="p">, </span>mqtt_config=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>region=None<span class="p">, </span>state_notification_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRegistry<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryState">RegistryState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#Registry">Registry</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Iot.Registry.html">Registry</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Iot.RegistryState.html">RegistryState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -675,9 +675,9 @@ Get an existing Registry resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -690,36 +690,9 @@ Get an existing Registry resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -744,13 +717,40 @@ Get an existing Registry resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -759,8 +759,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredential">List&lt;Registry<wbr>Credential<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of public key certificates to authenticate devices. Structure is documented below. 
-{{% /md %}}</dd>
+    <dd>List of public key certificates to authenticate devices. Structure is documented below. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,9 +768,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryeventnotificationconfigitem">List&lt;Registry<wbr>Event<wbr>Notification<wbr>Config<wbr>Item<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of configurations for event notification, such as
+    <dd>List of configurations for event notification, such as
 PubSub topics to publish device events to. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,8 +778,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryhttpconfig">Registry<wbr>Http<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate HTTP. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate HTTP. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,7 +787,7 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,8 +795,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrymqttconfig">Registry<wbr>Mqtt<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate MQTT. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate MQTT. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -804,9 +804,9 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by device registry.
+    <dd>A unique name for the resource, required by device registry.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,14 +832,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrystatenotificationconfig">Registry<wbr>State<wbr>Notification<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A PubSub topic to publish device state updates. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>A PubSub topic to publish device state updates. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -848,8 +848,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredential">[]Registry<wbr>Credential</a></span>
     </dt>
-    <dd>{{% md %}}List of public key certificates to authenticate devices. Structure is documented below. 
-{{% /md %}}</dd>
+    <dd>List of public key certificates to authenticate devices. Structure is documented below. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,9 +857,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryeventnotificationconfigitem">[]Registry<wbr>Event<wbr>Notification<wbr>Config<wbr>Item</a></span>
     </dt>
-    <dd>{{% md %}}List of configurations for event notification, such as
+    <dd>List of configurations for event notification, such as
 PubSub topics to publish device events to. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -867,8 +867,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryhttpconfig">Registry<wbr>Http<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate HTTP. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate HTTP. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -876,7 +876,7 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrymqttconfig">Registry<wbr>Mqtt<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate MQTT. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate MQTT. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,9 +893,9 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by device registry.
+    <dd>A unique name for the resource, required by device registry.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -903,8 +903,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -912,8 +912,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,14 +921,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrystatenotificationconfig">Registry<wbr>State<wbr>Notification<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A PubSub topic to publish device state updates. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>A PubSub topic to publish device state updates. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -937,8 +937,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredential">Registry<wbr>Credential[]</a></span>
     </dt>
-    <dd>{{% md %}}List of public key certificates to authenticate devices. Structure is documented below. 
-{{% /md %}}</dd>
+    <dd>List of public key certificates to authenticate devices. Structure is documented below. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -946,9 +946,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryeventnotificationconfigitem">Registry<wbr>Event<wbr>Notification<wbr>Config<wbr>Item[]</a></span>
     </dt>
-    <dd>{{% md %}}List of configurations for event notification, such as
+    <dd>List of configurations for event notification, such as
 PubSub topics to publish device events to. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,8 +956,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryhttpconfig">Registry<wbr>Http<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate HTTP. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate HTTP. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,7 +965,7 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -973,8 +973,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrymqttconfig">Registry<wbr>Mqtt<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate MQTT. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate MQTT. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -982,9 +982,9 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by device registry.
+    <dd>A unique name for the resource, required by device registry.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,14 +1010,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrystatenotificationconfig">Registry<wbr>State<wbr>Notification<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A PubSub topic to publish device state updates. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>A PubSub topic to publish device state updates. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1026,8 +1026,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredential">List[Registry<wbr>Credential]</a></span>
     </dt>
-    <dd>{{% md %}}List of public key certificates to authenticate devices. Structure is documented below. 
-{{% /md %}}</dd>
+    <dd>List of public key certificates to authenticate devices. Structure is documented below. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,9 +1035,9 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryeventnotificationconfigitem">List[Registry<wbr>Event<wbr>Notification<wbr>Config<wbr>Item]</a></span>
     </dt>
-    <dd>{{% md %}}List of configurations for event notification, such as
+    <dd>List of configurations for event notification, such as
 PubSub topics to publish device events to. Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registryhttpconfig">Dict[Registry<wbr>Http<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate HTTP. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate HTTP. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,7 +1054,7 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrymqttconfig">Dict[Registry<wbr>Mqtt<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Activate or deactivate MQTT. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>Activate or deactivate MQTT. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,9 +1071,9 @@ PubSub topics to publish device events to. Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by device registry.
+    <dd>A unique name for the resource, required by device registry.
 Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,8 +1090,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,11 +1099,11 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrystatenotificationconfig">Dict[Registry<wbr>State<wbr>Notification<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A PubSub topic to publish device state updates. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>A PubSub topic to publish device state updates. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1118,18 +1118,18 @@ Changing this forces a new resource to be created.
 
 
 <h4 id="registrycredential">Registry<wbr>Credential</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#RegistryCredential">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#RegistryCredential">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryCredentialArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryCredentialOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1138,14 +1138,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredentialpublickeycertificate">Registry<wbr>Credential<wbr>Public<wbr>Key<wbr>Certificate<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The certificate format and data.
-{{% /md %}}</dd>
+    <dd>The certificate format and data.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1154,14 +1154,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredentialpublickeycertificate">Registry<wbr>Credential<wbr>Public<wbr>Key<wbr>Certificate</a></span>
     </dt>
-    <dd>{{% md %}}The certificate format and data.
-{{% /md %}}</dd>
+    <dd>The certificate format and data.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1170,14 +1170,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredentialpublickeycertificate">Registry<wbr>Credential<wbr>Public<wbr>Key<wbr>Certificate</a></span>
     </dt>
-    <dd>{{% md %}}The certificate format and data.
-{{% /md %}}</dd>
+    <dd>The certificate format and data.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1186,29 +1186,29 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrycredentialpublickeycertificate">Dict[Registry<wbr>Credential<wbr>Public<wbr>Key<wbr>Certificate]</a></span>
     </dt>
-    <dd>{{% md %}}The certificate format and data.
-{{% /md %}}</dd>
+    <dd>The certificate format and data.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="registrycredentialpublickeycertificate">Registry<wbr>Credential<wbr>Public<wbr>Key<wbr>Certificate</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#RegistryCredentialPublicKeyCertificate">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#RegistryCredentialPublicKeyCertificate">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryCredentialPublicKeyCertificateArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryCredentialPublicKeyCertificateOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1217,8 +1217,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data.
-{{% /md %}}</dd>
+    <dd>The certificate data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1226,14 +1226,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The field allows only  `X509_CERTIFICATE_PEM`.
-{{% /md %}}</dd>
+    <dd>The field allows only  `X509_CERTIFICATE_PEM`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1242,8 +1242,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data.
-{{% /md %}}</dd>
+    <dd>The certificate data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1251,14 +1251,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field allows only  `X509_CERTIFICATE_PEM`.
-{{% /md %}}</dd>
+    <dd>The field allows only  `X509_CERTIFICATE_PEM`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1267,8 +1267,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data.
-{{% /md %}}</dd>
+    <dd>The certificate data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1276,14 +1276,14 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field allows only  `X509_CERTIFICATE_PEM`.
-{{% /md %}}</dd>
+    <dd>The field allows only  `X509_CERTIFICATE_PEM`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1292,8 +1292,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data.
-{{% /md %}}</dd>
+    <dd>The certificate data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1301,29 +1301,29 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The field allows only  `X509_CERTIFICATE_PEM`.
-{{% /md %}}</dd>
+    <dd>The field allows only  `X509_CERTIFICATE_PEM`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="registryeventnotificationconfigitem">Registry<wbr>Event<wbr>Notification<wbr>Config<wbr>Item</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#RegistryEventNotificationConfigItem">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#RegistryEventNotificationConfigItem">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryEventNotificationConfigItemArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryEventNotificationConfigItemOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1332,8 +1332,8 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}PubSub topic name to publish device state updates.
-{{% /md %}}</dd>
+    <dd>PubSub topic name to publish device state updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,17 +1341,17 @@ Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If the subfolder name matches this string
+    <dd>If the subfolder name matches this string
 exactly, this configuration will be used. The string must not include the
 leading '/' character. If empty, all strings are matched. Empty value can
 only be used for the last `event_notification_configs` item.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1360,8 +1360,8 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}PubSub topic name to publish device state updates.
-{{% /md %}}</dd>
+    <dd>PubSub topic name to publish device state updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,17 +1369,17 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If the subfolder name matches this string
+    <dd>If the subfolder name matches this string
 exactly, this configuration will be used. The string must not include the
 leading '/' character. If empty, all strings are matched. Empty value can
 only be used for the last `event_notification_configs` item.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1388,8 +1388,8 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}PubSub topic name to publish device state updates.
-{{% /md %}}</dd>
+    <dd>PubSub topic name to publish device state updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1397,17 +1397,17 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If the subfolder name matches this string
+    <dd>If the subfolder name matches this string
 exactly, this configuration will be used. The string must not include the
 leading '/' character. If empty, all strings are matched. Empty value can
 only be used for the last `event_notification_configs` item.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1416,8 +1416,8 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}PubSub topic name to publish device state updates.
-{{% /md %}}</dd>
+    <dd>PubSub topic name to publish device state updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,32 +1425,32 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If the subfolder name matches this string
+    <dd>If the subfolder name matches this string
 exactly, this configuration will be used. The string must not include the
 leading '/' character. If empty, all strings are matched. Empty value can
 only be used for the last `event_notification_configs` item.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="registryhttpconfig">Registry<wbr>Http<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#RegistryHttpConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#RegistryHttpConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryHttpConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryHttpConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1459,14 +1459,14 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
-{{% /md %}}</dd>
+    <dd>The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1475,14 +1475,14 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
-{{% /md %}}</dd>
+    <dd>The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1491,14 +1491,14 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
-{{% /md %}}</dd>
+    <dd>The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1507,29 +1507,29 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
-{{% /md %}}</dd>
+    <dd>The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="registrymqttconfig">Registry<wbr>Mqtt<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#RegistryMqttConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#RegistryMqttConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryMqttConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryMqttConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1538,14 +1538,14 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
-{{% /md %}}</dd>
+    <dd>The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1554,14 +1554,14 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
-{{% /md %}}</dd>
+    <dd>The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1570,14 +1570,14 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
-{{% /md %}}</dd>
+    <dd>The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1586,29 +1586,29 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
-{{% /md %}}</dd>
+    <dd>The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="registrystatenotificationconfig">Registry<wbr>State<wbr>Notification<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#RegistryStateNotificationConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#RegistryStateNotificationConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryStateNotificationConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/iot?tab=doc#RegistryStateNotificationConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1617,14 +1617,14 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}PubSub topic name to publish device state updates.
-{{% /md %}}</dd>
+    <dd>PubSub topic name to publish device state updates.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1633,14 +1633,14 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}PubSub topic name to publish device state updates.
-{{% /md %}}</dd>
+    <dd>PubSub topic name to publish device state updates.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1649,14 +1649,14 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}PubSub topic name to publish device state updates.
-{{% /md %}}</dd>
+    <dd>PubSub topic name to publish device state updates.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1665,11 +1665,11 @@ only be used for the last `event_notification_configs` item.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}PubSub topic name to publish device state updates.
-{{% /md %}}</dd>
+    <dd>PubSub topic name to publish device state updates.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

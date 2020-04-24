@@ -78,26 +78,26 @@ const example = new aws.storagegateway.CachesIscsiVolume("example", {
 
 
 ## Create a CachesIscsiVolume Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/storagegateway/#CachesIscsiVolume">CachesIscsiVolume</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/storagegateway/#CachesIscsiVolumeArgs">CachesIscsiVolumeArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">CachesIscsiVolume</span><span class="p">(resource_name, opts=None, </span>gateway_arn=None<span class="p">, </span>network_interface_id=None<span class="p">, </span>snapshot_id=None<span class="p">, </span>source_volume_arn=None<span class="p">, </span>tags=None<span class="p">, </span>target_name=None<span class="p">, </span>volume_size_in_bytes=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCachesIscsiVolume<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/storagegateway?tab=doc#CachesIscsiVolumeArgs">CachesIscsiVolumeArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/storagegateway?tab=doc#CachesIscsiVolume">CachesIscsiVolume</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.StorageGateway.CachesIscsiVolume.html">CachesIscsiVolume</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.StorageGateway.CachesIscsiVolumeArgs.html">CachesIscsiVolumeArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -134,9 +134,9 @@ const example = new aws.storagegateway.CachesIscsiVolume("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -154,9 +154,9 @@ const example = new aws.storagegateway.CachesIscsiVolume("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -203,9 +203,9 @@ const example = new aws.storagegateway.CachesIscsiVolume("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -242,7 +242,7 @@ const example = new aws.storagegateway.CachesIscsiVolume("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## CachesIscsiVolume Resource Properties {#properties}
 
@@ -255,7 +255,7 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -264,8 +264,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the gateway.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -273,8 +273,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
-{{% /md %}}</dd>
+    <dd>The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -282,8 +282,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
-{{% /md %}}</dd>
+    <dd>The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -291,8 +291,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in bytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
-{{% /md %}}</dd>
+    <dd>The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
-{{% /md %}}</dd>
+    <dd>The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,14 +318,14 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -334,8 +334,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the gateway.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -343,8 +343,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
-{{% /md %}}</dd>
+    <dd>The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -352,8 +352,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
-{{% /md %}}</dd>
+    <dd>The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -361,8 +361,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in bytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,8 +370,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
-{{% /md %}}</dd>
+    <dd>The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
-{{% /md %}}</dd>
+    <dd>The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,14 +388,14 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -404,8 +404,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the gateway.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -413,8 +413,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
-{{% /md %}}</dd>
+    <dd>The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -422,8 +422,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
-{{% /md %}}</dd>
+    <dd>The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -431,8 +431,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in bytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,8 +440,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
-{{% /md %}}</dd>
+    <dd>The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,8 +449,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
-{{% /md %}}</dd>
+    <dd>The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,14 +458,14 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -474,8 +474,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the gateway.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -483,8 +483,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
-{{% /md %}}</dd>
+    <dd>The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -492,8 +492,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
-{{% /md %}}</dd>
+    <dd>The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -501,8 +501,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in bytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,8 +510,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
-{{% /md %}}</dd>
+    <dd>The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,8 +519,8 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
-{{% /md %}}</dd>
+    <dd>The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,11 +528,11 @@ The CachesIscsiVolume resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -546,7 +546,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -555,8 +555,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,8 +564,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether mutual CHAP is enabled for the iSCSI target.
-{{% /md %}}</dd>
+    <dd>Whether mutual CHAP is enabled for the iSCSI target.
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,7 +573,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -581,8 +581,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Logical disk number.
-{{% /md %}}</dd>
+    <dd>Logical disk number.
+</dd>
 
     <dt class="property-"
             title="">
@@ -590,8 +590,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used to communicate with iSCSI targets.
-{{% /md %}}</dd>
+    <dd>The port used to communicate with iSCSI targets.
+</dd>
 
     <dt class="property-"
             title="">
@@ -599,8 +599,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
-{{% /md %}}</dd>
+    <dd>Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,14 +617,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume ID, e.g. `vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume ID, e.g. `vol-12345678`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -633,8 +633,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,8 +642,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether mutual CHAP is enabled for the iSCSI target.
-{{% /md %}}</dd>
+    <dd>Whether mutual CHAP is enabled for the iSCSI target.
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,7 +651,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -659,8 +659,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Logical disk number.
-{{% /md %}}</dd>
+    <dd>Logical disk number.
+</dd>
 
     <dt class="property-"
             title="">
@@ -668,8 +668,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used to communicate with iSCSI targets.
-{{% /md %}}</dd>
+    <dd>The port used to communicate with iSCSI targets.
+</dd>
 
     <dt class="property-"
             title="">
@@ -677,8 +677,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
-{{% /md %}}</dd>
+    <dd>Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -686,8 +686,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -695,14 +695,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume ID, e.g. `vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume ID, e.g. `vol-12345678`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -711,8 +711,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -720,8 +720,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether mutual CHAP is enabled for the iSCSI target.
-{{% /md %}}</dd>
+    <dd>Whether mutual CHAP is enabled for the iSCSI target.
+</dd>
 
     <dt class="property-"
             title="">
@@ -729,7 +729,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -737,8 +737,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Logical disk number.
-{{% /md %}}</dd>
+    <dd>Logical disk number.
+</dd>
 
     <dt class="property-"
             title="">
@@ -746,8 +746,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port used to communicate with iSCSI targets.
-{{% /md %}}</dd>
+    <dd>The port used to communicate with iSCSI targets.
+</dd>
 
     <dt class="property-"
             title="">
@@ -755,8 +755,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
-{{% /md %}}</dd>
+    <dd>Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -764,8 +764,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -773,14 +773,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume ID, e.g. `vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume ID, e.g. `vol-12345678`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -789,8 +789,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -798,8 +798,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether mutual CHAP is enabled for the iSCSI target.
-{{% /md %}}</dd>
+    <dd>Whether mutual CHAP is enabled for the iSCSI target.
+</dd>
 
     <dt class="property-"
             title="">
@@ -807,7 +807,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -815,8 +815,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Logical disk number.
-{{% /md %}}</dd>
+    <dd>Logical disk number.
+</dd>
 
     <dt class="property-"
             title="">
@@ -824,8 +824,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port used to communicate with iSCSI targets.
-{{% /md %}}</dd>
+    <dd>The port used to communicate with iSCSI targets.
+</dd>
 
     <dt class="property-"
             title="">
@@ -833,8 +833,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
-{{% /md %}}</dd>
+    <dd>Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -842,8 +842,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -851,11 +851,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Volume ID, e.g. `vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume ID, e.g. `vol-12345678`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -866,25 +866,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing CachesIscsiVolume Resource {#look-up}
 
 Get an existing CachesIscsiVolume resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/storagegateway/#CachesIscsiVolumeState">CachesIscsiVolumeState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/storagegateway/#CachesIscsiVolume">CachesIscsiVolume</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>chap_enabled=None<span class="p">, </span>gateway_arn=None<span class="p">, </span>lun_number=None<span class="p">, </span>network_interface_id=None<span class="p">, </span>network_interface_port=None<span class="p">, </span>snapshot_id=None<span class="p">, </span>source_volume_arn=None<span class="p">, </span>tags=None<span class="p">, </span>target_arn=None<span class="p">, </span>target_name=None<span class="p">, </span>volume_arn=None<span class="p">, </span>volume_id=None<span class="p">, </span>volume_size_in_bytes=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCachesIscsiVolume<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/storagegateway?tab=doc#CachesIscsiVolumeState">CachesIscsiVolumeState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/storagegateway?tab=doc#CachesIscsiVolume">CachesIscsiVolume</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.StorageGateway.CachesIscsiVolume.html">CachesIscsiVolume</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.StorageGateway.CachesIscsiVolumeState.html">CachesIscsiVolumeState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -909,9 +909,9 @@ Get an existing CachesIscsiVolume resource's state with the given name, ID, and 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -924,36 +924,9 @@ Get an existing CachesIscsiVolume resource's state with the given name, ID, and 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -978,13 +951,40 @@ Get an existing CachesIscsiVolume resource's state with the given name, ID, and 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -993,8 +993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,8 +1002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether mutual CHAP is enabled for the iSCSI target.
-{{% /md %}}</dd>
+    <dd>Whether mutual CHAP is enabled for the iSCSI target.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the gateway.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,8 +1020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Logical disk number.
-{{% /md %}}</dd>
+    <dd>Logical disk number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,8 +1029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
-{{% /md %}}</dd>
+    <dd>The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,8 +1038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used to communicate with iSCSI targets.
-{{% /md %}}</dd>
+    <dd>The port used to communicate with iSCSI targets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,8 +1047,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
-{{% /md %}}</dd>
+    <dd>The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1056,8 +1056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
-{{% /md %}}</dd>
+    <dd>The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1065,8 +1065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1074,8 +1074,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
-{{% /md %}}</dd>
+    <dd>Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,8 +1083,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
-{{% /md %}}</dd>
+    <dd>The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1092,8 +1092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1101,8 +1101,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume ID, e.g. `vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume ID, e.g. `vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,14 +1110,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in bytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1126,8 +1126,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1135,8 +1135,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether mutual CHAP is enabled for the iSCSI target.
-{{% /md %}}</dd>
+    <dd>Whether mutual CHAP is enabled for the iSCSI target.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,8 +1144,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the gateway.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,8 +1153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Logical disk number.
-{{% /md %}}</dd>
+    <dd>Logical disk number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1162,8 +1162,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
-{{% /md %}}</dd>
+    <dd>The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1171,8 +1171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used to communicate with iSCSI targets.
-{{% /md %}}</dd>
+    <dd>The port used to communicate with iSCSI targets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,8 +1180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
-{{% /md %}}</dd>
+    <dd>The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1189,8 +1189,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
-{{% /md %}}</dd>
+    <dd>The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,8 +1198,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,8 +1207,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
-{{% /md %}}</dd>
+    <dd>Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,8 +1216,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
-{{% /md %}}</dd>
+    <dd>The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,8 +1225,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,8 +1234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume ID, e.g. `vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume ID, e.g. `vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,14 +1243,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in bytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1259,8 +1259,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1268,8 +1268,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether mutual CHAP is enabled for the iSCSI target.
-{{% /md %}}</dd>
+    <dd>Whether mutual CHAP is enabled for the iSCSI target.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1277,8 +1277,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the gateway.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,8 +1286,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Logical disk number.
-{{% /md %}}</dd>
+    <dd>Logical disk number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,8 +1295,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
-{{% /md %}}</dd>
+    <dd>The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1304,8 +1304,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port used to communicate with iSCSI targets.
-{{% /md %}}</dd>
+    <dd>The port used to communicate with iSCSI targets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1313,8 +1313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
-{{% /md %}}</dd>
+    <dd>The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,8 +1322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
-{{% /md %}}</dd>
+    <dd>The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1331,8 +1331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1340,8 +1340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
-{{% /md %}}</dd>
+    <dd>Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,8 +1349,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
-{{% /md %}}</dd>
+    <dd>The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1358,8 +1358,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,8 +1367,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Volume ID, e.g. `vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume ID, e.g. `vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,14 +1376,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in bytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1392,8 +1392,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,8 +1401,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether mutual CHAP is enabled for the iSCSI target.
-{{% /md %}}</dd>
+    <dd>Whether mutual CHAP is enabled for the iSCSI target.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,8 +1410,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the gateway.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Logical disk number.
-{{% /md %}}</dd>
+    <dd>Logical disk number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
-{{% /md %}}</dd>
+    <dd>The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,8 +1437,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port used to communicate with iSCSI targets.
-{{% /md %}}</dd>
+    <dd>The port used to communicate with iSCSI targets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,8 +1446,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
-{{% /md %}}</dd>
+    <dd>The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1455,8 +1455,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
-{{% /md %}}</dd>
+    <dd>The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
-{{% /md %}}</dd>
+    <dd>Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
-{{% /md %}}</dd>
+    <dd>The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,8 +1491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1500,8 +1500,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Volume ID, e.g. `vol-12345678`.
-{{% /md %}}</dd>
+    <dd>Volume ID, e.g. `vol-12345678`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1509,11 +1509,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in bytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

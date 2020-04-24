@@ -38,26 +38,26 @@ const example = new aws.pinpoint.App("example", {
 
 
 ## Create a App Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/pinpoint/#App">App</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/pinpoint/#AppArgs">AppArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">App</span><span class="p">(resource_name, opts=None, </span>campaign_hook=None<span class="p">, </span>limits=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>quiet_time=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#AppArgs">AppArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#App">App</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Pinpoint.App.html">App</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Pinpoint.AppArgs.html">AppArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -94,9 +94,9 @@ const example = new aws.pinpoint.App("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -114,9 +114,9 @@ const example = new aws.pinpoint.App("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -163,9 +163,9 @@ const example = new aws.pinpoint.App("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -202,7 +202,7 @@ const example = new aws.pinpoint.App("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## App Resource Properties {#properties}
 
@@ -215,7 +215,7 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -224,8 +224,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appcampaignhook">App<wbr>Campaign<wbr>Hook<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applimits">App<wbr>Limits<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The application name. By default generated by this provider
-{{% /md %}}</dd>
+    <dd>The application name. By default generated by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Pinpoint application. Conflicts with `name`
-{{% /md %}}</dd>
+    <dd>The name of the Pinpoint application. Conflicts with `name`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appquiettime">App<wbr>Quiet<wbr>Time<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
-{{% /md %}}</dd>
+    <dd>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,14 +269,14 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -285,8 +285,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appcampaignhook">App<wbr>Campaign<wbr>Hook</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applimits">App<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application name. By default generated by this provider
-{{% /md %}}</dd>
+    <dd>The application name. By default generated by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Pinpoint application. Conflicts with `name`
-{{% /md %}}</dd>
+    <dd>The name of the Pinpoint application. Conflicts with `name`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,8 +321,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appquiettime">App<wbr>Quiet<wbr>Time</a></span>
     </dt>
-    <dd>{{% md %}}The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
-{{% /md %}}</dd>
+    <dd>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,14 +330,14 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -346,8 +346,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appcampaignhook">App<wbr>Campaign<wbr>Hook</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applimits">App<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application name. By default generated by this provider
-{{% /md %}}</dd>
+    <dd>The application name. By default generated by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Pinpoint application. Conflicts with `name`
-{{% /md %}}</dd>
+    <dd>The name of the Pinpoint application. Conflicts with `name`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appquiettime">App<wbr>Quiet<wbr>Time</a></span>
     </dt>
-    <dd>{{% md %}}The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
-{{% /md %}}</dd>
+    <dd>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,14 +391,14 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -407,8 +407,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appcampaignhook">Dict[App<wbr>Campaign<wbr>Hook]</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,8 +416,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applimits">Dict[App<wbr>Limits]</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,8 +425,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The application name. By default generated by this provider
-{{% /md %}}</dd>
+    <dd>The application name. By default generated by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,8 +434,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Pinpoint application. Conflicts with `name`
-{{% /md %}}</dd>
+    <dd>The name of the Pinpoint application. Conflicts with `name`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appquiettime">Dict[App<wbr>Quiet<wbr>Time]</a></span>
     </dt>
-    <dd>{{% md %}}The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
-{{% /md %}}</dd>
+    <dd>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,11 +452,11 @@ The App resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -470,7 +470,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -479,8 +479,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application ID of the Pinpoint App.
-{{% /md %}}</dd>
+    <dd>The Application ID of the Pinpoint App.
+</dd>
 
     <dt class="property-"
             title="">
@@ -488,8 +488,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the PinPoint Application
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the PinPoint Application
+</dd>
 
     <dt class="property-"
             title="">
@@ -497,13 +497,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -512,8 +512,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application ID of the Pinpoint App.
-{{% /md %}}</dd>
+    <dd>The Application ID of the Pinpoint App.
+</dd>
 
     <dt class="property-"
             title="">
@@ -521,8 +521,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the PinPoint Application
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the PinPoint Application
+</dd>
 
     <dt class="property-"
             title="">
@@ -530,13 +530,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -545,8 +545,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application ID of the Pinpoint App.
-{{% /md %}}</dd>
+    <dd>The Application ID of the Pinpoint App.
+</dd>
 
     <dt class="property-"
             title="">
@@ -554,8 +554,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the PinPoint Application
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the PinPoint Application
+</dd>
 
     <dt class="property-"
             title="">
@@ -563,13 +563,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -578,8 +578,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Application ID of the Pinpoint App.
-{{% /md %}}</dd>
+    <dd>The Application ID of the Pinpoint App.
+</dd>
 
     <dt class="property-"
             title="">
@@ -587,8 +587,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the PinPoint Application
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the PinPoint Application
+</dd>
 
     <dt class="property-"
             title="">
@@ -596,10 +596,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -610,25 +610,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing App Resource {#look-up}
 
 Get an existing App resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/pinpoint/#AppState">AppState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/pinpoint/#App">App</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>application_id=None<span class="p">, </span>arn=None<span class="p">, </span>campaign_hook=None<span class="p">, </span>limits=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>quiet_time=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#AppState">AppState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#App">App</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Pinpoint.App.html">App</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Pinpoint.AppState.html">AppState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -653,9 +653,9 @@ Get an existing App resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -668,36 +668,9 @@ Get an existing App resource's state with the given name, ID, and optional extra
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -722,13 +695,40 @@ Get an existing App resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -737,8 +737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application ID of the Pinpoint App.
-{{% /md %}}</dd>
+    <dd>The Application ID of the Pinpoint App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -746,8 +746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the PinPoint Application
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the PinPoint Application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -755,8 +755,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appcampaignhook">App<wbr>Campaign<wbr>Hook<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -764,8 +764,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applimits">App<wbr>Limits<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -773,8 +773,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The application name. By default generated by this provider
-{{% /md %}}</dd>
+    <dd>The application name. By default generated by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -782,8 +782,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Pinpoint application. Conflicts with `name`
-{{% /md %}}</dd>
+    <dd>The name of the Pinpoint application. Conflicts with `name`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -791,8 +791,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appquiettime">App<wbr>Quiet<wbr>Time<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
-{{% /md %}}</dd>
+    <dd>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -800,14 +800,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -816,8 +816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application ID of the Pinpoint App.
-{{% /md %}}</dd>
+    <dd>The Application ID of the Pinpoint App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,8 +825,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the PinPoint Application
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the PinPoint Application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,8 +834,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appcampaignhook">App<wbr>Campaign<wbr>Hook</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,8 +843,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applimits">App<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,8 +852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application name. By default generated by this provider
-{{% /md %}}</dd>
+    <dd>The application name. By default generated by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,8 +861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Pinpoint application. Conflicts with `name`
-{{% /md %}}</dd>
+    <dd>The name of the Pinpoint application. Conflicts with `name`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,8 +870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appquiettime">App<wbr>Quiet<wbr>Time</a></span>
     </dt>
-    <dd>{{% md %}}The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
-{{% /md %}}</dd>
+    <dd>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -879,14 +879,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -895,8 +895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application ID of the Pinpoint App.
-{{% /md %}}</dd>
+    <dd>The Application ID of the Pinpoint App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the PinPoint Application
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the PinPoint Application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,8 +913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appcampaignhook">App<wbr>Campaign<wbr>Hook</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -922,8 +922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applimits">App<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,8 +931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application name. By default generated by this provider
-{{% /md %}}</dd>
+    <dd>The application name. By default generated by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,8 +940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Pinpoint application. Conflicts with `name`
-{{% /md %}}</dd>
+    <dd>The name of the Pinpoint application. Conflicts with `name`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -949,8 +949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appquiettime">App<wbr>Quiet<wbr>Time</a></span>
     </dt>
-    <dd>{{% md %}}The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
-{{% /md %}}</dd>
+    <dd>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,14 +958,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -974,8 +974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Application ID of the Pinpoint App.
-{{% /md %}}</dd>
+    <dd>The Application ID of the Pinpoint App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the PinPoint Application
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the PinPoint Application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appcampaignhook">Dict[App<wbr>Campaign<wbr>Hook]</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applimits">Dict[App<wbr>Limits]</a></span>
     </dt>
-    <dd>{{% md %}}The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
-{{% /md %}}</dd>
+    <dd>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The application name. By default generated by this provider
-{{% /md %}}</dd>
+    <dd>The application name. By default generated by this provider
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Pinpoint application. Conflicts with `name`
-{{% /md %}}</dd>
+    <dd>The name of the Pinpoint application. Conflicts with `name`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#appquiettime">Dict[App<wbr>Quiet<wbr>Time]</a></span>
     </dt>
-    <dd>{{% md %}}The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
-{{% /md %}}</dd>
+    <dd>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,11 +1037,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1056,18 +1056,18 @@ The following state arguments are supported:
 
 
 <h4 id="appcampaignhook">App<wbr>Campaign<wbr>Hook</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AppCampaignHook">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AppCampaignHook">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#AppCampaignHookArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#AppCampaignHookOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1076,8 +1076,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Lambda function name or ARN to be called for delivery. Conflicts with `web_url`
-{{% /md %}}</dd>
+    <dd>Lambda function name or ARN to be called for delivery. Conflicts with `web_url`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1085,8 +1085,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.  
-{{% /md %}}</dd>
+    <dd>What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1094,14 +1094,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambda_function_name`
-{{% /md %}}</dd>
+    <dd>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambda_function_name`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1110,8 +1110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Lambda function name or ARN to be called for delivery. Conflicts with `web_url`
-{{% /md %}}</dd>
+    <dd>Lambda function name or ARN to be called for delivery. Conflicts with `web_url`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,8 +1119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.  
-{{% /md %}}</dd>
+    <dd>What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1128,14 +1128,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambda_function_name`
-{{% /md %}}</dd>
+    <dd>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambda_function_name`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1144,8 +1144,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Lambda function name or ARN to be called for delivery. Conflicts with `web_url`
-{{% /md %}}</dd>
+    <dd>Lambda function name or ARN to be called for delivery. Conflicts with `web_url`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,8 +1153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.  
-{{% /md %}}</dd>
+    <dd>What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1162,14 +1162,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambda_function_name`
-{{% /md %}}</dd>
+    <dd>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambda_function_name`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1178,8 +1178,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Lambda function name or ARN to be called for delivery. Conflicts with `web_url`
-{{% /md %}}</dd>
+    <dd>Lambda function name or ARN to be called for delivery. Conflicts with `web_url`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,8 +1187,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.  
-{{% /md %}}</dd>
+    <dd>What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1196,29 +1196,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambda_function_name`
-{{% /md %}}</dd>
+    <dd>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambda_function_name`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="applimits">App<wbr>Limits</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AppLimits">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AppLimits">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#AppLimitsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#AppLimitsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1227,8 +1227,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of messages that the campaign can send daily. 
-{{% /md %}}</dd>
+    <dd>The maximum number of messages that the campaign can send daily. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,8 +1236,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.
-{{% /md %}}</dd>
+    <dd>The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,8 +1245,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
-{{% /md %}}</dd>
+    <dd>The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,14 +1254,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum total number of messages that the campaign can send.
-{{% /md %}}</dd>
+    <dd>The maximum total number of messages that the campaign can send.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1270,8 +1270,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of messages that the campaign can send daily. 
-{{% /md %}}</dd>
+    <dd>The maximum number of messages that the campaign can send daily. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1279,8 +1279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.
-{{% /md %}}</dd>
+    <dd>The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,8 +1288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
-{{% /md %}}</dd>
+    <dd>The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,14 +1297,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum total number of messages that the campaign can send.
-{{% /md %}}</dd>
+    <dd>The maximum total number of messages that the campaign can send.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1313,8 +1313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of messages that the campaign can send daily. 
-{{% /md %}}</dd>
+    <dd>The maximum number of messages that the campaign can send daily. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,8 +1322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.
-{{% /md %}}</dd>
+    <dd>The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1331,8 +1331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
-{{% /md %}}</dd>
+    <dd>The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1340,14 +1340,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum total number of messages that the campaign can send.
-{{% /md %}}</dd>
+    <dd>The maximum total number of messages that the campaign can send.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1356,8 +1356,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of messages that the campaign can send daily. 
-{{% /md %}}</dd>
+    <dd>The maximum number of messages that the campaign can send daily. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1365,8 +1365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.
-{{% /md %}}</dd>
+    <dd>The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1374,8 +1374,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
-{{% /md %}}</dd>
+    <dd>The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1383,29 +1383,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum total number of messages that the campaign can send.
-{{% /md %}}</dd>
+    <dd>The maximum total number of messages that the campaign can send.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="appquiettime">App<wbr>Quiet<wbr>Time</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AppQuietTime">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AppQuietTime">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#AppQuietTimeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/pinpoint?tab=doc#AppQuietTimeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1414,8 +1414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default end time for quiet time in ISO 8601 format. Required if `start` is set
-{{% /md %}}</dd>
+    <dd>The default end time for quiet time in ISO 8601 format. Required if `start` is set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,14 +1423,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default start time for quiet time in ISO 8601 format. Required if `end` is set
-{{% /md %}}</dd>
+    <dd>The default start time for quiet time in ISO 8601 format. Required if `end` is set
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1439,8 +1439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default end time for quiet time in ISO 8601 format. Required if `start` is set
-{{% /md %}}</dd>
+    <dd>The default end time for quiet time in ISO 8601 format. Required if `start` is set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,14 +1448,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default start time for quiet time in ISO 8601 format. Required if `end` is set
-{{% /md %}}</dd>
+    <dd>The default start time for quiet time in ISO 8601 format. Required if `end` is set
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default end time for quiet time in ISO 8601 format. Required if `start` is set
-{{% /md %}}</dd>
+    <dd>The default end time for quiet time in ISO 8601 format. Required if `start` is set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,14 +1473,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default start time for quiet time in ISO 8601 format. Required if `end` is set
-{{% /md %}}</dd>
+    <dd>The default start time for quiet time in ISO 8601 format. Required if `end` is set
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1489,8 +1489,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default end time for quiet time in ISO 8601 format. Required if `start` is set
-{{% /md %}}</dd>
+    <dd>The default end time for quiet time in ISO 8601 format. Required if `start` is set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,11 +1498,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default start time for quiet time in ISO 8601 format. Required if `end` is set
-{{% /md %}}</dd>
+    <dd>The default start time for quiet time in ISO 8601 format. Required if `end` is set
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

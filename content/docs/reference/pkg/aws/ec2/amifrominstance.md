@@ -47,26 +47,26 @@ const example = new aws.ec2.AmiFromInstance("example", {
 
 
 ## Create a AmiFromInstance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#AmiFromInstance">AmiFromInstance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#AmiFromInstanceArgs">AmiFromInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AmiFromInstance</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>name=None<span class="p">, </span>snapshot_without_reboot=None<span class="p">, </span>source_instance_id=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAmiFromInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiFromInstanceArgs">AmiFromInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiFromInstance">AmiFromInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.AmiFromInstance.html">AmiFromInstance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.AmiFromInstanceArgs.html">AmiFromInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -103,9 +103,9 @@ const example = new aws.ec2.AmiFromInstance("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -123,9 +123,9 @@ const example = new aws.ec2.AmiFromInstance("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -172,9 +172,9 @@ const example = new aws.ec2.AmiFromInstance("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -211,7 +211,7 @@ const example = new aws.ec2.AmiFromInstance("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## AmiFromInstance Resource Properties {#properties}
 
@@ -224,7 +224,7 @@ The AmiFromInstance resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -233,8 +233,8 @@ The AmiFromInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the instance to use as the basis of the AMI.
-{{% /md %}}</dd>
+    <dd>The id of the instance to use as the basis of the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ The AmiFromInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A longer, human-readable description for the AMI.
-{{% /md %}}</dd>
+    <dd>A longer, human-readable description for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,9 +251,9 @@ The AmiFromInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceebsblockdevice">List&lt;Ami<wbr>From<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an EBS block device that should be
+    <dd>Nested block describing an EBS block device that should be
 attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,9 +261,9 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceephemeralblockdevice">List&lt;Ami<wbr>From<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an ephemeral block device that
+    <dd>Nested block describing an ephemeral block device that
 should be attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A region-unique name for the AMI.
-{{% /md %}}</dd>
+    <dd>A region-unique name for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,11 +280,11 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean that overrides the behavior of stopping
+    <dd>Boolean that overrides the behavior of stopping
 the instance before snapshotting. This is risky since it may cause a snapshot of an
 inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
 guarantees that no filesystem writes will be underway at the time of snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,14 +292,14 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -308,8 +308,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the instance to use as the basis of the AMI.
-{{% /md %}}</dd>
+    <dd>The id of the instance to use as the basis of the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A longer, human-readable description for the AMI.
-{{% /md %}}</dd>
+    <dd>A longer, human-readable description for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,9 +326,9 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceebsblockdevice">[]Ami<wbr>From<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an EBS block device that should be
+    <dd>Nested block describing an EBS block device that should be
 attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,9 +336,9 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceephemeralblockdevice">[]Ami<wbr>From<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an ephemeral block device that
+    <dd>Nested block describing an ephemeral block device that
 should be attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A region-unique name for the AMI.
-{{% /md %}}</dd>
+    <dd>A region-unique name for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,11 +355,11 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean that overrides the behavior of stopping
+    <dd>Boolean that overrides the behavior of stopping
 the instance before snapshotting. This is risky since it may cause a snapshot of an
 inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
 guarantees that no filesystem writes will be underway at the time of snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,14 +367,14 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -383,8 +383,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the instance to use as the basis of the AMI.
-{{% /md %}}</dd>
+    <dd>The id of the instance to use as the basis of the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,8 +392,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A longer, human-readable description for the AMI.
-{{% /md %}}</dd>
+    <dd>A longer, human-readable description for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,9 +401,9 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceebsblockdevice">Ami<wbr>From<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an EBS block device that should be
+    <dd>Nested block describing an EBS block device that should be
 attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,9 +411,9 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceephemeralblockdevice">Ami<wbr>From<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an ephemeral block device that
+    <dd>Nested block describing an ephemeral block device that
 should be attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -421,8 +421,8 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A region-unique name for the AMI.
-{{% /md %}}</dd>
+    <dd>A region-unique name for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,11 +430,11 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean that overrides the behavior of stopping
+    <dd>Boolean that overrides the behavior of stopping
 the instance before snapshotting. This is risky since it may cause a snapshot of an
 inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
 guarantees that no filesystem writes will be underway at the time of snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,14 +442,14 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -458,8 +458,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the instance to use as the basis of the AMI.
-{{% /md %}}</dd>
+    <dd>The id of the instance to use as the basis of the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,8 +467,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A longer, human-readable description for the AMI.
-{{% /md %}}</dd>
+    <dd>A longer, human-readable description for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,9 +476,9 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceebsblockdevice">List[Ami<wbr>From<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an EBS block device that should be
+    <dd>Nested block describing an EBS block device that should be
 attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,9 +486,9 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceephemeralblockdevice">List[Ami<wbr>From<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an ephemeral block device that
+    <dd>Nested block describing an ephemeral block device that
 should be attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,8 +496,8 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A region-unique name for the AMI.
-{{% /md %}}</dd>
+    <dd>A region-unique name for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,11 +505,11 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean that overrides the behavior of stopping
+    <dd>Boolean that overrides the behavior of stopping
 the instance before snapshotting. This is risky since it may cause a snapshot of an
 inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
 guarantees that no filesystem writes will be underway at the time of snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,11 +517,11 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -535,7 +535,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -544,8 +544,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances. Defaults to "x86_64".
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances. Defaults to "x86_64".
+</dd>
 
     <dt class="property-"
             title="">
@@ -553,8 +553,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -562,7 +562,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -570,9 +570,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to an S3 object containing an image manifest, e.g. created
+    <dd>Path to an S3 object containing an image manifest, e.g. created
 by the `ec2-upload-bundle` command in the EC2 command line tools.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -580,9 +580,9 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the kernel image (AKI) that will be used as the paravirtual
+    <dd>The id of the kernel image (AKI) that will be used as the paravirtual
 kernel in created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -590,7 +590,7 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -598,9 +598,9 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an initrd image (ARI) that will be used when booting the
+    <dd>The id of an initrd image (ARI) that will be used when booting the
 created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
-{{% /md %}}</dd>
+    <dd>The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,7 +617,7 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -625,9 +625,9 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When set to "simple" (the default), enables enhanced networking
+    <dd>When set to "simple" (the default), enables enhanced networking
 for created instances. No other value is supported at this time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -635,16 +635,16 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
 changes the set of further arguments that are required, as described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -653,8 +653,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances. Defaults to "x86_64".
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances. Defaults to "x86_64".
+</dd>
 
     <dt class="property-"
             title="">
@@ -662,8 +662,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -671,7 +671,7 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -679,9 +679,9 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to an S3 object containing an image manifest, e.g. created
+    <dd>Path to an S3 object containing an image manifest, e.g. created
 by the `ec2-upload-bundle` command in the EC2 command line tools.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -689,9 +689,9 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the kernel image (AKI) that will be used as the paravirtual
+    <dd>The id of the kernel image (AKI) that will be used as the paravirtual
 kernel in created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -699,7 +699,7 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -707,9 +707,9 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an initrd image (ARI) that will be used when booting the
+    <dd>The id of an initrd image (ARI) that will be used when booting the
 created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -717,8 +717,8 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
-{{% /md %}}</dd>
+    <dd>The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -726,7 +726,7 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -734,9 +734,9 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When set to "simple" (the default), enables enhanced networking
+    <dd>When set to "simple" (the default), enables enhanced networking
 for created instances. No other value is supported at this time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -744,16 +744,16 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
 changes the set of further arguments that are required, as described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -762,8 +762,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances. Defaults to "x86_64".
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances. Defaults to "x86_64".
+</dd>
 
     <dt class="property-"
             title="">
@@ -771,8 +771,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -780,7 +780,7 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -788,9 +788,9 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to an S3 object containing an image manifest, e.g. created
+    <dd>Path to an S3 object containing an image manifest, e.g. created
 by the `ec2-upload-bundle` command in the EC2 command line tools.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -798,9 +798,9 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the kernel image (AKI) that will be used as the paravirtual
+    <dd>The id of the kernel image (AKI) that will be used as the paravirtual
 kernel in created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -808,7 +808,7 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -816,9 +816,9 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an initrd image (ARI) that will be used when booting the
+    <dd>The id of an initrd image (ARI) that will be used when booting the
 created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -826,8 +826,8 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
-{{% /md %}}</dd>
+    <dd>The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -835,7 +835,7 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -843,9 +843,9 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When set to "simple" (the default), enables enhanced networking
+    <dd>When set to "simple" (the default), enables enhanced networking
 for created instances. No other value is supported at this time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -853,16 +853,16 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
 changes the set of further arguments that are required, as described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -871,8 +871,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances. Defaults to "x86_64".
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances. Defaults to "x86_64".
+</dd>
 
     <dt class="property-"
             title="">
@@ -880,8 +880,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -889,7 +889,7 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -897,9 +897,9 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to an S3 object containing an image manifest, e.g. created
+    <dd>Path to an S3 object containing an image manifest, e.g. created
 by the `ec2-upload-bundle` command in the EC2 command line tools.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -907,9 +907,9 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the kernel image (AKI) that will be used as the paravirtual
+    <dd>The id of the kernel image (AKI) that will be used as the paravirtual
 kernel in created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -917,7 +917,7 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -925,9 +925,9 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of an initrd image (ARI) that will be used when booting the
+    <dd>The id of an initrd image (ARI) that will be used when booting the
 created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -935,8 +935,8 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
-{{% /md %}}</dd>
+    <dd>The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -944,7 +944,7 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -952,9 +952,9 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When set to "simple" (the default), enables enhanced networking
+    <dd>When set to "simple" (the default), enables enhanced networking
 for created instances. No other value is supported at this time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -962,13 +962,13 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
 changes the set of further arguments that are required, as described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -979,25 +979,25 @@ changes the set of further arguments that are required, as described below.
 ## Look up an Existing AmiFromInstance Resource {#look-up}
 
 Get an existing AmiFromInstance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#AmiFromInstanceState">AmiFromInstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#AmiFromInstance">AmiFromInstance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>architecture=None<span class="p">, </span>description=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ena_support=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>image_location=None<span class="p">, </span>kernel_id=None<span class="p">, </span>manage_ebs_snapshots=None<span class="p">, </span>name=None<span class="p">, </span>ramdisk_id=None<span class="p">, </span>root_device_name=None<span class="p">, </span>root_snapshot_id=None<span class="p">, </span>snapshot_without_reboot=None<span class="p">, </span>source_instance_id=None<span class="p">, </span>sriov_net_support=None<span class="p">, </span>tags=None<span class="p">, </span>virtualization_type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAmiFromInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiFromInstanceState">AmiFromInstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiFromInstance">AmiFromInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.AmiFromInstance.html">AmiFromInstance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.AmiFromInstanceState.html">AmiFromInstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1022,9 +1022,9 @@ Get an existing AmiFromInstance resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1037,36 +1037,9 @@ Get an existing AmiFromInstance resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1091,13 +1064,40 @@ Get an existing AmiFromInstance resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1106,8 +1106,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances. Defaults to "x86_64".
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances. Defaults to "x86_64".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,8 +1115,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A longer, human-readable description for the AMI.
-{{% /md %}}</dd>
+    <dd>A longer, human-readable description for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1124,9 +1124,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceebsblockdevice">List&lt;Ami<wbr>From<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an EBS block device that should be
+    <dd>Nested block describing an EBS block device that should be
 attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,8 +1134,8 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,9 +1143,9 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceephemeralblockdevice">List&lt;Ami<wbr>From<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an ephemeral block device that
+    <dd>Nested block describing an ephemeral block device that
 should be attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,9 +1153,9 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to an S3 object containing an image manifest, e.g. created
+    <dd>Path to an S3 object containing an image manifest, e.g. created
 by the `ec2-upload-bundle` command in the EC2 command line tools.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,9 +1163,9 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the kernel image (AKI) that will be used as the paravirtual
+    <dd>The id of the kernel image (AKI) that will be used as the paravirtual
 kernel in created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,7 +1173,7 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A region-unique name for the AMI.
-{{% /md %}}</dd>
+    <dd>A region-unique name for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,9 +1190,9 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an initrd image (ARI) that will be used when booting the
+    <dd>The id of an initrd image (ARI) that will be used when booting the
 created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,8 +1200,8 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
-{{% /md %}}</dd>
+    <dd>The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,7 +1209,7 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,11 +1217,11 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean that overrides the behavior of stopping
+    <dd>Boolean that overrides the behavior of stopping
 the instance before snapshotting. This is risky since it may cause a snapshot of an
 inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
 guarantees that no filesystem writes will be underway at the time of snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,8 +1229,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the instance to use as the basis of the AMI.
-{{% /md %}}</dd>
+    <dd>The id of the instance to use as the basis of the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1238,9 +1238,9 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When set to "simple" (the default), enables enhanced networking
+    <dd>When set to "simple" (the default), enables enhanced networking
 for created instances. No other value is supported at this time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1248,8 +1248,8 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1257,16 +1257,16 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
 changes the set of further arguments that are required, as described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1275,8 +1275,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances. Defaults to "x86_64".
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances. Defaults to "x86_64".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1284,8 +1284,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A longer, human-readable description for the AMI.
-{{% /md %}}</dd>
+    <dd>A longer, human-readable description for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1293,9 +1293,9 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceebsblockdevice">[]Ami<wbr>From<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an EBS block device that should be
+    <dd>Nested block describing an EBS block device that should be
 attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,8 +1303,8 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,9 +1312,9 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceephemeralblockdevice">[]Ami<wbr>From<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an ephemeral block device that
+    <dd>Nested block describing an ephemeral block device that
 should be attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,9 +1322,9 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to an S3 object containing an image manifest, e.g. created
+    <dd>Path to an S3 object containing an image manifest, e.g. created
 by the `ec2-upload-bundle` command in the EC2 command line tools.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,9 +1332,9 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the kernel image (AKI) that will be used as the paravirtual
+    <dd>The id of the kernel image (AKI) that will be used as the paravirtual
 kernel in created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,7 +1342,7 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A region-unique name for the AMI.
-{{% /md %}}</dd>
+    <dd>A region-unique name for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,9 +1359,9 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an initrd image (ARI) that will be used when booting the
+    <dd>The id of an initrd image (ARI) that will be used when booting the
 created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,8 +1369,8 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
-{{% /md %}}</dd>
+    <dd>The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,7 +1378,7 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1386,11 +1386,11 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean that overrides the behavior of stopping
+    <dd>Boolean that overrides the behavior of stopping
 the instance before snapshotting. This is risky since it may cause a snapshot of an
 inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
 guarantees that no filesystem writes will be underway at the time of snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the instance to use as the basis of the AMI.
-{{% /md %}}</dd>
+    <dd>The id of the instance to use as the basis of the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,9 +1407,9 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When set to "simple" (the default), enables enhanced networking
+    <dd>When set to "simple" (the default), enables enhanced networking
 for created instances. No other value is supported at this time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,8 +1417,8 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1426,16 +1426,16 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
 changes the set of further arguments that are required, as described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1444,8 +1444,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances. Defaults to "x86_64".
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances. Defaults to "x86_64".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1453,8 +1453,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A longer, human-readable description for the AMI.
-{{% /md %}}</dd>
+    <dd>A longer, human-readable description for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,9 +1462,9 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceebsblockdevice">Ami<wbr>From<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an EBS block device that should be
+    <dd>Nested block describing an EBS block device that should be
 attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1472,8 +1472,8 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1481,9 +1481,9 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceephemeralblockdevice">Ami<wbr>From<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an ephemeral block device that
+    <dd>Nested block describing an ephemeral block device that
 should be attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,9 +1491,9 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to an S3 object containing an image manifest, e.g. created
+    <dd>Path to an S3 object containing an image manifest, e.g. created
 by the `ec2-upload-bundle` command in the EC2 command line tools.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,9 +1501,9 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the kernel image (AKI) that will be used as the paravirtual
+    <dd>The id of the kernel image (AKI) that will be used as the paravirtual
 kernel in created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,7 +1511,7 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,8 +1519,8 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A region-unique name for the AMI.
-{{% /md %}}</dd>
+    <dd>A region-unique name for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,9 +1528,9 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an initrd image (ARI) that will be used when booting the
+    <dd>The id of an initrd image (ARI) that will be used when booting the
 created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,8 +1538,8 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
-{{% /md %}}</dd>
+    <dd>The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1547,7 +1547,7 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1555,11 +1555,11 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean that overrides the behavior of stopping
+    <dd>Boolean that overrides the behavior of stopping
 the instance before snapshotting. This is risky since it may cause a snapshot of an
 inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
 guarantees that no filesystem writes will be underway at the time of snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,8 +1567,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the instance to use as the basis of the AMI.
-{{% /md %}}</dd>
+    <dd>The id of the instance to use as the basis of the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,9 +1576,9 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When set to "simple" (the default), enables enhanced networking
+    <dd>When set to "simple" (the default), enables enhanced networking
 for created instances. No other value is supported at this time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,16 +1595,16 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
 changes the set of further arguments that are required, as described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1613,8 +1613,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances. Defaults to "x86_64".
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances. Defaults to "x86_64".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A longer, human-readable description for the AMI.
-{{% /md %}}</dd>
+    <dd>A longer, human-readable description for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,9 +1631,9 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceebsblockdevice">List[Ami<wbr>From<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an EBS block device that should be
+    <dd>Nested block describing an EBS block device that should be
 attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,8 +1641,8 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1650,9 +1650,9 @@ attached to created instances. The structure of this block is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amifrominstanceephemeralblockdevice">List[Ami<wbr>From<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block describing an ephemeral block device that
+    <dd>Nested block describing an ephemeral block device that
 should be attached to created instances. The structure of this block is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,9 +1660,9 @@ should be attached to created instances. The structure of this block is describe
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to an S3 object containing an image manifest, e.g. created
+    <dd>Path to an S3 object containing an image manifest, e.g. created
 by the `ec2-upload-bundle` command in the EC2 command line tools.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1670,9 +1670,9 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the kernel image (AKI) that will be used as the paravirtual
+    <dd>The id of the kernel image (AKI) that will be used as the paravirtual
 kernel in created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1680,7 +1680,7 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1688,8 +1688,8 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A region-unique name for the AMI.
-{{% /md %}}</dd>
+    <dd>A region-unique name for the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1697,9 +1697,9 @@ kernel in created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of an initrd image (ARI) that will be used when booting the
+    <dd>The id of an initrd image (ARI) that will be used when booting the
 created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1707,8 +1707,8 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
-{{% /md %}}</dd>
+    <dd>The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1716,7 +1716,7 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1724,11 +1724,11 @@ created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean that overrides the behavior of stopping
+    <dd>Boolean that overrides the behavior of stopping
 the instance before snapshotting. This is risky since it may cause a snapshot of an
 inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
 guarantees that no filesystem writes will be underway at the time of snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,8 +1736,8 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the instance to use as the basis of the AMI.
-{{% /md %}}</dd>
+    <dd>The id of the instance to use as the basis of the AMI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1745,9 +1745,9 @@ guarantees that no filesystem writes will be underway at the time of snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When set to "simple" (the default), enables enhanced networking
+    <dd>When set to "simple" (the default), enables enhanced networking
 for created instances. No other value is supported at this time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1755,8 +1755,8 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,13 +1764,13 @@ for created instances. No other value is supported at this time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
 changes the set of further arguments that are required, as described below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1785,18 +1785,18 @@ changes the set of further arguments that are required, as described below.
 
 
 <h4 id="amifrominstanceebsblockdevice">Ami<wbr>From<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AmiFromInstanceEbsBlockDevice">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AmiFromInstanceEbsBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiFromInstanceEbsBlockDeviceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiFromInstanceEbsBlockDeviceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1805,9 +1805,9 @@ changes the set of further arguments that are required, as described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the EBS volumes created to
+    <dd>Boolean controlling whether the EBS volumes created to
 support each created instance will be deleted once that instance is terminated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1815,8 +1815,8 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path at which the device is exposed to created instances.
-{{% /md %}}</dd>
+    <dd>The path at which the device is exposed to created instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1824,8 +1824,8 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshot_id`.
-{{% /md %}}</dd>
+    <dd>Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshot_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1833,9 +1833,9 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of I/O operations per second the
+    <dd>Number of I/O operations per second the
 created volumes will support.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1843,10 +1843,10 @@ created volumes will support.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an EBS snapshot that will be used to initialize the created
+    <dd>The id of an EBS snapshot that will be used to initialize the created
 EBS volumes. If set, the `volume_size` attribute must be at least as large as the referenced
 snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1854,10 +1854,10 @@ snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of created volumes in GiB.
+    <dd>The size of created volumes in GiB.
 If `snapshot_id` is set and `volume_size` is omitted then the volume will have the same size
 as the selected snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,15 +1865,15 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of EBS volume to create. Can be one of "standard" (the
+    <dd>The type of EBS volume to create. Can be one of "standard" (the
 default), "io1" or "gp2".
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1882,9 +1882,9 @@ default), "io1" or "gp2".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the EBS volumes created to
+    <dd>Boolean controlling whether the EBS volumes created to
 support each created instance will be deleted once that instance is terminated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1892,8 +1892,8 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path at which the device is exposed to created instances.
-{{% /md %}}</dd>
+    <dd>The path at which the device is exposed to created instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1901,8 +1901,8 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshot_id`.
-{{% /md %}}</dd>
+    <dd>Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshot_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1910,9 +1910,9 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of I/O operations per second the
+    <dd>Number of I/O operations per second the
 created volumes will support.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,10 +1920,10 @@ created volumes will support.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an EBS snapshot that will be used to initialize the created
+    <dd>The id of an EBS snapshot that will be used to initialize the created
 EBS volumes. If set, the `volume_size` attribute must be at least as large as the referenced
 snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1931,10 +1931,10 @@ snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of created volumes in GiB.
+    <dd>The size of created volumes in GiB.
 If `snapshot_id` is set and `volume_size` is omitted then the volume will have the same size
 as the selected snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1942,15 +1942,15 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of EBS volume to create. Can be one of "standard" (the
+    <dd>The type of EBS volume to create. Can be one of "standard" (the
 default), "io1" or "gp2".
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1959,9 +1959,9 @@ default), "io1" or "gp2".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the EBS volumes created to
+    <dd>Boolean controlling whether the EBS volumes created to
 support each created instance will be deleted once that instance is terminated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1969,8 +1969,8 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path at which the device is exposed to created instances.
-{{% /md %}}</dd>
+    <dd>The path at which the device is exposed to created instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1978,8 +1978,8 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshot_id`.
-{{% /md %}}</dd>
+    <dd>Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshot_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,9 +1987,9 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of I/O operations per second the
+    <dd>Number of I/O operations per second the
 created volumes will support.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1997,10 +1997,10 @@ created volumes will support.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an EBS snapshot that will be used to initialize the created
+    <dd>The id of an EBS snapshot that will be used to initialize the created
 EBS volumes. If set, the `volume_size` attribute must be at least as large as the referenced
 snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2008,10 +2008,10 @@ snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of created volumes in GiB.
+    <dd>The size of created volumes in GiB.
 If `snapshot_id` is set and `volume_size` is omitted then the volume will have the same size
 as the selected snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,15 +2019,15 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of EBS volume to create. Can be one of "standard" (the
+    <dd>The type of EBS volume to create. Can be one of "standard" (the
 default), "io1" or "gp2".
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2036,9 +2036,9 @@ default), "io1" or "gp2".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the EBS volumes created to
+    <dd>Boolean controlling whether the EBS volumes created to
 support each created instance will be deleted once that instance is terminated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2046,8 +2046,8 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path at which the device is exposed to created instances.
-{{% /md %}}</dd>
+    <dd>The path at which the device is exposed to created instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2055,8 +2055,8 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshot_id`.
-{{% /md %}}</dd>
+    <dd>Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshot_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2064,9 +2064,9 @@ support each created instance will be deleted once that instance is terminated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of I/O operations per second the
+    <dd>Number of I/O operations per second the
 created volumes will support.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,10 +2074,10 @@ created volumes will support.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of an EBS snapshot that will be used to initialize the created
+    <dd>The id of an EBS snapshot that will be used to initialize the created
 EBS volumes. If set, the `volume_size` attribute must be at least as large as the referenced
 snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,9 +2085,9 @@ snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of EBS volume to create. Can be one of "standard" (the
+    <dd>The type of EBS volume to create. Can be one of "standard" (the
 default), "io1" or "gp2".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2095,31 +2095,31 @@ default), "io1" or "gp2".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of created volumes in GiB.
+    <dd>The size of created volumes in GiB.
 If `snapshot_id` is set and `volume_size` is omitted then the volume will have the same size
 as the selected snapshot.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="amifrominstanceephemeralblockdevice">Ami<wbr>From<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AmiFromInstanceEphemeralBlockDevice">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AmiFromInstanceEphemeralBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiFromInstanceEphemeralBlockDeviceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiFromInstanceEphemeralBlockDeviceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2128,8 +2128,8 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path at which the device is exposed to created instances.
-{{% /md %}}</dd>
+    <dd>The path at which the device is exposed to created instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2137,15 +2137,15 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the ephemeral device, of the form "ephemeralN" where
+    <dd>A name for the ephemeral device, of the form "ephemeralN" where
 *N* is a volume number starting from zero.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2154,8 +2154,8 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path at which the device is exposed to created instances.
-{{% /md %}}</dd>
+    <dd>The path at which the device is exposed to created instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2163,15 +2163,15 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the ephemeral device, of the form "ephemeralN" where
+    <dd>A name for the ephemeral device, of the form "ephemeralN" where
 *N* is a volume number starting from zero.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2180,8 +2180,8 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path at which the device is exposed to created instances.
-{{% /md %}}</dd>
+    <dd>The path at which the device is exposed to created instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2189,15 +2189,15 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the ephemeral device, of the form "ephemeralN" where
+    <dd>A name for the ephemeral device, of the form "ephemeralN" where
 *N* is a volume number starting from zero.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2206,8 +2206,8 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path at which the device is exposed to created instances.
-{{% /md %}}</dd>
+    <dd>The path at which the device is exposed to created instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2215,12 +2215,12 @@ as the selected snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for the ephemeral device, of the form "ephemeralN" where
+    <dd>A name for the ephemeral device, of the form "ephemeralN" where
 *N* is a volume number starting from zero.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

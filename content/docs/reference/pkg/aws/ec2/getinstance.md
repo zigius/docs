@@ -43,29 +43,29 @@ const foo = pulumi.output(aws.ec2.getInstance({
 
 ## Using GetInstance {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getInstance<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetInstanceArgs">GetInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetInstanceResult">GetInstanceResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_instance(</span>filters=None<span class="p">, </span>get_password_data=None<span class="p">, </span>get_user_data=None<span class="p">, </span>instance_id=None<span class="p">, </span>instance_tags=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupInstanceArgs">LookupInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupInstanceResult">LookupInstanceResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetInstance </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetInstanceResult.html">GetInstanceResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetInstanceArgs.html">GetInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -73,7 +73,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -82,10 +82,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">List&lt;Get<wbr>Instance<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more name/value pairs to use as filters. There are
+    <dd>One or more name/value pairs to use as filters. There are
 several valid keys, for a full reference, check out
 [describe-instances in the AWS CLI reference][1].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -93,8 +93,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
-{{% /md %}}</dd>
+    <dd>If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -102,8 +102,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Retrieve Base64 encoded User Data contents into the `user_data_base64` attribute. A SHA-1 hash of the User Data contents will always be present in the `user_data` attribute. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Retrieve Base64 encoded User Data contents into the `user_data_base64` attribute. A SHA-1 hash of the User Data contents will always be present in the `user_data` attribute. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -111,8 +111,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the exact Instance ID with which to populate the data source.
-{{% /md %}}</dd>
+    <dd>Specify the exact Instance ID with which to populate the data source.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -120,9 +120,9 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must
+    <dd>A mapping of tags, each pair of which must
 exactly match a pair on the desired Instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -130,14 +130,14 @@ exactly match a pair on the desired Instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -146,10 +146,10 @@ exactly match a pair on the desired Instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">[]Get<wbr>Instance<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}One or more name/value pairs to use as filters. There are
+    <dd>One or more name/value pairs to use as filters. There are
 several valid keys, for a full reference, check out
 [describe-instances in the AWS CLI reference][1].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -157,8 +157,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
-{{% /md %}}</dd>
+    <dd>If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -166,8 +166,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Retrieve Base64 encoded User Data contents into the `user_data_base64` attribute. A SHA-1 hash of the User Data contents will always be present in the `user_data` attribute. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Retrieve Base64 encoded User Data contents into the `user_data_base64` attribute. A SHA-1 hash of the User Data contents will always be present in the `user_data` attribute. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -175,8 +175,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the exact Instance ID with which to populate the data source.
-{{% /md %}}</dd>
+    <dd>Specify the exact Instance ID with which to populate the data source.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -184,9 +184,9 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must
+    <dd>A mapping of tags, each pair of which must
 exactly match a pair on the desired Instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -194,14 +194,14 @@ exactly match a pair on the desired Instance.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -210,10 +210,10 @@ exactly match a pair on the desired Instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">Get<wbr>Instance<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more name/value pairs to use as filters. There are
+    <dd>One or more name/value pairs to use as filters. There are
 several valid keys, for a full reference, check out
 [describe-instances in the AWS CLI reference][1].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -221,8 +221,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
-{{% /md %}}</dd>
+    <dd>If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,8 +230,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Retrieve Base64 encoded User Data contents into the `user_data_base64` attribute. A SHA-1 hash of the User Data contents will always be present in the `user_data` attribute. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Retrieve Base64 encoded User Data contents into the `user_data_base64` attribute. A SHA-1 hash of the User Data contents will always be present in the `user_data` attribute. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,8 +239,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the exact Instance ID with which to populate the data source.
-{{% /md %}}</dd>
+    <dd>Specify the exact Instance ID with which to populate the data source.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,9 +248,9 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must
+    <dd>A mapping of tags, each pair of which must
 exactly match a pair on the desired Instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,14 +258,14 @@ exactly match a pair on the desired Instance.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -274,10 +274,10 @@ exactly match a pair on the desired Instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">List[Get<wbr>Instance<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}One or more name/value pairs to use as filters. There are
+    <dd>One or more name/value pairs to use as filters. There are
 several valid keys, for a full reference, check out
 [describe-instances in the AWS CLI reference][1].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
-{{% /md %}}</dd>
+    <dd>If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Retrieve Base64 encoded User Data contents into the `user_data_base64` attribute. A SHA-1 hash of the User Data contents will always be present in the `user_data` attribute. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Retrieve Base64 encoded User Data contents into the `user_data_base64` attribute. A SHA-1 hash of the User Data contents will always be present in the `user_data` attribute. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify the exact Instance ID with which to populate the data source.
-{{% /md %}}</dd>
+    <dd>Specify the exact Instance ID with which to populate the data source.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,9 +312,9 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must
+    <dd>A mapping of tags, each pair of which must
 exactly match a pair on the desired Instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,11 +322,11 @@ exactly match a pair on the desired Instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -342,7 +342,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -351,8 +351,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AMI used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the AMI used to launch the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -360,8 +360,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the instance.
-{{% /md %}}</dd>
+    <dd>The ARN of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -369,8 +369,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the Instance is associated with a public IP address or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether or not the Instance is associated with a public IP address or not (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -378,8 +378,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the Instance.
-{{% /md %}}</dd>
+    <dd>The availability zone of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -387,8 +387,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancecreditspecification">List&lt;Get<wbr>Instance<wbr>Credit<wbr>Specification&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The credit specification of the Instance.
-{{% /md %}}</dd>
+    <dd>The credit specification of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -396,7 +396,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -404,8 +404,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceebsblockdevice">List&lt;Get<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The EBS block device mappings of the Instance.
-{{% /md %}}</dd>
+    <dd>The EBS block device mappings of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -413,8 +413,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the Instance is EBS optimized or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the Instance is EBS optimized or not (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -422,8 +422,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceephemeralblockdevice">List&lt;Get<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The ephemeral block device mappings of the Instance.
-{{% /md %}}</dd>
+    <dd>The ephemeral block device mappings of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -431,8 +431,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the dedicated host the instance will be assigned to.
-{{% /md %}}</dd>
+    <dd>The Id of the dedicated host the instance will be assigned to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -440,8 +440,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance profile associated with the Instance.
-{{% /md %}}</dd>
+    <dd>The name of the instance profile associated with the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -449,8 +449,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -458,8 +458,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
-{{% /md %}}</dd>
+    <dd>The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
+</dd>
 
     <dt class="property-"
             title="">
@@ -467,7 +467,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -475,8 +475,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Instance.
-{{% /md %}}</dd>
+    <dd>The type of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -484,8 +484,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name of the Instance.
-{{% /md %}}</dd>
+    <dd>The key name of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -493,8 +493,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancemetadataoption">List&lt;Get<wbr>Instance<wbr>Metadata<wbr>Option&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The metadata options of the Instance.
-{{% /md %}}</dd>
+    <dd>The metadata options of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -502,8 +502,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -511,8 +511,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface that was created with the Instance.
-{{% /md %}}</dd>
+    <dd>The ID of the network interface that was created with the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -520,11 +520,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base-64 encoded encrypted password data for the instance.
+    <dd>Base-64 encoded encrypted password data for the instance.
 Useful for getting the administrator password for instances running Microsoft Windows.
 This attribute is only exported if `get_password_data` is true.
 See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -532,8 +532,8 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The placement group of the Instance.
-{{% /md %}}</dd>
+    <dd>The placement group of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -541,10 +541,10 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the Instance. Can only be
+    <dd>The private DNS name assigned to the Instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -552,8 +552,8 @@ for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -561,9 +561,9 @@ for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the Instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the Instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -571,8 +571,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `public_ip`, as this field will change after the EIP is attached.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `public_ip`, as this field will change after the EIP is attached.
+</dd>
 
     <dt class="property-"
             title="">
@@ -580,8 +580,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancerootblockdevice">List&lt;Get<wbr>Instance<wbr>Root<wbr>Block<wbr>Device&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The root block device mappings of the Instance
-{{% /md %}}</dd>
+    <dd>The root block device mappings of the Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -589,8 +589,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-"
             title="">
@@ -598,8 +598,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the network interface performs source/destination checking (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the network interface performs source/destination checking (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -607,8 +607,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC subnet ID.
-{{% /md %}}</dd>
+    <dd>The VPC subnet ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -616,8 +616,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -625,8 +625,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance: `dedicated`, `default`, `host`.
-{{% /md %}}</dd>
+    <dd>The tenancy of the instance: `dedicated`, `default`, `host`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -634,8 +634,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SHA-1 hash of User Data supplied to the Instance.
-{{% /md %}}</dd>
+    <dd>SHA-1 hash of User Data supplied to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -643,8 +643,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64 encoded contents of User Data supplied to the Instance. This attribute is only exported if `get_user_data` is true.
-{{% /md %}}</dd>
+    <dd>Base64 encoded contents of User Data supplied to the Instance. This attribute is only exported if `get_user_data` is true.
+</dd>
 
     <dt class="property-"
             title="">
@@ -652,8 +652,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups in a non-default VPC.
-{{% /md %}}</dd>
+    <dd>The associated security groups in a non-default VPC.
+</dd>
 
     <dt class="property-"
             title="">
@@ -661,7 +661,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">List&lt;Get<wbr>Instance<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -669,7 +669,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -677,7 +677,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -685,13 +685,13 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -700,8 +700,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AMI used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the AMI used to launch the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -709,8 +709,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the instance.
-{{% /md %}}</dd>
+    <dd>The ARN of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -718,8 +718,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the Instance is associated with a public IP address or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether or not the Instance is associated with a public IP address or not (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -727,8 +727,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the Instance.
-{{% /md %}}</dd>
+    <dd>The availability zone of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -736,8 +736,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancecreditspecification">[]Get<wbr>Instance<wbr>Credit<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}The credit specification of the Instance.
-{{% /md %}}</dd>
+    <dd>The credit specification of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -745,7 +745,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -753,8 +753,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceebsblockdevice">[]Get<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}The EBS block device mappings of the Instance.
-{{% /md %}}</dd>
+    <dd>The EBS block device mappings of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,8 +762,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the Instance is EBS optimized or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the Instance is EBS optimized or not (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -771,8 +771,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceephemeralblockdevice">[]Get<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}The ephemeral block device mappings of the Instance.
-{{% /md %}}</dd>
+    <dd>The ephemeral block device mappings of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -780,8 +780,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the dedicated host the instance will be assigned to.
-{{% /md %}}</dd>
+    <dd>The Id of the dedicated host the instance will be assigned to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -789,8 +789,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance profile associated with the Instance.
-{{% /md %}}</dd>
+    <dd>The name of the instance profile associated with the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -798,8 +798,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -807,8 +807,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
-{{% /md %}}</dd>
+    <dd>The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
+</dd>
 
     <dt class="property-"
             title="">
@@ -816,7 +816,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -824,8 +824,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Instance.
-{{% /md %}}</dd>
+    <dd>The type of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -833,8 +833,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name of the Instance.
-{{% /md %}}</dd>
+    <dd>The key name of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -842,8 +842,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancemetadataoption">[]Get<wbr>Instance<wbr>Metadata<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}The metadata options of the Instance.
-{{% /md %}}</dd>
+    <dd>The metadata options of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -851,8 +851,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -860,8 +860,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface that was created with the Instance.
-{{% /md %}}</dd>
+    <dd>The ID of the network interface that was created with the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -869,11 +869,11 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base-64 encoded encrypted password data for the instance.
+    <dd>Base-64 encoded encrypted password data for the instance.
 Useful for getting the administrator password for instances running Microsoft Windows.
 This attribute is only exported if `get_password_data` is true.
 See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -881,8 +881,8 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The placement group of the Instance.
-{{% /md %}}</dd>
+    <dd>The placement group of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -890,10 +890,10 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the Instance. Can only be
+    <dd>The private DNS name assigned to the Instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -901,8 +901,8 @@ for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -910,9 +910,9 @@ for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the Instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the Instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -920,8 +920,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `public_ip`, as this field will change after the EIP is attached.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `public_ip`, as this field will change after the EIP is attached.
+</dd>
 
     <dt class="property-"
             title="">
@@ -929,8 +929,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancerootblockdevice">[]Get<wbr>Instance<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}The root block device mappings of the Instance
-{{% /md %}}</dd>
+    <dd>The root block device mappings of the Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -938,8 +938,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-"
             title="">
@@ -947,8 +947,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the network interface performs source/destination checking (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the network interface performs source/destination checking (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -956,8 +956,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC subnet ID.
-{{% /md %}}</dd>
+    <dd>The VPC subnet ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -965,8 +965,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -974,8 +974,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance: `dedicated`, `default`, `host`.
-{{% /md %}}</dd>
+    <dd>The tenancy of the instance: `dedicated`, `default`, `host`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -983,8 +983,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SHA-1 hash of User Data supplied to the Instance.
-{{% /md %}}</dd>
+    <dd>SHA-1 hash of User Data supplied to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -992,8 +992,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64 encoded contents of User Data supplied to the Instance. This attribute is only exported if `get_user_data` is true.
-{{% /md %}}</dd>
+    <dd>Base64 encoded contents of User Data supplied to the Instance. This attribute is only exported if `get_user_data` is true.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1001,8 +1001,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups in a non-default VPC.
-{{% /md %}}</dd>
+    <dd>The associated security groups in a non-default VPC.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1010,7 +1010,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">[]Get<wbr>Instance<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1018,7 +1018,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1026,7 +1026,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1034,13 +1034,13 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1049,8 +1049,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AMI used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the AMI used to launch the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1058,8 +1058,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the instance.
-{{% /md %}}</dd>
+    <dd>The ARN of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1067,8 +1067,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the Instance is associated with a public IP address or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether or not the Instance is associated with a public IP address or not (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1076,8 +1076,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the Instance.
-{{% /md %}}</dd>
+    <dd>The availability zone of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1085,8 +1085,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancecreditspecification">Get<wbr>Instance<wbr>Credit<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}The credit specification of the Instance.
-{{% /md %}}</dd>
+    <dd>The credit specification of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1094,7 +1094,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1102,8 +1102,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceebsblockdevice">Get<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}The EBS block device mappings of the Instance.
-{{% /md %}}</dd>
+    <dd>The EBS block device mappings of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1111,8 +1111,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the Instance is EBS optimized or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the Instance is EBS optimized or not (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1120,8 +1120,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceephemeralblockdevice">Get<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}The ephemeral block device mappings of the Instance.
-{{% /md %}}</dd>
+    <dd>The ephemeral block device mappings of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1129,8 +1129,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the dedicated host the instance will be assigned to.
-{{% /md %}}</dd>
+    <dd>The Id of the dedicated host the instance will be assigned to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1138,8 +1138,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance profile associated with the Instance.
-{{% /md %}}</dd>
+    <dd>The name of the instance profile associated with the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1147,8 +1147,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1156,8 +1156,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
-{{% /md %}}</dd>
+    <dd>The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1165,7 +1165,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1173,8 +1173,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Instance.
-{{% /md %}}</dd>
+    <dd>The type of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1182,8 +1182,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name of the Instance.
-{{% /md %}}</dd>
+    <dd>The key name of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1191,8 +1191,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancemetadataoption">Get<wbr>Instance<wbr>Metadata<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}The metadata options of the Instance.
-{{% /md %}}</dd>
+    <dd>The metadata options of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1200,8 +1200,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1209,8 +1209,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface that was created with the Instance.
-{{% /md %}}</dd>
+    <dd>The ID of the network interface that was created with the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1218,11 +1218,11 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base-64 encoded encrypted password data for the instance.
+    <dd>Base-64 encoded encrypted password data for the instance.
 Useful for getting the administrator password for instances running Microsoft Windows.
 This attribute is only exported if `get_password_data` is true.
 See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1230,8 +1230,8 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The placement group of the Instance.
-{{% /md %}}</dd>
+    <dd>The placement group of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1239,10 +1239,10 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the Instance. Can only be
+    <dd>The private DNS name assigned to the Instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1250,8 +1250,8 @@ for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1259,9 +1259,9 @@ for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the Instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the Instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1269,8 +1269,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `public_ip`, as this field will change after the EIP is attached.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `public_ip`, as this field will change after the EIP is attached.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1278,8 +1278,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancerootblockdevice">Get<wbr>Instance<wbr>Root<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}The root block device mappings of the Instance
-{{% /md %}}</dd>
+    <dd>The root block device mappings of the Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1287,8 +1287,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1296,8 +1296,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the network interface performs source/destination checking (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the network interface performs source/destination checking (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1305,8 +1305,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC subnet ID.
-{{% /md %}}</dd>
+    <dd>The VPC subnet ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1314,8 +1314,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1323,8 +1323,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance: `dedicated`, `default`, `host`.
-{{% /md %}}</dd>
+    <dd>The tenancy of the instance: `dedicated`, `default`, `host`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1332,8 +1332,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SHA-1 hash of User Data supplied to the Instance.
-{{% /md %}}</dd>
+    <dd>SHA-1 hash of User Data supplied to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1341,8 +1341,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64 encoded contents of User Data supplied to the Instance. This attribute is only exported if `get_user_data` is true.
-{{% /md %}}</dd>
+    <dd>Base64 encoded contents of User Data supplied to the Instance. This attribute is only exported if `get_user_data` is true.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1350,8 +1350,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups in a non-default VPC.
-{{% /md %}}</dd>
+    <dd>The associated security groups in a non-default VPC.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1359,7 +1359,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">Get<wbr>Instance<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1367,7 +1367,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1375,7 +1375,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1383,13 +1383,13 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1398,8 +1398,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AMI used to launch the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the AMI used to launch the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1407,8 +1407,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the instance.
-{{% /md %}}</dd>
+    <dd>The ARN of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1416,8 +1416,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the Instance is associated with a public IP address or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether or not the Instance is associated with a public IP address or not (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1425,8 +1425,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the Instance.
-{{% /md %}}</dd>
+    <dd>The availability zone of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1434,8 +1434,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancecreditspecification">List[Get<wbr>Instance<wbr>Credit<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}The credit specification of the Instance.
-{{% /md %}}</dd>
+    <dd>The credit specification of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1443,7 +1443,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1451,8 +1451,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceebsblockdevice">List[Get<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}The EBS block device mappings of the Instance.
-{{% /md %}}</dd>
+    <dd>The EBS block device mappings of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1460,8 +1460,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the Instance is EBS optimized or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the Instance is EBS optimized or not (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1469,8 +1469,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceephemeralblockdevice">List[Get<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}The ephemeral block device mappings of the Instance.
-{{% /md %}}</dd>
+    <dd>The ephemeral block device mappings of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1478,8 +1478,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the dedicated host the instance will be assigned to.
-{{% /md %}}</dd>
+    <dd>The Id of the dedicated host the instance will be assigned to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1487,8 +1487,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance profile associated with the Instance.
-{{% /md %}}</dd>
+    <dd>The name of the instance profile associated with the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1496,8 +1496,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1505,8 +1505,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
-{{% /md %}}</dd>
+    <dd>The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1514,7 +1514,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1522,8 +1522,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Instance.
-{{% /md %}}</dd>
+    <dd>The type of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1531,8 +1531,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key name of the Instance.
-{{% /md %}}</dd>
+    <dd>The key name of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1540,8 +1540,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancemetadataoption">List[Get<wbr>Instance<wbr>Metadata<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}The metadata options of the Instance.
-{{% /md %}}</dd>
+    <dd>The metadata options of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1549,8 +1549,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1558,8 +1558,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface that was created with the Instance.
-{{% /md %}}</dd>
+    <dd>The ID of the network interface that was created with the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1567,11 +1567,11 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base-64 encoded encrypted password data for the instance.
+    <dd>Base-64 encoded encrypted password data for the instance.
 Useful for getting the administrator password for instances running Microsoft Windows.
 This attribute is only exported if `get_password_data` is true.
 See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1579,8 +1579,8 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The placement group of the Instance.
-{{% /md %}}</dd>
+    <dd>The placement group of the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1588,10 +1588,10 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the Instance. Can only be
+    <dd>The private DNS name assigned to the Instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1599,8 +1599,8 @@ for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1608,9 +1608,9 @@ for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the Instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the Instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1618,8 +1618,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `public_ip`, as this field will change after the EIP is attached.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `public_ip`, as this field will change after the EIP is attached.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1627,8 +1627,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancerootblockdevice">List[Get<wbr>Instance<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}The root block device mappings of the Instance
-{{% /md %}}</dd>
+    <dd>The root block device mappings of the Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1636,8 +1636,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1645,8 +1645,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the network interface performs source/destination checking (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the network interface performs source/destination checking (Boolean).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1654,8 +1654,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VPC subnet ID.
-{{% /md %}}</dd>
+    <dd>The VPC subnet ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1663,8 +1663,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the Instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1672,8 +1672,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance: `dedicated`, `default`, `host`.
-{{% /md %}}</dd>
+    <dd>The tenancy of the instance: `dedicated`, `default`, `host`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1681,8 +1681,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SHA-1 hash of User Data supplied to the Instance.
-{{% /md %}}</dd>
+    <dd>SHA-1 hash of User Data supplied to the Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1690,8 +1690,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base64 encoded contents of User Data supplied to the Instance. This attribute is only exported if `get_user_data` is true.
-{{% /md %}}</dd>
+    <dd>Base64 encoded contents of User Data supplied to the Instance. This attribute is only exported if `get_user_data` is true.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1699,8 +1699,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups in a non-default VPC.
-{{% /md %}}</dd>
+    <dd>The associated security groups in a non-default VPC.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1708,7 +1708,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">List[Get<wbr>Instance<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1716,7 +1716,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1724,7 +1724,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1732,10 +1732,10 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1748,18 +1748,18 @@ is only available if you've enabled DNS hostnames for your VPC.
 
 
 <h4 id="getinstancecreditspecification">Get<wbr>Instance<wbr>Credit<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetInstanceCreditSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetInstanceCreditSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1768,13 +1768,13 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1783,13 +1783,13 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1798,13 +1798,13 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1813,28 +1813,28 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstanceebsblockdevice">Get<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetInstanceEbsBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetInstanceEbsBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1843,8 +1843,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the root block device will be deleted on termination.
-{{% /md %}}</dd>
+    <dd>If the root block device will be deleted on termination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1852,8 +1852,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1861,8 +1861,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the EBS volume is encrypted.
-{{% /md %}}</dd>
+    <dd>If the EBS volume is encrypted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1870,8 +1870,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
-{{% /md %}}</dd>
+    <dd>`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1879,7 +1879,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1887,8 +1887,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the snapshot.
-{{% /md %}}</dd>
+    <dd>The ID of the snapshot.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1896,7 +1896,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1904,8 +1904,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume, in GiB.
-{{% /md %}}</dd>
+    <dd>The size of the volume, in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1913,14 +1913,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the volume.
-{{% /md %}}</dd>
+    <dd>The type of the volume.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1929,8 +1929,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the root block device will be deleted on termination.
-{{% /md %}}</dd>
+    <dd>If the root block device will be deleted on termination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1938,8 +1938,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1947,8 +1947,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the EBS volume is encrypted.
-{{% /md %}}</dd>
+    <dd>If the EBS volume is encrypted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1956,8 +1956,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
-{{% /md %}}</dd>
+    <dd>`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1965,7 +1965,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1973,8 +1973,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the snapshot.
-{{% /md %}}</dd>
+    <dd>The ID of the snapshot.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1982,7 +1982,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1990,8 +1990,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume, in GiB.
-{{% /md %}}</dd>
+    <dd>The size of the volume, in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1999,14 +1999,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the volume.
-{{% /md %}}</dd>
+    <dd>The type of the volume.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2015,8 +2015,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the root block device will be deleted on termination.
-{{% /md %}}</dd>
+    <dd>If the root block device will be deleted on termination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2024,8 +2024,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2033,8 +2033,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the EBS volume is encrypted.
-{{% /md %}}</dd>
+    <dd>If the EBS volume is encrypted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2042,8 +2042,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
-{{% /md %}}</dd>
+    <dd>`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2051,7 +2051,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2059,8 +2059,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the snapshot.
-{{% /md %}}</dd>
+    <dd>The ID of the snapshot.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2068,7 +2068,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2076,8 +2076,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume, in GiB.
-{{% /md %}}</dd>
+    <dd>The size of the volume, in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2085,14 +2085,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the volume.
-{{% /md %}}</dd>
+    <dd>The type of the volume.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2101,8 +2101,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the root block device will be deleted on termination.
-{{% /md %}}</dd>
+    <dd>If the root block device will be deleted on termination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2110,8 +2110,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2119,8 +2119,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the EBS volume is encrypted.
-{{% /md %}}</dd>
+    <dd>If the EBS volume is encrypted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2128,8 +2128,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
-{{% /md %}}</dd>
+    <dd>`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2137,7 +2137,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2145,8 +2145,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the snapshot.
-{{% /md %}}</dd>
+    <dd>The ID of the snapshot.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2154,8 +2154,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the volume.
-{{% /md %}}</dd>
+    <dd>The type of the volume.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2163,7 +2163,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2171,29 +2171,29 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume, in GiB.
-{{% /md %}}</dd>
+    <dd>The size of the volume, in GiB.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstanceephemeralblockdevice">Get<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetInstanceEphemeralBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetInstanceEphemeralBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2202,8 +2202,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2211,8 +2211,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the specified device included in the device mapping was suppressed or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the specified device included in the device mapping was suppressed or not (Boolean).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2220,14 +2220,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual device name.
-{{% /md %}}</dd>
+    <dd>The virtual device name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2236,8 +2236,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2245,8 +2245,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the specified device included in the device mapping was suppressed or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the specified device included in the device mapping was suppressed or not (Boolean).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2254,14 +2254,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual device name.
-{{% /md %}}</dd>
+    <dd>The virtual device name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2270,8 +2270,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2279,8 +2279,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the specified device included in the device mapping was suppressed or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the specified device included in the device mapping was suppressed or not (Boolean).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,14 +2288,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual device name.
-{{% /md %}}</dd>
+    <dd>The virtual device name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2304,8 +2304,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2313,8 +2313,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the specified device included in the device mapping was suppressed or not (Boolean).
-{{% /md %}}</dd>
+    <dd>Whether the specified device included in the device mapping was suppressed or not (Boolean).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2322,29 +2322,29 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The virtual device name.
-{{% /md %}}</dd>
+    <dd>The virtual device name.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancefilter">Get<wbr>Instance<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetInstanceFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetInstanceFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetInstanceFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetInstanceFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2353,7 +2353,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2361,13 +2361,13 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2376,7 +2376,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2384,13 +2384,13 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2399,7 +2399,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2407,13 +2407,13 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2422,7 +2422,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2430,28 +2430,28 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancemetadataoption">Get<wbr>Instance<wbr>Metadata<wbr>Option</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetInstanceMetadataOption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetInstanceMetadataOption">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2460,8 +2460,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the metadata service: `enabled`, `disabled`.
-{{% /md %}}</dd>
+    <dd>The state of the metadata service: `enabled`, `disabled`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2469,8 +2469,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests.
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2478,14 +2478,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If session tokens are required: `optional`, `required`.
-{{% /md %}}</dd>
+    <dd>If session tokens are required: `optional`, `required`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2494,8 +2494,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the metadata service: `enabled`, `disabled`.
-{{% /md %}}</dd>
+    <dd>The state of the metadata service: `enabled`, `disabled`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2503,8 +2503,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests.
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2512,14 +2512,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If session tokens are required: `optional`, `required`.
-{{% /md %}}</dd>
+    <dd>If session tokens are required: `optional`, `required`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2528,8 +2528,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the metadata service: `enabled`, `disabled`.
-{{% /md %}}</dd>
+    <dd>The state of the metadata service: `enabled`, `disabled`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2537,8 +2537,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests.
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2546,14 +2546,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If session tokens are required: `optional`, `required`.
-{{% /md %}}</dd>
+    <dd>If session tokens are required: `optional`, `required`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2562,8 +2562,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The state of the metadata service: `enabled`, `disabled`.
-{{% /md %}}</dd>
+    <dd>The state of the metadata service: `enabled`, `disabled`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2571,8 +2571,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests.
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2580,29 +2580,29 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If session tokens are required: `optional`, `required`.
-{{% /md %}}</dd>
+    <dd>If session tokens are required: `optional`, `required`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancerootblockdevice">Get<wbr>Instance<wbr>Root<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetInstanceRootBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetInstanceRootBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2611,8 +2611,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the root block device will be deleted on termination.
-{{% /md %}}</dd>
+    <dd>If the root block device will be deleted on termination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2620,8 +2620,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2629,8 +2629,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the EBS volume is encrypted.
-{{% /md %}}</dd>
+    <dd>If the EBS volume is encrypted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2638,8 +2638,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
-{{% /md %}}</dd>
+    <dd>`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2647,7 +2647,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2655,7 +2655,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2663,8 +2663,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume, in GiB.
-{{% /md %}}</dd>
+    <dd>The size of the volume, in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2672,14 +2672,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the volume.
-{{% /md %}}</dd>
+    <dd>The type of the volume.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2688,8 +2688,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the root block device will be deleted on termination.
-{{% /md %}}</dd>
+    <dd>If the root block device will be deleted on termination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2697,8 +2697,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2706,8 +2706,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the EBS volume is encrypted.
-{{% /md %}}</dd>
+    <dd>If the EBS volume is encrypted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2715,8 +2715,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
-{{% /md %}}</dd>
+    <dd>`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2724,7 +2724,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2732,7 +2732,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2740,8 +2740,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume, in GiB.
-{{% /md %}}</dd>
+    <dd>The size of the volume, in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2749,14 +2749,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the volume.
-{{% /md %}}</dd>
+    <dd>The type of the volume.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2765,8 +2765,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the root block device will be deleted on termination.
-{{% /md %}}</dd>
+    <dd>If the root block device will be deleted on termination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2774,8 +2774,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2783,8 +2783,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the EBS volume is encrypted.
-{{% /md %}}</dd>
+    <dd>If the EBS volume is encrypted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2792,8 +2792,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
-{{% /md %}}</dd>
+    <dd>`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2801,7 +2801,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2809,7 +2809,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2817,8 +2817,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume, in GiB.
-{{% /md %}}</dd>
+    <dd>The size of the volume, in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2826,14 +2826,14 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the volume.
-{{% /md %}}</dd>
+    <dd>The type of the volume.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2842,8 +2842,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the root block device will be deleted on termination.
-{{% /md %}}</dd>
+    <dd>If the root block device will be deleted on termination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2851,8 +2851,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The physical name of the device.
-{{% /md %}}</dd>
+    <dd>The physical name of the device.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2860,8 +2860,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the EBS volume is encrypted.
-{{% /md %}}</dd>
+    <dd>If the EBS volume is encrypted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2869,8 +2869,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
-{{% /md %}}</dd>
+    <dd>`0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2878,7 +2878,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2886,8 +2886,8 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the volume.
-{{% /md %}}</dd>
+    <dd>The type of the volume.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2895,7 +2895,7 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2903,11 +2903,11 @@ is only available if you've enabled DNS hostnames for your VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume, in GiB.
-{{% /md %}}</dd>
+    <dd>The size of the volume, in GiB.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

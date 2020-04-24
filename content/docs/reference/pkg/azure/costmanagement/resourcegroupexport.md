@@ -18,26 +18,26 @@ Manages an Azure Cost Management Export for a Resource Group.
 
 
 ## Create a ResourceGroupExport Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/costmanagement/#ResourceGroupExport">ResourceGroupExport</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/costmanagement/#ResourceGroupExportArgs">ResourceGroupExportArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ResourceGroupExport</span><span class="p">(resource_name, opts=None, </span>active=None<span class="p">, </span>delivery_info=None<span class="p">, </span>name=None<span class="p">, </span>query=None<span class="p">, </span>recurrence_period_end=None<span class="p">, </span>recurrence_period_start=None<span class="p">, </span>recurrence_type=None<span class="p">, </span>resource_group_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewResourceGroupExport<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/costmanagement?tab=doc#ResourceGroupExportArgs">ResourceGroupExportArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/costmanagement?tab=doc#ResourceGroupExport">ResourceGroupExport</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.CostManagement.ResourceGroupExport.html">ResourceGroupExport</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.CostManagement.ResourceGroupExportArgs.html">ResourceGroupExportArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages an Azure Cost Management Export for a Resource Group.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages an Azure Cost Management Export for a Resource Group.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages an Azure Cost Management Export for a Resource Group.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages an Azure Cost Management Export for a Resource Group.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ResourceGroupExport Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportdeliveryinfo">Resource<wbr>Group<wbr>Export<wbr>Delivery<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `delivery_info` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delivery_info` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportquery">Resource<wbr>Group<wbr>Export<wbr>Query<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `query` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will stop capturing information. 
-{{% /md %}}</dd>
+    <dd>The date the export will stop capturing information. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -231,8 +231,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will start capturing information.
-{{% /md %}}</dd>
+    <dd>The date the export will start capturing information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -240,8 +240,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -249,8 +249,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the resource group in which to export information.
-{{% /md %}}</dd>
+    <dd>The id of the resource group in which to export information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the cost management export active? Default is `true`.
-{{% /md %}}</dd>
+    <dd>Is the cost management export active? Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,14 +267,14 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -283,8 +283,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportdeliveryinfo">Resource<wbr>Group<wbr>Export<wbr>Delivery<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}A `delivery_info` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delivery_info` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -292,8 +292,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportquery">Resource<wbr>Group<wbr>Export<wbr>Query</a></span>
     </dt>
-    <dd>{{% md %}}A `query` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -301,8 +301,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will stop capturing information. 
-{{% /md %}}</dd>
+    <dd>The date the export will stop capturing information. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -310,8 +310,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will start capturing information.
-{{% /md %}}</dd>
+    <dd>The date the export will start capturing information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -319,8 +319,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -328,8 +328,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the resource group in which to export information.
-{{% /md %}}</dd>
+    <dd>The id of the resource group in which to export information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the cost management export active? Default is `true`.
-{{% /md %}}</dd>
+    <dd>Is the cost management export active? Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,14 +346,14 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -362,8 +362,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportdeliveryinfo">Resource<wbr>Group<wbr>Export<wbr>Delivery<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}A `delivery_info` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delivery_info` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -371,8 +371,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportquery">Resource<wbr>Group<wbr>Export<wbr>Query</a></span>
     </dt>
-    <dd>{{% md %}}A `query` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -380,8 +380,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will stop capturing information. 
-{{% /md %}}</dd>
+    <dd>The date the export will stop capturing information. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -389,8 +389,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will start capturing information.
-{{% /md %}}</dd>
+    <dd>The date the export will start capturing information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -398,8 +398,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -407,8 +407,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the resource group in which to export information.
-{{% /md %}}</dd>
+    <dd>The id of the resource group in which to export information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,8 +416,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the cost management export active? Default is `true`.
-{{% /md %}}</dd>
+    <dd>Is the cost management export active? Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,14 +425,14 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -441,8 +441,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportdeliveryinfo">Dict[Resource<wbr>Group<wbr>Export<wbr>Delivery<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}A `delivery_info` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delivery_info` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -450,8 +450,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportquery">Dict[Resource<wbr>Group<wbr>Export<wbr>Query]</a></span>
     </dt>
-    <dd>{{% md %}}A `query` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -459,8 +459,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will stop capturing information. 
-{{% /md %}}</dd>
+    <dd>The date the export will stop capturing information. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -468,8 +468,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will start capturing information.
-{{% /md %}}</dd>
+    <dd>The date the export will start capturing information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -477,8 +477,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -486,8 +486,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the resource group in which to export information.
-{{% /md %}}</dd>
+    <dd>The id of the resource group in which to export information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the cost management export active? Default is `true`.
-{{% /md %}}</dd>
+    <dd>Is the cost management export active? Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,11 +504,11 @@ The ResourceGroupExport resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -522,7 +522,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -531,13 +531,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -546,13 +546,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -561,13 +561,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -576,10 +576,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -590,25 +590,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ResourceGroupExport Resource {#look-up}
 
 Get an existing ResourceGroupExport resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/costmanagement/#ResourceGroupExportState">ResourceGroupExportState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/costmanagement/#ResourceGroupExport">ResourceGroupExport</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>active=None<span class="p">, </span>delivery_info=None<span class="p">, </span>name=None<span class="p">, </span>query=None<span class="p">, </span>recurrence_period_end=None<span class="p">, </span>recurrence_period_start=None<span class="p">, </span>recurrence_type=None<span class="p">, </span>resource_group_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetResourceGroupExport<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/costmanagement?tab=doc#ResourceGroupExportState">ResourceGroupExportState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/costmanagement?tab=doc#ResourceGroupExport">ResourceGroupExport</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.CostManagement.ResourceGroupExport.html">ResourceGroupExport</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.CostManagement.ResourceGroupExportState.html">ResourceGroupExportState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -633,9 +633,9 @@ Get an existing ResourceGroupExport resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -648,36 +648,9 @@ Get an existing ResourceGroupExport resource's state with the given name, ID, an
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -702,13 +675,40 @@ Get an existing ResourceGroupExport resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -717,8 +717,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the cost management export active? Default is `true`.
-{{% /md %}}</dd>
+    <dd>Is the cost management export active? Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -726,8 +726,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportdeliveryinfo">Resource<wbr>Group<wbr>Export<wbr>Delivery<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `delivery_info` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delivery_info` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -735,8 +735,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -744,8 +744,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportquery">Resource<wbr>Group<wbr>Export<wbr>Query<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `query` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -753,8 +753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will stop capturing information. 
-{{% /md %}}</dd>
+    <dd>The date the export will stop capturing information. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -762,8 +762,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will start capturing information.
-{{% /md %}}</dd>
+    <dd>The date the export will start capturing information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -771,8 +771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,14 +780,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the resource group in which to export information.
-{{% /md %}}</dd>
+    <dd>The id of the resource group in which to export information.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -796,8 +796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the cost management export active? Default is `true`.
-{{% /md %}}</dd>
+    <dd>Is the cost management export active? Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportdeliveryinfo">Resource<wbr>Group<wbr>Export<wbr>Delivery<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}A `delivery_info` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delivery_info` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportquery">Resource<wbr>Group<wbr>Export<wbr>Query</a></span>
     </dt>
-    <dd>{{% md %}}A `query` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,8 +832,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will stop capturing information. 
-{{% /md %}}</dd>
+    <dd>The date the export will stop capturing information. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,8 +841,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will start capturing information.
-{{% /md %}}</dd>
+    <dd>The date the export will start capturing information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,14 +859,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the resource group in which to export information.
-{{% /md %}}</dd>
+    <dd>The id of the resource group in which to export information.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -875,8 +875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the cost management export active? Default is `true`.
-{{% /md %}}</dd>
+    <dd>Is the cost management export active? Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportdeliveryinfo">Resource<wbr>Group<wbr>Export<wbr>Delivery<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}A `delivery_info` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delivery_info` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,8 +893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportquery">Resource<wbr>Group<wbr>Export<wbr>Query</a></span>
     </dt>
-    <dd>{{% md %}}A `query` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,8 +911,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will stop capturing information. 
-{{% /md %}}</dd>
+    <dd>The date the export will stop capturing information. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,8 +920,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will start capturing information.
-{{% /md %}}</dd>
+    <dd>The date the export will start capturing information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,8 +929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -938,14 +938,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the resource group in which to export information.
-{{% /md %}}</dd>
+    <dd>The id of the resource group in which to export information.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -954,8 +954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the cost management export active? Default is `true`.
-{{% /md %}}</dd>
+    <dd>Is the cost management export active? Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportdeliveryinfo">Dict[Resource<wbr>Group<wbr>Export<wbr>Delivery<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}A `delivery_info` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delivery_info` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,8 +972,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,8 +981,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcegroupexportquery">Dict[Resource<wbr>Group<wbr>Export<wbr>Query]</a></span>
     </dt>
-    <dd>{{% md %}}A `query` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will stop capturing information. 
-{{% /md %}}</dd>
+    <dd>The date the export will stop capturing information. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,8 +999,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the export will start capturing information.
-{{% /md %}}</dd>
+    <dd>The date the export will start capturing information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1008,8 +1008,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1017,11 +1017,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the resource group in which to export information.
-{{% /md %}}</dd>
+    <dd>The id of the resource group in which to export information.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1036,18 +1036,18 @@ The following state arguments are supported:
 
 
 <h4 id="resourcegroupexportdeliveryinfo">Resource<wbr>Group<wbr>Export<wbr>Delivery<wbr>Info</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ResourceGroupExportDeliveryInfo">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ResourceGroupExportDeliveryInfo">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/costmanagement?tab=doc#ResourceGroupExportDeliveryInfoArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/costmanagement?tab=doc#ResourceGroupExportDeliveryInfoOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1056,8 +1056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the container where exports will be uploaded.
-{{% /md %}}</dd>
+    <dd>The name of the container where exports will be uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1065,8 +1065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of the directory where exports will be uploaded.
-{{% /md %}}</dd>
+    <dd>The path of the directory where exports will be uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1074,14 +1074,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The storage account id where exports will be delivered.
-{{% /md %}}</dd>
+    <dd>The storage account id where exports will be delivered.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1090,8 +1090,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the container where exports will be uploaded.
-{{% /md %}}</dd>
+    <dd>The name of the container where exports will be uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1099,8 +1099,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of the directory where exports will be uploaded.
-{{% /md %}}</dd>
+    <dd>The path of the directory where exports will be uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1108,14 +1108,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The storage account id where exports will be delivered.
-{{% /md %}}</dd>
+    <dd>The storage account id where exports will be delivered.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1124,8 +1124,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the container where exports will be uploaded.
-{{% /md %}}</dd>
+    <dd>The name of the container where exports will be uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1133,8 +1133,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of the directory where exports will be uploaded.
-{{% /md %}}</dd>
+    <dd>The path of the directory where exports will be uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1142,14 +1142,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The storage account id where exports will be delivered.
-{{% /md %}}</dd>
+    <dd>The storage account id where exports will be delivered.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1158,8 +1158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the container where exports will be uploaded.
-{{% /md %}}</dd>
+    <dd>The name of the container where exports will be uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1167,8 +1167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of the directory where exports will be uploaded.
-{{% /md %}}</dd>
+    <dd>The path of the directory where exports will be uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1176,29 +1176,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The storage account id where exports will be delivered.
-{{% /md %}}</dd>
+    <dd>The storage account id where exports will be delivered.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="resourcegroupexportquery">Resource<wbr>Group<wbr>Export<wbr>Query</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ResourceGroupExportQuery">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ResourceGroupExportQuery">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/costmanagement?tab=doc#ResourceGroupExportQueryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/costmanagement?tab=doc#ResourceGroupExportQueryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1207,8 +1207,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time frame for pulling data for the query. If custom, then a specific time period must be provided. Possible values include: `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`, `TheLastYear`, `Custom`.
-{{% /md %}}</dd>
+    <dd>The time frame for pulling data for the query. If custom, then a specific time period must be provided. Possible values include: `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`, `TheLastYear`, `Custom`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1216,14 +1216,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the query.
-{{% /md %}}</dd>
+    <dd>The type of the query.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1232,8 +1232,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time frame for pulling data for the query. If custom, then a specific time period must be provided. Possible values include: `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`, `TheLastYear`, `Custom`.
-{{% /md %}}</dd>
+    <dd>The time frame for pulling data for the query. If custom, then a specific time period must be provided. Possible values include: `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`, `TheLastYear`, `Custom`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1241,14 +1241,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the query.
-{{% /md %}}</dd>
+    <dd>The type of the query.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1257,8 +1257,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time frame for pulling data for the query. If custom, then a specific time period must be provided. Possible values include: `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`, `TheLastYear`, `Custom`.
-{{% /md %}}</dd>
+    <dd>The time frame for pulling data for the query. If custom, then a specific time period must be provided. Possible values include: `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`, `TheLastYear`, `Custom`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1266,14 +1266,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the query.
-{{% /md %}}</dd>
+    <dd>The type of the query.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1282,8 +1282,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time frame for pulling data for the query. If custom, then a specific time period must be provided. Possible values include: `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`, `TheLastYear`, `Custom`.
-{{% /md %}}</dd>
+    <dd>The time frame for pulling data for the query. If custom, then a specific time period must be provided. Possible values include: `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`, `TheLastYear`, `Custom`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1291,11 +1291,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the query.
-{{% /md %}}</dd>
+    <dd>The type of the query.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

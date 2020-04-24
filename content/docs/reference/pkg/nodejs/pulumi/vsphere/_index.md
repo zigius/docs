@@ -16,22 +16,22 @@ git_sha: "3a5bd9a48df019c97945ec15f1d019d55ee2d5bf"
 > please consult the source [`terraform-providers/terraform-provider-vsphere` repo](https://github.com/terraform-providers/terraform-provider-vsphere/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var vsphere = require("@pulumi/vsphere");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as vsphere from "@pulumi/vsphere";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

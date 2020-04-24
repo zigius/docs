@@ -229,26 +229,26 @@ for more information.
 
 
 ## Create a Group Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#Group">Group</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#GroupArgs">GroupArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Group</span><span class="p">(resource_name, opts=None, </span>availability_zones=None<span class="p">, </span>default_cooldown=None<span class="p">, </span>desired_capacity=None<span class="p">, </span>enabled_metrics=None<span class="p">, </span>force_delete=None<span class="p">, </span>health_check_grace_period=None<span class="p">, </span>health_check_type=None<span class="p">, </span>initial_lifecycle_hooks=None<span class="p">, </span>launch_configuration=None<span class="p">, </span>launch_template=None<span class="p">, </span>load_balancers=None<span class="p">, </span>max_instance_lifetime=None<span class="p">, </span>max_size=None<span class="p">, </span>metrics_granularity=None<span class="p">, </span>min_elb_capacity=None<span class="p">, </span>min_size=None<span class="p">, </span>mixed_instances_policy=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>placement_group=None<span class="p">, </span>protect_from_scale_in=None<span class="p">, </span>service_linked_role_arn=None<span class="p">, </span>suspended_processes=None<span class="p">, </span>tags=None<span class="p">, </span>tags_collection=None<span class="p">, </span>target_group_arns=None<span class="p">, </span>termination_policies=None<span class="p">, </span>vpc_zone_identifiers=None<span class="p">, </span>wait_for_capacity_timeout=None<span class="p">, </span>wait_for_elb_capacity=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupArgs">GroupArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#Group">Group</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.Group.html">Group</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.GroupArgs.html">GroupArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -285,9 +285,9 @@ for more information.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -305,9 +305,9 @@ for more information.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -354,9 +354,9 @@ for more information.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -393,7 +393,7 @@ for more information.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Group Resource Properties {#properties}
 
@@ -406,7 +406,7 @@ The Group resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -415,8 +415,8 @@ The Group resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size of the auto scale group.
-{{% /md %}}</dd>
+    <dd>The maximum size of the auto scale group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -424,9 +424,9 @@ The Group resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size of the auto scale group.
+    <dd>The minimum size of the auto scale group.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,8 +434,8 @@ The Group resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
-{{% /md %}}</dd>
+    <dd>A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ The Group resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,10 +452,10 @@ The Group resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Amazon EC2 instances that
+    <dd>The number of Amazon EC2 instances that
 should be running in the group. (See also Waiting for
 Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,13 +463,13 @@ Capacity below.)
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
-    <dd>{{% md %}}A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
+    <dd>A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
 * `wait_for_capacity_timeout` (Default: "10m") A maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for ASG instances to be healthy before timing out.  (See also Waiting
 for Capacity below.) Setting this to "0" causes
 this provider to skip all Capacity Waiting behavior.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,12 +477,12 @@ this provider to skip all Capacity Waiting behavior.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows deleting the autoscaling group without waiting
+    <dd>Allows deleting the autoscaling group without waiting
 for all instances in the pool to terminate.  You can force an autoscaling group to delete
 even if it's in the process of scaling a resource. Normally, this provider
 drains all the instances before deleting the group.  This bypasses that
 behavior and potentially leaves resources dangling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,8 +490,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Time (in seconds) after instance comes into service before checking health.
-{{% /md %}}</dd>
+    <dd>Time (in seconds) after instance comes into service before checking health.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,8 +499,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}"EC2" or "ELB". Controls how health checking is done.
-{{% /md %}}</dd>
+    <dd>"EC2" or "ELB". Controls how health checking is done.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,14 +508,14 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupinitiallifecyclehook">List&lt;Group<wbr>Initial<wbr>Lifecycle<wbr>Hook<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more
+    <dd>One or more
 [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
 to attach to the autoscaling group **before** instances are launched. The
 syntax is exactly the same as the separate
 [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
 resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
 a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration to use.
-{{% /md %}}</dd>
+    <dd>The name of the launch configuration to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,8 +532,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouplaunchtemplate">Group<wbr>Launch<wbr>Template<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,9 +541,9 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of elastic load balancer names to add to the autoscaling
+    <dd>A list of elastic load balancer names to add to the autoscaling
 group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
-{{% /md %}}</dd>
+    <dd>The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,8 +560,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
-{{% /md %}}</dd>
+    <dd>The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,11 +569,11 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Setting this causes this provider to wait for
+    <dd>Setting this causes this provider to wait for
 this number of instances from this autoscaling group to show up healthy in the
 ELB only on creation. Updates will not wait on ELB instance number changes.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,8 +581,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicy">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,8 +590,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,9 +599,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -609,8 +609,8 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the placement group into which you'll launch your instances, if any.
-{{% /md %}}</dd>
+    <dd>The name of the placement group into which you'll launch your instances, if any.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,10 +618,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows setting instance protection. The
+    <dd>Allows setting instance protection. The
 autoscaling group will not select instances with this setting for terminination
 during scale in events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,8 +629,8 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the service-linked role that the ASG will use to call other AWS services
-{{% /md %}}</dd>
+    <dd>The ARN of the service-linked role that the ASG will use to call other AWS services
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,9 +638,9 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
+    <dd>A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
 Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -648,8 +648,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouptag">List&lt;Group<wbr>Tag<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks. Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks. Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -657,8 +657,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;Immutable<wbr>Dictionary&lt;string, object&gt;&gt;</span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks (maps). Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks (maps). Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,8 +666,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
-{{% /md %}}</dd>
+    <dd>A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,8 +675,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
-{{% /md %}}</dd>
+    <dd>A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -684,8 +684,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to launch resources in.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to launch resources in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,7 +693,7 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -701,18 +701,18 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Setting this will cause this provider to wait
+    <dd>Setting this will cause this provider to wait
 for exactly this number of healthy instances from this autoscaling group in
 all attached load balancers on both create and update operations. (Takes
 precedence over `min_elb_capacity` behavior.)
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -721,8 +721,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size of the auto scale group.
-{{% /md %}}</dd>
+    <dd>The maximum size of the auto scale group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -730,9 +730,9 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size of the auto scale group.
+    <dd>The minimum size of the auto scale group.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,8 +740,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
-{{% /md %}}</dd>
+    <dd>A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,8 +749,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,10 +758,10 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Amazon EC2 instances that
+    <dd>The number of Amazon EC2 instances that
 should be running in the group. (See also Waiting for
 Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,13 +769,13 @@ Capacity below.)
         <span class="property-indicator"></span>
         <span class="property-type">[]string</span>
     </dt>
-    <dd>{{% md %}}A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
+    <dd>A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
 * `wait_for_capacity_timeout` (Default: "10m") A maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for ASG instances to be healthy before timing out.  (See also Waiting
 for Capacity below.) Setting this to "0" causes
 this provider to skip all Capacity Waiting behavior.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,12 +783,12 @@ this provider to skip all Capacity Waiting behavior.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows deleting the autoscaling group without waiting
+    <dd>Allows deleting the autoscaling group without waiting
 for all instances in the pool to terminate.  You can force an autoscaling group to delete
 even if it's in the process of scaling a resource. Normally, this provider
 drains all the instances before deleting the group.  This bypasses that
 behavior and potentially leaves resources dangling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,8 +796,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Time (in seconds) after instance comes into service before checking health.
-{{% /md %}}</dd>
+    <dd>Time (in seconds) after instance comes into service before checking health.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}"EC2" or "ELB". Controls how health checking is done.
-{{% /md %}}</dd>
+    <dd>"EC2" or "ELB". Controls how health checking is done.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,14 +814,14 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupinitiallifecyclehook">[]Group<wbr>Initial<wbr>Lifecycle<wbr>Hook</a></span>
     </dt>
-    <dd>{{% md %}}One or more
+    <dd>One or more
 [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
 to attach to the autoscaling group **before** instances are launched. The
 syntax is exactly the same as the separate
 [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
 resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
 a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -829,8 +829,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration to use.
-{{% /md %}}</dd>
+    <dd>The name of the launch configuration to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -838,8 +838,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouplaunchtemplate">Group<wbr>Launch<wbr>Template</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -847,9 +847,9 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of elastic load balancer names to add to the autoscaling
+    <dd>A list of elastic load balancer names to add to the autoscaling
 group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,8 +857,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
-{{% /md %}}</dd>
+    <dd>The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
-{{% /md %}}</dd>
+    <dd>The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,11 +875,11 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Setting this causes this provider to wait for
+    <dd>Setting this causes this provider to wait for
 this number of instances from this autoscaling group to show up healthy in the
 ELB only on creation. Updates will not wait on ELB instance number changes.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -887,8 +887,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicy">Group<wbr>Mixed<wbr>Instances<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -896,8 +896,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,9 +905,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,8 +915,8 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The name of the placement group into which you'll launch your instances, if any.
-{{% /md %}}</dd>
+    <dd>The name of the placement group into which you'll launch your instances, if any.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,10 +924,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows setting instance protection. The
+    <dd>Allows setting instance protection. The
 autoscaling group will not select instances with this setting for terminination
 during scale in events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the service-linked role that the ASG will use to call other AWS services
-{{% /md %}}</dd>
+    <dd>The ARN of the service-linked role that the ASG will use to call other AWS services
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,9 +944,9 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
+    <dd>A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
 Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouptag">[]Group<wbr>Tag</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks. Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks. Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type">[]map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks (maps). Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks (maps). Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,8 +972,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
-{{% /md %}}</dd>
+    <dd>A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,8 +981,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
-{{% /md %}}</dd>
+    <dd>A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to launch resources in.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to launch resources in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,7 +999,7 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1007,18 +1007,18 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Setting this will cause this provider to wait
+    <dd>Setting this will cause this provider to wait
 for exactly this number of healthy instances from this autoscaling group in
 all attached load balancers on both create and update operations. (Takes
 precedence over `min_elb_capacity` behavior.)
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1027,8 +1027,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size of the auto scale group.
-{{% /md %}}</dd>
+    <dd>The maximum size of the auto scale group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1036,9 +1036,9 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size of the auto scale group.
+    <dd>The minimum size of the auto scale group.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
-{{% /md %}}</dd>
+    <dd>A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,10 +1064,10 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of Amazon EC2 instances that
+    <dd>The number of Amazon EC2 instances that
 should be running in the group. (See also Waiting for
 Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,13 +1075,13 @@ Capacity below.)
         <span class="property-indicator"></span>
         <span class="property-type">Metric[]</span>
     </dt>
-    <dd>{{% md %}}A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
+    <dd>A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
 * `wait_for_capacity_timeout` (Default: "10m") A maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for ASG instances to be healthy before timing out.  (See also Waiting
 for Capacity below.) Setting this to "0" causes
 this provider to skip all Capacity Waiting behavior.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,12 +1089,12 @@ this provider to skip all Capacity Waiting behavior.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Allows deleting the autoscaling group without waiting
+    <dd>Allows deleting the autoscaling group without waiting
 for all instances in the pool to terminate.  You can force an autoscaling group to delete
 even if it's in the process of scaling a resource. Normally, this provider
 drains all the instances before deleting the group.  This bypasses that
 behavior and potentially leaves resources dangling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Time (in seconds) after instance comes into service before checking health.
-{{% /md %}}</dd>
+    <dd>Time (in seconds) after instance comes into service before checking health.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}"EC2" or "ELB". Controls how health checking is done.
-{{% /md %}}</dd>
+    <dd>"EC2" or "ELB". Controls how health checking is done.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,14 +1120,14 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupinitiallifecyclehook">Group<wbr>Initial<wbr>Lifecycle<wbr>Hook[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more
+    <dd>One or more
 [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
 to attach to the autoscaling group **before** instances are launched. The
 syntax is exactly the same as the separate
 [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
 resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
 a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1135,8 +1135,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type">string | Launch<wbr>Configuration</span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration to use.
-{{% /md %}}</dd>
+    <dd>The name of the launch configuration to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,8 +1144,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouplaunchtemplate">Group<wbr>Launch<wbr>Template</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,9 +1153,9 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of elastic load balancer names to add to the autoscaling
+    <dd>A list of elastic load balancer names to add to the autoscaling
 group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
-{{% /md %}}</dd>
+    <dd>The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type">string | Metrics<wbr>Granularity</span>
     </dt>
-    <dd>{{% md %}}The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
-{{% /md %}}</dd>
+    <dd>The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,11 +1181,11 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Setting this causes this provider to wait for
+    <dd>Setting this causes this provider to wait for
 this number of instances from this autoscaling group to show up healthy in the
 ELB only on creation. Updates will not wait on ELB instance number changes.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicy">Group<wbr>Mixed<wbr>Instances<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,9 +1211,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,8 +1221,8 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type">string | Placement<wbr>Group</span>
     </dt>
-    <dd>{{% md %}}The name of the placement group into which you'll launch your instances, if any.
-{{% /md %}}</dd>
+    <dd>The name of the placement group into which you'll launch your instances, if any.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,10 +1230,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Allows setting instance protection. The
+    <dd>Allows setting instance protection. The
 autoscaling group will not select instances with this setting for terminination
 during scale in events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1241,8 +1241,8 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the service-linked role that the ASG will use to call other AWS services
-{{% /md %}}</dd>
+    <dd>The ARN of the service-linked role that the ASG will use to call other AWS services
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1250,9 +1250,9 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
+    <dd>A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
 Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouptag">Group<wbr>Tag[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks. Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks. Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}[]</span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks (maps). Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks (maps). Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
-{{% /md %}}</dd>
+    <dd>A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
-{{% /md %}}</dd>
+    <dd>A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to launch resources in.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to launch resources in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,7 +1305,7 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1313,18 +1313,18 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Setting this will cause this provider to wait
+    <dd>Setting this will cause this provider to wait
 for exactly this number of healthy instances from this autoscaling group in
 all attached load balancers on both create and update operations. (Takes
 precedence over `min_elb_capacity` behavior.)
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1333,8 +1333,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size of the auto scale group.
-{{% /md %}}</dd>
+    <dd>The maximum size of the auto scale group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1342,9 +1342,9 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size of the auto scale group.
+    <dd>The minimum size of the auto scale group.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1352,8 +1352,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
-{{% /md %}}</dd>
+    <dd>A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,8 +1361,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1370,10 +1370,10 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of Amazon EC2 instances that
+    <dd>The number of Amazon EC2 instances that
 should be running in the group. (See also Waiting for
 Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,13 +1381,13 @@ Capacity below.)
         <span class="property-indicator"></span>
         <span class="property-type">List[Metric]</span>
     </dt>
-    <dd>{{% md %}}A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
+    <dd>A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
 * `wait_for_capacity_timeout` (Default: "10m") A maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for ASG instances to be healthy before timing out.  (See also Waiting
 for Capacity below.) Setting this to "0" causes
 this provider to skip all Capacity Waiting behavior.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,12 +1395,12 @@ this provider to skip all Capacity Waiting behavior.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows deleting the autoscaling group without waiting
+    <dd>Allows deleting the autoscaling group without waiting
 for all instances in the pool to terminate.  You can force an autoscaling group to delete
 even if it's in the process of scaling a resource. Normally, this provider
 drains all the instances before deleting the group.  This bypasses that
 behavior and potentially leaves resources dangling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1408,8 +1408,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Time (in seconds) after instance comes into service before checking health.
-{{% /md %}}</dd>
+    <dd>Time (in seconds) after instance comes into service before checking health.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,8 +1417,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}"EC2" or "ELB". Controls how health checking is done.
-{{% /md %}}</dd>
+    <dd>"EC2" or "ELB". Controls how health checking is done.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1426,14 +1426,14 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupinitiallifecyclehook">List[Group<wbr>Initial<wbr>Lifecycle<wbr>Hook]</a></span>
     </dt>
-    <dd>{{% md %}}One or more
+    <dd>One or more
 [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
 to attach to the autoscaling group **before** instances are launched. The
 syntax is exactly the same as the separate
 [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
 resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
 a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,8 +1441,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration to use.
-{{% /md %}}</dd>
+    <dd>The name of the launch configuration to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,8 +1450,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouplaunchtemplate">Dict[Group<wbr>Launch<wbr>Template]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1459,9 +1459,9 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of elastic load balancer names to add to the autoscaling
+    <dd>A list of elastic load balancer names to add to the autoscaling
 group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1469,8 +1469,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
-{{% /md %}}</dd>
+    <dd>The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1478,8 +1478,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
-{{% /md %}}</dd>
+    <dd>The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1487,11 +1487,11 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Setting this causes this provider to wait for
+    <dd>Setting this causes this provider to wait for
 this number of instances from this autoscaling group to show up healthy in the
 ELB only on creation. Updates will not wait on ELB instance number changes.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1499,8 +1499,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicy">Dict[Group<wbr>Mixed<wbr>Instances<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1508,8 +1508,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1517,9 +1517,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1527,8 +1527,8 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The name of the placement group into which you'll launch your instances, if any.
-{{% /md %}}</dd>
+    <dd>The name of the placement group into which you'll launch your instances, if any.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1536,10 +1536,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows setting instance protection. The
+    <dd>Allows setting instance protection. The
 autoscaling group will not select instances with this setting for terminination
 during scale in events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1547,8 +1547,8 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the service-linked role that the ASG will use to call other AWS services
-{{% /md %}}</dd>
+    <dd>The ARN of the service-linked role that the ASG will use to call other AWS services
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1556,9 +1556,9 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
+    <dd>A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
 Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1566,8 +1566,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouptag">List[Group<wbr>Tag]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks. Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks. Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1575,8 +1575,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type">List[Any>]</span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks (maps). Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks (maps). Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,8 +1584,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
-{{% /md %}}</dd>
+    <dd>A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1593,8 +1593,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
-{{% /md %}}</dd>
+    <dd>A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1602,8 +1602,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to launch resources in.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to launch resources in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1611,7 +1611,7 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,15 +1619,15 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Setting this will cause this provider to wait
+    <dd>Setting this will cause this provider to wait
 for exactly this number of healthy instances from this autoscaling group in
 all attached load balancers on both create and update operations. (Takes
 precedence over `min_elb_capacity` behavior.)
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1641,7 +1641,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1650,8 +1650,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for this AutoScaling Group
-{{% /md %}}</dd>
+    <dd>The ARN for this AutoScaling Group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1659,13 +1659,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1674,8 +1674,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for this AutoScaling Group
-{{% /md %}}</dd>
+    <dd>The ARN for this AutoScaling Group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1683,13 +1683,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1698,8 +1698,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for this AutoScaling Group
-{{% /md %}}</dd>
+    <dd>The ARN for this AutoScaling Group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1707,13 +1707,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1722,8 +1722,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for this AutoScaling Group
-{{% /md %}}</dd>
+    <dd>The ARN for this AutoScaling Group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1731,10 +1731,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1745,25 +1745,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Group Resource {#look-up}
 
 Get an existing Group resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#GroupState">GroupState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#Group">Group</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>availability_zones=None<span class="p">, </span>default_cooldown=None<span class="p">, </span>desired_capacity=None<span class="p">, </span>enabled_metrics=None<span class="p">, </span>force_delete=None<span class="p">, </span>health_check_grace_period=None<span class="p">, </span>health_check_type=None<span class="p">, </span>initial_lifecycle_hooks=None<span class="p">, </span>launch_configuration=None<span class="p">, </span>launch_template=None<span class="p">, </span>load_balancers=None<span class="p">, </span>max_instance_lifetime=None<span class="p">, </span>max_size=None<span class="p">, </span>metrics_granularity=None<span class="p">, </span>min_elb_capacity=None<span class="p">, </span>min_size=None<span class="p">, </span>mixed_instances_policy=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>placement_group=None<span class="p">, </span>protect_from_scale_in=None<span class="p">, </span>service_linked_role_arn=None<span class="p">, </span>suspended_processes=None<span class="p">, </span>tags=None<span class="p">, </span>tags_collection=None<span class="p">, </span>target_group_arns=None<span class="p">, </span>termination_policies=None<span class="p">, </span>vpc_zone_identifiers=None<span class="p">, </span>wait_for_capacity_timeout=None<span class="p">, </span>wait_for_elb_capacity=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupState">GroupState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#Group">Group</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.Group.html">Group</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.GroupState.html">GroupState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1788,9 +1788,9 @@ Get an existing Group resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1803,36 +1803,9 @@ Get an existing Group resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1857,13 +1830,40 @@ Get an existing Group resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1872,8 +1872,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for this AutoScaling Group
-{{% /md %}}</dd>
+    <dd>The ARN for this AutoScaling Group
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1881,8 +1881,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
-{{% /md %}}</dd>
+    <dd>A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1890,8 +1890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1899,10 +1899,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Amazon EC2 instances that
+    <dd>The number of Amazon EC2 instances that
 should be running in the group. (See also Waiting for
 Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1910,13 +1910,13 @@ Capacity below.)
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
-    <dd>{{% md %}}A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
+    <dd>A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
 * `wait_for_capacity_timeout` (Default: "10m") A maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for ASG instances to be healthy before timing out.  (See also Waiting
 for Capacity below.) Setting this to "0" causes
 this provider to skip all Capacity Waiting behavior.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1924,12 +1924,12 @@ this provider to skip all Capacity Waiting behavior.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows deleting the autoscaling group without waiting
+    <dd>Allows deleting the autoscaling group without waiting
 for all instances in the pool to terminate.  You can force an autoscaling group to delete
 even if it's in the process of scaling a resource. Normally, this provider
 drains all the instances before deleting the group.  This bypasses that
 behavior and potentially leaves resources dangling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,8 +1937,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Time (in seconds) after instance comes into service before checking health.
-{{% /md %}}</dd>
+    <dd>Time (in seconds) after instance comes into service before checking health.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1946,8 +1946,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}"EC2" or "ELB". Controls how health checking is done.
-{{% /md %}}</dd>
+    <dd>"EC2" or "ELB". Controls how health checking is done.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1955,14 +1955,14 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupinitiallifecyclehook">List&lt;Group<wbr>Initial<wbr>Lifecycle<wbr>Hook<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more
+    <dd>One or more
 [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
 to attach to the autoscaling group **before** instances are launched. The
 syntax is exactly the same as the separate
 [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
 resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
 a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1970,8 +1970,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration to use.
-{{% /md %}}</dd>
+    <dd>The name of the launch configuration to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1979,8 +1979,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouplaunchtemplate">Group<wbr>Launch<wbr>Template<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1988,9 +1988,9 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of elastic load balancer names to add to the autoscaling
+    <dd>A list of elastic load balancer names to add to the autoscaling
 group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1998,8 +1998,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
-{{% /md %}}</dd>
+    <dd>The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2007,8 +2007,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size of the auto scale group.
-{{% /md %}}</dd>
+    <dd>The maximum size of the auto scale group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2016,8 +2016,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
-{{% /md %}}</dd>
+    <dd>The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2025,11 +2025,11 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Setting this causes this provider to wait for
+    <dd>Setting this causes this provider to wait for
 this number of instances from this autoscaling group to show up healthy in the
 ELB only on creation. Updates will not wait on ELB instance number changes.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2037,9 +2037,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size of the auto scale group.
+    <dd>The minimum size of the auto scale group.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2047,8 +2047,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicy">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2056,8 +2056,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2065,9 +2065,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2075,8 +2075,8 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the placement group into which you'll launch your instances, if any.
-{{% /md %}}</dd>
+    <dd>The name of the placement group into which you'll launch your instances, if any.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2084,10 +2084,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows setting instance protection. The
+    <dd>Allows setting instance protection. The
 autoscaling group will not select instances with this setting for terminination
 during scale in events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2095,8 +2095,8 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the service-linked role that the ASG will use to call other AWS services
-{{% /md %}}</dd>
+    <dd>The ARN of the service-linked role that the ASG will use to call other AWS services
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2104,9 +2104,9 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
+    <dd>A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
 Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2114,8 +2114,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouptag">List&lt;Group<wbr>Tag<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks. Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks. Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2123,8 +2123,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;Immutable<wbr>Dictionary&lt;string, object&gt;&gt;</span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks (maps). Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks (maps). Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2132,8 +2132,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
-{{% /md %}}</dd>
+    <dd>A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2141,8 +2141,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
-{{% /md %}}</dd>
+    <dd>A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2150,8 +2150,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to launch resources in.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to launch resources in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2159,7 +2159,7 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2167,18 +2167,18 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Setting this will cause this provider to wait
+    <dd>Setting this will cause this provider to wait
 for exactly this number of healthy instances from this autoscaling group in
 all attached load balancers on both create and update operations. (Takes
 precedence over `min_elb_capacity` behavior.)
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2187,8 +2187,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for this AutoScaling Group
-{{% /md %}}</dd>
+    <dd>The ARN for this AutoScaling Group
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2196,8 +2196,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
-{{% /md %}}</dd>
+    <dd>A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2205,8 +2205,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2214,10 +2214,10 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Amazon EC2 instances that
+    <dd>The number of Amazon EC2 instances that
 should be running in the group. (See also Waiting for
 Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2225,13 +2225,13 @@ Capacity below.)
         <span class="property-indicator"></span>
         <span class="property-type">[]string</span>
     </dt>
-    <dd>{{% md %}}A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
+    <dd>A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
 * `wait_for_capacity_timeout` (Default: "10m") A maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for ASG instances to be healthy before timing out.  (See also Waiting
 for Capacity below.) Setting this to "0" causes
 this provider to skip all Capacity Waiting behavior.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2239,12 +2239,12 @@ this provider to skip all Capacity Waiting behavior.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows deleting the autoscaling group without waiting
+    <dd>Allows deleting the autoscaling group without waiting
 for all instances in the pool to terminate.  You can force an autoscaling group to delete
 even if it's in the process of scaling a resource. Normally, this provider
 drains all the instances before deleting the group.  This bypasses that
 behavior and potentially leaves resources dangling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2252,8 +2252,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Time (in seconds) after instance comes into service before checking health.
-{{% /md %}}</dd>
+    <dd>Time (in seconds) after instance comes into service before checking health.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2261,8 +2261,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}"EC2" or "ELB". Controls how health checking is done.
-{{% /md %}}</dd>
+    <dd>"EC2" or "ELB". Controls how health checking is done.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2270,14 +2270,14 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupinitiallifecyclehook">[]Group<wbr>Initial<wbr>Lifecycle<wbr>Hook</a></span>
     </dt>
-    <dd>{{% md %}}One or more
+    <dd>One or more
 [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
 to attach to the autoscaling group **before** instances are launched. The
 syntax is exactly the same as the separate
 [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
 resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
 a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2285,8 +2285,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration to use.
-{{% /md %}}</dd>
+    <dd>The name of the launch configuration to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2294,8 +2294,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouplaunchtemplate">Group<wbr>Launch<wbr>Template</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2303,9 +2303,9 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of elastic load balancer names to add to the autoscaling
+    <dd>A list of elastic load balancer names to add to the autoscaling
 group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2313,8 +2313,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
-{{% /md %}}</dd>
+    <dd>The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2322,8 +2322,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size of the auto scale group.
-{{% /md %}}</dd>
+    <dd>The maximum size of the auto scale group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2331,8 +2331,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
-{{% /md %}}</dd>
+    <dd>The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2340,11 +2340,11 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Setting this causes this provider to wait for
+    <dd>Setting this causes this provider to wait for
 this number of instances from this autoscaling group to show up healthy in the
 ELB only on creation. Updates will not wait on ELB instance number changes.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2352,9 +2352,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size of the auto scale group.
+    <dd>The minimum size of the auto scale group.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2362,8 +2362,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicy">Group<wbr>Mixed<wbr>Instances<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,8 +2371,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,9 +2380,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2390,8 +2390,8 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The name of the placement group into which you'll launch your instances, if any.
-{{% /md %}}</dd>
+    <dd>The name of the placement group into which you'll launch your instances, if any.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2399,10 +2399,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows setting instance protection. The
+    <dd>Allows setting instance protection. The
 autoscaling group will not select instances with this setting for terminination
 during scale in events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2410,8 +2410,8 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the service-linked role that the ASG will use to call other AWS services
-{{% /md %}}</dd>
+    <dd>The ARN of the service-linked role that the ASG will use to call other AWS services
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2419,9 +2419,9 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
+    <dd>A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
 Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2429,8 +2429,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouptag">[]Group<wbr>Tag</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks. Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks. Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2438,8 +2438,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type">[]map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks (maps). Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks (maps). Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2447,8 +2447,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
-{{% /md %}}</dd>
+    <dd>A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2456,8 +2456,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
-{{% /md %}}</dd>
+    <dd>A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2465,8 +2465,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to launch resources in.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to launch resources in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2474,7 +2474,7 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2482,18 +2482,18 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Setting this will cause this provider to wait
+    <dd>Setting this will cause this provider to wait
 for exactly this number of healthy instances from this autoscaling group in
 all attached load balancers on both create and update operations. (Takes
 precedence over `min_elb_capacity` behavior.)
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2502,8 +2502,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for this AutoScaling Group
-{{% /md %}}</dd>
+    <dd>The ARN for this AutoScaling Group
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2511,8 +2511,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
-{{% /md %}}</dd>
+    <dd>A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2520,8 +2520,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2529,10 +2529,10 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of Amazon EC2 instances that
+    <dd>The number of Amazon EC2 instances that
 should be running in the group. (See also Waiting for
 Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2540,13 +2540,13 @@ Capacity below.)
         <span class="property-indicator"></span>
         <span class="property-type">Metric[]</span>
     </dt>
-    <dd>{{% md %}}A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
+    <dd>A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
 * `wait_for_capacity_timeout` (Default: "10m") A maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for ASG instances to be healthy before timing out.  (See also Waiting
 for Capacity below.) Setting this to "0" causes
 this provider to skip all Capacity Waiting behavior.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2554,12 +2554,12 @@ this provider to skip all Capacity Waiting behavior.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Allows deleting the autoscaling group without waiting
+    <dd>Allows deleting the autoscaling group without waiting
 for all instances in the pool to terminate.  You can force an autoscaling group to delete
 even if it's in the process of scaling a resource. Normally, this provider
 drains all the instances before deleting the group.  This bypasses that
 behavior and potentially leaves resources dangling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2567,8 +2567,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Time (in seconds) after instance comes into service before checking health.
-{{% /md %}}</dd>
+    <dd>Time (in seconds) after instance comes into service before checking health.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2576,8 +2576,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}"EC2" or "ELB". Controls how health checking is done.
-{{% /md %}}</dd>
+    <dd>"EC2" or "ELB". Controls how health checking is done.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2585,14 +2585,14 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupinitiallifecyclehook">Group<wbr>Initial<wbr>Lifecycle<wbr>Hook[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more
+    <dd>One or more
 [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
 to attach to the autoscaling group **before** instances are launched. The
 syntax is exactly the same as the separate
 [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
 resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
 a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2600,8 +2600,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type">string | Launch<wbr>Configuration</span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration to use.
-{{% /md %}}</dd>
+    <dd>The name of the launch configuration to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2609,8 +2609,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouplaunchtemplate">Group<wbr>Launch<wbr>Template</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2618,9 +2618,9 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of elastic load balancer names to add to the autoscaling
+    <dd>A list of elastic load balancer names to add to the autoscaling
 group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2628,8 +2628,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
-{{% /md %}}</dd>
+    <dd>The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2637,8 +2637,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size of the auto scale group.
-{{% /md %}}</dd>
+    <dd>The maximum size of the auto scale group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2646,8 +2646,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type">string | Metrics<wbr>Granularity</span>
     </dt>
-    <dd>{{% md %}}The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
-{{% /md %}}</dd>
+    <dd>The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2655,11 +2655,11 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Setting this causes this provider to wait for
+    <dd>Setting this causes this provider to wait for
 this number of instances from this autoscaling group to show up healthy in the
 ELB only on creation. Updates will not wait on ELB instance number changes.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2667,9 +2667,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size of the auto scale group.
+    <dd>The minimum size of the auto scale group.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2677,8 +2677,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicy">Group<wbr>Mixed<wbr>Instances<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2686,8 +2686,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2695,9 +2695,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2705,8 +2705,8 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type">string | Placement<wbr>Group</span>
     </dt>
-    <dd>{{% md %}}The name of the placement group into which you'll launch your instances, if any.
-{{% /md %}}</dd>
+    <dd>The name of the placement group into which you'll launch your instances, if any.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2714,10 +2714,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Allows setting instance protection. The
+    <dd>Allows setting instance protection. The
 autoscaling group will not select instances with this setting for terminination
 during scale in events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2725,8 +2725,8 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the service-linked role that the ASG will use to call other AWS services
-{{% /md %}}</dd>
+    <dd>The ARN of the service-linked role that the ASG will use to call other AWS services
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2734,9 +2734,9 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
+    <dd>A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
 Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2744,8 +2744,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouptag">Group<wbr>Tag[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks. Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks. Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2753,8 +2753,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}[]</span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks (maps). Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks (maps). Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2762,8 +2762,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
-{{% /md %}}</dd>
+    <dd>A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2771,8 +2771,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
-{{% /md %}}</dd>
+    <dd>A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2780,8 +2780,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to launch resources in.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to launch resources in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2789,7 +2789,7 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2797,18 +2797,18 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Setting this will cause this provider to wait
+    <dd>Setting this will cause this provider to wait
 for exactly this number of healthy instances from this autoscaling group in
 all attached load balancers on both create and update operations. (Takes
 precedence over `min_elb_capacity` behavior.)
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2817,8 +2817,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for this AutoScaling Group
-{{% /md %}}</dd>
+    <dd>The ARN for this AutoScaling Group
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2826,8 +2826,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
-{{% /md %}}</dd>
+    <dd>A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2835,8 +2835,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
-{{% /md %}}</dd>
+    <dd>The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2844,10 +2844,10 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of Amazon EC2 instances that
+    <dd>The number of Amazon EC2 instances that
 should be running in the group. (See also Waiting for
 Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2855,13 +2855,13 @@ Capacity below.)
         <span class="property-indicator"></span>
         <span class="property-type">List[Metric]</span>
     </dt>
-    <dd>{{% md %}}A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
+    <dd>A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
 * `wait_for_capacity_timeout` (Default: "10m") A maximum
 [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
 wait for ASG instances to be healthy before timing out.  (See also Waiting
 for Capacity below.) Setting this to "0" causes
 this provider to skip all Capacity Waiting behavior.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2869,12 +2869,12 @@ this provider to skip all Capacity Waiting behavior.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows deleting the autoscaling group without waiting
+    <dd>Allows deleting the autoscaling group without waiting
 for all instances in the pool to terminate.  You can force an autoscaling group to delete
 even if it's in the process of scaling a resource. Normally, this provider
 drains all the instances before deleting the group.  This bypasses that
 behavior and potentially leaves resources dangling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2882,8 +2882,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Time (in seconds) after instance comes into service before checking health.
-{{% /md %}}</dd>
+    <dd>Time (in seconds) after instance comes into service before checking health.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2891,8 +2891,8 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}"EC2" or "ELB". Controls how health checking is done.
-{{% /md %}}</dd>
+    <dd>"EC2" or "ELB". Controls how health checking is done.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2900,14 +2900,14 @@ behavior and potentially leaves resources dangling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupinitiallifecyclehook">List[Group<wbr>Initial<wbr>Lifecycle<wbr>Hook]</a></span>
     </dt>
-    <dd>{{% md %}}One or more
+    <dd>One or more
 [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
 to attach to the autoscaling group **before** instances are launched. The
 syntax is exactly the same as the separate
 [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
 resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
 a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2915,8 +2915,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The name of the launch configuration to use.
-{{% /md %}}</dd>
+    <dd>The name of the launch configuration to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2924,8 +2924,8 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouplaunchtemplate">Dict[Group<wbr>Launch<wbr>Template]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2933,9 +2933,9 @@ a new autoscaling group. For all other use-cases, please use `aws.autoscaling.Li
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of elastic load balancer names to add to the autoscaling
+    <dd>A list of elastic load balancer names to add to the autoscaling
 group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2943,8 +2943,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
-{{% /md %}}</dd>
+    <dd>The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2952,8 +2952,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum size of the auto scale group.
-{{% /md %}}</dd>
+    <dd>The maximum size of the auto scale group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2961,8 +2961,8 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
-{{% /md %}}</dd>
+    <dd>The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2970,11 +2970,11 @@ group names. Only valid for classic load balancers. For ALBs, use `target_group_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Setting this causes this provider to wait for
+    <dd>Setting this causes this provider to wait for
 this number of instances from this autoscaling group to show up healthy in the
 ELB only on creation. Updates will not wait on ELB instance number changes.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2982,9 +2982,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The minimum size of the auto scale group.
+    <dd>The minimum size of the auto scale group.
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2992,8 +2992,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicy">Dict[Group<wbr>Mixed<wbr>Instances<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3001,8 +3001,8 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3010,9 +3010,9 @@ ELB only on creation. Updates will not wait on ELB instance number changes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3020,8 +3020,8 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The name of the placement group into which you'll launch your instances, if any.
-{{% /md %}}</dd>
+    <dd>The name of the placement group into which you'll launch your instances, if any.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3029,10 +3029,10 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allows setting instance protection. The
+    <dd>Allows setting instance protection. The
 autoscaling group will not select instances with this setting for terminination
 during scale in events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3040,8 +3040,8 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the service-linked role that the ASG will use to call other AWS services
-{{% /md %}}</dd>
+    <dd>The ARN of the service-linked role that the ASG will use to call other AWS services
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3049,9 +3049,9 @@ during scale in events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
+    <dd>A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
 Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3059,8 +3059,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#grouptag">List[Group<wbr>Tag]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks. Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks. Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3068,8 +3068,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type">List[Any>]</span>
     </dt>
-    <dd>{{% md %}}A list of tag blocks (maps). Tags documented below.
-{{% /md %}}</dd>
+    <dd>A list of tag blocks (maps). Tags documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3077,8 +3077,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
-{{% /md %}}</dd>
+    <dd>A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3086,8 +3086,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
-{{% /md %}}</dd>
+    <dd>A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3095,8 +3095,8 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to launch resources in.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to launch resources in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3104,7 +3104,7 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3112,15 +3112,15 @@ Note that if you suspend either the `Launch` or `Terminate` process types, it ca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Setting this will cause this provider to wait
+    <dd>Setting this will cause this provider to wait
 for exactly this number of healthy instances from this autoscaling group in
 all attached load balancers on both create and update operations. (Takes
 precedence over `min_elb_capacity` behavior.)
 (See also Waiting for Capacity below.)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -3135,18 +3135,18 @@ precedence over `min_elb_capacity` behavior.)
 
 
 <h4 id="groupinitiallifecyclehook">Group<wbr>Initial<wbr>Lifecycle<wbr>Hook</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GroupInitialLifecycleHook">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GroupInitialLifecycleHook">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupInitialLifecycleHookArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupInitialLifecycleHookOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3155,7 +3155,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3163,8 +3163,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3172,7 +3172,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3180,7 +3180,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3188,7 +3188,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3196,7 +3196,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3204,13 +3204,13 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3219,7 +3219,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3227,8 +3227,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3236,7 +3236,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3244,7 +3244,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3252,7 +3252,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3260,7 +3260,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3268,13 +3268,13 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3283,7 +3283,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3291,8 +3291,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3300,7 +3300,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3308,7 +3308,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3316,7 +3316,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3324,7 +3324,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3332,13 +3332,13 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3347,7 +3347,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3355,8 +3355,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3364,7 +3364,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3372,7 +3372,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3380,7 +3380,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3388,7 +3388,7 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3396,28 +3396,28 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="grouplaunchtemplate">Group<wbr>Launch<wbr>Template</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GroupLaunchTemplate">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GroupLaunchTemplate">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupLaunchTemplateArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupLaunchTemplateOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3426,8 +3426,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the launch template. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>The ID of the launch template. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3435,8 +3435,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3444,14 +3444,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
-{{% /md %}}</dd>
+    <dd>Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3460,8 +3460,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the launch template. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>The ID of the launch template. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3469,8 +3469,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3478,14 +3478,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
-{{% /md %}}</dd>
+    <dd>Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3494,8 +3494,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the launch template. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>The ID of the launch template. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3503,8 +3503,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3512,14 +3512,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
-{{% /md %}}</dd>
+    <dd>Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3528,8 +3528,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the launch template. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>The ID of the launch template. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3537,8 +3537,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the auto scaling group. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the auto scaling group. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3546,29 +3546,29 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
-{{% /md %}}</dd>
+    <dd>Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="groupmixedinstancespolicy">Group<wbr>Mixed<wbr>Instances<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GroupMixedInstancesPolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GroupMixedInstancesPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3577,8 +3577,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplate">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3586,14 +3586,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicyinstancesdistribution">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Instances<wbr>Distribution<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3602,8 +3602,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplate">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3611,14 +3611,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicyinstancesdistribution">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Instances<wbr>Distribution</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3627,8 +3627,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplate">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3636,14 +3636,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicyinstancesdistribution">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Instances<wbr>Distribution</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3652,8 +3652,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplate">Dict[Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3661,29 +3661,29 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicyinstancesdistribution">Dict[Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Instances<wbr>Distribution]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="groupmixedinstancespolicyinstancesdistribution">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Instances<wbr>Distribution</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GroupMixedInstancesPolicyInstancesDistribution">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GroupMixedInstancesPolicyInstancesDistribution">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyInstancesDistributionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyInstancesDistributionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3692,8 +3692,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Strategy to use when launching on-demand instances. Valid values: `prioritized`. Default: `prioritized`.
-{{% /md %}}</dd>
+    <dd>Strategy to use when launching on-demand instances. Valid values: `prioritized`. Default: `prioritized`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3701,8 +3701,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Absolute minimum amount of desired capacity that must be fulfilled by on-demand instances. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Absolute minimum amount of desired capacity that must be fulfilled by on-demand instances. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3710,8 +3710,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Percentage split between on-demand and Spot instances above the base on-demand capacity. Default: `100`.
-{{% /md %}}</dd>
+    <dd>Percentage split between on-demand and Spot instances above the base on-demand capacity. Default: `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3719,8 +3719,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate capacity across the Spot pools. Valid values: `lowest-price`, `capacity-optimized`. Default: `lowest-price`.
-{{% /md %}}</dd>
+    <dd>How to allocate capacity across the Spot pools. Valid values: `lowest-price`, `capacity-optimized`. Default: `lowest-price`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3728,8 +3728,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of Spot pools per availability zone to allocate capacity. EC2 Auto Scaling selects the cheapest Spot pools and evenly allocates Spot capacity across the number of Spot pools that you specify. Default: `2`.
-{{% /md %}}</dd>
+    <dd>Number of Spot pools per availability zone to allocate capacity. EC2 Auto Scaling selects the cheapest Spot pools and evenly allocates Spot capacity across the number of Spot pools that you specify. Default: `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3737,14 +3737,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum price per unit hour that the user is willing to pay for the Spot instances. Default: an empty string which means the on-demand price.
-{{% /md %}}</dd>
+    <dd>Maximum price per unit hour that the user is willing to pay for the Spot instances. Default: an empty string which means the on-demand price.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3753,8 +3753,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Strategy to use when launching on-demand instances. Valid values: `prioritized`. Default: `prioritized`.
-{{% /md %}}</dd>
+    <dd>Strategy to use when launching on-demand instances. Valid values: `prioritized`. Default: `prioritized`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3762,8 +3762,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Absolute minimum amount of desired capacity that must be fulfilled by on-demand instances. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Absolute minimum amount of desired capacity that must be fulfilled by on-demand instances. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3771,8 +3771,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Percentage split between on-demand and Spot instances above the base on-demand capacity. Default: `100`.
-{{% /md %}}</dd>
+    <dd>Percentage split between on-demand and Spot instances above the base on-demand capacity. Default: `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3780,8 +3780,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate capacity across the Spot pools. Valid values: `lowest-price`, `capacity-optimized`. Default: `lowest-price`.
-{{% /md %}}</dd>
+    <dd>How to allocate capacity across the Spot pools. Valid values: `lowest-price`, `capacity-optimized`. Default: `lowest-price`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3789,8 +3789,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of Spot pools per availability zone to allocate capacity. EC2 Auto Scaling selects the cheapest Spot pools and evenly allocates Spot capacity across the number of Spot pools that you specify. Default: `2`.
-{{% /md %}}</dd>
+    <dd>Number of Spot pools per availability zone to allocate capacity. EC2 Auto Scaling selects the cheapest Spot pools and evenly allocates Spot capacity across the number of Spot pools that you specify. Default: `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3798,14 +3798,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum price per unit hour that the user is willing to pay for the Spot instances. Default: an empty string which means the on-demand price.
-{{% /md %}}</dd>
+    <dd>Maximum price per unit hour that the user is willing to pay for the Spot instances. Default: an empty string which means the on-demand price.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3814,8 +3814,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Strategy to use when launching on-demand instances. Valid values: `prioritized`. Default: `prioritized`.
-{{% /md %}}</dd>
+    <dd>Strategy to use when launching on-demand instances. Valid values: `prioritized`. Default: `prioritized`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3823,8 +3823,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Absolute minimum amount of desired capacity that must be fulfilled by on-demand instances. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Absolute minimum amount of desired capacity that must be fulfilled by on-demand instances. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3832,8 +3832,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Percentage split between on-demand and Spot instances above the base on-demand capacity. Default: `100`.
-{{% /md %}}</dd>
+    <dd>Percentage split between on-demand and Spot instances above the base on-demand capacity. Default: `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3841,8 +3841,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate capacity across the Spot pools. Valid values: `lowest-price`, `capacity-optimized`. Default: `lowest-price`.
-{{% /md %}}</dd>
+    <dd>How to allocate capacity across the Spot pools. Valid values: `lowest-price`, `capacity-optimized`. Default: `lowest-price`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3850,8 +3850,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of Spot pools per availability zone to allocate capacity. EC2 Auto Scaling selects the cheapest Spot pools and evenly allocates Spot capacity across the number of Spot pools that you specify. Default: `2`.
-{{% /md %}}</dd>
+    <dd>Number of Spot pools per availability zone to allocate capacity. EC2 Auto Scaling selects the cheapest Spot pools and evenly allocates Spot capacity across the number of Spot pools that you specify. Default: `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3859,14 +3859,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum price per unit hour that the user is willing to pay for the Spot instances. Default: an empty string which means the on-demand price.
-{{% /md %}}</dd>
+    <dd>Maximum price per unit hour that the user is willing to pay for the Spot instances. Default: an empty string which means the on-demand price.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3875,8 +3875,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Strategy to use when launching on-demand instances. Valid values: `prioritized`. Default: `prioritized`.
-{{% /md %}}</dd>
+    <dd>Strategy to use when launching on-demand instances. Valid values: `prioritized`. Default: `prioritized`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3884,8 +3884,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Absolute minimum amount of desired capacity that must be fulfilled by on-demand instances. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Absolute minimum amount of desired capacity that must be fulfilled by on-demand instances. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3893,8 +3893,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Percentage split between on-demand and Spot instances above the base on-demand capacity. Default: `100`.
-{{% /md %}}</dd>
+    <dd>Percentage split between on-demand and Spot instances above the base on-demand capacity. Default: `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3902,8 +3902,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate capacity across the Spot pools. Valid values: `lowest-price`, `capacity-optimized`. Default: `lowest-price`.
-{{% /md %}}</dd>
+    <dd>How to allocate capacity across the Spot pools. Valid values: `lowest-price`, `capacity-optimized`. Default: `lowest-price`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3911,8 +3911,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of Spot pools per availability zone to allocate capacity. EC2 Auto Scaling selects the cheapest Spot pools and evenly allocates Spot capacity across the number of Spot pools that you specify. Default: `2`.
-{{% /md %}}</dd>
+    <dd>Number of Spot pools per availability zone to allocate capacity. EC2 Auto Scaling selects the cheapest Spot pools and evenly allocates Spot capacity across the number of Spot pools that you specify. Default: `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3920,29 +3920,29 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Maximum price per unit hour that the user is willing to pay for the Spot instances. Default: an empty string which means the on-demand price.
-{{% /md %}}</dd>
+    <dd>Maximum price per unit hour that the user is willing to pay for the Spot instances. Default: an empty string which means the on-demand price.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="groupmixedinstancespolicylaunchtemplate">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GroupMixedInstancesPolicyLaunchTemplate">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GroupMixedInstancesPolicyLaunchTemplate">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyLaunchTemplateArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyLaunchTemplateOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3951,8 +3951,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplatelaunchtemplatespecification">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Launch<wbr>Template<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defines the Launch Template. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defines the Launch Template. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3960,14 +3960,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplateoverride">List&lt;Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Override<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of nested arguments provides the ability to specify multiple instance types. This will override the same parameter in the launch template. For on-demand instances, Auto Scaling considers the order of preference of instance types to launch based on the order specified in the overrides list. Defined below.
-{{% /md %}}</dd>
+    <dd>List of nested arguments provides the ability to specify multiple instance types. This will override the same parameter in the launch template. For on-demand instances, Auto Scaling considers the order of preference of instance types to launch based on the order specified in the overrides list. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3976,8 +3976,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplatelaunchtemplatespecification">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Launch<wbr>Template<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defines the Launch Template. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defines the Launch Template. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3985,14 +3985,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplateoverride">[]Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Override</a></span>
     </dt>
-    <dd>{{% md %}}List of nested arguments provides the ability to specify multiple instance types. This will override the same parameter in the launch template. For on-demand instances, Auto Scaling considers the order of preference of instance types to launch based on the order specified in the overrides list. Defined below.
-{{% /md %}}</dd>
+    <dd>List of nested arguments provides the ability to specify multiple instance types. This will override the same parameter in the launch template. For on-demand instances, Auto Scaling considers the order of preference of instance types to launch based on the order specified in the overrides list. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4001,8 +4001,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplatelaunchtemplatespecification">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Launch<wbr>Template<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defines the Launch Template. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defines the Launch Template. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4010,14 +4010,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplateoverride">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Override[]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested arguments provides the ability to specify multiple instance types. This will override the same parameter in the launch template. For on-demand instances, Auto Scaling considers the order of preference of instance types to launch based on the order specified in the overrides list. Defined below.
-{{% /md %}}</dd>
+    <dd>List of nested arguments provides the ability to specify multiple instance types. This will override the same parameter in the launch template. For on-demand instances, Auto Scaling considers the order of preference of instance types to launch based on the order specified in the overrides list. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4026,8 +4026,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplatelaunchtemplatespecification">Dict[Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Launch<wbr>Template<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defines the Launch Template. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defines the Launch Template. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4035,29 +4035,29 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#groupmixedinstancespolicylaunchtemplateoverride">List[Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Override]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested arguments provides the ability to specify multiple instance types. This will override the same parameter in the launch template. For on-demand instances, Auto Scaling considers the order of preference of instance types to launch based on the order specified in the overrides list. Defined below.
-{{% /md %}}</dd>
+    <dd>List of nested arguments provides the ability to specify multiple instance types. This will override the same parameter in the launch template. For on-demand instances, Auto Scaling considers the order of preference of instance types to launch based on the order specified in the overrides list. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="groupmixedinstancespolicylaunchtemplatelaunchtemplatespecification">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Launch<wbr>Template<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4066,8 +4066,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the launch template. Conflicts with `launch_template_name`.
-{{% /md %}}</dd>
+    <dd>The ID of the launch template. Conflicts with `launch_template_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4075,8 +4075,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. Conflicts with `launch_template_id`.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. Conflicts with `launch_template_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4084,14 +4084,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
-{{% /md %}}</dd>
+    <dd>Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4100,8 +4100,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the launch template. Conflicts with `launch_template_name`.
-{{% /md %}}</dd>
+    <dd>The ID of the launch template. Conflicts with `launch_template_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4109,8 +4109,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. Conflicts with `launch_template_id`.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. Conflicts with `launch_template_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4118,14 +4118,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
-{{% /md %}}</dd>
+    <dd>Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4134,8 +4134,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the launch template. Conflicts with `launch_template_name`.
-{{% /md %}}</dd>
+    <dd>The ID of the launch template. Conflicts with `launch_template_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4143,8 +4143,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. Conflicts with `launch_template_id`.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. Conflicts with `launch_template_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4152,14 +4152,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
-{{% /md %}}</dd>
+    <dd>Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4168,8 +4168,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the launch template. Conflicts with `launch_template_name`.
-{{% /md %}}</dd>
+    <dd>The ID of the launch template. Conflicts with `launch_template_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4177,8 +4177,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. Conflicts with `launch_template_id`.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. Conflicts with `launch_template_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4186,29 +4186,29 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
-{{% /md %}}</dd>
+    <dd>Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="groupmixedinstancespolicylaunchtemplateoverride">Group<wbr>Mixed<wbr>Instances<wbr>Policy<wbr>Launch<wbr>Template<wbr>Override</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GroupMixedInstancesPolicyLaunchTemplateOverride">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GroupMixedInstancesPolicyLaunchTemplateOverride">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyLaunchTemplateOverrideArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupMixedInstancesPolicyLaunchTemplateOverrideOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4217,8 +4217,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Override the instance type in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Override the instance type in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4226,14 +4226,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of capacity units, which gives the instance type a proportional weight to other instance types.
-{{% /md %}}</dd>
+    <dd>The number of capacity units, which gives the instance type a proportional weight to other instance types.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4242,8 +4242,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Override the instance type in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Override the instance type in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4251,14 +4251,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of capacity units, which gives the instance type a proportional weight to other instance types.
-{{% /md %}}</dd>
+    <dd>The number of capacity units, which gives the instance type a proportional weight to other instance types.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4267,8 +4267,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Override the instance type in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Override the instance type in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4276,14 +4276,14 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of capacity units, which gives the instance type a proportional weight to other instance types.
-{{% /md %}}</dd>
+    <dd>The number of capacity units, which gives the instance type a proportional weight to other instance types.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4292,8 +4292,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Override the instance type in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Override the instance type in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4301,29 +4301,29 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The number of capacity units, which gives the instance type a proportional weight to other instance types.
-{{% /md %}}</dd>
+    <dd>The number of capacity units, which gives the instance type a proportional weight to other instance types.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="grouptag">Group<wbr>Tag</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GroupTag">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GroupTag">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupTagArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#GroupTagOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4332,8 +4332,8 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Key
-{{% /md %}}</dd>
+    <dd>Key
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4341,9 +4341,9 @@ precedence over `min_elb_capacity` behavior.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables propagation of the tag to
+    <dd>Enables propagation of the tag to
 Amazon EC2 instances launched via this ASG
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4351,14 +4351,14 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Value
-{{% /md %}}</dd>
+    <dd>Value
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4367,8 +4367,8 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key
-{{% /md %}}</dd>
+    <dd>Key
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4376,9 +4376,9 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables propagation of the tag to
+    <dd>Enables propagation of the tag to
 Amazon EC2 instances launched via this ASG
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4386,14 +4386,14 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Value
-{{% /md %}}</dd>
+    <dd>Value
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4402,8 +4402,8 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key
-{{% /md %}}</dd>
+    <dd>Key
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4411,9 +4411,9 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables propagation of the tag to
+    <dd>Enables propagation of the tag to
 Amazon EC2 instances launched via this ASG
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4421,14 +4421,14 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Value
-{{% /md %}}</dd>
+    <dd>Value
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4437,8 +4437,8 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Key
-{{% /md %}}</dd>
+    <dd>Key
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4446,9 +4446,9 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables propagation of the tag to
+    <dd>Enables propagation of the tag to
 Amazon EC2 instances launched via this ASG
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4456,11 +4456,11 @@ Amazon EC2 instances launched via this ASG
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Value
-{{% /md %}}</dd>
+    <dd>Value
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

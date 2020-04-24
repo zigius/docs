@@ -37,26 +37,26 @@ const note = new gcp.containeranalysis.Note("note", {
 
 
 ## Create a Note Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/containeranalysis/#Note">Note</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/containeranalysis/#NoteArgs">NoteArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Note</span><span class="p">(resource_name, opts=None, </span>attestation_authority=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewNote<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/containeranalysis?tab=doc#NoteArgs">NoteArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/containeranalysis?tab=doc#Note">Note</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.ContainerAnalysis.Note.html">Note</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.ContainerAnalysis.NoteArgs.html">NoteArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -93,9 +93,9 @@ const note = new gcp.containeranalysis.Note("note", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -113,9 +113,9 @@ const note = new gcp.containeranalysis.Note("note", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -162,9 +162,9 @@ const note = new gcp.containeranalysis.Note("note", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -201,7 +201,7 @@ const note = new gcp.containeranalysis.Note("note", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Note Resource Properties {#properties}
 
@@ -214,7 +214,7 @@ The Note resource accepts the following [input]({{< relref "/docs/intro/concepts
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -223,12 +223,12 @@ The Note resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthority">Note<wbr>Attestation<wbr>Authority<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
+    <dd>Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
 AttestationAuthority for "QA" and one for "build". This Note is intended to act strictly as a grouping mechanism for the
 attached Occurrences (Attestations). This grouping mechanism also provides a security boundary, since IAM ACLs gate the
 ability for a principle to attach an Occurrence to a given Note. It also provides a single point of lookup to find all
 attached Attestation Occurrences, even if they don't all live in the same project.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the note.
-{{% /md %}}</dd>
+    <dd>The name of the note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,15 +245,15 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -262,12 +262,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthority">Note<wbr>Attestation<wbr>Authority</a></span>
     </dt>
-    <dd>{{% md %}}Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
+    <dd>Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
 AttestationAuthority for "QA" and one for "build". This Note is intended to act strictly as a grouping mechanism for the
 attached Occurrences (Attestations). This grouping mechanism also provides a security boundary, since IAM ACLs gate the
 ability for a principle to attach an Occurrence to a given Note. It also provides a single point of lookup to find all
 attached Attestation Occurrences, even if they don't all live in the same project.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the note.
-{{% /md %}}</dd>
+    <dd>The name of the note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,15 +284,15 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -301,12 +301,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthority">Note<wbr>Attestation<wbr>Authority</a></span>
     </dt>
-    <dd>{{% md %}}Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
+    <dd>Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
 AttestationAuthority for "QA" and one for "build". This Note is intended to act strictly as a grouping mechanism for the
 attached Occurrences (Attestations). This grouping mechanism also provides a security boundary, since IAM ACLs gate the
 ability for a principle to attach an Occurrence to a given Note. It also provides a single point of lookup to find all
 attached Attestation Occurrences, even if they don't all live in the same project.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the note.
-{{% /md %}}</dd>
+    <dd>The name of the note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,15 +323,15 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -340,12 +340,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthority">Dict[Note<wbr>Attestation<wbr>Authority]</a></span>
     </dt>
-    <dd>{{% md %}}Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
+    <dd>Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
 AttestationAuthority for "QA" and one for "build". This Note is intended to act strictly as a grouping mechanism for the
 attached Occurrences (Attestations). This grouping mechanism also provides a security boundary, since IAM ACLs gate the
 ability for a principle to attach an Occurrence to a given Note. It also provides a single point of lookup to find all
 attached Attestation Occurrences, even if they don't all live in the same project.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the note.
-{{% /md %}}</dd>
+    <dd>The name of the note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,12 +362,12 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -381,7 +381,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -390,13 +390,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -405,13 +405,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -420,13 +420,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -435,10 +435,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -449,25 +449,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Note Resource {#look-up}
 
 Get an existing Note resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/containeranalysis/#NoteState">NoteState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/containeranalysis/#Note">Note</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>attestation_authority=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetNote<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/containeranalysis?tab=doc#NoteState">NoteState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/containeranalysis?tab=doc#Note">Note</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.ContainerAnalysis.Note.html">Note</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.ContainerAnalysis.NoteState.html">NoteState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -492,9 +492,9 @@ Get an existing Note resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -507,36 +507,9 @@ Get an existing Note resource's state with the given name, ID, and optional extr
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -561,13 +534,40 @@ Get an existing Note resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -576,12 +576,12 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthority">Note<wbr>Attestation<wbr>Authority<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
+    <dd>Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
 AttestationAuthority for "QA" and one for "build". This Note is intended to act strictly as a grouping mechanism for the
 attached Occurrences (Attestations). This grouping mechanism also provides a security boundary, since IAM ACLs gate the
 ability for a principle to attach an Occurrence to a given Note. It also provides a single point of lookup to find all
 attached Attestation Occurrences, even if they don't all live in the same project.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -589,8 +589,8 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the note.
-{{% /md %}}</dd>
+    <dd>The name of the note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,15 +598,15 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -615,12 +615,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthority">Note<wbr>Attestation<wbr>Authority</a></span>
     </dt>
-    <dd>{{% md %}}Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
+    <dd>Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
 AttestationAuthority for "QA" and one for "build". This Note is intended to act strictly as a grouping mechanism for the
 attached Occurrences (Attestations). This grouping mechanism also provides a security boundary, since IAM ACLs gate the
 ability for a principle to attach an Occurrence to a given Note. It also provides a single point of lookup to find all
 attached Attestation Occurrences, even if they don't all live in the same project.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the note.
-{{% /md %}}</dd>
+    <dd>The name of the note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,15 +637,15 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -654,12 +654,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthority">Note<wbr>Attestation<wbr>Authority</a></span>
     </dt>
-    <dd>{{% md %}}Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
+    <dd>Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
 AttestationAuthority for "QA" and one for "build". This Note is intended to act strictly as a grouping mechanism for the
 attached Occurrences (Attestations). This grouping mechanism also provides a security boundary, since IAM ACLs gate the
 ability for a principle to attach an Occurrence to a given Note. It also provides a single point of lookup to find all
 attached Attestation Occurrences, even if they don't all live in the same project.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -667,8 +667,8 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the note.
-{{% /md %}}</dd>
+    <dd>The name of the note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -676,15 +676,15 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -693,12 +693,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthority">Dict[Note<wbr>Attestation<wbr>Authority]</a></span>
     </dt>
-    <dd>{{% md %}}Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
+    <dd>Note kind that represents a logical attestation "role" or "authority". For example, an organization might have one
 AttestationAuthority for "QA" and one for "build". This Note is intended to act strictly as a grouping mechanism for the
 attached Occurrences (Attestations). This grouping mechanism also provides a security boundary, since IAM ACLs gate the
 ability for a principle to attach an Occurrence to a given Note. It also provides a single point of lookup to find all
 attached Attestation Occurrences, even if they don't all live in the same project.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -706,8 +706,8 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the note.
-{{% /md %}}</dd>
+    <dd>The name of the note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -715,12 +715,12 @@ attached Attestation Occurrences, even if they don't all live in the same projec
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -735,18 +735,18 @@ If it is not provided, the provider project is used.
 
 
 <h4 id="noteattestationauthority">Note<wbr>Attestation<wbr>Authority</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#NoteAttestationAuthority">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#NoteAttestationAuthority">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/containeranalysis?tab=doc#NoteAttestationAuthorityArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/containeranalysis?tab=doc#NoteAttestationAuthorityOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -755,13 +755,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthorityhint">Note<wbr>Attestation<wbr>Authority<wbr>Hint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -770,13 +770,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthorityhint">Note<wbr>Attestation<wbr>Authority<wbr>Hint</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -785,13 +785,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthorityhint">Note<wbr>Attestation<wbr>Authority<wbr>Hint</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -800,28 +800,28 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#noteattestationauthorityhint">Dict[Note<wbr>Attestation<wbr>Authority<wbr>Hint]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="noteattestationauthorityhint">Note<wbr>Attestation<wbr>Authority<wbr>Hint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#NoteAttestationAuthorityHint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#NoteAttestationAuthorityHint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/containeranalysis?tab=doc#NoteAttestationAuthorityHintArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/containeranalysis?tab=doc#NoteAttestationAuthorityHintOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -830,13 +830,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -845,13 +845,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -860,13 +860,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -875,10 +875,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

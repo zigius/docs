@@ -18,26 +18,26 @@ Provides a Cloudflare Spectrum Application. You can extend the power of Cloudfla
 
 
 ## Create a SpectrumApplication Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/cloudflare/#SpectrumApplication">SpectrumApplication</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/cloudflare/#SpectrumApplicationArgs">SpectrumApplicationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SpectrumApplication</span><span class="p">(resource_name, opts=None, </span>argo_smart_routing=None<span class="p">, </span>dns=None<span class="p">, </span>edge_ip_connectivity=None<span class="p">, </span>edge_ips=None<span class="p">, </span>ip_firewall=None<span class="p">, </span>origin_directs=None<span class="p">, </span>origin_dns=None<span class="p">, </span>origin_port=None<span class="p">, </span>protocol=None<span class="p">, </span>proxy_protocol=None<span class="p">, </span>tls=None<span class="p">, </span>traffic_type=None<span class="p">, </span>zone_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSpectrumApplication<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-cloudflare/sdk/v2/go/cloudflare/?tab=doc#SpectrumApplicationArgs">SpectrumApplicationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-cloudflare/sdk/v2/go/cloudflare/?tab=doc#SpectrumApplication">SpectrumApplication</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Cloudflare/Pulumi.Cloudflare.SpectrumApplication.html">SpectrumApplication</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Cloudflare/Pulumi.Cloudflare.SpectrumApplicationArgs.html">SpectrumApplicationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Provides a Cloudflare Spectrum Application. You can extend the power of Cloudfla
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Provides a Cloudflare Spectrum Application. You can extend the power of Cloudfla
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Provides a Cloudflare Spectrum Application. You can extend the power of Cloudfla
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Provides a Cloudflare Spectrum Application. You can extend the power of Cloudfla
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## SpectrumApplication Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationdns">Spectrum<wbr>Application<wbr>Dns<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The name and type of DNS record for the Spectrum application. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The name and type of DNS record for the Spectrum application. Fields documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
-{{% /md %}}</dd>
+    <dd>The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS zone ID to add the application to
-{{% /md %}}</dd>
+    <dd>The DNS zone ID to add the application to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}. Enables Argo Smart Routing. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>. Enables Argo Smart Routing. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
-{{% /md %}}</dd>
+    <dd>. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
-{{% /md %}}</dd>
+    <dd>. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables the IP Firewall for this application. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Enables the IP Firewall for this application. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
-{{% /md %}}</dd>
+    <dd>A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationorigindns">Spectrum<wbr>Application<wbr>Origin<wbr>Dns<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A destination DNS addresses to the origin. Fields documented below.
-{{% /md %}}</dd>
+    <dd>A destination DNS addresses to the origin. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
-{{% /md %}}</dd>
+    <dd>If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,14 +312,14 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
-{{% /md %}}</dd>
+    <dd>Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -328,8 +328,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationdns">Spectrum<wbr>Application<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}The name and type of DNS record for the Spectrum application. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The name and type of DNS record for the Spectrum application. Fields documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -337,8 +337,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
-{{% /md %}}</dd>
+    <dd>The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -346,8 +346,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS zone ID to add the application to
-{{% /md %}}</dd>
+    <dd>The DNS zone ID to add the application to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}. Enables Argo Smart Routing. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>. Enables Argo Smart Routing. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
-{{% /md %}}</dd>
+    <dd>. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
-{{% /md %}}</dd>
+    <dd>. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables the IP Firewall for this application. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Enables the IP Firewall for this application. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
-{{% /md %}}</dd>
+    <dd>A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationorigindns">Spectrum<wbr>Application<wbr>Origin<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}A destination DNS addresses to the origin. Fields documented below.
-{{% /md %}}</dd>
+    <dd>A destination DNS addresses to the origin. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
-{{% /md %}}</dd>
+    <dd>If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,8 +418,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,8 +427,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,14 +436,14 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
-{{% /md %}}</dd>
+    <dd>Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -452,8 +452,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationdns">Spectrum<wbr>Application<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}The name and type of DNS record for the Spectrum application. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The name and type of DNS record for the Spectrum application. Fields documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -461,8 +461,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
-{{% /md %}}</dd>
+    <dd>The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -470,8 +470,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS zone ID to add the application to
-{{% /md %}}</dd>
+    <dd>The DNS zone ID to add the application to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}. Enables Argo Smart Routing. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>. Enables Argo Smart Routing. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
-{{% /md %}}</dd>
+    <dd>. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
-{{% /md %}}</dd>
+    <dd>. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables the IP Firewall for this application. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Enables the IP Firewall for this application. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
-{{% /md %}}</dd>
+    <dd>A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationorigindns">Spectrum<wbr>Application<wbr>Origin<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}A destination DNS addresses to the origin. Fields documented below.
-{{% /md %}}</dd>
+    <dd>A destination DNS addresses to the origin. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,8 +533,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
-{{% /md %}}</dd>
+    <dd>If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,14 +560,14 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
-{{% /md %}}</dd>
+    <dd>Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -576,8 +576,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationdns">Dict[Spectrum<wbr>Application<wbr>Dns]</a></span>
     </dt>
-    <dd>{{% md %}}The name and type of DNS record for the Spectrum application. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The name and type of DNS record for the Spectrum application. Fields documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -585,8 +585,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
-{{% /md %}}</dd>
+    <dd>The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -594,8 +594,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS zone ID to add the application to
-{{% /md %}}</dd>
+    <dd>The DNS zone ID to add the application to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,8 +603,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}. Enables Argo Smart Routing. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>. Enables Argo Smart Routing. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,8 +612,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
-{{% /md %}}</dd>
+    <dd>. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,8 +621,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
-{{% /md %}}</dd>
+    <dd>. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -630,8 +630,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables the IP Firewall for this application. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Enables the IP Firewall for this application. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -639,8 +639,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
-{{% /md %}}</dd>
+    <dd>A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -648,8 +648,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationorigindns">Dict[Spectrum<wbr>Application<wbr>Origin<wbr>Dns]</a></span>
     </dt>
-    <dd>{{% md %}}A destination DNS addresses to the origin. Fields documented below.
-{{% /md %}}</dd>
+    <dd>A destination DNS addresses to the origin. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -657,8 +657,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
-{{% /md %}}</dd>
+    <dd>If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,8 +666,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,8 +675,8 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -684,11 +684,11 @@ The SpectrumApplication resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
-{{% /md %}}</dd>
+    <dd>Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -702,7 +702,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -711,13 +711,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -726,13 +726,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -741,13 +741,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -756,10 +756,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -770,25 +770,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing SpectrumApplication Resource {#look-up}
 
 Get an existing SpectrumApplication resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/cloudflare/#SpectrumApplicationState">SpectrumApplicationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/cloudflare/#SpectrumApplication">SpectrumApplication</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>argo_smart_routing=None<span class="p">, </span>dns=None<span class="p">, </span>edge_ip_connectivity=None<span class="p">, </span>edge_ips=None<span class="p">, </span>ip_firewall=None<span class="p">, </span>origin_directs=None<span class="p">, </span>origin_dns=None<span class="p">, </span>origin_port=None<span class="p">, </span>protocol=None<span class="p">, </span>proxy_protocol=None<span class="p">, </span>tls=None<span class="p">, </span>traffic_type=None<span class="p">, </span>zone_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSpectrumApplication<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-cloudflare/sdk/v2/go/cloudflare/?tab=doc#SpectrumApplicationState">SpectrumApplicationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-cloudflare/sdk/v2/go/cloudflare/?tab=doc#SpectrumApplication">SpectrumApplication</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Cloudflare/Pulumi.Cloudflare.SpectrumApplication.html">SpectrumApplication</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Cloudflare/Pulumi.Cloudflare..SpectrumApplicationState.html">SpectrumApplicationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -813,9 +813,9 @@ Get an existing SpectrumApplication resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -828,36 +828,9 @@ Get an existing SpectrumApplication resource's state with the given name, ID, an
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -882,13 +855,40 @@ Get an existing SpectrumApplication resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -897,8 +897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}. Enables Argo Smart Routing. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>. Enables Argo Smart Routing. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,8 +906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationdns">Spectrum<wbr>Application<wbr>Dns<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The name and type of DNS record for the Spectrum application. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The name and type of DNS record for the Spectrum application. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,8 +915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
-{{% /md %}}</dd>
+    <dd>. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,8 +924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
-{{% /md %}}</dd>
+    <dd>. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,8 +933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables the IP Firewall for this application. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Enables the IP Firewall for this application. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
-{{% /md %}}</dd>
+    <dd>A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,8 +951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationorigindns">Spectrum<wbr>Application<wbr>Origin<wbr>Dns<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A destination DNS addresses to the origin. Fields documented below.
-{{% /md %}}</dd>
+    <dd>A destination DNS addresses to the origin. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,8 +960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
-{{% /md %}}</dd>
+    <dd>If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -969,8 +969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
-{{% /md %}}</dd>
+    <dd>The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,8 +978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,8 +987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,8 +996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
-{{% /md %}}</dd>
+    <dd>Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,14 +1005,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS zone ID to add the application to
-{{% /md %}}</dd>
+    <dd>The DNS zone ID to add the application to
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1021,8 +1021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}. Enables Argo Smart Routing. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>. Enables Argo Smart Routing. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationdns">Spectrum<wbr>Application<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}The name and type of DNS record for the Spectrum application. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The name and type of DNS record for the Spectrum application. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,8 +1039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
-{{% /md %}}</dd>
+    <dd>. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
-{{% /md %}}</dd>
+    <dd>. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables the IP Firewall for this application. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Enables the IP Firewall for this application. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
-{{% /md %}}</dd>
+    <dd>A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,8 +1075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationorigindns">Spectrum<wbr>Application<wbr>Origin<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}A destination DNS addresses to the origin. Fields documented below.
-{{% /md %}}</dd>
+    <dd>A destination DNS addresses to the origin. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
-{{% /md %}}</dd>
+    <dd>If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
-{{% /md %}}</dd>
+    <dd>The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,8 +1120,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
-{{% /md %}}</dd>
+    <dd>Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,14 +1129,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS zone ID to add the application to
-{{% /md %}}</dd>
+    <dd>The DNS zone ID to add the application to
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1145,8 +1145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}. Enables Argo Smart Routing. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>. Enables Argo Smart Routing. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationdns">Spectrum<wbr>Application<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}The name and type of DNS record for the Spectrum application. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The name and type of DNS record for the Spectrum application. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
-{{% /md %}}</dd>
+    <dd>. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
-{{% /md %}}</dd>
+    <dd>. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables the IP Firewall for this application. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Enables the IP Firewall for this application. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,8 +1190,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
-{{% /md %}}</dd>
+    <dd>A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,8 +1199,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationorigindns">Spectrum<wbr>Application<wbr>Origin<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}A destination DNS addresses to the origin. Fields documented below.
-{{% /md %}}</dd>
+    <dd>A destination DNS addresses to the origin. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
-{{% /md %}}</dd>
+    <dd>If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
-{{% /md %}}</dd>
+    <dd>The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
-{{% /md %}}</dd>
+    <dd>Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,14 +1253,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS zone ID to add the application to
-{{% /md %}}</dd>
+    <dd>The DNS zone ID to add the application to
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}. Enables Argo Smart Routing. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>. Enables Argo Smart Routing. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationdns">Dict[Spectrum<wbr>Application<wbr>Dns]</a></span>
     </dt>
-    <dd>{{% md %}}The name and type of DNS record for the Spectrum application. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The name and type of DNS record for the Spectrum application. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
-{{% /md %}}</dd>
+    <dd>. Choose which types of IP addresses will be provisioned for this subdomain. Valid values are: `all`, `ipv4`, `ipv6`. Defaults to `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
-{{% /md %}}</dd>
+    <dd>. A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables the IP Firewall for this application. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Enables the IP Firewall for this application. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
-{{% /md %}}</dd>
+    <dd>A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spectrumapplicationorigindns">Dict[Spectrum<wbr>Application<wbr>Origin<wbr>Dns]</a></span>
     </dt>
-    <dd>{{% md %}}A destination DNS addresses to the origin. Fields documented below.
-{{% /md %}}</dd>
+    <dd>A destination DNS addresses to the origin. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
-{{% /md %}}</dd>
+    <dd>If using `origin_dns` this is a required attribute. Origin port to proxy traffice to e.g. `22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,8 +1341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
-{{% /md %}}</dd>
+    <dd>The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>Enables a proxy protocol to the origin. Valid values are: `off`, `v1`, `v2`, and `simple`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,8 +1359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
-{{% /md %}}</dd>
+    <dd>TLS configuration option for Cloudflare to connect to your origin. Valid values are: `off`, `flexible`, `full` and `strict`. Defaults to `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1368,8 +1368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
-{{% /md %}}</dd>
+    <dd>Sets application type. Valid values are: `direct`, `http`, `https`.  Defaults to `direct`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,11 +1377,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS zone ID to add the application to
-{{% /md %}}</dd>
+    <dd>The DNS zone ID to add the application to
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1396,18 +1396,18 @@ The following state arguments are supported:
 
 
 <h4 id="spectrumapplicationdns">Spectrum<wbr>Application<wbr>Dns</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/cloudflare/types/input/#SpectrumApplicationDns">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/cloudflare/types/output/#SpectrumApplicationDns">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-cloudflare/sdk/v2/go/cloudflare/?tab=doc#SpectrumApplicationDnsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-cloudflare/sdk/v2/go/cloudflare/?tab=doc#SpectrumApplicationDnsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1416,8 +1416,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified domain name of the origin e.g. origin-ssh.example.com.
-{{% /md %}}</dd>
+    <dd>Fully qualified domain name of the origin e.g. origin-ssh.example.com.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1425,14 +1425,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of DNS record associated with the application. Valid values: `CNAME`.
-{{% /md %}}</dd>
+    <dd>The type of DNS record associated with the application. Valid values: `CNAME`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1441,8 +1441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified domain name of the origin e.g. origin-ssh.example.com.
-{{% /md %}}</dd>
+    <dd>Fully qualified domain name of the origin e.g. origin-ssh.example.com.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1450,14 +1450,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of DNS record associated with the application. Valid values: `CNAME`.
-{{% /md %}}</dd>
+    <dd>The type of DNS record associated with the application. Valid values: `CNAME`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1466,8 +1466,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified domain name of the origin e.g. origin-ssh.example.com.
-{{% /md %}}</dd>
+    <dd>Fully qualified domain name of the origin e.g. origin-ssh.example.com.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1475,14 +1475,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of DNS record associated with the application. Valid values: `CNAME`.
-{{% /md %}}</dd>
+    <dd>The type of DNS record associated with the application. Valid values: `CNAME`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1491,8 +1491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified domain name of the origin e.g. origin-ssh.example.com.
-{{% /md %}}</dd>
+    <dd>Fully qualified domain name of the origin e.g. origin-ssh.example.com.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1500,29 +1500,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of DNS record associated with the application. Valid values: `CNAME`.
-{{% /md %}}</dd>
+    <dd>The type of DNS record associated with the application. Valid values: `CNAME`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="spectrumapplicationorigindns">Spectrum<wbr>Application<wbr>Origin<wbr>Dns</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/cloudflare/types/input/#SpectrumApplicationOriginDns">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/cloudflare/types/output/#SpectrumApplicationOriginDns">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-cloudflare/sdk/v2/go/cloudflare/?tab=doc#SpectrumApplicationOriginDnsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-cloudflare/sdk/v2/go/cloudflare/?tab=doc#SpectrumApplicationOriginDnsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1531,14 +1531,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified domain name of the origin e.g. origin-ssh.example.com.
-{{% /md %}}</dd>
+    <dd>Fully qualified domain name of the origin e.g. origin-ssh.example.com.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1547,14 +1547,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified domain name of the origin e.g. origin-ssh.example.com.
-{{% /md %}}</dd>
+    <dd>Fully qualified domain name of the origin e.g. origin-ssh.example.com.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1563,14 +1563,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified domain name of the origin e.g. origin-ssh.example.com.
-{{% /md %}}</dd>
+    <dd>Fully qualified domain name of the origin e.g. origin-ssh.example.com.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1579,11 +1579,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Fully qualified domain name of the origin e.g. origin-ssh.example.com.
-{{% /md %}}</dd>
+    <dd>Fully qualified domain name of the origin e.g. origin-ssh.example.com.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

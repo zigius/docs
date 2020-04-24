@@ -19,29 +19,29 @@ Decrypt multiple secrets from data encrypted with the AWS KMS service.
 
 ## Using GetSecrets {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSecrets<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#GetSecretsArgs">GetSecretsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#GetSecretsResult">GetSecretsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_secrets(</span>secrets=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSecrets<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#LookupSecretsArgs">LookupSecretsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#LookupSecretsResult">LookupSecretsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSecrets </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.GetSecretsResult.html">GetSecretsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.GetSecretsArgs.html">GetSecretsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,14 +58,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecretssecret">List&lt;Get<wbr>Secrets<wbr>Secret<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more encrypted payload definitions from the KMS service. See the Secret Definitions below.
-{{% /md %}}</dd>
+    <dd>One or more encrypted payload definitions from the KMS service. See the Secret Definitions below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -74,14 +74,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecretssecret">[]Get<wbr>Secrets<wbr>Secret</a></span>
     </dt>
-    <dd>{{% md %}}One or more encrypted payload definitions from the KMS service. See the Secret Definitions below.
-{{% /md %}}</dd>
+    <dd>One or more encrypted payload definitions from the KMS service. See the Secret Definitions below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -90,14 +90,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecretssecret">Get<wbr>Secrets<wbr>Secret[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more encrypted payload definitions from the KMS service. See the Secret Definitions below.
-{{% /md %}}</dd>
+    <dd>One or more encrypted payload definitions from the KMS service. See the Secret Definitions below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -106,11 +106,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecretssecret">List[Get<wbr>Secrets<wbr>Secret]</a></span>
     </dt>
-    <dd>{{% md %}}One or more encrypted payload definitions from the KMS service. See the Secret Definitions below.
-{{% /md %}}</dd>
+    <dd>One or more encrypted payload definitions from the KMS service. See the Secret Definitions below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -126,7 +126,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -135,8 +135,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -144,8 +144,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Map containing each `secret` `name` as the key with its decrypted plaintext value
-{{% /md %}}</dd>
+    <dd>Map containing each `secret` `name` as the key with its decrypted plaintext value
+</dd>
 
     <dt class="property-"
             title="">
@@ -153,13 +153,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecretssecret">List&lt;Get<wbr>Secrets<wbr>Secret&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -168,8 +168,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -177,8 +177,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Map containing each `secret` `name` as the key with its decrypted plaintext value
-{{% /md %}}</dd>
+    <dd>Map containing each `secret` `name` as the key with its decrypted plaintext value
+</dd>
 
     <dt class="property-"
             title="">
@@ -186,13 +186,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecretssecret">[]Get<wbr>Secrets<wbr>Secret</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -201,8 +201,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -210,8 +210,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Map containing each `secret` `name` as the key with its decrypted plaintext value
-{{% /md %}}</dd>
+    <dd>Map containing each `secret` `name` as the key with its decrypted plaintext value
+</dd>
 
     <dt class="property-"
             title="">
@@ -219,13 +219,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecretssecret">Get<wbr>Secrets<wbr>Secret[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -234,8 +234,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -243,8 +243,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Map containing each `secret` `name` as the key with its decrypted plaintext value
-{{% /md %}}</dd>
+    <dd>Map containing each `secret` `name` as the key with its decrypted plaintext value
+</dd>
 
     <dt class="property-"
             title="">
@@ -252,10 +252,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecretssecret">List[Get<wbr>Secrets<wbr>Secret]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -268,18 +268,18 @@ The following output properties are available:
 
 
 <h4 id="getsecretssecret">Get<wbr>Secrets<wbr>Secret</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetSecretsSecret">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetSecretsSecret">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#GetSecretsSecretArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#GetSecretsSecret">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -288,8 +288,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to export this secret under in the attributes.
-{{% /md %}}</dd>
+    <dd>The name to export this secret under in the attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -297,8 +297,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64 encoded payload, as returned from a KMS encrypt operation.
-{{% /md %}}</dd>
+    <dd>Base64 encoded payload, as returned from a KMS encrypt operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,8 +306,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}An optional mapping that makes up the Encryption Context for the secret.
-{{% /md %}}</dd>
+    <dd>An optional mapping that makes up the Encryption Context for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,14 +315,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An optional list of Grant Tokens for the secret.
-{{% /md %}}</dd>
+    <dd>An optional list of Grant Tokens for the secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -331,8 +331,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to export this secret under in the attributes.
-{{% /md %}}</dd>
+    <dd>The name to export this secret under in the attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -340,8 +340,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64 encoded payload, as returned from a KMS encrypt operation.
-{{% /md %}}</dd>
+    <dd>Base64 encoded payload, as returned from a KMS encrypt operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,8 +349,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}An optional mapping that makes up the Encryption Context for the secret.
-{{% /md %}}</dd>
+    <dd>An optional mapping that makes up the Encryption Context for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,14 +358,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An optional list of Grant Tokens for the secret.
-{{% /md %}}</dd>
+    <dd>An optional list of Grant Tokens for the secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -374,8 +374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to export this secret under in the attributes.
-{{% /md %}}</dd>
+    <dd>The name to export this secret under in the attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -383,8 +383,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64 encoded payload, as returned from a KMS encrypt operation.
-{{% /md %}}</dd>
+    <dd>Base64 encoded payload, as returned from a KMS encrypt operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,8 +392,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}An optional mapping that makes up the Encryption Context for the secret.
-{{% /md %}}</dd>
+    <dd>An optional mapping that makes up the Encryption Context for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,14 +401,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An optional list of Grant Tokens for the secret.
-{{% /md %}}</dd>
+    <dd>An optional list of Grant Tokens for the secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -417,8 +417,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name to export this secret under in the attributes.
-{{% /md %}}</dd>
+    <dd>The name to export this secret under in the attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -426,8 +426,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base64 encoded payload, as returned from a KMS encrypt operation.
-{{% /md %}}</dd>
+    <dd>Base64 encoded payload, as returned from a KMS encrypt operation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,8 +435,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}An optional mapping that makes up the Encryption Context for the secret.
-{{% /md %}}</dd>
+    <dd>An optional mapping that makes up the Encryption Context for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -444,11 +444,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An optional list of Grant Tokens for the secret.
-{{% /md %}}</dd>
+    <dd>An optional list of Grant Tokens for the secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

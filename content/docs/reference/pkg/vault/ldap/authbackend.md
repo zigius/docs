@@ -38,26 +38,26 @@ const ldap = new vault.ldap.AuthBackend("ldap", {
 
 
 ## Create a AuthBackend Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/ldap/#AuthBackend">AuthBackend</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/ldap/#AuthBackendArgs">AuthBackendArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AuthBackend</span><span class="p">(resource_name, opts=None, </span>binddn=None<span class="p">, </span>bindpass=None<span class="p">, </span>certificate=None<span class="p">, </span>deny_null_bind=None<span class="p">, </span>description=None<span class="p">, </span>discoverdn=None<span class="p">, </span>groupattr=None<span class="p">, </span>groupdn=None<span class="p">, </span>groupfilter=None<span class="p">, </span>insecure_tls=None<span class="p">, </span>path=None<span class="p">, </span>starttls=None<span class="p">, </span>tls_max_version=None<span class="p">, </span>tls_min_version=None<span class="p">, </span>token_bound_cidrs=None<span class="p">, </span>token_explicit_max_ttl=None<span class="p">, </span>token_max_ttl=None<span class="p">, </span>token_no_default_policy=None<span class="p">, </span>token_num_uses=None<span class="p">, </span>token_period=None<span class="p">, </span>token_policies=None<span class="p">, </span>token_ttl=None<span class="p">, </span>token_type=None<span class="p">, </span>upndomain=None<span class="p">, </span>url=None<span class="p">, </span>use_token_groups=None<span class="p">, </span>userattr=None<span class="p">, </span>userdn=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAuthBackend<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/ldap?tab=doc#AuthBackendArgs">AuthBackendArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/ldap?tab=doc#AuthBackend">AuthBackend</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Ldap.AuthBackend.html">AuthBackend</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Ldap.AuthBackendArgs.html">AuthBackendArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -94,9 +94,9 @@ const ldap = new vault.ldap.AuthBackend("ldap", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -114,9 +114,9 @@ const ldap = new vault.ldap.AuthBackend("ldap", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -163,9 +163,9 @@ const ldap = new vault.ldap.AuthBackend("ldap", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -202,7 +202,7 @@ const ldap = new vault.ldap.AuthBackend("ldap", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## AuthBackend Resource Properties {#properties}
 
@@ -215,7 +215,7 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -224,8 +224,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the LDAP server
-{{% /md %}}</dd>
+    <dd>The URL of the LDAP server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of object to bind when performing user search
-{{% /md %}}</dd>
+    <dd>DN of object to bind when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to use with `binddn` when performing user search
-{{% /md %}}</dd>
+    <dd>Password to use with `binddn` when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Trusted CA to validate TLS certificate
-{{% /md %}}</dd>
+    <dd>Trusted CA to validate TLS certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,7 +260,7 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,8 +268,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the LDAP auth backend mount
-{{% /md %}}</dd>
+    <dd>Description for the LDAP auth backend mount
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,7 +277,7 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP attribute to follow on objects returned by groupfilter
-{{% /md %}}</dd>
+    <dd>LDAP attribute to follow on objects returned by groupfilter
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform group search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform group search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Go template used to construct group membership query
-{{% /md %}}</dd>
+    <dd>Go template used to construct group membership query
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control whether or TLS certificates must be validated
-{{% /md %}}</dd>
+    <dd>Control whether or TLS certificates must be validated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,8 +321,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the LDAP auth backend under
-{{% /md %}}</dd>
+    <dd>Path to mount the LDAP auth backend under
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control use of TLS when conecting to LDAP
-{{% /md %}}</dd>
+    <dd>Control use of TLS when conecting to LDAP
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,8 +339,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Maximum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,8 +348,8 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Minimum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,10 +357,10 @@ The AuthBackend resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,11 +368,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,9 +380,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,9 +390,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,10 +400,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,11 +411,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,9 +423,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,9 +433,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,12 +443,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The userPrincipalDomain used to construct UPN string
-{{% /md %}}</dd>
+    <dd>The userPrincipalDomain used to construct UPN string
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
-{{% /md %}}</dd>
+    <dd>Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Attribute on user object matching username passed in
-{{% /md %}}</dd>
+    <dd>Attribute on user object matching username passed in
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,14 +483,14 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform user search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform user search
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -499,8 +499,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the LDAP server
-{{% /md %}}</dd>
+    <dd>The URL of the LDAP server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of object to bind when performing user search
-{{% /md %}}</dd>
+    <dd>DN of object to bind when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to use with `binddn` when performing user search
-{{% /md %}}</dd>
+    <dd>Password to use with `binddn` when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Trusted CA to validate TLS certificate
-{{% /md %}}</dd>
+    <dd>Trusted CA to validate TLS certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,7 +535,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -543,8 +543,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the LDAP auth backend mount
-{{% /md %}}</dd>
+    <dd>Description for the LDAP auth backend mount
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -552,7 +552,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,8 +560,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP attribute to follow on objects returned by groupfilter
-{{% /md %}}</dd>
+    <dd>LDAP attribute to follow on objects returned by groupfilter
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,8 +569,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform group search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform group search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -578,8 +578,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Go template used to construct group membership query
-{{% /md %}}</dd>
+    <dd>Go template used to construct group membership query
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,8 +587,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control whether or TLS certificates must be validated
-{{% /md %}}</dd>
+    <dd>Control whether or TLS certificates must be validated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -596,8 +596,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the LDAP auth backend under
-{{% /md %}}</dd>
+    <dd>Path to mount the LDAP auth backend under
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,8 +605,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control use of TLS when conecting to LDAP
-{{% /md %}}</dd>
+    <dd>Control use of TLS when conecting to LDAP
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,8 +614,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Maximum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Minimum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,10 +632,10 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -643,11 +643,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,9 +655,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,9 +665,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,10 +675,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,11 +686,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,9 +698,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -708,9 +708,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -718,12 +718,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,8 +731,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The userPrincipalDomain used to construct UPN string
-{{% /md %}}</dd>
+    <dd>The userPrincipalDomain used to construct UPN string
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,8 +740,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
-{{% /md %}}</dd>
+    <dd>Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,8 +749,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Attribute on user object matching username passed in
-{{% /md %}}</dd>
+    <dd>Attribute on user object matching username passed in
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,14 +758,14 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform user search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform user search
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -774,8 +774,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the LDAP server
-{{% /md %}}</dd>
+    <dd>The URL of the LDAP server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,8 +783,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of object to bind when performing user search
-{{% /md %}}</dd>
+    <dd>DN of object to bind when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,8 +792,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to use with `binddn` when performing user search
-{{% /md %}}</dd>
+    <dd>Password to use with `binddn` when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,8 +801,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Trusted CA to validate TLS certificate
-{{% /md %}}</dd>
+    <dd>Trusted CA to validate TLS certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -810,7 +810,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,8 +818,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the LDAP auth backend mount
-{{% /md %}}</dd>
+    <dd>Description for the LDAP auth backend mount
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -827,7 +827,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,8 +835,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP attribute to follow on objects returned by groupfilter
-{{% /md %}}</dd>
+    <dd>LDAP attribute to follow on objects returned by groupfilter
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,8 +844,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform group search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform group search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -853,8 +853,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Go template used to construct group membership query
-{{% /md %}}</dd>
+    <dd>Go template used to construct group membership query
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -862,8 +862,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Control whether or TLS certificates must be validated
-{{% /md %}}</dd>
+    <dd>Control whether or TLS certificates must be validated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,8 +871,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the LDAP auth backend under
-{{% /md %}}</dd>
+    <dd>Path to mount the LDAP auth backend under
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,8 +880,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Control use of TLS when conecting to LDAP
-{{% /md %}}</dd>
+    <dd>Control use of TLS when conecting to LDAP
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -889,8 +889,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Maximum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,8 +898,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Minimum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,10 +907,10 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,11 +918,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -930,9 +930,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,9 +940,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,10 +950,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -961,11 +961,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -973,9 +973,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,9 +983,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -993,12 +993,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1006,8 +1006,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The userPrincipalDomain used to construct UPN string
-{{% /md %}}</dd>
+    <dd>The userPrincipalDomain used to construct UPN string
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1015,8 +1015,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
-{{% /md %}}</dd>
+    <dd>Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1024,8 +1024,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Attribute on user object matching username passed in
-{{% /md %}}</dd>
+    <dd>Attribute on user object matching username passed in
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,14 +1033,14 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform user search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform user search
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1049,8 +1049,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the LDAP server
-{{% /md %}}</dd>
+    <dd>The URL of the LDAP server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,8 +1058,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}DN of object to bind when performing user search
-{{% /md %}}</dd>
+    <dd>DN of object to bind when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,8 +1067,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password to use with `binddn` when performing user search
-{{% /md %}}</dd>
+    <dd>Password to use with `binddn` when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1076,8 +1076,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Trusted CA to validate TLS certificate
-{{% /md %}}</dd>
+    <dd>Trusted CA to validate TLS certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1085,7 +1085,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description for the LDAP auth backend mount
-{{% /md %}}</dd>
+    <dd>Description for the LDAP auth backend mount
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,7 +1102,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,8 +1110,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}LDAP attribute to follow on objects returned by groupfilter
-{{% /md %}}</dd>
+    <dd>LDAP attribute to follow on objects returned by groupfilter
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,8 +1119,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform group search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform group search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1128,8 +1128,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Go template used to construct group membership query
-{{% /md %}}</dd>
+    <dd>Go template used to construct group membership query
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,8 +1137,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control whether or TLS certificates must be validated
-{{% /md %}}</dd>
+    <dd>Control whether or TLS certificates must be validated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1146,8 +1146,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the LDAP auth backend under
-{{% /md %}}</dd>
+    <dd>Path to mount the LDAP auth backend under
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control use of TLS when conecting to LDAP
-{{% /md %}}</dd>
+    <dd>Control use of TLS when conecting to LDAP
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,8 +1164,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Maximum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Maximum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,8 +1173,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Minimum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Minimum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,10 +1182,10 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,11 +1193,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,9 +1205,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,9 +1215,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,10 +1225,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,11 +1236,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1248,9 +1248,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,9 +1258,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1268,12 +1268,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,8 +1281,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The userPrincipalDomain used to construct UPN string
-{{% /md %}}</dd>
+    <dd>The userPrincipalDomain used to construct UPN string
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,8 +1290,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
-{{% /md %}}</dd>
+    <dd>Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,8 +1299,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Attribute on user object matching username passed in
-{{% /md %}}</dd>
+    <dd>Attribute on user object matching username passed in
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1308,11 +1308,11 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform user search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform user search
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1326,7 +1326,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1335,8 +1335,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The accessor for this auth mount.
-{{% /md %}}</dd>
+    <dd>The accessor for this auth mount.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1344,13 +1344,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1359,8 +1359,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accessor for this auth mount.
-{{% /md %}}</dd>
+    <dd>The accessor for this auth mount.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1368,13 +1368,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1383,8 +1383,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accessor for this auth mount.
-{{% /md %}}</dd>
+    <dd>The accessor for this auth mount.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1392,13 +1392,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1407,8 +1407,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The accessor for this auth mount.
-{{% /md %}}</dd>
+    <dd>The accessor for this auth mount.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1416,10 +1416,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1430,25 +1430,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing AuthBackend Resource {#look-up}
 
 Get an existing AuthBackend resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/ldap/#AuthBackendState">AuthBackendState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/ldap/#AuthBackend">AuthBackend</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>accessor=None<span class="p">, </span>binddn=None<span class="p">, </span>bindpass=None<span class="p">, </span>certificate=None<span class="p">, </span>deny_null_bind=None<span class="p">, </span>description=None<span class="p">, </span>discoverdn=None<span class="p">, </span>groupattr=None<span class="p">, </span>groupdn=None<span class="p">, </span>groupfilter=None<span class="p">, </span>insecure_tls=None<span class="p">, </span>path=None<span class="p">, </span>starttls=None<span class="p">, </span>tls_max_version=None<span class="p">, </span>tls_min_version=None<span class="p">, </span>token_bound_cidrs=None<span class="p">, </span>token_explicit_max_ttl=None<span class="p">, </span>token_max_ttl=None<span class="p">, </span>token_no_default_policy=None<span class="p">, </span>token_num_uses=None<span class="p">, </span>token_period=None<span class="p">, </span>token_policies=None<span class="p">, </span>token_ttl=None<span class="p">, </span>token_type=None<span class="p">, </span>upndomain=None<span class="p">, </span>url=None<span class="p">, </span>use_token_groups=None<span class="p">, </span>userattr=None<span class="p">, </span>userdn=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAuthBackend<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/ldap?tab=doc#AuthBackendState">AuthBackendState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/ldap?tab=doc#AuthBackend">AuthBackend</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Ldap.AuthBackend.html">AuthBackend</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Ldap.AuthBackendState.html">AuthBackendState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1473,9 +1473,9 @@ Get an existing AuthBackend resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1488,36 +1488,9 @@ Get an existing AuthBackend resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1542,13 +1515,40 @@ Get an existing AuthBackend resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1557,8 +1557,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The accessor for this auth mount.
-{{% /md %}}</dd>
+    <dd>The accessor for this auth mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1566,8 +1566,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of object to bind when performing user search
-{{% /md %}}</dd>
+    <dd>DN of object to bind when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1575,8 +1575,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to use with `binddn` when performing user search
-{{% /md %}}</dd>
+    <dd>Password to use with `binddn` when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,8 +1584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Trusted CA to validate TLS certificate
-{{% /md %}}</dd>
+    <dd>Trusted CA to validate TLS certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1593,7 +1593,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1601,8 +1601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the LDAP auth backend mount
-{{% /md %}}</dd>
+    <dd>Description for the LDAP auth backend mount
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1610,7 +1610,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1618,8 +1618,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP attribute to follow on objects returned by groupfilter
-{{% /md %}}</dd>
+    <dd>LDAP attribute to follow on objects returned by groupfilter
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1627,8 +1627,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform group search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform group search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1636,8 +1636,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Go template used to construct group membership query
-{{% /md %}}</dd>
+    <dd>Go template used to construct group membership query
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1645,8 +1645,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control whether or TLS certificates must be validated
-{{% /md %}}</dd>
+    <dd>Control whether or TLS certificates must be validated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1654,8 +1654,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the LDAP auth backend under
-{{% /md %}}</dd>
+    <dd>Path to mount the LDAP auth backend under
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1663,8 +1663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control use of TLS when conecting to LDAP
-{{% /md %}}</dd>
+    <dd>Control use of TLS when conecting to LDAP
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1672,8 +1672,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Maximum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1681,8 +1681,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Minimum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,10 +1690,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,11 +1701,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1713,9 +1713,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,9 +1723,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,10 +1733,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1744,11 +1744,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1756,9 +1756,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1766,9 +1766,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1776,12 +1776,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1789,8 +1789,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The userPrincipalDomain used to construct UPN string
-{{% /md %}}</dd>
+    <dd>The userPrincipalDomain used to construct UPN string
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1798,8 +1798,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the LDAP server
-{{% /md %}}</dd>
+    <dd>The URL of the LDAP server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1807,8 +1807,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
-{{% /md %}}</dd>
+    <dd>Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1816,8 +1816,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Attribute on user object matching username passed in
-{{% /md %}}</dd>
+    <dd>Attribute on user object matching username passed in
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1825,14 +1825,14 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform user search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform user search
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1841,8 +1841,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accessor for this auth mount.
-{{% /md %}}</dd>
+    <dd>The accessor for this auth mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1850,8 +1850,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of object to bind when performing user search
-{{% /md %}}</dd>
+    <dd>DN of object to bind when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1859,8 +1859,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to use with `binddn` when performing user search
-{{% /md %}}</dd>
+    <dd>Password to use with `binddn` when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1868,8 +1868,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Trusted CA to validate TLS certificate
-{{% /md %}}</dd>
+    <dd>Trusted CA to validate TLS certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1877,7 +1877,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1885,8 +1885,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the LDAP auth backend mount
-{{% /md %}}</dd>
+    <dd>Description for the LDAP auth backend mount
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1894,7 +1894,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,8 +1902,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP attribute to follow on objects returned by groupfilter
-{{% /md %}}</dd>
+    <dd>LDAP attribute to follow on objects returned by groupfilter
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,8 +1911,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform group search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform group search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,8 +1920,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Go template used to construct group membership query
-{{% /md %}}</dd>
+    <dd>Go template used to construct group membership query
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,8 +1929,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control whether or TLS certificates must be validated
-{{% /md %}}</dd>
+    <dd>Control whether or TLS certificates must be validated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,8 +1938,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the LDAP auth backend under
-{{% /md %}}</dd>
+    <dd>Path to mount the LDAP auth backend under
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,8 +1947,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control use of TLS when conecting to LDAP
-{{% /md %}}</dd>
+    <dd>Control use of TLS when conecting to LDAP
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1956,8 +1956,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Maximum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1965,8 +1965,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Minimum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1974,10 +1974,10 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,11 +1985,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1997,9 +1997,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2007,9 +2007,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2017,10 +2017,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2028,11 +2028,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2040,9 +2040,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2050,9 +2050,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2060,12 +2060,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2073,8 +2073,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The userPrincipalDomain used to construct UPN string
-{{% /md %}}</dd>
+    <dd>The userPrincipalDomain used to construct UPN string
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2082,8 +2082,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the LDAP server
-{{% /md %}}</dd>
+    <dd>The URL of the LDAP server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2091,8 +2091,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
-{{% /md %}}</dd>
+    <dd>Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2100,8 +2100,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Attribute on user object matching username passed in
-{{% /md %}}</dd>
+    <dd>Attribute on user object matching username passed in
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2109,14 +2109,14 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform user search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform user search
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2125,8 +2125,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accessor for this auth mount.
-{{% /md %}}</dd>
+    <dd>The accessor for this auth mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2134,8 +2134,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}DN of object to bind when performing user search
-{{% /md %}}</dd>
+    <dd>DN of object to bind when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,8 +2143,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to use with `binddn` when performing user search
-{{% /md %}}</dd>
+    <dd>Password to use with `binddn` when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2152,8 +2152,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Trusted CA to validate TLS certificate
-{{% /md %}}</dd>
+    <dd>Trusted CA to validate TLS certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2161,7 +2161,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2169,8 +2169,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the LDAP auth backend mount
-{{% /md %}}</dd>
+    <dd>Description for the LDAP auth backend mount
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2178,7 +2178,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2186,8 +2186,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}LDAP attribute to follow on objects returned by groupfilter
-{{% /md %}}</dd>
+    <dd>LDAP attribute to follow on objects returned by groupfilter
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2195,8 +2195,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform group search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform group search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2204,8 +2204,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Go template used to construct group membership query
-{{% /md %}}</dd>
+    <dd>Go template used to construct group membership query
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2213,8 +2213,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Control whether or TLS certificates must be validated
-{{% /md %}}</dd>
+    <dd>Control whether or TLS certificates must be validated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2222,8 +2222,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the LDAP auth backend under
-{{% /md %}}</dd>
+    <dd>Path to mount the LDAP auth backend under
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2231,8 +2231,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Control use of TLS when conecting to LDAP
-{{% /md %}}</dd>
+    <dd>Control use of TLS when conecting to LDAP
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2240,8 +2240,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Maximum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2249,8 +2249,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Minimum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2258,10 +2258,10 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2269,11 +2269,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2281,9 +2281,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2291,9 +2291,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2301,10 +2301,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2312,11 +2312,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2324,9 +2324,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2334,9 +2334,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2344,12 +2344,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2357,8 +2357,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The userPrincipalDomain used to construct UPN string
-{{% /md %}}</dd>
+    <dd>The userPrincipalDomain used to construct UPN string
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2366,8 +2366,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the LDAP server
-{{% /md %}}</dd>
+    <dd>The URL of the LDAP server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2375,8 +2375,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
-{{% /md %}}</dd>
+    <dd>Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2384,8 +2384,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Attribute on user object matching username passed in
-{{% /md %}}</dd>
+    <dd>Attribute on user object matching username passed in
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2393,14 +2393,14 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform user search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform user search
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2409,8 +2409,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The accessor for this auth mount.
-{{% /md %}}</dd>
+    <dd>The accessor for this auth mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2418,8 +2418,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}DN of object to bind when performing user search
-{{% /md %}}</dd>
+    <dd>DN of object to bind when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2427,8 +2427,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password to use with `binddn` when performing user search
-{{% /md %}}</dd>
+    <dd>Password to use with `binddn` when performing user search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2436,8 +2436,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Trusted CA to validate TLS certificate
-{{% /md %}}</dd>
+    <dd>Trusted CA to validate TLS certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2445,7 +2445,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2453,8 +2453,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description for the LDAP auth backend mount
-{{% /md %}}</dd>
+    <dd>Description for the LDAP auth backend mount
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2462,7 +2462,7 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2470,8 +2470,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}LDAP attribute to follow on objects returned by groupfilter
-{{% /md %}}</dd>
+    <dd>LDAP attribute to follow on objects returned by groupfilter
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2479,8 +2479,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform group search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform group search
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2488,8 +2488,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Go template used to construct group membership query
-{{% /md %}}</dd>
+    <dd>Go template used to construct group membership query
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2497,8 +2497,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control whether or TLS certificates must be validated
-{{% /md %}}</dd>
+    <dd>Control whether or TLS certificates must be validated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2506,8 +2506,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to mount the LDAP auth backend under
-{{% /md %}}</dd>
+    <dd>Path to mount the LDAP auth backend under
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2515,8 +2515,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Control use of TLS when conecting to LDAP
-{{% /md %}}</dd>
+    <dd>Control use of TLS when conecting to LDAP
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2524,8 +2524,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Maximum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Maximum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2533,8 +2533,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Minimum acceptable version of TLS
-{{% /md %}}</dd>
+    <dd>Minimum acceptable version of TLS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2542,10 +2542,10 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2553,11 +2553,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2565,9 +2565,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2575,9 +2575,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2585,10 +2585,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2596,11 +2596,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2608,9 +2608,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2618,9 +2618,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2628,12 +2628,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2641,8 +2641,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The userPrincipalDomain used to construct UPN string
-{{% /md %}}</dd>
+    <dd>The userPrincipalDomain used to construct UPN string
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2650,8 +2650,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the LDAP server
-{{% /md %}}</dd>
+    <dd>The URL of the LDAP server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2659,8 +2659,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
-{{% /md %}}</dd>
+    <dd>Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2668,8 +2668,8 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Attribute on user object matching username passed in
-{{% /md %}}</dd>
+    <dd>Attribute on user object matching username passed in
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2677,11 +2677,11 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base DN under which to perform user search
-{{% /md %}}</dd>
+    <dd>Base DN under which to perform user search
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

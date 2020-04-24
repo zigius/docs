@@ -36,29 +36,29 @@ export const firstRouterInterfaceId = routerInterfacesDs.interfaces[0].id;
 
 ## Using GetRouterInterfaces {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getRouterInterfaces<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/vpc/#GetRouterInterfacesArgs">GetRouterInterfacesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/vpc/#GetRouterInterfacesResult">GetRouterInterfacesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_router_interfaces(</span>ids=None<span class="p">, </span>name_regex=None<span class="p">, </span>opposite_interface_id=None<span class="p">, </span>opposite_interface_owner_id=None<span class="p">, </span>output_file=None<span class="p">, </span>role=None<span class="p">, </span>router_id=None<span class="p">, </span>router_type=None<span class="p">, </span>specification=None<span class="p">, </span>status=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupRouterInterfaces<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/vpc?tab=doc#LookupRouterInterfacesArgs">LookupRouterInterfacesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/vpc?tab=doc#LookupRouterInterfacesResult">LookupRouterInterfacesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetRouterInterfaces </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Vpc.GetRouterInterfacesResult.html">GetRouterInterfacesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Vpc.GetRouterInterfacesArgs.html">GetRouterInterfacesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -66,7 +66,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -75,8 +75,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface IDs.
-{{% /md %}}</dd>
+    <dd>A list of router interface IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -84,8 +84,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string used to filter by router interface name.
-{{% /md %}}</dd>
+    <dd>A regex string used to filter by router interface name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -93,8 +93,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the peer router interface.
-{{% /md %}}</dd>
+    <dd>ID of the peer router interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -102,8 +102,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -111,7 +111,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -119,9 +119,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
+    <dd>Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
 `AcceptingSide` (connection receiver). The value of this parameter must be `InitiatingSide` if the `router_type` is set to `VBR`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -129,8 +129,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -138,8 +138,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -147,8 +147,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
-{{% /md %}}</dd>
+    <dd>Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -156,14 +156,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Expected status. Valid values are `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Expected status. Valid values are `Active`, `Inactive` and `Idle`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -172,8 +172,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface IDs.
-{{% /md %}}</dd>
+    <dd>A list of router interface IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -181,8 +181,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string used to filter by router interface name.
-{{% /md %}}</dd>
+    <dd>A regex string used to filter by router interface name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -190,8 +190,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the peer router interface.
-{{% /md %}}</dd>
+    <dd>ID of the peer router interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -199,8 +199,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -208,7 +208,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -216,9 +216,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
+    <dd>Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
 `AcceptingSide` (connection receiver). The value of this parameter must be `InitiatingSide` if the `router_type` is set to `VBR`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,8 +226,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,8 +235,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,8 +244,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
-{{% /md %}}</dd>
+    <dd>Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,14 +253,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expected status. Valid values are `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Expected status. Valid values are `Active`, `Inactive` and `Idle`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -269,8 +269,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface IDs.
-{{% /md %}}</dd>
+    <dd>A list of router interface IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string used to filter by router interface name.
-{{% /md %}}</dd>
+    <dd>A regex string used to filter by router interface name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the peer router interface.
-{{% /md %}}</dd>
+    <dd>ID of the peer router interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,7 +305,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,9 +313,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
+    <dd>Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
 `AcceptingSide` (connection receiver). The value of this parameter must be `InitiatingSide` if the `router_type` is set to `VBR`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
-{{% /md %}}</dd>
+    <dd>Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,14 +350,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expected status. Valid values are `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Expected status. Valid values are `Active`, `Inactive` and `Idle`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -366,8 +366,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface IDs.
-{{% /md %}}</dd>
+    <dd>A list of router interface IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,8 +375,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string used to filter by router interface name.
-{{% /md %}}</dd>
+    <dd>A regex string used to filter by router interface name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,8 +384,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the peer router interface.
-{{% /md %}}</dd>
+    <dd>ID of the peer router interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,8 +393,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,7 +402,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -410,9 +410,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
+    <dd>Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
 `AcceptingSide` (connection receiver). The value of this parameter must be `InitiatingSide` if the `router_type` is set to `VBR`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
-{{% /md %}}</dd>
+    <dd>Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,11 +447,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Expected status. Valid values are `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Expected status. Valid values are `Active`, `Inactive` and `Idle`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -467,7 +467,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -476,8 +476,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -485,8 +485,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface IDs.
-{{% /md %}}</dd>
+    <dd>A list of router interface IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -494,8 +494,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getrouterinterfacesinterface">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Vpc.<wbr>Outputs.<wbr>Get<wbr>Router<wbr>Interfaces<wbr>Interface&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interfaces. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of router interfaces. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -503,8 +503,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface names.
-{{% /md %}}</dd>
+    <dd>A list of router interface names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -512,7 +512,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -520,8 +520,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Peer router interface ID.
-{{% /md %}}</dd>
+    <dd>Peer router interface ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -529,8 +529,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -538,7 +538,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -546,8 +546,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface role. Possible values: `InitiatingSide` and `AcceptingSide`.
-{{% /md %}}</dd>
+    <dd>Router interface role. Possible values: `InitiatingSide` and `AcceptingSide`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -555,8 +555,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,8 +564,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Possible values: `VRouter` and `VBR`.
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Possible values: `VRouter` and `VBR`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,8 +573,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface specification. Possible values: `Small.1`, `Middle.1`, `Large.2`, ...etc.
-{{% /md %}}</dd>
+    <dd>Router interface specification. Possible values: `Small.1`, `Middle.1`, `Large.2`, ...etc.
+</dd>
 
     <dt class="property-"
             title="">
@@ -582,14 +582,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface status. Possible values: `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Router interface status. Possible values: `Active`, `Inactive` and `Idle`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -598,8 +598,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -607,8 +607,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface IDs.
-{{% /md %}}</dd>
+    <dd>A list of router interface IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -616,8 +616,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getrouterinterfacesinterface">[]Get<wbr>Router<wbr>Interfaces<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interfaces. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of router interfaces. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -625,8 +625,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface names.
-{{% /md %}}</dd>
+    <dd>A list of router interface names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -634,7 +634,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -642,8 +642,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Peer router interface ID.
-{{% /md %}}</dd>
+    <dd>Peer router interface ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,8 +651,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -660,7 +660,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -668,8 +668,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface role. Possible values: `InitiatingSide` and `AcceptingSide`.
-{{% /md %}}</dd>
+    <dd>Router interface role. Possible values: `InitiatingSide` and `AcceptingSide`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -677,8 +677,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -686,8 +686,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Possible values: `VRouter` and `VBR`.
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Possible values: `VRouter` and `VBR`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -695,8 +695,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface specification. Possible values: `Small.1`, `Middle.1`, `Large.2`, ...etc.
-{{% /md %}}</dd>
+    <dd>Router interface specification. Possible values: `Small.1`, `Middle.1`, `Large.2`, ...etc.
+</dd>
 
     <dt class="property-"
             title="">
@@ -704,14 +704,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface status. Possible values: `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Router interface status. Possible values: `Active`, `Inactive` and `Idle`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -720,8 +720,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -729,8 +729,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface IDs.
-{{% /md %}}</dd>
+    <dd>A list of router interface IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -738,8 +738,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getrouterinterfacesinterface">Get<wbr>Router<wbr>Interfaces<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interfaces. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of router interfaces. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -747,8 +747,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface names.
-{{% /md %}}</dd>
+    <dd>A list of router interface names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -756,7 +756,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -764,8 +764,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Peer router interface ID.
-{{% /md %}}</dd>
+    <dd>Peer router interface ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -773,8 +773,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -782,7 +782,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -790,8 +790,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface role. Possible values: `InitiatingSide` and `AcceptingSide`.
-{{% /md %}}</dd>
+    <dd>Router interface role. Possible values: `InitiatingSide` and `AcceptingSide`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -799,8 +799,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -808,8 +808,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Possible values: `VRouter` and `VBR`.
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Possible values: `VRouter` and `VBR`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -817,8 +817,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface specification. Possible values: `Small.1`, `Middle.1`, `Large.2`, ...etc.
-{{% /md %}}</dd>
+    <dd>Router interface specification. Possible values: `Small.1`, `Middle.1`, `Large.2`, ...etc.
+</dd>
 
     <dt class="property-"
             title="">
@@ -826,14 +826,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface status. Possible values: `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Router interface status. Possible values: `Active`, `Inactive` and `Idle`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -842,8 +842,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -851,8 +851,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface IDs.
-{{% /md %}}</dd>
+    <dd>A list of router interface IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -860,8 +860,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getrouterinterfacesinterface">List[Get<wbr>Router<wbr>Interfaces<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interfaces. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of router interfaces. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -869,8 +869,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of router interface names.
-{{% /md %}}</dd>
+    <dd>A list of router interface names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -878,7 +878,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -886,8 +886,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Peer router interface ID.
-{{% /md %}}</dd>
+    <dd>Peer router interface ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -895,8 +895,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -904,7 +904,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -912,8 +912,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router interface role. Possible values: `InitiatingSide` and `AcceptingSide`.
-{{% /md %}}</dd>
+    <dd>Router interface role. Possible values: `InitiatingSide` and `AcceptingSide`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -921,8 +921,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -930,8 +930,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Possible values: `VRouter` and `VBR`.
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Possible values: `VRouter` and `VBR`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router interface specification. Possible values: `Small.1`, `Middle.1`, `Large.2`, ...etc.
-{{% /md %}}</dd>
+    <dd>Router interface specification. Possible values: `Small.1`, `Middle.1`, `Large.2`, ...etc.
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,11 +948,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router interface status. Possible values: `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Router interface status. Possible values: `Active`, `Inactive` and `Idle`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -965,18 +965,18 @@ The following output properties are available:
 
 
 <h4 id="getrouterinterfacesinterface">Get<wbr>Router<wbr>Interfaces<wbr>Interface</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetRouterInterfacesInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/vpc?tab=doc#GetRouterInterfacesInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -985,8 +985,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the access point used by the VBR.
-{{% /md %}}</dd>
+    <dd>ID of the access point used by the VBR.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -994,8 +994,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface creation time.
-{{% /md %}}</dd>
+    <dd>Router interface creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1003,8 +1003,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface description.
-{{% /md %}}</dd>
+    <dd>Router interface description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1012,8 +1012,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Source IP address used to perform health check on the physical connection.
-{{% /md %}}</dd>
+    <dd>Source IP address used to perform health check on the physical connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1021,8 +1021,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Destination IP address used to perform health check on the physical connection.
-{{% /md %}}</dd>
+    <dd>Destination IP address used to perform health check on the physical connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1030,8 +1030,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface ID.
-{{% /md %}}</dd>
+    <dd>Router interface ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1039,8 +1039,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface name.
-{{% /md %}}</dd>
+    <dd>Router interface name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1048,8 +1048,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the peer router interface.
-{{% /md %}}</dd>
+    <dd>ID of the peer router interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1057,8 +1057,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1066,8 +1066,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Peer router region ID.
-{{% /md %}}</dd>
+    <dd>Peer router region ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1075,8 +1075,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Peer router ID.
-{{% /md %}}</dd>
+    <dd>Peer router ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1084,8 +1084,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the peer region. Possible values: `VRouter` and `VBR`.
-{{% /md %}}</dd>
+    <dd>Router type in the peer region. Possible values: `VRouter` and `VBR`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1093,9 +1093,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
+    <dd>Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
 `AcceptingSide` (connection receiver). The value of this parameter must be `InitiatingSide` if the `router_type` is set to `VBR`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1103,8 +1103,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1112,8 +1112,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1121,8 +1121,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
-{{% /md %}}</dd>
+    <dd>Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1130,8 +1130,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Expected status. Valid values are `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Expected status. Valid values are `Active`, `Inactive` and `Idle`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1139,14 +1139,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the router in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the router in the local region.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1155,8 +1155,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the access point used by the VBR.
-{{% /md %}}</dd>
+    <dd>ID of the access point used by the VBR.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1164,8 +1164,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface creation time.
-{{% /md %}}</dd>
+    <dd>Router interface creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1173,8 +1173,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface description.
-{{% /md %}}</dd>
+    <dd>Router interface description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1182,8 +1182,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Source IP address used to perform health check on the physical connection.
-{{% /md %}}</dd>
+    <dd>Source IP address used to perform health check on the physical connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1191,8 +1191,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Destination IP address used to perform health check on the physical connection.
-{{% /md %}}</dd>
+    <dd>Destination IP address used to perform health check on the physical connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1200,8 +1200,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface ID.
-{{% /md %}}</dd>
+    <dd>Router interface ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1209,8 +1209,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface name.
-{{% /md %}}</dd>
+    <dd>Router interface name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1218,8 +1218,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the peer router interface.
-{{% /md %}}</dd>
+    <dd>ID of the peer router interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1227,8 +1227,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1236,8 +1236,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Peer router region ID.
-{{% /md %}}</dd>
+    <dd>Peer router region ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1245,8 +1245,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Peer router ID.
-{{% /md %}}</dd>
+    <dd>Peer router ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1254,8 +1254,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the peer region. Possible values: `VRouter` and `VBR`.
-{{% /md %}}</dd>
+    <dd>Router type in the peer region. Possible values: `VRouter` and `VBR`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1263,9 +1263,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
+    <dd>Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
 `AcceptingSide` (connection receiver). The value of this parameter must be `InitiatingSide` if the `router_type` is set to `VBR`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1273,8 +1273,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1282,8 +1282,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1291,8 +1291,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
-{{% /md %}}</dd>
+    <dd>Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1300,8 +1300,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expected status. Valid values are `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Expected status. Valid values are `Active`, `Inactive` and `Idle`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1309,14 +1309,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the router in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the router in the local region.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1325,8 +1325,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the access point used by the VBR.
-{{% /md %}}</dd>
+    <dd>ID of the access point used by the VBR.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1334,8 +1334,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface creation time.
-{{% /md %}}</dd>
+    <dd>Router interface creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1343,8 +1343,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface description.
-{{% /md %}}</dd>
+    <dd>Router interface description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1352,8 +1352,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Source IP address used to perform health check on the physical connection.
-{{% /md %}}</dd>
+    <dd>Source IP address used to perform health check on the physical connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1361,8 +1361,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Destination IP address used to perform health check on the physical connection.
-{{% /md %}}</dd>
+    <dd>Destination IP address used to perform health check on the physical connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1370,8 +1370,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface ID.
-{{% /md %}}</dd>
+    <dd>Router interface ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1379,8 +1379,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router interface name.
-{{% /md %}}</dd>
+    <dd>Router interface name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1388,8 +1388,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the peer router interface.
-{{% /md %}}</dd>
+    <dd>ID of the peer router interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1397,8 +1397,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1406,8 +1406,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Peer router region ID.
-{{% /md %}}</dd>
+    <dd>Peer router region ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1415,8 +1415,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Peer router ID.
-{{% /md %}}</dd>
+    <dd>Peer router ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1424,8 +1424,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the peer region. Possible values: `VRouter` and `VBR`.
-{{% /md %}}</dd>
+    <dd>Router type in the peer region. Possible values: `VRouter` and `VBR`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1433,9 +1433,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
+    <dd>Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
 `AcceptingSide` (connection receiver). The value of this parameter must be `InitiatingSide` if the `router_type` is set to `VBR`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1443,8 +1443,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1452,8 +1452,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1461,8 +1461,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
-{{% /md %}}</dd>
+    <dd>Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1470,8 +1470,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expected status. Valid values are `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Expected status. Valid values are `Active`, `Inactive` and `Idle`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1479,14 +1479,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the router in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the router in the local region.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1495,8 +1495,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the access point used by the VBR.
-{{% /md %}}</dd>
+    <dd>ID of the access point used by the VBR.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1504,8 +1504,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router interface creation time.
-{{% /md %}}</dd>
+    <dd>Router interface creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1513,8 +1513,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router interface description.
-{{% /md %}}</dd>
+    <dd>Router interface description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1522,8 +1522,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Source IP address used to perform health check on the physical connection.
-{{% /md %}}</dd>
+    <dd>Source IP address used to perform health check on the physical connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1531,8 +1531,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Destination IP address used to perform health check on the physical connection.
-{{% /md %}}</dd>
+    <dd>Destination IP address used to perform health check on the physical connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1540,8 +1540,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router interface ID.
-{{% /md %}}</dd>
+    <dd>Router interface ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1549,8 +1549,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router interface name.
-{{% /md %}}</dd>
+    <dd>Router interface name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1558,8 +1558,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Peer router region ID.
-{{% /md %}}</dd>
+    <dd>Peer router region ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1567,8 +1567,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the peer router interface.
-{{% /md %}}</dd>
+    <dd>ID of the peer router interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1576,8 +1576,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Account ID of the owner of the peer router interface.
-{{% /md %}}</dd>
+    <dd>Account ID of the owner of the peer router interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1585,8 +1585,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Peer router ID.
-{{% /md %}}</dd>
+    <dd>Peer router ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1594,8 +1594,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the peer region. Possible values: `VRouter` and `VBR`.
-{{% /md %}}</dd>
+    <dd>Router type in the peer region. Possible values: `VRouter` and `VBR`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1603,9 +1603,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
+    <dd>Role of the router interface. Valid values are `InitiatingSide` (connection initiator) and 
 `AcceptingSide` (connection receiver). The value of this parameter must be `InitiatingSide` if the `router_type` is set to `VBR`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1613,8 +1613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VRouter located in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VRouter located in the local region.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1622,8 +1622,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
-{{% /md %}}</dd>
+    <dd>Router type in the local region. Valid values are `VRouter` and `VBR` (physical connection).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1631,8 +1631,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
-{{% /md %}}</dd>
+    <dd>Specification of the link, such as `Small.1` (10Mb), `Middle.1` (100Mb), `Large.2` (2Gb), ...etc.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1640,8 +1640,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Expected status. Valid values are `Active`, `Inactive` and `Idle`.
-{{% /md %}}</dd>
+    <dd>Expected status. Valid values are `Active`, `Inactive` and `Idle`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1649,11 +1649,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the router in the local region.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the router in the local region.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

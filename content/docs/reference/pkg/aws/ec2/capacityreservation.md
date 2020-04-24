@@ -34,26 +34,26 @@ const defaultCapacityReservation = new aws.ec2.CapacityReservation("default", {
 
 
 ## Create a CapacityReservation Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#CapacityReservation">CapacityReservation</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#CapacityReservationArgs">CapacityReservationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">CapacityReservation</span><span class="p">(resource_name, opts=None, </span>availability_zone=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>end_date=None<span class="p">, </span>end_date_type=None<span class="p">, </span>ephemeral_storage=None<span class="p">, </span>instance_count=None<span class="p">, </span>instance_match_criteria=None<span class="p">, </span>instance_platform=None<span class="p">, </span>instance_type=None<span class="p">, </span>tags=None<span class="p">, </span>tenancy=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCapacityReservation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#CapacityReservationArgs">CapacityReservationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#CapacityReservation">CapacityReservation</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.CapacityReservation.html">CapacityReservation</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.CapacityReservationArgs.html">CapacityReservationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -90,9 +90,9 @@ const defaultCapacityReservation = new aws.ec2.CapacityReservation("default", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -110,9 +110,9 @@ const defaultCapacityReservation = new aws.ec2.CapacityReservation("default", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -159,9 +159,9 @@ const defaultCapacityReservation = new aws.ec2.CapacityReservation("default", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -198,7 +198,7 @@ const defaultCapacityReservation = new aws.ec2.CapacityReservation("default", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## CapacityReservation Resource Properties {#properties}
 
@@ -211,7 +211,7 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -220,8 +220,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone in which to create the Capacity Reservation.
-{{% /md %}}</dd>
+    <dd>The Availability Zone in which to create the Capacity Reservation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -229,8 +229,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The number of instances for which to reserve capacity.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -238,8 +238,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
-{{% /md %}}</dd>
+    <dd>The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -247,8 +247,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The instance type for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The instance type for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,8 +256,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports EBS-optimized instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,8 +265,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
-{{% /md %}}</dd>
+    <dd>The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
-{{% /md %}}</dd>
+    <dd>Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
-{{% /md %}}</dd>
+    <dd>Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,14 +310,14 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
-{{% /md %}}</dd>
+    <dd>Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -326,8 +326,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone in which to create the Capacity Reservation.
-{{% /md %}}</dd>
+    <dd>The Availability Zone in which to create the Capacity Reservation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -335,8 +335,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The number of instances for which to reserve capacity.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -344,8 +344,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
-{{% /md %}}</dd>
+    <dd>The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -353,8 +353,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The instance type for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The instance type for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports EBS-optimized instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
-{{% /md %}}</dd>
+    <dd>The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
-{{% /md %}}</dd>
+    <dd>Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
-{{% /md %}}</dd>
+    <dd>Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,8 +407,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,14 +416,14 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
-{{% /md %}}</dd>
+    <dd>Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -432,8 +432,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone in which to create the Capacity Reservation.
-{{% /md %}}</dd>
+    <dd>The Availability Zone in which to create the Capacity Reservation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -441,8 +441,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The number of instances for which to reserve capacity.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -450,8 +450,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">Instance<wbr>Platform</span>
     </dt>
-    <dd>{{% md %}}The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
-{{% /md %}}</dd>
+    <dd>The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -459,8 +459,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">Instance<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}The instance type for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The instance type for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports EBS-optimized instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
-{{% /md %}}</dd>
+    <dd>The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
-{{% /md %}}</dd>
+    <dd>Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
-{{% /md %}}</dd>
+    <dd>Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,8 +513,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,14 +522,14 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">Tenancy</span>
     </dt>
-    <dd>{{% md %}}Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
-{{% /md %}}</dd>
+    <dd>Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -538,8 +538,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone in which to create the Capacity Reservation.
-{{% /md %}}</dd>
+    <dd>The Availability Zone in which to create the Capacity Reservation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -547,8 +547,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The number of instances for which to reserve capacity.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -556,8 +556,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
-{{% /md %}}</dd>
+    <dd>The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -565,8 +565,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The instance type for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The instance type for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports EBS-optimized instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,8 +583,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
-{{% /md %}}</dd>
+    <dd>The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
-{{% /md %}}</dd>
+    <dd>Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
-{{% /md %}}</dd>
+    <dd>Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,11 +628,11 @@ The CapacityReservation resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
-{{% /md %}}</dd>
+    <dd>Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -646,7 +646,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -655,13 +655,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -670,13 +670,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -685,13 +685,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -700,10 +700,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -714,25 +714,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing CapacityReservation Resource {#look-up}
 
 Get an existing CapacityReservation resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#CapacityReservationState">CapacityReservationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#CapacityReservation">CapacityReservation</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>availability_zone=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>end_date=None<span class="p">, </span>end_date_type=None<span class="p">, </span>ephemeral_storage=None<span class="p">, </span>instance_count=None<span class="p">, </span>instance_match_criteria=None<span class="p">, </span>instance_platform=None<span class="p">, </span>instance_type=None<span class="p">, </span>tags=None<span class="p">, </span>tenancy=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCapacityReservation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#CapacityReservationState">CapacityReservationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#CapacityReservation">CapacityReservation</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.CapacityReservation.html">CapacityReservation</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.CapacityReservationState.html">CapacityReservationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -757,9 +757,9 @@ Get an existing CapacityReservation resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -772,36 +772,9 @@ Get an existing CapacityReservation resource's state with the given name, ID, an
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -826,13 +799,40 @@ Get an existing CapacityReservation resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -841,8 +841,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone in which to create the Capacity Reservation.
-{{% /md %}}</dd>
+    <dd>The Availability Zone in which to create the Capacity Reservation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports EBS-optimized instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
-{{% /md %}}</dd>
+    <dd>The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
-{{% /md %}}</dd>
+    <dd>Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The number of instances for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
-{{% /md %}}</dd>
+    <dd>Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
-{{% /md %}}</dd>
+    <dd>The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,8 +913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The instance type for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The instance type for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -922,8 +922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,14 +931,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
-{{% /md %}}</dd>
+    <dd>Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -947,8 +947,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone in which to create the Capacity Reservation.
-{{% /md %}}</dd>
+    <dd>The Availability Zone in which to create the Capacity Reservation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,8 +956,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports EBS-optimized instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,8 +965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
-{{% /md %}}</dd>
+    <dd>The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
-{{% /md %}}</dd>
+    <dd>Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The number of instances for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
-{{% /md %}}</dd>
+    <dd>Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
-{{% /md %}}</dd>
+    <dd>The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The instance type for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The instance type for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,14 +1037,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
-{{% /md %}}</dd>
+    <dd>Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1053,8 +1053,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone in which to create the Capacity Reservation.
-{{% /md %}}</dd>
+    <dd>The Availability Zone in which to create the Capacity Reservation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports EBS-optimized instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,8 +1071,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
-{{% /md %}}</dd>
+    <dd>The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,8 +1080,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
-{{% /md %}}</dd>
+    <dd>Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,8 +1089,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,8 +1098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The number of instances for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,8 +1107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
-{{% /md %}}</dd>
+    <dd>Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,8 +1116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Instance<wbr>Platform</span>
     </dt>
-    <dd>{{% md %}}The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
-{{% /md %}}</dd>
+    <dd>The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,8 +1125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Instance<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}The instance type for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The instance type for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,8 +1134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,14 +1143,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Tenancy</span>
     </dt>
-    <dd>{{% md %}}Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
-{{% /md %}}</dd>
+    <dd>Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1159,8 +1159,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone in which to create the Capacity Reservation.
-{{% /md %}}</dd>
+    <dd>The Availability Zone in which to create the Capacity Reservation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,8 +1168,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports EBS-optimized instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,8 +1177,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
-{{% /md %}}</dd>
+    <dd>The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,8 +1186,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
-{{% /md %}}</dd>
+    <dd>Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,8 +1195,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-{{% /md %}}</dd>
+    <dd>Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1204,8 +1204,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The number of instances for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,8 +1213,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
-{{% /md %}}</dd>
+    <dd>Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,8 +1222,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
-{{% /md %}}</dd>
+    <dd>The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,8 +1231,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The instance type for which to reserve capacity.
-{{% /md %}}</dd>
+    <dd>The instance type for which to reserve capacity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,8 +1240,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,11 +1249,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
-{{% /md %}}</dd>
+    <dd>Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

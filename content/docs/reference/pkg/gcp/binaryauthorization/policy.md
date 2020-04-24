@@ -21,26 +21,26 @@ To get more information about Policy, see:
 
 
 ## Create a Policy Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/binaryauthorization/#Policy">Policy</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/binaryauthorization/#PolicyArgs">PolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Policy</span><span class="p">(resource_name, opts=None, </span>admission_whitelist_patterns=None<span class="p">, </span>cluster_admission_rules=None<span class="p">, </span>default_admission_rule=None<span class="p">, </span>description=None<span class="p">, </span>global_policy_evaluation_mode=None<span class="p">, </span>project=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#PolicyArgs">PolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#Policy">Policy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.BinaryAuthorization.Policy.html">Policy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.BinaryAuthorization.PolicyArgs.html">PolicyArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -77,9 +77,9 @@ To get more information about Policy, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -97,9 +97,9 @@ To get more information about Policy, see:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -146,9 +146,9 @@ To get more information about Policy, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -185,7 +185,7 @@ To get more information about Policy, see:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Policy Resource Properties {#properties}
 
@@ -198,7 +198,7 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -207,8 +207,8 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policydefaultadmissionrule">Policy<wbr>Default<wbr>Admission<wbr>Rule<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Default admission rule for a cluster without a per-cluster admission rule.
-{{% /md %}}</dd>
+    <dd>Default admission rule for a cluster without a per-cluster admission rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -216,9 +216,9 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyadmissionwhitelistpattern">List&lt;Policy<wbr>Admission<wbr>Whitelist<wbr>Pattern<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
+    <dd>A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
 image's admission requests will always be permitted regardless of your admission rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,11 +226,11 @@ image's admission requests will always be permitted regardless of your admission
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyclusteradmissionrule">List&lt;Policy<wbr>Cluster<wbr>Admission<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
+    <dd>Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
 must be attested to by one or more attestors, that all pod creations will be allowed, or that all pod creations will be
 denied. There can be at most one admission rule per cluster spec. Identifier format: '{{location}}.{{clusterId}}'. A
 location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-central1').
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -238,8 +238,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive comment.
-{{% /md %}}</dd>
+    <dd>A descriptive comment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -247,9 +247,9 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
+    <dd>Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
 covered by the global policy will be subject to the project admission policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,15 +257,15 @@ covered by the global policy will be subject to the project admission policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -274,8 +274,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policydefaultadmissionrule">Policy<wbr>Default<wbr>Admission<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Default admission rule for a cluster without a per-cluster admission rule.
-{{% /md %}}</dd>
+    <dd>Default admission rule for a cluster without a per-cluster admission rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,9 +283,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyadmissionwhitelistpattern">[]Policy<wbr>Admission<wbr>Whitelist<wbr>Pattern</a></span>
     </dt>
-    <dd>{{% md %}}A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
+    <dd>A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
 image's admission requests will always be permitted regardless of your admission rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,11 +293,11 @@ image's admission requests will always be permitted regardless of your admission
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyclusteradmissionrule">[]Policy<wbr>Cluster<wbr>Admission<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
+    <dd>Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
 must be attested to by one or more attestors, that all pod creations will be allowed, or that all pod creations will be
 denied. There can be at most one admission rule per cluster spec. Identifier format: '{{location}}.{{clusterId}}'. A
 location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-central1').
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive comment.
-{{% /md %}}</dd>
+    <dd>A descriptive comment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,9 +314,9 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
+    <dd>Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
 covered by the global policy will be subject to the project admission policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,15 +324,15 @@ covered by the global policy will be subject to the project admission policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -341,8 +341,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policydefaultadmissionrule">Policy<wbr>Default<wbr>Admission<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Default admission rule for a cluster without a per-cluster admission rule.
-{{% /md %}}</dd>
+    <dd>Default admission rule for a cluster without a per-cluster admission rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,9 +350,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyadmissionwhitelistpattern">Policy<wbr>Admission<wbr>Whitelist<wbr>Pattern[]</a></span>
     </dt>
-    <dd>{{% md %}}A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
+    <dd>A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
 image's admission requests will always be permitted regardless of your admission rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,11 +360,11 @@ image's admission requests will always be permitted regardless of your admission
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyclusteradmissionrule">Policy<wbr>Cluster<wbr>Admission<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
+    <dd>Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
 must be attested to by one or more attestors, that all pod creations will be allowed, or that all pod creations will be
 denied. There can be at most one admission rule per cluster spec. Identifier format: '{{location}}.{{clusterId}}'. A
 location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-central1').
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,8 +372,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive comment.
-{{% /md %}}</dd>
+    <dd>A descriptive comment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,9 +381,9 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
+    <dd>Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
 covered by the global policy will be subject to the project admission policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,15 +391,15 @@ covered by the global policy will be subject to the project admission policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -408,8 +408,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policydefaultadmissionrule">Dict[Policy<wbr>Default<wbr>Admission<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Default admission rule for a cluster without a per-cluster admission rule.
-{{% /md %}}</dd>
+    <dd>Default admission rule for a cluster without a per-cluster admission rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,9 +417,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyadmissionwhitelistpattern">List[Policy<wbr>Admission<wbr>Whitelist<wbr>Pattern]</a></span>
     </dt>
-    <dd>{{% md %}}A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
+    <dd>A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
 image's admission requests will always be permitted regardless of your admission rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,11 +427,11 @@ image's admission requests will always be permitted regardless of your admission
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyclusteradmissionrule">List[Policy<wbr>Cluster<wbr>Admission<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
+    <dd>Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
 must be attested to by one or more attestors, that all pod creations will be allowed, or that all pod creations will be
 denied. There can be at most one admission rule per cluster spec. Identifier format: '{{location}}.{{clusterId}}'. A
 location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-central1').
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,8 +439,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive comment.
-{{% /md %}}</dd>
+    <dd>A descriptive comment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,9 +448,9 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
+    <dd>Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
 covered by the global policy will be subject to the project admission policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,12 +458,12 @@ covered by the global policy will be subject to the project admission policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -477,7 +477,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -486,13 +486,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -501,13 +501,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -516,13 +516,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -531,10 +531,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -545,25 +545,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Policy Resource {#look-up}
 
 Get an existing Policy resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/binaryauthorization/#PolicyState">PolicyState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/binaryauthorization/#Policy">Policy</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>admission_whitelist_patterns=None<span class="p">, </span>cluster_admission_rules=None<span class="p">, </span>default_admission_rule=None<span class="p">, </span>description=None<span class="p">, </span>global_policy_evaluation_mode=None<span class="p">, </span>project=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#PolicyState">PolicyState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#Policy">Policy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.BinaryAuthorization.Policy.html">Policy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.BinaryAuthorization.PolicyState.html">PolicyState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -588,9 +588,9 @@ Get an existing Policy resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -603,36 +603,9 @@ Get an existing Policy resource's state with the given name, ID, and optional ex
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -657,13 +630,40 @@ Get an existing Policy resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -672,9 +672,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyadmissionwhitelistpattern">List&lt;Policy<wbr>Admission<wbr>Whitelist<wbr>Pattern<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
+    <dd>A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
 image's admission requests will always be permitted regardless of your admission rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -682,11 +682,11 @@ image's admission requests will always be permitted regardless of your admission
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyclusteradmissionrule">List&lt;Policy<wbr>Cluster<wbr>Admission<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
+    <dd>Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
 must be attested to by one or more attestors, that all pod creations will be allowed, or that all pod creations will be
 denied. There can be at most one admission rule per cluster spec. Identifier format: '{{location}}.{{clusterId}}'. A
 location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-central1').
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -694,8 +694,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policydefaultadmissionrule">Policy<wbr>Default<wbr>Admission<wbr>Rule<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Default admission rule for a cluster without a per-cluster admission rule.
-{{% /md %}}</dd>
+    <dd>Default admission rule for a cluster without a per-cluster admission rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -703,8 +703,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive comment.
-{{% /md %}}</dd>
+    <dd>A descriptive comment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,9 +712,9 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
+    <dd>Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
 covered by the global policy will be subject to the project admission policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,15 +722,15 @@ covered by the global policy will be subject to the project admission policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -739,9 +739,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyadmissionwhitelistpattern">[]Policy<wbr>Admission<wbr>Whitelist<wbr>Pattern</a></span>
     </dt>
-    <dd>{{% md %}}A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
+    <dd>A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
 image's admission requests will always be permitted regardless of your admission rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,11 +749,11 @@ image's admission requests will always be permitted regardless of your admission
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyclusteradmissionrule">[]Policy<wbr>Cluster<wbr>Admission<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
+    <dd>Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
 must be attested to by one or more attestors, that all pod creations will be allowed, or that all pod creations will be
 denied. There can be at most one admission rule per cluster spec. Identifier format: '{{location}}.{{clusterId}}'. A
 location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-central1').
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,8 +761,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policydefaultadmissionrule">Policy<wbr>Default<wbr>Admission<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Default admission rule for a cluster without a per-cluster admission rule.
-{{% /md %}}</dd>
+    <dd>Default admission rule for a cluster without a per-cluster admission rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -770,8 +770,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive comment.
-{{% /md %}}</dd>
+    <dd>A descriptive comment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -779,9 +779,9 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
+    <dd>Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
 covered by the global policy will be subject to the project admission policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,15 +789,15 @@ covered by the global policy will be subject to the project admission policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -806,9 +806,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyadmissionwhitelistpattern">Policy<wbr>Admission<wbr>Whitelist<wbr>Pattern[]</a></span>
     </dt>
-    <dd>{{% md %}}A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
+    <dd>A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
 image's admission requests will always be permitted regardless of your admission rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,11 +816,11 @@ image's admission requests will always be permitted regardless of your admission
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyclusteradmissionrule">Policy<wbr>Cluster<wbr>Admission<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
+    <dd>Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
 must be attested to by one or more attestors, that all pod creations will be allowed, or that all pod creations will be
 denied. There can be at most one admission rule per cluster spec. Identifier format: '{{location}}.{{clusterId}}'. A
 location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-central1').
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,8 +828,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policydefaultadmissionrule">Policy<wbr>Default<wbr>Admission<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Default admission rule for a cluster without a per-cluster admission rule.
-{{% /md %}}</dd>
+    <dd>Default admission rule for a cluster without a per-cluster admission rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,8 +837,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive comment.
-{{% /md %}}</dd>
+    <dd>A descriptive comment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,9 +846,9 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
+    <dd>Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
 covered by the global policy will be subject to the project admission policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -856,15 +856,15 @@ covered by the global policy will be subject to the project admission policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -873,9 +873,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyadmissionwhitelistpattern">List[Policy<wbr>Admission<wbr>Whitelist<wbr>Pattern]</a></span>
     </dt>
-    <dd>{{% md %}}A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
+    <dd>A whitelist of image patterns to exclude from admission rules. If an image's name matches a whitelist pattern, the
 image's admission requests will always be permitted regardless of your admission rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,11 +883,11 @@ image's admission requests will always be permitted regardless of your admission
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policyclusteradmissionrule">List[Policy<wbr>Cluster<wbr>Admission<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
+    <dd>Per-cluster admission rules. An admission rule specifies either that all container images used in a pod creation request
 must be attested to by one or more attestors, that all pod creations will be allowed, or that all pod creations will be
 denied. There can be at most one admission rule per cluster spec. Identifier format: '{{location}}.{{clusterId}}'. A
 location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-central1').
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policydefaultadmissionrule">Dict[Policy<wbr>Default<wbr>Admission<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Default admission rule for a cluster without a per-cluster admission rule.
-{{% /md %}}</dd>
+    <dd>Default admission rule for a cluster without a per-cluster admission rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A descriptive comment.
-{{% /md %}}</dd>
+    <dd>A descriptive comment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,9 +913,9 @@ location is either a compute zone (e.g. 'us-central1-a') or a region (e.g. 'us-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
+    <dd>Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not
 covered by the global policy will be subject to the project admission policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,12 +923,12 @@ covered by the global policy will be subject to the project admission policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -943,18 +943,18 @@ If it is not provided, the provider project is used.
 
 
 <h4 id="policyadmissionwhitelistpattern">Policy<wbr>Admission<wbr>Whitelist<wbr>Pattern</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#PolicyAdmissionWhitelistPattern">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#PolicyAdmissionWhitelistPattern">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#PolicyAdmissionWhitelistPatternArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#PolicyAdmissionWhitelistPatternOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -963,13 +963,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -978,13 +978,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -993,13 +993,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1008,28 +1008,28 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="policyclusteradmissionrule">Policy<wbr>Cluster<wbr>Admission<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#PolicyClusterAdmissionRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#PolicyClusterAdmissionRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#PolicyClusterAdmissionRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#PolicyClusterAdmissionRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1038,8 +1038,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1047,7 +1047,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1055,7 +1055,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1063,13 +1063,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1078,8 +1078,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1087,7 +1087,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1095,7 +1095,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,13 +1103,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1118,8 +1118,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1127,7 +1127,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1135,7 +1135,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,13 +1143,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1158,8 +1158,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1167,7 +1167,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1175,7 +1175,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,28 +1183,28 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="policydefaultadmissionrule">Policy<wbr>Default<wbr>Admission<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#PolicyDefaultAdmissionRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#PolicyDefaultAdmissionRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#PolicyDefaultAdmissionRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/binaryauthorization?tab=doc#PolicyDefaultAdmissionRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1213,7 +1213,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1221,7 +1221,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,13 +1229,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1244,7 +1244,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1252,7 +1252,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,13 +1260,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1275,7 +1275,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1283,7 +1283,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1291,13 +1291,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1306,7 +1306,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1314,7 +1314,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,10 +1322,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

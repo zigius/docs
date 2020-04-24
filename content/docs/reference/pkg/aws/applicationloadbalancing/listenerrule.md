@@ -127,26 +127,26 @@ const admin = new aws.lb.ListenerRule("admin", {
 
 
 ## Create a ListenerRule Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/applicationloadbalancing/#ListenerRule">ListenerRule</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/applicationloadbalancing/#ListenerRuleArgs">ListenerRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ListenerRule</span><span class="p">(resource_name, opts=None, </span>actions=None<span class="p">, </span>conditions=None<span class="p">, </span>listener_arn=None<span class="p">, </span>priority=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewListenerRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleArgs">ListenerRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRule">ListenerRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApplicationLoadBalancing.ListenerRule.html">ListenerRule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApplicationLoadBalancing.ListenerRuleArgs.html">ListenerRuleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -183,9 +183,9 @@ const admin = new aws.lb.ListenerRule("admin", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -203,9 +203,9 @@ const admin = new aws.lb.ListenerRule("admin", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -252,9 +252,9 @@ const admin = new aws.lb.ListenerRule("admin", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -291,7 +291,7 @@ const admin = new aws.lb.ListenerRule("admin", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ListenerRule Resource Properties {#properties}
 
@@ -304,7 +304,7 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -313,8 +313,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleaction">List&lt;Listener<wbr>Rule<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An Action block. Action blocks are documented below.
-{{% /md %}}</dd>
+    <dd>An Action block. Action blocks are documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -322,8 +322,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerrulecondition">List&lt;Listener<wbr>Rule<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
-{{% /md %}}</dd>
+    <dd>A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -331,8 +331,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the listener to which to attach the rule.
-{{% /md %}}</dd>
+    <dd>The ARN of the listener to which to attach the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,14 +340,14 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
-{{% /md %}}</dd>
+    <dd>The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -356,8 +356,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleaction">[]Listener<wbr>Rule<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}An Action block. Action blocks are documented below.
-{{% /md %}}</dd>
+    <dd>An Action block. Action blocks are documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -365,8 +365,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerrulecondition">[]Listener<wbr>Rule<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
-{{% /md %}}</dd>
+    <dd>A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -374,8 +374,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the listener to which to attach the rule.
-{{% /md %}}</dd>
+    <dd>The ARN of the listener to which to attach the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,14 +383,14 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
-{{% /md %}}</dd>
+    <dd>The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -399,8 +399,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleaction">Listener<wbr>Rule<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}An Action block. Action blocks are documented below.
-{{% /md %}}</dd>
+    <dd>An Action block. Action blocks are documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -408,8 +408,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerrulecondition">Listener<wbr>Rule<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
-{{% /md %}}</dd>
+    <dd>A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -417,8 +417,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the listener to which to attach the rule.
-{{% /md %}}</dd>
+    <dd>The ARN of the listener to which to attach the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,14 +426,14 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
-{{% /md %}}</dd>
+    <dd>The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -442,8 +442,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleaction">List[Listener<wbr>Rule<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}An Action block. Action blocks are documented below.
-{{% /md %}}</dd>
+    <dd>An Action block. Action blocks are documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -451,8 +451,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerrulecondition">List[Listener<wbr>Rule<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
-{{% /md %}}</dd>
+    <dd>A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -460,8 +460,8 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the listener to which to attach the rule.
-{{% /md %}}</dd>
+    <dd>The ARN of the listener to which to attach the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,11 +469,11 @@ The ListenerRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
-{{% /md %}}</dd>
+    <dd>The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -487,7 +487,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -496,8 +496,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the rule (matches `id`)
-{{% /md %}}</dd>
+    <dd>The ARN of the rule (matches `id`)
+</dd>
 
     <dt class="property-"
             title="">
@@ -505,13 +505,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -520,8 +520,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the rule (matches `id`)
-{{% /md %}}</dd>
+    <dd>The ARN of the rule (matches `id`)
+</dd>
 
     <dt class="property-"
             title="">
@@ -529,13 +529,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -544,8 +544,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the rule (matches `id`)
-{{% /md %}}</dd>
+    <dd>The ARN of the rule (matches `id`)
+</dd>
 
     <dt class="property-"
             title="">
@@ -553,13 +553,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -568,8 +568,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the rule (matches `id`)
-{{% /md %}}</dd>
+    <dd>The ARN of the rule (matches `id`)
+</dd>
 
     <dt class="property-"
             title="">
@@ -577,10 +577,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -591,25 +591,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ListenerRule Resource {#look-up}
 
 Get an existing ListenerRule resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/applicationloadbalancing/#ListenerRuleState">ListenerRuleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/applicationloadbalancing/#ListenerRule">ListenerRule</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>actions=None<span class="p">, </span>arn=None<span class="p">, </span>conditions=None<span class="p">, </span>listener_arn=None<span class="p">, </span>priority=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetListenerRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleState">ListenerRuleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRule">ListenerRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApplicationLoadBalancing.ListenerRule.html">ListenerRule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApplicationLoadBalancing.ListenerRuleState.html">ListenerRuleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -634,9 +634,9 @@ Get an existing ListenerRule resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -649,36 +649,9 @@ Get an existing ListenerRule resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -703,13 +676,40 @@ Get an existing ListenerRule resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -718,8 +718,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleaction">List&lt;Listener<wbr>Rule<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An Action block. Action blocks are documented below.
-{{% /md %}}</dd>
+    <dd>An Action block. Action blocks are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -727,8 +727,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the rule (matches `id`)
-{{% /md %}}</dd>
+    <dd>The ARN of the rule (matches `id`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -736,8 +736,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerrulecondition">List&lt;Listener<wbr>Rule<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
-{{% /md %}}</dd>
+    <dd>A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -745,8 +745,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the listener to which to attach the rule.
-{{% /md %}}</dd>
+    <dd>The ARN of the listener to which to attach the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -754,14 +754,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
-{{% /md %}}</dd>
+    <dd>The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -770,8 +770,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleaction">[]Listener<wbr>Rule<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}An Action block. Action blocks are documented below.
-{{% /md %}}</dd>
+    <dd>An Action block. Action blocks are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -779,8 +779,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the rule (matches `id`)
-{{% /md %}}</dd>
+    <dd>The ARN of the rule (matches `id`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,8 +788,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerrulecondition">[]Listener<wbr>Rule<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
-{{% /md %}}</dd>
+    <dd>A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -797,8 +797,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the listener to which to attach the rule.
-{{% /md %}}</dd>
+    <dd>The ARN of the listener to which to attach the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -806,14 +806,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
-{{% /md %}}</dd>
+    <dd>The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -822,8 +822,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleaction">Listener<wbr>Rule<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}An Action block. Action blocks are documented below.
-{{% /md %}}</dd>
+    <dd>An Action block. Action blocks are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -831,8 +831,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the rule (matches `id`)
-{{% /md %}}</dd>
+    <dd>The ARN of the rule (matches `id`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -840,8 +840,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerrulecondition">Listener<wbr>Rule<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
-{{% /md %}}</dd>
+    <dd>A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -849,8 +849,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the listener to which to attach the rule.
-{{% /md %}}</dd>
+    <dd>The ARN of the listener to which to attach the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -858,14 +858,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
-{{% /md %}}</dd>
+    <dd>The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -874,8 +874,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleaction">List[Listener<wbr>Rule<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}An Action block. Action blocks are documented below.
-{{% /md %}}</dd>
+    <dd>An Action block. Action blocks are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,8 +883,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the rule (matches `id`)
-{{% /md %}}</dd>
+    <dd>The ARN of the rule (matches `id`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -892,8 +892,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerrulecondition">List[Listener<wbr>Rule<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
-{{% /md %}}</dd>
+    <dd>A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -901,8 +901,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the listener to which to attach the rule.
-{{% /md %}}</dd>
+    <dd>The ARN of the listener to which to attach the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -910,11 +910,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
-{{% /md %}}</dd>
+    <dd>The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -929,18 +929,18 @@ The following state arguments are supported:
 
 
 <h4 id="listenerruleaction">Listener<wbr>Rule<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -949,8 +949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
-{{% /md %}}</dd>
+    <dd>The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,8 +958,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionauthenticatecognito">Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Cognito<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an authenticate action using Cognito. Required if `type` is `authenticate-cognito`.
-{{% /md %}}</dd>
+    <dd>Information for creating an authenticate action using Cognito. Required if `type` is `authenticate-cognito`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,8 +967,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionauthenticateoidc">Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Oidc<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an authenticate action using OIDC. Required if `type` is `authenticate-oidc`.
-{{% /md %}}</dd>
+    <dd>Information for creating an authenticate action using OIDC. Required if `type` is `authenticate-oidc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -976,8 +976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionfixedresponse">Listener<wbr>Rule<wbr>Action<wbr>Fixed<wbr>Response<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
-{{% /md %}}</dd>
+    <dd>Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,7 +985,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -993,8 +993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionredirect">Listener<wbr>Rule<wbr>Action<wbr>Redirect<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating a redirect action. Required if `type` is `redirect`.
-{{% /md %}}</dd>
+    <dd>Information for creating a redirect action. Required if `type` is `redirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,14 +1002,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
-{{% /md %}}</dd>
+    <dd>The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1018,8 +1018,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
-{{% /md %}}</dd>
+    <dd>The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1027,8 +1027,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionauthenticatecognito">Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Cognito</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an authenticate action using Cognito. Required if `type` is `authenticate-cognito`.
-{{% /md %}}</dd>
+    <dd>Information for creating an authenticate action using Cognito. Required if `type` is `authenticate-cognito`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,8 +1036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionauthenticateoidc">Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Oidc</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an authenticate action using OIDC. Required if `type` is `authenticate-oidc`.
-{{% /md %}}</dd>
+    <dd>Information for creating an authenticate action using OIDC. Required if `type` is `authenticate-oidc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionfixedresponse">Listener<wbr>Rule<wbr>Action<wbr>Fixed<wbr>Response</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
-{{% /md %}}</dd>
+    <dd>Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,7 +1054,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionredirect">Listener<wbr>Rule<wbr>Action<wbr>Redirect</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating a redirect action. Required if `type` is `redirect`.
-{{% /md %}}</dd>
+    <dd>Information for creating a redirect action. Required if `type` is `redirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,14 +1071,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
-{{% /md %}}</dd>
+    <dd>The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1087,8 +1087,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
-{{% /md %}}</dd>
+    <dd>The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1096,8 +1096,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionauthenticatecognito">Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Cognito</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an authenticate action using Cognito. Required if `type` is `authenticate-cognito`.
-{{% /md %}}</dd>
+    <dd>Information for creating an authenticate action using Cognito. Required if `type` is `authenticate-cognito`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,8 +1105,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionauthenticateoidc">Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Oidc</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an authenticate action using OIDC. Required if `type` is `authenticate-oidc`.
-{{% /md %}}</dd>
+    <dd>Information for creating an authenticate action using OIDC. Required if `type` is `authenticate-oidc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,8 +1114,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionfixedresponse">Listener<wbr>Rule<wbr>Action<wbr>Fixed<wbr>Response</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
-{{% /md %}}</dd>
+    <dd>Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,7 +1123,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,8 +1131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionredirect">Listener<wbr>Rule<wbr>Action<wbr>Redirect</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating a redirect action. Required if `type` is `redirect`.
-{{% /md %}}</dd>
+    <dd>Information for creating a redirect action. Required if `type` is `redirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,14 +1140,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
-{{% /md %}}</dd>
+    <dd>The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1156,8 +1156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
-{{% /md %}}</dd>
+    <dd>The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,8 +1165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionauthenticatecognito">Dict[Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Cognito]</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an authenticate action using Cognito. Required if `type` is `authenticate-cognito`.
-{{% /md %}}</dd>
+    <dd>Information for creating an authenticate action using Cognito. Required if `type` is `authenticate-cognito`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,8 +1174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionauthenticateoidc">Dict[Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Oidc]</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an authenticate action using OIDC. Required if `type` is `authenticate-oidc`.
-{{% /md %}}</dd>
+    <dd>Information for creating an authenticate action using OIDC. Required if `type` is `authenticate-oidc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,8 +1183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionfixedresponse">Dict[Listener<wbr>Rule<wbr>Action<wbr>Fixed<wbr>Response]</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
-{{% /md %}}</dd>
+    <dd>Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1192,7 +1192,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,8 +1200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleactionredirect">Dict[Listener<wbr>Rule<wbr>Action<wbr>Redirect]</a></span>
     </dt>
-    <dd>{{% md %}}Information for creating a redirect action. Required if `type` is `redirect`.
-{{% /md %}}</dd>
+    <dd>Information for creating a redirect action. Required if `type` is `redirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,29 +1209,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
-{{% /md %}}</dd>
+    <dd>The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleactionauthenticatecognito">Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Cognito</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleActionAuthenticateCognito">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleActionAuthenticateCognito">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionAuthenticateCognitoArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionAuthenticateCognitoOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1240,8 +1240,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Cognito user pool.
-{{% /md %}}</dd>
+    <dd>The ARN of the Cognito user pool.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1249,8 +1249,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Cognito user pool client.
-{{% /md %}}</dd>
+    <dd>The ID of the Cognito user pool client.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1258,8 +1258,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The domain prefix or fully-qualified domain name of the Cognito user pool.
-{{% /md %}}</dd>
+    <dd>The domain prefix or fully-qualified domain name of the Cognito user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,8 +1267,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
-{{% /md %}}</dd>
+    <dd>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,8 +1276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
-{{% /md %}}</dd>
+    <dd>The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,8 +1285,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The set of user claims to be requested from the IdP.
-{{% /md %}}</dd>
+    <dd>The set of user claims to be requested from the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,8 +1294,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie used to maintain session information.
-{{% /md %}}</dd>
+    <dd>The name of the cookie used to maintain session information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,14 +1303,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum duration of the authentication session, in seconds.
-{{% /md %}}</dd>
+    <dd>The maximum duration of the authentication session, in seconds.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1319,8 +1319,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Cognito user pool.
-{{% /md %}}</dd>
+    <dd>The ARN of the Cognito user pool.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1328,8 +1328,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Cognito user pool client.
-{{% /md %}}</dd>
+    <dd>The ID of the Cognito user pool client.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1337,8 +1337,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The domain prefix or fully-qualified domain name of the Cognito user pool.
-{{% /md %}}</dd>
+    <dd>The domain prefix or fully-qualified domain name of the Cognito user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,8 +1346,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
-{{% /md %}}</dd>
+    <dd>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,8 +1355,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
-{{% /md %}}</dd>
+    <dd>The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1364,8 +1364,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The set of user claims to be requested from the IdP.
-{{% /md %}}</dd>
+    <dd>The set of user claims to be requested from the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,8 +1373,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie used to maintain session information.
-{{% /md %}}</dd>
+    <dd>The name of the cookie used to maintain session information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,14 +1382,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum duration of the authentication session, in seconds.
-{{% /md %}}</dd>
+    <dd>The maximum duration of the authentication session, in seconds.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1398,8 +1398,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Cognito user pool.
-{{% /md %}}</dd>
+    <dd>The ARN of the Cognito user pool.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1407,8 +1407,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Cognito user pool client.
-{{% /md %}}</dd>
+    <dd>The ID of the Cognito user pool client.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1416,8 +1416,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The domain prefix or fully-qualified domain name of the Cognito user pool.
-{{% /md %}}</dd>
+    <dd>The domain prefix or fully-qualified domain name of the Cognito user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,8 +1425,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
-{{% /md %}}</dd>
+    <dd>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,8 +1434,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
-{{% /md %}}</dd>
+    <dd>The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,8 +1443,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The set of user claims to be requested from the IdP.
-{{% /md %}}</dd>
+    <dd>The set of user claims to be requested from the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,8 +1452,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie used to maintain session information.
-{{% /md %}}</dd>
+    <dd>The name of the cookie used to maintain session information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,14 +1461,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum duration of the authentication session, in seconds.
-{{% /md %}}</dd>
+    <dd>The maximum duration of the authentication session, in seconds.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1477,8 +1477,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Cognito user pool.
-{{% /md %}}</dd>
+    <dd>The ARN of the Cognito user pool.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1486,8 +1486,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Cognito user pool client.
-{{% /md %}}</dd>
+    <dd>The ID of the Cognito user pool client.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1495,8 +1495,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The domain prefix or fully-qualified domain name of the Cognito user pool.
-{{% /md %}}</dd>
+    <dd>The domain prefix or fully-qualified domain name of the Cognito user pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
-{{% /md %}}</dd>
+    <dd>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,8 +1513,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
-{{% /md %}}</dd>
+    <dd>The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,8 +1522,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The set of user claims to be requested from the IdP.
-{{% /md %}}</dd>
+    <dd>The set of user claims to be requested from the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,8 +1531,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie used to maintain session information.
-{{% /md %}}</dd>
+    <dd>The name of the cookie used to maintain session information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,29 +1540,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum duration of the authentication session, in seconds.
-{{% /md %}}</dd>
+    <dd>The maximum duration of the authentication session, in seconds.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleactionauthenticateoidc">Listener<wbr>Rule<wbr>Action<wbr>Authenticate<wbr>Oidc</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleActionAuthenticateOidc">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleActionAuthenticateOidc">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionAuthenticateOidcArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionAuthenticateOidcOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1571,8 +1571,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The authorization endpoint of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1580,8 +1580,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client identifier.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client identifier.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1589,8 +1589,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client secret.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client secret.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1598,8 +1598,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The OIDC issuer identifier of the IdP.
-{{% /md %}}</dd>
+    <dd>The OIDC issuer identifier of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1607,8 +1607,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The token endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The token endpoint of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1616,8 +1616,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user info endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The user info endpoint of the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1625,8 +1625,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
-{{% /md %}}</dd>
+    <dd>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1634,8 +1634,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
-{{% /md %}}</dd>
+    <dd>The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1643,8 +1643,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The set of user claims to be requested from the IdP.
-{{% /md %}}</dd>
+    <dd>The set of user claims to be requested from the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1652,8 +1652,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie used to maintain session information.
-{{% /md %}}</dd>
+    <dd>The name of the cookie used to maintain session information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1661,14 +1661,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum duration of the authentication session, in seconds.
-{{% /md %}}</dd>
+    <dd>The maximum duration of the authentication session, in seconds.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1677,8 +1677,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The authorization endpoint of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1686,8 +1686,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client identifier.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client identifier.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1695,8 +1695,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client secret.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client secret.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1704,8 +1704,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OIDC issuer identifier of the IdP.
-{{% /md %}}</dd>
+    <dd>The OIDC issuer identifier of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1713,8 +1713,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The token endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The token endpoint of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1722,8 +1722,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user info endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The user info endpoint of the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1731,8 +1731,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
-{{% /md %}}</dd>
+    <dd>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1740,8 +1740,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
-{{% /md %}}</dd>
+    <dd>The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1749,8 +1749,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The set of user claims to be requested from the IdP.
-{{% /md %}}</dd>
+    <dd>The set of user claims to be requested from the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1758,8 +1758,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie used to maintain session information.
-{{% /md %}}</dd>
+    <dd>The name of the cookie used to maintain session information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1767,14 +1767,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum duration of the authentication session, in seconds.
-{{% /md %}}</dd>
+    <dd>The maximum duration of the authentication session, in seconds.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1783,8 +1783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The authorization endpoint of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1792,8 +1792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client identifier.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client identifier.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1801,8 +1801,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client secret.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client secret.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1810,8 +1810,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OIDC issuer identifier of the IdP.
-{{% /md %}}</dd>
+    <dd>The OIDC issuer identifier of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1819,8 +1819,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The token endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The token endpoint of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1828,8 +1828,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user info endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The user info endpoint of the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1837,8 +1837,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
-{{% /md %}}</dd>
+    <dd>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,8 +1846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
-{{% /md %}}</dd>
+    <dd>The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,8 +1855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The set of user claims to be requested from the IdP.
-{{% /md %}}</dd>
+    <dd>The set of user claims to be requested from the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1864,8 +1864,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie used to maintain session information.
-{{% /md %}}</dd>
+    <dd>The name of the cookie used to maintain session information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1873,14 +1873,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum duration of the authentication session, in seconds.
-{{% /md %}}</dd>
+    <dd>The maximum duration of the authentication session, in seconds.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1889,8 +1889,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The authorization endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The authorization endpoint of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1898,8 +1898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client identifier.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client identifier.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1907,8 +1907,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client secret.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client secret.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1916,8 +1916,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The OIDC issuer identifier of the IdP.
-{{% /md %}}</dd>
+    <dd>The OIDC issuer identifier of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1925,8 +1925,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The token endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The token endpoint of the IdP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1934,8 +1934,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user info endpoint of the IdP.
-{{% /md %}}</dd>
+    <dd>The user info endpoint of the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1943,8 +1943,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
-{{% /md %}}</dd>
+    <dd>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1952,8 +1952,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
-{{% /md %}}</dd>
+    <dd>The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1961,8 +1961,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The set of user claims to be requested from the IdP.
-{{% /md %}}</dd>
+    <dd>The set of user claims to be requested from the IdP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1970,8 +1970,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cookie used to maintain session information.
-{{% /md %}}</dd>
+    <dd>The name of the cookie used to maintain session information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1979,29 +1979,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum duration of the authentication session, in seconds.
-{{% /md %}}</dd>
+    <dd>The maximum duration of the authentication session, in seconds.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleactionfixedresponse">Listener<wbr>Rule<wbr>Action<wbr>Fixed<wbr>Response</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleActionFixedResponse">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleActionFixedResponse">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionFixedResponseArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionFixedResponseOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2010,8 +2010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
-{{% /md %}}</dd>
+    <dd>The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,8 +2019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The message body.
-{{% /md %}}</dd>
+    <dd>The message body.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2028,14 +2028,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
-{{% /md %}}</dd>
+    <dd>The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2044,8 +2044,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
-{{% /md %}}</dd>
+    <dd>The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2053,8 +2053,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The message body.
-{{% /md %}}</dd>
+    <dd>The message body.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2062,14 +2062,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
-{{% /md %}}</dd>
+    <dd>The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2078,8 +2078,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
-{{% /md %}}</dd>
+    <dd>The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2087,8 +2087,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The message body.
-{{% /md %}}</dd>
+    <dd>The message body.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2096,14 +2096,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
-{{% /md %}}</dd>
+    <dd>The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2112,8 +2112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
-{{% /md %}}</dd>
+    <dd>The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2121,8 +2121,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The message body.
-{{% /md %}}</dd>
+    <dd>The message body.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2130,29 +2130,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
-{{% /md %}}</dd>
+    <dd>The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleactionredirect">Listener<wbr>Rule<wbr>Action<wbr>Redirect</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleActionRedirect">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleActionRedirect">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionRedirectArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleActionRedirectOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2161,8 +2161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
-{{% /md %}}</dd>
+    <dd>The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2170,8 +2170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
-{{% /md %}}</dd>
+    <dd>The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2179,8 +2179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
-{{% /md %}}</dd>
+    <dd>The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2188,8 +2188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
-{{% /md %}}</dd>
+    <dd>The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2197,8 +2197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
-{{% /md %}}</dd>
+    <dd>The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2206,14 +2206,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
-{{% /md %}}</dd>
+    <dd>The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2222,8 +2222,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
-{{% /md %}}</dd>
+    <dd>The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2231,8 +2231,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
-{{% /md %}}</dd>
+    <dd>The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2240,8 +2240,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
-{{% /md %}}</dd>
+    <dd>The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2249,8 +2249,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
-{{% /md %}}</dd>
+    <dd>The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2258,8 +2258,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
-{{% /md %}}</dd>
+    <dd>The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2267,14 +2267,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
-{{% /md %}}</dd>
+    <dd>The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2283,8 +2283,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
-{{% /md %}}</dd>
+    <dd>The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2292,8 +2292,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
-{{% /md %}}</dd>
+    <dd>The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2301,8 +2301,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
-{{% /md %}}</dd>
+    <dd>The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2310,8 +2310,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
-{{% /md %}}</dd>
+    <dd>The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2319,8 +2319,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
-{{% /md %}}</dd>
+    <dd>The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2328,14 +2328,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
-{{% /md %}}</dd>
+    <dd>The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2344,8 +2344,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
-{{% /md %}}</dd>
+    <dd>The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2353,8 +2353,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
-{{% /md %}}</dd>
+    <dd>The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2362,8 +2362,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
-{{% /md %}}</dd>
+    <dd>The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,8 +2371,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
-{{% /md %}}</dd>
+    <dd>The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,8 +2380,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
-{{% /md %}}</dd>
+    <dd>The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2389,29 +2389,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
-{{% /md %}}</dd>
+    <dd>The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerrulecondition">Listener<wbr>Rule<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -2420,8 +2420,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of condition. Valid values are `host-header` or `path-pattern`. Must also set `values`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead{{% /md %}}</p></dd>
+    <dd>The type of condition. Valid values are `host-header` or `path-pattern`. Must also set `values`.
+<p class="property-message">Deprecated: use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2429,8 +2429,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhostheader">Listener<wbr>Rule<wbr>Condition<wbr>Host<wbr>Header<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2438,8 +2438,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhttpheader">Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Header<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}HTTP headers to match. HTTP Header block fields documented below.
-{{% /md %}}</dd>
+    <dd>HTTP headers to match. HTTP Header block fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2447,8 +2447,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhttprequestmethod">Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Request<wbr>Method<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (\_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (\_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2456,8 +2456,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionpathpattern">Listener<wbr>Rule<wbr>Condition<wbr>Path<wbr>Pattern<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard charaters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a `query-string` condition.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard charaters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a `query-string` condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2465,8 +2465,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionquerystring">List&lt;Listener<wbr>Rule<wbr>Condition<wbr>Query<wbr>String<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Query strings to match. Query String block fields documented below.
-{{% /md %}}</dd>
+    <dd>Query strings to match. Query String block fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2474,8 +2474,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionsourceip">Listener<wbr>Rule<wbr>Condition<wbr>Source<wbr>Ip<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the `X-Forwarded-For` header, use `http-header` condition instead.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the `X-Forwarded-For` header, use `http-header` condition instead.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2483,14 +2483,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead{{% /md %}}</p></dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+<p class="property-message">Deprecated: use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -2499,8 +2499,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of condition. Valid values are `host-header` or `path-pattern`. Must also set `values`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead{{% /md %}}</p></dd>
+    <dd>The type of condition. Valid values are `host-header` or `path-pattern`. Must also set `values`.
+<p class="property-message">Deprecated: use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2508,8 +2508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhostheader">Listener<wbr>Rule<wbr>Condition<wbr>Host<wbr>Header</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2517,8 +2517,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhttpheader">Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Header</a></span>
     </dt>
-    <dd>{{% md %}}HTTP headers to match. HTTP Header block fields documented below.
-{{% /md %}}</dd>
+    <dd>HTTP headers to match. HTTP Header block fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2526,8 +2526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhttprequestmethod">Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Request<wbr>Method</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (\_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (\_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,8 +2535,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionpathpattern">Listener<wbr>Rule<wbr>Condition<wbr>Path<wbr>Pattern</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard charaters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a `query-string` condition.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard charaters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a `query-string` condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2544,8 +2544,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionquerystring">[]Listener<wbr>Rule<wbr>Condition<wbr>Query<wbr>String</a></span>
     </dt>
-    <dd>{{% md %}}Query strings to match. Query String block fields documented below.
-{{% /md %}}</dd>
+    <dd>Query strings to match. Query String block fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2553,8 +2553,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionsourceip">Listener<wbr>Rule<wbr>Condition<wbr>Source<wbr>Ip</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the `X-Forwarded-For` header, use `http-header` condition instead.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the `X-Forwarded-For` header, use `http-header` condition instead.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2562,14 +2562,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead{{% /md %}}</p></dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+<p class="property-message">Deprecated: use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -2578,8 +2578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of condition. Valid values are `host-header` or `path-pattern`. Must also set `values`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead{{% /md %}}</p></dd>
+    <dd>The type of condition. Valid values are `host-header` or `path-pattern`. Must also set `values`.
+<p class="property-message">Deprecated: use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2587,8 +2587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhostheader">Listener<wbr>Rule<wbr>Condition<wbr>Host<wbr>Header</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2596,8 +2596,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhttpheader">Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Header</a></span>
     </dt>
-    <dd>{{% md %}}HTTP headers to match. HTTP Header block fields documented below.
-{{% /md %}}</dd>
+    <dd>HTTP headers to match. HTTP Header block fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2605,8 +2605,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhttprequestmethod">Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Request<wbr>Method</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (\_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (\_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2614,8 +2614,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionpathpattern">Listener<wbr>Rule<wbr>Condition<wbr>Path<wbr>Pattern</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard charaters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a `query-string` condition.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard charaters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a `query-string` condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2623,8 +2623,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionquerystring">Listener<wbr>Rule<wbr>Condition<wbr>Query<wbr>String[]</a></span>
     </dt>
-    <dd>{{% md %}}Query strings to match. Query String block fields documented below.
-{{% /md %}}</dd>
+    <dd>Query strings to match. Query String block fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2632,8 +2632,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionsourceip">Listener<wbr>Rule<wbr>Condition<wbr>Source<wbr>Ip</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the `X-Forwarded-For` header, use `http-header` condition instead.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the `X-Forwarded-For` header, use `http-header` condition instead.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2641,14 +2641,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead{{% /md %}}</p></dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+<p class="property-message">Deprecated: use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -2657,8 +2657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of condition. Valid values are `host-header` or `path-pattern`. Must also set `values`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead{{% /md %}}</p></dd>
+    <dd>The type of condition. Valid values are `host-header` or `path-pattern`. Must also set `values`.
+<p class="property-message">Deprecated: use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2666,8 +2666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhostheader">Dict[Listener<wbr>Rule<wbr>Condition<wbr>Host<wbr>Header]</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2675,8 +2675,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhttpheader">Dict[Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Header]</a></span>
     </dt>
-    <dd>{{% md %}}HTTP headers to match. HTTP Header block fields documented below.
-{{% /md %}}</dd>
+    <dd>HTTP headers to match. HTTP Header block fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2684,8 +2684,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionhttprequestmethod">Dict[Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Request<wbr>Method]</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (\_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (\_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2693,8 +2693,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionpathpattern">Dict[Listener<wbr>Rule<wbr>Condition<wbr>Path<wbr>Pattern]</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard charaters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a `query-string` condition.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard charaters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a `query-string` condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2702,8 +2702,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionquerystring">List[Listener<wbr>Rule<wbr>Condition<wbr>Query<wbr>String]</a></span>
     </dt>
-    <dd>{{% md %}}Query strings to match. Query String block fields documented below.
-{{% /md %}}</dd>
+    <dd>Query strings to match. Query String block fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2711,8 +2711,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#listenerruleconditionsourceip">Dict[Listener<wbr>Rule<wbr>Condition<wbr>Source<wbr>Ip]</a></span>
     </dt>
-    <dd>{{% md %}}Contains a single `values` item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the `X-Forwarded-For` header, use `http-header` condition instead.
-{{% /md %}}</dd>
+    <dd>Contains a single `values` item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the `X-Forwarded-For` header, use `http-header` condition instead.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2720,29 +2720,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead{{% /md %}}</p></dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+<p class="property-message">Deprecated: use &#39;host_header&#39; or &#39;path_pattern&#39; attribute instead</p></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleconditionhostheader">Listener<wbr>Rule<wbr>Condition<wbr>Host<wbr>Header</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleConditionHostHeader">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleConditionHostHeader">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionHostHeaderArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionHostHeaderOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2751,14 +2751,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2767,14 +2767,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2783,14 +2783,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2799,29 +2799,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleconditionhttpheader">Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Header</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleConditionHttpHeader">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleConditionHttpHeader">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionHttpHeaderArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionHttpHeaderOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2830,8 +2830,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a `host-header` condition instead.
-{{% /md %}}</dd>
+    <dd>Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a `host-header` condition instead.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2839,14 +2839,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.
-{{% /md %}}</dd>
+    <dd>List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2855,8 +2855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a `host-header` condition instead.
-{{% /md %}}</dd>
+    <dd>Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a `host-header` condition instead.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2864,14 +2864,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.
-{{% /md %}}</dd>
+    <dd>List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2880,8 +2880,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a `host-header` condition instead.
-{{% /md %}}</dd>
+    <dd>Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a `host-header` condition instead.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2889,14 +2889,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.
-{{% /md %}}</dd>
+    <dd>List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2905,8 +2905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a `host-header` condition instead.
-{{% /md %}}</dd>
+    <dd>Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a `host-header` condition instead.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2914,29 +2914,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.
-{{% /md %}}</dd>
+    <dd>List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleconditionhttprequestmethod">Listener<wbr>Rule<wbr>Condition<wbr>Http<wbr>Request<wbr>Method</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleConditionHttpRequestMethod">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleConditionHttpRequestMethod">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionHttpRequestMethodArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionHttpRequestMethodOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2945,14 +2945,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2961,14 +2961,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2977,14 +2977,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2993,29 +2993,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleconditionpathpattern">Listener<wbr>Rule<wbr>Condition<wbr>Path<wbr>Pattern</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleConditionPathPattern">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleConditionPathPattern">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionPathPatternArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionPathPatternOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3024,14 +3024,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3040,14 +3040,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3056,14 +3056,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3072,29 +3072,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleconditionquerystring">Listener<wbr>Rule<wbr>Condition<wbr>Query<wbr>String</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleConditionQueryString">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleConditionQueryString">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionQueryStringArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionQueryStringOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3103,8 +3103,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Query string value pattern to match.
-{{% /md %}}</dd>
+    <dd>Query string value pattern to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3112,14 +3112,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Query string key pattern to match.
-{{% /md %}}</dd>
+    <dd>Query string key pattern to match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3128,8 +3128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Query string value pattern to match.
-{{% /md %}}</dd>
+    <dd>Query string value pattern to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3137,14 +3137,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Query string key pattern to match.
-{{% /md %}}</dd>
+    <dd>Query string key pattern to match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3153,8 +3153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Query string value pattern to match.
-{{% /md %}}</dd>
+    <dd>Query string value pattern to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3162,14 +3162,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Query string key pattern to match.
-{{% /md %}}</dd>
+    <dd>Query string key pattern to match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3178,8 +3178,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Query string value pattern to match.
-{{% /md %}}</dd>
+    <dd>Query string value pattern to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3187,29 +3187,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Query string key pattern to match.
-{{% /md %}}</dd>
+    <dd>Query string key pattern to match.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="listenerruleconditionsourceip">Listener<wbr>Rule<wbr>Condition<wbr>Source<wbr>Ip</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ListenerRuleConditionSourceIp">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ListenerRuleConditionSourceIp">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionSourceIpArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/applicationloadbalancing?tab=doc#ListenerRuleConditionSourceIpOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3218,14 +3218,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3234,14 +3234,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3250,14 +3250,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3266,11 +3266,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of exactly one pattern to match. Required when `field` is set.
-{{% /md %}}</dd>
+    <dd>List of exactly one pattern to match. Required when `field` is set.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

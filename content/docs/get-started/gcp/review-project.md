@@ -17,17 +17,17 @@ Let's review some of the generated project files:
 - `Pulumi.yaml` defines the [project]({{< relref "/docs/intro/concepts/project" >}}).
 - `Pulumi.dev.yaml` contains [configuration]({{< relref "/docs/intro/concepts/config" >}}) values for the [stack]({{< relref "/docs/intro/concepts/stack" >}}) we initialized.
 
-{{% choosable language csharp %}}
+
 
 - `Program.cs` with a simple entry point.
 
-{{% /choosable %}}
+
 
 - {{< langfile >}} is the Pulumi program that defines our stack resources. Let's examine it.
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 "use strict";
@@ -41,8 +41,8 @@ const bucket = new gcp.storage.Bucket("my-bucket");
 exports.bucketName = bucket.url;
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
@@ -55,8 +55,8 @@ const bucket = new gcp.storage.Bucket("my-bucket");
 export const bucketName = bucket.url;
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi
@@ -69,8 +69,8 @@ bucket = storage.Bucket('my-bucket')
 pulumi.export('bucket_name',  bucket.url)
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 package main
@@ -95,8 +95,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using Pulumi;
@@ -118,15 +118,15 @@ class MyStack : Stack
 }
 ```
 
-{{% /choosable %}}
+
 
 This Pulumi program creates a storage bucket and exports the bucket URL.
 
-{{% choosable language python %}}
+
 
 {{< python-venv >}}
 
-{{% /choosable %}}
+
 
 Next, we'll deploy the stack.
 

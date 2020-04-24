@@ -14,26 +14,26 @@ meta_desc: "Explore the Domain resource of the cdn module, including examples, i
 
 
 ## Create a Domain Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cdn/#Domain">Domain</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cdn/#DomainArgs">DomainArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Domain</span><span class="p">(resource_name, opts=None, </span>auth_config=None<span class="p">, </span>block_ips=None<span class="p">, </span>cache_configs=None<span class="p">, </span>cdn_type=None<span class="p">, </span>certificate_config=None<span class="p">, </span>domain_name=None<span class="p">, </span>http_header_configs=None<span class="p">, </span>optimize_enable=None<span class="p">, </span>page404_config=None<span class="p">, </span>page_compress_enable=None<span class="p">, </span>parameter_filter_config=None<span class="p">, </span>range_enable=None<span class="p">, </span>refer_config=None<span class="p">, </span>scope=None<span class="p">, </span>source_port=None<span class="p">, </span>source_type=None<span class="p">, </span>sources=None<span class="p">, </span>video_seek_enable=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDomain<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainArgs">DomainArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#Domain">Domain</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Cdn.Domain.html">Domain</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Cdn.DomainArgs.html">DomainArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Domain resource of the cdn module, including examples, i
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Domain resource of the cdn module, including examples, i
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Domain resource of the cdn module, including examples, i
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Domain resource of the cdn module, including examples, i
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Domain Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
-{{% /md %}}</dd>
+    <dd>Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
-{{% /md %}}</dd>
+    <dd>Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -218,8 +218,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainauthconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Auth<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The auth config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The auth config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -227,7 +227,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -235,8 +235,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincacheconfig">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Cache<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The cache configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The cache configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -244,7 +244,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincertificateconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Certificate<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -252,8 +252,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainhttpheaderconfig">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Http<wbr>Header<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The http header configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The http header configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -261,8 +261,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -270,8 +270,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainpage404config">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Page404Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The error page config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The error page config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -279,8 +279,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -288,8 +288,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainparameterfilterconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Parameter<wbr>Filter<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The parameter filter config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The parameter filter config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -297,8 +297,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -306,8 +306,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainreferconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Refer<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The refer config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The refer config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,8 +315,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
-{{% /md %}}</dd>
+    <dd>Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -324,8 +324,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.{{% /md %}}</p></dd>
+    <dd>Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -333,8 +333,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.{{% /md %}}</p></dd>
+    <dd>Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -342,8 +342,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` argument instead.{{% /md %}}</p></dd>
+    <dd>Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -351,14 +351,14 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -367,8 +367,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
-{{% /md %}}</dd>
+    <dd>Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -376,8 +376,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
-{{% /md %}}</dd>
+    <dd>Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -385,8 +385,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainauthconfig">Domain<wbr>Auth<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The auth config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The auth config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -394,7 +394,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -402,8 +402,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincacheconfig">[]Domain<wbr>Cache<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The cache configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The cache configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -411,7 +411,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincertificateconfig">Domain<wbr>Certificate<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -419,8 +419,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainhttpheaderconfig">[]Domain<wbr>Http<wbr>Header<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The http header configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The http header configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -428,8 +428,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -437,8 +437,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainpage404config">Domain<wbr>Page404Config</a></span>
     </dt>
-    <dd>{{% md %}}The error page config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The error page config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -446,8 +446,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -455,8 +455,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainparameterfilterconfig">Domain<wbr>Parameter<wbr>Filter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The parameter filter config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The parameter filter config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -464,8 +464,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -473,8 +473,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainreferconfig">Domain<wbr>Refer<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The refer config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The refer config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,8 +482,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
-{{% /md %}}</dd>
+    <dd>Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -491,8 +491,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.{{% /md %}}</p></dd>
+    <dd>Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -500,8 +500,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.{{% /md %}}</p></dd>
+    <dd>Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -509,8 +509,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` argument instead.{{% /md %}}</p></dd>
+    <dd>Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -518,14 +518,14 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -534,8 +534,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
-{{% /md %}}</dd>
+    <dd>Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -543,8 +543,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
-{{% /md %}}</dd>
+    <dd>Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -552,8 +552,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainauthconfig">Domain<wbr>Auth<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The auth config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The auth config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -561,7 +561,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -569,8 +569,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincacheconfig">Domain<wbr>Cache<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}The cache configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The cache configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -578,7 +578,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincertificateconfig">Domain<wbr>Certificate<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -586,8 +586,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainhttpheaderconfig">Domain<wbr>Http<wbr>Header<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}The http header configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The http header configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -595,8 +595,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -604,8 +604,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainpage404config">Domain<wbr>Page404Config</a></span>
     </dt>
-    <dd>{{% md %}}The error page config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The error page config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -613,8 +613,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -622,8 +622,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainparameterfilterconfig">Domain<wbr>Parameter<wbr>Filter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The parameter filter config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The parameter filter config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -631,8 +631,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -640,8 +640,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainreferconfig">Domain<wbr>Refer<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The refer config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The refer config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,8 +649,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
-{{% /md %}}</dd>
+    <dd>Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -658,8 +658,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.{{% /md %}}</p></dd>
+    <dd>Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -667,8 +667,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.{{% /md %}}</p></dd>
+    <dd>Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -676,8 +676,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` argument instead.{{% /md %}}</p></dd>
+    <dd>Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -685,14 +685,14 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -701,8 +701,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
-{{% /md %}}</dd>
+    <dd>Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -710,8 +710,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
-{{% /md %}}</dd>
+    <dd>Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -719,8 +719,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainauthconfig">Dict[Domain<wbr>Auth<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The auth config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The auth config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -728,7 +728,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -736,8 +736,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincacheconfig">List[Domain<wbr>Cache<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The cache configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The cache configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -745,7 +745,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincertificateconfig">Dict[Domain<wbr>Certificate<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -753,8 +753,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainhttpheaderconfig">List[Domain<wbr>Http<wbr>Header<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The http header configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The http header configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -762,8 +762,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -771,8 +771,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainpage404config">Dict[Domain<wbr>Page404Config]</a></span>
     </dt>
-    <dd>{{% md %}}The error page config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The error page config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -780,8 +780,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -789,8 +789,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainparameterfilterconfig">Dict[Domain<wbr>Parameter<wbr>Filter<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The parameter filter config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The parameter filter config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -798,8 +798,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -807,8 +807,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainreferconfig">Dict[Domain<wbr>Refer<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The refer config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The refer config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
-{{% /md %}}</dd>
+    <dd>Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -825,8 +825,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.{{% /md %}}</p></dd>
+    <dd>Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -834,8 +834,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.{{% /md %}}</p></dd>
+    <dd>Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -843,8 +843,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` argument instead.{{% /md %}}</p></dd>
+    <dd>Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -852,11 +852,11 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -870,7 +870,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -879,13 +879,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -894,13 +894,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -909,13 +909,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -924,10 +924,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -938,25 +938,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Domain Resource {#look-up}
 
 Get an existing Domain resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cdn/#DomainState">DomainState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cdn/#Domain">Domain</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>auth_config=None<span class="p">, </span>block_ips=None<span class="p">, </span>cache_configs=None<span class="p">, </span>cdn_type=None<span class="p">, </span>certificate_config=None<span class="p">, </span>domain_name=None<span class="p">, </span>http_header_configs=None<span class="p">, </span>optimize_enable=None<span class="p">, </span>page404_config=None<span class="p">, </span>page_compress_enable=None<span class="p">, </span>parameter_filter_config=None<span class="p">, </span>range_enable=None<span class="p">, </span>refer_config=None<span class="p">, </span>scope=None<span class="p">, </span>source_port=None<span class="p">, </span>source_type=None<span class="p">, </span>sources=None<span class="p">, </span>video_seek_enable=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDomain<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainState">DomainState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#Domain">Domain</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Cdn.Domain.html">Domain</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Cdn.DomainState.html">DomainState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -981,9 +981,9 @@ Get an existing Domain resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -996,36 +996,9 @@ Get an existing Domain resource's state with the given name, ID, and optional ex
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1050,13 +1023,40 @@ Get an existing Domain resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -1065,8 +1065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainauthconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Auth<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The auth config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The auth config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1074,7 +1074,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1082,8 +1082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincacheconfig">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Cache<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The cache configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The cache configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
-{{% /md %}}</dd>
+    <dd>Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1100,7 +1100,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincertificateconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Certificate<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1108,8 +1108,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
-{{% /md %}}</dd>
+    <dd>Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1117,8 +1117,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainhttpheaderconfig">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Http<wbr>Header<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The http header configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The http header configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1126,8 +1126,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1135,8 +1135,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainpage404config">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Page404Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The error page config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The error page config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1144,8 +1144,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1153,8 +1153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainparameterfilterconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Parameter<wbr>Filter<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The parameter filter config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The parameter filter config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1162,8 +1162,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1171,8 +1171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainreferconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Cdn.<wbr>Inputs.<wbr>Domain<wbr>Refer<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The refer config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The refer config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,8 +1180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
-{{% /md %}}</dd>
+    <dd>Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1189,8 +1189,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.{{% /md %}}</p></dd>
+    <dd>Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1198,8 +1198,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.{{% /md %}}</p></dd>
+    <dd>Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1207,8 +1207,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` argument instead.{{% /md %}}</p></dd>
+    <dd>Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1216,14 +1216,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -1232,8 +1232,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainauthconfig">Domain<wbr>Auth<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The auth config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The auth config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1241,7 +1241,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1249,8 +1249,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincacheconfig">[]Domain<wbr>Cache<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The cache configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The cache configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,8 +1258,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
-{{% /md %}}</dd>
+    <dd>Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1267,7 +1267,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincertificateconfig">Domain<wbr>Certificate<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1275,8 +1275,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
-{{% /md %}}</dd>
+    <dd>Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1284,8 +1284,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainhttpheaderconfig">[]Domain<wbr>Http<wbr>Header<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The http header configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The http header configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1293,8 +1293,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1302,8 +1302,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainpage404config">Domain<wbr>Page404Config</a></span>
     </dt>
-    <dd>{{% md %}}The error page config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The error page config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1311,8 +1311,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1320,8 +1320,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainparameterfilterconfig">Domain<wbr>Parameter<wbr>Filter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The parameter filter config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The parameter filter config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1329,8 +1329,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1338,8 +1338,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainreferconfig">Domain<wbr>Refer<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The refer config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The refer config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1347,8 +1347,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
-{{% /md %}}</dd>
+    <dd>Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1356,8 +1356,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.{{% /md %}}</p></dd>
+    <dd>Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1365,8 +1365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.{{% /md %}}</p></dd>
+    <dd>Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1374,8 +1374,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` argument instead.{{% /md %}}</p></dd>
+    <dd>Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1383,14 +1383,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -1399,8 +1399,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainauthconfig">Domain<wbr>Auth<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The auth config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The auth config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1408,7 +1408,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1416,8 +1416,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincacheconfig">Domain<wbr>Cache<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}The cache configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The cache configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,8 +1425,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
-{{% /md %}}</dd>
+    <dd>Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1434,7 +1434,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincertificateconfig">Domain<wbr>Certificate<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,8 +1442,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
-{{% /md %}}</dd>
+    <dd>Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1451,8 +1451,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainhttpheaderconfig">Domain<wbr>Http<wbr>Header<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}The http header configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The http header configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1460,8 +1460,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1469,8 +1469,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainpage404config">Domain<wbr>Page404Config</a></span>
     </dt>
-    <dd>{{% md %}}The error page config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The error page config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1478,8 +1478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1487,8 +1487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainparameterfilterconfig">Domain<wbr>Parameter<wbr>Filter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The parameter filter config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The parameter filter config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1496,8 +1496,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1505,8 +1505,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainreferconfig">Domain<wbr>Refer<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The refer config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The refer config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1514,8 +1514,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
-{{% /md %}}</dd>
+    <dd>Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1523,8 +1523,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.{{% /md %}}</p></dd>
+    <dd>Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1532,8 +1532,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.{{% /md %}}</p></dd>
+    <dd>Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1541,8 +1541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` argument instead.{{% /md %}}</p></dd>
+    <dd>Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1550,14 +1550,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -1566,8 +1566,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainauthconfig">Dict[Domain<wbr>Auth<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The auth config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The auth config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1575,7 +1575,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1583,8 +1583,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincacheconfig">List[Domain<wbr>Cache<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The cache configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The cache configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1592,8 +1592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
-{{% /md %}}</dd>
+    <dd>Cdn type of the accelerated domain. Valid values are `web`, `download`, `video`, `liveStream`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1601,7 +1601,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincertificateconfig">Dict[Domain<wbr>Certificate<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1609,8 +1609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
-{{% /md %}}</dd>
+    <dd>Name of the accelerated domain. This name without suffix can have a string of 1 to 63 characters, must contain only alphanumeric characters or "-", and must not begin or end with "-", and "-" must not in the 3th and 4th character positions at the same time. Suffix `.sh` and `.tel` are not supported.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1618,8 +1618,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainhttpheaderconfig">List[Domain<wbr>Http<wbr>Header<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The http header configs of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The http header configs of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1627,8 +1627,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Optimize config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`. It can effectively remove the page redundant content, reduce the file size and improve the speed of distribution when this parameter value is `on`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1636,8 +1636,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainpage404config">Dict[Domain<wbr>Page404Config]</a></span>
     </dt>
-    <dd>{{% md %}}The error page config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The error page config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1645,8 +1645,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Page Compress config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1654,8 +1654,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainparameterfilterconfig">Dict[Domain<wbr>Parameter<wbr>Filter<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The parameter filter config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The parameter filter config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1663,8 +1663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Range Source config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1672,8 +1672,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainreferconfig">Dict[Domain<wbr>Refer<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The refer config of the accelerated domain.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>The refer config of the accelerated domain.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1681,8 +1681,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
-{{% /md %}}</dd>
+    <dd>Scope of the accelerated domain. Valid values are `domestic`, `overseas`, `global`. Default value is `domestic`. This parameter's setting is valid Only for the international users and domestic L3 and above users .
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1690,8 +1690,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.{{% /md %}}</p></dd>
+    <dd>Source port of the accelerated domain. Valid values are `80` and `443`. Default value is `80`. You must use `80` when the `source_type` is `oss`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `port` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1699,8 +1699,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.{{% /md %}}</p></dd>
+    <dd>Source type of the accelerated domain. Valid values are `ipaddr`, `domain`, `oss`. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` block `type` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1708,8 +1708,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_new` configuration `sources` argument instead.{{% /md %}}</p></dd>
+    <dd>Sources of the accelerated domain. It's a list of domain names or IP address and consists of at most 20 items. You must set this parameter when `cdn_type` value is not `liveStream`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_new` configuration `sources` argument instead.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1717,11 +1717,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.{{% /md %}}</p></dd>
+    <dd>Video Seek config of the accelerated domain. Valid values are `on` and `off`. Default value is `off`.
+<p class="property-message">Deprecated: Use `alicloud_cdn_domain_config` configuration `function_name` and `function_args` arguments instead.</p></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1736,18 +1736,18 @@ The following state arguments are supported:
 
 
 <h4 id="domainauthconfig">Domain<wbr>Auth<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#DomainAuthConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#DomainAuthConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainAuthConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainAuthConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1756,8 +1756,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth type of the auth config. Valid values are  `no_auth`, `type_a`, `type_b` and `type_c`. Default value is `no_auth`.
-{{% /md %}}</dd>
+    <dd>Auth type of the auth config. Valid values are  `no_auth`, `type_a`, `type_b` and `type_c`. Default value is `no_auth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1765,8 +1765,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Master authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
-{{% /md %}}</dd>
+    <dd>Master authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,8 +1774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Slave authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
-{{% /md %}}</dd>
+    <dd>Slave authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,14 +1783,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Authentication cache time of the auth config. Default value is `1800`. It's value is valid only when the `auth_type` is `type_b` or `type_c`.
-{{% /md %}}</dd>
+    <dd>Authentication cache time of the auth config. Default value is `1800`. It's value is valid only when the `auth_type` is `type_b` or `type_c`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1799,8 +1799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth type of the auth config. Valid values are  `no_auth`, `type_a`, `type_b` and `type_c`. Default value is `no_auth`.
-{{% /md %}}</dd>
+    <dd>Auth type of the auth config. Valid values are  `no_auth`, `type_a`, `type_b` and `type_c`. Default value is `no_auth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1808,8 +1808,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
-{{% /md %}}</dd>
+    <dd>Master authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,8 +1817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Slave authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
-{{% /md %}}</dd>
+    <dd>Slave authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,14 +1826,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Authentication cache time of the auth config. Default value is `1800`. It's value is valid only when the `auth_type` is `type_b` or `type_c`.
-{{% /md %}}</dd>
+    <dd>Authentication cache time of the auth config. Default value is `1800`. It's value is valid only when the `auth_type` is `type_b` or `type_c`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1842,8 +1842,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Auth type of the auth config. Valid values are  `no_auth`, `type_a`, `type_b` and `type_c`. Default value is `no_auth`.
-{{% /md %}}</dd>
+    <dd>Auth type of the auth config. Valid values are  `no_auth`, `type_a`, `type_b` and `type_c`. Default value is `no_auth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1851,8 +1851,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
-{{% /md %}}</dd>
+    <dd>Master authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,8 +1860,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Slave authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
-{{% /md %}}</dd>
+    <dd>Slave authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1869,14 +1869,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Authentication cache time of the auth config. Default value is `1800`. It's value is valid only when the `auth_type` is `type_b` or `type_c`.
-{{% /md %}}</dd>
+    <dd>Authentication cache time of the auth config. Default value is `1800`. It's value is valid only when the `auth_type` is `type_b` or `type_c`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1885,8 +1885,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Auth type of the auth config. Valid values are  `no_auth`, `type_a`, `type_b` and `type_c`. Default value is `no_auth`.
-{{% /md %}}</dd>
+    <dd>Auth type of the auth config. Valid values are  `no_auth`, `type_a`, `type_b` and `type_c`. Default value is `no_auth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1894,8 +1894,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Master authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
-{{% /md %}}</dd>
+    <dd>Master authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1903,8 +1903,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Slave authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
-{{% /md %}}</dd>
+    <dd>Slave authentication key of the auth config. This parameter can have a string of 6 to 32 characters and must contain only alphanumeric characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1912,29 +1912,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Authentication cache time of the auth config. Default value is `1800`. It's value is valid only when the `auth_type` is `type_b` or `type_c`.
-{{% /md %}}</dd>
+    <dd>Authentication cache time of the auth config. Default value is `1800`. It's value is valid only when the `auth_type` is `type_b` or `type_c`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domaincacheconfig">Domain<wbr>Cache<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#DomainCacheConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#DomainCacheConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainCacheConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainCacheConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1943,8 +1943,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cache content of the cache config. It's value is a path string when the `cache_type` is `path`. When the `cache_type` is `suffix`, it's value is a string which contains multiple file suffixes separated by commas.
-{{% /md %}}</dd>
+    <dd>Cache content of the cache config. It's value is a path string when the `cache_type` is `path`. When the `cache_type` is `suffix`, it's value is a string which contains multiple file suffixes separated by commas.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1952,8 +1952,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cache type of the cache config. Valid values are `suffix` and `path`.
-{{% /md %}}</dd>
+    <dd>Cache type of the cache config. Valid values are `suffix` and `path`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1961,8 +1961,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Cache time of the cache config.
-{{% /md %}}</dd>
+    <dd>Cache time of the cache config.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1970,7 +1970,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1978,14 +1978,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Weight of the cache config. This parameter's value is between 1 and 99. Default value is `1`. The higher the value, the higher the priority.
-{{% /md %}}</dd>
+    <dd>Weight of the cache config. This parameter's value is between 1 and 99. Default value is `1`. The higher the value, the higher the priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1994,8 +1994,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cache content of the cache config. It's value is a path string when the `cache_type` is `path`. When the `cache_type` is `suffix`, it's value is a string which contains multiple file suffixes separated by commas.
-{{% /md %}}</dd>
+    <dd>Cache content of the cache config. It's value is a path string when the `cache_type` is `path`. When the `cache_type` is `suffix`, it's value is a string which contains multiple file suffixes separated by commas.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2003,8 +2003,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cache type of the cache config. Valid values are `suffix` and `path`.
-{{% /md %}}</dd>
+    <dd>Cache type of the cache config. Valid values are `suffix` and `path`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2012,8 +2012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Cache time of the cache config.
-{{% /md %}}</dd>
+    <dd>Cache time of the cache config.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2021,7 +2021,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2029,14 +2029,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Weight of the cache config. This parameter's value is between 1 and 99. Default value is `1`. The higher the value, the higher the priority.
-{{% /md %}}</dd>
+    <dd>Weight of the cache config. This parameter's value is between 1 and 99. Default value is `1`. The higher the value, the higher the priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2045,8 +2045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cache content of the cache config. It's value is a path string when the `cache_type` is `path`. When the `cache_type` is `suffix`, it's value is a string which contains multiple file suffixes separated by commas.
-{{% /md %}}</dd>
+    <dd>Cache content of the cache config. It's value is a path string when the `cache_type` is `path`. When the `cache_type` is `suffix`, it's value is a string which contains multiple file suffixes separated by commas.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2054,8 +2054,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cache type of the cache config. Valid values are `suffix` and `path`.
-{{% /md %}}</dd>
+    <dd>Cache type of the cache config. Valid values are `suffix` and `path`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2063,8 +2063,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Cache time of the cache config.
-{{% /md %}}</dd>
+    <dd>Cache time of the cache config.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2072,7 +2072,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2080,14 +2080,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Weight of the cache config. This parameter's value is between 1 and 99. Default value is `1`. The higher the value, the higher the priority.
-{{% /md %}}</dd>
+    <dd>Weight of the cache config. This parameter's value is between 1 and 99. Default value is `1`. The higher the value, the higher the priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2096,8 +2096,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cache content of the cache config. It's value is a path string when the `cache_type` is `path`. When the `cache_type` is `suffix`, it's value is a string which contains multiple file suffixes separated by commas.
-{{% /md %}}</dd>
+    <dd>Cache content of the cache config. It's value is a path string when the `cache_type` is `path`. When the `cache_type` is `suffix`, it's value is a string which contains multiple file suffixes separated by commas.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2105,8 +2105,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cache type of the cache config. Valid values are `suffix` and `path`.
-{{% /md %}}</dd>
+    <dd>Cache type of the cache config. Valid values are `suffix` and `path`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2114,8 +2114,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Cache time of the cache config.
-{{% /md %}}</dd>
+    <dd>Cache time of the cache config.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2123,7 +2123,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2131,29 +2131,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Weight of the cache config. This parameter's value is between 1 and 99. Default value is `1`. The higher the value, the higher the priority.
-{{% /md %}}</dd>
+    <dd>Weight of the cache config. This parameter's value is between 1 and 99. Default value is `1`. The higher the value, the higher the priority.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domaincertificateconfig">Domain<wbr>Certificate<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#DomainCertificateConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#DomainCertificateConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainCertificateConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainCertificateConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2162,8 +2162,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSL private key. This is required if `server_certificate_status` is `on`
-{{% /md %}}</dd>
+    <dd>The SSL private key. This is required if `server_certificate_status` is `on`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2171,8 +2171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSL server certificate string. This is required if `server_certificate_status` is `on`
-{{% /md %}}</dd>
+    <dd>The SSL server certificate string. This is required if `server_certificate_status` is `on`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2180,14 +2180,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not enable https. Valid values are `on` and `off`. Default value is `on`.
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not enable https. Valid values are `on` and `off`. Default value is `on`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2196,8 +2196,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSL private key. This is required if `server_certificate_status` is `on`
-{{% /md %}}</dd>
+    <dd>The SSL private key. This is required if `server_certificate_status` is `on`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2205,8 +2205,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSL server certificate string. This is required if `server_certificate_status` is `on`
-{{% /md %}}</dd>
+    <dd>The SSL server certificate string. This is required if `server_certificate_status` is `on`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2214,14 +2214,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not enable https. Valid values are `on` and `off`. Default value is `on`.
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not enable https. Valid values are `on` and `off`. Default value is `on`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2230,8 +2230,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSL private key. This is required if `server_certificate_status` is `on`
-{{% /md %}}</dd>
+    <dd>The SSL private key. This is required if `server_certificate_status` is `on`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2239,8 +2239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSL server certificate string. This is required if `server_certificate_status` is `on`
-{{% /md %}}</dd>
+    <dd>The SSL server certificate string. This is required if `server_certificate_status` is `on`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2248,14 +2248,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not enable https. Valid values are `on` and `off`. Default value is `on`.
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not enable https. Valid values are `on` and `off`. Default value is `on`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2264,8 +2264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SSL private key. This is required if `server_certificate_status` is `on`
-{{% /md %}}</dd>
+    <dd>The SSL private key. This is required if `server_certificate_status` is `on`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2273,8 +2273,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not enable https. Valid values are `on` and `off`. Default value is `on`.
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not enable https. Valid values are `on` and `off`. Default value is `on`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2282,29 +2282,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SSL server certificate string. This is required if `server_certificate_status` is `on`
-{{% /md %}}</dd>
+    <dd>The SSL server certificate string. This is required if `server_certificate_status` is `on`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainhttpheaderconfig">Domain<wbr>Http<wbr>Header<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#DomainHttpHeaderConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#DomainHttpHeaderConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainHttpHeaderConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainHttpHeaderConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2313,8 +2313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Header key of the http header. Valid values are `Content-Type`, `Cache-Control`, `Content-Disposition`, `Content-Language`，`Expires`, `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods` and `Access-Control-Max-Age`.
-{{% /md %}}</dd>
+    <dd>Header key of the http header. Valid values are `Content-Type`, `Cache-Control`, `Content-Disposition`, `Content-Language`，`Expires`, `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods` and `Access-Control-Max-Age`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2322,8 +2322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Header value of the http header.
-{{% /md %}}</dd>
+    <dd>Header value of the http header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2331,13 +2331,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2346,8 +2346,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Header key of the http header. Valid values are `Content-Type`, `Cache-Control`, `Content-Disposition`, `Content-Language`，`Expires`, `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods` and `Access-Control-Max-Age`.
-{{% /md %}}</dd>
+    <dd>Header key of the http header. Valid values are `Content-Type`, `Cache-Control`, `Content-Disposition`, `Content-Language`，`Expires`, `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods` and `Access-Control-Max-Age`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2355,8 +2355,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Header value of the http header.
-{{% /md %}}</dd>
+    <dd>Header value of the http header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2364,13 +2364,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2379,8 +2379,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Header key of the http header. Valid values are `Content-Type`, `Cache-Control`, `Content-Disposition`, `Content-Language`，`Expires`, `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods` and `Access-Control-Max-Age`.
-{{% /md %}}</dd>
+    <dd>Header key of the http header. Valid values are `Content-Type`, `Cache-Control`, `Content-Disposition`, `Content-Language`，`Expires`, `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods` and `Access-Control-Max-Age`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2388,8 +2388,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Header value of the http header.
-{{% /md %}}</dd>
+    <dd>Header value of the http header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2397,13 +2397,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2412,8 +2412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Header key of the http header. Valid values are `Content-Type`, `Cache-Control`, `Content-Disposition`, `Content-Language`，`Expires`, `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods` and `Access-Control-Max-Age`.
-{{% /md %}}</dd>
+    <dd>Header key of the http header. Valid values are `Content-Type`, `Cache-Control`, `Content-Disposition`, `Content-Language`，`Expires`, `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods` and `Access-Control-Max-Age`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2421,8 +2421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Header value of the http header.
-{{% /md %}}</dd>
+    <dd>Header value of the http header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2430,28 +2430,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainpage404config">Domain<wbr>Page404Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#DomainPage404Config">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#DomainPage404Config">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainPage404ConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainPage404ConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2460,8 +2460,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom page url of the error page. It must be the full path under the accelerated domain name. It's value must be `http://promotion.alicdn.com/help/oss/error.html` when `page_type` value is `charity` and It can not be set when `page_type` value is `default`.
-{{% /md %}}</dd>
+    <dd>Custom page url of the error page. It must be the full path under the accelerated domain name. It's value must be `http://promotion.alicdn.com/help/oss/error.html` when `page_type` value is `charity` and It can not be set when `page_type` value is `default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2469,7 +2469,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2477,14 +2477,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Page type of the error page. Valid values are `default`, `charity`, `other`. Default value is `default`.
-{{% /md %}}</dd>
+    <dd>Page type of the error page. Valid values are `default`, `charity`, `other`. Default value is `default`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2493,8 +2493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom page url of the error page. It must be the full path under the accelerated domain name. It's value must be `http://promotion.alicdn.com/help/oss/error.html` when `page_type` value is `charity` and It can not be set when `page_type` value is `default`.
-{{% /md %}}</dd>
+    <dd>Custom page url of the error page. It must be the full path under the accelerated domain name. It's value must be `http://promotion.alicdn.com/help/oss/error.html` when `page_type` value is `charity` and It can not be set when `page_type` value is `default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2502,7 +2502,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2510,14 +2510,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page type of the error page. Valid values are `default`, `charity`, `other`. Default value is `default`.
-{{% /md %}}</dd>
+    <dd>Page type of the error page. Valid values are `default`, `charity`, `other`. Default value is `default`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2526,8 +2526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom page url of the error page. It must be the full path under the accelerated domain name. It's value must be `http://promotion.alicdn.com/help/oss/error.html` when `page_type` value is `charity` and It can not be set when `page_type` value is `default`.
-{{% /md %}}</dd>
+    <dd>Custom page url of the error page. It must be the full path under the accelerated domain name. It's value must be `http://promotion.alicdn.com/help/oss/error.html` when `page_type` value is `charity` and It can not be set when `page_type` value is `default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,7 +2535,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2543,14 +2543,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Page type of the error page. Valid values are `default`, `charity`, `other`. Default value is `default`.
-{{% /md %}}</dd>
+    <dd>Page type of the error page. Valid values are `default`, `charity`, `other`. Default value is `default`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2559,8 +2559,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom page url of the error page. It must be the full path under the accelerated domain name. It's value must be `http://promotion.alicdn.com/help/oss/error.html` when `page_type` value is `charity` and It can not be set when `page_type` value is `default`.
-{{% /md %}}</dd>
+    <dd>Custom page url of the error page. It must be the full path under the accelerated domain name. It's value must be `http://promotion.alicdn.com/help/oss/error.html` when `page_type` value is `charity` and It can not be set when `page_type` value is `default`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2568,7 +2568,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2576,29 +2576,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Page type of the error page. Valid values are `default`, `charity`, `other`. Default value is `default`.
-{{% /md %}}</dd>
+    <dd>Page type of the error page. Valid values are `default`, `charity`, `other`. Default value is `default`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainparameterfilterconfig">Domain<wbr>Parameter<wbr>Filter<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#DomainParameterFilterConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#DomainParameterFilterConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainParameterFilterConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainParameterFilterConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2607,8 +2607,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not the `parameter_filter_config` is enable. Valid values are `on` and `off`. Default value is `off`.  
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not the `parameter_filter_config` is enable. Valid values are `on` and `off`. Default value is `off`.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2616,14 +2616,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Reserved parameters of `parameter_filter_config`. It's a list of string and consists of at most 10 items.
-{{% /md %}}</dd>
+    <dd>Reserved parameters of `parameter_filter_config`. It's a list of string and consists of at most 10 items.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2632,8 +2632,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not the `parameter_filter_config` is enable. Valid values are `on` and `off`. Default value is `off`.  
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not the `parameter_filter_config` is enable. Valid values are `on` and `off`. Default value is `off`.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2641,14 +2641,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Reserved parameters of `parameter_filter_config`. It's a list of string and consists of at most 10 items.
-{{% /md %}}</dd>
+    <dd>Reserved parameters of `parameter_filter_config`. It's a list of string and consists of at most 10 items.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2657,8 +2657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not the `parameter_filter_config` is enable. Valid values are `on` and `off`. Default value is `off`.  
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not the `parameter_filter_config` is enable. Valid values are `on` and `off`. Default value is `off`.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2666,14 +2666,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Reserved parameters of `parameter_filter_config`. It's a list of string and consists of at most 10 items.
-{{% /md %}}</dd>
+    <dd>Reserved parameters of `parameter_filter_config`. It's a list of string and consists of at most 10 items.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2682,8 +2682,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not the `parameter_filter_config` is enable. Valid values are `on` and `off`. Default value is `off`.  
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not the `parameter_filter_config` is enable. Valid values are `on` and `off`. Default value is `off`.  
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2691,29 +2691,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Reserved parameters of `parameter_filter_config`. It's a list of string and consists of at most 10 items.
-{{% /md %}}</dd>
+    <dd>Reserved parameters of `parameter_filter_config`. It's a list of string and consists of at most 10 items.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainreferconfig">Domain<wbr>Refer<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#DomainReferConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#DomainReferConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainReferConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cdn?tab=doc#DomainReferConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2722,8 +2722,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of domain names of the refer config.
-{{% /md %}}</dd>
+    <dd>A list of domain names of the refer config.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2731,8 +2731,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not to allow empty refer access. Valid values are `on` and `off`. Default value is `on`.
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not to allow empty refer access. Valid values are `on` and `off`. Default value is `on`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2740,14 +2740,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Refer type of the refer config. Valid values are `block` and `allow`. Default value is `block`.
-{{% /md %}}</dd>
+    <dd>Refer type of the refer config. Valid values are `block` and `allow`. Default value is `block`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2756,8 +2756,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of domain names of the refer config.
-{{% /md %}}</dd>
+    <dd>A list of domain names of the refer config.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2765,8 +2765,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not to allow empty refer access. Valid values are `on` and `off`. Default value is `on`.
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not to allow empty refer access. Valid values are `on` and `off`. Default value is `on`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2774,14 +2774,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Refer type of the refer config. Valid values are `block` and `allow`. Default value is `block`.
-{{% /md %}}</dd>
+    <dd>Refer type of the refer config. Valid values are `block` and `allow`. Default value is `block`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2790,8 +2790,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of domain names of the refer config.
-{{% /md %}}</dd>
+    <dd>A list of domain names of the refer config.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2799,8 +2799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not to allow empty refer access. Valid values are `on` and `off`. Default value is `on`.
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not to allow empty refer access. Valid values are `on` and `off`. Default value is `on`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2808,14 +2808,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Refer type of the refer config. Valid values are `block` and `allow`. Default value is `block`.
-{{% /md %}}</dd>
+    <dd>Refer type of the refer config. Valid values are `block` and `allow`. Default value is `block`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2824,8 +2824,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of domain names of the refer config.
-{{% /md %}}</dd>
+    <dd>A list of domain names of the refer config.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2833,8 +2833,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This parameter indicates whether or not to allow empty refer access. Valid values are `on` and `off`. Default value is `on`.
-{{% /md %}}</dd>
+    <dd>This parameter indicates whether or not to allow empty refer access. Valid values are `on` and `off`. Default value is `on`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2842,11 +2842,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Refer type of the refer config. Valid values are `block` and `allow`. Default value is `block`.
-{{% /md %}}</dd>
+    <dd>Refer type of the refer config. Valid values are `block` and `allow`. Default value is `block`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

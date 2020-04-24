@@ -16,22 +16,22 @@ git_sha: "e117538f1d6f9afc14c4d6c49f32e875e5293d6a"
 > please consult the source [`terraform-providers/terraform-provider-newrelic` repo](https://github.com/terraform-providers/terraform-provider-newrelic/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var newrelic = require("@pulumi/newrelic");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as newrelic from "@pulumi/newrelic";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

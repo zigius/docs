@@ -50,29 +50,29 @@ const example = pulumi.output(aws.getAmi({
 
 ## Using GetAmi {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAmi<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAmiArgs">GetAmiArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAmiResult">GetAmiResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_ami(</span>executable_users=None<span class="p">, </span>filters=None<span class="p">, </span>most_recent=None<span class="p">, </span>name_regex=None<span class="p">, </span>owners=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAmi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAmiArgs">GetAmiArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#LookupAmiResult">LookupAmiResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAmi </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAmiResult.html">GetAmiResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAmiArgs.html">GetAmiArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -80,7 +80,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -89,8 +89,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
-{{% /md %}}</dd>
+    <dd>List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -98,9 +98,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Limit search to users with *explicit* launch permission on
+    <dd>Limit search to users with *explicit* launch permission on
 the image. Valid items are the numeric account ID or `self`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -108,10 +108,10 @@ the image. Valid items are the numeric account ID or `self`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">List&lt;Get<wbr>Ami<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more name/value pairs to filter off of. There are
+    <dd>One or more name/value pairs to filter off of. There are
 several valid keys, for a full reference, check out
 [describe-images in the AWS CLI reference][1].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -119,9 +119,9 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent AMI.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -129,12 +129,12 @@ recent AMI.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to apply to the AMI list returned
+    <dd>A regex string to apply to the AMI list returned
 by AWS. This allows more advanced filtering not supported from the AWS API. This
 filtering is done locally on what AWS returns, and could have a performance
 impact if the result is large. It is recommended to combine this with other
 options to narrow down the list AWS returns.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -142,16 +142,16 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Any tags assigned to the image.
+    <dd>Any tags assigned to the image.
 * `tags.#.key` - The key name of the tag.
 * `tags.#.value` - The value of the tag.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -160,8 +160,8 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
-{{% /md %}}</dd>
+    <dd>List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -169,9 +169,9 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Limit search to users with *explicit* launch permission on
+    <dd>Limit search to users with *explicit* launch permission on
 the image. Valid items are the numeric account ID or `self`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -179,10 +179,10 @@ the image. Valid items are the numeric account ID or `self`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">[]Get<wbr>Ami<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}One or more name/value pairs to filter off of. There are
+    <dd>One or more name/value pairs to filter off of. There are
 several valid keys, for a full reference, check out
 [describe-images in the AWS CLI reference][1].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -190,9 +190,9 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent AMI.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -200,12 +200,12 @@ recent AMI.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to apply to the AMI list returned
+    <dd>A regex string to apply to the AMI list returned
 by AWS. This allows more advanced filtering not supported from the AWS API. This
 filtering is done locally on what AWS returns, and could have a performance
 impact if the result is large. It is recommended to combine this with other
 options to narrow down the list AWS returns.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -213,16 +213,16 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Any tags assigned to the image.
+    <dd>Any tags assigned to the image.
 * `tags.#.key` - The key name of the tag.
 * `tags.#.value` - The value of the tag.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -231,8 +231,8 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
-{{% /md %}}</dd>
+    <dd>List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,9 +240,9 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Limit search to users with *explicit* launch permission on
+    <dd>Limit search to users with *explicit* launch permission on
 the image. Valid items are the numeric account ID or `self`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,10 +250,10 @@ the image. Valid items are the numeric account ID or `self`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">Get<wbr>Ami<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more name/value pairs to filter off of. There are
+    <dd>One or more name/value pairs to filter off of. There are
 several valid keys, for a full reference, check out
 [describe-images in the AWS CLI reference][1].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,9 +261,9 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent AMI.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,12 +271,12 @@ recent AMI.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to apply to the AMI list returned
+    <dd>A regex string to apply to the AMI list returned
 by AWS. This allows more advanced filtering not supported from the AWS API. This
 filtering is done locally on what AWS returns, and could have a performance
 impact if the result is large. It is recommended to combine this with other
 options to narrow down the list AWS returns.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,16 +284,16 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Any tags assigned to the image.
+    <dd>Any tags assigned to the image.
 * `tags.#.key` - The key name of the tag.
 * `tags.#.value` - The value of the tag.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -302,8 +302,8 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
-{{% /md %}}</dd>
+    <dd>List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,9 +311,9 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Limit search to users with *explicit* launch permission on
+    <dd>Limit search to users with *explicit* launch permission on
 the image. Valid items are the numeric account ID or `self`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,10 +321,10 @@ the image. Valid items are the numeric account ID or `self`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">List[Get<wbr>Ami<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}One or more name/value pairs to filter off of. There are
+    <dd>One or more name/value pairs to filter off of. There are
 several valid keys, for a full reference, check out
 [describe-images in the AWS CLI reference][1].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,9 +332,9 @@ several valid keys, for a full reference, check out
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent AMI.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,12 +342,12 @@ recent AMI.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to apply to the AMI list returned
+    <dd>A regex string to apply to the AMI list returned
 by AWS. This allows more advanced filtering not supported from the AWS API. This
 filtering is done locally on what AWS returns, and could have a performance
 impact if the result is large. It is recommended to combine this with other
 options to narrow down the list AWS returns.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,13 +355,13 @@ options to narrow down the list AWS returns.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Any tags assigned to the image.
+    <dd>Any tags assigned to the image.
 * `tags.#.key` - The key name of the tag.
 * `tags.#.value` - The value of the tag.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -377,7 +377,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -386,8 +386,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The OS architecture of the AMI (ie: `i386` or `x86_64`).
-{{% /md %}}</dd>
+    <dd>The OS architecture of the AMI (ie: `i386` or `x86_64`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -395,7 +395,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiblockdevicemapping">List&lt;Get<wbr>Ami<wbr>Block<wbr>Device<wbr>Mapping&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The block device mappings of the AMI.
+    <dd>The block device mappings of the AMI.
 * `block_device_mappings.#.device_name` - The physical name of the device.
 * `block_device_mappings.#.ebs.delete_on_termination` - `true` if the EBS volume
 will be deleted on termination.
@@ -410,7 +410,7 @@ not a provisioned IOPS image, otherwise the supported IOPS count.
 included in the block device mapping of the AMI.
 * `block_device_mappings.#.virtual_name` - The virtual device name (for
 instance stores).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -418,8 +418,8 @@ instance stores).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time the image was created.
-{{% /md %}}</dd>
+    <dd>The date and time the image was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -427,9 +427,9 @@ instance stores).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the AMI that was provided during image
+    <dd>The description of the AMI that was provided during image
 creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -437,8 +437,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hypervisor type of the image.
-{{% /md %}}</dd>
+    <dd>The hypervisor type of the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -446,8 +446,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -455,8 +455,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AMI. Should be the same as the resource `id`.
-{{% /md %}}</dd>
+    <dd>The ID of the AMI. Should be the same as the resource `id`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -464,8 +464,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the AMI.
-{{% /md %}}</dd>
+    <dd>The location of the AMI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -473,9 +473,9 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account alias (for example, `amazon`, `self`) or
+    <dd>The AWS account alias (for example, `amazon`, `self`) or
 the AWS account ID of the AMI owner.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -483,8 +483,8 @@ the AWS account ID of the AMI owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of image.
-{{% /md %}}</dd>
+    <dd>The type of image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -492,9 +492,9 @@ the AWS account ID of the AMI owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel associated with the image, if any. Only applicable
+    <dd>The kernel associated with the image, if any. Only applicable
 for machine images.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -502,8 +502,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AMI that was provided during image creation.
-{{% /md %}}</dd>
+    <dd>The name of the AMI that was provided during image creation.
+</dd>
 
     <dt class="property-"
             title="">
@@ -511,8 +511,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the image owner.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the image owner.
+</dd>
 
     <dt class="property-"
             title="">
@@ -520,7 +520,7 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -528,8 +528,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value is Windows for `Windows` AMIs; otherwise blank.
-{{% /md %}}</dd>
+    <dd>The value is Windows for `Windows` AMIs; otherwise blank.
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,10 +537,10 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiproductcode">List&lt;Get<wbr>Ami<wbr>Product<wbr>Code&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Any product codes associated with the AMI.
+    <dd>Any product codes associated with the AMI.
 * `product_codes.#.product_code_id` - The product code.
 * `product_codes.#.product_code_type` - The type of product code.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -548,8 +548,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}`true` if the image has public launch permissions.
-{{% /md %}}</dd>
+    <dd>`true` if the image has public launch permissions.
+</dd>
 
     <dt class="property-"
             title="">
@@ -557,9 +557,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAM disk associated with the image, if any. Only applicable
+    <dd>The RAM disk associated with the image, if any. Only applicable
 for machine images.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -567,8 +567,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The device name of the root device.
-{{% /md %}}</dd>
+    <dd>The device name of the root device.
+</dd>
 
     <dt class="property-"
             title="">
@@ -576,8 +576,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of root device (ie: `ebs` or `instance-store`).
-{{% /md %}}</dd>
+    <dd>The type of root device (ie: `ebs` or `instance-store`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -585,9 +585,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot id associated with the root device, if any
+    <dd>The snapshot id associated with the root device, if any
 (only applies to `ebs` root devices).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,9 +604,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the AMI. If the state is `available`, the image
+    <dd>The current state of the AMI. If the state is `available`, the image
 is successfully registered and can be used to launch an instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -614,10 +614,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Describes a state change. Fields are `UNSET` if not available.
+    <dd>Describes a state change. Fields are `UNSET` if not available.
 * `state_reason.code` - The reason code for the state change.
 * `state_reason.message` - The message for the state change.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -625,10 +625,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Any tags assigned to the image.
+    <dd>Any tags assigned to the image.
 * `tags.#.key` - The key name of the tag.
 * `tags.#.value` - The value of the tag.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -636,9 +636,9 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtualization of the AMI (ie: `hvm` or
+    <dd>The type of virtualization of the AMI (ie: `hvm` or
 `paravirtual`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -646,7 +646,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -654,7 +654,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">List&lt;Get<wbr>Ami<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -662,7 +662,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -670,13 +670,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -685,8 +685,8 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OS architecture of the AMI (ie: `i386` or `x86_64`).
-{{% /md %}}</dd>
+    <dd>The OS architecture of the AMI (ie: `i386` or `x86_64`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -694,7 +694,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiblockdevicemapping">[]Get<wbr>Ami<wbr>Block<wbr>Device<wbr>Mapping</a></span>
     </dt>
-    <dd>{{% md %}}The block device mappings of the AMI.
+    <dd>The block device mappings of the AMI.
 * `block_device_mappings.#.device_name` - The physical name of the device.
 * `block_device_mappings.#.ebs.delete_on_termination` - `true` if the EBS volume
 will be deleted on termination.
@@ -709,7 +709,7 @@ not a provisioned IOPS image, otherwise the supported IOPS count.
 included in the block device mapping of the AMI.
 * `block_device_mappings.#.virtual_name` - The virtual device name (for
 instance stores).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -717,8 +717,8 @@ instance stores).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time the image was created.
-{{% /md %}}</dd>
+    <dd>The date and time the image was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -726,9 +726,9 @@ instance stores).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the AMI that was provided during image
+    <dd>The description of the AMI that was provided during image
 creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -736,8 +736,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hypervisor type of the image.
-{{% /md %}}</dd>
+    <dd>The hypervisor type of the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -745,8 +745,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -754,8 +754,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AMI. Should be the same as the resource `id`.
-{{% /md %}}</dd>
+    <dd>The ID of the AMI. Should be the same as the resource `id`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -763,8 +763,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the AMI.
-{{% /md %}}</dd>
+    <dd>The location of the AMI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -772,9 +772,9 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account alias (for example, `amazon`, `self`) or
+    <dd>The AWS account alias (for example, `amazon`, `self`) or
 the AWS account ID of the AMI owner.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -782,8 +782,8 @@ the AWS account ID of the AMI owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of image.
-{{% /md %}}</dd>
+    <dd>The type of image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -791,9 +791,9 @@ the AWS account ID of the AMI owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel associated with the image, if any. Only applicable
+    <dd>The kernel associated with the image, if any. Only applicable
 for machine images.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -801,8 +801,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AMI that was provided during image creation.
-{{% /md %}}</dd>
+    <dd>The name of the AMI that was provided during image creation.
+</dd>
 
     <dt class="property-"
             title="">
@@ -810,8 +810,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the image owner.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the image owner.
+</dd>
 
     <dt class="property-"
             title="">
@@ -819,7 +819,7 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -827,8 +827,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value is Windows for `Windows` AMIs; otherwise blank.
-{{% /md %}}</dd>
+    <dd>The value is Windows for `Windows` AMIs; otherwise blank.
+</dd>
 
     <dt class="property-"
             title="">
@@ -836,10 +836,10 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiproductcode">[]Get<wbr>Ami<wbr>Product<wbr>Code</a></span>
     </dt>
-    <dd>{{% md %}}Any product codes associated with the AMI.
+    <dd>Any product codes associated with the AMI.
 * `product_codes.#.product_code_id` - The product code.
 * `product_codes.#.product_code_type` - The type of product code.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -847,8 +847,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}`true` if the image has public launch permissions.
-{{% /md %}}</dd>
+    <dd>`true` if the image has public launch permissions.
+</dd>
 
     <dt class="property-"
             title="">
@@ -856,9 +856,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAM disk associated with the image, if any. Only applicable
+    <dd>The RAM disk associated with the image, if any. Only applicable
 for machine images.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -866,8 +866,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The device name of the root device.
-{{% /md %}}</dd>
+    <dd>The device name of the root device.
+</dd>
 
     <dt class="property-"
             title="">
@@ -875,8 +875,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of root device (ie: `ebs` or `instance-store`).
-{{% /md %}}</dd>
+    <dd>The type of root device (ie: `ebs` or `instance-store`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -884,9 +884,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot id associated with the root device, if any
+    <dd>The snapshot id associated with the root device, if any
 (only applies to `ebs` root devices).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -894,8 +894,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -903,9 +903,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the AMI. If the state is `available`, the image
+    <dd>The current state of the AMI. If the state is `available`, the image
 is successfully registered and can be used to launch an instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -913,10 +913,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Describes a state change. Fields are `UNSET` if not available.
+    <dd>Describes a state change. Fields are `UNSET` if not available.
 * `state_reason.code` - The reason code for the state change.
 * `state_reason.message` - The message for the state change.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -924,10 +924,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Any tags assigned to the image.
+    <dd>Any tags assigned to the image.
 * `tags.#.key` - The key name of the tag.
 * `tags.#.value` - The value of the tag.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -935,9 +935,9 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtualization of the AMI (ie: `hvm` or
+    <dd>The type of virtualization of the AMI (ie: `hvm` or
 `paravirtual`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -945,7 +945,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -953,7 +953,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">[]Get<wbr>Ami<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -961,7 +961,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -969,13 +969,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -984,8 +984,8 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OS architecture of the AMI (ie: `i386` or `x86_64`).
-{{% /md %}}</dd>
+    <dd>The OS architecture of the AMI (ie: `i386` or `x86_64`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -993,7 +993,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiblockdevicemapping">Get<wbr>Ami<wbr>Block<wbr>Device<wbr>Mapping[]</a></span>
     </dt>
-    <dd>{{% md %}}The block device mappings of the AMI.
+    <dd>The block device mappings of the AMI.
 * `block_device_mappings.#.device_name` - The physical name of the device.
 * `block_device_mappings.#.ebs.delete_on_termination` - `true` if the EBS volume
 will be deleted on termination.
@@ -1008,7 +1008,7 @@ not a provisioned IOPS image, otherwise the supported IOPS count.
 included in the block device mapping of the AMI.
 * `block_device_mappings.#.virtual_name` - The virtual device name (for
 instance stores).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1016,8 +1016,8 @@ instance stores).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date and time the image was created.
-{{% /md %}}</dd>
+    <dd>The date and time the image was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1025,9 +1025,9 @@ instance stores).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the AMI that was provided during image
+    <dd>The description of the AMI that was provided during image
 creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1035,8 +1035,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hypervisor type of the image.
-{{% /md %}}</dd>
+    <dd>The hypervisor type of the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1044,8 +1044,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1053,8 +1053,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AMI. Should be the same as the resource `id`.
-{{% /md %}}</dd>
+    <dd>The ID of the AMI. Should be the same as the resource `id`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1062,8 +1062,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the AMI.
-{{% /md %}}</dd>
+    <dd>The location of the AMI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1071,9 +1071,9 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account alias (for example, `amazon`, `self`) or
+    <dd>The AWS account alias (for example, `amazon`, `self`) or
 the AWS account ID of the AMI owner.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1081,8 +1081,8 @@ the AWS account ID of the AMI owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of image.
-{{% /md %}}</dd>
+    <dd>The type of image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1090,9 +1090,9 @@ the AWS account ID of the AMI owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel associated with the image, if any. Only applicable
+    <dd>The kernel associated with the image, if any. Only applicable
 for machine images.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1100,8 +1100,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AMI that was provided during image creation.
-{{% /md %}}</dd>
+    <dd>The name of the AMI that was provided during image creation.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1109,8 +1109,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the image owner.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the image owner.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1118,7 +1118,7 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1126,8 +1126,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value is Windows for `Windows` AMIs; otherwise blank.
-{{% /md %}}</dd>
+    <dd>The value is Windows for `Windows` AMIs; otherwise blank.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1135,10 +1135,10 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiproductcode">Get<wbr>Ami<wbr>Product<wbr>Code[]</a></span>
     </dt>
-    <dd>{{% md %}}Any product codes associated with the AMI.
+    <dd>Any product codes associated with the AMI.
 * `product_codes.#.product_code_id` - The product code.
 * `product_codes.#.product_code_type` - The type of product code.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1146,8 +1146,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}`true` if the image has public launch permissions.
-{{% /md %}}</dd>
+    <dd>`true` if the image has public launch permissions.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1155,9 +1155,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAM disk associated with the image, if any. Only applicable
+    <dd>The RAM disk associated with the image, if any. Only applicable
 for machine images.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1165,8 +1165,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The device name of the root device.
-{{% /md %}}</dd>
+    <dd>The device name of the root device.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1174,8 +1174,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of root device (ie: `ebs` or `instance-store`).
-{{% /md %}}</dd>
+    <dd>The type of root device (ie: `ebs` or `instance-store`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1183,9 +1183,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot id associated with the root device, if any
+    <dd>The snapshot id associated with the root device, if any
 (only applies to `ebs` root devices).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1193,8 +1193,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1202,9 +1202,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the AMI. If the state is `available`, the image
+    <dd>The current state of the AMI. If the state is `available`, the image
 is successfully registered and can be used to launch an instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1212,10 +1212,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Describes a state change. Fields are `UNSET` if not available.
+    <dd>Describes a state change. Fields are `UNSET` if not available.
 * `state_reason.code` - The reason code for the state change.
 * `state_reason.message` - The message for the state change.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1223,10 +1223,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Any tags assigned to the image.
+    <dd>Any tags assigned to the image.
 * `tags.#.key` - The key name of the tag.
 * `tags.#.value` - The value of the tag.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1234,9 +1234,9 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtualization of the AMI (ie: `hvm` or
+    <dd>The type of virtualization of the AMI (ie: `hvm` or
 `paravirtual`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1244,7 +1244,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1252,7 +1252,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">Get<wbr>Ami<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1260,7 +1260,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1268,13 +1268,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1283,8 +1283,8 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The OS architecture of the AMI (ie: `i386` or `x86_64`).
-{{% /md %}}</dd>
+    <dd>The OS architecture of the AMI (ie: `i386` or `x86_64`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1292,7 +1292,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiblockdevicemapping">List[Get<wbr>Ami<wbr>Block<wbr>Device<wbr>Mapping]</a></span>
     </dt>
-    <dd>{{% md %}}The block device mappings of the AMI.
+    <dd>The block device mappings of the AMI.
 * `block_device_mappings.#.device_name` - The physical name of the device.
 * `block_device_mappings.#.ebs.delete_on_termination` - `true` if the EBS volume
 will be deleted on termination.
@@ -1307,7 +1307,7 @@ not a provisioned IOPS image, otherwise the supported IOPS count.
 included in the block device mapping of the AMI.
 * `block_device_mappings.#.virtual_name` - The virtual device name (for
 instance stores).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1315,8 +1315,8 @@ instance stores).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date and time the image was created.
-{{% /md %}}</dd>
+    <dd>The date and time the image was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1324,9 +1324,9 @@ instance stores).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the AMI that was provided during image
+    <dd>The description of the AMI that was provided during image
 creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1334,8 +1334,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hypervisor type of the image.
-{{% /md %}}</dd>
+    <dd>The hypervisor type of the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1343,8 +1343,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1352,8 +1352,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AMI. Should be the same as the resource `id`.
-{{% /md %}}</dd>
+    <dd>The ID of the AMI. Should be the same as the resource `id`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1361,8 +1361,8 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location of the AMI.
-{{% /md %}}</dd>
+    <dd>The location of the AMI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1370,9 +1370,9 @@ creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account alias (for example, `amazon`, `self`) or
+    <dd>The AWS account alias (for example, `amazon`, `self`) or
 the AWS account ID of the AMI owner.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1380,8 +1380,8 @@ the AWS account ID of the AMI owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of image.
-{{% /md %}}</dd>
+    <dd>The type of image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1389,9 +1389,9 @@ the AWS account ID of the AMI owner.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The kernel associated with the image, if any. Only applicable
+    <dd>The kernel associated with the image, if any. Only applicable
 for machine images.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1399,8 +1399,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AMI that was provided during image creation.
-{{% /md %}}</dd>
+    <dd>The name of the AMI that was provided during image creation.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1408,8 +1408,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the image owner.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the image owner.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1417,7 +1417,7 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1425,8 +1425,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value is Windows for `Windows` AMIs; otherwise blank.
-{{% /md %}}</dd>
+    <dd>The value is Windows for `Windows` AMIs; otherwise blank.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1434,10 +1434,10 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiproductcode">List[Get<wbr>Ami<wbr>Product<wbr>Code]</a></span>
     </dt>
-    <dd>{{% md %}}Any product codes associated with the AMI.
+    <dd>Any product codes associated with the AMI.
 * `product_codes.#.product_code_id` - The product code.
 * `product_codes.#.product_code_type` - The type of product code.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1445,8 +1445,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}`true` if the image has public launch permissions.
-{{% /md %}}</dd>
+    <dd>`true` if the image has public launch permissions.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1454,9 +1454,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RAM disk associated with the image, if any. Only applicable
+    <dd>The RAM disk associated with the image, if any. Only applicable
 for machine images.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1464,8 +1464,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The device name of the root device.
-{{% /md %}}</dd>
+    <dd>The device name of the root device.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1473,8 +1473,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of root device (ie: `ebs` or `instance-store`).
-{{% /md %}}</dd>
+    <dd>The type of root device (ie: `ebs` or `instance-store`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1482,9 +1482,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The snapshot id associated with the root device, if any
+    <dd>The snapshot id associated with the root device, if any
 (only applies to `ebs` root devices).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1492,8 +1492,8 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether enhanced networking is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether enhanced networking is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1501,9 +1501,9 @@ for machine images.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the AMI. If the state is `available`, the image
+    <dd>The current state of the AMI. If the state is `available`, the image
 is successfully registered and can be used to launch an instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1511,10 +1511,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Describes a state change. Fields are `UNSET` if not available.
+    <dd>Describes a state change. Fields are `UNSET` if not available.
 * `state_reason.code` - The reason code for the state change.
 * `state_reason.message` - The message for the state change.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1522,10 +1522,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Any tags assigned to the image.
+    <dd>Any tags assigned to the image.
 * `tags.#.key` - The key name of the tag.
 * `tags.#.value` - The value of the tag.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1533,9 +1533,9 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtualization of the AMI (ie: `hvm` or
+    <dd>The type of virtualization of the AMI (ie: `hvm` or
 `paravirtual`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1543,7 +1543,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1551,7 +1551,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">List[Get<wbr>Ami<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1559,7 +1559,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1567,10 +1567,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1583,18 +1583,18 @@ is successfully registered and can be used to launch an instance.
 
 
 <h4 id="getamiblockdevicemapping">Get<wbr>Ami<wbr>Block<wbr>Device<wbr>Mapping</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetAmiBlockDeviceMapping">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAmiBlockDeviceMapping">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1603,7 +1603,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1611,7 +1611,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1619,7 +1619,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1627,13 +1627,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1642,7 +1642,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1650,7 +1650,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1658,7 +1658,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1666,13 +1666,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1681,7 +1681,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1689,7 +1689,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1697,7 +1697,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1705,13 +1705,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1720,7 +1720,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1728,7 +1728,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1736,7 +1736,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1744,28 +1744,28 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getamifilter">Get<wbr>Ami<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetAmiFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetAmiFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAmiFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAmiFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1774,8 +1774,8 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AMI that was provided during image creation.
-{{% /md %}}</dd>
+    <dd>The name of the AMI that was provided during image creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1783,13 +1783,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1798,8 +1798,8 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AMI that was provided during image creation.
-{{% /md %}}</dd>
+    <dd>The name of the AMI that was provided during image creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1807,13 +1807,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1822,8 +1822,8 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AMI that was provided during image creation.
-{{% /md %}}</dd>
+    <dd>The name of the AMI that was provided during image creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1831,13 +1831,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1846,8 +1846,8 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AMI that was provided during image creation.
-{{% /md %}}</dd>
+    <dd>The name of the AMI that was provided during image creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1855,28 +1855,28 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getamiproductcode">Get<wbr>Ami<wbr>Product<wbr>Code</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetAmiProductCode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAmiProductCode">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1885,7 +1885,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1893,13 +1893,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1908,7 +1908,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1916,13 +1916,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1931,7 +1931,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1939,13 +1939,13 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1954,7 +1954,7 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1962,10 +1962,10 @@ is successfully registered and can be used to launch an instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

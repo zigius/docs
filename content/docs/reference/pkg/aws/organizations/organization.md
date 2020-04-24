@@ -35,26 +35,26 @@ const org = new aws.organizations.Organization("org", {
 
 
 ## Create a Organization Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/organizations/#Organization">Organization</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/organizations/#OrganizationArgs">OrganizationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Organization</span><span class="p">(resource_name, opts=None, </span>aws_service_access_principals=None<span class="p">, </span>enabled_policy_types=None<span class="p">, </span>feature_set=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewOrganization<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/organizations?tab=doc#OrganizationArgs">OrganizationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/organizations?tab=doc#Organization">Organization</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Organizations.Organization.html">Organization</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Organizations.OrganizationArgs.html">OrganizationArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -91,9 +91,9 @@ const org = new aws.organizations.Organization("org", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -111,9 +111,9 @@ const org = new aws.organizations.Organization("org", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -160,9 +160,9 @@ const org = new aws.organizations.Organization("org", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -199,7 +199,7 @@ const org = new aws.organizations.Organization("org", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Organization Resource Properties {#properties}
 
@@ -212,7 +212,7 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -221,8 +221,8 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
-{{% /md %}}</dd>
+    <dd>List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,8 +230,8 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
-{{% /md %}}</dd>
+    <dd>List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,14 +239,14 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify "ALL" (default) or "CONSOLIDATED_BILLING".
-{{% /md %}}</dd>
+    <dd>Specify "ALL" (default) or "CONSOLIDATED_BILLING".
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -255,8 +255,8 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
-{{% /md %}}</dd>
+    <dd>List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
-{{% /md %}}</dd>
+    <dd>List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,14 +273,14 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify "ALL" (default) or "CONSOLIDATED_BILLING".
-{{% /md %}}</dd>
+    <dd>Specify "ALL" (default) or "CONSOLIDATED_BILLING".
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -289,8 +289,8 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
-{{% /md %}}</dd>
+    <dd>List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,8 +298,8 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
-{{% /md %}}</dd>
+    <dd>List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,14 +307,14 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify "ALL" (default) or "CONSOLIDATED_BILLING".
-{{% /md %}}</dd>
+    <dd>Specify "ALL" (default) or "CONSOLIDATED_BILLING".
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -323,8 +323,8 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
-{{% /md %}}</dd>
+    <dd>List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
-{{% /md %}}</dd>
+    <dd>List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,11 +341,11 @@ The Organization resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify "ALL" (default) or "CONSOLIDATED_BILLING".
-{{% /md %}}</dd>
+    <dd>Specify "ALL" (default) or "CONSOLIDATED_BILLING".
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -359,7 +359,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -368,8 +368,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationaccount">List&lt;Organization<wbr>Account&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -377,8 +377,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-"
             title="">
@@ -386,7 +386,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -394,8 +394,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the master account
-{{% /md %}}</dd>
+    <dd>ARN of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -403,8 +403,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address of the master account
-{{% /md %}}</dd>
+    <dd>Email address of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -412,8 +412,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the master account
-{{% /md %}}</dd>
+    <dd>Identifier of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -421,8 +421,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationnonmasteraccount">List&lt;Organization<wbr>Non<wbr>Master<wbr>Account&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -430,14 +430,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationroot">List&lt;Organization<wbr>Root&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of organization roots. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization roots. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -446,8 +446,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationaccount">[]Organization<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -455,8 +455,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-"
             title="">
@@ -464,7 +464,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -472,8 +472,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the master account
-{{% /md %}}</dd>
+    <dd>ARN of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -481,8 +481,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address of the master account
-{{% /md %}}</dd>
+    <dd>Email address of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -490,8 +490,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the master account
-{{% /md %}}</dd>
+    <dd>Identifier of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -499,8 +499,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationnonmasteraccount">[]Organization<wbr>Non<wbr>Master<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -508,14 +508,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationroot">[]Organization<wbr>Root</a></span>
     </dt>
-    <dd>{{% md %}}List of organization roots. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization roots. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -524,8 +524,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationaccount">Organization<wbr>Account[]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -533,8 +533,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-"
             title="">
@@ -542,7 +542,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -550,8 +550,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the master account
-{{% /md %}}</dd>
+    <dd>ARN of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -559,8 +559,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address of the master account
-{{% /md %}}</dd>
+    <dd>Email address of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -568,8 +568,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the master account
-{{% /md %}}</dd>
+    <dd>Identifier of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -577,8 +577,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationnonmasteraccount">Organization<wbr>Non<wbr>Master<wbr>Account[]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -586,14 +586,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationroot">Organization<wbr>Root[]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization roots. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization roots. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -602,8 +602,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationaccount">List[Organization<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -611,8 +611,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-"
             title="">
@@ -620,7 +620,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -628,8 +628,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the master account
-{{% /md %}}</dd>
+    <dd>ARN of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -637,8 +637,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Email address of the master account
-{{% /md %}}</dd>
+    <dd>Email address of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -646,8 +646,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the master account
-{{% /md %}}</dd>
+    <dd>Identifier of the master account
+</dd>
 
     <dt class="property-"
             title="">
@@ -655,8 +655,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationnonmasteraccount">List[Organization<wbr>Non<wbr>Master<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -664,11 +664,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationroot">List[Organization<wbr>Root]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization roots. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization roots. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -679,25 +679,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Organization Resource {#look-up}
 
 Get an existing Organization resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/organizations/#OrganizationState">OrganizationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/organizations/#Organization">Organization</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>accounts=None<span class="p">, </span>arn=None<span class="p">, </span>aws_service_access_principals=None<span class="p">, </span>enabled_policy_types=None<span class="p">, </span>feature_set=None<span class="p">, </span>master_account_arn=None<span class="p">, </span>master_account_email=None<span class="p">, </span>master_account_id=None<span class="p">, </span>non_master_accounts=None<span class="p">, </span>roots=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetOrganization<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/organizations?tab=doc#OrganizationState">OrganizationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/organizations?tab=doc#Organization">Organization</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Organizations.Organization.html">Organization</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Organizations.OrganizationState.html">OrganizationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -722,9 +722,9 @@ Get an existing Organization resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -737,36 +737,9 @@ Get an existing Organization resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -791,13 +764,40 @@ Get an existing Organization resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -806,8 +806,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationaccount">List&lt;Organization<wbr>Account<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -815,8 +815,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -824,8 +824,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
-{{% /md %}}</dd>
+    <dd>List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -833,8 +833,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
-{{% /md %}}</dd>
+    <dd>List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -842,8 +842,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify "ALL" (default) or "CONSOLIDATED_BILLING".
-{{% /md %}}</dd>
+    <dd>Specify "ALL" (default) or "CONSOLIDATED_BILLING".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,8 +851,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the master account
-{{% /md %}}</dd>
+    <dd>ARN of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -860,8 +860,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address of the master account
-{{% /md %}}</dd>
+    <dd>Email address of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -869,8 +869,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the master account
-{{% /md %}}</dd>
+    <dd>Identifier of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -878,8 +878,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationnonmasteraccount">List&lt;Organization<wbr>Non<wbr>Master<wbr>Account<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -887,14 +887,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationroot">List&lt;Organization<wbr>Root<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of organization roots. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization roots. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -903,8 +903,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationaccount">[]Organization<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -912,8 +912,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,8 +921,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
-{{% /md %}}</dd>
+    <dd>List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -930,8 +930,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
-{{% /md %}}</dd>
+    <dd>List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,8 +939,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify "ALL" (default) or "CONSOLIDATED_BILLING".
-{{% /md %}}</dd>
+    <dd>Specify "ALL" (default) or "CONSOLIDATED_BILLING".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -948,8 +948,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the master account
-{{% /md %}}</dd>
+    <dd>ARN of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -957,8 +957,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address of the master account
-{{% /md %}}</dd>
+    <dd>Email address of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -966,8 +966,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the master account
-{{% /md %}}</dd>
+    <dd>Identifier of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -975,8 +975,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationnonmasteraccount">[]Organization<wbr>Non<wbr>Master<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -984,14 +984,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationroot">[]Organization<wbr>Root</a></span>
     </dt>
-    <dd>{{% md %}}List of organization roots. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization roots. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1000,8 +1000,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationaccount">Organization<wbr>Account[]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1009,8 +1009,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1018,8 +1018,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
-{{% /md %}}</dd>
+    <dd>List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1027,8 +1027,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
-{{% /md %}}</dd>
+    <dd>List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,8 +1036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify "ALL" (default) or "CONSOLIDATED_BILLING".
-{{% /md %}}</dd>
+    <dd>Specify "ALL" (default) or "CONSOLIDATED_BILLING".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the master account
-{{% /md %}}</dd>
+    <dd>ARN of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,8 +1054,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email address of the master account
-{{% /md %}}</dd>
+    <dd>Email address of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1063,8 +1063,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the master account
-{{% /md %}}</dd>
+    <dd>Identifier of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,8 +1072,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationnonmasteraccount">Organization<wbr>Non<wbr>Master<wbr>Account[]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,14 +1081,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationroot">Organization<wbr>Root[]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization roots. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization roots. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1097,8 +1097,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationaccount">List[Organization<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1106,8 +1106,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,8 +1115,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
-{{% /md %}}</dd>
+    <dd>List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1124,8 +1124,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
-{{% /md %}}</dd>
+    <dd>List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,8 +1133,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify "ALL" (default) or "CONSOLIDATED_BILLING".
-{{% /md %}}</dd>
+    <dd>Specify "ALL" (default) or "CONSOLIDATED_BILLING".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,8 +1142,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the master account
-{{% /md %}}</dd>
+    <dd>ARN of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,8 +1151,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Email address of the master account
-{{% /md %}}</dd>
+    <dd>Email address of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,8 +1160,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the master account
-{{% /md %}}</dd>
+    <dd>Identifier of the master account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,8 +1169,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationnonmasteraccount">List[Organization<wbr>Non<wbr>Master<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,11 +1178,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationroot">List[Organization<wbr>Root]</a></span>
     </dt>
-    <dd>{{% md %}}List of organization roots. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of organization roots. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1197,18 +1197,18 @@ The following state arguments are supported:
 
 
 <h4 id="organizationaccount">Organization<wbr>Account</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#OrganizationAccount">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/organizations?tab=doc#OrganizationAccountOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1217,8 +1217,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Email of the account
-{{% /md %}}</dd>
+    <dd>Email of the account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,14 +1253,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email of the account
-{{% /md %}}</dd>
+    <dd>Email of the account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,14 +1305,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1321,8 +1321,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1330,8 +1330,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email of the account
-{{% /md %}}</dd>
+    <dd>Email of the account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,8 +1339,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1348,8 +1348,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1357,14 +1357,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1373,8 +1373,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,8 +1382,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Email of the account
-{{% /md %}}</dd>
+    <dd>Email of the account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1391,8 +1391,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,8 +1400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1409,29 +1409,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="organizationnonmasteraccount">Organization<wbr>Non<wbr>Master<wbr>Account</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#OrganizationNonMasterAccount">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/organizations?tab=doc#OrganizationNonMasterAccountOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1440,8 +1440,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1449,8 +1449,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Email of the account
-{{% /md %}}</dd>
+    <dd>Email of the account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1458,8 +1458,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1467,8 +1467,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1476,14 +1476,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1492,8 +1492,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,8 +1501,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email of the account
-{{% /md %}}</dd>
+    <dd>Email of the account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1510,8 +1510,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,8 +1519,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,14 +1528,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1544,8 +1544,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1553,8 +1553,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Email of the account
-{{% /md %}}</dd>
+    <dd>Email of the account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,8 +1562,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,8 +1571,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1580,14 +1580,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1596,8 +1596,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,8 +1605,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Email of the account
-{{% /md %}}</dd>
+    <dd>Email of the account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1614,8 +1614,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1623,8 +1623,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1632,29 +1632,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="organizationroot">Organization<wbr>Root</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#OrganizationRoot">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/organizations?tab=doc#OrganizationRootOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1663,8 +1663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1672,8 +1672,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1681,8 +1681,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,14 +1690,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationrootpolicytype">List&lt;Organization<wbr>Root<wbr>Policy<wbr>Type<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of policy types enabled for this root. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of policy types enabled for this root. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1706,8 +1706,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1715,8 +1715,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1724,8 +1724,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,14 +1733,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationrootpolicytype">[]Organization<wbr>Root<wbr>Policy<wbr>Type</a></span>
     </dt>
-    <dd>{{% md %}}List of policy types enabled for this root. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of policy types enabled for this root. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1749,8 +1749,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1758,8 +1758,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1767,8 +1767,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1776,14 +1776,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationrootpolicytype">Organization<wbr>Root<wbr>Policy<wbr>Type[]</a></span>
     </dt>
-    <dd>{{% md %}}List of policy types enabled for this root. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of policy types enabled for this root. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1792,8 +1792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the root
-{{% /md %}}</dd>
+    <dd>ARN of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1801,8 +1801,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifier of the root
-{{% /md %}}</dd>
+    <dd>Identifier of the root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,8 +1810,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the policy type
-{{% /md %}}</dd>
+    <dd>The name of the policy type
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1819,29 +1819,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#organizationrootpolicytype">List[Organization<wbr>Root<wbr>Policy<wbr>Type]</a></span>
     </dt>
-    <dd>{{% md %}}List of policy types enabled for this root. All elements have these attributes:
-{{% /md %}}</dd>
+    <dd>List of policy types enabled for this root. All elements have these attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="organizationrootpolicytype">Organization<wbr>Root<wbr>Policy<wbr>Type</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#OrganizationRootPolicyType">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/organizations?tab=doc#OrganizationRootPolicyTypeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1850,8 +1850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1859,13 +1859,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1874,8 +1874,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1883,13 +1883,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1898,8 +1898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1907,13 +1907,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1922,8 +1922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the policy type as it relates to the associated root
-{{% /md %}}</dd>
+    <dd>The status of the policy type as it relates to the associated root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1931,10 +1931,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

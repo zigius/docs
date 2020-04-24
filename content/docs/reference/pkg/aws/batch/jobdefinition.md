@@ -74,26 +74,26 @@ const test = new aws.batch.JobDefinition("test", {
 
 
 ## Create a JobDefinition Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/batch/#JobDefinition">JobDefinition</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/batch/#JobDefinitionArgs">JobDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">JobDefinition</span><span class="p">(resource_name, opts=None, </span>container_properties=None<span class="p">, </span>name=None<span class="p">, </span>parameters=None<span class="p">, </span>retry_strategy=None<span class="p">, </span>timeout=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewJobDefinition<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#JobDefinitionArgs">JobDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#JobDefinition">JobDefinition</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Batch.JobDefinition.html">JobDefinition</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Batch.JobDefinitionArgs.html">JobDefinitionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -130,9 +130,9 @@ const test = new aws.batch.JobDefinition("test", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -150,9 +150,9 @@ const test = new aws.batch.JobDefinition("test", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -199,9 +199,9 @@ const test = new aws.batch.JobDefinition("test", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -238,7 +238,7 @@ const test = new aws.batch.JobDefinition("test", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## JobDefinition Resource Properties {#properties}
 
@@ -251,7 +251,7 @@ The JobDefinition resource accepts the following [input]({{< relref "/docs/intro
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -260,8 +260,8 @@ The JobDefinition resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of job definition.  Must be `container`
-{{% /md %}}</dd>
+    <dd>The type of job definition.  Must be `container`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,9 +269,9 @@ The JobDefinition resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
+    <dd>A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
 provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,8 +279,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,8 +288,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Specifies the parameter substitution placeholders to set in the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the parameter substitution placeholders to set in the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,9 +297,9 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitionretrystrategy">Job<wbr>Definition<wbr>Retry<wbr>Strategy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
+    <dd>Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
 Maximum number of `retry_strategy` is `1`.  Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,14 +307,14 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitiontimeout">Job<wbr>Definition<wbr>Timeout<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
-{{% /md %}}</dd>
+    <dd>Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -323,8 +323,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of job definition.  Must be `container`
-{{% /md %}}</dd>
+    <dd>The type of job definition.  Must be `container`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,9 +332,9 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
+    <dd>A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
 provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,8 +342,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,8 +351,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Specifies the parameter substitution placeholders to set in the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the parameter substitution placeholders to set in the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,9 +360,9 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitionretrystrategy">Job<wbr>Definition<wbr>Retry<wbr>Strategy</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
+    <dd>Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
 Maximum number of `retry_strategy` is `1`.  Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,14 +370,14 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitiontimeout">Job<wbr>Definition<wbr>Timeout</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
-{{% /md %}}</dd>
+    <dd>Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -386,8 +386,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of job definition.  Must be `container`
-{{% /md %}}</dd>
+    <dd>The type of job definition.  Must be `container`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,9 +395,9 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
+    <dd>A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
 provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Specifies the parameter substitution placeholders to set in the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the parameter substitution placeholders to set in the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,9 +423,9 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitionretrystrategy">Job<wbr>Definition<wbr>Retry<wbr>Strategy</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
+    <dd>Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
 Maximum number of `retry_strategy` is `1`.  Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,14 +433,14 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitiontimeout">Job<wbr>Definition<wbr>Timeout</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
-{{% /md %}}</dd>
+    <dd>Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -449,8 +449,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of job definition.  Must be `container`
-{{% /md %}}</dd>
+    <dd>The type of job definition.  Must be `container`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,9 +458,9 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
+    <dd>A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
 provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Specifies the parameter substitution placeholders to set in the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the parameter substitution placeholders to set in the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,9 +486,9 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitionretrystrategy">Dict[Job<wbr>Definition<wbr>Retry<wbr>Strategy]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
+    <dd>Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
 Maximum number of `retry_strategy` is `1`.  Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,11 +496,11 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitiontimeout">Dict[Job<wbr>Definition<wbr>Timeout]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
-{{% /md %}}</dd>
+    <dd>Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -514,7 +514,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -523,8 +523,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the job definition.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the job definition.
+</dd>
 
     <dt class="property-"
             title="">
@@ -532,7 +532,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -540,14 +540,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the job definition.
-{{% /md %}}</dd>
+    <dd>The revision of the job definition.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -556,8 +556,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the job definition.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the job definition.
+</dd>
 
     <dt class="property-"
             title="">
@@ -565,7 +565,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -573,14 +573,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the job definition.
-{{% /md %}}</dd>
+    <dd>The revision of the job definition.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -589,8 +589,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the job definition.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the job definition.
+</dd>
 
     <dt class="property-"
             title="">
@@ -598,7 +598,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -606,14 +606,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the job definition.
-{{% /md %}}</dd>
+    <dd>The revision of the job definition.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -622,8 +622,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the job definition.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the job definition.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,7 +631,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -639,11 +639,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the job definition.
-{{% /md %}}</dd>
+    <dd>The revision of the job definition.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -654,25 +654,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing JobDefinition Resource {#look-up}
 
 Get an existing JobDefinition resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/batch/#JobDefinitionState">JobDefinitionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/batch/#JobDefinition">JobDefinition</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>container_properties=None<span class="p">, </span>name=None<span class="p">, </span>parameters=None<span class="p">, </span>retry_strategy=None<span class="p">, </span>revision=None<span class="p">, </span>timeout=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetJobDefinition<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#JobDefinitionState">JobDefinitionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#JobDefinition">JobDefinition</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Batch.JobDefinition.html">JobDefinition</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Batch.JobDefinitionState.html">JobDefinitionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -697,9 +697,9 @@ Get an existing JobDefinition resource's state with the given name, ID, and opti
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -712,36 +712,9 @@ Get an existing JobDefinition resource's state with the given name, ID, and opti
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -766,13 +739,40 @@ Get an existing JobDefinition resource's state with the given name, ID, and opti
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -781,8 +781,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the job definition.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -790,9 +790,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
+    <dd>A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
 provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -800,8 +800,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,8 +809,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Specifies the parameter substitution placeholders to set in the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the parameter substitution placeholders to set in the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,9 +818,9 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitionretrystrategy">Job<wbr>Definition<wbr>Retry<wbr>Strategy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
+    <dd>Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
 Maximum number of `retry_strategy` is `1`.  Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,8 +828,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the job definition.
-{{% /md %}}</dd>
+    <dd>The revision of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,8 +837,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitiontimeout">Job<wbr>Definition<wbr>Timeout<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
-{{% /md %}}</dd>
+    <dd>Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,14 +846,14 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of job definition.  Must be `container`
-{{% /md %}}</dd>
+    <dd>The type of job definition.  Must be `container`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -862,8 +862,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the job definition.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,9 +871,9 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
+    <dd>A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
 provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -881,8 +881,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -890,8 +890,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Specifies the parameter substitution placeholders to set in the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the parameter substitution placeholders to set in the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -899,9 +899,9 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitionretrystrategy">Job<wbr>Definition<wbr>Retry<wbr>Strategy</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
+    <dd>Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
 Maximum number of `retry_strategy` is `1`.  Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,8 +909,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the job definition.
-{{% /md %}}</dd>
+    <dd>The revision of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,8 +918,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitiontimeout">Job<wbr>Definition<wbr>Timeout</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
-{{% /md %}}</dd>
+    <dd>Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,14 +927,14 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of job definition.  Must be `container`
-{{% /md %}}</dd>
+    <dd>The type of job definition.  Must be `container`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -943,8 +943,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the job definition.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -952,9 +952,9 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
+    <dd>A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
 provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,8 +962,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,8 +971,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Specifies the parameter substitution placeholders to set in the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the parameter substitution placeholders to set in the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,9 +980,9 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitionretrystrategy">Job<wbr>Definition<wbr>Retry<wbr>Strategy</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
+    <dd>Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
 Maximum number of `retry_strategy` is `1`.  Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the job definition.
-{{% /md %}}</dd>
+    <dd>The revision of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,8 +999,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitiontimeout">Job<wbr>Definition<wbr>Timeout</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
-{{% /md %}}</dd>
+    <dd>Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1008,14 +1008,14 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of job definition.  Must be `container`
-{{% /md %}}</dd>
+    <dd>The type of job definition.  Must be `container`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1024,8 +1024,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the job definition.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,9 +1033,9 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
+    <dd>A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
 provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1043,8 +1043,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1052,8 +1052,8 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Specifies the parameter substitution placeholders to set in the job definition.
-{{% /md %}}</dd>
+    <dd>Specifies the parameter substitution placeholders to set in the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1061,9 +1061,9 @@ provided as a single valid JSON document. This parameter is required if the `typ
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitionretrystrategy">Dict[Job<wbr>Definition<wbr>Retry<wbr>Strategy]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
+    <dd>Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
 Maximum number of `retry_strategy` is `1`.  Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,8 +1071,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the job definition.
-{{% /md %}}</dd>
+    <dd>The revision of the job definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,8 +1080,8 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobdefinitiontimeout">Dict[Job<wbr>Definition<wbr>Timeout]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
-{{% /md %}}</dd>
+    <dd>Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,11 +1089,11 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of job definition.  Must be `container`
-{{% /md %}}</dd>
+    <dd>The type of job definition.  Must be `container`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1108,18 +1108,18 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
 
 
 <h4 id="jobdefinitionretrystrategy">Job<wbr>Definition<wbr>Retry<wbr>Strategy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#JobDefinitionRetryStrategy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#JobDefinitionRetryStrategy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#JobDefinitionRetryStrategyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#JobDefinitionRetryStrategyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1128,13 +1128,13 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1143,13 +1143,13 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1158,13 +1158,13 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1173,28 +1173,28 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="jobdefinitiontimeout">Job<wbr>Definition<wbr>Timeout</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#JobDefinitionTimeout">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#JobDefinitionTimeout">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#JobDefinitionTimeoutArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/batch?tab=doc#JobDefinitionTimeoutOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1203,13 +1203,13 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1218,13 +1218,13 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1233,13 +1233,13 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1248,10 +1248,10 @@ Maximum number of `retry_strategy` is `1`.  Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

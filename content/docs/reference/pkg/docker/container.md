@@ -36,26 +36,26 @@ const ubuntuContainer = new docker.Container("ubuntu", {
 
 
 ## Create a Container Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/docker/#Container">Container</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/docker/#ContainerArgs">ContainerArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Container</span><span class="p">(resource_name, opts=None, </span>attach=None<span class="p">, </span>capabilities=None<span class="p">, </span>command=None<span class="p">, </span>cpu_set=None<span class="p">, </span>cpu_shares=None<span class="p">, </span>destroy_grace_seconds=None<span class="p">, </span>devices=None<span class="p">, </span>dns=None<span class="p">, </span>dns_opts=None<span class="p">, </span>dns_searches=None<span class="p">, </span>domainname=None<span class="p">, </span>entrypoints=None<span class="p">, </span>envs=None<span class="p">, </span>group_adds=None<span class="p">, </span>healthcheck=None<span class="p">, </span>hostname=None<span class="p">, </span>hosts=None<span class="p">, </span>image=None<span class="p">, </span>ipc_mode=None<span class="p">, </span>labels=None<span class="p">, </span>links=None<span class="p">, </span>log_driver=None<span class="p">, </span>log_opts=None<span class="p">, </span>logs=None<span class="p">, </span>max_retry_count=None<span class="p">, </span>memory=None<span class="p">, </span>memory_swap=None<span class="p">, </span>mounts=None<span class="p">, </span>must_run=None<span class="p">, </span>name=None<span class="p">, </span>network_aliases=None<span class="p">, </span>network_mode=None<span class="p">, </span>networks=None<span class="p">, </span>networks_advanced=None<span class="p">, </span>pid_mode=None<span class="p">, </span>ports=None<span class="p">, </span>privileged=None<span class="p">, </span>publish_all_ports=None<span class="p">, </span>read_only=None<span class="p">, </span>restart=None<span class="p">, </span>rm=None<span class="p">, </span>shm_size=None<span class="p">, </span>start=None<span class="p">, </span>sysctls=None<span class="p">, </span>tmpfs=None<span class="p">, </span>ulimits=None<span class="p">, </span>uploads=None<span class="p">, </span>user=None<span class="p">, </span>userns_mode=None<span class="p">, </span>volumes=None<span class="p">, </span>working_dir=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewContainer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerArgs">ContainerArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#Container">Container</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Docker/Pulumi.Docker.Container.html">Container</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Docker/Pulumi.Docker.ContainerArgs.html">ContainerArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -92,9 +92,9 @@ const ubuntuContainer = new docker.Container("ubuntu", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -112,9 +112,9 @@ const ubuntuContainer = new docker.Container("ubuntu", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -161,9 +161,9 @@ const ubuntuContainer = new docker.Container("ubuntu", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -200,7 +200,7 @@ const ubuntuContainer = new docker.Container("ubuntu", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Container Resource Properties {#properties}
 
@@ -213,7 +213,7 @@ The Container resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -222,10 +222,10 @@ The Container resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image to back this container.
+    <dd>The ID of the image to back this container.
 The easiest way to get this value is to use the `docker..RemoteImage` resource
 as is shown in the example above.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true attach to the container after its creation and waits the end of his execution.
-{{% /md %}}</dd>
+    <dd>If true attach to the container after its creation and waits the end of his execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containercapabilities">Container<wbr>Capabilities<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Capabilities below for details.
-{{% /md %}}</dd>
+    <dd>See Capabilities below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,10 +251,10 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The command to use to start the
+    <dd>The command to use to start the
 container. For example, to run `/usr/bin/myprogram -f baz.conf` set the
 command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,8 +262,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
-{{% /md %}}</dd>
+    <dd>A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}CPU shares (relative weight) for the container.
-{{% /md %}}</dd>
+    <dd>CPU shares (relative weight) for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,8 +280,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
-{{% /md %}}</dd>
+    <dd>If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,8 +289,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerdevice">List&lt;Container<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Devices below for details.
-{{% /md %}}</dd>
+    <dd>See Devices below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,8 +298,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS servers.
-{{% /md %}}</dd>
+    <dd>Set of DNS servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,8 +307,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
-{{% /md %}}</dd>
+    <dd>Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -316,8 +316,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
-{{% /md %}}</dd>
+    <dd>Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -325,8 +325,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain name of the container.
-{{% /md %}}</dd>
+    <dd>Domain name of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -334,12 +334,12 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The command to use as the
+    <dd>The command to use as the
 Entrypoint for the container. The Entrypoint allows you to configure a
 container to run as an executable. For example, to run `/usr/bin/myprogram`
 when starting a container, set the entrypoint to be
 `["/usr/bin/myprogram"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,8 +347,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Environment variables to set.
-{{% /md %}}</dd>
+    <dd>Environment variables to set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,8 +356,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Add additional groups to run as.
-{{% /md %}}</dd>
+    <dd>Add additional groups to run as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhealthcheck">Container<wbr>Healthcheck<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname of the container.
-{{% /md %}}</dd>
+    <dd>Hostname of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhost">List&lt;Container<wbr>Host<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,8 +392,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,8 +401,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerlabel">List&lt;Container<wbr>Label<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -410,9 +410,9 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of links for link based
+    <dd>Set of links for link based
 connectivity between containers that are running on the same host.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The --link flag is a legacy feature of Docker. It may eventually be removed.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: The --link flag is a legacy feature of Docker. It may eventually be removed.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,9 +420,9 @@ connectivity between containers that are running on the same host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use for the container.
+    <dd>The logging driver to use for the container.
 Defaults to "json-file".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,9 +430,9 @@ Defaults to "json-file".
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key/value pairs to use as options for
+    <dd>Key/value pairs to use as options for
 the logging driver.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,8 +440,8 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Save the container logs (`attach` must be enabled).
-{{% /md %}}</dd>
+    <dd>Save the container logs (`attach` must be enabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,10 +449,10 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of times to an attempt
+    <dd>The maximum amount of times to an attempt
 a restart when `restart` is set to "on-failure"
 * `working_dir`- (Optional, string) The working directory for commands to run in
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -460,8 +460,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The memory limit for the container in MBs.
-{{% /md %}}</dd>
+    <dd>The memory limit for the container in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,7 +469,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermount">List&lt;Container<wbr>Mount<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,7 +486,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -494,7 +494,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -502,8 +502,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+    <dd>Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Network mode of the container.
-{{% /md %}}</dd>
+    <dd>Network mode of the container.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -520,9 +520,9 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Id of the networks in which the
+    <dd>Id of the networks in which the
 container is. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,8 +530,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworksadvanced">List&lt;Container<wbr>Networks<wbr>Advanced<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
-{{% /md %}}</dd>
+    <dd>See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,8 +539,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerport">List&lt;Container<wbr>Port<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Run container in privileged mode.
-{{% /md %}}</dd>
+    <dd>Run container in privileged mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Publish all ports of the container.
-{{% /md %}}</dd>
+    <dd>Publish all ports of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,9 +575,9 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,9 +585,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The restart policy for the container. Must be
+    <dd>The restart policy for the container. Must be
 one of "no", "on-failure", "always", "unless-stopped".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,7 +595,7 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,8 +603,8 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of `/dev/shm` in MBs.
-{{% /md %}}</dd>
+    <dd>Size of `/dev/shm` in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,9 +612,9 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, then the Docker container will be
+    <dd>If true, then the Docker container will be
 started after creation. If false, then the container is only created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -622,8 +622,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of kernel parameters (sysctls) to set in the container.
-{{% /md %}}</dd>
+    <dd>A map of kernel parameters (sysctls) to set in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,8 +631,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
-{{% /md %}}</dd>
+    <dd>A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -640,9 +640,9 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerulimit">List&lt;Container<wbr>Ulimit<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Ulimits below for
+    <dd>See Ulimits below for
 details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerupload">List&lt;Container<wbr>Upload<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See File Upload below for details.
-{{% /md %}}</dd>
+    <dd>See File Upload below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,10 +659,10 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User used for run the first process. Format is
+    <dd>User used for run the first process. Format is
 `user` or `user:group` which user and group can be passed literraly or
 by name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -670,8 +670,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
-{{% /md %}}</dd>
+    <dd>Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -679,8 +679,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containervolume">List&lt;Container<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Volumes below for details.
-{{% /md %}}</dd>
+    <dd>See Volumes below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -688,13 +688,13 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -703,10 +703,10 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image to back this container.
+    <dd>The ID of the image to back this container.
 The easiest way to get this value is to use the `docker..RemoteImage` resource
 as is shown in the example above.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -714,8 +714,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true attach to the container after its creation and waits the end of his execution.
-{{% /md %}}</dd>
+    <dd>If true attach to the container after its creation and waits the end of his execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,8 +723,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containercapabilities">Container<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}See Capabilities below for details.
-{{% /md %}}</dd>
+    <dd>See Capabilities below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,10 +732,10 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The command to use to start the
+    <dd>The command to use to start the
 container. For example, to run `/usr/bin/myprogram -f baz.conf` set the
 command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,8 +743,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
-{{% /md %}}</dd>
+    <dd>A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -752,8 +752,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}CPU shares (relative weight) for the container.
-{{% /md %}}</dd>
+    <dd>CPU shares (relative weight) for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,8 +761,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
-{{% /md %}}</dd>
+    <dd>If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -770,8 +770,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerdevice">[]Container<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}See Devices below for details.
-{{% /md %}}</dd>
+    <dd>See Devices below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -779,8 +779,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS servers.
-{{% /md %}}</dd>
+    <dd>Set of DNS servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,8 +788,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
-{{% /md %}}</dd>
+    <dd>Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -797,8 +797,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
-{{% /md %}}</dd>
+    <dd>Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -806,8 +806,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain name of the container.
-{{% /md %}}</dd>
+    <dd>Domain name of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -815,12 +815,12 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The command to use as the
+    <dd>The command to use as the
 Entrypoint for the container. The Entrypoint allows you to configure a
 container to run as an executable. For example, to run `/usr/bin/myprogram`
 when starting a container, set the entrypoint to be
 `["/usr/bin/myprogram"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,8 +828,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Environment variables to set.
-{{% /md %}}</dd>
+    <dd>Environment variables to set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,8 +837,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Add additional groups to run as.
-{{% /md %}}</dd>
+    <dd>Add additional groups to run as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,8 +846,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhealthcheck">Container<wbr>Healthcheck</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,8 +855,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname of the container.
-{{% /md %}}</dd>
+    <dd>Hostname of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,8 +864,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhost">[]Container<wbr>Host</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,8 +873,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,8 +882,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerlabel">[]Container<wbr>Label</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -891,9 +891,9 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of links for link based
+    <dd>Set of links for link based
 connectivity between containers that are running on the same host.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The --link flag is a legacy feature of Docker. It may eventually be removed.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: The --link flag is a legacy feature of Docker. It may eventually be removed.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -901,9 +901,9 @@ connectivity between containers that are running on the same host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use for the container.
+    <dd>The logging driver to use for the container.
 Defaults to "json-file".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,9 +911,9 @@ Defaults to "json-file".
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key/value pairs to use as options for
+    <dd>Key/value pairs to use as options for
 the logging driver.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,8 +921,8 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Save the container logs (`attach` must be enabled).
-{{% /md %}}</dd>
+    <dd>Save the container logs (`attach` must be enabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -930,10 +930,10 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of times to an attempt
+    <dd>The maximum amount of times to an attempt
 a restart when `restart` is set to "on-failure"
 * `working_dir`- (Optional, string) The working directory for commands to run in
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,8 +941,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The memory limit for the container in MBs.
-{{% /md %}}</dd>
+    <dd>The memory limit for the container in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,7 +950,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,8 +958,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermount">[]Container<wbr>Mount</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,7 +967,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -975,7 +975,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -983,8 +983,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+    <dd>Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network mode of the container.
-{{% /md %}}</dd>
+    <dd>Network mode of the container.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1001,9 +1001,9 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Id of the networks in which the
+    <dd>Id of the networks in which the
 container is. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworksadvanced">[]Container<wbr>Networks<wbr>Advanced</a></span>
     </dt>
-    <dd>{{% md %}}See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
-{{% /md %}}</dd>
+    <dd>See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,8 +1020,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,8 +1029,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerport">[]Container<wbr>Port</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,8 +1038,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Run container in privileged mode.
-{{% /md %}}</dd>
+    <dd>Run container in privileged mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,8 +1047,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Publish all ports of the container.
-{{% /md %}}</dd>
+    <dd>Publish all ports of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1056,9 +1056,9 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,9 +1066,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The restart policy for the container. Must be
+    <dd>The restart policy for the container. Must be
 one of "no", "on-failure", "always", "unless-stopped".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1076,7 +1076,7 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of `/dev/shm` in MBs.
-{{% /md %}}</dd>
+    <dd>Size of `/dev/shm` in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,9 +1093,9 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, then the Docker container will be
+    <dd>If true, then the Docker container will be
 started after creation. If false, then the container is only created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,8 +1103,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of kernel parameters (sysctls) to set in the container.
-{{% /md %}}</dd>
+    <dd>A map of kernel parameters (sysctls) to set in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,8 +1112,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
-{{% /md %}}</dd>
+    <dd>A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,9 +1121,9 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerulimit">[]Container<wbr>Ulimit</a></span>
     </dt>
-    <dd>{{% md %}}See Ulimits below for
+    <dd>See Ulimits below for
 details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,8 +1131,8 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerupload">[]Container<wbr>Upload</a></span>
     </dt>
-    <dd>{{% md %}}See File Upload below for details.
-{{% /md %}}</dd>
+    <dd>See File Upload below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,10 +1140,10 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User used for run the first process. Format is
+    <dd>User used for run the first process. Format is
 `user` or `user:group` which user and group can be passed literraly or
 by name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,8 +1151,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
-{{% /md %}}</dd>
+    <dd>Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,8 +1160,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containervolume">[]Container<wbr>Volume</a></span>
     </dt>
-    <dd>{{% md %}}See Volumes below for details.
-{{% /md %}}</dd>
+    <dd>See Volumes below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,13 +1169,13 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1184,10 +1184,10 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image to back this container.
+    <dd>The ID of the image to back this container.
 The easiest way to get this value is to use the `docker..RemoteImage` resource
 as is shown in the example above.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,8 +1195,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true attach to the container after its creation and waits the end of his execution.
-{{% /md %}}</dd>
+    <dd>If true attach to the container after its creation and waits the end of his execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1204,8 +1204,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containercapabilities">Container<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}See Capabilities below for details.
-{{% /md %}}</dd>
+    <dd>See Capabilities below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,10 +1213,10 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The command to use to start the
+    <dd>The command to use to start the
 container. For example, to run `/usr/bin/myprogram -f baz.conf` set the
 command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,8 +1224,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
-{{% /md %}}</dd>
+    <dd>A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,8 +1233,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}CPU shares (relative weight) for the container.
-{{% /md %}}</dd>
+    <dd>CPU shares (relative weight) for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1242,8 +1242,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
-{{% /md %}}</dd>
+    <dd>If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1251,8 +1251,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerdevice">Container<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}See Devices below for details.
-{{% /md %}}</dd>
+    <dd>See Devices below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS servers.
-{{% /md %}}</dd>
+    <dd>Set of DNS servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
-{{% /md %}}</dd>
+    <dd>Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
-{{% /md %}}</dd>
+    <dd>Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain name of the container.
-{{% /md %}}</dd>
+    <dd>Domain name of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,12 +1296,12 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The command to use as the
+    <dd>The command to use as the
 Entrypoint for the container. The Entrypoint allows you to configure a
 container to run as an executable. For example, to run `/usr/bin/myprogram`
 when starting a container, set the entrypoint to be
 `["/usr/bin/myprogram"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1309,8 +1309,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Environment variables to set.
-{{% /md %}}</dd>
+    <dd>Environment variables to set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1318,8 +1318,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Add additional groups to run as.
-{{% /md %}}</dd>
+    <dd>Add additional groups to run as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1327,8 +1327,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhealthcheck">Container<wbr>Healthcheck</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1336,8 +1336,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname of the container.
-{{% /md %}}</dd>
+    <dd>Hostname of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1345,8 +1345,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhost">Container<wbr>Host[]</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,8 +1354,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1363,8 +1363,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerlabel">Container<wbr>Label[]</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1372,9 +1372,9 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of links for link based
+    <dd>Set of links for link based
 connectivity between containers that are running on the same host.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The --link flag is a legacy feature of Docker. It may eventually be removed.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: The --link flag is a legacy feature of Docker. It may eventually be removed.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,9 +1382,9 @@ connectivity between containers that are running on the same host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use for the container.
+    <dd>The logging driver to use for the container.
 Defaults to "json-file".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1392,9 +1392,9 @@ Defaults to "json-file".
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key/value pairs to use as options for
+    <dd>Key/value pairs to use as options for
 the logging driver.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1402,8 +1402,8 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Save the container logs (`attach` must be enabled).
-{{% /md %}}</dd>
+    <dd>Save the container logs (`attach` must be enabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1411,10 +1411,10 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of times to an attempt
+    <dd>The maximum amount of times to an attempt
 a restart when `restart` is set to "on-failure"
 * `working_dir`- (Optional, string) The working directory for commands to run in
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1422,8 +1422,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The memory limit for the container in MBs.
-{{% /md %}}</dd>
+    <dd>The memory limit for the container in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1431,7 +1431,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1439,8 +1439,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermount">Container<wbr>Mount[]</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,7 +1448,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,7 +1456,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1464,8 +1464,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+    <dd>Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network mode of the container.
-{{% /md %}}</dd>
+    <dd>Network mode of the container.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1482,9 +1482,9 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Id of the networks in which the
+    <dd>Id of the networks in which the
 container is. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,8 +1492,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworksadvanced">Container<wbr>Networks<wbr>Advanced[]</a></span>
     </dt>
-    <dd>{{% md %}}See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
-{{% /md %}}</dd>
+    <dd>See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,8 +1501,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1510,8 +1510,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerport">Container<wbr>Port[]</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,8 +1519,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Run container in privileged mode.
-{{% /md %}}</dd>
+    <dd>Run container in privileged mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,8 +1528,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Publish all ports of the container.
-{{% /md %}}</dd>
+    <dd>Publish all ports of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1537,9 +1537,9 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1547,9 +1547,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The restart policy for the container. Must be
+    <dd>The restart policy for the container. Must be
 one of "no", "on-failure", "always", "unless-stopped".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1557,7 +1557,7 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1565,8 +1565,8 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Size of `/dev/shm` in MBs.
-{{% /md %}}</dd>
+    <dd>Size of `/dev/shm` in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,9 +1574,9 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, then the Docker container will be
+    <dd>If true, then the Docker container will be
 started after creation. If false, then the container is only created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,8 +1584,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of kernel parameters (sysctls) to set in the container.
-{{% /md %}}</dd>
+    <dd>A map of kernel parameters (sysctls) to set in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1593,8 +1593,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
-{{% /md %}}</dd>
+    <dd>A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1602,9 +1602,9 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerulimit">Container<wbr>Ulimit[]</a></span>
     </dt>
-    <dd>{{% md %}}See Ulimits below for
+    <dd>See Ulimits below for
 details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1612,8 +1612,8 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerupload">Container<wbr>Upload[]</a></span>
     </dt>
-    <dd>{{% md %}}See File Upload below for details.
-{{% /md %}}</dd>
+    <dd>See File Upload below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1621,10 +1621,10 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User used for run the first process. Format is
+    <dd>User used for run the first process. Format is
 `user` or `user:group` which user and group can be passed literraly or
 by name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1632,8 +1632,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
-{{% /md %}}</dd>
+    <dd>Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,8 +1641,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containervolume">Container<wbr>Volume[]</a></span>
     </dt>
-    <dd>{{% md %}}See Volumes below for details.
-{{% /md %}}</dd>
+    <dd>See Volumes below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1650,13 +1650,13 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1665,10 +1665,10 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image to back this container.
+    <dd>The ID of the image to back this container.
 The easiest way to get this value is to use the `docker..RemoteImage` resource
 as is shown in the example above.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,8 +1676,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true attach to the container after its creation and waits the end of his execution.
-{{% /md %}}</dd>
+    <dd>If true attach to the container after its creation and waits the end of his execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1685,8 +1685,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containercapabilities">Dict[Container<wbr>Capabilities]</a></span>
     </dt>
-    <dd>{{% md %}}See Capabilities below for details.
-{{% /md %}}</dd>
+    <dd>See Capabilities below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1694,10 +1694,10 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The command to use to start the
+    <dd>The command to use to start the
 container. For example, to run `/usr/bin/myprogram -f baz.conf` set the
 command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,8 +1705,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
-{{% /md %}}</dd>
+    <dd>A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1714,8 +1714,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}CPU shares (relative weight) for the container.
-{{% /md %}}</dd>
+    <dd>CPU shares (relative weight) for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,8 +1723,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
-{{% /md %}}</dd>
+    <dd>If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1732,8 +1732,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerdevice">List[Container<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}See Devices below for details.
-{{% /md %}}</dd>
+    <dd>See Devices below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1741,8 +1741,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS servers.
-{{% /md %}}</dd>
+    <dd>Set of DNS servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,8 +1750,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
-{{% /md %}}</dd>
+    <dd>Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1759,8 +1759,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
-{{% /md %}}</dd>
+    <dd>Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1768,8 +1768,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain name of the container.
-{{% /md %}}</dd>
+    <dd>Domain name of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1777,12 +1777,12 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The command to use as the
+    <dd>The command to use as the
 Entrypoint for the container. The Entrypoint allows you to configure a
 container to run as an executable. For example, to run `/usr/bin/myprogram`
 when starting a container, set the entrypoint to be
 `["/usr/bin/myprogram"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1790,8 +1790,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Environment variables to set.
-{{% /md %}}</dd>
+    <dd>Environment variables to set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,8 +1799,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Add additional groups to run as.
-{{% /md %}}</dd>
+    <dd>Add additional groups to run as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1808,8 +1808,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhealthcheck">Dict[Container<wbr>Healthcheck]</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,8 +1817,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Hostname of the container.
-{{% /md %}}</dd>
+    <dd>Hostname of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,8 +1826,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhost">List[Container<wbr>Host]</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1835,8 +1835,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,8 +1844,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerlabel">List[Container<wbr>Label]</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1853,9 +1853,9 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of links for link based
+    <dd>Set of links for link based
 connectivity between containers that are running on the same host.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The --link flag is a legacy feature of Docker. It may eventually be removed.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: The --link flag is a legacy feature of Docker. It may eventually be removed.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1863,9 +1863,9 @@ connectivity between containers that are running on the same host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use for the container.
+    <dd>The logging driver to use for the container.
 Defaults to "json-file".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1873,9 +1873,9 @@ Defaults to "json-file".
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key/value pairs to use as options for
+    <dd>Key/value pairs to use as options for
 the logging driver.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1883,8 +1883,8 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Save the container logs (`attach` must be enabled).
-{{% /md %}}</dd>
+    <dd>Save the container logs (`attach` must be enabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1892,10 +1892,10 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of times to an attempt
+    <dd>The maximum amount of times to an attempt
 a restart when `restart` is set to "on-failure"
 * `working_dir`- (Optional, string) The working directory for commands to run in
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1903,8 +1903,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The memory limit for the container in MBs.
-{{% /md %}}</dd>
+    <dd>The memory limit for the container in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1912,7 +1912,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,8 +1920,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermount">List[Container<wbr>Mount]</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,7 +1929,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,7 +1937,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1945,8 +1945,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+    <dd>Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1954,8 +1954,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Network mode of the container.
-{{% /md %}}</dd>
+    <dd>Network mode of the container.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1963,9 +1963,9 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Id of the networks in which the
+    <dd>Id of the networks in which the
 container is. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1973,8 +1973,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworksadvanced">List[Container<wbr>Networks<wbr>Advanced]</a></span>
     </dt>
-    <dd>{{% md %}}See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
-{{% /md %}}</dd>
+    <dd>See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1982,8 +1982,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1991,8 +1991,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerport">List[Container<wbr>Port]</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2000,8 +2000,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Run container in privileged mode.
-{{% /md %}}</dd>
+    <dd>Run container in privileged mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2009,8 +2009,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Publish all ports of the container.
-{{% /md %}}</dd>
+    <dd>Publish all ports of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2018,9 +2018,9 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2028,9 +2028,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The restart policy for the container. Must be
+    <dd>The restart policy for the container. Must be
 one of "no", "on-failure", "always", "unless-stopped".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2038,7 +2038,7 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2046,8 +2046,8 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Size of `/dev/shm` in MBs.
-{{% /md %}}</dd>
+    <dd>Size of `/dev/shm` in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2055,9 +2055,9 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, then the Docker container will be
+    <dd>If true, then the Docker container will be
 started after creation. If false, then the container is only created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2065,8 +2065,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of kernel parameters (sysctls) to set in the container.
-{{% /md %}}</dd>
+    <dd>A map of kernel parameters (sysctls) to set in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,8 +2074,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
-{{% /md %}}</dd>
+    <dd>A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2083,9 +2083,9 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerulimit">List[Container<wbr>Ulimit]</a></span>
     </dt>
-    <dd>{{% md %}}See Ulimits below for
+    <dd>See Ulimits below for
 details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2093,8 +2093,8 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerupload">List[Container<wbr>Upload]</a></span>
     </dt>
-    <dd>{{% md %}}See File Upload below for details.
-{{% /md %}}</dd>
+    <dd>See File Upload below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2102,10 +2102,10 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User used for run the first process. Format is
+    <dd>User used for run the first process. Format is
 `user` or `user:group` which user and group can be passed literraly or
 by name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2113,8 +2113,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
-{{% /md %}}</dd>
+    <dd>Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2122,8 +2122,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containervolume">List[Container<wbr>Volume]</a></span>
     </dt>
-    <dd>{{% md %}}See Volumes below for details.
-{{% /md %}}</dd>
+    <dd>See Volumes below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2131,10 +2131,10 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2148,7 +2148,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2157,8 +2157,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network bridge of the container as read from its NetworkSettings.
-{{% /md %}}</dd>
+    <dd>The network bridge of the container as read from its NetworkSettings.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2166,8 +2166,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The logs of the container if its execution is done (`attach` must be disabled).
-{{% /md %}}</dd>
+    <dd>The logs of the container if its execution is done (`attach` must be disabled).
+</dd>
 
     <dt class="property-"
             title="">
@@ -2175,8 +2175,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The exit code of the container if its execution is done (`must_run` must be disabled).
-{{% /md %}}</dd>
+    <dd>The exit code of the container if its execution is done (`must_run` must be disabled).
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2184,9 +2184,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2194,7 +2194,7 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2202,8 +2202,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+<p class="property-message">Deprecated: Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2211,9 +2211,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2221,15 +2221,15 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworkdata">List&lt;Container<wbr>Network<wbr>Data&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Map of a block) The IP addresses of the container on each
+    <dd>(Map of a block) The IP addresses of the container on each
 network. Key are the network names, values are the IP addresses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2238,8 +2238,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network bridge of the container as read from its NetworkSettings.
-{{% /md %}}</dd>
+    <dd>The network bridge of the container as read from its NetworkSettings.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2247,8 +2247,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logs of the container if its execution is done (`attach` must be disabled).
-{{% /md %}}</dd>
+    <dd>The logs of the container if its execution is done (`attach` must be disabled).
+</dd>
 
     <dt class="property-"
             title="">
@@ -2256,8 +2256,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The exit code of the container if its execution is done (`must_run` must be disabled).
-{{% /md %}}</dd>
+    <dd>The exit code of the container if its execution is done (`must_run` must be disabled).
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2265,9 +2265,9 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2275,7 +2275,7 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2283,8 +2283,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+<p class="property-message">Deprecated: Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2292,9 +2292,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2302,15 +2302,15 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworkdata">[]Container<wbr>Network<wbr>Data</a></span>
     </dt>
-    <dd>{{% md %}}(Map of a block) The IP addresses of the container on each
+    <dd>(Map of a block) The IP addresses of the container on each
 network. Key are the network names, values are the IP addresses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2319,8 +2319,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network bridge of the container as read from its NetworkSettings.
-{{% /md %}}</dd>
+    <dd>The network bridge of the container as read from its NetworkSettings.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2328,8 +2328,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logs of the container if its execution is done (`attach` must be disabled).
-{{% /md %}}</dd>
+    <dd>The logs of the container if its execution is done (`attach` must be disabled).
+</dd>
 
     <dt class="property-"
             title="">
@@ -2337,8 +2337,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The exit code of the container if its execution is done (`must_run` must be disabled).
-{{% /md %}}</dd>
+    <dd>The exit code of the container if its execution is done (`must_run` must be disabled).
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2346,9 +2346,9 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2356,7 +2356,7 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2364,8 +2364,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+<p class="property-message">Deprecated: Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2373,9 +2373,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2383,15 +2383,15 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworkdata">Container<wbr>Network<wbr>Data[]</a></span>
     </dt>
-    <dd>{{% md %}}(Map of a block) The IP addresses of the container on each
+    <dd>(Map of a block) The IP addresses of the container on each
 network. Key are the network names, values are the IP addresses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2400,8 +2400,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network bridge of the container as read from its NetworkSettings.
-{{% /md %}}</dd>
+    <dd>The network bridge of the container as read from its NetworkSettings.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2409,8 +2409,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The logs of the container if its execution is done (`attach` must be disabled).
-{{% /md %}}</dd>
+    <dd>The logs of the container if its execution is done (`attach` must be disabled).
+</dd>
 
     <dt class="property-"
             title="">
@@ -2418,8 +2418,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The exit code of the container if its execution is done (`must_run` must be disabled).
-{{% /md %}}</dd>
+    <dd>The exit code of the container if its execution is done (`must_run` must be disabled).
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2427,9 +2427,9 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2437,7 +2437,7 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2445,8 +2445,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+<p class="property-message">Deprecated: Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2454,9 +2454,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2464,12 +2464,12 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworkdata">List[Container<wbr>Network<wbr>Data]</a></span>
     </dt>
-    <dd>{{% md %}}(Map of a block) The IP addresses of the container on each
+    <dd>(Map of a block) The IP addresses of the container on each
 network. Key are the network names, values are the IP addresses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2480,25 +2480,25 @@ network. Key are the network names, values are the IP addresses.
 ## Look up an Existing Container Resource {#look-up}
 
 Get an existing Container resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/docker/#ContainerState">ContainerState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/docker/#Container">Container</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>attach=None<span class="p">, </span>bridge=None<span class="p">, </span>capabilities=None<span class="p">, </span>command=None<span class="p">, </span>container_logs=None<span class="p">, </span>cpu_set=None<span class="p">, </span>cpu_shares=None<span class="p">, </span>destroy_grace_seconds=None<span class="p">, </span>devices=None<span class="p">, </span>dns=None<span class="p">, </span>dns_opts=None<span class="p">, </span>dns_searches=None<span class="p">, </span>domainname=None<span class="p">, </span>entrypoints=None<span class="p">, </span>envs=None<span class="p">, </span>exit_code=None<span class="p">, </span>gateway=None<span class="p">, </span>group_adds=None<span class="p">, </span>healthcheck=None<span class="p">, </span>hostname=None<span class="p">, </span>hosts=None<span class="p">, </span>image=None<span class="p">, </span>ip_address=None<span class="p">, </span>ip_prefix_length=None<span class="p">, </span>ipc_mode=None<span class="p">, </span>labels=None<span class="p">, </span>links=None<span class="p">, </span>log_driver=None<span class="p">, </span>log_opts=None<span class="p">, </span>logs=None<span class="p">, </span>max_retry_count=None<span class="p">, </span>memory=None<span class="p">, </span>memory_swap=None<span class="p">, </span>mounts=None<span class="p">, </span>must_run=None<span class="p">, </span>name=None<span class="p">, </span>network_aliases=None<span class="p">, </span>network_datas=None<span class="p">, </span>network_mode=None<span class="p">, </span>networks=None<span class="p">, </span>networks_advanced=None<span class="p">, </span>pid_mode=None<span class="p">, </span>ports=None<span class="p">, </span>privileged=None<span class="p">, </span>publish_all_ports=None<span class="p">, </span>read_only=None<span class="p">, </span>restart=None<span class="p">, </span>rm=None<span class="p">, </span>shm_size=None<span class="p">, </span>start=None<span class="p">, </span>sysctls=None<span class="p">, </span>tmpfs=None<span class="p">, </span>ulimits=None<span class="p">, </span>uploads=None<span class="p">, </span>user=None<span class="p">, </span>userns_mode=None<span class="p">, </span>volumes=None<span class="p">, </span>working_dir=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetContainer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerState">ContainerState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#Container">Container</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Docker/Pulumi.Docker.Container.html">Container</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Docker/Pulumi.Docker..ContainerState.html">ContainerState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -2523,9 +2523,9 @@ Get an existing Container resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -2538,36 +2538,9 @@ Get an existing Container resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -2592,13 +2565,40 @@ Get an existing Container resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2607,8 +2607,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true attach to the container after its creation and waits the end of his execution.
-{{% /md %}}</dd>
+    <dd>If true attach to the container after its creation and waits the end of his execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2616,8 +2616,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network bridge of the container as read from its NetworkSettings.
-{{% /md %}}</dd>
+    <dd>The network bridge of the container as read from its NetworkSettings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2625,8 +2625,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containercapabilities">Container<wbr>Capabilities<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Capabilities below for details.
-{{% /md %}}</dd>
+    <dd>See Capabilities below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2634,10 +2634,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The command to use to start the
+    <dd>The command to use to start the
 container. For example, to run `/usr/bin/myprogram -f baz.conf` set the
 command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2645,8 +2645,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The logs of the container if its execution is done (`attach` must be disabled).
-{{% /md %}}</dd>
+    <dd>The logs of the container if its execution is done (`attach` must be disabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2654,8 +2654,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
-{{% /md %}}</dd>
+    <dd>A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2663,8 +2663,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}CPU shares (relative weight) for the container.
-{{% /md %}}</dd>
+    <dd>CPU shares (relative weight) for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2672,8 +2672,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
-{{% /md %}}</dd>
+    <dd>If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2681,8 +2681,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerdevice">List&lt;Container<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Devices below for details.
-{{% /md %}}</dd>
+    <dd>See Devices below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2690,8 +2690,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS servers.
-{{% /md %}}</dd>
+    <dd>Set of DNS servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2699,8 +2699,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
-{{% /md %}}</dd>
+    <dd>Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2708,8 +2708,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
-{{% /md %}}</dd>
+    <dd>Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2717,8 +2717,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain name of the container.
-{{% /md %}}</dd>
+    <dd>Domain name of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2726,12 +2726,12 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The command to use as the
+    <dd>The command to use as the
 Entrypoint for the container. The Entrypoint allows you to configure a
 container to run as an executable. For example, to run `/usr/bin/myprogram`
 when starting a container, set the entrypoint to be
 `["/usr/bin/myprogram"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2739,8 +2739,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Environment variables to set.
-{{% /md %}}</dd>
+    <dd>Environment variables to set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2748,8 +2748,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The exit code of the container if its execution is done (`must_run` must be disabled).
-{{% /md %}}</dd>
+    <dd>The exit code of the container if its execution is done (`must_run` must be disabled).
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2757,9 +2757,9 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2767,8 +2767,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Add additional groups to run as.
-{{% /md %}}</dd>
+    <dd>Add additional groups to run as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2776,8 +2776,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhealthcheck">Container<wbr>Healthcheck<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2785,8 +2785,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname of the container.
-{{% /md %}}</dd>
+    <dd>Hostname of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2794,8 +2794,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhost">List&lt;Container<wbr>Host<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2803,10 +2803,10 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image to back this container.
+    <dd>The ID of the image to back this container.
 The easiest way to get this value is to use the `docker..RemoteImage` resource
 as is shown in the example above.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2814,8 +2814,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+<p class="property-message">Deprecated: Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2823,9 +2823,9 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2833,8 +2833,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2842,8 +2842,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerlabel">List&lt;Container<wbr>Label<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2851,9 +2851,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of links for link based
+    <dd>Set of links for link based
 connectivity between containers that are running on the same host.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The --link flag is a legacy feature of Docker. It may eventually be removed.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: The --link flag is a legacy feature of Docker. It may eventually be removed.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2861,9 +2861,9 @@ connectivity between containers that are running on the same host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use for the container.
+    <dd>The logging driver to use for the container.
 Defaults to "json-file".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2871,9 +2871,9 @@ Defaults to "json-file".
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key/value pairs to use as options for
+    <dd>Key/value pairs to use as options for
 the logging driver.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2881,8 +2881,8 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Save the container logs (`attach` must be enabled).
-{{% /md %}}</dd>
+    <dd>Save the container logs (`attach` must be enabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2890,10 +2890,10 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of times to an attempt
+    <dd>The maximum amount of times to an attempt
 a restart when `restart` is set to "on-failure"
 * `working_dir`- (Optional, string) The working directory for commands to run in
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2901,8 +2901,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The memory limit for the container in MBs.
-{{% /md %}}</dd>
+    <dd>The memory limit for the container in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2910,7 +2910,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2918,8 +2918,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermount">List&lt;Container<wbr>Mount<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2927,7 +2927,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2935,7 +2935,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2943,8 +2943,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+    <dd>Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2952,9 +2952,9 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworkdata">List&lt;Container<wbr>Network<wbr>Data<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Map of a block) The IP addresses of the container on each
+    <dd>(Map of a block) The IP addresses of the container on each
 network. Key are the network names, values are the IP addresses.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2962,8 +2962,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Network mode of the container.
-{{% /md %}}</dd>
+    <dd>Network mode of the container.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2971,9 +2971,9 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Id of the networks in which the
+    <dd>Id of the networks in which the
 container is. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2981,8 +2981,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworksadvanced">List&lt;Container<wbr>Networks<wbr>Advanced<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
-{{% /md %}}</dd>
+    <dd>See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2990,8 +2990,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2999,8 +2999,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerport">List&lt;Container<wbr>Port<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3008,8 +3008,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Run container in privileged mode.
-{{% /md %}}</dd>
+    <dd>Run container in privileged mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3017,8 +3017,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Publish all ports of the container.
-{{% /md %}}</dd>
+    <dd>Publish all ports of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3026,9 +3026,9 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3036,9 +3036,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The restart policy for the container. Must be
+    <dd>The restart policy for the container. Must be
 one of "no", "on-failure", "always", "unless-stopped".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3046,7 +3046,7 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3054,8 +3054,8 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of `/dev/shm` in MBs.
-{{% /md %}}</dd>
+    <dd>Size of `/dev/shm` in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3063,9 +3063,9 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, then the Docker container will be
+    <dd>If true, then the Docker container will be
 started after creation. If false, then the container is only created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3073,8 +3073,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of kernel parameters (sysctls) to set in the container.
-{{% /md %}}</dd>
+    <dd>A map of kernel parameters (sysctls) to set in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3082,8 +3082,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
-{{% /md %}}</dd>
+    <dd>A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3091,9 +3091,9 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerulimit">List&lt;Container<wbr>Ulimit<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Ulimits below for
+    <dd>See Ulimits below for
 details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3101,8 +3101,8 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerupload">List&lt;Container<wbr>Upload<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See File Upload below for details.
-{{% /md %}}</dd>
+    <dd>See File Upload below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3110,10 +3110,10 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User used for run the first process. Format is
+    <dd>User used for run the first process. Format is
 `user` or `user:group` which user and group can be passed literraly or
 by name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3121,8 +3121,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
-{{% /md %}}</dd>
+    <dd>Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3130,8 +3130,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containervolume">List&lt;Container<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Volumes below for details.
-{{% /md %}}</dd>
+    <dd>See Volumes below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3139,13 +3139,13 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3154,8 +3154,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true attach to the container after its creation and waits the end of his execution.
-{{% /md %}}</dd>
+    <dd>If true attach to the container after its creation and waits the end of his execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3163,8 +3163,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network bridge of the container as read from its NetworkSettings.
-{{% /md %}}</dd>
+    <dd>The network bridge of the container as read from its NetworkSettings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3172,8 +3172,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containercapabilities">Container<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}See Capabilities below for details.
-{{% /md %}}</dd>
+    <dd>See Capabilities below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3181,10 +3181,10 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The command to use to start the
+    <dd>The command to use to start the
 container. For example, to run `/usr/bin/myprogram -f baz.conf` set the
 command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3192,8 +3192,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logs of the container if its execution is done (`attach` must be disabled).
-{{% /md %}}</dd>
+    <dd>The logs of the container if its execution is done (`attach` must be disabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3201,8 +3201,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
-{{% /md %}}</dd>
+    <dd>A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3210,8 +3210,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}CPU shares (relative weight) for the container.
-{{% /md %}}</dd>
+    <dd>CPU shares (relative weight) for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3219,8 +3219,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
-{{% /md %}}</dd>
+    <dd>If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3228,8 +3228,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerdevice">[]Container<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}See Devices below for details.
-{{% /md %}}</dd>
+    <dd>See Devices below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3237,8 +3237,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS servers.
-{{% /md %}}</dd>
+    <dd>Set of DNS servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3246,8 +3246,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
-{{% /md %}}</dd>
+    <dd>Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3255,8 +3255,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
-{{% /md %}}</dd>
+    <dd>Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3264,8 +3264,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain name of the container.
-{{% /md %}}</dd>
+    <dd>Domain name of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3273,12 +3273,12 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The command to use as the
+    <dd>The command to use as the
 Entrypoint for the container. The Entrypoint allows you to configure a
 container to run as an executable. For example, to run `/usr/bin/myprogram`
 when starting a container, set the entrypoint to be
 `["/usr/bin/myprogram"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3286,8 +3286,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Environment variables to set.
-{{% /md %}}</dd>
+    <dd>Environment variables to set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3295,8 +3295,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The exit code of the container if its execution is done (`must_run` must be disabled).
-{{% /md %}}</dd>
+    <dd>The exit code of the container if its execution is done (`must_run` must be disabled).
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3304,9 +3304,9 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3314,8 +3314,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Add additional groups to run as.
-{{% /md %}}</dd>
+    <dd>Add additional groups to run as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3323,8 +3323,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhealthcheck">Container<wbr>Healthcheck</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3332,8 +3332,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname of the container.
-{{% /md %}}</dd>
+    <dd>Hostname of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3341,8 +3341,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhost">[]Container<wbr>Host</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3350,10 +3350,10 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image to back this container.
+    <dd>The ID of the image to back this container.
 The easiest way to get this value is to use the `docker..RemoteImage` resource
 as is shown in the example above.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3361,8 +3361,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+<p class="property-message">Deprecated: Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3370,9 +3370,9 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3380,8 +3380,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3389,8 +3389,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerlabel">[]Container<wbr>Label</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3398,9 +3398,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of links for link based
+    <dd>Set of links for link based
 connectivity between containers that are running on the same host.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The --link flag is a legacy feature of Docker. It may eventually be removed.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: The --link flag is a legacy feature of Docker. It may eventually be removed.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3408,9 +3408,9 @@ connectivity between containers that are running on the same host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use for the container.
+    <dd>The logging driver to use for the container.
 Defaults to "json-file".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3418,9 +3418,9 @@ Defaults to "json-file".
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key/value pairs to use as options for
+    <dd>Key/value pairs to use as options for
 the logging driver.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3428,8 +3428,8 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Save the container logs (`attach` must be enabled).
-{{% /md %}}</dd>
+    <dd>Save the container logs (`attach` must be enabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3437,10 +3437,10 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of times to an attempt
+    <dd>The maximum amount of times to an attempt
 a restart when `restart` is set to "on-failure"
 * `working_dir`- (Optional, string) The working directory for commands to run in
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3448,8 +3448,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The memory limit for the container in MBs.
-{{% /md %}}</dd>
+    <dd>The memory limit for the container in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3457,7 +3457,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3465,8 +3465,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermount">[]Container<wbr>Mount</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3474,7 +3474,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3482,7 +3482,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3490,8 +3490,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+    <dd>Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3499,9 +3499,9 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworkdata">[]Container<wbr>Network<wbr>Data</a></span>
     </dt>
-    <dd>{{% md %}}(Map of a block) The IP addresses of the container on each
+    <dd>(Map of a block) The IP addresses of the container on each
 network. Key are the network names, values are the IP addresses.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3509,8 +3509,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network mode of the container.
-{{% /md %}}</dd>
+    <dd>Network mode of the container.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3518,9 +3518,9 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Id of the networks in which the
+    <dd>Id of the networks in which the
 container is. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3528,8 +3528,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworksadvanced">[]Container<wbr>Networks<wbr>Advanced</a></span>
     </dt>
-    <dd>{{% md %}}See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
-{{% /md %}}</dd>
+    <dd>See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3537,8 +3537,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3546,8 +3546,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerport">[]Container<wbr>Port</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3555,8 +3555,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Run container in privileged mode.
-{{% /md %}}</dd>
+    <dd>Run container in privileged mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3564,8 +3564,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Publish all ports of the container.
-{{% /md %}}</dd>
+    <dd>Publish all ports of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3573,9 +3573,9 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3583,9 +3583,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The restart policy for the container. Must be
+    <dd>The restart policy for the container. Must be
 one of "no", "on-failure", "always", "unless-stopped".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3593,7 +3593,7 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3601,8 +3601,8 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of `/dev/shm` in MBs.
-{{% /md %}}</dd>
+    <dd>Size of `/dev/shm` in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3610,9 +3610,9 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, then the Docker container will be
+    <dd>If true, then the Docker container will be
 started after creation. If false, then the container is only created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3620,8 +3620,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of kernel parameters (sysctls) to set in the container.
-{{% /md %}}</dd>
+    <dd>A map of kernel parameters (sysctls) to set in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3629,8 +3629,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
-{{% /md %}}</dd>
+    <dd>A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3638,9 +3638,9 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerulimit">[]Container<wbr>Ulimit</a></span>
     </dt>
-    <dd>{{% md %}}See Ulimits below for
+    <dd>See Ulimits below for
 details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3648,8 +3648,8 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerupload">[]Container<wbr>Upload</a></span>
     </dt>
-    <dd>{{% md %}}See File Upload below for details.
-{{% /md %}}</dd>
+    <dd>See File Upload below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3657,10 +3657,10 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User used for run the first process. Format is
+    <dd>User used for run the first process. Format is
 `user` or `user:group` which user and group can be passed literraly or
 by name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3668,8 +3668,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
-{{% /md %}}</dd>
+    <dd>Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3677,8 +3677,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containervolume">[]Container<wbr>Volume</a></span>
     </dt>
-    <dd>{{% md %}}See Volumes below for details.
-{{% /md %}}</dd>
+    <dd>See Volumes below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3686,13 +3686,13 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3701,8 +3701,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true attach to the container after its creation and waits the end of his execution.
-{{% /md %}}</dd>
+    <dd>If true attach to the container after its creation and waits the end of his execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3710,8 +3710,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network bridge of the container as read from its NetworkSettings.
-{{% /md %}}</dd>
+    <dd>The network bridge of the container as read from its NetworkSettings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3719,8 +3719,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containercapabilities">Container<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}See Capabilities below for details.
-{{% /md %}}</dd>
+    <dd>See Capabilities below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3728,10 +3728,10 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The command to use to start the
+    <dd>The command to use to start the
 container. For example, to run `/usr/bin/myprogram -f baz.conf` set the
 command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3739,8 +3739,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logs of the container if its execution is done (`attach` must be disabled).
-{{% /md %}}</dd>
+    <dd>The logs of the container if its execution is done (`attach` must be disabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3748,8 +3748,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
-{{% /md %}}</dd>
+    <dd>A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3757,8 +3757,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}CPU shares (relative weight) for the container.
-{{% /md %}}</dd>
+    <dd>CPU shares (relative weight) for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3766,8 +3766,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
-{{% /md %}}</dd>
+    <dd>If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3775,8 +3775,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerdevice">Container<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}See Devices below for details.
-{{% /md %}}</dd>
+    <dd>See Devices below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3784,8 +3784,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS servers.
-{{% /md %}}</dd>
+    <dd>Set of DNS servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3793,8 +3793,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
-{{% /md %}}</dd>
+    <dd>Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3802,8 +3802,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
-{{% /md %}}</dd>
+    <dd>Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3811,8 +3811,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain name of the container.
-{{% /md %}}</dd>
+    <dd>Domain name of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3820,12 +3820,12 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The command to use as the
+    <dd>The command to use as the
 Entrypoint for the container. The Entrypoint allows you to configure a
 container to run as an executable. For example, to run `/usr/bin/myprogram`
 when starting a container, set the entrypoint to be
 `["/usr/bin/myprogram"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3833,8 +3833,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Environment variables to set.
-{{% /md %}}</dd>
+    <dd>Environment variables to set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3842,8 +3842,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The exit code of the container if its execution is done (`must_run` must be disabled).
-{{% /md %}}</dd>
+    <dd>The exit code of the container if its execution is done (`must_run` must be disabled).
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3851,9 +3851,9 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3861,8 +3861,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Add additional groups to run as.
-{{% /md %}}</dd>
+    <dd>Add additional groups to run as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3870,8 +3870,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhealthcheck">Container<wbr>Healthcheck</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3879,8 +3879,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname of the container.
-{{% /md %}}</dd>
+    <dd>Hostname of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3888,8 +3888,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhost">Container<wbr>Host[]</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3897,10 +3897,10 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image to back this container.
+    <dd>The ID of the image to back this container.
 The easiest way to get this value is to use the `docker..RemoteImage` resource
 as is shown in the example above.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3908,8 +3908,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+<p class="property-message">Deprecated: Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3917,9 +3917,9 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3927,8 +3927,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3936,8 +3936,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerlabel">Container<wbr>Label[]</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3945,9 +3945,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of links for link based
+    <dd>Set of links for link based
 connectivity between containers that are running on the same host.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The --link flag is a legacy feature of Docker. It may eventually be removed.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: The --link flag is a legacy feature of Docker. It may eventually be removed.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3955,9 +3955,9 @@ connectivity between containers that are running on the same host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use for the container.
+    <dd>The logging driver to use for the container.
 Defaults to "json-file".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3965,9 +3965,9 @@ Defaults to "json-file".
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key/value pairs to use as options for
+    <dd>Key/value pairs to use as options for
 the logging driver.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3975,8 +3975,8 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Save the container logs (`attach` must be enabled).
-{{% /md %}}</dd>
+    <dd>Save the container logs (`attach` must be enabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3984,10 +3984,10 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of times to an attempt
+    <dd>The maximum amount of times to an attempt
 a restart when `restart` is set to "on-failure"
 * `working_dir`- (Optional, string) The working directory for commands to run in
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3995,8 +3995,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The memory limit for the container in MBs.
-{{% /md %}}</dd>
+    <dd>The memory limit for the container in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4004,7 +4004,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4012,8 +4012,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermount">Container<wbr>Mount[]</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4021,7 +4021,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4029,7 +4029,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4037,8 +4037,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+    <dd>Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4046,9 +4046,9 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworkdata">Container<wbr>Network<wbr>Data[]</a></span>
     </dt>
-    <dd>{{% md %}}(Map of a block) The IP addresses of the container on each
+    <dd>(Map of a block) The IP addresses of the container on each
 network. Key are the network names, values are the IP addresses.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4056,8 +4056,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network mode of the container.
-{{% /md %}}</dd>
+    <dd>Network mode of the container.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4065,9 +4065,9 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Id of the networks in which the
+    <dd>Id of the networks in which the
 container is. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4075,8 +4075,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworksadvanced">Container<wbr>Networks<wbr>Advanced[]</a></span>
     </dt>
-    <dd>{{% md %}}See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
-{{% /md %}}</dd>
+    <dd>See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4084,8 +4084,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4093,8 +4093,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerport">Container<wbr>Port[]</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4102,8 +4102,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Run container in privileged mode.
-{{% /md %}}</dd>
+    <dd>Run container in privileged mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4111,8 +4111,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Publish all ports of the container.
-{{% /md %}}</dd>
+    <dd>Publish all ports of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4120,9 +4120,9 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4130,9 +4130,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The restart policy for the container. Must be
+    <dd>The restart policy for the container. Must be
 one of "no", "on-failure", "always", "unless-stopped".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4140,7 +4140,7 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4148,8 +4148,8 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Size of `/dev/shm` in MBs.
-{{% /md %}}</dd>
+    <dd>Size of `/dev/shm` in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4157,9 +4157,9 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, then the Docker container will be
+    <dd>If true, then the Docker container will be
 started after creation. If false, then the container is only created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4167,8 +4167,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of kernel parameters (sysctls) to set in the container.
-{{% /md %}}</dd>
+    <dd>A map of kernel parameters (sysctls) to set in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4176,8 +4176,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
-{{% /md %}}</dd>
+    <dd>A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4185,9 +4185,9 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerulimit">Container<wbr>Ulimit[]</a></span>
     </dt>
-    <dd>{{% md %}}See Ulimits below for
+    <dd>See Ulimits below for
 details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4195,8 +4195,8 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerupload">Container<wbr>Upload[]</a></span>
     </dt>
-    <dd>{{% md %}}See File Upload below for details.
-{{% /md %}}</dd>
+    <dd>See File Upload below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4204,10 +4204,10 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User used for run the first process. Format is
+    <dd>User used for run the first process. Format is
 `user` or `user:group` which user and group can be passed literraly or
 by name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4215,8 +4215,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
-{{% /md %}}</dd>
+    <dd>Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4224,8 +4224,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containervolume">Container<wbr>Volume[]</a></span>
     </dt>
-    <dd>{{% md %}}See Volumes below for details.
-{{% /md %}}</dd>
+    <dd>See Volumes below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4233,13 +4233,13 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4248,8 +4248,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true attach to the container after its creation and waits the end of his execution.
-{{% /md %}}</dd>
+    <dd>If true attach to the container after its creation and waits the end of his execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4257,8 +4257,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network bridge of the container as read from its NetworkSettings.
-{{% /md %}}</dd>
+    <dd>The network bridge of the container as read from its NetworkSettings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4266,8 +4266,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containercapabilities">Dict[Container<wbr>Capabilities]</a></span>
     </dt>
-    <dd>{{% md %}}See Capabilities below for details.
-{{% /md %}}</dd>
+    <dd>See Capabilities below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4275,10 +4275,10 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The command to use to start the
+    <dd>The command to use to start the
 container. For example, to run `/usr/bin/myprogram -f baz.conf` set the
 command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4286,8 +4286,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The logs of the container if its execution is done (`attach` must be disabled).
-{{% /md %}}</dd>
+    <dd>The logs of the container if its execution is done (`attach` must be disabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4295,8 +4295,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
-{{% /md %}}</dd>
+    <dd>A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4304,8 +4304,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}CPU shares (relative weight) for the container.
-{{% /md %}}</dd>
+    <dd>CPU shares (relative weight) for the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4313,8 +4313,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
-{{% /md %}}</dd>
+    <dd>If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4322,8 +4322,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerdevice">List[Container<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}See Devices below for details.
-{{% /md %}}</dd>
+    <dd>See Devices below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4331,8 +4331,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS servers.
-{{% /md %}}</dd>
+    <dd>Set of DNS servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4340,8 +4340,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
-{{% /md %}}</dd>
+    <dd>Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4349,8 +4349,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
-{{% /md %}}</dd>
+    <dd>Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4358,8 +4358,8 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain name of the container.
-{{% /md %}}</dd>
+    <dd>Domain name of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4367,12 +4367,12 @@ command to be `["/usr/bin/myprogram", "-f", "baz.conf"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The command to use as the
+    <dd>The command to use as the
 Entrypoint for the container. The Entrypoint allows you to configure a
 container to run as an executable. For example, to run `/usr/bin/myprogram`
 when starting a container, set the entrypoint to be
 `["/usr/bin/myprogram"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4380,8 +4380,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Environment variables to set.
-{{% /md %}}</dd>
+    <dd>Environment variables to set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4389,8 +4389,8 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The exit code of the container if its execution is done (`must_run` must be disabled).
-{{% /md %}}</dd>
+    <dd>The exit code of the container if its execution is done (`must_run` must be disabled).
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4398,9 +4398,9 @@ when starting a container, set the entrypoint to be
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use gateway from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4408,8 +4408,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Add additional groups to run as.
-{{% /md %}}</dd>
+    <dd>Add additional groups to run as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4417,8 +4417,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhealthcheck">Dict[Container<wbr>Healthcheck]</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4426,8 +4426,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Hostname of the container.
-{{% /md %}}</dd>
+    <dd>Hostname of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4435,8 +4435,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerhost">List[Container<wbr>Host]</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4444,10 +4444,10 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the image to back this container.
+    <dd>The ID of the image to back this container.
 The easiest way to get this value is to use the `docker..RemoteImage` resource
 as is shown in the example above.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4455,8 +4455,8 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+<p class="property-message">Deprecated: Use ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4464,9 +4464,9 @@ as is shown in the example above.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use ip_prefix_length from ip_adresses_data instead. This field exposes the data of the container&#39;s first network.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4474,8 +4474,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4483,8 +4483,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerlabel">List[Container<wbr>Label]</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4492,9 +4492,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of links for link based
+    <dd>Set of links for link based
 connectivity between containers that are running on the same host.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The --link flag is a legacy feature of Docker. It may eventually be removed.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: The --link flag is a legacy feature of Docker. It may eventually be removed.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4502,9 +4502,9 @@ connectivity between containers that are running on the same host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use for the container.
+    <dd>The logging driver to use for the container.
 Defaults to "json-file".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4512,9 +4512,9 @@ Defaults to "json-file".
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key/value pairs to use as options for
+    <dd>Key/value pairs to use as options for
 the logging driver.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4522,8 +4522,8 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Save the container logs (`attach` must be enabled).
-{{% /md %}}</dd>
+    <dd>Save the container logs (`attach` must be enabled).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4531,10 +4531,10 @@ the logging driver.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum amount of times to an attempt
+    <dd>The maximum amount of times to an attempt
 a restart when `restart` is set to "on-failure"
 * `working_dir`- (Optional, string) The working directory for commands to run in
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4542,8 +4542,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The memory limit for the container in MBs.
-{{% /md %}}</dd>
+    <dd>The memory limit for the container in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4551,7 +4551,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4559,8 +4559,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermount">List[Container<wbr>Mount]</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4568,7 +4568,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4576,7 +4576,7 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4584,8 +4584,8 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+    <dd>Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4593,9 +4593,9 @@ a restart when `restart` is set to "on-failure"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworkdata">List[Container<wbr>Network<wbr>Data]</a></span>
     </dt>
-    <dd>{{% md %}}(Map of a block) The IP addresses of the container on each
+    <dd>(Map of a block) The IP addresses of the container on each
 network. Key are the network names, values are the IP addresses.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4603,8 +4603,8 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Network mode of the container.
-{{% /md %}}</dd>
+    <dd>Network mode of the container.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4612,9 +4612,9 @@ network. Key are the network names, values are the IP addresses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Id of the networks in which the
+    <dd>Id of the networks in which the
 container is. *Deprecated:* use `networks_advanced` instead.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use networks_advanced instead. Will be removed in v2.0.0{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: Use networks_advanced instead. Will be removed in v2.0.0</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4622,8 +4622,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containernetworksadvanced">List[Container<wbr>Networks<wbr>Advanced]</a></span>
     </dt>
-    <dd>{{% md %}}See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
-{{% /md %}}</dd>
+    <dd>See Networks Advanced below for details. If this block has priority to the deprecated `network_alias` and `network` properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4631,8 +4631,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
-{{% /md %}}</dd>
+    <dd>The PID (Process) Namespace mode for the container. Either `container:<name|id>` or `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4640,8 +4640,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerport">List[Container<wbr>Port]</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4649,8 +4649,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Run container in privileged mode.
-{{% /md %}}</dd>
+    <dd>Run container in privileged mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4658,8 +4658,8 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Publish all ports of the container.
-{{% /md %}}</dd>
+    <dd>Publish all ports of the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4667,9 +4667,9 @@ container is. *Deprecated:* use `networks_advanced` instead.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4677,9 +4677,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The restart policy for the container. Must be
+    <dd>The restart policy for the container. Must be
 one of "no", "on-failure", "always", "unless-stopped".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4687,7 +4687,7 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4695,8 +4695,8 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Size of `/dev/shm` in MBs.
-{{% /md %}}</dd>
+    <dd>Size of `/dev/shm` in MBs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4704,9 +4704,9 @@ one of "no", "on-failure", "always", "unless-stopped".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, then the Docker container will be
+    <dd>If true, then the Docker container will be
 started after creation. If false, then the container is only created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4714,8 +4714,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of kernel parameters (sysctls) to set in the container.
-{{% /md %}}</dd>
+    <dd>A map of kernel parameters (sysctls) to set in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4723,8 +4723,8 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
-{{% /md %}}</dd>
+    <dd>A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4732,9 +4732,9 @@ started after creation. If false, then the container is only created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerulimit">List[Container<wbr>Ulimit]</a></span>
     </dt>
-    <dd>{{% md %}}See Ulimits below for
+    <dd>See Ulimits below for
 details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4742,8 +4742,8 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containerupload">List[Container<wbr>Upload]</a></span>
     </dt>
-    <dd>{{% md %}}See File Upload below for details.
-{{% /md %}}</dd>
+    <dd>See File Upload below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4751,10 +4751,10 @@ details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User used for run the first process. Format is
+    <dd>User used for run the first process. Format is
 `user` or `user:group` which user and group can be passed literraly or
 by name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4762,8 +4762,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
-{{% /md %}}</dd>
+    <dd>Sets the usernamespace mode for the container when usernamespace remapping option is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4771,8 +4771,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containervolume">List[Container<wbr>Volume]</a></span>
     </dt>
-    <dd>{{% md %}}See Volumes below for details.
-{{% /md %}}</dd>
+    <dd>See Volumes below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4780,10 +4780,10 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -4798,18 +4798,18 @@ by name.
 
 
 <h4 id="containercapabilities">Container<wbr>Capabilities</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerCapabilities">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerCapabilities">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerCapabilitiesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerCapabilitiesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4818,8 +4818,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}list of linux capabilities to add.
-{{% /md %}}</dd>
+    <dd>list of linux capabilities to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4827,14 +4827,14 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}list of linux capabilities to drop.
-{{% /md %}}</dd>
+    <dd>list of linux capabilities to drop.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4843,8 +4843,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}list of linux capabilities to add.
-{{% /md %}}</dd>
+    <dd>list of linux capabilities to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4852,14 +4852,14 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}list of linux capabilities to drop.
-{{% /md %}}</dd>
+    <dd>list of linux capabilities to drop.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4868,8 +4868,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}list of linux capabilities to add.
-{{% /md %}}</dd>
+    <dd>list of linux capabilities to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4877,14 +4877,14 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}list of linux capabilities to drop.
-{{% /md %}}</dd>
+    <dd>list of linux capabilities to drop.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4893,8 +4893,8 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}list of linux capabilities to add.
-{{% /md %}}</dd>
+    <dd>list of linux capabilities to add.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4902,29 +4902,29 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}list of linux capabilities to drop.
-{{% /md %}}</dd>
+    <dd>list of linux capabilities to drop.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containerdevice">Container<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerDevice">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerDeviceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerDeviceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4933,9 +4933,9 @@ by name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host where the device
+    <dd>The path on the host where the device
 is located.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4943,9 +4943,9 @@ is located.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path in the container where the
+    <dd>The path in the container where the
 device will be binded.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4953,16 +4953,16 @@ device will be binded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The cgroup permissions given to the
+    <dd>The cgroup permissions given to the
 container to access the device.
 Defaults to `rwm`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4971,9 +4971,9 @@ Defaults to `rwm`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host where the device
+    <dd>The path on the host where the device
 is located.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4981,9 +4981,9 @@ is located.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path in the container where the
+    <dd>The path in the container where the
 device will be binded.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4991,16 +4991,16 @@ device will be binded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The cgroup permissions given to the
+    <dd>The cgroup permissions given to the
 container to access the device.
 Defaults to `rwm`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5009,9 +5009,9 @@ Defaults to `rwm`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host where the device
+    <dd>The path on the host where the device
 is located.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5019,9 +5019,9 @@ is located.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path in the container where the
+    <dd>The path in the container where the
 device will be binded.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5029,16 +5029,16 @@ device will be binded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The cgroup permissions given to the
+    <dd>The cgroup permissions given to the
 container to access the device.
 Defaults to `rwm`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5047,9 +5047,9 @@ Defaults to `rwm`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host where the device
+    <dd>The path on the host where the device
 is located.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5057,9 +5057,9 @@ is located.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path in the container where the
+    <dd>The path in the container where the
 device will be binded.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5067,31 +5067,31 @@ device will be binded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The cgroup permissions given to the
+    <dd>The cgroup permissions given to the
 container to access the device.
 Defaults to `rwm`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containerhealthcheck">Container<wbr>Healthcheck</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerHealthcheck">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerHealthcheck">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerHealthcheckArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerHealthcheckOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5100,9 +5100,9 @@ Defaults to `rwm`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Command to run to check health. For example, to run `curl -f http://localhost/health` set the
+    <dd>Command to run to check health. For example, to run `curl -f http://localhost/health` set the
 command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5110,8 +5110,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Time between running the check `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Time between running the check `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5119,8 +5119,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Consecutive failures needed to report unhealthy. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Consecutive failures needed to report unhealthy. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5128,8 +5128,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5137,14 +5137,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5153,9 +5153,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Command to run to check health. For example, to run `curl -f http://localhost/health` set the
+    <dd>Command to run to check health. For example, to run `curl -f http://localhost/health` set the
 command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5163,8 +5163,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time between running the check `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Time between running the check `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5172,8 +5172,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Consecutive failures needed to report unhealthy. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Consecutive failures needed to report unhealthy. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5181,8 +5181,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5190,14 +5190,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5206,9 +5206,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Command to run to check health. For example, to run `curl -f http://localhost/health` set the
+    <dd>Command to run to check health. For example, to run `curl -f http://localhost/health` set the
 command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5216,8 +5216,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time between running the check `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Time between running the check `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5225,8 +5225,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Consecutive failures needed to report unhealthy. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Consecutive failures needed to report unhealthy. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5234,8 +5234,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5243,14 +5243,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5259,9 +5259,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Command to run to check health. For example, to run `curl -f http://localhost/health` set the
+    <dd>Command to run to check health. For example, to run `curl -f http://localhost/health` set the
 command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5269,8 +5269,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Time between running the check `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Time between running the check `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5278,8 +5278,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Consecutive failures needed to report unhealthy. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Consecutive failures needed to report unhealthy. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5287,8 +5287,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5296,29 +5296,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containerhost">Container<wbr>Host</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerHost">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerHost">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerHostArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerHostOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5327,8 +5327,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5336,14 +5336,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}IP address this hostname should resolve to.
-{{% /md %}}</dd>
+    <dd>IP address this hostname should resolve to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5352,8 +5352,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5361,14 +5361,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}IP address this hostname should resolve to.
-{{% /md %}}</dd>
+    <dd>IP address this hostname should resolve to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5377,8 +5377,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5386,14 +5386,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}IP address this hostname should resolve to.
-{{% /md %}}</dd>
+    <dd>IP address this hostname should resolve to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5402,8 +5402,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Hostname to add.
-{{% /md %}}</dd>
+    <dd>Hostname to add.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5411,29 +5411,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}IP address this hostname should resolve to.
-{{% /md %}}</dd>
+    <dd>IP address this hostname should resolve to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containerlabel">Container<wbr>Label</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerLabel">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerLabel">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerLabelArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerLabelOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5442,9 +5442,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5452,13 +5452,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5467,9 +5467,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5477,13 +5477,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5492,9 +5492,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5502,13 +5502,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5517,9 +5517,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5527,28 +5527,28 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containermount">Container<wbr>Mount</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerMount">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerMount">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5557,8 +5557,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container path.
-{{% /md %}}</dd>
+    <dd>The container path.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5566,8 +5566,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The mount type: valid values are `bind|volume|tmpfs`.
-{{% /md %}}</dd>
+    <dd>The mount type: valid values are `bind|volume|tmpfs`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5575,8 +5575,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountbindoptions">Container<wbr>Mount<wbr>Bind<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `bind` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `bind` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5584,9 +5584,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5594,8 +5594,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The mount source (e.g., a volume name, a host path)
-{{% /md %}}</dd>
+    <dd>The mount source (e.g., a volume name, a host path)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5603,8 +5603,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermounttmpfsoptions">Container<wbr>Mount<wbr>Tmpfs<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `tmpf` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `tmpf` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5612,14 +5612,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountvolumeoptions">Container<wbr>Mount<wbr>Volume<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `volume` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `volume` type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5628,8 +5628,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container path.
-{{% /md %}}</dd>
+    <dd>The container path.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5637,8 +5637,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mount type: valid values are `bind|volume|tmpfs`.
-{{% /md %}}</dd>
+    <dd>The mount type: valid values are `bind|volume|tmpfs`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5646,8 +5646,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountbindoptions">Container<wbr>Mount<wbr>Bind<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `bind` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `bind` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5655,9 +5655,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5665,8 +5665,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mount source (e.g., a volume name, a host path)
-{{% /md %}}</dd>
+    <dd>The mount source (e.g., a volume name, a host path)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5674,8 +5674,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermounttmpfsoptions">Container<wbr>Mount<wbr>Tmpfs<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `tmpf` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `tmpf` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5683,14 +5683,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountvolumeoptions">Container<wbr>Mount<wbr>Volume<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `volume` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `volume` type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5699,8 +5699,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container path.
-{{% /md %}}</dd>
+    <dd>The container path.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5708,8 +5708,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mount type: valid values are `bind|volume|tmpfs`.
-{{% /md %}}</dd>
+    <dd>The mount type: valid values are `bind|volume|tmpfs`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5717,8 +5717,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountbindoptions">Container<wbr>Mount<wbr>Bind<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `bind` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `bind` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5726,9 +5726,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5736,8 +5736,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mount source (e.g., a volume name, a host path)
-{{% /md %}}</dd>
+    <dd>The mount source (e.g., a volume name, a host path)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5745,8 +5745,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermounttmpfsoptions">Container<wbr>Mount<wbr>Tmpfs<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `tmpf` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `tmpf` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5754,14 +5754,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountvolumeoptions">Container<wbr>Mount<wbr>Volume<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `volume` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `volume` type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5770,8 +5770,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container path.
-{{% /md %}}</dd>
+    <dd>The container path.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5779,8 +5779,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The mount type: valid values are `bind|volume|tmpfs`.
-{{% /md %}}</dd>
+    <dd>The mount type: valid values are `bind|volume|tmpfs`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5788,8 +5788,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountbindoptions">Dict[Container<wbr>Mount<wbr>Bind<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `bind` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `bind` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5797,9 +5797,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5807,8 +5807,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The mount source (e.g., a volume name, a host path)
-{{% /md %}}</dd>
+    <dd>The mount source (e.g., a volume name, a host path)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5816,8 +5816,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermounttmpfsoptions">Dict[Container<wbr>Mount<wbr>Tmpfs<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `tmpf` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `tmpf` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5825,29 +5825,29 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountvolumeoptions">Dict[Container<wbr>Mount<wbr>Volume<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `volume` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `volume` type.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containermountbindoptions">Container<wbr>Mount<wbr>Bind<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerMountBindOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerMountBindOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountBindOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountBindOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5856,14 +5856,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A propagation mode with the value.
-{{% /md %}}</dd>
+    <dd>A propagation mode with the value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5872,14 +5872,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A propagation mode with the value.
-{{% /md %}}</dd>
+    <dd>A propagation mode with the value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5888,14 +5888,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A propagation mode with the value.
-{{% /md %}}</dd>
+    <dd>A propagation mode with the value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5904,29 +5904,29 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A propagation mode with the value.
-{{% /md %}}</dd>
+    <dd>A propagation mode with the value.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containermounttmpfsoptions">Container<wbr>Mount<wbr>Tmpfs<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerMountTmpfsOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerMountTmpfsOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountTmpfsOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountTmpfsOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5935,8 +5935,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The permission mode for the tmpfs mount in an integer.
-{{% /md %}}</dd>
+    <dd>The permission mode for the tmpfs mount in an integer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5944,14 +5944,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size for the tmpfs mount in bytes.
-{{% /md %}}</dd>
+    <dd>The size for the tmpfs mount in bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5960,8 +5960,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The permission mode for the tmpfs mount in an integer.
-{{% /md %}}</dd>
+    <dd>The permission mode for the tmpfs mount in an integer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5969,14 +5969,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size for the tmpfs mount in bytes.
-{{% /md %}}</dd>
+    <dd>The size for the tmpfs mount in bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5985,8 +5985,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The permission mode for the tmpfs mount in an integer.
-{{% /md %}}</dd>
+    <dd>The permission mode for the tmpfs mount in an integer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5994,14 +5994,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size for the tmpfs mount in bytes.
-{{% /md %}}</dd>
+    <dd>The size for the tmpfs mount in bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6010,8 +6010,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The permission mode for the tmpfs mount in an integer.
-{{% /md %}}</dd>
+    <dd>The permission mode for the tmpfs mount in an integer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6019,29 +6019,29 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size for the tmpfs mount in bytes.
-{{% /md %}}</dd>
+    <dd>The size for the tmpfs mount in bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containermountvolumeoptions">Container<wbr>Mount<wbr>Volume<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerMountVolumeOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerMountVolumeOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountVolumeOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountVolumeOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6050,7 +6050,7 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6058,8 +6058,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Options for the driver.
-{{% /md %}}</dd>
+    <dd>Options for the driver.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6067,8 +6067,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountvolumeoptionslabel">List&lt;Container<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6076,14 +6076,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to populate volume with data from the target.
-{{% /md %}}</dd>
+    <dd>Whether to populate volume with data from the target.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6092,7 +6092,7 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6100,8 +6100,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Options for the driver.
-{{% /md %}}</dd>
+    <dd>Options for the driver.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6109,8 +6109,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountvolumeoptionslabel">[]Container<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6118,14 +6118,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to populate volume with data from the target.
-{{% /md %}}</dd>
+    <dd>Whether to populate volume with data from the target.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6134,7 +6134,7 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6142,8 +6142,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Options for the driver.
-{{% /md %}}</dd>
+    <dd>Options for the driver.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6151,8 +6151,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountvolumeoptionslabel">Container<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label[]</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6160,14 +6160,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to populate volume with data from the target.
-{{% /md %}}</dd>
+    <dd>Whether to populate volume with data from the target.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6176,7 +6176,7 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6184,8 +6184,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Options for the driver.
-{{% /md %}}</dd>
+    <dd>Options for the driver.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6193,8 +6193,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#containermountvolumeoptionslabel">List[Container<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label]</a></span>
     </dt>
-    <dd>{{% md %}}Adding labels.
-{{% /md %}}</dd>
+    <dd>Adding labels.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6202,29 +6202,29 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to populate volume with data from the target.
-{{% /md %}}</dd>
+    <dd>Whether to populate volume with data from the target.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containermountvolumeoptionslabel">Container<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerMountVolumeOptionsLabel">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerMountVolumeOptionsLabel">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountVolumeOptionsLabelArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerMountVolumeOptionsLabelOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6233,9 +6233,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6243,13 +6243,13 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6258,9 +6258,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6268,13 +6268,13 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6283,9 +6283,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6293,13 +6293,13 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6308,9 +6308,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6318,28 +6318,28 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containernetworkdata">Container<wbr>Network<wbr>Data</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerNetworkData">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerNetworkDataOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6348,9 +6348,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6358,8 +6358,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}</dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6367,9 +6367,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6377,13 +6377,13 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6392,9 +6392,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6402,8 +6402,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}</dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6411,9 +6411,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6421,13 +6421,13 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6436,9 +6436,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6446,8 +6446,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}</dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6455,9 +6455,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6465,13 +6465,13 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6480,9 +6480,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The network gateway of the container as read from its
 NetworkSettings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6490,8 +6490,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
-{{% /md %}}</dd>
+    <dd>*Deprecated:* Use `network_data` instead. The IP address of the container's first network it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6499,9 +6499,9 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
+    <dd>*Deprecated:* Use `network_data` instead. The IP prefix length of the container as read from its
 NetworkSettings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6509,28 +6509,28 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containernetworksadvanced">Container<wbr>Networks<wbr>Advanced</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerNetworksAdvanced">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerNetworksAdvanced">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerNetworksAdvancedArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerNetworksAdvancedOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6539,8 +6539,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the network.
-{{% /md %}}</dd>
+    <dd>The name of the network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6548,8 +6548,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The network aliases of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The network aliases of the container in the specific network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6557,8 +6557,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPV4 address of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The IPV4 address of the container in the specific network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6566,14 +6566,14 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPV6 address of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The IPV6 address of the container in the specific network.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6582,8 +6582,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the network.
-{{% /md %}}</dd>
+    <dd>The name of the network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6591,8 +6591,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The network aliases of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The network aliases of the container in the specific network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6600,8 +6600,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPV4 address of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The IPV4 address of the container in the specific network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6609,14 +6609,14 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPV6 address of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The IPV6 address of the container in the specific network.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6625,8 +6625,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the network.
-{{% /md %}}</dd>
+    <dd>The name of the network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6634,8 +6634,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The network aliases of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The network aliases of the container in the specific network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6643,8 +6643,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPV4 address of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The IPV4 address of the container in the specific network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6652,14 +6652,14 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPV6 address of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The IPV6 address of the container in the specific network.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6668,8 +6668,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the network.
-{{% /md %}}</dd>
+    <dd>The name of the network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6677,8 +6677,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The network aliases of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The network aliases of the container in the specific network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6686,8 +6686,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPV4 address of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The IPV4 address of the container in the specific network.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6695,29 +6695,29 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPV6 address of the container in the specific network.
-{{% /md %}}</dd>
+    <dd>The IPV6 address of the container in the specific network.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containerport">Container<wbr>Port</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerPort">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerPort">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerPortArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerPortOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6726,8 +6726,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Port within the container.
-{{% /md %}}</dd>
+    <dd>Port within the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6735,8 +6735,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Port exposed out of the container. If not given a free random port `>= 32768` will be used.
-{{% /md %}}</dd>
+    <dd>Port exposed out of the container. If not given a free random port `>= 32768` will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6744,8 +6744,8 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}IP address this hostname should resolve to.
-{{% /md %}}</dd>
+    <dd>IP address this hostname should resolve to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6753,15 +6753,15 @@ NetworkSettings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol that can be used over this port,
+    <dd>Protocol that can be used over this port,
 defaults to `tcp`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6770,8 +6770,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Port within the container.
-{{% /md %}}</dd>
+    <dd>Port within the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6779,8 +6779,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Port exposed out of the container. If not given a free random port `>= 32768` will be used.
-{{% /md %}}</dd>
+    <dd>Port exposed out of the container. If not given a free random port `>= 32768` will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6788,8 +6788,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}IP address this hostname should resolve to.
-{{% /md %}}</dd>
+    <dd>IP address this hostname should resolve to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6797,15 +6797,15 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol that can be used over this port,
+    <dd>Protocol that can be used over this port,
 defaults to `tcp`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6814,8 +6814,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Port within the container.
-{{% /md %}}</dd>
+    <dd>Port within the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6823,8 +6823,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Port exposed out of the container. If not given a free random port `>= 32768` will be used.
-{{% /md %}}</dd>
+    <dd>Port exposed out of the container. If not given a free random port `>= 32768` will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6832,8 +6832,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}IP address this hostname should resolve to.
-{{% /md %}}</dd>
+    <dd>IP address this hostname should resolve to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6841,15 +6841,15 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol that can be used over this port,
+    <dd>Protocol that can be used over this port,
 defaults to `tcp`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6858,8 +6858,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Port within the container.
-{{% /md %}}</dd>
+    <dd>Port within the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6867,8 +6867,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Port exposed out of the container. If not given a free random port `>= 32768` will be used.
-{{% /md %}}</dd>
+    <dd>Port exposed out of the container. If not given a free random port `>= 32768` will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6876,8 +6876,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}IP address this hostname should resolve to.
-{{% /md %}}</dd>
+    <dd>IP address this hostname should resolve to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6885,30 +6885,30 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Protocol that can be used over this port,
+    <dd>Protocol that can be used over this port,
 defaults to `tcp`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containerulimit">Container<wbr>Ulimit</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerUlimit">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerUlimit">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerUlimitArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerUlimitOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6917,7 +6917,7 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6925,7 +6925,7 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6933,13 +6933,13 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6948,7 +6948,7 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6956,7 +6956,7 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6964,13 +6964,13 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6979,7 +6979,7 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6987,7 +6987,7 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6995,13 +6995,13 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7010,7 +7010,7 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -7018,7 +7018,7 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -7026,28 +7026,28 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containerupload">Container<wbr>Upload</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerUpload">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerUpload">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerUploadArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerUploadOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7056,8 +7056,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}path to a file in the container.
-{{% /md %}}</dd>
+    <dd>path to a file in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7065,8 +7065,8 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Literal string value to use as the object content, which will be uploaded as UTF-8-encoded text.
-{{% /md %}}</dd>
+    <dd>Literal string value to use as the object content, which will be uploaded as UTF-8-encoded text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7074,7 +7074,7 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7082,10 +7082,10 @@ defaults to `tcp`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the file will be uploaded with user
+    <dd>If true, the file will be uploaded with user
 executable permission.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7093,8 +7093,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A filename that references a file which will be uploaded as the object content. This allows for large file uploads that do not get stored in state.
-{{% /md %}}</dd>
+    <dd>A filename that references a file which will be uploaded as the object content. This allows for large file uploads that do not get stored in state.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7102,14 +7102,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If using `source`, this will force an update if the file content has updated but the filename has not. 
-{{% /md %}}</dd>
+    <dd>If using `source`, this will force an update if the file content has updated but the filename has not. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7118,8 +7118,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}path to a file in the container.
-{{% /md %}}</dd>
+    <dd>path to a file in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7127,8 +7127,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Literal string value to use as the object content, which will be uploaded as UTF-8-encoded text.
-{{% /md %}}</dd>
+    <dd>Literal string value to use as the object content, which will be uploaded as UTF-8-encoded text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7136,7 +7136,7 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7144,10 +7144,10 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the file will be uploaded with user
+    <dd>If true, the file will be uploaded with user
 executable permission.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7155,8 +7155,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A filename that references a file which will be uploaded as the object content. This allows for large file uploads that do not get stored in state.
-{{% /md %}}</dd>
+    <dd>A filename that references a file which will be uploaded as the object content. This allows for large file uploads that do not get stored in state.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7164,14 +7164,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using `source`, this will force an update if the file content has updated but the filename has not. 
-{{% /md %}}</dd>
+    <dd>If using `source`, this will force an update if the file content has updated but the filename has not. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7180,8 +7180,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}path to a file in the container.
-{{% /md %}}</dd>
+    <dd>path to a file in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7189,8 +7189,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Literal string value to use as the object content, which will be uploaded as UTF-8-encoded text.
-{{% /md %}}</dd>
+    <dd>Literal string value to use as the object content, which will be uploaded as UTF-8-encoded text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7198,7 +7198,7 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7206,10 +7206,10 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, the file will be uploaded with user
+    <dd>If true, the file will be uploaded with user
 executable permission.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7217,8 +7217,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A filename that references a file which will be uploaded as the object content. This allows for large file uploads that do not get stored in state.
-{{% /md %}}</dd>
+    <dd>A filename that references a file which will be uploaded as the object content. This allows for large file uploads that do not get stored in state.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7226,14 +7226,14 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If using `source`, this will force an update if the file content has updated but the filename has not. 
-{{% /md %}}</dd>
+    <dd>If using `source`, this will force an update if the file content has updated but the filename has not. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7242,8 +7242,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}path to a file in the container.
-{{% /md %}}</dd>
+    <dd>path to a file in the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7251,8 +7251,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Literal string value to use as the object content, which will be uploaded as UTF-8-encoded text.
-{{% /md %}}</dd>
+    <dd>Literal string value to use as the object content, which will be uploaded as UTF-8-encoded text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7260,7 +7260,7 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7268,10 +7268,10 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the file will be uploaded with user
+    <dd>If true, the file will be uploaded with user
 executable permission.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7279,8 +7279,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A filename that references a file which will be uploaded as the object content. This allows for large file uploads that do not get stored in state.
-{{% /md %}}</dd>
+    <dd>A filename that references a file which will be uploaded as the object content. This allows for large file uploads that do not get stored in state.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7288,29 +7288,29 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If using `source`, this will force an update if the file content has updated but the filename has not. 
-{{% /md %}}</dd>
+    <dd>If using `source`, this will force an update if the file content has updated but the filename has not. 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="containervolume">Container<wbr>Volume</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ContainerVolume">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ContainerVolume">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerVolumeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ContainerVolumeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -7319,9 +7319,9 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path in the container where the
+    <dd>The path in the container where the
 device will be binded.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7329,9 +7329,9 @@ device will be binded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container where the volume is
+    <dd>The container where the volume is
 coming from.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7339,9 +7339,9 @@ coming from.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host where the device
+    <dd>The path on the host where the device
 is located.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7349,9 +7349,9 @@ is located.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7359,15 +7359,15 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the docker volume which
+    <dd>The name of the docker volume which
 should be mounted.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -7376,9 +7376,9 @@ should be mounted.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path in the container where the
+    <dd>The path in the container where the
 device will be binded.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7386,9 +7386,9 @@ device will be binded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container where the volume is
+    <dd>The container where the volume is
 coming from.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7396,9 +7396,9 @@ coming from.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host where the device
+    <dd>The path on the host where the device
 is located.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7406,9 +7406,9 @@ is located.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7416,15 +7416,15 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the docker volume which
+    <dd>The name of the docker volume which
 should be mounted.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -7433,9 +7433,9 @@ should be mounted.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path in the container where the
+    <dd>The path in the container where the
 device will be binded.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7443,9 +7443,9 @@ device will be binded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container where the volume is
+    <dd>The container where the volume is
 coming from.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7453,9 +7453,9 @@ coming from.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host where the device
+    <dd>The path on the host where the device
 is located.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7463,9 +7463,9 @@ is located.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7473,15 +7473,15 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the docker volume which
+    <dd>The name of the docker volume which
 should be mounted.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -7490,9 +7490,9 @@ should be mounted.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path in the container where the
+    <dd>The path in the container where the
 device will be binded.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7500,9 +7500,9 @@ device will be binded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container where the volume is
+    <dd>The container where the volume is
 coming from.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7510,9 +7510,9 @@ coming from.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host where the device
+    <dd>The path on the host where the device
 is located.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7520,9 +7520,9 @@ is located.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this volume will be readonly.
+    <dd>If true, this volume will be readonly.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7530,12 +7530,12 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the docker volume which
+    <dd>The name of the docker volume which
 should be mounted.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

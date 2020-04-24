@@ -130,26 +130,26 @@ large files efficiently.
 
 
 ## Create a Function Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#Function">Function</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#FunctionArgs">FunctionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Function</span><span class="p">(resource_name, opts=None, </span>code=None<span class="p">, </span>dead_letter_config=None<span class="p">, </span>description=None<span class="p">, </span>environment=None<span class="p">, </span>handler=None<span class="p">, </span>kms_key_arn=None<span class="p">, </span>layers=None<span class="p">, </span>memory_size=None<span class="p">, </span>name=None<span class="p">, </span>publish=None<span class="p">, </span>reserved_concurrent_executions=None<span class="p">, </span>role=None<span class="p">, </span>runtime=None<span class="p">, </span>s3_bucket=None<span class="p">, </span>s3_key=None<span class="p">, </span>s3_object_version=None<span class="p">, </span>source_code_hash=None<span class="p">, </span>tags=None<span class="p">, </span>timeout=None<span class="p">, </span>tracing_config=None<span class="p">, </span>vpc_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewFunction<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionArgs">FunctionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#Function">Function</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.Function.html">Function</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.FunctionArgs.html">FunctionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -186,9 +186,9 @@ large files efficiently.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -206,9 +206,9 @@ large files efficiently.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -255,9 +255,9 @@ large files efficiently.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -294,7 +294,7 @@ large files efficiently.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Function Resource Properties {#properties}
 
@@ -307,7 +307,7 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -316,8 +316,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The function [entrypoint][3] in your code.
-{{% /md %}}</dd>
+    <dd>The function [entrypoint][3] in your code.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -325,8 +325,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -334,8 +334,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See [Runtimes][6] for valid values.
-{{% /md %}}</dd>
+    <dd>See [Runtimes][6] for valid values.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,8 +343,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,8 +352,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiondeadletterconfig">Function<wbr>Dead<wbr>Letter<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested block to configure the function's *dead letter queue*. See details below.
-{{% /md %}}</dd>
+    <dd>Nested block to configure the function's *dead letter queue*. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,8 +361,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,8 +370,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionenvironment">Function<wbr>Environment<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
-{{% /md %}}</dd>
+    <dd>List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,8 +406,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,8 +415,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,8 +424,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,8 +433,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,8 +442,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -451,8 +451,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -460,8 +460,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,8 +469,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the object.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,8 +478,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,7 +487,7 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiontracingconfig">Function<wbr>Tracing<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,14 +495,14 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionvpcconfig">Function<wbr>Vpc<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
-{{% /md %}}</dd>
+    <dd>Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -511,8 +511,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function [entrypoint][3] in your code.
-{{% /md %}}</dd>
+    <dd>The function [entrypoint][3] in your code.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -520,8 +520,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -529,8 +529,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See [Runtimes][6] for valid values.
-{{% /md %}}</dd>
+    <dd>See [Runtimes][6] for valid values.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,8 +538,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Archive">pulumi.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiondeadletterconfig">Function<wbr>Dead<wbr>Letter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Nested block to configure the function's *dead letter queue*. See details below.
-{{% /md %}}</dd>
+    <dd>Nested block to configure the function's *dead letter queue*. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,8 +556,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,8 +565,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionenvironment">Function<wbr>Environment</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,8 +583,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
-{{% /md %}}</dd>
+    <dd>List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,8 +646,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,8 +655,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -664,8 +664,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the object.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -673,8 +673,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -682,7 +682,7 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiontracingconfig">Function<wbr>Tracing<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -690,14 +690,14 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionvpcconfig">Function<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
-{{% /md %}}</dd>
+    <dd>Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -706,8 +706,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function [entrypoint][3] in your code.
-{{% /md %}}</dd>
+    <dd>The function [entrypoint][3] in your code.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -715,8 +715,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">ARN</span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -724,8 +724,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See [Runtimes][6] for valid values.
-{{% /md %}}</dd>
+    <dd>See [Runtimes][6] for valid values.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,8 +733,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Archive">pulumi.asset.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,8 +742,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiondeadletterconfig">Function<wbr>Dead<wbr>Letter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Nested block to configure the function's *dead letter queue*. See details below.
-{{% /md %}}</dd>
+    <dd>Nested block to configure the function's *dead letter queue*. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,8 +751,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,8 +760,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionenvironment">Function<wbr>Environment</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,8 +769,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,8 +778,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
-{{% /md %}}</dd>
+    <dd>List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,8 +787,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,8 +796,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,8 +832,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,8 +841,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the object.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,7 +877,7 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiontracingconfig">Function<wbr>Tracing<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -885,14 +885,14 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionvpcconfig">Function<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
-{{% /md %}}</dd>
+    <dd>Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -901,8 +901,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The function [entrypoint][3] in your code.
-{{% /md %}}</dd>
+    <dd>The function [entrypoint][3] in your code.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -910,8 +910,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -919,8 +919,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See [Runtimes][6] for valid values.
-{{% /md %}}</dd>
+    <dd>See [Runtimes][6] for valid values.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -928,8 +928,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">pulumi.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -937,8 +937,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiondeadletterconfig">Dict[Function<wbr>Dead<wbr>Letter<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block to configure the function's *dead letter queue*. See details below.
-{{% /md %}}</dd>
+    <dd>Nested block to configure the function's *dead letter queue*. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -946,8 +946,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -955,8 +955,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionenvironment">Dict[Function<wbr>Environment]</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -964,8 +964,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -973,8 +973,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
-{{% /md %}}</dd>
+    <dd>List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -982,8 +982,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,8 +991,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1000,8 +1000,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1009,8 +1009,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1018,8 +1018,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1027,8 +1027,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,8 +1036,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,8 +1054,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the object.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1063,8 +1063,8 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,7 +1072,7 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiontracingconfig">Dict[Function<wbr>Tracing<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,11 +1080,11 @@ The Function resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionvpcconfig">Dict[Function<wbr>Vpc<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
-{{% /md %}}</dd>
+    <dd>Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1098,7 +1098,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1107,8 +1107,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1116,7 +1116,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1124,8 +1124,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1133,8 +1133,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1142,9 +1142,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function Version
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function Version
 (if versioning is enabled via `publish = true`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1152,8 +1152,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1161,14 +1161,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Latest published version of your Lambda Function.
-{{% /md %}}</dd>
+    <dd>Latest published version of your Lambda Function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1177,8 +1177,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1186,7 +1186,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1194,8 +1194,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1203,8 +1203,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1212,9 +1212,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function Version
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function Version
 (if versioning is enabled via `publish = true`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1222,8 +1222,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1231,14 +1231,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Latest published version of your Lambda Function.
-{{% /md %}}</dd>
+    <dd>Latest published version of your Lambda Function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1247,8 +1247,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1256,7 +1256,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1264,8 +1264,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1273,8 +1273,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1282,9 +1282,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function Version
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function Version
 (if versioning is enabled via `publish = true`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1292,8 +1292,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1301,14 +1301,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Latest published version of your Lambda Function.
-{{% /md %}}</dd>
+    <dd>Latest published version of your Lambda Function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1317,8 +1317,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1326,7 +1326,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1334,8 +1334,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1343,8 +1343,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1352,9 +1352,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function Version
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function Version
 (if versioning is enabled via `publish = true`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1362,8 +1362,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1371,11 +1371,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Latest published version of your Lambda Function.
-{{% /md %}}</dd>
+    <dd>Latest published version of your Lambda Function.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1386,25 +1386,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Function Resource {#look-up}
 
 Get an existing Function resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#FunctionState">FunctionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#Function">Function</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>code=None<span class="p">, </span>dead_letter_config=None<span class="p">, </span>description=None<span class="p">, </span>environment=None<span class="p">, </span>handler=None<span class="p">, </span>invoke_arn=None<span class="p">, </span>kms_key_arn=None<span class="p">, </span>last_modified=None<span class="p">, </span>layers=None<span class="p">, </span>memory_size=None<span class="p">, </span>name=None<span class="p">, </span>publish=None<span class="p">, </span>qualified_arn=None<span class="p">, </span>reserved_concurrent_executions=None<span class="p">, </span>role=None<span class="p">, </span>runtime=None<span class="p">, </span>s3_bucket=None<span class="p">, </span>s3_key=None<span class="p">, </span>s3_object_version=None<span class="p">, </span>source_code_hash=None<span class="p">, </span>source_code_size=None<span class="p">, </span>tags=None<span class="p">, </span>timeout=None<span class="p">, </span>tracing_config=None<span class="p">, </span>version=None<span class="p">, </span>vpc_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetFunction<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionState">FunctionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#Function">Function</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.Function.html">Function</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.FunctionState.html">FunctionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1429,9 +1429,9 @@ Get an existing Function resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1444,36 +1444,9 @@ Get an existing Function resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1498,13 +1471,40 @@ Get an existing Function resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1513,8 +1513,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,8 +1522,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,8 +1531,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiondeadletterconfig">Function<wbr>Dead<wbr>Letter<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested block to configure the function's *dead letter queue*. See details below.
-{{% /md %}}</dd>
+    <dd>Nested block to configure the function's *dead letter queue*. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,8 +1540,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,8 +1549,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionenvironment">Function<wbr>Environment<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1558,8 +1558,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The function [entrypoint][3] in your code.
-{{% /md %}}</dd>
+    <dd>The function [entrypoint][3] in your code.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,8 +1567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,8 +1576,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1585,8 +1585,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,8 +1594,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
-{{% /md %}}</dd>
+    <dd>List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,8 +1603,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1612,8 +1612,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1621,8 +1621,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1630,9 +1630,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function Version
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function Version
 (if versioning is enabled via `publish = true`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,8 +1640,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,8 +1649,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,8 +1658,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See [Runtimes][6] for valid values.
-{{% /md %}}</dd>
+    <dd>See [Runtimes][6] for valid values.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,8 +1667,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,8 +1676,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1685,8 +1685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1694,8 +1694,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1703,8 +1703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1712,8 +1712,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the object.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1721,8 +1721,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1730,7 +1730,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiontracingconfig">Function<wbr>Tracing<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1738,8 +1738,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Latest published version of your Lambda Function.
-{{% /md %}}</dd>
+    <dd>Latest published version of your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1747,14 +1747,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionvpcconfig">Function<wbr>Vpc<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
-{{% /md %}}</dd>
+    <dd>Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1763,8 +1763,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1772,8 +1772,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Archive">pulumi.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1781,8 +1781,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiondeadletterconfig">Function<wbr>Dead<wbr>Letter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Nested block to configure the function's *dead letter queue*. See details below.
-{{% /md %}}</dd>
+    <dd>Nested block to configure the function's *dead letter queue*. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1790,8 +1790,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,8 +1799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionenvironment">Function<wbr>Environment</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1808,8 +1808,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function [entrypoint][3] in your code.
-{{% /md %}}</dd>
+    <dd>The function [entrypoint][3] in your code.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,8 +1817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,8 +1826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1835,8 +1835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,8 +1844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
-{{% /md %}}</dd>
+    <dd>List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1853,8 +1853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1862,8 +1862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1871,8 +1871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1880,9 +1880,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function Version
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function Version
 (if versioning is enabled via `publish = true`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1890,8 +1890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1899,8 +1899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1908,8 +1908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See [Runtimes][6] for valid values.
-{{% /md %}}</dd>
+    <dd>See [Runtimes][6] for valid values.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1917,8 +1917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1926,8 +1926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1935,8 +1935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1944,8 +1944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1953,8 +1953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1962,8 +1962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the object.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,8 +1971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1980,7 +1980,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiontracingconfig">Function<wbr>Tracing<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1988,8 +1988,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Latest published version of your Lambda Function.
-{{% /md %}}</dd>
+    <dd>Latest published version of your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1997,14 +1997,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionvpcconfig">Function<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
-{{% /md %}}</dd>
+    <dd>Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2013,8 +2013,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2022,8 +2022,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Archive">pulumi.asset.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2031,8 +2031,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiondeadletterconfig">Function<wbr>Dead<wbr>Letter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Nested block to configure the function's *dead letter queue*. See details below.
-{{% /md %}}</dd>
+    <dd>Nested block to configure the function's *dead letter queue*. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2040,8 +2040,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2049,8 +2049,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionenvironment">Function<wbr>Environment</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2058,8 +2058,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function [entrypoint][3] in your code.
-{{% /md %}}</dd>
+    <dd>The function [entrypoint][3] in your code.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2067,8 +2067,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2076,8 +2076,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,8 +2085,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2094,8 +2094,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
-{{% /md %}}</dd>
+    <dd>List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2103,8 +2103,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2112,8 +2112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2121,8 +2121,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2130,9 +2130,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function Version
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function Version
 (if versioning is enabled via `publish = true`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2140,8 +2140,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2149,8 +2149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">ARN</span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2158,8 +2158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See [Runtimes][6] for valid values.
-{{% /md %}}</dd>
+    <dd>See [Runtimes][6] for valid values.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2167,8 +2167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2176,8 +2176,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2185,8 +2185,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2194,8 +2194,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2203,8 +2203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2212,8 +2212,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the object.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2221,8 +2221,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2230,7 +2230,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiontracingconfig">Function<wbr>Tracing<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2238,8 +2238,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Latest published version of your Lambda Function.
-{{% /md %}}</dd>
+    <dd>Latest published version of your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2247,14 +2247,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionvpcconfig">Function<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
-{{% /md %}}</dd>
+    <dd>Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2263,8 +2263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2272,8 +2272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">pulumi.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-{{% /md %}}</dd>
+    <dd>The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2281,8 +2281,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiondeadletterconfig">Dict[Function<wbr>Dead<wbr>Letter<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Nested block to configure the function's *dead letter queue*. See details below.
-{{% /md %}}</dd>
+    <dd>Nested block to configure the function's *dead letter queue*. See details below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2290,8 +2290,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2299,8 +2299,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionenvironment">Dict[Function<wbr>Environment]</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings. Fields documented below.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2308,8 +2308,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The function [entrypoint][3] in your code.
-{{% /md %}}</dd>
+    <dd>The function [entrypoint][3] in your code.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2317,8 +2317,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2326,8 +2326,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,8 +2335,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2344,8 +2344,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
-{{% /md %}}</dd>
+    <dd>List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2353,8 +2353,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2362,8 +2362,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A unique name for your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,8 +2371,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,9 +2380,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) identifying your Lambda Function Version
+    <dd>The Amazon Resource Name (ARN) identifying your Lambda Function Version
 (if versioning is enabled via `publish = true`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2390,8 +2390,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2399,8 +2399,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2408,8 +2408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See [Runtimes][6] for valid values.
-{{% /md %}}</dd>
+    <dd>See [Runtimes][6] for valid values.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,8 +2417,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
-{{% /md %}}</dd>
+    <dd>The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2426,8 +2426,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2435,8 +2435,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The object version containing the function's deployment package. Conflicts with `filename`.
-{{% /md %}}</dd>
+    <dd>The object version containing the function's deployment package. Conflicts with `filename`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2444,8 +2444,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
-{{% /md %}}</dd>
+    <dd>Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `filebase64sha256("file.zip")` (this provider 0.11.12 and later) or `base64sha256(file("file.zip"))` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda function source archive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2453,8 +2453,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2462,8 +2462,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the object.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2471,8 +2471,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
-{{% /md %}}</dd>
+    <dd>The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2480,7 +2480,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functiontracingconfig">Dict[Function<wbr>Tracing<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2488,8 +2488,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Latest published version of your Lambda Function.
-{{% /md %}}</dd>
+    <dd>Latest published version of your Lambda Function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2497,11 +2497,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionvpcconfig">Dict[Function<wbr>Vpc<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
-{{% /md %}}</dd>
+    <dd>Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2516,18 +2516,18 @@ The following state arguments are supported:
 
 
 <h4 id="functiondeadletterconfig">Function<wbr>Dead<wbr>Letter<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FunctionDeadLetterConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FunctionDeadLetterConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionDeadLetterConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionDeadLetterConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2536,17 +2536,17 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this
+    <dd>The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this
 option is used, the function's IAM role must be granted suitable access to write to the target object,
 which means allowing either the `sns:Publish` or `sqs:SendMessage` action on this ARN, depending on
 which service is targeted.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2555,17 +2555,17 @@ which service is targeted.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this
+    <dd>The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this
 option is used, the function's IAM role must be granted suitable access to write to the target object,
 which means allowing either the `sns:Publish` or `sqs:SendMessage` action on this ARN, depending on
 which service is targeted.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2574,17 +2574,17 @@ which service is targeted.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this
+    <dd>The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this
 option is used, the function's IAM role must be granted suitable access to write to the target object,
 which means allowing either the `sns:Publish` or `sqs:SendMessage` action on this ARN, depending on
 which service is targeted.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2593,32 +2593,32 @@ which service is targeted.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this
+    <dd>The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this
 option is used, the function's IAM role must be granted suitable access to write to the target object,
 which means allowing either the `sns:Publish` or `sqs:SendMessage` action on this ARN, depending on
 which service is targeted.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionenvironment">Function<wbr>Environment</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FunctionEnvironment">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FunctionEnvironment">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionEnvironmentArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionEnvironmentOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2627,14 +2627,14 @@ which service is targeted.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map that defines environment variables for the Lambda function.
-{{% /md %}}</dd>
+    <dd>A map that defines environment variables for the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2643,14 +2643,14 @@ which service is targeted.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map that defines environment variables for the Lambda function.
-{{% /md %}}</dd>
+    <dd>A map that defines environment variables for the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2659,14 +2659,14 @@ which service is targeted.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map that defines environment variables for the Lambda function.
-{{% /md %}}</dd>
+    <dd>A map that defines environment variables for the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2675,29 +2675,29 @@ which service is targeted.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map that defines environment variables for the Lambda function.
-{{% /md %}}</dd>
+    <dd>A map that defines environment variables for the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functiontracingconfig">Function<wbr>Tracing<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FunctionTracingConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FunctionTracingConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionTracingConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionTracingConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2706,18 +2706,18 @@ which service is targeted.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
+    <dd>Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
 the request from an upstream service if it contains a tracing header with
 "sampled=1". If Active, Lambda will respect any tracing header it receives
 from an upstream service. If no tracing header is received, Lambda will call
 X-Ray for a tracing decision.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2726,18 +2726,18 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
+    <dd>Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
 the request from an upstream service if it contains a tracing header with
 "sampled=1". If Active, Lambda will respect any tracing header it receives
 from an upstream service. If no tracing header is received, Lambda will call
 X-Ray for a tracing decision.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2746,18 +2746,18 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
+    <dd>Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
 the request from an upstream service if it contains a tracing header with
 "sampled=1". If Active, Lambda will respect any tracing header it receives
 from an upstream service. If no tracing header is received, Lambda will call
 X-Ray for a tracing decision.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2766,33 +2766,33 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
+    <dd>Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
 the request from an upstream service if it contains a tracing header with
 "sampled=1". If Active, Lambda will respect any tracing header it receives
 from an upstream service. If no tracing header is received, Lambda will call
 X-Ray for a tracing decision.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionvpcconfig">Function<wbr>Vpc<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FunctionVpcConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FunctionVpcConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionVpcConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#FunctionVpcConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2801,8 +2801,8 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs associated with the Lambda function.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs associated with the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2810,8 +2810,8 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs associated with the Lambda function.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs associated with the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2819,13 +2819,13 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2834,8 +2834,8 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs associated with the Lambda function.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs associated with the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2843,8 +2843,8 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs associated with the Lambda function.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs associated with the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2852,13 +2852,13 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2867,8 +2867,8 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs associated with the Lambda function.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs associated with the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2876,8 +2876,8 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs associated with the Lambda function.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs associated with the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2885,13 +2885,13 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2900,8 +2900,8 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs associated with the Lambda function.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs associated with the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2909,8 +2909,8 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs associated with the Lambda function.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs associated with the Lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2918,10 +2918,10 @@ X-Ray for a tracing decision.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

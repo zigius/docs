@@ -14,26 +14,26 @@ meta_desc: "Explore the Dashboard resource of the SignalFx package, including ex
 
 
 ## Create a Dashboard Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/#Dashboard">Dashboard</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/#DashboardArgs">DashboardArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Dashboard</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>authorized_writer_teams=None<span class="p">, </span>authorized_writer_users=None<span class="p">, </span>charts=None<span class="p">, </span>charts_resolution=None<span class="p">, </span>columns=None<span class="p">, </span>dashboard_group=None<span class="p">, </span>description=None<span class="p">, </span>discovery_options_query=None<span class="p">, </span>discovery_options_selectors=None<span class="p">, </span>end_time=None<span class="p">, </span>event_overlays=None<span class="p">, </span>filters=None<span class="p">, </span>grids=None<span class="p">, </span>name=None<span class="p">, </span>selected_event_overlays=None<span class="p">, </span>start_time=None<span class="p">, </span>time_range=None<span class="p">, </span>variables=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDashboard<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardArgs">DashboardArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#Dashboard">Dashboard</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.Signalfx.Dashboard.html">Dashboard</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.SignalFx.DashboardArgs.html">DashboardArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Dashboard resource of the SignalFx package, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Dashboard resource of the SignalFx package, including ex
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Dashboard resource of the SignalFx package, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Dashboard resource of the SignalFx package, including ex
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Dashboard Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dashboard group that contains the dashboard.
-{{% /md %}}</dd>
+    <dd>The ID of the dashboard group that contains the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,8 +209,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Team IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>Team IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,8 +218,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}User IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>User IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardchart">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Chart<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Chart ID and layout information for the charts in the dashboard.
-{{% /md %}}</dd>
+    <dd>Chart ID and layout information for the charts in the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
-{{% /md %}}</dd>
+    <dd>Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardcolumn">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Column<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,7 +263,7 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,7 +271,7 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,8 +279,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,8 +288,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlay">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Event<wbr>Overlay<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
-{{% /md %}}</dd>
+    <dd>Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,8 +297,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardfilter">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Filter to apply to the charts when displaying the dashboard.
-{{% /md %}}</dd>
+    <dd>Filter to apply to the charts when displaying the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,8 +306,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardgrid">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Grid<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
-{{% /md %}}</dd>
+    <dd>Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,8 +315,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dashboard.
-{{% /md %}}</dd>
+    <dd>Name of the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,8 +324,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlay">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Selected<wbr>Event<wbr>Overlay<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
-{{% /md %}}</dd>
+    <dd>Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -333,8 +333,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,8 +342,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
-{{% /md %}}</dd>
+    <dd>The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,14 +351,14 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardvariable">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Variable<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Dashboard variable to apply to each chart in the dashboard.
-{{% /md %}}</dd>
+    <dd>Dashboard variable to apply to each chart in the dashboard.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -367,8 +367,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dashboard group that contains the dashboard.
-{{% /md %}}</dd>
+    <dd>The ID of the dashboard group that contains the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Team IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>Team IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}User IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>User IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,8 +394,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardchart">[]Dashboard<wbr>Chart</a></span>
     </dt>
-    <dd>{{% md %}}Chart ID and layout information for the charts in the dashboard.
-{{% /md %}}</dd>
+    <dd>Chart ID and layout information for the charts in the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,8 +403,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
-{{% /md %}}</dd>
+    <dd>Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,8 +412,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardcolumn">[]Dashboard<wbr>Column</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -421,8 +421,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,7 +430,7 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,7 +438,7 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,8 +446,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,8 +455,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlay">[]Dashboard<wbr>Event<wbr>Overlay</a></span>
     </dt>
-    <dd>{{% md %}}Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
-{{% /md %}}</dd>
+    <dd>Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,8 +464,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardfilter">[]Dashboard<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Filter to apply to the charts when displaying the dashboard.
-{{% /md %}}</dd>
+    <dd>Filter to apply to the charts when displaying the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -473,8 +473,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardgrid">[]Dashboard<wbr>Grid</a></span>
     </dt>
-    <dd>{{% md %}}Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
-{{% /md %}}</dd>
+    <dd>Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,8 +482,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dashboard.
-{{% /md %}}</dd>
+    <dd>Name of the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,8 +491,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlay">[]Dashboard<wbr>Selected<wbr>Event<wbr>Overlay</a></span>
     </dt>
-    <dd>{{% md %}}Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
-{{% /md %}}</dd>
+    <dd>Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,8 +500,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
-{{% /md %}}</dd>
+    <dd>The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,14 +518,14 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardvariable">[]Dashboard<wbr>Variable</a></span>
     </dt>
-    <dd>{{% md %}}Dashboard variable to apply to each chart in the dashboard.
-{{% /md %}}</dd>
+    <dd>Dashboard variable to apply to each chart in the dashboard.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -534,8 +534,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dashboard group that contains the dashboard.
-{{% /md %}}</dd>
+    <dd>The ID of the dashboard group that contains the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -543,8 +543,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Team IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>Team IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -552,8 +552,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}User IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>User IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -561,8 +561,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardchart">Dashboard<wbr>Chart[]</a></span>
     </dt>
-    <dd>{{% md %}}Chart ID and layout information for the charts in the dashboard.
-{{% /md %}}</dd>
+    <dd>Chart ID and layout information for the charts in the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -570,8 +570,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
-{{% /md %}}</dd>
+    <dd>Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -579,8 +579,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardcolumn">Dashboard<wbr>Column[]</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -588,8 +588,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -597,7 +597,7 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,7 +605,7 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,8 +613,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -622,8 +622,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlay">Dashboard<wbr>Event<wbr>Overlay[]</a></span>
     </dt>
-    <dd>{{% md %}}Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
-{{% /md %}}</dd>
+    <dd>Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,8 +631,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardfilter">Dashboard<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Filter to apply to the charts when displaying the dashboard.
-{{% /md %}}</dd>
+    <dd>Filter to apply to the charts when displaying the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -640,8 +640,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardgrid">Dashboard<wbr>Grid[]</a></span>
     </dt>
-    <dd>{{% md %}}Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
-{{% /md %}}</dd>
+    <dd>Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,8 +649,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dashboard.
-{{% /md %}}</dd>
+    <dd>Name of the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,8 +658,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlay">Dashboard<wbr>Selected<wbr>Event<wbr>Overlay[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
-{{% /md %}}</dd>
+    <dd>Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -667,8 +667,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -676,8 +676,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
-{{% /md %}}</dd>
+    <dd>The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -685,14 +685,14 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardvariable">Dashboard<wbr>Variable[]</a></span>
     </dt>
-    <dd>{{% md %}}Dashboard variable to apply to each chart in the dashboard.
-{{% /md %}}</dd>
+    <dd>Dashboard variable to apply to each chart in the dashboard.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -701,8 +701,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dashboard group that contains the dashboard.
-{{% /md %}}</dd>
+    <dd>The ID of the dashboard group that contains the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,8 +710,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Team IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>Team IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -719,8 +719,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}User IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>User IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -728,8 +728,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardchart">List[Dashboard<wbr>Chart]</a></span>
     </dt>
-    <dd>{{% md %}}Chart ID and layout information for the charts in the dashboard.
-{{% /md %}}</dd>
+    <dd>Chart ID and layout information for the charts in the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -737,8 +737,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
-{{% /md %}}</dd>
+    <dd>Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -746,8 +746,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardcolumn">List[Dashboard<wbr>Column]</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -755,8 +755,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -764,7 +764,7 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -772,7 +772,7 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,8 +780,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,8 +789,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlay">List[Dashboard<wbr>Event<wbr>Overlay]</a></span>
     </dt>
-    <dd>{{% md %}}Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
-{{% /md %}}</dd>
+    <dd>Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardfilter">List[Dashboard<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Filter to apply to the charts when displaying the dashboard.
-{{% /md %}}</dd>
+    <dd>Filter to apply to the charts when displaying the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,8 +807,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardgrid">List[Dashboard<wbr>Grid]</a></span>
     </dt>
-    <dd>{{% md %}}Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
-{{% /md %}}</dd>
+    <dd>Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dashboard.
-{{% /md %}}</dd>
+    <dd>Name of the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,8 +825,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlay">List[Dashboard<wbr>Selected<wbr>Event<wbr>Overlay]</a></span>
     </dt>
-    <dd>{{% md %}}Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
-{{% /md %}}</dd>
+    <dd>Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,8 +834,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,8 +843,8 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
-{{% /md %}}</dd>
+    <dd>The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,11 +852,11 @@ The Dashboard resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardvariable">List[Dashboard<wbr>Variable]</a></span>
     </dt>
-    <dd>{{% md %}}Dashboard variable to apply to each chart in the dashboard.
-{{% /md %}}</dd>
+    <dd>Dashboard variable to apply to each chart in the dashboard.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -870,7 +870,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -879,7 +879,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -887,14 +887,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the dashboard
-{{% /md %}}</dd>
+    <dd>URL of the dashboard
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -903,7 +903,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -911,14 +911,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the dashboard
-{{% /md %}}</dd>
+    <dd>URL of the dashboard
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -927,7 +927,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -935,14 +935,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the dashboard
-{{% /md %}}</dd>
+    <dd>URL of the dashboard
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -951,7 +951,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -959,11 +959,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL of the dashboard
-{{% /md %}}</dd>
+    <dd>URL of the dashboard
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -974,25 +974,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Dashboard Resource {#look-up}
 
 Get an existing Dashboard resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/#DashboardState">DashboardState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/signalfx/#Dashboard">Dashboard</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>authorized_writer_teams=None<span class="p">, </span>authorized_writer_users=None<span class="p">, </span>charts=None<span class="p">, </span>charts_resolution=None<span class="p">, </span>columns=None<span class="p">, </span>dashboard_group=None<span class="p">, </span>description=None<span class="p">, </span>discovery_options_query=None<span class="p">, </span>discovery_options_selectors=None<span class="p">, </span>end_time=None<span class="p">, </span>event_overlays=None<span class="p">, </span>filters=None<span class="p">, </span>grids=None<span class="p">, </span>name=None<span class="p">, </span>selected_event_overlays=None<span class="p">, </span>start_time=None<span class="p">, </span>time_range=None<span class="p">, </span>url=None<span class="p">, </span>variables=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDashboard<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardState">DashboardState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#Dashboard">Dashboard</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.Signalfx.Dashboard.html">Dashboard</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Signalfx/Pulumi.Signalfx..DashboardState.html">DashboardState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1017,9 +1017,9 @@ Get an existing Dashboard resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1032,36 +1032,9 @@ Get an existing Dashboard resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1086,13 +1059,40 @@ Get an existing Dashboard resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1101,8 +1101,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Team IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>Team IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,8 +1110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}User IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>User IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,8 +1119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardchart">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Chart<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Chart ID and layout information for the charts in the dashboard.
-{{% /md %}}</dd>
+    <dd>Chart ID and layout information for the charts in the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1128,8 +1128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
-{{% /md %}}</dd>
+    <dd>Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,8 +1137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardcolumn">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Column<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1146,8 +1146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dashboard group that contains the dashboard.
-{{% /md %}}</dd>
+    <dd>The ID of the dashboard group that contains the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,7 +1164,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,7 +1172,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,8 +1180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1189,8 +1189,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlay">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Event<wbr>Overlay<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
-{{% /md %}}</dd>
+    <dd>Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,8 +1198,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardfilter">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Filter to apply to the charts when displaying the dashboard.
-{{% /md %}}</dd>
+    <dd>Filter to apply to the charts when displaying the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,8 +1207,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardgrid">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Grid<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
-{{% /md %}}</dd>
+    <dd>Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,8 +1216,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dashboard.
-{{% /md %}}</dd>
+    <dd>Name of the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,8 +1225,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlay">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Selected<wbr>Event<wbr>Overlay<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
-{{% /md %}}</dd>
+    <dd>Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,8 +1234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,8 +1243,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
-{{% /md %}}</dd>
+    <dd>The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,8 +1252,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the dashboard
-{{% /md %}}</dd>
+    <dd>URL of the dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1261,14 +1261,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardvariable">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Variable<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Dashboard variable to apply to each chart in the dashboard.
-{{% /md %}}</dd>
+    <dd>Dashboard variable to apply to each chart in the dashboard.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1277,8 +1277,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Team IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>Team IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,8 +1286,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}User IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>User IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,8 +1295,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardchart">[]Dashboard<wbr>Chart</a></span>
     </dt>
-    <dd>{{% md %}}Chart ID and layout information for the charts in the dashboard.
-{{% /md %}}</dd>
+    <dd>Chart ID and layout information for the charts in the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1304,8 +1304,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
-{{% /md %}}</dd>
+    <dd>Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1313,8 +1313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardcolumn">[]Dashboard<wbr>Column</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,8 +1322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dashboard group that contains the dashboard.
-{{% /md %}}</dd>
+    <dd>The ID of the dashboard group that contains the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1331,8 +1331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1340,7 +1340,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1348,7 +1348,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1356,8 +1356,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1365,8 +1365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlay">[]Dashboard<wbr>Event<wbr>Overlay</a></span>
     </dt>
-    <dd>{{% md %}}Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
-{{% /md %}}</dd>
+    <dd>Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1374,8 +1374,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardfilter">[]Dashboard<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Filter to apply to the charts when displaying the dashboard.
-{{% /md %}}</dd>
+    <dd>Filter to apply to the charts when displaying the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1383,8 +1383,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardgrid">[]Dashboard<wbr>Grid</a></span>
     </dt>
-    <dd>{{% md %}}Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
-{{% /md %}}</dd>
+    <dd>Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1392,8 +1392,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dashboard.
-{{% /md %}}</dd>
+    <dd>Name of the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,8 +1401,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlay">[]Dashboard<wbr>Selected<wbr>Event<wbr>Overlay</a></span>
     </dt>
-    <dd>{{% md %}}Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
-{{% /md %}}</dd>
+    <dd>Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,8 +1410,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
-{{% /md %}}</dd>
+    <dd>The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the dashboard
-{{% /md %}}</dd>
+    <dd>URL of the dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,14 +1437,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardvariable">[]Dashboard<wbr>Variable</a></span>
     </dt>
-    <dd>{{% md %}}Dashboard variable to apply to each chart in the dashboard.
-{{% /md %}}</dd>
+    <dd>Dashboard variable to apply to each chart in the dashboard.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1453,8 +1453,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Team IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>Team IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,8 +1462,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}User IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>User IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,8 +1471,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardchart">Dashboard<wbr>Chart[]</a></span>
     </dt>
-    <dd>{{% md %}}Chart ID and layout information for the charts in the dashboard.
-{{% /md %}}</dd>
+    <dd>Chart ID and layout information for the charts in the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1480,8 +1480,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
-{{% /md %}}</dd>
+    <dd>Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1489,8 +1489,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardcolumn">Dashboard<wbr>Column[]</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,8 +1498,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dashboard group that contains the dashboard.
-{{% /md %}}</dd>
+    <dd>The ID of the dashboard group that contains the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,8 +1507,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,7 +1516,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,7 +1524,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1532,8 +1532,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,8 +1541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlay">Dashboard<wbr>Event<wbr>Overlay[]</a></span>
     </dt>
-    <dd>{{% md %}}Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
-{{% /md %}}</dd>
+    <dd>Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1550,8 +1550,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardfilter">Dashboard<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Filter to apply to the charts when displaying the dashboard.
-{{% /md %}}</dd>
+    <dd>Filter to apply to the charts when displaying the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,8 +1559,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardgrid">Dashboard<wbr>Grid[]</a></span>
     </dt>
-    <dd>{{% md %}}Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
-{{% /md %}}</dd>
+    <dd>Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,8 +1568,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dashboard.
-{{% /md %}}</dd>
+    <dd>Name of the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,8 +1577,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlay">Dashboard<wbr>Selected<wbr>Event<wbr>Overlay[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
-{{% /md %}}</dd>
+    <dd>Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,8 +1595,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
-{{% /md %}}</dd>
+    <dd>The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,8 +1604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL of the dashboard
-{{% /md %}}</dd>
+    <dd>URL of the dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,14 +1613,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardvariable">Dashboard<wbr>Variable[]</a></span>
     </dt>
-    <dd>{{% md %}}Dashboard variable to apply to each chart in the dashboard.
-{{% /md %}}</dd>
+    <dd>Dashboard variable to apply to each chart in the dashboard.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1629,8 +1629,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Team IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>Team IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1638,8 +1638,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}User IDs that have write access to this dashboard
-{{% /md %}}</dd>
+    <dd>User IDs that have write access to this dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1647,8 +1647,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardchart">List[Dashboard<wbr>Chart]</a></span>
     </dt>
-    <dd>{{% md %}}Chart ID and layout information for the charts in the dashboard.
-{{% /md %}}</dd>
+    <dd>Chart ID and layout information for the charts in the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1656,8 +1656,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
-{{% /md %}}</dd>
+    <dd>Specifies the chart data display resolution for charts in this dashboard. Value can be one of `"default"`,  `"low"`, `"high"`, or  `"highest"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1665,8 +1665,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardcolumn">List[Dashboard<wbr>Column]</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,8 +1674,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dashboard group that contains the dashboard.
-{{% /md %}}</dd>
+    <dd>The ID of the dashboard group that contains the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,8 +1683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,7 +1692,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,7 +1700,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1708,8 +1708,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1717,8 +1717,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlay">List[Dashboard<wbr>Event<wbr>Overlay]</a></span>
     </dt>
-    <dd>{{% md %}}Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
-{{% /md %}}</dd>
+    <dd>Specify a list of event overlays to include in the dashboard. Note: These overlays correspond to the *suggested* event overlays specified in the web UI, and they're not automatically applied as active overlays. To set default active event overlays, use the `selected_event_overlay` property instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1726,8 +1726,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardfilter">List[Dashboard<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Filter to apply to the charts when displaying the dashboard.
-{{% /md %}}</dd>
+    <dd>Filter to apply to the charts when displaying the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1735,8 +1735,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardgrid">List[Dashboard<wbr>Grid]</a></span>
     </dt>
-    <dd>{{% md %}}Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
-{{% /md %}}</dd>
+    <dd>Grid dashboard layout. Charts listed will be placed in a grid by row with the same width and height. If a chart cannot fit in a row, it will be placed automatically in the next row.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1744,8 +1744,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the dashboard.
-{{% /md %}}</dd>
+    <dd>Name of the dashboard.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1753,8 +1753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlay">List[Dashboard<wbr>Selected<wbr>Event<wbr>Overlay]</a></span>
     </dt>
-    <dd>{{% md %}}Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
-{{% /md %}}</dd>
+    <dd>Defines event overlays which are enabled by **default**. Any overlay specified here should have an accompanying entry in `event_overlay`, which are similar to the properties here.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1762,8 +1762,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
-{{% /md %}}</dd>
+    <dd>Seconds since epoch. Used for visualization. You must specify time_span_type = `"absolute"` too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1771,8 +1771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
-{{% /md %}}</dd>
+    <dd>The time range prior to now to visualize. SignalFx time syntax (e.g. `"-5m"`, `"-1h"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1780,8 +1780,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL of the dashboard
-{{% /md %}}</dd>
+    <dd>URL of the dashboard
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1789,11 +1789,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardvariable">List[Dashboard<wbr>Variable]</a></span>
     </dt>
-    <dd>{{% md %}}Dashboard variable to apply to each chart in the dashboard.
-{{% /md %}}</dd>
+    <dd>Dashboard variable to apply to each chart in the dashboard.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1808,18 +1808,18 @@ The following state arguments are supported:
 
 
 <h4 id="dashboardchart">Dashboard<wbr>Chart</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#DashboardChart">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#DashboardChart">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardChartArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardChartOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1828,8 +1828,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the chart to display.
-{{% /md %}}</dd>
+    <dd>ID of the chart to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1837,8 +1837,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,8 +1846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,8 +1855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The row to show the chart in (zero-based); if `height > 1`, this value represents the topmost row of the chart (greater than or equal to `0`).
-{{% /md %}}</dd>
+    <dd>The row to show the chart in (zero-based); if `height > 1`, this value represents the topmost row of the chart (greater than or equal to `0`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1864,14 +1864,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1880,8 +1880,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the chart to display.
-{{% /md %}}</dd>
+    <dd>ID of the chart to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1889,8 +1889,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1898,8 +1898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1907,8 +1907,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The row to show the chart in (zero-based); if `height > 1`, this value represents the topmost row of the chart (greater than or equal to `0`).
-{{% /md %}}</dd>
+    <dd>The row to show the chart in (zero-based); if `height > 1`, this value represents the topmost row of the chart (greater than or equal to `0`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1916,14 +1916,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1932,8 +1932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the chart to display.
-{{% /md %}}</dd>
+    <dd>ID of the chart to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,8 +1941,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,8 +1950,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1959,8 +1959,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The row to show the chart in (zero-based); if `height > 1`, this value represents the topmost row of the chart (greater than or equal to `0`).
-{{% /md %}}</dd>
+    <dd>The row to show the chart in (zero-based); if `height > 1`, this value represents the topmost row of the chart (greater than or equal to `0`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1968,14 +1968,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1984,8 +1984,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the chart to display.
-{{% /md %}}</dd>
+    <dd>ID of the chart to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1993,8 +1993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2002,8 +2002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2011,8 +2011,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The row to show the chart in (zero-based); if `height > 1`, this value represents the topmost row of the chart (greater than or equal to `0`).
-{{% /md %}}</dd>
+    <dd>The row to show the chart in (zero-based); if `height > 1`, this value represents the topmost row of the chart (greater than or equal to `0`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2020,29 +2020,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="dashboardcolumn">Dashboard<wbr>Column</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#DashboardColumn">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#DashboardColumn">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardColumnArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardColumnOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2051,8 +2051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of IDs of the charts to display.
-{{% /md %}}</dd>
+    <dd>List of IDs of the charts to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2060,8 +2060,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2069,8 +2069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2078,14 +2078,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2094,8 +2094,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of IDs of the charts to display.
-{{% /md %}}</dd>
+    <dd>List of IDs of the charts to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2103,8 +2103,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2112,8 +2112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2121,14 +2121,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2137,8 +2137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of IDs of the charts to display.
-{{% /md %}}</dd>
+    <dd>List of IDs of the charts to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2146,8 +2146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2155,8 +2155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2164,14 +2164,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2180,8 +2180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of IDs of the charts to display.
-{{% /md %}}</dd>
+    <dd>List of IDs of the charts to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2189,8 +2189,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Column number for the layout.
-{{% /md %}}</dd>
+    <dd>Column number for the layout.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2198,8 +2198,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2207,29 +2207,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="dashboardeventoverlay">Dashboard<wbr>Event<wbr>Overlay</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#DashboardEventOverlay">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#DashboardEventOverlay">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardEventOverlayArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardEventOverlayOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2238,8 +2238,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Search term used to choose the events shown in the overlay.
-{{% /md %}}</dd>
+    <dd>Search term used to choose the events shown in the overlay.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2247,8 +2247,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Color to use : gray, blue, azure, navy, brown, orange, yellow, iris, magenta, pink, purple, violet, lilac, emerald, green, aquamarine.
-{{% /md %}}</dd>
+    <dd>Color to use : gray, blue, azure, navy, brown, orange, yellow, iris, magenta, pink, purple, violet, lilac, emerald, green, aquamarine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2256,8 +2256,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Text shown in the dropdown when selecting this overlay from the menu.
-{{% /md %}}</dd>
+    <dd>Text shown in the dropdown when selecting this overlay from the menu.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2265,8 +2265,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Show a vertical line for the event. `false` by default.
-{{% /md %}}</dd>
+    <dd>Show a vertical line for the event. `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2274,8 +2274,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlaysource">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Event<wbr>Overlay<wbr>Source<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Each element specifies a filter to use against the signal specified in the `signal`.
-{{% /md %}}</dd>
+    <dd>Each element specifies a filter to use against the signal specified in the `signal`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2283,14 +2283,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
-{{% /md %}}</dd>
+    <dd>Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2299,8 +2299,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Search term used to choose the events shown in the overlay.
-{{% /md %}}</dd>
+    <dd>Search term used to choose the events shown in the overlay.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2308,8 +2308,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Color to use : gray, blue, azure, navy, brown, orange, yellow, iris, magenta, pink, purple, violet, lilac, emerald, green, aquamarine.
-{{% /md %}}</dd>
+    <dd>Color to use : gray, blue, azure, navy, brown, orange, yellow, iris, magenta, pink, purple, violet, lilac, emerald, green, aquamarine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2317,8 +2317,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Text shown in the dropdown when selecting this overlay from the menu.
-{{% /md %}}</dd>
+    <dd>Text shown in the dropdown when selecting this overlay from the menu.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2326,8 +2326,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Show a vertical line for the event. `false` by default.
-{{% /md %}}</dd>
+    <dd>Show a vertical line for the event. `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,8 +2335,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlaysource">[]Dashboard<wbr>Event<wbr>Overlay<wbr>Source</a></span>
     </dt>
-    <dd>{{% md %}}Each element specifies a filter to use against the signal specified in the `signal`.
-{{% /md %}}</dd>
+    <dd>Each element specifies a filter to use against the signal specified in the `signal`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2344,14 +2344,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
-{{% /md %}}</dd>
+    <dd>Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2360,8 +2360,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Search term used to choose the events shown in the overlay.
-{{% /md %}}</dd>
+    <dd>Search term used to choose the events shown in the overlay.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2369,8 +2369,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Color to use : gray, blue, azure, navy, brown, orange, yellow, iris, magenta, pink, purple, violet, lilac, emerald, green, aquamarine.
-{{% /md %}}</dd>
+    <dd>Color to use : gray, blue, azure, navy, brown, orange, yellow, iris, magenta, pink, purple, violet, lilac, emerald, green, aquamarine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2378,8 +2378,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Text shown in the dropdown when selecting this overlay from the menu.
-{{% /md %}}</dd>
+    <dd>Text shown in the dropdown when selecting this overlay from the menu.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2387,8 +2387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Show a vertical line for the event. `false` by default.
-{{% /md %}}</dd>
+    <dd>Show a vertical line for the event. `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2396,8 +2396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlaysource">Dashboard<wbr>Event<wbr>Overlay<wbr>Source[]</a></span>
     </dt>
-    <dd>{{% md %}}Each element specifies a filter to use against the signal specified in the `signal`.
-{{% /md %}}</dd>
+    <dd>Each element specifies a filter to use against the signal specified in the `signal`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2405,14 +2405,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
-{{% /md %}}</dd>
+    <dd>Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2421,8 +2421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Search term used to choose the events shown in the overlay.
-{{% /md %}}</dd>
+    <dd>Search term used to choose the events shown in the overlay.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2430,8 +2430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Color to use : gray, blue, azure, navy, brown, orange, yellow, iris, magenta, pink, purple, violet, lilac, emerald, green, aquamarine.
-{{% /md %}}</dd>
+    <dd>Color to use : gray, blue, azure, navy, brown, orange, yellow, iris, magenta, pink, purple, violet, lilac, emerald, green, aquamarine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2439,8 +2439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Text shown in the dropdown when selecting this overlay from the menu.
-{{% /md %}}</dd>
+    <dd>Text shown in the dropdown when selecting this overlay from the menu.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2448,8 +2448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Show a vertical line for the event. `false` by default.
-{{% /md %}}</dd>
+    <dd>Show a vertical line for the event. `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2457,8 +2457,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardeventoverlaysource">List[Dashboard<wbr>Event<wbr>Overlay<wbr>Source]</a></span>
     </dt>
-    <dd>{{% md %}}Each element specifies a filter to use against the signal specified in the `signal`.
-{{% /md %}}</dd>
+    <dd>Each element specifies a filter to use against the signal specified in the `signal`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2466,29 +2466,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
-{{% /md %}}</dd>
+    <dd>Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="dashboardeventoverlaysource">Dashboard<wbr>Event<wbr>Overlay<wbr>Source</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#DashboardEventOverlaySource">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#DashboardEventOverlaySource">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardEventOverlaySourceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardEventOverlaySourceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2497,8 +2497,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2506,8 +2506,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2515,14 +2515,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2531,8 +2531,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2540,8 +2540,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2549,14 +2549,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2565,8 +2565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2574,8 +2574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2583,14 +2583,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2599,8 +2599,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2608,8 +2608,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2617,29 +2617,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="dashboardfilter">Dashboard<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#DashboardFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#DashboardFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2648,8 +2648,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2657,8 +2657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2666,8 +2666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this variable will also match data that doesn't have this property at all.
-{{% /md %}}</dd>
+    <dd>If true, this variable will also match data that doesn't have this property at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2675,14 +2675,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2691,8 +2691,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2700,8 +2700,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2709,8 +2709,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this variable will also match data that doesn't have this property at all.
-{{% /md %}}</dd>
+    <dd>If true, this variable will also match data that doesn't have this property at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2718,14 +2718,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2734,8 +2734,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2743,8 +2743,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2752,8 +2752,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, this variable will also match data that doesn't have this property at all.
-{{% /md %}}</dd>
+    <dd>If true, this variable will also match data that doesn't have this property at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2761,14 +2761,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2777,8 +2777,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2786,8 +2786,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2795,8 +2795,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this variable will also match data that doesn't have this property at all.
-{{% /md %}}</dd>
+    <dd>If true, this variable will also match data that doesn't have this property at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2804,29 +2804,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="dashboardgrid">Dashboard<wbr>Grid</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#DashboardGrid">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#DashboardGrid">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardGridArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardGridOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2835,8 +2835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of IDs of the charts to display.
-{{% /md %}}</dd>
+    <dd>List of IDs of the charts to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2844,8 +2844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2853,14 +2853,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2869,8 +2869,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of IDs of the charts to display.
-{{% /md %}}</dd>
+    <dd>List of IDs of the charts to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2878,8 +2878,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2887,14 +2887,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2903,8 +2903,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of IDs of the charts to display.
-{{% /md %}}</dd>
+    <dd>List of IDs of the charts to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2912,8 +2912,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2921,14 +2921,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2937,8 +2937,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of IDs of the charts to display.
-{{% /md %}}</dd>
+    <dd>List of IDs of the charts to display.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2946,8 +2946,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How many rows every chart should take up (greater than or equal to 1). 1 by default.
-{{% /md %}}</dd>
+    <dd>How many rows every chart should take up (greater than or equal to 1). 1 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2955,29 +2955,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
-{{% /md %}}</dd>
+    <dd>How many columns (out of a total of `12`) every chart should take up (between `1` and `12`). `12` by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="dashboardselectedeventoverlay">Dashboard<wbr>Selected<wbr>Event<wbr>Overlay</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#DashboardSelectedEventOverlay">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#DashboardSelectedEventOverlay">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardSelectedEventOverlayArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardSelectedEventOverlayOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2986,8 +2986,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Search term used to choose the events shown in the overlay.
-{{% /md %}}</dd>
+    <dd>Search term used to choose the events shown in the overlay.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2995,8 +2995,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlaysource">List&lt;Pulumi.<wbr>Signal<wbr>Fx.<wbr>Inputs.<wbr>Dashboard<wbr>Selected<wbr>Event<wbr>Overlay<wbr>Source<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Each element specifies a filter to use against the signal specified in the `signal`.
-{{% /md %}}</dd>
+    <dd>Each element specifies a filter to use against the signal specified in the `signal`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3004,14 +3004,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
-{{% /md %}}</dd>
+    <dd>Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3020,8 +3020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Search term used to choose the events shown in the overlay.
-{{% /md %}}</dd>
+    <dd>Search term used to choose the events shown in the overlay.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3029,8 +3029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlaysource">[]Dashboard<wbr>Selected<wbr>Event<wbr>Overlay<wbr>Source</a></span>
     </dt>
-    <dd>{{% md %}}Each element specifies a filter to use against the signal specified in the `signal`.
-{{% /md %}}</dd>
+    <dd>Each element specifies a filter to use against the signal specified in the `signal`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3038,14 +3038,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
-{{% /md %}}</dd>
+    <dd>Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3054,8 +3054,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Search term used to choose the events shown in the overlay.
-{{% /md %}}</dd>
+    <dd>Search term used to choose the events shown in the overlay.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3063,8 +3063,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlaysource">Dashboard<wbr>Selected<wbr>Event<wbr>Overlay<wbr>Source[]</a></span>
     </dt>
-    <dd>{{% md %}}Each element specifies a filter to use against the signal specified in the `signal`.
-{{% /md %}}</dd>
+    <dd>Each element specifies a filter to use against the signal specified in the `signal`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3072,14 +3072,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
-{{% /md %}}</dd>
+    <dd>Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3088,8 +3088,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Search term used to choose the events shown in the overlay.
-{{% /md %}}</dd>
+    <dd>Search term used to choose the events shown in the overlay.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3097,8 +3097,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#dashboardselectedeventoverlaysource">List[Dashboard<wbr>Selected<wbr>Event<wbr>Overlay<wbr>Source]</a></span>
     </dt>
-    <dd>{{% md %}}Each element specifies a filter to use against the signal specified in the `signal`.
-{{% /md %}}</dd>
+    <dd>Each element specifies a filter to use against the signal specified in the `signal`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3106,29 +3106,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
-{{% /md %}}</dd>
+    <dd>Can be set to `eventTimeSeries` (the default) to refer to externally reported events, or `detectorEvents` to refer to events from detector triggers.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="dashboardselectedeventoverlaysource">Dashboard<wbr>Selected<wbr>Event<wbr>Overlay<wbr>Source</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#DashboardSelectedEventOverlaySource">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#DashboardSelectedEventOverlaySource">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardSelectedEventOverlaySourceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardSelectedEventOverlaySourceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3137,8 +3137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3146,8 +3146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3155,14 +3155,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3171,8 +3171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3180,8 +3180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3189,14 +3189,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3205,8 +3205,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3214,8 +3214,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3223,14 +3223,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3239,8 +3239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3248,8 +3248,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3257,29 +3257,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>If true,  only data that does not match the specified value of the specified property appear in the event overlay. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="dashboardvariable">Dashboard<wbr>Variable</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/input/#DashboardVariable">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/signalfx/types/output/#DashboardVariable">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardVariableArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-signalfx/sdk/v2/go/signalfx/?tab=doc#DashboardVariableOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3288,8 +3288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An alias for the dashboard variable. This text will appear as the label for the dropdown field on the dashboard.
-{{% /md %}}</dd>
+    <dd>An alias for the dashboard variable. This text will appear as the label for the dropdown field on the dashboard.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3297,8 +3297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3306,8 +3306,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this variable will also match data that doesn't have this property at all.
-{{% /md %}}</dd>
+    <dd>If true, this variable will also match data that doesn't have this property at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3315,8 +3315,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3324,8 +3324,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, this variable will only apply to charts that have a filter for the property.
-{{% /md %}}</dd>
+    <dd>If `true`, this variable will only apply to charts that have a filter for the property.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3333,8 +3333,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, this variable may only be set to the values listed in `values_suggested` and only these values will appear in autosuggestion menus. `false` by default.
-{{% /md %}}</dd>
+    <dd>If `true`, this variable may only be set to the values listed in `values_suggested` and only these values will appear in autosuggestion menus. `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3342,8 +3342,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether a value is required for this variable (and therefore whether it will be possible to view this dashboard without this filter applied). `false` by default.
-{{% /md %}}</dd>
+    <dd>Determines whether a value is required for this variable (and therefore whether it will be possible to view this dashboard without this filter applied). `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3351,8 +3351,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3360,14 +3360,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of strings of suggested values for this variable; these suggestions will receive priority when values are autosuggested for this variable.
-{{% /md %}}</dd>
+    <dd>A list of strings of suggested values for this variable; these suggestions will receive priority when values are autosuggested for this variable.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3376,8 +3376,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An alias for the dashboard variable. This text will appear as the label for the dropdown field on the dashboard.
-{{% /md %}}</dd>
+    <dd>An alias for the dashboard variable. This text will appear as the label for the dropdown field on the dashboard.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3385,8 +3385,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3394,8 +3394,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this variable will also match data that doesn't have this property at all.
-{{% /md %}}</dd>
+    <dd>If true, this variable will also match data that doesn't have this property at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3403,8 +3403,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3412,8 +3412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, this variable will only apply to charts that have a filter for the property.
-{{% /md %}}</dd>
+    <dd>If `true`, this variable will only apply to charts that have a filter for the property.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3421,8 +3421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, this variable may only be set to the values listed in `values_suggested` and only these values will appear in autosuggestion menus. `false` by default.
-{{% /md %}}</dd>
+    <dd>If `true`, this variable may only be set to the values listed in `values_suggested` and only these values will appear in autosuggestion menus. `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3430,8 +3430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether a value is required for this variable (and therefore whether it will be possible to view this dashboard without this filter applied). `false` by default.
-{{% /md %}}</dd>
+    <dd>Determines whether a value is required for this variable (and therefore whether it will be possible to view this dashboard without this filter applied). `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3439,8 +3439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3448,14 +3448,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of strings of suggested values for this variable; these suggestions will receive priority when values are autosuggested for this variable.
-{{% /md %}}</dd>
+    <dd>A list of strings of suggested values for this variable; these suggestions will receive priority when values are autosuggested for this variable.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3464,8 +3464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An alias for the dashboard variable. This text will appear as the label for the dropdown field on the dashboard.
-{{% /md %}}</dd>
+    <dd>An alias for the dashboard variable. This text will appear as the label for the dropdown field on the dashboard.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3473,8 +3473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3482,8 +3482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, this variable will also match data that doesn't have this property at all.
-{{% /md %}}</dd>
+    <dd>If true, this variable will also match data that doesn't have this property at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3491,8 +3491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3500,8 +3500,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, this variable will only apply to charts that have a filter for the property.
-{{% /md %}}</dd>
+    <dd>If `true`, this variable will only apply to charts that have a filter for the property.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3509,8 +3509,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, this variable may only be set to the values listed in `values_suggested` and only these values will appear in autosuggestion menus. `false` by default.
-{{% /md %}}</dd>
+    <dd>If `true`, this variable may only be set to the values listed in `values_suggested` and only these values will appear in autosuggestion menus. `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3518,8 +3518,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether a value is required for this variable (and therefore whether it will be possible to view this dashboard without this filter applied). `false` by default.
-{{% /md %}}</dd>
+    <dd>Determines whether a value is required for this variable (and therefore whether it will be possible to view this dashboard without this filter applied). `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3527,8 +3527,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3536,14 +3536,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of strings of suggested values for this variable; these suggestions will receive priority when values are autosuggested for this variable.
-{{% /md %}}</dd>
+    <dd>A list of strings of suggested values for this variable; these suggestions will receive priority when values are autosuggested for this variable.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3552,8 +3552,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An alias for the dashboard variable. This text will appear as the label for the dropdown field on the dashboard.
-{{% /md %}}</dd>
+    <dd>An alias for the dashboard variable. This text will appear as the label for the dropdown field on the dashboard.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3561,8 +3561,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of a dimension to filter against.
-{{% /md %}}</dd>
+    <dd>The name of a dimension to filter against.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3570,8 +3570,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, this variable will also match data that doesn't have this property at all.
-{{% /md %}}</dd>
+    <dd>If true, this variable will also match data that doesn't have this property at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3579,8 +3579,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Variable description.
-{{% /md %}}</dd>
+    <dd>Variable description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3588,8 +3588,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, this variable will only apply to charts that have a filter for the property.
-{{% /md %}}</dd>
+    <dd>If `true`, this variable will only apply to charts that have a filter for the property.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3597,8 +3597,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, this variable may only be set to the values listed in `values_suggested` and only these values will appear in autosuggestion menus. `false` by default.
-{{% /md %}}</dd>
+    <dd>If `true`, this variable may only be set to the values listed in `values_suggested` and only these values will appear in autosuggestion menus. `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3606,8 +3606,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether a value is required for this variable (and therefore whether it will be possible to view this dashboard without this filter applied). `false` by default.
-{{% /md %}}</dd>
+    <dd>Determines whether a value is required for this variable (and therefore whether it will be possible to view this dashboard without this filter applied). `false` by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3615,8 +3615,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values to be used with the `property`, they will be combined via `OR`.
-{{% /md %}}</dd>
+    <dd>A list of values to be used with the `property`, they will be combined via `OR`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3624,11 +3624,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of strings of suggested values for this variable; these suggestions will receive priority when values are autosuggested for this variable.
-{{% /md %}}</dd>
+    <dd>A list of strings of suggested values for this variable; these suggestions will receive priority when values are autosuggested for this variable.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

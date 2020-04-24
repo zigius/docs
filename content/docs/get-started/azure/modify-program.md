@@ -16,9 +16,9 @@ Now that we have an instance of our Pulumi program deployed, let's add a tag to 
 
 Replace the entire contents of {{< langfile >}} with the following:
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 "use strict";
@@ -42,8 +42,8 @@ const account = new azure.storage.Account("storage", {
 exports.connectionString = account.primaryConnectionString;
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
@@ -66,8 +66,8 @@ const account = new azure.storage.Account("storage", {
 export const connectionString = account.primaryConnectionString;
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi
@@ -87,8 +87,8 @@ account = storage.Account("storage",
 pulumi.export('connection_string', account.primary_connection_string)
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 package main
@@ -129,8 +129,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using Pulumi;
@@ -165,7 +165,7 @@ class MyStack : Stack
 }
 ```
 
-{{% /choosable %}}
+
 
 Next, we'll deploy the changes.
 

@@ -16,22 +16,22 @@ git_sha: "c2d4e33e29334b879579d3b2e12eccf18caadb8b"
 > please consult the source [`terraform-providers/terraform-provider-dnsimple` repo](https://github.com/terraform-providers/terraform-provider-dnsimple/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var dnsimple = require("@pulumi/dnsimple");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as dnsimple from "@pulumi/dnsimple";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

@@ -39,29 +39,29 @@ const privateS3 = new aws.ec2.VpcEndpointRouteTableAssociation("private_s3", {
 
 ## Using GetVpcEndpoint {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getVpcEndpoint<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcEndpointArgs">GetVpcEndpointArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcEndpointResult">GetVpcEndpointResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_vpc_endpoint(</span>filters=None<span class="p">, </span>id=None<span class="p">, </span>service_name=None<span class="p">, </span>state=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupVpcEndpoint<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcEndpointArgs">LookupVpcEndpointArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcEndpointResult">LookupVpcEndpointResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetVpcEndpoint </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcEndpointResult.html">GetVpcEndpointResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcEndpointArgs.html">GetVpcEndpointArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -69,7 +69,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -78,8 +78,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointfilter">List&lt;Get<wbr>Vpc<wbr>Endpoint<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -87,8 +87,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the specific VPC Endpoint to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -96,8 +96,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service name of the specific VPC Endpoint to retrieve. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
-{{% /md %}}</dd>
+    <dd>The service name of the specific VPC Endpoint to retrieve. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -105,8 +105,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+    <dd>The state of the specific VPC Endpoint to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -114,9 +114,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -124,14 +124,14 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC in which the specific VPC Endpoint is used.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC in which the specific VPC Endpoint is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -140,8 +140,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointfilter">[]Get<wbr>Vpc<wbr>Endpoint<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -149,8 +149,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the specific VPC Endpoint to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -158,8 +158,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service name of the specific VPC Endpoint to retrieve. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
-{{% /md %}}</dd>
+    <dd>The service name of the specific VPC Endpoint to retrieve. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -167,8 +167,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+    <dd>The state of the specific VPC Endpoint to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -176,9 +176,9 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -186,14 +186,14 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC in which the specific VPC Endpoint is used.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC in which the specific VPC Endpoint is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -202,8 +202,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointfilter">Get<wbr>Vpc<wbr>Endpoint<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -211,8 +211,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the specific VPC Endpoint to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -220,8 +220,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service name of the specific VPC Endpoint to retrieve. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
-{{% /md %}}</dd>
+    <dd>The service name of the specific VPC Endpoint to retrieve. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -229,8 +229,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+    <dd>The state of the specific VPC Endpoint to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -238,9 +238,9 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,14 +248,14 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC in which the specific VPC Endpoint is used.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC in which the specific VPC Endpoint is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -264,8 +264,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointfilter">List[Get<wbr>Vpc<wbr>Endpoint<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,8 +273,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the specific VPC Endpoint to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,8 +282,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service name of the specific VPC Endpoint to retrieve. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
-{{% /md %}}</dd>
+    <dd>The service name of the specific VPC Endpoint to retrieve. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The state of the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+    <dd>The state of the specific VPC Endpoint to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,9 +300,9 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the specific VPC Endpoint to retrieve.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,11 +310,11 @@ a pair on the specific VPC Endpoint to retrieve.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC in which the specific VPC Endpoint is used.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC in which the specific VPC Endpoint is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -330,7 +330,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -339,8 +339,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -348,8 +348,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointdnsentry">List&lt;Get<wbr>Vpc<wbr>Endpoint<wbr>Dns<wbr>Entry&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
-{{% /md %}}</dd>
+    <dd>The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -357,7 +357,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -365,8 +365,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -374,8 +374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC endpoint.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -383,8 +383,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy document associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The policy document associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -392,8 +392,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -401,8 +401,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the VPC is associated with a private hosted zone - `true` or `false`. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>Whether or not the VPC is associated with a private hosted zone - `true` or `false`. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -410,8 +410,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -419,8 +419,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more route tables associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>One or more route tables associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -428,8 +428,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more security groups associated with the network interfaces. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more security groups associated with the network interfaces. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -437,7 +437,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -445,7 +445,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -453,8 +453,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more subnets in which the VPC Endpoint is located. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more subnets in which the VPC Endpoint is located. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -462,7 +462,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -470,8 +470,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Endpoint type, `Gateway` or `Interface`.
-{{% /md %}}</dd>
+    <dd>The VPC Endpoint type, `Gateway` or `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -479,7 +479,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -487,13 +487,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointfilter">List&lt;Get<wbr>Vpc<wbr>Endpoint<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -502,8 +502,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -511,8 +511,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointdnsentry">[]Get<wbr>Vpc<wbr>Endpoint<wbr>Dns<wbr>Entry</a></span>
     </dt>
-    <dd>{{% md %}}The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
-{{% /md %}}</dd>
+    <dd>The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -520,7 +520,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -528,8 +528,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,8 +537,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC endpoint.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,8 +546,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy document associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The policy document associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -555,8 +555,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,8 +564,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the VPC is associated with a private hosted zone - `true` or `false`. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>Whether or not the VPC is associated with a private hosted zone - `true` or `false`. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,8 +573,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -582,8 +582,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more route tables associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>One or more route tables associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -591,8 +591,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more security groups associated with the network interfaces. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more security groups associated with the network interfaces. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -600,7 +600,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -608,7 +608,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -616,8 +616,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more subnets in which the VPC Endpoint is located. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more subnets in which the VPC Endpoint is located. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -625,7 +625,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -633,8 +633,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Endpoint type, `Gateway` or `Interface`.
-{{% /md %}}</dd>
+    <dd>The VPC Endpoint type, `Gateway` or `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,7 +642,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -650,13 +650,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointfilter">[]Get<wbr>Vpc<wbr>Endpoint<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -665,8 +665,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -674,8 +674,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointdnsentry">Get<wbr>Vpc<wbr>Endpoint<wbr>Dns<wbr>Entry[]</a></span>
     </dt>
-    <dd>{{% md %}}The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
-{{% /md %}}</dd>
+    <dd>The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -683,7 +683,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -691,8 +691,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -700,8 +700,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC endpoint.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -709,8 +709,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy document associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The policy document associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -718,8 +718,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -727,8 +727,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the VPC is associated with a private hosted zone - `true` or `false`. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>Whether or not the VPC is associated with a private hosted zone - `true` or `false`. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -736,8 +736,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -745,8 +745,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more route tables associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>One or more route tables associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -754,8 +754,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more security groups associated with the network interfaces. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more security groups associated with the network interfaces. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -763,7 +763,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -771,7 +771,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -779,8 +779,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more subnets in which the VPC Endpoint is located. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more subnets in which the VPC Endpoint is located. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -788,7 +788,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -796,8 +796,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Endpoint type, `Gateway` or `Interface`.
-{{% /md %}}</dd>
+    <dd>The VPC Endpoint type, `Gateway` or `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -805,7 +805,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -813,13 +813,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointfilter">Get<wbr>Vpc<wbr>Endpoint<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -828,8 +828,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -837,8 +837,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointdnsentry">List[Get<wbr>Vpc<wbr>Endpoint<wbr>Dns<wbr>Entry]</a></span>
     </dt>
-    <dd>{{% md %}}The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
-{{% /md %}}</dd>
+    <dd>The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -846,7 +846,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -854,8 +854,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -863,8 +863,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC endpoint.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -872,8 +872,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The policy document associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The policy document associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -881,8 +881,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -890,8 +890,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the VPC is associated with a private hosted zone - `true` or `false`. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>Whether or not the VPC is associated with a private hosted zone - `true` or `false`. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -899,8 +899,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -908,8 +908,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more route tables associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
-{{% /md %}}</dd>
+    <dd>One or more route tables associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -917,8 +917,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more security groups associated with the network interfaces. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more security groups associated with the network interfaces. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -926,7 +926,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -934,7 +934,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -942,8 +942,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more subnets in which the VPC Endpoint is located. Applicable for endpoints of type `Interface`.
-{{% /md %}}</dd>
+    <dd>One or more subnets in which the VPC Endpoint is located. Applicable for endpoints of type `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -951,7 +951,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -959,8 +959,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Endpoint type, `Gateway` or `Interface`.
-{{% /md %}}</dd>
+    <dd>The VPC Endpoint type, `Gateway` or `Interface`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -968,7 +968,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -976,10 +976,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcendpointfilter">List[Get<wbr>Vpc<wbr>Endpoint<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -992,18 +992,18 @@ The following output properties are available:
 
 
 <h4 id="getvpcendpointdnsentry">Get<wbr>Vpc<wbr>Endpoint<wbr>Dns<wbr>Entry</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetVpcEndpointDnsEntry">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetVpcEndpointDnsEntry">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1012,8 +1012,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name.
-{{% /md %}}</dd>
+    <dd>The DNS name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1021,14 +1021,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the private hosted zone.
-{{% /md %}}</dd>
+    <dd>The ID of the private hosted zone.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1037,8 +1037,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name.
-{{% /md %}}</dd>
+    <dd>The DNS name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1046,14 +1046,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the private hosted zone.
-{{% /md %}}</dd>
+    <dd>The ID of the private hosted zone.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1062,8 +1062,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name.
-{{% /md %}}</dd>
+    <dd>The DNS name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1071,14 +1071,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the private hosted zone.
-{{% /md %}}</dd>
+    <dd>The ID of the private hosted zone.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1087,8 +1087,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name.
-{{% /md %}}</dd>
+    <dd>The DNS name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1096,29 +1096,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the private hosted zone.
-{{% /md %}}</dd>
+    <dd>The ID of the private hosted zone.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getvpcendpointfilter">Get<wbr>Vpc<wbr>Endpoint<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetVpcEndpointFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetVpcEndpointFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetVpcEndpointFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetVpcEndpointFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1127,9 +1127,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpoints.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1137,15 +1137,15 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A VPC Endpoint will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1154,9 +1154,9 @@ A VPC Endpoint will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpoints.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1164,15 +1164,15 @@ A VPC Endpoint will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A VPC Endpoint will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1181,9 +1181,9 @@ A VPC Endpoint will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpoints.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1191,15 +1191,15 @@ A VPC Endpoint will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A VPC Endpoint will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1208,9 +1208,9 @@ A VPC Endpoint will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpoints.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1218,12 +1218,12 @@ A VPC Endpoint will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A VPC Endpoint will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

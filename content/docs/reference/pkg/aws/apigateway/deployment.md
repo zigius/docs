@@ -21,26 +21,26 @@ you might need to add an explicit `depends_on = ["${aws_api_gateway_integration.
 
 
 ## Create a Deployment Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Deployment">Deployment</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DeploymentArgs">DeploymentArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Deployment</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>rest_api=None<span class="p">, </span>stage_description=None<span class="p">, </span>stage_name=None<span class="p">, </span>variables=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDeployment<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DeploymentArgs">DeploymentArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Deployment">Deployment</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Deployment.html">Deployment</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DeploymentArgs.html">DeploymentArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -77,9 +77,9 @@ you might need to add an explicit `depends_on = ["${aws_api_gateway_integration.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -97,9 +97,9 @@ you might need to add an explicit `depends_on = ["${aws_api_gateway_integration.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -146,9 +146,9 @@ you might need to add an explicit `depends_on = ["${aws_api_gateway_integration.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -185,7 +185,7 @@ you might need to add an explicit `depends_on = ["${aws_api_gateway_integration.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Deployment Resource Properties {#properties}
 
@@ -198,7 +198,7 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -207,8 +207,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -216,8 +216,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the deployment
-{{% /md %}}</dd>
+    <dd>The description of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -225,8 +225,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -234,8 +234,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
-{{% /md %}}</dd>
+    <dd>The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -243,14 +243,14 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map that defines variables for the stage
-{{% /md %}}</dd>
+    <dd>A map that defines variables for the stage
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -259,8 +259,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,8 +268,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the deployment
-{{% /md %}}</dd>
+    <dd>The description of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,8 +277,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -286,8 +286,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
-{{% /md %}}</dd>
+    <dd>The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -295,14 +295,14 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map that defines variables for the stage
-{{% /md %}}</dd>
+    <dd>A map that defines variables for the stage
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -311,8 +311,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">string | Rest<wbr>Api</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,8 +320,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the deployment
-{{% /md %}}</dd>
+    <dd>The description of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,8 +329,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,8 +338,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
-{{% /md %}}</dd>
+    <dd>The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,14 +347,14 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map that defines variables for the stage
-{{% /md %}}</dd>
+    <dd>A map that defines variables for the stage
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -363,8 +363,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,8 +372,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the deployment
-{{% /md %}}</dd>
+    <dd>The description of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,8 +381,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,8 +390,8 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
-{{% /md %}}</dd>
+    <dd>The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,11 +399,11 @@ The Deployment resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map that defines variables for the stage
-{{% /md %}}</dd>
+    <dd>A map that defines variables for the stage
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -417,7 +417,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -426,8 +426,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the deployment
-{{% /md %}}</dd>
+    <dd>The creation date of the deployment
+</dd>
 
     <dt class="property-"
             title="">
@@ -435,10 +435,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -446,7 +446,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -454,15 +454,15 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -471,8 +471,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the deployment
-{{% /md %}}</dd>
+    <dd>The creation date of the deployment
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,10 +480,10 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -491,7 +491,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -499,15 +499,15 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -516,8 +516,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the deployment
-{{% /md %}}</dd>
+    <dd>The creation date of the deployment
+</dd>
 
     <dt class="property-"
             title="">
@@ -525,10 +525,10 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -536,7 +536,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -544,15 +544,15 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -561,8 +561,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the deployment
-{{% /md %}}</dd>
+    <dd>The creation date of the deployment
+</dd>
 
     <dt class="property-"
             title="">
@@ -570,10 +570,10 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -581,7 +581,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -589,12 +589,12 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -605,25 +605,25 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
 ## Look up an Existing Deployment Resource {#look-up}
 
 Get an existing Deployment resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DeploymentState">DeploymentState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Deployment">Deployment</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>created_date=None<span class="p">, </span>description=None<span class="p">, </span>execution_arn=None<span class="p">, </span>invoke_url=None<span class="p">, </span>rest_api=None<span class="p">, </span>stage_description=None<span class="p">, </span>stage_name=None<span class="p">, </span>variables=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDeployment<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DeploymentState">DeploymentState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Deployment">Deployment</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Deployment.html">Deployment</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DeploymentState.html">DeploymentState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -648,9 +648,9 @@ Get an existing Deployment resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -663,36 +663,9 @@ Get an existing Deployment resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -717,13 +690,40 @@ Get an existing Deployment resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -732,8 +732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the deployment
-{{% /md %}}</dd>
+    <dd>The creation date of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,8 +741,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the deployment
-{{% /md %}}</dd>
+    <dd>The description of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -750,10 +750,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,9 +761,9 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -771,8 +771,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,8 +780,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,8 +789,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
-{{% /md %}}</dd>
+    <dd>The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,14 +798,14 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map that defines variables for the stage
-{{% /md %}}</dd>
+    <dd>A map that defines variables for the stage
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -814,8 +814,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the deployment
-{{% /md %}}</dd>
+    <dd>The creation date of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the deployment
-{{% /md %}}</dd>
+    <dd>The description of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,10 +832,10 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,9 +843,9 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -853,8 +853,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -862,8 +862,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,8 +871,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
-{{% /md %}}</dd>
+    <dd>The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,14 +880,14 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map that defines variables for the stage
-{{% /md %}}</dd>
+    <dd>A map that defines variables for the stage
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -896,8 +896,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the deployment
-{{% /md %}}</dd>
+    <dd>The creation date of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,8 +905,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the deployment
-{{% /md %}}</dd>
+    <dd>The description of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,10 +914,10 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -925,9 +925,9 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">string | Rest<wbr>Api</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,8 +953,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
-{{% /md %}}</dd>
+    <dd>The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,14 +962,14 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map that defines variables for the stage
-{{% /md %}}</dd>
+    <dd>A map that defines variables for the stage
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -978,8 +978,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the deployment
-{{% /md %}}</dd>
+    <dd>The creation date of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,8 +987,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the deployment
-{{% /md %}}</dd>
+    <dd>The description of the deployment
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,10 +996,10 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1007,9 +1007,9 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1017,8 +1017,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,8 +1026,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
-{{% /md %}}</dd>
+    <dd>The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,11 +1044,11 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map that defines variables for the stage
-{{% /md %}}</dd>
+    <dd>A map that defines variables for the stage
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

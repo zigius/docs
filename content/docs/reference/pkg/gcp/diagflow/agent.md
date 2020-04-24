@@ -50,26 +50,26 @@ const fullAgent = new gcp.diagflow.Agent("full_agent", {
 
 
 ## Create a Agent Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/diagflow/#Agent">Agent</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/diagflow/#AgentArgs">AgentArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Agent</span><span class="p">(resource_name, opts=None, </span>api_version=None<span class="p">, </span>avatar_uri=None<span class="p">, </span>classification_threshold=None<span class="p">, </span>default_language_code=None<span class="p">, </span>description=None<span class="p">, </span>display_name=None<span class="p">, </span>enable_logging=None<span class="p">, </span>match_mode=None<span class="p">, </span>project=None<span class="p">, </span>supported_language_codes=None<span class="p">, </span>tier=None<span class="p">, </span>time_zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAgent<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/diagflow?tab=doc#AgentArgs">AgentArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/diagflow?tab=doc#Agent">Agent</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Diagflow.Agent.html">Agent</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Diagflow.AgentArgs.html">AgentArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -106,9 +106,9 @@ const fullAgent = new gcp.diagflow.Agent("full_agent", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -126,9 +126,9 @@ const fullAgent = new gcp.diagflow.Agent("full_agent", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -175,9 +175,9 @@ const fullAgent = new gcp.diagflow.Agent("full_agent", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -214,7 +214,7 @@ const fullAgent = new gcp.diagflow.Agent("full_agent", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Agent Resource Properties {#properties}
 
@@ -227,7 +227,7 @@ The Agent resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -236,10 +236,10 @@ The Agent resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default language of the agent as a language tag. [See Language
+    <dd>The default language of the agent as a language tag. [See Language
 Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language
 codes. This field cannot be updated after creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -247,8 +247,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of this agent.
-{{% /md %}}</dd>
+    <dd>The name of this agent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -256,9 +256,9 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
+    <dd>The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
 Europe/Paris.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,10 +266,10 @@ Europe/Paris.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
+    <dd>API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
 service endpoints for different API versions. However, bots connectors and webhook calls will follow the specified API
 version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSION_V2_BETA_1: V2beta1 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,10 +277,10 @@ version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSIO
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
+    <dd>The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
 field, the Dialogflow will save the image in the backend. The address of the backend image returned from the API will be
 shown in the [avatarUriBackend] field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,11 +288,11 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
+    <dd>To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
 tune the machine learning classification threshold. If the returned score value is less than the threshold value, then a
 fallback intent will be triggered or, if there are no fallback intents defined, no intent will be triggered. The score
 values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
-{{% /md %}}</dd>
+    <dd>The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether this agent should log conversation queries.
-{{% /md %}}</dd>
+    <dd>Determines whether this agent should log conversation queries.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,10 +318,10 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
+    <dd>Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
 examples in intents and/or wide use of templates syntax and composite entities. * MATCH_MODE_ML_ONLY: Can be used for
 agents with a large number of examples in intents, especially the ones using @sys.any or very large developer entities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,9 +329,9 @@ agents with a large number of examples in intents, especially the ones using @sy
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,8 +339,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of all languages supported by this agent (except for the defaultLanguageCode).
-{{% /md %}}</dd>
+    <dd>The list of all languages supported by this agent (except for the defaultLanguageCode).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,17 +348,17 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
+    <dd>The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
 Enterprise tier (Essentials). * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus). NOTE: Due to consistency issues, the
 provider will not read this field from the API. Drift is possible between the Terraform state and Dialogflow if the
 agent tier is changed outside of Terraform.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -367,10 +367,10 @@ agent tier is changed outside of Terraform.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default language of the agent as a language tag. [See Language
+    <dd>The default language of the agent as a language tag. [See Language
 Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language
 codes. This field cannot be updated after creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -378,8 +378,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of this agent.
-{{% /md %}}</dd>
+    <dd>The name of this agent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -387,9 +387,9 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
+    <dd>The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
 Europe/Paris.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,10 +397,10 @@ Europe/Paris.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
+    <dd>API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
 service endpoints for different API versions. However, bots connectors and webhook calls will follow the specified API
 version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSION_V2_BETA_1: V2beta1 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,10 +408,10 @@ version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSIO
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
+    <dd>The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
 field, the Dialogflow will save the image in the backend. The address of the backend image returned from the API will be
 shown in the [avatarUriBackend] field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,11 +419,11 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
+    <dd>To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
 tune the machine learning classification threshold. If the returned score value is less than the threshold value, then a
 fallback intent will be triggered or, if there are no fallback intents defined, no intent will be triggered. The score
 values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,8 +431,8 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
-{{% /md %}}</dd>
+    <dd>The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,8 +440,8 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether this agent should log conversation queries.
-{{% /md %}}</dd>
+    <dd>Determines whether this agent should log conversation queries.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,10 +449,10 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
+    <dd>Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
 examples in intents and/or wide use of templates syntax and composite entities. * MATCH_MODE_ML_ONLY: Can be used for
 agents with a large number of examples in intents, especially the ones using @sys.any or very large developer entities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -460,9 +460,9 @@ agents with a large number of examples in intents, especially the ones using @sy
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of all languages supported by this agent (except for the defaultLanguageCode).
-{{% /md %}}</dd>
+    <dd>The list of all languages supported by this agent (except for the defaultLanguageCode).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,17 +479,17 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
+    <dd>The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
 Enterprise tier (Essentials). * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus). NOTE: Due to consistency issues, the
 provider will not read this field from the API. Drift is possible between the Terraform state and Dialogflow if the
 agent tier is changed outside of Terraform.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -498,10 +498,10 @@ agent tier is changed outside of Terraform.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default language of the agent as a language tag. [See Language
+    <dd>The default language of the agent as a language tag. [See Language
 Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language
 codes. This field cannot be updated after creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -509,8 +509,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of this agent.
-{{% /md %}}</dd>
+    <dd>The name of this agent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -518,9 +518,9 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
+    <dd>The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
 Europe/Paris.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,10 +528,10 @@ Europe/Paris.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
+    <dd>API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
 service endpoints for different API versions. However, bots connectors and webhook calls will follow the specified API
 version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSION_V2_BETA_1: V2beta1 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,10 +539,10 @@ version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSIO
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
+    <dd>The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
 field, the Dialogflow will save the image in the backend. The address of the backend image returned from the API will be
 shown in the [avatarUriBackend] field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,11 +550,11 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
+    <dd>To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
 tune the machine learning classification threshold. If the returned score value is less than the threshold value, then a
 fallback intent will be triggered or, if there are no fallback intents defined, no intent will be triggered. The score
 values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
-{{% /md %}}</dd>
+    <dd>The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,8 +571,8 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether this agent should log conversation queries.
-{{% /md %}}</dd>
+    <dd>Determines whether this agent should log conversation queries.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,10 +580,10 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
+    <dd>Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
 examples in intents and/or wide use of templates syntax and composite entities. * MATCH_MODE_ML_ONLY: Can be used for
 agents with a large number of examples in intents, especially the ones using @sys.any or very large developer entities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -591,9 +591,9 @@ agents with a large number of examples in intents, especially the ones using @sy
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of all languages supported by this agent (except for the defaultLanguageCode).
-{{% /md %}}</dd>
+    <dd>The list of all languages supported by this agent (except for the defaultLanguageCode).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,17 +610,17 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
+    <dd>The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
 Enterprise tier (Essentials). * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus). NOTE: Due to consistency issues, the
 provider will not read this field from the API. Drift is possible between the Terraform state and Dialogflow if the
 agent tier is changed outside of Terraform.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -629,10 +629,10 @@ agent tier is changed outside of Terraform.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default language of the agent as a language tag. [See Language
+    <dd>The default language of the agent as a language tag. [See Language
 Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language
 codes. This field cannot be updated after creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -640,8 +640,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of this agent.
-{{% /md %}}</dd>
+    <dd>The name of this agent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -649,9 +649,9 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
+    <dd>The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
 Europe/Paris.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,10 +659,10 @@ Europe/Paris.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
+    <dd>API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
 service endpoints for different API versions. However, bots connectors and webhook calls will follow the specified API
 version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSION_V2_BETA_1: V2beta1 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -670,10 +670,10 @@ version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSIO
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
+    <dd>The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
 field, the Dialogflow will save the image in the backend. The address of the backend image returned from the API will be
 shown in the [avatarUriBackend] field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -681,11 +681,11 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
+    <dd>To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
 tune the machine learning classification threshold. If the returned score value is less than the threshold value, then a
 fallback intent will be triggered or, if there are no fallback intents defined, no intent will be triggered. The score
 values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,8 +693,8 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
-{{% /md %}}</dd>
+    <dd>The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -702,8 +702,8 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether this agent should log conversation queries.
-{{% /md %}}</dd>
+    <dd>Determines whether this agent should log conversation queries.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,10 +711,10 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
+    <dd>Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
 examples in intents and/or wide use of templates syntax and composite entities. * MATCH_MODE_ML_ONLY: Can be used for
 agents with a large number of examples in intents, especially the ones using @sys.any or very large developer entities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,9 +722,9 @@ agents with a large number of examples in intents, especially the ones using @sy
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,8 +732,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of all languages supported by this agent (except for the defaultLanguageCode).
-{{% /md %}}</dd>
+    <dd>The list of all languages supported by this agent (except for the defaultLanguageCode).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,14 +741,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
+    <dd>The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
 Enterprise tier (Essentials). * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus). NOTE: Due to consistency issues, the
 provider will not read this field from the API. Drift is possible between the Terraform state and Dialogflow if the
 agent tier is changed outside of Terraform.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -762,7 +762,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -771,9 +771,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
+    <dd>The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
 [avatarUri] field can be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -781,13 +781,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -796,9 +796,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
+    <dd>The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
 [avatarUri] field can be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -806,13 +806,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -821,9 +821,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
+    <dd>The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
 [avatarUri] field can be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -831,13 +831,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -846,9 +846,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
+    <dd>The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
 [avatarUri] field can be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -856,10 +856,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -870,25 +870,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Agent Resource {#look-up}
 
 Get an existing Agent resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/diagflow/#AgentState">AgentState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/diagflow/#Agent">Agent</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>api_version=None<span class="p">, </span>avatar_uri=None<span class="p">, </span>avatar_uri_backend=None<span class="p">, </span>classification_threshold=None<span class="p">, </span>default_language_code=None<span class="p">, </span>description=None<span class="p">, </span>display_name=None<span class="p">, </span>enable_logging=None<span class="p">, </span>match_mode=None<span class="p">, </span>project=None<span class="p">, </span>supported_language_codes=None<span class="p">, </span>tier=None<span class="p">, </span>time_zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAgent<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/diagflow?tab=doc#AgentState">AgentState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/diagflow?tab=doc#Agent">Agent</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Diagflow.Agent.html">Agent</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Diagflow.AgentState.html">AgentState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -913,9 +913,9 @@ Get an existing Agent resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -928,36 +928,9 @@ Get an existing Agent resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -982,13 +955,40 @@ Get an existing Agent resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -997,10 +997,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
+    <dd>API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
 service endpoints for different API versions. However, bots connectors and webhook calls will follow the specified API
 version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSION_V2_BETA_1: V2beta1 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1008,10 +1008,10 @@ version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSIO
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
+    <dd>The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
 field, the Dialogflow will save the image in the backend. The address of the backend image returned from the API will be
 shown in the [avatarUriBackend] field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,9 +1019,9 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
+    <dd>The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
 [avatarUri] field can be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,11 +1029,11 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
+    <dd>To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
 tune the machine learning classification threshold. If the returned score value is less than the threshold value, then a
 fallback intent will be triggered or, if there are no fallback intents defined, no intent will be triggered. The score
 values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,10 +1041,10 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default language of the agent as a language tag. [See Language
+    <dd>The default language of the agent as a language tag. [See Language
 Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language
 codes. This field cannot be updated after creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1052,8 +1052,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
-{{% /md %}}</dd>
+    <dd>The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1061,8 +1061,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of this agent.
-{{% /md %}}</dd>
+    <dd>The name of this agent.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1070,8 +1070,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether this agent should log conversation queries.
-{{% /md %}}</dd>
+    <dd>Determines whether this agent should log conversation queries.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1079,10 +1079,10 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
+    <dd>Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
 examples in intents and/or wide use of templates syntax and composite entities. * MATCH_MODE_ML_ONLY: Can be used for
 agents with a large number of examples in intents, especially the ones using @sys.any or very large developer entities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,9 +1090,9 @@ agents with a large number of examples in intents, especially the ones using @sy
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of all languages supported by this agent (except for the defaultLanguageCode).
-{{% /md %}}</dd>
+    <dd>The list of all languages supported by this agent (except for the defaultLanguageCode).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,11 +1109,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
+    <dd>The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
 Enterprise tier (Essentials). * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus). NOTE: Due to consistency issues, the
 provider will not read this field from the API. Drift is possible between the Terraform state and Dialogflow if the
 agent tier is changed outside of Terraform.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,15 +1121,15 @@ agent tier is changed outside of Terraform.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
+    <dd>The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
 Europe/Paris.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1138,10 +1138,10 @@ Europe/Paris.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
+    <dd>API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
 service endpoints for different API versions. However, bots connectors and webhook calls will follow the specified API
 version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSION_V2_BETA_1: V2beta1 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1149,10 +1149,10 @@ version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSIO
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
+    <dd>The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
 field, the Dialogflow will save the image in the backend. The address of the backend image returned from the API will be
 shown in the [avatarUriBackend] field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,9 +1160,9 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
+    <dd>The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
 [avatarUri] field can be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1170,11 +1170,11 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
+    <dd>To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
 tune the machine learning classification threshold. If the returned score value is less than the threshold value, then a
 fallback intent will be triggered or, if there are no fallback intents defined, no intent will be triggered. The score
 values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,10 +1182,10 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default language of the agent as a language tag. [See Language
+    <dd>The default language of the agent as a language tag. [See Language
 Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language
 codes. This field cannot be updated after creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
-{{% /md %}}</dd>
+    <dd>The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of this agent.
-{{% /md %}}</dd>
+    <dd>The name of this agent.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,8 +1211,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether this agent should log conversation queries.
-{{% /md %}}</dd>
+    <dd>Determines whether this agent should log conversation queries.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1220,10 +1220,10 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
+    <dd>Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
 examples in intents and/or wide use of templates syntax and composite entities. * MATCH_MODE_ML_ONLY: Can be used for
 agents with a large number of examples in intents, especially the ones using @sys.any or very large developer entities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,9 +1231,9 @@ agents with a large number of examples in intents, especially the ones using @sy
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1241,8 +1241,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of all languages supported by this agent (except for the defaultLanguageCode).
-{{% /md %}}</dd>
+    <dd>The list of all languages supported by this agent (except for the defaultLanguageCode).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1250,11 +1250,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
+    <dd>The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
 Enterprise tier (Essentials). * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus). NOTE: Due to consistency issues, the
 provider will not read this field from the API. Drift is possible between the Terraform state and Dialogflow if the
 agent tier is changed outside of Terraform.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,15 +1262,15 @@ agent tier is changed outside of Terraform.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
+    <dd>The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
 Europe/Paris.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1279,10 +1279,10 @@ Europe/Paris.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
+    <dd>API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
 service endpoints for different API versions. However, bots connectors and webhook calls will follow the specified API
 version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSION_V2_BETA_1: V2beta1 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,10 +1290,10 @@ version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSIO
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
+    <dd>The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
 field, the Dialogflow will save the image in the backend. The address of the backend image returned from the API will be
 shown in the [avatarUriBackend] field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,9 +1301,9 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
+    <dd>The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
 [avatarUri] field can be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,11 +1311,11 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
+    <dd>To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
 tune the machine learning classification threshold. If the returned score value is less than the threshold value, then a
 fallback intent will be triggered or, if there are no fallback intents defined, no intent will be triggered. The score
 values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,10 +1323,10 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default language of the agent as a language tag. [See Language
+    <dd>The default language of the agent as a language tag. [See Language
 Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language
 codes. This field cannot be updated after creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1334,8 +1334,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
-{{% /md %}}</dd>
+    <dd>The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,8 +1343,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of this agent.
-{{% /md %}}</dd>
+    <dd>The name of this agent.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1352,8 +1352,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether this agent should log conversation queries.
-{{% /md %}}</dd>
+    <dd>Determines whether this agent should log conversation queries.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,10 +1361,10 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
+    <dd>Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
 examples in intents and/or wide use of templates syntax and composite entities. * MATCH_MODE_ML_ONLY: Can be used for
 agents with a large number of examples in intents, especially the ones using @sys.any or very large developer entities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,9 +1372,9 @@ agents with a large number of examples in intents, especially the ones using @sy
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,8 +1382,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of all languages supported by this agent (except for the defaultLanguageCode).
-{{% /md %}}</dd>
+    <dd>The list of all languages supported by this agent (except for the defaultLanguageCode).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1391,11 +1391,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
+    <dd>The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
 Enterprise tier (Essentials). * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus). NOTE: Due to consistency issues, the
 provider will not read this field from the API. Drift is possible between the Terraform state and Dialogflow if the
 agent tier is changed outside of Terraform.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,15 +1403,15 @@ agent tier is changed outside of Terraform.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
+    <dd>The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
 Europe/Paris.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1420,10 +1420,10 @@ Europe/Paris.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
+    <dd>API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query different
 service endpoints for different API versions. However, bots connectors and webhook calls will follow the specified API
 version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSION_V2_BETA_1: V2beta1 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1431,10 +1431,10 @@ version. * API_VERSION_V1: Legacy V1 API. * API_VERSION_V2: V2 API. * API_VERSIO
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
+    <dd>The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered into this
 field, the Dialogflow will save the image in the backend. The address of the backend image returned from the API will be
 shown in the [avatarUriBackend] field.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,9 +1442,9 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
+    <dd>The URI of the agent's avatar as returned from the API. Output only. To provide an image URL for the agent avatar, the
 [avatarUri] field can be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,11 +1452,11 @@ shown in the [avatarUriBackend] field.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
+    <dd>To filter out false positive results and still get variety in matched natural language inputs for your agent, you can
 tune the machine learning classification threshold. If the returned score value is less than the threshold value, then a
 fallback intent will be triggered or, if there are no fallback intents defined, no intent will be triggered. The score
 values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,10 +1464,10 @@ values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default language of the agent as a language tag. [See Language
+    <dd>The default language of the agent as a language tag. [See Language
 Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language
 codes. This field cannot be updated after creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,8 +1475,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
-{{% /md %}}</dd>
+    <dd>The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,8 +1484,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of this agent.
-{{% /md %}}</dd>
+    <dd>The name of this agent.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1493,8 +1493,8 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether this agent should log conversation queries.
-{{% /md %}}</dd>
+    <dd>Determines whether this agent should log conversation queries.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,10 +1502,10 @@ codes. This field cannot be updated after creation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
+    <dd>Determines how intents are detected from user queries. * MATCH_MODE_HYBRID: Best for agents with a small number of
 examples in intents and/or wide use of templates syntax and composite entities. * MATCH_MODE_ML_ONLY: Can be used for
 agents with a large number of examples in intents, especially the ones using @sys.any or very large developer entities.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,9 +1513,9 @@ agents with a large number of examples in intents, especially the ones using @sy
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,8 +1523,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of all languages supported by this agent (except for the defaultLanguageCode).
-{{% /md %}}</dd>
+    <dd>The list of all languages supported by this agent (except for the defaultLanguageCode).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1532,11 +1532,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
+    <dd>The agent tier. If not specified, TIER_STANDARD is assumed. * TIER_STANDARD: Standard tier. * TIER_ENTERPRISE:
 Enterprise tier (Essentials). * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus). NOTE: Due to consistency issues, the
 provider will not read this field from the API. Drift is possible between the Terraform state and Dialogflow if the
 agent tier is changed outside of Terraform.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1544,12 +1544,12 @@ agent tier is changed outside of Terraform.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
+    <dd>The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
 Europe/Paris.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

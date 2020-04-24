@@ -17,9 +17,9 @@ Policies can be written in TypeScript/JavaScript (Node.js) or Python and can be 
 Python support is currently in preview.
 {{% /notes %}}
 
-{{< chooser language "typescript,python" >}}
 
-{{% choosable language typescript %}}
+
+
 
 1. Install prerequisites.
 
@@ -77,8 +77,8 @@ Python support is currently in preview.
     });
     ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 1. Install prerequisites.
 
@@ -145,9 +145,9 @@ Python support is currently in preview.
     )
     ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 You can find more example Policy Packs in the [examples repo](https://github.com/pulumi/examples/tree/master/policy-packs). [Policy Pack best practices]({{< relref "/docs/guides/crossguard/best-practices" >}}) details the best practices for writing a Policy Pack.
 
@@ -155,9 +155,9 @@ You can find more example Policy Packs in the [examples repo](https://github.com
 
 Now let's take a look at how to run the Policy Pack locally against a Pulumi program.
 
-{{< chooser language "typescript,python" >}}
 
-{{% choosable language typescript %}}
+
+
 
 1. Run `npm install` in the Policy Pack directory.
 
@@ -209,8 +209,8 @@ Now let's take a look at how to run the Policy Pack locally against a Pulumi pro
             Prohibits setting the publicRead or publicReadWrite permission on AWS S3 buckets.
             You cannot set public-read or public-read-write on an S3 bucket. Read more about ACLs here: https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 1. Install dependencies for the Policy Pack.
 
@@ -302,9 +302,9 @@ Now let's take a look at how to run the Policy Pack locally against a Pulumi pro
             Prohibits setting the publicRead or publicReadWrite permission on AWS S3 buckets.
             You cannot set public-read or public-read-write on an S3 bucket. Read more about ACLs here: https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 Now that your Policy Pack is ready to go, let's enforce the pack across your organization.
 

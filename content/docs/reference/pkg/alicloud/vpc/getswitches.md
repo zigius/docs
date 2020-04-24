@@ -44,29 +44,29 @@ const defaultSwitches = vswitch.name.apply(name => alicloud.vpc.getSwitches({
 
 ## Using GetSwitches {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSwitches<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/vpc/#GetSwitchesArgs">GetSwitchesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/vpc/#GetSwitchesResult">GetSwitchesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_switches(</span>cidr_block=None<span class="p">, </span>ids=None<span class="p">, </span>is_default=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>resource_group_id=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, </span>zone_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSwitches<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/vpc?tab=doc#LookupSwitchesArgs">LookupSwitchesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/vpc?tab=doc#LookupSwitchesResult">LookupSwitchesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSwitches </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Vpc.GetSwitchesResult.html">GetSwitchesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Vpc.GetSwitchesArgs.html">GetSwitchesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -74,7 +74,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific CIDR block. For example: "172.16.0.0/12".
-{{% /md %}}</dd>
+    <dd>Filter results by a specific CIDR block. For example: "172.16.0.0/12".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -92,8 +92,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -101,8 +101,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the VSwitch is created by the system.
-{{% /md %}}</dd>
+    <dd>Indicate whether the VSwitch is created by the system.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -110,8 +110,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -119,7 +119,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -127,8 +127,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which VSWitch belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which VSWitch belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -136,8 +136,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -145,8 +145,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -154,14 +154,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the VSwitch.
-{{% /md %}}</dd>
+    <dd>The availability zone of the VSwitch.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -170,8 +170,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific CIDR block. For example: "172.16.0.0/12".
-{{% /md %}}</dd>
+    <dd>Filter results by a specific CIDR block. For example: "172.16.0.0/12".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -179,8 +179,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -188,8 +188,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the VSwitch is created by the system.
-{{% /md %}}</dd>
+    <dd>Indicate whether the VSwitch is created by the system.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -197,8 +197,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -206,7 +206,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -214,8 +214,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which VSWitch belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which VSWitch belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -223,8 +223,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -232,8 +232,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -241,14 +241,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the VSwitch.
-{{% /md %}}</dd>
+    <dd>The availability zone of the VSwitch.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -257,8 +257,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific CIDR block. For example: "172.16.0.0/12".
-{{% /md %}}</dd>
+    <dd>Filter results by a specific CIDR block. For example: "172.16.0.0/12".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the VSwitch is created by the system.
-{{% /md %}}</dd>
+    <dd>Indicate whether the VSwitch is created by the system.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,7 +293,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which VSWitch belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which VSWitch belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,14 +328,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the VSwitch.
-{{% /md %}}</dd>
+    <dd>The availability zone of the VSwitch.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -344,8 +344,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific CIDR block. For example: "172.16.0.0/12".
-{{% /md %}}</dd>
+    <dd>Filter results by a specific CIDR block. For example: "172.16.0.0/12".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the VSwitch is created by the system.
-{{% /md %}}</dd>
+    <dd>Indicate whether the VSwitch is created by the system.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,7 +380,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which VSWitch belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which VSWitch belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,8 +406,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,11 +415,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the VSwitch.
-{{% /md %}}</dd>
+    <dd>The availability zone of the VSwitch.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -435,7 +435,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -444,8 +444,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -453,8 +453,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -462,8 +462,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch names.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -471,8 +471,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getswitchesvswitch">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Vpc.<wbr>Outputs.<wbr>Get<wbr>Switches<wbr>Vswitch&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitches. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of VSwitches. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,8 +480,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}CIDR block of the VSwitch.
-{{% /md %}}</dd>
+    <dd>CIDR block of the VSwitch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -489,8 +489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VSwitch is the default one in the region.
-{{% /md %}}</dd>
+    <dd>Whether the VSwitch is the default one in the region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -498,7 +498,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -506,7 +506,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -514,7 +514,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -522,7 +522,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -530,8 +530,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -539,14 +539,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the availability zone where the VSwitch is located.
-{{% /md %}}</dd>
+    <dd>ID of the availability zone where the VSwitch is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -555,8 +555,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,8 +564,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,8 +573,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch names.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -582,8 +582,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getswitchesvswitch">[]Get<wbr>Switches<wbr>Vswitch</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitches. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of VSwitches. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -591,8 +591,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}CIDR block of the VSwitch.
-{{% /md %}}</dd>
+    <dd>CIDR block of the VSwitch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -600,8 +600,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VSwitch is the default one in the region.
-{{% /md %}}</dd>
+    <dd>Whether the VSwitch is the default one in the region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -609,7 +609,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -617,7 +617,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -625,7 +625,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -633,7 +633,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -641,8 +641,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -650,14 +650,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the availability zone where the VSwitch is located.
-{{% /md %}}</dd>
+    <dd>ID of the availability zone where the VSwitch is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -666,8 +666,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -675,8 +675,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -684,8 +684,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch names.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,8 +693,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getswitchesvswitch">Get<wbr>Switches<wbr>Vswitch[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitches. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of VSwitches. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -702,8 +702,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}CIDR block of the VSwitch.
-{{% /md %}}</dd>
+    <dd>CIDR block of the VSwitch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,8 +711,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VSwitch is the default one in the region.
-{{% /md %}}</dd>
+    <dd>Whether the VSwitch is the default one in the region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -720,7 +720,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -728,7 +728,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -736,7 +736,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -744,7 +744,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -752,8 +752,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -761,14 +761,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the availability zone where the VSwitch is located.
-{{% /md %}}</dd>
+    <dd>ID of the availability zone where the VSwitch is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -777,8 +777,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -786,8 +786,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -795,8 +795,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitch names.
-{{% /md %}}</dd>
+    <dd>A list of VSwitch names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -804,8 +804,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getswitchesvswitch">List[Get<wbr>Switches<wbr>Vswitch]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VSwitches. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of VSwitches. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -813,8 +813,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}CIDR block of the VSwitch.
-{{% /md %}}</dd>
+    <dd>CIDR block of the VSwitch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -822,8 +822,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VSwitch is the default one in the region.
-{{% /md %}}</dd>
+    <dd>Whether the VSwitch is the default one in the region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -831,7 +831,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -839,7 +839,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -847,7 +847,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -855,7 +855,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -863,8 +863,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -872,11 +872,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the availability zone where the VSwitch is located.
-{{% /md %}}</dd>
+    <dd>ID of the availability zone where the VSwitch is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -889,18 +889,18 @@ The following output properties are available:
 
 
 <h4 id="getswitchesvswitch">Get<wbr>Switches<wbr>Vswitch</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetSwitchesVswitch">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/vpc?tab=doc#GetSwitchesVswitch">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -909,8 +909,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific CIDR block. For example: "172.16.0.0/12".
-{{% /md %}}</dd>
+    <dd>Filter results by a specific CIDR block. For example: "172.16.0.0/12".
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -918,8 +918,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Time of creation.
-{{% /md %}}</dd>
+    <dd>Time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -927,8 +927,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the VSwitch.
-{{% /md %}}</dd>
+    <dd>Description of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -936,8 +936,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -945,8 +945,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of ECS instance IDs in the specified VSwitch.
-{{% /md %}}</dd>
+    <dd>List of ECS instance IDs in the specified VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -954,8 +954,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the VSwitch is created by the system.
-{{% /md %}}</dd>
+    <dd>Indicate whether the VSwitch is created by the system.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -963,8 +963,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the VSwitch.
-{{% /md %}}</dd>
+    <dd>Name of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -972,8 +972,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -981,14 +981,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the VSwitch.
-{{% /md %}}</dd>
+    <dd>The availability zone of the VSwitch.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -997,8 +997,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific CIDR block. For example: "172.16.0.0/12".
-{{% /md %}}</dd>
+    <dd>Filter results by a specific CIDR block. For example: "172.16.0.0/12".
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1006,8 +1006,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time of creation.
-{{% /md %}}</dd>
+    <dd>Time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1015,8 +1015,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the VSwitch.
-{{% /md %}}</dd>
+    <dd>Description of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1024,8 +1024,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1033,8 +1033,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of ECS instance IDs in the specified VSwitch.
-{{% /md %}}</dd>
+    <dd>List of ECS instance IDs in the specified VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1042,8 +1042,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the VSwitch is created by the system.
-{{% /md %}}</dd>
+    <dd>Indicate whether the VSwitch is created by the system.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1051,8 +1051,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the VSwitch.
-{{% /md %}}</dd>
+    <dd>Name of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1060,8 +1060,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1069,14 +1069,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the VSwitch.
-{{% /md %}}</dd>
+    <dd>The availability zone of the VSwitch.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1085,8 +1085,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific CIDR block. For example: "172.16.0.0/12".
-{{% /md %}}</dd>
+    <dd>Filter results by a specific CIDR block. For example: "172.16.0.0/12".
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1094,8 +1094,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time of creation.
-{{% /md %}}</dd>
+    <dd>Time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1103,8 +1103,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the VSwitch.
-{{% /md %}}</dd>
+    <dd>Description of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1112,8 +1112,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1121,8 +1121,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of ECS instance IDs in the specified VSwitch.
-{{% /md %}}</dd>
+    <dd>List of ECS instance IDs in the specified VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1130,8 +1130,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the VSwitch is created by the system.
-{{% /md %}}</dd>
+    <dd>Indicate whether the VSwitch is created by the system.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1139,8 +1139,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the VSwitch.
-{{% /md %}}</dd>
+    <dd>Name of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1148,8 +1148,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1157,14 +1157,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the VSwitch.
-{{% /md %}}</dd>
+    <dd>The availability zone of the VSwitch.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1173,8 +1173,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific CIDR block. For example: "172.16.0.0/12".
-{{% /md %}}</dd>
+    <dd>Filter results by a specific CIDR block. For example: "172.16.0.0/12".
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1182,8 +1182,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Time of creation.
-{{% /md %}}</dd>
+    <dd>Time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1191,8 +1191,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the VSwitch.
-{{% /md %}}</dd>
+    <dd>Description of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1200,8 +1200,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1209,8 +1209,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of ECS instance IDs in the specified VSwitch.
-{{% /md %}}</dd>
+    <dd>List of ECS instance IDs in the specified VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1218,8 +1218,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the VSwitch is created by the system.
-{{% /md %}}</dd>
+    <dd>Indicate whether the VSwitch is created by the system.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1227,8 +1227,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the VSwitch.
-{{% /md %}}</dd>
+    <dd>Name of the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1236,8 +1236,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that owns the VSwitch.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that owns the VSwitch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1245,11 +1245,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The availability zone of the VSwitch.
-{{% /md %}}</dd>
+    <dd>The availability zone of the VSwitch.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -45,29 +45,29 @@ const route = new aws.ec2.Route("r", {
 
 ## Using GetVpcPeeringConnection {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getVpcPeeringConnection<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcPeeringConnectionArgs">GetVpcPeeringConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcPeeringConnectionResult">GetVpcPeeringConnectionResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_vpc_peering_connection(</span>cidr_block=None<span class="p">, </span>filters=None<span class="p">, </span>id=None<span class="p">, </span>owner_id=None<span class="p">, </span>peer_cidr_block=None<span class="p">, </span>peer_owner_id=None<span class="p">, </span>peer_region=None<span class="p">, </span>peer_vpc_id=None<span class="p">, </span>region=None<span class="p">, </span>status=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupVpcPeeringConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcPeeringConnectionArgs">LookupVpcPeeringConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcPeeringConnectionResult">LookupVpcPeeringConnectionResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetVpcPeeringConnection </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcPeeringConnectionResult.html">GetVpcPeeringConnectionResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcPeeringConnectionArgs.html">GetVpcPeeringConnectionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -75,7 +75,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -84,8 +84,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -93,8 +93,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">List&lt;Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -102,8 +102,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -111,8 +111,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the owner of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the owner of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -120,8 +120,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -129,8 +129,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the owner of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the owner of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -138,8 +138,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The region of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -147,8 +147,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -156,8 +156,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The region of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -165,8 +165,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The status of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -174,9 +174,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired VPC Peering Connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -184,14 +184,14 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -200,8 +200,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,8 +209,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">[]Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,8 +218,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the owner of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the owner of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the owner of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the owner of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The region of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The region of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The status of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,9 +290,9 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired VPC Peering Connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,14 +300,14 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -316,8 +316,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -325,8 +325,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -334,8 +334,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,8 +343,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the owner of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the owner of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,8 +352,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,8 +361,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the owner of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the owner of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,8 +370,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The region of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The region of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The status of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,9 +406,9 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired VPC Peering Connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,14 +416,14 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -432,8 +432,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">List[Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,8 +450,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the owner of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the owner of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS account ID of the owner of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The AWS account ID of the owner of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The region of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the accepter VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the accepter VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The region of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,8 +513,8 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The status of the specific VPC Peering Connection to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,9 +522,9 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired VPC Peering Connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,11 +532,11 @@ a pair on the desired VPC Peering Connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
-{{% /md %}}</dd>
+    <dd>The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -552,7 +552,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -561,9 +561,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, bool&gt;</span>
     </dt>
-    <dd>{{% md %}}A configuration block that describes [VPC Peering Connection]
+    <dd>A configuration block that describes [VPC Peering Connection]
 (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -571,7 +571,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -579,7 +579,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -587,7 +587,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -595,7 +595,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -603,7 +603,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -611,7 +611,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -619,7 +619,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -627,7 +627,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -635,9 +635,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, bool&gt;</span>
     </dt>
-    <dd>{{% md %}}A configuration block that describes [VPC Peering Connection]
+    <dd>A configuration block that describes [VPC Peering Connection]
 (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -645,7 +645,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -653,7 +653,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -661,7 +661,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -669,13 +669,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">List&lt;Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -684,9 +684,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]bool</span>
     </dt>
-    <dd>{{% md %}}A configuration block that describes [VPC Peering Connection]
+    <dd>A configuration block that describes [VPC Peering Connection]
 (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -694,7 +694,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -702,7 +702,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -710,7 +710,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -718,7 +718,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -726,7 +726,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -734,7 +734,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -742,7 +742,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -750,7 +750,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -758,9 +758,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]bool</span>
     </dt>
-    <dd>{{% md %}}A configuration block that describes [VPC Peering Connection]
+    <dd>A configuration block that describes [VPC Peering Connection]
 (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -768,7 +768,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -776,7 +776,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -784,7 +784,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -792,13 +792,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">[]Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -807,9 +807,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: boolean}</span>
     </dt>
-    <dd>{{% md %}}A configuration block that describes [VPC Peering Connection]
+    <dd>A configuration block that describes [VPC Peering Connection]
 (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -817,7 +817,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -825,7 +825,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -833,7 +833,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -841,7 +841,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -849,7 +849,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -857,7 +857,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -865,7 +865,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -873,7 +873,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -881,9 +881,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: boolean}</span>
     </dt>
-    <dd>{{% md %}}A configuration block that describes [VPC Peering Connection]
+    <dd>A configuration block that describes [VPC Peering Connection]
 (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -891,7 +891,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -899,7 +899,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -907,7 +907,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -915,13 +915,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -930,9 +930,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Boolean]</span>
     </dt>
-    <dd>{{% md %}}A configuration block that describes [VPC Peering Connection]
+    <dd>A configuration block that describes [VPC Peering Connection]
 (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -940,7 +940,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -948,7 +948,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -956,7 +956,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -964,7 +964,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -972,7 +972,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -980,7 +980,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -988,7 +988,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -996,7 +996,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1004,9 +1004,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Boolean]</span>
     </dt>
-    <dd>{{% md %}}A configuration block that describes [VPC Peering Connection]
+    <dd>A configuration block that describes [VPC Peering Connection]
 (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1014,7 +1014,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1022,7 +1022,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1030,7 +1030,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1038,10 +1038,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">List[Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1054,18 +1054,18 @@ The following output properties are available:
 
 
 <h4 id="getvpcpeeringconnectionfilter">Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetVpcPeeringConnectionFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetVpcPeeringConnectionFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetVpcPeeringConnectionFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetVpcPeeringConnectionFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1074,9 +1074,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcPeeringConnections.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1084,15 +1084,15 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A VPC Peering Connection will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1101,9 +1101,9 @@ A VPC Peering Connection will be selected if any one of the given values matches
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcPeeringConnections.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1111,15 +1111,15 @@ A VPC Peering Connection will be selected if any one of the given values matches
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A VPC Peering Connection will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1128,9 +1128,9 @@ A VPC Peering Connection will be selected if any one of the given values matches
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcPeeringConnections.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1138,15 +1138,15 @@ A VPC Peering Connection will be selected if any one of the given values matches
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A VPC Peering Connection will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1155,9 +1155,9 @@ A VPC Peering Connection will be selected if any one of the given values matches
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcPeeringConnections.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1165,12 +1165,12 @@ A VPC Peering Connection will be selected if any one of the given values matches
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A VPC Peering Connection will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

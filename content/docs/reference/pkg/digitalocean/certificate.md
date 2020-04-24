@@ -23,26 +23,26 @@ Let's Encrypt.
 
 
 ## Create a Certificate Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#Certificate">Certificate</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#CertificateArgs">CertificateArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Certificate</span><span class="p">(resource_name, opts=None, </span>certificate_chain=None<span class="p">, </span>domains=None<span class="p">, </span>leaf_certificate=None<span class="p">, </span>name=None<span class="p">, </span>private_key=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCertificate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#CertificateArgs">CertificateArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#Certificate">Certificate</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean.Certificate.html">Certificate</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.DigitalOcean.CertificateArgs.html">CertificateArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -79,9 +79,9 @@ Let's Encrypt.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -99,9 +99,9 @@ Let's Encrypt.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -148,9 +148,9 @@ Let's Encrypt.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -187,7 +187,7 @@ Let's Encrypt.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Certificate Resource Properties {#properties}
 
@@ -200,7 +200,7 @@ The Certificate resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -209,10 +209,10 @@ The Certificate resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full PEM-formatted trust chain
+    <dd>The full PEM-formatted trust chain
 between the certificate authority's certificate and your domain's TLS
 certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -220,10 +220,10 @@ certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of fully qualified domain names (FQDNs) for
+    <dd>List of fully qualified domain names (FQDNs) for
 which the certificate will be issued. The domains must be managed using
 DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,9 +231,9 @@ DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted public
+    <dd>The contents of a PEM-formatted public
 TLS certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -241,8 +241,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the certificate for identification.
-{{% /md %}}</dd>
+    <dd>The name of the certificate for identification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,9 +250,9 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted private-key
+    <dd>The contents of a PEM-formatted private-key
 corresponding to the SSL certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,15 +260,15 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The type of certificate to provision. Can be either
+    <dd>The type of certificate to provision. Can be either
 `custom` or `lets_encrypt`. Defaults to `custom`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -277,10 +277,10 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full PEM-formatted trust chain
+    <dd>The full PEM-formatted trust chain
 between the certificate authority's certificate and your domain's TLS
 certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,10 +288,10 @@ certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of fully qualified domain names (FQDNs) for
+    <dd>List of fully qualified domain names (FQDNs) for
 which the certificate will be issued. The domains must be managed using
 DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,9 +299,9 @@ DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted public
+    <dd>The contents of a PEM-formatted public
 TLS certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the certificate for identification.
-{{% /md %}}</dd>
+    <dd>The name of the certificate for identification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,9 +318,9 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted private-key
+    <dd>The contents of a PEM-formatted private-key
 corresponding to the SSL certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,15 +328,15 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The type of certificate to provision. Can be either
+    <dd>The type of certificate to provision. Can be either
 `custom` or `lets_encrypt`. Defaults to `custom`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -345,10 +345,10 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full PEM-formatted trust chain
+    <dd>The full PEM-formatted trust chain
 between the certificate authority's certificate and your domain's TLS
 certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,10 +356,10 @@ certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of fully qualified domain names (FQDNs) for
+    <dd>List of fully qualified domain names (FQDNs) for
 which the certificate will be issued. The domains must be managed using
 DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,9 +367,9 @@ DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted public
+    <dd>The contents of a PEM-formatted public
 TLS certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,8 +377,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the certificate for identification.
-{{% /md %}}</dd>
+    <dd>The name of the certificate for identification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,9 +386,9 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted private-key
+    <dd>The contents of a PEM-formatted private-key
 corresponding to the SSL certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,15 +396,15 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type">Certificate<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}The type of certificate to provision. Can be either
+    <dd>The type of certificate to provision. Can be either
 `custom` or `lets_encrypt`. Defaults to `custom`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -413,10 +413,10 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full PEM-formatted trust chain
+    <dd>The full PEM-formatted trust chain
 between the certificate authority's certificate and your domain's TLS
 certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,10 +424,10 @@ certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of fully qualified domain names (FQDNs) for
+    <dd>List of fully qualified domain names (FQDNs) for
 which the certificate will be issued. The domains must be managed using
 DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,9 +435,9 @@ DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted public
+    <dd>The contents of a PEM-formatted public
 TLS certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,8 +445,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the certificate for identification.
-{{% /md %}}</dd>
+    <dd>The name of the certificate for identification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,9 +454,9 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted private-key
+    <dd>The contents of a PEM-formatted private-key
 corresponding to the SSL certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,12 +464,12 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The type of certificate to provision. Can be either
+    <dd>The type of certificate to provision. Can be either
 `custom` or `lets_encrypt`. Defaults to `custom`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -483,7 +483,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -492,7 +492,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -500,8 +500,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration date of the certificate
-{{% /md %}}</dd>
+    <dd>The expiration date of the certificate
+</dd>
 
     <dt class="property-"
             title="">
@@ -509,8 +509,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-1 fingerprint of the certificate
-{{% /md %}}</dd>
+    <dd>The SHA-1 fingerprint of the certificate
+</dd>
 
     <dt class="property-"
             title="">
@@ -518,13 +518,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -533,7 +533,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -541,8 +541,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration date of the certificate
-{{% /md %}}</dd>
+    <dd>The expiration date of the certificate
+</dd>
 
     <dt class="property-"
             title="">
@@ -550,8 +550,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-1 fingerprint of the certificate
-{{% /md %}}</dd>
+    <dd>The SHA-1 fingerprint of the certificate
+</dd>
 
     <dt class="property-"
             title="">
@@ -559,13 +559,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -574,7 +574,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -582,8 +582,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration date of the certificate
-{{% /md %}}</dd>
+    <dd>The expiration date of the certificate
+</dd>
 
     <dt class="property-"
             title="">
@@ -591,8 +591,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-1 fingerprint of the certificate
-{{% /md %}}</dd>
+    <dd>The SHA-1 fingerprint of the certificate
+</dd>
 
     <dt class="property-"
             title="">
@@ -600,13 +600,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -615,7 +615,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -623,8 +623,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The expiration date of the certificate
-{{% /md %}}</dd>
+    <dd>The expiration date of the certificate
+</dd>
 
     <dt class="property-"
             title="">
@@ -632,8 +632,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-1 fingerprint of the certificate
-{{% /md %}}</dd>
+    <dd>The SHA-1 fingerprint of the certificate
+</dd>
 
     <dt class="property-"
             title="">
@@ -641,10 +641,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -655,25 +655,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Certificate Resource {#look-up}
 
 Get an existing Certificate resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#CertificateState">CertificateState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#Certificate">Certificate</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>certificate_chain=None<span class="p">, </span>domains=None<span class="p">, </span>leaf_certificate=None<span class="p">, </span>name=None<span class="p">, </span>not_after=None<span class="p">, </span>private_key=None<span class="p">, </span>sha1_fingerprint=None<span class="p">, </span>state=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCertificate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#CertificateState">CertificateState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#Certificate">Certificate</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean.Certificate.html">Certificate</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean..CertificateState.html">CertificateState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -698,9 +698,9 @@ Get an existing Certificate resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -713,36 +713,9 @@ Get an existing Certificate resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -767,13 +740,40 @@ Get an existing Certificate resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -782,10 +782,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full PEM-formatted trust chain
+    <dd>The full PEM-formatted trust chain
 between the certificate authority's certificate and your domain's TLS
 certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -793,10 +793,10 @@ certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of fully qualified domain names (FQDNs) for
+    <dd>List of fully qualified domain names (FQDNs) for
 which the certificate will be issued. The domains must be managed using
 DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -804,9 +804,9 @@ DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted public
+    <dd>The contents of a PEM-formatted public
 TLS certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the certificate for identification.
-{{% /md %}}</dd>
+    <dd>The name of the certificate for identification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration date of the certificate
-{{% /md %}}</dd>
+    <dd>The expiration date of the certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,9 +832,9 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted private-key
+    <dd>The contents of a PEM-formatted private-key
 corresponding to the SSL certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -842,8 +842,8 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-1 fingerprint of the certificate
-{{% /md %}}</dd>
+    <dd>The SHA-1 fingerprint of the certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,7 +851,7 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,15 +859,15 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The type of certificate to provision. Can be either
+    <dd>The type of certificate to provision. Can be either
 `custom` or `lets_encrypt`. Defaults to `custom`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -876,10 +876,10 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full PEM-formatted trust chain
+    <dd>The full PEM-formatted trust chain
 between the certificate authority's certificate and your domain's TLS
 certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -887,10 +887,10 @@ certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of fully qualified domain names (FQDNs) for
+    <dd>List of fully qualified domain names (FQDNs) for
 which the certificate will be issued. The domains must be managed using
 DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,9 +898,9 @@ DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted public
+    <dd>The contents of a PEM-formatted public
 TLS certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -908,8 +908,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the certificate for identification.
-{{% /md %}}</dd>
+    <dd>The name of the certificate for identification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration date of the certificate
-{{% /md %}}</dd>
+    <dd>The expiration date of the certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,9 +926,9 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted private-key
+    <dd>The contents of a PEM-formatted private-key
 corresponding to the SSL certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,8 +936,8 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-1 fingerprint of the certificate
-{{% /md %}}</dd>
+    <dd>The SHA-1 fingerprint of the certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,7 +945,7 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,15 +953,15 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The type of certificate to provision. Can be either
+    <dd>The type of certificate to provision. Can be either
 `custom` or `lets_encrypt`. Defaults to `custom`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -970,10 +970,10 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full PEM-formatted trust chain
+    <dd>The full PEM-formatted trust chain
 between the certificate authority's certificate and your domain's TLS
 certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,10 +981,10 @@ certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of fully qualified domain names (FQDNs) for
+    <dd>List of fully qualified domain names (FQDNs) for
 which the certificate will be issued. The domains must be managed using
 DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,9 +992,9 @@ DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted public
+    <dd>The contents of a PEM-formatted public
 TLS certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,8 +1002,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the certificate for identification.
-{{% /md %}}</dd>
+    <dd>The name of the certificate for identification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration date of the certificate
-{{% /md %}}</dd>
+    <dd>The expiration date of the certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,9 +1020,9 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted private-key
+    <dd>The contents of a PEM-formatted private-key
 corresponding to the SSL certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-1 fingerprint of the certificate
-{{% /md %}}</dd>
+    <dd>The SHA-1 fingerprint of the certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,7 +1039,7 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,15 +1047,15 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type">Certificate<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}The type of certificate to provision. Can be either
+    <dd>The type of certificate to provision. Can be either
 `custom` or `lets_encrypt`. Defaults to `custom`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1064,10 +1064,10 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full PEM-formatted trust chain
+    <dd>The full PEM-formatted trust chain
 between the certificate authority's certificate and your domain's TLS
 certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,10 +1075,10 @@ certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of fully qualified domain names (FQDNs) for
+    <dd>List of fully qualified domain names (FQDNs) for
 which the certificate will be issued. The domains must be managed using
 DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1086,9 +1086,9 @@ DigitalOcean's DNS. Only valid when type is `lets_encrypt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted public
+    <dd>The contents of a PEM-formatted public
 TLS certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1096,8 +1096,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the certificate for identification.
-{{% /md %}}</dd>
+    <dd>The name of the certificate for identification.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,8 +1105,8 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The expiration date of the certificate
-{{% /md %}}</dd>
+    <dd>The expiration date of the certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,9 +1114,9 @@ TLS certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The contents of a PEM-formatted private-key
+    <dd>The contents of a PEM-formatted private-key
 corresponding to the SSL certificate. Only valid when type is `custom`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1124,8 +1124,8 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-1 fingerprint of the certificate
-{{% /md %}}</dd>
+    <dd>The SHA-1 fingerprint of the certificate
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,7 +1133,7 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,12 +1141,12 @@ corresponding to the SSL certificate. Only valid when type is `custom`.
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The type of certificate to provision. Can be either
+    <dd>The type of certificate to provision. Can be either
 `custom` or `lets_encrypt`. Defaults to `custom`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

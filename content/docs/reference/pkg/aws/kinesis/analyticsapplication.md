@@ -61,26 +61,26 @@ const testApplication = new aws.kinesis.AnalyticsApplication("test_application",
 
 
 ## Create a AnalyticsApplication Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplication">AnalyticsApplication</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplicationArgs">AnalyticsApplicationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AnalyticsApplication</span><span class="p">(resource_name, opts=None, </span>cloudwatch_logging_options=None<span class="p">, </span>code=None<span class="p">, </span>description=None<span class="p">, </span>inputs=None<span class="p">, </span>name=None<span class="p">, </span>outputs=None<span class="p">, </span>reference_data_sources=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAnalyticsApplication<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationArgs">AnalyticsApplicationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplication">AnalyticsApplication</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplication.html">AnalyticsApplication</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplicationArgs.html">AnalyticsApplicationArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -117,9 +117,9 @@ const testApplication = new aws.kinesis.AnalyticsApplication("test_application",
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -137,9 +137,9 @@ const testApplication = new aws.kinesis.AnalyticsApplication("test_application",
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -186,9 +186,9 @@ const testApplication = new aws.kinesis.AnalyticsApplication("test_application",
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -225,7 +225,7 @@ const testApplication = new aws.kinesis.AnalyticsApplication("test_application",
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## AnalyticsApplication Resource Properties {#properties}
 
@@ -238,7 +238,7 @@ The AnalyticsApplication resource accepts the following [input]({{< relref "/doc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -247,9 +247,9 @@ The AnalyticsApplication resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch log stream options to monitor application errors.
+    <dd>The CloudWatch log stream options to monitor application errors.
 See CloudWatch Logging Options below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,8 +257,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SQL Code to transform input data, and generate output.
-{{% /md %}}</dd>
+    <dd>SQL Code to transform input data, and generate output.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the application.
-{{% /md %}}</dd>
+    <dd>Description of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Input configuration of the application. See Inputs below for more details.
-{{% /md %}}</dd>
+    <dd>Input configuration of the application. See Inputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">List&lt;Analytics<wbr>Application<wbr>Output<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Output destination configuration of the application. See Outputs below for more details.
-{{% /md %}}</dd>
+    <dd>Output destination configuration of the application. See Outputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,9 +302,9 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An S3 Reference Data Source for the application.
+    <dd>An S3 Reference Data Source for the application.
 See Reference Data Sources below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,14 +312,14 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of tags for the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Key-value mapping of tags for the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -328,9 +328,9 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch log stream options to monitor application errors.
+    <dd>The CloudWatch log stream options to monitor application errors.
 See CloudWatch Logging Options below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,8 +338,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SQL Code to transform input data, and generate output.
-{{% /md %}}</dd>
+    <dd>SQL Code to transform input data, and generate output.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,8 +347,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the application.
-{{% /md %}}</dd>
+    <dd>Description of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,8 +356,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs</a></span>
     </dt>
-    <dd>{{% md %}}Input configuration of the application. See Inputs below for more details.
-{{% /md %}}</dd>
+    <dd>Input configuration of the application. See Inputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">[]Analytics<wbr>Application<wbr>Output</a></span>
     </dt>
-    <dd>{{% md %}}Output destination configuration of the application. See Outputs below for more details.
-{{% /md %}}</dd>
+    <dd>Output destination configuration of the application. See Outputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,9 +383,9 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources</a></span>
     </dt>
-    <dd>{{% md %}}An S3 Reference Data Source for the application.
+    <dd>An S3 Reference Data Source for the application.
 See Reference Data Sources below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,14 +393,14 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of tags for the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Key-value mapping of tags for the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -409,9 +409,9 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch log stream options to monitor application errors.
+    <dd>The CloudWatch log stream options to monitor application errors.
 See CloudWatch Logging Options below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,8 +419,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SQL Code to transform input data, and generate output.
-{{% /md %}}</dd>
+    <dd>SQL Code to transform input data, and generate output.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the application.
-{{% /md %}}</dd>
+    <dd>Description of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,8 +437,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs</a></span>
     </dt>
-    <dd>{{% md %}}Input configuration of the application. See Inputs below for more details.
-{{% /md %}}</dd>
+    <dd>Input configuration of the application. See Inputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,8 +446,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,8 +455,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">Analytics<wbr>Application<wbr>Output[]</a></span>
     </dt>
-    <dd>{{% md %}}Output destination configuration of the application. See Outputs below for more details.
-{{% /md %}}</dd>
+    <dd>Output destination configuration of the application. See Outputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,9 +464,9 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources</a></span>
     </dt>
-    <dd>{{% md %}}An S3 Reference Data Source for the application.
+    <dd>An S3 Reference Data Source for the application.
 See Reference Data Sources below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,14 +474,14 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of tags for the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Key-value mapping of tags for the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -490,9 +490,9 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Dict[Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch log stream options to monitor application errors.
+    <dd>The CloudWatch log stream options to monitor application errors.
 See CloudWatch Logging Options below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,8 +500,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SQL Code to transform input data, and generate output.
-{{% /md %}}</dd>
+    <dd>SQL Code to transform input data, and generate output.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the application.
-{{% /md %}}</dd>
+    <dd>Description of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,8 +518,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Dict[Analytics<wbr>Application<wbr>Inputs]</a></span>
     </dt>
-    <dd>{{% md %}}Input configuration of the application. See Inputs below for more details.
-{{% /md %}}</dd>
+    <dd>Input configuration of the application. See Inputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -527,8 +527,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,8 +536,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">List[Analytics<wbr>Application<wbr>Output]</a></span>
     </dt>
-    <dd>{{% md %}}Output destination configuration of the application. See Outputs below for more details.
-{{% /md %}}</dd>
+    <dd>Output destination configuration of the application. See Outputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -545,9 +545,9 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources]</a></span>
     </dt>
-    <dd>{{% md %}}An S3 Reference Data Source for the application.
+    <dd>An S3 Reference Data Source for the application.
 See Reference Data Sources below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,11 +555,11 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of tags for the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Key-value mapping of tags for the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -573,7 +573,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -582,8 +582,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Appliation.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Appliation.
+</dd>
 
     <dt class="property-"
             title="">
@@ -591,8 +591,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application version was created.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application version was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -600,7 +600,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application was last updated.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,8 +617,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Status of the application.
-{{% /md %}}</dd>
+    <dd>The Status of the application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -626,14 +626,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Version of the application.
-{{% /md %}}</dd>
+    <dd>The Version of the application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -642,8 +642,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Appliation.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Appliation.
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,8 +651,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application version was created.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application version was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -660,7 +660,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -668,8 +668,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application was last updated.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -677,8 +677,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Status of the application.
-{{% /md %}}</dd>
+    <dd>The Status of the application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -686,14 +686,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Version of the application.
-{{% /md %}}</dd>
+    <dd>The Version of the application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -702,8 +702,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">ARN</span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Appliation.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Appliation.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,8 +711,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application version was created.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application version was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -720,7 +720,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -728,8 +728,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application was last updated.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -737,8 +737,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Status of the application.
-{{% /md %}}</dd>
+    <dd>The Status of the application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -746,14 +746,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Version of the application.
-{{% /md %}}</dd>
+    <dd>The Version of the application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -762,8 +762,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Appliation.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Appliation.
+</dd>
 
     <dt class="property-"
             title="">
@@ -771,8 +771,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application version was created.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application version was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -780,7 +780,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -788,8 +788,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application was last updated.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -797,8 +797,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Status of the application.
-{{% /md %}}</dd>
+    <dd>The Status of the application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -806,11 +806,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Version of the application.
-{{% /md %}}</dd>
+    <dd>The Version of the application.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -821,25 +821,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing AnalyticsApplication Resource {#look-up}
 
 Get an existing AnalyticsApplication resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplicationState">AnalyticsApplicationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplication">AnalyticsApplication</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>cloudwatch_logging_options=None<span class="p">, </span>code=None<span class="p">, </span>create_timestamp=None<span class="p">, </span>description=None<span class="p">, </span>inputs=None<span class="p">, </span>last_update_timestamp=None<span class="p">, </span>name=None<span class="p">, </span>outputs=None<span class="p">, </span>reference_data_sources=None<span class="p">, </span>status=None<span class="p">, </span>tags=None<span class="p">, </span>version=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAnalyticsApplication<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationState">AnalyticsApplicationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplication">AnalyticsApplication</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplication.html">AnalyticsApplication</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplicationState.html">AnalyticsApplicationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -864,9 +864,9 @@ Get an existing AnalyticsApplication resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -879,36 +879,9 @@ Get an existing AnalyticsApplication resource's state with the given name, ID, a
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -933,13 +906,40 @@ Get an existing AnalyticsApplication resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -948,8 +948,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Appliation.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Appliation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -957,9 +957,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch log stream options to monitor application errors.
+    <dd>The CloudWatch log stream options to monitor application errors.
 See CloudWatch Logging Options below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,8 +967,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SQL Code to transform input data, and generate output.
-{{% /md %}}</dd>
+    <dd>SQL Code to transform input data, and generate output.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -976,8 +976,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application version was created.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application version was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,8 +985,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the application.
-{{% /md %}}</dd>
+    <dd>Description of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -994,8 +994,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Input configuration of the application. See Inputs below for more details.
-{{% /md %}}</dd>
+    <dd>Input configuration of the application. See Inputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1003,8 +1003,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application was last updated.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,8 +1012,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,8 +1021,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">List&lt;Analytics<wbr>Application<wbr>Output<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Output destination configuration of the application. See Outputs below for more details.
-{{% /md %}}</dd>
+    <dd>Output destination configuration of the application. See Outputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,9 +1030,9 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An S3 Reference Data Source for the application.
+    <dd>An S3 Reference Data Source for the application.
 See Reference Data Sources below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1040,8 +1040,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Status of the application.
-{{% /md %}}</dd>
+    <dd>The Status of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1049,8 +1049,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of tags for the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Key-value mapping of tags for the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,14 +1058,14 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Version of the application.
-{{% /md %}}</dd>
+    <dd>The Version of the application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1074,8 +1074,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Appliation.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Appliation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,9 +1083,9 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch log stream options to monitor application errors.
+    <dd>The CloudWatch log stream options to monitor application errors.
 See CloudWatch Logging Options below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SQL Code to transform input data, and generate output.
-{{% /md %}}</dd>
+    <dd>SQL Code to transform input data, and generate output.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application version was created.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application version was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the application.
-{{% /md %}}</dd>
+    <dd>Description of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,8 +1120,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs</a></span>
     </dt>
-    <dd>{{% md %}}Input configuration of the application. See Inputs below for more details.
-{{% /md %}}</dd>
+    <dd>Input configuration of the application. See Inputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,8 +1129,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application was last updated.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,8 +1147,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">[]Analytics<wbr>Application<wbr>Output</a></span>
     </dt>
-    <dd>{{% md %}}Output destination configuration of the application. See Outputs below for more details.
-{{% /md %}}</dd>
+    <dd>Output destination configuration of the application. See Outputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,9 +1156,9 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources</a></span>
     </dt>
-    <dd>{{% md %}}An S3 Reference Data Source for the application.
+    <dd>An S3 Reference Data Source for the application.
 See Reference Data Sources below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1166,8 +1166,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Status of the application.
-{{% /md %}}</dd>
+    <dd>The Status of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,8 +1175,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of tags for the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Key-value mapping of tags for the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,14 +1184,14 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Version of the application.
-{{% /md %}}</dd>
+    <dd>The Version of the application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1200,8 +1200,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">ARN</span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Appliation.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Appliation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,9 +1209,9 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch log stream options to monitor application errors.
+    <dd>The CloudWatch log stream options to monitor application errors.
 See CloudWatch Logging Options below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SQL Code to transform input data, and generate output.
-{{% /md %}}</dd>
+    <dd>SQL Code to transform input data, and generate output.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,8 +1228,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application version was created.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application version was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1237,8 +1237,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the application.
-{{% /md %}}</dd>
+    <dd>Description of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,8 +1246,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs</a></span>
     </dt>
-    <dd>{{% md %}}Input configuration of the application. See Inputs below for more details.
-{{% /md %}}</dd>
+    <dd>Input configuration of the application. See Inputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,8 +1255,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application was last updated.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,8 +1264,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,8 +1273,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">Analytics<wbr>Application<wbr>Output[]</a></span>
     </dt>
-    <dd>{{% md %}}Output destination configuration of the application. See Outputs below for more details.
-{{% /md %}}</dd>
+    <dd>Output destination configuration of the application. See Outputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1282,9 +1282,9 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources</a></span>
     </dt>
-    <dd>{{% md %}}An S3 Reference Data Source for the application.
+    <dd>An S3 Reference Data Source for the application.
 See Reference Data Sources below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,8 +1292,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Status of the application.
-{{% /md %}}</dd>
+    <dd>The Status of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,8 +1301,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of tags for the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Key-value mapping of tags for the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1310,14 +1310,14 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Version of the application.
-{{% /md %}}</dd>
+    <dd>The Version of the application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1326,8 +1326,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Appliation.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Appliation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1335,9 +1335,9 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Dict[Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch log stream options to monitor application errors.
+    <dd>The CloudWatch log stream options to monitor application errors.
 See CloudWatch Logging Options below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1345,8 +1345,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SQL Code to transform input data, and generate output.
-{{% /md %}}</dd>
+    <dd>SQL Code to transform input data, and generate output.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,8 +1354,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application version was created.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application version was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1363,8 +1363,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the application.
-{{% /md %}}</dd>
+    <dd>Description of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,8 +1372,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Dict[Analytics<wbr>Application<wbr>Inputs]</a></span>
     </dt>
-    <dd>{{% md %}}Input configuration of the application. See Inputs below for more details.
-{{% /md %}}</dd>
+    <dd>Input configuration of the application. See Inputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,8 +1381,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Timestamp when the application was last updated.
-{{% /md %}}</dd>
+    <dd>The Timestamp when the application was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,8 +1390,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1399,8 +1399,8 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">List[Analytics<wbr>Application<wbr>Output]</a></span>
     </dt>
-    <dd>{{% md %}}Output destination configuration of the application. See Outputs below for more details.
-{{% /md %}}</dd>
+    <dd>Output destination configuration of the application. See Outputs below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1408,9 +1408,9 @@ See CloudWatch Logging Options below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources]</a></span>
     </dt>
-    <dd>{{% md %}}An S3 Reference Data Source for the application.
+    <dd>An S3 Reference Data Source for the application.
 See Reference Data Sources below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1418,8 +1418,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Status of the application.
-{{% /md %}}</dd>
+    <dd>The Status of the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,8 +1427,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of tags for the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>Key-value mapping of tags for the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1436,11 +1436,11 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Version of the application.
-{{% /md %}}</dd>
+    <dd>The Version of the application.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1455,18 +1455,18 @@ See Reference Data Sources below for more details.
 
 
 <h4 id="analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationCloudwatchLoggingOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationCloudwatchLoggingOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationCloudwatchLoggingOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationCloudwatchLoggingOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1475,8 +1475,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the CloudWatch Log Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the CloudWatch Log Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1484,8 +1484,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to send application messages.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to send application messages.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1493,14 +1493,14 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1509,8 +1509,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the CloudWatch Log Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the CloudWatch Log Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1518,8 +1518,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to send application messages.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to send application messages.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1527,14 +1527,14 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1543,8 +1543,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the CloudWatch Log Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the CloudWatch Log Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1552,8 +1552,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to send application messages.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to send application messages.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1561,14 +1561,14 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1577,8 +1577,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the CloudWatch Log Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the CloudWatch Log Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1586,8 +1586,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to send application messages.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to send application messages.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,29 +1595,29 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputs">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputs">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1626,8 +1626,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name Prefix to use when creating an in-application stream.
-{{% /md %}}</dd>
+    <dd>The Name Prefix to use when creating an in-application stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1635,8 +1635,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschema">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data in the streaming source. See Source Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data in the streaming source. See Source Schema below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1644,8 +1644,8 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1653,9 +1653,9 @@ See Reference Data Sources below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisfirehose">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Firehose<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesis_stream`.
+    <dd>The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesis_stream`.
 See Kinesis Firehose below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1663,9 +1663,9 @@ See Kinesis Firehose below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisstream">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Stream<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Stream configuration for the streaming source. Conflicts with `kinesis_firehose`.
+    <dd>The Kinesis Stream configuration for the streaming source. Conflicts with `kinesis_firehose`.
 See Kinesis Stream below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1673,9 +1673,9 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsparallelism">Analytics<wbr>Application<wbr>Inputs<wbr>Parallelism<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The number of Parallel in-application streams to create.
+    <dd>The number of Parallel in-application streams to create.
 See Parallelism below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,9 +1683,9 @@ See Parallelism below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Processing Configuration to transform records as they are received from the stream.
+    <dd>The Processing Configuration to transform records as they are received from the stream.
 See Processing Configuration below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1693,7 +1693,7 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsstartingpositionconfiguration">List&lt;Analytics<wbr>Application<wbr>Inputs<wbr>Starting<wbr>Position<wbr>Configuration<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,13 +1701,13 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1716,8 +1716,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name Prefix to use when creating an in-application stream.
-{{% /md %}}</dd>
+    <dd>The Name Prefix to use when creating an in-application stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1725,8 +1725,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschema">Analytics<wbr>Application<wbr>Inputs<wbr>Schema</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data in the streaming source. See Source Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data in the streaming source. See Source Schema below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1734,8 +1734,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,9 +1743,9 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisfirehose">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesis_stream`.
+    <dd>The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesis_stream`.
 See Kinesis Firehose below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1753,9 +1753,9 @@ See Kinesis Firehose below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisstream">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Stream</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Stream configuration for the streaming source. Conflicts with `kinesis_firehose`.
+    <dd>The Kinesis Stream configuration for the streaming source. Conflicts with `kinesis_firehose`.
 See Kinesis Stream below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,9 +1763,9 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsparallelism">Analytics<wbr>Application<wbr>Inputs<wbr>Parallelism</a></span>
     </dt>
-    <dd>{{% md %}}The number of Parallel in-application streams to create.
+    <dd>The number of Parallel in-application streams to create.
 See Parallelism below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1773,9 +1773,9 @@ See Parallelism below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The Processing Configuration to transform records as they are received from the stream.
+    <dd>The Processing Configuration to transform records as they are received from the stream.
 See Processing Configuration below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,7 +1783,7 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsstartingpositionconfiguration">[]Analytics<wbr>Application<wbr>Inputs<wbr>Starting<wbr>Position<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1791,13 +1791,13 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1806,8 +1806,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name Prefix to use when creating an in-application stream.
-{{% /md %}}</dd>
+    <dd>The Name Prefix to use when creating an in-application stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1815,8 +1815,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschema">Analytics<wbr>Application<wbr>Inputs<wbr>Schema</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data in the streaming source. See Source Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data in the streaming source. See Source Schema below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1824,8 +1824,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1833,9 +1833,9 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisfirehose">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesis_stream`.
+    <dd>The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesis_stream`.
 See Kinesis Firehose below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1843,9 +1843,9 @@ See Kinesis Firehose below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisstream">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Stream</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Stream configuration for the streaming source. Conflicts with `kinesis_firehose`.
+    <dd>The Kinesis Stream configuration for the streaming source. Conflicts with `kinesis_firehose`.
 See Kinesis Stream below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1853,9 +1853,9 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsparallelism">Analytics<wbr>Application<wbr>Inputs<wbr>Parallelism</a></span>
     </dt>
-    <dd>{{% md %}}The number of Parallel in-application streams to create.
+    <dd>The number of Parallel in-application streams to create.
 See Parallelism below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1863,9 +1863,9 @@ See Parallelism below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The Processing Configuration to transform records as they are received from the stream.
+    <dd>The Processing Configuration to transform records as they are received from the stream.
 See Processing Configuration below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1873,7 +1873,7 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsstartingpositionconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Starting<wbr>Position<wbr>Configuration[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1881,13 +1881,13 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1896,8 +1896,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name Prefix to use when creating an in-application stream.
-{{% /md %}}</dd>
+    <dd>The Name Prefix to use when creating an in-application stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1905,8 +1905,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschema">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema]</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data in the streaming source. See Source Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data in the streaming source. See Source Schema below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1914,8 +1914,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1923,9 +1923,9 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisfirehose">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Firehose]</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesis_stream`.
+    <dd>The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesis_stream`.
 See Kinesis Firehose below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1933,9 +1933,9 @@ See Kinesis Firehose below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisstream">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Stream]</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Stream configuration for the streaming source. Conflicts with `kinesis_firehose`.
+    <dd>The Kinesis Stream configuration for the streaming source. Conflicts with `kinesis_firehose`.
 See Kinesis Stream below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1943,9 +1943,9 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsparallelism">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Parallelism]</a></span>
     </dt>
-    <dd>{{% md %}}The number of Parallel in-application streams to create.
+    <dd>The number of Parallel in-application streams to create.
 See Parallelism below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1953,9 +1953,9 @@ See Parallelism below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfiguration">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}The Processing Configuration to transform records as they are received from the stream.
+    <dd>The Processing Configuration to transform records as they are received from the stream.
 See Processing Configuration below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1963,7 +1963,7 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsstartingpositionconfiguration">List[Analytics<wbr>Application<wbr>Inputs<wbr>Starting<wbr>Position<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,28 +1971,28 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputskinesisfirehose">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Firehose</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsKinesisFirehose">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsKinesisFirehose">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsKinesisFirehoseArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsKinesisFirehoseOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2001,8 +2001,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Firehose delivery stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Firehose delivery stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2010,14 +2010,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2026,8 +2026,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Firehose delivery stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Firehose delivery stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2035,14 +2035,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2051,8 +2051,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Firehose delivery stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Firehose delivery stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2060,14 +2060,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2076,8 +2076,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Firehose delivery stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Firehose delivery stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2085,29 +2085,29 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputskinesisstream">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Stream</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsKinesisStream">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsKinesisStream">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsKinesisStreamArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsKinesisStreamOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2116,8 +2116,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2125,14 +2125,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2141,8 +2141,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2150,14 +2150,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2166,8 +2166,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2175,14 +2175,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2191,8 +2191,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2200,29 +2200,29 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsparallelism">Analytics<wbr>Application<wbr>Inputs<wbr>Parallelism</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsParallelism">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsParallelism">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsParallelismArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsParallelismOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2231,14 +2231,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Count of streams.
-{{% /md %}}</dd>
+    <dd>The Count of streams.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2247,14 +2247,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Count of streams.
-{{% /md %}}</dd>
+    <dd>The Count of streams.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2263,14 +2263,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Count of streams.
-{{% /md %}}</dd>
+    <dd>The Count of streams.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2279,29 +2279,29 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Count of streams.
-{{% /md %}}</dd>
+    <dd>The Count of streams.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsprocessingconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsProcessingConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsProcessingConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsProcessingConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsProcessingConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2310,14 +2310,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfigurationlambda">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Lambda<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda function configuration. See Lambda below for more details.
-{{% /md %}}</dd>
+    <dd>The Lambda function configuration. See Lambda below for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2326,14 +2326,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfigurationlambda">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Lambda</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda function configuration. See Lambda below for more details.
-{{% /md %}}</dd>
+    <dd>The Lambda function configuration. See Lambda below for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2342,14 +2342,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfigurationlambda">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Lambda</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda function configuration. See Lambda below for more details.
-{{% /md %}}</dd>
+    <dd>The Lambda function configuration. See Lambda below for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2358,29 +2358,29 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfigurationlambda">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Lambda]</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda function configuration. See Lambda below for more details.
-{{% /md %}}</dd>
+    <dd>The Lambda function configuration. See Lambda below for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsprocessingconfigurationlambda">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Lambda</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsProcessingConfigurationLambda">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsProcessingConfigurationLambda">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsProcessingConfigurationLambdaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsProcessingConfigurationLambdaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2389,8 +2389,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2398,14 +2398,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2414,8 +2414,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2423,14 +2423,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2439,8 +2439,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2448,14 +2448,14 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2464,8 +2464,8 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2473,29 +2473,29 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsschema">Analytics<wbr>Application<wbr>Inputs<wbr>Schema</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsSchema">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsSchema">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2504,9 +2504,9 @@ See Processing Configuration below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordcolumn">List&lt;Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Column<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The Record Column mapping for the streaming source data element.
+    <dd>The Record Column mapping for the streaming source data element.
 See Record Columns below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2514,9 +2514,9 @@ See Record Columns below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformat">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Record Format and mapping information to schematize a record.
+    <dd>The Record Format and mapping information to schematize a record.
 See Record Format below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2524,14 +2524,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Encoding of the record in the streaming source.
-{{% /md %}}</dd>
+    <dd>The Encoding of the record in the streaming source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2540,9 +2540,9 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordcolumn">[]Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Column</a></span>
     </dt>
-    <dd>{{% md %}}The Record Column mapping for the streaming source data element.
+    <dd>The Record Column mapping for the streaming source data element.
 See Record Columns below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2550,9 +2550,9 @@ See Record Columns below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformat">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format</a></span>
     </dt>
-    <dd>{{% md %}}The Record Format and mapping information to schematize a record.
+    <dd>The Record Format and mapping information to schematize a record.
 See Record Format below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2560,14 +2560,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Encoding of the record in the streaming source.
-{{% /md %}}</dd>
+    <dd>The Encoding of the record in the streaming source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2576,9 +2576,9 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordcolumn">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Column[]</a></span>
     </dt>
-    <dd>{{% md %}}The Record Column mapping for the streaming source data element.
+    <dd>The Record Column mapping for the streaming source data element.
 See Record Columns below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2586,9 +2586,9 @@ See Record Columns below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformat">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format</a></span>
     </dt>
-    <dd>{{% md %}}The Record Format and mapping information to schematize a record.
+    <dd>The Record Format and mapping information to schematize a record.
 See Record Format below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2596,14 +2596,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Encoding of the record in the streaming source.
-{{% /md %}}</dd>
+    <dd>The Encoding of the record in the streaming source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2612,9 +2612,9 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordcolumn">List[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Column]</a></span>
     </dt>
-    <dd>{{% md %}}The Record Column mapping for the streaming source data element.
+    <dd>The Record Column mapping for the streaming source data element.
 See Record Columns below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2622,9 +2622,9 @@ See Record Columns below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformat">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format]</a></span>
     </dt>
-    <dd>{{% md %}}The Record Format and mapping information to schematize a record.
+    <dd>The Record Format and mapping information to schematize a record.
 See Record Format below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2632,29 +2632,29 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Encoding of the record in the streaming source.
-{{% /md %}}</dd>
+    <dd>The Encoding of the record in the streaming source.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsschemarecordcolumn">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Column</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsSchemaRecordColumn">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsSchemaRecordColumn">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordColumnArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordColumnOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2663,8 +2663,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the column.
-{{% /md %}}</dd>
+    <dd>Name of the column.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2672,8 +2672,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL Type of the column.
-{{% /md %}}</dd>
+    <dd>The SQL Type of the column.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2681,14 +2681,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping reference to the data element.
-{{% /md %}}</dd>
+    <dd>The Mapping reference to the data element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2697,8 +2697,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the column.
-{{% /md %}}</dd>
+    <dd>Name of the column.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2706,8 +2706,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL Type of the column.
-{{% /md %}}</dd>
+    <dd>The SQL Type of the column.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2715,14 +2715,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping reference to the data element.
-{{% /md %}}</dd>
+    <dd>The Mapping reference to the data element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2731,8 +2731,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the column.
-{{% /md %}}</dd>
+    <dd>Name of the column.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2740,8 +2740,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL Type of the column.
-{{% /md %}}</dd>
+    <dd>The SQL Type of the column.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2749,14 +2749,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping reference to the data element.
-{{% /md %}}</dd>
+    <dd>The Mapping reference to the data element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2765,8 +2765,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the column.
-{{% /md %}}</dd>
+    <dd>Name of the column.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2774,8 +2774,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SQL Type of the column.
-{{% /md %}}</dd>
+    <dd>The SQL Type of the column.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2783,29 +2783,29 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping reference to the data element.
-{{% /md %}}</dd>
+    <dd>The Mapping reference to the data element.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsschemarecordformat">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsSchemaRecordFormat">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsSchemaRecordFormat">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordFormatArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordFormatOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2814,9 +2814,9 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping Information for the record format.
+    <dd>The Mapping Information for the record format.
 See Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2824,14 +2824,14 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Record Format. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The type of Record Format. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2840,9 +2840,9 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping Information for the record format.
+    <dd>The Mapping Information for the record format.
 See Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2850,14 +2850,14 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Record Format. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The type of Record Format. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2866,9 +2866,9 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping Information for the record format.
+    <dd>The Mapping Information for the record format.
 See Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2876,14 +2876,14 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Record Format. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The type of Record Format. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2892,9 +2892,9 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameters">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters]</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping Information for the record format.
+    <dd>The Mapping Information for the record format.
 See Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2902,29 +2902,29 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of Record Format. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The type of Record Format. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsSchemaRecordFormatMappingParameters">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsSchemaRecordFormatMappingParameters">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2933,9 +2933,9 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when the record format uses delimiters.
+    <dd>Mapping information when the record format uses delimiters.
 See CSV Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2943,15 +2943,15 @@ See CSV Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when JSON is the record format on the streaming source.
+    <dd>Mapping information when JSON is the record format on the streaming source.
 See JSON Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2960,9 +2960,9 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when the record format uses delimiters.
+    <dd>Mapping information when the record format uses delimiters.
 See CSV Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2970,15 +2970,15 @@ See CSV Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when JSON is the record format on the streaming source.
+    <dd>Mapping information when JSON is the record format on the streaming source.
 See JSON Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2987,9 +2987,9 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when the record format uses delimiters.
+    <dd>Mapping information when the record format uses delimiters.
 See CSV Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2997,15 +2997,15 @@ See CSV Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when JSON is the record format on the streaming source.
+    <dd>Mapping information when JSON is the record format on the streaming source.
 See JSON Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3014,9 +3014,9 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameterscsv">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv]</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when the record format uses delimiters.
+    <dd>Mapping information when the record format uses delimiters.
 See CSV Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3024,30 +3024,30 @@ See CSV Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparametersjson">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json]</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when JSON is the record format on the streaming source.
+    <dd>Mapping information when JSON is the record format on the streaming source.
 See JSON Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3056,8 +3056,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Column Delimiter.
-{{% /md %}}</dd>
+    <dd>The Column Delimiter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3065,14 +3065,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Row Delimiter.
-{{% /md %}}</dd>
+    <dd>The Row Delimiter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3081,8 +3081,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Column Delimiter.
-{{% /md %}}</dd>
+    <dd>The Column Delimiter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3090,14 +3090,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Row Delimiter.
-{{% /md %}}</dd>
+    <dd>The Row Delimiter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3106,8 +3106,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Column Delimiter.
-{{% /md %}}</dd>
+    <dd>The Column Delimiter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3115,14 +3115,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Row Delimiter.
-{{% /md %}}</dd>
+    <dd>The Row Delimiter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3131,8 +3131,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Column Delimiter.
-{{% /md %}}</dd>
+    <dd>The Column Delimiter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3140,29 +3140,29 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Row Delimiter.
-{{% /md %}}</dd>
+    <dd>The Row Delimiter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3171,14 +3171,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the top-level parent that contains the records.
-{{% /md %}}</dd>
+    <dd>Path to the top-level parent that contains the records.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3187,14 +3187,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the top-level parent that contains the records.
-{{% /md %}}</dd>
+    <dd>Path to the top-level parent that contains the records.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3203,14 +3203,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the top-level parent that contains the records.
-{{% /md %}}</dd>
+    <dd>Path to the top-level parent that contains the records.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3219,29 +3219,29 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to the top-level parent that contains the records.
-{{% /md %}}</dd>
+    <dd>Path to the top-level parent that contains the records.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationinputsstartingpositionconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Starting<wbr>Position<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationInputsStartingPositionConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationInputsStartingPositionConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsStartingPositionConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationInputsStartingPositionConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3250,13 +3250,13 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3265,13 +3265,13 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3280,13 +3280,13 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3295,28 +3295,28 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationoutput">Analytics<wbr>Application<wbr>Output</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationOutput">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3325,8 +3325,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the in-application stream.
-{{% /md %}}</dd>
+    <dd>The Name of the in-application stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3334,8 +3334,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputschema">Analytics<wbr>Application<wbr>Output<wbr>Schema<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data written to the destination. See Destination Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data written to the destination. See Destination Schema below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3343,8 +3343,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3352,9 +3352,9 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisfirehose">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Firehose<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesis_stream`.
+    <dd>The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesis_stream`.
 See Kinesis Firehose below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3362,9 +3362,9 @@ See Kinesis Firehose below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisstream">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Stream<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Stream configuration for the destination stream. Conflicts with `kinesis_firehose`.
+    <dd>The Kinesis Stream configuration for the destination stream. Conflicts with `kinesis_firehose`.
 See Kinesis Stream below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3372,14 +3372,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputlambda">Analytics<wbr>Application<wbr>Output<wbr>Lambda<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda function destination. See Lambda below for more details.
-{{% /md %}}</dd>
+    <dd>The Lambda function destination. See Lambda below for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3388,8 +3388,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the in-application stream.
-{{% /md %}}</dd>
+    <dd>The Name of the in-application stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3397,8 +3397,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputschema">Analytics<wbr>Application<wbr>Output<wbr>Schema</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data written to the destination. See Destination Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data written to the destination. See Destination Schema below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3406,8 +3406,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3415,9 +3415,9 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisfirehose">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesis_stream`.
+    <dd>The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesis_stream`.
 See Kinesis Firehose below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3425,9 +3425,9 @@ See Kinesis Firehose below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisstream">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Stream</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Stream configuration for the destination stream. Conflicts with `kinesis_firehose`.
+    <dd>The Kinesis Stream configuration for the destination stream. Conflicts with `kinesis_firehose`.
 See Kinesis Stream below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3435,14 +3435,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputlambda">Analytics<wbr>Application<wbr>Output<wbr>Lambda</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda function destination. See Lambda below for more details.
-{{% /md %}}</dd>
+    <dd>The Lambda function destination. See Lambda below for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3451,8 +3451,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the in-application stream.
-{{% /md %}}</dd>
+    <dd>The Name of the in-application stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3460,8 +3460,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputschema">Analytics<wbr>Application<wbr>Output<wbr>Schema</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data written to the destination. See Destination Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data written to the destination. See Destination Schema below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3469,8 +3469,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3478,9 +3478,9 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisfirehose">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesis_stream`.
+    <dd>The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesis_stream`.
 See Kinesis Firehose below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3488,9 +3488,9 @@ See Kinesis Firehose below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisstream">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Stream</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Stream configuration for the destination stream. Conflicts with `kinesis_firehose`.
+    <dd>The Kinesis Stream configuration for the destination stream. Conflicts with `kinesis_firehose`.
 See Kinesis Stream below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3498,14 +3498,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputlambda">Analytics<wbr>Application<wbr>Output<wbr>Lambda</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda function destination. See Lambda below for more details.
-{{% /md %}}</dd>
+    <dd>The Lambda function destination. See Lambda below for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3514,8 +3514,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the in-application stream.
-{{% /md %}}</dd>
+    <dd>The Name of the in-application stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3523,8 +3523,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputschema">Dict[Analytics<wbr>Application<wbr>Output<wbr>Schema]</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data written to the destination. See Destination Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data written to the destination. See Destination Schema below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3532,8 +3532,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3541,9 +3541,9 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisfirehose">Dict[Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Firehose]</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesis_stream`.
+    <dd>The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesis_stream`.
 See Kinesis Firehose below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3551,9 +3551,9 @@ See Kinesis Firehose below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisstream">Dict[Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Stream]</a></span>
     </dt>
-    <dd>{{% md %}}The Kinesis Stream configuration for the destination stream. Conflicts with `kinesis_firehose`.
+    <dd>The Kinesis Stream configuration for the destination stream. Conflicts with `kinesis_firehose`.
 See Kinesis Stream below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3561,29 +3561,29 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputlambda">Dict[Analytics<wbr>Application<wbr>Output<wbr>Lambda]</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda function destination. See Lambda below for more details.
-{{% /md %}}</dd>
+    <dd>The Lambda function destination. See Lambda below for more details.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationoutputkinesisfirehose">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Firehose</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationOutputKinesisFirehose">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationOutputKinesisFirehose">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputKinesisFirehoseArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputKinesisFirehoseOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3592,8 +3592,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Firehose delivery stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Firehose delivery stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3601,14 +3601,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3617,8 +3617,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Firehose delivery stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Firehose delivery stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3626,14 +3626,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3642,8 +3642,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Firehose delivery stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Firehose delivery stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3651,14 +3651,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3667,8 +3667,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Firehose delivery stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Firehose delivery stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3676,29 +3676,29 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationoutputkinesisstream">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Stream</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationOutputKinesisStream">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationOutputKinesisStream">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputKinesisStreamArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputKinesisStreamOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3707,8 +3707,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3716,14 +3716,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3732,8 +3732,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3741,14 +3741,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3757,8 +3757,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3766,14 +3766,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3782,8 +3782,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3791,29 +3791,29 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the stream.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationoutputlambda">Analytics<wbr>Application<wbr>Output<wbr>Lambda</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationOutputLambda">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationOutputLambda">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputLambdaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputLambdaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3822,8 +3822,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3831,14 +3831,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3847,8 +3847,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3856,14 +3856,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3872,8 +3872,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3881,14 +3881,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3897,8 +3897,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3906,29 +3906,29 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to access the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to access the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationoutputschema">Analytics<wbr>Application<wbr>Output<wbr>Schema</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationOutputSchema">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationOutputSchema">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputSchemaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationOutputSchemaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3937,14 +3937,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3953,14 +3953,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3969,14 +3969,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3985,29 +3985,29 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationReferenceDataSources">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationReferenceDataSources">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4016,8 +4016,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcess3">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>S3Args</a></span>
     </dt>
-    <dd>{{% md %}}The S3 configuration for the reference data source. See S3 Reference below for more details.
-{{% /md %}}</dd>
+    <dd>The S3 configuration for the reference data source. See S3 Reference below for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4025,8 +4025,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschema">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data in the streaming source. See Source Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data in the streaming source. See Source Schema below for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4034,8 +4034,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The in-application Table Name.
-{{% /md %}}</dd>
+    <dd>The in-application Table Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4043,14 +4043,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4059,8 +4059,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcess3">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}The S3 configuration for the reference data source. See S3 Reference below for more details.
-{{% /md %}}</dd>
+    <dd>The S3 configuration for the reference data source. See S3 Reference below for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4068,8 +4068,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschema">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data in the streaming source. See Source Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data in the streaming source. See Source Schema below for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4077,8 +4077,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The in-application Table Name.
-{{% /md %}}</dd>
+    <dd>The in-application Table Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4086,14 +4086,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4102,8 +4102,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcess3">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}The S3 configuration for the reference data source. See S3 Reference below for more details.
-{{% /md %}}</dd>
+    <dd>The S3 configuration for the reference data source. See S3 Reference below for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4111,8 +4111,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschema">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data in the streaming source. See Source Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data in the streaming source. See Source Schema below for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4120,8 +4120,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The in-application Table Name.
-{{% /md %}}</dd>
+    <dd>The in-application Table Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4129,14 +4129,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4145,8 +4145,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcess3">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>S3]</a></span>
     </dt>
-    <dd>{{% md %}}The S3 configuration for the reference data source. See S3 Reference below for more details.
-{{% /md %}}</dd>
+    <dd>The S3 configuration for the reference data source. See S3 Reference below for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4154,8 +4154,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschema">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema]</a></span>
     </dt>
-    <dd>{{% md %}}The Schema format of the data in the streaming source. See Source Schema below for more details.
-{{% /md %}}</dd>
+    <dd>The Schema format of the data in the streaming source. See Source Schema below for more details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4163,8 +4163,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The in-application Table Name.
-{{% /md %}}</dd>
+    <dd>The in-application Table Name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4172,29 +4172,29 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Kinesis Analytics Application.
-{{% /md %}}</dd>
+    <dd>The ARN of the Kinesis Analytics Application.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationreferencedatasourcess3">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>S3</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationReferenceDataSourcesS3">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationReferenceDataSourcesS3">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesS3Args">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesS3Output">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4203,8 +4203,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 Bucket ARN.
-{{% /md %}}</dd>
+    <dd>The S3 Bucket ARN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4212,8 +4212,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The File Key name containing reference data.
-{{% /md %}}</dd>
+    <dd>The File Key name containing reference data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4221,14 +4221,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to send application messages.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to send application messages.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4237,8 +4237,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 Bucket ARN.
-{{% /md %}}</dd>
+    <dd>The S3 Bucket ARN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4246,8 +4246,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The File Key name containing reference data.
-{{% /md %}}</dd>
+    <dd>The File Key name containing reference data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4255,14 +4255,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to send application messages.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to send application messages.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4271,8 +4271,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 Bucket ARN.
-{{% /md %}}</dd>
+    <dd>The S3 Bucket ARN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4280,8 +4280,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The File Key name containing reference data.
-{{% /md %}}</dd>
+    <dd>The File Key name containing reference data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4289,14 +4289,14 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to send application messages.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to send application messages.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4305,8 +4305,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 Bucket ARN.
-{{% /md %}}</dd>
+    <dd>The S3 Bucket ARN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4314,8 +4314,8 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The File Key name containing reference data.
-{{% /md %}}</dd>
+    <dd>The File Key name containing reference data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4323,29 +4323,29 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM Role used to send application messages.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM Role used to send application messages.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationreferencedatasourcesschema">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationReferenceDataSourcesSchema">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationReferenceDataSourcesSchema">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4354,9 +4354,9 @@ See Kinesis Stream below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordcolumn">List&lt;Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Column<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The Record Column mapping for the streaming source data element.
+    <dd>The Record Column mapping for the streaming source data element.
 See Record Columns below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4364,9 +4364,9 @@ See Record Columns below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformat">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Record Format and mapping information to schematize a record.
+    <dd>The Record Format and mapping information to schematize a record.
 See Record Format below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4374,14 +4374,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Encoding of the record in the streaming source.
-{{% /md %}}</dd>
+    <dd>The Encoding of the record in the streaming source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4390,9 +4390,9 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordcolumn">[]Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Column</a></span>
     </dt>
-    <dd>{{% md %}}The Record Column mapping for the streaming source data element.
+    <dd>The Record Column mapping for the streaming source data element.
 See Record Columns below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4400,9 +4400,9 @@ See Record Columns below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformat">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format</a></span>
     </dt>
-    <dd>{{% md %}}The Record Format and mapping information to schematize a record.
+    <dd>The Record Format and mapping information to schematize a record.
 See Record Format below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4410,14 +4410,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Encoding of the record in the streaming source.
-{{% /md %}}</dd>
+    <dd>The Encoding of the record in the streaming source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4426,9 +4426,9 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordcolumn">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Column[]</a></span>
     </dt>
-    <dd>{{% md %}}The Record Column mapping for the streaming source data element.
+    <dd>The Record Column mapping for the streaming source data element.
 See Record Columns below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4436,9 +4436,9 @@ See Record Columns below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformat">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format</a></span>
     </dt>
-    <dd>{{% md %}}The Record Format and mapping information to schematize a record.
+    <dd>The Record Format and mapping information to schematize a record.
 See Record Format below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4446,14 +4446,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Encoding of the record in the streaming source.
-{{% /md %}}</dd>
+    <dd>The Encoding of the record in the streaming source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4462,9 +4462,9 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordcolumn">List[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Column]</a></span>
     </dt>
-    <dd>{{% md %}}The Record Column mapping for the streaming source data element.
+    <dd>The Record Column mapping for the streaming source data element.
 See Record Columns below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4472,9 +4472,9 @@ See Record Columns below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformat">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format]</a></span>
     </dt>
-    <dd>{{% md %}}The Record Format and mapping information to schematize a record.
+    <dd>The Record Format and mapping information to schematize a record.
 See Record Format below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4482,29 +4482,29 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Encoding of the record in the streaming source.
-{{% /md %}}</dd>
+    <dd>The Encoding of the record in the streaming source.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationreferencedatasourcesschemarecordcolumn">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Column</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationReferenceDataSourcesSchemaRecordColumn">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationReferenceDataSourcesSchemaRecordColumn">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordColumnArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordColumnOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4513,8 +4513,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the column.
-{{% /md %}}</dd>
+    <dd>Name of the column.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4522,8 +4522,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL Type of the column.
-{{% /md %}}</dd>
+    <dd>The SQL Type of the column.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4531,14 +4531,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping reference to the data element.
-{{% /md %}}</dd>
+    <dd>The Mapping reference to the data element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4547,8 +4547,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the column.
-{{% /md %}}</dd>
+    <dd>Name of the column.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4556,8 +4556,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL Type of the column.
-{{% /md %}}</dd>
+    <dd>The SQL Type of the column.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4565,14 +4565,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping reference to the data element.
-{{% /md %}}</dd>
+    <dd>The Mapping reference to the data element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4581,8 +4581,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the column.
-{{% /md %}}</dd>
+    <dd>Name of the column.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4590,8 +4590,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL Type of the column.
-{{% /md %}}</dd>
+    <dd>The SQL Type of the column.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4599,14 +4599,14 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping reference to the data element.
-{{% /md %}}</dd>
+    <dd>The Mapping reference to the data element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4615,8 +4615,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the column.
-{{% /md %}}</dd>
+    <dd>Name of the column.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4624,8 +4624,8 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SQL Type of the column.
-{{% /md %}}</dd>
+    <dd>The SQL Type of the column.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4633,29 +4633,29 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping reference to the data element.
-{{% /md %}}</dd>
+    <dd>The Mapping reference to the data element.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationreferencedatasourcesschemarecordformat">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4664,9 +4664,9 @@ See Record Format below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping Information for the record format.
+    <dd>The Mapping Information for the record format.
 See Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4674,14 +4674,14 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Record Format. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The type of Record Format. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4690,9 +4690,9 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping Information for the record format.
+    <dd>The Mapping Information for the record format.
 See Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4700,14 +4700,14 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Record Format. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The type of Record Format. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4716,9 +4716,9 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping Information for the record format.
+    <dd>The Mapping Information for the record format.
 See Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4726,14 +4726,14 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Record Format. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The type of Record Format. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4742,9 +4742,9 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameters">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters]</a></span>
     </dt>
-    <dd>{{% md %}}The Mapping Information for the record format.
+    <dd>The Mapping Information for the record format.
 See Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4752,29 +4752,29 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of Record Format. Can be `CSV` or `JSON`.
-{{% /md %}}</dd>
+    <dd>The type of Record Format. Can be `CSV` or `JSON`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationreferencedatasourcesschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4783,9 +4783,9 @@ See Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when the record format uses delimiters.
+    <dd>Mapping information when the record format uses delimiters.
 See CSV Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4793,15 +4793,15 @@ See CSV Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when JSON is the record format on the streaming source.
+    <dd>Mapping information when JSON is the record format on the streaming source.
 See JSON Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4810,9 +4810,9 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when the record format uses delimiters.
+    <dd>Mapping information when the record format uses delimiters.
 See CSV Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4820,15 +4820,15 @@ See CSV Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when JSON is the record format on the streaming source.
+    <dd>Mapping information when JSON is the record format on the streaming source.
 See JSON Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4837,9 +4837,9 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when the record format uses delimiters.
+    <dd>Mapping information when the record format uses delimiters.
 See CSV Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4847,15 +4847,15 @@ See CSV Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when JSON is the record format on the streaming source.
+    <dd>Mapping information when JSON is the record format on the streaming source.
 See JSON Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4864,9 +4864,9 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameterscsv">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv]</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when the record format uses delimiters.
+    <dd>Mapping information when the record format uses delimiters.
 See CSV Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4874,30 +4874,30 @@ See CSV Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparametersjson">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json]</a></span>
     </dt>
-    <dd>{{% md %}}Mapping information when JSON is the record format on the streaming source.
+    <dd>Mapping information when JSON is the record format on the streaming source.
 See JSON Mapping Parameters below for more details.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationreferencedatasourcesschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4906,8 +4906,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Column Delimiter.
-{{% /md %}}</dd>
+    <dd>The Column Delimiter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4915,14 +4915,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Row Delimiter.
-{{% /md %}}</dd>
+    <dd>The Row Delimiter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4931,8 +4931,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Column Delimiter.
-{{% /md %}}</dd>
+    <dd>The Column Delimiter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4940,14 +4940,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Row Delimiter.
-{{% /md %}}</dd>
+    <dd>The Row Delimiter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4956,8 +4956,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Column Delimiter.
-{{% /md %}}</dd>
+    <dd>The Column Delimiter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4965,14 +4965,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Row Delimiter.
-{{% /md %}}</dd>
+    <dd>The Row Delimiter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4981,8 +4981,8 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Column Delimiter.
-{{% /md %}}</dd>
+    <dd>The Column Delimiter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4990,29 +4990,29 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Row Delimiter.
-{{% /md %}}</dd>
+    <dd>The Row Delimiter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="analyticsapplicationreferencedatasourcesschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5021,14 +5021,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the top-level parent that contains the records.
-{{% /md %}}</dd>
+    <dd>Path to the top-level parent that contains the records.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5037,14 +5037,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the top-level parent that contains the records.
-{{% /md %}}</dd>
+    <dd>Path to the top-level parent that contains the records.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5053,14 +5053,14 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the top-level parent that contains the records.
-{{% /md %}}</dd>
+    <dd>Path to the top-level parent that contains the records.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5069,11 +5069,11 @@ See JSON Mapping Parameters below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to the top-level parent that contains the records.
-{{% /md %}}</dd>
+    <dd>Path to the top-level parent that contains the records.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

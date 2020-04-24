@@ -18,26 +18,26 @@ Manages an IotHub Device Provisioning Service Shared Access Policy
 
 
 ## Create a DpsSharedAccessPolicy Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/iot/#DpsSharedAccessPolicy">DpsSharedAccessPolicy</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/iot/#DpsSharedAccessPolicyArgs">DpsSharedAccessPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">DpsSharedAccessPolicy</span><span class="p">(resource_name, opts=None, </span>enrollment_read=None<span class="p">, </span>enrollment_write=None<span class="p">, </span>iothub_dps_name=None<span class="p">, </span>name=None<span class="p">, </span>registration_read=None<span class="p">, </span>registration_write=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>service_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDpsSharedAccessPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#DpsSharedAccessPolicyArgs">DpsSharedAccessPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#DpsSharedAccessPolicy">DpsSharedAccessPolicy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Iot.DpsSharedAccessPolicy.html">DpsSharedAccessPolicy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Iot.DpsSharedAccessPolicyArgs.html">DpsSharedAccessPolicyArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages an IotHub Device Provisioning Service Shared Access Policy
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages an IotHub Device Provisioning Service Shared Access Policy
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages an IotHub Device Provisioning Service Shared Access Policy
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages an IotHub Device Provisioning Service Shared Access Policy
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## DpsSharedAccessPolicy Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,14 +267,14 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
-{{% /md %}}</dd>
+    <dd>Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -283,8 +283,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -292,8 +292,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,8 +328,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,14 +346,14 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
-{{% /md %}}</dd>
+    <dd>Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -362,8 +362,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -371,8 +371,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,8 +407,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,8 +416,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,14 +425,14 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
-{{% /md %}}</dd>
+    <dd>Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -441,8 +441,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -450,8 +450,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,11 +504,11 @@ The DpsSharedAccessPolicy resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
-{{% /md %}}</dd>
+    <dd>Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -522,7 +522,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -531,7 +531,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -539,8 +539,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -548,8 +548,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The primary key used to create the authentication token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -557,8 +557,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -566,14 +566,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The secondary key used to create the authentication token.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -582,7 +582,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -590,8 +590,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -599,8 +599,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The primary key used to create the authentication token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,14 +617,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The secondary key used to create the authentication token.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -633,7 +633,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -641,8 +641,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -650,8 +650,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The primary key used to create the authentication token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -659,8 +659,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -668,14 +668,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The secondary key used to create the authentication token.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -684,7 +684,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -692,8 +692,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -701,8 +701,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The primary key used to create the authentication token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -710,8 +710,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -719,11 +719,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The secondary key used to create the authentication token.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -734,25 +734,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing DpsSharedAccessPolicy Resource {#look-up}
 
 Get an existing DpsSharedAccessPolicy resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/iot/#DpsSharedAccessPolicyState">DpsSharedAccessPolicyState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/iot/#DpsSharedAccessPolicy">DpsSharedAccessPolicy</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>enrollment_read=None<span class="p">, </span>enrollment_write=None<span class="p">, </span>iothub_dps_name=None<span class="p">, </span>name=None<span class="p">, </span>primary_connection_string=None<span class="p">, </span>primary_key=None<span class="p">, </span>registration_read=None<span class="p">, </span>registration_write=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>secondary_connection_string=None<span class="p">, </span>secondary_key=None<span class="p">, </span>service_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDpsSharedAccessPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#DpsSharedAccessPolicyState">DpsSharedAccessPolicyState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#DpsSharedAccessPolicy">DpsSharedAccessPolicy</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Iot.DpsSharedAccessPolicy.html">DpsSharedAccessPolicy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Iot.DpsSharedAccessPolicyState.html">DpsSharedAccessPolicyState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -777,9 +777,9 @@ Get an existing DpsSharedAccessPolicy resource's state with the given name, ID, 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -792,36 +792,9 @@ Get an existing DpsSharedAccessPolicy resource's state with the given name, ID, 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -846,13 +819,40 @@ Get an existing DpsSharedAccessPolicy resource's state with the given name, ID, 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -861,8 +861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,8 +870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -879,8 +879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -888,8 +888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -897,8 +897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,8 +906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The primary key used to create the authentication token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,8 +915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,8 +924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,8 +933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,8 +951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The secondary key used to create the authentication token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,14 +960,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
-{{% /md %}}</dd>
+    <dd>Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -976,8 +976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,8 +985,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -994,8 +994,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1003,8 +1003,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,8 +1012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,8 +1021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The primary key used to create the authentication token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,8 +1039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The secondary key used to create the authentication token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,14 +1075,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
-{{% /md %}}</dd>
+    <dd>Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1091,8 +1091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The primary key used to create the authentication token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,8 +1145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The secondary key used to create the authentication token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,14 +1190,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
-{{% /md %}}</dd>
+    <dd>Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1206,8 +1206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentRead` permission to this Shared Access Account. It allows read access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,8 +1215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
-{{% /md %}}</dd>
+    <dd>Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,8 +1224,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the IoT Hub Device Provisioning service to which this Shared Access Policy belongs. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,8 +1233,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub Shared Access Policy resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1242,8 +1242,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1251,8 +1251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The primary key used to create the authentication token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
-{{% /md %}}</dd>
+    <dd>Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub Shared Access Policy resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Shared Access Policy.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Shared Access Policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key used to create the authentication token.
-{{% /md %}}</dd>
+    <dd>The secondary key used to create the authentication token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,11 +1305,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
-{{% /md %}}</dd>
+    <dd>Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

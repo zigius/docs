@@ -32,29 +32,29 @@ const cluster1 = pulumi.output(openstack.containerinfra.getCluster({
 
 ## Using GetCluster {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getCluster<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/containerinfra/#GetClusterArgs">GetClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/containerinfra/#GetClusterResult">GetClusterResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_cluster(</span>name=None<span class="p">, </span>region=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/containerinfra?tab=doc#LookupClusterArgs">LookupClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/containerinfra?tab=doc#LookupClusterResult">LookupClusterResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetCluster </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Containerinfra.GetClusterResult.html">GetClusterResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.ContainerInfra.GetClusterArgs.html">GetClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,16 +80,16 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 Container Infra
+    <dd>The region in which to obtain the V1 Container Infra
 client.
 If omitted, the `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -98,8 +98,8 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -107,16 +107,16 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 Container Infra
+    <dd>The region in which to obtain the V1 Container Infra
 client.
 If omitted, the `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -125,8 +125,8 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -134,16 +134,16 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 Container Infra
+    <dd>The region in which to obtain the V1 Container Infra
 client.
 If omitted, the `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -152,8 +152,8 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -161,13 +161,13 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 Container Infra
+    <dd>The region in which to obtain the V1 Container Infra
 client.
 If omitted, the `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -183,7 +183,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -192,8 +192,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}COE API address.
-{{% /md %}}</dd>
+    <dd>COE API address.
+</dd>
 
     <dt class="property-"
             title="">
@@ -201,8 +201,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the V1 Container Infra cluster template.
-{{% /md %}}</dd>
+    <dd>The UUID of the V1 Container Infra cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -210,8 +210,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}COE software version.
-{{% /md %}}</dd>
+    <dd>COE software version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -219,7 +219,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -227,8 +227,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout (in minutes) for creating the cluster.
-{{% /md %}}</dd>
+    <dd>The timeout (in minutes) for creating the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -236,8 +236,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster was created.
-{{% /md %}}</dd>
+    <dd>The time at which cluster was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -245,8 +245,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL used for cluster node discovery.
-{{% /md %}}</dd>
+    <dd>The URL used for cluster node discovery.
+</dd>
 
     <dt class="property-"
             title="">
@@ -254,8 +254,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size (in GB) of the Docker volume.
-{{% /md %}}</dd>
+    <dd>The size (in GB) of the Docker volume.
+</dd>
 
     <dt class="property-"
             title="">
@@ -263,8 +263,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fixed network that is attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed network that is attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -272,8 +272,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fixed subnet that is attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed subnet that is attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -281,8 +281,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The flavor for the nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -290,8 +290,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -299,8 +299,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Compute service SSH keypair.
-{{% /md %}}</dd>
+    <dd>The name of the Compute service SSH keypair.
+</dd>
 
     <dt class="property-"
             title="">
@@ -308,9 +308,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of key value pairs representing additional properties of
+    <dd>The list of key value pairs representing additional properties of
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -318,8 +318,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}IP addresses of the master node of the cluster.
-{{% /md %}}</dd>
+    <dd>IP addresses of the master node of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -327,8 +327,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of master nodes for the cluster.
-{{% /md %}}</dd>
+    <dd>The number of master nodes for the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -336,8 +336,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the master nodes.
-{{% /md %}}</dd>
+    <dd>The flavor for the master nodes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -345,8 +345,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -354,8 +354,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}IP addresses of the node of the cluster.
-{{% /md %}}</dd>
+    <dd>IP addresses of the node of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -363,8 +363,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes for the cluster.
-{{% /md %}}</dd>
+    <dd>The number of nodes for the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -372,8 +372,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project of the cluster.
-{{% /md %}}</dd>
+    <dd>The project of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -381,8 +381,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -390,8 +390,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}UUID of the Orchestration service stack.
-{{% /md %}}</dd>
+    <dd>UUID of the Orchestration service stack.
+</dd>
 
     <dt class="property-"
             title="">
@@ -399,8 +399,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster was updated.
-{{% /md %}}</dd>
+    <dd>The time at which cluster was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -408,14 +408,14 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user of the cluster.
-{{% /md %}}</dd>
+    <dd>The user of the cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -424,8 +424,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}COE API address.
-{{% /md %}}</dd>
+    <dd>COE API address.
+</dd>
 
     <dt class="property-"
             title="">
@@ -433,8 +433,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the V1 Container Infra cluster template.
-{{% /md %}}</dd>
+    <dd>The UUID of the V1 Container Infra cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -442,8 +442,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}COE software version.
-{{% /md %}}</dd>
+    <dd>COE software version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -451,7 +451,7 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -459,8 +459,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout (in minutes) for creating the cluster.
-{{% /md %}}</dd>
+    <dd>The timeout (in minutes) for creating the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -468,8 +468,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster was created.
-{{% /md %}}</dd>
+    <dd>The time at which cluster was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -477,8 +477,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL used for cluster node discovery.
-{{% /md %}}</dd>
+    <dd>The URL used for cluster node discovery.
+</dd>
 
     <dt class="property-"
             title="">
@@ -486,8 +486,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size (in GB) of the Docker volume.
-{{% /md %}}</dd>
+    <dd>The size (in GB) of the Docker volume.
+</dd>
 
     <dt class="property-"
             title="">
@@ -495,8 +495,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fixed network that is attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed network that is attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -504,8 +504,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fixed subnet that is attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed subnet that is attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -513,8 +513,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The flavor for the nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -522,8 +522,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -531,8 +531,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Compute service SSH keypair.
-{{% /md %}}</dd>
+    <dd>The name of the Compute service SSH keypair.
+</dd>
 
     <dt class="property-"
             title="">
@@ -540,9 +540,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of key value pairs representing additional properties of
+    <dd>The list of key value pairs representing additional properties of
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -550,8 +550,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}IP addresses of the master node of the cluster.
-{{% /md %}}</dd>
+    <dd>IP addresses of the master node of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -559,8 +559,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of master nodes for the cluster.
-{{% /md %}}</dd>
+    <dd>The number of master nodes for the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -568,8 +568,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the master nodes.
-{{% /md %}}</dd>
+    <dd>The flavor for the master nodes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -577,8 +577,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -586,8 +586,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}IP addresses of the node of the cluster.
-{{% /md %}}</dd>
+    <dd>IP addresses of the node of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes for the cluster.
-{{% /md %}}</dd>
+    <dd>The number of nodes for the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,8 +604,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project of the cluster.
-{{% /md %}}</dd>
+    <dd>The project of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -613,8 +613,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}UUID of the Orchestration service stack.
-{{% /md %}}</dd>
+    <dd>UUID of the Orchestration service stack.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,8 +631,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster was updated.
-{{% /md %}}</dd>
+    <dd>The time at which cluster was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -640,14 +640,14 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user of the cluster.
-{{% /md %}}</dd>
+    <dd>The user of the cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -656,8 +656,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}COE API address.
-{{% /md %}}</dd>
+    <dd>COE API address.
+</dd>
 
     <dt class="property-"
             title="">
@@ -665,8 +665,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the V1 Container Infra cluster template.
-{{% /md %}}</dd>
+    <dd>The UUID of the V1 Container Infra cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -674,8 +674,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}COE software version.
-{{% /md %}}</dd>
+    <dd>COE software version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -683,7 +683,7 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -691,8 +691,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The timeout (in minutes) for creating the cluster.
-{{% /md %}}</dd>
+    <dd>The timeout (in minutes) for creating the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -700,8 +700,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster was created.
-{{% /md %}}</dd>
+    <dd>The time at which cluster was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -709,8 +709,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL used for cluster node discovery.
-{{% /md %}}</dd>
+    <dd>The URL used for cluster node discovery.
+</dd>
 
     <dt class="property-"
             title="">
@@ -718,8 +718,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size (in GB) of the Docker volume.
-{{% /md %}}</dd>
+    <dd>The size (in GB) of the Docker volume.
+</dd>
 
     <dt class="property-"
             title="">
@@ -727,8 +727,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fixed network that is attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed network that is attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -736,8 +736,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fixed subnet that is attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed subnet that is attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -745,8 +745,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The flavor for the nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -754,8 +754,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -763,8 +763,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Compute service SSH keypair.
-{{% /md %}}</dd>
+    <dd>The name of the Compute service SSH keypair.
+</dd>
 
     <dt class="property-"
             title="">
@@ -772,9 +772,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The list of key value pairs representing additional properties of
+    <dd>The list of key value pairs representing additional properties of
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -782,8 +782,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}IP addresses of the master node of the cluster.
-{{% /md %}}</dd>
+    <dd>IP addresses of the master node of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -791,8 +791,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of master nodes for the cluster.
-{{% /md %}}</dd>
+    <dd>The number of master nodes for the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -800,8 +800,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the master nodes.
-{{% /md %}}</dd>
+    <dd>The flavor for the master nodes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -809,8 +809,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -818,8 +818,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}IP addresses of the node of the cluster.
-{{% /md %}}</dd>
+    <dd>IP addresses of the node of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -827,8 +827,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes for the cluster.
-{{% /md %}}</dd>
+    <dd>The number of nodes for the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -836,8 +836,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project of the cluster.
-{{% /md %}}</dd>
+    <dd>The project of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -845,8 +845,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -854,8 +854,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}UUID of the Orchestration service stack.
-{{% /md %}}</dd>
+    <dd>UUID of the Orchestration service stack.
+</dd>
 
     <dt class="property-"
             title="">
@@ -863,8 +863,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster was updated.
-{{% /md %}}</dd>
+    <dd>The time at which cluster was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -872,14 +872,14 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user of the cluster.
-{{% /md %}}</dd>
+    <dd>The user of the cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -888,8 +888,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}COE API address.
-{{% /md %}}</dd>
+    <dd>COE API address.
+</dd>
 
     <dt class="property-"
             title="">
@@ -897,8 +897,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the V1 Container Infra cluster template.
-{{% /md %}}</dd>
+    <dd>The UUID of the V1 Container Infra cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -906,8 +906,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}COE software version.
-{{% /md %}}</dd>
+    <dd>COE software version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -915,7 +915,7 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -923,8 +923,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The timeout (in minutes) for creating the cluster.
-{{% /md %}}</dd>
+    <dd>The timeout (in minutes) for creating the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -932,8 +932,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster was created.
-{{% /md %}}</dd>
+    <dd>The time at which cluster was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -941,8 +941,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL used for cluster node discovery.
-{{% /md %}}</dd>
+    <dd>The URL used for cluster node discovery.
+</dd>
 
     <dt class="property-"
             title="">
@@ -950,8 +950,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size (in GB) of the Docker volume.
-{{% /md %}}</dd>
+    <dd>The size (in GB) of the Docker volume.
+</dd>
 
     <dt class="property-"
             title="">
@@ -959,8 +959,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fixed network that is attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed network that is attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -968,8 +968,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fixed subnet that is attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed subnet that is attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -977,8 +977,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The flavor for the nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -986,8 +986,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -995,8 +995,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Compute service SSH keypair.
-{{% /md %}}</dd>
+    <dd>The name of the Compute service SSH keypair.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1004,9 +1004,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The list of key value pairs representing additional properties of
+    <dd>The list of key value pairs representing additional properties of
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1014,8 +1014,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}IP addresses of the master node of the cluster.
-{{% /md %}}</dd>
+    <dd>IP addresses of the master node of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1023,8 +1023,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of master nodes for the cluster.
-{{% /md %}}</dd>
+    <dd>The number of master nodes for the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1032,8 +1032,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the master nodes.
-{{% /md %}}</dd>
+    <dd>The flavor for the master nodes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1041,8 +1041,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1050,8 +1050,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}IP addresses of the node of the cluster.
-{{% /md %}}</dd>
+    <dd>IP addresses of the node of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1059,8 +1059,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes for the cluster.
-{{% /md %}}</dd>
+    <dd>The number of nodes for the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1068,8 +1068,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project of the cluster.
-{{% /md %}}</dd>
+    <dd>The project of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1077,8 +1077,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1086,8 +1086,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}UUID of the Orchestration service stack.
-{{% /md %}}</dd>
+    <dd>UUID of the Orchestration service stack.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1095,8 +1095,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster was updated.
-{{% /md %}}</dd>
+    <dd>The time at which cluster was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1104,11 +1104,11 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user of the cluster.
-{{% /md %}}</dd>
+    <dd>The user of the cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

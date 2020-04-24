@@ -56,26 +56,26 @@ const example = new spotinst.aws.OceanLaunchSpec("example", {
 
 
 ## Create a OceanLaunchSpec Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/spotinst/aws/#OceanLaunchSpec">OceanLaunchSpec</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/spotinst/aws/#OceanLaunchSpecArgs">OceanLaunchSpecArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">OceanLaunchSpec</span><span class="p">(resource_name, opts=None, </span>autoscale_headrooms=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>ocean_id=None<span class="p">, </span>root_volume_size=None<span class="p">, </span>security_groups=None<span class="p">, </span>subnet_ids=None<span class="p">, </span>tags=None<span class="p">, </span>taints=None<span class="p">, </span>user_data=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewOceanLaunchSpec<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecArgs">OceanLaunchSpecArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpec">OceanLaunchSpec</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Spotinst/Pulumi.Spotinst.Aws.OceanLaunchSpec.html">OceanLaunchSpec</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Spotinst/Pulumi.SpotInst.Aws.OceanLaunchSpecArgs.html">OceanLaunchSpecArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -112,9 +112,9 @@ const example = new spotinst.aws.OceanLaunchSpec("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -132,9 +132,9 @@ const example = new spotinst.aws.OceanLaunchSpec("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -181,9 +181,9 @@ const example = new spotinst.aws.OceanLaunchSpec("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -220,7 +220,7 @@ const example = new spotinst.aws.OceanLaunchSpec("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## OceanLaunchSpec Resource Properties {#properties}
 
@@ -233,7 +233,7 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -242,8 +242,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ocean cluster you wish to 
-{{% /md %}}</dd>
+    <dd>The ocean cluster you wish to 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspecautoscaleheadroom">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Ocean<wbr>Launch<wbr>Spec<wbr>Autoscale<wbr>Headroom<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set custom headroom per launch spec. provide list of headrooms object.
-{{% /md %}}</dd>
+    <dd>Set custom headroom per launch spec. provide list of headrooms object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN or name of an IAM instance profile to associate with launched instances.
-{{% /md %}}</dd>
+    <dd>The ARN or name of an IAM instance profile to associate with launched instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image used to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the image used to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspeclabel">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Ocean<wbr>Launch<wbr>Spec<wbr>Label<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set Launch Specification name 
-{{% /md %}}</dd>
+    <dd>Set Launch Specification name 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Set root volume size (in GB).
-{{% /md %}}</dd>
+    <dd>Set root volume size (in GB).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds security group IDs.
-{{% /md %}}</dd>
+    <dd>Optionally adds security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set subnets in launchSpec. Each element in array should be subnet ID.
-{{% /md %}}</dd>
+    <dd>Set subnets in launchSpec. Each element in array should be subnet ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectag">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Ocean<wbr>Launch<wbr>Spec<wbr>Tag<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A key/value mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A key/value mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectaint">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Ocean<wbr>Launch<wbr>Spec<wbr>Taint<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,14 +341,14 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>Base64-encoded MIME user data to make available to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -357,8 +357,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ocean cluster you wish to 
-{{% /md %}}</dd>
+    <dd>The ocean cluster you wish to 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -366,8 +366,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspecautoscaleheadroom">[]Ocean<wbr>Launch<wbr>Spec<wbr>Autoscale<wbr>Headroom</a></span>
     </dt>
-    <dd>{{% md %}}Set custom headroom per launch spec. provide list of headrooms object.
-{{% /md %}}</dd>
+    <dd>Set custom headroom per launch spec. provide list of headrooms object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,8 +375,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN or name of an IAM instance profile to associate with launched instances.
-{{% /md %}}</dd>
+    <dd>The ARN or name of an IAM instance profile to associate with launched instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,8 +384,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image used to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the image used to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,8 +393,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspeclabel">[]Ocean<wbr>Launch<wbr>Spec<wbr>Label</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,8 +402,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set Launch Specification name 
-{{% /md %}}</dd>
+    <dd>Set Launch Specification name 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,8 +411,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Set root volume size (in GB).
-{{% /md %}}</dd>
+    <dd>Set root volume size (in GB).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds security group IDs.
-{{% /md %}}</dd>
+    <dd>Optionally adds security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set subnets in launchSpec. Each element in array should be subnet ID.
-{{% /md %}}</dd>
+    <dd>Set subnets in launchSpec. Each element in array should be subnet ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectag">[]Ocean<wbr>Launch<wbr>Spec<wbr>Tag</a></span>
     </dt>
-    <dd>{{% md %}}A key/value mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A key/value mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectaint">[]Ocean<wbr>Launch<wbr>Spec<wbr>Taint</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,14 +456,14 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>Base64-encoded MIME user data to make available to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -472,8 +472,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ocean cluster you wish to 
-{{% /md %}}</dd>
+    <dd>The ocean cluster you wish to 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,8 +481,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspecautoscaleheadroom">Ocean<wbr>Launch<wbr>Spec<wbr>Autoscale<wbr>Headroom[]</a></span>
     </dt>
-    <dd>{{% md %}}Set custom headroom per launch spec. provide list of headrooms object.
-{{% /md %}}</dd>
+    <dd>Set custom headroom per launch spec. provide list of headrooms object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,8 +490,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN or name of an IAM instance profile to associate with launched instances.
-{{% /md %}}</dd>
+    <dd>The ARN or name of an IAM instance profile to associate with launched instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,8 +499,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image used to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the image used to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspeclabel">Ocean<wbr>Launch<wbr>Spec<wbr>Label[]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set Launch Specification name 
-{{% /md %}}</dd>
+    <dd>Set Launch Specification name 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Set root volume size (in GB).
-{{% /md %}}</dd>
+    <dd>Set root volume size (in GB).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds security group IDs.
-{{% /md %}}</dd>
+    <dd>Optionally adds security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set subnets in launchSpec. Each element in array should be subnet ID.
-{{% /md %}}</dd>
+    <dd>Set subnets in launchSpec. Each element in array should be subnet ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,8 +553,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectag">Ocean<wbr>Launch<wbr>Spec<wbr>Tag[]</a></span>
     </dt>
-    <dd>{{% md %}}A key/value mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A key/value mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectaint">Ocean<wbr>Launch<wbr>Spec<wbr>Taint[]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,14 +571,14 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>Base64-encoded MIME user data to make available to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -587,8 +587,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ocean cluster you wish to 
-{{% /md %}}</dd>
+    <dd>The ocean cluster you wish to 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -596,8 +596,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspecautoscaleheadroom">List[Ocean<wbr>Launch<wbr>Spec<wbr>Autoscale<wbr>Headroom]</a></span>
     </dt>
-    <dd>{{% md %}}Set custom headroom per launch spec. provide list of headrooms object.
-{{% /md %}}</dd>
+    <dd>Set custom headroom per launch spec. provide list of headrooms object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,8 +605,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN or name of an IAM instance profile to associate with launched instances.
-{{% /md %}}</dd>
+    <dd>The ARN or name of an IAM instance profile to associate with launched instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,8 +614,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image used to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the image used to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspeclabel">List[Ocean<wbr>Launch<wbr>Spec<wbr>Label]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,8 +632,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set Launch Specification name 
-{{% /md %}}</dd>
+    <dd>Set Launch Specification name 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Set root volume size (in GB).
-{{% /md %}}</dd>
+    <dd>Set root volume size (in GB).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds security group IDs.
-{{% /md %}}</dd>
+    <dd>Optionally adds security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,8 +659,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set subnets in launchSpec. Each element in array should be subnet ID.
-{{% /md %}}</dd>
+    <dd>Set subnets in launchSpec. Each element in array should be subnet ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,8 +668,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectag">List[Ocean<wbr>Launch<wbr>Spec<wbr>Tag]</a></span>
     </dt>
-    <dd>{{% md %}}A key/value mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A key/value mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -677,8 +677,8 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectaint">List[Ocean<wbr>Launch<wbr>Spec<wbr>Taint]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,11 +686,11 @@ The OceanLaunchSpec resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>Base64-encoded MIME user data to make available to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -704,7 +704,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -713,13 +713,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -728,13 +728,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -743,13 +743,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -758,10 +758,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -772,25 +772,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing OceanLaunchSpec Resource {#look-up}
 
 Get an existing OceanLaunchSpec resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/spotinst/aws/#OceanLaunchSpecState">OceanLaunchSpecState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/spotinst/aws/#OceanLaunchSpec">OceanLaunchSpec</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>autoscale_headrooms=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>ocean_id=None<span class="p">, </span>root_volume_size=None<span class="p">, </span>security_groups=None<span class="p">, </span>subnet_ids=None<span class="p">, </span>tags=None<span class="p">, </span>taints=None<span class="p">, </span>user_data=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetOceanLaunchSpec<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecState">OceanLaunchSpecState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpec">OceanLaunchSpec</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Spotinst/Pulumi.Spotinst.Aws.OceanLaunchSpec.html">OceanLaunchSpec</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Spotinst/Pulumi.Spotinst.Aws.OceanLaunchSpecState.html">OceanLaunchSpecState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -815,9 +815,9 @@ Get an existing OceanLaunchSpec resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -830,36 +830,9 @@ Get an existing OceanLaunchSpec resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -884,13 +857,40 @@ Get an existing OceanLaunchSpec resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -899,8 +899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspecautoscaleheadroom">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Ocean<wbr>Launch<wbr>Spec<wbr>Autoscale<wbr>Headroom<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set custom headroom per launch spec. provide list of headrooms object.
-{{% /md %}}</dd>
+    <dd>Set custom headroom per launch spec. provide list of headrooms object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -908,8 +908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN or name of an IAM instance profile to associate with launched instances.
-{{% /md %}}</dd>
+    <dd>The ARN or name of an IAM instance profile to associate with launched instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image used to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the image used to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspeclabel">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Ocean<wbr>Launch<wbr>Spec<wbr>Label<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set Launch Specification name 
-{{% /md %}}</dd>
+    <dd>Set Launch Specification name 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ocean cluster you wish to 
-{{% /md %}}</dd>
+    <dd>The ocean cluster you wish to 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,8 +953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Set root volume size (in GB).
-{{% /md %}}</dd>
+    <dd>Set root volume size (in GB).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,8 +962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds security group IDs.
-{{% /md %}}</dd>
+    <dd>Optionally adds security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,8 +971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set subnets in launchSpec. Each element in array should be subnet ID.
-{{% /md %}}</dd>
+    <dd>Set subnets in launchSpec. Each element in array should be subnet ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,8 +980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectag">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Ocean<wbr>Launch<wbr>Spec<wbr>Tag<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A key/value mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A key/value mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,8 +989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectaint">List&lt;Pulumi.<wbr>Spot<wbr>Inst.<wbr>Aws.<wbr>Inputs.<wbr>Ocean<wbr>Launch<wbr>Spec<wbr>Taint<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,14 +998,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>Base64-encoded MIME user data to make available to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1014,8 +1014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspecautoscaleheadroom">[]Ocean<wbr>Launch<wbr>Spec<wbr>Autoscale<wbr>Headroom</a></span>
     </dt>
-    <dd>{{% md %}}Set custom headroom per launch spec. provide list of headrooms object.
-{{% /md %}}</dd>
+    <dd>Set custom headroom per launch spec. provide list of headrooms object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN or name of an IAM instance profile to associate with launched instances.
-{{% /md %}}</dd>
+    <dd>The ARN or name of an IAM instance profile to associate with launched instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image used to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the image used to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,8 +1041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspeclabel">[]Ocean<wbr>Launch<wbr>Spec<wbr>Label</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,8 +1050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set Launch Specification name 
-{{% /md %}}</dd>
+    <dd>Set Launch Specification name 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1059,8 +1059,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ocean cluster you wish to 
-{{% /md %}}</dd>
+    <dd>The ocean cluster you wish to 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1068,8 +1068,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Set root volume size (in GB).
-{{% /md %}}</dd>
+    <dd>Set root volume size (in GB).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1077,8 +1077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds security group IDs.
-{{% /md %}}</dd>
+    <dd>Optionally adds security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1086,8 +1086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set subnets in launchSpec. Each element in array should be subnet ID.
-{{% /md %}}</dd>
+    <dd>Set subnets in launchSpec. Each element in array should be subnet ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,8 +1095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectag">[]Ocean<wbr>Launch<wbr>Spec<wbr>Tag</a></span>
     </dt>
-    <dd>{{% md %}}A key/value mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A key/value mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1104,8 +1104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectaint">[]Ocean<wbr>Launch<wbr>Spec<wbr>Taint</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1113,14 +1113,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>Base64-encoded MIME user data to make available to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1129,8 +1129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspecautoscaleheadroom">Ocean<wbr>Launch<wbr>Spec<wbr>Autoscale<wbr>Headroom[]</a></span>
     </dt>
-    <dd>{{% md %}}Set custom headroom per launch spec. provide list of headrooms object.
-{{% /md %}}</dd>
+    <dd>Set custom headroom per launch spec. provide list of headrooms object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN or name of an IAM instance profile to associate with launched instances.
-{{% /md %}}</dd>
+    <dd>The ARN or name of an IAM instance profile to associate with launched instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,8 +1147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image used to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the image used to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,8 +1156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspeclabel">Ocean<wbr>Launch<wbr>Spec<wbr>Label[]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,8 +1165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set Launch Specification name 
-{{% /md %}}</dd>
+    <dd>Set Launch Specification name 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,8 +1174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ocean cluster you wish to 
-{{% /md %}}</dd>
+    <dd>The ocean cluster you wish to 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,8 +1183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Set root volume size (in GB).
-{{% /md %}}</dd>
+    <dd>Set root volume size (in GB).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1192,8 +1192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds security group IDs.
-{{% /md %}}</dd>
+    <dd>Optionally adds security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1201,8 +1201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set subnets in launchSpec. Each element in array should be subnet ID.
-{{% /md %}}</dd>
+    <dd>Set subnets in launchSpec. Each element in array should be subnet ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,8 +1210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectag">Ocean<wbr>Launch<wbr>Spec<wbr>Tag[]</a></span>
     </dt>
-    <dd>{{% md %}}A key/value mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A key/value mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectaint">Ocean<wbr>Launch<wbr>Spec<wbr>Taint[]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,14 +1228,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>Base64-encoded MIME user data to make available to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1244,8 +1244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspecautoscaleheadroom">List[Ocean<wbr>Launch<wbr>Spec<wbr>Autoscale<wbr>Headroom]</a></span>
     </dt>
-    <dd>{{% md %}}Set custom headroom per launch spec. provide list of headrooms object.
-{{% /md %}}</dd>
+    <dd>Set custom headroom per launch spec. provide list of headrooms object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,8 +1253,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN or name of an IAM instance profile to associate with launched instances.
-{{% /md %}}</dd>
+    <dd>The ARN or name of an IAM instance profile to associate with launched instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,8 +1262,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image used to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the image used to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1271,8 +1271,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspeclabel">List[Ocean<wbr>Launch<wbr>Spec<wbr>Label]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1280,8 +1280,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set Launch Specification name 
-{{% /md %}}</dd>
+    <dd>Set Launch Specification name 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1289,8 +1289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ocean cluster you wish to 
-{{% /md %}}</dd>
+    <dd>The ocean cluster you wish to 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1298,8 +1298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Set root volume size (in GB).
-{{% /md %}}</dd>
+    <dd>Set root volume size (in GB).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,8 +1307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds security group IDs.
-{{% /md %}}</dd>
+    <dd>Optionally adds security group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1316,8 +1316,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set subnets in launchSpec. Each element in array should be subnet ID.
-{{% /md %}}</dd>
+    <dd>Set subnets in launchSpec. Each element in array should be subnet ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1325,8 +1325,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectag">List[Ocean<wbr>Launch<wbr>Spec<wbr>Tag]</a></span>
     </dt>
-    <dd>{{% md %}}A key/value mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A key/value mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1334,8 +1334,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oceanlaunchspectaint">List[Ocean<wbr>Launch<wbr>Spec<wbr>Taint]</a></span>
     </dt>
-    <dd>{{% md %}}Optionally adds labels to instances launched in an Ocean cluster.
-{{% /md %}}</dd>
+    <dd>Optionally adds labels to instances launched in an Ocean cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,11 +1343,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded MIME user data to make available to the instances.
-{{% /md %}}</dd>
+    <dd>Base64-encoded MIME user data to make available to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1362,18 +1362,18 @@ The following state arguments are supported:
 
 
 <h4 id="oceanlaunchspecautoscaleheadroom">Ocean<wbr>Launch<wbr>Spec<wbr>Autoscale<wbr>Headroom</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#OceanLaunchSpecAutoscaleHeadroom">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#OceanLaunchSpecAutoscaleHeadroom">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecAutoscaleHeadroomArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecAutoscaleHeadroomOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1382,8 +1382,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of units to retain as headroom, where each unit has the defined headroom CPU, memory and GPU.
-{{% /md %}}</dd>
+    <dd>The number of units to retain as headroom, where each unit has the defined headroom CPU, memory and GPU.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1391,8 +1391,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the number of CPUs to allocate for each headroom unit. CPUs are denoted in millicores, where 1000 millicores = 1 vCPU.
-{{% /md %}}</dd>
+    <dd>Optionally configure the number of CPUs to allocate for each headroom unit. CPUs are denoted in millicores, where 1000 millicores = 1 vCPU.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,8 +1400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the number of GPUS to allocate for each headroom unit.
-{{% /md %}}</dd>
+    <dd>Optionally configure the number of GPUS to allocate for each headroom unit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1409,14 +1409,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the amount of memory (MiB) to allocate for each headroom unit.
-{{% /md %}}</dd>
+    <dd>Optionally configure the amount of memory (MiB) to allocate for each headroom unit.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1425,8 +1425,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of units to retain as headroom, where each unit has the defined headroom CPU, memory and GPU.
-{{% /md %}}</dd>
+    <dd>The number of units to retain as headroom, where each unit has the defined headroom CPU, memory and GPU.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,8 +1434,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the number of CPUs to allocate for each headroom unit. CPUs are denoted in millicores, where 1000 millicores = 1 vCPU.
-{{% /md %}}</dd>
+    <dd>Optionally configure the number of CPUs to allocate for each headroom unit. CPUs are denoted in millicores, where 1000 millicores = 1 vCPU.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,8 +1443,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the number of GPUS to allocate for each headroom unit.
-{{% /md %}}</dd>
+    <dd>Optionally configure the number of GPUS to allocate for each headroom unit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,14 +1452,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the amount of memory (MiB) to allocate for each headroom unit.
-{{% /md %}}</dd>
+    <dd>Optionally configure the amount of memory (MiB) to allocate for each headroom unit.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1468,8 +1468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of units to retain as headroom, where each unit has the defined headroom CPU, memory and GPU.
-{{% /md %}}</dd>
+    <dd>The number of units to retain as headroom, where each unit has the defined headroom CPU, memory and GPU.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,8 +1477,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the number of CPUs to allocate for each headroom unit. CPUs are denoted in millicores, where 1000 millicores = 1 vCPU.
-{{% /md %}}</dd>
+    <dd>Optionally configure the number of CPUs to allocate for each headroom unit. CPUs are denoted in millicores, where 1000 millicores = 1 vCPU.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,8 +1486,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the number of GPUS to allocate for each headroom unit.
-{{% /md %}}</dd>
+    <dd>Optionally configure the number of GPUS to allocate for each headroom unit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,14 +1495,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the amount of memory (MiB) to allocate for each headroom unit.
-{{% /md %}}</dd>
+    <dd>Optionally configure the amount of memory (MiB) to allocate for each headroom unit.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1511,8 +1511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of units to retain as headroom, where each unit has the defined headroom CPU, memory and GPU.
-{{% /md %}}</dd>
+    <dd>The number of units to retain as headroom, where each unit has the defined headroom CPU, memory and GPU.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,8 +1520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the number of CPUs to allocate for each headroom unit. CPUs are denoted in millicores, where 1000 millicores = 1 vCPU.
-{{% /md %}}</dd>
+    <dd>Optionally configure the number of CPUs to allocate for each headroom unit. CPUs are denoted in millicores, where 1000 millicores = 1 vCPU.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,8 +1529,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the number of GPUS to allocate for each headroom unit.
-{{% /md %}}</dd>
+    <dd>Optionally configure the number of GPUS to allocate for each headroom unit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,29 +1538,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Optionally configure the amount of memory (MiB) to allocate for each headroom unit.
-{{% /md %}}</dd>
+    <dd>Optionally configure the amount of memory (MiB) to allocate for each headroom unit.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="oceanlaunchspeclabel">Ocean<wbr>Launch<wbr>Spec<wbr>Label</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#OceanLaunchSpecLabel">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#OceanLaunchSpecLabel">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecLabelArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecLabelOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1569,8 +1569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1578,14 +1578,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1594,8 +1594,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1603,14 +1603,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1619,8 +1619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1628,14 +1628,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1644,8 +1644,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1653,29 +1653,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="oceanlaunchspectag">Ocean<wbr>Launch<wbr>Spec<wbr>Tag</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#OceanLaunchSpecTag">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#OceanLaunchSpecTag">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecTagArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecTagOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1684,8 +1684,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1693,14 +1693,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1709,8 +1709,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1718,14 +1718,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1734,8 +1734,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1743,14 +1743,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1759,8 +1759,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1768,29 +1768,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="oceanlaunchspectaint">Ocean<wbr>Launch<wbr>Spec<wbr>Taint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/input/#OceanLaunchSpecTaint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/spotinst/types/output/#OceanLaunchSpecTaint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecTaintArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-spotinst/sdk/v2/go/spotinst/aws?tab=doc#OceanLaunchSpecTaintOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1799,8 +1799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The effect of the taint. Valid values: `"NoSchedule"`, `"PreferNoSchedule"`, `"NoExecute"`.
-{{% /md %}}</dd>
+    <dd>The effect of the taint. Valid values: `"NoSchedule"`, `"PreferNoSchedule"`, `"NoExecute"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1808,8 +1808,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1817,14 +1817,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1833,8 +1833,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The effect of the taint. Valid values: `"NoSchedule"`, `"PreferNoSchedule"`, `"NoExecute"`.
-{{% /md %}}</dd>
+    <dd>The effect of the taint. Valid values: `"NoSchedule"`, `"PreferNoSchedule"`, `"NoExecute"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1842,8 +1842,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1851,14 +1851,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1867,8 +1867,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The effect of the taint. Valid values: `"NoSchedule"`, `"PreferNoSchedule"`, `"NoExecute"`.
-{{% /md %}}</dd>
+    <dd>The effect of the taint. Valid values: `"NoSchedule"`, `"PreferNoSchedule"`, `"NoExecute"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1876,8 +1876,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1885,14 +1885,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1901,8 +1901,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The effect of the taint. Valid values: `"NoSchedule"`, `"PreferNoSchedule"`, `"NoExecute"`.
-{{% /md %}}</dd>
+    <dd>The effect of the taint. Valid values: `"NoSchedule"`, `"PreferNoSchedule"`, `"NoExecute"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1910,8 +1910,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tag key.
-{{% /md %}}</dd>
+    <dd>The tag key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1919,11 +1919,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tag value.
-{{% /md %}}</dd>
+    <dd>The tag value.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

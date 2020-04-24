@@ -140,26 +140,26 @@ const example = new aws.cloudtrail.Trail("example", {
 
 
 ## Create a Trail Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#Trail">Trail</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#TrailArgs">TrailArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Trail</span><span class="p">(resource_name, opts=None, </span>cloud_watch_logs_group_arn=None<span class="p">, </span>cloud_watch_logs_role_arn=None<span class="p">, </span>enable_log_file_validation=None<span class="p">, </span>enable_logging=None<span class="p">, </span>event_selectors=None<span class="p">, </span>include_global_service_events=None<span class="p">, </span>is_multi_region_trail=None<span class="p">, </span>is_organization_trail=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>name=None<span class="p">, </span>s3_bucket_name=None<span class="p">, </span>s3_key_prefix=None<span class="p">, </span>sns_topic_name=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewTrail<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailArgs">TrailArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#Trail">Trail</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.Trail.html">Trail</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.TrailArgs.html">TrailArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -196,9 +196,9 @@ const example = new aws.cloudtrail.Trail("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -216,9 +216,9 @@ const example = new aws.cloudtrail.Trail("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -265,9 +265,9 @@ const example = new aws.cloudtrail.Trail("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -304,7 +304,7 @@ const example = new aws.cloudtrail.Trail("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Trail Resource Properties {#properties}
 
@@ -317,7 +317,7 @@ The Trail resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -326,8 +326,8 @@ The Trail resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the S3 bucket designated for publishing log files.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the S3 bucket designated for publishing log files.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,9 +335,9 @@ The Trail resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a log group name using an Amazon Resource Name (ARN),
+    <dd>Specifies a log group name using an Amazon Resource Name (ARN),
 that represents the log group to which CloudTrail logs will be delivered.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,9 +345,9 @@ that represents the log group to which CloudTrail logs will be delivered.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the role for the CloudWatch Logs
+    <dd>Specifies the role for the CloudWatch Logs
 endpoint to assume to write to a user’s log group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,9 +355,9 @@ endpoint to assume to write to a user’s log group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether log file integrity validation is enabled.
+    <dd>Specifies whether log file integrity validation is enabled.
 Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,9 +365,9 @@ Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables logging for the trail. Defaults to `true`.
+    <dd>Enables logging for the trail. Defaults to `true`.
 Setting this to `false` will pause logging.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,8 +375,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">List&lt;Trail<wbr>Event<wbr>Selector<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
-{{% /md %}}</dd>
+    <dd>Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,9 +384,9 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is publishing events
+    <dd>Specifies whether the trail is publishing events
 from global services such as IAM to the log files. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,9 +394,9 @@ from global services such as IAM to the log files. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is created in the current
+    <dd>Specifies whether the trail is created in the current
 region or in all regions. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
-{{% /md %}}</dd>
+    <dd>Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the trail.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,9 +431,9 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the S3 key prefix that follows
+    <dd>Specifies the S3 key prefix that follows
 the name of the bucket you have designated for log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,9 +441,9 @@ the name of the bucket you have designated for log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Amazon SNS topic
+    <dd>Specifies the name of the Amazon SNS topic
 defined for notification of log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -451,14 +451,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the trail
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the trail
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -467,8 +467,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the S3 bucket designated for publishing log files.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the S3 bucket designated for publishing log files.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,9 +476,9 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a log group name using an Amazon Resource Name (ARN),
+    <dd>Specifies a log group name using an Amazon Resource Name (ARN),
 that represents the log group to which CloudTrail logs will be delivered.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,9 +486,9 @@ that represents the log group to which CloudTrail logs will be delivered.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the role for the CloudWatch Logs
+    <dd>Specifies the role for the CloudWatch Logs
 endpoint to assume to write to a user’s log group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,9 +496,9 @@ endpoint to assume to write to a user’s log group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether log file integrity validation is enabled.
+    <dd>Specifies whether log file integrity validation is enabled.
 Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,9 +506,9 @@ Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables logging for the trail. Defaults to `true`.
+    <dd>Enables logging for the trail. Defaults to `true`.
 Setting this to `false` will pause logging.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -516,8 +516,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">[]Trail<wbr>Event<wbr>Selector</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
-{{% /md %}}</dd>
+    <dd>Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -525,9 +525,9 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is publishing events
+    <dd>Specifies whether the trail is publishing events
 from global services such as IAM to the log files. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,9 +535,9 @@ from global services such as IAM to the log files. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is created in the current
+    <dd>Specifies whether the trail is created in the current
 region or in all regions. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -545,8 +545,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,8 +554,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
-{{% /md %}}</dd>
+    <dd>Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,8 +563,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the trail.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -572,9 +572,9 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the S3 key prefix that follows
+    <dd>Specifies the S3 key prefix that follows
 the name of the bucket you have designated for log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,9 +582,9 @@ the name of the bucket you have designated for log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Amazon SNS topic
+    <dd>Specifies the name of the Amazon SNS topic
 defined for notification of log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,14 +592,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the trail
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the trail
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -608,8 +608,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the S3 bucket designated for publishing log files.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the S3 bucket designated for publishing log files.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -617,9 +617,9 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a log group name using an Amazon Resource Name (ARN),
+    <dd>Specifies a log group name using an Amazon Resource Name (ARN),
 that represents the log group to which CloudTrail logs will be delivered.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,9 +627,9 @@ that represents the log group to which CloudTrail logs will be delivered.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the role for the CloudWatch Logs
+    <dd>Specifies the role for the CloudWatch Logs
 endpoint to assume to write to a user’s log group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,9 +637,9 @@ endpoint to assume to write to a user’s log group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether log file integrity validation is enabled.
+    <dd>Specifies whether log file integrity validation is enabled.
 Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,9 +647,9 @@ Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables logging for the trail. Defaults to `true`.
+    <dd>Enables logging for the trail. Defaults to `true`.
 Setting this to `false` will pause logging.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -657,8 +657,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">Trail<wbr>Event<wbr>Selector[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
-{{% /md %}}</dd>
+    <dd>Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,9 +666,9 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is publishing events
+    <dd>Specifies whether the trail is publishing events
 from global services such as IAM to the log files. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -676,9 +676,9 @@ from global services such as IAM to the log files. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is created in the current
+    <dd>Specifies whether the trail is created in the current
 region or in all regions. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,8 +695,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
-{{% /md %}}</dd>
+    <dd>Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,8 +704,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the trail.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,9 +713,9 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the S3 key prefix that follows
+    <dd>Specifies the S3 key prefix that follows
 the name of the bucket you have designated for log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,9 +723,9 @@ the name of the bucket you have designated for log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Amazon SNS topic
+    <dd>Specifies the name of the Amazon SNS topic
 defined for notification of log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,14 +733,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the trail
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the trail
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -749,8 +749,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the S3 bucket designated for publishing log files.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the S3 bucket designated for publishing log files.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,9 +758,9 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a log group name using an Amazon Resource Name (ARN),
+    <dd>Specifies a log group name using an Amazon Resource Name (ARN),
 that represents the log group to which CloudTrail logs will be delivered.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,9 +768,9 @@ that represents the log group to which CloudTrail logs will be delivered.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the role for the CloudWatch Logs
+    <dd>Specifies the role for the CloudWatch Logs
 endpoint to assume to write to a user’s log group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,9 +778,9 @@ endpoint to assume to write to a user’s log group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether log file integrity validation is enabled.
+    <dd>Specifies whether log file integrity validation is enabled.
 Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,9 +788,9 @@ Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables logging for the trail. Defaults to `true`.
+    <dd>Enables logging for the trail. Defaults to `true`.
 Setting this to `false` will pause logging.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">List[Trail<wbr>Event<wbr>Selector]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
-{{% /md %}}</dd>
+    <dd>Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,9 +807,9 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is publishing events
+    <dd>Specifies whether the trail is publishing events
 from global services such as IAM to the log files. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -817,9 +817,9 @@ from global services such as IAM to the log files. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is created in the current
+    <dd>Specifies whether the trail is created in the current
 region or in all regions. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -827,8 +827,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -836,8 +836,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
-{{% /md %}}</dd>
+    <dd>Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -845,8 +845,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the trail.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -854,9 +854,9 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the S3 key prefix that follows
+    <dd>Specifies the S3 key prefix that follows
 the name of the bucket you have designated for log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,9 +864,9 @@ the name of the bucket you have designated for log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Amazon SNS topic
+    <dd>Specifies the name of the Amazon SNS topic
 defined for notification of log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -874,11 +874,11 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the trail
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the trail
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -892,7 +892,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -901,8 +901,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the trail.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the trail.
+</dd>
 
     <dt class="property-"
             title="">
@@ -910,8 +910,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the trail was created.
-{{% /md %}}</dd>
+    <dd>The region in which the trail was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -919,13 +919,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -934,8 +934,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the trail.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the trail.
+</dd>
 
     <dt class="property-"
             title="">
@@ -943,8 +943,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the trail was created.
-{{% /md %}}</dd>
+    <dd>The region in which the trail was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -952,13 +952,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -967,8 +967,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the trail.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the trail.
+</dd>
 
     <dt class="property-"
             title="">
@@ -976,8 +976,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the trail was created.
-{{% /md %}}</dd>
+    <dd>The region in which the trail was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -985,13 +985,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1000,8 +1000,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the trail.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the trail.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1009,8 +1009,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the trail was created.
-{{% /md %}}</dd>
+    <dd>The region in which the trail was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1018,10 +1018,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1032,25 +1032,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Trail Resource {#look-up}
 
 Get an existing Trail resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#TrailState">TrailState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#Trail">Trail</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>cloud_watch_logs_group_arn=None<span class="p">, </span>cloud_watch_logs_role_arn=None<span class="p">, </span>enable_log_file_validation=None<span class="p">, </span>enable_logging=None<span class="p">, </span>event_selectors=None<span class="p">, </span>home_region=None<span class="p">, </span>include_global_service_events=None<span class="p">, </span>is_multi_region_trail=None<span class="p">, </span>is_organization_trail=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>name=None<span class="p">, </span>s3_bucket_name=None<span class="p">, </span>s3_key_prefix=None<span class="p">, </span>sns_topic_name=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTrail<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailState">TrailState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#Trail">Trail</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.Trail.html">Trail</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.TrailState.html">TrailState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1075,9 +1075,9 @@ Get an existing Trail resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1090,36 +1090,9 @@ Get an existing Trail resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1144,13 +1117,40 @@ Get an existing Trail resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1159,8 +1159,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the trail.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,9 +1168,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a log group name using an Amazon Resource Name (ARN),
+    <dd>Specifies a log group name using an Amazon Resource Name (ARN),
 that represents the log group to which CloudTrail logs will be delivered.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,9 +1178,9 @@ that represents the log group to which CloudTrail logs will be delivered.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the role for the CloudWatch Logs
+    <dd>Specifies the role for the CloudWatch Logs
 endpoint to assume to write to a user’s log group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,9 +1188,9 @@ endpoint to assume to write to a user’s log group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether log file integrity validation is enabled.
+    <dd>Specifies whether log file integrity validation is enabled.
 Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,9 +1198,9 @@ Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables logging for the trail. Defaults to `true`.
+    <dd>Enables logging for the trail. Defaults to `true`.
 Setting this to `false` will pause logging.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">List&lt;Trail<wbr>Event<wbr>Selector<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
-{{% /md %}}</dd>
+    <dd>Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the trail was created.
-{{% /md %}}</dd>
+    <dd>The region in which the trail was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,9 +1226,9 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is publishing events
+    <dd>Specifies whether the trail is publishing events
 from global services such as IAM to the log files. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,9 +1236,9 @@ from global services such as IAM to the log files. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is created in the current
+    <dd>Specifies whether the trail is created in the current
 region or in all regions. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,8 +1246,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,8 +1255,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
-{{% /md %}}</dd>
+    <dd>Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,8 +1264,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the trail.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,8 +1273,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the S3 bucket designated for publishing log files.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the S3 bucket designated for publishing log files.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1282,9 +1282,9 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the S3 key prefix that follows
+    <dd>Specifies the S3 key prefix that follows
 the name of the bucket you have designated for log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,9 +1292,9 @@ the name of the bucket you have designated for log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Amazon SNS topic
+    <dd>Specifies the name of the Amazon SNS topic
 defined for notification of log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1302,14 +1302,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the trail
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the trail
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1318,8 +1318,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the trail.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1327,9 +1327,9 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a log group name using an Amazon Resource Name (ARN),
+    <dd>Specifies a log group name using an Amazon Resource Name (ARN),
 that represents the log group to which CloudTrail logs will be delivered.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,9 +1337,9 @@ that represents the log group to which CloudTrail logs will be delivered.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the role for the CloudWatch Logs
+    <dd>Specifies the role for the CloudWatch Logs
 endpoint to assume to write to a user’s log group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1347,9 +1347,9 @@ endpoint to assume to write to a user’s log group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether log file integrity validation is enabled.
+    <dd>Specifies whether log file integrity validation is enabled.
 Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1357,9 +1357,9 @@ Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables logging for the trail. Defaults to `true`.
+    <dd>Enables logging for the trail. Defaults to `true`.
 Setting this to `false` will pause logging.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,8 +1367,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">[]Trail<wbr>Event<wbr>Selector</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
-{{% /md %}}</dd>
+    <dd>Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,8 +1376,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the trail was created.
-{{% /md %}}</dd>
+    <dd>The region in which the trail was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,9 +1385,9 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is publishing events
+    <dd>Specifies whether the trail is publishing events
 from global services such as IAM to the log files. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,9 +1395,9 @@ from global services such as IAM to the log files. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is created in the current
+    <dd>Specifies whether the trail is created in the current
 region or in all regions. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1405,8 +1405,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,8 +1414,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
-{{% /md %}}</dd>
+    <dd>Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,8 +1423,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the trail.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,8 +1432,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the S3 bucket designated for publishing log files.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the S3 bucket designated for publishing log files.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,9 +1441,9 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the S3 key prefix that follows
+    <dd>Specifies the S3 key prefix that follows
 the name of the bucket you have designated for log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1451,9 +1451,9 @@ the name of the bucket you have designated for log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Amazon SNS topic
+    <dd>Specifies the name of the Amazon SNS topic
 defined for notification of log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,14 +1461,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the trail
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the trail
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1477,8 +1477,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the trail.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,9 +1486,9 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a log group name using an Amazon Resource Name (ARN),
+    <dd>Specifies a log group name using an Amazon Resource Name (ARN),
 that represents the log group to which CloudTrail logs will be delivered.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,9 +1496,9 @@ that represents the log group to which CloudTrail logs will be delivered.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the role for the CloudWatch Logs
+    <dd>Specifies the role for the CloudWatch Logs
 endpoint to assume to write to a user’s log group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1506,9 +1506,9 @@ endpoint to assume to write to a user’s log group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether log file integrity validation is enabled.
+    <dd>Specifies whether log file integrity validation is enabled.
 Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,9 +1516,9 @@ Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables logging for the trail. Defaults to `true`.
+    <dd>Enables logging for the trail. Defaults to `true`.
 Setting this to `false` will pause logging.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1526,8 +1526,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">Trail<wbr>Event<wbr>Selector[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
-{{% /md %}}</dd>
+    <dd>Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1535,8 +1535,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the trail was created.
-{{% /md %}}</dd>
+    <dd>The region in which the trail was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1544,9 +1544,9 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is publishing events
+    <dd>Specifies whether the trail is publishing events
 from global services such as IAM to the log files. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1554,9 +1554,9 @@ from global services such as IAM to the log files. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is created in the current
+    <dd>Specifies whether the trail is created in the current
 region or in all regions. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1564,8 +1564,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1573,8 +1573,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
-{{% /md %}}</dd>
+    <dd>Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1582,8 +1582,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the trail.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1591,8 +1591,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the S3 bucket designated for publishing log files.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the S3 bucket designated for publishing log files.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1600,9 +1600,9 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the S3 key prefix that follows
+    <dd>Specifies the S3 key prefix that follows
 the name of the bucket you have designated for log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1610,9 +1610,9 @@ the name of the bucket you have designated for log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Amazon SNS topic
+    <dd>Specifies the name of the Amazon SNS topic
 defined for notification of log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1620,14 +1620,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the trail
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the trail
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1636,8 +1636,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name of the trail.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1645,9 +1645,9 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a log group name using an Amazon Resource Name (ARN),
+    <dd>Specifies a log group name using an Amazon Resource Name (ARN),
 that represents the log group to which CloudTrail logs will be delivered.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1655,9 +1655,9 @@ that represents the log group to which CloudTrail logs will be delivered.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the role for the CloudWatch Logs
+    <dd>Specifies the role for the CloudWatch Logs
 endpoint to assume to write to a user’s log group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1665,9 +1665,9 @@ endpoint to assume to write to a user’s log group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether log file integrity validation is enabled.
+    <dd>Specifies whether log file integrity validation is enabled.
 Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1675,9 +1675,9 @@ Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables logging for the trail. Defaults to `true`.
+    <dd>Enables logging for the trail. Defaults to `true`.
 Setting this to `false` will pause logging.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1685,8 +1685,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">List[Trail<wbr>Event<wbr>Selector]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
-{{% /md %}}</dd>
+    <dd>Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1694,8 +1694,8 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the trail was created.
-{{% /md %}}</dd>
+    <dd>The region in which the trail was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1703,9 +1703,9 @@ Setting this to `false` will pause logging.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is publishing events
+    <dd>Specifies whether the trail is publishing events
 from global services such as IAM to the log files. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1713,9 +1713,9 @@ from global services such as IAM to the log files. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is created in the current
+    <dd>Specifies whether the trail is created in the current
 region or in all regions. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,8 +1723,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1732,8 +1732,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
-{{% /md %}}</dd>
+    <dd>Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1741,8 +1741,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the trail.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,8 +1750,8 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the S3 bucket designated for publishing log files.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the S3 bucket designated for publishing log files.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1759,9 +1759,9 @@ region or in all regions. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the S3 key prefix that follows
+    <dd>Specifies the S3 key prefix that follows
 the name of the bucket you have designated for log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1769,9 +1769,9 @@ the name of the bucket you have designated for log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Amazon SNS topic
+    <dd>Specifies the name of the Amazon SNS topic
 defined for notification of log file delivery.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1779,11 +1779,11 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the trail
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the trail
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1798,18 +1798,18 @@ defined for notification of log file delivery.
 
 
 <h4 id="traileventselector">Trail<wbr>Event<wbr>Selector</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TrailEventSelector">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TrailEventSelector">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailEventSelectorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailEventSelectorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1818,8 +1818,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselectordataresource">List&lt;Trail<wbr>Event<wbr>Selector<wbr>Data<wbr>Resource<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies logging data events. Fields documented below.
-{{% /md %}}</dd>
+    <dd>Specifies logging data events. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1827,8 +1827,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specify if you want your event selector to include management events for your trail.
-{{% /md %}}</dd>
+    <dd>Specify if you want your event selector to include management events for your trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1836,14 +1836,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
-{{% /md %}}</dd>
+    <dd>Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1852,8 +1852,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselectordataresource">[]Trail<wbr>Event<wbr>Selector<wbr>Data<wbr>Resource</a></span>
     </dt>
-    <dd>{{% md %}}Specifies logging data events. Fields documented below.
-{{% /md %}}</dd>
+    <dd>Specifies logging data events. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1861,8 +1861,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specify if you want your event selector to include management events for your trail.
-{{% /md %}}</dd>
+    <dd>Specify if you want your event selector to include management events for your trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1870,14 +1870,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
-{{% /md %}}</dd>
+    <dd>Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1886,8 +1886,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselectordataresource">Trail<wbr>Event<wbr>Selector<wbr>Data<wbr>Resource[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies logging data events. Fields documented below.
-{{% /md %}}</dd>
+    <dd>Specifies logging data events. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1895,8 +1895,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specify if you want your event selector to include management events for your trail.
-{{% /md %}}</dd>
+    <dd>Specify if you want your event selector to include management events for your trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1904,14 +1904,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
-{{% /md %}}</dd>
+    <dd>Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1920,8 +1920,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselectordataresource">List[Trail<wbr>Event<wbr>Selector<wbr>Data<wbr>Resource]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies logging data events. Fields documented below.
-{{% /md %}}</dd>
+    <dd>Specifies logging data events. Fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,8 +1929,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specify if you want your event selector to include management events for your trail.
-{{% /md %}}</dd>
+    <dd>Specify if you want your event selector to include management events for your trail.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,29 +1938,29 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
-{{% /md %}}</dd>
+    <dd>Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="traileventselectordataresource">Trail<wbr>Event<wbr>Selector<wbr>Data<wbr>Resource</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TrailEventSelectorDataResource">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TrailEventSelectorDataResource">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailEventSelectorDataResourceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailEventSelectorDataResourceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1969,8 +1969,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource type in which you want to log data events. You can specify only the following value: "AWS::S3::Object", "AWS::Lambda::Function"
-{{% /md %}}</dd>
+    <dd>The resource type in which you want to log data events. You can specify only the following value: "AWS::S3::Object", "AWS::Lambda::Function"
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1978,14 +1978,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of ARN for the specified S3 buckets and object prefixes..
-{{% /md %}}</dd>
+    <dd>A list of ARN for the specified S3 buckets and object prefixes..
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1994,8 +1994,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource type in which you want to log data events. You can specify only the following value: "AWS::S3::Object", "AWS::Lambda::Function"
-{{% /md %}}</dd>
+    <dd>The resource type in which you want to log data events. You can specify only the following value: "AWS::S3::Object", "AWS::Lambda::Function"
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2003,14 +2003,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of ARN for the specified S3 buckets and object prefixes..
-{{% /md %}}</dd>
+    <dd>A list of ARN for the specified S3 buckets and object prefixes..
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2019,8 +2019,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource type in which you want to log data events. You can specify only the following value: "AWS::S3::Object", "AWS::Lambda::Function"
-{{% /md %}}</dd>
+    <dd>The resource type in which you want to log data events. You can specify only the following value: "AWS::S3::Object", "AWS::Lambda::Function"
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2028,14 +2028,14 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of ARN for the specified S3 buckets and object prefixes..
-{{% /md %}}</dd>
+    <dd>A list of ARN for the specified S3 buckets and object prefixes..
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2044,8 +2044,8 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The resource type in which you want to log data events. You can specify only the following value: "AWS::S3::Object", "AWS::Lambda::Function"
-{{% /md %}}</dd>
+    <dd>The resource type in which you want to log data events. You can specify only the following value: "AWS::S3::Object", "AWS::Lambda::Function"
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2053,11 +2053,11 @@ defined for notification of log file delivery.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of ARN for the specified S3 buckets and object prefixes..
-{{% /md %}}</dd>
+    <dd>A list of ARN for the specified S3 buckets and object prefixes..
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

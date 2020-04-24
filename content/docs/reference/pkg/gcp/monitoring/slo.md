@@ -28,26 +28,26 @@ To get more information about Slo, see:
 
 
 ## Create a Slo Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/monitoring/#Slo">Slo</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/monitoring/#SloArgs">SloArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Slo</span><span class="p">(resource_name, opts=None, </span>basic_sli=None<span class="p">, </span>calendar_period=None<span class="p">, </span>display_name=None<span class="p">, </span>goal=None<span class="p">, </span>project=None<span class="p">, </span>rolling_period_days=None<span class="p">, </span>service=None<span class="p">, </span>slo_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSlo<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#SloArgs">SloArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#Slo">Slo</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Monitoring.Slo.html">Slo</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Monitoring.SloArgs.html">SloArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -84,9 +84,9 @@ To get more information about Slo, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -104,9 +104,9 @@ To get more information about Slo, see:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -153,9 +153,9 @@ To get more information about Slo, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -192,7 +192,7 @@ To get more information about Slo, see:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Slo Resource Properties {#properties}
 
@@ -205,7 +205,7 @@ The Slo resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -214,10 +214,10 @@ The Slo resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicsli">Slo<wbr>Basic<wbr>Sli<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
+    <dd>Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
 pre-defined metrics. SLIs are used to measure and calculate the quality of the Service's performance with respect to a
 single aspect of service quality.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -225,8 +225,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
-{{% /md %}}</dd>
+    <dd>The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -234,8 +234,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the service to which this SLO belongs.
-{{% /md %}}</dd>
+    <dd>ID of the service to which this SLO belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -243,8 +243,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A calendar period, semantically "since the start of the current <calendarPeriod>".
-{{% /md %}}</dd>
+    <dd>A calendar period, semantically "since the start of the current <calendarPeriod>".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -252,8 +252,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name used for UI elements listing this SLO.
-{{% /md %}}</dd>
+    <dd>Name used for UI elements listing this SLO.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,9 +261,9 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
-{{% /md %}}</dd>
+    <dd>A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,14 +280,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
-{{% /md %}}</dd>
+    <dd>The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -296,10 +296,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicsli">Slo<wbr>Basic<wbr>Sli</a></span>
     </dt>
-    <dd>{{% md %}}Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
+    <dd>Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
 pre-defined metrics. SLIs are used to measure and calculate the quality of the Service's performance with respect to a
 single aspect of service quality.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -307,8 +307,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
-{{% /md %}}</dd>
+    <dd>The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -316,8 +316,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the service to which this SLO belongs.
-{{% /md %}}</dd>
+    <dd>ID of the service to which this SLO belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -325,8 +325,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A calendar period, semantically "since the start of the current <calendarPeriod>".
-{{% /md %}}</dd>
+    <dd>A calendar period, semantically "since the start of the current <calendarPeriod>".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -334,8 +334,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name used for UI elements listing this SLO.
-{{% /md %}}</dd>
+    <dd>Name used for UI elements listing this SLO.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,9 +343,9 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
-{{% /md %}}</dd>
+    <dd>A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,14 +362,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
-{{% /md %}}</dd>
+    <dd>The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -378,10 +378,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicsli">Slo<wbr>Basic<wbr>Sli</a></span>
     </dt>
-    <dd>{{% md %}}Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
+    <dd>Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
 pre-defined metrics. SLIs are used to measure and calculate the quality of the Service's performance with respect to a
 single aspect of service quality.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -389,8 +389,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
-{{% /md %}}</dd>
+    <dd>The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -398,8 +398,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the service to which this SLO belongs.
-{{% /md %}}</dd>
+    <dd>ID of the service to which this SLO belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,8 +407,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A calendar period, semantically "since the start of the current <calendarPeriod>".
-{{% /md %}}</dd>
+    <dd>A calendar period, semantically "since the start of the current <calendarPeriod>".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,8 +416,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name used for UI elements listing this SLO.
-{{% /md %}}</dd>
+    <dd>Name used for UI elements listing this SLO.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,9 +425,9 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,8 +435,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
-{{% /md %}}</dd>
+    <dd>A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -444,14 +444,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
-{{% /md %}}</dd>
+    <dd>The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -460,10 +460,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicsli">Dict[Slo<wbr>Basic<wbr>Sli]</a></span>
     </dt>
-    <dd>{{% md %}}Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
+    <dd>Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
 pre-defined metrics. SLIs are used to measure and calculate the quality of the Service's performance with respect to a
 single aspect of service quality.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -471,8 +471,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
-{{% /md %}}</dd>
+    <dd>The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -480,8 +480,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the service to which this SLO belongs.
-{{% /md %}}</dd>
+    <dd>ID of the service to which this SLO belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,8 +489,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A calendar period, semantically "since the start of the current <calendarPeriod>".
-{{% /md %}}</dd>
+    <dd>A calendar period, semantically "since the start of the current <calendarPeriod>".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,8 +498,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name used for UI elements listing this SLO.
-{{% /md %}}</dd>
+    <dd>Name used for UI elements listing this SLO.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,9 +507,9 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
-{{% /md %}}</dd>
+    <dd>A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,11 +526,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
-{{% /md %}}</dd>
+    <dd>The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -544,7 +544,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -553,7 +553,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -561,15 +561,15 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full resource name for this service. The syntax is:
+    <dd>The full resource name for this service. The syntax is:
 projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SLO_NAME]
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -578,7 +578,7 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -586,15 +586,15 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full resource name for this service. The syntax is:
+    <dd>The full resource name for this service. The syntax is:
 projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SLO_NAME]
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -603,7 +603,7 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -611,15 +611,15 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full resource name for this service. The syntax is:
+    <dd>The full resource name for this service. The syntax is:
 projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SLO_NAME]
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -628,7 +628,7 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -636,12 +636,12 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full resource name for this service. The syntax is:
+    <dd>The full resource name for this service. The syntax is:
 projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SLO_NAME]
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -652,25 +652,25 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
 ## Look up an Existing Slo Resource {#look-up}
 
 Get an existing Slo resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/monitoring/#SloState">SloState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/monitoring/#Slo">Slo</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>basic_sli=None<span class="p">, </span>calendar_period=None<span class="p">, </span>display_name=None<span class="p">, </span>goal=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>rolling_period_days=None<span class="p">, </span>service=None<span class="p">, </span>slo_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSlo<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#SloState">SloState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#Slo">Slo</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Monitoring.Slo.html">Slo</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Monitoring.SloState.html">SloState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -695,9 +695,9 @@ Get an existing Slo resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -710,36 +710,9 @@ Get an existing Slo resource's state with the given name, ID, and optional extra
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -764,13 +737,40 @@ Get an existing Slo resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -779,10 +779,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicsli">Slo<wbr>Basic<wbr>Sli<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
+    <dd>Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
 pre-defined metrics. SLIs are used to measure and calculate the quality of the Service's performance with respect to a
 single aspect of service quality.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -790,8 +790,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A calendar period, semantically "since the start of the current <calendarPeriod>".
-{{% /md %}}</dd>
+    <dd>A calendar period, semantically "since the start of the current <calendarPeriod>".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -799,8 +799,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name used for UI elements listing this SLO.
-{{% /md %}}</dd>
+    <dd>Name used for UI elements listing this SLO.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -808,8 +808,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
-{{% /md %}}</dd>
+    <dd>The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -817,9 +817,9 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full resource name for this service. The syntax is:
+    <dd>The full resource name for this service. The syntax is:
 projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SLO_NAME]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -827,9 +827,9 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,8 +837,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
-{{% /md %}}</dd>
+    <dd>A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,8 +846,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the service to which this SLO belongs.
-{{% /md %}}</dd>
+    <dd>ID of the service to which this SLO belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,14 +855,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
-{{% /md %}}</dd>
+    <dd>The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -871,10 +871,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicsli">Slo<wbr>Basic<wbr>Sli</a></span>
     </dt>
-    <dd>{{% md %}}Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
+    <dd>Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
 pre-defined metrics. SLIs are used to measure and calculate the quality of the Service's performance with respect to a
 single aspect of service quality.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,8 +882,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A calendar period, semantically "since the start of the current <calendarPeriod>".
-{{% /md %}}</dd>
+    <dd>A calendar period, semantically "since the start of the current <calendarPeriod>".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,8 +891,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name used for UI elements listing this SLO.
-{{% /md %}}</dd>
+    <dd>Name used for UI elements listing this SLO.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,8 +900,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
-{{% /md %}}</dd>
+    <dd>The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,9 +909,9 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full resource name for this service. The syntax is:
+    <dd>The full resource name for this service. The syntax is:
 projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SLO_NAME]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,9 +919,9 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,8 +929,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
-{{% /md %}}</dd>
+    <dd>A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -938,8 +938,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the service to which this SLO belongs.
-{{% /md %}}</dd>
+    <dd>ID of the service to which this SLO belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,14 +947,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
-{{% /md %}}</dd>
+    <dd>The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -963,10 +963,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicsli">Slo<wbr>Basic<wbr>Sli</a></span>
     </dt>
-    <dd>{{% md %}}Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
+    <dd>Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
 pre-defined metrics. SLIs are used to measure and calculate the quality of the Service's performance with respect to a
 single aspect of service quality.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A calendar period, semantically "since the start of the current <calendarPeriod>".
-{{% /md %}}</dd>
+    <dd>A calendar period, semantically "since the start of the current <calendarPeriod>".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name used for UI elements listing this SLO.
-{{% /md %}}</dd>
+    <dd>Name used for UI elements listing this SLO.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
-{{% /md %}}</dd>
+    <dd>The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,9 +1001,9 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full resource name for this service. The syntax is:
+    <dd>The full resource name for this service. The syntax is:
 projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SLO_NAME]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,9 +1011,9 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,8 +1021,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
-{{% /md %}}</dd>
+    <dd>A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the service to which this SLO belongs.
-{{% /md %}}</dd>
+    <dd>ID of the service to which this SLO belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,14 +1039,14 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
-{{% /md %}}</dd>
+    <dd>The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1055,10 +1055,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicsli">Dict[Slo<wbr>Basic<wbr>Sli]</a></span>
     </dt>
-    <dd>{{% md %}}Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
+    <dd>Basic Service-Level Indicator (SLI) on a well-known service type. Performance will be computed on the basis of
 pre-defined metrics. SLIs are used to measure and calculate the quality of the Service's performance with respect to a
 single aspect of service quality.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A calendar period, semantically "since the start of the current <calendarPeriod>".
-{{% /md %}}</dd>
+    <dd>A calendar period, semantically "since the start of the current <calendarPeriod>".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,8 +1075,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name used for UI elements listing this SLO.
-{{% /md %}}</dd>
+    <dd>Name used for UI elements listing this SLO.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
-{{% /md %}}</dd>
+    <dd>The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,9 +1093,9 @@ single aspect of service quality.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full resource name for this service. The syntax is:
+    <dd>The full resource name for this service. The syntax is:
 projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SLO_NAME]
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,9 +1103,9 @@ projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SL
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1113,8 +1113,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
-{{% /md %}}</dd>
+    <dd>A rolling time period, semantically "in the past X days". Must be between 1 to 30 days, inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,8 +1122,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the service to which this SLO belongs.
-{{% /md %}}</dd>
+    <dd>ID of the service to which this SLO belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,11 +1131,11 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
-{{% /md %}}</dd>
+    <dd>The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1150,18 +1150,18 @@ If it is not provided, the provider project is used.
 
 
 <h4 id="slobasicsli">Slo<wbr>Basic<wbr>Sli</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#SloBasicSli">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#SloBasicSli">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#SloBasicSliArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#SloBasicSliOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1170,7 +1170,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicslilatency">Slo<wbr>Basic<wbr>Sli<wbr>Latency<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,7 +1178,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,7 +1186,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,13 +1194,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1209,7 +1209,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicslilatency">Slo<wbr>Basic<wbr>Sli<wbr>Latency</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,7 +1217,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,7 +1225,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,13 +1233,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1248,7 +1248,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicslilatency">Slo<wbr>Basic<wbr>Sli<wbr>Latency</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,7 +1256,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,7 +1264,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,13 +1272,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1287,7 +1287,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#slobasicslilatency">Dict[Slo<wbr>Basic<wbr>Sli<wbr>Latency]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,7 +1295,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,7 +1303,7 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,28 +1311,28 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="slobasicslilatency">Slo<wbr>Basic<wbr>Sli<wbr>Latency</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#SloBasicSliLatency">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#SloBasicSliLatency">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#SloBasicSliLatencyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#SloBasicSliLatencyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1341,13 +1341,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1356,13 +1356,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1371,13 +1371,13 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1386,10 +1386,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

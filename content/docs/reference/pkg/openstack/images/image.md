@@ -51,26 +51,26 @@ Image Service set it.
 
 
 ## Create a Image Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/images/#Image">Image</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/images/#ImageArgs">ImageArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Image</span><span class="p">(resource_name, opts=None, </span>container_format=None<span class="p">, </span>disk_format=None<span class="p">, </span>image_cache_path=None<span class="p">, </span>image_source_url=None<span class="p">, </span>local_file_path=None<span class="p">, </span>min_disk_gb=None<span class="p">, </span>min_ram_mb=None<span class="p">, </span>name=None<span class="p">, </span>properties=None<span class="p">, </span>protected=None<span class="p">, </span>region=None<span class="p">, </span>tags=None<span class="p">, </span>verify_checksum=None<span class="p">, </span>visibility=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewImage<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/images?tab=doc#ImageArgs">ImageArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/images?tab=doc#Image">Image</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Images.Image.html">Image</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Images.ImageArgs.html">ImageArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -107,9 +107,9 @@ Image Service set it.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -127,9 +127,9 @@ Image Service set it.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -176,9 +176,9 @@ Image Service set it.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -215,7 +215,7 @@ Image Service set it.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Image Resource Properties {#properties}
 
@@ -228,7 +228,7 @@ The Image resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -237,9 +237,9 @@ The Image resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container format. Must be one of
+    <dd>The container format. Must be one of
 "ami", "ari", "aki", "bare", "ovf".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -247,9 +247,9 @@ The Image resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk format. Must be one of
+    <dd>The disk format. Must be one of
 "ami", "ari", "aki", "vhd", "vmdk", "raw", "qcow2", "vdi", "iso".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,7 +257,7 @@ The Image resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,12 +265,12 @@ The Image resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the url of the raw image that will
+    <dd>This is the url of the raw image that will
 be downloaded in the `image_cache_path` before being uploaded to Glance.
 Glance is able to download image from internet but the `gophercloud` library
 does not yet provide a way to do so.
 Conflicts with `local_file_path`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,9 +278,9 @@ Conflicts with `local_file_path`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the filepath of the raw image file
+    <dd>This is the filepath of the raw image file
 that will be uploaded to Glance. Conflicts with `image_source_url`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,9 +288,9 @@ that will be uploaded to Glance. Conflicts with `image_source_url`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of disk space (in GB) required to boot image.
+    <dd>Amount of disk space (in GB) required to boot image.
 Defaults to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,9 +298,9 @@ Defaults to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of ram (in MB) required to boot image.
+    <dd>Amount of ram (in MB) required to boot image.
 Defauts to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,10 +317,10 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to set freeform
+    <dd>A map of key/value pairs to set freeform
 information about an image. See the "Notes" section for further
 information about properties.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,9 +328,9 @@ information about properties.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, image will not be deletable.
+    <dd>If true, image will not be deletable.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,11 +338,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used. Changing this creates a new Image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,9 +350,9 @@ is used. Changing this creates a new Image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The tags of the image. It must be a list of strings.
+    <dd>The tags of the image. It must be a list of strings.
 At this time, it is not possible to delete all tags of an image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,9 +360,9 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If false, the checksum will not be verified
+    <dd>If false, the checksum will not be verified
 once the image is finished uploading. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,16 +370,16 @@ once the image is finished uploading. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". The ability to set the
 visibility depends upon the configuration of the OpenStack cloud.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -388,9 +388,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container format. Must be one of
+    <dd>The container format. Must be one of
 "ami", "ari", "aki", "bare", "ovf".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -398,9 +398,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk format. Must be one of
+    <dd>The disk format. Must be one of
 "ami", "ari", "aki", "vhd", "vmdk", "raw", "qcow2", "vdi", "iso".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,7 +408,7 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,12 +416,12 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the url of the raw image that will
+    <dd>This is the url of the raw image that will
 be downloaded in the `image_cache_path` before being uploaded to Glance.
 Glance is able to download image from internet but the `gophercloud` library
 does not yet provide a way to do so.
 Conflicts with `local_file_path`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,9 +429,9 @@ Conflicts with `local_file_path`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the filepath of the raw image file
+    <dd>This is the filepath of the raw image file
 that will be uploaded to Glance. Conflicts with `image_source_url`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,9 +439,9 @@ that will be uploaded to Glance. Conflicts with `image_source_url`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of disk space (in GB) required to boot image.
+    <dd>Amount of disk space (in GB) required to boot image.
 Defaults to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,9 +449,9 @@ Defaults to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of ram (in MB) required to boot image.
+    <dd>Amount of ram (in MB) required to boot image.
 Defauts to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,10 +468,10 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to set freeform
+    <dd>A map of key/value pairs to set freeform
 information about an image. See the "Notes" section for further
 information about properties.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,9 +479,9 @@ information about properties.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, image will not be deletable.
+    <dd>If true, image will not be deletable.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,11 +489,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used. Changing this creates a new Image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -501,9 +501,9 @@ is used. Changing this creates a new Image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The tags of the image. It must be a list of strings.
+    <dd>The tags of the image. It must be a list of strings.
 At this time, it is not possible to delete all tags of an image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,9 +511,9 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If false, the checksum will not be verified
+    <dd>If false, the checksum will not be verified
 once the image is finished uploading. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -521,16 +521,16 @@ once the image is finished uploading. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". The ability to set the
 visibility depends upon the configuration of the OpenStack cloud.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -539,9 +539,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container format. Must be one of
+    <dd>The container format. Must be one of
 "ami", "ari", "aki", "bare", "ovf".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -549,9 +549,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk format. Must be one of
+    <dd>The disk format. Must be one of
 "ami", "ari", "aki", "vhd", "vmdk", "raw", "qcow2", "vdi", "iso".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,7 +559,7 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -567,12 +567,12 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the url of the raw image that will
+    <dd>This is the url of the raw image that will
 be downloaded in the `image_cache_path` before being uploaded to Glance.
 Glance is able to download image from internet but the `gophercloud` library
 does not yet provide a way to do so.
 Conflicts with `local_file_path`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,9 +580,9 @@ Conflicts with `local_file_path`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the filepath of the raw image file
+    <dd>This is the filepath of the raw image file
 that will be uploaded to Glance. Conflicts with `image_source_url`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,9 +590,9 @@ that will be uploaded to Glance. Conflicts with `image_source_url`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Amount of disk space (in GB) required to boot image.
+    <dd>Amount of disk space (in GB) required to boot image.
 Defaults to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,9 +600,9 @@ Defaults to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Amount of ram (in MB) required to boot image.
+    <dd>Amount of ram (in MB) required to boot image.
 Defauts to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,10 +619,10 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to set freeform
+    <dd>A map of key/value pairs to set freeform
 information about an image. See the "Notes" section for further
 information about properties.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -630,9 +630,9 @@ information about properties.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, image will not be deletable.
+    <dd>If true, image will not be deletable.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -640,11 +640,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used. Changing this creates a new Image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -652,9 +652,9 @@ is used. Changing this creates a new Image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The tags of the image. It must be a list of strings.
+    <dd>The tags of the image. It must be a list of strings.
 At this time, it is not possible to delete all tags of an image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,9 +662,9 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If false, the checksum will not be verified
+    <dd>If false, the checksum will not be verified
 once the image is finished uploading. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -672,16 +672,16 @@ once the image is finished uploading. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". The ability to set the
 visibility depends upon the configuration of the OpenStack cloud.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -690,9 +690,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container format. Must be one of
+    <dd>The container format. Must be one of
 "ami", "ari", "aki", "bare", "ovf".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -700,9 +700,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The disk format. Must be one of
+    <dd>The disk format. Must be one of
 "ami", "ari", "aki", "vhd", "vmdk", "raw", "qcow2", "vdi", "iso".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,7 +710,7 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -718,12 +718,12 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This is the url of the raw image that will
+    <dd>This is the url of the raw image that will
 be downloaded in the `image_cache_path` before being uploaded to Glance.
 Glance is able to download image from internet but the `gophercloud` library
 does not yet provide a way to do so.
 Conflicts with `local_file_path`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,9 +731,9 @@ Conflicts with `local_file_path`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This is the filepath of the raw image file
+    <dd>This is the filepath of the raw image file
 that will be uploaded to Glance. Conflicts with `image_source_url`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,9 +741,9 @@ that will be uploaded to Glance. Conflicts with `image_source_url`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Amount of disk space (in GB) required to boot image.
+    <dd>Amount of disk space (in GB) required to boot image.
 Defaults to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,9 +751,9 @@ Defaults to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Amount of ram (in MB) required to boot image.
+    <dd>Amount of ram (in MB) required to boot image.
 Defauts to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,8 +761,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -770,10 +770,10 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to set freeform
+    <dd>A map of key/value pairs to set freeform
 information about an image. See the "Notes" section for further
 information about properties.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -781,9 +781,9 @@ information about properties.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, image will not be deletable.
+    <dd>If true, image will not be deletable.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -791,11 +791,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used. Changing this creates a new Image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,9 +803,9 @@ is used. Changing this creates a new Image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The tags of the image. It must be a list of strings.
+    <dd>The tags of the image. It must be a list of strings.
 At this time, it is not possible to delete all tags of an image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -813,9 +813,9 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If false, the checksum will not be verified
+    <dd>If false, the checksum will not be verified
 once the image is finished uploading. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,13 +823,13 @@ once the image is finished uploading. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". The ability to set the
 visibility depends upon the configuration of the OpenStack cloud.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -843,7 +843,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -852,8 +852,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -861,8 +861,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
-{{% /md %}}</dd>
+    <dd>The date the image was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -870,10 +870,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance
+    <dd>the trailing path after the glance
 endpoint that represent the location of the image
 or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -881,7 +881,7 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -889,10 +889,10 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -900,8 +900,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the openstack user who owns the image.
-{{% /md %}}</dd>
+    <dd>The id of the openstack user who owns the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -909,9 +909,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -919,8 +919,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -928,9 +928,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. It can be "queued", "active"
+    <dd>The status of the image. It can be "queued", "active"
 or "saving".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -938,8 +938,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(**Deprecated** - use `updated_at` instead)
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use updated_at instead{{% /md %}}</p></dd>
+    <dd>(**Deprecated** - use `updated_at` instead)
+<p class="property-message">Deprecated: Use updated_at instead</p></dd>
 
     <dt class="property-"
             title="">
@@ -947,14 +947,14 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -963,8 +963,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -972,8 +972,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
-{{% /md %}}</dd>
+    <dd>The date the image was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -981,10 +981,10 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance
+    <dd>the trailing path after the glance
 endpoint that represent the location of the image
 or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -992,7 +992,7 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1000,10 +1000,10 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1011,8 +1011,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the openstack user who owns the image.
-{{% /md %}}</dd>
+    <dd>The id of the openstack user who owns the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1020,9 +1020,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1030,8 +1030,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1039,9 +1039,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. It can be "queued", "active"
+    <dd>The status of the image. It can be "queued", "active"
 or "saving".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -1049,8 +1049,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(**Deprecated** - use `updated_at` instead)
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use updated_at instead{{% /md %}}</p></dd>
+    <dd>(**Deprecated** - use `updated_at` instead)
+<p class="property-message">Deprecated: Use updated_at instead</p></dd>
 
     <dt class="property-"
             title="">
@@ -1058,14 +1058,14 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1074,8 +1074,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1083,8 +1083,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
-{{% /md %}}</dd>
+    <dd>The date the image was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1092,10 +1092,10 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance
+    <dd>the trailing path after the glance
 endpoint that represent the location of the image
 or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1103,7 +1103,7 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1111,10 +1111,10 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1122,8 +1122,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the openstack user who owns the image.
-{{% /md %}}</dd>
+    <dd>The id of the openstack user who owns the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1131,9 +1131,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1141,8 +1141,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1150,9 +1150,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. It can be "queued", "active"
+    <dd>The status of the image. It can be "queued", "active"
 or "saving".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -1160,8 +1160,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(**Deprecated** - use `updated_at` instead)
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use updated_at instead{{% /md %}}</p></dd>
+    <dd>(**Deprecated** - use `updated_at` instead)
+<p class="property-message">Deprecated: Use updated_at instead</p></dd>
 
     <dt class="property-"
             title="">
@@ -1169,14 +1169,14 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1185,8 +1185,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1194,8 +1194,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
-{{% /md %}}</dd>
+    <dd>The date the image was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1203,10 +1203,10 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance
+    <dd>the trailing path after the glance
 endpoint that represent the location of the image
 or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1214,7 +1214,7 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1222,10 +1222,10 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1233,8 +1233,8 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the openstack user who owns the image.
-{{% /md %}}</dd>
+    <dd>The id of the openstack user who owns the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1242,9 +1242,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1252,8 +1252,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the data associated with the image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1261,9 +1261,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. It can be "queued", "active"
+    <dd>The status of the image. It can be "queued", "active"
 or "saving".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -1271,8 +1271,8 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(**Deprecated** - use `updated_at` instead)
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use updated_at instead{{% /md %}}</p></dd>
+    <dd>(**Deprecated** - use `updated_at` instead)
+<p class="property-message">Deprecated: Use updated_at instead</p></dd>
 
     <dt class="property-"
             title="">
@@ -1280,11 +1280,11 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1295,25 +1295,25 @@ or "saving".
 ## Look up an Existing Image Resource {#look-up}
 
 Get an existing Image resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/images/#ImageState">ImageState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/images/#Image">Image</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>checksum=None<span class="p">, </span>container_format=None<span class="p">, </span>created_at=None<span class="p">, </span>disk_format=None<span class="p">, </span>file=None<span class="p">, </span>image_cache_path=None<span class="p">, </span>image_source_url=None<span class="p">, </span>local_file_path=None<span class="p">, </span>metadata=None<span class="p">, </span>min_disk_gb=None<span class="p">, </span>min_ram_mb=None<span class="p">, </span>name=None<span class="p">, </span>owner=None<span class="p">, </span>properties=None<span class="p">, </span>protected=None<span class="p">, </span>region=None<span class="p">, </span>schema=None<span class="p">, </span>size_bytes=None<span class="p">, </span>status=None<span class="p">, </span>tags=None<span class="p">, </span>update_at=None<span class="p">, </span>updated_at=None<span class="p">, </span>verify_checksum=None<span class="p">, </span>visibility=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetImage<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/images?tab=doc#ImageState">ImageState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/images?tab=doc#Image">Image</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Images.Image.html">Image</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Images.ImageState.html">ImageState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1338,9 +1338,9 @@ Get an existing Image resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1353,36 +1353,9 @@ Get an existing Image resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1407,13 +1380,40 @@ Get an existing Image resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1422,8 +1422,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1431,9 +1431,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container format. Must be one of
+    <dd>The container format. Must be one of
 "ami", "ari", "aki", "bare", "ovf".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,8 +1441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
-{{% /md %}}</dd>
+    <dd>The date the image was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,9 +1450,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk format. Must be one of
+    <dd>The disk format. Must be one of
 "ami", "ari", "aki", "vhd", "vmdk", "raw", "qcow2", "vdi", "iso".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,10 +1460,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance
+    <dd>the trailing path after the glance
 endpoint that represent the location of the image
 or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,7 +1471,7 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1479,12 +1479,12 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the url of the raw image that will
+    <dd>This is the url of the raw image that will
 be downloaded in the `image_cache_path` before being uploaded to Glance.
 Glance is able to download image from internet but the `gophercloud` library
 does not yet provide a way to do so.
 Conflicts with `local_file_path`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,9 +1492,9 @@ Conflicts with `local_file_path`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the filepath of the raw image file
+    <dd>This is the filepath of the raw image file
 that will be uploaded to Glance. Conflicts with `image_source_url`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,10 +1502,10 @@ that will be uploaded to Glance. Conflicts with `image_source_url`.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,9 +1513,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of disk space (in GB) required to boot image.
+    <dd>Amount of disk space (in GB) required to boot image.
 Defaults to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,9 +1523,9 @@ Defaults to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of ram (in MB) required to boot image.
+    <dd>Amount of ram (in MB) required to boot image.
 Defauts to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,8 +1533,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1542,8 +1542,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the openstack user who owns the image.
-{{% /md %}}</dd>
+    <dd>The id of the openstack user who owns the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,10 +1551,10 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to set freeform
+    <dd>A map of key/value pairs to set freeform
 information about an image. See the "Notes" section for further
 information about properties.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,9 +1562,9 @@ information about properties.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, image will not be deletable.
+    <dd>If true, image will not be deletable.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1572,11 +1572,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used. Changing this creates a new Image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,9 +1584,9 @@ is used. Changing this creates a new Image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,8 +1594,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the data associated with the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,9 +1603,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. It can be "queued", "active"
+    <dd>The status of the image. It can be "queued", "active"
 or "saving".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,9 +1613,9 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The tags of the image. It must be a list of strings.
+    <dd>The tags of the image. It must be a list of strings.
 At this time, it is not possible to delete all tags of an image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1623,8 +1623,8 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(**Deprecated** - use `updated_at` instead)
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use updated_at instead{{% /md %}}</p></dd>
+    <dd>(**Deprecated** - use `updated_at` instead)
+<p class="property-message">Deprecated: Use updated_at instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1632,8 +1632,8 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,9 +1641,9 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If false, the checksum will not be verified
+    <dd>If false, the checksum will not be verified
 once the image is finished uploading. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,16 +1651,16 @@ once the image is finished uploading. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". The ability to set the
 visibility depends upon the configuration of the OpenStack cloud.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1669,8 +1669,8 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,9 +1678,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container format. Must be one of
+    <dd>The container format. Must be one of
 "ami", "ari", "aki", "bare", "ovf".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1688,8 +1688,8 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
-{{% /md %}}</dd>
+    <dd>The date the image was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1697,9 +1697,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk format. Must be one of
+    <dd>The disk format. Must be one of
 "ami", "ari", "aki", "vhd", "vmdk", "raw", "qcow2", "vdi", "iso".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1707,10 +1707,10 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance
+    <dd>the trailing path after the glance
 endpoint that represent the location of the image
 or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,7 +1718,7 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1726,12 +1726,12 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the url of the raw image that will
+    <dd>This is the url of the raw image that will
 be downloaded in the `image_cache_path` before being uploaded to Glance.
 Glance is able to download image from internet but the `gophercloud` library
 does not yet provide a way to do so.
 Conflicts with `local_file_path`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1739,9 +1739,9 @@ Conflicts with `local_file_path`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the filepath of the raw image file
+    <dd>This is the filepath of the raw image file
 that will be uploaded to Glance. Conflicts with `image_source_url`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1749,10 +1749,10 @@ that will be uploaded to Glance. Conflicts with `image_source_url`.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,9 +1760,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of disk space (in GB) required to boot image.
+    <dd>Amount of disk space (in GB) required to boot image.
 Defaults to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1770,9 +1770,9 @@ Defaults to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of ram (in MB) required to boot image.
+    <dd>Amount of ram (in MB) required to boot image.
 Defauts to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1780,8 +1780,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1789,8 +1789,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the openstack user who owns the image.
-{{% /md %}}</dd>
+    <dd>The id of the openstack user who owns the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1798,10 +1798,10 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to set freeform
+    <dd>A map of key/value pairs to set freeform
 information about an image. See the "Notes" section for further
 information about properties.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1809,9 +1809,9 @@ information about properties.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, image will not be deletable.
+    <dd>If true, image will not be deletable.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1819,11 +1819,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used. Changing this creates a new Image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,9 +1831,9 @@ is used. Changing this creates a new Image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1841,8 +1841,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the data associated with the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1850,9 +1850,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. It can be "queued", "active"
+    <dd>The status of the image. It can be "queued", "active"
 or "saving".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,9 +1860,9 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The tags of the image. It must be a list of strings.
+    <dd>The tags of the image. It must be a list of strings.
 At this time, it is not possible to delete all tags of an image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1870,8 +1870,8 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(**Deprecated** - use `updated_at` instead)
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use updated_at instead{{% /md %}}</p></dd>
+    <dd>(**Deprecated** - use `updated_at` instead)
+<p class="property-message">Deprecated: Use updated_at instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1879,8 +1879,8 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1888,9 +1888,9 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If false, the checksum will not be verified
+    <dd>If false, the checksum will not be verified
 once the image is finished uploading. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1898,16 +1898,16 @@ once the image is finished uploading. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". The ability to set the
 visibility depends upon the configuration of the OpenStack cloud.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1916,8 +1916,8 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1925,9 +1925,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container format. Must be one of
+    <dd>The container format. Must be one of
 "ami", "ari", "aki", "bare", "ovf".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1935,8 +1935,8 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
-{{% /md %}}</dd>
+    <dd>The date the image was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1944,9 +1944,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk format. Must be one of
+    <dd>The disk format. Must be one of
 "ami", "ari", "aki", "vhd", "vmdk", "raw", "qcow2", "vdi", "iso".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1954,10 +1954,10 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance
+    <dd>the trailing path after the glance
 endpoint that represent the location of the image
 or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1965,7 +1965,7 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1973,12 +1973,12 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the url of the raw image that will
+    <dd>This is the url of the raw image that will
 be downloaded in the `image_cache_path` before being uploaded to Glance.
 Glance is able to download image from internet but the `gophercloud` library
 does not yet provide a way to do so.
 Conflicts with `local_file_path`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1986,9 +1986,9 @@ Conflicts with `local_file_path`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This is the filepath of the raw image file
+    <dd>This is the filepath of the raw image file
 that will be uploaded to Glance. Conflicts with `image_source_url`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,10 +1996,10 @@ that will be uploaded to Glance. Conflicts with `image_source_url`.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2007,9 +2007,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Amount of disk space (in GB) required to boot image.
+    <dd>Amount of disk space (in GB) required to boot image.
 Defaults to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2017,9 +2017,9 @@ Defaults to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Amount of ram (in MB) required to boot image.
+    <dd>Amount of ram (in MB) required to boot image.
 Defauts to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2027,8 +2027,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2036,8 +2036,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the openstack user who owns the image.
-{{% /md %}}</dd>
+    <dd>The id of the openstack user who owns the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2045,10 +2045,10 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to set freeform
+    <dd>A map of key/value pairs to set freeform
 information about an image. See the "Notes" section for further
 information about properties.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2056,9 +2056,9 @@ information about properties.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, image will not be deletable.
+    <dd>If true, image will not be deletable.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2066,11 +2066,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used. Changing this creates a new Image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2078,9 +2078,9 @@ is used. Changing this creates a new Image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2088,8 +2088,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the data associated with the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2097,9 +2097,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. It can be "queued", "active"
+    <dd>The status of the image. It can be "queued", "active"
 or "saving".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,9 +2107,9 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The tags of the image. It must be a list of strings.
+    <dd>The tags of the image. It must be a list of strings.
 At this time, it is not possible to delete all tags of an image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2117,8 +2117,8 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(**Deprecated** - use `updated_at` instead)
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use updated_at instead{{% /md %}}</p></dd>
+    <dd>(**Deprecated** - use `updated_at` instead)
+<p class="property-message">Deprecated: Use updated_at instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2126,8 +2126,8 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2135,9 +2135,9 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If false, the checksum will not be verified
+    <dd>If false, the checksum will not be verified
 once the image is finished uploading. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,16 +2145,16 @@ once the image is finished uploading. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". The ability to set the
 visibility depends upon the configuration of the OpenStack cloud.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2163,8 +2163,8 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The checksum of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The checksum of the data associated with the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2172,9 +2172,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container format. Must be one of
+    <dd>The container format. Must be one of
 "ami", "ari", "aki", "bare", "ovf".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2182,8 +2182,8 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was created.
-{{% /md %}}</dd>
+    <dd>The date the image was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2191,9 +2191,9 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The disk format. Must be one of
+    <dd>The disk format. Must be one of
 "ami", "ari", "aki", "vhd", "vmdk", "raw", "qcow2", "vdi", "iso".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2201,10 +2201,10 @@ visibility depends upon the configuration of the OpenStack cloud.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the trailing path after the glance
+    <dd>the trailing path after the glance
 endpoint that represent the location of the image
 or the path to retrieve it.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2212,7 +2212,7 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2220,12 +2220,12 @@ or the path to retrieve it.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This is the url of the raw image that will
+    <dd>This is the url of the raw image that will
 be downloaded in the `image_cache_path` before being uploaded to Glance.
 Glance is able to download image from internet but the `gophercloud` library
 does not yet provide a way to do so.
 Conflicts with `local_file_path`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2233,9 +2233,9 @@ Conflicts with `local_file_path`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This is the filepath of the raw image file
+    <dd>This is the filepath of the raw image file
 that will be uploaded to Glance. Conflicts with `image_source_url`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2243,10 +2243,10 @@ that will be uploaded to Glance. Conflicts with `image_source_url`.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The metadata associated with the image.
+    <dd>The metadata associated with the image.
 Image metadata allow for meaningfully define the image properties
 and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.html.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2254,9 +2254,9 @@ and tags. See https://docs.openstack.org/glance/latest/user/metadefs-concepts.ht
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Amount of disk space (in GB) required to boot image.
+    <dd>Amount of disk space (in GB) required to boot image.
 Defaults to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2264,9 +2264,9 @@ Defaults to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Amount of ram (in MB) required to boot image.
+    <dd>Amount of ram (in MB) required to boot image.
 Defauts to 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2274,8 +2274,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the image.
-{{% /md %}}</dd>
+    <dd>The name of the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2283,8 +2283,8 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the openstack user who owns the image.
-{{% /md %}}</dd>
+    <dd>The id of the openstack user who owns the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2292,10 +2292,10 @@ Defauts to 0.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to set freeform
+    <dd>A map of key/value pairs to set freeform
 information about an image. See the "Notes" section for further
 information about properties.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2303,9 +2303,9 @@ information about properties.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, image will not be deletable.
+    <dd>If true, image will not be deletable.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2313,11 +2313,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Glance client.
+    <dd>The region in which to obtain the V2 Glance client.
 A Glance client is needed to create an Image that can be used with
 a compute instance. If omitted, the `region` argument of the provider
 is used. Changing this creates a new Image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2325,9 +2325,9 @@ is used. Changing this creates a new Image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the JSON-schema that represent
+    <dd>The path to the JSON-schema that represent
 the image or image
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,8 +2335,8 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the data associated with the image.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the data associated with the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2344,9 +2344,9 @@ the image or image
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the image. It can be "queued", "active"
+    <dd>The status of the image. It can be "queued", "active"
 or "saving".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2354,9 +2354,9 @@ or "saving".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The tags of the image. It must be a list of strings.
+    <dd>The tags of the image. It must be a list of strings.
 At this time, it is not possible to delete all tags of an image.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2364,8 +2364,8 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(**Deprecated** - use `updated_at` instead)
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use updated_at instead{{% /md %}}</p></dd>
+    <dd>(**Deprecated** - use `updated_at` instead)
+<p class="property-message">Deprecated: Use updated_at instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2373,8 +2373,8 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the image was last updated.
-{{% /md %}}</dd>
+    <dd>The date the image was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2382,9 +2382,9 @@ At this time, it is not possible to delete all tags of an image.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If false, the checksum will not be verified
+    <dd>If false, the checksum will not be verified
 once the image is finished uploading. Defaults to true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2392,13 +2392,13 @@ once the image is finished uploading. Defaults to true.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The visibility of the image. Must be one of
+    <dd>The visibility of the image. Must be one of
 "public", "private", "community", or "shared". The ability to set the
 visibility depends upon the configuration of the OpenStack cloud.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

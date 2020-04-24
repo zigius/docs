@@ -16,22 +16,22 @@ git_sha: "6a56e91b5f378ee1e76cf91ba3517f80b45380f9"
 > please consult the source [`terraform-providers/terraform-provider-gitlab` repo](https://github.com/terraform-providers/terraform-provider-gitlab/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var gitlab = require("@pulumi/gitlab");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as gitlab from "@pulumi/gitlab";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

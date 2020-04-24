@@ -190,26 +190,26 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
 
 
 ## Create a LogsCustomPipeline Resource
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/#LogsCustomPipeline">LogsCustomPipeline</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/#LogsCustomPipelineArgs">LogsCustomPipelineArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">LogsCustomPipeline</span><span class="p">(resource_name, opts=None, </span>filters=None<span class="p">, </span>is_enabled=None<span class="p">, </span>name=None<span class="p">, </span>processors=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewLogsCustomPipeline<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineArgs">LogsCustomPipelineArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipeline">LogsCustomPipeline</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.LogsCustomPipeline.html">LogsCustomPipeline</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.LogsCustomPipelineArgs.html">LogsCustomPipelineArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -246,9 +246,9 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -266,9 +266,9 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -315,9 +315,9 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -354,14 +354,14 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
 
 </dl>
 
-{{% /choosable %}}
+
 
 #### Resource Arguments
 
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -370,8 +370,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelinefilter">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -379,8 +379,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,14 +397,14 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessor">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -413,8 +413,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelinefilter">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -422,8 +422,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,8 +431,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,14 +440,14 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessor">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -456,8 +456,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelinefilter">Logs<wbr>Custom<wbr>Pipeline<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -465,8 +465,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,14 +483,14 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor[]</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -499,8 +499,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelinefilter">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -508,8 +508,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,11 +526,11 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessor">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor]</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -544,25 +544,25 @@ resource to track the pipeline. Similarly, when a pipeline needs to be destroyed
 ## Look up an Existing LogsCustomPipeline Resource
 
 Get an existing LogsCustomPipeline resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/#LogsCustomPipelineState">LogsCustomPipelineState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/#LogsCustomPipeline">LogsCustomPipeline</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>filters=None<span class="p">, </span>is_enabled=None<span class="p">, </span>name=None<span class="p">, </span>processors=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLogsCustomPipeline<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineState">LogsCustomPipelineState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipeline">LogsCustomPipeline</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.LogsCustomPipeline.html">LogsCustomPipeline</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog..LogsCustomPipelineState.html">LogsCustomPipelineState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -587,9 +587,9 @@ Get an existing LogsCustomPipeline resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -602,36 +602,9 @@ Get an existing LogsCustomPipeline resource's state with the given name, ID, and
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -656,13 +629,40 @@ Get an existing LogsCustomPipeline resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -671,8 +671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelinefilter">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,8 +680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,8 +689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,14 +698,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessor">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -714,8 +714,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelinefilter">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,8 +723,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,8 +732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,14 +741,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessor">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -757,8 +757,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelinefilter">Logs<wbr>Custom<wbr>Pipeline<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -766,8 +766,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -775,8 +775,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -784,14 +784,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor[]</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -800,8 +800,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelinefilter">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,8 +809,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,8 +818,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -827,11 +827,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessor">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor]</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -845,18 +845,18 @@ The following state arguments are supported:
 ## Supporting Types
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -865,13 +865,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -880,13 +880,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -895,13 +895,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -910,28 +910,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessor">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessor">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -940,7 +940,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorarithmeticprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -948,7 +948,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorattributeremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,7 +956,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -964,7 +964,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessordateremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,7 +972,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgeoipparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,7 +980,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgrokparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -988,7 +988,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessormessageremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,7 +996,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipeline">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1004,7 +1004,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorserviceremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,7 +1012,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorstatusremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,7 +1020,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorstringbuilderprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,7 +1028,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessortraceidremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,7 +1036,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorurlparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,13 +1044,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessoruseragentparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1059,7 +1059,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorarithmeticprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,7 +1067,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorattributeremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,7 +1075,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,7 +1083,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessordateremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,7 +1091,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgeoipparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,7 +1099,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgrokparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,7 +1107,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessormessageremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,7 +1115,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipeline">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,7 +1123,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorserviceremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,7 +1131,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorstatusremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1139,7 +1139,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorstringbuilderprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,7 +1147,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessortraceidremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,7 +1155,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorurlparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,13 +1163,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessoruseragentparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1178,7 +1178,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorarithmeticprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,7 +1186,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorattributeremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,7 +1194,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,7 +1202,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessordateremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,7 +1210,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgeoipparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1218,7 +1218,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgrokparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,7 +1226,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessormessageremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,7 +1234,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipeline">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1242,7 +1242,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorserviceremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1250,7 +1250,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorstatusremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,7 +1258,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorstringbuilderprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1266,7 +1266,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessortraceidremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,7 +1274,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorurlparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1282,13 +1282,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessoruseragentparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1297,7 +1297,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorarithmeticprocessor">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,7 +1305,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorattributeremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1313,7 +1313,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessor">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1321,7 +1321,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessordateremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1329,7 +1329,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgeoipparser">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,7 +1337,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgrokparser">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1345,7 +1345,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessormessageremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1353,7 +1353,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipeline">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,7 +1361,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorserviceremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,7 +1369,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorstatusremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,7 +1377,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorstringbuilderprocessor">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,7 +1385,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessortraceidremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,7 +1393,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorurlparser">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,28 +1401,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessoruseragentparser">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorArithmeticProcessor">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorArithmeticProcessor">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorArithmeticProcessorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorArithmeticProcessorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1431,8 +1431,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Arithmetic operation between one or more log attributes.
-{{% /md %}}</dd>
+    <dd>Arithmetic operation between one or more log attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1440,8 +1440,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1449,8 +1449,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1458,9 +1458,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,14 +1468,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1484,8 +1484,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arithmetic operation between one or more log attributes.
-{{% /md %}}</dd>
+    <dd>Arithmetic operation between one or more log attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1493,8 +1493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,8 +1502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,9 +1511,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1521,14 +1521,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1537,8 +1537,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arithmetic operation between one or more log attributes.
-{{% /md %}}</dd>
+    <dd>Arithmetic operation between one or more log attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1546,8 +1546,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1555,8 +1555,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1564,9 +1564,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,14 +1574,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1590,8 +1590,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Arithmetic operation between one or more log attributes.
-{{% /md %}}</dd>
+    <dd>Arithmetic operation between one or more log attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1599,8 +1599,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1608,8 +1608,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,9 +1617,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1627,29 +1627,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorAttributeRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorAttributeRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorAttributeRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorAttributeRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1658,8 +1658,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines where the sources are from (log `attribute` or `tag`). 
-{{% /md %}}</dd>
+    <dd>Defines where the sources are from (log `attribute` or `tag`). 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1667,8 +1667,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1676,8 +1676,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1685,8 +1685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines if the target is a log `attribute` or `tag`.
-{{% /md %}}</dd>
+    <dd>Defines if the target is a log `attribute` or `tag`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1694,8 +1694,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1703,8 +1703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1712,8 +1712,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Override the target element if already set.
-{{% /md %}}</dd>
+    <dd>Override the target element if already set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1721,14 +1721,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Remove or preserve the remapped source element.
-{{% /md %}}</dd>
+    <dd>Remove or preserve the remapped source element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1737,8 +1737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines where the sources are from (log `attribute` or `tag`). 
-{{% /md %}}</dd>
+    <dd>Defines where the sources are from (log `attribute` or `tag`). 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1746,8 +1746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1755,8 +1755,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1764,8 +1764,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines if the target is a log `attribute` or `tag`.
-{{% /md %}}</dd>
+    <dd>Defines if the target is a log `attribute` or `tag`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1773,8 +1773,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1782,8 +1782,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1791,8 +1791,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Override the target element if already set.
-{{% /md %}}</dd>
+    <dd>Override the target element if already set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1800,14 +1800,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Remove or preserve the remapped source element.
-{{% /md %}}</dd>
+    <dd>Remove or preserve the remapped source element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1816,8 +1816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines where the sources are from (log `attribute` or `tag`). 
-{{% /md %}}</dd>
+    <dd>Defines where the sources are from (log `attribute` or `tag`). 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1825,8 +1825,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1834,8 +1834,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1843,8 +1843,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines if the target is a log `attribute` or `tag`.
-{{% /md %}}</dd>
+    <dd>Defines if the target is a log `attribute` or `tag`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1852,8 +1852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1861,8 +1861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1870,8 +1870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Override the target element if already set.
-{{% /md %}}</dd>
+    <dd>Override the target element if already set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1879,14 +1879,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Remove or preserve the remapped source element.
-{{% /md %}}</dd>
+    <dd>Remove or preserve the remapped source element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1895,8 +1895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines where the sources are from (log `attribute` or `tag`). 
-{{% /md %}}</dd>
+    <dd>Defines where the sources are from (log `attribute` or `tag`). 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1904,8 +1904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1913,8 +1913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1922,8 +1922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines if the target is a log `attribute` or `tag`.
-{{% /md %}}</dd>
+    <dd>Defines if the target is a log `attribute` or `tag`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1931,8 +1931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1940,8 +1940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1949,8 +1949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Override the target element if already set.
-{{% /md %}}</dd>
+    <dd>Override the target element if already set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1958,29 +1958,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Remove or preserve the remapped source element.
-{{% /md %}}</dd>
+    <dd>Remove or preserve the remapped source element.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorCategoryProcessor">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorCategoryProcessor">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorCategoryProcessorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorCategoryProcessorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1989,8 +1989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessorcategory">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
-{{% /md %}}</dd>
+    <dd>List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1998,8 +1998,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2007,8 +2007,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2016,14 +2016,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2032,8 +2032,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessorcategory">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category</a></span>
     </dt>
-    <dd>{{% md %}}List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
-{{% /md %}}</dd>
+    <dd>List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2041,8 +2041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2050,8 +2050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2059,14 +2059,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2075,8 +2075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessorcategory">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category[]</a></span>
     </dt>
-    <dd>{{% md %}}List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
-{{% /md %}}</dd>
+    <dd>List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2084,8 +2084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2093,8 +2093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2102,14 +2102,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2118,8 +2118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessorcategory">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category]</a></span>
     </dt>
-    <dd>{{% md %}}List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
-{{% /md %}}</dd>
+    <dd>List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2127,8 +2127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2136,8 +2136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,29 +2145,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorCategoryProcessorCategory">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorCategoryProcessorCategory">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorCategoryProcessorCategoryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorCategoryProcessorCategoryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2176,8 +2176,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessorcategoryfilter">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2185,14 +2185,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2201,8 +2201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessorcategoryfilter">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2210,14 +2210,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2226,8 +2226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessorcategoryfilter">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2235,14 +2235,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2251,8 +2251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorcategoryprocessorcategoryfilter">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2260,29 +2260,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorCategoryProcessorCategoryFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorCategoryProcessorCategoryFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorCategoryProcessorCategoryFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2291,13 +2291,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2306,13 +2306,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2321,13 +2321,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2336,28 +2336,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorDateRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorDateRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorDateRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorDateRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2366,8 +2366,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2375,8 +2375,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2384,14 +2384,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2400,8 +2400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2409,8 +2409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2418,14 +2418,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2434,8 +2434,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2443,8 +2443,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2452,14 +2452,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2468,8 +2468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2477,8 +2477,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2486,29 +2486,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorGeoIpParser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorGeoIpParser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorGeoIpParserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorGeoIpParserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2517,8 +2517,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2526,8 +2526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,8 +2535,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2544,14 +2544,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2560,8 +2560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2569,8 +2569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2578,8 +2578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2587,14 +2587,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2603,8 +2603,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2612,8 +2612,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2621,8 +2621,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2630,14 +2630,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2646,8 +2646,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2655,8 +2655,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2664,8 +2664,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2673,29 +2673,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorGrokParser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorGrokParser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorGrokParserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorGrokParserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2704,7 +2704,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgrokparsergrok">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2712,9 +2712,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the log attribute to parse.
+    <dd>Name of the log attribute to parse.
 * `grok`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2722,8 +2722,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2731,8 +2731,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2740,14 +2740,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
-{{% /md %}}</dd>
+    <dd>List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2756,7 +2756,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgrokparsergrok">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2764,9 +2764,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the log attribute to parse.
+    <dd>Name of the log attribute to parse.
 * `grok`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2774,8 +2774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2783,8 +2783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2792,14 +2792,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
-{{% /md %}}</dd>
+    <dd>List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2808,7 +2808,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgrokparsergrok">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2816,9 +2816,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the log attribute to parse.
+    <dd>Name of the log attribute to parse.
 * `grok`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2826,8 +2826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2835,8 +2835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2844,14 +2844,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
-{{% /md %}}</dd>
+    <dd>List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2860,7 +2860,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorgrokparsergrok">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2868,9 +2868,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the log attribute to parse.
+    <dd>Name of the log attribute to parse.
 * `grok`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2878,8 +2878,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2887,8 +2887,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2896,29 +2896,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
-{{% /md %}}</dd>
+    <dd>List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorGrokParserGrok">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorGrokParserGrok">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorGrokParserGrokArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorGrokParserGrokOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2927,8 +2927,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Match rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Match rules for your grok parser.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2936,14 +2936,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Support rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Support rules for your grok parser.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2952,8 +2952,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Match rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Match rules for your grok parser.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2961,14 +2961,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Support rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Support rules for your grok parser.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2977,8 +2977,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Match rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Match rules for your grok parser.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2986,14 +2986,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Support rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Support rules for your grok parser.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3002,8 +3002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Match rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Match rules for your grok parser.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3011,29 +3011,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Support rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Support rules for your grok parser.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorMessageRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorMessageRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorMessageRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorMessageRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3042,8 +3042,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3051,8 +3051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3060,14 +3060,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3076,8 +3076,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3085,8 +3085,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3094,14 +3094,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3110,8 +3110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3119,8 +3119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3128,14 +3128,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3144,8 +3144,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3153,8 +3153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3162,29 +3162,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipeline">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipeline">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3193,8 +3193,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelinefilter">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3202,8 +3202,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3211,8 +3211,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3220,14 +3220,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessor">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3236,8 +3236,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelinefilter">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3245,8 +3245,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3254,8 +3254,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3263,14 +3263,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessor">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3279,8 +3279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelinefilter">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3288,8 +3288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3297,8 +3297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3306,14 +3306,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor[]</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3322,8 +3322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelinefilter">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3331,8 +3331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3340,8 +3340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3349,29 +3349,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessor">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor]</a></span>
     </dt>
-    <dd>{{% md %}}Processors. Nested pipeline can't take any other nested pipeline as its processor.
-{{% /md %}}</dd>
+    <dd>Processors. Nested pipeline can't take any other nested pipeline as its processor.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3380,13 +3380,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3395,13 +3395,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3410,13 +3410,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3425,28 +3425,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessor">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessor">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3455,7 +3455,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorarithmeticprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3463,7 +3463,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorattributeremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3471,7 +3471,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3479,7 +3479,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessordateremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3487,7 +3487,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgeoipparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3495,7 +3495,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgrokparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3503,7 +3503,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessormessageremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3511,7 +3511,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorserviceremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3519,7 +3519,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorstatusremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3527,7 +3527,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorstringbuilderprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3535,7 +3535,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessortraceidremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3543,7 +3543,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorurlparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3551,13 +3551,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessoruseragentparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3566,7 +3566,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorarithmeticprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3574,7 +3574,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorattributeremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3582,7 +3582,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3590,7 +3590,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessordateremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3598,7 +3598,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgeoipparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3606,7 +3606,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgrokparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3614,7 +3614,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessormessageremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3622,7 +3622,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorserviceremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3630,7 +3630,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorstatusremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3638,7 +3638,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorstringbuilderprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3646,7 +3646,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessortraceidremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3654,7 +3654,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorurlparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3662,13 +3662,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessoruseragentparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3677,7 +3677,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorarithmeticprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3685,7 +3685,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorattributeremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3693,7 +3693,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3701,7 +3701,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessordateremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3709,7 +3709,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgeoipparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3717,7 +3717,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgrokparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3725,7 +3725,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessormessageremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3733,7 +3733,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorserviceremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3741,7 +3741,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorstatusremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3749,7 +3749,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorstringbuilderprocessor">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3757,7 +3757,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessortraceidremapper">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3765,7 +3765,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorurlparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3773,13 +3773,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessoruseragentparser">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3788,7 +3788,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorarithmeticprocessor">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3796,7 +3796,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorattributeremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3804,7 +3804,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessor">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3812,7 +3812,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessordateremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3820,7 +3820,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgeoipparser">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3828,7 +3828,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgrokparser">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3836,7 +3836,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessormessageremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3844,7 +3844,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorserviceremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3852,7 +3852,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorstatusremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3860,7 +3860,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorstringbuilderprocessor">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3868,7 +3868,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessortraceidremapper">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3876,7 +3876,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorurlparser">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3884,28 +3884,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessoruseragentparser">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Arithmetic<wbr>Processor</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3914,8 +3914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Arithmetic operation between one or more log attributes.
-{{% /md %}}</dd>
+    <dd>Arithmetic operation between one or more log attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3923,8 +3923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3932,8 +3932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3941,9 +3941,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3951,14 +3951,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3967,8 +3967,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arithmetic operation between one or more log attributes.
-{{% /md %}}</dd>
+    <dd>Arithmetic operation between one or more log attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3976,8 +3976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3985,8 +3985,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3994,9 +3994,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4004,14 +4004,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4020,8 +4020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arithmetic operation between one or more log attributes.
-{{% /md %}}</dd>
+    <dd>Arithmetic operation between one or more log attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4029,8 +4029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4038,8 +4038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4047,9 +4047,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4057,14 +4057,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4073,8 +4073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Arithmetic operation between one or more log attributes.
-{{% /md %}}</dd>
+    <dd>Arithmetic operation between one or more log attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4082,8 +4082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4091,8 +4091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4100,9 +4100,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4110,29 +4110,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Attribute<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4141,8 +4141,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines where the sources are from (log `attribute` or `tag`). 
-{{% /md %}}</dd>
+    <dd>Defines where the sources are from (log `attribute` or `tag`). 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4150,8 +4150,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4159,8 +4159,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4168,8 +4168,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines if the target is a log `attribute` or `tag`.
-{{% /md %}}</dd>
+    <dd>Defines if the target is a log `attribute` or `tag`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4177,8 +4177,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4186,8 +4186,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4195,8 +4195,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Override the target element if already set.
-{{% /md %}}</dd>
+    <dd>Override the target element if already set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4204,14 +4204,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Remove or preserve the remapped source element.
-{{% /md %}}</dd>
+    <dd>Remove or preserve the remapped source element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4220,8 +4220,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines where the sources are from (log `attribute` or `tag`). 
-{{% /md %}}</dd>
+    <dd>Defines where the sources are from (log `attribute` or `tag`). 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4229,8 +4229,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4238,8 +4238,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4247,8 +4247,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines if the target is a log `attribute` or `tag`.
-{{% /md %}}</dd>
+    <dd>Defines if the target is a log `attribute` or `tag`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4256,8 +4256,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4265,8 +4265,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4274,8 +4274,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Override the target element if already set.
-{{% /md %}}</dd>
+    <dd>Override the target element if already set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4283,14 +4283,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Remove or preserve the remapped source element.
-{{% /md %}}</dd>
+    <dd>Remove or preserve the remapped source element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4299,8 +4299,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines where the sources are from (log `attribute` or `tag`). 
-{{% /md %}}</dd>
+    <dd>Defines where the sources are from (log `attribute` or `tag`). 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4308,8 +4308,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4317,8 +4317,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4326,8 +4326,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines if the target is a log `attribute` or `tag`.
-{{% /md %}}</dd>
+    <dd>Defines if the target is a log `attribute` or `tag`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4335,8 +4335,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4344,8 +4344,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4353,8 +4353,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Override the target element if already set.
-{{% /md %}}</dd>
+    <dd>Override the target element if already set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4362,14 +4362,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Remove or preserve the remapped source element.
-{{% /md %}}</dd>
+    <dd>Remove or preserve the remapped source element.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4378,8 +4378,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines where the sources are from (log `attribute` or `tag`). 
-{{% /md %}}</dd>
+    <dd>Defines where the sources are from (log `attribute` or `tag`). 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4387,8 +4387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4396,8 +4396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4405,8 +4405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines if the target is a log `attribute` or `tag`.
-{{% /md %}}</dd>
+    <dd>Defines if the target is a log `attribute` or `tag`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4414,8 +4414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4423,8 +4423,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4432,8 +4432,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Override the target element if already set.
-{{% /md %}}</dd>
+    <dd>Override the target element if already set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4441,29 +4441,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Remove or preserve the remapped source element.
-{{% /md %}}</dd>
+    <dd>Remove or preserve the remapped source element.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4472,8 +4472,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessorcategory">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
-{{% /md %}}</dd>
+    <dd>List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4481,8 +4481,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4490,8 +4490,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4499,14 +4499,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4515,8 +4515,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessorcategory">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category</a></span>
     </dt>
-    <dd>{{% md %}}List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
-{{% /md %}}</dd>
+    <dd>List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4524,8 +4524,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4533,8 +4533,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4542,14 +4542,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4558,8 +4558,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessorcategory">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category[]</a></span>
     </dt>
-    <dd>{{% md %}}List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
-{{% /md %}}</dd>
+    <dd>List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4567,8 +4567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4576,8 +4576,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4585,14 +4585,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4601,8 +4601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessorcategory">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category]</a></span>
     </dt>
-    <dd>{{% md %}}List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
-{{% /md %}}</dd>
+    <dd>List of filters to match or exclude a log with their corresponding name to assign a custom value to the log.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4610,8 +4610,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4619,8 +4619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4628,29 +4628,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4659,8 +4659,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessorcategoryfilter">List&lt;Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4668,14 +4668,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4684,8 +4684,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessorcategoryfilter">[]Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4693,14 +4693,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4709,8 +4709,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessorcategoryfilter">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4718,14 +4718,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4734,8 +4734,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorcategoryprocessorcategoryfilter">List[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
-{{% /md %}}</dd>
+    <dd>Defines the nested pipeline filter. Only logs that match the filter criteria are processed by this pipeline.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4743,29 +4743,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Category<wbr>Processor<wbr>Category<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4774,13 +4774,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4789,13 +4789,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4804,13 +4804,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4819,28 +4819,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Date<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorDateRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorDateRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorDateRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4849,8 +4849,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4858,8 +4858,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4867,14 +4867,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4883,8 +4883,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4892,8 +4892,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4901,14 +4901,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4917,8 +4917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4926,8 +4926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4935,14 +4935,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4951,8 +4951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4960,8 +4960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4969,29 +4969,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Geo<wbr>Ip<wbr>Parser</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorGeoIpParser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorGeoIpParser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorGeoIpParserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5000,8 +5000,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5009,8 +5009,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5018,8 +5018,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5027,14 +5027,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5043,8 +5043,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5052,8 +5052,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5061,8 +5061,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5070,14 +5070,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5086,8 +5086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5095,8 +5095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5104,8 +5104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5113,14 +5113,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5129,8 +5129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5138,8 +5138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5147,8 +5147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5156,29 +5156,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorGrokParser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorGrokParser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorGrokParserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorGrokParserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5187,7 +5187,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgrokparsergrok">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5195,9 +5195,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the log attribute to parse.
+    <dd>Name of the log attribute to parse.
 * `grok`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5205,8 +5205,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5214,8 +5214,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5223,14 +5223,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
-{{% /md %}}</dd>
+    <dd>List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5239,7 +5239,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgrokparsergrok">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5247,9 +5247,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the log attribute to parse.
+    <dd>Name of the log attribute to parse.
 * `grok`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5257,8 +5257,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5266,8 +5266,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5275,14 +5275,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
-{{% /md %}}</dd>
+    <dd>List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5291,7 +5291,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgrokparsergrok">Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5299,9 +5299,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the log attribute to parse.
+    <dd>Name of the log attribute to parse.
 * `grok`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5309,8 +5309,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5318,8 +5318,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5327,14 +5327,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
-{{% /md %}}</dd>
+    <dd>List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5343,7 +5343,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logscustompipelineprocessorpipelineprocessorgrokparsergrok">Dict[Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5351,9 +5351,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the log attribute to parse.
+    <dd>Name of the log attribute to parse.
 * `grok`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5361,8 +5361,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5370,8 +5370,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5379,29 +5379,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
-{{% /md %}}</dd>
+    <dd>List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Grok<wbr>Parser<wbr>Grok</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5410,8 +5410,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Match rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Match rules for your grok parser.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5419,14 +5419,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Support rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Support rules for your grok parser.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5435,8 +5435,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Match rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Match rules for your grok parser.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5444,14 +5444,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Support rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Support rules for your grok parser.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5460,8 +5460,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Match rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Match rules for your grok parser.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5469,14 +5469,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Support rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Support rules for your grok parser.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5485,8 +5485,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Match rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Match rules for your grok parser.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5494,29 +5494,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Support rules for your grok parser.
-{{% /md %}}</dd>
+    <dd>Support rules for your grok parser.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Message<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorMessageRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorMessageRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorMessageRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5525,8 +5525,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5534,8 +5534,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5543,14 +5543,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5559,8 +5559,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5568,8 +5568,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5577,14 +5577,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5593,8 +5593,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5602,8 +5602,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5611,14 +5611,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5627,8 +5627,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5636,8 +5636,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5645,29 +5645,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorServiceRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorServiceRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorServiceRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5676,8 +5676,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5685,8 +5685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5694,14 +5694,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5710,8 +5710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5719,8 +5719,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5728,14 +5728,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5744,8 +5744,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5753,8 +5753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5762,14 +5762,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5778,8 +5778,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5787,8 +5787,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5796,29 +5796,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorStatusRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorStatusRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorStatusRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5827,8 +5827,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5836,8 +5836,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5845,14 +5845,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5861,8 +5861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5870,8 +5870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5879,14 +5879,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5895,8 +5895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5904,8 +5904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5913,14 +5913,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5929,8 +5929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5938,8 +5938,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5947,29 +5947,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5978,8 +5978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5987,8 +5987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The formula with one or more attributes and raw text.
-{{% /md %}}</dd>
+    <dd>The formula with one or more attributes and raw text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5996,8 +5996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6005,9 +6005,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6015,14 +6015,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6031,8 +6031,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6040,8 +6040,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The formula with one or more attributes and raw text.
-{{% /md %}}</dd>
+    <dd>The formula with one or more attributes and raw text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6049,8 +6049,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6058,9 +6058,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6068,14 +6068,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6084,8 +6084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6093,8 +6093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The formula with one or more attributes and raw text.
-{{% /md %}}</dd>
+    <dd>The formula with one or more attributes and raw text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6102,8 +6102,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6111,9 +6111,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6121,14 +6121,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6137,8 +6137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6146,8 +6146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The formula with one or more attributes and raw text.
-{{% /md %}}</dd>
+    <dd>The formula with one or more attributes and raw text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6155,8 +6155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6164,9 +6164,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6174,29 +6174,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6205,8 +6205,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6214,8 +6214,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6223,14 +6223,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6239,8 +6239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6248,8 +6248,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6257,14 +6257,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6273,8 +6273,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6282,8 +6282,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6291,14 +6291,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6307,8 +6307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6316,8 +6316,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6325,29 +6325,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorUrlParser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorUrlParser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorUrlParserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorUrlParserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6356,8 +6356,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6365,8 +6365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6374,8 +6374,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6383,8 +6383,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6392,14 +6392,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Normalize the ending slashes or not.
-{{% /md %}}</dd>
+    <dd>Normalize the ending slashes or not.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6408,8 +6408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6417,8 +6417,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6426,8 +6426,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6435,8 +6435,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6444,14 +6444,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Normalize the ending slashes or not.
-{{% /md %}}</dd>
+    <dd>Normalize the ending slashes or not.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6460,8 +6460,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6469,8 +6469,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6478,8 +6478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6487,8 +6487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6496,14 +6496,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Normalize the ending slashes or not.
-{{% /md %}}</dd>
+    <dd>Normalize the ending slashes or not.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6512,8 +6512,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6521,8 +6521,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6530,8 +6530,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6539,8 +6539,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6548,29 +6548,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Normalize the ending slashes or not.
-{{% /md %}}</dd>
+    <dd>Normalize the ending slashes or not.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorPipelineProcessorUserAgentParser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorPipelineProcessorUserAgentParser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorUserAgentParserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6579,8 +6579,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6588,8 +6588,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6597,8 +6597,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6606,8 +6606,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the source attribute is URL encoded or not.
-{{% /md %}}</dd>
+    <dd>If the source attribute is URL encoded or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6615,14 +6615,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6631,8 +6631,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6640,8 +6640,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6649,8 +6649,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6658,8 +6658,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the source attribute is URL encoded or not.
-{{% /md %}}</dd>
+    <dd>If the source attribute is URL encoded or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6667,14 +6667,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6683,8 +6683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6692,8 +6692,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6701,8 +6701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6710,8 +6710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the source attribute is URL encoded or not.
-{{% /md %}}</dd>
+    <dd>If the source attribute is URL encoded or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6719,14 +6719,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6735,8 +6735,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6744,8 +6744,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6753,8 +6753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6762,8 +6762,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the source attribute is URL encoded or not.
-{{% /md %}}</dd>
+    <dd>If the source attribute is URL encoded or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6771,29 +6771,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Service<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorServiceRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorServiceRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorServiceRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorServiceRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6802,8 +6802,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6811,8 +6811,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6820,14 +6820,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6836,8 +6836,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6845,8 +6845,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6854,14 +6854,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6870,8 +6870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6879,8 +6879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6888,14 +6888,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6904,8 +6904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6913,8 +6913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6922,29 +6922,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Status<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorStatusRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorStatusRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorStatusRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorStatusRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6953,8 +6953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6962,8 +6962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6971,14 +6971,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6987,8 +6987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6996,8 +6996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7005,14 +7005,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7021,8 +7021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7030,8 +7030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7039,14 +7039,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7055,8 +7055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7064,8 +7064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7073,29 +7073,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>String<wbr>Builder<wbr>Processor</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorStringBuilderProcessor">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorStringBuilderProcessor">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorStringBuilderProcessorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorStringBuilderProcessorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7104,8 +7104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7113,8 +7113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The formula with one or more attributes and raw text.
-{{% /md %}}</dd>
+    <dd>The formula with one or more attributes and raw text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7122,8 +7122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7131,9 +7131,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7141,14 +7141,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7157,8 +7157,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7166,8 +7166,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The formula with one or more attributes and raw text.
-{{% /md %}}</dd>
+    <dd>The formula with one or more attributes and raw text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7175,8 +7175,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7184,9 +7184,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7194,14 +7194,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7210,8 +7210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7219,8 +7219,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The formula with one or more attributes and raw text.
-{{% /md %}}</dd>
+    <dd>The formula with one or more attributes and raw text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7228,8 +7228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7237,9 +7237,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7247,14 +7247,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7263,8 +7263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7272,8 +7272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The formula with one or more attributes and raw text.
-{{% /md %}}</dd>
+    <dd>The formula with one or more attributes and raw text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7281,8 +7281,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7290,9 +7290,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If it replaces all missing attributes of `template` by an empty string.
+    <dd>If it replaces all missing attributes of `template` by an empty string.
 * trace_id_remapper
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7300,29 +7300,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Trace<wbr>Id<wbr>Remapper</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorTraceIdRemapper">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorTraceIdRemapper">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorTraceIdRemapperArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorTraceIdRemapperOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7331,8 +7331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7340,8 +7340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7349,14 +7349,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7365,8 +7365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7374,8 +7374,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7383,14 +7383,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7399,8 +7399,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7408,8 +7408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7417,14 +7417,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7433,8 +7433,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7442,8 +7442,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7451,29 +7451,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>Url<wbr>Parser</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorUrlParser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorUrlParser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorUrlParserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorUrlParserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7482,8 +7482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7491,8 +7491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7500,8 +7500,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7509,8 +7509,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7518,14 +7518,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Normalize the ending slashes or not.
-{{% /md %}}</dd>
+    <dd>Normalize the ending slashes or not.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7534,8 +7534,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7543,8 +7543,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7552,8 +7552,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7561,8 +7561,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7570,14 +7570,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Normalize the ending slashes or not.
-{{% /md %}}</dd>
+    <dd>Normalize the ending slashes or not.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7586,8 +7586,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7595,8 +7595,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7604,8 +7604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7613,8 +7613,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7622,14 +7622,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Normalize the ending slashes or not.
-{{% /md %}}</dd>
+    <dd>Normalize the ending slashes or not.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7638,8 +7638,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7647,8 +7647,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7656,8 +7656,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7665,8 +7665,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7674,29 +7674,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Normalize the ending slashes or not.
-{{% /md %}}</dd>
+    <dd>Normalize the ending slashes or not.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Custom<wbr>Pipeline<wbr>Processor<wbr>User<wbr>Agent<wbr>Parser</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsCustomPipelineProcessorUserAgentParser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsCustomPipelineProcessorUserAgentParser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorUserAgentParserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsCustomPipelineProcessorUserAgentParserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7705,8 +7705,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7714,8 +7714,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7723,8 +7723,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7732,8 +7732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the source attribute is URL encoded or not.
-{{% /md %}}</dd>
+    <dd>If the source attribute is URL encoded or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7741,14 +7741,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7757,8 +7757,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7766,8 +7766,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7775,8 +7775,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7784,8 +7784,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the source attribute is URL encoded or not.
-{{% /md %}}</dd>
+    <dd>If the source attribute is URL encoded or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7793,14 +7793,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7809,8 +7809,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7818,8 +7818,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7827,8 +7827,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7836,8 +7836,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the source attribute is URL encoded or not.
-{{% /md %}}</dd>
+    <dd>If the source attribute is URL encoded or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7845,14 +7845,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7861,8 +7861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of source attributes.
-{{% /md %}}</dd>
+    <dd>List of source attributes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7870,8 +7870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parent attribute that contains all the extracted details from the sources.
-{{% /md %}}</dd>
+    <dd>Name of the parent attribute that contains all the extracted details from the sources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7879,8 +7879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the processor is enabled or not.
-{{% /md %}}</dd>
+    <dd>If the processor is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7888,8 +7888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the source attribute is URL encoded or not.
-{{% /md %}}</dd>
+    <dd>If the source attribute is URL encoded or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7897,11 +7897,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the processor
-{{% /md %}}</dd>
+    <dd>Name of the processor
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

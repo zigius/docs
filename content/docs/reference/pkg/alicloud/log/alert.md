@@ -14,26 +14,26 @@ meta_desc: "Explore the Alert resource of the log module, including examples, in
 
 
 ## Create a Alert Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/log/#Alert">Alert</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/log/#AlertArgs">AlertArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Alert</span><span class="p">(resource_name, opts=None, </span>alert_description=None<span class="p">, </span>alert_displayname=None<span class="p">, </span>alert_name=None<span class="p">, </span>condition=None<span class="p">, </span>dashboard=None<span class="p">, </span>mute_until=None<span class="p">, </span>notification_lists=None<span class="p">, </span>notify_threshold=None<span class="p">, </span>project_name=None<span class="p">, </span>query_lists=None<span class="p">, </span>schedule_interval=None<span class="p">, </span>schedule_type=None<span class="p">, </span>throttling=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAlert<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/log?tab=doc#AlertArgs">AlertArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/log?tab=doc#Alert">Alert</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Log.Alert.html">Alert</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Log.AlertArgs.html">AlertArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Alert resource of the log module, including examples, in
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Alert resource of the log module, including examples, in
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Alert resource of the log module, including examples, in
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Alert resource of the log module, including examples, in
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Alert Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert displayname.
-{{% /md %}}</dd>
+    <dd>Alert displayname.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of logstore for configuring alarm service.
-{{% /md %}}</dd>
+    <dd>Name of logstore for configuring alarm service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -218,8 +218,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Conditional expression, such as: count> 100.
-{{% /md %}}</dd>
+    <dd>Conditional expression, such as: count> 100.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -227,7 +227,7 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -235,8 +235,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertnotificationlist">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Log.<wbr>Inputs.<wbr>Alert<wbr>Notification<wbr>List<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Alarm information notification list.
-{{% /md %}}</dd>
+    <dd>Alarm information notification list.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -244,8 +244,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project name.
-{{% /md %}}</dd>
+    <dd>The project name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -253,8 +253,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertquerylist">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Log.<wbr>Inputs.<wbr>Alert<wbr>Query<wbr>List<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Multiple conditions for configured alarm query.
-{{% /md %}}</dd>
+    <dd>Multiple conditions for configured alarm query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,8 +262,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert description.
-{{% /md %}}</dd>
+    <dd>Alert description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Timestamp, notifications before closing again.
-{{% /md %}}</dd>
+    <dd>Timestamp, notifications before closing again.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,8 +280,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
-{{% /md %}}</dd>
+    <dd>Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,8 +289,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Execution interval. 60 seconds minimum, such as 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Execution interval. 60 seconds minimum, such as 60s, 1h.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,8 +298,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Default FixedRate. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>Default FixedRate. No need to configure this parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,14 +307,14 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -323,8 +323,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert displayname.
-{{% /md %}}</dd>
+    <dd>Alert displayname.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -332,8 +332,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of logstore for configuring alarm service.
-{{% /md %}}</dd>
+    <dd>Name of logstore for configuring alarm service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -341,8 +341,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Conditional expression, such as: count> 100.
-{{% /md %}}</dd>
+    <dd>Conditional expression, such as: count> 100.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -350,7 +350,7 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -358,8 +358,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertnotificationlist">[]Alert<wbr>Notification<wbr>List</a></span>
     </dt>
-    <dd>{{% md %}}Alarm information notification list.
-{{% /md %}}</dd>
+    <dd>Alarm information notification list.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -367,8 +367,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project name.
-{{% /md %}}</dd>
+    <dd>The project name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -376,8 +376,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertquerylist">[]Alert<wbr>Query<wbr>List</a></span>
     </dt>
-    <dd>{{% md %}}Multiple conditions for configured alarm query.
-{{% /md %}}</dd>
+    <dd>Multiple conditions for configured alarm query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert description.
-{{% /md %}}</dd>
+    <dd>Alert description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,8 +394,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Timestamp, notifications before closing again.
-{{% /md %}}</dd>
+    <dd>Timestamp, notifications before closing again.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,8 +403,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
-{{% /md %}}</dd>
+    <dd>Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,8 +412,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Execution interval. 60 seconds minimum, such as 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Execution interval. 60 seconds minimum, such as 60s, 1h.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -421,8 +421,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default FixedRate. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>Default FixedRate. No need to configure this parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,14 +430,14 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -446,8 +446,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert displayname.
-{{% /md %}}</dd>
+    <dd>Alert displayname.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -455,8 +455,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of logstore for configuring alarm service.
-{{% /md %}}</dd>
+    <dd>Name of logstore for configuring alarm service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -464,8 +464,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Conditional expression, such as: count> 100.
-{{% /md %}}</dd>
+    <dd>Conditional expression, such as: count> 100.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -473,7 +473,7 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -481,8 +481,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertnotificationlist">Alert<wbr>Notification<wbr>List[]</a></span>
     </dt>
-    <dd>{{% md %}}Alarm information notification list.
-{{% /md %}}</dd>
+    <dd>Alarm information notification list.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -490,8 +490,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project name.
-{{% /md %}}</dd>
+    <dd>The project name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -499,8 +499,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertquerylist">Alert<wbr>Query<wbr>List[]</a></span>
     </dt>
-    <dd>{{% md %}}Multiple conditions for configured alarm query.
-{{% /md %}}</dd>
+    <dd>Multiple conditions for configured alarm query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert description.
-{{% /md %}}</dd>
+    <dd>Alert description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Timestamp, notifications before closing again.
-{{% /md %}}</dd>
+    <dd>Timestamp, notifications before closing again.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
-{{% /md %}}</dd>
+    <dd>Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Execution interval. 60 seconds minimum, such as 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Execution interval. 60 seconds minimum, such as 60s, 1h.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default FixedRate. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>Default FixedRate. No need to configure this parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,14 +553,14 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -569,8 +569,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alert displayname.
-{{% /md %}}</dd>
+    <dd>Alert displayname.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -578,8 +578,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of logstore for configuring alarm service.
-{{% /md %}}</dd>
+    <dd>Name of logstore for configuring alarm service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -587,8 +587,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Conditional expression, such as: count> 100.
-{{% /md %}}</dd>
+    <dd>Conditional expression, such as: count> 100.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -596,7 +596,7 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -604,8 +604,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertnotificationlist">List[Alert<wbr>Notification<wbr>List]</a></span>
     </dt>
-    <dd>{{% md %}}Alarm information notification list.
-{{% /md %}}</dd>
+    <dd>Alarm information notification list.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -613,8 +613,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project name.
-{{% /md %}}</dd>
+    <dd>The project name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -622,8 +622,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertquerylist">List[Alert<wbr>Query<wbr>List]</a></span>
     </dt>
-    <dd>{{% md %}}Multiple conditions for configured alarm query.
-{{% /md %}}</dd>
+    <dd>Multiple conditions for configured alarm query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,8 +631,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alert description.
-{{% /md %}}</dd>
+    <dd>Alert description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -640,8 +640,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Timestamp, notifications before closing again.
-{{% /md %}}</dd>
+    <dd>Timestamp, notifications before closing again.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,8 +649,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
-{{% /md %}}</dd>
+    <dd>Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,8 +658,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Execution interval. 60 seconds minimum, such as 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Execution interval. 60 seconds minimum, such as 60s, 1h.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -667,8 +667,8 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Default FixedRate. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>Default FixedRate. No need to configure this parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -676,11 +676,11 @@ The Alert resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -694,7 +694,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -703,13 +703,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -718,13 +718,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -733,13 +733,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -748,10 +748,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -762,25 +762,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Alert Resource {#look-up}
 
 Get an existing Alert resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/log/#AlertState">AlertState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/log/#Alert">Alert</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>alert_description=None<span class="p">, </span>alert_displayname=None<span class="p">, </span>alert_name=None<span class="p">, </span>condition=None<span class="p">, </span>dashboard=None<span class="p">, </span>mute_until=None<span class="p">, </span>notification_lists=None<span class="p">, </span>notify_threshold=None<span class="p">, </span>project_name=None<span class="p">, </span>query_lists=None<span class="p">, </span>schedule_interval=None<span class="p">, </span>schedule_type=None<span class="p">, </span>throttling=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAlert<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/log?tab=doc#AlertState">AlertState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/log?tab=doc#Alert">Alert</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Log.Alert.html">Alert</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Log.AlertState.html">AlertState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -805,9 +805,9 @@ Get an existing Alert resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -820,36 +820,9 @@ Get an existing Alert resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -874,13 +847,40 @@ Get an existing Alert resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -889,8 +889,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert description.
-{{% /md %}}</dd>
+    <dd>Alert description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,8 +898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert displayname.
-{{% /md %}}</dd>
+    <dd>Alert displayname.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,8 +907,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of logstore for configuring alarm service.
-{{% /md %}}</dd>
+    <dd>Name of logstore for configuring alarm service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -916,8 +916,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Conditional expression, such as: count> 100.
-{{% /md %}}</dd>
+    <dd>Conditional expression, such as: count> 100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -925,7 +925,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,8 +933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Timestamp, notifications before closing again.
-{{% /md %}}</dd>
+    <dd>Timestamp, notifications before closing again.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertnotificationlist">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Log.<wbr>Inputs.<wbr>Alert<wbr>Notification<wbr>List<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Alarm information notification list.
-{{% /md %}}</dd>
+    <dd>Alarm information notification list.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,8 +951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
-{{% /md %}}</dd>
+    <dd>Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,8 +960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project name.
-{{% /md %}}</dd>
+    <dd>The project name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -969,8 +969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertquerylist">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Log.<wbr>Inputs.<wbr>Alert<wbr>Query<wbr>List<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Multiple conditions for configured alarm query.
-{{% /md %}}</dd>
+    <dd>Multiple conditions for configured alarm query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,8 +978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Execution interval. 60 seconds minimum, such as 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Execution interval. 60 seconds minimum, such as 60s, 1h.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,8 +987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Default FixedRate. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>Default FixedRate. No need to configure this parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,14 +996,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1012,8 +1012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert description.
-{{% /md %}}</dd>
+    <dd>Alert description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,8 +1021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert displayname.
-{{% /md %}}</dd>
+    <dd>Alert displayname.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of logstore for configuring alarm service.
-{{% /md %}}</dd>
+    <dd>Name of logstore for configuring alarm service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,8 +1039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Conditional expression, such as: count> 100.
-{{% /md %}}</dd>
+    <dd>Conditional expression, such as: count> 100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,7 +1048,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1056,8 +1056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Timestamp, notifications before closing again.
-{{% /md %}}</dd>
+    <dd>Timestamp, notifications before closing again.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1065,8 +1065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertnotificationlist">[]Alert<wbr>Notification<wbr>List</a></span>
     </dt>
-    <dd>{{% md %}}Alarm information notification list.
-{{% /md %}}</dd>
+    <dd>Alarm information notification list.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1074,8 +1074,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
-{{% /md %}}</dd>
+    <dd>Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,8 +1083,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project name.
-{{% /md %}}</dd>
+    <dd>The project name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1092,8 +1092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertquerylist">[]Alert<wbr>Query<wbr>List</a></span>
     </dt>
-    <dd>{{% md %}}Multiple conditions for configured alarm query.
-{{% /md %}}</dd>
+    <dd>Multiple conditions for configured alarm query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1101,8 +1101,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Execution interval. 60 seconds minimum, such as 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Execution interval. 60 seconds minimum, such as 60s, 1h.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,8 +1110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default FixedRate. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>Default FixedRate. No need to configure this parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,14 +1119,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1135,8 +1135,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert description.
-{{% /md %}}</dd>
+    <dd>Alert description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,8 +1144,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alert displayname.
-{{% /md %}}</dd>
+    <dd>Alert displayname.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,8 +1153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of logstore for configuring alarm service.
-{{% /md %}}</dd>
+    <dd>Name of logstore for configuring alarm service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1162,8 +1162,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Conditional expression, such as: count> 100.
-{{% /md %}}</dd>
+    <dd>Conditional expression, such as: count> 100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1171,7 +1171,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,8 +1179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Timestamp, notifications before closing again.
-{{% /md %}}</dd>
+    <dd>Timestamp, notifications before closing again.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,8 +1188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertnotificationlist">Alert<wbr>Notification<wbr>List[]</a></span>
     </dt>
-    <dd>{{% md %}}Alarm information notification list.
-{{% /md %}}</dd>
+    <dd>Alarm information notification list.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1197,8 +1197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
-{{% /md %}}</dd>
+    <dd>Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1206,8 +1206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project name.
-{{% /md %}}</dd>
+    <dd>The project name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,8 +1215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertquerylist">Alert<wbr>Query<wbr>List[]</a></span>
     </dt>
-    <dd>{{% md %}}Multiple conditions for configured alarm query.
-{{% /md %}}</dd>
+    <dd>Multiple conditions for configured alarm query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,8 +1224,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Execution interval. 60 seconds minimum, such as 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Execution interval. 60 seconds minimum, such as 60s, 1h.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,8 +1233,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default FixedRate. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>Default FixedRate. No need to configure this parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1242,14 +1242,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1258,8 +1258,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alert description.
-{{% /md %}}</dd>
+    <dd>Alert description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,8 +1267,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alert displayname.
-{{% /md %}}</dd>
+    <dd>Alert displayname.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,8 +1276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of logstore for configuring alarm service.
-{{% /md %}}</dd>
+    <dd>Name of logstore for configuring alarm service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,8 +1285,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Conditional expression, such as: count> 100.
-{{% /md %}}</dd>
+    <dd>Conditional expression, such as: count> 100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,7 +1294,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1302,8 +1302,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Timestamp, notifications before closing again.
-{{% /md %}}</dd>
+    <dd>Timestamp, notifications before closing again.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,8 +1311,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertnotificationlist">List[Alert<wbr>Notification<wbr>List]</a></span>
     </dt>
-    <dd>{{% md %}}Alarm information notification list.
-{{% /md %}}</dd>
+    <dd>Alarm information notification list.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1320,8 +1320,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
-{{% /md %}}</dd>
+    <dd>Notification threshold, which is not notified until the number of triggers is reached. The default is 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1329,8 +1329,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project name.
-{{% /md %}}</dd>
+    <dd>The project name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1338,8 +1338,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#alertquerylist">List[Alert<wbr>Query<wbr>List]</a></span>
     </dt>
-    <dd>{{% md %}}Multiple conditions for configured alarm query.
-{{% /md %}}</dd>
+    <dd>Multiple conditions for configured alarm query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1347,8 +1347,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Execution interval. 60 seconds minimum, such as 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Execution interval. 60 seconds minimum, such as 60s, 1h.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1356,8 +1356,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Default FixedRate. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>Default FixedRate. No need to configure this parameter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1365,11 +1365,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
-{{% /md %}}</dd>
+    <dd>Notification interval, default is no interval. Support number + unit type, for example 60s, 1h.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1384,18 +1384,18 @@ The following state arguments are supported:
 
 
 <h4 id="alertnotificationlist">Alert<wbr>Notification<wbr>List</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#AlertNotificationList">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#AlertNotificationList">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/log?tab=doc#AlertNotificationListArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/log?tab=doc#AlertNotificationListOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1404,8 +1404,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Notice content of alarm.
-{{% /md %}}</dd>
+    <dd>Notice content of alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1413,8 +1413,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Notification type. support Email, SMS, DingTalk.
-{{% /md %}}</dd>
+    <dd>Notification type. support Email, SMS, DingTalk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1422,8 +1422,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Email address list.   
-{{% /md %}}</dd>
+    <dd>Email address list.   
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1431,8 +1431,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}SMS sending mobile number.
-{{% /md %}}</dd>
+    <dd>SMS sending mobile number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1440,14 +1440,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Request address.
-{{% /md %}}</dd>
+    <dd>Request address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1456,8 +1456,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Notice content of alarm.
-{{% /md %}}</dd>
+    <dd>Notice content of alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1465,8 +1465,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Notification type. support Email, SMS, DingTalk.
-{{% /md %}}</dd>
+    <dd>Notification type. support Email, SMS, DingTalk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1474,8 +1474,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Email address list.   
-{{% /md %}}</dd>
+    <dd>Email address list.   
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1483,8 +1483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}SMS sending mobile number.
-{{% /md %}}</dd>
+    <dd>SMS sending mobile number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,14 +1492,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Request address.
-{{% /md %}}</dd>
+    <dd>Request address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1508,8 +1508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Notice content of alarm.
-{{% /md %}}</dd>
+    <dd>Notice content of alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1517,8 +1517,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Notification type. support Email, SMS, DingTalk.
-{{% /md %}}</dd>
+    <dd>Notification type. support Email, SMS, DingTalk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1526,8 +1526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Email address list.   
-{{% /md %}}</dd>
+    <dd>Email address list.   
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1535,8 +1535,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}SMS sending mobile number.
-{{% /md %}}</dd>
+    <dd>SMS sending mobile number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1544,14 +1544,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Request address.
-{{% /md %}}</dd>
+    <dd>Request address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1560,8 +1560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Notice content of alarm.
-{{% /md %}}</dd>
+    <dd>Notice content of alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1569,8 +1569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Notification type. support Email, SMS, DingTalk.
-{{% /md %}}</dd>
+    <dd>Notification type. support Email, SMS, DingTalk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1578,8 +1578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Email address list.   
-{{% /md %}}</dd>
+    <dd>Email address list.   
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1587,8 +1587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}SMS sending mobile number.
-{{% /md %}}</dd>
+    <dd>SMS sending mobile number.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,29 +1596,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Request address.
-{{% /md %}}</dd>
+    <dd>Request address.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="alertquerylist">Alert<wbr>Query<wbr>List</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#AlertQueryList">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#AlertQueryList">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/log?tab=doc#AlertQueryListArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/log?tab=doc#AlertQueryListOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1627,8 +1627,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}chart title
-{{% /md %}}</dd>
+    <dd>chart title
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1636,8 +1636,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}end time. example: 20s.
-{{% /md %}}</dd>
+    <dd>end time. example: 20s.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1645,8 +1645,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Query logstore
-{{% /md %}}</dd>
+    <dd>Query logstore
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1654,8 +1654,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}query corresponding to chart. example: * AND aliyun.
-{{% /md %}}</dd>
+    <dd>query corresponding to chart. example: * AND aliyun.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1663,8 +1663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}begin time. example: -60s.
-{{% /md %}}</dd>
+    <dd>begin time. example: -60s.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1672,14 +1672,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}default Custom. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>default Custom. No need to configure this parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1688,8 +1688,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}chart title
-{{% /md %}}</dd>
+    <dd>chart title
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1697,8 +1697,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}end time. example: 20s.
-{{% /md %}}</dd>
+    <dd>end time. example: 20s.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1706,8 +1706,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Query logstore
-{{% /md %}}</dd>
+    <dd>Query logstore
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1715,8 +1715,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}query corresponding to chart. example: * AND aliyun.
-{{% /md %}}</dd>
+    <dd>query corresponding to chart. example: * AND aliyun.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1724,8 +1724,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}begin time. example: -60s.
-{{% /md %}}</dd>
+    <dd>begin time. example: -60s.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,14 +1733,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}default Custom. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>default Custom. No need to configure this parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1749,8 +1749,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}chart title
-{{% /md %}}</dd>
+    <dd>chart title
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1758,8 +1758,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}end time. example: 20s.
-{{% /md %}}</dd>
+    <dd>end time. example: 20s.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1767,8 +1767,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Query logstore
-{{% /md %}}</dd>
+    <dd>Query logstore
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1776,8 +1776,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}query corresponding to chart. example: * AND aliyun.
-{{% /md %}}</dd>
+    <dd>query corresponding to chart. example: * AND aliyun.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1785,8 +1785,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}begin time. example: -60s.
-{{% /md %}}</dd>
+    <dd>begin time. example: -60s.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,14 +1794,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}default Custom. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>default Custom. No need to configure this parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1810,8 +1810,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}chart title
-{{% /md %}}</dd>
+    <dd>chart title
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1819,8 +1819,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}end time. example: 20s.
-{{% /md %}}</dd>
+    <dd>end time. example: 20s.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1828,8 +1828,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Query logstore
-{{% /md %}}</dd>
+    <dd>Query logstore
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1837,8 +1837,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}query corresponding to chart. example: * AND aliyun.
-{{% /md %}}</dd>
+    <dd>query corresponding to chart. example: * AND aliyun.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1846,8 +1846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}begin time. example: -60s.
-{{% /md %}}</dd>
+    <dd>begin time. example: -60s.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,11 +1855,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}default Custom. No need to configure this parameter.
-{{% /md %}}</dd>
+    <dd>default Custom. No need to configure this parameter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

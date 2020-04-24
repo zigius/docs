@@ -29,26 +29,26 @@ Once IP block is allocated or imported, an address from it can be assigned to de
 
 
 ## Create a ReservedIpBlock Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/packet/#ReservedIpBlock">ReservedIpBlock</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/packet/#ReservedIpBlockArgs">ReservedIpBlockArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ReservedIpBlock</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>description=None<span class="p">, </span>facility=None<span class="p">, </span>project_id=None<span class="p">, </span>quantity=None<span class="p">, </span>type=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewReservedIpBlock<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-packet/sdk/v2/go/packet/?tab=doc#ReservedIpBlockArgs">ReservedIpBlockArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-packet/sdk/v2/go/packet/?tab=doc#ReservedIpBlock">ReservedIpBlock</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Packet/Pulumi.Packet.ReservedIpBlock.html">ReservedIpBlock</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Packet/Pulumi.Packet.ReservedIpBlockArgs.html">ReservedIpBlockArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -85,9 +85,9 @@ Once IP block is allocated or imported, an address from it can be assigned to de
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -105,9 +105,9 @@ Once IP block is allocated or imported, an address from it can be assigned to de
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -154,9 +154,9 @@ Once IP block is allocated or imported, an address from it can be assigned to de
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -193,7 +193,7 @@ Once IP block is allocated or imported, an address from it can be assigned to de
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ReservedIpBlock Resource Properties {#properties}
 
@@ -206,7 +206,7 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -215,8 +215,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The packet project ID where to allocate the address block
-{{% /md %}}</dd>
+    <dd>The packet project ID where to allocate the address block
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -224,8 +224,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of allocated /32 addresses, a power of 2
-{{% /md %}}</dd>
+    <dd>The number of allocated /32 addresses, a power of 2
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary description
-{{% /md %}}</dd>
+    <dd>Arbitrary description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
-{{% /md %}}</dd>
+    <dd>Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,14 +251,14 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
-{{% /md %}}</dd>
+    <dd>Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -267,8 +267,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The packet project ID where to allocate the address block
-{{% /md %}}</dd>
+    <dd>The packet project ID where to allocate the address block
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -276,8 +276,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of allocated /32 addresses, a power of 2
-{{% /md %}}</dd>
+    <dd>The number of allocated /32 addresses, a power of 2
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary description
-{{% /md %}}</dd>
+    <dd>Arbitrary description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
-{{% /md %}}</dd>
+    <dd>Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,14 +303,14 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
-{{% /md %}}</dd>
+    <dd>Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -319,8 +319,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The packet project ID where to allocate the address block
-{{% /md %}}</dd>
+    <dd>The packet project ID where to allocate the address block
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -328,8 +328,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of allocated /32 addresses, a power of 2
-{{% /md %}}</dd>
+    <dd>The number of allocated /32 addresses, a power of 2
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary description
-{{% /md %}}</dd>
+    <dd>Arbitrary description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Facility</span>
     </dt>
-    <dd>{{% md %}}Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
-{{% /md %}}</dd>
+    <dd>Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,14 +355,14 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Ip<wbr>Block<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
-{{% /md %}}</dd>
+    <dd>Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -371,8 +371,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The packet project ID where to allocate the address block
-{{% /md %}}</dd>
+    <dd>The packet project ID where to allocate the address block
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -380,8 +380,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of allocated /32 addresses, a power of 2
-{{% /md %}}</dd>
+    <dd>The number of allocated /32 addresses, a power of 2
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary description
-{{% /md %}}</dd>
+    <dd>Arbitrary description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
-{{% /md %}}</dd>
+    <dd>Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,11 +407,11 @@ The ReservedIpBlock resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
-{{% /md %}}</dd>
+    <dd>Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -425,7 +425,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -434,7 +434,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -442,8 +442,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Address family as integer (4 or 6)
-{{% /md %}}</dd>
+    <dd>Address family as integer (4 or 6)
+</dd>
 
     <dt class="property-"
             title="">
@@ -451,8 +451,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}length of CIDR prefix of the block as integer
-{{% /md %}}</dd>
+    <dd>length of CIDR prefix of the block as integer
+</dd>
 
     <dt class="property-"
             title="">
@@ -460,8 +460,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Address and mask in CIDR notation, e.g. "147.229.15.30/31"
-{{% /md %}}</dd>
+    <dd>Address and mask in CIDR notation, e.g. "147.229.15.30/31"
+</dd>
 
     <dt class="property-"
             title="">
@@ -469,7 +469,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -477,8 +477,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
+</dd>
 
     <dt class="property-"
             title="">
@@ -486,7 +486,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -494,7 +494,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -502,7 +502,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -510,8 +510,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Mask in decimal notation, e.g. "255.255.255.0"
-{{% /md %}}</dd>
+    <dd>Mask in decimal notation, e.g. "255.255.255.0"
+</dd>
 
     <dt class="property-"
             title="">
@@ -519,8 +519,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address portion of the block specification
-{{% /md %}}</dd>
+    <dd>Network IP address portion of the block specification
+</dd>
 
     <dt class="property-"
             title="">
@@ -528,14 +528,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are public
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are public
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -544,7 +544,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -552,8 +552,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Address family as integer (4 or 6)
-{{% /md %}}</dd>
+    <dd>Address family as integer (4 or 6)
+</dd>
 
     <dt class="property-"
             title="">
@@ -561,8 +561,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}length of CIDR prefix of the block as integer
-{{% /md %}}</dd>
+    <dd>length of CIDR prefix of the block as integer
+</dd>
 
     <dt class="property-"
             title="">
@@ -570,8 +570,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Address and mask in CIDR notation, e.g. "147.229.15.30/31"
-{{% /md %}}</dd>
+    <dd>Address and mask in CIDR notation, e.g. "147.229.15.30/31"
+</dd>
 
     <dt class="property-"
             title="">
@@ -579,7 +579,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -587,8 +587,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
+</dd>
 
     <dt class="property-"
             title="">
@@ -596,7 +596,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -604,7 +604,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -612,7 +612,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -620,8 +620,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Mask in decimal notation, e.g. "255.255.255.0"
-{{% /md %}}</dd>
+    <dd>Mask in decimal notation, e.g. "255.255.255.0"
+</dd>
 
     <dt class="property-"
             title="">
@@ -629,8 +629,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address portion of the block specification
-{{% /md %}}</dd>
+    <dd>Network IP address portion of the block specification
+</dd>
 
     <dt class="property-"
             title="">
@@ -638,14 +638,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are public
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are public
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -654,7 +654,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -662,8 +662,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Address family as integer (4 or 6)
-{{% /md %}}</dd>
+    <dd>Address family as integer (4 or 6)
+</dd>
 
     <dt class="property-"
             title="">
@@ -671,8 +671,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}length of CIDR prefix of the block as integer
-{{% /md %}}</dd>
+    <dd>length of CIDR prefix of the block as integer
+</dd>
 
     <dt class="property-"
             title="">
@@ -680,8 +680,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Address and mask in CIDR notation, e.g. "147.229.15.30/31"
-{{% /md %}}</dd>
+    <dd>Address and mask in CIDR notation, e.g. "147.229.15.30/31"
+</dd>
 
     <dt class="property-"
             title="">
@@ -689,7 +689,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -697,8 +697,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
+</dd>
 
     <dt class="property-"
             title="">
@@ -706,7 +706,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -714,7 +714,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -722,7 +722,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -730,8 +730,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Mask in decimal notation, e.g. "255.255.255.0"
-{{% /md %}}</dd>
+    <dd>Mask in decimal notation, e.g. "255.255.255.0"
+</dd>
 
     <dt class="property-"
             title="">
@@ -739,8 +739,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address portion of the block specification
-{{% /md %}}</dd>
+    <dd>Network IP address portion of the block specification
+</dd>
 
     <dt class="property-"
             title="">
@@ -748,14 +748,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are public
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are public
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -764,7 +764,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -772,8 +772,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Address family as integer (4 or 6)
-{{% /md %}}</dd>
+    <dd>Address family as integer (4 or 6)
+</dd>
 
     <dt class="property-"
             title="">
@@ -781,8 +781,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}length of CIDR prefix of the block as integer
-{{% /md %}}</dd>
+    <dd>length of CIDR prefix of the block as integer
+</dd>
 
     <dt class="property-"
             title="">
@@ -790,8 +790,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Address and mask in CIDR notation, e.g. "147.229.15.30/31"
-{{% /md %}}</dd>
+    <dd>Address and mask in CIDR notation, e.g. "147.229.15.30/31"
+</dd>
 
     <dt class="property-"
             title="">
@@ -799,7 +799,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -807,8 +807,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
+</dd>
 
     <dt class="property-"
             title="">
@@ -816,7 +816,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -824,7 +824,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -832,7 +832,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -840,8 +840,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Mask in decimal notation, e.g. "255.255.255.0"
-{{% /md %}}</dd>
+    <dd>Mask in decimal notation, e.g. "255.255.255.0"
+</dd>
 
     <dt class="property-"
             title="">
@@ -849,8 +849,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address portion of the block specification
-{{% /md %}}</dd>
+    <dd>Network IP address portion of the block specification
+</dd>
 
     <dt class="property-"
             title="">
@@ -858,11 +858,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are public
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are public
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -873,25 +873,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ReservedIpBlock Resource {#look-up}
 
 Get an existing ReservedIpBlock resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/packet/#ReservedIpBlockState">ReservedIpBlockState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/packet/#ReservedIpBlock">ReservedIpBlock</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>address=None<span class="p">, </span>address_family=None<span class="p">, </span>cidr=None<span class="p">, </span>cidr_notation=None<span class="p">, </span>description=None<span class="p">, </span>facility=None<span class="p">, </span>gateway=None<span class="p">, </span>global_=None<span class="p">, </span>manageable=None<span class="p">, </span>management=None<span class="p">, </span>netmask=None<span class="p">, </span>network=None<span class="p">, </span>project_id=None<span class="p">, </span>public=None<span class="p">, </span>quantity=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetReservedIpBlock<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-packet/sdk/v2/go/packet/?tab=doc#ReservedIpBlockState">ReservedIpBlockState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-packet/sdk/v2/go/packet/?tab=doc#ReservedIpBlock">ReservedIpBlock</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Packet/Pulumi.Packet.ReservedIpBlock.html">ReservedIpBlock</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Packet/Pulumi.Packet..ReservedIpBlockState.html">ReservedIpBlockState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -916,9 +916,9 @@ Get an existing ReservedIpBlock resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -931,36 +931,9 @@ Get an existing ReservedIpBlock resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -985,13 +958,40 @@ Get an existing ReservedIpBlock resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1000,7 +1000,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1008,8 +1008,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Address family as integer (4 or 6)
-{{% /md %}}</dd>
+    <dd>Address family as integer (4 or 6)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1017,8 +1017,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}length of CIDR prefix of the block as integer
-{{% /md %}}</dd>
+    <dd>length of CIDR prefix of the block as integer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,8 +1026,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Address and mask in CIDR notation, e.g. "147.229.15.30/31"
-{{% /md %}}</dd>
+    <dd>Address and mask in CIDR notation, e.g. "147.229.15.30/31"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary description
-{{% /md %}}</dd>
+    <dd>Arbitrary description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
-{{% /md %}}</dd>
+    <dd>Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,7 +1053,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1061,8 +1061,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1070,7 +1070,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,7 +1078,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1086,8 +1086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Mask in decimal notation, e.g. "255.255.255.0"
-{{% /md %}}</dd>
+    <dd>Mask in decimal notation, e.g. "255.255.255.0"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,8 +1095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address portion of the block specification
-{{% /md %}}</dd>
+    <dd>Network IP address portion of the block specification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1104,8 +1104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The packet project ID where to allocate the address block
-{{% /md %}}</dd>
+    <dd>The packet project ID where to allocate the address block
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1113,8 +1113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are public
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are public
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,8 +1122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of allocated /32 addresses, a power of 2
-{{% /md %}}</dd>
+    <dd>The number of allocated /32 addresses, a power of 2
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,14 +1131,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
-{{% /md %}}</dd>
+    <dd>Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1147,7 +1147,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Address family as integer (4 or 6)
-{{% /md %}}</dd>
+    <dd>Address family as integer (4 or 6)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,8 +1164,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}length of CIDR prefix of the block as integer
-{{% /md %}}</dd>
+    <dd>length of CIDR prefix of the block as integer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,8 +1173,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Address and mask in CIDR notation, e.g. "147.229.15.30/31"
-{{% /md %}}</dd>
+    <dd>Address and mask in CIDR notation, e.g. "147.229.15.30/31"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,8 +1182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary description
-{{% /md %}}</dd>
+    <dd>Arbitrary description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,8 +1191,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
-{{% /md %}}</dd>
+    <dd>Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,7 +1200,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,7 +1217,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,7 +1225,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,8 +1233,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Mask in decimal notation, e.g. "255.255.255.0"
-{{% /md %}}</dd>
+    <dd>Mask in decimal notation, e.g. "255.255.255.0"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1242,8 +1242,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address portion of the block specification
-{{% /md %}}</dd>
+    <dd>Network IP address portion of the block specification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1251,8 +1251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The packet project ID where to allocate the address block
-{{% /md %}}</dd>
+    <dd>The packet project ID where to allocate the address block
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are public
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are public
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of allocated /32 addresses, a power of 2
-{{% /md %}}</dd>
+    <dd>The number of allocated /32 addresses, a power of 2
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,14 +1278,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
-{{% /md %}}</dd>
+    <dd>Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1294,7 +1294,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1302,8 +1302,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Address family as integer (4 or 6)
-{{% /md %}}</dd>
+    <dd>Address family as integer (4 or 6)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,8 +1311,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}length of CIDR prefix of the block as integer
-{{% /md %}}</dd>
+    <dd>length of CIDR prefix of the block as integer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1320,8 +1320,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Address and mask in CIDR notation, e.g. "147.229.15.30/31"
-{{% /md %}}</dd>
+    <dd>Address and mask in CIDR notation, e.g. "147.229.15.30/31"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1329,8 +1329,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary description
-{{% /md %}}</dd>
+    <dd>Arbitrary description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1338,8 +1338,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Facility</span>
     </dt>
-    <dd>{{% md %}}Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
-{{% /md %}}</dd>
+    <dd>Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1347,7 +1347,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,8 +1355,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1364,7 +1364,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,7 +1372,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,8 +1380,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Mask in decimal notation, e.g. "255.255.255.0"
-{{% /md %}}</dd>
+    <dd>Mask in decimal notation, e.g. "255.255.255.0"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,8 +1389,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address portion of the block specification
-{{% /md %}}</dd>
+    <dd>Network IP address portion of the block specification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The packet project ID where to allocate the address block
-{{% /md %}}</dd>
+    <dd>The packet project ID where to allocate the address block
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,8 +1407,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are public
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are public
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1416,8 +1416,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of allocated /32 addresses, a power of 2
-{{% /md %}}</dd>
+    <dd>The number of allocated /32 addresses, a power of 2
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,14 +1425,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Ip<wbr>Block<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
-{{% /md %}}</dd>
+    <dd>Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1441,7 +1441,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1449,8 +1449,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Address family as integer (4 or 6)
-{{% /md %}}</dd>
+    <dd>Address family as integer (4 or 6)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1458,8 +1458,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}length of CIDR prefix of the block as integer
-{{% /md %}}</dd>
+    <dd>length of CIDR prefix of the block as integer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1467,8 +1467,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Address and mask in CIDR notation, e.g. "147.229.15.30/31"
-{{% /md %}}</dd>
+    <dd>Address and mask in CIDR notation, e.g. "147.229.15.30/31"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1476,8 +1476,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary description
-{{% /md %}}</dd>
+    <dd>Arbitrary description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1485,8 +1485,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
-{{% /md %}}</dd>
+    <dd>Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,7 +1494,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,8 +1502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are global (i.e. can be assigned in any facility)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,7 +1511,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,7 +1519,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1527,8 +1527,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Mask in decimal notation, e.g. "255.255.255.0"
-{{% /md %}}</dd>
+    <dd>Mask in decimal notation, e.g. "255.255.255.0"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1536,8 +1536,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Network IP address portion of the block specification
-{{% /md %}}</dd>
+    <dd>Network IP address portion of the block specification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,8 +1545,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The packet project ID where to allocate the address block
-{{% /md %}}</dd>
+    <dd>The packet project ID where to allocate the address block
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1554,8 +1554,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}boolean flag whether addresses from a block are public
-{{% /md %}}</dd>
+    <dd>boolean flag whether addresses from a block are public
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1563,8 +1563,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of allocated /32 addresses, a power of 2
-{{% /md %}}</dd>
+    <dd>The number of allocated /32 addresses, a power of 2
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1572,11 +1572,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
-{{% /md %}}</dd>
+    <dd>Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

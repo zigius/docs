@@ -44,11 +44,11 @@ Pulumi executes your program by loading the entrypoint file as a Node module: `r
 }
 ```
 
-{{< chooser language "javascript,typescript" >}}
+
 
 Your entrypoint can either return a module object with properties for each stack output:
 
-{{% choosable language "javascript" %}}
+
 
 ```javascript
 // create resources
@@ -56,9 +56,9 @@ Your entrypoint can either return a module object with properties for each stack
 exports.out = myResource.output;
 ```
 
-{{% /choosable %}}
 
-{{% choosable language "typescript" %}}
+
+
 
 ```typescript
 // create resources
@@ -66,12 +66,12 @@ exports.out = myResource.output;
 export const out = myResource.output;
 ```
 
-{{% /choosable %}}
+
 
 Or alternatively, your entrypoint can export a top level `async` function that returns an object with members for each stack output.
 Pulumi will automatically call this function and await the result:
 
-{{% choosable language "javascript" %}}
+
 
 ```javascript
 module.exports = async () => {
@@ -80,9 +80,9 @@ module.exports = async () => {
 }
 ```
 
-{{% /choosable %}}
 
-{{% choosable language "typescript" %}}
+
+
 
 ```typescript
 export = async () => {
@@ -91,9 +91,9 @@ export = async () => {
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 Most Pulumi programs use the first option, but programs that need to do async work at the top level (such as calling [`getOutputValue`]({{< relref "/docs/reference/pkg/nodejs/pulumi/pulumi#StackReference-getOutputValue" >}})) may find they want to use the second.
 

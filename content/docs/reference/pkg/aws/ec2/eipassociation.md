@@ -49,26 +49,26 @@ const eipAssoc = new aws.ec2.EipAssociation("eip_assoc", {
 
 
 ## Create a EipAssociation Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#EipAssociation">EipAssociation</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#EipAssociationArgs">EipAssociationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">EipAssociation</span><span class="p">(resource_name, opts=None, </span>allocation_id=None<span class="p">, </span>allow_reassociation=None<span class="p">, </span>instance_id=None<span class="p">, </span>network_interface_id=None<span class="p">, </span>private_ip_address=None<span class="p">, </span>public_ip=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewEipAssociation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#EipAssociationArgs">EipAssociationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#EipAssociation">EipAssociation</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.EipAssociation.html">EipAssociation</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.EipAssociationArgs.html">EipAssociationArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -105,9 +105,9 @@ const eipAssoc = new aws.ec2.EipAssociation("eip_assoc", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -125,9 +125,9 @@ const eipAssoc = new aws.ec2.EipAssociation("eip_assoc", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -174,9 +174,9 @@ const eipAssoc = new aws.ec2.EipAssociation("eip_assoc", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -213,7 +213,7 @@ const eipAssoc = new aws.ec2.EipAssociation("eip_assoc", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## EipAssociation Resource Properties {#properties}
 
@@ -226,7 +226,7 @@ The EipAssociation resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -235,8 +235,8 @@ The EipAssociation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The allocation ID. This is required for EC2-VPC.
-{{% /md %}}</dd>
+    <dd>The allocation ID. This is required for EC2-VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,9 +244,9 @@ The EipAssociation resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow an Elastic IP to
+    <dd>Whether to allow an Elastic IP to
 be re-associated. Defaults to `true` in VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,11 +254,11 @@ be re-associated. Defaults to `true` in VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance. This is required for
+    <dd>The ID of the instance. This is required for
 EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
 network interface ID, but not both. The operation fails if you specify an
 instance ID unless exactly one network interface is attached.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,10 +266,10 @@ instance ID unless exactly one network interface is attached.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface. If the
+    <dd>The ID of the network interface. If the
 instance has more than one network interface, you must specify a network
 interface ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,11 +277,11 @@ interface ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary or secondary private IP address
+    <dd>The primary or secondary private IP address
 to associate with the Elastic IP address. If no private IP address is
 specified, the Elastic IP address is associated with the primary private IP
 address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,14 +289,14 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address. This is required for EC2-Classic.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address. This is required for EC2-Classic.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -305,8 +305,8 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The allocation ID. This is required for EC2-VPC.
-{{% /md %}}</dd>
+    <dd>The allocation ID. This is required for EC2-VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,9 +314,9 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow an Elastic IP to
+    <dd>Whether to allow an Elastic IP to
 be re-associated. Defaults to `true` in VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,11 +324,11 @@ be re-associated. Defaults to `true` in VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance. This is required for
+    <dd>The ID of the instance. This is required for
 EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
 network interface ID, but not both. The operation fails if you specify an
 instance ID unless exactly one network interface is attached.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,10 +336,10 @@ instance ID unless exactly one network interface is attached.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface. If the
+    <dd>The ID of the network interface. If the
 instance has more than one network interface, you must specify a network
 interface ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,11 +347,11 @@ interface ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary or secondary private IP address
+    <dd>The primary or secondary private IP address
 to associate with the Elastic IP address. If no private IP address is
 specified, the Elastic IP address is associated with the primary private IP
 address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,14 +359,14 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address. This is required for EC2-Classic.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address. This is required for EC2-Classic.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -375,8 +375,8 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The allocation ID. This is required for EC2-VPC.
-{{% /md %}}</dd>
+    <dd>The allocation ID. This is required for EC2-VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,9 +384,9 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow an Elastic IP to
+    <dd>Whether to allow an Elastic IP to
 be re-associated. Defaults to `true` in VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,11 +394,11 @@ be re-associated. Defaults to `true` in VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance. This is required for
+    <dd>The ID of the instance. This is required for
 EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
 network interface ID, but not both. The operation fails if you specify an
 instance ID unless exactly one network interface is attached.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,10 +406,10 @@ instance ID unless exactly one network interface is attached.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface. If the
+    <dd>The ID of the network interface. If the
 instance has more than one network interface, you must specify a network
 interface ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,11 +417,11 @@ interface ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary or secondary private IP address
+    <dd>The primary or secondary private IP address
 to associate with the Elastic IP address. If no private IP address is
 specified, the Elastic IP address is associated with the primary private IP
 address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,14 +429,14 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address. This is required for EC2-Classic.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address. This is required for EC2-Classic.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -445,8 +445,8 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The allocation ID. This is required for EC2-VPC.
-{{% /md %}}</dd>
+    <dd>The allocation ID. This is required for EC2-VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,9 +454,9 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow an Elastic IP to
+    <dd>Whether to allow an Elastic IP to
 be re-associated. Defaults to `true` in VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,11 +464,11 @@ be re-associated. Defaults to `true` in VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance. This is required for
+    <dd>The ID of the instance. This is required for
 EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
 network interface ID, but not both. The operation fails if you specify an
 instance ID unless exactly one network interface is attached.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,10 +476,10 @@ instance ID unless exactly one network interface is attached.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface. If the
+    <dd>The ID of the network interface. If the
 instance has more than one network interface, you must specify a network
 interface ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,11 +487,11 @@ interface ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary or secondary private IP address
+    <dd>The primary or secondary private IP address
 to associate with the Elastic IP address. If no private IP address is
 specified, the Elastic IP address is associated with the primary private IP
 address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,11 +499,11 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address. This is required for EC2-Classic.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address. This is required for EC2-Classic.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -517,7 +517,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -526,13 +526,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -541,13 +541,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -556,13 +556,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -571,10 +571,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -585,25 +585,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing EipAssociation Resource {#look-up}
 
 Get an existing EipAssociation resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#EipAssociationState">EipAssociationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#EipAssociation">EipAssociation</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>allocation_id=None<span class="p">, </span>allow_reassociation=None<span class="p">, </span>instance_id=None<span class="p">, </span>network_interface_id=None<span class="p">, </span>private_ip_address=None<span class="p">, </span>public_ip=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetEipAssociation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#EipAssociationState">EipAssociationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#EipAssociation">EipAssociation</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.EipAssociation.html">EipAssociation</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.EipAssociationState.html">EipAssociationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -628,9 +628,9 @@ Get an existing EipAssociation resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -643,36 +643,9 @@ Get an existing EipAssociation resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -697,13 +670,40 @@ Get an existing EipAssociation resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -712,8 +712,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The allocation ID. This is required for EC2-VPC.
-{{% /md %}}</dd>
+    <dd>The allocation ID. This is required for EC2-VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,9 +721,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow an Elastic IP to
+    <dd>Whether to allow an Elastic IP to
 be re-associated. Defaults to `true` in VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,11 +731,11 @@ be re-associated. Defaults to `true` in VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance. This is required for
+    <dd>The ID of the instance. This is required for
 EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
 network interface ID, but not both. The operation fails if you specify an
 instance ID unless exactly one network interface is attached.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,10 +743,10 @@ instance ID unless exactly one network interface is attached.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface. If the
+    <dd>The ID of the network interface. If the
 instance has more than one network interface, you must specify a network
 interface ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -754,11 +754,11 @@ interface ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary or secondary private IP address
+    <dd>The primary or secondary private IP address
 to associate with the Elastic IP address. If no private IP address is
 specified, the Elastic IP address is associated with the primary private IP
 address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -766,14 +766,14 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address. This is required for EC2-Classic.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address. This is required for EC2-Classic.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -782,8 +782,8 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The allocation ID. This is required for EC2-VPC.
-{{% /md %}}</dd>
+    <dd>The allocation ID. This is required for EC2-VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -791,9 +791,9 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow an Elastic IP to
+    <dd>Whether to allow an Elastic IP to
 be re-associated. Defaults to `true` in VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,11 +801,11 @@ be re-associated. Defaults to `true` in VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance. This is required for
+    <dd>The ID of the instance. This is required for
 EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
 network interface ID, but not both. The operation fails if you specify an
 instance ID unless exactly one network interface is attached.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -813,10 +813,10 @@ instance ID unless exactly one network interface is attached.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface. If the
+    <dd>The ID of the network interface. If the
 instance has more than one network interface, you must specify a network
 interface ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -824,11 +824,11 @@ interface ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary or secondary private IP address
+    <dd>The primary or secondary private IP address
 to associate with the Elastic IP address. If no private IP address is
 specified, the Elastic IP address is associated with the primary private IP
 address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -836,14 +836,14 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address. This is required for EC2-Classic.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address. This is required for EC2-Classic.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -852,8 +852,8 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The allocation ID. This is required for EC2-VPC.
-{{% /md %}}</dd>
+    <dd>The allocation ID. This is required for EC2-VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,9 +861,9 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow an Elastic IP to
+    <dd>Whether to allow an Elastic IP to
 be re-associated. Defaults to `true` in VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,11 +871,11 @@ be re-associated. Defaults to `true` in VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance. This is required for
+    <dd>The ID of the instance. This is required for
 EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
 network interface ID, but not both. The operation fails if you specify an
 instance ID unless exactly one network interface is attached.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,10 +883,10 @@ instance ID unless exactly one network interface is attached.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface. If the
+    <dd>The ID of the network interface. If the
 instance has more than one network interface, you must specify a network
 interface ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -894,11 +894,11 @@ interface ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary or secondary private IP address
+    <dd>The primary or secondary private IP address
 to associate with the Elastic IP address. If no private IP address is
 specified, the Elastic IP address is associated with the primary private IP
 address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,14 +906,14 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address. This is required for EC2-Classic.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address. This is required for EC2-Classic.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -922,8 +922,8 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The allocation ID. This is required for EC2-VPC.
-{{% /md %}}</dd>
+    <dd>The allocation ID. This is required for EC2-VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,9 +931,9 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow an Elastic IP to
+    <dd>Whether to allow an Elastic IP to
 be re-associated. Defaults to `true` in VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,11 +941,11 @@ be re-associated. Defaults to `true` in VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance. This is required for
+    <dd>The ID of the instance. This is required for
 EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
 network interface ID, but not both. The operation fails if you specify an
 instance ID unless exactly one network interface is attached.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,10 +953,10 @@ instance ID unless exactly one network interface is attached.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface. If the
+    <dd>The ID of the network interface. If the
 instance has more than one network interface, you must specify a network
 interface ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -964,11 +964,11 @@ interface ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary or secondary private IP address
+    <dd>The primary or secondary private IP address
 to associate with the Elastic IP address. If no private IP address is
 specified, the Elastic IP address is associated with the primary private IP
 address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -976,11 +976,11 @@ address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address. This is required for EC2-Classic.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address. This is required for EC2-Classic.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

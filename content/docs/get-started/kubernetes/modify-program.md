@@ -16,9 +16,9 @@ Now that we have an instance of our Pulumi program deployed, let's update it to 
 
 Replace the entire contents of {{< langfile >}} with the following:
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 "use strict";
@@ -61,8 +61,8 @@ exports.ip = isMinikube
       );
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
@@ -104,8 +104,8 @@ export const ip = isMinikube
       );
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 """
@@ -158,8 +158,8 @@ else:
 pulumi.export("ip", result)
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 package main
@@ -250,8 +250,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using Pulumi;
@@ -348,7 +348,7 @@ class MyStack : Stack
 }
 ```
 
-{{% /choosable %}}
+
 
 Our program now creates a service to access the NGINX deployment, and requires a new [config]({{< relref "/docs/intro/concepts/config" >}}) value to indicate whether the program is being deployed to Minikube or not.
 

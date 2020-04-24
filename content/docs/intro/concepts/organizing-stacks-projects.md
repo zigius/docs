@@ -98,37 +98,37 @@ and testing. In that case, we'll have six distinct stacks, that pair up together
 The way Pulumi programs communicate information for external consumption is by using stack exports. For example,
 our infrastructure stack might export the Kubernetes configuration information needed to deploy into a cluster:
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 exports.kubeConfig = ... a cluster's output property ...;
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 export const kubeConfig = ... a cluster's output property ...;
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 pulumi.export("kubeConfig", ... a cluster's output property ...)
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 ctx.Export("kubeConfig", /*...a cluster's output property...*/)
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 class ClusterStack : Stack
@@ -144,18 +144,18 @@ class ClusterStack : Stack
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 The challenge here is that our services project needs to ingest this output during deployment so that it can
 connect to the Kubernetes cluster provisioned in its respective environment.
 
 The Pulumi programming model offers a way to do this with its `StackReference` resource type. For example:
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 const k8s = require("@pulumi/kubernetes");
@@ -166,8 +166,8 @@ const provider = new k8s.Provider("k8s", { kubeconfig: infra.getOutput("kubeConf
 const service = new k8s.core.v1.Service(..., { provider: provider });
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as k8s from "@pulumi/kubernetes";
@@ -178,8 +178,8 @@ const provider = new k8s.Provider("k8s", { kubeconfig: infra.getOutput("kubeConf
 const service = new k8s.core.v1.Service(..., { provider: provider });
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 from pulumi import get_stack, ResourceOptions, StackReference
@@ -191,8 +191,8 @@ provider = Provider("k8s", kubeconfig=infra.get_output("kubeConfig"))
 service = core.v1.Service(..., ResourceOptions(provider=provider))
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 import (
@@ -213,8 +213,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using Pulumi;
@@ -233,9 +233,9 @@ class AppStack : Stack
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 The `StackReference` constructor takes as input a string of the form `<organization>/<project>/<stack>`, and lets
 you access the outputs of that stack.

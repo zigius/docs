@@ -36,29 +36,29 @@ const mongo = pulumi.output(alicloud.mongodb.getInstances({
 
 ## Using GetInstances {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getInstances<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/mongodb/#GetInstancesArgs">GetInstancesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/mongodb/#GetInstancesResult">GetInstancesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_instances(</span>availability_zone=None<span class="p">, </span>ids=None<span class="p">, </span>instance_class=None<span class="p">, </span>instance_type=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupInstances<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/mongodb?tab=doc#LookupInstancesArgs">LookupInstancesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/mongodb?tab=doc#LookupInstancesResult">LookupInstancesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetInstances </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Mongodb.GetInstancesResult.html">GetInstancesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.MongoDB.GetInstancesArgs.html">GetInstancesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -66,7 +66,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -75,8 +75,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -84,8 +84,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The ids list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The ids list of MongoDB instances
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -93,8 +93,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the instance to be queried.
-{{% /md %}}</dd>
+    <dd>Sizing of the instance to be queried.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -102,8 +102,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
-{{% /md %}}</dd>
+    <dd>Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -111,8 +111,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to apply to the instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to apply to the instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -120,7 +120,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -128,14 +128,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -144,8 +144,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -153,8 +153,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The ids list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The ids list of MongoDB instances
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -162,8 +162,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the instance to be queried.
-{{% /md %}}</dd>
+    <dd>Sizing of the instance to be queried.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -171,8 +171,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
-{{% /md %}}</dd>
+    <dd>Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -180,8 +180,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to apply to the instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to apply to the instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -189,7 +189,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -197,14 +197,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -213,8 +213,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The ids list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The ids list of MongoDB instances
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the instance to be queried.
-{{% /md %}}</dd>
+    <dd>Sizing of the instance to be queried.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
-{{% /md %}}</dd>
+    <dd>Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to apply to the instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to apply to the instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,7 +258,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,14 +266,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -282,8 +282,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The ids list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The ids list of MongoDB instances
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the instance to be queried.
-{{% /md %}}</dd>
+    <dd>Sizing of the instance to be queried.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
-{{% /md %}}</dd>
+    <dd>Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,8 +318,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to apply to the instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to apply to the instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,7 +327,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,11 +335,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -355,7 +355,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -364,8 +364,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -373,8 +373,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The ids list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The ids list of MongoDB instances
+</dd>
 
     <dt class="property-"
             title="">
@@ -382,8 +382,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Mongo<wbr>DB.<wbr>Outputs.<wbr>Get<wbr>Instances<wbr>Instance&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of MongoDB instances. Its every element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of MongoDB instances. Its every element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -391,8 +391,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The names list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The names list of MongoDB instances
+</dd>
 
     <dt class="property-"
             title="">
@@ -400,8 +400,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -409,8 +409,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>Sizing of the MongoDB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -418,8 +418,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type. Optional values `sharding` or `replicate`.
-{{% /md %}}</dd>
+    <dd>Instance type. Optional values `sharding` or `replicate`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -427,7 +427,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -435,7 +435,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -443,13 +443,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -458,8 +458,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -467,8 +467,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The ids list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The ids list of MongoDB instances
+</dd>
 
     <dt class="property-"
             title="">
@@ -476,8 +476,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">[]Get<wbr>Instances<wbr>Instance</a></span>
     </dt>
-    <dd>{{% md %}}A list of MongoDB instances. Its every element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of MongoDB instances. Its every element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -485,8 +485,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The names list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The names list of MongoDB instances
+</dd>
 
     <dt class="property-"
             title="">
@@ -494,8 +494,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -503,8 +503,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>Sizing of the MongoDB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -512,8 +512,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type. Optional values `sharding` or `replicate`.
-{{% /md %}}</dd>
+    <dd>Instance type. Optional values `sharding` or `replicate`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -521,7 +521,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -529,7 +529,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -537,13 +537,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -552,8 +552,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -561,8 +561,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The ids list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The ids list of MongoDB instances
+</dd>
 
     <dt class="property-"
             title="">
@@ -570,8 +570,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">Get<wbr>Instances<wbr>Instance[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of MongoDB instances. Its every element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of MongoDB instances. Its every element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -579,8 +579,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The names list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The names list of MongoDB instances
+</dd>
 
     <dt class="property-"
             title="">
@@ -588,8 +588,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -597,8 +597,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>Sizing of the MongoDB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -606,8 +606,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type. Optional values `sharding` or `replicate`.
-{{% /md %}}</dd>
+    <dd>Instance type. Optional values `sharding` or `replicate`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -615,7 +615,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -623,7 +623,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -631,13 +631,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -646,8 +646,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -655,8 +655,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The ids list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The ids list of MongoDB instances
+</dd>
 
     <dt class="property-"
             title="">
@@ -664,8 +664,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">List[Get<wbr>Instances<wbr>Instance]</a></span>
     </dt>
-    <dd>{{% md %}}A list of MongoDB instances. Its every element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of MongoDB instances. Its every element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -673,8 +673,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The names list of MongoDB instances
-{{% /md %}}</dd>
+    <dd>The names list of MongoDB instances
+</dd>
 
     <dt class="property-"
             title="">
@@ -682,8 +682,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -691,8 +691,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>Sizing of the MongoDB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -700,8 +700,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance type. Optional values `sharding` or `replicate`.
-{{% /md %}}</dd>
+    <dd>Instance type. Optional values `sharding` or `replicate`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -709,7 +709,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -717,7 +717,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -725,10 +725,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -741,18 +741,18 @@ The following output properties are available:
 
 
 <h4 id="getinstancesinstance">Get<wbr>Instances<wbr>Instance</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstancesInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/mongodb?tab=doc#GetInstancesInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -761,8 +761,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -770,8 +770,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options are `PostPaid` for  Pay-As-You-Go and `PrePaid` for yearly or monthly subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options are `PostPaid` for  Pay-As-You-Go and `PrePaid` for yearly or monthly subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -779,8 +779,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the instance in RFC3339 format.
-{{% /md %}}</dd>
+    <dd>Creation time of the instance in RFC3339 format.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -788,8 +788,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database engine type. Supported option is `MongoDB`.
-{{% /md %}}</dd>
+    <dd>Database engine type. Supported option is `MongoDB`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -797,8 +797,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database engine version.
-{{% /md %}}</dd>
+    <dd>Database engine version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -806,8 +806,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time in RFC3339 format. Pay-As-You-Go instances are never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time in RFC3339 format. Pay-As-You-Go instances are never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -815,8 +815,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>The ID of the MongoDB instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -824,8 +824,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the instance to be queried.
-{{% /md %}}</dd>
+    <dd>Sizing of the instance to be queried.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -833,8 +833,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
-{{% /md %}}</dd>
+    <dd>Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -842,8 +842,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Lock status of the instance.
-{{% /md %}}</dd>
+    <dd>Lock status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -851,8 +851,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstancemongo">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Mongo<wbr>DB.<wbr>Inputs.<wbr>Get<wbr>Instances<wbr>Instance<wbr>Mongo<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Array composed of Mongos.
-{{% /md %}}</dd>
+    <dd>Array composed of Mongos.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -860,8 +860,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>The name of the MongoDB instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -869,8 +869,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Classic network or VPC.
-{{% /md %}}</dd>
+    <dd>Classic network or VPC.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -878,8 +878,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -887,8 +887,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Replication factor corresponds to number of nodes. Optional values are `1` for single node and `3` for three nodes replica set.
-{{% /md %}}</dd>
+    <dd>Replication factor corresponds to number of nodes. Optional values are `1` for single node and `3` for three nodes replica set.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -896,8 +896,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstanceshard">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Mongo<wbr>DB.<wbr>Inputs.<wbr>Get<wbr>Instances<wbr>Instance<wbr>Shard<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Array composed of shards.
-{{% /md %}}</dd>
+    <dd>Array composed of shards.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -905,8 +905,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -914,8 +914,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Shard disk.
-{{% /md %}}</dd>
+    <dd>Shard disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -923,14 +923,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -939,8 +939,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -948,8 +948,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options are `PostPaid` for  Pay-As-You-Go and `PrePaid` for yearly or monthly subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options are `PostPaid` for  Pay-As-You-Go and `PrePaid` for yearly or monthly subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -957,8 +957,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the instance in RFC3339 format.
-{{% /md %}}</dd>
+    <dd>Creation time of the instance in RFC3339 format.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -966,8 +966,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database engine type. Supported option is `MongoDB`.
-{{% /md %}}</dd>
+    <dd>Database engine type. Supported option is `MongoDB`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -975,8 +975,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database engine version.
-{{% /md %}}</dd>
+    <dd>Database engine version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -984,8 +984,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time in RFC3339 format. Pay-As-You-Go instances are never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time in RFC3339 format. Pay-As-You-Go instances are never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -993,8 +993,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>The ID of the MongoDB instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1002,8 +1002,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the instance to be queried.
-{{% /md %}}</dd>
+    <dd>Sizing of the instance to be queried.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1011,8 +1011,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
-{{% /md %}}</dd>
+    <dd>Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1020,8 +1020,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Lock status of the instance.
-{{% /md %}}</dd>
+    <dd>Lock status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1029,8 +1029,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstancemongo">[]Get<wbr>Instances<wbr>Instance<wbr>Mongo</a></span>
     </dt>
-    <dd>{{% md %}}Array composed of Mongos.
-{{% /md %}}</dd>
+    <dd>Array composed of Mongos.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1038,8 +1038,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>The name of the MongoDB instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1047,8 +1047,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Classic network or VPC.
-{{% /md %}}</dd>
+    <dd>Classic network or VPC.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1056,8 +1056,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1065,8 +1065,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Replication factor corresponds to number of nodes. Optional values are `1` for single node and `3` for three nodes replica set.
-{{% /md %}}</dd>
+    <dd>Replication factor corresponds to number of nodes. Optional values are `1` for single node and `3` for three nodes replica set.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1074,8 +1074,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstanceshard">[]Get<wbr>Instances<wbr>Instance<wbr>Shard</a></span>
     </dt>
-    <dd>{{% md %}}Array composed of shards.
-{{% /md %}}</dd>
+    <dd>Array composed of shards.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1083,8 +1083,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1092,8 +1092,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Shard disk.
-{{% /md %}}</dd>
+    <dd>Shard disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1101,14 +1101,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1117,8 +1117,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1126,8 +1126,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options are `PostPaid` for  Pay-As-You-Go and `PrePaid` for yearly or monthly subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options are `PostPaid` for  Pay-As-You-Go and `PrePaid` for yearly or monthly subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1135,8 +1135,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the instance in RFC3339 format.
-{{% /md %}}</dd>
+    <dd>Creation time of the instance in RFC3339 format.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1144,8 +1144,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database engine type. Supported option is `MongoDB`.
-{{% /md %}}</dd>
+    <dd>Database engine type. Supported option is `MongoDB`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1153,8 +1153,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database engine version.
-{{% /md %}}</dd>
+    <dd>Database engine version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1162,8 +1162,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time in RFC3339 format. Pay-As-You-Go instances are never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time in RFC3339 format. Pay-As-You-Go instances are never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1171,8 +1171,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>The ID of the MongoDB instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1180,8 +1180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the instance to be queried.
-{{% /md %}}</dd>
+    <dd>Sizing of the instance to be queried.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1189,8 +1189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
-{{% /md %}}</dd>
+    <dd>Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1198,8 +1198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Lock status of the instance.
-{{% /md %}}</dd>
+    <dd>Lock status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1207,8 +1207,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstancemongo">Get<wbr>Instances<wbr>Instance<wbr>Mongo[]</a></span>
     </dt>
-    <dd>{{% md %}}Array composed of Mongos.
-{{% /md %}}</dd>
+    <dd>Array composed of Mongos.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1216,8 +1216,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>The name of the MongoDB instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1225,8 +1225,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Classic network or VPC.
-{{% /md %}}</dd>
+    <dd>Classic network or VPC.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1234,8 +1234,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1243,8 +1243,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Replication factor corresponds to number of nodes. Optional values are `1` for single node and `3` for three nodes replica set.
-{{% /md %}}</dd>
+    <dd>Replication factor corresponds to number of nodes. Optional values are `1` for single node and `3` for three nodes replica set.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1252,8 +1252,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstanceshard">Get<wbr>Instances<wbr>Instance<wbr>Shard[]</a></span>
     </dt>
-    <dd>{{% md %}}Array composed of shards.
-{{% /md %}}</dd>
+    <dd>Array composed of shards.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1261,8 +1261,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1270,8 +1270,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Shard disk.
-{{% /md %}}</dd>
+    <dd>Shard disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1279,14 +1279,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1295,8 +1295,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance availability zone.
-{{% /md %}}</dd>
+    <dd>Instance availability zone.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1304,8 +1304,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options are `PostPaid` for  Pay-As-You-Go and `PrePaid` for yearly or monthly subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options are `PostPaid` for  Pay-As-You-Go and `PrePaid` for yearly or monthly subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1313,8 +1313,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the instance in RFC3339 format.
-{{% /md %}}</dd>
+    <dd>Creation time of the instance in RFC3339 format.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1322,8 +1322,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database engine type. Supported option is `MongoDB`.
-{{% /md %}}</dd>
+    <dd>Database engine type. Supported option is `MongoDB`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1331,8 +1331,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database engine version.
-{{% /md %}}</dd>
+    <dd>Database engine version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1340,8 +1340,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time in RFC3339 format. Pay-As-You-Go instances are never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time in RFC3339 format. Pay-As-You-Go instances are never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1349,8 +1349,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>The ID of the MongoDB instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1358,8 +1358,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the instance to be queried.
-{{% /md %}}</dd>
+    <dd>Sizing of the instance to be queried.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1367,8 +1367,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
-{{% /md %}}</dd>
+    <dd>Type of the instance to be queried. If it is set to `sharding`, the sharded cluster instances are listed. If it is set to `replicate`, replica set instances are listed. Default value `replicate`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1376,8 +1376,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Lock status of the instance.
-{{% /md %}}</dd>
+    <dd>Lock status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1385,8 +1385,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstancemongo">List[Get<wbr>Instances<wbr>Instance<wbr>Mongo]</a></span>
     </dt>
-    <dd>{{% md %}}Array composed of Mongos.
-{{% /md %}}</dd>
+    <dd>Array composed of Mongos.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1394,8 +1394,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the MongoDB instance.
-{{% /md %}}</dd>
+    <dd>The name of the MongoDB instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1403,8 +1403,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Classic network or VPC.
-{{% /md %}}</dd>
+    <dd>Classic network or VPC.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1412,8 +1412,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1421,8 +1421,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Replication factor corresponds to number of nodes. Optional values are `1` for single node and `3` for three nodes replica set.
-{{% /md %}}</dd>
+    <dd>Replication factor corresponds to number of nodes. Optional values are `1` for single node and `3` for three nodes replica set.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1430,8 +1430,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstanceshard">List[Get<wbr>Instances<wbr>Instance<wbr>Shard]</a></span>
     </dt>
-    <dd>{{% md %}}Array composed of shards.
-{{% /md %}}</dd>
+    <dd>Array composed of shards.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1439,8 +1439,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1448,8 +1448,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Shard disk.
-{{% /md %}}</dd>
+    <dd>Shard disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1457,29 +1457,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancesinstancemongo">Get<wbr>Instances<wbr>Instance<wbr>Mongo</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstancesInstanceMongo">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/mongodb?tab=doc#GetInstancesInstanceMongo">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1488,8 +1488,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance specification.
-{{% /md %}}</dd>
+    <dd>Shard instance specification.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1497,8 +1497,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance description.
-{{% /md %}}</dd>
+    <dd>Shard instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1506,14 +1506,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance ID.
-{{% /md %}}</dd>
+    <dd>Shard instance ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1522,8 +1522,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance specification.
-{{% /md %}}</dd>
+    <dd>Shard instance specification.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1531,8 +1531,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance description.
-{{% /md %}}</dd>
+    <dd>Shard instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1540,14 +1540,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance ID.
-{{% /md %}}</dd>
+    <dd>Shard instance ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1556,8 +1556,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance specification.
-{{% /md %}}</dd>
+    <dd>Shard instance specification.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1565,8 +1565,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance description.
-{{% /md %}}</dd>
+    <dd>Shard instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1574,14 +1574,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance ID.
-{{% /md %}}</dd>
+    <dd>Shard instance ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1590,8 +1590,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance specification.
-{{% /md %}}</dd>
+    <dd>Shard instance specification.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1599,8 +1599,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance description.
-{{% /md %}}</dd>
+    <dd>Shard instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1608,29 +1608,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance ID.
-{{% /md %}}</dd>
+    <dd>Shard instance ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancesinstanceshard">Get<wbr>Instances<wbr>Instance<wbr>Shard</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstancesInstanceShard">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/mongodb?tab=doc#GetInstancesInstanceShard">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1639,8 +1639,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance specification.
-{{% /md %}}</dd>
+    <dd>Shard instance specification.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1648,8 +1648,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance description.
-{{% /md %}}</dd>
+    <dd>Shard instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1657,8 +1657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance ID.
-{{% /md %}}</dd>
+    <dd>Shard instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1666,14 +1666,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Shard disk.
-{{% /md %}}</dd>
+    <dd>Shard disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1682,8 +1682,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance specification.
-{{% /md %}}</dd>
+    <dd>Shard instance specification.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1691,8 +1691,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance description.
-{{% /md %}}</dd>
+    <dd>Shard instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1700,8 +1700,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance ID.
-{{% /md %}}</dd>
+    <dd>Shard instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1709,14 +1709,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Shard disk.
-{{% /md %}}</dd>
+    <dd>Shard disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1725,8 +1725,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance specification.
-{{% /md %}}</dd>
+    <dd>Shard instance specification.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1734,8 +1734,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance description.
-{{% /md %}}</dd>
+    <dd>Shard instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1743,8 +1743,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance ID.
-{{% /md %}}</dd>
+    <dd>Shard instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1752,14 +1752,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Shard disk.
-{{% /md %}}</dd>
+    <dd>Shard disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1768,8 +1768,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance specification.
-{{% /md %}}</dd>
+    <dd>Shard instance specification.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1777,8 +1777,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance description.
-{{% /md %}}</dd>
+    <dd>Shard instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1786,8 +1786,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Shard instance ID.
-{{% /md %}}</dd>
+    <dd>Shard instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1795,11 +1795,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Shard disk.
-{{% /md %}}</dd>
+    <dd>Shard disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

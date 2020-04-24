@@ -21,9 +21,9 @@ The F5 BIG-IP provider supports several options for providing access to F5 BIG-I
 
 ## Example
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 const f5bigip = require("@pulumi/f5bigip")
@@ -37,8 +37,8 @@ const monitor = new f5bigip.ltm.Monitor("backend", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as f5bigip from "@pulumi/f5bigip";
@@ -52,8 +52,8 @@ const monitor = new f5bigip.ltm.Monitor("backend", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi_f5bigip as f5bigip
@@ -67,8 +67,8 @@ monitor = f5bigip.ltm.Monitor("backend",
 )
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 import (
@@ -84,8 +84,8 @@ monitor, _ := ltm.NewMonitor(ctx, "backend", &ltm.MonitorArgs{
 })
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Collections.Generic;
@@ -109,9 +109,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ## Libraries
 

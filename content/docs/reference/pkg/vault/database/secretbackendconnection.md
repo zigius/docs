@@ -14,26 +14,26 @@ meta_desc: "Explore the SecretBackendConnection resource of the database module,
 
 
 ## Create a SecretBackendConnection Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/database/#SecretBackendConnection">SecretBackendConnection</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/database/#SecretBackendConnectionArgs">SecretBackendConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SecretBackendConnection</span><span class="p">(resource_name, opts=None, </span>allowed_roles=None<span class="p">, </span>backend=None<span class="p">, </span>cassandra=None<span class="p">, </span>data=None<span class="p">, </span>elasticsearch=None<span class="p">, </span>hana=None<span class="p">, </span>mongodb=None<span class="p">, </span>mssql=None<span class="p">, </span>mysql=None<span class="p">, </span>mysql_aurora=None<span class="p">, </span>mysql_legacy=None<span class="p">, </span>mysql_rds=None<span class="p">, </span>name=None<span class="p">, </span>oracle=None<span class="p">, </span>postgresql=None<span class="p">, </span>root_rotation_statements=None<span class="p">, </span>verify_connection=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSecretBackendConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionArgs">SecretBackendConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnection">SecretBackendConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Database.SecretBackendConnection.html">SecretBackendConnection</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Database.SecretBackendConnectionArgs.html">SecretBackendConnectionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the SecretBackendConnection resource of the database module,
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the SecretBackendConnection resource of the database module,
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the SecretBackendConnection resource of the database module,
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the SecretBackendConnection resource of the database module,
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## SecretBackendConnection Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The SecretBackendConnection resource accepts the following [input]({{< relref "/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The SecretBackendConnection resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the Vault mount to configure.
-{{% /md %}}</dd>
+    <dd>The unique name of the Vault mount to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,9 +209,9 @@ The SecretBackendConnection resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of roles that are allowed to use this
+    <dd>A list of roles that are allowed to use this
 connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -219,8 +219,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectioncassandra">Secret<wbr>Backend<wbr>Connection<wbr>Cassandra<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Cassandra connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Cassandra connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,8 +228,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
-{{% /md %}}</dd>
+    <dd>A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,8 +237,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionelasticsearch">Secret<wbr>Backend<wbr>Connection<wbr>Elasticsearch<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Elasticsearch connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Elasticsearch connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionhana">Secret<wbr>Backend<wbr>Connection<wbr>Hana<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for SAP HanaDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for SAP HanaDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,8 +255,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmongodb">Secret<wbr>Backend<wbr>Connection<wbr>Mongodb<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MongoDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MongoDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmssql">Secret<wbr>Backend<wbr>Connection<wbr>Mssql<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MSSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MSSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,8 +273,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysql">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,8 +282,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlaurora">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Aurora<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Aurora MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Aurora MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqllegacy">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Legacy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for legacy MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for legacy MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlrds">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Rds<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for RDS MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for RDS MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to give the database connection.
-{{% /md %}}</dd>
+    <dd>A unique name to give the database connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,8 +318,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionoracle">Secret<wbr>Backend<wbr>Connection<wbr>Oracle<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Oracle connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Oracle connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,8 +327,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionpostgresql">Secret<wbr>Backend<wbr>Connection<wbr>Postgresql<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for PostgreSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for PostgreSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,8 +336,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of database statements to be executed to rotate the root user's credentials.
-{{% /md %}}</dd>
+    <dd>A list of database statements to be executed to rotate the root user's credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,15 +345,15 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the connection should be verified on
+    <dd>Whether the connection should be verified on
 initial configuration or not.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -362,8 +362,8 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the Vault mount to configure.
-{{% /md %}}</dd>
+    <dd>The unique name of the Vault mount to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,9 +371,9 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of roles that are allowed to use this
+    <dd>A list of roles that are allowed to use this
 connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,8 +381,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectioncassandra">Secret<wbr>Backend<wbr>Connection<wbr>Cassandra</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Cassandra connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Cassandra connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,8 +390,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
-{{% /md %}}</dd>
+    <dd>A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionelasticsearch">Secret<wbr>Backend<wbr>Connection<wbr>Elasticsearch</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Elasticsearch connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Elasticsearch connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionhana">Secret<wbr>Backend<wbr>Connection<wbr>Hana</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for SAP HanaDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for SAP HanaDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmongodb">Secret<wbr>Backend<wbr>Connection<wbr>Mongodb</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MongoDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MongoDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,8 +426,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmssql">Secret<wbr>Backend<wbr>Connection<wbr>Mssql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MSSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MSSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,8 +435,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysql">Secret<wbr>Backend<wbr>Connection<wbr>Mysql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -444,8 +444,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlaurora">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Aurora</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Aurora MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Aurora MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -453,8 +453,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqllegacy">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Legacy</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for legacy MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for legacy MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,8 +462,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlrds">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Rds</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for RDS MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for RDS MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -471,8 +471,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to give the database connection.
-{{% /md %}}</dd>
+    <dd>A unique name to give the database connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,8 +480,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionoracle">Secret<wbr>Backend<wbr>Connection<wbr>Oracle</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Oracle connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Oracle connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,8 +489,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionpostgresql">Secret<wbr>Backend<wbr>Connection<wbr>Postgresql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for PostgreSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for PostgreSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,8 +498,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of database statements to be executed to rotate the root user's credentials.
-{{% /md %}}</dd>
+    <dd>A list of database statements to be executed to rotate the root user's credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,15 +507,15 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the connection should be verified on
+    <dd>Whether the connection should be verified on
 initial configuration or not.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -524,8 +524,8 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the Vault mount to configure.
-{{% /md %}}</dd>
+    <dd>The unique name of the Vault mount to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,9 +533,9 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of roles that are allowed to use this
+    <dd>A list of roles that are allowed to use this
 connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -543,8 +543,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectioncassandra">Secret<wbr>Backend<wbr>Connection<wbr>Cassandra</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Cassandra connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Cassandra connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -552,8 +552,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
-{{% /md %}}</dd>
+    <dd>A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -561,8 +561,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionelasticsearch">Secret<wbr>Backend<wbr>Connection<wbr>Elasticsearch</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Elasticsearch connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Elasticsearch connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -570,8 +570,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionhana">Secret<wbr>Backend<wbr>Connection<wbr>Hana</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for SAP HanaDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for SAP HanaDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -579,8 +579,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmongodb">Secret<wbr>Backend<wbr>Connection<wbr>Mongodb</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MongoDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MongoDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -588,8 +588,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmssql">Secret<wbr>Backend<wbr>Connection<wbr>Mssql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MSSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MSSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -597,8 +597,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysql">Secret<wbr>Backend<wbr>Connection<wbr>Mysql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -606,8 +606,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlaurora">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Aurora</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Aurora MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Aurora MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -615,8 +615,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqllegacy">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Legacy</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for legacy MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for legacy MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -624,8 +624,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlrds">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Rds</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for RDS MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for RDS MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -633,8 +633,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to give the database connection.
-{{% /md %}}</dd>
+    <dd>A unique name to give the database connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -642,8 +642,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionoracle">Secret<wbr>Backend<wbr>Connection<wbr>Oracle</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Oracle connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Oracle connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,8 +651,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionpostgresql">Secret<wbr>Backend<wbr>Connection<wbr>Postgresql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for PostgreSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for PostgreSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -660,8 +660,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of database statements to be executed to rotate the root user's credentials.
-{{% /md %}}</dd>
+    <dd>A list of database statements to be executed to rotate the root user's credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,15 +669,15 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the connection should be verified on
+    <dd>Whether the connection should be verified on
 initial configuration or not.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -686,8 +686,8 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the Vault mount to configure.
-{{% /md %}}</dd>
+    <dd>The unique name of the Vault mount to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,9 +695,9 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of roles that are allowed to use this
+    <dd>A list of roles that are allowed to use this
 connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -705,8 +705,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectioncassandra">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Cassandra]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Cassandra connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Cassandra connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -714,8 +714,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
-{{% /md %}}</dd>
+    <dd>A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,8 +723,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionelasticsearch">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Elasticsearch]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Elasticsearch connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Elasticsearch connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,8 +732,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionhana">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Hana]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for SAP HanaDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for SAP HanaDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,8 +741,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmongodb">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mongodb]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MongoDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MongoDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -750,8 +750,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmssql">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mssql]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MSSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MSSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -759,8 +759,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysql">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mysql]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,8 +768,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlaurora">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Aurora]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Aurora MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Aurora MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -777,8 +777,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqllegacy">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Legacy]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for legacy MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for legacy MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,8 +786,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlrds">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Rds]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for RDS MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for RDS MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,8 +795,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to give the database connection.
-{{% /md %}}</dd>
+    <dd>A unique name to give the database connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -804,8 +804,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionoracle">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Oracle]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Oracle connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Oracle connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -813,8 +813,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionpostgresql">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Postgresql]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for PostgreSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for PostgreSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -822,8 +822,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of database statements to be executed to rotate the root user's credentials.
-{{% /md %}}</dd>
+    <dd>A list of database statements to be executed to rotate the root user's credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -831,12 +831,12 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the connection should be verified on
+    <dd>Whether the connection should be verified on
 initial configuration or not.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -850,7 +850,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -859,13 +859,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -874,13 +874,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -889,13 +889,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -904,10 +904,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -918,25 +918,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing SecretBackendConnection Resource {#look-up}
 
 Get an existing SecretBackendConnection resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/database/#SecretBackendConnectionState">SecretBackendConnectionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/database/#SecretBackendConnection">SecretBackendConnection</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>allowed_roles=None<span class="p">, </span>backend=None<span class="p">, </span>cassandra=None<span class="p">, </span>data=None<span class="p">, </span>elasticsearch=None<span class="p">, </span>hana=None<span class="p">, </span>mongodb=None<span class="p">, </span>mssql=None<span class="p">, </span>mysql=None<span class="p">, </span>mysql_aurora=None<span class="p">, </span>mysql_legacy=None<span class="p">, </span>mysql_rds=None<span class="p">, </span>name=None<span class="p">, </span>oracle=None<span class="p">, </span>postgresql=None<span class="p">, </span>root_rotation_statements=None<span class="p">, </span>verify_connection=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSecretBackendConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionState">SecretBackendConnectionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnection">SecretBackendConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Database.SecretBackendConnection.html">SecretBackendConnection</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Database.SecretBackendConnectionState.html">SecretBackendConnectionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -961,9 +961,9 @@ Get an existing SecretBackendConnection resource's state with the given name, ID
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -976,36 +976,9 @@ Get an existing SecretBackendConnection resource's state with the given name, ID
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1030,13 +1003,40 @@ Get an existing SecretBackendConnection resource's state with the given name, ID
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1045,9 +1045,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of roles that are allowed to use this
+    <dd>A list of roles that are allowed to use this
 connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the Vault mount to configure.
-{{% /md %}}</dd>
+    <dd>The unique name of the Vault mount to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectioncassandra">Secret<wbr>Backend<wbr>Connection<wbr>Cassandra<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Cassandra connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Cassandra connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
-{{% /md %}}</dd>
+    <dd>A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionelasticsearch">Secret<wbr>Backend<wbr>Connection<wbr>Elasticsearch<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Elasticsearch connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Elasticsearch connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionhana">Secret<wbr>Backend<wbr>Connection<wbr>Hana<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for SAP HanaDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for SAP HanaDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmongodb">Secret<wbr>Backend<wbr>Connection<wbr>Mongodb<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MongoDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MongoDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmssql">Secret<wbr>Backend<wbr>Connection<wbr>Mssql<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MSSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MSSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysql">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlaurora">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Aurora<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Aurora MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Aurora MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqllegacy">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Legacy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for legacy MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for legacy MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,8 +1145,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlrds">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Rds<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for RDS MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for RDS MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to give the database connection.
-{{% /md %}}</dd>
+    <dd>A unique name to give the database connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionoracle">Secret<wbr>Backend<wbr>Connection<wbr>Oracle<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Oracle connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Oracle connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionpostgresql">Secret<wbr>Backend<wbr>Connection<wbr>Postgresql<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for PostgreSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for PostgreSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of database statements to be executed to rotate the root user's credentials.
-{{% /md %}}</dd>
+    <dd>A list of database statements to be executed to rotate the root user's credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,15 +1190,15 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the connection should be verified on
+    <dd>Whether the connection should be verified on
 initial configuration or not.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1207,9 +1207,9 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of roles that are allowed to use this
+    <dd>A list of roles that are allowed to use this
 connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the Vault mount to configure.
-{{% /md %}}</dd>
+    <dd>The unique name of the Vault mount to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectioncassandra">Secret<wbr>Backend<wbr>Connection<wbr>Cassandra</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Cassandra connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Cassandra connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
-{{% /md %}}</dd>
+    <dd>A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionelasticsearch">Secret<wbr>Backend<wbr>Connection<wbr>Elasticsearch</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Elasticsearch connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Elasticsearch connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,8 +1253,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionhana">Secret<wbr>Backend<wbr>Connection<wbr>Hana</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for SAP HanaDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for SAP HanaDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,8 +1262,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmongodb">Secret<wbr>Backend<wbr>Connection<wbr>Mongodb</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MongoDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MongoDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1271,8 +1271,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmssql">Secret<wbr>Backend<wbr>Connection<wbr>Mssql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MSSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MSSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1280,8 +1280,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysql">Secret<wbr>Backend<wbr>Connection<wbr>Mysql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1289,8 +1289,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlaurora">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Aurora</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Aurora MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Aurora MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1298,8 +1298,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqllegacy">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Legacy</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for legacy MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for legacy MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,8 +1307,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlrds">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Rds</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for RDS MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for RDS MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1316,8 +1316,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to give the database connection.
-{{% /md %}}</dd>
+    <dd>A unique name to give the database connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1325,8 +1325,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionoracle">Secret<wbr>Backend<wbr>Connection<wbr>Oracle</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Oracle connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Oracle connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1334,8 +1334,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionpostgresql">Secret<wbr>Backend<wbr>Connection<wbr>Postgresql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for PostgreSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for PostgreSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,8 +1343,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of database statements to be executed to rotate the root user's credentials.
-{{% /md %}}</dd>
+    <dd>A list of database statements to be executed to rotate the root user's credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1352,15 +1352,15 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the connection should be verified on
+    <dd>Whether the connection should be verified on
 initial configuration or not.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1369,9 +1369,9 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of roles that are allowed to use this
+    <dd>A list of roles that are allowed to use this
 connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1379,8 +1379,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the Vault mount to configure.
-{{% /md %}}</dd>
+    <dd>The unique name of the Vault mount to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,8 +1388,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectioncassandra">Secret<wbr>Backend<wbr>Connection<wbr>Cassandra</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Cassandra connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Cassandra connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1397,8 +1397,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
-{{% /md %}}</dd>
+    <dd>A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1406,8 +1406,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionelasticsearch">Secret<wbr>Backend<wbr>Connection<wbr>Elasticsearch</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Elasticsearch connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Elasticsearch connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1415,8 +1415,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionhana">Secret<wbr>Backend<wbr>Connection<wbr>Hana</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for SAP HanaDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for SAP HanaDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1424,8 +1424,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmongodb">Secret<wbr>Backend<wbr>Connection<wbr>Mongodb</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MongoDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MongoDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1433,8 +1433,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmssql">Secret<wbr>Backend<wbr>Connection<wbr>Mssql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MSSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MSSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,8 +1442,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysql">Secret<wbr>Backend<wbr>Connection<wbr>Mysql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1451,8 +1451,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlaurora">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Aurora</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Aurora MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Aurora MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,8 +1460,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqllegacy">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Legacy</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for legacy MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for legacy MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1469,8 +1469,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlrds">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Rds</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for RDS MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for RDS MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1478,8 +1478,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to give the database connection.
-{{% /md %}}</dd>
+    <dd>A unique name to give the database connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1487,8 +1487,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionoracle">Secret<wbr>Backend<wbr>Connection<wbr>Oracle</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Oracle connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Oracle connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,8 +1496,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionpostgresql">Secret<wbr>Backend<wbr>Connection<wbr>Postgresql</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for PostgreSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for PostgreSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1505,8 +1505,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of database statements to be executed to rotate the root user's credentials.
-{{% /md %}}</dd>
+    <dd>A list of database statements to be executed to rotate the root user's credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1514,15 +1514,15 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the connection should be verified on
+    <dd>Whether the connection should be verified on
 initial configuration or not.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1531,9 +1531,9 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of roles that are allowed to use this
+    <dd>A list of roles that are allowed to use this
 connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,8 +1541,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the Vault mount to configure.
-{{% /md %}}</dd>
+    <dd>The unique name of the Vault mount to configure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1550,8 +1550,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectioncassandra">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Cassandra]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Cassandra connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Cassandra connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,8 +1559,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
-{{% /md %}}</dd>
+    <dd>A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,8 +1568,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionelasticsearch">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Elasticsearch]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Elasticsearch connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Elasticsearch connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,8 +1577,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionhana">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Hana]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for SAP HanaDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for SAP HanaDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmongodb">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mongodb]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MongoDB connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MongoDB connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,8 +1595,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmssql">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mssql]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MSSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MSSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,8 +1604,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysql">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mysql]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,8 +1613,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlaurora">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Aurora]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Aurora MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Aurora MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqllegacy">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Legacy]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for legacy MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for legacy MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,8 +1631,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionmysqlrds">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Rds]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for RDS MySQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for RDS MySQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,8 +1640,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to give the database connection.
-{{% /md %}}</dd>
+    <dd>A unique name to give the database connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,8 +1649,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionoracle">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Oracle]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for Oracle connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for Oracle connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,8 +1658,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretbackendconnectionpostgresql">Dict[Secret<wbr>Backend<wbr>Connection<wbr>Postgresql]</a></span>
     </dt>
-    <dd>{{% md %}}A nested block containing configuration options for PostgreSQL connections.
-{{% /md %}}</dd>
+    <dd>A nested block containing configuration options for PostgreSQL connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,8 +1667,8 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of database statements to be executed to rotate the root user's credentials.
-{{% /md %}}</dd>
+    <dd>A list of database statements to be executed to rotate the root user's credentials.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,12 +1676,12 @@ connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the connection should be verified on
+    <dd>Whether the connection should be verified on
 initial configuration or not.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1696,18 +1696,18 @@ initial configuration or not.
 
 
 <h4 id="secretbackendconnectioncassandra">Secret<wbr>Backend<wbr>Connection<wbr>Cassandra</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionCassandra">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionCassandra">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionCassandraArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionCassandraOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1716,9 +1716,9 @@ initial configuration or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds to use as a connection
+    <dd>The number of seconds to use as a connection
 timeout.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1726,8 +1726,8 @@ timeout.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The hosts to connect to.
-{{% /md %}}</dd>
+    <dd>The hosts to connect to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1735,9 +1735,9 @@ timeout.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to skip verification of the server
+    <dd>Whether to skip verification of the server
 certificate when using TLS.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1745,8 +1745,8 @@ certificate when using TLS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The password to be used in the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,9 +1754,9 @@ certificate when using TLS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Concatenated PEM blocks configuring the certificate
+    <dd>Concatenated PEM blocks configuring the certificate
 chain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,8 +1764,8 @@ chain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON structure configuring the certificate chain.
-{{% /md %}}</dd>
+    <dd>A JSON structure configuring the certificate chain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1773,9 +1773,9 @@ chain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The default port to connect to if no port is specified as
+    <dd>The default port to connect to if no port is specified as
 part of the host.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,8 +1783,8 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The CQL protocol version to use.
-{{% /md %}}</dd>
+    <dd>The CQL protocol version to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1792,8 +1792,8 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS when connecting to Cassandra.
-{{% /md %}}</dd>
+    <dd>Whether to use TLS when connecting to Cassandra.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1801,14 +1801,14 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The username to be used in the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1817,9 +1817,9 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds to use as a connection
+    <dd>The number of seconds to use as a connection
 timeout.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1827,8 +1827,8 @@ timeout.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The hosts to connect to.
-{{% /md %}}</dd>
+    <dd>The hosts to connect to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1836,9 +1836,9 @@ timeout.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to skip verification of the server
+    <dd>Whether to skip verification of the server
 certificate when using TLS.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,8 +1846,8 @@ certificate when using TLS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The password to be used in the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,9 +1855,9 @@ certificate when using TLS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Concatenated PEM blocks configuring the certificate
+    <dd>Concatenated PEM blocks configuring the certificate
 chain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,8 +1865,8 @@ chain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON structure configuring the certificate chain.
-{{% /md %}}</dd>
+    <dd>A JSON structure configuring the certificate chain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1874,9 +1874,9 @@ chain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The default port to connect to if no port is specified as
+    <dd>The default port to connect to if no port is specified as
 part of the host.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1884,8 +1884,8 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The CQL protocol version to use.
-{{% /md %}}</dd>
+    <dd>The CQL protocol version to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,8 +1893,8 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS when connecting to Cassandra.
-{{% /md %}}</dd>
+    <dd>Whether to use TLS when connecting to Cassandra.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,14 +1902,14 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The username to be used in the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1918,9 +1918,9 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds to use as a connection
+    <dd>The number of seconds to use as a connection
 timeout.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1928,8 +1928,8 @@ timeout.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The hosts to connect to.
-{{% /md %}}</dd>
+    <dd>The hosts to connect to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,9 +1937,9 @@ timeout.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to skip verification of the server
+    <dd>Whether to skip verification of the server
 certificate when using TLS.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,8 +1947,8 @@ certificate when using TLS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The password to be used in the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1956,9 +1956,9 @@ certificate when using TLS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Concatenated PEM blocks configuring the certificate
+    <dd>Concatenated PEM blocks configuring the certificate
 chain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1966,8 +1966,8 @@ chain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON structure configuring the certificate chain.
-{{% /md %}}</dd>
+    <dd>A JSON structure configuring the certificate chain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1975,9 +1975,9 @@ chain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The default port to connect to if no port is specified as
+    <dd>The default port to connect to if no port is specified as
 part of the host.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,8 +1985,8 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The CQL protocol version to use.
-{{% /md %}}</dd>
+    <dd>The CQL protocol version to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,8 +1994,8 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS when connecting to Cassandra.
-{{% /md %}}</dd>
+    <dd>Whether to use TLS when connecting to Cassandra.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2003,14 +2003,14 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The username to be used in the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2019,9 +2019,9 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds to use as a connection
+    <dd>The number of seconds to use as a connection
 timeout.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2029,8 +2029,8 @@ timeout.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The hosts to connect to.
-{{% /md %}}</dd>
+    <dd>The hosts to connect to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2038,9 +2038,9 @@ timeout.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to skip verification of the server
+    <dd>Whether to skip verification of the server
 certificate when using TLS.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2048,8 +2048,8 @@ certificate when using TLS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The password to be used in the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2057,8 +2057,8 @@ certificate when using TLS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A JSON structure configuring the certificate chain.
-{{% /md %}}</dd>
+    <dd>A JSON structure configuring the certificate chain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2066,9 +2066,9 @@ certificate when using TLS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Concatenated PEM blocks configuring the certificate
+    <dd>Concatenated PEM blocks configuring the certificate
 chain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2076,9 +2076,9 @@ chain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The default port to connect to if no port is specified as
+    <dd>The default port to connect to if no port is specified as
 part of the host.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2086,8 +2086,8 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The CQL protocol version to use.
-{{% /md %}}</dd>
+    <dd>The CQL protocol version to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2095,8 +2095,8 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS when connecting to Cassandra.
-{{% /md %}}</dd>
+    <dd>Whether to use TLS when connecting to Cassandra.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2104,29 +2104,29 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The username to be used in the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionelasticsearch">Secret<wbr>Backend<wbr>Connection<wbr>Elasticsearch</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionElasticsearch">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionElasticsearch">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionElasticsearchArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionElasticsearchOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2135,8 +2135,8 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The password to be used in the connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2144,9 +2144,9 @@ part of the host.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL for Elasticsearch's API. https requires certificate
+    <dd>The URL for Elasticsearch's API. https requires certificate
 by trusted CA if used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2154,14 +2154,14 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The username to be used in the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2170,8 +2170,8 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The password to be used in the connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2179,9 +2179,9 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL for Elasticsearch's API. https requires certificate
+    <dd>The URL for Elasticsearch's API. https requires certificate
 by trusted CA if used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2189,14 +2189,14 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The username to be used in the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2205,8 +2205,8 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The password to be used in the connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2214,9 +2214,9 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL for Elasticsearch's API. https requires certificate
+    <dd>The URL for Elasticsearch's API. https requires certificate
 by trusted CA if used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2224,14 +2224,14 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The username to be used in the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2240,8 +2240,8 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The password to be used in the connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2249,9 +2249,9 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL for Elasticsearch's API. https requires certificate
+    <dd>The URL for Elasticsearch's API. https requires certificate
 by trusted CA if used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2259,29 +2259,29 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username to be used in the connection.
-{{% /md %}}</dd>
+    <dd>The username to be used in the connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionhana">Secret<wbr>Backend<wbr>Connection<wbr>Hana</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionHana">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionHana">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionHanaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionHanaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2290,11 +2290,11 @@ by trusted CA if used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2302,9 +2302,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2312,9 +2312,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2322,15 +2322,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2339,11 +2339,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2351,9 +2351,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2361,9 +2361,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,15 +2371,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2388,11 +2388,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2400,9 +2400,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2410,9 +2410,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,15 +2420,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2437,11 +2437,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2449,9 +2449,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2459,9 +2459,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2469,30 +2469,30 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionmongodb">Secret<wbr>Backend<wbr>Connection<wbr>Mongodb</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionMongodb">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionMongodb">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMongodbArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMongodbOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2501,11 +2501,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2513,9 +2513,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2523,9 +2523,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2533,15 +2533,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2550,11 +2550,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2562,9 +2562,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2572,9 +2572,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2582,15 +2582,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2599,11 +2599,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2611,9 +2611,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2621,9 +2621,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2631,15 +2631,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2648,11 +2648,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2660,9 +2660,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2670,9 +2670,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2680,30 +2680,30 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionmssql">Secret<wbr>Backend<wbr>Connection<wbr>Mssql</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionMssql">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionMssql">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMssqlArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMssqlOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2712,11 +2712,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2724,9 +2724,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2734,9 +2734,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2744,15 +2744,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2761,11 +2761,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2773,9 +2773,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2783,9 +2783,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2793,15 +2793,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2810,11 +2810,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2822,9 +2822,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2832,9 +2832,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2842,15 +2842,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2859,11 +2859,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2871,9 +2871,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2881,9 +2881,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2891,30 +2891,30 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionmysql">Secret<wbr>Backend<wbr>Connection<wbr>Mysql</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionMysql">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionMysql">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMysqlArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMysqlOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2923,11 +2923,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2935,9 +2935,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2945,9 +2945,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2955,15 +2955,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2972,11 +2972,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2984,9 +2984,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2994,9 +2994,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3004,15 +3004,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3021,11 +3021,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3033,9 +3033,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3043,9 +3043,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3053,15 +3053,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3070,11 +3070,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3082,9 +3082,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3092,9 +3092,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3102,30 +3102,30 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionmysqlaurora">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Aurora</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionMysqlAurora">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionMysqlAurora">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMysqlAuroraArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMysqlAuroraOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3134,11 +3134,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3146,9 +3146,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3156,9 +3156,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3166,15 +3166,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3183,11 +3183,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3195,9 +3195,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3205,9 +3205,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3215,15 +3215,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3232,11 +3232,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3244,9 +3244,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3254,9 +3254,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3264,15 +3264,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3281,11 +3281,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3293,9 +3293,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3303,9 +3303,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3313,30 +3313,30 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionmysqllegacy">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Legacy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionMysqlLegacy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionMysqlLegacy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMysqlLegacyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMysqlLegacyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3345,11 +3345,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3357,9 +3357,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3367,9 +3367,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3377,15 +3377,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3394,11 +3394,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3406,9 +3406,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3416,9 +3416,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3426,15 +3426,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3443,11 +3443,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3455,9 +3455,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3465,9 +3465,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3475,15 +3475,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3492,11 +3492,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3504,9 +3504,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3514,9 +3514,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3524,30 +3524,30 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionmysqlrds">Secret<wbr>Backend<wbr>Connection<wbr>Mysql<wbr>Rds</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionMysqlRds">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionMysqlRds">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMysqlRdsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionMysqlRdsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3556,11 +3556,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3568,9 +3568,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3578,9 +3578,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3588,15 +3588,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3605,11 +3605,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3617,9 +3617,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3627,9 +3627,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3637,15 +3637,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3654,11 +3654,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3666,9 +3666,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3676,9 +3676,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3686,15 +3686,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3703,11 +3703,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3715,9 +3715,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3725,9 +3725,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3735,30 +3735,30 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionoracle">Secret<wbr>Backend<wbr>Connection<wbr>Oracle</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionOracle">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionOracle">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionOracleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionOracleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3767,11 +3767,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3779,9 +3779,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3789,9 +3789,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3799,15 +3799,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3816,11 +3816,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3828,9 +3828,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3838,9 +3838,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3848,15 +3848,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3865,11 +3865,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3877,9 +3877,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3887,9 +3887,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3897,15 +3897,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3914,11 +3914,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3926,9 +3926,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3936,9 +3936,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3946,30 +3946,30 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretbackendconnectionpostgresql">Secret<wbr>Backend<wbr>Connection<wbr>Postgresql</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/input/#SecretBackendConnectionPostgresql">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/vault/types/output/#SecretBackendConnectionPostgresql">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionPostgresqlArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/database?tab=doc#SecretBackendConnectionPostgresqlOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3978,11 +3978,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3990,9 +3990,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4000,9 +4000,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4010,15 +4010,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4027,11 +4027,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4039,9 +4039,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4049,9 +4049,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4059,15 +4059,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4076,11 +4076,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4088,9 +4088,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4098,9 +4098,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4108,15 +4108,15 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4125,11 +4125,11 @@ use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A URL containing connection information. See
+    <dd>A URL containing connection information. See
 the [Vault
 docs](https://www.vaultproject.io/api/secret/databases/oracle.html#sample-payload)
 for an example.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4137,9 +4137,9 @@ for an example.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of seconds to keep
+    <dd>The maximum number of seconds to keep
 a connection alive for.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4147,9 +4147,9 @@ a connection alive for.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of idle connections to
+    <dd>The maximum number of idle connections to
 maintain.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4157,12 +4157,12 @@ maintain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of open connections to
+    <dd>The maximum number of open connections to
 use.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

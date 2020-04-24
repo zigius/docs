@@ -18,26 +18,26 @@ Manages an Azure Container Registry.
 
 
 ## Create a Registry Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/containerservice/#Registry">Registry</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/containerservice/#RegistryArgs">RegistryArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Registry</span><span class="p">(resource_name, opts=None, </span>admin_enabled=None<span class="p">, </span>georeplication_locations=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>network_rule_set=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>sku=None<span class="p">, </span>storage_account_id=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRegistry<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#RegistryArgs">RegistryArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#Registry">Registry</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.ContainerService.Registry.html">Registry</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.ContainerService.RegistryArgs.html">RegistryArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages an Azure Container Registry.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages an Azure Container Registry.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages an Azure Container Registry.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages an Azure Container Registry.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Registry Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -213,8 +213,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the admin user is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the admin user is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Azure locations where the container registry should be geo-replicated.
-{{% /md %}}</dd>
+    <dd>A list of Azure locations where the container registry should be geo-replicated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkruleset">Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rule_set` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rule_set` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
-{{% /md %}}</dd>
+    <dd>The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
-{{% /md %}}</dd>
+    <dd>The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,14 +276,14 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -292,8 +292,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the admin user is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the admin user is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Azure locations where the container registry should be geo-replicated.
-{{% /md %}}</dd>
+    <dd>A list of Azure locations where the container registry should be geo-replicated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,8 +328,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkruleset">Registry<wbr>Network<wbr>Rule<wbr>Set</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rule_set` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rule_set` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
-{{% /md %}}</dd>
+    <dd>The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
-{{% /md %}}</dd>
+    <dd>The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,14 +364,14 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -380,8 +380,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the admin user is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the admin user is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Azure locations where the container registry should be geo-replicated.
-{{% /md %}}</dd>
+    <dd>A list of Azure locations where the container registry should be geo-replicated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,8 +407,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,8 +416,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,8 +425,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkruleset">Registry<wbr>Network<wbr>Rule<wbr>Set</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rule_set` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rule_set` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,8 +434,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
-{{% /md %}}</dd>
+    <dd>The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
-{{% /md %}}</dd>
+    <dd>The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,14 +452,14 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -468,8 +468,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the admin user is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the admin user is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Azure locations where the container registry should be geo-replicated.
-{{% /md %}}</dd>
+    <dd>A list of Azure locations where the container registry should be geo-replicated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,8 +513,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkruleset">Dict[Registry<wbr>Network<wbr>Rule<wbr>Set]</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rule_set` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rule_set` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,8 +522,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
-{{% /md %}}</dd>
+    <dd>The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -531,8 +531,8 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
-{{% /md %}}</dd>
+    <dd>The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -540,11 +540,11 @@ The Registry resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -558,7 +558,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -567,8 +567,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Password associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -576,8 +576,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Username associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -585,7 +585,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -593,14 +593,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL that can be used to log into the container registry.
-{{% /md %}}</dd>
+    <dd>The URL that can be used to log into the container registry.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -609,8 +609,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Password associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -618,8 +618,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Username associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -627,7 +627,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -635,14 +635,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL that can be used to log into the container registry.
-{{% /md %}}</dd>
+    <dd>The URL that can be used to log into the container registry.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -651,8 +651,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Password associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -660,8 +660,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Username associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -669,7 +669,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -677,14 +677,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL that can be used to log into the container registry.
-{{% /md %}}</dd>
+    <dd>The URL that can be used to log into the container registry.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -693,8 +693,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Password associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -702,8 +702,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Username associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Username associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,7 +711,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -719,11 +719,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL that can be used to log into the container registry.
-{{% /md %}}</dd>
+    <dd>The URL that can be used to log into the container registry.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -734,25 +734,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Registry Resource {#look-up}
 
 Get an existing Registry resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/containerservice/#RegistryState">RegistryState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/containerservice/#Registry">Registry</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>admin_enabled=None<span class="p">, </span>admin_password=None<span class="p">, </span>admin_username=None<span class="p">, </span>georeplication_locations=None<span class="p">, </span>location=None<span class="p">, </span>login_server=None<span class="p">, </span>name=None<span class="p">, </span>network_rule_set=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>sku=None<span class="p">, </span>storage_account_id=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRegistry<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#RegistryState">RegistryState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#Registry">Registry</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.ContainerService.Registry.html">Registry</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.ContainerService.RegistryState.html">RegistryState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -777,9 +777,9 @@ Get an existing Registry resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -792,36 +792,9 @@ Get an existing Registry resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -846,13 +819,40 @@ Get an existing Registry resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -861,8 +861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the admin user is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the admin user is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,8 +870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Password associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -879,8 +879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Username associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -888,8 +888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Azure locations where the container registry should be geo-replicated.
-{{% /md %}}</dd>
+    <dd>A list of Azure locations where the container registry should be geo-replicated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -897,8 +897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,8 +906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL that can be used to log into the container registry.
-{{% /md %}}</dd>
+    <dd>The URL that can be used to log into the container registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,8 +915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,8 +924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkruleset">Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rule_set` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rule_set` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,8 +933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
-{{% /md %}}</dd>
+    <dd>The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,8 +951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
-{{% /md %}}</dd>
+    <dd>The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,14 +960,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -976,8 +976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the admin user is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the admin user is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,8 +985,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Password associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -994,8 +994,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Username associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1003,8 +1003,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Azure locations where the container registry should be geo-replicated.
-{{% /md %}}</dd>
+    <dd>A list of Azure locations where the container registry should be geo-replicated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,8 +1012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,8 +1021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL that can be used to log into the container registry.
-{{% /md %}}</dd>
+    <dd>The URL that can be used to log into the container registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,8 +1039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkruleset">Registry<wbr>Network<wbr>Rule<wbr>Set</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rule_set` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rule_set` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
-{{% /md %}}</dd>
+    <dd>The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
-{{% /md %}}</dd>
+    <dd>The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,14 +1075,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1091,8 +1091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the admin user is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the admin user is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Password associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Username associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Azure locations where the container registry should be geo-replicated.
-{{% /md %}}</dd>
+    <dd>A list of Azure locations where the container registry should be geo-replicated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL that can be used to log into the container registry.
-{{% /md %}}</dd>
+    <dd>The URL that can be used to log into the container registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,8 +1145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkruleset">Registry<wbr>Network<wbr>Rule<wbr>Set</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rule_set` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rule_set` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
-{{% /md %}}</dd>
+    <dd>The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
-{{% /md %}}</dd>
+    <dd>The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,14 +1190,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1206,8 +1206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the admin user is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether the admin user is enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,8 +1215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Password associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,8 +1224,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Username associated with the Container Registry Admin account - if the admin account is enabled.
-{{% /md %}}</dd>
+    <dd>The Username associated with the Container Registry Admin account - if the admin account is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,8 +1233,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Azure locations where the container registry should be geo-replicated.
-{{% /md %}}</dd>
+    <dd>A list of Azure locations where the container registry should be geo-replicated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1242,8 +1242,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1251,8 +1251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL that can be used to log into the container registry.
-{{% /md %}}</dd>
+    <dd>The URL that can be used to log into the container registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkruleset">Dict[Registry<wbr>Network<wbr>Rule<wbr>Set]</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rule_set` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rule_set` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
-{{% /md %}}</dd>
+    <dd>The SKU name of the container registry. Possible values are  `Basic`, `Standard` and `Premium`. `Classic` (which was previously `Basic`) is supported only for existing resources.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
-{{% /md %}}</dd>
+    <dd>The ID of a Storage Account which must be located in the same Azure Region as the Container Registry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,11 +1305,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1324,18 +1324,18 @@ The following state arguments are supported:
 
 
 <h4 id="registrynetworkruleset">Registry<wbr>Network<wbr>Rule<wbr>Set</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#RegistryNetworkRuleSet">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#RegistryNetworkRuleSet">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#RegistryNetworkRuleSetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#RegistryNetworkRuleSetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1344,8 +1344,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching no rules. Either `Allow` or `Deny`. Defaults to `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching no rules. Either `Allow` or `Deny`. Defaults to `Allow`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1353,8 +1353,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkrulesetiprule">List&lt;Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Ip<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1362,14 +1362,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkrulesetvirtualnetwork">List&lt;Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Virtual<wbr>Network<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `virtual_network` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `virtual_network` blocks as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1378,8 +1378,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching no rules. Either `Allow` or `Deny`. Defaults to `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching no rules. Either `Allow` or `Deny`. Defaults to `Allow`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1387,8 +1387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkrulesetiprule">[]Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Ip<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1396,14 +1396,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkrulesetvirtualnetwork">[]Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Virtual<wbr>Network</a></span>
     </dt>
-    <dd>{{% md %}}One or more `virtual_network` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `virtual_network` blocks as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1412,8 +1412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching no rules. Either `Allow` or `Deny`. Defaults to `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching no rules. Either `Allow` or `Deny`. Defaults to `Allow`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,8 +1421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkrulesetiprule">Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Ip<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,14 +1430,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkrulesetvirtualnetwork">Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Virtual<wbr>Network[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `virtual_network` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `virtual_network` blocks as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1446,8 +1446,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching no rules. Either `Allow` or `Deny`. Defaults to `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching no rules. Either `Allow` or `Deny`. Defaults to `Allow`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1455,8 +1455,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkrulesetiprule">List[Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Ip<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,29 +1464,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#registrynetworkrulesetvirtualnetwork">List[Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Virtual<wbr>Network]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `virtual_network` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `virtual_network` blocks as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="registrynetworkrulesetiprule">Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Ip<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#RegistryNetworkRuleSetIpRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#RegistryNetworkRuleSetIpRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#RegistryNetworkRuleSetIpRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#RegistryNetworkRuleSetIpRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1495,8 +1495,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching this rule. At this time the only supported value is `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching this rule. At this time the only supported value is `Allow`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1504,14 +1504,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block from which requests will match the rule.
-{{% /md %}}</dd>
+    <dd>The CIDR block from which requests will match the rule.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1520,8 +1520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching this rule. At this time the only supported value is `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching this rule. At this time the only supported value is `Allow`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1529,14 +1529,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block from which requests will match the rule.
-{{% /md %}}</dd>
+    <dd>The CIDR block from which requests will match the rule.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1545,8 +1545,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching this rule. At this time the only supported value is `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching this rule. At this time the only supported value is `Allow`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1554,14 +1554,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block from which requests will match the rule.
-{{% /md %}}</dd>
+    <dd>The CIDR block from which requests will match the rule.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1570,8 +1570,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching this rule. At this time the only supported value is `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching this rule. At this time the only supported value is `Allow`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1579,29 +1579,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block from which requests will match the rule.
-{{% /md %}}</dd>
+    <dd>The CIDR block from which requests will match the rule.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="registrynetworkrulesetvirtualnetwork">Registry<wbr>Network<wbr>Rule<wbr>Set<wbr>Virtual<wbr>Network</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#RegistryNetworkRuleSetVirtualNetwork">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#RegistryNetworkRuleSetVirtualNetwork">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#RegistryNetworkRuleSetVirtualNetworkArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/containerservice?tab=doc#RegistryNetworkRuleSetVirtualNetworkOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1610,8 +1610,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching this rule. At this time the only supported value is `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching this rule. At this time the only supported value is `Allow`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1619,14 +1619,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnet id from which requests will match the rule.
-{{% /md %}}</dd>
+    <dd>The subnet id from which requests will match the rule.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1635,8 +1635,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching this rule. At this time the only supported value is `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching this rule. At this time the only supported value is `Allow`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1644,14 +1644,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnet id from which requests will match the rule.
-{{% /md %}}</dd>
+    <dd>The subnet id from which requests will match the rule.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1660,8 +1660,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching this rule. At this time the only supported value is `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching this rule. At this time the only supported value is `Allow`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1669,14 +1669,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnet id from which requests will match the rule.
-{{% /md %}}</dd>
+    <dd>The subnet id from which requests will match the rule.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1685,8 +1685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behaviour for requests matching this rule. At this time the only supported value is `Allow`
-{{% /md %}}</dd>
+    <dd>The behaviour for requests matching this rule. At this time the only supported value is `Allow`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1694,11 +1694,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The subnet id from which requests will match the rule.
-{{% /md %}}</dd>
+    <dd>The subnet id from which requests will match the rule.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

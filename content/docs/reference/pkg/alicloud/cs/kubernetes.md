@@ -14,26 +14,26 @@ meta_desc: "Explore the Kubernetes resource of the cs module, including examples
 
 
 ## Create a Kubernetes Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cs/#Kubernetes">Kubernetes</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cs/#KubernetesArgs">KubernetesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Kubernetes</span><span class="p">(resource_name, opts=None, </span>addons=None<span class="p">, </span>availability_zone=None<span class="p">, </span>client_cert=None<span class="p">, </span>client_key=None<span class="p">, </span>cluster_ca_cert=None<span class="p">, </span>cpu_policy=None<span class="p">, </span>enable_ssh=None<span class="p">, </span>image_id=None<span class="p">, </span>install_cloud_monitor=None<span class="p">, </span>key_name=None<span class="p">, </span>kms_encrypted_password=None<span class="p">, </span>kms_encryption_context=None<span class="p">, </span>kube_config=None<span class="p">, </span>master_auto_renew=None<span class="p">, </span>master_auto_renew_period=None<span class="p">, </span>master_disk_category=None<span class="p">, </span>master_disk_size=None<span class="p">, </span>master_instance_charge_type=None<span class="p">, </span>master_instance_types=None<span class="p">, </span>master_period=None<span class="p">, </span>master_period_unit=None<span class="p">, </span>master_vswitch_ids=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>new_nat_gateway=None<span class="p">, </span>node_cidr_mask=None<span class="p">, </span>password=None<span class="p">, </span>pod_cidr=None<span class="p">, </span>pod_vswitch_ids=None<span class="p">, </span>proxy_mode=None<span class="p">, </span>service_cidr=None<span class="p">, </span>slb_internet_enabled=None<span class="p">, </span>user_ca=None<span class="p">, </span>version=None<span class="p">, </span>worker_auto_renew=None<span class="p">, </span>worker_auto_renew_period=None<span class="p">, </span>worker_data_disk_category=None<span class="p">, </span>worker_data_disk_size=None<span class="p">, </span>worker_disk_category=None<span class="p">, </span>worker_disk_size=None<span class="p">, </span>worker_instance_charge_type=None<span class="p">, </span>worker_instance_types=None<span class="p">, </span>worker_number=None<span class="p">, </span>worker_period=None<span class="p">, </span>worker_period_unit=None<span class="p">, </span>worker_vswitch_ids=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewKubernetes<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#KubernetesArgs">KubernetesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#Kubernetes">Kubernetes</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.CS.Kubernetes.html">Kubernetes</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.CS.KubernetesArgs.html">KubernetesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Kubernetes resource of the cs module, including examples
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Kubernetes resource of the cs module, including examples
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Kubernetes resource of the cs module, including examples
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Kubernetes resource of the cs module, including examples
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Kubernetes Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,7 +209,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -217,8 +217,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -226,8 +226,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
-{{% /md %}}</dd>
+    <dd>The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -235,7 +235,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -243,7 +243,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesaddon">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Inputs.<wbr>Kubernetes<wbr>Addon<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
-{{% /md %}}</dd>
+    <dd>The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client certificate, like `~/.kube/client-cert.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client certificate, like `~/.kube/client-cert.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client key, like `~/.kube/client-key.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client key, like `~/.kube/client-key.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
-{{% /md %}}</dd>
+    <dd>The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}kubelet cpu policy. options: static|none. default: none.
-{{% /md %}}</dd>
+    <dd>kubelet cpu policy. options: static|none. default: none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable login to the node through SSH. default: false 
-{{% /md %}}</dd>
+    <dd>Enable login to the node through SSH. default: false 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom Image support. Must based on CentOS7 or AliyunLinux2.
-{{% /md %}}</dd>
+    <dd>Custom Image support. Must based on CentOS7 or AliyunLinux2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Install cloud monitor agent on ECS. default: true 
-{{% /md %}}</dd>
+    <dd>Install cloud monitor agent on ECS. default: true 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,8 +350,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of kube config, like `~/.kube/config`.
-{{% /md %}}</dd>
+    <dd>The path of kube config, like `~/.kube/config`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,8 +359,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable master payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable master payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,8 +368,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,8 +377,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Master payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -431,7 +431,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,8 +439,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
-{{% /md %}}</dd>
+    <dd>Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,8 +448,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
-{{% /md %}}</dd>
+    <dd>The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,8 +457,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,8 +466,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Flannel Specific] The CIDR block for the pod network when using Flannel. 
-{{% /md %}}</dd>
+    <dd>[Flannel Specific] The CIDR block for the pod network when using Flannel. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,8 +475,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
-{{% /md %}}</dd>
+    <dd>[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,8 +484,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
-{{% /md %}}</dd>
+    <dd>Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,8 +493,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create internet load balancer for API Server. Default to true.
-{{% /md %}}</dd>
+    <dd>Whether to create internet load balancer for API Server. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
-{{% /md %}}</dd>
+    <dd>The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,8 +520,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
-{{% /md %}}</dd>
+    <dd>Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,8 +529,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable worker payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable worker payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,8 +538,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,7 +547,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,7 +555,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,8 +563,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -572,8 +572,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,8 +581,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,8 +590,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,14 +599,14 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Worker payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -615,8 +615,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -624,7 +624,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -632,8 +632,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -641,8 +641,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
-{{% /md %}}</dd>
+    <dd>The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -650,7 +650,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,7 +658,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesaddon">[]Kubernetes<wbr>Addon</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,8 +666,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
-{{% /md %}}</dd>
+    <dd>The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,8 +675,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client certificate, like `~/.kube/client-cert.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client certificate, like `~/.kube/client-cert.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -684,8 +684,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client key, like `~/.kube/client-key.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client key, like `~/.kube/client-key.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,8 +693,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
-{{% /md %}}</dd>
+    <dd>The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -702,8 +702,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}kubelet cpu policy. options: static|none. default: none.
-{{% /md %}}</dd>
+    <dd>kubelet cpu policy. options: static|none. default: none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,8 +711,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable login to the node through SSH. default: false 
-{{% /md %}}</dd>
+    <dd>Enable login to the node through SSH. default: false 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -720,8 +720,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom Image support. Must based on CentOS7 or AliyunLinux2.
-{{% /md %}}</dd>
+    <dd>Custom Image support. Must based on CentOS7 or AliyunLinux2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -729,8 +729,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Install cloud monitor agent on ECS. default: true 
-{{% /md %}}</dd>
+    <dd>Install cloud monitor agent on ECS. default: true 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -738,8 +738,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,8 +747,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,8 +756,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,8 +765,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of kube config, like `~/.kube/config`.
-{{% /md %}}</dd>
+    <dd>The path of kube config, like `~/.kube/config`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,8 +774,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable master payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable master payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,8 +783,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,8 +792,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,8 +801,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -810,8 +810,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -819,8 +819,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,8 +828,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Master payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,8 +837,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -846,7 +846,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -854,8 +854,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
-{{% /md %}}</dd>
+    <dd>Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -863,8 +863,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
-{{% /md %}}</dd>
+    <dd>The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -872,8 +872,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -881,8 +881,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Flannel Specific] The CIDR block for the pod network when using Flannel. 
-{{% /md %}}</dd>
+    <dd>[Flannel Specific] The CIDR block for the pod network when using Flannel. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -890,8 +890,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
-{{% /md %}}</dd>
+    <dd>[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -899,8 +899,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
-{{% /md %}}</dd>
+    <dd>Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -908,8 +908,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create internet load balancer for API Server. Default to true.
-{{% /md %}}</dd>
+    <dd>Whether to create internet load balancer for API Server. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
-{{% /md %}}</dd>
+    <dd>The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
-{{% /md %}}</dd>
+    <dd>Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable worker payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable worker payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,8 +953,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,7 +962,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,7 +970,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,8 +978,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,8 +987,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,8 +996,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,8 +1005,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1014,14 +1014,14 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Worker payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1030,8 +1030,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1039,7 +1039,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1047,8 +1047,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1056,8 +1056,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
-{{% /md %}}</dd>
+    <dd>The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1065,7 +1065,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,7 +1073,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesaddon">Kubernetes<wbr>Addon[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
-{{% /md %}}</dd>
+    <dd>The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,8 +1090,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client certificate, like `~/.kube/client-cert.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client certificate, like `~/.kube/client-cert.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,8 +1099,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client key, like `~/.kube/client-key.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client key, like `~/.kube/client-key.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1108,8 +1108,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
-{{% /md %}}</dd>
+    <dd>The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1117,8 +1117,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}kubelet cpu policy. options: static|none. default: none.
-{{% /md %}}</dd>
+    <dd>kubelet cpu policy. options: static|none. default: none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1126,8 +1126,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable login to the node through SSH. default: false 
-{{% /md %}}</dd>
+    <dd>Enable login to the node through SSH. default: false 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1135,8 +1135,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom Image support. Must based on CentOS7 or AliyunLinux2.
-{{% /md %}}</dd>
+    <dd>Custom Image support. Must based on CentOS7 or AliyunLinux2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,8 +1144,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Install cloud monitor agent on ECS. default: true 
-{{% /md %}}</dd>
+    <dd>Install cloud monitor agent on ECS. default: true 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,8 +1153,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1162,8 +1162,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1171,8 +1171,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,8 +1180,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of kube config, like `~/.kube/config`.
-{{% /md %}}</dd>
+    <dd>The path of kube config, like `~/.kube/config`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1189,8 +1189,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable master payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable master payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,8 +1198,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,8 +1207,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,8 +1216,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,8 +1225,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,8 +1234,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,8 +1243,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Master payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,8 +1252,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1261,7 +1261,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
-{{% /md %}}</dd>
+    <dd>Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
-{{% /md %}}</dd>
+    <dd>The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Flannel Specific] The CIDR block for the pod network when using Flannel. 
-{{% /md %}}</dd>
+    <dd>[Flannel Specific] The CIDR block for the pod network when using Flannel. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
-{{% /md %}}</dd>
+    <dd>[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
-{{% /md %}}</dd>
+    <dd>Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create internet load balancer for API Server. Default to true.
-{{% /md %}}</dd>
+    <dd>Whether to create internet load balancer for API Server. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,8 +1341,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
-{{% /md %}}</dd>
+    <dd>The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
-{{% /md %}}</dd>
+    <dd>Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,8 +1359,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable worker payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable worker payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1368,8 +1368,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,7 +1377,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,7 +1385,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,8 +1393,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1402,8 +1402,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1411,8 +1411,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1420,8 +1420,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1429,14 +1429,14 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Worker payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1445,8 +1445,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1454,7 +1454,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1462,8 +1462,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1471,8 +1471,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
-{{% /md %}}</dd>
+    <dd>The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1480,7 +1480,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1488,7 +1488,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesaddon">List[Kubernetes<wbr>Addon]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,8 +1496,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
-{{% /md %}}</dd>
+    <dd>The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1505,8 +1505,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of client certificate, like `~/.kube/client-cert.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client certificate, like `~/.kube/client-cert.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1514,8 +1514,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of client key, like `~/.kube/client-key.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client key, like `~/.kube/client-key.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,8 +1523,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
-{{% /md %}}</dd>
+    <dd>The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1532,8 +1532,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}kubelet cpu policy. options: static|none. default: none.
-{{% /md %}}</dd>
+    <dd>kubelet cpu policy. options: static|none. default: none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,8 +1541,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable login to the node through SSH. default: false 
-{{% /md %}}</dd>
+    <dd>Enable login to the node through SSH. default: false 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1550,8 +1550,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom Image support. Must based on CentOS7 or AliyunLinux2.
-{{% /md %}}</dd>
+    <dd>Custom Image support. Must based on CentOS7 or AliyunLinux2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,8 +1559,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Install cloud monitor agent on ECS. default: true 
-{{% /md %}}</dd>
+    <dd>Install cloud monitor agent on ECS. default: true 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,8 +1568,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,8 +1577,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,8 +1595,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of kube config, like `~/.kube/config`.
-{{% /md %}}</dd>
+    <dd>The path of kube config, like `~/.kube/config`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,8 +1604,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable master payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable master payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,8 +1613,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,8 +1631,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,8 +1640,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,8 +1649,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,8 +1658,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Master payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,8 +1667,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1676,7 +1676,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,8 +1684,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
-{{% /md %}}</dd>
+    <dd>Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1693,8 +1693,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
-{{% /md %}}</dd>
+    <dd>The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1702,8 +1702,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1711,8 +1711,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Flannel Specific] The CIDR block for the pod network when using Flannel. 
-{{% /md %}}</dd>
+    <dd>[Flannel Specific] The CIDR block for the pod network when using Flannel. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1720,8 +1720,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
-{{% /md %}}</dd>
+    <dd>[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1729,8 +1729,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
-{{% /md %}}</dd>
+    <dd>Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1738,8 +1738,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1747,8 +1747,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create internet load balancer for API Server. Default to true.
-{{% /md %}}</dd>
+    <dd>Whether to create internet load balancer for API Server. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1756,8 +1756,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
-{{% /md %}}</dd>
+    <dd>The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1765,8 +1765,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
-{{% /md %}}</dd>
+    <dd>Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,8 +1774,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable worker payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable worker payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,8 +1783,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1792,7 +1792,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1800,7 +1800,7 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1808,8 +1808,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,8 +1817,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,8 +1826,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1835,8 +1835,8 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,11 +1844,11 @@ The Kubernetes resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Worker payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1862,7 +1862,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1871,8 +1871,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesconnections">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Outputs.<wbr>Kubernetes<wbr>Connections</a></span>
     </dt>
-    <dd>{{% md %}}Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
-{{% /md %}}</dd>
+    <dd>Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1880,7 +1880,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1888,8 +1888,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesmasternode">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Outputs.<wbr>Kubernetes<wbr>Master<wbr>Node&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster master nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster master nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1897,8 +1897,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of nat gateway used to launch kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>The ID of nat gateway used to launch kubernetes cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1906,8 +1906,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -1915,7 +1915,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.</p></dd>
 
     <dt class="property-"
             title="">
@@ -1923,7 +1923,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1931,8 +1931,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of private load balancer where the current cluster master node is located.
-{{% /md %}}</dd>
+    <dd>The ID of private load balancer where the current cluster master node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1940,8 +1940,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1949,14 +1949,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesworkernode">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Outputs.<wbr>Kubernetes<wbr>Worker<wbr>Node&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster worker nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster worker nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1965,8 +1965,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesconnections">Kubernetes<wbr>Connections</a></span>
     </dt>
-    <dd>{{% md %}}Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
-{{% /md %}}</dd>
+    <dd>Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1974,7 +1974,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1982,8 +1982,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesmasternode">[]Kubernetes<wbr>Master<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster master nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster master nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1991,8 +1991,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of nat gateway used to launch kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>The ID of nat gateway used to launch kubernetes cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2000,8 +2000,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2009,7 +2009,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2017,7 +2017,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -2025,8 +2025,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of private load balancer where the current cluster master node is located.
-{{% /md %}}</dd>
+    <dd>The ID of private load balancer where the current cluster master node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2034,8 +2034,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2043,14 +2043,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesworkernode">[]Kubernetes<wbr>Worker<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster worker nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster worker nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2059,8 +2059,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesconnections">Kubernetes<wbr>Connections</a></span>
     </dt>
-    <dd>{{% md %}}Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
-{{% /md %}}</dd>
+    <dd>Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2068,7 +2068,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -2076,8 +2076,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesmasternode">Kubernetes<wbr>Master<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster master nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster master nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2085,8 +2085,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of nat gateway used to launch kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>The ID of nat gateway used to launch kubernetes cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2094,8 +2094,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2103,7 +2103,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2111,7 +2111,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -2119,8 +2119,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of private load balancer where the current cluster master node is located.
-{{% /md %}}</dd>
+    <dd>The ID of private load balancer where the current cluster master node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2128,8 +2128,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2137,14 +2137,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesworkernode">Kubernetes<wbr>Worker<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster worker nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster worker nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2153,8 +2153,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesconnections">Dict[Kubernetes<wbr>Connections]</a></span>
     </dt>
-    <dd>{{% md %}}Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
-{{% /md %}}</dd>
+    <dd>Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2162,7 +2162,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -2170,8 +2170,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesmasternode">List[Kubernetes<wbr>Master<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster master nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster master nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2179,8 +2179,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of nat gateway used to launch kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>The ID of nat gateway used to launch kubernetes cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2188,8 +2188,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -2197,7 +2197,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.</p></dd>
 
     <dt class="property-"
             title="">
@@ -2205,7 +2205,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -2213,8 +2213,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of private load balancer where the current cluster master node is located.
-{{% /md %}}</dd>
+    <dd>The ID of private load balancer where the current cluster master node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2222,8 +2222,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2231,11 +2231,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesworkernode">List[Kubernetes<wbr>Worker<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster worker nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster worker nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2246,25 +2246,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Kubernetes Resource {#look-up}
 
 Get an existing Kubernetes resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cs/#KubernetesState">KubernetesState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cs/#Kubernetes">Kubernetes</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>addons=None<span class="p">, </span>availability_zone=None<span class="p">, </span>client_cert=None<span class="p">, </span>client_key=None<span class="p">, </span>cluster_ca_cert=None<span class="p">, </span>connections=None<span class="p">, </span>cpu_policy=None<span class="p">, </span>enable_ssh=None<span class="p">, </span>image_id=None<span class="p">, </span>install_cloud_monitor=None<span class="p">, </span>key_name=None<span class="p">, </span>kms_encrypted_password=None<span class="p">, </span>kms_encryption_context=None<span class="p">, </span>kube_config=None<span class="p">, </span>master_auto_renew=None<span class="p">, </span>master_auto_renew_period=None<span class="p">, </span>master_disk_category=None<span class="p">, </span>master_disk_size=None<span class="p">, </span>master_instance_charge_type=None<span class="p">, </span>master_instance_types=None<span class="p">, </span>master_nodes=None<span class="p">, </span>master_period=None<span class="p">, </span>master_period_unit=None<span class="p">, </span>master_vswitch_ids=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>nat_gateway_id=None<span class="p">, </span>new_nat_gateway=None<span class="p">, </span>node_cidr_mask=None<span class="p">, </span>password=None<span class="p">, </span>pod_cidr=None<span class="p">, </span>pod_vswitch_ids=None<span class="p">, </span>proxy_mode=None<span class="p">, </span>security_group_id=None<span class="p">, </span>service_cidr=None<span class="p">, </span>slb_id=None<span class="p">, </span>slb_internet=None<span class="p">, </span>slb_internet_enabled=None<span class="p">, </span>slb_intranet=None<span class="p">, </span>user_ca=None<span class="p">, </span>version=None<span class="p">, </span>vpc_id=None<span class="p">, </span>worker_auto_renew=None<span class="p">, </span>worker_auto_renew_period=None<span class="p">, </span>worker_data_disk_category=None<span class="p">, </span>worker_data_disk_size=None<span class="p">, </span>worker_disk_category=None<span class="p">, </span>worker_disk_size=None<span class="p">, </span>worker_instance_charge_type=None<span class="p">, </span>worker_instance_types=None<span class="p">, </span>worker_nodes=None<span class="p">, </span>worker_number=None<span class="p">, </span>worker_period=None<span class="p">, </span>worker_period_unit=None<span class="p">, </span>worker_vswitch_ids=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetKubernetes<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#KubernetesState">KubernetesState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#Kubernetes">Kubernetes</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.CS.Kubernetes.html">Kubernetes</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.CS.KubernetesState.html">KubernetesState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -2289,9 +2289,9 @@ Get an existing Kubernetes resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -2304,36 +2304,9 @@ Get an existing Kubernetes resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -2358,13 +2331,40 @@ Get an existing Kubernetes resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2373,7 +2373,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesaddon">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Inputs.<wbr>Kubernetes<wbr>Addon<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2381,8 +2381,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
-{{% /md %}}</dd>
+    <dd>The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2390,8 +2390,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client certificate, like `~/.kube/client-cert.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client certificate, like `~/.kube/client-cert.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2399,8 +2399,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client key, like `~/.kube/client-key.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client key, like `~/.kube/client-key.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2408,8 +2408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
-{{% /md %}}</dd>
+    <dd>The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,8 +2417,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesconnections">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Inputs.<wbr>Kubernetes<wbr>Connections<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
-{{% /md %}}</dd>
+    <dd>Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2426,8 +2426,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}kubelet cpu policy. options: static|none. default: none.
-{{% /md %}}</dd>
+    <dd>kubelet cpu policy. options: static|none. default: none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2435,8 +2435,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable login to the node through SSH. default: false 
-{{% /md %}}</dd>
+    <dd>Enable login to the node through SSH. default: false 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2444,8 +2444,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom Image support. Must based on CentOS7 or AliyunLinux2.
-{{% /md %}}</dd>
+    <dd>Custom Image support. Must based on CentOS7 or AliyunLinux2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2453,8 +2453,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Install cloud monitor agent on ECS. default: true 
-{{% /md %}}</dd>
+    <dd>Install cloud monitor agent on ECS. default: true 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2462,8 +2462,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2471,8 +2471,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2480,8 +2480,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2489,8 +2489,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of kube config, like `~/.kube/config`.
-{{% /md %}}</dd>
+    <dd>The path of kube config, like `~/.kube/config`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2498,8 +2498,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable master payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable master payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2507,8 +2507,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2516,8 +2516,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2525,8 +2525,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2534,8 +2534,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2543,8 +2543,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2552,8 +2552,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesmasternode">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Inputs.<wbr>Kubernetes<wbr>Master<wbr>Node<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster master nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster master nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2561,8 +2561,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2570,8 +2570,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Master payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2579,7 +2579,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2587,8 +2587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2596,7 +2596,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2604,8 +2604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of nat gateway used to launch kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>The ID of nat gateway used to launch kubernetes cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2613,8 +2613,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
-{{% /md %}}</dd>
+    <dd>Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2622,8 +2622,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
-{{% /md %}}</dd>
+    <dd>The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2631,8 +2631,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2640,8 +2640,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Flannel Specific] The CIDR block for the pod network when using Flannel. 
-{{% /md %}}</dd>
+    <dd>[Flannel Specific] The CIDR block for the pod network when using Flannel. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2649,8 +2649,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
-{{% /md %}}</dd>
+    <dd>[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2658,8 +2658,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
-{{% /md %}}</dd>
+    <dd>Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2667,8 +2667,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2676,8 +2676,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2685,7 +2685,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2693,7 +2693,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2701,8 +2701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create internet load balancer for API Server. Default to true.
-{{% /md %}}</dd>
+    <dd>Whether to create internet load balancer for API Server. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2710,8 +2710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of private load balancer where the current cluster master node is located.
-{{% /md %}}</dd>
+    <dd>The ID of private load balancer where the current cluster master node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2719,8 +2719,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
-{{% /md %}}</dd>
+    <dd>The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2728,8 +2728,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
-{{% /md %}}</dd>
+    <dd>Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2737,8 +2737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2746,8 +2746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable worker payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable worker payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2755,8 +2755,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2764,7 +2764,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2772,7 +2772,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2780,8 +2780,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2789,8 +2789,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2798,8 +2798,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2807,8 +2807,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2816,8 +2816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesworkernode">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Inputs.<wbr>Kubernetes<wbr>Worker<wbr>Node<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster worker nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster worker nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2825,8 +2825,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
-{{% /md %}}</dd>
+    <dd>The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2834,8 +2834,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2843,8 +2843,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Worker payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2852,13 +2852,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2867,7 +2867,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesaddon">[]Kubernetes<wbr>Addon</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2875,8 +2875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
-{{% /md %}}</dd>
+    <dd>The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2884,8 +2884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client certificate, like `~/.kube/client-cert.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client certificate, like `~/.kube/client-cert.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2893,8 +2893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client key, like `~/.kube/client-key.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client key, like `~/.kube/client-key.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2902,8 +2902,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
-{{% /md %}}</dd>
+    <dd>The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2911,8 +2911,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesconnections">Kubernetes<wbr>Connections</a></span>
     </dt>
-    <dd>{{% md %}}Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
-{{% /md %}}</dd>
+    <dd>Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2920,8 +2920,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}kubelet cpu policy. options: static|none. default: none.
-{{% /md %}}</dd>
+    <dd>kubelet cpu policy. options: static|none. default: none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2929,8 +2929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable login to the node through SSH. default: false 
-{{% /md %}}</dd>
+    <dd>Enable login to the node through SSH. default: false 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2938,8 +2938,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom Image support. Must based on CentOS7 or AliyunLinux2.
-{{% /md %}}</dd>
+    <dd>Custom Image support. Must based on CentOS7 or AliyunLinux2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2947,8 +2947,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Install cloud monitor agent on ECS. default: true 
-{{% /md %}}</dd>
+    <dd>Install cloud monitor agent on ECS. default: true 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2956,8 +2956,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2965,8 +2965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2974,8 +2974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2983,8 +2983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of kube config, like `~/.kube/config`.
-{{% /md %}}</dd>
+    <dd>The path of kube config, like `~/.kube/config`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2992,8 +2992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable master payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable master payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3001,8 +3001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3010,8 +3010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3019,8 +3019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3028,8 +3028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3037,8 +3037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3046,8 +3046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesmasternode">[]Kubernetes<wbr>Master<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster master nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster master nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3055,8 +3055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3064,8 +3064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Master payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3073,7 +3073,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3081,8 +3081,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3090,7 +3090,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3098,8 +3098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of nat gateway used to launch kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>The ID of nat gateway used to launch kubernetes cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3107,8 +3107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
-{{% /md %}}</dd>
+    <dd>Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3116,8 +3116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
-{{% /md %}}</dd>
+    <dd>The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3125,8 +3125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3134,8 +3134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Flannel Specific] The CIDR block for the pod network when using Flannel. 
-{{% /md %}}</dd>
+    <dd>[Flannel Specific] The CIDR block for the pod network when using Flannel. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3143,8 +3143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
-{{% /md %}}</dd>
+    <dd>[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3152,8 +3152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
-{{% /md %}}</dd>
+    <dd>Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3161,8 +3161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3170,8 +3170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3179,7 +3179,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3187,7 +3187,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3195,8 +3195,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create internet load balancer for API Server. Default to true.
-{{% /md %}}</dd>
+    <dd>Whether to create internet load balancer for API Server. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3204,8 +3204,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of private load balancer where the current cluster master node is located.
-{{% /md %}}</dd>
+    <dd>The ID of private load balancer where the current cluster master node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3213,8 +3213,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
-{{% /md %}}</dd>
+    <dd>The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3222,8 +3222,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
-{{% /md %}}</dd>
+    <dd>Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3231,8 +3231,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3240,8 +3240,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable worker payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable worker payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3249,8 +3249,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3258,7 +3258,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3266,7 +3266,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3274,8 +3274,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3283,8 +3283,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3292,8 +3292,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3301,8 +3301,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3310,8 +3310,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesworkernode">[]Kubernetes<wbr>Worker<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster worker nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster worker nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3319,8 +3319,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
-{{% /md %}}</dd>
+    <dd>The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3328,8 +3328,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3337,8 +3337,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Worker payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3346,13 +3346,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3361,7 +3361,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesaddon">Kubernetes<wbr>Addon[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3369,8 +3369,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
-{{% /md %}}</dd>
+    <dd>The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3378,8 +3378,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client certificate, like `~/.kube/client-cert.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client certificate, like `~/.kube/client-cert.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3387,8 +3387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of client key, like `~/.kube/client-key.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client key, like `~/.kube/client-key.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3396,8 +3396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
-{{% /md %}}</dd>
+    <dd>The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3405,8 +3405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesconnections">Kubernetes<wbr>Connections</a></span>
     </dt>
-    <dd>{{% md %}}Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
-{{% /md %}}</dd>
+    <dd>Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3414,8 +3414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}kubelet cpu policy. options: static|none. default: none.
-{{% /md %}}</dd>
+    <dd>kubelet cpu policy. options: static|none. default: none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3423,8 +3423,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable login to the node through SSH. default: false 
-{{% /md %}}</dd>
+    <dd>Enable login to the node through SSH. default: false 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3432,8 +3432,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom Image support. Must based on CentOS7 or AliyunLinux2.
-{{% /md %}}</dd>
+    <dd>Custom Image support. Must based on CentOS7 or AliyunLinux2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3441,8 +3441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Install cloud monitor agent on ECS. default: true 
-{{% /md %}}</dd>
+    <dd>Install cloud monitor agent on ECS. default: true 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3450,8 +3450,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3459,8 +3459,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3468,8 +3468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3477,8 +3477,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of kube config, like `~/.kube/config`.
-{{% /md %}}</dd>
+    <dd>The path of kube config, like `~/.kube/config`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3486,8 +3486,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable master payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable master payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3495,8 +3495,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3504,8 +3504,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3513,8 +3513,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3522,8 +3522,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3531,8 +3531,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3540,8 +3540,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesmasternode">Kubernetes<wbr>Master<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster master nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster master nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3549,8 +3549,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3558,8 +3558,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Master payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3567,7 +3567,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3575,8 +3575,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3584,7 +3584,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3592,8 +3592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of nat gateway used to launch kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>The ID of nat gateway used to launch kubernetes cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3601,8 +3601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
-{{% /md %}}</dd>
+    <dd>Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3610,8 +3610,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
-{{% /md %}}</dd>
+    <dd>The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3619,8 +3619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3628,8 +3628,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Flannel Specific] The CIDR block for the pod network when using Flannel. 
-{{% /md %}}</dd>
+    <dd>[Flannel Specific] The CIDR block for the pod network when using Flannel. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3637,8 +3637,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
-{{% /md %}}</dd>
+    <dd>[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3646,8 +3646,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
-{{% /md %}}</dd>
+    <dd>Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3655,8 +3655,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3664,8 +3664,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3673,7 +3673,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3681,7 +3681,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3689,8 +3689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create internet load balancer for API Server. Default to true.
-{{% /md %}}</dd>
+    <dd>Whether to create internet load balancer for API Server. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3698,8 +3698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of private load balancer where the current cluster master node is located.
-{{% /md %}}</dd>
+    <dd>The ID of private load balancer where the current cluster master node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3707,8 +3707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
-{{% /md %}}</dd>
+    <dd>The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3716,8 +3716,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
-{{% /md %}}</dd>
+    <dd>Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3725,8 +3725,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3734,8 +3734,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable worker payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable worker payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3743,8 +3743,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3752,7 +3752,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3760,7 +3760,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3768,8 +3768,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3777,8 +3777,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3786,8 +3786,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3795,8 +3795,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3804,8 +3804,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesworkernode">Kubernetes<wbr>Worker<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster worker nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster worker nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3813,8 +3813,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
-{{% /md %}}</dd>
+    <dd>The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3822,8 +3822,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3831,8 +3831,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Worker payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3840,13 +3840,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3855,7 +3855,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesaddon">List[Kubernetes<wbr>Addon]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3863,8 +3863,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
-{{% /md %}}</dd>
+    <dd>The Zone where new kubernetes cluster will be located. If it is not be specified, the `vswitch_ids` should be set, its value will be vswitch's zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3872,8 +3872,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of client certificate, like `~/.kube/client-cert.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client certificate, like `~/.kube/client-cert.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3881,8 +3881,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of client key, like `~/.kube/client-key.pem`.
-{{% /md %}}</dd>
+    <dd>The path of client key, like `~/.kube/client-key.pem`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3890,8 +3890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
-{{% /md %}}</dd>
+    <dd>The path of cluster ca certificate, like `~/.kube/cluster-ca-cert.pem`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3899,8 +3899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesconnections">Dict[Kubernetes<wbr>Connections]</a></span>
     </dt>
-    <dd>{{% md %}}Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
-{{% /md %}}</dd>
+    <dd>Map of kubernetes cluster connection information. It contains several attributes to `Block Connections`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3908,8 +3908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}kubelet cpu policy. options: static|none. default: none.
-{{% /md %}}</dd>
+    <dd>kubelet cpu policy. options: static|none. default: none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3917,8 +3917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable login to the node through SSH. default: false 
-{{% /md %}}</dd>
+    <dd>Enable login to the node through SSH. default: false 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3926,8 +3926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom Image support. Must based on CentOS7 or AliyunLinux2.
-{{% /md %}}</dd>
+    <dd>Custom Image support. Must based on CentOS7 or AliyunLinux2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3935,8 +3935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Install cloud monitor agent on ECS. default: true 
-{{% /md %}}</dd>
+    <dd>Install cloud monitor agent on ECS. default: true 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3944,8 +3944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The keypair of ssh login cluster node, you have to create it first. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3953,8 +3953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a cs kubernetes. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3962,8 +3962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a cs kubernetes with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3971,8 +3971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of kube config, like `~/.kube/config`.
-{{% /md %}}</dd>
+    <dd>The path of kube config, like `~/.kube/config`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3980,8 +3980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable master payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable master payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3989,8 +3989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Master payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3998,8 +3998,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of master node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4007,8 +4007,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of master node. Its valid value range [20~500] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4016,8 +4016,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4025,8 +4025,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4034,8 +4034,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesmasternode">List[Kubernetes<wbr>Master<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster master nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster master nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4043,8 +4043,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Master payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4052,8 +4052,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Master payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Master payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4061,7 +4061,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4069,8 +4069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4078,7 +4078,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;name_prefix&#39; has been deprecated from provider version 1.75.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4086,8 +4086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of nat gateway used to launch kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>The ID of nat gateway used to launch kubernetes cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4095,8 +4095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
-{{% /md %}}</dd>
+    <dd>Whether to create a new nat gateway while creating kubernetes cluster. Default to true. Then openapi in Alibaba Cloud are not all on intranet, So turn this option on is a good choice.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4104,8 +4104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
-{{% /md %}}</dd>
+    <dd>The node cidr block to specific how many pods can run on single node. 24-28 is allowed. 24 means 2^(32-24)-1=255 and the node can run at most 255 pods. default: 24
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4113,8 +4113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
-{{% /md %}}</dd>
+    <dd>The password of ssh login cluster node. You have to specify one of `password` `key_name` `kms_encrypted_password` fields.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4122,8 +4122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Flannel Specific] The CIDR block for the pod network when using Flannel. 
-{{% /md %}}</dd>
+    <dd>[Flannel Specific] The CIDR block for the pod network when using Flannel. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4131,8 +4131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
-{{% /md %}}</dd>
+    <dd>[Terway Specific] The vswitches for the pod network when using Terway.Be careful the `pod_vswitch_ids` can not equal to `worker_vswtich_ids` or `master_vswtich_ids` but must be in same availability zones.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4140,8 +4140,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
-{{% /md %}}</dd>
+    <dd>Proxy mode is option of kube-proxy. options: iptables|ipvs. default: ipvs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4149,8 +4149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4158,8 +4158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the service network. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4167,7 +4167,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;slb_id&#39; has been deprecated from provider version 1.9.2. New field &#39;slb_internet&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4175,7 +4175,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4183,8 +4183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to create internet load balancer for API Server. Default to true.
-{{% /md %}}</dd>
+    <dd>Whether to create internet load balancer for API Server. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4192,8 +4192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of private load balancer where the current cluster master node is located.
-{{% /md %}}</dd>
+    <dd>The ID of private load balancer where the current cluster master node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4201,8 +4201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
-{{% /md %}}</dd>
+    <dd>The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4210,8 +4210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
-{{% /md %}}</dd>
+    <dd>Desired Kubernetes version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except you set a higher version number. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by ACK.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4219,8 +4219,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4228,8 +4228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable worker payment auto-renew, defaults to false.
-{{% /md %}}</dd>
+    <dd>Enable worker payment auto-renew, defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4237,8 +4237,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
-{{% /md %}}</dd>
+    <dd>Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4246,7 +4246,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4254,7 +4254,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4262,8 +4262,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The system disk category of worker node. Its valid value are `cloud_ssd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4271,8 +4271,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The system disk size of worker node. Its valid value range [20~32768] in GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4280,8 +4280,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4289,8 +4289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
-{{% /md %}}</dd>
+    <dd>The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4298,8 +4298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesworkernode">List[Kubernetes<wbr>Worker<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster worker nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster worker nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4307,8 +4307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
-{{% /md %}}</dd>
+    <dd>The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4316,8 +4316,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
-{{% /md %}}</dd>
+    <dd>Worker payment period. When period unit is `Month`, it can be one of { “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “12”, “24”, “36”,”48”,”60”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”, “4”}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4325,8 +4325,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Worker payment period unit. `Month` or `Week`, defaults to `Month`.
-{{% /md %}}</dd>
+    <dd>Worker payment period unit. `Month` or `Week`, defaults to `Month`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4334,10 +4334,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -4352,18 +4352,18 @@ The following state arguments are supported:
 
 
 <h4 id="kubernetesaddon">Kubernetes<wbr>Addon</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#KubernetesAddon">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#KubernetesAddon">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#KubernetesAddonArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#KubernetesAddonOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4372,7 +4372,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4380,14 +4380,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4396,7 +4396,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4404,14 +4404,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4420,7 +4420,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4428,14 +4428,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4444,7 +4444,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4452,29 +4452,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="kubernetesconnections">Kubernetes<wbr>Connections</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#KubernetesConnections">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#KubernetesConnectionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4483,8 +4483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}API Server Internet endpoint.
-{{% /md %}}</dd>
+    <dd>API Server Internet endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4492,8 +4492,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}API Server Intranet endpoint.
-{{% /md %}}</dd>
+    <dd>API Server Intranet endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4501,8 +4501,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Master node SSH IP address.
-{{% /md %}}</dd>
+    <dd>Master node SSH IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4510,14 +4510,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Service Access Domain.
-{{% /md %}}</dd>
+    <dd>Service Access Domain.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4526,8 +4526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}API Server Internet endpoint.
-{{% /md %}}</dd>
+    <dd>API Server Internet endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4535,8 +4535,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}API Server Intranet endpoint.
-{{% /md %}}</dd>
+    <dd>API Server Intranet endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4544,8 +4544,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master node SSH IP address.
-{{% /md %}}</dd>
+    <dd>Master node SSH IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4553,14 +4553,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service Access Domain.
-{{% /md %}}</dd>
+    <dd>Service Access Domain.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4569,8 +4569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}API Server Internet endpoint.
-{{% /md %}}</dd>
+    <dd>API Server Internet endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4578,8 +4578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}API Server Intranet endpoint.
-{{% /md %}}</dd>
+    <dd>API Server Intranet endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4587,8 +4587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Master node SSH IP address.
-{{% /md %}}</dd>
+    <dd>Master node SSH IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4596,14 +4596,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service Access Domain.
-{{% /md %}}</dd>
+    <dd>Service Access Domain.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4612,8 +4612,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}API Server Internet endpoint.
-{{% /md %}}</dd>
+    <dd>API Server Internet endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4621,8 +4621,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}API Server Intranet endpoint.
-{{% /md %}}</dd>
+    <dd>API Server Intranet endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4630,8 +4630,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Master node SSH IP address.
-{{% /md %}}</dd>
+    <dd>Master node SSH IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4639,29 +4639,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Service Access Domain.
-{{% /md %}}</dd>
+    <dd>Service Access Domain.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="kubernetesmasternode">Kubernetes<wbr>Master<wbr>Node</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#KubernetesMasterNode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#KubernetesMasterNodeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4670,8 +4670,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4679,8 +4679,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4688,14 +4688,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4704,8 +4704,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4713,8 +4713,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4722,14 +4722,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4738,8 +4738,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4747,8 +4747,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4756,14 +4756,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4772,8 +4772,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4781,8 +4781,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4790,29 +4790,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="kubernetesworkernode">Kubernetes<wbr>Worker<wbr>Node</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#KubernetesWorkerNode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#KubernetesWorkerNodeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4821,8 +4821,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4830,8 +4830,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4839,14 +4839,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4855,8 +4855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4864,8 +4864,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4873,14 +4873,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4889,8 +4889,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4898,8 +4898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4907,14 +4907,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4923,8 +4923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4932,8 +4932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The kubernetes cluster's name. It is unique in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The kubernetes cluster's name. It is unique in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4941,11 +4941,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

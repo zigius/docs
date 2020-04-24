@@ -23,9 +23,9 @@ The Linode provider supports several options for providing access to Linode cred
 
 ## Example
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 const linode = require("@pulumi/linode")
@@ -36,8 +36,8 @@ const domain = new linode.Domain("my-domain", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as linode from "@pulumi/linode";
@@ -48,8 +48,8 @@ const domain = new linode.Domain("my-domain", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi_linode as linode
@@ -60,8 +60,8 @@ domain = linode.Domain("my-domain",
 )
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 import (
@@ -74,8 +74,8 @@ domain, _ := linode.NewDomain(ctx, "test", &linode.DomainArgs{
 })
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Threading.Tasks;
@@ -96,9 +96,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ## Libraries
 

@@ -32,29 +32,29 @@ const port1 = pulumi.output(openstack.networking.getPort({
 
 ## Using GetPort {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getPort<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#GetPortArgs">GetPortArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#GetPortResult">GetPortResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_port(</span>admin_state_up=None<span class="p">, </span>description=None<span class="p">, </span>device_id=None<span class="p">, </span>device_owner=None<span class="p">, </span>dns_name=None<span class="p">, </span>fixed_ip=None<span class="p">, </span>mac_address=None<span class="p">, </span>name=None<span class="p">, </span>network_id=None<span class="p">, </span>port_id=None<span class="p">, </span>project_id=None<span class="p">, </span>region=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>status=None<span class="p">, </span>tags=None<span class="p">, </span>tenant_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupPort<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#LookupPortArgs">LookupPortArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#LookupPortResult">LookupPortResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetPort </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.GetPortResult.html">GetPortResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Networking.GetPortArgs.html">GetPortArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the port.
-{{% /md %}}</dd>
+    <dd>The administrative state of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,8 +80,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the port.
-{{% /md %}}</dd>
+    <dd>Human-readable description of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -89,8 +89,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device the port belongs to.
-{{% /md %}}</dd>
+    <dd>The ID of the device the port belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -98,8 +98,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the port.
-{{% /md %}}</dd>
+    <dd>The device owner of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -107,9 +107,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name to filter. Available, when Neutron
+    <dd>The port DNS name to filter. Available, when Neutron
 DNS extension is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -117,8 +117,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The port IP address filter.
-{{% /md %}}</dd>
+    <dd>The port IP address filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -126,8 +126,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address of the port.
-{{% /md %}}</dd>
+    <dd>The MAC address of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -135,8 +135,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the port.
-{{% /md %}}</dd>
+    <dd>The name of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -144,8 +144,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network the port belongs to.
-{{% /md %}}</dd>
+    <dd>The ID of the network the port belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -153,8 +153,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the port.
-{{% /md %}}</dd>
+    <dd>The ID of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -162,8 +162,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the port.
-{{% /md %}}</dd>
+    <dd>The owner of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -171,10 +171,10 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Neutron client.
+    <dd>The region in which to obtain the V2 Neutron client.
 A Neutron client is needed to retrieve port ids. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -182,8 +182,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of port security group IDs to filter.
-{{% /md %}}</dd>
+    <dd>The list of port security group IDs to filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -191,8 +191,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the port.
-{{% /md %}}</dd>
+    <dd>The status of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -200,8 +200,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of port tags to filter.
-{{% /md %}}</dd>
+    <dd>The list of port tags to filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,13 +209,13 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -224,8 +224,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the port.
-{{% /md %}}</dd>
+    <dd>The administrative state of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the port.
-{{% /md %}}</dd>
+    <dd>Human-readable description of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device the port belongs to.
-{{% /md %}}</dd>
+    <dd>The ID of the device the port belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the port.
-{{% /md %}}</dd>
+    <dd>The device owner of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,9 +260,9 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name to filter. Available, when Neutron
+    <dd>The port DNS name to filter. Available, when Neutron
 DNS extension is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,8 +270,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port IP address filter.
-{{% /md %}}</dd>
+    <dd>The port IP address filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,8 +279,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address of the port.
-{{% /md %}}</dd>
+    <dd>The MAC address of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,8 +288,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the port.
-{{% /md %}}</dd>
+    <dd>The name of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,8 +297,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network the port belongs to.
-{{% /md %}}</dd>
+    <dd>The ID of the network the port belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,8 +306,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the port.
-{{% /md %}}</dd>
+    <dd>The ID of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,8 +315,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the port.
-{{% /md %}}</dd>
+    <dd>The owner of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,10 +324,10 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Neutron client.
+    <dd>The region in which to obtain the V2 Neutron client.
 A Neutron client is needed to retrieve port ids. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,8 +335,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of port security group IDs to filter.
-{{% /md %}}</dd>
+    <dd>The list of port security group IDs to filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,8 +344,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the port.
-{{% /md %}}</dd>
+    <dd>The status of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of port tags to filter.
-{{% /md %}}</dd>
+    <dd>The list of port tags to filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,13 +362,13 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -377,8 +377,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the port.
-{{% /md %}}</dd>
+    <dd>The administrative state of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the port.
-{{% /md %}}</dd>
+    <dd>Human-readable description of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device the port belongs to.
-{{% /md %}}</dd>
+    <dd>The ID of the device the port belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the port.
-{{% /md %}}</dd>
+    <dd>The device owner of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,9 +413,9 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name to filter. Available, when Neutron
+    <dd>The port DNS name to filter. Available, when Neutron
 DNS extension is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port IP address filter.
-{{% /md %}}</dd>
+    <dd>The port IP address filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address of the port.
-{{% /md %}}</dd>
+    <dd>The MAC address of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the port.
-{{% /md %}}</dd>
+    <dd>The name of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,8 +450,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network the port belongs to.
-{{% /md %}}</dd>
+    <dd>The ID of the network the port belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the port.
-{{% /md %}}</dd>
+    <dd>The ID of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the port.
-{{% /md %}}</dd>
+    <dd>The owner of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,10 +477,10 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Neutron client.
+    <dd>The region in which to obtain the V2 Neutron client.
 A Neutron client is needed to retrieve port ids. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of port security group IDs to filter.
-{{% /md %}}</dd>
+    <dd>The list of port security group IDs to filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the port.
-{{% /md %}}</dd>
+    <dd>The status of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of port tags to filter.
-{{% /md %}}</dd>
+    <dd>The list of port tags to filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,13 +515,13 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -530,8 +530,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the port.
-{{% /md %}}</dd>
+    <dd>The administrative state of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,8 +539,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the port.
-{{% /md %}}</dd>
+    <dd>Human-readable description of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device the port belongs to.
-{{% /md %}}</dd>
+    <dd>The ID of the device the port belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the port.
-{{% /md %}}</dd>
+    <dd>The device owner of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,9 +566,9 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name to filter. Available, when Neutron
+    <dd>The port DNS name to filter. Available, when Neutron
 DNS extension is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,8 +576,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The port IP address filter.
-{{% /md %}}</dd>
+    <dd>The port IP address filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,8 +585,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address of the port.
-{{% /md %}}</dd>
+    <dd>The MAC address of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -594,8 +594,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the port.
-{{% /md %}}</dd>
+    <dd>The name of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,8 +603,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network the port belongs to.
-{{% /md %}}</dd>
+    <dd>The ID of the network the port belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,8 +612,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the port.
-{{% /md %}}</dd>
+    <dd>The ID of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,8 +621,8 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the port.
-{{% /md %}}</dd>
+    <dd>The owner of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -630,10 +630,10 @@ DNS extension is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Neutron client.
+    <dd>The region in which to obtain the V2 Neutron client.
 A Neutron client is needed to retrieve port ids. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of port security group IDs to filter.
-{{% /md %}}</dd>
+    <dd>The list of port security group IDs to filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the port.
-{{% /md %}}</dd>
+    <dd>The status of the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,8 +659,8 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of port tags to filter.
-{{% /md %}}</dd>
+    <dd>The list of port tags to filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,10 +668,10 @@ A Neutron client is needed to retrieve port ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -687,7 +687,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -696,9 +696,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -706,8 +706,8 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The set of security group IDs applied on the port.
-{{% /md %}}</dd>
+    <dd>The set of security group IDs applied on the port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -715,8 +715,8 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The set of string tags applied on the port.
-{{% /md %}}</dd>
+    <dd>The set of string tags applied on the port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -724,10 +724,10 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportallowedaddresspair">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Outputs.<wbr>Get<wbr>Port<wbr>Allowed<wbr>Address<wbr>Pair&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -735,8 +735,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportbinding">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Outputs.<wbr>Get<wbr>Port<wbr>Binding&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The port binding information. The structure is described below.
-{{% /md %}}</dd>
+    <dd>The port binding information. The structure is described below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -744,8 +744,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;Immutable<wbr>Dictionary&lt;string, object&gt;&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-"
             title="">
@@ -753,9 +753,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportextradhcpoption">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Outputs.<wbr>Get<wbr>Port<wbr>Extra<wbr>Dhcp<wbr>Option&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option configured on the port.
+    <dd>An extra DHCP option configured on the port.
 The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -763,8 +763,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -772,8 +772,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -781,8 +781,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -790,8 +790,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -799,8 +799,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -808,8 +808,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -817,7 +817,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -825,8 +825,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-"
             title="">
@@ -834,8 +834,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-"
             title="">
@@ -843,8 +843,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -852,8 +852,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -861,8 +861,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -870,8 +870,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -879,7 +879,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -887,7 +887,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -895,7 +895,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -903,13 +903,13 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -918,9 +918,9 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -928,8 +928,8 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The set of security group IDs applied on the port.
-{{% /md %}}</dd>
+    <dd>The set of security group IDs applied on the port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -937,8 +937,8 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The set of string tags applied on the port.
-{{% /md %}}</dd>
+    <dd>The set of string tags applied on the port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -946,10 +946,10 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportallowedaddresspair">[]Get<wbr>Port<wbr>Allowed<wbr>Address<wbr>Pair</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -957,8 +957,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportbinding">[]Get<wbr>Port<wbr>Binding</a></span>
     </dt>
-    <dd>{{% md %}}The port binding information. The structure is described below.
-{{% /md %}}</dd>
+    <dd>The port binding information. The structure is described below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -966,8 +966,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type">[]map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-"
             title="">
@@ -975,9 +975,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportextradhcpoption">[]Get<wbr>Port<wbr>Extra<wbr>Dhcp<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option configured on the port.
+    <dd>An extra DHCP option configured on the port.
 The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -985,8 +985,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -994,8 +994,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1003,8 +1003,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1012,8 +1012,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1021,8 +1021,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1030,8 +1030,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1039,7 +1039,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1047,8 +1047,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1056,8 +1056,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1065,8 +1065,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1074,8 +1074,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1083,8 +1083,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1092,8 +1092,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1101,7 +1101,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1109,7 +1109,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1117,7 +1117,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1125,13 +1125,13 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1140,9 +1140,9 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1150,8 +1150,8 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The set of security group IDs applied on the port.
-{{% /md %}}</dd>
+    <dd>The set of security group IDs applied on the port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1159,8 +1159,8 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The set of string tags applied on the port.
-{{% /md %}}</dd>
+    <dd>The set of string tags applied on the port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1168,10 +1168,10 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportallowedaddresspair">Get<wbr>Port<wbr>Allowed<wbr>Address<wbr>Pair[]</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1179,8 +1179,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportbinding">Get<wbr>Port<wbr>Binding[]</a></span>
     </dt>
-    <dd>{{% md %}}The port binding information. The structure is described below.
-{{% /md %}}</dd>
+    <dd>The port binding information. The structure is described below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1188,8 +1188,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}[]</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1197,9 +1197,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportextradhcpoption">Get<wbr>Port<wbr>Extra<wbr>Dhcp<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option configured on the port.
+    <dd>An extra DHCP option configured on the port.
 The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1207,8 +1207,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1216,8 +1216,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1225,8 +1225,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1234,8 +1234,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1243,8 +1243,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1252,8 +1252,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1261,7 +1261,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1269,8 +1269,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1278,8 +1278,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1287,8 +1287,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1296,8 +1296,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1305,8 +1305,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1314,8 +1314,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1323,7 +1323,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1331,7 +1331,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1339,7 +1339,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1347,13 +1347,13 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1362,9 +1362,9 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1372,8 +1372,8 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The set of security group IDs applied on the port.
-{{% /md %}}</dd>
+    <dd>The set of security group IDs applied on the port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1381,8 +1381,8 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The set of string tags applied on the port.
-{{% /md %}}</dd>
+    <dd>The set of string tags applied on the port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1390,10 +1390,10 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportallowedaddresspair">List[Get<wbr>Port<wbr>Allowed<wbr>Address<wbr>Pair]</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1401,8 +1401,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportbinding">List[Get<wbr>Port<wbr>Binding]</a></span>
     </dt>
-    <dd>{{% md %}}The port binding information. The structure is described below.
-{{% /md %}}</dd>
+    <dd>The port binding information. The structure is described below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1410,8 +1410,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type">List[Any>]</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1419,9 +1419,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getportextradhcpoption">List[Get<wbr>Port<wbr>Extra<wbr>Dhcp<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option configured on the port.
+    <dd>An extra DHCP option configured on the port.
 The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1429,8 +1429,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1438,8 +1438,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1447,8 +1447,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1456,8 +1456,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1465,8 +1465,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1474,8 +1474,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1483,7 +1483,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1491,8 +1491,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1500,8 +1500,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1509,8 +1509,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1518,8 +1518,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1527,8 +1527,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1536,8 +1536,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1545,7 +1545,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1553,7 +1553,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1561,7 +1561,7 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1569,10 +1569,10 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1585,18 +1585,18 @@ The structure is described below.
 
 
 <h4 id="getportallowedaddresspair">Get<wbr>Port<wbr>Allowed<wbr>Address<wbr>Pair</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#GetPortAllowedAddressPair">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#GetPortAllowedAddressPair">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1605,8 +1605,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1614,14 +1614,14 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address of the port.
-{{% /md %}}</dd>
+    <dd>The MAC address of the port.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1630,8 +1630,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1639,14 +1639,14 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address of the port.
-{{% /md %}}</dd>
+    <dd>The MAC address of the port.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1655,8 +1655,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1664,14 +1664,14 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address of the port.
-{{% /md %}}</dd>
+    <dd>The MAC address of the port.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1680,8 +1680,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1689,29 +1689,29 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address of the port.
-{{% /md %}}</dd>
+    <dd>The MAC address of the port.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getportbinding">Get<wbr>Port<wbr>Binding</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#GetPortBinding">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#GetPortBinding">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1720,8 +1720,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the host, which has the allocatee port.
-{{% /md %}}</dd>
+    <dd>The ID of the host, which has the allocatee port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1729,8 +1729,8 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON string containing the binding profile information.
-{{% /md %}}</dd>
+    <dd>A JSON string containing the binding profile information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1738,9 +1738,9 @@ The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of JSON strings containing additional details for this
+    <dd>A map of JSON strings containing additional details for this
 specific binding.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1748,8 +1748,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VNIC type of the port binding.
-{{% /md %}}</dd>
+    <dd>The VNIC type of the port binding.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1757,14 +1757,14 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}VNIC type for the port.
-{{% /md %}}</dd>
+    <dd>VNIC type for the port.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1773,8 +1773,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the host, which has the allocatee port.
-{{% /md %}}</dd>
+    <dd>The ID of the host, which has the allocatee port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1782,8 +1782,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON string containing the binding profile information.
-{{% /md %}}</dd>
+    <dd>A JSON string containing the binding profile information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1791,9 +1791,9 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of JSON strings containing additional details for this
+    <dd>A map of JSON strings containing additional details for this
 specific binding.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1801,8 +1801,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VNIC type of the port binding.
-{{% /md %}}</dd>
+    <dd>The VNIC type of the port binding.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1810,14 +1810,14 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}VNIC type for the port.
-{{% /md %}}</dd>
+    <dd>VNIC type for the port.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1826,8 +1826,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the host, which has the allocatee port.
-{{% /md %}}</dd>
+    <dd>The ID of the host, which has the allocatee port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1835,8 +1835,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON string containing the binding profile information.
-{{% /md %}}</dd>
+    <dd>A JSON string containing the binding profile information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1844,9 +1844,9 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of JSON strings containing additional details for this
+    <dd>A map of JSON strings containing additional details for this
 specific binding.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1854,8 +1854,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VNIC type of the port binding.
-{{% /md %}}</dd>
+    <dd>The VNIC type of the port binding.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1863,14 +1863,14 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}VNIC type for the port.
-{{% /md %}}</dd>
+    <dd>VNIC type for the port.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1879,8 +1879,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the host, which has the allocatee port.
-{{% /md %}}</dd>
+    <dd>The ID of the host, which has the allocatee port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1888,8 +1888,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A JSON string containing the binding profile information.
-{{% /md %}}</dd>
+    <dd>A JSON string containing the binding profile information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1897,9 +1897,9 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of JSON strings containing additional details for this
+    <dd>A map of JSON strings containing additional details for this
 specific binding.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1907,8 +1907,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VNIC type of the port binding.
-{{% /md %}}</dd>
+    <dd>The VNIC type of the port binding.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1916,29 +1916,29 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}VNIC type for the port.
-{{% /md %}}</dd>
+    <dd>VNIC type for the port.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getportextradhcpoption">Get<wbr>Port<wbr>Extra<wbr>Dhcp<wbr>Option</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#GetPortExtraDhcpOption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#GetPortExtraDhcpOption">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1947,8 +1947,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}IP protocol version
-{{% /md %}}</dd>
+    <dd>IP protocol version
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1956,8 +1956,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the port.
-{{% /md %}}</dd>
+    <dd>The name of the port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1965,14 +1965,14 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Value of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Value of the DHCP option.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1981,8 +1981,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}IP protocol version
-{{% /md %}}</dd>
+    <dd>IP protocol version
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1990,8 +1990,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the port.
-{{% /md %}}</dd>
+    <dd>The name of the port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1999,14 +1999,14 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Value of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Value of the DHCP option.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2015,8 +2015,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}IP protocol version
-{{% /md %}}</dd>
+    <dd>IP protocol version
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2024,8 +2024,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the port.
-{{% /md %}}</dd>
+    <dd>The name of the port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2033,14 +2033,14 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Value of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Value of the DHCP option.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2049,8 +2049,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}IP protocol version
-{{% /md %}}</dd>
+    <dd>IP protocol version
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2058,8 +2058,8 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the port.
-{{% /md %}}</dd>
+    <dd>The name of the port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2067,11 +2067,11 @@ specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Value of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Value of the DHCP option.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

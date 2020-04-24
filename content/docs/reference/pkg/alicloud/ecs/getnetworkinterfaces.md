@@ -102,29 +102,29 @@ The following arguments are supported:
 
 ## Using GetNetworkInterfaces {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getNetworkInterfaces<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetNetworkInterfacesArgs">GetNetworkInterfacesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetNetworkInterfacesResult">GetNetworkInterfacesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_network_interfaces(</span>ids=None<span class="p">, </span>instance_id=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>private_ip=None<span class="p">, </span>resource_group_id=None<span class="p">, </span>security_group_id=None<span class="p">, </span>tags=None<span class="p">, </span>type=None<span class="p">, </span>vpc_id=None<span class="p">, </span>vswitch_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupNetworkInterfaces<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupNetworkInterfacesArgs">LookupNetworkInterfacesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupNetworkInterfacesResult">LookupNetworkInterfacesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetNetworkInterfaces </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ecs.GetNetworkInterfacesResult.html">GetNetworkInterfacesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ecs.GetNetworkInterfacesArgs.html">GetNetworkInterfacesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -132,7 +132,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -141,7 +141,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -149,8 +149,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -158,7 +158,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -166,7 +166,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -174,8 +174,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -183,8 +183,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -192,7 +192,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -200,8 +200,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,7 +209,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -217,8 +217,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,14 +226,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -242,7 +242,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,8 +250,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,7 +259,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,7 +267,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,7 +293,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,7 +310,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,8 +318,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,14 +327,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -343,7 +343,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,8 +351,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,7 +360,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,7 +368,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,7 +394,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,8 +402,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,7 +411,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,8 +419,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,14 +428,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -444,7 +444,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,8 +452,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,7 +461,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,7 +469,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,7 +495,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -503,8 +503,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -512,7 +512,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,8 +520,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,11 +529,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -549,7 +549,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -558,8 +558,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -567,7 +567,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -575,8 +575,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getnetworkinterfacesinterface">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Outputs.<wbr>Get<wbr>Network<wbr>Interfaces<wbr>Interface&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of ENIs. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of ENIs. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -584,7 +584,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -592,8 +592,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -601,7 +601,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -609,7 +609,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -617,8 +617,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -626,8 +626,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -635,7 +635,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -643,8 +643,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -652,7 +652,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -660,8 +660,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -669,14 +669,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -685,8 +685,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -694,7 +694,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -702,8 +702,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getnetworkinterfacesinterface">[]Get<wbr>Network<wbr>Interfaces<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}A list of ENIs. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of ENIs. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,7 +711,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -719,8 +719,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -728,7 +728,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -736,7 +736,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -744,8 +744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -753,8 +753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,7 +762,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -770,8 +770,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -779,7 +779,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -787,8 +787,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -796,14 +796,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -812,8 +812,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -821,7 +821,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -829,8 +829,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getnetworkinterfacesinterface">Get<wbr>Network<wbr>Interfaces<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of ENIs. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of ENIs. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -838,7 +838,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -846,8 +846,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -855,7 +855,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -863,7 +863,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -871,8 +871,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -880,8 +880,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -889,7 +889,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -897,8 +897,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -906,7 +906,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -914,8 +914,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -923,14 +923,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -939,8 +939,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,7 +948,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -956,8 +956,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getnetworkinterfacesinterface">List[Get<wbr>Network<wbr>Interfaces<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}A list of ENIs. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of ENIs. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -965,7 +965,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -973,8 +973,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -982,7 +982,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -990,7 +990,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -998,8 +998,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1007,8 +1007,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1016,7 +1016,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1024,8 +1024,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1033,7 +1033,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1041,8 +1041,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1050,11 +1050,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1067,18 +1067,18 @@ The following output properties are available:
 
 
 <h4 id="getnetworkinterfacesinterface">Get<wbr>Network<wbr>Interfaces<wbr>Interface</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetNetworkInterfacesInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetNetworkInterfacesInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1087,8 +1087,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the ENI.
-{{% /md %}}</dd>
+    <dd>Creation time of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1096,8 +1096,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the ENI.
-{{% /md %}}</dd>
+    <dd>Description of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1105,8 +1105,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the ENI.
-{{% /md %}}</dd>
+    <dd>ID of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1114,8 +1114,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1123,8 +1123,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}MAC address of the ENI.
-{{% /md %}}</dd>
+    <dd>MAC address of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1132,8 +1132,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the ENI.
-{{% /md %}}</dd>
+    <dd>Name of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1141,8 +1141,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1150,8 +1150,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of secondary private IP address that is assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A list of secondary private IP address that is assigned to the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1159,8 +1159,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Public IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Public IP of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1168,8 +1168,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1177,8 +1177,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>A list of security group that the ENI belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1186,8 +1186,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current status of the ENI.
-{{% /md %}}</dd>
+    <dd>Current status of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1195,8 +1195,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1204,8 +1204,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1213,8 +1213,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the availability zone that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the availability zone that the ENI belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,14 +1222,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1238,8 +1238,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the ENI.
-{{% /md %}}</dd>
+    <dd>Creation time of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1247,8 +1247,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the ENI.
-{{% /md %}}</dd>
+    <dd>Description of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1256,8 +1256,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the ENI.
-{{% /md %}}</dd>
+    <dd>ID of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1265,8 +1265,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1274,8 +1274,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}MAC address of the ENI.
-{{% /md %}}</dd>
+    <dd>MAC address of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1283,8 +1283,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the ENI.
-{{% /md %}}</dd>
+    <dd>Name of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1292,8 +1292,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1301,8 +1301,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of secondary private IP address that is assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A list of secondary private IP address that is assigned to the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1310,8 +1310,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Public IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Public IP of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1319,8 +1319,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1328,8 +1328,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>A list of security group that the ENI belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1337,8 +1337,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current status of the ENI.
-{{% /md %}}</dd>
+    <dd>Current status of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1346,8 +1346,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1355,8 +1355,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1364,8 +1364,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the availability zone that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the availability zone that the ENI belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,14 +1373,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1389,8 +1389,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the ENI.
-{{% /md %}}</dd>
+    <dd>Creation time of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1398,8 +1398,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the ENI.
-{{% /md %}}</dd>
+    <dd>Description of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1407,8 +1407,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the ENI.
-{{% /md %}}</dd>
+    <dd>ID of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1416,8 +1416,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1425,8 +1425,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}MAC address of the ENI.
-{{% /md %}}</dd>
+    <dd>MAC address of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1434,8 +1434,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the ENI.
-{{% /md %}}</dd>
+    <dd>Name of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1443,8 +1443,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1452,8 +1452,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of secondary private IP address that is assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A list of secondary private IP address that is assigned to the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1461,8 +1461,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Public IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Public IP of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1470,8 +1470,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1479,8 +1479,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>A list of security group that the ENI belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1488,8 +1488,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current status of the ENI.
-{{% /md %}}</dd>
+    <dd>Current status of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1497,8 +1497,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1506,8 +1506,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1515,8 +1515,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the availability zone that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the availability zone that the ENI belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,14 +1524,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1540,8 +1540,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the ENI.
-{{% /md %}}</dd>
+    <dd>Creation time of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1549,8 +1549,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the ENI.
-{{% /md %}}</dd>
+    <dd>Description of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1558,8 +1558,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the ENI.
-{{% /md %}}</dd>
+    <dd>ID of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1567,8 +1567,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance that the ENI is attached to.
-{{% /md %}}</dd>
+    <dd>ID of the instance that the ENI is attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1576,8 +1576,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}MAC address of the ENI.
-{{% /md %}}</dd>
+    <dd>MAC address of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1585,8 +1585,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the ENI.
-{{% /md %}}</dd>
+    <dd>Name of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1594,8 +1594,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Primary private IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Primary private IP of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1603,8 +1603,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of secondary private IP address that is assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A list of secondary private IP address that is assigned to the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1612,8 +1612,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Public IP of the ENI.
-{{% /md %}}</dd>
+    <dd>Public IP of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1621,8 +1621,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1630,8 +1630,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>A list of security group that the ENI belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1639,8 +1639,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current status of the ENI.
-{{% /md %}}</dd>
+    <dd>Current status of the ENI.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1648,8 +1648,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC that the ENI belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1657,8 +1657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch that the ENI is linked to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch that the ENI is linked to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1666,8 +1666,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the availability zone that the ENI belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the availability zone that the ENI belongs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1675,11 +1675,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ENI.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ENI.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

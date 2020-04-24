@@ -18,26 +18,26 @@ construction to achieve fine-grained programmatic control over provider settings
 
 
 ## Create a Provider Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/postgresql/#Provider">Provider</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/postgresql/#ProviderArgs">ProviderArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Provider</span><span class="p">(resource_name, opts=None, </span>connect_timeout=None<span class="p">, </span>database=None<span class="p">, </span>database_username=None<span class="p">, </span>expected_version=None<span class="p">, </span>host=None<span class="p">, </span>max_connections=None<span class="p">, </span>password=None<span class="p">, </span>port=None<span class="p">, </span>ssl_mode=None<span class="p">, </span>sslmode=None<span class="p">, </span>superuser=None<span class="p">, </span>username=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewProvider<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-postgresql/sdk/v2/go/postgresql/?tab=doc#ProviderArgs">ProviderArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-postgresql/sdk/v2/go/postgresql/?tab=doc#Provider">Provider</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Postgresql/Pulumi.Postgresql.Provider.html">Provider</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Postgresql/Pulumi.Pulumi.PostgresqlArgs.html">ProviderArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ construction to achieve fine-grained programmatic control over provider settings
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ construction to achieve fine-grained programmatic control over provider settings
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ construction to achieve fine-grained programmatic control over provider settings
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ construction to achieve fine-grained programmatic control over provider settings
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Provider Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -204,8 +204,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
-{{% /md %}}</dd>
+    <dd>Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -213,8 +213,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database to connect to in order to conenct to (defaults to `postgres`).
-{{% /md %}}</dd>
+    <dd>The name of the database to connect to in order to conenct to (defaults to `postgres`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database username associated to the connected user (for user name maps)
-{{% /md %}}</dd>
+    <dd>Database username associated to the connected user (for user name maps)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the expected version of PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Specify the expected version of PostgreSQL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of PostgreSQL server address to connect to
-{{% /md %}}</dd>
+    <dd>Name of PostgreSQL server address to connect to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of connections to establish to the database. Zero means unlimited.
-{{% /md %}}</dd>
+    <dd>Maximum number of connections to establish to the database. Zero means unlimited.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to be used if the PostgreSQL server demands password authentication
-{{% /md %}}</dd>
+    <dd>Password to be used if the PostgreSQL server demands password authentication
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections
-{{% /md %}}</dd>
+    <dd>The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -276,7 +276,7 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Rename PostgreSQL provider `ssl_mode` attribute to `sslmode`{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Rename PostgreSQL provider `ssl_mode` attribute to `sslmode`</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,9 +284,9 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the
+    <dd>This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the
 PostgreSQL server
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,9 +294,9 @@ PostgreSQL server
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.:
+    <dd>Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.:
 Refreshing state password from Postgres)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,14 +304,14 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}PostgreSQL user name to connect as
-{{% /md %}}</dd>
+    <dd>PostgreSQL user name to connect as
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -320,8 +320,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
-{{% /md %}}</dd>
+    <dd>Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,8 +329,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database to connect to in order to conenct to (defaults to `postgres`).
-{{% /md %}}</dd>
+    <dd>The name of the database to connect to in order to conenct to (defaults to `postgres`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,8 +338,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database username associated to the connected user (for user name maps)
-{{% /md %}}</dd>
+    <dd>Database username associated to the connected user (for user name maps)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,8 +347,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the expected version of PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Specify the expected version of PostgreSQL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,8 +356,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of PostgreSQL server address to connect to
-{{% /md %}}</dd>
+    <dd>Name of PostgreSQL server address to connect to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of connections to establish to the database. Zero means unlimited.
-{{% /md %}}</dd>
+    <dd>Maximum number of connections to establish to the database. Zero means unlimited.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to be used if the PostgreSQL server demands password authentication
-{{% /md %}}</dd>
+    <dd>Password to be used if the PostgreSQL server demands password authentication
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections
-{{% /md %}}</dd>
+    <dd>The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -392,7 +392,7 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Rename PostgreSQL provider `ssl_mode` attribute to `sslmode`{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Rename PostgreSQL provider `ssl_mode` attribute to `sslmode`</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,9 +400,9 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the
+    <dd>This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the
 PostgreSQL server
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -410,9 +410,9 @@ PostgreSQL server
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.:
+    <dd>Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.:
 Refreshing state password from Postgres)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,14 +420,14 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}PostgreSQL user name to connect as
-{{% /md %}}</dd>
+    <dd>PostgreSQL user name to connect as
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -436,8 +436,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
-{{% /md %}}</dd>
+    <dd>Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,8 +445,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database to connect to in order to conenct to (defaults to `postgres`).
-{{% /md %}}</dd>
+    <dd>The name of the database to connect to in order to conenct to (defaults to `postgres`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,8 +454,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database username associated to the connected user (for user name maps)
-{{% /md %}}</dd>
+    <dd>Database username associated to the connected user (for user name maps)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,8 +463,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the expected version of PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Specify the expected version of PostgreSQL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,8 +472,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of PostgreSQL server address to connect to
-{{% /md %}}</dd>
+    <dd>Name of PostgreSQL server address to connect to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,8 +481,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of connections to establish to the database. Zero means unlimited.
-{{% /md %}}</dd>
+    <dd>Maximum number of connections to establish to the database. Zero means unlimited.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,8 +490,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to be used if the PostgreSQL server demands password authentication
-{{% /md %}}</dd>
+    <dd>Password to be used if the PostgreSQL server demands password authentication
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,8 +499,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections
-{{% /md %}}</dd>
+    <dd>The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -508,7 +508,7 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Rename PostgreSQL provider `ssl_mode` attribute to `sslmode`{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Rename PostgreSQL provider `ssl_mode` attribute to `sslmode`</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -516,9 +516,9 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the
+    <dd>This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the
 PostgreSQL server
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,9 +526,9 @@ PostgreSQL server
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.:
+    <dd>Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.:
 Refreshing state password from Postgres)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,14 +536,14 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}PostgreSQL user name to connect as
-{{% /md %}}</dd>
+    <dd>PostgreSQL user name to connect as
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -552,8 +552,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
-{{% /md %}}</dd>
+    <dd>Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -561,8 +561,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database to connect to in order to conenct to (defaults to `postgres`).
-{{% /md %}}</dd>
+    <dd>The name of the database to connect to in order to conenct to (defaults to `postgres`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -570,8 +570,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database username associated to the connected user (for user name maps)
-{{% /md %}}</dd>
+    <dd>Database username associated to the connected user (for user name maps)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -579,8 +579,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify the expected version of PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Specify the expected version of PostgreSQL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -588,8 +588,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of PostgreSQL server address to connect to
-{{% /md %}}</dd>
+    <dd>Name of PostgreSQL server address to connect to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -597,8 +597,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of connections to establish to the database. Zero means unlimited.
-{{% /md %}}</dd>
+    <dd>Maximum number of connections to establish to the database. Zero means unlimited.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -606,8 +606,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password to be used if the PostgreSQL server demands password authentication
-{{% /md %}}</dd>
+    <dd>Password to be used if the PostgreSQL server demands password authentication
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -615,8 +615,8 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections
-{{% /md %}}</dd>
+    <dd>The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -624,7 +624,7 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Rename PostgreSQL provider `ssl_mode` attribute to `sslmode`{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Rename PostgreSQL provider `ssl_mode` attribute to `sslmode`</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,9 +632,9 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the
+    <dd>This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the
 PostgreSQL server
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -642,9 +642,9 @@ PostgreSQL server
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.:
+    <dd>Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.:
 Refreshing state password from Postgres)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -652,11 +652,11 @@ Refreshing state password from Postgres)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}PostgreSQL user name to connect as
-{{% /md %}}</dd>
+    <dd>PostgreSQL user name to connect as
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -670,7 +670,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -679,13 +679,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -694,13 +694,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -709,13 +709,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -724,10 +724,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

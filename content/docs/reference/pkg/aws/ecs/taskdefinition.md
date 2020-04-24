@@ -18,26 +18,26 @@ Manages a revision of an ECS task definition to be used in `aws.ecs.Service`.
 
 
 ## Create a TaskDefinition Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinition">TaskDefinition</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinitionArgs">TaskDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">TaskDefinition</span><span class="p">(resource_name, opts=None, </span>container_definitions=None<span class="p">, </span>cpu=None<span class="p">, </span>execution_role_arn=None<span class="p">, </span>family=None<span class="p">, </span>inference_accelerators=None<span class="p">, </span>ipc_mode=None<span class="p">, </span>memory=None<span class="p">, </span>network_mode=None<span class="p">, </span>pid_mode=None<span class="p">, </span>placement_constraints=None<span class="p">, </span>proxy_configuration=None<span class="p">, </span>requires_compatibilities=None<span class="p">, </span>tags=None<span class="p">, </span>task_role_arn=None<span class="p">, </span>volumes=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewTaskDefinition<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionArgs">TaskDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinition">TaskDefinition</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinition.html">TaskDefinition</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinitionArgs.html">TaskDefinitionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages a revision of an ECS task definition to be used in `aws.ecs.Service`.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages a revision of an ECS task definition to be used in `aws.ecs.Service`.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages a revision of an ECS task definition to be used in `aws.ecs.Service`.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages a revision of an ECS task definition to be used in `aws.ecs.Service`.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## TaskDefinition Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The TaskDefinition resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,13 +204,13 @@ The TaskDefinition resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of valid [container definitions]
+    <dd>A list of valid [container definitions]
 (http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html) provided as a
 single valid JSON document. Please note that you should only provide values that are part of the container
 definition document. For a detailed description of what parameters are available, see the [Task Definition Parameters]
 (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) section from the
 official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -218,8 +218,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your task definition.
-{{% /md %}}</dd>
+    <dd>A unique name for your task definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">List&lt;Task<wbr>Definition<wbr>Inference<wbr>Accelerator<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with Inference Accelerators settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with Inference Accelerators settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
-{{% /md %}}</dd>
+    <dd>The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
-{{% /md %}}</dd>
+    <dd>The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The process namespace to use for the containers in the task. The valid values are `host` and `task`.
-{{% /md %}}</dd>
+    <dd>The process namespace to use for the containers in the task. The valid values are `host` and `task`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">List&lt;Task<wbr>Definition<wbr>Placement<wbr>Constraint<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
-{{% /md %}}</dd>
+    <dd>A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The proxy configuration details for the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The proxy configuration details for the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
-{{% /md %}}</dd>
+    <dd>A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
-{{% /md %}}</dd>
+    <dd>The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,14 +335,14 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">List&lt;Task<wbr>Definition<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of volume blocks that containers in your task may use.
-{{% /md %}}</dd>
+    <dd>A set of volume blocks that containers in your task may use.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -351,13 +351,13 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of valid [container definitions]
+    <dd>A list of valid [container definitions]
 (http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html) provided as a
 single valid JSON document. Please note that you should only provide values that are part of the container
 definition document. For a detailed description of what parameters are available, see the [Task Definition Parameters]
 (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) section from the
 official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -365,8 +365,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your task definition.
-{{% /md %}}</dd>
+    <dd>A unique name for your task definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,8 +392,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">[]Task<wbr>Definition<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with Inference Accelerators settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with Inference Accelerators settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,8 +401,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
-{{% /md %}}</dd>
+    <dd>The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -410,8 +410,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,8 +419,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
-{{% /md %}}</dd>
+    <dd>The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The process namespace to use for the containers in the task. The valid values are `host` and `task`.
-{{% /md %}}</dd>
+    <dd>The process namespace to use for the containers in the task. The valid values are `host` and `task`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,8 +437,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">[]Task<wbr>Definition<wbr>Placement<wbr>Constraint</a></span>
     </dt>
-    <dd>{{% md %}}A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
-{{% /md %}}</dd>
+    <dd>A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,8 +446,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The proxy configuration details for the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The proxy configuration details for the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,8 +455,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
-{{% /md %}}</dd>
+    <dd>A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,8 +464,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -473,8 +473,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
-{{% /md %}}</dd>
+    <dd>The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,14 +482,14 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">[]Task<wbr>Definition<wbr>Volume</a></span>
     </dt>
-    <dd>{{% md %}}A set of volume blocks that containers in your task may use.
-{{% /md %}}</dd>
+    <dd>A set of volume blocks that containers in your task may use.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -498,13 +498,13 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of valid [container definitions]
+    <dd>A list of valid [container definitions]
 (http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html) provided as a
 single valid JSON document. Please note that you should only provide values that are part of the container
 definition document. For a detailed description of what parameters are available, see the [Task Definition Parameters]
 (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) section from the
 official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -512,8 +512,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your task definition.
-{{% /md %}}</dd>
+    <dd>A unique name for your task definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -521,8 +521,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,8 +530,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,8 +539,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">Task<wbr>Definition<wbr>Inference<wbr>Accelerator[]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with Inference Accelerators settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with Inference Accelerators settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
-{{% /md %}}</dd>
+    <dd>The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
-{{% /md %}}</dd>
+    <dd>The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,8 +575,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The process namespace to use for the containers in the task. The valid values are `host` and `task`.
-{{% /md %}}</dd>
+    <dd>The process namespace to use for the containers in the task. The valid values are `host` and `task`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -584,8 +584,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">Task<wbr>Definition<wbr>Placement<wbr>Constraint[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
-{{% /md %}}</dd>
+    <dd>A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,8 +593,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The proxy configuration details for the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The proxy configuration details for the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,8 +602,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
-{{% /md %}}</dd>
+    <dd>A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,8 +611,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -620,8 +620,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
-{{% /md %}}</dd>
+    <dd>The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,14 +629,14 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">Task<wbr>Definition<wbr>Volume[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of volume blocks that containers in your task may use.
-{{% /md %}}</dd>
+    <dd>A set of volume blocks that containers in your task may use.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -645,13 +645,13 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A list of valid [container definitions]
+    <dd>A list of valid [container definitions]
 (http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html) provided as a
 single valid JSON document. Please note that you should only provide values that are part of the container
 definition document. For a detailed description of what parameters are available, see the [Task Definition Parameters]
 (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) section from the
 official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -659,8 +659,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your task definition.
-{{% /md %}}</dd>
+    <dd>A unique name for your task definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,8 +668,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -677,8 +677,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">List[Task<wbr>Definition<wbr>Inference<wbr>Accelerator]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with Inference Accelerators settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with Inference Accelerators settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,8 +695,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
-{{% /md %}}</dd>
+    <dd>The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,8 +704,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,8 +713,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
-{{% /md %}}</dd>
+    <dd>The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,8 +722,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The process namespace to use for the containers in the task. The valid values are `host` and `task`.
-{{% /md %}}</dd>
+    <dd>The process namespace to use for the containers in the task. The valid values are `host` and `task`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,8 +731,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">List[Task<wbr>Definition<wbr>Placement<wbr>Constraint]</a></span>
     </dt>
-    <dd>{{% md %}}A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
-{{% /md %}}</dd>
+    <dd>A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,8 +740,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Dict[Task<wbr>Definition<wbr>Proxy<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}The proxy configuration details for the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The proxy configuration details for the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,8 +749,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
-{{% /md %}}</dd>
+    <dd>A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,8 +758,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,8 +767,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
-{{% /md %}}</dd>
+    <dd>The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,11 +776,11 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">List[Task<wbr>Definition<wbr>Volume]</a></span>
     </dt>
-    <dd>{{% md %}}A set of volume blocks that containers in your task may use.
-{{% /md %}}</dd>
+    <dd>A set of volume blocks that containers in your task may use.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -794,7 +794,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -803,8 +803,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Full ARN of the Task Definition (including both `family` and `revision`).
-{{% /md %}}</dd>
+    <dd>Full ARN of the Task Definition (including both `family` and `revision`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -812,7 +812,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -820,14 +820,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the task in a particular family.
-{{% /md %}}</dd>
+    <dd>The revision of the task in a particular family.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -836,8 +836,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Full ARN of the Task Definition (including both `family` and `revision`).
-{{% /md %}}</dd>
+    <dd>Full ARN of the Task Definition (including both `family` and `revision`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -845,7 +845,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -853,14 +853,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the task in a particular family.
-{{% /md %}}</dd>
+    <dd>The revision of the task in a particular family.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -869,8 +869,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Full ARN of the Task Definition (including both `family` and `revision`).
-{{% /md %}}</dd>
+    <dd>Full ARN of the Task Definition (including both `family` and `revision`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -878,7 +878,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -886,14 +886,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the task in a particular family.
-{{% /md %}}</dd>
+    <dd>The revision of the task in a particular family.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -902,8 +902,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Full ARN of the Task Definition (including both `family` and `revision`).
-{{% /md %}}</dd>
+    <dd>Full ARN of the Task Definition (including both `family` and `revision`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -911,7 +911,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -919,11 +919,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the task in a particular family.
-{{% /md %}}</dd>
+    <dd>The revision of the task in a particular family.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -934,25 +934,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing TaskDefinition Resource {#look-up}
 
 Get an existing TaskDefinition resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinitionState">TaskDefinitionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinition">TaskDefinition</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>container_definitions=None<span class="p">, </span>cpu=None<span class="p">, </span>execution_role_arn=None<span class="p">, </span>family=None<span class="p">, </span>inference_accelerators=None<span class="p">, </span>ipc_mode=None<span class="p">, </span>memory=None<span class="p">, </span>network_mode=None<span class="p">, </span>pid_mode=None<span class="p">, </span>placement_constraints=None<span class="p">, </span>proxy_configuration=None<span class="p">, </span>requires_compatibilities=None<span class="p">, </span>revision=None<span class="p">, </span>tags=None<span class="p">, </span>task_role_arn=None<span class="p">, </span>volumes=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTaskDefinition<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionState">TaskDefinitionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinition">TaskDefinition</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinition.html">TaskDefinition</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinitionState.html">TaskDefinitionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -977,9 +977,9 @@ Get an existing TaskDefinition resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -992,36 +992,9 @@ Get an existing TaskDefinition resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1046,13 +1019,40 @@ Get an existing TaskDefinition resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1061,8 +1061,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Full ARN of the Task Definition (including both `family` and `revision`).
-{{% /md %}}</dd>
+    <dd>Full ARN of the Task Definition (including both `family` and `revision`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1070,13 +1070,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of valid [container definitions]
+    <dd>A list of valid [container definitions]
 (http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html) provided as a
 single valid JSON document. Please note that you should only provide values that are part of the container
 definition document. For a detailed description of what parameters are available, see the [Task Definition Parameters]
 (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) section from the
 official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your task definition.
-{{% /md %}}</dd>
+    <dd>A unique name for your task definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">List&lt;Task<wbr>Definition<wbr>Inference<wbr>Accelerator<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with Inference Accelerators settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with Inference Accelerators settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,8 +1120,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
-{{% /md %}}</dd>
+    <dd>The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,8 +1129,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
-{{% /md %}}</dd>
+    <dd>The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,8 +1147,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The process namespace to use for the containers in the task. The valid values are `host` and `task`.
-{{% /md %}}</dd>
+    <dd>The process namespace to use for the containers in the task. The valid values are `host` and `task`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,8 +1156,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">List&lt;Task<wbr>Definition<wbr>Placement<wbr>Constraint<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
-{{% /md %}}</dd>
+    <dd>A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,8 +1165,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The proxy configuration details for the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The proxy configuration details for the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,8 +1174,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
-{{% /md %}}</dd>
+    <dd>A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,8 +1183,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the task in a particular family.
-{{% /md %}}</dd>
+    <dd>The revision of the task in a particular family.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1192,8 +1192,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1201,8 +1201,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
-{{% /md %}}</dd>
+    <dd>The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,14 +1210,14 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">List&lt;Task<wbr>Definition<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of volume blocks that containers in your task may use.
-{{% /md %}}</dd>
+    <dd>A set of volume blocks that containers in your task may use.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1226,8 +1226,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Full ARN of the Task Definition (including both `family` and `revision`).
-{{% /md %}}</dd>
+    <dd>Full ARN of the Task Definition (including both `family` and `revision`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,13 +1235,13 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of valid [container definitions]
+    <dd>A list of valid [container definitions]
 (http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html) provided as a
 single valid JSON document. Please note that you should only provide values that are part of the container
 definition document. For a detailed description of what parameters are available, see the [Task Definition Parameters]
 (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) section from the
 official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,8 +1249,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,8 +1258,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,8 +1267,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your task definition.
-{{% /md %}}</dd>
+    <dd>A unique name for your task definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,8 +1276,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">[]Task<wbr>Definition<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with Inference Accelerators settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with Inference Accelerators settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,8 +1285,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
-{{% /md %}}</dd>
+    <dd>The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,8 +1294,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,8 +1303,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
-{{% /md %}}</dd>
+    <dd>The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,8 +1312,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The process namespace to use for the containers in the task. The valid values are `host` and `task`.
-{{% /md %}}</dd>
+    <dd>The process namespace to use for the containers in the task. The valid values are `host` and `task`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1321,8 +1321,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">[]Task<wbr>Definition<wbr>Placement<wbr>Constraint</a></span>
     </dt>
-    <dd>{{% md %}}A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
-{{% /md %}}</dd>
+    <dd>A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1330,8 +1330,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The proxy configuration details for the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The proxy configuration details for the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,8 +1339,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
-{{% /md %}}</dd>
+    <dd>A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1348,8 +1348,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the task in a particular family.
-{{% /md %}}</dd>
+    <dd>The revision of the task in a particular family.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1357,8 +1357,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1366,8 +1366,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
-{{% /md %}}</dd>
+    <dd>The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1375,14 +1375,14 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">[]Task<wbr>Definition<wbr>Volume</a></span>
     </dt>
-    <dd>{{% md %}}A set of volume blocks that containers in your task may use.
-{{% /md %}}</dd>
+    <dd>A set of volume blocks that containers in your task may use.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1391,8 +1391,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Full ARN of the Task Definition (including both `family` and `revision`).
-{{% /md %}}</dd>
+    <dd>Full ARN of the Task Definition (including both `family` and `revision`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,13 +1400,13 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of valid [container definitions]
+    <dd>A list of valid [container definitions]
 (http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html) provided as a
 single valid JSON document. Please note that you should only provide values that are part of the container
 definition document. For a detailed description of what parameters are available, see the [Task Definition Parameters]
 (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) section from the
 official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,8 +1414,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,8 +1423,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,8 +1432,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your task definition.
-{{% /md %}}</dd>
+    <dd>A unique name for your task definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,8 +1441,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">Task<wbr>Definition<wbr>Inference<wbr>Accelerator[]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with Inference Accelerators settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with Inference Accelerators settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,8 +1450,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
-{{% /md %}}</dd>
+    <dd>The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1459,8 +1459,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,8 +1468,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
-{{% /md %}}</dd>
+    <dd>The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,8 +1477,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The process namespace to use for the containers in the task. The valid values are `host` and `task`.
-{{% /md %}}</dd>
+    <dd>The process namespace to use for the containers in the task. The valid values are `host` and `task`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,8 +1486,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">Task<wbr>Definition<wbr>Placement<wbr>Constraint[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
-{{% /md %}}</dd>
+    <dd>A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,8 +1495,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The proxy configuration details for the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The proxy configuration details for the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
-{{% /md %}}</dd>
+    <dd>A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,8 +1513,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the task in a particular family.
-{{% /md %}}</dd>
+    <dd>The revision of the task in a particular family.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,8 +1522,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,8 +1531,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
-{{% /md %}}</dd>
+    <dd>The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,14 +1540,14 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">Task<wbr>Definition<wbr>Volume[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of volume blocks that containers in your task may use.
-{{% /md %}}</dd>
+    <dd>A set of volume blocks that containers in your task may use.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1556,8 +1556,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Full ARN of the Task Definition (including both `family` and `revision`).
-{{% /md %}}</dd>
+    <dd>Full ARN of the Task Definition (including both `family` and `revision`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1565,13 +1565,13 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A list of valid [container definitions]
+    <dd>A list of valid [container definitions]
 (http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html) provided as a
 single valid JSON document. Please note that you should only provide values that are part of the container
 definition document. For a detailed description of what parameters are available, see the [Task Definition Parameters]
 (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) section from the
 official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1579,8 +1579,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,8 +1588,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,8 +1597,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for your task definition.
-{{% /md %}}</dd>
+    <dd>A unique name for your task definition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1606,8 +1606,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">List[Task<wbr>Definition<wbr>Inference<wbr>Accelerator]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with Inference Accelerators settings. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with Inference Accelerators settings. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1615,8 +1615,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
-{{% /md %}}</dd>
+    <dd>The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1624,8 +1624,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
-{{% /md %}}</dd>
+    <dd>The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1633,8 +1633,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
-{{% /md %}}</dd>
+    <dd>The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,8 +1642,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The process namespace to use for the containers in the task. The valid values are `host` and `task`.
-{{% /md %}}</dd>
+    <dd>The process namespace to use for the containers in the task. The valid values are `host` and `task`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,8 +1651,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">List[Task<wbr>Definition<wbr>Placement<wbr>Constraint]</a></span>
     </dt>
-    <dd>{{% md %}}A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
-{{% /md %}}</dd>
+    <dd>A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,8 +1660,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Dict[Task<wbr>Definition<wbr>Proxy<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}The proxy configuration details for the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The proxy configuration details for the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,8 +1669,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
-{{% /md %}}</dd>
+    <dd>A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The revision of the task in a particular family.
-{{% /md %}}</dd>
+    <dd>The revision of the task in a particular family.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,8 +1687,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
-{{% /md %}}</dd>
+    <dd>The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,11 +1705,11 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">List[Task<wbr>Definition<wbr>Volume]</a></span>
     </dt>
-    <dd>{{% md %}}A set of volume blocks that containers in your task may use.
-{{% /md %}}</dd>
+    <dd>A set of volume blocks that containers in your task may use.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1724,18 +1724,18 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
 
 <h4 id="taskdefinitioninferenceaccelerator">Task<wbr>Definition<wbr>Inference<wbr>Accelerator</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TaskDefinitionInferenceAccelerator">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TaskDefinitionInferenceAccelerator">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionInferenceAcceleratorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionInferenceAcceleratorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1744,8 +1744,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
-{{% /md %}}</dd>
+    <dd>The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1753,14 +1753,14 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic Inference accelerator type to use.
-{{% /md %}}</dd>
+    <dd>The Elastic Inference accelerator type to use.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1769,8 +1769,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
-{{% /md %}}</dd>
+    <dd>The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1778,14 +1778,14 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic Inference accelerator type to use.
-{{% /md %}}</dd>
+    <dd>The Elastic Inference accelerator type to use.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1794,8 +1794,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
-{{% /md %}}</dd>
+    <dd>The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1803,14 +1803,14 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic Inference accelerator type to use.
-{{% /md %}}</dd>
+    <dd>The Elastic Inference accelerator type to use.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1819,8 +1819,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic Inference accelerator type to use.
-{{% /md %}}</dd>
+    <dd>The Elastic Inference accelerator type to use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1828,29 +1828,29 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
-{{% /md %}}</dd>
+    <dd>The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="taskdefinitionplacementconstraint">Task<wbr>Definition<wbr>Placement<wbr>Constraint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TaskDefinitionPlacementConstraint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TaskDefinitionPlacementConstraint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionPlacementConstraintArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionPlacementConstraintOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1859,8 +1859,8 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
-{{% /md %}}</dd>
+    <dd>The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1868,17 +1868,17 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cluster Query Language expression to apply to the constraint.
+    <dd>Cluster Query Language expression to apply to the constraint.
 For more information, see [Cluster Query Language in the Amazon EC2 Container
 Service Developer
 Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1887,8 +1887,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
-{{% /md %}}</dd>
+    <dd>The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1896,17 +1896,17 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cluster Query Language expression to apply to the constraint.
+    <dd>Cluster Query Language expression to apply to the constraint.
 For more information, see [Cluster Query Language in the Amazon EC2 Container
 Service Developer
 Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1915,8 +1915,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
-{{% /md %}}</dd>
+    <dd>The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1924,17 +1924,17 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cluster Query Language expression to apply to the constraint.
+    <dd>Cluster Query Language expression to apply to the constraint.
 For more information, see [Cluster Query Language in the Amazon EC2 Container
 Service Developer
 Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1943,8 +1943,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
-{{% /md %}}</dd>
+    <dd>The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1952,32 +1952,32 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cluster Query Language expression to apply to the constraint.
+    <dd>Cluster Query Language expression to apply to the constraint.
 For more information, see [Cluster Query Language in the Amazon EC2 Container
 Service Developer
 Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TaskDefinitionProxyConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TaskDefinitionProxyConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionProxyConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionProxyConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1986,8 +1986,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the container that will serve as the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The name of the container that will serve as the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1995,8 +1995,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
-{{% /md %}}</dd>
+    <dd>The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2004,14 +2004,14 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
-{{% /md %}}</dd>
+    <dd>The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2020,8 +2020,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the container that will serve as the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The name of the container that will serve as the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2029,8 +2029,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
-{{% /md %}}</dd>
+    <dd>The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2038,14 +2038,14 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
-{{% /md %}}</dd>
+    <dd>The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2054,8 +2054,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the container that will serve as the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The name of the container that will serve as the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2063,8 +2063,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
-{{% /md %}}</dd>
+    <dd>The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2072,14 +2072,14 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
-{{% /md %}}</dd>
+    <dd>The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2088,8 +2088,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the container that will serve as the App Mesh proxy.
-{{% /md %}}</dd>
+    <dd>The name of the container that will serve as the App Mesh proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2097,8 +2097,8 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
-{{% /md %}}</dd>
+    <dd>The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2106,29 +2106,29 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
-{{% /md %}}</dd>
+    <dd>The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="taskdefinitionvolume">Task<wbr>Definition<wbr>Volume</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TaskDefinitionVolume">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TaskDefinitionVolume">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionVolumeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionVolumeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2137,9 +2137,9 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the volume. This name is referenced in the `sourceVolume`
+    <dd>The name of the volume. This name is referenced in the `sourceVolume`
 parameter of container definition in the `mountPoints` section.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,8 +2147,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumedockervolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Docker<wbr>Volume<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Used to configure a docker volume
-{{% /md %}}</dd>
+    <dd>Used to configure a docker volume
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2156,8 +2156,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumeefsvolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Efs<wbr>Volume<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Used to configure a EFS volume. Can be used only with an EC2 type task.
-{{% /md %}}</dd>
+    <dd>Used to configure a EFS volume. Can be used only with an EC2 type task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2165,14 +2165,14 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
-{{% /md %}}</dd>
+    <dd>The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2181,9 +2181,9 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the volume. This name is referenced in the `sourceVolume`
+    <dd>The name of the volume. This name is referenced in the `sourceVolume`
 parameter of container definition in the `mountPoints` section.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2191,8 +2191,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumedockervolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Docker<wbr>Volume<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Used to configure a docker volume
-{{% /md %}}</dd>
+    <dd>Used to configure a docker volume
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2200,8 +2200,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumeefsvolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Efs<wbr>Volume<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Used to configure a EFS volume. Can be used only with an EC2 type task.
-{{% /md %}}</dd>
+    <dd>Used to configure a EFS volume. Can be used only with an EC2 type task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2209,14 +2209,14 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
-{{% /md %}}</dd>
+    <dd>The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2225,9 +2225,9 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the volume. This name is referenced in the `sourceVolume`
+    <dd>The name of the volume. This name is referenced in the `sourceVolume`
 parameter of container definition in the `mountPoints` section.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2235,8 +2235,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumedockervolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Docker<wbr>Volume<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Used to configure a docker volume
-{{% /md %}}</dd>
+    <dd>Used to configure a docker volume
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2244,8 +2244,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumeefsvolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Efs<wbr>Volume<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Used to configure a EFS volume. Can be used only with an EC2 type task.
-{{% /md %}}</dd>
+    <dd>Used to configure a EFS volume. Can be used only with an EC2 type task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2253,14 +2253,14 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
-{{% /md %}}</dd>
+    <dd>The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2269,9 +2269,9 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the volume. This name is referenced in the `sourceVolume`
+    <dd>The name of the volume. This name is referenced in the `sourceVolume`
 parameter of container definition in the `mountPoints` section.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2279,8 +2279,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumedockervolumeconfiguration">Dict[Task<wbr>Definition<wbr>Volume<wbr>Docker<wbr>Volume<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Used to configure a docker volume
-{{% /md %}}</dd>
+    <dd>Used to configure a docker volume
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,8 +2288,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumeefsvolumeconfiguration">Dict[Task<wbr>Definition<wbr>Volume<wbr>Efs<wbr>Volume<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Used to configure a EFS volume. Can be used only with an EC2 type task.
-{{% /md %}}</dd>
+    <dd>Used to configure a EFS volume. Can be used only with an EC2 type task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2297,29 +2297,29 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
-{{% /md %}}</dd>
+    <dd>The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="taskdefinitionvolumedockervolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Docker<wbr>Volume<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TaskDefinitionVolumeDockerVolumeConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TaskDefinitionVolumeDockerVolumeConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionVolumeDockerVolumeConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionVolumeDockerVolumeConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2328,8 +2328,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If this value is `true`, the Docker volume is created if it does not already exist. *Note*: This field is only used if the scope is `shared`.
-{{% /md %}}</dd>
+    <dd>If this value is `true`, the Docker volume is created if it does not already exist. *Note*: This field is only used if the scope is `shared`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2337,8 +2337,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement.
-{{% /md %}}</dd>
+    <dd>The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2346,8 +2346,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of Docker driver specific options.
-{{% /md %}}</dd>
+    <dd>A map of Docker driver specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2355,8 +2355,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of custom metadata to add to your Docker volume.
-{{% /md %}}</dd>
+    <dd>A map of custom metadata to add to your Docker volume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2364,14 +2364,14 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The scope for the Docker volume, which determines its lifecycle, either `task` or `shared`.  Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are `scoped` as shared persist after the task stops.
-{{% /md %}}</dd>
+    <dd>The scope for the Docker volume, which determines its lifecycle, either `task` or `shared`.  Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are `scoped` as shared persist after the task stops.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2380,8 +2380,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If this value is `true`, the Docker volume is created if it does not already exist. *Note*: This field is only used if the scope is `shared`.
-{{% /md %}}</dd>
+    <dd>If this value is `true`, the Docker volume is created if it does not already exist. *Note*: This field is only used if the scope is `shared`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2389,8 +2389,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement.
-{{% /md %}}</dd>
+    <dd>The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2398,8 +2398,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of Docker driver specific options.
-{{% /md %}}</dd>
+    <dd>A map of Docker driver specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2407,8 +2407,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of custom metadata to add to your Docker volume.
-{{% /md %}}</dd>
+    <dd>A map of custom metadata to add to your Docker volume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2416,14 +2416,14 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scope for the Docker volume, which determines its lifecycle, either `task` or `shared`.  Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are `scoped` as shared persist after the task stops.
-{{% /md %}}</dd>
+    <dd>The scope for the Docker volume, which determines its lifecycle, either `task` or `shared`.  Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are `scoped` as shared persist after the task stops.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2432,8 +2432,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If this value is `true`, the Docker volume is created if it does not already exist. *Note*: This field is only used if the scope is `shared`.
-{{% /md %}}</dd>
+    <dd>If this value is `true`, the Docker volume is created if it does not already exist. *Note*: This field is only used if the scope is `shared`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2441,8 +2441,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement.
-{{% /md %}}</dd>
+    <dd>The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2450,8 +2450,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of Docker driver specific options.
-{{% /md %}}</dd>
+    <dd>A map of Docker driver specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2459,8 +2459,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of custom metadata to add to your Docker volume.
-{{% /md %}}</dd>
+    <dd>A map of custom metadata to add to your Docker volume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2468,14 +2468,14 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scope for the Docker volume, which determines its lifecycle, either `task` or `shared`.  Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are `scoped` as shared persist after the task stops.
-{{% /md %}}</dd>
+    <dd>The scope for the Docker volume, which determines its lifecycle, either `task` or `shared`.  Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are `scoped` as shared persist after the task stops.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2484,8 +2484,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If this value is `true`, the Docker volume is created if it does not already exist. *Note*: This field is only used if the scope is `shared`.
-{{% /md %}}</dd>
+    <dd>If this value is `true`, the Docker volume is created if it does not already exist. *Note*: This field is only used if the scope is `shared`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2493,8 +2493,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement.
-{{% /md %}}</dd>
+    <dd>The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2502,8 +2502,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of Docker driver specific options.
-{{% /md %}}</dd>
+    <dd>A map of Docker driver specific options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2511,8 +2511,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of custom metadata to add to your Docker volume.
-{{% /md %}}</dd>
+    <dd>A map of custom metadata to add to your Docker volume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2520,29 +2520,29 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The scope for the Docker volume, which determines its lifecycle, either `task` or `shared`.  Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are `scoped` as shared persist after the task stops.
-{{% /md %}}</dd>
+    <dd>The scope for the Docker volume, which determines its lifecycle, either `task` or `shared`.  Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are `scoped` as shared persist after the task stops.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="taskdefinitionvolumeefsvolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Efs<wbr>Volume<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TaskDefinitionVolumeEfsVolumeConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TaskDefinitionVolumeEfsVolumeConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionVolumeEfsVolumeConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionVolumeEfsVolumeConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2551,8 +2551,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EFS File System.
-{{% /md %}}</dd>
+    <dd>The ID of the EFS File System.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2560,14 +2560,14 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to mount on the host
-{{% /md %}}</dd>
+    <dd>The path to mount on the host
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2576,8 +2576,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EFS File System.
-{{% /md %}}</dd>
+    <dd>The ID of the EFS File System.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2585,14 +2585,14 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to mount on the host
-{{% /md %}}</dd>
+    <dd>The path to mount on the host
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2601,8 +2601,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EFS File System.
-{{% /md %}}</dd>
+    <dd>The ID of the EFS File System.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2610,14 +2610,14 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to mount on the host
-{{% /md %}}</dd>
+    <dd>The path to mount on the host
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2626,8 +2626,8 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EFS File System.
-{{% /md %}}</dd>
+    <dd>The ID of the EFS File System.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2635,11 +2635,11 @@ parameter of container definition in the `mountPoints` section.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to mount on the host
-{{% /md %}}</dd>
+    <dd>The path to mount on the host
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

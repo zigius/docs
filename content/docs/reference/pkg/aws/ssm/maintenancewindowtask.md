@@ -150,26 +150,26 @@ const example = new aws.ssm.MaintenanceWindowTask("example", {
 
 
 ## Create a MaintenanceWindowTask Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ssm/#MaintenanceWindowTask">MaintenanceWindowTask</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ssm/#MaintenanceWindowTaskArgs">MaintenanceWindowTaskArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">MaintenanceWindowTask</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>logging_info=None<span class="p">, </span>max_concurrency=None<span class="p">, </span>max_errors=None<span class="p">, </span>name=None<span class="p">, </span>priority=None<span class="p">, </span>service_role_arn=None<span class="p">, </span>targets=None<span class="p">, </span>task_arn=None<span class="p">, </span>task_invocation_parameters=None<span class="p">, </span>task_parameters=None<span class="p">, </span>task_type=None<span class="p">, </span>window_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewMaintenanceWindowTask<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskArgs">MaintenanceWindowTaskArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTask">MaintenanceWindowTask</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ssm.MaintenanceWindowTask.html">MaintenanceWindowTask</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ssm.MaintenanceWindowTaskArgs.html">MaintenanceWindowTaskArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -206,9 +206,9 @@ const example = new aws.ssm.MaintenanceWindowTask("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -226,9 +226,9 @@ const example = new aws.ssm.MaintenanceWindowTask("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -275,9 +275,9 @@ const example = new aws.ssm.MaintenanceWindowTask("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -314,7 +314,7 @@ const example = new aws.ssm.MaintenanceWindowTask("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## MaintenanceWindowTask Resource Properties {#properties}
 
@@ -327,7 +327,7 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -336,8 +336,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of targets this task can be run for in parallel.
-{{% /md %}}</dd>
+    <dd>The maximum number of targets this task can be run for in parallel.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -345,8 +345,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of errors allowed before this task stops being scheduled.
-{{% /md %}}</dd>
+    <dd>The maximum number of errors allowed before this task stops being scheduled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -354,8 +354,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The role that should be assumed when executing the task.
-{{% /md %}}</dd>
+    <dd>The role that should be assumed when executing the task.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -363,8 +363,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktarget">List&lt;Maintenance<wbr>Window<wbr>Task<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
-{{% /md %}}</dd>
+    <dd>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -372,8 +372,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the task to execute.
-{{% /md %}}</dd>
+    <dd>The ARN of the task to execute.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -381,8 +381,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of task being registered. The only allowed value is `RUN_COMMAND`.
-{{% /md %}}</dd>
+    <dd>The type of task being registered. The only allowed value is `RUN_COMMAND`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -390,8 +390,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the maintenance window to register the task with.
-{{% /md %}}</dd>
+    <dd>The Id of the maintenance window to register the task with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The description of the maintenance window task.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -408,8 +408,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasklogginginfo">Maintenance<wbr>Window<wbr>Task<wbr>Logging<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,8 +426,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
-{{% /md %}}</dd>
+    <dd>The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,8 +435,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
-{{% /md %}}</dd>
+    <dd>The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -444,14 +444,14 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskparameter">List&lt;Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -460,8 +460,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of targets this task can be run for in parallel.
-{{% /md %}}</dd>
+    <dd>The maximum number of targets this task can be run for in parallel.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -469,8 +469,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of errors allowed before this task stops being scheduled.
-{{% /md %}}</dd>
+    <dd>The maximum number of errors allowed before this task stops being scheduled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -478,8 +478,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The role that should be assumed when executing the task.
-{{% /md %}}</dd>
+    <dd>The role that should be assumed when executing the task.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -487,8 +487,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktarget">[]Maintenance<wbr>Window<wbr>Task<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
-{{% /md %}}</dd>
+    <dd>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -496,8 +496,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the task to execute.
-{{% /md %}}</dd>
+    <dd>The ARN of the task to execute.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -505,8 +505,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of task being registered. The only allowed value is `RUN_COMMAND`.
-{{% /md %}}</dd>
+    <dd>The type of task being registered. The only allowed value is `RUN_COMMAND`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -514,8 +514,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the maintenance window to register the task with.
-{{% /md %}}</dd>
+    <dd>The Id of the maintenance window to register the task with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The description of the maintenance window task.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -532,8 +532,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasklogginginfo">Maintenance<wbr>Window<wbr>Task<wbr>Logging<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,8 +541,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,8 +550,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
-{{% /md %}}</dd>
+    <dd>The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,8 +559,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
-{{% /md %}}</dd>
+    <dd>The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -568,14 +568,14 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskparameter">[]Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -584,8 +584,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of targets this task can be run for in parallel.
-{{% /md %}}</dd>
+    <dd>The maximum number of targets this task can be run for in parallel.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -593,8 +593,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of errors allowed before this task stops being scheduled.
-{{% /md %}}</dd>
+    <dd>The maximum number of errors allowed before this task stops being scheduled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -602,8 +602,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The role that should be assumed when executing the task.
-{{% /md %}}</dd>
+    <dd>The role that should be assumed when executing the task.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -611,8 +611,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktarget">Maintenance<wbr>Window<wbr>Task<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
-{{% /md %}}</dd>
+    <dd>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -620,8 +620,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the task to execute.
-{{% /md %}}</dd>
+    <dd>The ARN of the task to execute.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -629,8 +629,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of task being registered. The only allowed value is `RUN_COMMAND`.
-{{% /md %}}</dd>
+    <dd>The type of task being registered. The only allowed value is `RUN_COMMAND`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -638,8 +638,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the maintenance window to register the task with.
-{{% /md %}}</dd>
+    <dd>The Id of the maintenance window to register the task with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,8 +647,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The description of the maintenance window task.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -656,8 +656,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasklogginginfo">Maintenance<wbr>Window<wbr>Task<wbr>Logging<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,8 +665,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,8 +674,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
-{{% /md %}}</dd>
+    <dd>The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -683,8 +683,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
-{{% /md %}}</dd>
+    <dd>The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -692,14 +692,14 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskparameter">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -708,8 +708,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of targets this task can be run for in parallel.
-{{% /md %}}</dd>
+    <dd>The maximum number of targets this task can be run for in parallel.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -717,8 +717,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of errors allowed before this task stops being scheduled.
-{{% /md %}}</dd>
+    <dd>The maximum number of errors allowed before this task stops being scheduled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -726,8 +726,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The role that should be assumed when executing the task.
-{{% /md %}}</dd>
+    <dd>The role that should be assumed when executing the task.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -735,8 +735,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktarget">List[Maintenance<wbr>Window<wbr>Task<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
-{{% /md %}}</dd>
+    <dd>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -744,8 +744,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the task to execute.
-{{% /md %}}</dd>
+    <dd>The ARN of the task to execute.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -753,8 +753,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of task being registered. The only allowed value is `RUN_COMMAND`.
-{{% /md %}}</dd>
+    <dd>The type of task being registered. The only allowed value is `RUN_COMMAND`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -762,8 +762,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the maintenance window to register the task with.
-{{% /md %}}</dd>
+    <dd>The Id of the maintenance window to register the task with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -771,8 +771,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The description of the maintenance window task.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -780,8 +780,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasklogginginfo">Dict[Maintenance<wbr>Window<wbr>Task<wbr>Logging<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,8 +789,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
-{{% /md %}}</dd>
+    <dd>The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,8 +807,8 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameters">Dict[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
-{{% /md %}}</dd>
+    <dd>The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -816,11 +816,11 @@ The MaintenanceWindowTask resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskparameter">List[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -834,7 +834,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -843,13 +843,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -858,13 +858,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -873,13 +873,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -888,10 +888,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -902,25 +902,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing MaintenanceWindowTask Resource {#look-up}
 
 Get an existing MaintenanceWindowTask resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ssm/#MaintenanceWindowTaskState">MaintenanceWindowTaskState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ssm/#MaintenanceWindowTask">MaintenanceWindowTask</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>description=None<span class="p">, </span>logging_info=None<span class="p">, </span>max_concurrency=None<span class="p">, </span>max_errors=None<span class="p">, </span>name=None<span class="p">, </span>priority=None<span class="p">, </span>service_role_arn=None<span class="p">, </span>targets=None<span class="p">, </span>task_arn=None<span class="p">, </span>task_invocation_parameters=None<span class="p">, </span>task_parameters=None<span class="p">, </span>task_type=None<span class="p">, </span>window_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetMaintenanceWindowTask<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskState">MaintenanceWindowTaskState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTask">MaintenanceWindowTask</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ssm.MaintenanceWindowTask.html">MaintenanceWindowTask</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ssm.MaintenanceWindowTaskState.html">MaintenanceWindowTaskState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -945,9 +945,9 @@ Get an existing MaintenanceWindowTask resource's state with the given name, ID, 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -960,36 +960,9 @@ Get an existing MaintenanceWindowTask resource's state with the given name, ID, 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1014,13 +987,40 @@ Get an existing MaintenanceWindowTask resource's state with the given name, ID, 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1029,8 +1029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The description of the maintenance window task.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1038,8 +1038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasklogginginfo">Maintenance<wbr>Window<wbr>Task<wbr>Logging<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,8 +1047,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of targets this task can be run for in parallel.
-{{% /md %}}</dd>
+    <dd>The maximum number of targets this task can be run for in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1056,8 +1056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of errors allowed before this task stops being scheduled.
-{{% /md %}}</dd>
+    <dd>The maximum number of errors allowed before this task stops being scheduled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1065,8 +1065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1074,8 +1074,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
-{{% /md %}}</dd>
+    <dd>The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,8 +1083,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The role that should be assumed when executing the task.
-{{% /md %}}</dd>
+    <dd>The role that should be assumed when executing the task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1092,8 +1092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktarget">List&lt;Maintenance<wbr>Window<wbr>Task<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
-{{% /md %}}</dd>
+    <dd>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1101,8 +1101,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the task to execute.
-{{% /md %}}</dd>
+    <dd>The ARN of the task to execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,8 +1110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
-{{% /md %}}</dd>
+    <dd>The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1119,8 +1119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskparameter">List&lt;Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1128,8 +1128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of task being registered. The only allowed value is `RUN_COMMAND`.
-{{% /md %}}</dd>
+    <dd>The type of task being registered. The only allowed value is `RUN_COMMAND`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,14 +1137,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the maintenance window to register the task with.
-{{% /md %}}</dd>
+    <dd>The Id of the maintenance window to register the task with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1153,8 +1153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The description of the maintenance window task.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1162,8 +1162,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasklogginginfo">Maintenance<wbr>Window<wbr>Task<wbr>Logging<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1171,8 +1171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of targets this task can be run for in parallel.
-{{% /md %}}</dd>
+    <dd>The maximum number of targets this task can be run for in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,8 +1180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of errors allowed before this task stops being scheduled.
-{{% /md %}}</dd>
+    <dd>The maximum number of errors allowed before this task stops being scheduled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1189,8 +1189,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,8 +1198,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
-{{% /md %}}</dd>
+    <dd>The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,8 +1207,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The role that should be assumed when executing the task.
-{{% /md %}}</dd>
+    <dd>The role that should be assumed when executing the task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,8 +1216,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktarget">[]Maintenance<wbr>Window<wbr>Task<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
-{{% /md %}}</dd>
+    <dd>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,8 +1225,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the task to execute.
-{{% /md %}}</dd>
+    <dd>The ARN of the task to execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,8 +1234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
-{{% /md %}}</dd>
+    <dd>The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1243,8 +1243,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskparameter">[]Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,8 +1252,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of task being registered. The only allowed value is `RUN_COMMAND`.
-{{% /md %}}</dd>
+    <dd>The type of task being registered. The only allowed value is `RUN_COMMAND`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1261,14 +1261,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the maintenance window to register the task with.
-{{% /md %}}</dd>
+    <dd>The Id of the maintenance window to register the task with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1277,8 +1277,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The description of the maintenance window task.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1286,8 +1286,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasklogginginfo">Maintenance<wbr>Window<wbr>Task<wbr>Logging<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,8 +1295,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of targets this task can be run for in parallel.
-{{% /md %}}</dd>
+    <dd>The maximum number of targets this task can be run for in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1304,8 +1304,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of errors allowed before this task stops being scheduled.
-{{% /md %}}</dd>
+    <dd>The maximum number of errors allowed before this task stops being scheduled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1313,8 +1313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,8 +1322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
-{{% /md %}}</dd>
+    <dd>The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1331,8 +1331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The role that should be assumed when executing the task.
-{{% /md %}}</dd>
+    <dd>The role that should be assumed when executing the task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1340,8 +1340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktarget">Maintenance<wbr>Window<wbr>Task<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
-{{% /md %}}</dd>
+    <dd>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,8 +1349,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the task to execute.
-{{% /md %}}</dd>
+    <dd>The ARN of the task to execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1358,8 +1358,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
-{{% /md %}}</dd>
+    <dd>The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1367,8 +1367,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskparameter">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,8 +1376,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of task being registered. The only allowed value is `RUN_COMMAND`.
-{{% /md %}}</dd>
+    <dd>The type of task being registered. The only allowed value is `RUN_COMMAND`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,14 +1385,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the maintenance window to register the task with.
-{{% /md %}}</dd>
+    <dd>The Id of the maintenance window to register the task with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1401,8 +1401,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The description of the maintenance window task.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1410,8 +1410,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasklogginginfo">Dict[Maintenance<wbr>Window<wbr>Task<wbr>Logging<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of targets this task can be run for in parallel.
-{{% /md %}}</dd>
+    <dd>The maximum number of targets this task can be run for in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of errors allowed before this task stops being scheduled.
-{{% /md %}}</dd>
+    <dd>The maximum number of errors allowed before this task stops being scheduled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,8 +1437,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,8 +1446,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
-{{% /md %}}</dd>
+    <dd>The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1455,8 +1455,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The role that should be assumed when executing the task.
-{{% /md %}}</dd>
+    <dd>The role that should be assumed when executing the task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktarget">List[Maintenance<wbr>Window<wbr>Task<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
-{{% /md %}}</dd>
+    <dd>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the task to execute.
-{{% /md %}}</dd>
+    <dd>The ARN of the task to execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameters">Dict[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
-{{% /md %}}</dd>
+    <dd>The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1491,8 +1491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskparameter">List[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use &#39;task_invocation_parameters&#39; argument instead{{% /md %}}</p></dd>
+    <dd>A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.
+<p class="property-message">Deprecated: use &#39;task_invocation_parameters&#39; argument instead</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1500,8 +1500,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of task being registered. The only allowed value is `RUN_COMMAND`.
-{{% /md %}}</dd>
+    <dd>The type of task being registered. The only allowed value is `RUN_COMMAND`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1509,11 +1509,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of the maintenance window to register the task with.
-{{% /md %}}</dd>
+    <dd>The Id of the maintenance window to register the task with.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1528,18 +1528,18 @@ The following state arguments are supported:
 
 
 <h4 id="maintenancewindowtasklogginginfo">Maintenance<wbr>Window<wbr>Task<wbr>Logging<wbr>Info</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskLoggingInfo">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskLoggingInfo">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskLoggingInfoArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskLoggingInfoOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1548,7 +1548,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1556,7 +1556,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1564,13 +1564,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1579,7 +1579,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1587,7 +1587,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,13 +1595,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1610,7 +1610,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1618,7 +1618,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,13 +1626,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1641,7 +1641,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1649,7 +1649,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1657,28 +1657,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktarget">Maintenance<wbr>Window<wbr>Task<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1687,7 +1687,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1695,13 +1695,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1710,7 +1710,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1718,13 +1718,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1733,7 +1733,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1741,13 +1741,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1756,7 +1756,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1764,28 +1764,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktaskinvocationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTaskInvocationParameters">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTaskInvocationParameters">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1794,8 +1794,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersautomationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for an AUTOMATION task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for an AUTOMATION task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,8 +1803,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameterslambdaparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Lambda<wbr>Parameters<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a LAMBDA task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a LAMBDA task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,8 +1812,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a RUN_COMMAND task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a RUN_COMMAND task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1821,14 +1821,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersstepfunctionsparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Step<wbr>Functions<wbr>Parameters<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a STEP_FUNCTIONS task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a STEP_FUNCTIONS task type. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1837,8 +1837,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersautomationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for an AUTOMATION task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for an AUTOMATION task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,8 +1846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameterslambdaparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Lambda<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a LAMBDA task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a LAMBDA task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,8 +1855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a RUN_COMMAND task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a RUN_COMMAND task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1864,14 +1864,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersstepfunctionsparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Step<wbr>Functions<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a STEP_FUNCTIONS task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a STEP_FUNCTIONS task type. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1880,8 +1880,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersautomationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for an AUTOMATION task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for an AUTOMATION task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1889,8 +1889,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameterslambdaparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Lambda<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a LAMBDA task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a LAMBDA task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1898,8 +1898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a RUN_COMMAND task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a RUN_COMMAND task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1907,14 +1907,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersstepfunctionsparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Step<wbr>Functions<wbr>Parameters</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a STEP_FUNCTIONS task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a STEP_FUNCTIONS task type. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1923,8 +1923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersautomationparameters">Dict[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for an AUTOMATION task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for an AUTOMATION task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1932,8 +1932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparameterslambdaparameters">Dict[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Lambda<wbr>Parameters]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a LAMBDA task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a LAMBDA task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,8 +1941,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparameters">Dict[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a RUN_COMMAND task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a RUN_COMMAND task type. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,29 +1950,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersstepfunctionsparameters">Dict[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Step<wbr>Functions<wbr>Parameters]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for a STEP_FUNCTIONS task type. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for a STEP_FUNCTIONS task type. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktaskinvocationparametersautomationparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTaskInvocationParametersAutomationParameters">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTaskInvocationParametersAutomationParameters">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersAutomationParametersArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1981,8 +1981,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of an Automation document to use during task execution.
-{{% /md %}}</dd>
+    <dd>The version of an Automation document to use during task execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1990,14 +1990,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersautomationparametersparameter">List&lt;Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for the RUN_COMMAND task execution. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for the RUN_COMMAND task execution. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2006,8 +2006,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of an Automation document to use during task execution.
-{{% /md %}}</dd>
+    <dd>The version of an Automation document to use during task execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2015,14 +2015,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersautomationparametersparameter">[]Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for the RUN_COMMAND task execution. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for the RUN_COMMAND task execution. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2031,8 +2031,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of an Automation document to use during task execution.
-{{% /md %}}</dd>
+    <dd>The version of an Automation document to use during task execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2040,14 +2040,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersautomationparametersparameter">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for the RUN_COMMAND task execution. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for the RUN_COMMAND task execution. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2056,8 +2056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of an Automation document to use during task execution.
-{{% /md %}}</dd>
+    <dd>The version of an Automation document to use during task execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2065,29 +2065,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersautomationparametersparameter">List[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for the RUN_COMMAND task execution. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for the RUN_COMMAND task execution. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktaskinvocationparametersautomationparametersparameter">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Automation<wbr>Parameters<wbr>Parameter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2096,8 +2096,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The parameter name.
-{{% /md %}}</dd>
+    <dd>The parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2105,14 +2105,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The array of strings.
-{{% /md %}}</dd>
+    <dd>The array of strings.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2121,8 +2121,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The parameter name.
-{{% /md %}}</dd>
+    <dd>The parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2130,14 +2130,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The array of strings.
-{{% /md %}}</dd>
+    <dd>The array of strings.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2146,8 +2146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The parameter name.
-{{% /md %}}</dd>
+    <dd>The parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2155,14 +2155,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The array of strings.
-{{% /md %}}</dd>
+    <dd>The array of strings.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2171,8 +2171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The parameter name.
-{{% /md %}}</dd>
+    <dd>The parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2180,29 +2180,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The array of strings.
-{{% /md %}}</dd>
+    <dd>The array of strings.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktaskinvocationparameterslambdaparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Lambda<wbr>Parameters</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTaskInvocationParametersLambdaParameters">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTaskInvocationParametersLambdaParameters">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersLambdaParametersArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2211,8 +2211,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Pass client-specific information to the Lambda function that you are invoking.
-{{% /md %}}</dd>
+    <dd>Pass client-specific information to the Lambda function that you are invoking.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2220,8 +2220,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON to provide to your Lambda function as input.
-{{% /md %}}</dd>
+    <dd>JSON to provide to your Lambda function as input.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2229,14 +2229,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Lambda function version or alias name.
-{{% /md %}}</dd>
+    <dd>Specify a Lambda function version or alias name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2245,8 +2245,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pass client-specific information to the Lambda function that you are invoking.
-{{% /md %}}</dd>
+    <dd>Pass client-specific information to the Lambda function that you are invoking.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2254,8 +2254,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON to provide to your Lambda function as input.
-{{% /md %}}</dd>
+    <dd>JSON to provide to your Lambda function as input.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2263,14 +2263,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Lambda function version or alias name.
-{{% /md %}}</dd>
+    <dd>Specify a Lambda function version or alias name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2279,8 +2279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pass client-specific information to the Lambda function that you are invoking.
-{{% /md %}}</dd>
+    <dd>Pass client-specific information to the Lambda function that you are invoking.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,8 +2288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON to provide to your Lambda function as input.
-{{% /md %}}</dd>
+    <dd>JSON to provide to your Lambda function as input.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2297,14 +2297,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Lambda function version or alias name.
-{{% /md %}}</dd>
+    <dd>Specify a Lambda function version or alias name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2313,8 +2313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Pass client-specific information to the Lambda function that you are invoking.
-{{% /md %}}</dd>
+    <dd>Pass client-specific information to the Lambda function that you are invoking.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2322,8 +2322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}JSON to provide to your Lambda function as input.
-{{% /md %}}</dd>
+    <dd>JSON to provide to your Lambda function as input.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2331,29 +2331,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify a Lambda function version or alias name.
-{{% /md %}}</dd>
+    <dd>Specify a Lambda function version or alias name.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktaskinvocationparametersruncommandparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2362,8 +2362,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Information about the command(s) to execute.
-{{% /md %}}</dd>
+    <dd>Information about the command(s) to execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,8 +2371,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
-{{% /md %}}</dd>
+    <dd>The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,8 +2380,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
-{{% /md %}}</dd>
+    <dd>SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2389,8 +2389,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparametersnotificationconfig">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Notification<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
-{{% /md %}}</dd>
+    <dd>Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2398,8 +2398,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Amazon S3 bucket.
-{{% /md %}}</dd>
+    <dd>The name of the Amazon S3 bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2407,8 +2407,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket subfolder.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket subfolder.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2416,8 +2416,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparametersparameter">List&lt;Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for the RUN_COMMAND task execution. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for the RUN_COMMAND task execution. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2425,8 +2425,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role to assume during task execution.
-{{% /md %}}</dd>
+    <dd>The IAM service role to assume during task execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2434,14 +2434,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If this time is reached and the command has not already started executing, it doesn't run.
-{{% /md %}}</dd>
+    <dd>If this time is reached and the command has not already started executing, it doesn't run.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2450,8 +2450,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Information about the command(s) to execute.
-{{% /md %}}</dd>
+    <dd>Information about the command(s) to execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2459,8 +2459,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
-{{% /md %}}</dd>
+    <dd>The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2468,8 +2468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
-{{% /md %}}</dd>
+    <dd>SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2477,8 +2477,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparametersnotificationconfig">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Notification<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
-{{% /md %}}</dd>
+    <dd>Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2486,8 +2486,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Amazon S3 bucket.
-{{% /md %}}</dd>
+    <dd>The name of the Amazon S3 bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2495,8 +2495,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket subfolder.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket subfolder.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2504,8 +2504,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparametersparameter">[]Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Parameter</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for the RUN_COMMAND task execution. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for the RUN_COMMAND task execution. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2513,8 +2513,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role to assume during task execution.
-{{% /md %}}</dd>
+    <dd>The IAM service role to assume during task execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2522,14 +2522,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If this time is reached and the command has not already started executing, it doesn't run.
-{{% /md %}}</dd>
+    <dd>If this time is reached and the command has not already started executing, it doesn't run.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2538,8 +2538,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Information about the command(s) to execute.
-{{% /md %}}</dd>
+    <dd>Information about the command(s) to execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2547,8 +2547,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
-{{% /md %}}</dd>
+    <dd>The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2556,8 +2556,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
-{{% /md %}}</dd>
+    <dd>SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2565,8 +2565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparametersnotificationconfig">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Notification<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
-{{% /md %}}</dd>
+    <dd>Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2574,8 +2574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Amazon S3 bucket.
-{{% /md %}}</dd>
+    <dd>The name of the Amazon S3 bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2583,8 +2583,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket subfolder.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket subfolder.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2592,8 +2592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparametersparameter">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Parameter[]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for the RUN_COMMAND task execution. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for the RUN_COMMAND task execution. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2601,8 +2601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role to assume during task execution.
-{{% /md %}}</dd>
+    <dd>The IAM service role to assume during task execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2610,14 +2610,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If this time is reached and the command has not already started executing, it doesn't run.
-{{% /md %}}</dd>
+    <dd>If this time is reached and the command has not already started executing, it doesn't run.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2626,8 +2626,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Information about the command(s) to execute.
-{{% /md %}}</dd>
+    <dd>Information about the command(s) to execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2635,8 +2635,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
-{{% /md %}}</dd>
+    <dd>The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2644,8 +2644,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
-{{% /md %}}</dd>
+    <dd>SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2653,8 +2653,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparametersnotificationconfig">Dict[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Notification<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
-{{% /md %}}</dd>
+    <dd>Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2662,8 +2662,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Amazon S3 bucket.
-{{% /md %}}</dd>
+    <dd>The name of the Amazon S3 bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2671,8 +2671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket subfolder.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket subfolder.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2680,8 +2680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#maintenancewindowtasktaskinvocationparametersruncommandparametersparameter">List[Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Parameter]</a></span>
     </dt>
-    <dd>{{% md %}}The parameters for the RUN_COMMAND task execution. Documented below.
-{{% /md %}}</dd>
+    <dd>The parameters for the RUN_COMMAND task execution. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2689,8 +2689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role to assume during task execution.
-{{% /md %}}</dd>
+    <dd>The IAM service role to assume during task execution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2698,29 +2698,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If this time is reached and the command has not already started executing, it doesn't run.
-{{% /md %}}</dd>
+    <dd>If this time is reached and the command has not already started executing, it doesn't run.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktaskinvocationparametersruncommandparametersnotificationconfig">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Notification<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2729,8 +2729,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
-{{% /md %}}</dd>
+    <dd>An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2738,8 +2738,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`
-{{% /md %}}</dd>
+    <dd>The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2747,14 +2747,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`
-{{% /md %}}</dd>
+    <dd>When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2763,8 +2763,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
-{{% /md %}}</dd>
+    <dd>An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2772,8 +2772,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`
-{{% /md %}}</dd>
+    <dd>The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2781,14 +2781,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`
-{{% /md %}}</dd>
+    <dd>When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2797,8 +2797,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
-{{% /md %}}</dd>
+    <dd>An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2806,8 +2806,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`
-{{% /md %}}</dd>
+    <dd>The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2815,14 +2815,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`
-{{% /md %}}</dd>
+    <dd>When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2831,8 +2831,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
-{{% /md %}}</dd>
+    <dd>An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2840,8 +2840,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`
-{{% /md %}}</dd>
+    <dd>The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2849,29 +2849,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`
-{{% /md %}}</dd>
+    <dd>When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktaskinvocationparametersruncommandparametersparameter">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Run<wbr>Command<wbr>Parameters<wbr>Parameter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2880,8 +2880,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The parameter name.
-{{% /md %}}</dd>
+    <dd>The parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2889,14 +2889,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The array of strings.
-{{% /md %}}</dd>
+    <dd>The array of strings.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2905,8 +2905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The parameter name.
-{{% /md %}}</dd>
+    <dd>The parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2914,14 +2914,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The array of strings.
-{{% /md %}}</dd>
+    <dd>The array of strings.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2930,8 +2930,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The parameter name.
-{{% /md %}}</dd>
+    <dd>The parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2939,14 +2939,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The array of strings.
-{{% /md %}}</dd>
+    <dd>The array of strings.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2955,8 +2955,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The parameter name.
-{{% /md %}}</dd>
+    <dd>The parameter name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2964,29 +2964,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The array of strings.
-{{% /md %}}</dd>
+    <dd>The array of strings.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktaskinvocationparametersstepfunctionsparameters">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Invocation<wbr>Parameters<wbr>Step<wbr>Functions<wbr>Parameters</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2995,8 +2995,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The inputs for the STEP_FUNCTION task.
-{{% /md %}}</dd>
+    <dd>The inputs for the STEP_FUNCTION task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3004,14 +3004,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the STEP_FUNCTION task.
-{{% /md %}}</dd>
+    <dd>The name of the STEP_FUNCTION task.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3020,8 +3020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The inputs for the STEP_FUNCTION task.
-{{% /md %}}</dd>
+    <dd>The inputs for the STEP_FUNCTION task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3029,14 +3029,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the STEP_FUNCTION task.
-{{% /md %}}</dd>
+    <dd>The name of the STEP_FUNCTION task.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3045,8 +3045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The inputs for the STEP_FUNCTION task.
-{{% /md %}}</dd>
+    <dd>The inputs for the STEP_FUNCTION task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3054,14 +3054,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the STEP_FUNCTION task.
-{{% /md %}}</dd>
+    <dd>The name of the STEP_FUNCTION task.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3070,8 +3070,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The inputs for the STEP_FUNCTION task.
-{{% /md %}}</dd>
+    <dd>The inputs for the STEP_FUNCTION task.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3079,29 +3079,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the STEP_FUNCTION task.
-{{% /md %}}</dd>
+    <dd>The name of the STEP_FUNCTION task.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="maintenancewindowtasktaskparameter">Maintenance<wbr>Window<wbr>Task<wbr>Task<wbr>Parameter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MaintenanceWindowTaskTaskParameter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MaintenanceWindowTaskTaskParameter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskParameterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ssm?tab=doc#MaintenanceWindowTaskTaskParameterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3110,8 +3110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3119,13 +3119,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3134,8 +3134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3143,13 +3143,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3158,8 +3158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3167,13 +3167,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3182,8 +3182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the maintenance window task.
-{{% /md %}}</dd>
+    <dd>The name of the maintenance window task.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3191,10 +3191,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -32,29 +32,29 @@ const zone1 = pulumi.output(openstack.dns.getDnsZone({
 
 ## Using GetDnsZone {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getDnsZone<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/dns/#GetDnsZoneArgs">GetDnsZoneArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/dns/#GetDnsZoneResult">GetDnsZoneResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_dns_zone(</span>attributes=None<span class="p">, </span>created_at=None<span class="p">, </span>description=None<span class="p">, </span>email=None<span class="p">, </span>masters=None<span class="p">, </span>name=None<span class="p">, </span>pool_id=None<span class="p">, </span>project_id=None<span class="p">, </span>region=None<span class="p">, </span>serial=None<span class="p">, </span>status=None<span class="p">, </span>transferred_at=None<span class="p">, </span>ttl=None<span class="p">, </span>type=None<span class="p">, </span>updated_at=None<span class="p">, </span>version=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupDnsZone<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/dns?tab=doc#LookupDnsZoneArgs">LookupDnsZoneArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/dns?tab=doc#LookupDnsZoneResult">LookupDnsZoneResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetDnsZone </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Dns.GetDnsZoneResult.html">GetDnsZoneResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Dns.GetDnsZoneArgs.html">GetDnsZoneArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Attributes of the DNS Service scheduler.
-{{% /md %}}</dd>
+    <dd>Attributes of the DNS Service scheduler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,8 +80,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was created.
-{{% /md %}}</dd>
+    <dd>The time the zone was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -89,8 +89,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the zone.
-{{% /md %}}</dd>
+    <dd>A description of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -98,8 +98,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The email contact for the zone record.
-{{% /md %}}</dd>
+    <dd>The email contact for the zone record.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -107,8 +107,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of master DNS servers. When `type` is  `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>An array of master DNS servers. When `type` is  `SECONDARY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -116,8 +116,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the zone.
-{{% /md %}}</dd>
+    <dd>The name of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -125,8 +125,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the pool hosting the zone.
-{{% /md %}}</dd>
+    <dd>The ID of the pool hosting the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -134,8 +134,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project ID that owns the zone.
-{{% /md %}}</dd>
+    <dd>The project ID that owns the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -143,10 +143,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 DNS client.
+    <dd>The region in which to obtain the V2 DNS client.
 A DNS client is needed to retrieve zone ids. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -154,8 +154,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The serial number of the zone.
-{{% /md %}}</dd>
+    <dd>The serial number of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -163,8 +163,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone's status.
-{{% /md %}}</dd>
+    <dd>The zone's status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -172,8 +172,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was transferred.
-{{% /md %}}</dd>
+    <dd>The time the zone was transferred.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -181,8 +181,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time to live (TTL) of the zone.
-{{% /md %}}</dd>
+    <dd>The time to live (TTL) of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -190,8 +190,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the zone. Can either be `PRIMARY` or `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>The type of the zone. Can either be `PRIMARY` or `SECONDARY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -199,8 +199,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was last updated.
-{{% /md %}}</dd>
+    <dd>The time the zone was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -208,14 +208,14 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the zone.
-{{% /md %}}</dd>
+    <dd>The version of the zone.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -224,8 +224,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Attributes of the DNS Service scheduler.
-{{% /md %}}</dd>
+    <dd>Attributes of the DNS Service scheduler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was created.
-{{% /md %}}</dd>
+    <dd>The time the zone was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the zone.
-{{% /md %}}</dd>
+    <dd>A description of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email contact for the zone record.
-{{% /md %}}</dd>
+    <dd>The email contact for the zone record.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of master DNS servers. When `type` is  `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>An array of master DNS servers. When `type` is  `SECONDARY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the zone.
-{{% /md %}}</dd>
+    <dd>The name of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the pool hosting the zone.
-{{% /md %}}</dd>
+    <dd>The ID of the pool hosting the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project ID that owns the zone.
-{{% /md %}}</dd>
+    <dd>The project ID that owns the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,10 +296,10 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 DNS client.
+    <dd>The region in which to obtain the V2 DNS client.
 A DNS client is needed to retrieve zone ids. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,8 +307,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The serial number of the zone.
-{{% /md %}}</dd>
+    <dd>The serial number of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -316,8 +316,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone's status.
-{{% /md %}}</dd>
+    <dd>The zone's status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -325,8 +325,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was transferred.
-{{% /md %}}</dd>
+    <dd>The time the zone was transferred.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -334,8 +334,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time to live (TTL) of the zone.
-{{% /md %}}</dd>
+    <dd>The time to live (TTL) of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,8 +343,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the zone. Can either be `PRIMARY` or `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>The type of the zone. Can either be `PRIMARY` or `SECONDARY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,8 +352,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was last updated.
-{{% /md %}}</dd>
+    <dd>The time the zone was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,14 +361,14 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the zone.
-{{% /md %}}</dd>
+    <dd>The version of the zone.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -377,8 +377,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Attributes of the DNS Service scheduler.
-{{% /md %}}</dd>
+    <dd>Attributes of the DNS Service scheduler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was created.
-{{% /md %}}</dd>
+    <dd>The time the zone was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the zone.
-{{% /md %}}</dd>
+    <dd>A description of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email contact for the zone record.
-{{% /md %}}</dd>
+    <dd>The email contact for the zone record.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of master DNS servers. When `type` is  `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>An array of master DNS servers. When `type` is  `SECONDARY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the zone.
-{{% /md %}}</dd>
+    <dd>The name of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,8 +431,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the pool hosting the zone.
-{{% /md %}}</dd>
+    <dd>The ID of the pool hosting the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,8 +440,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project ID that owns the zone.
-{{% /md %}}</dd>
+    <dd>The project ID that owns the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,10 +449,10 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 DNS client.
+    <dd>The region in which to obtain the V2 DNS client.
 A DNS client is needed to retrieve zone ids. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -460,8 +460,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The serial number of the zone.
-{{% /md %}}</dd>
+    <dd>The serial number of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,8 +469,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone's status.
-{{% /md %}}</dd>
+    <dd>The zone's status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,8 +478,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was transferred.
-{{% /md %}}</dd>
+    <dd>The time the zone was transferred.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,8 +487,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time to live (TTL) of the zone.
-{{% /md %}}</dd>
+    <dd>The time to live (TTL) of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,8 +496,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the zone. Can either be `PRIMARY` or `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>The type of the zone. Can either be `PRIMARY` or `SECONDARY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was last updated.
-{{% /md %}}</dd>
+    <dd>The time the zone was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,14 +514,14 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The version of the zone.
-{{% /md %}}</dd>
+    <dd>The version of the zone.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -530,8 +530,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Attributes of the DNS Service scheduler.
-{{% /md %}}</dd>
+    <dd>Attributes of the DNS Service scheduler.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,8 +539,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was created.
-{{% /md %}}</dd>
+    <dd>The time the zone was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description of the zone.
-{{% /md %}}</dd>
+    <dd>A description of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The email contact for the zone record.
-{{% /md %}}</dd>
+    <dd>The email contact for the zone record.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of master DNS servers. When `type` is  `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>An array of master DNS servers. When `type` is  `SECONDARY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,8 +575,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the zone.
-{{% /md %}}</dd>
+    <dd>The name of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -584,8 +584,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the pool hosting the zone.
-{{% /md %}}</dd>
+    <dd>The ID of the pool hosting the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,8 +593,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project ID that owns the zone.
-{{% /md %}}</dd>
+    <dd>The project ID that owns the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,10 +602,10 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 DNS client.
+    <dd>The region in which to obtain the V2 DNS client.
 A DNS client is needed to retrieve zone ids. If omitted, the
 `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,8 +613,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The serial number of the zone.
-{{% /md %}}</dd>
+    <dd>The serial number of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -622,8 +622,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone's status.
-{{% /md %}}</dd>
+    <dd>The zone's status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,8 +631,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was transferred.
-{{% /md %}}</dd>
+    <dd>The time the zone was transferred.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -640,8 +640,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time to live (TTL) of the zone.
-{{% /md %}}</dd>
+    <dd>The time to live (TTL) of the zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,8 +649,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the zone. Can either be `PRIMARY` or `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>The type of the zone. Can either be `PRIMARY` or `SECONDARY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,8 +658,8 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was last updated.
-{{% /md %}}</dd>
+    <dd>The time the zone was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -667,11 +667,11 @@ A DNS client is needed to retrieve zone ids. If omitted, the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The version of the zone.
-{{% /md %}}</dd>
+    <dd>The version of the zone.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -687,7 +687,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -696,8 +696,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Attributes of the DNS Service scheduler.
-{{% /md %}}</dd>
+    <dd>Attributes of the DNS Service scheduler.
+</dd>
 
     <dt class="property-"
             title="">
@@ -705,8 +705,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was created.
-{{% /md %}}</dd>
+    <dd>The time the zone was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -714,8 +714,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -723,8 +723,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of master DNS servers. When `type` is  `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>An array of master DNS servers. When `type` is  `SECONDARY`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -732,8 +732,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the pool hosting the zone.
-{{% /md %}}</dd>
+    <dd>The ID of the pool hosting the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -741,8 +741,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project ID that owns the zone.
-{{% /md %}}</dd>
+    <dd>The project ID that owns the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -750,8 +750,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -759,8 +759,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The serial number of the zone.
-{{% /md %}}</dd>
+    <dd>The serial number of the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -768,8 +768,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was transferred.
-{{% /md %}}</dd>
+    <dd>The time the zone was transferred.
+</dd>
 
     <dt class="property-"
             title="">
@@ -777,8 +777,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was last updated.
-{{% /md %}}</dd>
+    <dd>The time the zone was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -786,8 +786,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the zone.
-{{% /md %}}</dd>
+    <dd>The version of the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -795,8 +795,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -804,8 +804,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -813,8 +813,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -822,8 +822,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -831,8 +831,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -840,14 +840,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -856,8 +856,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Attributes of the DNS Service scheduler.
-{{% /md %}}</dd>
+    <dd>Attributes of the DNS Service scheduler.
+</dd>
 
     <dt class="property-"
             title="">
@@ -865,8 +865,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was created.
-{{% /md %}}</dd>
+    <dd>The time the zone was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -874,8 +874,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -883,8 +883,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of master DNS servers. When `type` is  `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>An array of master DNS servers. When `type` is  `SECONDARY`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -892,8 +892,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the pool hosting the zone.
-{{% /md %}}</dd>
+    <dd>The ID of the pool hosting the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -901,8 +901,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project ID that owns the zone.
-{{% /md %}}</dd>
+    <dd>The project ID that owns the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -910,8 +910,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -919,8 +919,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The serial number of the zone.
-{{% /md %}}</dd>
+    <dd>The serial number of the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -928,8 +928,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was transferred.
-{{% /md %}}</dd>
+    <dd>The time the zone was transferred.
+</dd>
 
     <dt class="property-"
             title="">
@@ -937,8 +937,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was last updated.
-{{% /md %}}</dd>
+    <dd>The time the zone was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -946,8 +946,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the zone.
-{{% /md %}}</dd>
+    <dd>The version of the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -955,8 +955,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -964,8 +964,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -973,8 +973,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -982,8 +982,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -991,8 +991,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1000,14 +1000,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1016,8 +1016,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Attributes of the DNS Service scheduler.
-{{% /md %}}</dd>
+    <dd>Attributes of the DNS Service scheduler.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1025,8 +1025,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was created.
-{{% /md %}}</dd>
+    <dd>The time the zone was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1034,8 +1034,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1043,8 +1043,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of master DNS servers. When `type` is  `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>An array of master DNS servers. When `type` is  `SECONDARY`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1052,8 +1052,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the pool hosting the zone.
-{{% /md %}}</dd>
+    <dd>The ID of the pool hosting the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1061,8 +1061,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project ID that owns the zone.
-{{% /md %}}</dd>
+    <dd>The project ID that owns the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1070,8 +1070,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1079,8 +1079,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The serial number of the zone.
-{{% /md %}}</dd>
+    <dd>The serial number of the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1088,8 +1088,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was transferred.
-{{% /md %}}</dd>
+    <dd>The time the zone was transferred.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1097,8 +1097,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was last updated.
-{{% /md %}}</dd>
+    <dd>The time the zone was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1106,8 +1106,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The version of the zone.
-{{% /md %}}</dd>
+    <dd>The version of the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1115,8 +1115,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1124,8 +1124,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1133,8 +1133,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1142,8 +1142,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1151,8 +1151,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1160,14 +1160,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1176,8 +1176,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Attributes of the DNS Service scheduler.
-{{% /md %}}</dd>
+    <dd>Attributes of the DNS Service scheduler.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1185,8 +1185,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was created.
-{{% /md %}}</dd>
+    <dd>The time the zone was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1194,8 +1194,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1203,8 +1203,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of master DNS servers. When `type` is  `SECONDARY`.
-{{% /md %}}</dd>
+    <dd>An array of master DNS servers. When `type` is  `SECONDARY`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1212,8 +1212,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the pool hosting the zone.
-{{% /md %}}</dd>
+    <dd>The ID of the pool hosting the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1221,8 +1221,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project ID that owns the zone.
-{{% /md %}}</dd>
+    <dd>The project ID that owns the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1230,8 +1230,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1239,8 +1239,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The serial number of the zone.
-{{% /md %}}</dd>
+    <dd>The serial number of the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1248,8 +1248,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was transferred.
-{{% /md %}}</dd>
+    <dd>The time the zone was transferred.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1257,8 +1257,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time the zone was last updated.
-{{% /md %}}</dd>
+    <dd>The time the zone was last updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1266,8 +1266,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The version of the zone.
-{{% /md %}}</dd>
+    <dd>The version of the zone.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1275,8 +1275,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1284,8 +1284,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1293,8 +1293,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1302,8 +1302,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1311,8 +1311,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1320,11 +1320,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

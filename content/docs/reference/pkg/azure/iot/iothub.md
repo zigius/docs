@@ -24,26 +24,26 @@ Manages an IotHub
 
 
 ## Create a IoTHub Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/iot/#IoTHub">IoTHub</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/iot/#IoTHubArgs">IoTHubArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">IoTHub</span><span class="p">(resource_name, opts=None, </span>endpoints=None<span class="p">, </span>event_hub_partition_count=None<span class="p">, </span>event_hub_retention_in_days=None<span class="p">, </span>fallback_route=None<span class="p">, </span>file_upload=None<span class="p">, </span>ip_filter_rules=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>routes=None<span class="p">, </span>sku=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewIoTHub<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubArgs">IoTHubArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHub">IoTHub</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Iot.IoTHub.html">IoTHub</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Iot.IoTHubArgs.html">IoTHubArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -80,9 +80,9 @@ Manages an IotHub
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -100,9 +100,9 @@ Manages an IotHub
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -149,9 +149,9 @@ Manages an IotHub
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -188,7 +188,7 @@ Manages an IotHub
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## IoTHub Resource Properties {#properties}
 
@@ -201,7 +201,7 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -210,8 +210,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -219,8 +219,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsku">Io<wbr>THub<wbr>Sku<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `sku` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `sku` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,8 +228,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubendpoint">List&lt;Io<wbr>THub<wbr>Endpoint<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An `endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,8 +237,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
-{{% /md %}}</dd>
+    <dd>The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The event hub retention to use in days. Must be between `1` and `7`.
-{{% /md %}}</dd>
+    <dd>The event hub retention to use in days. Must be between `1` and `7`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,8 +255,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfallbackroute">Io<wbr>THub<wbr>Fallback<wbr>Route<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
-{{% /md %}}</dd>
+    <dd>A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfileupload">Io<wbr>THub<wbr>File<wbr>Upload<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `file_upload` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `file_upload` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,8 +273,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubipfilterrule">List&lt;Io<wbr>THub<wbr>Ip<wbr>Filter<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_filter_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_filter_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,8 +282,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubroute">List&lt;Io<wbr>THub<wbr>Route<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `route` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `route` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,14 +309,14 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -325,8 +325,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -334,8 +334,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsku">Io<wbr>THub<wbr>Sku</a></span>
     </dt>
-    <dd>{{% md %}}A `sku` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `sku` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,8 +343,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubendpoint">[]Io<wbr>THub<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}An `endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,8 +352,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
-{{% /md %}}</dd>
+    <dd>The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,8 +361,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The event hub retention to use in days. Must be between `1` and `7`.
-{{% /md %}}</dd>
+    <dd>The event hub retention to use in days. Must be between `1` and `7`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,8 +370,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfallbackroute">Io<wbr>THub<wbr>Fallback<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
-{{% /md %}}</dd>
+    <dd>A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfileupload">Io<wbr>THub<wbr>File<wbr>Upload</a></span>
     </dt>
-    <dd>{{% md %}}A `file_upload` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `file_upload` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubipfilterrule">[]Io<wbr>THub<wbr>Ip<wbr>Filter<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_filter_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_filter_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,8 +406,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,8 +415,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubroute">[]Io<wbr>THub<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}A `route` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `route` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,14 +424,14 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -440,8 +440,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -449,8 +449,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsku">Io<wbr>THub<wbr>Sku</a></span>
     </dt>
-    <dd>{{% md %}}A `sku` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `sku` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,8 +458,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubendpoint">Io<wbr>THub<wbr>Endpoint[]</a></span>
     </dt>
-    <dd>{{% md %}}An `endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,8 +467,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
-{{% /md %}}</dd>
+    <dd>The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,8 +476,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The event hub retention to use in days. Must be between `1` and `7`.
-{{% /md %}}</dd>
+    <dd>The event hub retention to use in days. Must be between `1` and `7`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -485,8 +485,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfallbackroute">Io<wbr>THub<wbr>Fallback<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
-{{% /md %}}</dd>
+    <dd>A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -494,8 +494,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfileupload">Io<wbr>THub<wbr>File<wbr>Upload</a></span>
     </dt>
-    <dd>{{% md %}}A `file_upload` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `file_upload` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -503,8 +503,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubipfilterrule">Io<wbr>THub<wbr>Ip<wbr>Filter<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_filter_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_filter_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -512,8 +512,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -521,8 +521,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,8 +530,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubroute">Io<wbr>THub<wbr>Route[]</a></span>
     </dt>
-    <dd>{{% md %}}A `route` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `route` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,14 +539,14 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -555,8 +555,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -564,8 +564,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsku">Dict[Io<wbr>THub<wbr>Sku]</a></span>
     </dt>
-    <dd>{{% md %}}A `sku` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `sku` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,8 +573,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubendpoint">List[Io<wbr>THub<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}An `endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,8 +582,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
-{{% /md %}}</dd>
+    <dd>The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -591,8 +591,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The event hub retention to use in days. Must be between `1` and `7`.
-{{% /md %}}</dd>
+    <dd>The event hub retention to use in days. Must be between `1` and `7`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,8 +600,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfallbackroute">Dict[Io<wbr>THub<wbr>Fallback<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
-{{% /md %}}</dd>
+    <dd>A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -609,8 +609,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfileupload">Dict[Io<wbr>THub<wbr>File<wbr>Upload]</a></span>
     </dt>
-    <dd>{{% md %}}A `file_upload` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `file_upload` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,8 +618,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubipfilterrule">List[Io<wbr>THub<wbr>Ip<wbr>Filter<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_filter_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_filter_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,8 +627,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -636,8 +636,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -645,8 +645,8 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubroute">List[Io<wbr>THub<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}A `route` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `route` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -654,11 +654,11 @@ The IoTHub resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -672,7 +672,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -681,8 +681,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for events data
+</dd>
 
     <dt class="property-"
             title="">
@@ -690,8 +690,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for events data
+</dd>
 
     <dt class="property-"
             title="">
@@ -699,8 +699,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for operational data
+</dd>
 
     <dt class="property-"
             title="">
@@ -708,8 +708,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for operational data
+</dd>
 
     <dt class="property-"
             title="">
@@ -717,8 +717,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the IotHub Resource.
-{{% /md %}}</dd>
+    <dd>The hostname of the IotHub Resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -726,7 +726,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -734,8 +734,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsharedaccesspolicy">List&lt;Io<wbr>THub<wbr>Shared<wbr>Access<wbr>Policy&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `shared_access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `shared_access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -743,14 +743,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -759,8 +759,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for events data
+</dd>
 
     <dt class="property-"
             title="">
@@ -768,8 +768,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for events data
+</dd>
 
     <dt class="property-"
             title="">
@@ -777,8 +777,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for operational data
+</dd>
 
     <dt class="property-"
             title="">
@@ -786,8 +786,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for operational data
+</dd>
 
     <dt class="property-"
             title="">
@@ -795,8 +795,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the IotHub Resource.
-{{% /md %}}</dd>
+    <dd>The hostname of the IotHub Resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -804,7 +804,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -812,8 +812,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsharedaccesspolicy">[]Io<wbr>THub<wbr>Shared<wbr>Access<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}One or more `shared_access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `shared_access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -821,14 +821,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -837,8 +837,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for events data
+</dd>
 
     <dt class="property-"
             title="">
@@ -846,8 +846,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for events data
+</dd>
 
     <dt class="property-"
             title="">
@@ -855,8 +855,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for operational data
+</dd>
 
     <dt class="property-"
             title="">
@@ -864,8 +864,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for operational data
+</dd>
 
     <dt class="property-"
             title="">
@@ -873,8 +873,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the IotHub Resource.
-{{% /md %}}</dd>
+    <dd>The hostname of the IotHub Resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -882,7 +882,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -890,8 +890,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsharedaccesspolicy">Io<wbr>THub<wbr>Shared<wbr>Access<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `shared_access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `shared_access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -899,14 +899,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -915,8 +915,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for events data
+</dd>
 
     <dt class="property-"
             title="">
@@ -924,8 +924,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for events data
+</dd>
 
     <dt class="property-"
             title="">
@@ -933,8 +933,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for operational data
+</dd>
 
     <dt class="property-"
             title="">
@@ -942,8 +942,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for operational data
+</dd>
 
     <dt class="property-"
             title="">
@@ -951,8 +951,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the IotHub Resource.
-{{% /md %}}</dd>
+    <dd>The hostname of the IotHub Resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -960,7 +960,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -968,8 +968,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsharedaccesspolicy">List[Io<wbr>THub<wbr>Shared<wbr>Access<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `shared_access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `shared_access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -977,11 +977,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -992,25 +992,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing IoTHub Resource {#look-up}
 
 Get an existing IoTHub resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/iot/#IoTHubState">IoTHubState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/iot/#IoTHub">IoTHub</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>endpoints=None<span class="p">, </span>event_hub_events_endpoint=None<span class="p">, </span>event_hub_events_path=None<span class="p">, </span>event_hub_operations_endpoint=None<span class="p">, </span>event_hub_operations_path=None<span class="p">, </span>event_hub_partition_count=None<span class="p">, </span>event_hub_retention_in_days=None<span class="p">, </span>fallback_route=None<span class="p">, </span>file_upload=None<span class="p">, </span>hostname=None<span class="p">, </span>ip_filter_rules=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>routes=None<span class="p">, </span>shared_access_policies=None<span class="p">, </span>sku=None<span class="p">, </span>tags=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIoTHub<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubState">IoTHubState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHub">IoTHub</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Iot.IoTHub.html">IoTHub</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Iot.IoTHubState.html">IoTHubState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1035,9 +1035,9 @@ Get an existing IoTHub resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1050,36 +1050,9 @@ Get an existing IoTHub resource's state with the given name, ID, and optional ex
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1104,13 +1077,40 @@ Get an existing IoTHub resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1119,8 +1119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubendpoint">List&lt;Io<wbr>THub<wbr>Endpoint<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An `endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1128,8 +1128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for events data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,8 +1137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for events data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1146,8 +1146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for operational data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for operational data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,8 +1164,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
-{{% /md %}}</dd>
+    <dd>The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,8 +1173,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The event hub retention to use in days. Must be between `1` and `7`.
-{{% /md %}}</dd>
+    <dd>The event hub retention to use in days. Must be between `1` and `7`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,8 +1182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfallbackroute">Io<wbr>THub<wbr>Fallback<wbr>Route<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
-{{% /md %}}</dd>
+    <dd>A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,8 +1191,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfileupload">Io<wbr>THub<wbr>File<wbr>Upload<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `file_upload` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `file_upload` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,8 +1200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the IotHub Resource.
-{{% /md %}}</dd>
+    <dd>The hostname of the IotHub Resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,8 +1209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubipfilterrule">List&lt;Io<wbr>THub<wbr>Ip<wbr>Filter<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_filter_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_filter_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1218,8 +1218,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1227,8 +1227,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,8 +1236,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,8 +1245,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubroute">List&lt;Io<wbr>THub<wbr>Route<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `route` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `route` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,8 +1254,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsharedaccesspolicy">List&lt;Io<wbr>THub<wbr>Shared<wbr>Access<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `shared_access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `shared_access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,8 +1263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsku">Io<wbr>THub<wbr>Sku<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `sku` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `sku` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,8 +1272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,14 +1281,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1297,8 +1297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubendpoint">[]Io<wbr>THub<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}An `endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,8 +1306,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for events data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,8 +1315,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for events data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,8 +1324,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for operational data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,8 +1333,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for operational data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,8 +1342,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
-{{% /md %}}</dd>
+    <dd>The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1351,8 +1351,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The event hub retention to use in days. Must be between `1` and `7`.
-{{% /md %}}</dd>
+    <dd>The event hub retention to use in days. Must be between `1` and `7`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1360,8 +1360,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfallbackroute">Io<wbr>THub<wbr>Fallback<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
-{{% /md %}}</dd>
+    <dd>A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,8 +1369,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfileupload">Io<wbr>THub<wbr>File<wbr>Upload</a></span>
     </dt>
-    <dd>{{% md %}}A `file_upload` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `file_upload` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,8 +1378,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the IotHub Resource.
-{{% /md %}}</dd>
+    <dd>The hostname of the IotHub Resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1387,8 +1387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubipfilterrule">[]Io<wbr>THub<wbr>Ip<wbr>Filter<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_filter_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_filter_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1396,8 +1396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1405,8 +1405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,8 +1414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,8 +1423,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubroute">[]Io<wbr>THub<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}A `route` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `route` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,8 +1432,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsharedaccesspolicy">[]Io<wbr>THub<wbr>Shared<wbr>Access<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}One or more `shared_access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `shared_access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,8 +1441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsku">Io<wbr>THub<wbr>Sku</a></span>
     </dt>
-    <dd>{{% md %}}A `sku` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `sku` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,8 +1450,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1459,14 +1459,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1475,8 +1475,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubendpoint">Io<wbr>THub<wbr>Endpoint[]</a></span>
     </dt>
-    <dd>{{% md %}}An `endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,8 +1484,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for events data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1493,8 +1493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for events data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,8 +1502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for operational data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,8 +1511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for operational data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,8 +1520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
-{{% /md %}}</dd>
+    <dd>The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,8 +1529,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The event hub retention to use in days. Must be between `1` and `7`.
-{{% /md %}}</dd>
+    <dd>The event hub retention to use in days. Must be between `1` and `7`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,8 +1538,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfallbackroute">Io<wbr>THub<wbr>Fallback<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
-{{% /md %}}</dd>
+    <dd>A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1547,8 +1547,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfileupload">Io<wbr>THub<wbr>File<wbr>Upload</a></span>
     </dt>
-    <dd>{{% md %}}A `file_upload` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `file_upload` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1556,8 +1556,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the IotHub Resource.
-{{% /md %}}</dd>
+    <dd>The hostname of the IotHub Resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1565,8 +1565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubipfilterrule">Io<wbr>THub<wbr>Ip<wbr>Filter<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_filter_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_filter_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,8 +1574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1583,8 +1583,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1592,8 +1592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1601,8 +1601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubroute">Io<wbr>THub<wbr>Route[]</a></span>
     </dt>
-    <dd>{{% md %}}A `route` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `route` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1610,8 +1610,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsharedaccesspolicy">Io<wbr>THub<wbr>Shared<wbr>Access<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `shared_access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `shared_access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,8 +1619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsku">Io<wbr>THub<wbr>Sku</a></span>
     </dt>
-    <dd>{{% md %}}A `sku` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `sku` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,8 +1628,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,14 +1637,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1653,8 +1653,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubendpoint">List[Io<wbr>THub<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}An `endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1662,8 +1662,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for events data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1671,8 +1671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for events data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for events data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1680,8 +1680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible endpoint for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible endpoint for operational data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1689,8 +1689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EventHub compatible path for operational data
-{{% /md %}}</dd>
+    <dd>The EventHub compatible path for operational data
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1698,8 +1698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
-{{% /md %}}</dd>
+    <dd>The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1707,8 +1707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The event hub retention to use in days. Must be between `1` and `7`.
-{{% /md %}}</dd>
+    <dd>The event hub retention to use in days. Must be between `1` and `7`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1716,8 +1716,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfallbackroute">Dict[Io<wbr>THub<wbr>Fallback<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
-{{% /md %}}</dd>
+    <dd>A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,8 +1725,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubfileupload">Dict[Io<wbr>THub<wbr>File<wbr>Upload]</a></span>
     </dt>
-    <dd>{{% md %}}A `file_upload` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `file_upload` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1734,8 +1734,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the IotHub Resource.
-{{% /md %}}</dd>
+    <dd>The hostname of the IotHub Resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,8 +1743,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubipfilterrule">List[Io<wbr>THub<wbr>Ip<wbr>Filter<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_filter_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_filter_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1752,8 +1752,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1761,8 +1761,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1770,8 +1770,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1779,8 +1779,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubroute">List[Io<wbr>THub<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}A `route` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `route` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1788,8 +1788,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsharedaccesspolicy">List[Io<wbr>THub<wbr>Shared<wbr>Access<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `shared_access_policy` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `shared_access_policy` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1797,8 +1797,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#iothubsku">Dict[Io<wbr>THub<wbr>Sku]</a></span>
     </dt>
-    <dd>{{% md %}}A `sku` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `sku` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1806,8 +1806,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1815,11 +1815,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1834,18 +1834,18 @@ The following state arguments are supported:
 
 
 <h4 id="iothubendpoint">Io<wbr>THub<wbr>Endpoint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#IoTHubEndpoint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#IoTHubEndpoint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubEndpointArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubEndpointOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1854,8 +1854,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string for the endpoint.
-{{% /md %}}</dd>
+    <dd>The connection string for the endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1863,8 +1863,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.
-{{% /md %}}</dd>
+    <dd>The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1872,8 +1872,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1881,8 +1881,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1890,8 +1890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of storage container in the storage account. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>The name of storage container in the storage account. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1899,8 +1899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Encoding that is used to serialize messages to blobs. Supported values are 'avro' and 'avrodeflate'. Default value is 'avro'. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Encoding that is used to serialize messages to blobs. Supported values are 'avro' and 'avrodeflate'. Default value is 'avro'. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1908,8 +1908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1917,14 +1917,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of bytes for each blob written to storage. Value should be between 10485760(10MB) and 524288000(500MB). Default value is 314572800(300MB). This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Maximum number of bytes for each blob written to storage. Value should be between 10485760(10MB) and 524288000(500MB). Default value is 314572800(300MB). This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1933,8 +1933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string for the endpoint.
-{{% /md %}}</dd>
+    <dd>The connection string for the endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1942,8 +1942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.
-{{% /md %}}</dd>
+    <dd>The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1951,8 +1951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1960,8 +1960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1969,8 +1969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of storage container in the storage account. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>The name of storage container in the storage account. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1978,8 +1978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Encoding that is used to serialize messages to blobs. Supported values are 'avro' and 'avrodeflate'. Default value is 'avro'. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Encoding that is used to serialize messages to blobs. Supported values are 'avro' and 'avrodeflate'. Default value is 'avro'. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,8 +1987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,14 +1996,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of bytes for each blob written to storage. Value should be between 10485760(10MB) and 524288000(500MB). Default value is 314572800(300MB). This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Maximum number of bytes for each blob written to storage. Value should be between 10485760(10MB) and 524288000(500MB). Default value is 314572800(300MB). This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2012,8 +2012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string for the endpoint.
-{{% /md %}}</dd>
+    <dd>The connection string for the endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2021,8 +2021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.
-{{% /md %}}</dd>
+    <dd>The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2030,8 +2030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2039,8 +2039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2048,8 +2048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of storage container in the storage account. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>The name of storage container in the storage account. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2057,8 +2057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Encoding that is used to serialize messages to blobs. Supported values are 'avro' and 'avrodeflate'. Default value is 'avro'. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Encoding that is used to serialize messages to blobs. Supported values are 'avro' and 'avrodeflate'. Default value is 'avro'. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2066,8 +2066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2075,14 +2075,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of bytes for each blob written to storage. Value should be between 10485760(10MB) and 524288000(500MB). Default value is 314572800(300MB). This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Maximum number of bytes for each blob written to storage. Value should be between 10485760(10MB) and 524288000(500MB). Default value is 314572800(300MB). This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2091,8 +2091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string for the endpoint.
-{{% /md %}}</dd>
+    <dd>The connection string for the endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2100,8 +2100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.
-{{% /md %}}</dd>
+    <dd>The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2109,8 +2109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
-{{% /md %}}</dd>
+    <dd>The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2118,8 +2118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2127,8 +2127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of storage container in the storage account. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>The name of storage container in the storage account. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2136,8 +2136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Encoding that is used to serialize messages to blobs. Supported values are 'avro' and 'avrodeflate'. Default value is 'avro'. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Encoding that is used to serialize messages to blobs. Supported values are 'avro' and 'avrodeflate'. Default value is 'avro'. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,8 +2145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2154,29 +2154,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of bytes for each blob written to storage. Value should be between 10485760(10MB) and 524288000(500MB). Default value is 314572800(300MB). This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
-{{% /md %}}</dd>
+    <dd>Maximum number of bytes for each blob written to storage. Value should be between 10485760(10MB) and 524288000(500MB). Default value is 314572800(300MB). This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="iothubfallbackroute">Io<wbr>THub<wbr>Fallback<wbr>Route</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#IoTHubFallbackRoute">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#IoTHubFallbackRoute">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubFallbackRouteArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubFallbackRouteOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2185,8 +2185,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
-{{% /md %}}</dd>
+    <dd>The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2194,8 +2194,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether the fallback route is enabled.
-{{% /md %}}</dd>
+    <dd>Used to specify whether the fallback route is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2203,8 +2203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.
-{{% /md %}}</dd>
+    <dd>The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2212,14 +2212,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
-{{% /md %}}</dd>
+    <dd>The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2228,8 +2228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
-{{% /md %}}</dd>
+    <dd>The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2237,8 +2237,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether the fallback route is enabled.
-{{% /md %}}</dd>
+    <dd>Used to specify whether the fallback route is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2246,8 +2246,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.
-{{% /md %}}</dd>
+    <dd>The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2255,14 +2255,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
-{{% /md %}}</dd>
+    <dd>The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2271,8 +2271,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
-{{% /md %}}</dd>
+    <dd>The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2280,8 +2280,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether the fallback route is enabled.
-{{% /md %}}</dd>
+    <dd>Used to specify whether the fallback route is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2289,8 +2289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.
-{{% /md %}}</dd>
+    <dd>The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2298,14 +2298,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
-{{% /md %}}</dd>
+    <dd>The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2314,8 +2314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
-{{% /md %}}</dd>
+    <dd>The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2323,8 +2323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether the fallback route is enabled.
-{{% /md %}}</dd>
+    <dd>Used to specify whether the fallback route is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2332,8 +2332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.
-{{% /md %}}</dd>
+    <dd>The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2341,29 +2341,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
-{{% /md %}}</dd>
+    <dd>The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="iothubfileupload">Io<wbr>THub<wbr>File<wbr>Upload</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#IoTHubFileUpload">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#IoTHubFileUpload">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubFileUploadArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubFileUploadOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2372,8 +2372,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string for the Azure Storage account to which files are uploaded.
-{{% /md %}}</dd>
+    <dd>The connection string for the Azure Storage account to which files are uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2381,8 +2381,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.
-{{% /md %}}</dd>
+    <dd>The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2390,8 +2390,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The period of time for which a file upload notification message is available to consume before it is expired by the IoT hub, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 48 hours, and evaluates to 'PT1H' by default.
-{{% /md %}}</dd>
+    <dd>The period of time for which a file upload notification message is available to consume before it is expired by the IoT hub, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 48 hours, and evaluates to 'PT1H' by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2399,8 +2399,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The lock duration for the file upload notifications queue, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 5 and 300 seconds, and evaluates to 'PT1M' by default.
-{{% /md %}}</dd>
+    <dd>The lock duration for the file upload notifications queue, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 5 and 300 seconds, and evaluates to 'PT1M' by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2408,8 +2408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of times the IoT hub attempts to deliver a file upload notification message. It evaluates to 10 by default.
-{{% /md %}}</dd>
+    <dd>The number of times the IoT hub attempts to deliver a file upload notification message. It evaluates to 10 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,8 +2417,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether file notifications are sent to IoT Hub on upload. It evaluates to false by default.
-{{% /md %}}</dd>
+    <dd>Used to specify whether file notifications are sent to IoT Hub on upload. It evaluates to false by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2426,14 +2426,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The period of time for which the SAS URI generated by IoT Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 24 hours, and evaluates to 'PT1H' by default.
-{{% /md %}}</dd>
+    <dd>The period of time for which the SAS URI generated by IoT Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 24 hours, and evaluates to 'PT1H' by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2442,8 +2442,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string for the Azure Storage account to which files are uploaded.
-{{% /md %}}</dd>
+    <dd>The connection string for the Azure Storage account to which files are uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2451,8 +2451,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.
-{{% /md %}}</dd>
+    <dd>The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2460,8 +2460,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The period of time for which a file upload notification message is available to consume before it is expired by the IoT hub, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 48 hours, and evaluates to 'PT1H' by default.
-{{% /md %}}</dd>
+    <dd>The period of time for which a file upload notification message is available to consume before it is expired by the IoT hub, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 48 hours, and evaluates to 'PT1H' by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2469,8 +2469,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The lock duration for the file upload notifications queue, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 5 and 300 seconds, and evaluates to 'PT1M' by default.
-{{% /md %}}</dd>
+    <dd>The lock duration for the file upload notifications queue, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 5 and 300 seconds, and evaluates to 'PT1M' by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2478,8 +2478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of times the IoT hub attempts to deliver a file upload notification message. It evaluates to 10 by default.
-{{% /md %}}</dd>
+    <dd>The number of times the IoT hub attempts to deliver a file upload notification message. It evaluates to 10 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2487,8 +2487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether file notifications are sent to IoT Hub on upload. It evaluates to false by default.
-{{% /md %}}</dd>
+    <dd>Used to specify whether file notifications are sent to IoT Hub on upload. It evaluates to false by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2496,14 +2496,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The period of time for which the SAS URI generated by IoT Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 24 hours, and evaluates to 'PT1H' by default.
-{{% /md %}}</dd>
+    <dd>The period of time for which the SAS URI generated by IoT Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 24 hours, and evaluates to 'PT1H' by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2512,8 +2512,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string for the Azure Storage account to which files are uploaded.
-{{% /md %}}</dd>
+    <dd>The connection string for the Azure Storage account to which files are uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2521,8 +2521,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.
-{{% /md %}}</dd>
+    <dd>The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2530,8 +2530,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The period of time for which a file upload notification message is available to consume before it is expired by the IoT hub, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 48 hours, and evaluates to 'PT1H' by default.
-{{% /md %}}</dd>
+    <dd>The period of time for which a file upload notification message is available to consume before it is expired by the IoT hub, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 48 hours, and evaluates to 'PT1H' by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2539,8 +2539,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The lock duration for the file upload notifications queue, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 5 and 300 seconds, and evaluates to 'PT1M' by default.
-{{% /md %}}</dd>
+    <dd>The lock duration for the file upload notifications queue, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 5 and 300 seconds, and evaluates to 'PT1M' by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2548,8 +2548,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of times the IoT hub attempts to deliver a file upload notification message. It evaluates to 10 by default.
-{{% /md %}}</dd>
+    <dd>The number of times the IoT hub attempts to deliver a file upload notification message. It evaluates to 10 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2557,8 +2557,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether file notifications are sent to IoT Hub on upload. It evaluates to false by default.
-{{% /md %}}</dd>
+    <dd>Used to specify whether file notifications are sent to IoT Hub on upload. It evaluates to false by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2566,14 +2566,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The period of time for which the SAS URI generated by IoT Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 24 hours, and evaluates to 'PT1H' by default.
-{{% /md %}}</dd>
+    <dd>The period of time for which the SAS URI generated by IoT Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 24 hours, and evaluates to 'PT1H' by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2582,8 +2582,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string for the Azure Storage account to which files are uploaded.
-{{% /md %}}</dd>
+    <dd>The connection string for the Azure Storage account to which files are uploaded.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2591,8 +2591,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.
-{{% /md %}}</dd>
+    <dd>The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2600,8 +2600,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The period of time for which a file upload notification message is available to consume before it is expired by the IoT hub, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 48 hours, and evaluates to 'PT1H' by default.
-{{% /md %}}</dd>
+    <dd>The period of time for which a file upload notification message is available to consume before it is expired by the IoT hub, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 48 hours, and evaluates to 'PT1H' by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2609,8 +2609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The lock duration for the file upload notifications queue, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 5 and 300 seconds, and evaluates to 'PT1M' by default.
-{{% /md %}}</dd>
+    <dd>The lock duration for the file upload notifications queue, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 5 and 300 seconds, and evaluates to 'PT1M' by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2618,8 +2618,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of times the IoT hub attempts to deliver a file upload notification message. It evaluates to 10 by default.
-{{% /md %}}</dd>
+    <dd>The number of times the IoT hub attempts to deliver a file upload notification message. It evaluates to 10 by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2627,8 +2627,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether file notifications are sent to IoT Hub on upload. It evaluates to false by default.
-{{% /md %}}</dd>
+    <dd>Used to specify whether file notifications are sent to IoT Hub on upload. It evaluates to false by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2636,29 +2636,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The period of time for which the SAS URI generated by IoT Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 24 hours, and evaluates to 'PT1H' by default.
-{{% /md %}}</dd>
+    <dd>The period of time for which the SAS URI generated by IoT Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 24 hours, and evaluates to 'PT1H' by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="iothubipfilterrule">Io<wbr>THub<wbr>Ip<wbr>Filter<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#IoTHubIpFilterRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#IoTHubIpFilterRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubIpFilterRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubIpFilterRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2667,8 +2667,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`
-{{% /md %}}</dd>
+    <dd>The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2676,8 +2676,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address range in CIDR notation for the rule.
-{{% /md %}}</dd>
+    <dd>The IP address range in CIDR notation for the rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2685,14 +2685,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter.
-{{% /md %}}</dd>
+    <dd>The name of the filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2701,8 +2701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`
-{{% /md %}}</dd>
+    <dd>The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2710,8 +2710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address range in CIDR notation for the rule.
-{{% /md %}}</dd>
+    <dd>The IP address range in CIDR notation for the rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2719,14 +2719,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter.
-{{% /md %}}</dd>
+    <dd>The name of the filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2735,8 +2735,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`
-{{% /md %}}</dd>
+    <dd>The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2744,8 +2744,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address range in CIDR notation for the rule.
-{{% /md %}}</dd>
+    <dd>The IP address range in CIDR notation for the rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2753,14 +2753,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter.
-{{% /md %}}</dd>
+    <dd>The name of the filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2769,8 +2769,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`
-{{% /md %}}</dd>
+    <dd>The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2778,8 +2778,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP address range in CIDR notation for the rule.
-{{% /md %}}</dd>
+    <dd>The IP address range in CIDR notation for the rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2787,29 +2787,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter.
-{{% /md %}}</dd>
+    <dd>The name of the filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="iothubroute">Io<wbr>THub<wbr>Route</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#IoTHubRoute">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#IoTHubRoute">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubRouteArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubRouteOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2818,8 +2818,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether a route is enabled.
-{{% /md %}}</dd>
+    <dd>Used to specify whether a route is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2827,8 +2827,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of endpoints to which messages that satisfy the condition are routed.
-{{% /md %}}</dd>
+    <dd>The list of endpoints to which messages that satisfy the condition are routed.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2836,8 +2836,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2845,8 +2845,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
-{{% /md %}}</dd>
+    <dd>The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2854,14 +2854,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
-{{% /md %}}</dd>
+    <dd>The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2870,8 +2870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether a route is enabled.
-{{% /md %}}</dd>
+    <dd>Used to specify whether a route is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2879,8 +2879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of endpoints to which messages that satisfy the condition are routed.
-{{% /md %}}</dd>
+    <dd>The list of endpoints to which messages that satisfy the condition are routed.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2888,8 +2888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2897,8 +2897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
-{{% /md %}}</dd>
+    <dd>The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2906,14 +2906,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
-{{% /md %}}</dd>
+    <dd>The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2922,8 +2922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether a route is enabled.
-{{% /md %}}</dd>
+    <dd>Used to specify whether a route is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2931,8 +2931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of endpoints to which messages that satisfy the condition are routed.
-{{% /md %}}</dd>
+    <dd>The list of endpoints to which messages that satisfy the condition are routed.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2940,8 +2940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2949,8 +2949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
-{{% /md %}}</dd>
+    <dd>The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2958,14 +2958,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
-{{% /md %}}</dd>
+    <dd>The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2974,8 +2974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Used to specify whether a route is enabled.
-{{% /md %}}</dd>
+    <dd>Used to specify whether a route is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2983,8 +2983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of endpoints to which messages that satisfy the condition are routed.
-{{% /md %}}</dd>
+    <dd>The list of endpoints to which messages that satisfy the condition are routed.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2992,8 +2992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the route.
-{{% /md %}}</dd>
+    <dd>The name of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3001,8 +3001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
-{{% /md %}}</dd>
+    <dd>The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3010,29 +3010,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
-{{% /md %}}</dd>
+    <dd>The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="iothubsharedaccesspolicy">Io<wbr>THub<wbr>Shared<wbr>Access<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#IoTHubSharedAccessPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubSharedAccessPolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3041,8 +3041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the shared access policy.
-{{% /md %}}</dd>
+    <dd>The name of the shared access policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3050,8 +3050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The permissions assigned to the shared access policy.
-{{% /md %}}</dd>
+    <dd>The permissions assigned to the shared access policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3059,8 +3059,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary key.
-{{% /md %}}</dd>
+    <dd>The primary key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3068,14 +3068,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key.
-{{% /md %}}</dd>
+    <dd>The secondary key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3084,8 +3084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the shared access policy.
-{{% /md %}}</dd>
+    <dd>The name of the shared access policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3093,8 +3093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The permissions assigned to the shared access policy.
-{{% /md %}}</dd>
+    <dd>The permissions assigned to the shared access policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3102,8 +3102,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary key.
-{{% /md %}}</dd>
+    <dd>The primary key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3111,14 +3111,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key.
-{{% /md %}}</dd>
+    <dd>The secondary key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3127,8 +3127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the shared access policy.
-{{% /md %}}</dd>
+    <dd>The name of the shared access policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3136,8 +3136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The permissions assigned to the shared access policy.
-{{% /md %}}</dd>
+    <dd>The permissions assigned to the shared access policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3145,8 +3145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary key.
-{{% /md %}}</dd>
+    <dd>The primary key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3154,14 +3154,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key.
-{{% /md %}}</dd>
+    <dd>The secondary key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3170,8 +3170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the shared access policy.
-{{% /md %}}</dd>
+    <dd>The name of the shared access policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3179,8 +3179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The permissions assigned to the shared access policy.
-{{% /md %}}</dd>
+    <dd>The permissions assigned to the shared access policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3188,8 +3188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary key.
-{{% /md %}}</dd>
+    <dd>The primary key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3197,29 +3197,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary key.
-{{% /md %}}</dd>
+    <dd>The secondary key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="iothubsku">Io<wbr>THub<wbr>Sku</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#IoTHubSku">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#IoTHubSku">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubSkuArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/iot?tab=doc#IoTHubSkuOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3228,8 +3228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of provisioned IoT Hub units.
-{{% /md %}}</dd>
+    <dd>The number of provisioned IoT Hub units.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3237,14 +3237,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.
-{{% /md %}}</dd>
+    <dd>The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3253,8 +3253,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of provisioned IoT Hub units.
-{{% /md %}}</dd>
+    <dd>The number of provisioned IoT Hub units.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3262,14 +3262,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.
-{{% /md %}}</dd>
+    <dd>The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3278,8 +3278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of provisioned IoT Hub units.
-{{% /md %}}</dd>
+    <dd>The number of provisioned IoT Hub units.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3287,14 +3287,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.
-{{% /md %}}</dd>
+    <dd>The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3303,8 +3303,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of provisioned IoT Hub units.
-{{% /md %}}</dd>
+    <dd>The number of provisioned IoT Hub units.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3312,11 +3312,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.
-{{% /md %}}</dd>
+    <dd>The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

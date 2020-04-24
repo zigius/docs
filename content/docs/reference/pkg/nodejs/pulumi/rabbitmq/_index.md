@@ -16,22 +16,22 @@ git_sha: "d4b9aea0900dd330d9cf082799cc71fa22d78f54"
 > please consult the source [`terraform-providers/terraform-provider-rabbitmq` repo](https://github.com/terraform-providers/terraform-provider-rabbitmq/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var rabbitmq = require("@pulumi/rabbitmq");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as rabbitmq from "@pulumi/rabbitmq";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

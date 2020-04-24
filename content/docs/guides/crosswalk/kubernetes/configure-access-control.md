@@ -9,9 +9,9 @@ menu:
     weight: 6
 ---
 
-{{< chooser cloud "aws,azure,gcp" / >}}
 
-{{% choosable cloud aws %}}
+
+
 
 Access control in Kubernetes is done by configuring permissions for IAM users
 and roles to operate in the cluster.
@@ -26,9 +26,9 @@ The full code for this stack is on [GitHub][gh-repo-stack].
 [gh-repo-stack]: https://github.com/pulumi/kubernetes-guides/tree/master/aws/03-cluster-configuration
 <!-- markdownlint-enable url -->
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 
 Access control in Kubernetes is done by configuring permissions for Azure Active Directory (AD) users
 and groups to operate in the cluster.
@@ -43,9 +43,9 @@ The full code for this stack is on [GitHub][gh-repo-stack].
 [gh-repo-stack]: https://github.com/pulumi/kubernetes-guides/tree/master/azure/03-cluster-configuration
 <!-- markdownlint-enable url -->
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 Access control in Kubernetes is done by configuring permissions for IAM
 ServiceAccounts to operate in the cluster.
@@ -60,7 +60,7 @@ The full code for this stack is on [GitHub][gh-repo-stack].
 [gh-repo-stack]: https://github.com/pulumi/kubernetes-guides/tree/master/gcp/03-cluster-configuration
 <!-- markdownlint-enable url -->
 
-{{% /choosable %}}
+
 
 ## Overview
 
@@ -70,7 +70,7 @@ We'll examine how to:
 
 ## Configure RBAC Authorization
 
-{{% choosable cloud azure %}}
+
 
 Access control is not configured by default for **non-admins** with Kubernetes RBAC.
 
@@ -103,9 +103,9 @@ $ export KUBECONFIG=`pwd`/kubeconfig-admin.json
 [crosswalk-identity]: {{< relref "/docs/guides/crosswalk/kubernetes/identity" >}}
 <!-- markdownlint-enable url -->
 
-{{% /choosable %}}
 
-{{% choosable cloud aws %}}
+
+
 
 Access control is not configured by default for **non-admins** with Kubernetes RBAC.
 
@@ -139,9 +139,9 @@ $ export KUBECONFIG=`pwd`/kubeconfig-admin.json
 [crosswalk-identity]: {{< relref "/docs/guides/crosswalk/kubernetes/identity" >}}
 <!-- markdownlint-enable url -->
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 In [Identity][crosswalk-identity], access control is configured on the ServiceAccounts to bind to
 [Predefined GKE Roles][gke-predefined-roles] for GKE managed Kubernetes RBAC.
@@ -182,7 +182,7 @@ $ gcloud auth activate-service-account --key-file k8s-admin-sa-key.json
 $ export KUBECONFIG=`pwd`/kubeconfig-admin.json
 ```
 
-{{% /choosable %}}
+
 
 Create a Role and RoleBinding for the `pulumi-devs` group in the `apps`
 Namespace.
@@ -225,7 +225,7 @@ let devsGroupRoleBinding = new k8s.rbac.v1.RoleBinding("pulumi-devs", {
 }, {provider: cluster.provider});
 ```
 
-{{% choosable cloud aws %}}
+
 
 After creating the Role and RoleBinding in a Pulumi update, now try
 deploying the workload using the `devs` role.
@@ -238,9 +238,9 @@ service/nginx created
 pod/nginx created
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 
 After creating the Role and RoleBinding in a Pulumi update, now try
 deploying the workload using the `devs` role.
@@ -253,9 +253,9 @@ service/nginx created
 pod/nginx created
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 After creating the Role and RoleBinding in a Pulumi update, now try
 deploying the workload using the `devs` role.
@@ -268,7 +268,7 @@ service/nginx created
 pod/nginx created
 ```
 
-{{% /choosable %}}
+
 
 Delete the pod and service.
 
@@ -276,13 +276,13 @@ Delete the pod and service.
 $ kubectl delete --namespace=`pulumi stack output appsNamespaceName` pod/nginx svc/nginx
 ```
 
-{{% choosable cloud aws %}}
+
 
 For a complete example of this in action, please see [Simplifying Kubernetes
 RBAC in Amazon EKS][simplify-rbac].
 [simplify-rbac]: /blog/simplify-kubernetes-rbac-in-amazon-eks-with-open-source-pulumi-packages/
 
-{{% /choosable %}}
+
 
 See the [official Kubernetes RBAC docs][k8s-rbac-docs] for more details.
 

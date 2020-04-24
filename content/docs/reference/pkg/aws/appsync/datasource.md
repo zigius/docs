@@ -81,26 +81,26 @@ const exampleDataSource = new aws.appsync.DataSource("example", {
 
 
 ## Create a DataSource Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appsync/#DataSource">DataSource</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appsync/#DataSourceArgs">DataSourceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">DataSource</span><span class="p">(resource_name, opts=None, </span>api_id=None<span class="p">, </span>description=None<span class="p">, </span>dynamodb_config=None<span class="p">, </span>elasticsearch_config=None<span class="p">, </span>http_config=None<span class="p">, </span>lambda_config=None<span class="p">, </span>name=None<span class="p">, </span>service_role_arn=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDataSource<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceArgs">DataSourceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSource">DataSource</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppSync.DataSource.html">DataSource</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppSync.DataSourceArgs.html">DataSourceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -137,9 +137,9 @@ const exampleDataSource = new aws.appsync.DataSource("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -157,9 +157,9 @@ const exampleDataSource = new aws.appsync.DataSource("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -206,9 +206,9 @@ const exampleDataSource = new aws.appsync.DataSource("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -245,7 +245,7 @@ const exampleDataSource = new aws.appsync.DataSource("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## DataSource Resource Properties {#properties}
 
@@ -258,7 +258,7 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -267,8 +267,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The API ID for the GraphQL API for the DataSource.
-{{% /md %}}</dd>
+    <dd>The API ID for the GraphQL API for the DataSource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -276,8 +276,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
-{{% /md %}}</dd>
+    <dd>The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the DataSource.
-{{% /md %}}</dd>
+    <dd>A description of the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcedynamodbconfig">Data<wbr>Source<wbr>Dynamodb<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}DynamoDB settings. See below
-{{% /md %}}</dd>
+    <dd>DynamoDB settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourceelasticsearchconfig">Data<wbr>Source<wbr>Elasticsearch<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Elasticsearch settings. See below
-{{% /md %}}</dd>
+    <dd>Amazon Elasticsearch settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcehttpconfig">Data<wbr>Source<wbr>Http<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}HTTP settings. See below
-{{% /md %}}</dd>
+    <dd>HTTP settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,8 +321,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcelambdaconfig">Data<wbr>Source<wbr>Lambda<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}AWS Lambda settings. See below
-{{% /md %}}</dd>
+    <dd>AWS Lambda settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-supplied name for the DataSource.
-{{% /md %}}</dd>
+    <dd>A user-supplied name for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,14 +339,14 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role ARN for the data source.
-{{% /md %}}</dd>
+    <dd>The IAM service role ARN for the data source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -355,8 +355,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API ID for the GraphQL API for the DataSource.
-{{% /md %}}</dd>
+    <dd>The API ID for the GraphQL API for the DataSource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -364,8 +364,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
-{{% /md %}}</dd>
+    <dd>The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the DataSource.
-{{% /md %}}</dd>
+    <dd>A description of the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcedynamodbconfig">Data<wbr>Source<wbr>Dynamodb<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DynamoDB settings. See below
-{{% /md %}}</dd>
+    <dd>DynamoDB settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourceelasticsearchconfig">Data<wbr>Source<wbr>Elasticsearch<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Elasticsearch settings. See below
-{{% /md %}}</dd>
+    <dd>Amazon Elasticsearch settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcehttpconfig">Data<wbr>Source<wbr>Http<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}HTTP settings. See below
-{{% /md %}}</dd>
+    <dd>HTTP settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcelambdaconfig">Data<wbr>Source<wbr>Lambda<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS Lambda settings. See below
-{{% /md %}}</dd>
+    <dd>AWS Lambda settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,8 +418,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-supplied name for the DataSource.
-{{% /md %}}</dd>
+    <dd>A user-supplied name for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,14 +427,14 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role ARN for the data source.
-{{% /md %}}</dd>
+    <dd>The IAM service role ARN for the data source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -443,8 +443,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API ID for the GraphQL API for the DataSource.
-{{% /md %}}</dd>
+    <dd>The API ID for the GraphQL API for the DataSource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -452,8 +452,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
-{{% /md %}}</dd>
+    <dd>The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the DataSource.
-{{% /md %}}</dd>
+    <dd>A description of the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcedynamodbconfig">Data<wbr>Source<wbr>Dynamodb<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DynamoDB settings. See below
-{{% /md %}}</dd>
+    <dd>DynamoDB settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourceelasticsearchconfig">Data<wbr>Source<wbr>Elasticsearch<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Elasticsearch settings. See below
-{{% /md %}}</dd>
+    <dd>Amazon Elasticsearch settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcehttpconfig">Data<wbr>Source<wbr>Http<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}HTTP settings. See below
-{{% /md %}}</dd>
+    <dd>HTTP settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcelambdaconfig">Data<wbr>Source<wbr>Lambda<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS Lambda settings. See below
-{{% /md %}}</dd>
+    <dd>AWS Lambda settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-supplied name for the DataSource.
-{{% /md %}}</dd>
+    <dd>A user-supplied name for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,14 +515,14 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role ARN for the data source.
-{{% /md %}}</dd>
+    <dd>The IAM service role ARN for the data source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -531,8 +531,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The API ID for the GraphQL API for the DataSource.
-{{% /md %}}</dd>
+    <dd>The API ID for the GraphQL API for the DataSource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -540,8 +540,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
-{{% /md %}}</dd>
+    <dd>The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -549,8 +549,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description of the DataSource.
-{{% /md %}}</dd>
+    <dd>A description of the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -558,8 +558,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcedynamodbconfig">Dict[Data<wbr>Source<wbr>Dynamodb<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}DynamoDB settings. See below
-{{% /md %}}</dd>
+    <dd>DynamoDB settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -567,8 +567,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourceelasticsearchconfig">Dict[Data<wbr>Source<wbr>Elasticsearch<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Elasticsearch settings. See below
-{{% /md %}}</dd>
+    <dd>Amazon Elasticsearch settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,8 +576,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcehttpconfig">Dict[Data<wbr>Source<wbr>Http<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}HTTP settings. See below
-{{% /md %}}</dd>
+    <dd>HTTP settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,8 +585,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcelambdaconfig">Dict[Data<wbr>Source<wbr>Lambda<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}AWS Lambda settings. See below
-{{% /md %}}</dd>
+    <dd>AWS Lambda settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -594,8 +594,8 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A user-supplied name for the DataSource.
-{{% /md %}}</dd>
+    <dd>A user-supplied name for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,11 +603,11 @@ The DataSource resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role ARN for the data source.
-{{% /md %}}</dd>
+    <dd>The IAM service role ARN for the data source.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -621,7 +621,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -630,8 +630,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN
-{{% /md %}}</dd>
+    <dd>The ARN
+</dd>
 
     <dt class="property-"
             title="">
@@ -639,13 +639,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -654,8 +654,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN
-{{% /md %}}</dd>
+    <dd>The ARN
+</dd>
 
     <dt class="property-"
             title="">
@@ -663,13 +663,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -678,8 +678,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN
-{{% /md %}}</dd>
+    <dd>The ARN
+</dd>
 
     <dt class="property-"
             title="">
@@ -687,13 +687,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -702,8 +702,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN
-{{% /md %}}</dd>
+    <dd>The ARN
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,10 +711,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -725,25 +725,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing DataSource Resource {#look-up}
 
 Get an existing DataSource resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appsync/#DataSourceState">DataSourceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appsync/#DataSource">DataSource</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>api_id=None<span class="p">, </span>arn=None<span class="p">, </span>description=None<span class="p">, </span>dynamodb_config=None<span class="p">, </span>elasticsearch_config=None<span class="p">, </span>http_config=None<span class="p">, </span>lambda_config=None<span class="p">, </span>name=None<span class="p">, </span>service_role_arn=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDataSource<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceState">DataSourceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSource">DataSource</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppSync.DataSource.html">DataSource</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppSync.DataSourceState.html">DataSourceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -768,9 +768,9 @@ Get an existing DataSource resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -783,36 +783,9 @@ Get an existing DataSource resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -837,13 +810,40 @@ Get an existing DataSource resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -852,8 +852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The API ID for the GraphQL API for the DataSource.
-{{% /md %}}</dd>
+    <dd>The API ID for the GraphQL API for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,8 +861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN
-{{% /md %}}</dd>
+    <dd>The ARN
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,8 +870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the DataSource.
-{{% /md %}}</dd>
+    <dd>A description of the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -879,8 +879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcedynamodbconfig">Data<wbr>Source<wbr>Dynamodb<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}DynamoDB settings. See below
-{{% /md %}}</dd>
+    <dd>DynamoDB settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -888,8 +888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourceelasticsearchconfig">Data<wbr>Source<wbr>Elasticsearch<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Elasticsearch settings. See below
-{{% /md %}}</dd>
+    <dd>Amazon Elasticsearch settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -897,8 +897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcehttpconfig">Data<wbr>Source<wbr>Http<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}HTTP settings. See below
-{{% /md %}}</dd>
+    <dd>HTTP settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,8 +906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcelambdaconfig">Data<wbr>Source<wbr>Lambda<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}AWS Lambda settings. See below
-{{% /md %}}</dd>
+    <dd>AWS Lambda settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,8 +915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-supplied name for the DataSource.
-{{% /md %}}</dd>
+    <dd>A user-supplied name for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,8 +924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role ARN for the data source.
-{{% /md %}}</dd>
+    <dd>The IAM service role ARN for the data source.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,14 +933,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
-{{% /md %}}</dd>
+    <dd>The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -949,8 +949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API ID for the GraphQL API for the DataSource.
-{{% /md %}}</dd>
+    <dd>The API ID for the GraphQL API for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,8 +958,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN
-{{% /md %}}</dd>
+    <dd>The ARN
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,8 +967,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the DataSource.
-{{% /md %}}</dd>
+    <dd>A description of the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -976,8 +976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcedynamodbconfig">Data<wbr>Source<wbr>Dynamodb<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DynamoDB settings. See below
-{{% /md %}}</dd>
+    <dd>DynamoDB settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,8 +985,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourceelasticsearchconfig">Data<wbr>Source<wbr>Elasticsearch<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Elasticsearch settings. See below
-{{% /md %}}</dd>
+    <dd>Amazon Elasticsearch settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -994,8 +994,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcehttpconfig">Data<wbr>Source<wbr>Http<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}HTTP settings. See below
-{{% /md %}}</dd>
+    <dd>HTTP settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1003,8 +1003,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcelambdaconfig">Data<wbr>Source<wbr>Lambda<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS Lambda settings. See below
-{{% /md %}}</dd>
+    <dd>AWS Lambda settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,8 +1012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-supplied name for the DataSource.
-{{% /md %}}</dd>
+    <dd>A user-supplied name for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,8 +1021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role ARN for the data source.
-{{% /md %}}</dd>
+    <dd>The IAM service role ARN for the data source.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,14 +1030,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
-{{% /md %}}</dd>
+    <dd>The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1046,8 +1046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API ID for the GraphQL API for the DataSource.
-{{% /md %}}</dd>
+    <dd>The API ID for the GraphQL API for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN
-{{% /md %}}</dd>
+    <dd>The ARN
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the DataSource.
-{{% /md %}}</dd>
+    <dd>A description of the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcedynamodbconfig">Data<wbr>Source<wbr>Dynamodb<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DynamoDB settings. See below
-{{% /md %}}</dd>
+    <dd>DynamoDB settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourceelasticsearchconfig">Data<wbr>Source<wbr>Elasticsearch<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Elasticsearch settings. See below
-{{% /md %}}</dd>
+    <dd>Amazon Elasticsearch settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcehttpconfig">Data<wbr>Source<wbr>Http<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}HTTP settings. See below
-{{% /md %}}</dd>
+    <dd>HTTP settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcelambdaconfig">Data<wbr>Source<wbr>Lambda<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS Lambda settings. See below
-{{% /md %}}</dd>
+    <dd>AWS Lambda settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A user-supplied name for the DataSource.
-{{% /md %}}</dd>
+    <dd>A user-supplied name for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role ARN for the data source.
-{{% /md %}}</dd>
+    <dd>The IAM service role ARN for the data source.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,14 +1127,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
-{{% /md %}}</dd>
+    <dd>The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1143,8 +1143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The API ID for the GraphQL API for the DataSource.
-{{% /md %}}</dd>
+    <dd>The API ID for the GraphQL API for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,8 +1152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN
-{{% /md %}}</dd>
+    <dd>The ARN
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,8 +1161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description of the DataSource.
-{{% /md %}}</dd>
+    <dd>A description of the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1170,8 +1170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcedynamodbconfig">Dict[Data<wbr>Source<wbr>Dynamodb<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}DynamoDB settings. See below
-{{% /md %}}</dd>
+    <dd>DynamoDB settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,8 +1179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourceelasticsearchconfig">Dict[Data<wbr>Source<wbr>Elasticsearch<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Elasticsearch settings. See below
-{{% /md %}}</dd>
+    <dd>Amazon Elasticsearch settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,8 +1188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcehttpconfig">Dict[Data<wbr>Source<wbr>Http<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}HTTP settings. See below
-{{% /md %}}</dd>
+    <dd>HTTP settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1197,8 +1197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#datasourcelambdaconfig">Dict[Data<wbr>Source<wbr>Lambda<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}AWS Lambda settings. See below
-{{% /md %}}</dd>
+    <dd>AWS Lambda settings. See below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1206,8 +1206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A user-supplied name for the DataSource.
-{{% /md %}}</dd>
+    <dd>A user-supplied name for the DataSource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,8 +1215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM service role ARN for the data source.
-{{% /md %}}</dd>
+    <dd>The IAM service role ARN for the data source.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,11 +1224,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
-{{% /md %}}</dd>
+    <dd>The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1243,18 +1243,18 @@ The following state arguments are supported:
 
 
 <h4 id="datasourcedynamodbconfig">Data<wbr>Source<wbr>Dynamodb<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DataSourceDynamodbConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DataSourceDynamodbConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceDynamodbConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceDynamodbConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1263,8 +1263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>Name of the DynamoDB table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,8 +1272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS region of Elasticsearch domain. Defaults to current region.
-{{% /md %}}</dd>
+    <dd>AWS region of Elasticsearch domain. Defaults to current region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,14 +1281,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set to `true` to use Amazon Cognito credentials with this data source.
-{{% /md %}}</dd>
+    <dd>Set to `true` to use Amazon Cognito credentials with this data source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1297,8 +1297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>Name of the DynamoDB table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,8 +1306,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS region of Elasticsearch domain. Defaults to current region.
-{{% /md %}}</dd>
+    <dd>AWS region of Elasticsearch domain. Defaults to current region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,14 +1315,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set to `true` to use Amazon Cognito credentials with this data source.
-{{% /md %}}</dd>
+    <dd>Set to `true` to use Amazon Cognito credentials with this data source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1331,8 +1331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>Name of the DynamoDB table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1340,8 +1340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS region of Elasticsearch domain. Defaults to current region.
-{{% /md %}}</dd>
+    <dd>AWS region of Elasticsearch domain. Defaults to current region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,14 +1349,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Set to `true` to use Amazon Cognito credentials with this data source.
-{{% /md %}}</dd>
+    <dd>Set to `true` to use Amazon Cognito credentials with this data source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1365,8 +1365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>Name of the DynamoDB table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1374,8 +1374,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS region of Elasticsearch domain. Defaults to current region.
-{{% /md %}}</dd>
+    <dd>AWS region of Elasticsearch domain. Defaults to current region.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1383,29 +1383,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set to `true` to use Amazon Cognito credentials with this data source.
-{{% /md %}}</dd>
+    <dd>Set to `true` to use Amazon Cognito credentials with this data source.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="datasourceelasticsearchconfig">Data<wbr>Source<wbr>Elasticsearch<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DataSourceElasticsearchConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DataSourceElasticsearchConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceElasticsearchConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceElasticsearchConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1414,8 +1414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}HTTP URL.
-{{% /md %}}</dd>
+    <dd>HTTP URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,14 +1423,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS region of Elasticsearch domain. Defaults to current region.
-{{% /md %}}</dd>
+    <dd>AWS region of Elasticsearch domain. Defaults to current region.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1439,8 +1439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}HTTP URL.
-{{% /md %}}</dd>
+    <dd>HTTP URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,14 +1448,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS region of Elasticsearch domain. Defaults to current region.
-{{% /md %}}</dd>
+    <dd>AWS region of Elasticsearch domain. Defaults to current region.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}HTTP URL.
-{{% /md %}}</dd>
+    <dd>HTTP URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,14 +1473,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS region of Elasticsearch domain. Defaults to current region.
-{{% /md %}}</dd>
+    <dd>AWS region of Elasticsearch domain. Defaults to current region.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1489,8 +1489,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}HTTP URL.
-{{% /md %}}</dd>
+    <dd>HTTP URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,29 +1498,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS region of Elasticsearch domain. Defaults to current region.
-{{% /md %}}</dd>
+    <dd>AWS region of Elasticsearch domain. Defaults to current region.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="datasourcehttpconfig">Data<wbr>Source<wbr>Http<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DataSourceHttpConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DataSourceHttpConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceHttpConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceHttpConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1529,14 +1529,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}HTTP URL.
-{{% /md %}}</dd>
+    <dd>HTTP URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1545,14 +1545,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}HTTP URL.
-{{% /md %}}</dd>
+    <dd>HTTP URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1561,14 +1561,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}HTTP URL.
-{{% /md %}}</dd>
+    <dd>HTTP URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1577,29 +1577,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}HTTP URL.
-{{% /md %}}</dd>
+    <dd>HTTP URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="datasourcelambdaconfig">Data<wbr>Source<wbr>Lambda<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DataSourceLambdaConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DataSourceLambdaConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceLambdaConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appsync?tab=doc#DataSourceLambdaConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1608,14 +1608,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN for the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1624,14 +1624,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN for the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1640,14 +1640,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN for the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1656,11 +1656,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN for the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

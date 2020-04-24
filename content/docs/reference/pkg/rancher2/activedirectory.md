@@ -20,26 +20,26 @@ In addition to the built-in local auth, only one external auth config provider c
 
 
 ## Create a ActiveDirectory Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#ActiveDirectory">ActiveDirectory</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#ActiveDirectoryArgs">ActiveDirectoryArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ActiveDirectory</span><span class="p">(resource_name, opts=None, </span>access_mode=None<span class="p">, </span>allowed_principal_ids=None<span class="p">, </span>annotations=None<span class="p">, </span>certificate=None<span class="p">, </span>connection_timeout=None<span class="p">, </span>default_login_domain=None<span class="p">, </span>enabled=None<span class="p">, </span>group_dn_attribute=None<span class="p">, </span>group_member_mapping_attribute=None<span class="p">, </span>group_member_user_attribute=None<span class="p">, </span>group_name_attribute=None<span class="p">, </span>group_object_class=None<span class="p">, </span>group_search_attribute=None<span class="p">, </span>group_search_base=None<span class="p">, </span>group_search_filter=None<span class="p">, </span>labels=None<span class="p">, </span>nested_group_membership_enabled=None<span class="p">, </span>port=None<span class="p">, </span>servers=None<span class="p">, </span>service_account_password=None<span class="p">, </span>service_account_username=None<span class="p">, </span>tls=None<span class="p">, </span>user_disabled_bit_mask=None<span class="p">, </span>user_enabled_attribute=None<span class="p">, </span>user_login_attribute=None<span class="p">, </span>user_name_attribute=None<span class="p">, </span>user_object_class=None<span class="p">, </span>user_search_attribute=None<span class="p">, </span>user_search_base=None<span class="p">, </span>user_search_filter=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewActiveDirectory<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ActiveDirectoryArgs">ActiveDirectoryArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ActiveDirectory">ActiveDirectory</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.ActiveDirectory.html">ActiveDirectory</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.ActiveDirectoryArgs.html">ActiveDirectoryArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -76,9 +76,9 @@ In addition to the built-in local auth, only one external auth config provider c
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -96,9 +96,9 @@ In addition to the built-in local auth, only one external auth config provider c
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -145,9 +145,9 @@ In addition to the built-in local auth, only one external auth config provider c
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -184,7 +184,7 @@ In addition to the built-in local auth, only one external auth config provider c
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ActiveDirectory Resource Properties {#properties}
 
@@ -197,7 +197,7 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -206,8 +206,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory servers list (list)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory servers list (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -215,8 +215,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account password for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account password for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -224,8 +224,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account DN for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account DN for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -233,8 +233,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User search base DN (string)
-{{% /md %}}</dd>
+    <dd>User search base DN (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
-{{% /md %}}</dd>
+    <dd>Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
-{{% /md %}}</dd>
+    <dd>Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations of the resource (map)
-{{% /md %}}</dd>
+    <dd>Annotations of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate for TLS if selfsigned (string)
-{{% /md %}}</dd>
+    <dd>CA certificate for TLS if selfsigned (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory connection timeout. Default `5000` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory connection timeout. Default `5000` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory defult lgoin domain (string)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory defult lgoin domain (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auth config provider. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Enable auth config provider. Default `true` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group DN attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group DN attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member mapping attribute. Default `member` (string)
-{{% /md %}}</dd>
+    <dd>Group member mapping attribute. Default `member` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member user attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group member user attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>Group name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group object class. Default `group` (string)
-{{% /md %}}</dd>
+    <dd>Group object class. Default `group` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,8 +350,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>Group search attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,8 +359,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search base (string)
-{{% /md %}}</dd>
+    <dd>Group search base (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,8 +368,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search filter (string)
-{{% /md %}}</dd>
+    <dd>Group search filter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,8 +377,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels of the resource (map)
-{{% /md %}}</dd>
+    <dd>Labels of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Nested group membership enable. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Nested group membership enable. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory port. Default `389` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory port. Default `389` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable TLS connection (bool)
-{{% /md %}}</dd>
+    <dd>Enable TLS connection (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}User disabled bit mask. Default `2` (int)
-{{% /md %}}</dd>
+    <dd>User disabled bit mask. Default `2` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User enable attribute (string)
-{{% /md %}}</dd>
+    <dd>User enable attribute (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,8 +431,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User login attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>User login attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,8 +440,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>User name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,8 +449,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User object class. Default `person` (string)
-{{% /md %}}</dd>
+    <dd>User object class. Default `person` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,8 +458,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User search attribute. Default `sAMAccountName|sn|givenName` (string)
-{{% /md %}}</dd>
+    <dd>User search attribute. Default `sAMAccountName|sn|givenName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,14 +467,14 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User search filter (string)
-{{% /md %}}</dd>
+    <dd>User search filter (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -483,8 +483,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory servers list (list)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory servers list (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -492,8 +492,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account password for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account password for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -501,8 +501,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account DN for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account DN for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -510,8 +510,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search base DN (string)
-{{% /md %}}</dd>
+    <dd>User search base DN (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,8 +519,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
-{{% /md %}}</dd>
+    <dd>Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,8 +528,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
-{{% /md %}}</dd>
+    <dd>Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,8 +537,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations of the resource (map)
-{{% /md %}}</dd>
+    <dd>Annotations of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -546,8 +546,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate for TLS if selfsigned (string)
-{{% /md %}}</dd>
+    <dd>CA certificate for TLS if selfsigned (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,8 +555,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory connection timeout. Default `5000` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory connection timeout. Default `5000` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -564,8 +564,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory defult lgoin domain (string)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory defult lgoin domain (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,8 +573,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auth config provider. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Enable auth config provider. Default `true` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,8 +582,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group DN attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group DN attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -591,8 +591,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member mapping attribute. Default `member` (string)
-{{% /md %}}</dd>
+    <dd>Group member mapping attribute. Default `member` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,8 +600,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member user attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group member user attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -609,8 +609,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>Group name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,8 +618,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group object class. Default `group` (string)
-{{% /md %}}</dd>
+    <dd>Group object class. Default `group` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,8 +627,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>Group search attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -636,8 +636,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search base (string)
-{{% /md %}}</dd>
+    <dd>Group search base (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -645,8 +645,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search filter (string)
-{{% /md %}}</dd>
+    <dd>Group search filter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -654,8 +654,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels of the resource (map)
-{{% /md %}}</dd>
+    <dd>Labels of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -663,8 +663,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Nested group membership enable. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Nested group membership enable. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -672,8 +672,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory port. Default `389` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory port. Default `389` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -681,8 +681,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable TLS connection (bool)
-{{% /md %}}</dd>
+    <dd>Enable TLS connection (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -690,8 +690,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}User disabled bit mask. Default `2` (int)
-{{% /md %}}</dd>
+    <dd>User disabled bit mask. Default `2` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -699,8 +699,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User enable attribute (string)
-{{% /md %}}</dd>
+    <dd>User enable attribute (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -708,8 +708,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User login attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>User login attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -717,8 +717,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>User name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -726,8 +726,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User object class. Default `person` (string)
-{{% /md %}}</dd>
+    <dd>User object class. Default `person` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -735,8 +735,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search attribute. Default `sAMAccountName|sn|givenName` (string)
-{{% /md %}}</dd>
+    <dd>User search attribute. Default `sAMAccountName|sn|givenName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -744,14 +744,14 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search filter (string)
-{{% /md %}}</dd>
+    <dd>User search filter (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -760,8 +760,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory servers list (list)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory servers list (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -769,8 +769,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account password for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account password for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -778,8 +778,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account DN for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account DN for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -787,8 +787,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search base DN (string)
-{{% /md %}}</dd>
+    <dd>User search base DN (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,8 +796,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
-{{% /md %}}</dd>
+    <dd>Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
-{{% /md %}}</dd>
+    <dd>Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations of the resource (map)
-{{% /md %}}</dd>
+    <dd>Annotations of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate for TLS if selfsigned (string)
-{{% /md %}}</dd>
+    <dd>CA certificate for TLS if selfsigned (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,8 +832,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory connection timeout. Default `5000` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory connection timeout. Default `5000` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,8 +841,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory defult lgoin domain (string)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory defult lgoin domain (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable auth config provider. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Enable auth config provider. Default `true` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group DN attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group DN attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member mapping attribute. Default `member` (string)
-{{% /md %}}</dd>
+    <dd>Group member mapping attribute. Default `member` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member user attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group member user attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>Group name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group object class. Default `group` (string)
-{{% /md %}}</dd>
+    <dd>Group object class. Default `group` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>Group search attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,8 +913,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search base (string)
-{{% /md %}}</dd>
+    <dd>Group search base (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -922,8 +922,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search filter (string)
-{{% /md %}}</dd>
+    <dd>Group search filter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,8 +931,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels of the resource (map)
-{{% /md %}}</dd>
+    <dd>Labels of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,8 +940,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Nested group membership enable. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Nested group membership enable. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -949,8 +949,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory port. Default `389` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory port. Default `389` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,8 +958,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable TLS connection (bool)
-{{% /md %}}</dd>
+    <dd>Enable TLS connection (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,8 +967,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}User disabled bit mask. Default `2` (int)
-{{% /md %}}</dd>
+    <dd>User disabled bit mask. Default `2` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -976,8 +976,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User enable attribute (string)
-{{% /md %}}</dd>
+    <dd>User enable attribute (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,8 +985,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User login attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>User login attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -994,8 +994,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>User name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1003,8 +1003,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User object class. Default `person` (string)
-{{% /md %}}</dd>
+    <dd>User object class. Default `person` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,8 +1012,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search attribute. Default `sAMAccountName|sn|givenName` (string)
-{{% /md %}}</dd>
+    <dd>User search attribute. Default `sAMAccountName|sn|givenName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,14 +1021,14 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search filter (string)
-{{% /md %}}</dd>
+    <dd>User search filter (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1037,8 +1037,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory servers list (list)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory servers list (list)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1046,8 +1046,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Service account password for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account password for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1055,8 +1055,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Service account DN for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account DN for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1064,8 +1064,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User search base DN (string)
-{{% /md %}}</dd>
+    <dd>User search base DN (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
-{{% /md %}}</dd>
+    <dd>Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
-{{% /md %}}</dd>
+    <dd>Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations of the resource (map)
-{{% /md %}}</dd>
+    <dd>Annotations of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate for TLS if selfsigned (string)
-{{% /md %}}</dd>
+    <dd>CA certificate for TLS if selfsigned (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory connection timeout. Default `5000` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory connection timeout. Default `5000` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory defult lgoin domain (string)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory defult lgoin domain (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auth config provider. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Enable auth config provider. Default `true` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group DN attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group DN attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,8 +1145,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group member mapping attribute. Default `member` (string)
-{{% /md %}}</dd>
+    <dd>Group member mapping attribute. Default `member` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group member user attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group member user attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>Group name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group object class. Default `group` (string)
-{{% /md %}}</dd>
+    <dd>Group object class. Default `group` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group search attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>Group search attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,8 +1190,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group search base (string)
-{{% /md %}}</dd>
+    <dd>Group search base (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,8 +1199,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group search filter (string)
-{{% /md %}}</dd>
+    <dd>Group search filter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels of the resource (map)
-{{% /md %}}</dd>
+    <dd>Labels of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Nested group membership enable. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Nested group membership enable. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory port. Default `389` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory port. Default `389` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable TLS connection (bool)
-{{% /md %}}</dd>
+    <dd>Enable TLS connection (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}User disabled bit mask. Default `2` (int)
-{{% /md %}}</dd>
+    <dd>User disabled bit mask. Default `2` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,8 +1253,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User enable attribute (string)
-{{% /md %}}</dd>
+    <dd>User enable attribute (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,8 +1262,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User login attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>User login attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1271,8 +1271,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>User name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1280,8 +1280,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User object class. Default `person` (string)
-{{% /md %}}</dd>
+    <dd>User object class. Default `person` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1289,8 +1289,8 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User search attribute. Default `sAMAccountName|sn|givenName` (string)
-{{% /md %}}</dd>
+    <dd>User search attribute. Default `sAMAccountName|sn|givenName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1298,11 +1298,11 @@ The ActiveDirectory resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User search filter (string)
-{{% /md %}}</dd>
+    <dd>User search filter (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1316,7 +1316,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1325,7 +1325,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1333,8 +1333,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The name of the resource (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -1342,14 +1342,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The type of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The type of the resource (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1358,7 +1358,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1366,8 +1366,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The name of the resource (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -1375,14 +1375,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The type of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The type of the resource (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1391,7 +1391,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1399,8 +1399,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The name of the resource (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -1408,14 +1408,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The type of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The type of the resource (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1424,7 +1424,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1432,8 +1432,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The name of the resource (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -1441,11 +1441,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The type of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The type of the resource (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1456,25 +1456,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ActiveDirectory Resource {#look-up}
 
 Get an existing ActiveDirectory resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#ActiveDirectoryState">ActiveDirectoryState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#ActiveDirectory">ActiveDirectory</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>access_mode=None<span class="p">, </span>allowed_principal_ids=None<span class="p">, </span>annotations=None<span class="p">, </span>certificate=None<span class="p">, </span>connection_timeout=None<span class="p">, </span>default_login_domain=None<span class="p">, </span>enabled=None<span class="p">, </span>group_dn_attribute=None<span class="p">, </span>group_member_mapping_attribute=None<span class="p">, </span>group_member_user_attribute=None<span class="p">, </span>group_name_attribute=None<span class="p">, </span>group_object_class=None<span class="p">, </span>group_search_attribute=None<span class="p">, </span>group_search_base=None<span class="p">, </span>group_search_filter=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>nested_group_membership_enabled=None<span class="p">, </span>port=None<span class="p">, </span>servers=None<span class="p">, </span>service_account_password=None<span class="p">, </span>service_account_username=None<span class="p">, </span>tls=None<span class="p">, </span>type=None<span class="p">, </span>user_disabled_bit_mask=None<span class="p">, </span>user_enabled_attribute=None<span class="p">, </span>user_login_attribute=None<span class="p">, </span>user_name_attribute=None<span class="p">, </span>user_object_class=None<span class="p">, </span>user_search_attribute=None<span class="p">, </span>user_search_base=None<span class="p">, </span>user_search_filter=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetActiveDirectory<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ActiveDirectoryState">ActiveDirectoryState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ActiveDirectory">ActiveDirectory</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.ActiveDirectory.html">ActiveDirectory</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2..ActiveDirectoryState.html">ActiveDirectoryState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1499,9 +1499,9 @@ Get an existing ActiveDirectory resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1514,36 +1514,9 @@ Get an existing ActiveDirectory resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1568,13 +1541,40 @@ Get an existing ActiveDirectory resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1583,8 +1583,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
-{{% /md %}}</dd>
+    <dd>Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1592,8 +1592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
-{{% /md %}}</dd>
+    <dd>Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1601,8 +1601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations of the resource (map)
-{{% /md %}}</dd>
+    <dd>Annotations of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1610,8 +1610,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate for TLS if selfsigned (string)
-{{% /md %}}</dd>
+    <dd>CA certificate for TLS if selfsigned (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,8 +1619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory connection timeout. Default `5000` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory connection timeout. Default `5000` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,8 +1628,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory defult lgoin domain (string)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory defult lgoin domain (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,8 +1637,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auth config provider. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Enable auth config provider. Default `true` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1646,8 +1646,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group DN attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group DN attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1655,8 +1655,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member mapping attribute. Default `member` (string)
-{{% /md %}}</dd>
+    <dd>Group member mapping attribute. Default `member` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1664,8 +1664,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member user attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group member user attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1673,8 +1673,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>Group name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1682,8 +1682,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group object class. Default `group` (string)
-{{% /md %}}</dd>
+    <dd>Group object class. Default `group` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1691,8 +1691,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>Group search attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,8 +1700,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search base (string)
-{{% /md %}}</dd>
+    <dd>Group search base (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,8 +1709,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search filter (string)
-{{% /md %}}</dd>
+    <dd>Group search filter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,8 +1718,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels of the resource (map)
-{{% /md %}}</dd>
+    <dd>Labels of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1727,8 +1727,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The name of the resource (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,8 +1736,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Nested group membership enable. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Nested group membership enable. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1745,8 +1745,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory port. Default `389` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory port. Default `389` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,8 +1754,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory servers list (list)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory servers list (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,8 +1763,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account password for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account password for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1772,8 +1772,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account DN for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account DN for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1781,8 +1781,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable TLS connection (bool)
-{{% /md %}}</dd>
+    <dd>Enable TLS connection (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1790,8 +1790,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The type of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The type of the resource (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,8 +1799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}User disabled bit mask. Default `2` (int)
-{{% /md %}}</dd>
+    <dd>User disabled bit mask. Default `2` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1808,8 +1808,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User enable attribute (string)
-{{% /md %}}</dd>
+    <dd>User enable attribute (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,8 +1817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User login attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>User login attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,8 +1826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>User name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1835,8 +1835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User object class. Default `person` (string)
-{{% /md %}}</dd>
+    <dd>User object class. Default `person` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,8 +1844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User search attribute. Default `sAMAccountName|sn|givenName` (string)
-{{% /md %}}</dd>
+    <dd>User search attribute. Default `sAMAccountName|sn|givenName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1853,8 +1853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User search base DN (string)
-{{% /md %}}</dd>
+    <dd>User search base DN (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1862,14 +1862,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User search filter (string)
-{{% /md %}}</dd>
+    <dd>User search filter (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1878,8 +1878,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
-{{% /md %}}</dd>
+    <dd>Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1887,8 +1887,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
-{{% /md %}}</dd>
+    <dd>Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1896,8 +1896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations of the resource (map)
-{{% /md %}}</dd>
+    <dd>Annotations of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1905,8 +1905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate for TLS if selfsigned (string)
-{{% /md %}}</dd>
+    <dd>CA certificate for TLS if selfsigned (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1914,8 +1914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory connection timeout. Default `5000` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory connection timeout. Default `5000` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1923,8 +1923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory defult lgoin domain (string)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory defult lgoin domain (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1932,8 +1932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auth config provider. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Enable auth config provider. Default `true` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,8 +1941,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group DN attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group DN attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,8 +1950,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member mapping attribute. Default `member` (string)
-{{% /md %}}</dd>
+    <dd>Group member mapping attribute. Default `member` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1959,8 +1959,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member user attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group member user attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1968,8 +1968,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>Group name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1977,8 +1977,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group object class. Default `group` (string)
-{{% /md %}}</dd>
+    <dd>Group object class. Default `group` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1986,8 +1986,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>Group search attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1995,8 +1995,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search base (string)
-{{% /md %}}</dd>
+    <dd>Group search base (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2004,8 +2004,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search filter (string)
-{{% /md %}}</dd>
+    <dd>Group search filter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2013,8 +2013,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels of the resource (map)
-{{% /md %}}</dd>
+    <dd>Labels of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2022,8 +2022,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The name of the resource (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2031,8 +2031,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Nested group membership enable. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Nested group membership enable. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2040,8 +2040,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory port. Default `389` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory port. Default `389` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2049,8 +2049,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory servers list (list)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory servers list (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2058,8 +2058,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account password for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account password for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2067,8 +2067,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account DN for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account DN for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2076,8 +2076,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable TLS connection (bool)
-{{% /md %}}</dd>
+    <dd>Enable TLS connection (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,8 +2085,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The type of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The type of the resource (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2094,8 +2094,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}User disabled bit mask. Default `2` (int)
-{{% /md %}}</dd>
+    <dd>User disabled bit mask. Default `2` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2103,8 +2103,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User enable attribute (string)
-{{% /md %}}</dd>
+    <dd>User enable attribute (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2112,8 +2112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User login attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>User login attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2121,8 +2121,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>User name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2130,8 +2130,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User object class. Default `person` (string)
-{{% /md %}}</dd>
+    <dd>User object class. Default `person` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2139,8 +2139,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search attribute. Default `sAMAccountName|sn|givenName` (string)
-{{% /md %}}</dd>
+    <dd>User search attribute. Default `sAMAccountName|sn|givenName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2148,8 +2148,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search base DN (string)
-{{% /md %}}</dd>
+    <dd>User search base DN (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2157,14 +2157,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search filter (string)
-{{% /md %}}</dd>
+    <dd>User search filter (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2173,8 +2173,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
-{{% /md %}}</dd>
+    <dd>Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2182,8 +2182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
-{{% /md %}}</dd>
+    <dd>Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2191,8 +2191,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations of the resource (map)
-{{% /md %}}</dd>
+    <dd>Annotations of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2200,8 +2200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate for TLS if selfsigned (string)
-{{% /md %}}</dd>
+    <dd>CA certificate for TLS if selfsigned (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2209,8 +2209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory connection timeout. Default `5000` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory connection timeout. Default `5000` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2218,8 +2218,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory defult lgoin domain (string)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory defult lgoin domain (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2227,8 +2227,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable auth config provider. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Enable auth config provider. Default `true` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2236,8 +2236,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group DN attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group DN attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2245,8 +2245,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member mapping attribute. Default `member` (string)
-{{% /md %}}</dd>
+    <dd>Group member mapping attribute. Default `member` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2254,8 +2254,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group member user attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group member user attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2263,8 +2263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>Group name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2272,8 +2272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group object class. Default `group` (string)
-{{% /md %}}</dd>
+    <dd>Group object class. Default `group` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2281,8 +2281,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>Group search attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2290,8 +2290,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search base (string)
-{{% /md %}}</dd>
+    <dd>Group search base (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2299,8 +2299,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group search filter (string)
-{{% /md %}}</dd>
+    <dd>Group search filter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2308,8 +2308,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels of the resource (map)
-{{% /md %}}</dd>
+    <dd>Labels of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2317,8 +2317,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The name of the resource (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2326,8 +2326,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Nested group membership enable. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Nested group membership enable. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,8 +2335,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory port. Default `389` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory port. Default `389` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2344,8 +2344,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory servers list (list)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory servers list (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2353,8 +2353,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account password for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account password for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2362,8 +2362,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Service account DN for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account DN for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,8 +2371,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable TLS connection (bool)
-{{% /md %}}</dd>
+    <dd>Enable TLS connection (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,8 +2380,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The type of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The type of the resource (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2389,8 +2389,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}User disabled bit mask. Default `2` (int)
-{{% /md %}}</dd>
+    <dd>User disabled bit mask. Default `2` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2398,8 +2398,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User enable attribute (string)
-{{% /md %}}</dd>
+    <dd>User enable attribute (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2407,8 +2407,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User login attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>User login attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2416,8 +2416,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>User name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2425,8 +2425,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User object class. Default `person` (string)
-{{% /md %}}</dd>
+    <dd>User object class. Default `person` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2434,8 +2434,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search attribute. Default `sAMAccountName|sn|givenName` (string)
-{{% /md %}}</dd>
+    <dd>User search attribute. Default `sAMAccountName|sn|givenName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2443,8 +2443,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search base DN (string)
-{{% /md %}}</dd>
+    <dd>User search base DN (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2452,14 +2452,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User search filter (string)
-{{% /md %}}</dd>
+    <dd>User search filter (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2468,8 +2468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
-{{% /md %}}</dd>
+    <dd>Access mode for auth. `required`, `restricted`, `unrestricted` are supported. Default `unrestricted` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2477,8 +2477,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
-{{% /md %}}</dd>
+    <dd>Allowed principal ids for auth. Required if `access_mode` is `required` or `restricted`. Ex: `activedirectory_user://<DN>`  `activedirectory_group://<DN>` (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2486,8 +2486,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations of the resource (map)
-{{% /md %}}</dd>
+    <dd>Annotations of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2495,8 +2495,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate for TLS if selfsigned (string)
-{{% /md %}}</dd>
+    <dd>CA certificate for TLS if selfsigned (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2504,8 +2504,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory connection timeout. Default `5000` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory connection timeout. Default `5000` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2513,8 +2513,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory defult lgoin domain (string)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory defult lgoin domain (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2522,8 +2522,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auth config provider. Default `true` (bool)
-{{% /md %}}</dd>
+    <dd>Enable auth config provider. Default `true` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2531,8 +2531,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group DN attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group DN attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2540,8 +2540,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group member mapping attribute. Default `member` (string)
-{{% /md %}}</dd>
+    <dd>Group member mapping attribute. Default `member` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2549,8 +2549,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group member user attribute. Default `distinguishedName` (string)
-{{% /md %}}</dd>
+    <dd>Group member user attribute. Default `distinguishedName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2558,8 +2558,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>Group name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2567,8 +2567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group object class. Default `group` (string)
-{{% /md %}}</dd>
+    <dd>Group object class. Default `group` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2576,8 +2576,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group search attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>Group search attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2585,8 +2585,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group search base (string)
-{{% /md %}}</dd>
+    <dd>Group search base (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2594,8 +2594,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group search filter (string)
-{{% /md %}}</dd>
+    <dd>Group search filter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2603,8 +2603,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels of the resource (map)
-{{% /md %}}</dd>
+    <dd>Labels of the resource (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2612,8 +2612,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The name of the resource (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2621,8 +2621,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Nested group membership enable. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Nested group membership enable. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2630,8 +2630,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory port. Default `389` (int)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory port. Default `389` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2639,8 +2639,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}ActiveDirectory servers list (list)
-{{% /md %}}</dd>
+    <dd>ActiveDirectory servers list (list)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2648,8 +2648,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Service account password for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account password for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2657,8 +2657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Service account DN for access ActiveDirectory service (string)
-{{% /md %}}</dd>
+    <dd>Service account DN for access ActiveDirectory service (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2666,8 +2666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable TLS connection (bool)
-{{% /md %}}</dd>
+    <dd>Enable TLS connection (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2675,8 +2675,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The type of the resource (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The type of the resource (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2684,8 +2684,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}User disabled bit mask. Default `2` (int)
-{{% /md %}}</dd>
+    <dd>User disabled bit mask. Default `2` (int)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2693,8 +2693,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User enable attribute (string)
-{{% /md %}}</dd>
+    <dd>User enable attribute (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2702,8 +2702,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User login attribute. Default `sAMAccountName` (string)
-{{% /md %}}</dd>
+    <dd>User login attribute. Default `sAMAccountName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2711,8 +2711,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User name attribute. Default `name` (string)
-{{% /md %}}</dd>
+    <dd>User name attribute. Default `name` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2720,8 +2720,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User object class. Default `person` (string)
-{{% /md %}}</dd>
+    <dd>User object class. Default `person` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2729,8 +2729,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User search attribute. Default `sAMAccountName|sn|givenName` (string)
-{{% /md %}}</dd>
+    <dd>User search attribute. Default `sAMAccountName|sn|givenName` (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2738,8 +2738,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User search base DN (string)
-{{% /md %}}</dd>
+    <dd>User search base DN (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2747,11 +2747,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User search filter (string)
-{{% /md %}}</dd>
+    <dd>User search filter (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

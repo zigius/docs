@@ -79,26 +79,26 @@ const foo = new rancher2.Namespace("foo", {
 
 
 ## Create a Namespace Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#Namespace">Namespace</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#NamespaceArgs">NamespaceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Namespace</span><span class="p">(resource_name, opts=None, </span>annotations=None<span class="p">, </span>container_resource_limit=None<span class="p">, </span>description=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>project_id=None<span class="p">, </span>resource_quota=None<span class="p">, </span>wait_for_cluster=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewNamespace<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NamespaceArgs">NamespaceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#Namespace">Namespace</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.Namespace.html">Namespace</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.NamespaceArgs.html">NamespaceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -135,9 +135,9 @@ const foo = new rancher2.Namespace("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -155,9 +155,9 @@ const foo = new rancher2.Namespace("foo", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -204,9 +204,9 @@ const foo = new rancher2.Namespace("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -243,7 +243,7 @@ const foo = new rancher2.Namespace("foo", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Namespace Resource Properties {#properties}
 
@@ -256,7 +256,7 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -265,8 +265,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
-{{% /md %}}</dd>
+    <dd>The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespacecontainerresourcelimit">Namespace<wbr>Container<wbr>Resource<wbr>Limit<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on namespace (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on namespace (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A namespace description (string)
-{{% /md %}}</dd>
+    <dd>A namespace description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the namespace (string)
-{{% /md %}}</dd>
+    <dd>The name of the namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequota">Namespace<wbr>Resource<wbr>Quota<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,14 +328,14 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -344,8 +344,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
-{{% /md %}}</dd>
+    <dd>The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespacecontainerresourcelimit">Namespace<wbr>Container<wbr>Resource<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on namespace (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on namespace (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A namespace description (string)
-{{% /md %}}</dd>
+    <dd>A namespace description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the namespace (string)
-{{% /md %}}</dd>
+    <dd>The name of the namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequota">Namespace<wbr>Resource<wbr>Quota</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,14 +407,14 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -423,8 +423,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
-{{% /md %}}</dd>
+    <dd>The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespacecontainerresourcelimit">Namespace<wbr>Container<wbr>Resource<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on namespace (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on namespace (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,8 +450,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A namespace description (string)
-{{% /md %}}</dd>
+    <dd>A namespace description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the namespace (string)
-{{% /md %}}</dd>
+    <dd>The name of the namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequota">Namespace<wbr>Resource<wbr>Quota</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,14 +486,14 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -502,8 +502,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
-{{% /md %}}</dd>
+    <dd>The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,8 +520,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespacecontainerresourcelimit">Dict[Namespace<wbr>Container<wbr>Resource<wbr>Limit]</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on namespace (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on namespace (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,8 +529,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A namespace description (string)
-{{% /md %}}</dd>
+    <dd>A namespace description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,8 +538,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the namespace (string)
-{{% /md %}}</dd>
+    <dd>The name of the namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,8 +556,8 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequota">Dict[Namespace<wbr>Resource<wbr>Quota]</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,11 +565,11 @@ The Namespace resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -583,7 +583,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -592,13 +592,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -607,13 +607,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -622,13 +622,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -637,10 +637,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -651,25 +651,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Namespace Resource {#look-up}
 
 Get an existing Namespace resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#NamespaceState">NamespaceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#Namespace">Namespace</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>annotations=None<span class="p">, </span>container_resource_limit=None<span class="p">, </span>description=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>project_id=None<span class="p">, </span>resource_quota=None<span class="p">, </span>wait_for_cluster=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetNamespace<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NamespaceState">NamespaceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#Namespace">Namespace</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.Namespace.html">Namespace</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2..NamespaceState.html">NamespaceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -694,9 +694,9 @@ Get an existing Namespace resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -709,36 +709,9 @@ Get an existing Namespace resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -763,13 +736,40 @@ Get an existing Namespace resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -778,8 +778,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,8 +787,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespacecontainerresourcelimit">Namespace<wbr>Container<wbr>Resource<wbr>Limit<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on namespace (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on namespace (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,8 +796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A namespace description (string)
-{{% /md %}}</dd>
+    <dd>A namespace description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the namespace (string)
-{{% /md %}}</dd>
+    <dd>The name of the namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
-{{% /md %}}</dd>
+    <dd>The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,8 +832,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequota">Namespace<wbr>Resource<wbr>Quota<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,14 +841,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -857,8 +857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespacecontainerresourcelimit">Namespace<wbr>Container<wbr>Resource<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on namespace (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on namespace (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,8 +875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A namespace description (string)
-{{% /md %}}</dd>
+    <dd>A namespace description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,8 +893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the namespace (string)
-{{% /md %}}</dd>
+    <dd>The name of the namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
-{{% /md %}}</dd>
+    <dd>The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,8 +911,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequota">Namespace<wbr>Resource<wbr>Quota</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,14 +920,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -936,8 +936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,8 +945,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespacecontainerresourcelimit">Namespace<wbr>Container<wbr>Resource<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on namespace (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on namespace (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A namespace description (string)
-{{% /md %}}</dd>
+    <dd>A namespace description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,8 +972,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the namespace (string)
-{{% /md %}}</dd>
+    <dd>The name of the namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,8 +981,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
-{{% /md %}}</dd>
+    <dd>The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequota">Namespace<wbr>Resource<wbr>Quota</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,14 +999,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1015,8 +1015,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1024,8 +1024,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespacecontainerresourcelimit">Dict[Namespace<wbr>Container<wbr>Resource<wbr>Limit]</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on namespace (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on namespace (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,8 +1033,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A namespace description (string)
-{{% /md %}}</dd>
+    <dd>A namespace description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,8 +1042,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,8 +1051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the namespace (string)
-{{% /md %}}</dd>
+    <dd>The name of the namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
-{{% /md %}}</dd>
+    <dd>The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequota">Dict[Namespace<wbr>Resource<wbr>Quota]</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,11 +1078,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1097,18 +1097,18 @@ The following state arguments are supported:
 
 
 <h4 id="namespacecontainerresourcelimit">Namespace<wbr>Container<wbr>Resource<wbr>Limit</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NamespaceContainerResourceLimit">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NamespaceContainerResourceLimit">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NamespaceContainerResourceLimitArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NamespaceContainerResourceLimitOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1117,8 +1117,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1126,8 +1126,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1135,8 +1135,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,14 +1144,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in namespace (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1160,8 +1160,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,8 +1169,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,8 +1178,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,14 +1187,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in namespace (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1203,8 +1203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1212,8 +1212,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,8 +1221,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,14 +1230,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in namespace (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1246,8 +1246,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,8 +1255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,8 +1264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,29 +1273,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in namespace (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="namespaceresourcequota">Namespace<wbr>Resource<wbr>Quota</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NamespaceResourceQuota">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NamespaceResourceQuota">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NamespaceResourceQuotaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NamespaceResourceQuotaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1304,14 +1304,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequotalimit">Namespace<wbr>Resource<wbr>Quota<wbr>Limit<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota limit for namespace (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota limit for namespace (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1320,14 +1320,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequotalimit">Namespace<wbr>Resource<wbr>Quota<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota limit for namespace (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota limit for namespace (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1336,14 +1336,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequotalimit">Namespace<wbr>Resource<wbr>Quota<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota limit for namespace (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota limit for namespace (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1352,29 +1352,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#namespaceresourcequotalimit">Dict[Namespace<wbr>Resource<wbr>Quota<wbr>Limit]</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota limit for namespace (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota limit for namespace (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="namespaceresourcequotalimit">Namespace<wbr>Resource<wbr>Quota<wbr>Limit</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#NamespaceResourceQuotaLimit">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#NamespaceResourceQuotaLimit">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NamespaceResourceQuotaLimitArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#NamespaceResourceQuotaLimitOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1383,8 +1383,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1392,8 +1392,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,8 +1401,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,8 +1410,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,8 +1437,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,8 +1446,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1455,8 +1455,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,7 +1473,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1481,8 +1481,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1490,14 +1490,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in namespace (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1506,8 +1506,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,8 +1515,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,8 +1524,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,8 +1533,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1542,8 +1542,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,8 +1551,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1560,8 +1560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1569,8 +1569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1578,8 +1578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1587,8 +1587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,7 +1596,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,8 +1604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,14 +1613,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in namespace (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1629,8 +1629,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1638,8 +1638,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1647,8 +1647,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1656,8 +1656,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1665,8 +1665,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,8 +1674,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,8 +1683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,8 +1692,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,8 +1701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1710,8 +1710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1719,7 +1719,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1727,8 +1727,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,14 +1736,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in namespace (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1752,8 +1752,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1761,8 +1761,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1770,8 +1770,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1779,8 +1779,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1788,8 +1788,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1797,8 +1797,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1806,8 +1806,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1815,8 +1815,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1824,8 +1824,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1833,8 +1833,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1842,7 +1842,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1850,8 +1850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in namespace (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1859,11 +1859,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in namespace (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in namespace (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -16,22 +16,22 @@ git_sha: "c99b82127e8ea2f6d3a94d861b1a2a8d26b28e9a"
 > please consult the source [`terraform-providers/terraform-provider-f5bigip` repo](https://github.com/terraform-providers/terraform-provider-f5bigip/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var f5bigip = require("@pulumi/f5bigip");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as f5bigip from "@pulumi/f5bigip";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

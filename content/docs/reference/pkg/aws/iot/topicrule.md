@@ -69,26 +69,26 @@ const iamPolicyForLambda = new aws.iam.RolePolicy("iam_policy_for_lambda", {
 
 
 ## Create a TopicRule Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iot/#TopicRule">TopicRule</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iot/#TopicRuleArgs">TopicRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">TopicRule</span><span class="p">(resource_name, opts=None, </span>cloudwatch_alarm=None<span class="p">, </span>cloudwatch_metric=None<span class="p">, </span>description=None<span class="p">, </span>dynamodb=None<span class="p">, </span>elasticsearch=None<span class="p">, </span>enabled=None<span class="p">, </span>firehose=None<span class="p">, </span>kinesis=None<span class="p">, </span>lambda_=None<span class="p">, </span>name=None<span class="p">, </span>republish=None<span class="p">, </span>s3=None<span class="p">, </span>sns=None<span class="p">, </span>sql=None<span class="p">, </span>sql_version=None<span class="p">, </span>sqs=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewTopicRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleArgs">TopicRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRule">TopicRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iot.TopicRule.html">TopicRule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iot.TopicRuleArgs.html">TopicRuleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -125,9 +125,9 @@ const iamPolicyForLambda = new aws.iam.RolePolicy("iam_policy_for_lambda", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -145,9 +145,9 @@ const iamPolicyForLambda = new aws.iam.RolePolicy("iam_policy_for_lambda", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -194,9 +194,9 @@ const iamPolicyForLambda = new aws.iam.RolePolicy("iam_policy_for_lambda", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -233,7 +233,7 @@ const iamPolicyForLambda = new aws.iam.RolePolicy("iam_policy_for_lambda", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## TopicRule Resource Properties {#properties}
 
@@ -246,7 +246,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -255,8 +255,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the rule is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the rule is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -264,8 +264,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
-{{% /md %}}</dd>
+    <dd>The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -273,8 +273,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the SQL rules engine to use when evaluating the rule.
-{{% /md %}}</dd>
+    <dd>The version of the SQL rules engine to use when evaluating the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,7 +282,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchalarm">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Alarm<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,7 +290,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchmetric">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Metric<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,8 +298,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,7 +307,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruledynamodb">Topic<wbr>Rule<wbr>Dynamodb<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,7 +315,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruleelasticsearch">Topic<wbr>Rule<wbr>Elasticsearch<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,7 +323,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulefirehose">Topic<wbr>Rule<wbr>Firehose<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,7 +331,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulekinesis">Topic<wbr>Rule<wbr>Kinesis<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,7 +339,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulelambda">Topic<wbr>Rule<wbr>Lambda<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,8 +347,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule.
-{{% /md %}}</dd>
+    <dd>The name of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,7 +356,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulerepublish">Topic<wbr>Rule<wbr>Republish<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,7 +364,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrules3">Topic<wbr>Rule<wbr>S3Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,7 +372,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesns">Topic<wbr>Rule<wbr>Sns<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,13 +380,13 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesqs">Topic<wbr>Rule<wbr>Sqs<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -395,8 +395,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the rule is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the rule is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -404,8 +404,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
-{{% /md %}}</dd>
+    <dd>The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -413,8 +413,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the SQL rules engine to use when evaluating the rule.
-{{% /md %}}</dd>
+    <dd>The version of the SQL rules engine to use when evaluating the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,7 +422,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchalarm">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Alarm</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,7 +430,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchmetric">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Metric</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,7 +447,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruledynamodb">Topic<wbr>Rule<wbr>Dynamodb</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,7 +455,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruleelasticsearch">Topic<wbr>Rule<wbr>Elasticsearch</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,7 +463,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulefirehose">Topic<wbr>Rule<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -471,7 +471,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulekinesis">Topic<wbr>Rule<wbr>Kinesis</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,7 +479,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulelambda">Topic<wbr>Rule<wbr>Lambda</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,8 +487,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule.
-{{% /md %}}</dd>
+    <dd>The name of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,7 +496,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulerepublish">Topic<wbr>Rule<wbr>Republish</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,7 +504,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrules3">Topic<wbr>Rule<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -512,7 +512,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesns">Topic<wbr>Rule<wbr>Sns</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,13 +520,13 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesqs">Topic<wbr>Rule<wbr>Sqs</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -535,8 +535,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the rule is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the rule is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -544,8 +544,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
-{{% /md %}}</dd>
+    <dd>The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -553,8 +553,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the SQL rules engine to use when evaluating the rule.
-{{% /md %}}</dd>
+    <dd>The version of the SQL rules engine to use when evaluating the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,7 +562,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchalarm">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Alarm</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -570,7 +570,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchmetric">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Metric</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -578,8 +578,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,7 +587,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruledynamodb">Topic<wbr>Rule<wbr>Dynamodb</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,7 +595,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruleelasticsearch">Topic<wbr>Rule<wbr>Elasticsearch</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,7 +603,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulefirehose">Topic<wbr>Rule<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,7 +611,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulekinesis">Topic<wbr>Rule<wbr>Kinesis</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,7 +619,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulelambda">Topic<wbr>Rule<wbr>Lambda</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,8 +627,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule.
-{{% /md %}}</dd>
+    <dd>The name of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -636,7 +636,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulerepublish">Topic<wbr>Rule<wbr>Republish</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,7 +644,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrules3">Topic<wbr>Rule<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -652,7 +652,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesns">Topic<wbr>Rule<wbr>Sns</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -660,13 +660,13 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesqs">Topic<wbr>Rule<wbr>Sqs</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -675,8 +675,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the rule is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the rule is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -684,8 +684,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
-{{% /md %}}</dd>
+    <dd>The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -693,8 +693,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the SQL rules engine to use when evaluating the rule.
-{{% /md %}}</dd>
+    <dd>The version of the SQL rules engine to use when evaluating the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -702,7 +702,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchalarm">Dict[Topic<wbr>Rule<wbr>Cloudwatch<wbr>Alarm]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,7 +710,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchmetric">Dict[Topic<wbr>Rule<wbr>Cloudwatch<wbr>Metric]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -718,8 +718,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -727,7 +727,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruledynamodb">Dict[Topic<wbr>Rule<wbr>Dynamodb]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -735,7 +735,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruleelasticsearch">Dict[Topic<wbr>Rule<wbr>Elasticsearch]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,7 +743,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulefirehose">Dict[Topic<wbr>Rule<wbr>Firehose]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,7 +751,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulekinesis">Dict[Topic<wbr>Rule<wbr>Kinesis]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -759,7 +759,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulelambda">Dict[Topic<wbr>Rule<wbr>Lambda]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,8 +767,8 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule.
-{{% /md %}}</dd>
+    <dd>The name of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,7 +776,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulerepublish">Dict[Topic<wbr>Rule<wbr>Republish]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -784,7 +784,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrules3">Dict[Topic<wbr>Rule<wbr>S3]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,7 +792,7 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesns">Dict[Topic<wbr>Rule<wbr>Sns]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -800,10 +800,10 @@ The TopicRule resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesqs">Dict[Topic<wbr>Rule<wbr>Sqs]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -817,7 +817,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -826,8 +826,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the topic rule
-{{% /md %}}</dd>
+    <dd>The ARN of the topic rule
+</dd>
 
     <dt class="property-"
             title="">
@@ -835,13 +835,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -850,8 +850,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the topic rule
-{{% /md %}}</dd>
+    <dd>The ARN of the topic rule
+</dd>
 
     <dt class="property-"
             title="">
@@ -859,13 +859,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -874,8 +874,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the topic rule
-{{% /md %}}</dd>
+    <dd>The ARN of the topic rule
+</dd>
 
     <dt class="property-"
             title="">
@@ -883,13 +883,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -898,8 +898,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the topic rule
-{{% /md %}}</dd>
+    <dd>The ARN of the topic rule
+</dd>
 
     <dt class="property-"
             title="">
@@ -907,10 +907,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -921,25 +921,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing TopicRule Resource {#look-up}
 
 Get an existing TopicRule resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iot/#TopicRuleState">TopicRuleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iot/#TopicRule">TopicRule</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>cloudwatch_alarm=None<span class="p">, </span>cloudwatch_metric=None<span class="p">, </span>description=None<span class="p">, </span>dynamodb=None<span class="p">, </span>elasticsearch=None<span class="p">, </span>enabled=None<span class="p">, </span>firehose=None<span class="p">, </span>kinesis=None<span class="p">, </span>lambda_=None<span class="p">, </span>name=None<span class="p">, </span>republish=None<span class="p">, </span>s3=None<span class="p">, </span>sns=None<span class="p">, </span>sql=None<span class="p">, </span>sql_version=None<span class="p">, </span>sqs=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTopicRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleState">TopicRuleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRule">TopicRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iot.TopicRule.html">TopicRule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iot.TopicRuleState.html">TopicRuleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -964,9 +964,9 @@ Get an existing TopicRule resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -979,36 +979,9 @@ Get an existing TopicRule resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1033,13 +1006,40 @@ Get an existing TopicRule resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the topic rule
-{{% /md %}}</dd>
+    <dd>The ARN of the topic rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,7 +1057,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchalarm">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Alarm<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1065,7 +1065,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchmetric">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Metric<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,7 +1082,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruledynamodb">Topic<wbr>Rule<wbr>Dynamodb<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,7 +1090,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruleelasticsearch">Topic<wbr>Rule<wbr>Elasticsearch<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,8 +1098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the rule is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the rule is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,7 +1107,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulefirehose">Topic<wbr>Rule<wbr>Firehose<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,7 +1115,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulekinesis">Topic<wbr>Rule<wbr>Kinesis<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,7 +1123,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulelambda">Topic<wbr>Rule<wbr>Lambda<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,8 +1131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule.
-{{% /md %}}</dd>
+    <dd>The name of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,7 +1140,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulerepublish">Topic<wbr>Rule<wbr>Republish<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,7 +1148,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrules3">Topic<wbr>Rule<wbr>S3Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,7 +1156,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesns">Topic<wbr>Rule<wbr>Sns<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,8 +1164,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
-{{% /md %}}</dd>
+    <dd>The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,8 +1173,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the SQL rules engine to use when evaluating the rule.
-{{% /md %}}</dd>
+    <dd>The version of the SQL rules engine to use when evaluating the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,13 +1182,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesqs">Topic<wbr>Rule<wbr>Sqs<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1197,8 +1197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the topic rule
-{{% /md %}}</dd>
+    <dd>The ARN of the topic rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1206,7 +1206,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchalarm">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Alarm</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1214,7 +1214,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchmetric">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Metric</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,8 +1222,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,7 +1231,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruledynamodb">Topic<wbr>Rule<wbr>Dynamodb</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,7 +1239,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruleelasticsearch">Topic<wbr>Rule<wbr>Elasticsearch</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,8 +1247,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the rule is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the rule is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,7 +1256,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulefirehose">Topic<wbr>Rule<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,7 +1264,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulekinesis">Topic<wbr>Rule<wbr>Kinesis</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,7 +1272,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulelambda">Topic<wbr>Rule<wbr>Lambda</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1280,8 +1280,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule.
-{{% /md %}}</dd>
+    <dd>The name of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1289,7 +1289,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulerepublish">Topic<wbr>Rule<wbr>Republish</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,7 +1297,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrules3">Topic<wbr>Rule<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,7 +1305,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesns">Topic<wbr>Rule<wbr>Sns</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1313,8 +1313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
-{{% /md %}}</dd>
+    <dd>The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,8 +1322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the SQL rules engine to use when evaluating the rule.
-{{% /md %}}</dd>
+    <dd>The version of the SQL rules engine to use when evaluating the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1331,13 +1331,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesqs">Topic<wbr>Rule<wbr>Sqs</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1346,8 +1346,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the topic rule
-{{% /md %}}</dd>
+    <dd>The ARN of the topic rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,7 +1355,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchalarm">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Alarm</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1363,7 +1363,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchmetric">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Metric</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1371,8 +1371,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,7 +1380,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruledynamodb">Topic<wbr>Rule<wbr>Dynamodb</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,7 +1388,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruleelasticsearch">Topic<wbr>Rule<wbr>Elasticsearch</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1396,8 +1396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the rule is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the rule is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1405,7 +1405,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulefirehose">Topic<wbr>Rule<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1413,7 +1413,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulekinesis">Topic<wbr>Rule<wbr>Kinesis</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,7 +1421,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulelambda">Topic<wbr>Rule<wbr>Lambda</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1429,8 +1429,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule.
-{{% /md %}}</dd>
+    <dd>The name of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1438,7 +1438,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulerepublish">Topic<wbr>Rule<wbr>Republish</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,7 +1446,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrules3">Topic<wbr>Rule<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1454,7 +1454,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesns">Topic<wbr>Rule<wbr>Sns</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,8 +1462,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
-{{% /md %}}</dd>
+    <dd>The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,8 +1471,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the SQL rules engine to use when evaluating the rule.
-{{% /md %}}</dd>
+    <dd>The version of the SQL rules engine to use when evaluating the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1480,13 +1480,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesqs">Topic<wbr>Rule<wbr>Sqs</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1495,8 +1495,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the topic rule
-{{% /md %}}</dd>
+    <dd>The ARN of the topic rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,7 +1504,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchalarm">Dict[Topic<wbr>Rule<wbr>Cloudwatch<wbr>Alarm]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,7 +1512,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulecloudwatchmetric">Dict[Topic<wbr>Rule<wbr>Cloudwatch<wbr>Metric]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,8 +1520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,7 +1529,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruledynamodb">Dict[Topic<wbr>Rule<wbr>Dynamodb]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1537,7 +1537,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicruleelasticsearch">Dict[Topic<wbr>Rule<wbr>Elasticsearch]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,8 +1545,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the rule is enabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the rule is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1554,7 +1554,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulefirehose">Dict[Topic<wbr>Rule<wbr>Firehose]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,7 +1562,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulekinesis">Dict[Topic<wbr>Rule<wbr>Kinesis]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1570,7 +1570,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulelambda">Dict[Topic<wbr>Rule<wbr>Lambda]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1578,8 +1578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule.
-{{% /md %}}</dd>
+    <dd>The name of the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1587,7 +1587,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulerepublish">Dict[Topic<wbr>Rule<wbr>Republish]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,7 +1595,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrules3">Dict[Topic<wbr>Rule<wbr>S3]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,7 +1603,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesns">Dict[Topic<wbr>Rule<wbr>Sns]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1611,8 +1611,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
-{{% /md %}}</dd>
+    <dd>The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1620,8 +1620,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the SQL rules engine to use when evaluating the rule.
-{{% /md %}}</dd>
+    <dd>The version of the SQL rules engine to use when evaluating the rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1629,10 +1629,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#topicrulesqs">Dict[Topic<wbr>Rule<wbr>Sqs]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1647,18 +1647,18 @@ The following state arguments are supported:
 
 
 <h4 id="topicrulecloudwatchalarm">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Alarm</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleCloudwatchAlarm">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleCloudwatchAlarm">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleCloudwatchAlarmArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleCloudwatchAlarmOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1667,8 +1667,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch alarm name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch alarm name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1676,8 +1676,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch alarm.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1685,8 +1685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the alarm change.
-{{% /md %}}</dd>
+    <dd>The reason for the alarm change.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1694,14 +1694,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
-{{% /md %}}</dd>
+    <dd>The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1710,8 +1710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch alarm name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch alarm name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1719,8 +1719,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch alarm.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1728,8 +1728,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the alarm change.
-{{% /md %}}</dd>
+    <dd>The reason for the alarm change.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1737,14 +1737,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
-{{% /md %}}</dd>
+    <dd>The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1753,8 +1753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch alarm name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch alarm name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1762,8 +1762,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch alarm.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1771,8 +1771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the alarm change.
-{{% /md %}}</dd>
+    <dd>The reason for the alarm change.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1780,14 +1780,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
-{{% /md %}}</dd>
+    <dd>The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1796,8 +1796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch alarm name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch alarm name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1805,8 +1805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch alarm.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1814,8 +1814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The reason for the alarm change.
-{{% /md %}}</dd>
+    <dd>The reason for the alarm change.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1823,29 +1823,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
-{{% /md %}}</dd>
+    <dd>The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicrulecloudwatchmetric">Topic<wbr>Rule<wbr>Cloudwatch<wbr>Metric</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleCloudwatchMetric">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleCloudwatchMetric">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleCloudwatchMetricArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleCloudwatchMetricOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1854,8 +1854,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1863,8 +1863,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric namespace name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric namespace name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1872,8 +1872,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
-{{% /md %}}</dd>
+    <dd>The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1881,8 +1881,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric value.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric value.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1890,8 +1890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch metric.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1899,14 +1899,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
-{{% /md %}}</dd>
+    <dd>An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1915,8 +1915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1924,8 +1924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric namespace name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric namespace name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1933,8 +1933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
-{{% /md %}}</dd>
+    <dd>The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1942,8 +1942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric value.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric value.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1951,8 +1951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch metric.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1960,14 +1960,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
-{{% /md %}}</dd>
+    <dd>An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1976,8 +1976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1985,8 +1985,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric namespace name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric namespace name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1994,8 +1994,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
-{{% /md %}}</dd>
+    <dd>The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2003,8 +2003,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric value.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric value.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2012,8 +2012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch metric.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2021,14 +2021,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
-{{% /md %}}</dd>
+    <dd>An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2037,8 +2037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric namespace name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric namespace name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2046,8 +2046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
-{{% /md %}}</dd>
+    <dd>The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2055,8 +2055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric value.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric value.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2064,8 +2064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CloudWatch metric name.
-{{% /md %}}</dd>
+    <dd>The CloudWatch metric name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2073,8 +2073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch metric.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch metric.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2082,29 +2082,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
-{{% /md %}}</dd>
+    <dd>An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicruledynamodb">Topic<wbr>Rule<wbr>Dynamodb</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleDynamodb">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleDynamodb">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleDynamodbArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleDynamodbOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2113,8 +2113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hash key name.
-{{% /md %}}</dd>
+    <dd>The hash key name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2122,8 +2122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hash key value.
-{{% /md %}}</dd>
+    <dd>The hash key value.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2131,8 +2131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access to the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access to the DynamoDB table.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2140,8 +2140,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2149,8 +2149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hash key type. Valid values are "STRING" or "NUMBER".
-{{% /md %}}</dd>
+    <dd>The hash key type. Valid values are "STRING" or "NUMBER".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2158,8 +2158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The action payload.
-{{% /md %}}</dd>
+    <dd>The action payload.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2167,8 +2167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range key name.
-{{% /md %}}</dd>
+    <dd>The range key name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2176,8 +2176,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range key type. Valid values are "STRING" or "NUMBER".
-{{% /md %}}</dd>
+    <dd>The range key type. Valid values are "STRING" or "NUMBER".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2185,14 +2185,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range key value.
-{{% /md %}}</dd>
+    <dd>The range key value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2201,8 +2201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hash key name.
-{{% /md %}}</dd>
+    <dd>The hash key name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2210,8 +2210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hash key value.
-{{% /md %}}</dd>
+    <dd>The hash key value.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2219,8 +2219,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access to the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access to the DynamoDB table.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2228,8 +2228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2237,8 +2237,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hash key type. Valid values are "STRING" or "NUMBER".
-{{% /md %}}</dd>
+    <dd>The hash key type. Valid values are "STRING" or "NUMBER".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2246,8 +2246,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action payload.
-{{% /md %}}</dd>
+    <dd>The action payload.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2255,8 +2255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range key name.
-{{% /md %}}</dd>
+    <dd>The range key name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2264,8 +2264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range key type. Valid values are "STRING" or "NUMBER".
-{{% /md %}}</dd>
+    <dd>The range key type. Valid values are "STRING" or "NUMBER".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2273,14 +2273,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range key value.
-{{% /md %}}</dd>
+    <dd>The range key value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2289,8 +2289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hash key name.
-{{% /md %}}</dd>
+    <dd>The hash key name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2298,8 +2298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hash key value.
-{{% /md %}}</dd>
+    <dd>The hash key value.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2307,8 +2307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access to the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access to the DynamoDB table.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2316,8 +2316,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2325,8 +2325,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hash key type. Valid values are "STRING" or "NUMBER".
-{{% /md %}}</dd>
+    <dd>The hash key type. Valid values are "STRING" or "NUMBER".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2334,8 +2334,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action payload.
-{{% /md %}}</dd>
+    <dd>The action payload.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2343,8 +2343,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range key name.
-{{% /md %}}</dd>
+    <dd>The range key name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2352,8 +2352,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range key type. Valid values are "STRING" or "NUMBER".
-{{% /md %}}</dd>
+    <dd>The range key type. Valid values are "STRING" or "NUMBER".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2361,14 +2361,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range key value.
-{{% /md %}}</dd>
+    <dd>The range key value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2377,8 +2377,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hash key name.
-{{% /md %}}</dd>
+    <dd>The hash key name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2386,8 +2386,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hash key value.
-{{% /md %}}</dd>
+    <dd>The hash key value.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2395,8 +2395,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access to the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access to the DynamoDB table.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2404,8 +2404,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DynamoDB table.
-{{% /md %}}</dd>
+    <dd>The name of the DynamoDB table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2413,8 +2413,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hash key type. Valid values are "STRING" or "NUMBER".
-{{% /md %}}</dd>
+    <dd>The hash key type. Valid values are "STRING" or "NUMBER".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2422,8 +2422,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The action payload.
-{{% /md %}}</dd>
+    <dd>The action payload.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2431,8 +2431,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range key name.
-{{% /md %}}</dd>
+    <dd>The range key name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2440,8 +2440,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range key type. Valid values are "STRING" or "NUMBER".
-{{% /md %}}</dd>
+    <dd>The range key type. Valid values are "STRING" or "NUMBER".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2449,29 +2449,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range key value.
-{{% /md %}}</dd>
+    <dd>The range key value.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicruleelasticsearch">Topic<wbr>Rule<wbr>Elasticsearch</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleElasticsearch">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleElasticsearch">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleElasticsearchArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleElasticsearchOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2480,8 +2480,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint of your Elasticsearch domain.
-{{% /md %}}</dd>
+    <dd>The endpoint of your Elasticsearch domain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2489,8 +2489,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the document you are storing.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the document you are storing.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2498,8 +2498,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elasticsearch index where you want to store your data.
-{{% /md %}}</dd>
+    <dd>The Elasticsearch index where you want to store your data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2507,8 +2507,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that has access to Elasticsearch.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that has access to Elasticsearch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2516,14 +2516,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of document you are storing.
-{{% /md %}}</dd>
+    <dd>The type of document you are storing.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2532,8 +2532,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint of your Elasticsearch domain.
-{{% /md %}}</dd>
+    <dd>The endpoint of your Elasticsearch domain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2541,8 +2541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the document you are storing.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the document you are storing.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2550,8 +2550,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elasticsearch index where you want to store your data.
-{{% /md %}}</dd>
+    <dd>The Elasticsearch index where you want to store your data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2559,8 +2559,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that has access to Elasticsearch.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that has access to Elasticsearch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2568,14 +2568,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of document you are storing.
-{{% /md %}}</dd>
+    <dd>The type of document you are storing.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2584,8 +2584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint of your Elasticsearch domain.
-{{% /md %}}</dd>
+    <dd>The endpoint of your Elasticsearch domain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2593,8 +2593,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the document you are storing.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the document you are storing.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2602,8 +2602,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elasticsearch index where you want to store your data.
-{{% /md %}}</dd>
+    <dd>The Elasticsearch index where you want to store your data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2611,8 +2611,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that has access to Elasticsearch.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that has access to Elasticsearch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2620,14 +2620,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of document you are storing.
-{{% /md %}}</dd>
+    <dd>The type of document you are storing.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2636,8 +2636,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint of your Elasticsearch domain.
-{{% /md %}}</dd>
+    <dd>The endpoint of your Elasticsearch domain.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2645,8 +2645,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the document you are storing.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the document you are storing.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2654,8 +2654,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Elasticsearch index where you want to store your data.
-{{% /md %}}</dd>
+    <dd>The Elasticsearch index where you want to store your data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2663,8 +2663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that has access to Elasticsearch.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that has access to Elasticsearch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2672,29 +2672,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of document you are storing.
-{{% /md %}}</dd>
+    <dd>The type of document you are storing.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicrulefirehose">Topic<wbr>Rule<wbr>Firehose</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleFirehose">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleFirehose">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleFirehoseArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleFirehoseOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2703,8 +2703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The delivery stream name.
-{{% /md %}}</dd>
+    <dd>The delivery stream name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2712,8 +2712,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2721,14 +2721,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
-{{% /md %}}</dd>
+    <dd>A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2737,8 +2737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The delivery stream name.
-{{% /md %}}</dd>
+    <dd>The delivery stream name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2746,8 +2746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2755,14 +2755,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
-{{% /md %}}</dd>
+    <dd>A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2771,8 +2771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The delivery stream name.
-{{% /md %}}</dd>
+    <dd>The delivery stream name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2780,8 +2780,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2789,14 +2789,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
-{{% /md %}}</dd>
+    <dd>A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2805,8 +2805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The delivery stream name.
-{{% /md %}}</dd>
+    <dd>The delivery stream name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2814,8 +2814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2823,29 +2823,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
-{{% /md %}}</dd>
+    <dd>A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicrulekinesis">Topic<wbr>Rule<wbr>Kinesis</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleKinesis">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleKinesis">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleKinesisArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleKinesisOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2854,8 +2854,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access to the Amazon Kinesis stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access to the Amazon Kinesis stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2863,8 +2863,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Amazon Kinesis stream.
-{{% /md %}}</dd>
+    <dd>The name of the Amazon Kinesis stream.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2872,14 +2872,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The partition key.
-{{% /md %}}</dd>
+    <dd>The partition key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2888,8 +2888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access to the Amazon Kinesis stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access to the Amazon Kinesis stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2897,8 +2897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Amazon Kinesis stream.
-{{% /md %}}</dd>
+    <dd>The name of the Amazon Kinesis stream.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2906,14 +2906,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The partition key.
-{{% /md %}}</dd>
+    <dd>The partition key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2922,8 +2922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access to the Amazon Kinesis stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access to the Amazon Kinesis stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2931,8 +2931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Amazon Kinesis stream.
-{{% /md %}}</dd>
+    <dd>The name of the Amazon Kinesis stream.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2940,14 +2940,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The partition key.
-{{% /md %}}</dd>
+    <dd>The partition key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2956,8 +2956,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access to the Amazon Kinesis stream.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access to the Amazon Kinesis stream.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2965,8 +2965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Amazon Kinesis stream.
-{{% /md %}}</dd>
+    <dd>The name of the Amazon Kinesis stream.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2974,29 +2974,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The partition key.
-{{% /md %}}</dd>
+    <dd>The partition key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicrulelambda">Topic<wbr>Rule<wbr>Lambda</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleLambda">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleLambda">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleLambdaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleLambdaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3005,14 +3005,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3021,14 +3021,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3037,14 +3037,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3053,29 +3053,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicrulerepublish">Topic<wbr>Rule<wbr>Republish</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleRepublish">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleRepublish">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleRepublishArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleRepublishOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3084,8 +3084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3093,14 +3093,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the MQTT topic the message should be republished to.
-{{% /md %}}</dd>
+    <dd>The name of the MQTT topic the message should be republished to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3109,8 +3109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3118,14 +3118,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the MQTT topic the message should be republished to.
-{{% /md %}}</dd>
+    <dd>The name of the MQTT topic the message should be republished to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3134,8 +3134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3143,14 +3143,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the MQTT topic the message should be republished to.
-{{% /md %}}</dd>
+    <dd>The name of the MQTT topic the message should be republished to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3159,8 +3159,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3168,29 +3168,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the MQTT topic the message should be republished to.
-{{% /md %}}</dd>
+    <dd>The name of the MQTT topic the message should be republished to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicrules3">Topic<wbr>Rule<wbr>S3</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleS3">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleS3">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleS3Args">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleS3Output">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3199,8 +3199,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket name.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3208,8 +3208,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The object key.
-{{% /md %}}</dd>
+    <dd>The object key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3217,14 +3217,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch alarm.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3233,8 +3233,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket name.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3242,8 +3242,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object key.
-{{% /md %}}</dd>
+    <dd>The object key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3251,14 +3251,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch alarm.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3267,8 +3267,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket name.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3276,8 +3276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The object key.
-{{% /md %}}</dd>
+    <dd>The object key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3285,14 +3285,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch alarm.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3301,8 +3301,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket name.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3310,8 +3310,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The object key.
-{{% /md %}}</dd>
+    <dd>The object key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3319,29 +3319,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IAM role ARN that allows access to the CloudWatch alarm.
-{{% /md %}}</dd>
+    <dd>The IAM role ARN that allows access to the CloudWatch alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicrulesns">Topic<wbr>Rule<wbr>Sns</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleSns">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleSns">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleSnsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleSnsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3350,8 +3350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3359,8 +3359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the SNS topic.
-{{% /md %}}</dd>
+    <dd>The ARN of the SNS topic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3368,14 +3368,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The message format of the message to publish. Accepted values are "JSON" and "RAW".
-{{% /md %}}</dd>
+    <dd>The message format of the message to publish. Accepted values are "JSON" and "RAW".
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3384,8 +3384,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3393,8 +3393,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the SNS topic.
-{{% /md %}}</dd>
+    <dd>The ARN of the SNS topic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3402,14 +3402,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The message format of the message to publish. Accepted values are "JSON" and "RAW".
-{{% /md %}}</dd>
+    <dd>The message format of the message to publish. Accepted values are "JSON" and "RAW".
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3418,8 +3418,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3427,8 +3427,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the SNS topic.
-{{% /md %}}</dd>
+    <dd>The ARN of the SNS topic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3436,14 +3436,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The message format of the message to publish. Accepted values are "JSON" and "RAW".
-{{% /md %}}</dd>
+    <dd>The message format of the message to publish. Accepted values are "JSON" and "RAW".
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3452,8 +3452,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3461,8 +3461,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the SNS topic.
-{{% /md %}}</dd>
+    <dd>The ARN of the SNS topic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3470,29 +3470,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The message format of the message to publish. Accepted values are "JSON" and "RAW".
-{{% /md %}}</dd>
+    <dd>The message format of the message to publish. Accepted values are "JSON" and "RAW".
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="topicrulesqs">Topic<wbr>Rule<wbr>Sqs</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TopicRuleSqs">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TopicRuleSqs">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleSqsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iot?tab=doc#TopicRuleSqsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3501,8 +3501,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the Amazon SQS queue.
-{{% /md %}}</dd>
+    <dd>The URL of the Amazon SQS queue.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3510,8 +3510,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3519,14 +3519,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use Base64 encoding.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use Base64 encoding.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3535,8 +3535,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the Amazon SQS queue.
-{{% /md %}}</dd>
+    <dd>The URL of the Amazon SQS queue.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3544,8 +3544,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3553,14 +3553,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use Base64 encoding.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use Base64 encoding.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3569,8 +3569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the Amazon SQS queue.
-{{% /md %}}</dd>
+    <dd>The URL of the Amazon SQS queue.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3578,8 +3578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3587,14 +3587,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use Base64 encoding.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use Base64 encoding.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3603,8 +3603,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the Amazon SQS queue.
-{{% /md %}}</dd>
+    <dd>The URL of the Amazon SQS queue.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3612,8 +3612,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the IAM role that grants access.
-{{% /md %}}</dd>
+    <dd>The ARN of the IAM role that grants access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3621,11 +3621,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use Base64 encoding.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use Base64 encoding.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

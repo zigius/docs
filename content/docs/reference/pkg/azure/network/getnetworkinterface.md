@@ -19,29 +19,29 @@ Use this data source to access information about an existing Network Interface.
 
 ## Using GetNetworkInterface {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getNetworkInterface<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#GetNetworkInterfaceArgs">GetNetworkInterfaceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#GetNetworkInterfaceResult">GetNetworkInterfaceResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_network_interface(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupNetworkInterface<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#LookupNetworkInterfaceArgs">LookupNetworkInterfaceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#LookupNetworkInterfaceResult">LookupNetworkInterfaceResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetNetworkInterface </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.GetNetworkInterfaceResult.html">GetNetworkInterfaceResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.GetNetworkInterfaceArgs.html">GetNetworkInterfaceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Network Interface.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -67,14 +67,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Network Interface is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Network Interface is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Network Interface.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -92,14 +92,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Network Interface is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Network Interface is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -108,8 +108,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Network Interface.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -117,14 +117,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Network Interface is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Network Interface is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Network Interface.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -142,11 +142,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Network Interface is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Network Interface is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -162,7 +162,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -171,8 +171,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS servers applied to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>List of DNS servers applied to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -180,8 +180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of DNS servers used by the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The list of DNS servers used by the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -189,8 +189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if accelerated networking is set on the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>Indicates if accelerated networking is set on the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -198,8 +198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate if IP forwarding is set on the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>Indicate if IP forwarding is set on the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -207,8 +207,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -216,8 +216,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The internal dns name label of the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The internal dns name label of the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -225,8 +225,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getnetworkinterfaceipconfiguration">List&lt;Get<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_configuration` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_configuration` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -234,8 +234,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The location of the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -243,8 +243,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address used by the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The MAC address used by the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -252,8 +252,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IP Configuration.
-{{% /md %}}</dd>
+    <dd>The name of the IP Configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -261,8 +261,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network security group associated to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of the network security group associated to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -270,8 +270,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Private IP Address assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The Private IP Address assigned to this Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -279,8 +279,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of private ip addresses associates to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The list of private ip addresses associates to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -288,7 +288,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -296,8 +296,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}List the tags associated to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>List the tags associated to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -305,14 +305,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the virtual machine that the specified Network Interface is attached to.
-{{% /md %}}</dd>
+    <dd>The ID of the virtual machine that the specified Network Interface is attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -321,8 +321,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS servers applied to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>List of DNS servers applied to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -330,8 +330,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of DNS servers used by the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The list of DNS servers used by the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -339,8 +339,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if accelerated networking is set on the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>Indicates if accelerated networking is set on the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -348,8 +348,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate if IP forwarding is set on the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>Indicate if IP forwarding is set on the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -357,8 +357,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -366,8 +366,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The internal dns name label of the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The internal dns name label of the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -375,8 +375,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getnetworkinterfaceipconfiguration">[]Get<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_configuration` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_configuration` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -384,8 +384,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The location of the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -393,8 +393,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address used by the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The MAC address used by the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -402,8 +402,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IP Configuration.
-{{% /md %}}</dd>
+    <dd>The name of the IP Configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -411,8 +411,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network security group associated to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of the network security group associated to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -420,8 +420,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Private IP Address assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The Private IP Address assigned to this Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -429,8 +429,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of private ip addresses associates to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The list of private ip addresses associates to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -438,7 +438,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -446,8 +446,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}List the tags associated to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>List the tags associated to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -455,14 +455,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the virtual machine that the specified Network Interface is attached to.
-{{% /md %}}</dd>
+    <dd>The ID of the virtual machine that the specified Network Interface is attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -471,8 +471,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS servers applied to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>List of DNS servers applied to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,8 +480,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of DNS servers used by the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The list of DNS servers used by the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -489,8 +489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if accelerated networking is set on the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>Indicates if accelerated networking is set on the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -498,8 +498,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicate if IP forwarding is set on the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>Indicate if IP forwarding is set on the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -507,8 +507,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -516,8 +516,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The internal dns name label of the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The internal dns name label of the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -525,8 +525,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getnetworkinterfaceipconfiguration">Get<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_configuration` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_configuration` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -534,8 +534,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The location of the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -543,8 +543,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address used by the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The MAC address used by the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -552,8 +552,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IP Configuration.
-{{% /md %}}</dd>
+    <dd>The name of the IP Configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -561,8 +561,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network security group associated to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of the network security group associated to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -570,8 +570,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Private IP Address assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The Private IP Address assigned to this Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -579,8 +579,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of private ip addresses associates to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The list of private ip addresses associates to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -588,7 +588,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -596,8 +596,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}List the tags associated to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>List the tags associated to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -605,14 +605,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the virtual machine that the specified Network Interface is attached to.
-{{% /md %}}</dd>
+    <dd>The ID of the virtual machine that the specified Network Interface is attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -621,8 +621,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS servers applied to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>List of DNS servers applied to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -630,8 +630,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of DNS servers used by the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The list of DNS servers used by the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -639,8 +639,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if accelerated networking is set on the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>Indicates if accelerated networking is set on the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -648,8 +648,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate if IP forwarding is set on the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>Indicate if IP forwarding is set on the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -657,8 +657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -666,8 +666,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The internal dns name label of the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The internal dns name label of the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -675,8 +675,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getnetworkinterfaceipconfiguration">List[Get<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_configuration` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `ip_configuration` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -684,8 +684,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location of the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The location of the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,8 +693,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The MAC address used by the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The MAC address used by the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -702,8 +702,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the IP Configuration.
-{{% /md %}}</dd>
+    <dd>The name of the IP Configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,8 +711,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network security group associated to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of the network security group associated to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -720,8 +720,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Private IP Address assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The Private IP Address assigned to this Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -729,8 +729,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of private ip addresses associates to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>The list of private ip addresses associates to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -738,7 +738,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -746,8 +746,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}List the tags associated to the specified Network Interface.
-{{% /md %}}</dd>
+    <dd>List the tags associated to the specified Network Interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -755,11 +755,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the virtual machine that the specified Network Interface is attached to.
-{{% /md %}}</dd>
+    <dd>The ID of the virtual machine that the specified Network Interface is attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -772,18 +772,18 @@ The following output properties are available:
 
 
 <h4 id="getnetworkinterfaceipconfiguration">Get<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetNetworkInterfaceIpConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#GetNetworkInterfaceIpConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -792,8 +792,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pool ID's within a Application Gateway that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pool ID's within a Application Gateway that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -801,7 +801,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -809,8 +809,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pool ID's within a Load Balancer that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pool ID's within a Load Balancer that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -818,8 +818,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Inbound NAT Rule ID's within a Load Balancer that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Inbound NAT Rule ID's within a Load Balancer that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -827,8 +827,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Network Interface.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -836,8 +836,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}is this the Primary IP Configuration for this Network Interface?
-{{% /md %}}</dd>
+    <dd>is this the Primary IP Configuration for this Network Interface?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -845,8 +845,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Private IP Address assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The Private IP Address assigned to this Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -854,8 +854,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address allocation type for the Private address, such as `Dynamic` or `Static`.
-{{% /md %}}</dd>
+    <dd>The IP Address allocation type for the Private address, such as `Dynamic` or `Static`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -863,7 +863,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -871,8 +871,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Public IP Address which is connected to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of the Public IP Address which is connected to this Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -880,14 +880,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet which the Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet which the Network Interface is connected to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -896,8 +896,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pool ID's within a Application Gateway that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pool ID's within a Application Gateway that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -905,7 +905,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -913,8 +913,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pool ID's within a Load Balancer that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pool ID's within a Load Balancer that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -922,8 +922,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Inbound NAT Rule ID's within a Load Balancer that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Inbound NAT Rule ID's within a Load Balancer that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -931,8 +931,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Network Interface.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -940,8 +940,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}is this the Primary IP Configuration for this Network Interface?
-{{% /md %}}</dd>
+    <dd>is this the Primary IP Configuration for this Network Interface?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -949,8 +949,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Private IP Address assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The Private IP Address assigned to this Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -958,8 +958,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address allocation type for the Private address, such as `Dynamic` or `Static`.
-{{% /md %}}</dd>
+    <dd>The IP Address allocation type for the Private address, such as `Dynamic` or `Static`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -967,7 +967,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -975,8 +975,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Public IP Address which is connected to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of the Public IP Address which is connected to this Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -984,14 +984,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet which the Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet which the Network Interface is connected to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1000,8 +1000,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pool ID's within a Application Gateway that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pool ID's within a Application Gateway that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1009,7 +1009,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1017,8 +1017,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pool ID's within a Load Balancer that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pool ID's within a Load Balancer that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1026,8 +1026,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Inbound NAT Rule ID's within a Load Balancer that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Inbound NAT Rule ID's within a Load Balancer that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1035,8 +1035,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Network Interface.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1044,8 +1044,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}is this the Primary IP Configuration for this Network Interface?
-{{% /md %}}</dd>
+    <dd>is this the Primary IP Configuration for this Network Interface?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1053,8 +1053,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Private IP Address assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The Private IP Address assigned to this Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1062,8 +1062,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address allocation type for the Private address, such as `Dynamic` or `Static`.
-{{% /md %}}</dd>
+    <dd>The IP Address allocation type for the Private address, such as `Dynamic` or `Static`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1071,7 +1071,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1079,8 +1079,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Public IP Address which is connected to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of the Public IP Address which is connected to this Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1088,14 +1088,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet which the Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet which the Network Interface is connected to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1104,8 +1104,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pool ID's within a Application Gateway that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pool ID's within a Application Gateway that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1113,7 +1113,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1121,8 +1121,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pool ID's within a Load Balancer that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pool ID's within a Load Balancer that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1130,8 +1130,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Inbound NAT Rule ID's within a Load Balancer that this Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>A list of Inbound NAT Rule ID's within a Load Balancer that this Network Interface is connected to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1139,8 +1139,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Network Interface.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1148,8 +1148,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}is this the Primary IP Configuration for this Network Interface?
-{{% /md %}}</dd>
+    <dd>is this the Primary IP Configuration for this Network Interface?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1157,8 +1157,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address allocation type for the Private address, such as `Dynamic` or `Static`.
-{{% /md %}}</dd>
+    <dd>The IP Address allocation type for the Private address, such as `Dynamic` or `Static`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1166,7 +1166,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1174,8 +1174,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Private IP Address assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The Private IP Address assigned to this Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1183,8 +1183,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Public IP Address which is connected to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of the Public IP Address which is connected to this Network Interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1192,11 +1192,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet which the Network Interface is connected to.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet which the Network Interface is connected to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

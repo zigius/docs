@@ -175,26 +175,26 @@ const serviceb1 = new aws.appmesh.VirtualNode("serviceb1", {
 
 
 ## Create a VirtualNode Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#VirtualNode">VirtualNode</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#VirtualNodeArgs">VirtualNodeArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">VirtualNode</span><span class="p">(resource_name, opts=None, </span>mesh_name=None<span class="p">, </span>name=None<span class="p">, </span>spec=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewVirtualNode<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeArgs">VirtualNodeArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNode">VirtualNode</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.VirtualNode.html">VirtualNode</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.VirtualNodeArgs.html">VirtualNodeArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -231,9 +231,9 @@ const serviceb1 = new aws.appmesh.VirtualNode("serviceb1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -251,9 +251,9 @@ const serviceb1 = new aws.appmesh.VirtualNode("serviceb1", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -300,9 +300,9 @@ const serviceb1 = new aws.appmesh.VirtualNode("serviceb1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -339,7 +339,7 @@ const serviceb1 = new aws.appmesh.VirtualNode("serviceb1", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## VirtualNode Resource Properties {#properties}
 
@@ -352,7 +352,7 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -361,8 +361,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual node.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -370,8 +370,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespec">Virtual<wbr>Node<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual node specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual node.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,14 +388,14 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -404,8 +404,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual node.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -413,8 +413,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespec">Virtual<wbr>Node<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual node specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual node.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,14 +431,14 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -447,8 +447,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual node.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -456,8 +456,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespec">Virtual<wbr>Node<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual node specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual node.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,14 +474,14 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -490,8 +490,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual node.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -499,8 +499,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespec">Dict[Virtual<wbr>Node<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual node specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual node.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,11 +517,11 @@ The VirtualNode resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -535,7 +535,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -544,8 +544,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual node.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual node.
+</dd>
 
     <dt class="property-"
             title="">
@@ -553,8 +553,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual node.
+</dd>
 
     <dt class="property-"
             title="">
@@ -562,7 +562,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -570,14 +570,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -586,8 +586,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual node.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual node.
+</dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual node.
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,7 +604,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -612,14 +612,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -628,8 +628,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual node.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual node.
+</dd>
 
     <dt class="property-"
             title="">
@@ -637,8 +637,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual node.
+</dd>
 
     <dt class="property-"
             title="">
@@ -646,7 +646,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -654,14 +654,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -670,8 +670,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual node.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual node.
+</dd>
 
     <dt class="property-"
             title="">
@@ -679,8 +679,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual node.
+</dd>
 
     <dt class="property-"
             title="">
@@ -688,7 +688,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -696,11 +696,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -711,25 +711,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing VirtualNode Resource {#look-up}
 
 Get an existing VirtualNode resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#VirtualNodeState">VirtualNodeState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#VirtualNode">VirtualNode</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>created_date=None<span class="p">, </span>last_updated_date=None<span class="p">, </span>mesh_name=None<span class="p">, </span>name=None<span class="p">, </span>spec=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetVirtualNode<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeState">VirtualNodeState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNode">VirtualNode</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.VirtualNode.html">VirtualNode</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.VirtualNodeState.html">VirtualNodeState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -754,9 +754,9 @@ Get an existing VirtualNode resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -769,36 +769,9 @@ Get an existing VirtualNode resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -823,13 +796,40 @@ Get an existing VirtualNode resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -838,8 +838,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual node.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -847,8 +847,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -856,8 +856,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -865,8 +865,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual node.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -874,8 +874,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual node.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,8 +883,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespec">Virtual<wbr>Node<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual node specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -892,14 +892,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -908,8 +908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual node.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual node.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual node.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,8 +953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespec">Virtual<wbr>Node<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual node specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,14 +962,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -978,8 +978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual node.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,8 +987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,8 +996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,8 +1005,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual node.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1014,8 +1014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual node.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespec">Virtual<wbr>Node<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual node specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,14 +1032,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual node.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual node.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,8 +1075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual node.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual node.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespec">Dict[Virtual<wbr>Node<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual node specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,11 +1102,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1121,18 +1121,18 @@ The following state arguments are supported:
 
 
 <h4 id="virtualnodespec">Virtual<wbr>Node<wbr>Spec</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpec">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpec">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1141,8 +1141,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecbackend">List&lt;Virtual<wbr>Node<wbr>Spec<wbr>Backend<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The backends to which the virtual node is expected to send outbound traffic.
-{{% /md %}}</dd>
+    <dd>The backends to which the virtual node is expected to send outbound traffic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,8 +1150,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistener">Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The listeners from which the virtual node is expected to receive inbound traffic.
-{{% /md %}}</dd>
+    <dd>The listeners from which the virtual node is expected to receive inbound traffic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,8 +1159,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclogging">Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The inbound and outbound access logging information for the virtual node.
-{{% /md %}}</dd>
+    <dd>The inbound and outbound access logging information for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,14 +1168,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscovery">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The service discovery information for the virtual node.
-{{% /md %}}</dd>
+    <dd>The service discovery information for the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1184,8 +1184,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecbackend">[]Virtual<wbr>Node<wbr>Spec<wbr>Backend</a></span>
     </dt>
-    <dd>{{% md %}}The backends to which the virtual node is expected to send outbound traffic.
-{{% /md %}}</dd>
+    <dd>The backends to which the virtual node is expected to send outbound traffic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistener">Virtual<wbr>Node<wbr>Spec<wbr>Listener</a></span>
     </dt>
-    <dd>{{% md %}}The listeners from which the virtual node is expected to receive inbound traffic.
-{{% /md %}}</dd>
+    <dd>The listeners from which the virtual node is expected to receive inbound traffic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclogging">Virtual<wbr>Node<wbr>Spec<wbr>Logging</a></span>
     </dt>
-    <dd>{{% md %}}The inbound and outbound access logging information for the virtual node.
-{{% /md %}}</dd>
+    <dd>The inbound and outbound access logging information for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,14 +1211,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscovery">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery</a></span>
     </dt>
-    <dd>{{% md %}}The service discovery information for the virtual node.
-{{% /md %}}</dd>
+    <dd>The service discovery information for the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1227,8 +1227,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecbackend">Virtual<wbr>Node<wbr>Spec<wbr>Backend[]</a></span>
     </dt>
-    <dd>{{% md %}}The backends to which the virtual node is expected to send outbound traffic.
-{{% /md %}}</dd>
+    <dd>The backends to which the virtual node is expected to send outbound traffic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,8 +1236,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistener">Virtual<wbr>Node<wbr>Spec<wbr>Listener</a></span>
     </dt>
-    <dd>{{% md %}}The listeners from which the virtual node is expected to receive inbound traffic.
-{{% /md %}}</dd>
+    <dd>The listeners from which the virtual node is expected to receive inbound traffic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,8 +1245,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclogging">Virtual<wbr>Node<wbr>Spec<wbr>Logging</a></span>
     </dt>
-    <dd>{{% md %}}The inbound and outbound access logging information for the virtual node.
-{{% /md %}}</dd>
+    <dd>The inbound and outbound access logging information for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,14 +1254,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscovery">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery</a></span>
     </dt>
-    <dd>{{% md %}}The service discovery information for the virtual node.
-{{% /md %}}</dd>
+    <dd>The service discovery information for the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1270,8 +1270,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecbackend">List[Virtual<wbr>Node<wbr>Spec<wbr>Backend]</a></span>
     </dt>
-    <dd>{{% md %}}The backends to which the virtual node is expected to send outbound traffic.
-{{% /md %}}</dd>
+    <dd>The backends to which the virtual node is expected to send outbound traffic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1279,8 +1279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistener">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Listener]</a></span>
     </dt>
-    <dd>{{% md %}}The listeners from which the virtual node is expected to receive inbound traffic.
-{{% /md %}}</dd>
+    <dd>The listeners from which the virtual node is expected to receive inbound traffic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,8 +1288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclogging">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Logging]</a></span>
     </dt>
-    <dd>{{% md %}}The inbound and outbound access logging information for the virtual node.
-{{% /md %}}</dd>
+    <dd>The inbound and outbound access logging information for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,29 +1297,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscovery">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery]</a></span>
     </dt>
-    <dd>{{% md %}}The service discovery information for the virtual node.
-{{% /md %}}</dd>
+    <dd>The service discovery information for the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespecbackend">Virtual<wbr>Node<wbr>Spec<wbr>Backend</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecBackend">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecBackend">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecBackendArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecBackendOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1328,14 +1328,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecbackendvirtualservice">Virtual<wbr>Node<wbr>Spec<wbr>Backend<wbr>Virtual<wbr>Service<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a virtual service to use as a backend for a virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies a virtual service to use as a backend for a virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1344,14 +1344,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecbackendvirtualservice">Virtual<wbr>Node<wbr>Spec<wbr>Backend<wbr>Virtual<wbr>Service</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a virtual service to use as a backend for a virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies a virtual service to use as a backend for a virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1360,14 +1360,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecbackendvirtualservice">Virtual<wbr>Node<wbr>Spec<wbr>Backend<wbr>Virtual<wbr>Service</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a virtual service to use as a backend for a virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies a virtual service to use as a backend for a virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1376,29 +1376,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecbackendvirtualservice">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Backend<wbr>Virtual<wbr>Service]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a virtual service to use as a backend for a virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies a virtual service to use as a backend for a virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespecbackendvirtualservice">Virtual<wbr>Node<wbr>Spec<wbr>Backend<wbr>Virtual<wbr>Service</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecBackendVirtualService">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecBackendVirtualService">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecBackendVirtualServiceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecBackendVirtualServiceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1407,14 +1407,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual service that is acting as a virtual node backend.
-{{% /md %}}</dd>
+    <dd>The name of the virtual service that is acting as a virtual node backend.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1423,14 +1423,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual service that is acting as a virtual node backend.
-{{% /md %}}</dd>
+    <dd>The name of the virtual service that is acting as a virtual node backend.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1439,14 +1439,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual service that is acting as a virtual node backend.
-{{% /md %}}</dd>
+    <dd>The name of the virtual service that is acting as a virtual node backend.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1455,29 +1455,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual service that is acting as a virtual node backend.
-{{% /md %}}</dd>
+    <dd>The name of the virtual service that is acting as a virtual node backend.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespeclistener">Virtual<wbr>Node<wbr>Spec<wbr>Listener</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecListener">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecListener">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecListenerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecListenerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1486,8 +1486,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistenerportmapping">Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The port mapping information for the listener.
-{{% /md %}}</dd>
+    <dd>The port mapping information for the listener.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,14 +1495,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistenerhealthcheck">Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Health<wbr>Check<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The health check information for the listener.
-{{% /md %}}</dd>
+    <dd>The health check information for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1511,8 +1511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistenerportmapping">Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping</a></span>
     </dt>
-    <dd>{{% md %}}The port mapping information for the listener.
-{{% /md %}}</dd>
+    <dd>The port mapping information for the listener.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,14 +1520,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistenerhealthcheck">Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Health<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}The health check information for the listener.
-{{% /md %}}</dd>
+    <dd>The health check information for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1536,8 +1536,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistenerportmapping">Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping</a></span>
     </dt>
-    <dd>{{% md %}}The port mapping information for the listener.
-{{% /md %}}</dd>
+    <dd>The port mapping information for the listener.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,14 +1545,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistenerhealthcheck">Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Health<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}The health check information for the listener.
-{{% /md %}}</dd>
+    <dd>The health check information for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1561,8 +1561,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistenerportmapping">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping]</a></span>
     </dt>
-    <dd>{{% md %}}The port mapping information for the listener.
-{{% /md %}}</dd>
+    <dd>The port mapping information for the listener.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1570,29 +1570,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespeclistenerhealthcheck">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Health<wbr>Check]</a></span>
     </dt>
-    <dd>{{% md %}}The health check information for the listener.
-{{% /md %}}</dd>
+    <dd>The health check information for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespeclistenerhealthcheck">Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Health<wbr>Check</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecListenerHealthCheck">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecListenerHealthCheck">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecListenerHealthCheckArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecListenerHealthCheckOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1601,9 +1601,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of consecutive successful health checks that must occur before declaring listener healthy.
+    <dd>The number of consecutive successful health checks that must occur before declaring listener healthy.
 * `interval_millis`- (Required) The time period in milliseconds between each health check execution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1611,7 +1611,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1619,8 +1619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol for the health check request. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol for the health check request. Valid values are `http` and `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1628,8 +1628,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time to wait when receiving a response from the health check, in milliseconds.
-{{% /md %}}</dd>
+    <dd>The amount of time to wait when receiving a response from the health check, in milliseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1637,8 +1637,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy.
-{{% /md %}}</dd>
+    <dd>The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1646,8 +1646,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination path for the health check request. This is only required if the specified protocol is `http`.
-{{% /md %}}</dd>
+    <dd>The destination path for the health check request. This is only required if the specified protocol is `http`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1655,14 +1655,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The destination port for the health check request. This port must match the port defined in the `port_mapping` for the listener.
-{{% /md %}}</dd>
+    <dd>The destination port for the health check request. This port must match the port defined in the `port_mapping` for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1671,9 +1671,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of consecutive successful health checks that must occur before declaring listener healthy.
+    <dd>The number of consecutive successful health checks that must occur before declaring listener healthy.
 * `interval_millis`- (Required) The time period in milliseconds between each health check execution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1681,7 +1681,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1689,8 +1689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol for the health check request. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol for the health check request. Valid values are `http` and `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1698,8 +1698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time to wait when receiving a response from the health check, in milliseconds.
-{{% /md %}}</dd>
+    <dd>The amount of time to wait when receiving a response from the health check, in milliseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1707,8 +1707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy.
-{{% /md %}}</dd>
+    <dd>The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1716,8 +1716,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination path for the health check request. This is only required if the specified protocol is `http`.
-{{% /md %}}</dd>
+    <dd>The destination path for the health check request. This is only required if the specified protocol is `http`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,14 +1725,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The destination port for the health check request. This port must match the port defined in the `port_mapping` for the listener.
-{{% /md %}}</dd>
+    <dd>The destination port for the health check request. This port must match the port defined in the `port_mapping` for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1741,9 +1741,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of consecutive successful health checks that must occur before declaring listener healthy.
+    <dd>The number of consecutive successful health checks that must occur before declaring listener healthy.
 * `interval_millis`- (Required) The time period in milliseconds between each health check execution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1751,7 +1751,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1759,8 +1759,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol for the health check request. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol for the health check request. Valid values are `http` and `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1768,8 +1768,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time to wait when receiving a response from the health check, in milliseconds.
-{{% /md %}}</dd>
+    <dd>The amount of time to wait when receiving a response from the health check, in milliseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1777,8 +1777,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy.
-{{% /md %}}</dd>
+    <dd>The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1786,8 +1786,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination path for the health check request. This is only required if the specified protocol is `http`.
-{{% /md %}}</dd>
+    <dd>The destination path for the health check request. This is only required if the specified protocol is `http`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1795,14 +1795,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The destination port for the health check request. This port must match the port defined in the `port_mapping` for the listener.
-{{% /md %}}</dd>
+    <dd>The destination port for the health check request. This port must match the port defined in the `port_mapping` for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1811,9 +1811,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of consecutive successful health checks that must occur before declaring listener healthy.
+    <dd>The number of consecutive successful health checks that must occur before declaring listener healthy.
 * `interval_millis`- (Required) The time period in milliseconds between each health check execution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1821,7 +1821,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1829,8 +1829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol for the health check request. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol for the health check request. Valid values are `http` and `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1838,8 +1838,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of time to wait when receiving a response from the health check, in milliseconds.
-{{% /md %}}</dd>
+    <dd>The amount of time to wait when receiving a response from the health check, in milliseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1847,8 +1847,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy.
-{{% /md %}}</dd>
+    <dd>The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1856,8 +1856,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination path for the health check request. This is only required if the specified protocol is `http`.
-{{% /md %}}</dd>
+    <dd>The destination path for the health check request. This is only required if the specified protocol is `http`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,29 +1865,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The destination port for the health check request. This port must match the port defined in the `port_mapping` for the listener.
-{{% /md %}}</dd>
+    <dd>The destination port for the health check request. This port must match the port defined in the `port_mapping` for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespeclistenerportmapping">Virtual<wbr>Node<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecListenerPortMapping">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecListenerPortMapping">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecListenerPortMappingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecListenerPortMappingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1896,8 +1896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used for the port mapping.
-{{% /md %}}</dd>
+    <dd>The port used for the port mapping.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1905,14 +1905,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used for the port mapping. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol used for the port mapping. Valid values are `http` and `tcp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1921,8 +1921,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used for the port mapping.
-{{% /md %}}</dd>
+    <dd>The port used for the port mapping.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1930,14 +1930,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used for the port mapping. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol used for the port mapping. Valid values are `http` and `tcp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1946,8 +1946,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port used for the port mapping.
-{{% /md %}}</dd>
+    <dd>The port used for the port mapping.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1955,14 +1955,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used for the port mapping. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol used for the port mapping. Valid values are `http` and `tcp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1971,8 +1971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port used for the port mapping.
-{{% /md %}}</dd>
+    <dd>The port used for the port mapping.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1980,29 +1980,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used for the port mapping. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol used for the port mapping. Valid values are `http` and `tcp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespeclogging">Virtual<wbr>Node<wbr>Spec<wbr>Logging</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecLogging">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecLogging">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecLoggingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecLoggingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2011,14 +2011,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecloggingaccesslog">Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The access log configuration for a virtual node.
-{{% /md %}}</dd>
+    <dd>The access log configuration for a virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2027,14 +2027,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecloggingaccesslog">Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log</a></span>
     </dt>
-    <dd>{{% md %}}The access log configuration for a virtual node.
-{{% /md %}}</dd>
+    <dd>The access log configuration for a virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2043,14 +2043,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecloggingaccesslog">Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log</a></span>
     </dt>
-    <dd>{{% md %}}The access log configuration for a virtual node.
-{{% /md %}}</dd>
+    <dd>The access log configuration for a virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2059,29 +2059,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecloggingaccesslog">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log]</a></span>
     </dt>
-    <dd>{{% md %}}The access log configuration for a virtual node.
-{{% /md %}}</dd>
+    <dd>The access log configuration for a virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespecloggingaccesslog">Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecLoggingAccessLog">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecLoggingAccessLog">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecLoggingAccessLogArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecLoggingAccessLogOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2090,14 +2090,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecloggingaccesslogfile">Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log<wbr>File<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The file object to send virtual node access logs to.
-{{% /md %}}</dd>
+    <dd>The file object to send virtual node access logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2106,14 +2106,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecloggingaccesslogfile">Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log<wbr>File</a></span>
     </dt>
-    <dd>{{% md %}}The file object to send virtual node access logs to.
-{{% /md %}}</dd>
+    <dd>The file object to send virtual node access logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2122,14 +2122,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecloggingaccesslogfile">Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log<wbr>File</a></span>
     </dt>
-    <dd>{{% md %}}The file object to send virtual node access logs to.
-{{% /md %}}</dd>
+    <dd>The file object to send virtual node access logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2138,29 +2138,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecloggingaccesslogfile">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log<wbr>File]</a></span>
     </dt>
-    <dd>{{% md %}}The file object to send virtual node access logs to.
-{{% /md %}}</dd>
+    <dd>The file object to send virtual node access logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespecloggingaccesslogfile">Virtual<wbr>Node<wbr>Spec<wbr>Logging<wbr>Access<wbr>Log<wbr>File</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecLoggingAccessLogFile">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecLoggingAccessLogFile">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecLoggingAccessLogFileArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecLoggingAccessLogFileOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2169,14 +2169,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The file path to write access logs to. You can use `/dev/stdout` to send access logs to standard out.
-{{% /md %}}</dd>
+    <dd>The file path to write access logs to. You can use `/dev/stdout` to send access logs to standard out.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2185,14 +2185,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The file path to write access logs to. You can use `/dev/stdout` to send access logs to standard out.
-{{% /md %}}</dd>
+    <dd>The file path to write access logs to. You can use `/dev/stdout` to send access logs to standard out.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2201,14 +2201,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The file path to write access logs to. You can use `/dev/stdout` to send access logs to standard out.
-{{% /md %}}</dd>
+    <dd>The file path to write access logs to. You can use `/dev/stdout` to send access logs to standard out.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2217,29 +2217,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The file path to write access logs to. You can use `/dev/stdout` to send access logs to standard out.
-{{% /md %}}</dd>
+    <dd>The file path to write access logs to. You can use `/dev/stdout` to send access logs to standard out.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespecservicediscovery">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecServiceDiscovery">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecServiceDiscovery">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecServiceDiscoveryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecServiceDiscoveryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2248,8 +2248,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscoveryawscloudmap">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Aws<wbr>Cloud<wbr>Map<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies any AWS Cloud Map information for the virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies any AWS Cloud Map information for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2257,14 +2257,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscoverydns">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Dns<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the DNS service name for the virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies the DNS service name for the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2273,8 +2273,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscoveryawscloudmap">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Aws<wbr>Cloud<wbr>Map</a></span>
     </dt>
-    <dd>{{% md %}}Specifies any AWS Cloud Map information for the virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies any AWS Cloud Map information for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2282,14 +2282,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscoverydns">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the DNS service name for the virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies the DNS service name for the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2298,8 +2298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscoveryawscloudmap">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Aws<wbr>Cloud<wbr>Map</a></span>
     </dt>
-    <dd>{{% md %}}Specifies any AWS Cloud Map information for the virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies any AWS Cloud Map information for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2307,14 +2307,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscoverydns">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Dns</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the DNS service name for the virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies the DNS service name for the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2323,8 +2323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscoveryawscloudmap">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Aws<wbr>Cloud<wbr>Map]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies any AWS Cloud Map information for the virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies any AWS Cloud Map information for the virtual node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2332,29 +2332,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnodespecservicediscoverydns">Dict[Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Dns]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the DNS service name for the virtual node.
-{{% /md %}}</dd>
+    <dd>Specifies the DNS service name for the virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespecservicediscoveryawscloudmap">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Aws<wbr>Cloud<wbr>Map</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecServiceDiscoveryAwsCloudMap">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecServiceDiscoveryAwsCloudMap">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecServiceDiscoveryAwsCloudMapArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecServiceDiscoveryAwsCloudMapOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2363,9 +2363,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS Cloud Map namespace to use.
+    <dd>The name of the AWS Cloud Map namespace to use.
 Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/providers/aws/r/service_discovery_http_namespace.html) resource to configure a Cloud Map namespace.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2373,8 +2373,8 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS Cloud Map service to use. Use the [`aws.servicediscovery.Service`](https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html) resource to configure a Cloud Map service.
-{{% /md %}}</dd>
+    <dd>The name of the AWS Cloud Map service to use. Use the [`aws.servicediscovery.Service`](https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html) resource to configure a Cloud Map service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2382,14 +2382,14 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
-{{% /md %}}</dd>
+    <dd>A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2398,9 +2398,9 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS Cloud Map namespace to use.
+    <dd>The name of the AWS Cloud Map namespace to use.
 Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/providers/aws/r/service_discovery_http_namespace.html) resource to configure a Cloud Map namespace.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2408,8 +2408,8 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS Cloud Map service to use. Use the [`aws.servicediscovery.Service`](https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html) resource to configure a Cloud Map service.
-{{% /md %}}</dd>
+    <dd>The name of the AWS Cloud Map service to use. Use the [`aws.servicediscovery.Service`](https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html) resource to configure a Cloud Map service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,14 +2417,14 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
-{{% /md %}}</dd>
+    <dd>A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2433,9 +2433,9 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS Cloud Map namespace to use.
+    <dd>The name of the AWS Cloud Map namespace to use.
 Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/providers/aws/r/service_discovery_http_namespace.html) resource to configure a Cloud Map namespace.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2443,8 +2443,8 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS Cloud Map service to use. Use the [`aws.servicediscovery.Service`](https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html) resource to configure a Cloud Map service.
-{{% /md %}}</dd>
+    <dd>The name of the AWS Cloud Map service to use. Use the [`aws.servicediscovery.Service`](https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html) resource to configure a Cloud Map service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2452,14 +2452,14 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
-{{% /md %}}</dd>
+    <dd>A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2468,9 +2468,9 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS Cloud Map namespace to use.
+    <dd>The name of the AWS Cloud Map namespace to use.
 Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/providers/aws/r/service_discovery_http_namespace.html) resource to configure a Cloud Map namespace.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2478,8 +2478,8 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS Cloud Map service to use. Use the [`aws.servicediscovery.Service`](https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html) resource to configure a Cloud Map service.
-{{% /md %}}</dd>
+    <dd>The name of the AWS Cloud Map service to use. Use the [`aws.servicediscovery.Service`](https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html) resource to configure a Cloud Map service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2487,29 +2487,29 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
-{{% /md %}}</dd>
+    <dd>A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualnodespecservicediscoverydns">Virtual<wbr>Node<wbr>Spec<wbr>Service<wbr>Discovery<wbr>Dns</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualNodeSpecServiceDiscoveryDns">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualNodeSpecServiceDiscoveryDns">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecServiceDiscoveryDnsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualNodeSpecServiceDiscoveryDnsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2518,14 +2518,14 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for your virtual node.
-{{% /md %}}</dd>
+    <dd>The DNS host name for your virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2534,14 +2534,14 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for your virtual node.
-{{% /md %}}</dd>
+    <dd>The DNS host name for your virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2550,14 +2550,14 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for your virtual node.
-{{% /md %}}</dd>
+    <dd>The DNS host name for your virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2566,11 +2566,11 @@ Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/pro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS host name for your virtual node.
-{{% /md %}}</dd>
+    <dd>The DNS host name for your virtual node.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

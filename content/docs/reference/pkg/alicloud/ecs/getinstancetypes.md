@@ -41,29 +41,29 @@ const instance = new alicloud.ecs.Instance("instance", {
 
 ## Using GetInstanceTypes {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getInstanceTypes<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetInstanceTypesArgs">GetInstanceTypesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetInstanceTypesResult">GetInstanceTypesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_instance_types(</span>availability_zone=None<span class="p">, </span>cpu_core_count=None<span class="p">, </span>eni_amount=None<span class="p">, </span>gpu_amount=None<span class="p">, </span>gpu_spec=None<span class="p">, </span>instance_charge_type=None<span class="p">, </span>instance_type_family=None<span class="p">, </span>is_outdated=None<span class="p">, </span>kubernetes_node_role=None<span class="p">, </span>memory_size=None<span class="p">, </span>network_type=None<span class="p">, </span>output_file=None<span class="p">, </span>sorted_by=None<span class="p">, </span>spot_strategy=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupInstanceTypes<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupInstanceTypesArgs">LookupInstanceTypesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupInstanceTypesResult">LookupInstanceTypesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetInstanceTypes </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ecs.GetInstanceTypesResult.html">GetInstanceTypesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ecs.GetInstanceTypesArgs.html">GetInstanceTypesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -71,7 +71,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -80,8 +80,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone where instance types are supported.
-{{% /md %}}</dd>
+    <dd>The zone where instance types are supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -89,8 +89,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific number of cpu cores.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific number of cpu cores.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -98,8 +98,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter the result whose network interface number is no more than `eni_amount`.
-{{% /md %}}</dd>
+    <dd>Filter the result whose network interface number is no more than `eni_amount`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -107,8 +107,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The GPU amount of an instance type.
-{{% /md %}}</dd>
+    <dd>The GPU amount of an instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -116,8 +116,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The GPU spec of an instance type.
-{{% /md %}}</dd>
+    <dd>The GPU spec of an instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -125,8 +125,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by charge type. Valid values: `PrePaid` and `PostPaid`. Default to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Filter the results by charge type. Valid values: `PrePaid` and `PostPaid`. Default to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -134,8 +134,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results based on their family name. For example: 'ecs.n4'.
-{{% /md %}}</dd>
+    <dd>Filter the results based on their family name. For example: 'ecs.n4'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -143,8 +143,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, outdated instance types are included in the results. Default to false.
-{{% /md %}}</dd>
+    <dd>If true, outdated instance types are included in the results. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -152,7 +152,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -160,8 +160,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific memory size in GB.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific memory size in GB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -169,8 +169,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by network type. Valid values: `Classic` and `Vpc`.
-{{% /md %}}</dd>
+    <dd>Filter the results by network type. Valid values: `Classic` and `Vpc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -178,7 +178,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -186,7 +186,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -194,14 +194,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by ECS spot type. Valid values: `NoSpot`, `SpotWithPriceLimit` and `SpotAsPriceGo`. Default to `NoSpot`.
-{{% /md %}}</dd>
+    <dd>Filter the results by ECS spot type. Valid values: `NoSpot`, `SpotWithPriceLimit` and `SpotAsPriceGo`. Default to `NoSpot`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -210,8 +210,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone where instance types are supported.
-{{% /md %}}</dd>
+    <dd>The zone where instance types are supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -219,8 +219,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific number of cpu cores.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific number of cpu cores.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,8 +228,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter the result whose network interface number is no more than `eni_amount`.
-{{% /md %}}</dd>
+    <dd>Filter the result whose network interface number is no more than `eni_amount`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,8 +237,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The GPU amount of an instance type.
-{{% /md %}}</dd>
+    <dd>The GPU amount of an instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The GPU spec of an instance type.
-{{% /md %}}</dd>
+    <dd>The GPU spec of an instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,8 +255,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by charge type. Valid values: `PrePaid` and `PostPaid`. Default to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Filter the results by charge type. Valid values: `PrePaid` and `PostPaid`. Default to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results based on their family name. For example: 'ecs.n4'.
-{{% /md %}}</dd>
+    <dd>Filter the results based on their family name. For example: 'ecs.n4'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,8 +273,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, outdated instance types are included in the results. Default to false.
-{{% /md %}}</dd>
+    <dd>If true, outdated instance types are included in the results. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,7 +282,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific memory size in GB.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific memory size in GB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by network type. Valid values: `Classic` and `Vpc`.
-{{% /md %}}</dd>
+    <dd>Filter the results by network type. Valid values: `Classic` and `Vpc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,7 +308,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -316,7 +316,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,14 +324,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by ECS spot type. Valid values: `NoSpot`, `SpotWithPriceLimit` and `SpotAsPriceGo`. Default to `NoSpot`.
-{{% /md %}}</dd>
+    <dd>Filter the results by ECS spot type. Valid values: `NoSpot`, `SpotWithPriceLimit` and `SpotAsPriceGo`. Default to `NoSpot`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -340,8 +340,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone where instance types are supported.
-{{% /md %}}</dd>
+    <dd>The zone where instance types are supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,8 +349,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific number of cpu cores.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific number of cpu cores.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,8 +358,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Filter the result whose network interface number is no more than `eni_amount`.
-{{% /md %}}</dd>
+    <dd>Filter the result whose network interface number is no more than `eni_amount`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,8 +367,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The GPU amount of an instance type.
-{{% /md %}}</dd>
+    <dd>The GPU amount of an instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The GPU spec of an instance type.
-{{% /md %}}</dd>
+    <dd>The GPU spec of an instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by charge type. Valid values: `PrePaid` and `PostPaid`. Default to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Filter the results by charge type. Valid values: `PrePaid` and `PostPaid`. Default to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,8 +394,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results based on their family name. For example: 'ecs.n4'.
-{{% /md %}}</dd>
+    <dd>Filter the results based on their family name. For example: 'ecs.n4'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,8 +403,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, outdated instance types are included in the results. Default to false.
-{{% /md %}}</dd>
+    <dd>If true, outdated instance types are included in the results. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,7 +412,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific memory size in GB.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific memory size in GB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by network type. Valid values: `Classic` and `Vpc`.
-{{% /md %}}</dd>
+    <dd>Filter the results by network type. Valid values: `Classic` and `Vpc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,7 +438,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,7 +446,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,14 +454,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by ECS spot type. Valid values: `NoSpot`, `SpotWithPriceLimit` and `SpotAsPriceGo`. Default to `NoSpot`.
-{{% /md %}}</dd>
+    <dd>Filter the results by ECS spot type. Valid values: `NoSpot`, `SpotWithPriceLimit` and `SpotAsPriceGo`. Default to `NoSpot`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -470,8 +470,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone where instance types are supported.
-{{% /md %}}</dd>
+    <dd>The zone where instance types are supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific number of cpu cores.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific number of cpu cores.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Filter the result whose network interface number is no more than `eni_amount`.
-{{% /md %}}</dd>
+    <dd>Filter the result whose network interface number is no more than `eni_amount`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The GPU amount of an instance type.
-{{% /md %}}</dd>
+    <dd>The GPU amount of an instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The GPU spec of an instance type.
-{{% /md %}}</dd>
+    <dd>The GPU spec of an instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by charge type. Valid values: `PrePaid` and `PostPaid`. Default to `PostPaid`.
-{{% /md %}}</dd>
+    <dd>Filter the results by charge type. Valid values: `PrePaid` and `PostPaid`. Default to `PostPaid`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results based on their family name. For example: 'ecs.n4'.
-{{% /md %}}</dd>
+    <dd>Filter the results based on their family name. For example: 'ecs.n4'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,8 +533,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, outdated instance types are included in the results. Default to false.
-{{% /md %}}</dd>
+    <dd>If true, outdated instance types are included in the results. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,7 +542,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,8 +550,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific memory size in GB.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific memory size in GB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,8 +559,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by network type. Valid values: `Classic` and `Vpc`.
-{{% /md %}}</dd>
+    <dd>Filter the results by network type. Valid values: `Classic` and `Vpc`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,7 +568,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,7 +576,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -584,11 +584,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by ECS spot type. Valid values: `NoSpot`, `SpotWithPriceLimit` and `SpotAsPriceGo`. Default to `NoSpot`.
-{{% /md %}}</dd>
+    <dd>Filter the results by ECS spot type. Valid values: `NoSpot`, `SpotWithPriceLimit` and `SpotAsPriceGo`. Default to `NoSpot`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -604,7 +604,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -613,8 +613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance type IDs.
-{{% /md %}}</dd>
+    <dd>A list of instance type IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,8 +631,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetype">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Outputs.<wbr>Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of image types. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of image types. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -640,7 +640,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -648,8 +648,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of CPU cores.
-{{% /md %}}</dd>
+    <dd>Number of CPU cores.
+</dd>
 
     <dt class="property-"
             title="">
@@ -657,8 +657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of network interfaces that an instance type can be attached to.
-{{% /md %}}</dd>
+    <dd>The maximum number of network interfaces that an instance type can be attached to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -666,7 +666,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -674,7 +674,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -682,7 +682,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -690,7 +690,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -698,7 +698,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -706,7 +706,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -714,8 +714,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Size of memory, measured in GB.
-{{% /md %}}</dd>
+    <dd>Size of memory, measured in GB.
+</dd>
 
     <dt class="property-"
             title="">
@@ -723,7 +723,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -731,7 +731,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -739,7 +739,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -747,13 +747,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -762,8 +762,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -771,8 +771,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance type IDs.
-{{% /md %}}</dd>
+    <dd>A list of instance type IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -780,8 +780,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetype">[]Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type</a></span>
     </dt>
-    <dd>{{% md %}}A list of image types. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of image types. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -789,7 +789,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -797,8 +797,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of CPU cores.
-{{% /md %}}</dd>
+    <dd>Number of CPU cores.
+</dd>
 
     <dt class="property-"
             title="">
@@ -806,8 +806,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of network interfaces that an instance type can be attached to.
-{{% /md %}}</dd>
+    <dd>The maximum number of network interfaces that an instance type can be attached to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -815,7 +815,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -823,7 +823,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -831,7 +831,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -839,7 +839,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -847,7 +847,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -855,7 +855,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -863,8 +863,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Size of memory, measured in GB.
-{{% /md %}}</dd>
+    <dd>Size of memory, measured in GB.
+</dd>
 
     <dt class="property-"
             title="">
@@ -872,7 +872,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -880,7 +880,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -888,7 +888,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -896,13 +896,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -911,8 +911,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -920,8 +920,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance type IDs.
-{{% /md %}}</dd>
+    <dd>A list of instance type IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -929,8 +929,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetype">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of image types. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of image types. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -938,7 +938,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -946,8 +946,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of CPU cores.
-{{% /md %}}</dd>
+    <dd>Number of CPU cores.
+</dd>
 
     <dt class="property-"
             title="">
@@ -955,8 +955,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of network interfaces that an instance type can be attached to.
-{{% /md %}}</dd>
+    <dd>The maximum number of network interfaces that an instance type can be attached to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -964,7 +964,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -972,7 +972,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -980,7 +980,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -988,7 +988,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -996,7 +996,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1004,7 +1004,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1012,8 +1012,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Size of memory, measured in GB.
-{{% /md %}}</dd>
+    <dd>Size of memory, measured in GB.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1021,7 +1021,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1029,7 +1029,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1037,7 +1037,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1045,13 +1045,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1060,8 +1060,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1069,8 +1069,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance type IDs.
-{{% /md %}}</dd>
+    <dd>A list of instance type IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1078,8 +1078,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetype">List[Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type]</a></span>
     </dt>
-    <dd>{{% md %}}A list of image types. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of image types. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -1087,7 +1087,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1095,8 +1095,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of CPU cores.
-{{% /md %}}</dd>
+    <dd>Number of CPU cores.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1104,8 +1104,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of network interfaces that an instance type can be attached to.
-{{% /md %}}</dd>
+    <dd>The maximum number of network interfaces that an instance type can be attached to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1113,7 +1113,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1121,7 +1121,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1129,7 +1129,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1137,7 +1137,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1145,7 +1145,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1153,7 +1153,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1161,8 +1161,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Size of memory, measured in GB.
-{{% /md %}}</dd>
+    <dd>Size of memory, measured in GB.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1170,7 +1170,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1178,7 +1178,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1186,7 +1186,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1194,10 +1194,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1210,18 +1210,18 @@ The following output properties are available:
 
 
 <h4 id="getinstancetypesinstancetype">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstanceTypesInstanceType">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetInstanceTypesInstanceType">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1230,8 +1230,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of availability zones that support the instance type.
-{{% /md %}}</dd>
+    <dd>List of availability zones that support the instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1239,8 +1239,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypeburstableinstance">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Inputs.<wbr>Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Burstable<wbr>Instance<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The burstable instance attribution:
-{{% /md %}}</dd>
+    <dd>The burstable instance attribution:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1248,8 +1248,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific number of cpu cores.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific number of cpu cores.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1257,8 +1257,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter the result whose network interface number is no more than `eni_amount`.
-{{% /md %}}</dd>
+    <dd>Filter the result whose network interface number is no more than `eni_amount`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1266,8 +1266,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type family.
-{{% /md %}}</dd>
+    <dd>The instance type family.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1275,8 +1275,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypegpu">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Inputs.<wbr>Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Gpu<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The GPU attribution of an instance type:
-{{% /md %}}</dd>
+    <dd>The GPU attribution of an instance type:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1284,8 +1284,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance type.
-{{% /md %}}</dd>
+    <dd>ID of the instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1293,8 +1293,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypelocalstorage">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Inputs.<wbr>Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Local<wbr>Storage<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Local storage of an instance type:
-{{% /md %}}</dd>
+    <dd>Local storage of an instance type:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1302,8 +1302,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific memory size in GB.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific memory size in GB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1311,13 +1311,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1326,8 +1326,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of availability zones that support the instance type.
-{{% /md %}}</dd>
+    <dd>List of availability zones that support the instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1335,8 +1335,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypeburstableinstance">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Burstable<wbr>Instance</a></span>
     </dt>
-    <dd>{{% md %}}The burstable instance attribution:
-{{% /md %}}</dd>
+    <dd>The burstable instance attribution:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1344,8 +1344,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific number of cpu cores.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific number of cpu cores.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1353,8 +1353,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter the result whose network interface number is no more than `eni_amount`.
-{{% /md %}}</dd>
+    <dd>Filter the result whose network interface number is no more than `eni_amount`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1362,8 +1362,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type family.
-{{% /md %}}</dd>
+    <dd>The instance type family.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1371,8 +1371,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypegpu">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Gpu</a></span>
     </dt>
-    <dd>{{% md %}}The GPU attribution of an instance type:
-{{% /md %}}</dd>
+    <dd>The GPU attribution of an instance type:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1380,8 +1380,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance type.
-{{% /md %}}</dd>
+    <dd>ID of the instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1389,8 +1389,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypelocalstorage">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Local<wbr>Storage</a></span>
     </dt>
-    <dd>{{% md %}}Local storage of an instance type:
-{{% /md %}}</dd>
+    <dd>Local storage of an instance type:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1398,8 +1398,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific memory size in GB.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific memory size in GB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1407,13 +1407,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1422,8 +1422,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of availability zones that support the instance type.
-{{% /md %}}</dd>
+    <dd>List of availability zones that support the instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1431,8 +1431,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypeburstableinstance">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Burstable<wbr>Instance</a></span>
     </dt>
-    <dd>{{% md %}}The burstable instance attribution:
-{{% /md %}}</dd>
+    <dd>The burstable instance attribution:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1440,8 +1440,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific number of cpu cores.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific number of cpu cores.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1449,8 +1449,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Filter the result whose network interface number is no more than `eni_amount`.
-{{% /md %}}</dd>
+    <dd>Filter the result whose network interface number is no more than `eni_amount`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1458,8 +1458,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type family.
-{{% /md %}}</dd>
+    <dd>The instance type family.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1467,8 +1467,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypegpu">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Gpu</a></span>
     </dt>
-    <dd>{{% md %}}The GPU attribution of an instance type:
-{{% /md %}}</dd>
+    <dd>The GPU attribution of an instance type:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1476,8 +1476,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance type.
-{{% /md %}}</dd>
+    <dd>ID of the instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1485,8 +1485,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypelocalstorage">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Local<wbr>Storage</a></span>
     </dt>
-    <dd>{{% md %}}Local storage of an instance type:
-{{% /md %}}</dd>
+    <dd>Local storage of an instance type:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1494,8 +1494,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific memory size in GB.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific memory size in GB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1503,13 +1503,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1518,8 +1518,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of availability zones that support the instance type.
-{{% /md %}}</dd>
+    <dd>List of availability zones that support the instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1527,8 +1527,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypeburstableinstance">Dict[Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Burstable<wbr>Instance]</a></span>
     </dt>
-    <dd>{{% md %}}The burstable instance attribution:
-{{% /md %}}</dd>
+    <dd>The burstable instance attribution:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1536,8 +1536,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific number of cpu cores.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific number of cpu cores.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1545,8 +1545,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Filter the result whose network interface number is no more than `eni_amount`.
-{{% /md %}}</dd>
+    <dd>Filter the result whose network interface number is no more than `eni_amount`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1554,8 +1554,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The instance type family.
-{{% /md %}}</dd>
+    <dd>The instance type family.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1563,8 +1563,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypegpu">Dict[Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Gpu]</a></span>
     </dt>
-    <dd>{{% md %}}The GPU attribution of an instance type:
-{{% /md %}}</dd>
+    <dd>The GPU attribution of an instance type:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1572,8 +1572,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance type.
-{{% /md %}}</dd>
+    <dd>ID of the instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1581,8 +1581,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancetypesinstancetypelocalstorage">Dict[Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Local<wbr>Storage]</a></span>
     </dt>
-    <dd>{{% md %}}Local storage of an instance type:
-{{% /md %}}</dd>
+    <dd>Local storage of an instance type:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1590,8 +1590,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results to a specific memory size in GB.
-{{% /md %}}</dd>
+    <dd>Filter the results to a specific memory size in GB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1599,28 +1599,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancetypesinstancetypeburstableinstance">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Burstable<wbr>Instance</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstanceTypesInstanceTypeBurstableInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetInstanceTypesInstanceTypeBurstableInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1629,8 +1629,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute performance benchmark CPU credit of a burstable instance.
-{{% /md %}}</dd>
+    <dd>The compute performance benchmark CPU credit of a burstable instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1638,14 +1638,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The initial CPU credit of a burstable instance.
-{{% /md %}}</dd>
+    <dd>The initial CPU credit of a burstable instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1654,8 +1654,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute performance benchmark CPU credit of a burstable instance.
-{{% /md %}}</dd>
+    <dd>The compute performance benchmark CPU credit of a burstable instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1663,14 +1663,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The initial CPU credit of a burstable instance.
-{{% /md %}}</dd>
+    <dd>The initial CPU credit of a burstable instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1679,8 +1679,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute performance benchmark CPU credit of a burstable instance.
-{{% /md %}}</dd>
+    <dd>The compute performance benchmark CPU credit of a burstable instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1688,14 +1688,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The initial CPU credit of a burstable instance.
-{{% /md %}}</dd>
+    <dd>The initial CPU credit of a burstable instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1704,8 +1704,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The compute performance benchmark CPU credit of a burstable instance.
-{{% /md %}}</dd>
+    <dd>The compute performance benchmark CPU credit of a burstable instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1713,29 +1713,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The initial CPU credit of a burstable instance.
-{{% /md %}}</dd>
+    <dd>The initial CPU credit of a burstable instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancetypesinstancetypegpu">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Gpu</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstanceTypesInstanceTypeGpu">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetInstanceTypesInstanceTypeGpu">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1744,8 +1744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of local storage devices that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The number of local storage devices that an instance has been attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1753,14 +1753,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The category of local storage that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The category of local storage that an instance has been attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1769,8 +1769,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of local storage devices that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The number of local storage devices that an instance has been attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1778,14 +1778,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The category of local storage that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The category of local storage that an instance has been attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1794,8 +1794,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of local storage devices that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The number of local storage devices that an instance has been attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1803,14 +1803,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The category of local storage that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The category of local storage that an instance has been attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1819,8 +1819,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The number of local storage devices that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The number of local storage devices that an instance has been attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1828,29 +1828,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The category of local storage that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The category of local storage that an instance has been attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancetypesinstancetypelocalstorage">Get<wbr>Instance<wbr>Types<wbr>Instance<wbr>Type<wbr>Local<wbr>Storage</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstanceTypesInstanceTypeLocalStorage">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetInstanceTypesInstanceTypeLocalStorage">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1859,8 +1859,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of local storage devices that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The number of local storage devices that an instance has been attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1868,8 +1868,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The capacity of a local storage in GB.
-{{% /md %}}</dd>
+    <dd>The capacity of a local storage in GB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1877,14 +1877,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The category of local storage that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The category of local storage that an instance has been attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1893,8 +1893,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of local storage devices that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The number of local storage devices that an instance has been attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1902,8 +1902,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The capacity of a local storage in GB.
-{{% /md %}}</dd>
+    <dd>The capacity of a local storage in GB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1911,14 +1911,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The category of local storage that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The category of local storage that an instance has been attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1927,8 +1927,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of local storage devices that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The number of local storage devices that an instance has been attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1936,8 +1936,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The capacity of a local storage in GB.
-{{% /md %}}</dd>
+    <dd>The capacity of a local storage in GB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1945,14 +1945,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The category of local storage that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The category of local storage that an instance has been attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1961,8 +1961,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The number of local storage devices that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The number of local storage devices that an instance has been attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1970,8 +1970,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The capacity of a local storage in GB.
-{{% /md %}}</dd>
+    <dd>The capacity of a local storage in GB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1979,11 +1979,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The category of local storage that an instance has been attached to.
-{{% /md %}}</dd>
+    <dd>The category of local storage that an instance has been attached to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

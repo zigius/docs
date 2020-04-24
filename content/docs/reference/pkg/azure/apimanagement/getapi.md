@@ -19,29 +19,29 @@ Use this data source to access information about an existing API Management API.
 
 ## Using GetApi {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getApi<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/apimanagement/#GetApiArgs">GetApiArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/apimanagement/#GetApiResult">GetApiResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_api(</span>api_management_name=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>revision=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupApi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/apimanagement?tab=doc#LookupApiArgs">LookupApiArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/apimanagement?tab=doc#LookupApiResult">LookupApiResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetApi </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Apimanagement.GetApiResult.html">GetApiResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.ApiManagement.GetApiArgs.html">GetApiArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the API Management Service in which the API Management API exists.
-{{% /md %}}</dd>
+    <dd>The name of the API Management Service in which the API Management API exists.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -67,8 +67,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the API Management API.
-{{% /md %}}</dd>
+    <dd>The name of the API Management API.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -76,8 +76,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group in which the API Management Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group in which the API Management Service exists.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -85,14 +85,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Revision of the API Management API.
-{{% /md %}}</dd>
+    <dd>The Revision of the API Management API.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -101,8 +101,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the API Management Service in which the API Management API exists.
-{{% /md %}}</dd>
+    <dd>The name of the API Management Service in which the API Management API exists.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -110,8 +110,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the API Management API.
-{{% /md %}}</dd>
+    <dd>The name of the API Management API.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -119,8 +119,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group in which the API Management Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group in which the API Management Service exists.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -128,14 +128,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Revision of the API Management API.
-{{% /md %}}</dd>
+    <dd>The Revision of the API Management API.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -144,8 +144,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the API Management Service in which the API Management API exists.
-{{% /md %}}</dd>
+    <dd>The name of the API Management Service in which the API Management API exists.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -153,8 +153,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the API Management API.
-{{% /md %}}</dd>
+    <dd>The name of the API Management API.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -162,8 +162,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group in which the API Management Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group in which the API Management Service exists.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -171,14 +171,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Revision of the API Management API.
-{{% /md %}}</dd>
+    <dd>The Revision of the API Management API.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -187,8 +187,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the API Management Service in which the API Management API exists.
-{{% /md %}}</dd>
+    <dd>The name of the API Management Service in which the API Management API exists.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -196,8 +196,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the API Management API.
-{{% /md %}}</dd>
+    <dd>The name of the API Management API.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -205,8 +205,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group in which the API Management Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group in which the API Management Service exists.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -214,11 +214,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Revision of the API Management API.
-{{% /md %}}</dd>
+    <dd>The Revision of the API Management API.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -234,7 +234,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -243,7 +243,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -251,8 +251,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the API Management API, which may include HTML formatting tags.
-{{% /md %}}</dd>
+    <dd>A description of the API Management API, which may include HTML formatting tags.
+</dd>
 
     <dt class="property-"
             title="">
@@ -260,8 +260,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the API.
-{{% /md %}}</dd>
+    <dd>The display name of the API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -269,8 +269,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -278,8 +278,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the current API Revision?
-{{% /md %}}</dd>
+    <dd>Is this the current API Revision?
+</dd>
 
     <dt class="property-"
             title="">
@@ -287,8 +287,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this API Revision online/accessible via the Gateway?
-{{% /md %}}</dd>
+    <dd>Is this API Revision online/accessible via the Gateway?
+</dd>
 
     <dt class="property-"
             title="">
@@ -296,7 +296,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -304,8 +304,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Path for this API Management API.
-{{% /md %}}</dd>
+    <dd>The Path for this API Management API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -313,8 +313,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of protocols the operations in this API can be invoked.
-{{% /md %}}</dd>
+    <dd>A list of protocols the operations in this API can be invoked.
+</dd>
 
     <dt class="property-"
             title="">
@@ -322,7 +322,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -330,7 +330,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -338,8 +338,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Absolute URL of the backend service implementing this API.
-{{% /md %}}</dd>
+    <dd>Absolute URL of the backend service implementing this API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -347,8 +347,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should this API expose a SOAP frontend, rather than a HTTP frontend?
-{{% /md %}}</dd>
+    <dd>Should this API expose a SOAP frontend, rather than a HTTP frontend?
+</dd>
 
     <dt class="property-"
             title="">
@@ -356,8 +356,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getapisubscriptionkeyparametername">List&lt;Get<wbr>Api<wbr>Subscription<wbr>Key<wbr>Parameter<wbr>Name&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `subscription_key_parameter_names` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `subscription_key_parameter_names` block as documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -365,8 +365,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Version number of this API, if this API is versioned.
-{{% /md %}}</dd>
+    <dd>The Version number of this API, if this API is versioned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -374,14 +374,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Version Set which this API is associated with.
-{{% /md %}}</dd>
+    <dd>The ID of the Version Set which this API is associated with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -390,7 +390,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -398,8 +398,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the API Management API, which may include HTML formatting tags.
-{{% /md %}}</dd>
+    <dd>A description of the API Management API, which may include HTML formatting tags.
+</dd>
 
     <dt class="property-"
             title="">
@@ -407,8 +407,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the API.
-{{% /md %}}</dd>
+    <dd>The display name of the API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -416,8 +416,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -425,8 +425,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the current API Revision?
-{{% /md %}}</dd>
+    <dd>Is this the current API Revision?
+</dd>
 
     <dt class="property-"
             title="">
@@ -434,8 +434,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this API Revision online/accessible via the Gateway?
-{{% /md %}}</dd>
+    <dd>Is this API Revision online/accessible via the Gateway?
+</dd>
 
     <dt class="property-"
             title="">
@@ -443,7 +443,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -451,8 +451,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Path for this API Management API.
-{{% /md %}}</dd>
+    <dd>The Path for this API Management API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -460,8 +460,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of protocols the operations in this API can be invoked.
-{{% /md %}}</dd>
+    <dd>A list of protocols the operations in this API can be invoked.
+</dd>
 
     <dt class="property-"
             title="">
@@ -469,7 +469,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -477,7 +477,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -485,8 +485,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Absolute URL of the backend service implementing this API.
-{{% /md %}}</dd>
+    <dd>Absolute URL of the backend service implementing this API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -494,8 +494,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should this API expose a SOAP frontend, rather than a HTTP frontend?
-{{% /md %}}</dd>
+    <dd>Should this API expose a SOAP frontend, rather than a HTTP frontend?
+</dd>
 
     <dt class="property-"
             title="">
@@ -503,8 +503,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getapisubscriptionkeyparametername">[]Get<wbr>Api<wbr>Subscription<wbr>Key<wbr>Parameter<wbr>Name</a></span>
     </dt>
-    <dd>{{% md %}}A `subscription_key_parameter_names` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `subscription_key_parameter_names` block as documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -512,8 +512,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Version number of this API, if this API is versioned.
-{{% /md %}}</dd>
+    <dd>The Version number of this API, if this API is versioned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -521,14 +521,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Version Set which this API is associated with.
-{{% /md %}}</dd>
+    <dd>The ID of the Version Set which this API is associated with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -537,7 +537,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -545,8 +545,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the API Management API, which may include HTML formatting tags.
-{{% /md %}}</dd>
+    <dd>A description of the API Management API, which may include HTML formatting tags.
+</dd>
 
     <dt class="property-"
             title="">
@@ -554,8 +554,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the API.
-{{% /md %}}</dd>
+    <dd>The display name of the API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -563,8 +563,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -572,8 +572,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is this the current API Revision?
-{{% /md %}}</dd>
+    <dd>Is this the current API Revision?
+</dd>
 
     <dt class="property-"
             title="">
@@ -581,8 +581,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is this API Revision online/accessible via the Gateway?
-{{% /md %}}</dd>
+    <dd>Is this API Revision online/accessible via the Gateway?
+</dd>
 
     <dt class="property-"
             title="">
@@ -590,7 +590,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -598,8 +598,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Path for this API Management API.
-{{% /md %}}</dd>
+    <dd>The Path for this API Management API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -607,8 +607,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of protocols the operations in this API can be invoked.
-{{% /md %}}</dd>
+    <dd>A list of protocols the operations in this API can be invoked.
+</dd>
 
     <dt class="property-"
             title="">
@@ -616,7 +616,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -624,7 +624,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -632,8 +632,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Absolute URL of the backend service implementing this API.
-{{% /md %}}</dd>
+    <dd>Absolute URL of the backend service implementing this API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -641,8 +641,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should this API expose a SOAP frontend, rather than a HTTP frontend?
-{{% /md %}}</dd>
+    <dd>Should this API expose a SOAP frontend, rather than a HTTP frontend?
+</dd>
 
     <dt class="property-"
             title="">
@@ -650,8 +650,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getapisubscriptionkeyparametername">Get<wbr>Api<wbr>Subscription<wbr>Key<wbr>Parameter<wbr>Name[]</a></span>
     </dt>
-    <dd>{{% md %}}A `subscription_key_parameter_names` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `subscription_key_parameter_names` block as documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -659,8 +659,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Version number of this API, if this API is versioned.
-{{% /md %}}</dd>
+    <dd>The Version number of this API, if this API is versioned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -668,14 +668,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Version Set which this API is associated with.
-{{% /md %}}</dd>
+    <dd>The ID of the Version Set which this API is associated with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -684,7 +684,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -692,8 +692,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description of the API Management API, which may include HTML formatting tags.
-{{% /md %}}</dd>
+    <dd>A description of the API Management API, which may include HTML formatting tags.
+</dd>
 
     <dt class="property-"
             title="">
@@ -701,8 +701,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the API.
-{{% /md %}}</dd>
+    <dd>The display name of the API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -710,8 +710,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -719,8 +719,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the current API Revision?
-{{% /md %}}</dd>
+    <dd>Is this the current API Revision?
+</dd>
 
     <dt class="property-"
             title="">
@@ -728,8 +728,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this API Revision online/accessible via the Gateway?
-{{% /md %}}</dd>
+    <dd>Is this API Revision online/accessible via the Gateway?
+</dd>
 
     <dt class="property-"
             title="">
@@ -737,7 +737,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -745,8 +745,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Path for this API Management API.
-{{% /md %}}</dd>
+    <dd>The Path for this API Management API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -754,8 +754,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of protocols the operations in this API can be invoked.
-{{% /md %}}</dd>
+    <dd>A list of protocols the operations in this API can be invoked.
+</dd>
 
     <dt class="property-"
             title="">
@@ -763,7 +763,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -771,7 +771,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -779,8 +779,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Absolute URL of the backend service implementing this API.
-{{% /md %}}</dd>
+    <dd>Absolute URL of the backend service implementing this API.
+</dd>
 
     <dt class="property-"
             title="">
@@ -788,8 +788,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should this API expose a SOAP frontend, rather than a HTTP frontend?
-{{% /md %}}</dd>
+    <dd>Should this API expose a SOAP frontend, rather than a HTTP frontend?
+</dd>
 
     <dt class="property-"
             title="">
@@ -797,8 +797,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getapisubscriptionkeyparametername">List[Get<wbr>Api<wbr>Subscription<wbr>Key<wbr>Parameter<wbr>Name]</a></span>
     </dt>
-    <dd>{{% md %}}A `subscription_key_parameter_names` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `subscription_key_parameter_names` block as documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -806,8 +806,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Version number of this API, if this API is versioned.
-{{% /md %}}</dd>
+    <dd>The Version number of this API, if this API is versioned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -815,11 +815,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Version Set which this API is associated with.
-{{% /md %}}</dd>
+    <dd>The ID of the Version Set which this API is associated with.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -832,18 +832,18 @@ The following output properties are available:
 
 
 <h4 id="getapisubscriptionkeyparametername">Get<wbr>Api<wbr>Subscription<wbr>Key<wbr>Parameter<wbr>Name</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetApiSubscriptionKeyParameterName">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/apimanagement?tab=doc#GetApiSubscriptionKeyParameterName">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -852,8 +852,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the HTTP Header which should be used for the Subscription Key.
-{{% /md %}}</dd>
+    <dd>The name of the HTTP Header which should be used for the Subscription Key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -861,14 +861,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the QueryString parameter which should be used for the Subscription Key.
-{{% /md %}}</dd>
+    <dd>The name of the QueryString parameter which should be used for the Subscription Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -877,8 +877,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the HTTP Header which should be used for the Subscription Key.
-{{% /md %}}</dd>
+    <dd>The name of the HTTP Header which should be used for the Subscription Key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -886,14 +886,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the QueryString parameter which should be used for the Subscription Key.
-{{% /md %}}</dd>
+    <dd>The name of the QueryString parameter which should be used for the Subscription Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -902,8 +902,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the HTTP Header which should be used for the Subscription Key.
-{{% /md %}}</dd>
+    <dd>The name of the HTTP Header which should be used for the Subscription Key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -911,14 +911,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the QueryString parameter which should be used for the Subscription Key.
-{{% /md %}}</dd>
+    <dd>The name of the QueryString parameter which should be used for the Subscription Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -927,8 +927,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the HTTP Header which should be used for the Subscription Key.
-{{% /md %}}</dd>
+    <dd>The name of the HTTP Header which should be used for the Subscription Key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -936,11 +936,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the QueryString parameter which should be used for the Subscription Key.
-{{% /md %}}</dd>
+    <dd>The name of the QueryString parameter which should be used for the Subscription Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

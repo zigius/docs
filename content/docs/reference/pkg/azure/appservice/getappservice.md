@@ -19,29 +19,29 @@ Use this data source to access information about an existing App Service.
 
 ## Using GetAppService {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAppService<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appservice/#GetAppServiceArgs">GetAppServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appservice/#GetAppServiceResult">GetAppServiceResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_app_service(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAppService<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#LookupAppServiceArgs">LookupAppServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#LookupAppServiceResult">LookupAppServiceResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAppService </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Appservice.GetAppServiceResult.html">GetAppServiceResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppService.GetAppServiceArgs.html">GetAppServiceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -67,14 +67,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where the App Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -92,14 +92,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where the App Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -108,8 +108,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -117,14 +117,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where the App Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -142,11 +142,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where the App Service exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -162,7 +162,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -171,8 +171,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which the App Service exists.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -180,8 +180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings for the App Service.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings for the App Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -189,8 +189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Does the App Service send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-"
             title="">
@@ -198,8 +198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service require client certificates for incoming requests?
-{{% /md %}}</dd>
+    <dd>Does the App Service require client certificates for incoming requests?
+</dd>
 
     <dt class="property-"
             title="">
@@ -207,8 +207,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappserviceconnectionstring">List&lt;Get<wbr>App<wbr>Service<wbr>Connection<wbr>String&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -216,8 +216,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Default Hostname associated with the App Service - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The Default Hostname associated with the App Service - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-"
             title="">
@@ -225,8 +225,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the App Service Enabled?
-{{% /md %}}</dd>
+    <dd>Is the App Service Enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -234,8 +234,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can the App Service only be accessed via HTTPS?
-{{% /md %}}</dd>
+    <dd>Can the App Service only be accessed via HTTPS?
+</dd>
 
     <dt class="property-"
             title="">
@@ -243,8 +243,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -252,8 +252,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -261,8 +261,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Connection String.
-{{% /md %}}</dd>
+    <dd>The name of the Connection String.
+</dd>
 
     <dt class="property-"
             title="">
@@ -270,8 +270,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-"
             title="">
@@ -279,8 +279,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -288,7 +288,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -296,8 +296,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfig">List&lt;Get<wbr>App<wbr>Service<wbr>Site<wbr>Config&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -305,7 +305,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesitecredential">List&lt;Get<wbr>App<wbr>Service<wbr>Site<wbr>Credential&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -313,7 +313,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesourcecontrol">List&lt;Get<wbr>App<wbr>Service<wbr>Source<wbr>Control&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -321,14 +321,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -337,8 +337,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which the App Service exists.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -346,8 +346,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings for the App Service.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings for the App Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -355,8 +355,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Does the App Service send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-"
             title="">
@@ -364,8 +364,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service require client certificates for incoming requests?
-{{% /md %}}</dd>
+    <dd>Does the App Service require client certificates for incoming requests?
+</dd>
 
     <dt class="property-"
             title="">
@@ -373,8 +373,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappserviceconnectionstring">[]Get<wbr>App<wbr>Service<wbr>Connection<wbr>String</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -382,8 +382,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Default Hostname associated with the App Service - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The Default Hostname associated with the App Service - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-"
             title="">
@@ -391,8 +391,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the App Service Enabled?
-{{% /md %}}</dd>
+    <dd>Is the App Service Enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -400,8 +400,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can the App Service only be accessed via HTTPS?
-{{% /md %}}</dd>
+    <dd>Can the App Service only be accessed via HTTPS?
+</dd>
 
     <dt class="property-"
             title="">
@@ -409,8 +409,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -418,8 +418,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -427,8 +427,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Connection String.
-{{% /md %}}</dd>
+    <dd>The name of the Connection String.
+</dd>
 
     <dt class="property-"
             title="">
@@ -436,8 +436,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-"
             title="">
@@ -445,8 +445,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -454,7 +454,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -462,8 +462,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfig">[]Get<wbr>App<wbr>Service<wbr>Site<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -471,7 +471,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesitecredential">[]Get<wbr>App<wbr>Service<wbr>Site<wbr>Credential</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -479,7 +479,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesourcecontrol">[]Get<wbr>App<wbr>Service<wbr>Source<wbr>Control</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -487,14 +487,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -503,8 +503,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which the App Service exists.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -512,8 +512,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings for the App Service.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings for the App Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -521,8 +521,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Does the App Service send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-"
             title="">
@@ -530,8 +530,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service require client certificates for incoming requests?
-{{% /md %}}</dd>
+    <dd>Does the App Service require client certificates for incoming requests?
+</dd>
 
     <dt class="property-"
             title="">
@@ -539,8 +539,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappserviceconnectionstring">Get<wbr>App<wbr>Service<wbr>Connection<wbr>String[]</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -548,8 +548,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Default Hostname associated with the App Service - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The Default Hostname associated with the App Service - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-"
             title="">
@@ -557,8 +557,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the App Service Enabled?
-{{% /md %}}</dd>
+    <dd>Is the App Service Enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -566,8 +566,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Can the App Service only be accessed via HTTPS?
-{{% /md %}}</dd>
+    <dd>Can the App Service only be accessed via HTTPS?
+</dd>
 
     <dt class="property-"
             title="">
@@ -575,8 +575,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -584,8 +584,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -593,8 +593,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Connection String.
-{{% /md %}}</dd>
+    <dd>The name of the Connection String.
+</dd>
 
     <dt class="property-"
             title="">
@@ -602,8 +602,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-"
             title="">
@@ -611,8 +611,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -620,7 +620,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -628,8 +628,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfig">Get<wbr>App<wbr>Service<wbr>Site<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -637,7 +637,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesitecredential">Get<wbr>App<wbr>Service<wbr>Site<wbr>Credential[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -645,7 +645,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesourcecontrol">Get<wbr>App<wbr>Service<wbr>Source<wbr>Control[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -653,14 +653,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -669,8 +669,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which the App Service exists.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -678,8 +678,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings for the App Service.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings for the App Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -687,8 +687,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Does the App Service send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-"
             title="">
@@ -696,8 +696,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service require client certificates for incoming requests?
-{{% /md %}}</dd>
+    <dd>Does the App Service require client certificates for incoming requests?
+</dd>
 
     <dt class="property-"
             title="">
@@ -705,8 +705,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappserviceconnectionstring">List[Get<wbr>App<wbr>Service<wbr>Connection<wbr>String]</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -714,8 +714,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Default Hostname associated with the App Service - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The Default Hostname associated with the App Service - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-"
             title="">
@@ -723,8 +723,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the App Service Enabled?
-{{% /md %}}</dd>
+    <dd>Is the App Service Enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -732,8 +732,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can the App Service only be accessed via HTTPS?
-{{% /md %}}</dd>
+    <dd>Can the App Service only be accessed via HTTPS?
+</dd>
 
     <dt class="property-"
             title="">
@@ -741,8 +741,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -750,8 +750,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the App Service exists.
-{{% /md %}}</dd>
+    <dd>The Azure location where the App Service exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -759,8 +759,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Connection String.
-{{% /md %}}</dd>
+    <dd>The name of the Connection String.
+</dd>
 
     <dt class="property-"
             title="">
@@ -768,8 +768,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-"
             title="">
@@ -777,8 +777,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -786,7 +786,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -794,8 +794,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfig">List[Get<wbr>App<wbr>Service<wbr>Site<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -803,7 +803,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesitecredential">List[Get<wbr>App<wbr>Service<wbr>Site<wbr>Credential]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -811,7 +811,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesourcecontrol">List[Get<wbr>App<wbr>Service<wbr>Source<wbr>Control]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -819,11 +819,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -836,18 +836,18 @@ The following output properties are available:
 
 
 <h4 id="getappserviceconnectionstring">Get<wbr>App<wbr>Service<wbr>Connection<wbr>String</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetAppServiceConnectionString">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#GetAppServiceConnectionString">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -856,8 +856,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -865,8 +865,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Connection String.
-{{% /md %}}</dd>
+    <dd>The type of the Connection String.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -874,14 +874,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value for the Connection String.
-{{% /md %}}</dd>
+    <dd>The value for the Connection String.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -890,8 +890,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -899,8 +899,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Connection String.
-{{% /md %}}</dd>
+    <dd>The type of the Connection String.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -908,14 +908,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value for the Connection String.
-{{% /md %}}</dd>
+    <dd>The value for the Connection String.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -924,8 +924,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -933,8 +933,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Connection String.
-{{% /md %}}</dd>
+    <dd>The type of the Connection String.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -942,14 +942,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value for the Connection String.
-{{% /md %}}</dd>
+    <dd>The value for the Connection String.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -958,8 +958,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the App Service.
-{{% /md %}}</dd>
+    <dd>The name of the App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -967,8 +967,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Connection String.
-{{% /md %}}</dd>
+    <dd>The type of the Connection String.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -976,29 +976,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value for the Connection String.
-{{% /md %}}</dd>
+    <dd>The value for the Connection String.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getappservicesiteconfig">Get<wbr>App<wbr>Service<wbr>Site<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetAppServiceSiteConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#GetAppServiceSiteConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1007,8 +1007,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the app be loaded at all times?
-{{% /md %}}</dd>
+    <dd>Is the app be loaded at all times?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1016,8 +1016,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}App command line to launch.
-{{% /md %}}</dd>
+    <dd>App command line to launch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1025,8 +1025,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfigcor">List&lt;Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Cor<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `cors` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cors` block as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1034,8 +1034,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The ordering of default documents to load, if an address isn't specified.
-{{% /md %}}</dd>
+    <dd>The ordering of default documents to load, if an address isn't specified.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1043,8 +1043,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the .net framework's CLR used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of the .net framework's CLR used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1052,8 +1052,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}State of FTP / FTPS service for this AppService.
-{{% /md %}}</dd>
+    <dd>State of FTP / FTPS service for this AppService.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1061,8 +1061,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is HTTP2 Enabled on this App Service?
-{{% /md %}}</dd>
+    <dd>Is HTTP2 Enabled on this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1070,8 +1070,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfigiprestriction">List&lt;Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_restriction` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_restriction` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1079,8 +1079,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Java Container in use.
-{{% /md %}}</dd>
+    <dd>The Java Container in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1088,8 +1088,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Java Container in use.
-{{% /md %}}</dd>
+    <dd>The version of the Java Container in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1097,8 +1097,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Java in use.
-{{% /md %}}</dd>
+    <dd>The version of Java in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1106,8 +1106,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Linux App Framework and version for the AppService.
-{{% /md %}}</dd>
+    <dd>Linux App Framework and version for the AppService.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1115,8 +1115,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is "MySQL In App" Enabled? This runs a local MySQL instance with your app and shares resources from the App Service plan.
-{{% /md %}}</dd>
+    <dd>Is "MySQL In App" Enabled? This runs a local MySQL instance with your app and shares resources from the App Service plan.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1124,8 +1124,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Managed Pipeline Mode used in this App Service.
-{{% /md %}}</dd>
+    <dd>The Managed Pipeline Mode used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1133,8 +1133,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum supported TLS version for this App Service.
-{{% /md %}}</dd>
+    <dd>The minimum supported TLS version for this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1142,8 +1142,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of PHP used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of PHP used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1151,8 +1151,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Python used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of Python used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1160,8 +1160,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Debugging Enabled in this App Service?
-{{% /md %}}</dd>
+    <dd>Is Remote Debugging Enabled in this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1169,8 +1169,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Which version of Visual Studio is the Remote Debugger compatible with?
-{{% /md %}}</dd>
+    <dd>Which version of Visual Studio is the Remote Debugger compatible with?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1178,8 +1178,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Source Control enabled for this App Service.
-{{% /md %}}</dd>
+    <dd>The type of Source Control enabled for this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1187,8 +1187,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service run in 32 bit mode, rather than 64 bit mode?
-{{% /md %}}</dd>
+    <dd>Does the App Service run in 32 bit mode, rather than 64 bit mode?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1196,8 +1196,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are WebSockets enabled for this App Service?
-{{% /md %}}</dd>
+    <dd>Are WebSockets enabled for this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1205,14 +1205,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Windows Container Docker Image for the AppService.
-{{% /md %}}</dd>
+    <dd>Windows Container Docker Image for the AppService.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1221,8 +1221,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the app be loaded at all times?
-{{% /md %}}</dd>
+    <dd>Is the app be loaded at all times?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1230,8 +1230,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}App command line to launch.
-{{% /md %}}</dd>
+    <dd>App command line to launch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1239,8 +1239,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfigcor">[]Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Cor</a></span>
     </dt>
-    <dd>{{% md %}}A `cors` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cors` block as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1248,8 +1248,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The ordering of default documents to load, if an address isn't specified.
-{{% /md %}}</dd>
+    <dd>The ordering of default documents to load, if an address isn't specified.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1257,8 +1257,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the .net framework's CLR used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of the .net framework's CLR used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1266,8 +1266,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}State of FTP / FTPS service for this AppService.
-{{% /md %}}</dd>
+    <dd>State of FTP / FTPS service for this AppService.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1275,8 +1275,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is HTTP2 Enabled on this App Service?
-{{% /md %}}</dd>
+    <dd>Is HTTP2 Enabled on this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1284,8 +1284,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfigiprestriction">[]Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_restriction` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_restriction` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1293,8 +1293,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Java Container in use.
-{{% /md %}}</dd>
+    <dd>The Java Container in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1302,8 +1302,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Java Container in use.
-{{% /md %}}</dd>
+    <dd>The version of the Java Container in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1311,8 +1311,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Java in use.
-{{% /md %}}</dd>
+    <dd>The version of Java in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1320,8 +1320,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linux App Framework and version for the AppService.
-{{% /md %}}</dd>
+    <dd>Linux App Framework and version for the AppService.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1329,8 +1329,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is "MySQL In App" Enabled? This runs a local MySQL instance with your app and shares resources from the App Service plan.
-{{% /md %}}</dd>
+    <dd>Is "MySQL In App" Enabled? This runs a local MySQL instance with your app and shares resources from the App Service plan.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1338,8 +1338,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Managed Pipeline Mode used in this App Service.
-{{% /md %}}</dd>
+    <dd>The Managed Pipeline Mode used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1347,8 +1347,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum supported TLS version for this App Service.
-{{% /md %}}</dd>
+    <dd>The minimum supported TLS version for this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1356,8 +1356,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of PHP used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of PHP used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1365,8 +1365,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Python used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of Python used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1374,8 +1374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Debugging Enabled in this App Service?
-{{% /md %}}</dd>
+    <dd>Is Remote Debugging Enabled in this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1383,8 +1383,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Which version of Visual Studio is the Remote Debugger compatible with?
-{{% /md %}}</dd>
+    <dd>Which version of Visual Studio is the Remote Debugger compatible with?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1392,8 +1392,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Source Control enabled for this App Service.
-{{% /md %}}</dd>
+    <dd>The type of Source Control enabled for this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1401,8 +1401,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service run in 32 bit mode, rather than 64 bit mode?
-{{% /md %}}</dd>
+    <dd>Does the App Service run in 32 bit mode, rather than 64 bit mode?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1410,8 +1410,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are WebSockets enabled for this App Service?
-{{% /md %}}</dd>
+    <dd>Are WebSockets enabled for this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1419,14 +1419,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Windows Container Docker Image for the AppService.
-{{% /md %}}</dd>
+    <dd>Windows Container Docker Image for the AppService.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1435,8 +1435,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the app be loaded at all times?
-{{% /md %}}</dd>
+    <dd>Is the app be loaded at all times?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1444,8 +1444,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}App command line to launch.
-{{% /md %}}</dd>
+    <dd>App command line to launch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1453,8 +1453,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfigcor">Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Cor[]</a></span>
     </dt>
-    <dd>{{% md %}}A `cors` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cors` block as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1462,8 +1462,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The ordering of default documents to load, if an address isn't specified.
-{{% /md %}}</dd>
+    <dd>The ordering of default documents to load, if an address isn't specified.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1471,8 +1471,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the .net framework's CLR used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of the .net framework's CLR used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1480,8 +1480,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}State of FTP / FTPS service for this AppService.
-{{% /md %}}</dd>
+    <dd>State of FTP / FTPS service for this AppService.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1489,8 +1489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is HTTP2 Enabled on this App Service?
-{{% /md %}}</dd>
+    <dd>Is HTTP2 Enabled on this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1498,8 +1498,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfigiprestriction">Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_restriction` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_restriction` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1507,8 +1507,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Java Container in use.
-{{% /md %}}</dd>
+    <dd>The Java Container in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1516,8 +1516,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Java Container in use.
-{{% /md %}}</dd>
+    <dd>The version of the Java Container in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1525,8 +1525,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Java in use.
-{{% /md %}}</dd>
+    <dd>The version of Java in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1534,8 +1534,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linux App Framework and version for the AppService.
-{{% /md %}}</dd>
+    <dd>Linux App Framework and version for the AppService.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1543,8 +1543,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is "MySQL In App" Enabled? This runs a local MySQL instance with your app and shares resources from the App Service plan.
-{{% /md %}}</dd>
+    <dd>Is "MySQL In App" Enabled? This runs a local MySQL instance with your app and shares resources from the App Service plan.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1552,8 +1552,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Managed Pipeline Mode used in this App Service.
-{{% /md %}}</dd>
+    <dd>The Managed Pipeline Mode used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1561,8 +1561,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum supported TLS version for this App Service.
-{{% /md %}}</dd>
+    <dd>The minimum supported TLS version for this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1570,8 +1570,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of PHP used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of PHP used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1579,8 +1579,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Python used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of Python used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1588,8 +1588,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Debugging Enabled in this App Service?
-{{% /md %}}</dd>
+    <dd>Is Remote Debugging Enabled in this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1597,8 +1597,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Which version of Visual Studio is the Remote Debugger compatible with?
-{{% /md %}}</dd>
+    <dd>Which version of Visual Studio is the Remote Debugger compatible with?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1606,8 +1606,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Source Control enabled for this App Service.
-{{% /md %}}</dd>
+    <dd>The type of Source Control enabled for this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1615,8 +1615,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service run in 32 bit mode, rather than 64 bit mode?
-{{% /md %}}</dd>
+    <dd>Does the App Service run in 32 bit mode, rather than 64 bit mode?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1624,8 +1624,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Are WebSockets enabled for this App Service?
-{{% /md %}}</dd>
+    <dd>Are WebSockets enabled for this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1633,14 +1633,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Windows Container Docker Image for the AppService.
-{{% /md %}}</dd>
+    <dd>Windows Container Docker Image for the AppService.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1649,8 +1649,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the app be loaded at all times?
-{{% /md %}}</dd>
+    <dd>Is the app be loaded at all times?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1658,8 +1658,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}App command line to launch.
-{{% /md %}}</dd>
+    <dd>App command line to launch.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1667,8 +1667,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfigcor">List[Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Cor]</a></span>
     </dt>
-    <dd>{{% md %}}A `cors` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cors` block as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1676,8 +1676,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The ordering of default documents to load, if an address isn't specified.
-{{% /md %}}</dd>
+    <dd>The ordering of default documents to load, if an address isn't specified.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1685,8 +1685,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the .net framework's CLR used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of the .net framework's CLR used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1694,8 +1694,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}State of FTP / FTPS service for this AppService.
-{{% /md %}}</dd>
+    <dd>State of FTP / FTPS service for this AppService.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1703,8 +1703,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is HTTP2 Enabled on this App Service?
-{{% /md %}}</dd>
+    <dd>Is HTTP2 Enabled on this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1712,8 +1712,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getappservicesiteconfigiprestriction">List[Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_restriction` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_restriction` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1721,8 +1721,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Java Container in use.
-{{% /md %}}</dd>
+    <dd>The Java Container in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1730,8 +1730,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Java Container in use.
-{{% /md %}}</dd>
+    <dd>The version of the Java Container in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1739,8 +1739,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of Java in use.
-{{% /md %}}</dd>
+    <dd>The version of Java in use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1748,8 +1748,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Linux App Framework and version for the AppService.
-{{% /md %}}</dd>
+    <dd>Linux App Framework and version for the AppService.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1757,8 +1757,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is "MySQL In App" Enabled? This runs a local MySQL instance with your app and shares resources from the App Service plan.
-{{% /md %}}</dd>
+    <dd>Is "MySQL In App" Enabled? This runs a local MySQL instance with your app and shares resources from the App Service plan.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1766,8 +1766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Managed Pipeline Mode used in this App Service.
-{{% /md %}}</dd>
+    <dd>The Managed Pipeline Mode used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1775,8 +1775,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The minimum supported TLS version for this App Service.
-{{% /md %}}</dd>
+    <dd>The minimum supported TLS version for this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1784,8 +1784,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of PHP used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of PHP used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1793,8 +1793,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of Python used in this App Service.
-{{% /md %}}</dd>
+    <dd>The version of Python used in this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1802,8 +1802,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Remote Debugging Enabled in this App Service?
-{{% /md %}}</dd>
+    <dd>Is Remote Debugging Enabled in this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1811,8 +1811,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Which version of Visual Studio is the Remote Debugger compatible with?
-{{% /md %}}</dd>
+    <dd>Which version of Visual Studio is the Remote Debugger compatible with?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1820,8 +1820,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of Source Control enabled for this App Service.
-{{% /md %}}</dd>
+    <dd>The type of Source Control enabled for this App Service.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1829,8 +1829,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does the App Service run in 32 bit mode, rather than 64 bit mode?
-{{% /md %}}</dd>
+    <dd>Does the App Service run in 32 bit mode, rather than 64 bit mode?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1838,8 +1838,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are WebSockets enabled for this App Service?
-{{% /md %}}</dd>
+    <dd>Are WebSockets enabled for this App Service?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1847,29 +1847,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Windows Container Docker Image for the AppService.
-{{% /md %}}</dd>
+    <dd>Windows Container Docker Image for the AppService.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getappservicesiteconfigcor">Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Cor</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetAppServiceSiteConfigCor">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#GetAppServiceSiteConfigCor">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1878,8 +1878,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of origins which are able to make cross-origin calls.
-{{% /md %}}</dd>
+    <dd>A list of origins which are able to make cross-origin calls.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1887,14 +1887,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are credentials supported?
-{{% /md %}}</dd>
+    <dd>Are credentials supported?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1903,8 +1903,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of origins which are able to make cross-origin calls.
-{{% /md %}}</dd>
+    <dd>A list of origins which are able to make cross-origin calls.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1912,14 +1912,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are credentials supported?
-{{% /md %}}</dd>
+    <dd>Are credentials supported?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1928,8 +1928,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of origins which are able to make cross-origin calls.
-{{% /md %}}</dd>
+    <dd>A list of origins which are able to make cross-origin calls.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1937,14 +1937,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Are credentials supported?
-{{% /md %}}</dd>
+    <dd>Are credentials supported?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1953,8 +1953,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of origins which are able to make cross-origin calls.
-{{% /md %}}</dd>
+    <dd>A list of origins which are able to make cross-origin calls.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1962,29 +1962,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are credentials supported?
-{{% /md %}}</dd>
+    <dd>Are credentials supported?
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getappservicesiteconfigiprestriction">Get<wbr>App<wbr>Service<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetAppServiceSiteConfigIpRestriction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#GetAppServiceSiteConfigIpRestriction">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1993,8 +1993,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The IP Address used for this IP Restriction.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2002,13 +2002,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2017,8 +2017,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The IP Address used for this IP Restriction.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2026,13 +2026,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2041,8 +2041,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The IP Address used for this IP Restriction.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2050,13 +2050,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2065,8 +2065,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The IP Address used for this IP Restriction.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2074,28 +2074,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getappservicesitecredential">Get<wbr>App<wbr>Service<wbr>Site<wbr>Credential</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetAppServiceSiteCredential">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#GetAppServiceSiteCredential">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2104,7 +2104,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2112,13 +2112,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2127,7 +2127,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2135,13 +2135,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2150,7 +2150,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2158,13 +2158,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2173,7 +2173,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2181,28 +2181,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getappservicesourcecontrol">Get<wbr>App<wbr>Service<wbr>Source<wbr>Control</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetAppServiceSourceControl">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#GetAppServiceSourceControl">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2211,7 +2211,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2219,13 +2219,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2234,7 +2234,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2242,13 +2242,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2257,7 +2257,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2265,13 +2265,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2280,7 +2280,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2288,10 +2288,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

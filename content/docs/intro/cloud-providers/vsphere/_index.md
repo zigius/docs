@@ -21,9 +21,9 @@ The vSphere provider supports several options for providing access to vSphere cr
 
 ## Example
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 const vsphere = require("@pulumi/vsphere")
@@ -32,8 +32,8 @@ const dc = new vsphere.Datacenter("my-dc", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as vsphere from "@pulumi/vsphere";
@@ -42,8 +42,8 @@ const dc = new vsphere.Datacenter("my-dc", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi_vsphere as vsphere
@@ -52,8 +52,8 @@ dc = vsphere.Datacenter("my-dc",
 )
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 import (
@@ -64,8 +64,8 @@ dc, _ := vsphere.NewDatacenter(ctx, "test", &vsphere.DatacenterArgs{
 })
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Threading.Tasks;
@@ -84,9 +84,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ## Libraries
 

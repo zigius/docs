@@ -47,29 +47,29 @@ const route = new aws.ec2.Route("route", {
 
 ## Using GetRouteTable {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getRouteTable<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetRouteTableArgs">GetRouteTableArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetRouteTableResult">GetRouteTableResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_route_table(</span>filters=None<span class="p">, </span>gateway_id=None<span class="p">, </span>route_table_id=None<span class="p">, </span>subnet_id=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupRouteTable<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupRouteTableArgs">LookupRouteTableArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupRouteTableResult">LookupRouteTableResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetRouteTable </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetRouteTableResult.html">GetRouteTableResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetRouteTableArgs.html">GetRouteTableArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -77,7 +77,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -86,8 +86,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetablefilter">List&lt;Get<wbr>Route<wbr>Table<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -95,8 +95,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -104,8 +104,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the specific Route Table to retrieve.
-{{% /md %}}</dd>
+    <dd>The id of the specific Route Table to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -113,8 +113,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -122,9 +122,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired Route Table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -132,14 +132,14 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that the desired Route Table belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that the desired Route Table belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -148,8 +148,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetablefilter">[]Get<wbr>Route<wbr>Table<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -157,8 +157,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -166,8 +166,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the specific Route Table to retrieve.
-{{% /md %}}</dd>
+    <dd>The id of the specific Route Table to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -175,8 +175,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -184,9 +184,9 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired Route Table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -194,14 +194,14 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that the desired Route Table belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that the desired Route Table belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -210,8 +210,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetablefilter">Get<wbr>Route<wbr>Table<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -219,8 +219,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,8 +228,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the specific Route Table to retrieve.
-{{% /md %}}</dd>
+    <dd>The id of the specific Route Table to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,8 +237,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,9 +246,9 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired Route Table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,14 +256,14 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that the desired Route Table belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that the desired Route Table belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -272,8 +272,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetablefilter">List[Get<wbr>Route<wbr>Table<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Custom filter block as described below.
-{{% /md %}}</dd>
+    <dd>Custom filter block as described below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the specific Route Table to retrieve.
-{{% /md %}}</dd>
+    <dd>The id of the specific Route Table to retrieve.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,9 +308,9 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match
+    <dd>A mapping of tags, each pair of which must exactly match
 a pair on the desired Route Table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,11 +318,11 @@ a pair on the desired Route Table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that the desired Route Table belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that the desired Route Table belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -338,7 +338,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -347,7 +347,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetableassociation">List&lt;Get<wbr>Route<wbr>Table<wbr>Association&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -355,8 +355,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Gateway ID. Only set when associated with an Internet Gateway or Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The Gateway ID. Only set when associated with an Internet Gateway or Virtual Private Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -364,8 +364,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -373,8 +373,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the route table
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the route table
+</dd>
 
     <dt class="property-"
             title="">
@@ -382,8 +382,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Route Table ID.
-{{% /md %}}</dd>
+    <dd>The Route Table ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -391,7 +391,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetableroute">List&lt;Get<wbr>Route<wbr>Table<wbr>Route&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -399,8 +399,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Subnet ID. Only set when associated with a Subnet.
-{{% /md %}}</dd>
+    <dd>The Subnet ID. Only set when associated with a Subnet.
+</dd>
 
     <dt class="property-"
             title="">
@@ -408,7 +408,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -416,7 +416,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -424,13 +424,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetablefilter">List&lt;Get<wbr>Route<wbr>Table<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -439,7 +439,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetableassociation">[]Get<wbr>Route<wbr>Table<wbr>Association<wbr>Type</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -447,8 +447,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Gateway ID. Only set when associated with an Internet Gateway or Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The Gateway ID. Only set when associated with an Internet Gateway or Virtual Private Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -456,8 +456,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -465,8 +465,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the route table
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the route table
+</dd>
 
     <dt class="property-"
             title="">
@@ -474,8 +474,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Route Table ID.
-{{% /md %}}</dd>
+    <dd>The Route Table ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -483,7 +483,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetableroute">[]Get<wbr>Route<wbr>Table<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -491,8 +491,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Subnet ID. Only set when associated with a Subnet.
-{{% /md %}}</dd>
+    <dd>The Subnet ID. Only set when associated with a Subnet.
+</dd>
 
     <dt class="property-"
             title="">
@@ -500,7 +500,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -508,7 +508,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -516,13 +516,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetablefilter">[]Get<wbr>Route<wbr>Table<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -531,7 +531,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetableassociation">Get<wbr>Route<wbr>Table<wbr>Association[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -539,8 +539,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Gateway ID. Only set when associated with an Internet Gateway or Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The Gateway ID. Only set when associated with an Internet Gateway or Virtual Private Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -548,8 +548,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -557,8 +557,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the route table
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the route table
+</dd>
 
     <dt class="property-"
             title="">
@@ -566,8 +566,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Route Table ID.
-{{% /md %}}</dd>
+    <dd>The Route Table ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -575,7 +575,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetableroute">Get<wbr>Route<wbr>Table<wbr>Route[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -583,8 +583,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Subnet ID. Only set when associated with a Subnet.
-{{% /md %}}</dd>
+    <dd>The Subnet ID. Only set when associated with a Subnet.
+</dd>
 
     <dt class="property-"
             title="">
@@ -592,7 +592,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -600,7 +600,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -608,13 +608,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetablefilter">Get<wbr>Route<wbr>Table<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -623,7 +623,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetableassociation">List[Get<wbr>Route<wbr>Table<wbr>Association]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -631,8 +631,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Gateway ID. Only set when associated with an Internet Gateway or Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The Gateway ID. Only set when associated with an Internet Gateway or Virtual Private Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -640,8 +640,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -649,8 +649,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the route table
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the route table
+</dd>
 
     <dt class="property-"
             title="">
@@ -658,8 +658,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Route Table ID.
-{{% /md %}}</dd>
+    <dd>The Route Table ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -667,7 +667,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetableroute">List[Get<wbr>Route<wbr>Table<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -675,8 +675,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Subnet ID. Only set when associated with a Subnet.
-{{% /md %}}</dd>
+    <dd>The Subnet ID. Only set when associated with a Subnet.
+</dd>
 
     <dt class="property-"
             title="">
@@ -684,7 +684,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -692,7 +692,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -700,10 +700,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getroutetablefilter">List[Get<wbr>Route<wbr>Table<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -716,18 +716,18 @@ The following output properties are available:
 
 
 <h4 id="getroutetableassociation">Get<wbr>Route<wbr>Table<wbr>Association</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetRouteTableAssociation">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetRouteTableAssociationType">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -736,8 +736,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -745,8 +745,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the Association due to the Main Route Table.
-{{% /md %}}</dd>
+    <dd>If the Association due to the Main Route Table.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -754,8 +754,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Association ID.
-{{% /md %}}</dd>
+    <dd>The Association ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -763,8 +763,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the specific Route Table to retrieve.
-{{% /md %}}</dd>
+    <dd>The id of the specific Route Table to retrieve.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -772,14 +772,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -788,8 +788,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -797,8 +797,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the Association due to the Main Route Table.
-{{% /md %}}</dd>
+    <dd>If the Association due to the Main Route Table.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -806,8 +806,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Association ID.
-{{% /md %}}</dd>
+    <dd>The Association ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -815,8 +815,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the specific Route Table to retrieve.
-{{% /md %}}</dd>
+    <dd>The id of the specific Route Table to retrieve.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -824,14 +824,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -840,8 +840,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -849,8 +849,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If the Association due to the Main Route Table.
-{{% /md %}}</dd>
+    <dd>If the Association due to the Main Route Table.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -858,8 +858,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Association ID.
-{{% /md %}}</dd>
+    <dd>The Association ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -867,8 +867,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the specific Route Table to retrieve.
-{{% /md %}}</dd>
+    <dd>The id of the specific Route Table to retrieve.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -876,14 +876,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -892,8 +892,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -901,8 +901,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If the Association due to the Main Route Table.
-{{% /md %}}</dd>
+    <dd>If the Association due to the Main Route Table.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -910,8 +910,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Association ID.
-{{% /md %}}</dd>
+    <dd>The Association ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -919,8 +919,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the specific Route Table to retrieve.
-{{% /md %}}</dd>
+    <dd>The id of the specific Route Table to retrieve.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -928,29 +928,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getroutetablefilter">Get<wbr>Route<wbr>Table<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetRouteTableFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetRouteTableFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetRouteTableFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetRouteTableFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -959,9 +959,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRouteTables.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -969,15 +969,15 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A Route Table will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -986,9 +986,9 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRouteTables.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -996,15 +996,15 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A Route Table will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1013,9 +1013,9 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRouteTables.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1023,15 +1023,15 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A Route Table will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1040,9 +1040,9 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the field to filter by, as defined by
+    <dd>The name of the field to filter by, as defined by
 [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRouteTables.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1050,30 +1050,30 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given field.
+    <dd>Set of values that are accepted for the given field.
 A Route Table will be selected if any one of the given values matches.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getroutetableroute">Get<wbr>Route<wbr>Table<wbr>Route</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetRouteTableRoute">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetRouteTableRoute">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1082,8 +1082,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the route.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1091,8 +1091,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Egress Only Internet Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Egress Only Internet Gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1100,8 +1100,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1109,8 +1109,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 instance ID.
-{{% /md %}}</dd>
+    <dd>The EC2 instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1118,8 +1118,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block of the route.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1127,8 +1127,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The NAT Gateway ID.
-{{% /md %}}</dd>
+    <dd>The NAT Gateway ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1136,8 +1136,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the elastic network interface (eni) to use.
-{{% /md %}}</dd>
+    <dd>The ID of the elastic network interface (eni) to use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1145,8 +1145,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Transit Gateway ID.
-{{% /md %}}</dd>
+    <dd>The EC2 Transit Gateway ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1154,14 +1154,14 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Peering ID.
-{{% /md %}}</dd>
+    <dd>The VPC Peering ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1170,8 +1170,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the route.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1179,8 +1179,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Egress Only Internet Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Egress Only Internet Gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1188,8 +1188,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1197,8 +1197,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 instance ID.
-{{% /md %}}</dd>
+    <dd>The EC2 instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1206,8 +1206,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block of the route.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1215,8 +1215,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The NAT Gateway ID.
-{{% /md %}}</dd>
+    <dd>The NAT Gateway ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1224,8 +1224,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the elastic network interface (eni) to use.
-{{% /md %}}</dd>
+    <dd>The ID of the elastic network interface (eni) to use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1233,8 +1233,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Transit Gateway ID.
-{{% /md %}}</dd>
+    <dd>The EC2 Transit Gateway ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1242,14 +1242,14 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Peering ID.
-{{% /md %}}</dd>
+    <dd>The VPC Peering ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1258,8 +1258,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the route.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1267,8 +1267,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Egress Only Internet Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Egress Only Internet Gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1276,8 +1276,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1285,8 +1285,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 instance ID.
-{{% /md %}}</dd>
+    <dd>The EC2 instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1294,8 +1294,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block of the route.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1303,8 +1303,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The NAT Gateway ID.
-{{% /md %}}</dd>
+    <dd>The NAT Gateway ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1312,8 +1312,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the elastic network interface (eni) to use.
-{{% /md %}}</dd>
+    <dd>The ID of the elastic network interface (eni) to use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1321,8 +1321,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Transit Gateway ID.
-{{% /md %}}</dd>
+    <dd>The EC2 Transit Gateway ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1330,14 +1330,14 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Peering ID.
-{{% /md %}}</dd>
+    <dd>The VPC Peering ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1346,8 +1346,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the route.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1355,8 +1355,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Egress Only Internet Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Egress Only Internet Gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1364,8 +1364,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
-{{% /md %}}</dd>
+    <dd>The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1373,8 +1373,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 instance ID.
-{{% /md %}}</dd>
+    <dd>The EC2 instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1382,8 +1382,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block of the route.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block of the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1391,8 +1391,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The NAT Gateway ID.
-{{% /md %}}</dd>
+    <dd>The NAT Gateway ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1400,8 +1400,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the elastic network interface (eni) to use.
-{{% /md %}}</dd>
+    <dd>The ID of the elastic network interface (eni) to use.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1409,8 +1409,8 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Transit Gateway ID.
-{{% /md %}}</dd>
+    <dd>The EC2 Transit Gateway ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1418,11 +1418,11 @@ A Route Table will be selected if any one of the given values matches.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Peering ID.
-{{% /md %}}</dd>
+    <dd>The VPC Peering ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

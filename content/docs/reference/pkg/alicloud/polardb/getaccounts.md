@@ -22,29 +22,29 @@ Filters support regular expression for the account name, searches by clusterId.
 
 ## Using GetAccounts {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAccounts<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/polardb/#GetAccountsArgs">GetAccountsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/polardb/#GetAccountsResult">GetAccountsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_accounts(</span>db_cluster_id=None<span class="p">, </span>name_regex=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAccounts<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/polardb?tab=doc#LookupAccountsArgs">LookupAccountsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/polardb?tab=doc#LookupAccountsResult">LookupAccountsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAccounts </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Polardb.GetAccountsResult.html">GetAccountsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.PolarDB.GetAccountsArgs.html">GetAccountsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -52,7 +52,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -61,8 +61,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The polarDB cluster ID. 
-{{% /md %}}</dd>
+    <dd>The polarDB cluster ID. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -70,14 +70,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by account name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by account name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -86,8 +86,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The polarDB cluster ID. 
-{{% /md %}}</dd>
+    <dd>The polarDB cluster ID. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -95,14 +95,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by account name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by account name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -111,8 +111,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The polarDB cluster ID. 
-{{% /md %}}</dd>
+    <dd>The polarDB cluster ID. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -120,14 +120,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by account name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by account name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -136,8 +136,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The polarDB cluster ID. 
-{{% /md %}}</dd>
+    <dd>The polarDB cluster ID. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -145,11 +145,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by account name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by account name.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -165,7 +165,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -174,8 +174,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountsaccount">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Polar<wbr>DB.<wbr>Outputs.<wbr>Get<wbr>Accounts<wbr>Account&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB cluster accounts. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of PolarDB cluster accounts. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -183,7 +183,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -191,8 +191,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -200,8 +200,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Account name of the cluster.
-{{% /md %}}</dd>
+    <dd>Account name of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -209,13 +209,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -224,8 +224,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountsaccount">[]Get<wbr>Accounts<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB cluster accounts. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of PolarDB cluster accounts. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -233,7 +233,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -241,8 +241,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -250,8 +250,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Account name of the cluster.
-{{% /md %}}</dd>
+    <dd>Account name of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -259,13 +259,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -274,8 +274,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountsaccount">Get<wbr>Accounts<wbr>Account[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB cluster accounts. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of PolarDB cluster accounts. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -283,7 +283,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -291,8 +291,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -300,8 +300,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Account name of the cluster.
-{{% /md %}}</dd>
+    <dd>Account name of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -309,13 +309,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -324,8 +324,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountsaccount">List[Get<wbr>Accounts<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB cluster accounts. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of PolarDB cluster accounts. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -333,7 +333,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -341,8 +341,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -350,8 +350,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Account name of the cluster.
-{{% /md %}}</dd>
+    <dd>Account name of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -359,10 +359,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -375,18 +375,18 @@ The following output properties are available:
 
 
 <h4 id="getaccountsaccount">Get<wbr>Accounts<wbr>Account</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetAccountsAccount">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/polardb?tab=doc#GetAccountsAccount">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -395,8 +395,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Account description.
-{{% /md %}}</dd>
+    <dd>Account description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -404,8 +404,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Account lock state, Valid values are `Lock`, `UnLock`.
-{{% /md %}}</dd>
+    <dd>Account lock state, Valid values are `Lock`, `UnLock`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -413,8 +413,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Account name.
-{{% /md %}}</dd>
+    <dd>Account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -422,8 +422,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cluster address type.`Cluster`: the default address of the Cluster.`Primary`: Primary address.`Custom`: Custom cluster addresses.
-{{% /md %}}</dd>
+    <dd>Cluster address type.`Cluster`: the default address of the Cluster.`Primary`: Primary address.`Custom`: Custom cluster addresses.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -431,8 +431,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Account type, Valid values are `Normal`, `Super`.
-{{% /md %}}</dd>
+    <dd>Account type, Valid values are `Normal`, `Super`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -440,14 +440,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountsaccountdatabaseprivilege">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Polar<wbr>DB.<wbr>Inputs.<wbr>Get<wbr>Accounts<wbr>Account<wbr>Database<wbr>Privilege<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of database privilege. Each element contains the following attributes.
-{{% /md %}}</dd>
+    <dd>A list of database privilege. Each element contains the following attributes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -456,8 +456,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account description.
-{{% /md %}}</dd>
+    <dd>Account description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -465,8 +465,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account lock state, Valid values are `Lock`, `UnLock`.
-{{% /md %}}</dd>
+    <dd>Account lock state, Valid values are `Lock`, `UnLock`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -474,8 +474,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account name.
-{{% /md %}}</dd>
+    <dd>Account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -483,8 +483,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cluster address type.`Cluster`: the default address of the Cluster.`Primary`: Primary address.`Custom`: Custom cluster addresses.
-{{% /md %}}</dd>
+    <dd>Cluster address type.`Cluster`: the default address of the Cluster.`Primary`: Primary address.`Custom`: Custom cluster addresses.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -492,8 +492,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account type, Valid values are `Normal`, `Super`.
-{{% /md %}}</dd>
+    <dd>Account type, Valid values are `Normal`, `Super`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -501,14 +501,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountsaccountdatabaseprivilege">[]Get<wbr>Accounts<wbr>Account<wbr>Database<wbr>Privilege</a></span>
     </dt>
-    <dd>{{% md %}}A list of database privilege. Each element contains the following attributes.
-{{% /md %}}</dd>
+    <dd>A list of database privilege. Each element contains the following attributes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -517,8 +517,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account description.
-{{% /md %}}</dd>
+    <dd>Account description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -526,8 +526,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account lock state, Valid values are `Lock`, `UnLock`.
-{{% /md %}}</dd>
+    <dd>Account lock state, Valid values are `Lock`, `UnLock`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -535,8 +535,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account name.
-{{% /md %}}</dd>
+    <dd>Account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -544,8 +544,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cluster address type.`Cluster`: the default address of the Cluster.`Primary`: Primary address.`Custom`: Custom cluster addresses.
-{{% /md %}}</dd>
+    <dd>Cluster address type.`Cluster`: the default address of the Cluster.`Primary`: Primary address.`Custom`: Custom cluster addresses.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -553,8 +553,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account type, Valid values are `Normal`, `Super`.
-{{% /md %}}</dd>
+    <dd>Account type, Valid values are `Normal`, `Super`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -562,14 +562,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountsaccountdatabaseprivilege">Get<wbr>Accounts<wbr>Account<wbr>Database<wbr>Privilege[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of database privilege. Each element contains the following attributes.
-{{% /md %}}</dd>
+    <dd>A list of database privilege. Each element contains the following attributes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -578,8 +578,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Account lock state, Valid values are `Lock`, `UnLock`.
-{{% /md %}}</dd>
+    <dd>Account lock state, Valid values are `Lock`, `UnLock`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -587,8 +587,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cluster address type.`Cluster`: the default address of the Cluster.`Primary`: Primary address.`Custom`: Custom cluster addresses.
-{{% /md %}}</dd>
+    <dd>Cluster address type.`Cluster`: the default address of the Cluster.`Primary`: Primary address.`Custom`: Custom cluster addresses.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -596,8 +596,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Account description.
-{{% /md %}}</dd>
+    <dd>Account description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -605,8 +605,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Account name.
-{{% /md %}}</dd>
+    <dd>Account name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -614,8 +614,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Account type, Valid values are `Normal`, `Super`.
-{{% /md %}}</dd>
+    <dd>Account type, Valid values are `Normal`, `Super`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -623,29 +623,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountsaccountdatabaseprivilege">List[Get<wbr>Accounts<wbr>Account<wbr>Database<wbr>Privilege]</a></span>
     </dt>
-    <dd>{{% md %}}A list of database privilege. Each element contains the following attributes.
-{{% /md %}}</dd>
+    <dd>A list of database privilege. Each element contains the following attributes.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getaccountsaccountdatabaseprivilege">Get<wbr>Accounts<wbr>Account<wbr>Database<wbr>Privilege</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetAccountsAccountDatabasePrivilege">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/polardb?tab=doc#GetAccountsAccountDatabasePrivilege">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -654,8 +654,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Account privilege of database
-{{% /md %}}</dd>
+    <dd>Account privilege of database
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -663,14 +663,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The account owned database name 
-{{% /md %}}</dd>
+    <dd>The account owned database name 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -679,8 +679,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account privilege of database
-{{% /md %}}</dd>
+    <dd>Account privilege of database
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -688,14 +688,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The account owned database name 
-{{% /md %}}</dd>
+    <dd>The account owned database name 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -704,8 +704,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Account privilege of database
-{{% /md %}}</dd>
+    <dd>Account privilege of database
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -713,14 +713,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The account owned database name 
-{{% /md %}}</dd>
+    <dd>The account owned database name 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -729,8 +729,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Account privilege of database
-{{% /md %}}</dd>
+    <dd>Account privilege of database
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -738,11 +738,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The account owned database name 
-{{% /md %}}</dd>
+    <dd>The account owned database name 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

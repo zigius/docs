@@ -16,22 +16,22 @@ git_sha: "64cfd1d4f63773a8b4a923f2f5dfddf9b9e9f970"
 > please consult the source [`terraform-providers/terraform-provider-okta` repo](https://github.com/terraform-providers/terraform-provider-okta/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var okta = require("@pulumi/okta");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as okta from "@pulumi/okta";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

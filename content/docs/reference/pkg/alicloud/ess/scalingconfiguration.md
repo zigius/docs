@@ -14,26 +14,26 @@ meta_desc: "Explore the ScalingConfiguration resource of the ess module, includi
 
 
 ## Create a ScalingConfiguration Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#ScalingConfiguration">ScalingConfiguration</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#ScalingConfigurationArgs">ScalingConfigurationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ScalingConfiguration</span><span class="p">(resource_name, opts=None, </span>active=None<span class="p">, </span>data_disks=None<span class="p">, </span>enable=None<span class="p">, </span>force_delete=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_ids=None<span class="p">, </span>instance_name=None<span class="p">, </span>instance_type=None<span class="p">, </span>instance_types=None<span class="p">, </span>internet_charge_type=None<span class="p">, </span>internet_max_bandwidth_in=None<span class="p">, </span>internet_max_bandwidth_out=None<span class="p">, </span>io_optimized=None<span class="p">, </span>is_outdated=None<span class="p">, </span>key_name=None<span class="p">, </span>kms_encrypted_password=None<span class="p">, </span>kms_encryption_context=None<span class="p">, </span>override=None<span class="p">, </span>password=None<span class="p">, </span>password_inherit=None<span class="p">, </span>role_name=None<span class="p">, </span>scaling_configuration_name=None<span class="p">, </span>scaling_group_id=None<span class="p">, </span>security_group_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>substitute=None<span class="p">, </span>system_disk_category=None<span class="p">, </span>system_disk_size=None<span class="p">, </span>tags=None<span class="p">, </span>user_data=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewScalingConfiguration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingConfigurationArgs">ScalingConfigurationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingConfiguration">ScalingConfiguration</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.ScalingConfiguration.html">ScalingConfiguration</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ess.ScalingConfigurationArgs.html">ScalingConfigurationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the ScalingConfiguration resource of the ess module, includi
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the ScalingConfiguration resource of the ess module, includi
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the ScalingConfiguration resource of the ess module, includi
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the ScalingConfiguration resource of the ess module, includi
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ScalingConfiguration Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of an image file, indicating the image resource selected when an instance is enabled.
-{{% /md %}}</dd>
+    <dd>ID of an image file, indicating the image resource selected when an instance is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group of a scaling configuration.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group of a scaling configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,8 +218,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active current scaling configuration in the specified scaling group. Default to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active current scaling configuration in the specified scaling group. Default to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalingconfigurationdatadisk">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Inputs.<wbr>Scaling<wbr>Configuration<wbr>Data<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
-{{% /md %}}</dd>
+    <dd>DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
-{{% /md %}}</dd>
+    <dd>Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
-{{% /md %}}</dd>
+    <dd>The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -254,8 +254,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
+<p class="property-message">Deprecated: Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
-{{% /md %}}</dd>
+    <dd>Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Resource type of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource type of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Resource types of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource types of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
-{{% /md %}}</dd>
+    <dd>Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
-{{% /md %}}</dd>
+    <dd>Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
-{{% /md %}}</dd>
+    <dd>Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -317,8 +317,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd>It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
+<p class="property-message">Deprecated: Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,8 +335,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
-{{% /md %}}</dd>
+    <dd>The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,8 +344,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to overwrite the existing data. Default to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether to overwrite the existing data. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
-{{% /md %}}</dd>
+    <dd>The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
-{{% /md %}}</dd>
+    <dd>Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
-{{% /md %}}</dd>
+    <dd>Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,8 +407,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the security group used to create new instance. It is conflict with `security_group_ids`.
-{{% /md %}}</dd>
+    <dd>ID of the security group used to create new instance. It is conflict with `security_group_ids`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,8 +416,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
-{{% /md %}}</dd>
+    <dd>List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,8 +425,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
-{{% /md %}}</dd>
+    <dd>The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,8 +434,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
-{{% /md %}}</dd>
+    <dd>Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,10 +452,10 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
+    <dd>A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,14 +463,14 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
-{{% /md %}}</dd>
+    <dd>User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -479,8 +479,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of an image file, indicating the image resource selected when an instance is enabled.
-{{% /md %}}</dd>
+    <dd>ID of an image file, indicating the image resource selected when an instance is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -488,8 +488,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group of a scaling configuration.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group of a scaling configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active current scaling configuration in the specified scaling group. Default to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active current scaling configuration in the specified scaling group. Default to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalingconfigurationdatadisk">[]Scaling<wbr>Configuration<wbr>Data<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
-{{% /md %}}</dd>
+    <dd>DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
-{{% /md %}}</dd>
+    <dd>Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
-{{% /md %}}</dd>
+    <dd>The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -533,8 +533,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
+<p class="property-message">Deprecated: Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
-{{% /md %}}</dd>
+    <dd>Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Resource type of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource type of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,8 +560,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Resource types of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource types of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,8 +569,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
-{{% /md %}}</dd>
+    <dd>Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -578,8 +578,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
-{{% /md %}}</dd>
+    <dd>Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,8 +587,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
-{{% /md %}}</dd>
+    <dd>Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -596,8 +596,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd>It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
+<p class="property-message">Deprecated: Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,8 +605,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,8 +614,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
-{{% /md %}}</dd>
+    <dd>The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,8 +632,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to overwrite the existing data. Default to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether to overwrite the existing data. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
-{{% /md %}}</dd>
+    <dd>The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,8 +659,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,8 +668,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
-{{% /md %}}</dd>
+    <dd>Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -677,8 +677,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
-{{% /md %}}</dd>
+    <dd>Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the security group used to create new instance. It is conflict with `security_group_ids`.
-{{% /md %}}</dd>
+    <dd>ID of the security group used to create new instance. It is conflict with `security_group_ids`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,8 +695,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
-{{% /md %}}</dd>
+    <dd>List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,8 +704,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
-{{% /md %}}</dd>
+    <dd>The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,8 +713,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,8 +722,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
-{{% /md %}}</dd>
+    <dd>Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,10 +731,10 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
+    <dd>A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,14 +742,14 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
-{{% /md %}}</dd>
+    <dd>User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -758,8 +758,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of an image file, indicating the image resource selected when an instance is enabled.
-{{% /md %}}</dd>
+    <dd>ID of an image file, indicating the image resource selected when an instance is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -767,8 +767,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group of a scaling configuration.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group of a scaling configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,8 +776,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether active current scaling configuration in the specified scaling group. Default to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active current scaling configuration in the specified scaling group. Default to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,8 +785,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalingconfigurationdatadisk">Scaling<wbr>Configuration<wbr>Data<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
-{{% /md %}}</dd>
+    <dd>DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,8 +794,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
-{{% /md %}}</dd>
+    <dd>Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,8 +803,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
-{{% /md %}}</dd>
+    <dd>The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -812,8 +812,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
+<p class="property-message">Deprecated: Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -821,8 +821,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
-{{% /md %}}</dd>
+    <dd>Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,8 +830,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Resource type of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource type of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,8 +839,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Resource types of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource types of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,8 +848,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
-{{% /md %}}</dd>
+    <dd>Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,8 +857,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
-{{% /md %}}</dd>
+    <dd>Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
-{{% /md %}}</dd>
+    <dd>Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -875,8 +875,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd>It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
+<p class="property-message">Deprecated: Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,8 +893,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
-{{% /md %}}</dd>
+    <dd>The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,8 +911,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,8 +920,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to overwrite the existing data. Default to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether to overwrite the existing data. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,8 +929,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
-{{% /md %}}</dd>
+    <dd>The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -938,8 +938,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,8 +947,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
-{{% /md %}}</dd>
+    <dd>Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,8 +956,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
-{{% /md %}}</dd>
+    <dd>Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,8 +965,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the security group used to create new instance. It is conflict with `security_group_ids`.
-{{% /md %}}</dd>
+    <dd>ID of the security group used to create new instance. It is conflict with `security_group_ids`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
-{{% /md %}}</dd>
+    <dd>List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
-{{% /md %}}</dd>
+    <dd>The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
-{{% /md %}}</dd>
+    <dd>Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,10 +1010,10 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
+    <dd>A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,14 +1021,14 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
-{{% /md %}}</dd>
+    <dd>User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1037,8 +1037,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of an image file, indicating the image resource selected when an instance is enabled.
-{{% /md %}}</dd>
+    <dd>ID of an image file, indicating the image resource selected when an instance is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1046,8 +1046,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group of a scaling configuration.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group of a scaling configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active current scaling configuration in the specified scaling group. Default to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active current scaling configuration in the specified scaling group. Default to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalingconfigurationdatadisk">List[Scaling<wbr>Configuration<wbr>Data<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
-{{% /md %}}</dd>
+    <dd>DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
-{{% /md %}}</dd>
+    <dd>Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
-{{% /md %}}</dd>
+    <dd>The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1091,8 +1091,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
+<p class="property-message">Deprecated: Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
-{{% /md %}}</dd>
+    <dd>Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Resource type of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource type of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Resource types of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource types of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
-{{% /md %}}</dd>
+    <dd>Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
-{{% /md %}}</dd>
+    <dd>Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,8 +1145,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
-{{% /md %}}</dd>
+    <dd>Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1154,8 +1154,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd>It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
+<p class="property-message">Deprecated: Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
-{{% /md %}}</dd>
+    <dd>The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,8 +1190,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,8 +1199,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to overwrite the existing data. Default to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether to overwrite the existing data. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
-{{% /md %}}</dd>
+    <dd>The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
-{{% /md %}}</dd>
+    <dd>Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
-{{% /md %}}</dd>
+    <dd>Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the security group used to create new instance. It is conflict with `security_group_ids`.
-{{% /md %}}</dd>
+    <dd>ID of the security group used to create new instance. It is conflict with `security_group_ids`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,8 +1253,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
-{{% /md %}}</dd>
+    <dd>List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,8 +1262,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
-{{% /md %}}</dd>
+    <dd>The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1271,8 +1271,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1280,8 +1280,8 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
-{{% /md %}}</dd>
+    <dd>Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1289,10 +1289,10 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
+    <dd>A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1300,11 +1300,11 @@ The ScalingConfiguration resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
-{{% /md %}}</dd>
+    <dd>User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1318,7 +1318,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1327,13 +1327,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1342,13 +1342,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1357,13 +1357,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1372,10 +1372,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1386,25 +1386,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ScalingConfiguration Resource {#look-up}
 
 Get an existing ScalingConfiguration resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#ScalingConfigurationState">ScalingConfigurationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#ScalingConfiguration">ScalingConfiguration</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>active=None<span class="p">, </span>data_disks=None<span class="p">, </span>enable=None<span class="p">, </span>force_delete=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_ids=None<span class="p">, </span>instance_name=None<span class="p">, </span>instance_type=None<span class="p">, </span>instance_types=None<span class="p">, </span>internet_charge_type=None<span class="p">, </span>internet_max_bandwidth_in=None<span class="p">, </span>internet_max_bandwidth_out=None<span class="p">, </span>io_optimized=None<span class="p">, </span>is_outdated=None<span class="p">, </span>key_name=None<span class="p">, </span>kms_encrypted_password=None<span class="p">, </span>kms_encryption_context=None<span class="p">, </span>override=None<span class="p">, </span>password=None<span class="p">, </span>password_inherit=None<span class="p">, </span>role_name=None<span class="p">, </span>scaling_configuration_name=None<span class="p">, </span>scaling_group_id=None<span class="p">, </span>security_group_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>substitute=None<span class="p">, </span>system_disk_category=None<span class="p">, </span>system_disk_size=None<span class="p">, </span>tags=None<span class="p">, </span>user_data=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetScalingConfiguration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingConfigurationState">ScalingConfigurationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingConfiguration">ScalingConfiguration</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.ScalingConfiguration.html">ScalingConfiguration</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.ScalingConfigurationState.html">ScalingConfigurationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1429,9 +1429,9 @@ Get an existing ScalingConfiguration resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1444,36 +1444,9 @@ Get an existing ScalingConfiguration resource's state with the given name, ID, a
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1498,13 +1471,40 @@ Get an existing ScalingConfiguration resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1513,8 +1513,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active current scaling configuration in the specified scaling group. Default to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active current scaling configuration in the specified scaling group. Default to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,8 +1522,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalingconfigurationdatadisk">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Inputs.<wbr>Scaling<wbr>Configuration<wbr>Data<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
-{{% /md %}}</dd>
+    <dd>DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,8 +1531,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
-{{% /md %}}</dd>
+    <dd>Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,8 +1540,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
-{{% /md %}}</dd>
+    <dd>The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,8 +1549,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of an image file, indicating the image resource selected when an instance is enabled.
-{{% /md %}}</dd>
+    <dd>ID of an image file, indicating the image resource selected when an instance is enabled.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1558,8 +1558,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
+<p class="property-message">Deprecated: Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,8 +1567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
-{{% /md %}}</dd>
+    <dd>Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,8 +1576,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Resource type of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource type of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1585,8 +1585,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Resource types of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource types of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,8 +1594,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
-{{% /md %}}</dd>
+    <dd>Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,8 +1603,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
-{{% /md %}}</dd>
+    <dd>Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1612,8 +1612,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
-{{% /md %}}</dd>
+    <dd>Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1621,8 +1621,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd>It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
+<p class="property-message">Deprecated: Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1630,8 +1630,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1639,8 +1639,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
-{{% /md %}}</dd>
+    <dd>The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1648,8 +1648,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1657,8 +1657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1666,8 +1666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to overwrite the existing data. Default to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether to overwrite the existing data. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1675,8 +1675,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
-{{% /md %}}</dd>
+    <dd>The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,8 +1684,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1693,8 +1693,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
-{{% /md %}}</dd>
+    <dd>Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1702,8 +1702,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
-{{% /md %}}</dd>
+    <dd>Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1711,8 +1711,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group of a scaling configuration.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group of a scaling configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1720,8 +1720,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the security group used to create new instance. It is conflict with `security_group_ids`.
-{{% /md %}}</dd>
+    <dd>ID of the security group used to create new instance. It is conflict with `security_group_ids`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1729,8 +1729,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
-{{% /md %}}</dd>
+    <dd>List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1738,8 +1738,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
-{{% /md %}}</dd>
+    <dd>The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1747,8 +1747,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1756,8 +1756,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
-{{% /md %}}</dd>
+    <dd>Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1765,10 +1765,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
+    <dd>A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1776,14 +1776,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
-{{% /md %}}</dd>
+    <dd>User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1792,8 +1792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active current scaling configuration in the specified scaling group. Default to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active current scaling configuration in the specified scaling group. Default to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1801,8 +1801,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalingconfigurationdatadisk">[]Scaling<wbr>Configuration<wbr>Data<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
-{{% /md %}}</dd>
+    <dd>DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,8 +1810,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
-{{% /md %}}</dd>
+    <dd>Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1819,8 +1819,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
-{{% /md %}}</dd>
+    <dd>The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1828,8 +1828,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of an image file, indicating the image resource selected when an instance is enabled.
-{{% /md %}}</dd>
+    <dd>ID of an image file, indicating the image resource selected when an instance is enabled.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1837,8 +1837,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
+<p class="property-message">Deprecated: Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,8 +1846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
-{{% /md %}}</dd>
+    <dd>Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,8 +1855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Resource type of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource type of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1864,8 +1864,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Resource types of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource types of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1873,8 +1873,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
-{{% /md %}}</dd>
+    <dd>Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1882,8 +1882,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
-{{% /md %}}</dd>
+    <dd>Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1891,8 +1891,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
-{{% /md %}}</dd>
+    <dd>Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1900,8 +1900,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd>It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
+<p class="property-message">Deprecated: Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1909,8 +1909,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1918,8 +1918,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
-{{% /md %}}</dd>
+    <dd>The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1927,8 +1927,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1936,8 +1936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1945,8 +1945,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to overwrite the existing data. Default to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether to overwrite the existing data. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1954,8 +1954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
-{{% /md %}}</dd>
+    <dd>The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1963,8 +1963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1972,8 +1972,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
-{{% /md %}}</dd>
+    <dd>Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1981,8 +1981,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
-{{% /md %}}</dd>
+    <dd>Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1990,8 +1990,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group of a scaling configuration.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group of a scaling configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1999,8 +1999,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the security group used to create new instance. It is conflict with `security_group_ids`.
-{{% /md %}}</dd>
+    <dd>ID of the security group used to create new instance. It is conflict with `security_group_ids`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2008,8 +2008,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
-{{% /md %}}</dd>
+    <dd>List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2017,8 +2017,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
-{{% /md %}}</dd>
+    <dd>The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2026,8 +2026,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2035,8 +2035,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
-{{% /md %}}</dd>
+    <dd>Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2044,10 +2044,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
+    <dd>A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2055,14 +2055,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
-{{% /md %}}</dd>
+    <dd>User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2071,8 +2071,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether active current scaling configuration in the specified scaling group. Default to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active current scaling configuration in the specified scaling group. Default to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2080,8 +2080,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalingconfigurationdatadisk">Scaling<wbr>Configuration<wbr>Data<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
-{{% /md %}}</dd>
+    <dd>DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2089,8 +2089,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
-{{% /md %}}</dd>
+    <dd>Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2098,8 +2098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
-{{% /md %}}</dd>
+    <dd>The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,8 +2107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of an image file, indicating the image resource selected when an instance is enabled.
-{{% /md %}}</dd>
+    <dd>ID of an image file, indicating the image resource selected when an instance is enabled.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2116,8 +2116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
+<p class="property-message">Deprecated: Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,8 +2125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
-{{% /md %}}</dd>
+    <dd>Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2134,8 +2134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Resource type of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource type of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,8 +2143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Resource types of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource types of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2152,8 +2152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
-{{% /md %}}</dd>
+    <dd>Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2161,8 +2161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
-{{% /md %}}</dd>
+    <dd>Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2170,8 +2170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
-{{% /md %}}</dd>
+    <dd>Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2179,8 +2179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd>It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
+<p class="property-message">Deprecated: Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2188,8 +2188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2197,8 +2197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
-{{% /md %}}</dd>
+    <dd>The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2206,8 +2206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2215,8 +2215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2224,8 +2224,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to overwrite the existing data. Default to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether to overwrite the existing data. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2233,8 +2233,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
-{{% /md %}}</dd>
+    <dd>The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2242,8 +2242,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2251,8 +2251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
-{{% /md %}}</dd>
+    <dd>Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2260,8 +2260,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
-{{% /md %}}</dd>
+    <dd>Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2269,8 +2269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group of a scaling configuration.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group of a scaling configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2278,8 +2278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the security group used to create new instance. It is conflict with `security_group_ids`.
-{{% /md %}}</dd>
+    <dd>ID of the security group used to create new instance. It is conflict with `security_group_ids`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2287,8 +2287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
-{{% /md %}}</dd>
+    <dd>List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2296,8 +2296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
-{{% /md %}}</dd>
+    <dd>The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2305,8 +2305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2314,8 +2314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
-{{% /md %}}</dd>
+    <dd>Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2323,10 +2323,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
+    <dd>A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2334,14 +2334,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
-{{% /md %}}</dd>
+    <dd>User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2350,8 +2350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active current scaling configuration in the specified scaling group. Default to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active current scaling configuration in the specified scaling group. Default to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,8 +2359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalingconfigurationdatadisk">List[Scaling<wbr>Configuration<wbr>Data<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
-{{% /md %}}</dd>
+    <dd>DataDisk mappings to attach to ecs instance. See Block datadisk below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2368,8 +2368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
-{{% /md %}}</dd>
+    <dd>Whether enable the specified scaling group(make it active) to which the current scaling configuration belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2377,8 +2377,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
-{{% /md %}}</dd>
+    <dd>The last scaling configuration will be deleted forcibly with deleting its scaling group. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2386,8 +2386,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of an image file, indicating the image resource selected when an instance is enabled.
-{{% /md %}}</dd>
+    <dd>ID of an image file, indicating the image resource selected when an instance is enabled.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2395,8 +2395,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>It has been deprecated from version 1.6.0. New resource `alicloud.ess.Attachment` replaces it.
+<p class="property-message">Deprecated: Field &#39;instance_ids&#39; has been deprecated from provider version 1.6.0. New resource &#39;alicloud_ess_attachment&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2404,8 +2404,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
-{{% /md %}}</dd>
+    <dd>Name of an ECS instance. Default to "ESS-Instance". It is valid from version 1.7.1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2413,8 +2413,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Resource type of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource type of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2422,8 +2422,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Resource types of an ECS instance.
-{{% /md %}}</dd>
+    <dd>Resource types of an ECS instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2431,8 +2431,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
-{{% /md %}}</dd>
+    <dd>Network billing type, Values: PayByBandwidth or PayByTraffic. Default to `PayByBandwidth`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2440,8 +2440,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
-{{% /md %}}</dd>
+    <dd>Maximum incoming bandwidth from the public network, measured in Mbps (Mega bit per second). The value range is [1,200].
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2449,8 +2449,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
-{{% /md %}}</dd>
+    <dd>Maximum outgoing bandwidth from the public network, measured in Mbps (Mega bit per second). The value range for PayByBandwidth is [0,100].
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2458,8 +2458,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd>It has been deprecated on instance resource. All the launched alicloud instances will be I/O optimized.
+<p class="property-message">Deprecated: Attribute io_optimized has been deprecated on instance resource. All the launched alicloud instances will be IO optimized. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2467,8 +2467,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2476,8 +2476,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
-{{% /md %}}</dd>
+    <dd>The name of key pair that can login ECS instance successfully without password. If it is specified, the password would be invalid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2485,8 +2485,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a db account. If the `password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2494,8 +2494,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating a db account with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2503,8 +2503,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to overwrite the existing data. Default to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether to overwrite the existing data. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2512,8 +2512,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
-{{% /md %}}</dd>
+    <dd>The password of the ECS instance. The password must be 8 to 30 characters in length. It must contains at least three of the following character types: uppercase letters, lowercase letters, digits, and special characters. Special characters include `() ~!@#$%^&*-_+=\|{}[]:;'<>,.?/`, The password of Windows-based instances cannot start with a forward slash (/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2521,8 +2521,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
-{{% /md %}}</dd>
+    <dd>Specifies whether to use the password that is predefined in the image. If the PasswordInherit parameter is set to true, the `password` and `kms_encrypted_password` will be ignored. You must ensure that the selected image has a password configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2530,8 +2530,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
-{{% /md %}}</dd>
+    <dd>Instance RAM role name. The name is provided and maintained by RAM. You can use `alicloud.ram.Role` to create a new one.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2539,8 +2539,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
-{{% /md %}}</dd>
+    <dd>Name shown for the scheduled task. which must contain 2-64 characters (English or Chinese), starting with numbers, English letters or Chinese characters, and can contain number, underscores `_`, hypens `-`, and decimal point `.`. If this parameter value is not specified, the default value is ScalingConfigurationId.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2548,8 +2548,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group of a scaling configuration.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group of a scaling configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2557,8 +2557,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the security group used to create new instance. It is conflict with `security_group_ids`.
-{{% /md %}}</dd>
+    <dd>ID of the security group used to create new instance. It is conflict with `security_group_ids`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2566,8 +2566,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
-{{% /md %}}</dd>
+    <dd>List IDs of the security group used to create new instances. It is conflict with `security_group_id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2575,8 +2575,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
-{{% /md %}}</dd>
+    <dd>The another scaling configuration which will be active automatically and replace current configuration when setting `active` to 'false'. It is invalid when `active` is 'true'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2584,8 +2584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>Category of the system disk. The parameter value options are `ephemeral_ssd`, `cloud_efficiency`, `cloud_ssd`, `cloud_essd` and `cloud`. `cloud` only is used to some no I/O optimized instance. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2593,8 +2593,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
-{{% /md %}}</dd>
+    <dd>Size of system disk, in GiB. Optional values: cloud: 20-500, cloud_efficiency: 20-500, cloud_ssd: 20-500, ephemeral_ssd: 20-500 The default value is max{40, ImageSize}. If this parameter is set, the system disk size must be greater than or equal to max{40, ImageSize}.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2602,10 +2602,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
+    <dd>A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2613,11 +2613,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
-{{% /md %}}</dd>
+    <dd>User-defined data to customize the startup behaviors of the ECS instance and to pass data into the ECS instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2632,18 +2632,18 @@ The following state arguments are supported:
 
 
 <h4 id="scalingconfigurationdatadisk">Scaling<wbr>Configuration<wbr>Data<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ScalingConfigurationDataDisk">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ScalingConfigurationDataDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingConfigurationDataDiskArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingConfigurationDataDiskOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2652,7 +2652,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2660,7 +2660,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2668,7 +2668,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute device has been deprecated on disk attachment resource. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Attribute device has been deprecated on disk attachment resource. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2676,7 +2676,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2684,13 +2684,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2699,7 +2699,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2707,7 +2707,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2715,7 +2715,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute device has been deprecated on disk attachment resource. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Attribute device has been deprecated on disk attachment resource. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2723,7 +2723,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2731,13 +2731,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2746,7 +2746,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2754,7 +2754,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2762,7 +2762,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute device has been deprecated on disk attachment resource. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Attribute device has been deprecated on disk attachment resource. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2770,7 +2770,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2778,13 +2778,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2793,7 +2793,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2801,7 +2801,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2809,7 +2809,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Attribute device has been deprecated on disk attachment resource. Suggest to remove it from your template.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Attribute device has been deprecated on disk attachment resource. Suggest to remove it from your template.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2817,7 +2817,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2825,10 +2825,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

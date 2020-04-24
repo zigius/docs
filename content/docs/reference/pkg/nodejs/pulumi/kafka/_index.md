@@ -16,22 +16,22 @@ git_sha: "9b59a60dc35261c4e844c0873206b09a27705c0e"
 > please consult the source [`Mongey/terraform-provider-kafka` repo](https://github.com/Mongey/terraform-provider-kafka/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var kafka = require("@pulumi/kafka");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as kafka from "@pulumi/kafka";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

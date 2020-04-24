@@ -74,26 +74,26 @@ const main = new aws.ec2.VpnConnection("main", {
 
 
 ## Create a VpnConnection Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#VpnConnection">VpnConnection</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#VpnConnectionArgs">VpnConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">VpnConnection</span><span class="p">(resource_name, opts=None, </span>customer_gateway_id=None<span class="p">, </span>static_routes_only=None<span class="p">, </span>tags=None<span class="p">, </span>transit_gateway_id=None<span class="p">, </span>tunnel1_inside_cidr=None<span class="p">, </span>tunnel1_preshared_key=None<span class="p">, </span>tunnel2_inside_cidr=None<span class="p">, </span>tunnel2_preshared_key=None<span class="p">, </span>type=None<span class="p">, </span>vpn_gateway_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewVpnConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#VpnConnectionArgs">VpnConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#VpnConnection">VpnConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.VpnConnection.html">VpnConnection</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.VpnConnectionArgs.html">VpnConnectionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -130,9 +130,9 @@ const main = new aws.ec2.VpnConnection("main", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -150,9 +150,9 @@ const main = new aws.ec2.VpnConnection("main", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -199,9 +199,9 @@ const main = new aws.ec2.VpnConnection("main", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -238,7 +238,7 @@ const main = new aws.ec2.VpnConnection("main", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## VpnConnection Resource Properties {#properties}
 
@@ -251,7 +251,7 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -260,8 +260,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the customer gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the customer gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -269,8 +269,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
-{{% /md %}}</dd>
+    <dd>Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Tags to apply to the connection.
-{{% /md %}}</dd>
+    <dd>Tags to apply to the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EC2 Transit Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the EC2 Transit Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,14 +341,14 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Private Gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -357,8 +357,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the customer gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the customer gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -366,8 +366,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,8 +375,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
-{{% /md %}}</dd>
+    <dd>Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,8 +384,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Tags to apply to the connection.
-{{% /md %}}</dd>
+    <dd>Tags to apply to the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,8 +393,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EC2 Transit Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the EC2 Transit Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,8 +402,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,8 +411,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,14 +438,14 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Private Gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -454,8 +454,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the customer gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the customer gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -463,8 +463,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,8 +472,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
-{{% /md %}}</dd>
+    <dd>Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,8 +481,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Tags to apply to the connection.
-{{% /md %}}</dd>
+    <dd>Tags to apply to the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,8 +490,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EC2 Transit Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the EC2 Transit Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,8 +499,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,14 +535,14 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Private Gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -551,8 +551,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the customer gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the customer gateway.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -560,8 +560,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,8 +569,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
-{{% /md %}}</dd>
+    <dd>Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -578,8 +578,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Tags to apply to the connection.
-{{% /md %}}</dd>
+    <dd>Tags to apply to the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,8 +587,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EC2 Transit Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the EC2 Transit Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -596,8 +596,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,8 +605,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,8 +614,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,11 +632,11 @@ The VpnConnection resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Private Gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -650,7 +650,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -659,8 +659,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration information for the VPN connection's customer gateway (in the native XML format).
-{{% /md %}}</dd>
+    <dd>The configuration information for the VPN connection's customer gateway (in the native XML format).
+</dd>
 
     <dt class="property-"
             title="">
@@ -668,7 +668,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -676,7 +676,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionroute">List&lt;Vpn<wbr>Connection<wbr>Route&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -684,8 +684,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
-{{% /md %}}</dd>
+    <dd>When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,8 +693,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -702,8 +702,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,8 +711,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -720,8 +720,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -729,8 +729,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -738,8 +738,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -747,8 +747,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -756,8 +756,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -765,8 +765,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -774,8 +774,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -783,13 +783,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionvgwtelemetry">List&lt;Vpn<wbr>Connection<wbr>Vgw<wbr>Telemetry&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -798,8 +798,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration information for the VPN connection's customer gateway (in the native XML format).
-{{% /md %}}</dd>
+    <dd>The configuration information for the VPN connection's customer gateway (in the native XML format).
+</dd>
 
     <dt class="property-"
             title="">
@@ -807,7 +807,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -815,7 +815,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionroute">[]Vpn<wbr>Connection<wbr>Route<wbr>Type</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -823,8 +823,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
-{{% /md %}}</dd>
+    <dd>When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -832,8 +832,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -841,8 +841,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -850,8 +850,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -859,8 +859,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -868,8 +868,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -877,8 +877,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -886,8 +886,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -895,8 +895,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -904,8 +904,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -913,8 +913,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -922,13 +922,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionvgwtelemetry">[]Vpn<wbr>Connection<wbr>Vgw<wbr>Telemetry</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -937,8 +937,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration information for the VPN connection's customer gateway (in the native XML format).
-{{% /md %}}</dd>
+    <dd>The configuration information for the VPN connection's customer gateway (in the native XML format).
+</dd>
 
     <dt class="property-"
             title="">
@@ -946,7 +946,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -954,7 +954,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionroute">Vpn<wbr>Connection<wbr>Route[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -962,8 +962,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
-{{% /md %}}</dd>
+    <dd>When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -971,8 +971,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -980,8 +980,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -989,8 +989,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -998,8 +998,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1007,8 +1007,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1016,8 +1016,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1025,8 +1025,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1034,8 +1034,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1043,8 +1043,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1052,8 +1052,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1061,13 +1061,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionvgwtelemetry">Vpn<wbr>Connection<wbr>Vgw<wbr>Telemetry[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1076,8 +1076,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configuration information for the VPN connection's customer gateway (in the native XML format).
-{{% /md %}}</dd>
+    <dd>The configuration information for the VPN connection's customer gateway (in the native XML format).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1085,7 +1085,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1093,7 +1093,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionroute">List[Vpn<wbr>Connection<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1101,8 +1101,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
-{{% /md %}}</dd>
+    <dd>When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1110,8 +1110,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1119,8 +1119,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1128,8 +1128,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the first VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1137,8 +1137,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1146,8 +1146,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1155,8 +1155,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1164,8 +1164,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1173,8 +1173,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the second VPN tunnel.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1182,8 +1182,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1191,8 +1191,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1200,10 +1200,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionvgwtelemetry">List[Vpn<wbr>Connection<wbr>Vgw<wbr>Telemetry]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1214,25 +1214,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing VpnConnection Resource {#look-up}
 
 Get an existing VpnConnection resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#VpnConnectionState">VpnConnectionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#VpnConnection">VpnConnection</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>customer_gateway_configuration=None<span class="p">, </span>customer_gateway_id=None<span class="p">, </span>routes=None<span class="p">, </span>static_routes_only=None<span class="p">, </span>tags=None<span class="p">, </span>transit_gateway_attachment_id=None<span class="p">, </span>transit_gateway_id=None<span class="p">, </span>tunnel1_address=None<span class="p">, </span>tunnel1_bgp_asn=None<span class="p">, </span>tunnel1_bgp_holdtime=None<span class="p">, </span>tunnel1_cgw_inside_address=None<span class="p">, </span>tunnel1_inside_cidr=None<span class="p">, </span>tunnel1_preshared_key=None<span class="p">, </span>tunnel1_vgw_inside_address=None<span class="p">, </span>tunnel2_address=None<span class="p">, </span>tunnel2_bgp_asn=None<span class="p">, </span>tunnel2_bgp_holdtime=None<span class="p">, </span>tunnel2_cgw_inside_address=None<span class="p">, </span>tunnel2_inside_cidr=None<span class="p">, </span>tunnel2_preshared_key=None<span class="p">, </span>tunnel2_vgw_inside_address=None<span class="p">, </span>type=None<span class="p">, </span>vgw_telemetries=None<span class="p">, </span>vpn_gateway_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetVpnConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#VpnConnectionState">VpnConnectionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#VpnConnection">VpnConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.VpnConnection.html">VpnConnection</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.VpnConnectionState.html">VpnConnectionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1257,9 +1257,9 @@ Get an existing VpnConnection resource's state with the given name, ID, and opti
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1272,36 +1272,9 @@ Get an existing VpnConnection resource's state with the given name, ID, and opti
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1326,13 +1299,40 @@ Get an existing VpnConnection resource's state with the given name, ID, and opti
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1341,8 +1341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration information for the VPN connection's customer gateway (in the native XML format).
-{{% /md %}}</dd>
+    <dd>The configuration information for the VPN connection's customer gateway (in the native XML format).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the customer gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the customer gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,7 +1359,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionroute">List&lt;Vpn<wbr>Connection<wbr>Route<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,8 +1367,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
-{{% /md %}}</dd>
+    <dd>Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,8 +1376,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Tags to apply to the connection.
-{{% /md %}}</dd>
+    <dd>Tags to apply to the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,8 +1385,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
-{{% /md %}}</dd>
+    <dd>When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1394,8 +1394,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EC2 Transit Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the EC2 Transit Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,8 +1403,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1412,8 +1412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,8 +1421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,8 +1430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1439,8 +1439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,8 +1448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,8 +1457,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,8 +1466,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,8 +1475,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,8 +1484,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1493,8 +1493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,8 +1502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,8 +1511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,8 +1520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,8 +1529,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,7 +1538,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionvgwtelemetry">List&lt;Vpn<wbr>Connection<wbr>Vgw<wbr>Telemetry<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1546,14 +1546,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Private Gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1562,8 +1562,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration information for the VPN connection's customer gateway (in the native XML format).
-{{% /md %}}</dd>
+    <dd>The configuration information for the VPN connection's customer gateway (in the native XML format).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,8 +1571,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the customer gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the customer gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1580,7 +1580,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionroute">[]Vpn<wbr>Connection<wbr>Route<wbr>Type</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,8 +1588,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
-{{% /md %}}</dd>
+    <dd>Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,8 +1597,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Tags to apply to the connection.
-{{% /md %}}</dd>
+    <dd>Tags to apply to the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1606,8 +1606,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
-{{% /md %}}</dd>
+    <dd>When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1615,8 +1615,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EC2 Transit Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the EC2 Transit Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1624,8 +1624,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1633,8 +1633,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,8 +1642,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,8 +1651,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,8 +1660,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,8 +1669,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,8 +1687,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,8 +1705,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1714,8 +1714,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,8 +1723,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1732,8 +1732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1741,8 +1741,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,8 +1750,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1759,7 +1759,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionvgwtelemetry">[]Vpn<wbr>Connection<wbr>Vgw<wbr>Telemetry</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1767,14 +1767,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Private Gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1783,8 +1783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration information for the VPN connection's customer gateway (in the native XML format).
-{{% /md %}}</dd>
+    <dd>The configuration information for the VPN connection's customer gateway (in the native XML format).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1792,8 +1792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the customer gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the customer gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1801,7 +1801,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionroute">Vpn<wbr>Connection<wbr>Route[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1809,8 +1809,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
-{{% /md %}}</dd>
+    <dd>Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1818,8 +1818,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Tags to apply to the connection.
-{{% /md %}}</dd>
+    <dd>Tags to apply to the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1827,8 +1827,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
-{{% /md %}}</dd>
+    <dd>When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1836,8 +1836,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EC2 Transit Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the EC2 Transit Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1845,8 +1845,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1854,8 +1854,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1863,8 +1863,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1872,8 +1872,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1881,8 +1881,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1890,8 +1890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1899,8 +1899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1908,8 +1908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1917,8 +1917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1926,8 +1926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1935,8 +1935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1944,8 +1944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1953,8 +1953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1962,8 +1962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,8 +1971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1980,7 +1980,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionvgwtelemetry">Vpn<wbr>Connection<wbr>Vgw<wbr>Telemetry[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1988,14 +1988,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Private Gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2004,8 +2004,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configuration information for the VPN connection's customer gateway (in the native XML format).
-{{% /md %}}</dd>
+    <dd>The configuration information for the VPN connection's customer gateway (in the native XML format).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2013,8 +2013,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the customer gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the customer gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2022,7 +2022,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionroute">List[Vpn<wbr>Connection<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2030,8 +2030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
-{{% /md %}}</dd>
+    <dd>Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2039,8 +2039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Tags to apply to the connection.
-{{% /md %}}</dd>
+    <dd>Tags to apply to the connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2048,8 +2048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
-{{% /md %}}</dd>
+    <dd>When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2057,8 +2057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the EC2 Transit Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the EC2 Transit Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2066,8 +2066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2075,8 +2075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2084,8 +2084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2093,8 +2093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2102,8 +2102,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2111,8 +2111,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the first VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the first VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2120,8 +2120,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2129,8 +2129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The public IP address of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2138,8 +2138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The bgp asn number of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp asn number of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,8 +2147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The bgp holdtime of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The bgp holdtime of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2156,8 +2156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2165,8 +2165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block of the inside IP addresses for the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The CIDR block of the inside IP addresses for the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2174,8 +2174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The preshared key of the second VPN tunnel.
-{{% /md %}}</dd>
+    <dd>The preshared key of the second VPN tunnel.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2183,8 +2183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
-{{% /md %}}</dd>
+    <dd>The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2192,8 +2192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2201,7 +2201,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#vpnconnectionvgwtelemetry">List[Vpn<wbr>Connection<wbr>Vgw<wbr>Telemetry]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2209,11 +2209,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Private Gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Private Gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2228,18 +2228,18 @@ The following state arguments are supported:
 
 
 <h4 id="vpnconnectionroute">Vpn<wbr>Connection<wbr>Route</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VpnConnectionRoute">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#VpnConnectionRouteTypeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2248,7 +2248,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2256,7 +2256,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2264,13 +2264,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2279,7 +2279,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2287,7 +2287,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2295,13 +2295,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2310,7 +2310,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2318,7 +2318,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2326,13 +2326,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2341,7 +2341,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2349,7 +2349,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2357,28 +2357,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="vpnconnectionvgwtelemetry">Vpn<wbr>Connection<wbr>Vgw<wbr>Telemetry</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VpnConnectionVgwTelemetry">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#VpnConnectionVgwTelemetryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2387,7 +2387,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2395,7 +2395,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2403,7 +2403,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,7 +2411,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2419,13 +2419,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2434,7 +2434,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2442,7 +2442,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2450,7 +2450,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2458,7 +2458,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2466,13 +2466,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2481,7 +2481,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2489,7 +2489,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2497,7 +2497,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2505,7 +2505,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2513,13 +2513,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2528,7 +2528,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2536,7 +2536,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2544,7 +2544,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2552,7 +2552,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2560,10 +2560,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

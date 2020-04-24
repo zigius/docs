@@ -42,26 +42,26 @@ const sanjose_http = new f5bigip.ltm.ProfileHttp("sanjose-http", {
 
 
 ## Create a ProfileHttp Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/f5bigip/ltm/#ProfileHttp">ProfileHttp</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/f5bigip/ltm/#ProfileHttpArgs">ProfileHttpArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ProfileHttp</span><span class="p">(resource_name, opts=None, </span>accept_xff=None<span class="p">, </span>app_service=None<span class="p">, </span>basic_auth_realm=None<span class="p">, </span>defaults_from=None<span class="p">, </span>description=None<span class="p">, </span>encrypt_cookie_secret=None<span class="p">, </span>encrypt_cookies=None<span class="p">, </span>fallback_host=None<span class="p">, </span>fallback_status_codes=None<span class="p">, </span>head_erase=None<span class="p">, </span>head_insert=None<span class="p">, </span>insert_xforwarded_for=None<span class="p">, </span>lws_separator=None<span class="p">, </span>name=None<span class="p">, </span>oneconnect_transformations=None<span class="p">, </span>proxy_type=None<span class="p">, </span>redirect_rewrite=None<span class="p">, </span>request_chunking=None<span class="p">, </span>response_chunking=None<span class="p">, </span>response_headers_permitteds=None<span class="p">, </span>server_agent_name=None<span class="p">, </span>tm_partition=None<span class="p">, </span>via_host_name=None<span class="p">, </span>via_request=None<span class="p">, </span>via_response=None<span class="p">, </span>xff_alternative_names=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewProfileHttp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-f5bigip/sdk/v2/go/f5bigip/ltm?tab=doc#ProfileHttpArgs">ProfileHttpArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-f5bigip/sdk/v2/go/f5bigip/ltm?tab=doc#ProfileHttp">ProfileHttp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.F5bigip/Pulumi.F5bigip.Ltm.ProfileHttp.html">ProfileHttp</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.F5bigip/Pulumi.F5BigIP.Ltm.ProfileHttpArgs.html">ProfileHttpArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -98,9 +98,9 @@ const sanjose_http = new f5bigip.ltm.ProfileHttp("sanjose-http", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -118,9 +118,9 @@ const sanjose_http = new f5bigip.ltm.ProfileHttp("sanjose-http", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -167,9 +167,9 @@ const sanjose_http = new f5bigip.ltm.ProfileHttp("sanjose-http", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -206,7 +206,7 @@ const sanjose_http = new f5bigip.ltm.ProfileHttp("sanjose-http", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ProfileHttp Resource Properties {#properties}
 
@@ -219,7 +219,7 @@ The ProfileHttp resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -228,8 +228,8 @@ The ProfileHttp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
-{{% /md %}}</dd>
+    <dd>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -237,8 +237,8 @@ The ProfileHttp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the profile_http
-{{% /md %}}</dd>
+    <dd>Name of the profile_http
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,9 +246,9 @@ The ProfileHttp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
+    <dd>Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
 XFF (X-forwarded-for) headers, if they exist.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,8 +256,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The application service to which the object belongs.
-{{% /md %}}</dd>
+    <dd>The application service to which the object belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,8 +265,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
-{{% /md %}}</dd>
+    <dd>Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User defibned description
-{{% /md %}}</dd>
+    <dd>User defibned description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a passphrase for the cookie encryption
-{{% /md %}}</dd>
+    <dd>Specifies a passphrase for the cookie encryption
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Encrypts specified cookies that the BIG-IP system sends to a client system
-{{% /md %}}</dd>
+    <dd>Encrypts specified cookies that the BIG-IP system sends to a client system
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
-{{% /md %}}</dd>
+    <dd>Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies one or more three-digit status codes that can be returned by an HTTP server.
-{{% /md %}}</dd>
+    <dd>Specifies one or more three-digit status codes that can be returned by an HTTP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the header string that you want to erase from an HTTP request. You can also specify none
-{{% /md %}}</dd>
+    <dd>Specifies the header string that you want to erase from an HTTP request. You can also specify none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,8 +328,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
-{{% /md %}}</dd>
+    <dd>When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
-{{% /md %}}</dd>
+    <dd>Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of HTTP proxy.
-{{% /md %}}</dd>
+    <dd>Specifies the type of HTTP proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies which of the application HTTP redirects the system rewrites to HTTPS.
-{{% /md %}}</dd>
+    <dd>Specifies which of the application HTTP redirects the system rewrites to HTTPS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked requests.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked responses.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked responses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies headers that the BIG-IP system allows in an HTTP response.
-{{% /md %}}</dd>
+    <dd>Specifies headers that the BIG-IP system allows in an HTTP response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,9 +409,9 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
+    <dd>Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
 string is specified, then no Server header will be added to such responses
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,8 +419,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Displays the administrative partition within which this profile resides.
-{{% /md %}}</dd>
+    <dd>Displays the administrative partition within which this profile resides.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname to include into Via header
-{{% /md %}}</dd>
+    <dd>Specifies the hostname to include into Via header
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,8 +437,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,8 +446,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,14 +455,14 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies alternative XFF headers instead of the default X-forwarded-for header
-{{% /md %}}</dd>
+    <dd>Specifies alternative XFF headers instead of the default X-forwarded-for header
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -471,8 +471,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
-{{% /md %}}</dd>
+    <dd>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -480,8 +480,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the profile_http
-{{% /md %}}</dd>
+    <dd>Name of the profile_http
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,9 +489,9 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
+    <dd>Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
 XFF (X-forwarded-for) headers, if they exist.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,8 +499,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application service to which the object belongs.
-{{% /md %}}</dd>
+    <dd>The application service to which the object belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
-{{% /md %}}</dd>
+    <dd>Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User defibned description
-{{% /md %}}</dd>
+    <dd>User defibned description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a passphrase for the cookie encryption
-{{% /md %}}</dd>
+    <dd>Specifies a passphrase for the cookie encryption
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Encrypts specified cookies that the BIG-IP system sends to a client system
-{{% /md %}}</dd>
+    <dd>Encrypts specified cookies that the BIG-IP system sends to a client system
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
-{{% /md %}}</dd>
+    <dd>Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,8 +553,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies one or more three-digit status codes that can be returned by an HTTP server.
-{{% /md %}}</dd>
+    <dd>Specifies one or more three-digit status codes that can be returned by an HTTP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the header string that you want to erase from an HTTP request. You can also specify none
-{{% /md %}}</dd>
+    <dd>Specifies the header string that you want to erase from an HTTP request. You can also specify none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,8 +571,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,8 +580,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
-{{% /md %}}</dd>
+    <dd>When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -589,8 +589,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,8 +598,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
-{{% /md %}}</dd>
+    <dd>Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -607,8 +607,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of HTTP proxy.
-{{% /md %}}</dd>
+    <dd>Specifies the type of HTTP proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,8 +616,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies which of the application HTTP redirects the system rewrites to HTTPS.
-{{% /md %}}</dd>
+    <dd>Specifies which of the application HTTP redirects the system rewrites to HTTPS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -625,8 +625,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked requests.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -634,8 +634,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked responses.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked responses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -643,8 +643,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies headers that the BIG-IP system allows in an HTTP response.
-{{% /md %}}</dd>
+    <dd>Specifies headers that the BIG-IP system allows in an HTTP response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -652,9 +652,9 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
+    <dd>Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
 string is specified, then no Server header will be added to such responses
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,8 +662,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Displays the administrative partition within which this profile resides.
-{{% /md %}}</dd>
+    <dd>Displays the administrative partition within which this profile resides.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -671,8 +671,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname to include into Via header
-{{% /md %}}</dd>
+    <dd>Specifies the hostname to include into Via header
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,8 +680,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,8 +689,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,14 +698,14 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies alternative XFF headers instead of the default X-forwarded-for header
-{{% /md %}}</dd>
+    <dd>Specifies alternative XFF headers instead of the default X-forwarded-for header
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -714,8 +714,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
-{{% /md %}}</dd>
+    <dd>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -723,8 +723,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the profile_http
-{{% /md %}}</dd>
+    <dd>Name of the profile_http
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,9 +732,9 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
+    <dd>Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
 XFF (X-forwarded-for) headers, if they exist.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,8 +742,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application service to which the object belongs.
-{{% /md %}}</dd>
+    <dd>The application service to which the object belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,8 +751,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
-{{% /md %}}</dd>
+    <dd>Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,8 +760,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User defibned description
-{{% /md %}}</dd>
+    <dd>User defibned description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,8 +769,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a passphrase for the cookie encryption
-{{% /md %}}</dd>
+    <dd>Specifies a passphrase for the cookie encryption
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,8 +778,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Encrypts specified cookies that the BIG-IP system sends to a client system
-{{% /md %}}</dd>
+    <dd>Encrypts specified cookies that the BIG-IP system sends to a client system
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,8 +787,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
-{{% /md %}}</dd>
+    <dd>Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,8 +796,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies one or more three-digit status codes that can be returned by an HTTP server.
-{{% /md %}}</dd>
+    <dd>Specifies one or more three-digit status codes that can be returned by an HTTP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the header string that you want to erase from an HTTP request. You can also specify none
-{{% /md %}}</dd>
+    <dd>Specifies the header string that you want to erase from an HTTP request. You can also specify none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
-{{% /md %}}</dd>
+    <dd>When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,8 +832,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,8 +841,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
-{{% /md %}}</dd>
+    <dd>Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of HTTP proxy.
-{{% /md %}}</dd>
+    <dd>Specifies the type of HTTP proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies which of the application HTTP redirects the system rewrites to HTTPS.
-{{% /md %}}</dd>
+    <dd>Specifies which of the application HTTP redirects the system rewrites to HTTPS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked requests.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked responses.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked responses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies headers that the BIG-IP system allows in an HTTP response.
-{{% /md %}}</dd>
+    <dd>Specifies headers that the BIG-IP system allows in an HTTP response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,9 +895,9 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
+    <dd>Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
 string is specified, then no Server header will be added to such responses
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,8 +905,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Displays the administrative partition within which this profile resides.
-{{% /md %}}</dd>
+    <dd>Displays the administrative partition within which this profile resides.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,8 +914,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname to include into Via header
-{{% /md %}}</dd>
+    <dd>Specifies the hostname to include into Via header
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,8 +923,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,8 +932,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,14 +941,14 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies alternative XFF headers instead of the default X-forwarded-for header
-{{% /md %}}</dd>
+    <dd>Specifies alternative XFF headers instead of the default X-forwarded-for header
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -957,8 +957,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
-{{% /md %}}</dd>
+    <dd>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -966,8 +966,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the profile_http
-{{% /md %}}</dd>
+    <dd>Name of the profile_http
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -975,9 +975,9 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
+    <dd>Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
 XFF (X-forwarded-for) headers, if they exist.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,8 +985,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The application service to which the object belongs.
-{{% /md %}}</dd>
+    <dd>The application service to which the object belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -994,8 +994,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
-{{% /md %}}</dd>
+    <dd>Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1003,8 +1003,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User defibned description
-{{% /md %}}</dd>
+    <dd>User defibned description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,8 +1012,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a passphrase for the cookie encryption
-{{% /md %}}</dd>
+    <dd>Specifies a passphrase for the cookie encryption
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,8 +1021,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Encrypts specified cookies that the BIG-IP system sends to a client system
-{{% /md %}}</dd>
+    <dd>Encrypts specified cookies that the BIG-IP system sends to a client system
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
-{{% /md %}}</dd>
+    <dd>Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,8 +1039,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies one or more three-digit status codes that can be returned by an HTTP server.
-{{% /md %}}</dd>
+    <dd>Specifies one or more three-digit status codes that can be returned by an HTTP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,8 +1048,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the header string that you want to erase from an HTTP request. You can also specify none
-{{% /md %}}</dd>
+    <dd>Specifies the header string that you want to erase from an HTTP request. You can also specify none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,8 +1057,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
-{{% /md %}}</dd>
+    <dd>When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,8 +1075,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
-{{% /md %}}</dd>
+    <dd>Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of HTTP proxy.
-{{% /md %}}</dd>
+    <dd>Specifies the type of HTTP proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies which of the application HTTP redirects the system rewrites to HTTPS.
-{{% /md %}}</dd>
+    <dd>Specifies which of the application HTTP redirects the system rewrites to HTTPS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked requests.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,8 +1120,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked responses.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked responses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,8 +1129,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies headers that the BIG-IP system allows in an HTTP response.
-{{% /md %}}</dd>
+    <dd>Specifies headers that the BIG-IP system allows in an HTTP response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,9 +1138,9 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
+    <dd>Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
 string is specified, then no Server header will be added to such responses
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,8 +1148,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Displays the administrative partition within which this profile resides.
-{{% /md %}}</dd>
+    <dd>Displays the administrative partition within which this profile resides.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1157,8 +1157,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname to include into Via header
-{{% /md %}}</dd>
+    <dd>Specifies the hostname to include into Via header
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1166,8 +1166,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,8 +1175,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,11 +1184,11 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies alternative XFF headers instead of the default X-forwarded-for header
-{{% /md %}}</dd>
+    <dd>Specifies alternative XFF headers instead of the default X-forwarded-for header
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1202,7 +1202,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1211,13 +1211,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1226,13 +1226,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1241,13 +1241,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1256,10 +1256,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1270,25 +1270,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ProfileHttp Resource {#look-up}
 
 Get an existing ProfileHttp resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/f5bigip/ltm/#ProfileHttpState">ProfileHttpState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/f5bigip/ltm/#ProfileHttp">ProfileHttp</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>accept_xff=None<span class="p">, </span>app_service=None<span class="p">, </span>basic_auth_realm=None<span class="p">, </span>defaults_from=None<span class="p">, </span>description=None<span class="p">, </span>encrypt_cookie_secret=None<span class="p">, </span>encrypt_cookies=None<span class="p">, </span>fallback_host=None<span class="p">, </span>fallback_status_codes=None<span class="p">, </span>head_erase=None<span class="p">, </span>head_insert=None<span class="p">, </span>insert_xforwarded_for=None<span class="p">, </span>lws_separator=None<span class="p">, </span>name=None<span class="p">, </span>oneconnect_transformations=None<span class="p">, </span>proxy_type=None<span class="p">, </span>redirect_rewrite=None<span class="p">, </span>request_chunking=None<span class="p">, </span>response_chunking=None<span class="p">, </span>response_headers_permitteds=None<span class="p">, </span>server_agent_name=None<span class="p">, </span>tm_partition=None<span class="p">, </span>via_host_name=None<span class="p">, </span>via_request=None<span class="p">, </span>via_response=None<span class="p">, </span>xff_alternative_names=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetProfileHttp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-f5bigip/sdk/v2/go/f5bigip/ltm?tab=doc#ProfileHttpState">ProfileHttpState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-f5bigip/sdk/v2/go/f5bigip/ltm?tab=doc#ProfileHttp">ProfileHttp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.F5bigip/Pulumi.F5bigip.Ltm.ProfileHttp.html">ProfileHttp</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.F5bigip/Pulumi.F5bigip.Ltm.ProfileHttpState.html">ProfileHttpState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1313,9 +1313,9 @@ Get an existing ProfileHttp resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1328,36 +1328,9 @@ Get an existing ProfileHttp resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1382,13 +1355,40 @@ Get an existing ProfileHttp resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1397,9 +1397,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
+    <dd>Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
 XFF (X-forwarded-for) headers, if they exist.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,8 +1407,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The application service to which the object belongs.
-{{% /md %}}</dd>
+    <dd>The application service to which the object belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1416,8 +1416,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
-{{% /md %}}</dd>
+    <dd>Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,8 +1425,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
-{{% /md %}}</dd>
+    <dd>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,8 +1434,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User defibned description
-{{% /md %}}</dd>
+    <dd>User defibned description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,8 +1443,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a passphrase for the cookie encryption
-{{% /md %}}</dd>
+    <dd>Specifies a passphrase for the cookie encryption
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,8 +1452,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Encrypts specified cookies that the BIG-IP system sends to a client system
-{{% /md %}}</dd>
+    <dd>Encrypts specified cookies that the BIG-IP system sends to a client system
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,8 +1461,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
-{{% /md %}}</dd>
+    <dd>Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1470,8 +1470,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies one or more three-digit status codes that can be returned by an HTTP server.
-{{% /md %}}</dd>
+    <dd>Specifies one or more three-digit status codes that can be returned by an HTTP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1479,8 +1479,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the header string that you want to erase from an HTTP request. You can also specify none
-{{% /md %}}</dd>
+    <dd>Specifies the header string that you want to erase from an HTTP request. You can also specify none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1488,8 +1488,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1497,8 +1497,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
-{{% /md %}}</dd>
+    <dd>When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1506,8 +1506,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,8 +1515,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the profile_http
-{{% /md %}}</dd>
+    <dd>Name of the profile_http
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,8 +1524,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
-{{% /md %}}</dd>
+    <dd>Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,8 +1533,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of HTTP proxy.
-{{% /md %}}</dd>
+    <dd>Specifies the type of HTTP proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1542,8 +1542,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies which of the application HTTP redirects the system rewrites to HTTPS.
-{{% /md %}}</dd>
+    <dd>Specifies which of the application HTTP redirects the system rewrites to HTTPS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,8 +1551,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked requests.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1560,8 +1560,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked responses.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked responses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1569,8 +1569,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies headers that the BIG-IP system allows in an HTTP response.
-{{% /md %}}</dd>
+    <dd>Specifies headers that the BIG-IP system allows in an HTTP response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1578,9 +1578,9 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
+    <dd>Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
 string is specified, then no Server header will be added to such responses
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,8 +1588,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Displays the administrative partition within which this profile resides.
-{{% /md %}}</dd>
+    <dd>Displays the administrative partition within which this profile resides.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,8 +1597,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname to include into Via header
-{{% /md %}}</dd>
+    <dd>Specifies the hostname to include into Via header
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1606,8 +1606,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1615,8 +1615,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1624,14 +1624,14 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies alternative XFF headers instead of the default X-forwarded-for header
-{{% /md %}}</dd>
+    <dd>Specifies alternative XFF headers instead of the default X-forwarded-for header
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1640,9 +1640,9 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
+    <dd>Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
 XFF (X-forwarded-for) headers, if they exist.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1650,8 +1650,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application service to which the object belongs.
-{{% /md %}}</dd>
+    <dd>The application service to which the object belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1659,8 +1659,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
-{{% /md %}}</dd>
+    <dd>Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1668,8 +1668,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
-{{% /md %}}</dd>
+    <dd>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1677,8 +1677,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User defibned description
-{{% /md %}}</dd>
+    <dd>User defibned description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1686,8 +1686,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a passphrase for the cookie encryption
-{{% /md %}}</dd>
+    <dd>Specifies a passphrase for the cookie encryption
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1695,8 +1695,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Encrypts specified cookies that the BIG-IP system sends to a client system
-{{% /md %}}</dd>
+    <dd>Encrypts specified cookies that the BIG-IP system sends to a client system
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1704,8 +1704,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
-{{% /md %}}</dd>
+    <dd>Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1713,8 +1713,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies one or more three-digit status codes that can be returned by an HTTP server.
-{{% /md %}}</dd>
+    <dd>Specifies one or more three-digit status codes that can be returned by an HTTP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1722,8 +1722,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the header string that you want to erase from an HTTP request. You can also specify none
-{{% /md %}}</dd>
+    <dd>Specifies the header string that you want to erase from an HTTP request. You can also specify none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1731,8 +1731,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1740,8 +1740,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
-{{% /md %}}</dd>
+    <dd>When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1749,8 +1749,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1758,8 +1758,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the profile_http
-{{% /md %}}</dd>
+    <dd>Name of the profile_http
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1767,8 +1767,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
-{{% /md %}}</dd>
+    <dd>Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1776,8 +1776,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of HTTP proxy.
-{{% /md %}}</dd>
+    <dd>Specifies the type of HTTP proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1785,8 +1785,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies which of the application HTTP redirects the system rewrites to HTTPS.
-{{% /md %}}</dd>
+    <dd>Specifies which of the application HTTP redirects the system rewrites to HTTPS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,8 +1794,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked requests.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,8 +1803,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked responses.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked responses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,8 +1812,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies headers that the BIG-IP system allows in an HTTP response.
-{{% /md %}}</dd>
+    <dd>Specifies headers that the BIG-IP system allows in an HTTP response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1821,9 +1821,9 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
+    <dd>Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
 string is specified, then no Server header will be added to such responses
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,8 +1831,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Displays the administrative partition within which this profile resides.
-{{% /md %}}</dd>
+    <dd>Displays the administrative partition within which this profile resides.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,8 +1840,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname to include into Via header
-{{% /md %}}</dd>
+    <dd>Specifies the hostname to include into Via header
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1849,8 +1849,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1858,8 +1858,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1867,14 +1867,14 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies alternative XFF headers instead of the default X-forwarded-for header
-{{% /md %}}</dd>
+    <dd>Specifies alternative XFF headers instead of the default X-forwarded-for header
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1883,9 +1883,9 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
+    <dd>Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
 XFF (X-forwarded-for) headers, if they exist.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,8 +1893,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The application service to which the object belongs.
-{{% /md %}}</dd>
+    <dd>The application service to which the object belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,8 +1902,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
-{{% /md %}}</dd>
+    <dd>Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,8 +1911,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
-{{% /md %}}</dd>
+    <dd>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,8 +1920,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User defibned description
-{{% /md %}}</dd>
+    <dd>User defibned description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,8 +1929,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a passphrase for the cookie encryption
-{{% /md %}}</dd>
+    <dd>Specifies a passphrase for the cookie encryption
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,8 +1938,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Encrypts specified cookies that the BIG-IP system sends to a client system
-{{% /md %}}</dd>
+    <dd>Encrypts specified cookies that the BIG-IP system sends to a client system
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,8 +1947,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
-{{% /md %}}</dd>
+    <dd>Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1956,8 +1956,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies one or more three-digit status codes that can be returned by an HTTP server.
-{{% /md %}}</dd>
+    <dd>Specifies one or more three-digit status codes that can be returned by an HTTP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1965,8 +1965,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the header string that you want to erase from an HTTP request. You can also specify none
-{{% /md %}}</dd>
+    <dd>Specifies the header string that you want to erase from an HTTP request. You can also specify none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1974,8 +1974,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1983,8 +1983,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
-{{% /md %}}</dd>
+    <dd>When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1992,8 +1992,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2001,8 +2001,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the profile_http
-{{% /md %}}</dd>
+    <dd>Name of the profile_http
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2010,8 +2010,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
-{{% /md %}}</dd>
+    <dd>Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,8 +2019,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of HTTP proxy.
-{{% /md %}}</dd>
+    <dd>Specifies the type of HTTP proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2028,8 +2028,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies which of the application HTTP redirects the system rewrites to HTTPS.
-{{% /md %}}</dd>
+    <dd>Specifies which of the application HTTP redirects the system rewrites to HTTPS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2037,8 +2037,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked requests.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2046,8 +2046,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked responses.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked responses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2055,8 +2055,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies headers that the BIG-IP system allows in an HTTP response.
-{{% /md %}}</dd>
+    <dd>Specifies headers that the BIG-IP system allows in an HTTP response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2064,9 +2064,9 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
+    <dd>Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
 string is specified, then no Server header will be added to such responses
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,8 +2074,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Displays the administrative partition within which this profile resides.
-{{% /md %}}</dd>
+    <dd>Displays the administrative partition within which this profile resides.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2083,8 +2083,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname to include into Via header
-{{% /md %}}</dd>
+    <dd>Specifies the hostname to include into Via header
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2092,8 +2092,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2101,8 +2101,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2110,14 +2110,14 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies alternative XFF headers instead of the default X-forwarded-for header
-{{% /md %}}</dd>
+    <dd>Specifies alternative XFF headers instead of the default X-forwarded-for header
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2126,9 +2126,9 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
+    <dd>Enables or disables trusting the client IP address, and statistics from the client IP address, based on the request's
 XFF (X-forwarded-for) headers, if they exist.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2136,8 +2136,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The application service to which the object belongs.
-{{% /md %}}</dd>
+    <dd>The application service to which the object belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,8 +2145,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
-{{% /md %}}</dd>
+    <dd>Specifies a quoted string for the basic authentication realm. The system sends this string to a client whenever authorization fails. The default value is none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2154,8 +2154,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
-{{% /md %}}</dd>
+    <dd>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2163,8 +2163,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User defibned description
-{{% /md %}}</dd>
+    <dd>User defibned description
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2172,8 +2172,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a passphrase for the cookie encryption
-{{% /md %}}</dd>
+    <dd>Specifies a passphrase for the cookie encryption
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2181,8 +2181,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Encrypts specified cookies that the BIG-IP system sends to a client system
-{{% /md %}}</dd>
+    <dd>Encrypts specified cookies that the BIG-IP system sends to a client system
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2190,8 +2190,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
-{{% /md %}}</dd>
+    <dd>Specifies an HTTP fallback host. HTTP redirection allows you to redirect HTTP traffic to another protocol identifier, host name, port number
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2199,8 +2199,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies one or more three-digit status codes that can be returned by an HTTP server.
-{{% /md %}}</dd>
+    <dd>Specifies one or more three-digit status codes that can be returned by an HTTP server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2208,8 +2208,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the header string that you want to erase from an HTTP request. You can also specify none
-{{% /md %}}</dd>
+    <dd>Specifies the header string that you want to erase from an HTTP request. You can also specify none
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2217,8 +2217,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2226,8 +2226,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
-{{% /md %}}</dd>
+    <dd>When using connection pooling, which allows clients to make use of other client requests' server-side connections, you can insert the X-Forwarded-For header and specify a client IP address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2235,8 +2235,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
-{{% /md %}}</dd>
+    <dd>Specifies a quoted header string that you want to insert into an HTTP request. You can also specify none.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2244,8 +2244,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the profile_http
-{{% /md %}}</dd>
+    <dd>Name of the profile_http
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2253,8 +2253,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
-{{% /md %}}</dd>
+    <dd>Enables the system to perform HTTP header transformations for the purpose of  keeping server-side connections open. This feature requires configuration of a OneConnect profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2262,8 +2262,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of HTTP proxy.
-{{% /md %}}</dd>
+    <dd>Specifies the type of HTTP proxy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2271,8 +2271,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies which of the application HTTP redirects the system rewrites to HTTPS.
-{{% /md %}}</dd>
+    <dd>Specifies which of the application HTTP redirects the system rewrites to HTTPS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2280,8 +2280,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked requests.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2289,8 +2289,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how to handle chunked and unchunked responses.
-{{% /md %}}</dd>
+    <dd>Specifies how to handle chunked and unchunked responses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2298,8 +2298,8 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies headers that the BIG-IP system allows in an HTTP response.
-{{% /md %}}</dd>
+    <dd>Specifies headers that the BIG-IP system allows in an HTTP response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2307,9 +2307,9 @@ XFF (X-forwarded-for) headers, if they exist.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
+    <dd>Specifies the value of the Server header in responses that the BIG-IP itself generates. The default is BigIP. If no
 string is specified, then no Server header will be added to such responses
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2317,8 +2317,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Displays the administrative partition within which this profile resides.
-{{% /md %}}</dd>
+    <dd>Displays the administrative partition within which this profile resides.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2326,8 +2326,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname to include into Via header
-{{% /md %}}</dd>
+    <dd>Specifies the hostname to include into Via header
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,8 +2335,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2344,8 +2344,8 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to append, remove, or preserve a Via header in an HTTP request
-{{% /md %}}</dd>
+    <dd>Specifies whether to append, remove, or preserve a Via header in an HTTP request
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2353,11 +2353,11 @@ string is specified, then no Server header will be added to such responses
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies alternative XFF headers instead of the default X-forwarded-for header
-{{% /md %}}</dd>
+    <dd>Specifies alternative XFF headers instead of the default X-forwarded-for header
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -88,26 +88,26 @@ using the [`up` command with the --replace argument](https://www.pulumi.com/docs
 
 
 ## Create a Instance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Instance">Instance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Instance</span><span class="p">(resource_name, opts=None, </span>agent_version=None<span class="p">, </span>ami_id=None<span class="p">, </span>architecture=None<span class="p">, </span>auto_scaling_type=None<span class="p">, </span>availability_zone=None<span class="p">, </span>created_at=None<span class="p">, </span>delete_ebs=None<span class="p">, </span>delete_eip=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>ecs_cluster_arn=None<span class="p">, </span>elastic_ip=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>hostname=None<span class="p">, </span>infrastructure_class=None<span class="p">, </span>install_updates_on_boot=None<span class="p">, </span>instance_profile_arn=None<span class="p">, </span>instance_type=None<span class="p">, </span>last_service_error_id=None<span class="p">, </span>layer_ids=None<span class="p">, </span>os=None<span class="p">, </span>platform=None<span class="p">, </span>private_dns=None<span class="p">, </span>private_ip=None<span class="p">, </span>public_dns=None<span class="p">, </span>public_ip=None<span class="p">, </span>registered_by=None<span class="p">, </span>reported_agent_version=None<span class="p">, </span>reported_os_family=None<span class="p">, </span>reported_os_name=None<span class="p">, </span>reported_os_version=None<span class="p">, </span>root_block_devices=None<span class="p">, </span>root_device_type=None<span class="p">, </span>root_device_volume_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>ssh_host_dsa_key_fingerprint=None<span class="p">, </span>ssh_host_rsa_key_fingerprint=None<span class="p">, </span>ssh_key_name=None<span class="p">, </span>stack_id=None<span class="p">, </span>state=None<span class="p">, </span>status=None<span class="p">, </span>subnet_id=None<span class="p">, </span>tenancy=None<span class="p">, </span>virtualization_type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Instance.html">Instance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.InstanceArgs.html">InstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -144,9 +144,9 @@ using the [`up` command with the --replace argument](https://www.pulumi.com/docs
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -164,9 +164,9 @@ using the [`up` command with the --replace argument](https://www.pulumi.com/docs
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -213,9 +213,9 @@ using the [`up` command with the --replace argument](https://www.pulumi.com/docs
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -252,7 +252,7 @@ using the [`up` command with the --replace argument](https://www.pulumi.com/docs
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Instance Resource Properties {#properties}
 
@@ -265,7 +265,7 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -274,8 +274,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The ids of the layers the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The ids of the layers the instance will belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -283,8 +283,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
-{{% /md %}}</dd>
+    <dd>The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
-{{% /md %}}</dd>
+    <dd>The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
-{{% /md %}}</dd>
+    <dd>Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,9 +328,9 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,7 +338,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,7 +346,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,7 +354,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,9 +362,9 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">List&lt;Instance<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,8 +372,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,7 +381,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,7 +389,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,9 +397,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">List&lt;Instance<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,8 +407,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance's host name.
-{{% /md %}}</dd>
+    <dd>The instance's host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,7 +416,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,8 +424,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,7 +433,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of instance to start
-{{% /md %}}</dd>
+    <dd>The type of instance to start
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,7 +450,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,8 +458,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of operating system that will be installed.
-{{% /md %}}</dd>
+    <dd>Name of operating system that will be installed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,7 +467,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,10 +475,10 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the instance. Can only be
+    <dd>The private DNS name assigned to the instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,9 +495,9 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the instance, if applicable.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the instance, if applicable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,7 +514,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,7 +522,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,7 +530,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,7 +538,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -546,7 +546,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,9 +554,9 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">List&lt;Instance<wbr>Root<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -564,8 +564,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,7 +573,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,8 +581,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,7 +590,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,7 +598,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -606,8 +606,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -615,8 +615,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired state of the instance.  Can be either `"running"` or `"stopped"`.
-{{% /md %}}</dd>
+    <dd>The desired state of the instance.  Can be either `"running"` or `"stopped"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -624,7 +624,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,8 +632,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet ID to attach to
-{{% /md %}}</dd>
+    <dd>Subnet ID to attach to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
-{{% /md %}}</dd>
+    <dd>Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,15 +650,15 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either `"paravirtual"` or `"hvm"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -667,8 +667,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The ids of the layers the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The ids of the layers the instance will belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -676,8 +676,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -685,8 +685,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
-{{% /md %}}</dd>
+    <dd>The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -694,8 +694,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
-{{% /md %}}</dd>
+    <dd>The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -703,8 +703,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,8 +712,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
-{{% /md %}}</dd>
+    <dd>Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,9 +721,9 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,7 +731,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -739,7 +739,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,7 +747,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -755,9 +755,9 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">[]Instance<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,8 +765,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,7 +774,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -782,7 +782,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -790,9 +790,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">[]Instance<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -800,8 +800,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance's host name.
-{{% /md %}}</dd>
+    <dd>The instance's host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,7 +809,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -817,8 +817,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -826,7 +826,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,8 +834,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of instance to start
-{{% /md %}}</dd>
+    <dd>The type of instance to start
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,7 +843,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,8 +851,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of operating system that will be installed.
-{{% /md %}}</dd>
+    <dd>Name of operating system that will be installed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -860,7 +860,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,10 +868,10 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the instance. Can only be
+    <dd>The private DNS name assigned to the instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -879,8 +879,8 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -888,9 +888,9 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,8 +898,8 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the instance, if applicable.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the instance, if applicable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,7 +907,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,7 +915,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,7 +923,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,7 +931,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,7 +939,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,9 +947,9 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">[]Instance<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -957,8 +957,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -966,7 +966,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,7 +983,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,7 +991,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,8 +999,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1008,8 +1008,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired state of the instance.  Can be either `"running"` or `"stopped"`.
-{{% /md %}}</dd>
+    <dd>The desired state of the instance.  Can be either `"running"` or `"stopped"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1017,7 +1017,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1025,8 +1025,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet ID to attach to
-{{% /md %}}</dd>
+    <dd>Subnet ID to attach to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1034,8 +1034,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
-{{% /md %}}</dd>
+    <dd>Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1043,15 +1043,15 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either `"paravirtual"` or `"hvm"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1060,8 +1060,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The ids of the layers the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The ids of the layers the instance will belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1069,8 +1069,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,8 +1078,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
-{{% /md %}}</dd>
+    <dd>The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,8 +1087,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
-{{% /md %}}</dd>
+    <dd>The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1096,8 +1096,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,8 +1105,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
-{{% /md %}}</dd>
+    <dd>Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,9 +1114,9 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1124,7 +1124,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1132,7 +1132,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,7 +1140,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,9 +1148,9 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">Instance<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1158,8 +1158,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,7 +1167,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,7 +1175,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,9 +1183,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">Instance<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance's host name.
-{{% /md %}}</dd>
+    <dd>The instance's host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,7 +1202,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,8 +1210,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,7 +1219,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1227,8 +1227,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of instance to start
-{{% /md %}}</dd>
+    <dd>The type of instance to start
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,7 +1236,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of operating system that will be installed.
-{{% /md %}}</dd>
+    <dd>Name of operating system that will be installed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,7 +1253,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1261,10 +1261,10 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the instance. Can only be
+    <dd>The private DNS name assigned to the instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,8 +1272,8 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,9 +1281,9 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1291,8 +1291,8 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the instance, if applicable.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the instance, if applicable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1300,7 +1300,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1308,7 +1308,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1316,7 +1316,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,7 +1324,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,7 +1332,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1340,9 +1340,9 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">Instance<wbr>Root<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,7 +1359,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,8 +1367,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,7 +1376,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1384,7 +1384,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1392,8 +1392,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,8 +1401,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired state of the instance.  Can be either `"running"` or `"stopped"`.
-{{% /md %}}</dd>
+    <dd>The desired state of the instance.  Can be either `"running"` or `"stopped"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,7 +1410,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1418,8 +1418,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet ID to attach to
-{{% /md %}}</dd>
+    <dd>Subnet ID to attach to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,8 +1427,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
-{{% /md %}}</dd>
+    <dd>Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1436,15 +1436,15 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either `"paravirtual"` or `"hvm"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1453,8 +1453,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The ids of the layers the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The ids of the layers the instance will belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1462,8 +1462,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,8 +1471,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
-{{% /md %}}</dd>
+    <dd>The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1480,8 +1480,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
-{{% /md %}}</dd>
+    <dd>The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1489,8 +1489,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,8 +1498,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
-{{% /md %}}</dd>
+    <dd>Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,9 +1507,9 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1517,7 +1517,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1525,7 +1525,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,7 +1533,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,9 +1541,9 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">List[Instance<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,8 +1551,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1560,7 +1560,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,7 +1568,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,9 +1576,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">List[Instance<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The instance's host name.
-{{% /md %}}</dd>
+    <dd>The instance's host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,7 +1595,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,8 +1603,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1612,7 +1612,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1620,8 +1620,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of instance to start
-{{% /md %}}</dd>
+    <dd>The type of instance to start
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1629,7 +1629,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,8 +1637,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of operating system that will be installed.
-{{% /md %}}</dd>
+    <dd>Name of operating system that will be installed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1646,7 +1646,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1654,10 +1654,10 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the instance. Can only be
+    <dd>The private DNS name assigned to the instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1665,8 +1665,8 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,9 +1674,9 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,8 +1684,8 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the instance, if applicable.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the instance, if applicable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1693,7 +1693,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,7 +1701,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,7 +1709,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1717,7 +1717,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,7 +1725,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,9 +1733,9 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">List[Instance<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,8 +1743,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1752,7 +1752,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,8 +1760,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1769,7 +1769,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1777,7 +1777,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1785,8 +1785,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,8 +1794,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The desired state of the instance.  Can be either `"running"` or `"stopped"`.
-{{% /md %}}</dd>
+    <dd>The desired state of the instance.  Can be either `"running"` or `"stopped"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,7 +1803,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1811,8 +1811,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Subnet ID to attach to
-{{% /md %}}</dd>
+    <dd>Subnet ID to attach to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1820,8 +1820,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
-{{% /md %}}</dd>
+    <dd>Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1829,12 +1829,12 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either `"paravirtual"` or `"hvm"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1848,7 +1848,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1857,8 +1857,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EC2 instance ID
-{{% /md %}}</dd>
+    <dd>EC2 instance ID
+</dd>
 
     <dt class="property-"
             title="">
@@ -1866,13 +1866,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1881,8 +1881,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EC2 instance ID
-{{% /md %}}</dd>
+    <dd>EC2 instance ID
+</dd>
 
     <dt class="property-"
             title="">
@@ -1890,13 +1890,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1905,8 +1905,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EC2 instance ID
-{{% /md %}}</dd>
+    <dd>EC2 instance ID
+</dd>
 
     <dt class="property-"
             title="">
@@ -1914,13 +1914,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1929,8 +1929,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EC2 instance ID
-{{% /md %}}</dd>
+    <dd>EC2 instance ID
+</dd>
 
     <dt class="property-"
             title="">
@@ -1938,10 +1938,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1952,25 +1952,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Instance Resource {#look-up}
 
 Get an existing Instance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Instance">Instance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>agent_version=None<span class="p">, </span>ami_id=None<span class="p">, </span>architecture=None<span class="p">, </span>auto_scaling_type=None<span class="p">, </span>availability_zone=None<span class="p">, </span>created_at=None<span class="p">, </span>delete_ebs=None<span class="p">, </span>delete_eip=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>ec2_instance_id=None<span class="p">, </span>ecs_cluster_arn=None<span class="p">, </span>elastic_ip=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>hostname=None<span class="p">, </span>infrastructure_class=None<span class="p">, </span>install_updates_on_boot=None<span class="p">, </span>instance_profile_arn=None<span class="p">, </span>instance_type=None<span class="p">, </span>last_service_error_id=None<span class="p">, </span>layer_ids=None<span class="p">, </span>os=None<span class="p">, </span>platform=None<span class="p">, </span>private_dns=None<span class="p">, </span>private_ip=None<span class="p">, </span>public_dns=None<span class="p">, </span>public_ip=None<span class="p">, </span>registered_by=None<span class="p">, </span>reported_agent_version=None<span class="p">, </span>reported_os_family=None<span class="p">, </span>reported_os_name=None<span class="p">, </span>reported_os_version=None<span class="p">, </span>root_block_devices=None<span class="p">, </span>root_device_type=None<span class="p">, </span>root_device_volume_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>ssh_host_dsa_key_fingerprint=None<span class="p">, </span>ssh_host_rsa_key_fingerprint=None<span class="p">, </span>ssh_key_name=None<span class="p">, </span>stack_id=None<span class="p">, </span>state=None<span class="p">, </span>status=None<span class="p">, </span>subnet_id=None<span class="p">, </span>tenancy=None<span class="p">, </span>virtualization_type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Instance.html">Instance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.InstanceState.html">InstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1995,9 +1995,9 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -2010,36 +2010,9 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -2064,13 +2037,40 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2079,8 +2079,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
-{{% /md %}}</dd>
+    <dd>The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2088,8 +2088,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
-{{% /md %}}</dd>
+    <dd>The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2097,8 +2097,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2106,8 +2106,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
-{{% /md %}}</dd>
+    <dd>Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2115,9 +2115,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,7 +2125,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2133,7 +2133,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2141,7 +2141,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2149,9 +2149,9 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">List&lt;Instance<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2159,8 +2159,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2168,8 +2168,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EC2 instance ID
-{{% /md %}}</dd>
+    <dd>EC2 instance ID
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2177,7 +2177,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2185,7 +2185,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2193,9 +2193,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">List&lt;Instance<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2203,8 +2203,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance's host name.
-{{% /md %}}</dd>
+    <dd>The instance's host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2212,7 +2212,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2220,8 +2220,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2229,7 +2229,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2237,8 +2237,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of instance to start
-{{% /md %}}</dd>
+    <dd>The type of instance to start
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2246,7 +2246,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2254,8 +2254,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The ids of the layers the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The ids of the layers the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2263,8 +2263,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of operating system that will be installed.
-{{% /md %}}</dd>
+    <dd>Name of operating system that will be installed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2272,7 +2272,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2280,10 +2280,10 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the instance. Can only be
+    <dd>The private DNS name assigned to the instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2291,8 +2291,8 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2300,9 +2300,9 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2310,8 +2310,8 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the instance, if applicable.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the instance, if applicable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2319,7 +2319,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2327,7 +2327,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,7 +2335,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2343,7 +2343,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2351,7 +2351,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,9 +2359,9 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">List&lt;Instance<wbr>Root<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2369,8 +2369,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2378,7 +2378,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2386,8 +2386,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2395,7 +2395,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2403,7 +2403,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,8 +2411,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,8 +2420,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2429,8 +2429,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired state of the instance.  Can be either `"running"` or `"stopped"`.
-{{% /md %}}</dd>
+    <dd>The desired state of the instance.  Can be either `"running"` or `"stopped"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2438,7 +2438,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2446,8 +2446,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet ID to attach to
-{{% /md %}}</dd>
+    <dd>Subnet ID to attach to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2455,8 +2455,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
-{{% /md %}}</dd>
+    <dd>Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2464,15 +2464,15 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either `"paravirtual"` or `"hvm"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2481,8 +2481,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
-{{% /md %}}</dd>
+    <dd>The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2490,8 +2490,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
-{{% /md %}}</dd>
+    <dd>The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2499,8 +2499,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2508,8 +2508,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
-{{% /md %}}</dd>
+    <dd>Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2517,9 +2517,9 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2527,7 +2527,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,7 +2535,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2543,7 +2543,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2551,9 +2551,9 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">[]Instance<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2561,8 +2561,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2570,8 +2570,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EC2 instance ID
-{{% /md %}}</dd>
+    <dd>EC2 instance ID
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2579,7 +2579,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2587,7 +2587,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2595,9 +2595,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">[]Instance<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2605,8 +2605,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance's host name.
-{{% /md %}}</dd>
+    <dd>The instance's host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2614,7 +2614,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2622,8 +2622,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2631,7 +2631,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2639,8 +2639,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of instance to start
-{{% /md %}}</dd>
+    <dd>The type of instance to start
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2648,7 +2648,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2656,8 +2656,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The ids of the layers the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The ids of the layers the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2665,8 +2665,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of operating system that will be installed.
-{{% /md %}}</dd>
+    <dd>Name of operating system that will be installed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2674,7 +2674,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2682,10 +2682,10 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the instance. Can only be
+    <dd>The private DNS name assigned to the instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2693,8 +2693,8 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2702,9 +2702,9 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2712,8 +2712,8 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the instance, if applicable.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the instance, if applicable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2721,7 +2721,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2729,7 +2729,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2737,7 +2737,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2745,7 +2745,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2753,7 +2753,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2761,9 +2761,9 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">[]Instance<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2771,8 +2771,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2780,7 +2780,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2788,8 +2788,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2797,7 +2797,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2805,7 +2805,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2813,8 +2813,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2822,8 +2822,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2831,8 +2831,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired state of the instance.  Can be either `"running"` or `"stopped"`.
-{{% /md %}}</dd>
+    <dd>The desired state of the instance.  Can be either `"running"` or `"stopped"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2840,7 +2840,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2848,8 +2848,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet ID to attach to
-{{% /md %}}</dd>
+    <dd>Subnet ID to attach to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2857,8 +2857,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
-{{% /md %}}</dd>
+    <dd>Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2866,15 +2866,15 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either `"paravirtual"` or `"hvm"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2883,8 +2883,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
-{{% /md %}}</dd>
+    <dd>The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2892,8 +2892,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
-{{% /md %}}</dd>
+    <dd>The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2901,8 +2901,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2910,8 +2910,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
-{{% /md %}}</dd>
+    <dd>Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2919,9 +2919,9 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2929,7 +2929,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2937,7 +2937,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2945,7 +2945,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2953,9 +2953,9 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">Instance<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2963,8 +2963,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2972,8 +2972,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EC2 instance ID
-{{% /md %}}</dd>
+    <dd>EC2 instance ID
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2981,7 +2981,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2989,7 +2989,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2997,9 +2997,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">Instance<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3007,8 +3007,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance's host name.
-{{% /md %}}</dd>
+    <dd>The instance's host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3016,7 +3016,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3024,8 +3024,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3033,7 +3033,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3041,8 +3041,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of instance to start
-{{% /md %}}</dd>
+    <dd>The type of instance to start
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3050,7 +3050,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3058,8 +3058,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The ids of the layers the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The ids of the layers the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3067,8 +3067,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of operating system that will be installed.
-{{% /md %}}</dd>
+    <dd>Name of operating system that will be installed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3076,7 +3076,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3084,10 +3084,10 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the instance. Can only be
+    <dd>The private DNS name assigned to the instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3095,8 +3095,8 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3104,9 +3104,9 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3114,8 +3114,8 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the instance, if applicable.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the instance, if applicable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3123,7 +3123,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3131,7 +3131,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3139,7 +3139,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3147,7 +3147,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3155,7 +3155,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3163,9 +3163,9 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">Instance<wbr>Root<wbr>Block<wbr>Device[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3173,8 +3173,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3182,7 +3182,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3190,8 +3190,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3199,7 +3199,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3207,7 +3207,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3215,8 +3215,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3224,8 +3224,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3233,8 +3233,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The desired state of the instance.  Can be either `"running"` or `"stopped"`.
-{{% /md %}}</dd>
+    <dd>The desired state of the instance.  Can be either `"running"` or `"stopped"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3242,7 +3242,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3250,8 +3250,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet ID to attach to
-{{% /md %}}</dd>
+    <dd>Subnet ID to attach to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3259,8 +3259,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
-{{% /md %}}</dd>
+    <dd>Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3268,15 +3268,15 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either `"paravirtual"` or `"hvm"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3285,8 +3285,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
-{{% /md %}}</dd>
+    <dd>The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3294,8 +3294,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
-{{% /md %}}</dd>
+    <dd>The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3303,8 +3303,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
-{{% /md %}}</dd>
+    <dd>Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3312,8 +3312,8 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
-{{% /md %}}</dd>
+    <dd>Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3321,9 +3321,9 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3331,7 +3331,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3339,7 +3339,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3347,7 +3347,7 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3355,9 +3355,9 @@ by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">List[Instance<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Additional EBS block devices to attach to the
+    <dd>Additional EBS block devices to attach to the
 instance.  See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3365,8 +3365,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If true, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3374,8 +3374,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EC2 instance ID
-{{% /md %}}</dd>
+    <dd>EC2 instance ID
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3383,7 +3383,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3391,7 +3391,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3399,9 +3399,9 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">List[Instance<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Customize Ephemeral (also known as
+    <dd>Customize Ephemeral (also known as
 "Instance Store") volumes on the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3409,8 +3409,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The instance's host name.
-{{% /md %}}</dd>
+    <dd>The instance's host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3418,7 +3418,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3426,8 +3426,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3435,7 +3435,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3443,8 +3443,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of instance to start
-{{% /md %}}</dd>
+    <dd>The type of instance to start
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3452,7 +3452,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3460,8 +3460,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The ids of the layers the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The ids of the layers the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3469,8 +3469,8 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of operating system that will be installed.
-{{% /md %}}</dd>
+    <dd>Name of operating system that will be installed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3478,7 +3478,7 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3486,10 +3486,10 @@ instance.  See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private DNS name assigned to the instance. Can only be
+    <dd>The private DNS name assigned to the instance. Can only be
 used inside the Amazon EC2, and only available if you've enabled DNS hostnames
 for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3497,8 +3497,8 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3506,9 +3506,9 @@ for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public DNS name assigned to the instance. For EC2-VPC, this
+    <dd>The public DNS name assigned to the instance. For EC2-VPC, this
 is only available if you've enabled DNS hostnames for your VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3516,8 +3516,8 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The public IP address assigned to the instance, if applicable.
-{{% /md %}}</dd>
+    <dd>The public IP address assigned to the instance, if applicable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3525,7 +3525,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3533,7 +3533,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3541,7 +3541,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3549,7 +3549,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3557,7 +3557,7 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3565,9 +3565,9 @@ is only available if you've enabled DNS hostnames for your VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">List[Instance<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
-    <dd>{{% md %}}Customize details about the root block
+    <dd>Customize details about the root block
 device of the instance. See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3575,8 +3575,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3584,7 +3584,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3592,8 +3592,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The associated security groups.
-{{% /md %}}</dd>
+    <dd>The associated security groups.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3601,7 +3601,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3609,7 +3609,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3617,8 +3617,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3626,8 +3626,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the instance will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the instance will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3635,8 +3635,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The desired state of the instance.  Can be either `"running"` or `"stopped"`.
-{{% /md %}}</dd>
+    <dd>The desired state of the instance.  Can be either `"running"` or `"stopped"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3644,7 +3644,7 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3652,8 +3652,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Subnet ID to attach to
-{{% /md %}}</dd>
+    <dd>Subnet ID to attach to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3661,8 +3661,8 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
-{{% /md %}}</dd>
+    <dd>Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3670,12 +3670,12 @@ device of the instance. See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword to choose what virtualization mode created instances
+    <dd>Keyword to choose what virtualization mode created instances
 will use. Can be either `"paravirtual"` or `"hvm"`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -3690,18 +3690,18 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
 
 <h4 id="instanceebsblockdevice">Instance<wbr>Ebs<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#InstanceEbsBlockDevice">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#InstanceEbsBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceEbsBlockDeviceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceEbsBlockDeviceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3710,7 +3710,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3718,7 +3718,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3726,7 +3726,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3734,7 +3734,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3742,7 +3742,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3750,13 +3750,13 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3765,7 +3765,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3773,7 +3773,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3781,7 +3781,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3789,7 +3789,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3797,7 +3797,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3805,13 +3805,13 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3820,7 +3820,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3828,7 +3828,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3836,7 +3836,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3844,7 +3844,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3852,7 +3852,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3860,13 +3860,13 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3875,7 +3875,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3883,7 +3883,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3891,7 +3891,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3899,7 +3899,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3907,7 +3907,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3915,28 +3915,28 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instanceephemeralblockdevice">Instance<wbr>Ephemeral<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#InstanceEphemeralBlockDevice">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#InstanceEphemeralBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceEphemeralBlockDeviceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceEphemeralBlockDeviceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3945,7 +3945,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3953,13 +3953,13 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3968,7 +3968,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3976,13 +3976,13 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3991,7 +3991,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3999,13 +3999,13 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4014,7 +4014,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -4022,28 +4022,28 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancerootblockdevice">Instance<wbr>Root<wbr>Block<wbr>Device</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#InstanceRootBlockDevice">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#InstanceRootBlockDevice">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceRootBlockDeviceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceRootBlockDeviceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4052,7 +4052,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4060,7 +4060,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4068,7 +4068,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4076,13 +4076,13 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4091,7 +4091,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4099,7 +4099,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4107,7 +4107,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4115,13 +4115,13 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4130,7 +4130,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4138,7 +4138,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4146,7 +4146,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4154,13 +4154,13 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4169,7 +4169,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4177,7 +4177,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4185,7 +4185,7 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4193,10 +4193,10 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

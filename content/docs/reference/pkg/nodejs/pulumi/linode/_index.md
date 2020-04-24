@@ -16,22 +16,22 @@ git_sha: "9744e45a7492a7bfdf80aa9500503e3f70e80ea9"
 > please consult the source [`terraform-providers/terraform-provider-linode` repo](https://github.com/terraform-providers/terraform-provider-linode/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var linode = require("@pulumi/linode");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as linode from "@pulumi/linode";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

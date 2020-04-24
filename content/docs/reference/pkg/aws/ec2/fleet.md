@@ -40,26 +40,26 @@ const example = new aws.ec2.Fleet("example", {
 
 
 ## Create a Fleet Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Fleet">Fleet</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#FleetArgs">FleetArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Fleet</span><span class="p">(resource_name, opts=None, </span>excess_capacity_termination_policy=None<span class="p">, </span>launch_template_config=None<span class="p">, </span>on_demand_options=None<span class="p">, </span>replace_unhealthy_instances=None<span class="p">, </span>spot_options=None<span class="p">, </span>tags=None<span class="p">, </span>target_capacity_specification=None<span class="p">, </span>terminate_instances=None<span class="p">, </span>terminate_instances_with_expiration=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewFleet<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetArgs">FleetArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Fleet">Fleet</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Fleet.html">Fleet</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.FleetArgs.html">FleetArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -96,9 +96,9 @@ const example = new aws.ec2.Fleet("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -116,9 +116,9 @@ const example = new aws.ec2.Fleet("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -165,9 +165,9 @@ const example = new aws.ec2.Fleet("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -204,7 +204,7 @@ const example = new aws.ec2.Fleet("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Fleet Resource Properties {#properties}
 
@@ -217,7 +217,7 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -226,8 +226,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfig">Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template configurations. Defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -235,8 +235,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleettargetcapacityspecification">Fleet<wbr>Target<wbr>Capacity<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing target capacity configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing target capacity configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,8 +244,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,8 +253,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetondemandoptions">Fleet<wbr>On<wbr>Demand<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing On-Demand configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing On-Demand configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,8 +262,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetspotoptions">Fleet<wbr>Spot<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing Spot configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing Spot configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,8 +280,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,8 +289,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,8 +298,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,14 +307,14 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
-{{% /md %}}</dd>
+    <dd>The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -323,8 +323,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfig">Fleet<wbr>Launch<wbr>Template<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template configurations. Defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -332,8 +332,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleettargetcapacityspecification">Fleet<wbr>Target<wbr>Capacity<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing target capacity configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing target capacity configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,8 +350,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetondemandoptions">Fleet<wbr>On<wbr>Demand<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing On-Demand configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing On-Demand configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,8 +359,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,8 +368,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetspotoptions">Fleet<wbr>Spot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing Spot configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing Spot configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,8 +377,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,14 +404,14 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
-{{% /md %}}</dd>
+    <dd>The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -420,8 +420,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfig">Fleet<wbr>Launch<wbr>Template<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template configurations. Defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -429,8 +429,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleettargetcapacityspecification">Fleet<wbr>Target<wbr>Capacity<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing target capacity configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing target capacity configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetondemandoptions">Fleet<wbr>On<wbr>Demand<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing On-Demand configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing On-Demand configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetspotoptions">Fleet<wbr>Spot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing Spot configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing Spot configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,8 +483,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,8 +492,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -501,14 +501,14 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
-{{% /md %}}</dd>
+    <dd>The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -517,8 +517,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfig">Dict[Fleet<wbr>Launch<wbr>Template<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template configurations. Defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -526,8 +526,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleettargetcapacityspecification">Dict[Fleet<wbr>Target<wbr>Capacity<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing target capacity configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing target capacity configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetondemandoptions">Dict[Fleet<wbr>On<wbr>Demand<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing On-Demand configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing On-Demand configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,8 +553,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetspotoptions">Dict[Fleet<wbr>Spot<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing Spot configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing Spot configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,8 +571,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,8 +580,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -589,8 +589,8 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,11 +598,11 @@ The Fleet resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
-{{% /md %}}</dd>
+    <dd>The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -616,7 +616,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -625,13 +625,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -640,13 +640,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -655,13 +655,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -670,10 +670,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -684,25 +684,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Fleet Resource {#look-up}
 
 Get an existing Fleet resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#FleetState">FleetState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Fleet">Fleet</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>excess_capacity_termination_policy=None<span class="p">, </span>launch_template_config=None<span class="p">, </span>on_demand_options=None<span class="p">, </span>replace_unhealthy_instances=None<span class="p">, </span>spot_options=None<span class="p">, </span>tags=None<span class="p">, </span>target_capacity_specification=None<span class="p">, </span>terminate_instances=None<span class="p">, </span>terminate_instances_with_expiration=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetFleet<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetState">FleetState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Fleet">Fleet</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Fleet.html">Fleet</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.FleetState.html">FleetState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -727,9 +727,9 @@ Get an existing Fleet resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -742,36 +742,9 @@ Get an existing Fleet resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -796,13 +769,40 @@ Get an existing Fleet resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -811,8 +811,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -820,8 +820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfig">Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -829,8 +829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetondemandoptions">Fleet<wbr>On<wbr>Demand<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing On-Demand configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing On-Demand configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -838,8 +838,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -847,8 +847,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetspotoptions">Fleet<wbr>Spot<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing Spot configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing Spot configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -856,8 +856,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -865,8 +865,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleettargetcapacityspecification">Fleet<wbr>Target<wbr>Capacity<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing target capacity configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing target capacity configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -874,8 +874,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,8 +883,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -892,14 +892,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
-{{% /md %}}</dd>
+    <dd>The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -908,8 +908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfig">Fleet<wbr>Launch<wbr>Template<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetondemandoptions">Fleet<wbr>On<wbr>Demand<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing On-Demand configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing On-Demand configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetspotoptions">Fleet<wbr>Spot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing Spot configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing Spot configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,8 +953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,8 +962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleettargetcapacityspecification">Fleet<wbr>Target<wbr>Capacity<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing target capacity configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing target capacity configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,8 +971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,8 +980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,14 +989,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
-{{% /md %}}</dd>
+    <dd>The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1005,8 +1005,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1014,8 +1014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfig">Fleet<wbr>Launch<wbr>Template<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetondemandoptions">Fleet<wbr>On<wbr>Demand<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing On-Demand configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing On-Demand configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,8 +1041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetspotoptions">Fleet<wbr>Spot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing Spot configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing Spot configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,8 +1050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1059,8 +1059,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleettargetcapacityspecification">Fleet<wbr>Target<wbr>Capacity<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing target capacity configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing target capacity configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1068,8 +1068,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1077,8 +1077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1086,14 +1086,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
-{{% /md %}}</dd>
+    <dd>The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1102,8 +1102,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfig">Dict[Fleet<wbr>Launch<wbr>Template<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,8 +1120,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetondemandoptions">Dict[Fleet<wbr>On<wbr>Demand<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing On-Demand configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing On-Demand configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,8 +1129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetspotoptions">Dict[Fleet<wbr>Spot<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing Spot configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing Spot configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,8 +1147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
-{{% /md %}}</dd>
+    <dd>Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,8 +1156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleettargetcapacityspecification">Dict[Fleet<wbr>Target<wbr>Capacity<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing target capacity configurations. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing target capacity configurations. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,8 +1165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,8 +1174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,11 +1183,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
-{{% /md %}}</dd>
+    <dd>The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1202,18 +1202,18 @@ The following state arguments are supported:
 
 
 <h4 id="fleetlaunchtemplateconfig">Fleet<wbr>Launch<wbr>Template<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FleetLaunchTemplateConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FleetLaunchTemplateConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetLaunchTemplateConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetLaunchTemplateConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1222,8 +1222,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfiglaunchtemplatespecification">Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Launch<wbr>Template<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template to use. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template to use. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,14 +1231,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfigoverride">List&lt;Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Override<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument(s) containing parameters to override the same parameters in the Launch Template. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument(s) containing parameters to override the same parameters in the Launch Template. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1247,8 +1247,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfiglaunchtemplatespecification">Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Launch<wbr>Template<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template to use. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template to use. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,14 +1256,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfigoverride">[]Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Override</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument(s) containing parameters to override the same parameters in the Launch Template. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument(s) containing parameters to override the same parameters in the Launch Template. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1272,8 +1272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfiglaunchtemplatespecification">Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Launch<wbr>Template<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template to use. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template to use. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,14 +1281,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfigoverride">Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Override[]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument(s) containing parameters to override the same parameters in the Launch Template. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument(s) containing parameters to override the same parameters in the Launch Template. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1297,8 +1297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfiglaunchtemplatespecification">Dict[Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Launch<wbr>Template<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument containing EC2 Launch Template to use. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument containing EC2 Launch Template to use. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,29 +1306,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fleetlaunchtemplateconfigoverride">List[Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Override]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument(s) containing parameters to override the same parameters in the Launch Template. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument(s) containing parameters to override the same parameters in the Launch Template. Defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="fleetlaunchtemplateconfiglaunchtemplatespecification">Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Launch<wbr>Template<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FleetLaunchTemplateConfigLaunchTemplateSpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FleetLaunchTemplateConfigLaunchTemplateSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetLaunchTemplateConfigLaunchTemplateSpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetLaunchTemplateConfigLaunchTemplateSpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1337,8 +1337,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Version number of the launch template.
-{{% /md %}}</dd>
+    <dd>Version number of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,8 +1346,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the launch template.
-{{% /md %}}</dd>
+    <dd>ID of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,14 +1355,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the launch template.
-{{% /md %}}</dd>
+    <dd>Name of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1371,8 +1371,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version number of the launch template.
-{{% /md %}}</dd>
+    <dd>Version number of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,8 +1380,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the launch template.
-{{% /md %}}</dd>
+    <dd>ID of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,14 +1389,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the launch template.
-{{% /md %}}</dd>
+    <dd>Name of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1405,8 +1405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version number of the launch template.
-{{% /md %}}</dd>
+    <dd>Version number of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,8 +1414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the launch template.
-{{% /md %}}</dd>
+    <dd>ID of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,14 +1423,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the launch template.
-{{% /md %}}</dd>
+    <dd>Name of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1439,8 +1439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Version number of the launch template.
-{{% /md %}}</dd>
+    <dd>Version number of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,8 +1448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the launch template.
-{{% /md %}}</dd>
+    <dd>ID of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,29 +1457,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the launch template.
-{{% /md %}}</dd>
+    <dd>Name of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="fleetlaunchtemplateconfigoverride">Fleet<wbr>Launch<wbr>Template<wbr>Config<wbr>Override</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FleetLaunchTemplateConfigOverride">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FleetLaunchTemplateConfigOverride">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetLaunchTemplateConfigOverrideArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetLaunchTemplateConfigOverrideOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1488,8 +1488,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability Zone in which to launch the instances.
-{{% /md %}}</dd>
+    <dd>Availability Zone in which to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1497,8 +1497,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type.
-{{% /md %}}</dd>
+    <dd>Instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1506,8 +1506,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum price per unit hour that you are willing to pay for a Spot Instance.
-{{% /md %}}</dd>
+    <dd>Maximum price per unit hour that you are willing to pay for a Spot Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,8 +1515,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Priority for the launch template override. If `on_demand_options` `allocation_strategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
-{{% /md %}}</dd>
+    <dd>Priority for the launch template override. If `on_demand_options` `allocation_strategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,8 +1524,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the subnet in which to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the subnet in which to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,14 +1533,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Number of units provided by the specified instance type.
-{{% /md %}}</dd>
+    <dd>Number of units provided by the specified instance type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1549,8 +1549,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability Zone in which to launch the instances.
-{{% /md %}}</dd>
+    <dd>Availability Zone in which to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1558,8 +1558,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type.
-{{% /md %}}</dd>
+    <dd>Instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,8 +1567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum price per unit hour that you are willing to pay for a Spot Instance.
-{{% /md %}}</dd>
+    <dd>Maximum price per unit hour that you are willing to pay for a Spot Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,8 +1576,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Priority for the launch template override. If `on_demand_options` `allocation_strategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
-{{% /md %}}</dd>
+    <dd>Priority for the launch template override. If `on_demand_options` `allocation_strategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1585,8 +1585,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the subnet in which to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the subnet in which to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,14 +1594,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Number of units provided by the specified instance type.
-{{% /md %}}</dd>
+    <dd>Number of units provided by the specified instance type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1610,8 +1610,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability Zone in which to launch the instances.
-{{% /md %}}</dd>
+    <dd>Availability Zone in which to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,8 +1619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type.
-{{% /md %}}</dd>
+    <dd>Instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,8 +1628,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum price per unit hour that you are willing to pay for a Spot Instance.
-{{% /md %}}</dd>
+    <dd>Maximum price per unit hour that you are willing to pay for a Spot Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,8 +1637,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Priority for the launch template override. If `on_demand_options` `allocation_strategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
-{{% /md %}}</dd>
+    <dd>Priority for the launch template override. If `on_demand_options` `allocation_strategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1646,8 +1646,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the subnet in which to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the subnet in which to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1655,14 +1655,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of units provided by the specified instance type.
-{{% /md %}}</dd>
+    <dd>Number of units provided by the specified instance type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1671,8 +1671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Availability Zone in which to launch the instances.
-{{% /md %}}</dd>
+    <dd>Availability Zone in which to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1680,8 +1680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance type.
-{{% /md %}}</dd>
+    <dd>Instance type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1689,8 +1689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Maximum price per unit hour that you are willing to pay for a Spot Instance.
-{{% /md %}}</dd>
+    <dd>Maximum price per unit hour that you are willing to pay for a Spot Instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1698,8 +1698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Priority for the launch template override. If `on_demand_options` `allocation_strategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
-{{% /md %}}</dd>
+    <dd>Priority for the launch template override. If `on_demand_options` `allocation_strategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1707,8 +1707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the subnet in which to launch the instances.
-{{% /md %}}</dd>
+    <dd>ID of the subnet in which to launch the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1716,29 +1716,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of units provided by the specified instance type.
-{{% /md %}}</dd>
+    <dd>Number of units provided by the specified instance type.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="fleetondemandoptions">Fleet<wbr>On<wbr>Demand<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FleetOnDemandOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FleetOnDemandOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetOnDemandOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetOnDemandOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1747,14 +1747,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
-{{% /md %}}</dd>
+    <dd>How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1763,14 +1763,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
-{{% /md %}}</dd>
+    <dd>How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1779,14 +1779,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
-{{% /md %}}</dd>
+    <dd>How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1795,29 +1795,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
-{{% /md %}}</dd>
+    <dd>How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="fleetspotoptions">Fleet<wbr>Spot<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FleetSpotOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FleetSpotOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetSpotOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetSpotOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1826,8 +1826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
-{{% /md %}}</dd>
+    <dd>How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1835,8 +1835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Behavior when a Spot Instance is interrupted. Valid values: `hibernate`, `stop`, `terminate`. Default: `terminate`.
-{{% /md %}}</dd>
+    <dd>Behavior when a Spot Instance is interrupted. Valid values: `hibernate`, `stop`, `terminate`. Default: `terminate`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,14 +1844,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot `allocation_strategy` is set to `lowestPrice`. Default: `1`.
-{{% /md %}}</dd>
+    <dd>Number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot `allocation_strategy` is set to `lowestPrice`. Default: `1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1860,8 +1860,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
-{{% /md %}}</dd>
+    <dd>How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1869,8 +1869,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Behavior when a Spot Instance is interrupted. Valid values: `hibernate`, `stop`, `terminate`. Default: `terminate`.
-{{% /md %}}</dd>
+    <dd>Behavior when a Spot Instance is interrupted. Valid values: `hibernate`, `stop`, `terminate`. Default: `terminate`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,14 +1878,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot `allocation_strategy` is set to `lowestPrice`. Default: `1`.
-{{% /md %}}</dd>
+    <dd>Number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot `allocation_strategy` is set to `lowestPrice`. Default: `1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1894,8 +1894,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
-{{% /md %}}</dd>
+    <dd>How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1903,8 +1903,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Behavior when a Spot Instance is interrupted. Valid values: `hibernate`, `stop`, `terminate`. Default: `terminate`.
-{{% /md %}}</dd>
+    <dd>Behavior when a Spot Instance is interrupted. Valid values: `hibernate`, `stop`, `terminate`. Default: `terminate`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1912,14 +1912,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot `allocation_strategy` is set to `lowestPrice`. Default: `1`.
-{{% /md %}}</dd>
+    <dd>Number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot `allocation_strategy` is set to `lowestPrice`. Default: `1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1928,8 +1928,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
-{{% /md %}}</dd>
+    <dd>How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,8 +1937,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Behavior when a Spot Instance is interrupted. Valid values: `hibernate`, `stop`, `terminate`. Default: `terminate`.
-{{% /md %}}</dd>
+    <dd>Behavior when a Spot Instance is interrupted. Valid values: `hibernate`, `stop`, `terminate`. Default: `terminate`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1946,29 +1946,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot `allocation_strategy` is set to `lowestPrice`. Default: `1`.
-{{% /md %}}</dd>
+    <dd>Number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot `allocation_strategy` is set to `lowestPrice`. Default: `1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="fleettargetcapacityspecification">Fleet<wbr>Target<wbr>Capacity<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#FleetTargetCapacitySpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#FleetTargetCapacitySpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetTargetCapacitySpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#FleetTargetCapacitySpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1977,8 +1977,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Default target capacity type. Valid values: `on-demand`, `spot`.
-{{% /md %}}</dd>
+    <dd>Default target capacity type. Valid values: `on-demand`, `spot`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1986,8 +1986,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of units to request, filled using `default_target_capacity_type`.
-{{% /md %}}</dd>
+    <dd>The number of units to request, filled using `default_target_capacity_type`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1995,8 +1995,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of On-Demand units to request.
-{{% /md %}}</dd>
+    <dd>The number of On-Demand units to request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2004,14 +2004,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Spot units to request.
-{{% /md %}}</dd>
+    <dd>The number of Spot units to request.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2020,8 +2020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default target capacity type. Valid values: `on-demand`, `spot`.
-{{% /md %}}</dd>
+    <dd>Default target capacity type. Valid values: `on-demand`, `spot`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2029,8 +2029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of units to request, filled using `default_target_capacity_type`.
-{{% /md %}}</dd>
+    <dd>The number of units to request, filled using `default_target_capacity_type`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2038,8 +2038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of On-Demand units to request.
-{{% /md %}}</dd>
+    <dd>The number of On-Demand units to request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2047,14 +2047,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Spot units to request.
-{{% /md %}}</dd>
+    <dd>The number of Spot units to request.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2063,8 +2063,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default target capacity type. Valid values: `on-demand`, `spot`.
-{{% /md %}}</dd>
+    <dd>Default target capacity type. Valid values: `on-demand`, `spot`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2072,8 +2072,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of units to request, filled using `default_target_capacity_type`.
-{{% /md %}}</dd>
+    <dd>The number of units to request, filled using `default_target_capacity_type`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2081,8 +2081,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of On-Demand units to request.
-{{% /md %}}</dd>
+    <dd>The number of On-Demand units to request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2090,14 +2090,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of Spot units to request.
-{{% /md %}}</dd>
+    <dd>The number of Spot units to request.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2106,8 +2106,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Default target capacity type. Valid values: `on-demand`, `spot`.
-{{% /md %}}</dd>
+    <dd>Default target capacity type. Valid values: `on-demand`, `spot`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2115,8 +2115,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of units to request, filled using `default_target_capacity_type`.
-{{% /md %}}</dd>
+    <dd>The number of units to request, filled using `default_target_capacity_type`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2124,8 +2124,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of On-Demand units to request.
-{{% /md %}}</dd>
+    <dd>The number of On-Demand units to request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2133,11 +2133,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of Spot units to request.
-{{% /md %}}</dd>
+    <dd>The number of Spot units to request.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

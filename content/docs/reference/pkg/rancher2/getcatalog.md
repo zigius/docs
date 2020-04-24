@@ -32,29 +32,29 @@ const library = pulumi.output(rancher2.getCatalog({
 
 ## Using GetCatalog {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getCatalog<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#GetCatalogArgs">GetCatalogArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#GetCatalogResult">GetCatalogResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_catalog(</span>name=None<span class="p">, </span>scope=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupCatalog<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#GetCatalogArgs">GetCatalogArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#LookupCatalogResult">LookupCatalogResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetCatalog </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.GetCatalogResult.html">GetCatalogResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.GetCatalogArgs.html">GetCatalogArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The catalog name.
-{{% /md %}}</dd>
+    <dd>The catalog name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,14 +80,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The scope of the catalog. `cluster`, `global`, and `project` are supported. Default `global` (string)
-{{% /md %}}</dd>
+    <dd>The scope of the catalog. `cluster`, `global`, and `project` are supported. Default `global` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -96,8 +96,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The catalog name.
-{{% /md %}}</dd>
+    <dd>The catalog name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -105,14 +105,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scope of the catalog. `cluster`, `global`, and `project` are supported. Default `global` (string)
-{{% /md %}}</dd>
+    <dd>The scope of the catalog. `cluster`, `global`, and `project` are supported. Default `global` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -121,8 +121,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The catalog name.
-{{% /md %}}</dd>
+    <dd>The catalog name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -130,14 +130,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scope of the catalog. `cluster`, `global`, and `project` are supported. Default `global` (string)
-{{% /md %}}</dd>
+    <dd>The scope of the catalog. `cluster`, `global`, and `project` are supported. Default `global` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -146,8 +146,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The catalog name.
-{{% /md %}}</dd>
+    <dd>The catalog name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -155,11 +155,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The scope of the catalog. `cluster`, `global`, and `project` are supported. Default `global` (string)
-{{% /md %}}</dd>
+    <dd>The scope of the catalog. `cluster`, `global`, and `project` are supported. Default `global` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -175,7 +175,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -184,8 +184,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -193,8 +193,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The branch of the catalog repo to use (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The branch of the catalog repo to use (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -202,8 +202,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The cluster id of the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The cluster id of the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -211,8 +211,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A catalog description (string)
-{{% /md %}}</dd>
+    <dd>(Computed) A catalog description (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -220,8 +220,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -229,8 +229,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The kind of the catalog. Just helm by the moment (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The kind of the catalog. Just helm by the moment (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -238,8 +238,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -247,7 +247,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -255,8 +255,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed/Sensitive) The password to access the catalog if needed (string)
-{{% /md %}}</dd>
+    <dd>(Computed/Sensitive) The password to access the catalog if needed (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -264,8 +264,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The project id of the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The project id of the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -273,8 +273,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The url of the catalog repo (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The url of the catalog repo (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -282,8 +282,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed/Sensitive) The username to access the catalog if needed (string)
-{{% /md %}}</dd>
+    <dd>(Computed/Sensitive) The username to access the catalog if needed (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -291,8 +291,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Helm version for the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Helm version for the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -300,13 +300,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -315,8 +315,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -324,8 +324,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The branch of the catalog repo to use (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The branch of the catalog repo to use (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -333,8 +333,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The cluster id of the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The cluster id of the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -342,8 +342,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A catalog description (string)
-{{% /md %}}</dd>
+    <dd>(Computed) A catalog description (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -351,8 +351,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -360,8 +360,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The kind of the catalog. Just helm by the moment (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The kind of the catalog. Just helm by the moment (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -369,8 +369,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -378,7 +378,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -386,8 +386,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed/Sensitive) The password to access the catalog if needed (string)
-{{% /md %}}</dd>
+    <dd>(Computed/Sensitive) The password to access the catalog if needed (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -395,8 +395,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The project id of the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The project id of the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -404,8 +404,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The url of the catalog repo (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The url of the catalog repo (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -413,8 +413,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed/Sensitive) The username to access the catalog if needed (string)
-{{% /md %}}</dd>
+    <dd>(Computed/Sensitive) The username to access the catalog if needed (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -422,8 +422,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Helm version for the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Helm version for the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -431,13 +431,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -446,8 +446,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -455,8 +455,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The branch of the catalog repo to use (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The branch of the catalog repo to use (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -464,8 +464,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The cluster id of the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The cluster id of the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -473,8 +473,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A catalog description (string)
-{{% /md %}}</dd>
+    <dd>(Computed) A catalog description (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -482,8 +482,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -491,8 +491,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The kind of the catalog. Just helm by the moment (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The kind of the catalog. Just helm by the moment (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -500,8 +500,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -509,7 +509,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -517,8 +517,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed/Sensitive) The password to access the catalog if needed (string)
-{{% /md %}}</dd>
+    <dd>(Computed/Sensitive) The password to access the catalog if needed (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -526,8 +526,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The project id of the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The project id of the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -535,8 +535,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The url of the catalog repo (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The url of the catalog repo (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -544,8 +544,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed/Sensitive) The username to access the catalog if needed (string)
-{{% /md %}}</dd>
+    <dd>(Computed/Sensitive) The username to access the catalog if needed (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -553,8 +553,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Helm version for the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Helm version for the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -562,13 +562,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -577,8 +577,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -586,8 +586,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The branch of the catalog repo to use (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The branch of the catalog repo to use (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The cluster id of the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The cluster id of the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,8 +604,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A catalog description (string)
-{{% /md %}}</dd>
+    <dd>(Computed) A catalog description (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -613,8 +613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The kind of the catalog. Just helm by the moment (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The kind of the catalog. Just helm by the moment (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,8 +631,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -640,7 +640,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -648,8 +648,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed/Sensitive) The password to access the catalog if needed (string)
-{{% /md %}}</dd>
+    <dd>(Computed/Sensitive) The password to access the catalog if needed (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -657,8 +657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The project id of the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The project id of the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -666,8 +666,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The url of the catalog repo (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The url of the catalog repo (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -675,8 +675,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed/Sensitive) The username to access the catalog if needed (string)
-{{% /md %}}</dd>
+    <dd>(Computed/Sensitive) The username to access the catalog if needed (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -684,8 +684,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Helm version for the catalog (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Helm version for the catalog (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,10 +693,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

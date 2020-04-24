@@ -16,9 +16,9 @@ Now that we have an instance of our Pulumi program deployed, let's enable encryp
 
 Replace the entire contents of {{< langfile >}} with the following:
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 "use strict";
@@ -45,8 +45,8 @@ const bucket = new aws.s3.Bucket("my-bucket", {
 exports.bucketName = bucket.id;
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
@@ -72,8 +72,8 @@ const bucket = new aws.s3.Bucket("my-bucket", {
 export const bucketName = bucket.id;
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi
@@ -97,8 +97,8 @@ bucket = s3.Bucket('my-bucket',
 pulumi.export('bucket_name',  bucket.id)
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 package main
@@ -139,8 +139,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using Pulumi;
@@ -178,7 +178,7 @@ class MyStack : Stack
 }
 ```
 
-{{% /choosable %}}
+
 
 Our program now creates a KMS key and enables server-side encryption on the S3 bucket using the KMS key.
 

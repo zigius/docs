@@ -57,26 +57,26 @@ const main = new aws.ec2.NetworkAcl("main", {
 
 
 ## Create a NetworkAcl Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#NetworkAcl">NetworkAcl</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#NetworkAclArgs">NetworkAclArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">NetworkAcl</span><span class="p">(resource_name, opts=None, </span>egress=None<span class="p">, </span>ingress=None<span class="p">, </span>subnet_ids=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewNetworkAcl<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#NetworkAclArgs">NetworkAclArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#NetworkAcl">NetworkAcl</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.NetworkAcl.html">NetworkAcl</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.NetworkAclArgs.html">NetworkAclArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -113,9 +113,9 @@ const main = new aws.ec2.NetworkAcl("main", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -133,9 +133,9 @@ const main = new aws.ec2.NetworkAcl("main", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,9 +182,9 @@ const main = new aws.ec2.NetworkAcl("main", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -221,7 +221,7 @@ const main = new aws.ec2.NetworkAcl("main", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## NetworkAcl Resource Properties {#properties}
 
@@ -234,7 +234,7 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -243,8 +243,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the associated VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the associated VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -252,8 +252,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclegress">List&lt;Network<wbr>Acl<wbr>Egress<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an egress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an egress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,8 +261,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclingress">List&lt;Network<wbr>Acl<wbr>Ingress<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an ingress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an ingress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,8 +270,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Subnet IDs to apply the ACL to
-{{% /md %}}</dd>
+    <dd>A list of Subnet IDs to apply the ACL to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,14 +279,14 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -295,8 +295,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the associated VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the associated VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,8 +304,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclegress">[]Network<wbr>Acl<wbr>Egress</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an egress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an egress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,8 +313,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclingress">[]Network<wbr>Acl<wbr>Ingress</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an ingress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an ingress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Subnet IDs to apply the ACL to
-{{% /md %}}</dd>
+    <dd>A list of Subnet IDs to apply the ACL to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,14 +331,14 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -347,8 +347,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the associated VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the associated VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,8 +356,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclegress">Network<wbr>Acl<wbr>Egress[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an egress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an egress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclingress">Network<wbr>Acl<wbr>Ingress[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an ingress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an ingress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Subnet IDs to apply the ACL to
-{{% /md %}}</dd>
+    <dd>A list of Subnet IDs to apply the ACL to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,14 +383,14 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -399,8 +399,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the associated VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the associated VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclegress">List[Network<wbr>Acl<wbr>Egress]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an egress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an egress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclingress">List[Network<wbr>Acl<wbr>Ingress]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an ingress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an ingress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,8 +426,8 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Subnet IDs to apply the ACL to
-{{% /md %}}</dd>
+    <dd>A list of Subnet IDs to apply the ACL to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,11 +435,11 @@ The NetworkAcl resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -453,7 +453,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -462,7 +462,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -470,14 +470,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the network ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the network ACL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -486,7 +486,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -494,14 +494,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the network ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the network ACL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -510,7 +510,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -518,14 +518,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the network ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the network ACL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -534,7 +534,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -542,11 +542,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the network ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the network ACL.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -557,25 +557,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing NetworkAcl Resource {#look-up}
 
 Get an existing NetworkAcl resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#NetworkAclState">NetworkAclState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#NetworkAcl">NetworkAcl</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>egress=None<span class="p">, </span>ingress=None<span class="p">, </span>owner_id=None<span class="p">, </span>subnet_ids=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetNetworkAcl<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#NetworkAclState">NetworkAclState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#NetworkAcl">NetworkAcl</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.NetworkAcl.html">NetworkAcl</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.NetworkAclState.html">NetworkAclState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -600,9 +600,9 @@ Get an existing NetworkAcl resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -615,36 +615,9 @@ Get an existing NetworkAcl resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -669,13 +642,40 @@ Get an existing NetworkAcl resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -684,8 +684,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclegress">List&lt;Network<wbr>Acl<wbr>Egress<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an egress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an egress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,8 +693,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclingress">List&lt;Network<wbr>Acl<wbr>Ingress<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an ingress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an ingress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -702,8 +702,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the network ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the network ACL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,8 +711,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Subnet IDs to apply the ACL to
-{{% /md %}}</dd>
+    <dd>A list of Subnet IDs to apply the ACL to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -720,8 +720,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -729,14 +729,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the associated VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the associated VPC.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -745,8 +745,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclegress">[]Network<wbr>Acl<wbr>Egress</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an egress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an egress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -754,8 +754,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclingress">[]Network<wbr>Acl<wbr>Ingress</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an ingress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an ingress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -763,8 +763,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the network ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the network ACL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -772,8 +772,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Subnet IDs to apply the ACL to
-{{% /md %}}</dd>
+    <dd>A list of Subnet IDs to apply the ACL to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -781,8 +781,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -790,14 +790,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the associated VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the associated VPC.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -806,8 +806,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclegress">Network<wbr>Acl<wbr>Egress[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an egress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an egress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -815,8 +815,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclingress">Network<wbr>Acl<wbr>Ingress[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an ingress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an ingress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -824,8 +824,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the network ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the network ACL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -833,8 +833,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Subnet IDs to apply the ACL to
-{{% /md %}}</dd>
+    <dd>A list of Subnet IDs to apply the ACL to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -842,8 +842,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,14 +851,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the associated VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the associated VPC.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -867,8 +867,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclegress">List[Network<wbr>Acl<wbr>Egress]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an egress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an egress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -876,8 +876,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#networkaclingress">List[Network<wbr>Acl<wbr>Ingress]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an ingress rule. Parameters defined below.
-{{% /md %}}</dd>
+    <dd>Specifies an ingress rule. Parameters defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -885,8 +885,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the network ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the network ACL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -894,8 +894,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Subnet IDs to apply the ACL to
-{{% /md %}}</dd>
+    <dd>A list of Subnet IDs to apply the ACL to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -903,8 +903,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -912,11 +912,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the associated VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the associated VPC.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -931,18 +931,18 @@ The following state arguments are supported:
 
 
 <h4 id="networkaclegress">Network<wbr>Acl<wbr>Egress</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#NetworkAclEgress">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#NetworkAclEgress">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#NetworkAclEgressArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#NetworkAclEgressOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -951,8 +951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take.
-{{% /md %}}</dd>
+    <dd>The action to take.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -960,8 +960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The from port to match.
-{{% /md %}}</dd>
+    <dd>The from port to match.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -969,9 +969,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to match. If using the -1 'all'
+    <dd>The protocol to match. If using the -1 'all'
 protocol, you must specify a from and to port of 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -979,8 +979,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The rule number. Used for ordering.
-{{% /md %}}</dd>
+    <dd>The rule number. Used for ordering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -988,8 +988,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The to port to match.
-{{% /md %}}</dd>
+    <dd>The to port to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -997,9 +997,9 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block to match. This must be a
+    <dd>The CIDR block to match. This must be a
 valid network mask.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1007,8 +1007,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type code to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type code to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1016,8 +1016,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1025,14 +1025,14 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1041,8 +1041,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take.
-{{% /md %}}</dd>
+    <dd>The action to take.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1050,8 +1050,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The from port to match.
-{{% /md %}}</dd>
+    <dd>The from port to match.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1059,9 +1059,9 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to match. If using the -1 'all'
+    <dd>The protocol to match. If using the -1 'all'
 protocol, you must specify a from and to port of 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1069,8 +1069,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The rule number. Used for ordering.
-{{% /md %}}</dd>
+    <dd>The rule number. Used for ordering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1078,8 +1078,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The to port to match.
-{{% /md %}}</dd>
+    <dd>The to port to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,9 +1087,9 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block to match. This must be a
+    <dd>The CIDR block to match. This must be a
 valid network mask.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1097,8 +1097,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type code to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type code to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1106,8 +1106,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,14 +1115,14 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1131,8 +1131,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take.
-{{% /md %}}</dd>
+    <dd>The action to take.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1140,8 +1140,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The from port to match.
-{{% /md %}}</dd>
+    <dd>The from port to match.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1149,9 +1149,9 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to match. If using the -1 'all'
+    <dd>The protocol to match. If using the -1 'all'
 protocol, you must specify a from and to port of 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1159,8 +1159,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The rule number. Used for ordering.
-{{% /md %}}</dd>
+    <dd>The rule number. Used for ordering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1168,8 +1168,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The to port to match.
-{{% /md %}}</dd>
+    <dd>The to port to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,9 +1177,9 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block to match. This must be a
+    <dd>The CIDR block to match. This must be a
 valid network mask.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,8 +1187,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type code to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type code to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1196,8 +1196,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,14 +1205,14 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1221,8 +1221,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The action to take.
-{{% /md %}}</dd>
+    <dd>The action to take.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1230,8 +1230,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The from port to match.
-{{% /md %}}</dd>
+    <dd>The from port to match.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1239,9 +1239,9 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to match. If using the -1 'all'
+    <dd>The protocol to match. If using the -1 'all'
 protocol, you must specify a from and to port of 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1249,8 +1249,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The rule number. Used for ordering.
-{{% /md %}}</dd>
+    <dd>The rule number. Used for ordering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1258,8 +1258,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The to port to match.
-{{% /md %}}</dd>
+    <dd>The to port to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,9 +1267,9 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block to match. This must be a
+    <dd>The CIDR block to match. This must be a
 valid network mask.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1277,8 +1277,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type code to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type code to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,8 +1286,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,29 +1295,29 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="networkaclingress">Network<wbr>Acl<wbr>Ingress</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#NetworkAclIngress">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#NetworkAclIngress">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#NetworkAclIngressArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#NetworkAclIngressOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1326,8 +1326,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take.
-{{% /md %}}</dd>
+    <dd>The action to take.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1335,8 +1335,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The from port to match.
-{{% /md %}}</dd>
+    <dd>The from port to match.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1344,9 +1344,9 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to match. If using the -1 'all'
+    <dd>The protocol to match. If using the -1 'all'
 protocol, you must specify a from and to port of 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1354,8 +1354,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The rule number. Used for ordering.
-{{% /md %}}</dd>
+    <dd>The rule number. Used for ordering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1363,8 +1363,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The to port to match.
-{{% /md %}}</dd>
+    <dd>The to port to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,9 +1372,9 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block to match. This must be a
+    <dd>The CIDR block to match. This must be a
 valid network mask.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,8 +1382,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type code to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type code to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1391,8 +1391,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,14 +1400,14 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1416,8 +1416,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take.
-{{% /md %}}</dd>
+    <dd>The action to take.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1425,8 +1425,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The from port to match.
-{{% /md %}}</dd>
+    <dd>The from port to match.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1434,9 +1434,9 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to match. If using the -1 'all'
+    <dd>The protocol to match. If using the -1 'all'
 protocol, you must specify a from and to port of 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1444,8 +1444,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The rule number. Used for ordering.
-{{% /md %}}</dd>
+    <dd>The rule number. Used for ordering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1453,8 +1453,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The to port to match.
-{{% /md %}}</dd>
+    <dd>The to port to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,9 +1462,9 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block to match. This must be a
+    <dd>The CIDR block to match. This must be a
 valid network mask.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1472,8 +1472,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type code to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type code to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1481,8 +1481,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1490,14 +1490,14 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1506,8 +1506,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take.
-{{% /md %}}</dd>
+    <dd>The action to take.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1515,8 +1515,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The from port to match.
-{{% /md %}}</dd>
+    <dd>The from port to match.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1524,9 +1524,9 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to match. If using the -1 'all'
+    <dd>The protocol to match. If using the -1 'all'
 protocol, you must specify a from and to port of 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1534,8 +1534,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The rule number. Used for ordering.
-{{% /md %}}</dd>
+    <dd>The rule number. Used for ordering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1543,8 +1543,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The to port to match.
-{{% /md %}}</dd>
+    <dd>The to port to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1552,9 +1552,9 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block to match. This must be a
+    <dd>The CIDR block to match. This must be a
 valid network mask.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,8 +1562,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type code to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type code to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,8 +1571,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1580,14 +1580,14 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1596,8 +1596,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The action to take.
-{{% /md %}}</dd>
+    <dd>The action to take.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1605,8 +1605,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The from port to match.
-{{% /md %}}</dd>
+    <dd>The from port to match.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1614,9 +1614,9 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to match. If using the -1 'all'
+    <dd>The protocol to match. If using the -1 'all'
 protocol, you must specify a from and to port of 0.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1624,8 +1624,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The rule number. Used for ordering.
-{{% /md %}}</dd>
+    <dd>The rule number. Used for ordering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1633,8 +1633,8 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The to port to match.
-{{% /md %}}</dd>
+    <dd>The to port to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,9 +1642,9 @@ protocol, you must specify a from and to port of 0.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block to match. This must be a
+    <dd>The CIDR block to match. This must be a
 valid network mask.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1652,8 +1652,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type code to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type code to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1661,8 +1661,8 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ICMP type to be used. Default 0.
-{{% /md %}}</dd>
+    <dd>The ICMP type to be used. Default 0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1670,11 +1670,11 @@ valid network mask.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

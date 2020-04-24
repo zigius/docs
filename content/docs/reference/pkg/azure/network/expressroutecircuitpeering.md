@@ -15,26 +15,26 @@ Manages an ExpressRoute Circuit Peering.
 
 
 ## Create a ExpressRouteCircuitPeering Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#ExpressRouteCircuitPeering">ExpressRouteCircuitPeering</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#ExpressRouteCircuitPeeringArgs">ExpressRouteCircuitPeeringArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ExpressRouteCircuitPeering</span><span class="p">(resource_name, opts=None, </span>express_route_circuit_name=None<span class="p">, </span>microsoft_peering_config=None<span class="p">, </span>peer_asn=None<span class="p">, </span>peering_type=None<span class="p">, </span>primary_peer_address_prefix=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>secondary_peer_address_prefix=None<span class="p">, </span>shared_key=None<span class="p">, </span>vlan_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewExpressRouteCircuitPeering<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#ExpressRouteCircuitPeeringArgs">ExpressRouteCircuitPeeringArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#ExpressRouteCircuitPeering">ExpressRouteCircuitPeering</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.ExpressRouteCircuitPeering.html">ExpressRouteCircuitPeering</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.ExpressRouteCircuitPeeringArgs.html">ExpressRouteCircuitPeeringArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -71,9 +71,9 @@ Manages an ExpressRoute Circuit Peering.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -91,9 +91,9 @@ Manages an ExpressRoute Circuit Peering.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -140,9 +140,9 @@ Manages an ExpressRoute Circuit Peering.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -179,7 +179,7 @@ Manages an ExpressRoute Circuit Peering.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ExpressRouteCircuitPeering Resource Properties {#properties}
 
@@ -192,7 +192,7 @@ The ExpressRouteCircuitPeering resource accepts the following [input]({{< relref
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -201,8 +201,8 @@ The ExpressRouteCircuitPeering resource accepts the following [input]({{< relref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ExpressRoute Circuit in which to create the Peering.
-{{% /md %}}</dd>
+    <dd>The name of the ExpressRoute Circuit in which to create the Peering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -210,8 +210,8 @@ The ExpressRouteCircuitPeering resource accepts the following [input]({{< relref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -219,8 +219,8 @@ The ExpressRouteCircuitPeering resource accepts the following [input]({{< relref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the primary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the primary link.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -228,9 +228,9 @@ The ExpressRouteCircuitPeering resource accepts the following [input]({{< relref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Express Route Circuit Peering. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -238,8 +238,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the secondary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the secondary link.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -247,8 +247,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A valid VLAN ID to establish this peering on.
-{{% /md %}}</dd>
+    <dd>A valid VLAN ID to establish this peering on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,8 +256,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#expressroutecircuitpeeringmicrosoftpeeringconfig">Express<wbr>Route<wbr>Circuit<wbr>Peering<wbr>Microsoft<wbr>Peering<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
-{{% /md %}}</dd>
+    <dd>A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,8 +265,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Either a 16-bit or a 32-bit ASN. Can either be public or private..
-{{% /md %}}</dd>
+    <dd>The Either a 16-bit or a 32-bit ASN. Can either be public or private..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,14 +274,14 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared key. Can be a maximum of 25 characters.
-{{% /md %}}</dd>
+    <dd>The shared key. Can be a maximum of 25 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -290,8 +290,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ExpressRoute Circuit in which to create the Peering.
-{{% /md %}}</dd>
+    <dd>The name of the ExpressRoute Circuit in which to create the Peering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -299,8 +299,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -308,8 +308,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the primary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the primary link.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -317,9 +317,9 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Express Route Circuit Peering. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -327,8 +327,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the secondary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the secondary link.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -336,8 +336,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A valid VLAN ID to establish this peering on.
-{{% /md %}}</dd>
+    <dd>A valid VLAN ID to establish this peering on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,8 +345,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#expressroutecircuitpeeringmicrosoftpeeringconfig">Express<wbr>Route<wbr>Circuit<wbr>Peering<wbr>Microsoft<wbr>Peering<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
-{{% /md %}}</dd>
+    <dd>A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,8 +354,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Either a 16-bit or a 32-bit ASN. Can either be public or private..
-{{% /md %}}</dd>
+    <dd>The Either a 16-bit or a 32-bit ASN. Can either be public or private..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -363,14 +363,14 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared key. Can be a maximum of 25 characters.
-{{% /md %}}</dd>
+    <dd>The shared key. Can be a maximum of 25 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -379,8 +379,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ExpressRoute Circuit in which to create the Peering.
-{{% /md %}}</dd>
+    <dd>The name of the ExpressRoute Circuit in which to create the Peering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -388,8 +388,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -397,8 +397,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the primary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the primary link.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -406,9 +406,9 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Express Route Circuit Peering. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -416,8 +416,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the secondary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the secondary link.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -425,8 +425,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A valid VLAN ID to establish this peering on.
-{{% /md %}}</dd>
+    <dd>A valid VLAN ID to establish this peering on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,8 +434,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#expressroutecircuitpeeringmicrosoftpeeringconfig">Express<wbr>Route<wbr>Circuit<wbr>Peering<wbr>Microsoft<wbr>Peering<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
-{{% /md %}}</dd>
+    <dd>A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Either a 16-bit or a 32-bit ASN. Can either be public or private..
-{{% /md %}}</dd>
+    <dd>The Either a 16-bit or a 32-bit ASN. Can either be public or private..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,14 +452,14 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared key. Can be a maximum of 25 characters.
-{{% /md %}}</dd>
+    <dd>The shared key. Can be a maximum of 25 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -468,8 +468,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ExpressRoute Circuit in which to create the Peering.
-{{% /md %}}</dd>
+    <dd>The name of the ExpressRoute Circuit in which to create the Peering.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -477,8 +477,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -486,8 +486,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the primary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the primary link.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -495,9 +495,9 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Express Route Circuit Peering. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -505,8 +505,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the secondary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the secondary link.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -514,8 +514,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A valid VLAN ID to establish this peering on.
-{{% /md %}}</dd>
+    <dd>A valid VLAN ID to establish this peering on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#expressroutecircuitpeeringmicrosoftpeeringconfig">Dict[Express<wbr>Route<wbr>Circuit<wbr>Peering<wbr>Microsoft<wbr>Peering<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
-{{% /md %}}</dd>
+    <dd>A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,8 +532,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Either a 16-bit or a 32-bit ASN. Can either be public or private..
-{{% /md %}}</dd>
+    <dd>The Either a 16-bit or a 32-bit ASN. Can either be public or private..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,11 +541,11 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The shared key. Can be a maximum of 25 characters.
-{{% /md %}}</dd>
+    <dd>The shared key. Can be a maximum of 25 characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -559,7 +559,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -568,8 +568,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ASN used by Azure.
-{{% /md %}}</dd>
+    <dd>The ASN used by Azure.
+</dd>
 
     <dt class="property-"
             title="">
@@ -577,7 +577,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -585,8 +585,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Primary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-"
             title="">
@@ -594,14 +594,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Secondary Port used by Azure for this Peering.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -610,8 +610,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ASN used by Azure.
-{{% /md %}}</dd>
+    <dd>The ASN used by Azure.
+</dd>
 
     <dt class="property-"
             title="">
@@ -619,7 +619,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -627,8 +627,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Primary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-"
             title="">
@@ -636,14 +636,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Secondary Port used by Azure for this Peering.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -652,8 +652,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ASN used by Azure.
-{{% /md %}}</dd>
+    <dd>The ASN used by Azure.
+</dd>
 
     <dt class="property-"
             title="">
@@ -661,7 +661,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -669,8 +669,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Primary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-"
             title="">
@@ -678,14 +678,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Secondary Port used by Azure for this Peering.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -694,8 +694,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ASN used by Azure.
-{{% /md %}}</dd>
+    <dd>The ASN used by Azure.
+</dd>
 
     <dt class="property-"
             title="">
@@ -703,7 +703,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -711,8 +711,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Primary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-"
             title="">
@@ -720,11 +720,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Secondary Port used by Azure for this Peering.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -735,25 +735,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ExpressRouteCircuitPeering Resource {#look-up}
 
 Get an existing ExpressRouteCircuitPeering resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#ExpressRouteCircuitPeeringState">ExpressRouteCircuitPeeringState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#ExpressRouteCircuitPeering">ExpressRouteCircuitPeering</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>azure_asn=None<span class="p">, </span>express_route_circuit_name=None<span class="p">, </span>microsoft_peering_config=None<span class="p">, </span>peer_asn=None<span class="p">, </span>peering_type=None<span class="p">, </span>primary_azure_port=None<span class="p">, </span>primary_peer_address_prefix=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>secondary_azure_port=None<span class="p">, </span>secondary_peer_address_prefix=None<span class="p">, </span>shared_key=None<span class="p">, </span>vlan_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetExpressRouteCircuitPeering<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#ExpressRouteCircuitPeeringState">ExpressRouteCircuitPeeringState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#ExpressRouteCircuitPeering">ExpressRouteCircuitPeering</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.ExpressRouteCircuitPeering.html">ExpressRouteCircuitPeering</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.ExpressRouteCircuitPeeringState.html">ExpressRouteCircuitPeeringState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -778,9 +778,9 @@ Get an existing ExpressRouteCircuitPeering resource's state with the given name,
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -793,36 +793,9 @@ Get an existing ExpressRouteCircuitPeering resource's state with the given name,
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -847,13 +820,40 @@ Get an existing ExpressRouteCircuitPeering resource's state with the given name,
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -862,8 +862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ASN used by Azure.
-{{% /md %}}</dd>
+    <dd>The ASN used by Azure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,8 +871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ExpressRoute Circuit in which to create the Peering.
-{{% /md %}}</dd>
+    <dd>The name of the ExpressRoute Circuit in which to create the Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,8 +880,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#expressroutecircuitpeeringmicrosoftpeeringconfig">Express<wbr>Route<wbr>Circuit<wbr>Peering<wbr>Microsoft<wbr>Peering<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
-{{% /md %}}</dd>
+    <dd>A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -889,8 +889,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Either a 16-bit or a 32-bit ASN. Can either be public or private..
-{{% /md %}}</dd>
+    <dd>The Either a 16-bit or a 32-bit ASN. Can either be public or private..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,8 +898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,8 +907,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Primary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -916,8 +916,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the primary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the primary link.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -925,9 +925,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Express Route Circuit Peering. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Secondary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the secondary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the secondary link.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,8 +953,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared key. Can be a maximum of 25 characters.
-{{% /md %}}</dd>
+    <dd>The shared key. Can be a maximum of 25 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,14 +962,14 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A valid VLAN ID to establish this peering on.
-{{% /md %}}</dd>
+    <dd>A valid VLAN ID to establish this peering on.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -978,8 +978,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ASN used by Azure.
-{{% /md %}}</dd>
+    <dd>The ASN used by Azure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,8 +987,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ExpressRoute Circuit in which to create the Peering.
-{{% /md %}}</dd>
+    <dd>The name of the ExpressRoute Circuit in which to create the Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,8 +996,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#expressroutecircuitpeeringmicrosoftpeeringconfig">Express<wbr>Route<wbr>Circuit<wbr>Peering<wbr>Microsoft<wbr>Peering<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
-{{% /md %}}</dd>
+    <dd>A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,8 +1005,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Either a 16-bit or a 32-bit ASN. Can either be public or private..
-{{% /md %}}</dd>
+    <dd>The Either a 16-bit or a 32-bit ASN. Can either be public or private..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1014,8 +1014,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Primary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the primary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the primary link.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,9 +1041,9 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Express Route Circuit Peering. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,8 +1051,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Secondary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the secondary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the secondary link.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared key. Can be a maximum of 25 characters.
-{{% /md %}}</dd>
+    <dd>The shared key. Can be a maximum of 25 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,14 +1078,14 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A valid VLAN ID to establish this peering on.
-{{% /md %}}</dd>
+    <dd>A valid VLAN ID to establish this peering on.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1094,8 +1094,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ASN used by Azure.
-{{% /md %}}</dd>
+    <dd>The ASN used by Azure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,8 +1103,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ExpressRoute Circuit in which to create the Peering.
-{{% /md %}}</dd>
+    <dd>The name of the ExpressRoute Circuit in which to create the Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,8 +1112,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#expressroutecircuitpeeringmicrosoftpeeringconfig">Express<wbr>Route<wbr>Circuit<wbr>Peering<wbr>Microsoft<wbr>Peering<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
-{{% /md %}}</dd>
+    <dd>A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,8 +1121,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Either a 16-bit or a 32-bit ASN. Can either be public or private..
-{{% /md %}}</dd>
+    <dd>The Either a 16-bit or a 32-bit ASN. Can either be public or private..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,8 +1130,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1139,8 +1139,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Primary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,8 +1148,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the primary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the primary link.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1157,9 +1157,9 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Express Route Circuit Peering. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,8 +1167,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Secondary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,8 +1176,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the secondary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the secondary link.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,8 +1185,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared key. Can be a maximum of 25 characters.
-{{% /md %}}</dd>
+    <dd>The shared key. Can be a maximum of 25 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,14 +1194,14 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A valid VLAN ID to establish this peering on.
-{{% /md %}}</dd>
+    <dd>A valid VLAN ID to establish this peering on.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1210,8 +1210,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ASN used by Azure.
-{{% /md %}}</dd>
+    <dd>The ASN used by Azure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ExpressRoute Circuit in which to create the Peering.
-{{% /md %}}</dd>
+    <dd>The name of the ExpressRoute Circuit in which to create the Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,8 +1228,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#expressroutecircuitpeeringmicrosoftpeeringconfig">Dict[Express<wbr>Route<wbr>Circuit<wbr>Peering<wbr>Microsoft<wbr>Peering<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
-{{% /md %}}</dd>
+    <dd>A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1237,8 +1237,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Either a 16-bit or a 32-bit ASN. Can either be public or private..
-{{% /md %}}</dd>
+    <dd>The Either a 16-bit or a 32-bit ASN. Can either be public or private..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,8 +1246,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,8 +1255,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Primary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,8 +1264,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the primary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the primary link.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,9 +1273,9 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the Express Route Circuit Peering. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1283,8 +1283,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Port used by Azure for this Peering.
-{{% /md %}}</dd>
+    <dd>The Secondary Port used by Azure for this Peering.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,8 +1292,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A `/30` subnet for the secondary link.
-{{% /md %}}</dd>
+    <dd>A `/30` subnet for the secondary link.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,8 +1301,8 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The shared key. Can be a maximum of 25 characters.
-{{% /md %}}</dd>
+    <dd>The shared key. Can be a maximum of 25 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1310,11 +1310,11 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A valid VLAN ID to establish this peering on.
-{{% /md %}}</dd>
+    <dd>A valid VLAN ID to establish this peering on.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1329,18 +1329,18 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
 
 
 <h4 id="expressroutecircuitpeeringmicrosoftpeeringconfig">Express<wbr>Route<wbr>Circuit<wbr>Peering<wbr>Microsoft<wbr>Peering<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ExpressRouteCircuitPeeringMicrosoftPeeringConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ExpressRouteCircuitPeeringMicrosoftPeeringConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#ExpressRouteCircuitPeeringMicrosoftPeeringConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1349,14 +1349,14 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Advertised Public Prefixes
-{{% /md %}}</dd>
+    <dd>A list of Advertised Public Prefixes
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1365,14 +1365,14 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Advertised Public Prefixes
-{{% /md %}}</dd>
+    <dd>A list of Advertised Public Prefixes
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1381,14 +1381,14 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Advertised Public Prefixes
-{{% /md %}}</dd>
+    <dd>A list of Advertised Public Prefixes
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1397,11 +1397,11 @@ create the Express Route Circuit Peering. Changing this forces a new resource to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Advertised Public Prefixes
-{{% /md %}}</dd>
+    <dd>A list of Advertised Public Prefixes
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

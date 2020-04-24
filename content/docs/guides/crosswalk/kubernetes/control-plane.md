@@ -9,9 +9,9 @@ menu:
     weight: 2
 ---
 
-{{< chooser cloud "aws,azure,gcp" / >}}
 
-{{% choosable cloud aws %}}
+
+
 
 In order to run container workloads, you will need a Kubernetes cluster.
 While it is possible to provision and manage a cluster manually on AWS,
@@ -22,9 +22,9 @@ See the [official Kubernetes docs](https://kubernetes.io/docs/reference/) for mo
 
 The full code for this stack is on [GitHub](https://github.com/pulumi/kubernetes-guides/tree/master/aws/03-cluster-configuration).
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 In order to run container workloads, you will need a Kubernetes cluster.
 While it is possible to provision and manage a cluster manually on Azure,
 their managed offering, [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/), offers an
@@ -34,9 +34,9 @@ See the [official Kubernetes docs](https://kubernetes.io/docs/reference/) for mo
 
 The full code for this stack is on [GitHub](https://github.com/pulumi/kubernetes-guides/tree/master/azure/03-cluster-configuration).
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 In order to run container workloads, you will need a Kubernetes cluster.
 While it is possible to provision and manage a cluster manually on GCP,
@@ -47,7 +47,7 @@ See the [official Kubernetes docs](https://kubernetes.io/docs/reference/) for mo
 
 The full code for this stack is on [GitHub](https://github.com/pulumi/kubernetes-guides/tree/master/gcp/03-cluster-configuration).
 
-{{% /choosable %}}
+
 
 ## Overview
 
@@ -76,7 +76,7 @@ limit the scope of damage if a given group is compromised, can regulate the numb
 of API requests originating from a certain group, and can also help scope
 privileges to specific workloads.
 
-{{% choosable cloud azure %}}
+
 
 Azure Kubernetes Service can be configured to use Azure Active Directory (Azure AD) for user authentication. Cluster administrators can then configure Kubernetes role-based access control (RBAC) based on a user's identity or directory group membership.
 
@@ -84,11 +84,11 @@ To provide Azure AD authentication for an AKS cluster, two Azure AD applications
 
 We configure applications and service principals using the `@pulumi/azuread` package. After the applications are created, there is manual step required to [grant admin consent](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-user-consent#grant-admin-consent-when-registering-an-app-in-the-azure-portal) for API permissions.
 
-{{% /choosable %}}
+
 
 ### Users
 
-{{% choosable cloud aws %}}
+
 
 For **users**, we create an `admins` role for cluster administrators with
 root privileges, and a limited scope `devs` role for general purpose
@@ -127,9 +127,9 @@ const cluster = new eks.Cluster(`${projectName}`, {
 }
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 
 For users, we create and use a ServicePrincipal for cluster administrators with
 root privileges, and a limited scope `devs` user group for general purpose
@@ -161,9 +161,9 @@ const cluster = new azure.containerservice.KubernetesCluster(`${name}`, {
 }
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 For users, we create and use a ServiceAccount for cluster administrators with
 root privileges, and a limited scope `devs` ServiceAccount for general purpose
@@ -172,9 +172,9 @@ execution of workloads. Both identities will be tied into Kubernetes RBAC in
 
 By authenticating with the ServiceAccount using `gcloud`, as outlined in [Identity]({{< relref "/docs/guides/crosswalk/kubernetes/identity#create-an-iam-role-and-serviceaccount-for-admins" >}}), we automatically bind the ServiceAccount to be a cluster admin and no further action is required.
 
-{{% /choosable %}}
 
-{{% choosable cloud aws %}}
+
+
 
 #### Worker Node Groups
 
@@ -196,7 +196,7 @@ const cluster = new eks.Cluster(`${projectName}`, {
 }
 ```
 
-{{% /choosable %}}
+
 
 ## Managed Infrastructure
 
@@ -208,7 +208,7 @@ Configuration stack.
 
 ### Networking
 
-{{% choosable cloud aws %}}
+
 
 How you create the network will vary on your permissions and preferences.
 
@@ -252,9 +252,9 @@ const cluster = new eks.Cluster(`${projectName}`, {
 }
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 
 How you create the network will vary on your permissions and preferences.
 
@@ -293,9 +293,9 @@ const subnet = new azure.network.Subnet(name, {
 
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 How you create the network will vary on your permissions and preferences.
 
@@ -329,7 +329,7 @@ const subnet = new gcp.compute.Subnetwork(projectName, {
 export const subnetworkName = subnet.name;
 ```
 
-{{% /choosable %}}
+
 
 ### Storage
 
@@ -349,16 +349,16 @@ specify the `storageClassName`
 
 See the [Kubernetes docs](https://kubernetes.io/docs/concepts/storage/storage-classes/) for more details.
 
-{{% choosable cloud aws %}}
+
 
 As of Kubernetes v1.11+ on EKS, a default `gp2`
 storage class will be created automatically by EKS.
 
 See the [official EKS docs](https://docs.aws.amazon.com/eks/latest/userguide/storage-classes.html) for more details.
 
-{{< chooser k8s-language "typescript,yaml" >}}
 
-{{% choosable k8s-language yaml %}}
+
+
 
 Create the storage classes using `kubectl`.
 
@@ -413,9 +413,9 @@ EOF
 $ kubectl apply -f pvc.yaml
 ```
 
-{{% /choosable %}}
 
-{{% choosable k8s-language typescript %}}
+
+
 
 Create the storage classes using Pulumi.
 
@@ -459,19 +459,19 @@ cluster.core.storageClasses["gp2-encrypted"].apply(sc => {
 });
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
+
+
 
 See the [official AKS docs](https://docs.microsoft.com/en-us/azure/aks/concepts-storage) for more details.
 
-{{< chooser k8s-language "typescript,yaml" >}}
 
-{{% choosable k8s-language yaml %}}
+
+
 
 After the cluster is provisioned and running, create a StorageClass to
 provision Azure disks.
@@ -519,9 +519,9 @@ EOF
 $ kubectl apply -f pvc.yaml
 ```
 
-{{% /choosable %}}
 
-{{% choosable k8s-language typescript %}}
+
+
 
 ```ts
 import * as k8s from "@pulumi/k8s";
@@ -559,19 +559,19 @@ const myPvc = new k8s.core.v1.PersistentVolumeClaim("mypvc", {
 );
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
+
+
 
 See the [official GKE docs](https://cloud.google.com/kubernetes-engine/docs/concepts/persistent-volumes) for more details.
 
-{{< chooser k8s-language "typescript,yaml" >}}
 
-{{% choosable k8s-language yaml %}}
+
+
 
 After the cluster is provisioned and running, create a StorageClass to
 provision GCP disks.
@@ -619,9 +619,9 @@ EOF
 $ kubectl apply -f pvc.yaml
 ```
 
-{{% /choosable %}}
 
-{{% choosable k8s-language typescript %}}
+
+
 
 ```ts
 import * as k8s from "@pulumi/k8s";
@@ -659,11 +659,11 @@ const myPvc = new k8s.core.v1.PersistentVolumeClaim("mypvc", {
 );
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
 
-{{% /choosable %}}
+
+
+
 
 ## Recommended Settings
 
@@ -678,7 +678,7 @@ general best-practices and recommendations to configure in the cluster.
   that could be updated at any time.
 * Instead of [using](https://blog.heptio.com/on-securing-the-kubernetes-dashboard-16b09b1b7aca) `kube-dashboard`, try [VMware's Octant](https://github.com/vmware-tanzu/octant).
 
-{{% choosable cloud aws %}}
+
 
 **EKS:**
 
@@ -714,9 +714,9 @@ general best-practices and recommendations to configure in the cluster.
     }
     ```
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 
 **AKS:**
 
@@ -740,9 +740,9 @@ general best-practices and recommendations to configure in the cluster.
     });
     ```
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 **GKE:**
 
@@ -783,4 +783,4 @@ general best-practices and recommendations to configure in the cluster.
     });
     ```
 
-{{% /choosable %}}
+

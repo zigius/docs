@@ -43,26 +43,26 @@ const myCluster = new alicloud.cs.Swarm("my_cluster", {
 
 
 ## Create a Swarm Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cs/#Swarm">Swarm</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cs/#SwarmArgs">SwarmArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Swarm</span><span class="p">(resource_name, opts=None, </span>cidr_block=None<span class="p">, </span>disk_category=None<span class="p">, </span>disk_size=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_type=None<span class="p">, </span>is_outdated=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>need_slb=None<span class="p">, </span>node_number=None<span class="p">, </span>password=None<span class="p">, </span>release_eip=None<span class="p">, </span>size=None<span class="p">, </span>vswitch_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSwarm<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#SwarmArgs">SwarmArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#Swarm">Swarm</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.CS.Swarm.html">Swarm</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.CS.SwarmArgs.html">SwarmArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -99,9 +99,9 @@ const myCluster = new alicloud.cs.Swarm("my_cluster", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -119,9 +119,9 @@ const myCluster = new alicloud.cs.Swarm("my_cluster", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -168,9 +168,9 @@ const myCluster = new alicloud.cs.Swarm("my_cluster", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -207,7 +207,7 @@ const myCluster = new alicloud.cs.Swarm("my_cluster", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Swarm Resource Properties {#properties}
 
@@ -220,7 +220,7 @@ The Swarm resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -229,12 +229,12 @@ The Swarm resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
+    <dd>The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
 Valid value:
 - 192.168.0.0/16
 - 172.19-30.0.0/16
 - 10.0.0.0/16
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -242,8 +242,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The type of ECS instance node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -251,8 +251,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -260,8 +260,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of ECS instance node used. Default to System automate allocated.
-{{% /md %}}</dd>
+    <dd>The image ID of ECS instance node used. Default to System automate allocated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,7 +314,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,7 +322,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
-{{% /md %}}</dd>
+    <dd>The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,9 +339,9 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to release EIP after creating swarm cluster successfully. Default to false.
+    <dd>Whether to release EIP after creating swarm cluster successfully. Default to false.
 * `need_slb`- (ForceNew) Whether to create the default simple routing Server Load Balancer instance for the cluster. The default value is true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -349,14 +349,14 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
+<p class="property-message">Deprecated: Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -365,12 +365,12 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
+    <dd>The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
 Valid value:
 - 192.168.0.0/16
 - 172.19-30.0.0/16
 - 10.0.0.0/16
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -378,8 +378,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The type of ECS instance node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -387,8 +387,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -396,8 +396,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of ECS instance node used. Default to System automate allocated.
-{{% /md %}}</dd>
+    <dd>The image ID of ECS instance node used. Default to System automate allocated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,7 +450,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,7 +458,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,8 +466,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
-{{% /md %}}</dd>
+    <dd>The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,9 +475,9 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to release EIP after creating swarm cluster successfully. Default to false.
+    <dd>Whether to release EIP after creating swarm cluster successfully. Default to false.
 * `need_slb`- (ForceNew) Whether to create the default simple routing Server Load Balancer instance for the cluster. The default value is true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -485,14 +485,14 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
+<p class="property-message">Deprecated: Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -501,12 +501,12 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
+    <dd>The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
 Valid value:
 - 192.168.0.0/16
 - 172.19-30.0.0/16
 - 10.0.0.0/16
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -514,8 +514,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The type of ECS instance node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -523,8 +523,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -532,8 +532,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,8 +541,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,8 +550,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,8 +559,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of ECS instance node used. Default to System automate allocated.
-{{% /md %}}</dd>
+    <dd>The image ID of ECS instance node used. Default to System automate allocated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,8 +568,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -577,8 +577,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -586,7 +586,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -594,7 +594,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,8 +602,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
-{{% /md %}}</dd>
+    <dd>The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,9 +611,9 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to release EIP after creating swarm cluster successfully. Default to false.
+    <dd>Whether to release EIP after creating swarm cluster successfully. Default to false.
 * `need_slb`- (ForceNew) Whether to create the default simple routing Server Load Balancer instance for the cluster. The default value is true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -621,14 +621,14 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
+<p class="property-message">Deprecated: Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -637,12 +637,12 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
+    <dd>The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
 Valid value:
 - 192.168.0.0/16
 - 172.19-30.0.0/16
 - 10.0.0.0/16
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -650,8 +650,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The type of ECS instance node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -659,8 +659,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -668,8 +668,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -677,8 +677,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,8 +695,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of ECS instance node used. Default to System automate allocated.
-{{% /md %}}</dd>
+    <dd>The image ID of ECS instance node used. Default to System automate allocated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -704,8 +704,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,8 +713,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,7 +722,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -730,7 +730,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -738,8 +738,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
-{{% /md %}}</dd>
+    <dd>The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,9 +747,9 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to release EIP after creating swarm cluster successfully. Default to false.
+    <dd>Whether to release EIP after creating swarm cluster successfully. Default to false.
 * `need_slb`- (ForceNew) Whether to create the default simple routing Server Load Balancer instance for the cluster. The default value is true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -757,11 +757,11 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
+<p class="property-message">Deprecated: Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.</p></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -775,7 +775,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -784,8 +784,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The nodes agent version.
-{{% /md %}}</dd>
+    <dd>The nodes agent version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -793,7 +793,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -801,8 +801,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#swarmnode">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Outputs.<wbr>Swarm<wbr>Node&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -810,8 +810,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -819,8 +819,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of load balancer where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of load balancer where the current cluster worker node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -828,14 +828,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -844,8 +844,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The nodes agent version.
-{{% /md %}}</dd>
+    <dd>The nodes agent version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -853,7 +853,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -861,8 +861,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#swarmnode">[]Swarm<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -870,8 +870,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -879,8 +879,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of load balancer where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of load balancer where the current cluster worker node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -888,14 +888,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -904,8 +904,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The nodes agent version.
-{{% /md %}}</dd>
+    <dd>The nodes agent version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -913,7 +913,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -921,8 +921,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#swarmnode">Swarm<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -930,8 +930,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of load balancer where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of load balancer where the current cluster worker node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,14 +948,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -964,8 +964,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The nodes agent version.
-{{% /md %}}</dd>
+    <dd>The nodes agent version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -973,7 +973,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -981,8 +981,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#swarmnode">List[Swarm<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -990,8 +990,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -999,8 +999,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of load balancer where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of load balancer where the current cluster worker node is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1008,11 +1008,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1023,25 +1023,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Swarm Resource {#look-up}
 
 Get an existing Swarm resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cs/#SwarmState">SwarmState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cs/#Swarm">Swarm</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>agent_version=None<span class="p">, </span>cidr_block=None<span class="p">, </span>disk_category=None<span class="p">, </span>disk_size=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_type=None<span class="p">, </span>is_outdated=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>need_slb=None<span class="p">, </span>node_number=None<span class="p">, </span>nodes=None<span class="p">, </span>password=None<span class="p">, </span>release_eip=None<span class="p">, </span>security_group_id=None<span class="p">, </span>size=None<span class="p">, </span>slb_id=None<span class="p">, </span>vpc_id=None<span class="p">, </span>vswitch_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSwarm<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#SwarmState">SwarmState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#Swarm">Swarm</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.CS.Swarm.html">Swarm</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.CS.SwarmState.html">SwarmState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1066,9 +1066,9 @@ Get an existing Swarm resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1081,36 +1081,9 @@ Get an existing Swarm resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1135,13 +1108,40 @@ Get an existing Swarm resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1150,8 +1150,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The nodes agent version.
-{{% /md %}}</dd>
+    <dd>The nodes agent version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,12 +1159,12 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
+    <dd>The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
 Valid value:
 - 192.168.0.0/16
 - 172.19-30.0.0/16
 - 10.0.0.0/16
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,8 +1190,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of ECS instance node used. Default to System automate allocated.
-{{% /md %}}</dd>
+    <dd>The image ID of ECS instance node used. Default to System automate allocated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,8 +1199,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The type of ECS instance node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,7 +1226,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,7 +1234,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1242,8 +1242,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
-{{% /md %}}</dd>
+    <dd>The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1251,8 +1251,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#swarmnode">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CS.<wbr>Inputs.<wbr>Swarm<wbr>Node<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,9 +1269,9 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to release EIP after creating swarm cluster successfully. Default to false.
+    <dd>Whether to release EIP after creating swarm cluster successfully. Default to false.
 * `need_slb`- (ForceNew) Whether to create the default simple routing Server Load Balancer instance for the cluster. The default value is true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1279,8 +1279,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1288,8 +1288,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
+<p class="property-message">Deprecated: Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,8 +1297,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of load balancer where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of load balancer where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,8 +1306,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,14 +1315,14 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1331,8 +1331,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The nodes agent version.
-{{% /md %}}</dd>
+    <dd>The nodes agent version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1340,12 +1340,12 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
+    <dd>The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
 Valid value:
 - 192.168.0.0/16
 - 172.19-30.0.0/16
 - 10.0.0.0/16
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1353,8 +1353,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1362,8 +1362,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1371,8 +1371,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of ECS instance node used. Default to System automate allocated.
-{{% /md %}}</dd>
+    <dd>The image ID of ECS instance node used. Default to System automate allocated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,8 +1380,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The type of ECS instance node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,8 +1389,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,7 +1407,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1415,7 +1415,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,8 +1423,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
-{{% /md %}}</dd>
+    <dd>The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,8 +1432,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#swarmnode">[]Swarm<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,8 +1441,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,9 +1450,9 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to release EIP after creating swarm cluster successfully. Default to false.
+    <dd>Whether to release EIP after creating swarm cluster successfully. Default to false.
 * `need_slb`- (ForceNew) Whether to create the default simple routing Server Load Balancer instance for the cluster. The default value is true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,8 +1460,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1469,8 +1469,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
+<p class="property-message">Deprecated: Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1478,8 +1478,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of load balancer where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of load balancer where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1487,8 +1487,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,14 +1496,14 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1512,8 +1512,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The nodes agent version.
-{{% /md %}}</dd>
+    <dd>The nodes agent version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1521,12 +1521,12 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
+    <dd>The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
 Valid value:
 - 192.168.0.0/16
 - 172.19-30.0.0/16
 - 10.0.0.0/16
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1534,8 +1534,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1543,8 +1543,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1552,8 +1552,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of ECS instance node used. Default to System automate allocated.
-{{% /md %}}</dd>
+    <dd>The image ID of ECS instance node used. Default to System automate allocated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1561,8 +1561,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The type of ECS instance node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1570,8 +1570,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1579,8 +1579,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,7 +1588,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,7 +1596,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,8 +1604,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
-{{% /md %}}</dd>
+    <dd>The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,8 +1613,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#swarmnode">Swarm<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,9 +1631,9 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to release EIP after creating swarm cluster successfully. Default to false.
+    <dd>Whether to release EIP after creating swarm cluster successfully. Default to false.
 * `need_slb`- (ForceNew) Whether to create the default simple routing Server Load Balancer instance for the cluster. The default value is true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,8 +1641,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1650,8 +1650,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
+<p class="property-message">Deprecated: Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1659,8 +1659,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of load balancer where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of load balancer where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1668,8 +1668,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1677,14 +1677,14 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1693,8 +1693,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The nodes agent version.
-{{% /md %}}</dd>
+    <dd>The nodes agent version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1702,12 +1702,12 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
+    <dd>The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
 Valid value:
 - 192.168.0.0/16
 - 172.19-30.0.0/16
 - 10.0.0.0/16
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1715,8 +1715,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
-{{% /md %}}</dd>
+    <dd>The data disk category of ECS instance node. Its valid value are `cloud`, `cloud_ssd`, `cloud_essd`, `ephemeral_essd` and `cloud_efficiency`. Default to `cloud_efficiency`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1724,8 +1724,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
-{{% /md %}}</dd>
+    <dd>The data disk size of ECS instance node. Its valid value is 20~32768 GB. Default to 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,8 +1733,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of ECS instance node used. Default to System automate allocated.
-{{% /md %}}</dd>
+    <dd>The image ID of ECS instance node used. Default to System automate allocated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1742,8 +1742,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The type of ECS instance node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1751,8 +1751,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use outdated instance type. Default to false.
-{{% /md %}}</dd>
+    <dd>Whether to use outdated instance type. Default to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,8 +1760,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1769,7 +1769,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1777,7 +1777,7 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1785,8 +1785,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
-{{% /md %}}</dd>
+    <dd>The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,8 +1794,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#swarmnode">List[Swarm<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}List of cluster nodes. It contains several attributes to `Block Nodes`.
-{{% /md %}}</dd>
+    <dd>List of cluster nodes. It contains several attributes to `Block Nodes`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,8 +1803,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,9 +1812,9 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to release EIP after creating swarm cluster successfully. Default to false.
+    <dd>Whether to release EIP after creating swarm cluster successfully. Default to false.
 * `need_slb`- (ForceNew) Whether to create the default simple routing Server Load Balancer instance for the cluster. The default value is true.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,8 +1822,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of security group where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of security group where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1831,8 +1831,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.{{% /md %}}</p></dd>
+    <dd>Field 'size' has been deprecated from provider version 1.9.1. New field 'node_number' replaces it.
+<p class="property-message">Deprecated: Field &#39;size&#39; has been deprecated from provider version 1.9.1. New field &#39;node_number&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,8 +1840,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of load balancer where the current cluster worker node is located.
-{{% /md %}}</dd>
+    <dd>The ID of load balancer where the current cluster worker node is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1849,8 +1849,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of VPC where the current cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of VPC where the current cluster is located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1858,11 +1858,11 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
-{{% /md %}}</dd>
+    <dd>The password of ECS instance node. If it is not specified, the container cluster's network mode will be `Classic`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1877,18 +1877,18 @@ Valid value:
 
 
 <h4 id="swarmnode">Swarm<wbr>Node</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#SwarmNode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cs?tab=doc#SwarmNodeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1897,8 +1897,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address of node.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address of node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1906,8 +1906,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1915,8 +1915,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1924,8 +1924,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1933,14 +1933,14 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The node current status. It is different with instance status.
-{{% /md %}}</dd>
+    <dd>The node current status. It is different with instance status.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1949,8 +1949,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address of node.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address of node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1958,8 +1958,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1967,8 +1967,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,8 +1976,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,14 +1985,14 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The node current status. It is different with instance status.
-{{% /md %}}</dd>
+    <dd>The node current status. It is different with instance status.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2001,8 +2001,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address of node.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address of node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2010,8 +2010,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,8 +2019,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2028,8 +2028,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2037,14 +2037,14 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The node current status. It is different with instance status.
-{{% /md %}}</dd>
+    <dd>The node current status. It is different with instance status.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2053,8 +2053,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Elastic IP address of node.
-{{% /md %}}</dd>
+    <dd>The Elastic IP address of node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2062,8 +2062,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the node.
-{{% /md %}}</dd>
+    <dd>ID of the node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2071,8 +2071,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container cluster's name. It is the only in one Alicloud account.
-{{% /md %}}</dd>
+    <dd>The container cluster's name. It is the only in one Alicloud account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2080,8 +2080,8 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address of node.
-{{% /md %}}</dd>
+    <dd>The private IP address of node.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2089,11 +2089,11 @@ Valid value:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The node current status. It is different with instance status.
-{{% /md %}}</dd>
+    <dd>The node current status. It is different with instance status.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

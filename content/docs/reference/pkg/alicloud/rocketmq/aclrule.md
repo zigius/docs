@@ -50,26 +50,26 @@ const defaultAclRule = new alicloud.rocketmq.AclRule("default", {
 
 
 ## Create a AclRule Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/rocketmq/#AclRule">AclRule</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/rocketmq/#AclRuleArgs">AclRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AclRule</span><span class="p">(resource_name, opts=None, </span>acl_id=None<span class="p">, </span>description=None<span class="p">, </span>dest_cidr=None<span class="p">, </span>dest_port_range=None<span class="p">, </span>direction=None<span class="p">, </span>ip_protocol=None<span class="p">, </span>policy=None<span class="p">, </span>priority=None<span class="p">, </span>source_cidr=None<span class="p">, </span>source_port_range=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAclRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/rocketmq?tab=doc#AclRuleArgs">AclRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/rocketmq?tab=doc#AclRule">AclRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.RocketMQ.AclRule.html">AclRule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.RocketMQ.AclRuleArgs.html">AclRuleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -106,9 +106,9 @@ const defaultAclRule = new alicloud.rocketmq.AclRule("default", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -126,9 +126,9 @@ const defaultAclRule = new alicloud.rocketmq.AclRule("default", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -175,9 +175,9 @@ const defaultAclRule = new alicloud.rocketmq.AclRule("default", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -214,7 +214,7 @@ const defaultAclRule = new alicloud.rocketmq.AclRule("default", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## AclRule Resource Properties {#properties}
 
@@ -227,7 +227,7 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -236,8 +236,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -245,8 +245,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -254,8 +254,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the destination port. Valid value: 80/80. 
-{{% /md %}}</dd>
+    <dd>The range of the destination port. Valid value: 80/80. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -263,8 +263,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of the ACL rule. Valid values: in|out.
-{{% /md %}}</dd>
+    <dd>The direction of the ACL rule. Valid values: in|out.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -272,8 +272,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the ACL rule. The value is not case sensitive.
-{{% /md %}}</dd>
+    <dd>The protocol used by the ACL rule. The value is not case sensitive.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -281,8 +281,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy used by the ACL rule. Valid values: accept|drop.
-{{% /md %}}</dd>
+    <dd>The policy used by the ACL rule. Valid values: accept|drop.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -290,8 +290,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -299,8 +299,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the source port. Valid value: 80/80.
-{{% /md %}}</dd>
+    <dd>The range of the source port. Valid value: 80/80.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL rule. It must be 1 to 512 characters in length.
-{{% /md %}}</dd>
+    <dd>The description of the ACL rule. It must be 1 to 512 characters in length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,14 +317,14 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the ACL rule. Value range: 1 to 100. 
-{{% /md %}}</dd>
+    <dd>The priority of the ACL rule. Value range: 1 to 100. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -333,8 +333,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -342,8 +342,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -351,8 +351,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the destination port. Valid value: 80/80. 
-{{% /md %}}</dd>
+    <dd>The range of the destination port. Valid value: 80/80. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -360,8 +360,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of the ACL rule. Valid values: in|out.
-{{% /md %}}</dd>
+    <dd>The direction of the ACL rule. Valid values: in|out.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -369,8 +369,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the ACL rule. The value is not case sensitive.
-{{% /md %}}</dd>
+    <dd>The protocol used by the ACL rule. The value is not case sensitive.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -378,8 +378,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy used by the ACL rule. Valid values: accept|drop.
-{{% /md %}}</dd>
+    <dd>The policy used by the ACL rule. Valid values: accept|drop.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -387,8 +387,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -396,8 +396,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the source port. Valid value: 80/80.
-{{% /md %}}</dd>
+    <dd>The range of the source port. Valid value: 80/80.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL rule. It must be 1 to 512 characters in length.
-{{% /md %}}</dd>
+    <dd>The description of the ACL rule. It must be 1 to 512 characters in length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,14 +414,14 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the ACL rule. Value range: 1 to 100. 
-{{% /md %}}</dd>
+    <dd>The priority of the ACL rule. Value range: 1 to 100. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -430,8 +430,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -439,8 +439,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -448,8 +448,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the destination port. Valid value: 80/80. 
-{{% /md %}}</dd>
+    <dd>The range of the destination port. Valid value: 80/80. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -457,8 +457,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of the ACL rule. Valid values: in|out.
-{{% /md %}}</dd>
+    <dd>The direction of the ACL rule. Valid values: in|out.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -466,8 +466,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the ACL rule. The value is not case sensitive.
-{{% /md %}}</dd>
+    <dd>The protocol used by the ACL rule. The value is not case sensitive.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -475,8 +475,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy used by the ACL rule. Valid values: accept|drop.
-{{% /md %}}</dd>
+    <dd>The policy used by the ACL rule. Valid values: accept|drop.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -484,8 +484,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -493,8 +493,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the source port. Valid value: 80/80.
-{{% /md %}}</dd>
+    <dd>The range of the source port. Valid value: 80/80.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL rule. It must be 1 to 512 characters in length.
-{{% /md %}}</dd>
+    <dd>The description of the ACL rule. It must be 1 to 512 characters in length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,14 +511,14 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the ACL rule. Value range: 1 to 100. 
-{{% /md %}}</dd>
+    <dd>The priority of the ACL rule. Value range: 1 to 100. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -527,8 +527,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -536,8 +536,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -545,8 +545,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range of the destination port. Valid value: 80/80. 
-{{% /md %}}</dd>
+    <dd>The range of the destination port. Valid value: 80/80. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -554,8 +554,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The direction of the ACL rule. Valid values: in|out.
-{{% /md %}}</dd>
+    <dd>The direction of the ACL rule. Valid values: in|out.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -563,8 +563,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the ACL rule. The value is not case sensitive.
-{{% /md %}}</dd>
+    <dd>The protocol used by the ACL rule. The value is not case sensitive.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -572,8 +572,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The policy used by the ACL rule. Valid values: accept|drop.
-{{% /md %}}</dd>
+    <dd>The policy used by the ACL rule. Valid values: accept|drop.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -581,8 +581,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -590,8 +590,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range of the source port. Valid value: 80/80.
-{{% /md %}}</dd>
+    <dd>The range of the source port. Valid value: 80/80.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,8 +599,8 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL rule. It must be 1 to 512 characters in length.
-{{% /md %}}</dd>
+    <dd>The description of the ACL rule. It must be 1 to 512 characters in length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,11 +608,11 @@ The AclRule resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the ACL rule. Value range: 1 to 100. 
-{{% /md %}}</dd>
+    <dd>The priority of the ACL rule. Value range: 1 to 100. 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -626,7 +626,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -635,13 +635,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -650,13 +650,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -665,13 +665,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -680,10 +680,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -694,25 +694,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing AclRule Resource {#look-up}
 
 Get an existing AclRule resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/rocketmq/#AclRuleState">AclRuleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/rocketmq/#AclRule">AclRule</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>acl_id=None<span class="p">, </span>description=None<span class="p">, </span>dest_cidr=None<span class="p">, </span>dest_port_range=None<span class="p">, </span>direction=None<span class="p">, </span>ip_protocol=None<span class="p">, </span>policy=None<span class="p">, </span>priority=None<span class="p">, </span>source_cidr=None<span class="p">, </span>source_port_range=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAclRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/rocketmq?tab=doc#AclRuleState">AclRuleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/rocketmq?tab=doc#AclRule">AclRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.RocketMQ.AclRule.html">AclRule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.RocketMQ.AclRuleState.html">AclRuleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -737,9 +737,9 @@ Get an existing AclRule resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -752,36 +752,9 @@ Get an existing AclRule resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -806,13 +779,40 @@ Get an existing AclRule resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -821,8 +821,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -830,8 +830,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL rule. It must be 1 to 512 characters in length.
-{{% /md %}}</dd>
+    <dd>The description of the ACL rule. It must be 1 to 512 characters in length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,8 +839,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,8 +848,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the destination port. Valid value: 80/80. 
-{{% /md %}}</dd>
+    <dd>The range of the destination port. Valid value: 80/80. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,8 +857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of the ACL rule. Valid values: in|out.
-{{% /md %}}</dd>
+    <dd>The direction of the ACL rule. Valid values: in|out.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the ACL rule. The value is not case sensitive.
-{{% /md %}}</dd>
+    <dd>The protocol used by the ACL rule. The value is not case sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,8 +875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy used by the ACL rule. Valid values: accept|drop.
-{{% /md %}}</dd>
+    <dd>The policy used by the ACL rule. Valid values: accept|drop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the ACL rule. Value range: 1 to 100. 
-{{% /md %}}</dd>
+    <dd>The priority of the ACL rule. Value range: 1 to 100. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,8 +893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,14 +902,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the source port. Valid value: 80/80.
-{{% /md %}}</dd>
+    <dd>The range of the source port. Valid value: 80/80.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -918,8 +918,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,8 +927,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL rule. It must be 1 to 512 characters in length.
-{{% /md %}}</dd>
+    <dd>The description of the ACL rule. It must be 1 to 512 characters in length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,8 +936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,8 +945,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the destination port. Valid value: 80/80. 
-{{% /md %}}</dd>
+    <dd>The range of the destination port. Valid value: 80/80. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of the ACL rule. Valid values: in|out.
-{{% /md %}}</dd>
+    <dd>The direction of the ACL rule. Valid values: in|out.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the ACL rule. The value is not case sensitive.
-{{% /md %}}</dd>
+    <dd>The protocol used by the ACL rule. The value is not case sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,8 +972,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy used by the ACL rule. Valid values: accept|drop.
-{{% /md %}}</dd>
+    <dd>The policy used by the ACL rule. Valid values: accept|drop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,8 +981,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the ACL rule. Value range: 1 to 100. 
-{{% /md %}}</dd>
+    <dd>The priority of the ACL rule. Value range: 1 to 100. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,8 +990,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,14 +999,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the source port. Valid value: 80/80.
-{{% /md %}}</dd>
+    <dd>The range of the source port. Valid value: 80/80.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1015,8 +1015,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1024,8 +1024,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL rule. It must be 1 to 512 characters in length.
-{{% /md %}}</dd>
+    <dd>The description of the ACL rule. It must be 1 to 512 characters in length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,8 +1033,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,8 +1042,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the destination port. Valid value: 80/80. 
-{{% /md %}}</dd>
+    <dd>The range of the destination port. Valid value: 80/80. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,8 +1051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The direction of the ACL rule. Valid values: in|out.
-{{% /md %}}</dd>
+    <dd>The direction of the ACL rule. Valid values: in|out.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the ACL rule. The value is not case sensitive.
-{{% /md %}}</dd>
+    <dd>The protocol used by the ACL rule. The value is not case sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The policy used by the ACL rule. Valid values: accept|drop.
-{{% /md %}}</dd>
+    <dd>The policy used by the ACL rule. Valid values: accept|drop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,8 +1078,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the ACL rule. Value range: 1 to 100. 
-{{% /md %}}</dd>
+    <dd>The priority of the ACL rule. Value range: 1 to 100. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,8 +1087,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1096,14 +1096,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of the source port. Valid value: 80/80.
-{{% /md %}}</dd>
+    <dd>The range of the source port. Valid value: 80/80.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1112,8 +1112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,8 +1121,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL rule. It must be 1 to 512 characters in length.
-{{% /md %}}</dd>
+    <dd>The description of the ACL rule. It must be 1 to 512 characters in length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,8 +1130,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The destination address. It is an IPv4 address range in CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1139,8 +1139,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range of the destination port. Valid value: 80/80. 
-{{% /md %}}</dd>
+    <dd>The range of the destination port. Valid value: 80/80. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,8 +1148,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The direction of the ACL rule. Valid values: in|out.
-{{% /md %}}</dd>
+    <dd>The direction of the ACL rule. Valid values: in|out.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1157,8 +1157,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used by the ACL rule. The value is not case sensitive.
-{{% /md %}}</dd>
+    <dd>The protocol used by the ACL rule. The value is not case sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1166,8 +1166,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The policy used by the ACL rule. Valid values: accept|drop.
-{{% /md %}}</dd>
+    <dd>The policy used by the ACL rule. Valid values: accept|drop.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,8 +1175,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The priority of the ACL rule. Value range: 1 to 100. 
-{{% /md %}}</dd>
+    <dd>The priority of the ACL rule. Value range: 1 to 100. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,8 +1184,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
-{{% /md %}}</dd>
+    <dd>The source address. It is an IPv4 address range in the CIDR format. Default value: 0.0.0.0/0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,11 +1193,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range of the source port. Valid value: 80/80.
-{{% /md %}}</dd>
+    <dd>The range of the source port. Valid value: 80/80.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

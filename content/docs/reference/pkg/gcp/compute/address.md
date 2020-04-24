@@ -56,26 +56,26 @@ const internalWithGceEndpoint = new gcp.compute.Address("internal_with_gce_endpo
 
 
 ## Create a Address Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Address">Address</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#AddressArgs">AddressArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Address</span><span class="p">(resource_name, opts=None, </span>address=None<span class="p">, </span>address_type=None<span class="p">, </span>description=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>network_tier=None<span class="p">, </span>project=None<span class="p">, </span>purpose=None<span class="p">, </span>region=None<span class="p">, </span>subnetwork=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAddress<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#AddressArgs">AddressArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Address">Address</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Address.html">Address</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.AddressArgs.html">AddressArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -112,9 +112,9 @@ const internalWithGceEndpoint = new gcp.compute.Address("internal_with_gce_endpo
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -132,9 +132,9 @@ const internalWithGceEndpoint = new gcp.compute.Address("internal_with_gce_endpo
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -181,9 +181,9 @@ const internalWithGceEndpoint = new gcp.compute.Address("internal_with_gce_endpo
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -220,7 +220,7 @@ const internalWithGceEndpoint = new gcp.compute.Address("internal_with_gce_endpo
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Address Resource Properties {#properties}
 
@@ -233,7 +233,7 @@ The Address resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -242,8 +242,8 @@ The Address resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
-{{% /md %}}</dd>
+    <dd>The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The Address resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,9 +260,9 @@ The Address resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
+    <dd>The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
 for INTERNAL address types. The IP address must be inside the specified subnetwork, if any.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,8 +270,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this address. A list of key->value pairs.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this address. A list of key->value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,11 +279,11 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
+    <dd>Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
 1-63 characters long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must
 be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,9 +291,9 @@ character, which cannot be a dash.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
+    <dd>The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
 this field is not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,9 +301,9 @@ this field is not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,10 +311,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
+    <dd>The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
 instances, alias IP ranges, internal load balancers, and similar resources. This should only be set when using an
 Internal address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,15 +331,15 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
+    <dd>The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
 subnetwork's IP range. This field can only be used with INTERNAL type with GCE_ENDPOINT/DNS_RESOLVER purposes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -348,9 +348,9 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
+    <dd>The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
 for INTERNAL address types. The IP address must be inside the specified subnetwork, if any.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,8 +358,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
-{{% /md %}}</dd>
+    <dd>The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,8 +367,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this address. A list of key->value pairs.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this address. A list of key->value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,11 +385,11 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
+    <dd>Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
 1-63 characters long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must
 be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,9 +397,9 @@ character, which cannot be a dash.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
+    <dd>The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
 this field is not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,9 +407,9 @@ this field is not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,10 +417,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
+    <dd>The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
 instances, alias IP ranges, internal load balancers, and similar resources. This should only be set when using an
 Internal address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,15 +437,15 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
+    <dd>The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
 subnetwork's IP range. This field can only be used with INTERNAL type with GCE_ENDPOINT/DNS_RESOLVER purposes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -454,9 +454,9 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
+    <dd>The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
 for INTERNAL address types. The IP address must be inside the specified subnetwork, if any.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,8 +464,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
-{{% /md %}}</dd>
+    <dd>The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -473,8 +473,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,8 +482,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this address. A list of key->value pairs.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this address. A list of key->value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,11 +491,11 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
+    <dd>Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
 1-63 characters long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must
 be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -503,9 +503,9 @@ character, which cannot be a dash.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
+    <dd>The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
 this field is not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,9 +513,9 @@ this field is not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,10 +523,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
+    <dd>The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
 instances, alias IP ranges, internal load balancers, and similar resources. This should only be set when using an
 Internal address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -534,8 +534,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -543,15 +543,15 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
+    <dd>The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
 subnetwork's IP range. This field can only be used with INTERNAL type with GCE_ENDPOINT/DNS_RESOLVER purposes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -560,9 +560,9 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
+    <dd>The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
 for INTERNAL address types. The IP address must be inside the specified subnetwork, if any.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -570,8 +570,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
-{{% /md %}}</dd>
+    <dd>The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -579,8 +579,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -588,8 +588,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this address. A list of key->value pairs.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this address. A list of key->value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -597,11 +597,11 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
+    <dd>Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
 1-63 characters long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must
 be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -609,9 +609,9 @@ character, which cannot be a dash.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
+    <dd>The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
 this field is not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,9 +619,9 @@ this field is not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,10 +629,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
+    <dd>The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
 instances, alias IP ranges, internal load balancers, and similar resources. This should only be set when using an
 Internal address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -640,8 +640,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,12 +649,12 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
+    <dd>The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
 subnetwork's IP range. This field can only be used with INTERNAL type with GCE_ENDPOINT/DNS_RESOLVER purposes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -668,7 +668,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -677,8 +677,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -686,7 +686,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -694,8 +694,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-"
             title="">
@@ -703,8 +703,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -712,14 +712,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The URLs of the resources that are using this address.
-{{% /md %}}</dd>
+    <dd>The URLs of the resources that are using this address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -728,8 +728,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -737,7 +737,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -745,8 +745,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-"
             title="">
@@ -754,8 +754,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -763,14 +763,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The URLs of the resources that are using this address.
-{{% /md %}}</dd>
+    <dd>The URLs of the resources that are using this address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -779,8 +779,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -788,7 +788,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -796,8 +796,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-"
             title="">
@@ -805,8 +805,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -814,14 +814,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The URLs of the resources that are using this address.
-{{% /md %}}</dd>
+    <dd>The URLs of the resources that are using this address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -830,8 +830,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -839,7 +839,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -847,8 +847,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-"
             title="">
@@ -856,8 +856,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -865,11 +865,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The URLs of the resources that are using this address.
-{{% /md %}}</dd>
+    <dd>The URLs of the resources that are using this address.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -880,25 +880,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Address Resource {#look-up}
 
 Get an existing Address resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#AddressState">AddressState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Address">Address</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>address=None<span class="p">, </span>address_type=None<span class="p">, </span>creation_timestamp=None<span class="p">, </span>description=None<span class="p">, </span>label_fingerprint=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>network_tier=None<span class="p">, </span>project=None<span class="p">, </span>purpose=None<span class="p">, </span>region=None<span class="p">, </span>self_link=None<span class="p">, </span>subnetwork=None<span class="p">, </span>users=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAddress<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#AddressState">AddressState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Address">Address</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Address.html">Address</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.AddressState.html">AddressState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -923,9 +923,9 @@ Get an existing Address resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -938,36 +938,9 @@ Get an existing Address resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -992,13 +965,40 @@ Get an existing Address resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1007,8 +1007,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
-{{% /md %}}</dd>
+    <dd>The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1016,8 +1016,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1025,8 +1025,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1034,9 +1034,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
+    <dd>The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
 for INTERNAL address types. The IP address must be inside the specified subnetwork, if any.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this address. A list of key->value pairs.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this address. A list of key->value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,11 +1062,11 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
+    <dd>Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
 1-63 characters long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must
 be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1074,9 +1074,9 @@ character, which cannot be a dash.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
+    <dd>The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
 this field is not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,9 +1084,9 @@ this field is not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1094,10 +1094,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
+    <dd>The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
 instances, alias IP ranges, internal load balancers, and similar resources. This should only be set when using an
 Internal address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,8 +1105,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1114,8 +1114,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,9 +1123,9 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
+    <dd>The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
 subnetwork's IP range. This field can only be used with INTERNAL type with GCE_ENDPOINT/DNS_RESOLVER purposes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,14 +1133,14 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The URLs of the resources that are using this address.
-{{% /md %}}</dd>
+    <dd>The URLs of the resources that are using this address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1149,9 +1149,9 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
+    <dd>The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
 for INTERNAL address types. The IP address must be inside the specified subnetwork, if any.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,8 +1159,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
-{{% /md %}}</dd>
+    <dd>The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,8 +1168,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,8 +1177,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,8 +1186,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,8 +1195,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this address. A list of key->value pairs.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this address. A list of key->value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1204,11 +1204,11 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
+    <dd>Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
 1-63 characters long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must
 be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,9 +1216,9 @@ character, which cannot be a dash.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
+    <dd>The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
 this field is not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,9 +1226,9 @@ this field is not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,10 +1236,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
+    <dd>The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
 instances, alias IP ranges, internal load balancers, and similar resources. This should only be set when using an
 Internal address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,8 +1247,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,8 +1256,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1265,9 +1265,9 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
+    <dd>The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
 subnetwork's IP range. This field can only be used with INTERNAL type with GCE_ENDPOINT/DNS_RESOLVER purposes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1275,14 +1275,14 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The URLs of the resources that are using this address.
-{{% /md %}}</dd>
+    <dd>The URLs of the resources that are using this address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1291,9 +1291,9 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
+    <dd>The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
 for INTERNAL address types. The IP address must be inside the specified subnetwork, if any.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,8 +1301,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
-{{% /md %}}</dd>
+    <dd>The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1310,8 +1310,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1319,8 +1319,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,8 +1328,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,8 +1337,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this address. A list of key->value pairs.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this address. A list of key->value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,11 +1346,11 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
+    <dd>Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
 1-63 characters long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must
 be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1358,9 +1358,9 @@ character, which cannot be a dash.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
+    <dd>The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
 this field is not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1368,9 +1368,9 @@ this field is not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,10 +1378,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
+    <dd>The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
 instances, alias IP ranges, internal load balancers, and similar resources. This should only be set when using an
 Internal address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,8 +1389,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,9 +1407,9 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
+    <dd>The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
 subnetwork's IP range. This field can only be used with INTERNAL type with GCE_ENDPOINT/DNS_RESOLVER purposes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,14 +1417,14 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The URLs of the resources that are using this address.
-{{% /md %}}</dd>
+    <dd>The URLs of the resources that are using this address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1433,9 +1433,9 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
+    <dd>The static external IP address represented by this resource. Only IPv4 is supported. An address may only be specified
 for INTERNAL address types. The IP address must be inside the specified subnetwork, if any.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,8 +1443,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
-{{% /md %}}</dd>
+    <dd>The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,8 +1452,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,8 +1461,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1470,8 +1470,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1479,8 +1479,8 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this address. A list of key->value pairs.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this address. A list of key->value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1488,11 +1488,11 @@ for INTERNAL address types. The IP address must be inside the specified subnetwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
+    <dd>Name of the resource. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be
 1-63 characters long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must
 be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1500,9 +1500,9 @@ character, which cannot be a dash.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
+    <dd>The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD. If
 this field is not specified, it is assumed to be PREMIUM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1510,9 +1510,9 @@ this field is not specified, it is assumed to be PREMIUM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,10 +1520,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
+    <dd>The purpose of this resource, which can be one of the following values: - GCE_ENDPOINT for addresses that are used by VM
 instances, alias IP ranges, internal load balancers, and similar resources. This should only be set when using an
 Internal address.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,8 +1531,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Region in which the created address should reside. If it is not provided, the provider region is used.
-{{% /md %}}</dd>
+    <dd>The Region in which the created address should reside. If it is not provided, the provider region is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,8 +1540,8 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,9 +1549,9 @@ Internal address.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
+    <dd>The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the
 subnetwork's IP range. This field can only be used with INTERNAL type with GCE_ENDPOINT/DNS_RESOLVER purposes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,11 +1559,11 @@ subnetwork's IP range. This field can only be used with INTERNAL type with GCE_E
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The URLs of the resources that are using this address.
-{{% /md %}}</dd>
+    <dd>The URLs of the resources that are using this address.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

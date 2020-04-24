@@ -52,26 +52,26 @@ for (let i = 0; i < 2; i++) {
 
 
 ## Create a ClusterInstance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/neptune/#ClusterInstance">ClusterInstance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/neptune/#ClusterInstanceArgs">ClusterInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ClusterInstance</span><span class="p">(resource_name, opts=None, </span>apply_immediately=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>availability_zone=None<span class="p">, </span>cluster_identifier=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>identifier=None<span class="p">, </span>identifier_prefix=None<span class="p">, </span>instance_class=None<span class="p">, </span>neptune_parameter_group_name=None<span class="p">, </span>neptune_subnet_group_name=None<span class="p">, </span>port=None<span class="p">, </span>preferred_backup_window=None<span class="p">, </span>preferred_maintenance_window=None<span class="p">, </span>promotion_tier=None<span class="p">, </span>publicly_accessible=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewClusterInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/neptune?tab=doc#ClusterInstanceArgs">ClusterInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/neptune?tab=doc#ClusterInstance">ClusterInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Neptune.ClusterInstance.html">ClusterInstance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Neptune.ClusterInstanceArgs.html">ClusterInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -108,9 +108,9 @@ for (let i = 0; i < 2; i++) {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -128,9 +128,9 @@ for (let i = 0; i < 2; i++) {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -177,9 +177,9 @@ for (let i = 0; i < 2; i++) {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -216,7 +216,7 @@ for (let i = 0; i < 2; i++) {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ClusterInstance Resource Properties {#properties}
 
@@ -229,7 +229,7 @@ The ClusterInstance resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -238,8 +238,8 @@ The ClusterInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -247,8 +247,8 @@ The ClusterInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance class to use.
-{{% /md %}}</dd>
+    <dd>The instance class to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,9 +256,9 @@ The ClusterInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any instance modifications
+    <dd>Specifies whether any instance modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the neptune instance is created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the neptune instance is created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
-{{% /md %}}</dd>
+    <dd>The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The neptune engine version.
-{{% /md %}}</dd>
+    <dd>The neptune engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,8 +302,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,8 +311,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,8 +320,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the neptune parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the neptune parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,8 +329,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,8 +338,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port on which the DB accepts connections. Defaults to `8182`.
-{{% /md %}}</dd>
+    <dd>The port on which the DB accepts connections. Defaults to `8182`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,8 +347,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
-{{% /md %}}</dd>
+    <dd>The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,9 +356,9 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -366,8 +366,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,8 +375,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Bool to control if instance is publicly accessible. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,14 +384,14 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -400,8 +400,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -409,8 +409,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance class to use.
-{{% /md %}}</dd>
+    <dd>The instance class to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,9 +418,9 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any instance modifications
+    <dd>Specifies whether any instance modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,8 +437,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the neptune instance is created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the neptune instance is created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,8 +446,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
-{{% /md %}}</dd>
+    <dd>The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,8 +455,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The neptune engine version.
-{{% /md %}}</dd>
+    <dd>The neptune engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,8 +464,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -473,8 +473,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,8 +482,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the neptune parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the neptune parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,8 +491,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,8 +500,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port on which the DB accepts connections. Defaults to `8182`.
-{{% /md %}}</dd>
+    <dd>The port on which the DB accepts connections. Defaults to `8182`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
-{{% /md %}}</dd>
+    <dd>The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,9 +518,9 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,8 +528,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,8 +537,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Bool to control if instance is publicly accessible. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -546,14 +546,14 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -562,8 +562,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -571,8 +571,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance class to use.
-{{% /md %}}</dd>
+    <dd>The instance class to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,9 +580,9 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any instance modifications
+    <dd>Specifies whether any instance modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,8 +590,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,8 +599,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the neptune instance is created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the neptune instance is created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,8 +608,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
-{{% /md %}}</dd>
+    <dd>The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -617,8 +617,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The neptune engine version.
-{{% /md %}}</dd>
+    <dd>The neptune engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,8 +626,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,8 +635,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,8 +644,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the neptune parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the neptune parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -653,8 +653,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,8 +662,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port on which the DB accepts connections. Defaults to `8182`.
-{{% /md %}}</dd>
+    <dd>The port on which the DB accepts connections. Defaults to `8182`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -671,8 +671,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
-{{% /md %}}</dd>
+    <dd>The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,9 +680,9 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -690,8 +690,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -699,8 +699,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Bool to control if instance is publicly accessible. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -708,14 +708,14 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -724,8 +724,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -733,8 +733,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The instance class to use.
-{{% /md %}}</dd>
+    <dd>The instance class to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,9 +742,9 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any instance modifications
+    <dd>Specifies whether any instance modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -752,8 +752,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,8 +761,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the neptune instance is created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the neptune instance is created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -770,8 +770,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
-{{% /md %}}</dd>
+    <dd>The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -779,8 +779,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The neptune engine version.
-{{% /md %}}</dd>
+    <dd>The neptune engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,8 +788,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -797,8 +797,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -806,8 +806,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the neptune parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the neptune parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -815,8 +815,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -824,8 +824,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port on which the DB accepts connections. Defaults to `8182`.
-{{% /md %}}</dd>
+    <dd>The port on which the DB accepts connections. Defaults to `8182`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -833,8 +833,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
-{{% /md %}}</dd>
+    <dd>The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -842,9 +842,9 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,8 +852,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,8 +861,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Bool to control if instance is publicly accessible. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,11 +870,11 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -888,7 +888,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -897,8 +897,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -906,8 +906,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of neptune instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of neptune instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -915,8 +915,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the neptune instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the neptune instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -924,8 +924,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -933,7 +933,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -941,8 +941,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the neptune cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the neptune cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -950,8 +950,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the neptune cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the neptune cluster is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -959,14 +959,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -975,8 +975,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -984,8 +984,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of neptune instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of neptune instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -993,8 +993,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the neptune instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the neptune instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1002,8 +1002,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1011,7 +1011,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1019,8 +1019,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the neptune cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the neptune cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1028,8 +1028,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the neptune cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the neptune cluster is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1037,14 +1037,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1053,8 +1053,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1062,8 +1062,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of neptune instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of neptune instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1071,8 +1071,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the neptune instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the neptune instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1080,8 +1080,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1089,7 +1089,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1097,8 +1097,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the neptune cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the neptune cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1106,8 +1106,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the neptune cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the neptune cluster is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1115,14 +1115,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1131,8 +1131,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1140,8 +1140,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of neptune instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of neptune instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1149,8 +1149,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the neptune instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the neptune instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1158,8 +1158,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1167,7 +1167,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1175,8 +1175,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the neptune cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the neptune cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1184,8 +1184,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the neptune cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the neptune cluster is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1193,11 +1193,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1208,25 +1208,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ClusterInstance Resource {#look-up}
 
 Get an existing ClusterInstance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/neptune/#ClusterInstanceState">ClusterInstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/neptune/#ClusterInstance">ClusterInstance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>address=None<span class="p">, </span>apply_immediately=None<span class="p">, </span>arn=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>availability_zone=None<span class="p">, </span>cluster_identifier=None<span class="p">, </span>dbi_resource_id=None<span class="p">, </span>endpoint=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>identifier=None<span class="p">, </span>identifier_prefix=None<span class="p">, </span>instance_class=None<span class="p">, </span>kms_key_arn=None<span class="p">, </span>neptune_parameter_group_name=None<span class="p">, </span>neptune_subnet_group_name=None<span class="p">, </span>port=None<span class="p">, </span>preferred_backup_window=None<span class="p">, </span>preferred_maintenance_window=None<span class="p">, </span>promotion_tier=None<span class="p">, </span>publicly_accessible=None<span class="p">, </span>storage_encrypted=None<span class="p">, </span>tags=None<span class="p">, </span>writer=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetClusterInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/neptune?tab=doc#ClusterInstanceState">ClusterInstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/neptune?tab=doc#ClusterInstance">ClusterInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Neptune.ClusterInstance.html">ClusterInstance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Neptune.ClusterInstanceState.html">ClusterInstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1251,9 +1251,9 @@ Get an existing ClusterInstance resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1266,36 +1266,9 @@ Get an existing ClusterInstance resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1320,13 +1293,40 @@ Get an existing ClusterInstance resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1335,8 +1335,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1344,9 +1344,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any instance modifications
+    <dd>Specifies whether any instance modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,8 +1354,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of neptune instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of neptune instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1363,8 +1363,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,8 +1372,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the neptune instance is created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the neptune instance is created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,8 +1381,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,8 +1390,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the neptune instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the neptune instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1399,8 +1399,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1408,8 +1408,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
-{{% /md %}}</dd>
+    <dd>The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,8 +1417,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The neptune engine version.
-{{% /md %}}</dd>
+    <dd>The neptune engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1426,8 +1426,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1435,8 +1435,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1444,8 +1444,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance class to use.
-{{% /md %}}</dd>
+    <dd>The instance class to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1453,8 +1453,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the neptune cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the neptune cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,8 +1462,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the neptune parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the neptune parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,8 +1471,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1480,8 +1480,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port on which the DB accepts connections. Defaults to `8182`.
-{{% /md %}}</dd>
+    <dd>The port on which the DB accepts connections. Defaults to `8182`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1489,8 +1489,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
-{{% /md %}}</dd>
+    <dd>The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,9 +1498,9 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1508,8 +1508,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1517,8 +1517,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Bool to control if instance is publicly accessible. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1526,8 +1526,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the neptune cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the neptune cluster is encrypted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1535,8 +1535,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1544,14 +1544,14 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1560,8 +1560,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1569,9 +1569,9 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any instance modifications
+    <dd>Specifies whether any instance modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1579,8 +1579,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of neptune instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of neptune instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,8 +1588,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,8 +1597,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the neptune instance is created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the neptune instance is created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1606,8 +1606,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1615,8 +1615,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the neptune instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the neptune instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1624,8 +1624,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1633,8 +1633,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
-{{% /md %}}</dd>
+    <dd>The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,8 +1642,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The neptune engine version.
-{{% /md %}}</dd>
+    <dd>The neptune engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,8 +1651,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,8 +1660,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,8 +1669,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance class to use.
-{{% /md %}}</dd>
+    <dd>The instance class to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the neptune cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the neptune cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,8 +1687,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the neptune parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the neptune parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,8 +1705,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port on which the DB accepts connections. Defaults to `8182`.
-{{% /md %}}</dd>
+    <dd>The port on which the DB accepts connections. Defaults to `8182`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1714,8 +1714,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
-{{% /md %}}</dd>
+    <dd>The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,9 +1723,9 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,8 +1733,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1742,8 +1742,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Bool to control if instance is publicly accessible. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1751,8 +1751,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the neptune cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the neptune cluster is encrypted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,8 +1760,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1769,14 +1769,14 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1785,8 +1785,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,9 +1794,9 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any instance modifications
+    <dd>Specifies whether any instance modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1804,8 +1804,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of neptune instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of neptune instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1813,8 +1813,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,8 +1822,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the neptune instance is created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the neptune instance is created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,8 +1831,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,8 +1840,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the neptune instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the neptune instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1849,8 +1849,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1858,8 +1858,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
-{{% /md %}}</dd>
+    <dd>The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1867,8 +1867,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The neptune engine version.
-{{% /md %}}</dd>
+    <dd>The neptune engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1876,8 +1876,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1885,8 +1885,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1894,8 +1894,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance class to use.
-{{% /md %}}</dd>
+    <dd>The instance class to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1903,8 +1903,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the neptune cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the neptune cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1912,8 +1912,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the neptune parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the neptune parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1921,8 +1921,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1930,8 +1930,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port on which the DB accepts connections. Defaults to `8182`.
-{{% /md %}}</dd>
+    <dd>The port on which the DB accepts connections. Defaults to `8182`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1939,8 +1939,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
-{{% /md %}}</dd>
+    <dd>The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1948,9 +1948,9 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1958,8 +1958,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1967,8 +1967,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Bool to control if instance is publicly accessible. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,8 +1976,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the neptune cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the neptune cluster is encrypted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,8 +1985,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,14 +1994,14 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2010,8 +2010,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,9 +2019,9 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any instance modifications
+    <dd>Specifies whether any instance modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2029,8 +2029,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of neptune instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of neptune instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2038,8 +2038,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2047,8 +2047,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the neptune instance is created in.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the neptune instance is created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2056,8 +2056,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2065,8 +2065,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the neptune instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the neptune instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,8 +2074,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2083,8 +2083,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
-{{% /md %}}</dd>
+    <dd>The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2092,8 +2092,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The neptune engine version.
-{{% /md %}}</dd>
+    <dd>The neptune engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2101,8 +2101,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the neptune instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2110,8 +2110,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2119,8 +2119,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The instance class to use.
-{{% /md %}}</dd>
+    <dd>The instance class to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2128,8 +2128,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the neptune cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the neptune cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2137,8 +2137,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the neptune parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the neptune parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2146,8 +2146,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
-{{% /md %}}</dd>
+    <dd>A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2155,8 +2155,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port on which the DB accepts connections. Defaults to `8182`.
-{{% /md %}}</dd>
+    <dd>The port on which the DB accepts connections. Defaults to `8182`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2164,8 +2164,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
-{{% /md %}}</dd>
+    <dd>The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00"
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2173,9 +2173,9 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2183,8 +2183,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2192,8 +2192,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible. Default is `false`.
-{{% /md %}}</dd>
+    <dd>Bool to control if instance is publicly accessible. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2201,8 +2201,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the neptune cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the neptune cluster is encrypted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2210,8 +2210,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2219,11 +2219,11 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

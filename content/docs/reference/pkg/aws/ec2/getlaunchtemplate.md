@@ -48,29 +48,29 @@ const test = pulumi.output(aws.ec2.getLaunchTemplate({
 
 ## Using GetLaunchTemplate {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getLaunchTemplate<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetLaunchTemplateArgs">GetLaunchTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetLaunchTemplateResult">GetLaunchTemplateResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_launch_template(</span>filters=None<span class="p">, </span>name=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupLaunchTemplate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupLaunchTemplateArgs">LookupLaunchTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupLaunchTemplateResult">LookupLaunchTemplateResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetLaunchTemplate </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetLaunchTemplateResult.html">GetLaunchTemplateResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetLaunchTemplateArgs.html">GetLaunchTemplateArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -78,7 +78,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -87,8 +87,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatefilter">List&lt;Get<wbr>Launch<wbr>Template<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) for filtering. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) for filtering. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -96,8 +96,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -105,14 +105,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -121,8 +121,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatefilter">[]Get<wbr>Launch<wbr>Template<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) for filtering. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) for filtering. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -130,8 +130,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -139,14 +139,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -155,8 +155,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatefilter">Get<wbr>Launch<wbr>Template<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) for filtering. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) for filtering. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -164,8 +164,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -173,14 +173,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -189,8 +189,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatefilter">List[Get<wbr>Launch<wbr>Template<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) for filtering. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) for filtering. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -198,8 +198,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -207,11 +207,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -227,7 +227,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -236,8 +236,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the launch template.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -245,8 +245,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateblockdevicemapping">List&lt;Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
-{{% /md %}}</dd>
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -254,9 +254,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatecreditspecification">List&lt;Get<wbr>Launch<wbr>Template<wbr>Credit<wbr>Specification&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -264,8 +264,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -273,8 +273,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -282,9 +282,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -292,8 +292,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-"
             title="">
@@ -301,9 +301,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateelasticgpuspecification">List&lt;Get<wbr>Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -311,8 +311,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatehibernationoption">List&lt;Get<wbr>Launch<wbr>Template<wbr>Hibernation<wbr>Option&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -320,9 +320,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateiaminstanceprofile">List&lt;Get<wbr>Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -330,8 +330,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -339,8 +339,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -348,9 +348,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -358,9 +358,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateinstancemarketoption">List&lt;Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance.
+    <dd>The market (purchasing) option for the instance.
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -368,8 +368,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -377,8 +377,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -386,8 +386,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -395,8 +395,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -404,8 +404,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatemetadataoption">List&lt;Get<wbr>Launch<wbr>Template<wbr>Metadata<wbr>Option&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The metadata options for the instance.
-{{% /md %}}</dd>
+    <dd>The metadata options for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -413,8 +413,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatemonitoring">List&lt;Get<wbr>Launch<wbr>Template<wbr>Monitoring&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -422,9 +422,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatenetworkinterface">List&lt;Get<wbr>Launch<wbr>Template<wbr>Network<wbr>Interface&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -432,8 +432,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateplacement">List&lt;Get<wbr>Launch<wbr>Template<wbr>Placement&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance.
-{{% /md %}}</dd>
+    <dd>The placement of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -441,8 +441,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-"
             title="">
@@ -450,9 +450,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -460,8 +460,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatetagspecification">List&lt;Get<wbr>Launch<wbr>Template<wbr>Tag<wbr>Specification&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -469,8 +469,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}(Optional) A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>(Optional) A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -478,8 +478,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -487,8 +487,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
     <dt class="property-"
             title="">
@@ -496,7 +496,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatefilter">List&lt;Get<wbr>Launch<wbr>Template<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -504,13 +504,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -519,8 +519,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the launch template.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -528,8 +528,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateblockdevicemapping">[]Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
-{{% /md %}}</dd>
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,9 +537,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatecreditspecification">[]Get<wbr>Launch<wbr>Template<wbr>Credit<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -547,8 +547,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -556,8 +556,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -565,9 +565,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -575,8 +575,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-"
             title="">
@@ -584,9 +584,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateelasticgpuspecification">[]Get<wbr>Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -594,8 +594,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatehibernationoption">[]Get<wbr>Launch<wbr>Template<wbr>Hibernation<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -603,9 +603,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateiaminstanceprofile">[]Get<wbr>Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -613,8 +613,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,9 +631,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -641,9 +641,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateinstancemarketoption">[]Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance.
+    <dd>The market (purchasing) option for the instance.
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,8 +651,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -660,8 +660,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -669,8 +669,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -678,8 +678,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -687,8 +687,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatemetadataoption">[]Get<wbr>Launch<wbr>Template<wbr>Metadata<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}The metadata options for the instance.
-{{% /md %}}</dd>
+    <dd>The metadata options for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -696,8 +696,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatemonitoring">[]Get<wbr>Launch<wbr>Template<wbr>Monitoring</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -705,9 +705,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatenetworkinterface">[]Get<wbr>Launch<wbr>Template<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -715,8 +715,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateplacement">[]Get<wbr>Launch<wbr>Template<wbr>Placement</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance.
-{{% /md %}}</dd>
+    <dd>The placement of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -724,8 +724,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-"
             title="">
@@ -733,9 +733,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -743,8 +743,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatetagspecification">[]Get<wbr>Launch<wbr>Template<wbr>Tag<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -752,8 +752,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}(Optional) A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>(Optional) A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -761,8 +761,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -770,8 +770,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
     <dt class="property-"
             title="">
@@ -779,7 +779,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatefilter">[]Get<wbr>Launch<wbr>Template<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -787,13 +787,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -802,8 +802,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the launch template.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -811,8 +811,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateblockdevicemapping">Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping[]</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
-{{% /md %}}</dd>
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -820,9 +820,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatecreditspecification">Get<wbr>Launch<wbr>Template<wbr>Credit<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -830,8 +830,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -839,8 +839,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -848,9 +848,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -858,8 +858,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-"
             title="">
@@ -867,9 +867,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateelasticgpuspecification">Get<wbr>Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -877,8 +877,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatehibernationoption">Get<wbr>Launch<wbr>Template<wbr>Hibernation<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -886,9 +886,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateiaminstanceprofile">Get<wbr>Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile[]</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -896,8 +896,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -905,8 +905,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -914,9 +914,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -924,9 +924,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateinstancemarketoption">Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance.
+    <dd>The market (purchasing) option for the instance.
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -934,8 +934,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -943,8 +943,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -952,8 +952,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -961,8 +961,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -970,8 +970,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatemetadataoption">Get<wbr>Launch<wbr>Template<wbr>Metadata<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}The metadata options for the instance.
-{{% /md %}}</dd>
+    <dd>The metadata options for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -979,8 +979,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatemonitoring">Get<wbr>Launch<wbr>Template<wbr>Monitoring[]</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -988,9 +988,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatenetworkinterface">Get<wbr>Launch<wbr>Template<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -998,8 +998,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateplacement">Get<wbr>Launch<wbr>Template<wbr>Placement[]</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance.
-{{% /md %}}</dd>
+    <dd>The placement of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1007,8 +1007,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1016,9 +1016,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1026,8 +1026,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatetagspecification">Get<wbr>Launch<wbr>Template<wbr>Tag<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1035,8 +1035,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}(Optional) A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>(Optional) A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1044,8 +1044,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1053,8 +1053,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1062,7 +1062,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatefilter">Get<wbr>Launch<wbr>Template<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1070,13 +1070,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1085,8 +1085,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the launch template.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1094,8 +1094,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateblockdevicemapping">List[Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping]</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
-{{% /md %}}</dd>
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1103,9 +1103,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatecreditspecification">List[Get<wbr>Launch<wbr>Template<wbr>Credit<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1113,8 +1113,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1122,8 +1122,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1131,9 +1131,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1141,8 +1141,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1150,9 +1150,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateelasticgpuspecification">List[Get<wbr>Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1160,8 +1160,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatehibernationoption">List[Get<wbr>Launch<wbr>Template<wbr>Hibernation<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1169,9 +1169,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateiaminstanceprofile">List[Get<wbr>Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile]</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1179,8 +1179,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1188,8 +1188,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1197,9 +1197,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1207,9 +1207,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateinstancemarketoption">List[Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance.
+    <dd>The market (purchasing) option for the instance.
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1217,8 +1217,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1226,8 +1226,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1235,8 +1235,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1244,8 +1244,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1253,8 +1253,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatemetadataoption">List[Get<wbr>Launch<wbr>Template<wbr>Metadata<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}The metadata options for the instance.
-{{% /md %}}</dd>
+    <dd>The metadata options for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1262,8 +1262,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatemonitoring">List[Get<wbr>Launch<wbr>Template<wbr>Monitoring]</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1271,9 +1271,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatenetworkinterface">List[Get<wbr>Launch<wbr>Template<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1281,8 +1281,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateplacement">List[Get<wbr>Launch<wbr>Template<wbr>Placement]</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance.
-{{% /md %}}</dd>
+    <dd>The placement of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1290,8 +1290,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1299,9 +1299,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1309,8 +1309,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatetagspecification">List[Get<wbr>Launch<wbr>Template<wbr>Tag<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1318,8 +1318,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}(Optional) A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>(Optional) A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1327,8 +1327,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1336,8 +1336,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1345,7 +1345,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplatefilter">List[Get<wbr>Launch<wbr>Template<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1353,10 +1353,10 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1369,18 +1369,18 @@ Interfaces below for more details.
 
 
 <h4 id="getlaunchtemplateblockdevicemapping">Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateBlockDeviceMapping">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateBlockDeviceMapping">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1389,7 +1389,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1397,7 +1397,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateblockdevicemappingeb">List&lt;Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Eb<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1405,7 +1405,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1413,13 +1413,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1428,7 +1428,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1436,7 +1436,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateblockdevicemappingeb">[]Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Eb</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1444,7 +1444,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1452,13 +1452,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1467,7 +1467,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1475,7 +1475,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateblockdevicemappingeb">Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Eb[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1483,7 +1483,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1491,13 +1491,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1506,7 +1506,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1514,7 +1514,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateblockdevicemappingeb">List[Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Eb]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1522,7 +1522,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1530,28 +1530,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplateblockdevicemappingeb">Get<wbr>Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Eb</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateBlockDeviceMappingEb">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateBlockDeviceMappingEb">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1560,7 +1560,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1568,7 +1568,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1576,7 +1576,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1584,7 +1584,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1592,7 +1592,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1600,7 +1600,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1608,13 +1608,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1623,7 +1623,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1631,7 +1631,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1639,7 +1639,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1647,7 +1647,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1655,7 +1655,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1663,7 +1663,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1671,13 +1671,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1686,7 +1686,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1694,7 +1694,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1702,7 +1702,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1710,7 +1710,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1718,7 +1718,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1726,7 +1726,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1734,13 +1734,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1749,7 +1749,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1757,7 +1757,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1765,7 +1765,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1773,7 +1773,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1781,7 +1781,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1789,7 +1789,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1797,28 +1797,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplatecreditspecification">Get<wbr>Launch<wbr>Template<wbr>Credit<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateCreditSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateCreditSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1827,13 +1827,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1842,13 +1842,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1857,13 +1857,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1872,28 +1872,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplateelasticgpuspecification">Get<wbr>Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateElasticGpuSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateElasticGpuSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1902,13 +1902,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1917,13 +1917,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1932,13 +1932,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1947,28 +1947,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplatefilter">Get<wbr>Launch<wbr>Template<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetLaunchTemplateFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1977,8 +1977,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1986,14 +1986,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
-{{% /md %}}</dd>
+    <dd>Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2002,8 +2002,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2011,14 +2011,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
-{{% /md %}}</dd>
+    <dd>Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2027,8 +2027,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2036,14 +2036,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
-{{% /md %}}</dd>
+    <dd>Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2052,8 +2052,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2061,29 +2061,29 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
-{{% /md %}}</dd>
+    <dd>Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplatehibernationoption">Get<wbr>Launch<wbr>Template<wbr>Hibernation<wbr>Option</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateHibernationOption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateHibernationOption">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2092,13 +2092,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2107,13 +2107,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2122,13 +2122,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2137,28 +2137,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplateiaminstanceprofile">Get<wbr>Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateIamInstanceProfile">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateIamInstanceProfile">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2167,8 +2167,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the launch template.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2176,14 +2176,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2192,8 +2192,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the launch template.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2201,14 +2201,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2217,8 +2217,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the launch template.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2226,14 +2226,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2242,8 +2242,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the launch template.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2251,29 +2251,29 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
-{{% /md %}}</dd>
+    <dd>The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplateinstancemarketoption">Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateInstanceMarketOption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateInstanceMarketOption">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2282,7 +2282,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2290,13 +2290,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateinstancemarketoptionspotoption">List&lt;Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option<wbr>Spot<wbr>Option<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2305,7 +2305,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2313,13 +2313,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateinstancemarketoptionspotoption">[]Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option<wbr>Spot<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2328,7 +2328,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2336,13 +2336,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateinstancemarketoptionspotoption">Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option<wbr>Spot<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2351,7 +2351,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2359,28 +2359,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlaunchtemplateinstancemarketoptionspotoption">List[Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option<wbr>Spot<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplateinstancemarketoptionspotoption">Get<wbr>Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Option<wbr>Spot<wbr>Option</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateInstanceMarketOptionSpotOption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateInstanceMarketOptionSpotOption">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2389,7 +2389,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2397,7 +2397,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2405,7 +2405,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2413,7 +2413,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2421,13 +2421,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2436,7 +2436,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2444,7 +2444,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2452,7 +2452,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2460,7 +2460,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2468,13 +2468,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2483,7 +2483,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2491,7 +2491,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2499,7 +2499,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2507,7 +2507,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2515,13 +2515,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2530,7 +2530,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2538,7 +2538,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2546,7 +2546,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2554,7 +2554,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2562,28 +2562,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplatemetadataoption">Get<wbr>Launch<wbr>Template<wbr>Metadata<wbr>Option</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateMetadataOption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateMetadataOption">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2592,8 +2592,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the metadata service: `enabled`, `disabled`.
-{{% /md %}}</dd>
+    <dd>The state of the metadata service: `enabled`, `disabled`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2601,8 +2601,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests.
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2610,14 +2610,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If session tokens are required: `optional`, `required`.
-{{% /md %}}</dd>
+    <dd>If session tokens are required: `optional`, `required`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2626,8 +2626,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the metadata service: `enabled`, `disabled`.
-{{% /md %}}</dd>
+    <dd>The state of the metadata service: `enabled`, `disabled`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2635,8 +2635,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests.
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2644,14 +2644,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If session tokens are required: `optional`, `required`.
-{{% /md %}}</dd>
+    <dd>If session tokens are required: `optional`, `required`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2660,8 +2660,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of the metadata service: `enabled`, `disabled`.
-{{% /md %}}</dd>
+    <dd>The state of the metadata service: `enabled`, `disabled`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2669,8 +2669,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests.
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2678,14 +2678,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If session tokens are required: `optional`, `required`.
-{{% /md %}}</dd>
+    <dd>If session tokens are required: `optional`, `required`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2694,8 +2694,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The state of the metadata service: `enabled`, `disabled`.
-{{% /md %}}</dd>
+    <dd>The state of the metadata service: `enabled`, `disabled`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2703,8 +2703,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests.
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2712,29 +2712,29 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If session tokens are required: `optional`, `required`.
-{{% /md %}}</dd>
+    <dd>If session tokens are required: `optional`, `required`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplatemonitoring">Get<wbr>Launch<wbr>Template<wbr>Monitoring</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateMonitoring">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateMonitoring">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2743,13 +2743,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2758,13 +2758,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2773,13 +2773,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2788,28 +2788,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplatenetworkinterface">Get<wbr>Launch<wbr>Template<wbr>Network<wbr>Interface</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateNetworkInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateNetworkInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2818,7 +2818,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2826,7 +2826,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2834,8 +2834,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2843,7 +2843,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2851,7 +2851,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2859,7 +2859,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2867,7 +2867,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2875,7 +2875,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2883,7 +2883,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2891,7 +2891,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2899,7 +2899,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2907,13 +2907,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2922,7 +2922,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2930,7 +2930,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2938,8 +2938,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2947,7 +2947,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2955,7 +2955,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2963,7 +2963,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2971,7 +2971,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2979,7 +2979,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2987,7 +2987,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2995,7 +2995,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3003,7 +3003,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3011,13 +3011,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3026,7 +3026,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3034,7 +3034,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3042,8 +3042,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3051,7 +3051,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3059,7 +3059,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3067,7 +3067,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3075,7 +3075,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3083,7 +3083,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3091,7 +3091,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3099,7 +3099,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3107,7 +3107,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3115,13 +3115,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3130,7 +3130,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3138,7 +3138,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3146,8 +3146,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3155,7 +3155,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3163,7 +3163,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3171,7 +3171,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3179,7 +3179,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3187,7 +3187,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3195,7 +3195,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3203,7 +3203,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3211,7 +3211,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3219,28 +3219,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplateplacement">Get<wbr>Launch<wbr>Template<wbr>Placement</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplatePlacement">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplatePlacement">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3249,7 +3249,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3257,7 +3257,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3265,7 +3265,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3273,7 +3273,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3281,7 +3281,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3289,13 +3289,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3304,7 +3304,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3312,7 +3312,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3320,7 +3320,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3328,7 +3328,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3336,7 +3336,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3344,13 +3344,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3359,7 +3359,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3367,7 +3367,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3375,7 +3375,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3383,7 +3383,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3391,7 +3391,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3399,13 +3399,13 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3414,7 +3414,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3422,7 +3422,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3430,7 +3430,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3438,7 +3438,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3446,7 +3446,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3454,28 +3454,28 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getlaunchtemplatetagspecification">Get<wbr>Launch<wbr>Template<wbr>Tag<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetLaunchTemplateTagSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetLaunchTemplateTagSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3484,7 +3484,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3492,14 +3492,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3508,7 +3508,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3516,14 +3516,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3532,7 +3532,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3540,14 +3540,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3556,7 +3556,7 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3564,11 +3564,11 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -19,29 +19,29 @@ Use this data source to access information about an existing Notification Hub wi
 
 ## Using GetHub {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getHub<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/notificationhub/#GetHubArgs">GetHubArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/notificationhub/#GetHubResult">GetHubResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_hub(</span>name=None<span class="p">, </span>namespace_name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupHub<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/notificationhub?tab=doc#LookupHubArgs">LookupHubArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/notificationhub?tab=doc#LookupHubResult">LookupHubResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetHub </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Notificationhub.GetHubResult.html">GetHubResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.NotificationHub.GetHubArgs.html">GetHubArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Notification Hub.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Notification Hub.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -67,8 +67,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Notification Hub Namespace which contains the Notification Hub.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Notification Hub Namespace which contains the Notification Hub.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -76,14 +76,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Resource Group within which the Notification Hub exists.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Resource Group within which the Notification Hub exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -92,8 +92,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Notification Hub.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Notification Hub.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -101,8 +101,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Notification Hub Namespace which contains the Notification Hub.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Notification Hub Namespace which contains the Notification Hub.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -110,14 +110,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Resource Group within which the Notification Hub exists.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Resource Group within which the Notification Hub exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -126,8 +126,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Notification Hub.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Notification Hub.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -135,8 +135,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Notification Hub Namespace which contains the Notification Hub.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Notification Hub Namespace which contains the Notification Hub.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -144,14 +144,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Resource Group within which the Notification Hub exists.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Resource Group within which the Notification Hub exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -160,8 +160,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Notification Hub.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Notification Hub.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -169,8 +169,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Notification Hub Namespace which contains the Notification Hub.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Notification Hub Namespace which contains the Notification Hub.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -178,11 +178,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Name of the Resource Group within which the Notification Hub exists.
-{{% /md %}}</dd>
+    <dd>Specifies the Name of the Resource Group within which the Notification Hub exists.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -198,7 +198,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -207,8 +207,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gethubapnscredential">List&lt;Get<wbr>Hub<wbr>Apns<wbr>Credential&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `apns_credential` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `apns_credential` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -216,8 +216,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gethubgcmcredential">List&lt;Get<wbr>Hub<wbr>Gcm<wbr>Credential&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `gcm_credential` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gcm_credential` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -225,8 +225,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -234,8 +234,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Region in which this Notification Hub exists.
-{{% /md %}}</dd>
+    <dd>The Azure Region in which this Notification Hub exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -243,7 +243,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -251,7 +251,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -259,13 +259,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -274,8 +274,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gethubapnscredential">[]Get<wbr>Hub<wbr>Apns<wbr>Credential</a></span>
     </dt>
-    <dd>{{% md %}}A `apns_credential` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `apns_credential` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -283,8 +283,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gethubgcmcredential">[]Get<wbr>Hub<wbr>Gcm<wbr>Credential</a></span>
     </dt>
-    <dd>{{% md %}}A `gcm_credential` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gcm_credential` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -292,8 +292,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -301,8 +301,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Region in which this Notification Hub exists.
-{{% /md %}}</dd>
+    <dd>The Azure Region in which this Notification Hub exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -310,7 +310,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -318,7 +318,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -326,13 +326,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -341,8 +341,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gethubapnscredential">Get<wbr>Hub<wbr>Apns<wbr>Credential[]</a></span>
     </dt>
-    <dd>{{% md %}}A `apns_credential` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `apns_credential` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -350,8 +350,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gethubgcmcredential">Get<wbr>Hub<wbr>Gcm<wbr>Credential[]</a></span>
     </dt>
-    <dd>{{% md %}}A `gcm_credential` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gcm_credential` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -359,8 +359,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -368,8 +368,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Region in which this Notification Hub exists.
-{{% /md %}}</dd>
+    <dd>The Azure Region in which this Notification Hub exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -377,7 +377,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -385,7 +385,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -393,13 +393,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -408,8 +408,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gethubapnscredential">List[Get<wbr>Hub<wbr>Apns<wbr>Credential]</a></span>
     </dt>
-    <dd>{{% md %}}A `apns_credential` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `apns_credential` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -417,8 +417,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gethubgcmcredential">List[Get<wbr>Hub<wbr>Gcm<wbr>Credential]</a></span>
     </dt>
-    <dd>{{% md %}}A `gcm_credential` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gcm_credential` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -426,8 +426,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -435,8 +435,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Region in which this Notification Hub exists.
-{{% /md %}}</dd>
+    <dd>The Azure Region in which this Notification Hub exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -444,7 +444,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -452,7 +452,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -460,10 +460,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -476,18 +476,18 @@ The following output properties are available:
 
 
 <h4 id="gethubapnscredential">Get<wbr>Hub<wbr>Apns<wbr>Credential</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetHubApnsCredential">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/notificationhub?tab=doc#GetHubApnsCredential">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -496,8 +496,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Mode which defines which server the APNS Messages should be sent to. Possible values are `Production` and `Sandbox`.
-{{% /md %}}</dd>
+    <dd>The Application Mode which defines which server the APNS Messages should be sent to. Possible values are `Production` and `Sandbox`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -505,8 +505,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Bundle ID of the iOS/macOS application to send push notifications for, such as `com.org.example`.
-{{% /md %}}</dd>
+    <dd>The Bundle ID of the iOS/macOS application to send push notifications for, such as `com.org.example`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -514,8 +514,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Apple Push Notifications Service (APNS) Key.
-{{% /md %}}</dd>
+    <dd>The Apple Push Notifications Service (APNS) Key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -523,8 +523,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the team the Token.
-{{% /md %}}</dd>
+    <dd>The ID of the team the Token.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -532,14 +532,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Push Token associated with the Apple Developer Account.
-{{% /md %}}</dd>
+    <dd>The Push Token associated with the Apple Developer Account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -548,8 +548,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Mode which defines which server the APNS Messages should be sent to. Possible values are `Production` and `Sandbox`.
-{{% /md %}}</dd>
+    <dd>The Application Mode which defines which server the APNS Messages should be sent to. Possible values are `Production` and `Sandbox`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -557,8 +557,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Bundle ID of the iOS/macOS application to send push notifications for, such as `com.org.example`.
-{{% /md %}}</dd>
+    <dd>The Bundle ID of the iOS/macOS application to send push notifications for, such as `com.org.example`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -566,8 +566,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Apple Push Notifications Service (APNS) Key.
-{{% /md %}}</dd>
+    <dd>The Apple Push Notifications Service (APNS) Key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -575,8 +575,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the team the Token.
-{{% /md %}}</dd>
+    <dd>The ID of the team the Token.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -584,14 +584,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Push Token associated with the Apple Developer Account.
-{{% /md %}}</dd>
+    <dd>The Push Token associated with the Apple Developer Account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -600,8 +600,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Application Mode which defines which server the APNS Messages should be sent to. Possible values are `Production` and `Sandbox`.
-{{% /md %}}</dd>
+    <dd>The Application Mode which defines which server the APNS Messages should be sent to. Possible values are `Production` and `Sandbox`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -609,8 +609,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Bundle ID of the iOS/macOS application to send push notifications for, such as `com.org.example`.
-{{% /md %}}</dd>
+    <dd>The Bundle ID of the iOS/macOS application to send push notifications for, such as `com.org.example`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -618,8 +618,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Apple Push Notifications Service (APNS) Key.
-{{% /md %}}</dd>
+    <dd>The Apple Push Notifications Service (APNS) Key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -627,8 +627,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the team the Token.
-{{% /md %}}</dd>
+    <dd>The ID of the team the Token.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -636,14 +636,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Push Token associated with the Apple Developer Account.
-{{% /md %}}</dd>
+    <dd>The Push Token associated with the Apple Developer Account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -652,8 +652,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Application Mode which defines which server the APNS Messages should be sent to. Possible values are `Production` and `Sandbox`.
-{{% /md %}}</dd>
+    <dd>The Application Mode which defines which server the APNS Messages should be sent to. Possible values are `Production` and `Sandbox`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -661,8 +661,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Bundle ID of the iOS/macOS application to send push notifications for, such as `com.org.example`.
-{{% /md %}}</dd>
+    <dd>The Bundle ID of the iOS/macOS application to send push notifications for, such as `com.org.example`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -670,8 +670,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Apple Push Notifications Service (APNS) Key.
-{{% /md %}}</dd>
+    <dd>The Apple Push Notifications Service (APNS) Key.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -679,8 +679,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the team the Token.
-{{% /md %}}</dd>
+    <dd>The ID of the team the Token.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -688,29 +688,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Push Token associated with the Apple Developer Account.
-{{% /md %}}</dd>
+    <dd>The Push Token associated with the Apple Developer Account.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="gethubgcmcredential">Get<wbr>Hub<wbr>Gcm<wbr>Credential</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetHubGcmCredential">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/notificationhub?tab=doc#GetHubGcmCredential">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -719,14 +719,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The API Key associated with the Google Cloud Messaging service.
-{{% /md %}}</dd>
+    <dd>The API Key associated with the Google Cloud Messaging service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -735,14 +735,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API Key associated with the Google Cloud Messaging service.
-{{% /md %}}</dd>
+    <dd>The API Key associated with the Google Cloud Messaging service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -751,14 +751,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API Key associated with the Google Cloud Messaging service.
-{{% /md %}}</dd>
+    <dd>The API Key associated with the Google Cloud Messaging service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -767,11 +767,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The API Key associated with the Google Cloud Messaging service.
-{{% /md %}}</dd>
+    <dd>The API Key associated with the Google Cloud Messaging service.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

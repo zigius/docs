@@ -101,26 +101,26 @@ const foo = new rancher2.Project("foo", {
 
 
 ## Create a Project Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#Project">Project</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#ProjectArgs">ProjectArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Project</span><span class="p">(resource_name, opts=None, </span>annotations=None<span class="p">, </span>cluster_id=None<span class="p">, </span>container_resource_limit=None<span class="p">, </span>description=None<span class="p">, </span>enable_project_monitoring=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>pod_security_policy_template_id=None<span class="p">, </span>project_monitoring_input=None<span class="p">, </span>resource_quota=None<span class="p">, </span>wait_for_cluster=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewProject<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectArgs">ProjectArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#Project">Project</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.Project.html">Project</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.ProjectArgs.html">ProjectArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -157,9 +157,9 @@ const foo = new rancher2.Project("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -177,9 +177,9 @@ const foo = new rancher2.Project("foo", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -226,9 +226,9 @@ const foo = new rancher2.Project("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -265,7 +265,7 @@ const foo = new rancher2.Project("foo", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Project Resource Properties {#properties}
 
@@ -278,7 +278,7 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -287,8 +287,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The cluster id where create project (string)
-{{% /md %}}</dd>
+    <dd>The cluster id where create project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectcontainerresourcelimit">Project<wbr>Container<wbr>Resource<wbr>Limit<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on project (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on project (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A project description (string)
-{{% /md %}}</dd>
+    <dd>A project description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable built-in project monitoring. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable built-in project monitoring. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the project (string)
-{{% /md %}}</dd>
+    <dd>The name of the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,8 +350,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Default Pod Security Policy ID for the project (string)
-{{% /md %}}</dd>
+    <dd>Default Pod Security Policy ID for the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,8 +359,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectprojectmonitoringinput">Project<wbr>Project<wbr>Monitoring<wbr>Input<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,8 +368,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequota">Project<wbr>Resource<wbr>Quota<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,14 +377,14 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -393,8 +393,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The cluster id where create project (string)
-{{% /md %}}</dd>
+    <dd>The cluster id where create project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,8 +402,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,8 +411,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectcontainerresourcelimit">Project<wbr>Container<wbr>Resource<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on project (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on project (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A project description (string)
-{{% /md %}}</dd>
+    <dd>A project description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable built-in project monitoring. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable built-in project monitoring. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the project (string)
-{{% /md %}}</dd>
+    <dd>The name of the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default Pod Security Policy ID for the project (string)
-{{% /md %}}</dd>
+    <dd>Default Pod Security Policy ID for the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectprojectmonitoringinput">Project<wbr>Project<wbr>Monitoring<wbr>Input</a></span>
     </dt>
-    <dd>{{% md %}}Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequota">Project<wbr>Resource<wbr>Quota</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,14 +483,14 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -499,8 +499,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The cluster id where create project (string)
-{{% /md %}}</dd>
+    <dd>The cluster id where create project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectcontainerresourcelimit">Project<wbr>Container<wbr>Resource<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on project (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on project (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A project description (string)
-{{% /md %}}</dd>
+    <dd>A project description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable built-in project monitoring. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable built-in project monitoring. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,8 +553,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the project (string)
-{{% /md %}}</dd>
+    <dd>The name of the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default Pod Security Policy ID for the project (string)
-{{% /md %}}</dd>
+    <dd>Default Pod Security Policy ID for the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,8 +571,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectprojectmonitoringinput">Project<wbr>Project<wbr>Monitoring<wbr>Input</a></span>
     </dt>
-    <dd>{{% md %}}Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -580,8 +580,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequota">Project<wbr>Resource<wbr>Quota</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -589,14 +589,14 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -605,8 +605,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The cluster id where create project (string)
-{{% /md %}}</dd>
+    <dd>The cluster id where create project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,8 +614,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectcontainerresourcelimit">Dict[Project<wbr>Container<wbr>Resource<wbr>Limit]</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on project (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on project (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,8 +632,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A project description (string)
-{{% /md %}}</dd>
+    <dd>A project description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable built-in project monitoring. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable built-in project monitoring. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,8 +659,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the project (string)
-{{% /md %}}</dd>
+    <dd>The name of the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,8 +668,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Default Pod Security Policy ID for the project (string)
-{{% /md %}}</dd>
+    <dd>Default Pod Security Policy ID for the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -677,8 +677,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectprojectmonitoringinput">Dict[Project<wbr>Project<wbr>Monitoring<wbr>Input]</a></span>
     </dt>
-    <dd>{{% md %}}Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequota">Dict[Project<wbr>Resource<wbr>Quota]</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,11 +695,11 @@ The Project resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -713,7 +713,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -722,13 +722,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -737,13 +737,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -752,13 +752,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -767,10 +767,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -781,25 +781,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Project Resource {#look-up}
 
 Get an existing Project resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#ProjectState">ProjectState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#Project">Project</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>annotations=None<span class="p">, </span>cluster_id=None<span class="p">, </span>container_resource_limit=None<span class="p">, </span>description=None<span class="p">, </span>enable_project_monitoring=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>pod_security_policy_template_id=None<span class="p">, </span>project_monitoring_input=None<span class="p">, </span>resource_quota=None<span class="p">, </span>wait_for_cluster=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetProject<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectState">ProjectState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#Project">Project</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.Project.html">Project</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2..ProjectState.html">ProjectState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -824,9 +824,9 @@ Get an existing Project resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -839,36 +839,9 @@ Get an existing Project resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -893,13 +866,40 @@ Get an existing Project resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -908,8 +908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The cluster id where create project (string)
-{{% /md %}}</dd>
+    <dd>The cluster id where create project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectcontainerresourcelimit">Project<wbr>Container<wbr>Resource<wbr>Limit<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on project (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on project (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A project description (string)
-{{% /md %}}</dd>
+    <dd>A project description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable built-in project monitoring. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable built-in project monitoring. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,8 +953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,8 +962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the project (string)
-{{% /md %}}</dd>
+    <dd>The name of the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,8 +971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Default Pod Security Policy ID for the project (string)
-{{% /md %}}</dd>
+    <dd>Default Pod Security Policy ID for the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,8 +980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectprojectmonitoringinput">Project<wbr>Project<wbr>Monitoring<wbr>Input<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,8 +989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequota">Project<wbr>Resource<wbr>Quota<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,14 +998,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1014,8 +1014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The cluster id where create project (string)
-{{% /md %}}</dd>
+    <dd>The cluster id where create project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectcontainerresourcelimit">Project<wbr>Container<wbr>Resource<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on project (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on project (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,8 +1041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A project description (string)
-{{% /md %}}</dd>
+    <dd>A project description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,8 +1050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable built-in project monitoring. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable built-in project monitoring. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1059,8 +1059,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1068,8 +1068,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the project (string)
-{{% /md %}}</dd>
+    <dd>The name of the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1077,8 +1077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default Pod Security Policy ID for the project (string)
-{{% /md %}}</dd>
+    <dd>Default Pod Security Policy ID for the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1086,8 +1086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectprojectmonitoringinput">Project<wbr>Project<wbr>Monitoring<wbr>Input</a></span>
     </dt>
-    <dd>{{% md %}}Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,8 +1095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequota">Project<wbr>Resource<wbr>Quota</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1104,14 +1104,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1120,8 +1120,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,8 +1129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The cluster id where create project (string)
-{{% /md %}}</dd>
+    <dd>The cluster id where create project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectcontainerresourcelimit">Project<wbr>Container<wbr>Resource<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on project (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on project (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,8 +1147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A project description (string)
-{{% /md %}}</dd>
+    <dd>A project description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,8 +1156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable built-in project monitoring. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable built-in project monitoring. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,8 +1165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,8 +1174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the project (string)
-{{% /md %}}</dd>
+    <dd>The name of the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,8 +1183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Default Pod Security Policy ID for the project (string)
-{{% /md %}}</dd>
+    <dd>Default Pod Security Policy ID for the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1192,8 +1192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectprojectmonitoringinput">Project<wbr>Project<wbr>Monitoring<wbr>Input</a></span>
     </dt>
-    <dd>{{% md %}}Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1201,8 +1201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequota">Project<wbr>Resource<wbr>Quota</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,14 +1210,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1226,8 +1226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The cluster id where create project (string)
-{{% /md %}}</dd>
+    <dd>The cluster id where create project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectcontainerresourcelimit">Dict[Project<wbr>Container<wbr>Resource<wbr>Limit]</a></span>
     </dt>
-    <dd>{{% md %}}Default containers resource limits on project (List maxitem:1)
-{{% /md %}}</dd>
+    <dd>Default containers resource limits on project (List maxitem:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,8 +1253,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A project description (string)
-{{% /md %}}</dd>
+    <dd>A project description (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,8 +1262,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable built-in project monitoring. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Enable built-in project monitoring. Default `false` (bool)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1271,8 +1271,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Node Pool object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Node Pool object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1280,8 +1280,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the project (string)
-{{% /md %}}</dd>
+    <dd>The name of the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1289,8 +1289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Default Pod Security Policy ID for the project (string)
-{{% /md %}}</dd>
+    <dd>Default Pod Security Policy ID for the project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1298,8 +1298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectprojectmonitoringinput">Dict[Project<wbr>Project<wbr>Monitoring<wbr>Input]</a></span>
     </dt>
-    <dd>{{% md %}}Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Project monitoring config. Any parameter defined in [rancher-monitoring charts](https://github.com/rancher/system-charts/tree/dev/charts/rancher-monitoring) could be configured (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,8 +1307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequota">Dict[Project<wbr>Resource<wbr>Quota]</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota for project. Rancher v2.1.x or higher (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1316,11 +1316,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Wait for cluster becomes active. Default `false` (bool)
-{{% /md %}}</dd>
+    <dd>Wait for cluster becomes active. Default `false` (bool)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1335,18 +1335,18 @@ The following state arguments are supported:
 
 
 <h4 id="projectcontainerresourcelimit">Project<wbr>Container<wbr>Resource<wbr>Limit</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#ProjectContainerResourceLimit">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#ProjectContainerResourceLimit">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectContainerResourceLimitArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectContainerResourceLimitOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1355,8 +1355,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1364,8 +1364,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,8 +1373,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,14 +1382,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1398,8 +1398,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,8 +1407,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1416,8 +1416,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,14 +1425,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1441,8 +1441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,8 +1450,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1459,8 +1459,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,14 +1468,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1484,8 +1484,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1493,8 +1493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,8 +1502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,29 +1511,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="projectprojectmonitoringinput">Project<wbr>Project<wbr>Monitoring<wbr>Input</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#ProjectProjectMonitoringInput">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#ProjectProjectMonitoringInput">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectProjectMonitoringInputArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectProjectMonitoringInputOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1542,8 +1542,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key/value answers for monitor input (map)
-{{% /md %}}</dd>
+    <dd>Key/value answers for monitor input (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,14 +1551,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}rancher-monitoring chart version (string)
-{{% /md %}}</dd>
+    <dd>rancher-monitoring chart version (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1567,8 +1567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key/value answers for monitor input (map)
-{{% /md %}}</dd>
+    <dd>Key/value answers for monitor input (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,14 +1576,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}rancher-monitoring chart version (string)
-{{% /md %}}</dd>
+    <dd>rancher-monitoring chart version (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1592,8 +1592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key/value answers for monitor input (map)
-{{% /md %}}</dd>
+    <dd>Key/value answers for monitor input (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1601,14 +1601,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}rancher-monitoring chart version (string)
-{{% /md %}}</dd>
+    <dd>rancher-monitoring chart version (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1617,8 +1617,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key/value answers for monitor input (map)
-{{% /md %}}</dd>
+    <dd>Key/value answers for monitor input (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,29 +1626,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}rancher-monitoring chart version (string)
-{{% /md %}}</dd>
+    <dd>rancher-monitoring chart version (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="projectresourcequota">Project<wbr>Resource<wbr>Quota</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#ProjectResourceQuota">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#ProjectResourceQuota">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectResourceQuotaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectResourceQuotaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1657,8 +1657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequotanamespacedefaultlimit">Project<wbr>Resource<wbr>Quota<wbr>Namespace<wbr>Default<wbr>Limit<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Default resource quota limit for  namespaces in project (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Default resource quota limit for  namespaces in project (list maxitems:1)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1666,14 +1666,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequotaprojectlimit">Project<wbr>Resource<wbr>Quota<wbr>Project<wbr>Limit<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota limit for project (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota limit for project (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1682,8 +1682,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequotanamespacedefaultlimit">Project<wbr>Resource<wbr>Quota<wbr>Namespace<wbr>Default<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default resource quota limit for  namespaces in project (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Default resource quota limit for  namespaces in project (list maxitems:1)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1691,14 +1691,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequotaprojectlimit">Project<wbr>Resource<wbr>Quota<wbr>Project<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota limit for project (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota limit for project (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1707,8 +1707,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequotanamespacedefaultlimit">Project<wbr>Resource<wbr>Quota<wbr>Namespace<wbr>Default<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Default resource quota limit for  namespaces in project (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Default resource quota limit for  namespaces in project (list maxitems:1)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1716,14 +1716,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequotaprojectlimit">Project<wbr>Resource<wbr>Quota<wbr>Project<wbr>Limit</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota limit for project (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota limit for project (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1732,8 +1732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequotanamespacedefaultlimit">Dict[Project<wbr>Resource<wbr>Quota<wbr>Namespace<wbr>Default<wbr>Limit]</a></span>
     </dt>
-    <dd>{{% md %}}Default resource quota limit for  namespaces in project (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Default resource quota limit for  namespaces in project (list maxitems:1)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1741,29 +1741,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#projectresourcequotaprojectlimit">Dict[Project<wbr>Resource<wbr>Quota<wbr>Project<wbr>Limit]</a></span>
     </dt>
-    <dd>{{% md %}}Resource quota limit for project (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Resource quota limit for project (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="projectresourcequotanamespacedefaultlimit">Project<wbr>Resource<wbr>Quota<wbr>Namespace<wbr>Default<wbr>Limit</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#ProjectResourceQuotaNamespaceDefaultLimit">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#ProjectResourceQuotaNamespaceDefaultLimit">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectResourceQuotaNamespaceDefaultLimitArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectResourceQuotaNamespaceDefaultLimitOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1772,8 +1772,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1781,8 +1781,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1790,8 +1790,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,8 +1799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1808,8 +1808,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,8 +1817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,8 +1826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1835,8 +1835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,8 +1844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1853,8 +1853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1862,7 +1862,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1870,8 +1870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1879,14 +1879,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1895,8 +1895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1904,8 +1904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1913,8 +1913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1922,8 +1922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1931,8 +1931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1940,8 +1940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1949,8 +1949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1958,8 +1958,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1967,8 +1967,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,8 +1976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,7 +1985,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1993,8 +1993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2002,14 +2002,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2018,8 +2018,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2027,8 +2027,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2036,8 +2036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2045,8 +2045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2054,8 +2054,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2063,8 +2063,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2072,8 +2072,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2081,8 +2081,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2090,8 +2090,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2099,8 +2099,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2108,7 +2108,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2116,8 +2116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,14 +2125,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2141,8 +2141,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2150,8 +2150,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2159,8 +2159,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2168,8 +2168,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2177,8 +2177,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2186,8 +2186,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2195,8 +2195,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2204,8 +2204,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2213,8 +2213,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2222,8 +2222,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2231,7 +2231,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2239,8 +2239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2248,29 +2248,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="projectresourcequotaprojectlimit">Project<wbr>Resource<wbr>Quota<wbr>Project<wbr>Limit</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#ProjectResourceQuotaProjectLimit">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#ProjectResourceQuotaProjectLimit">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectResourceQuotaProjectLimitArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#ProjectResourceQuotaProjectLimitOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2279,8 +2279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,8 +2288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2297,8 +2297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2306,8 +2306,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2315,8 +2315,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2324,8 +2324,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2333,8 +2333,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2342,8 +2342,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2351,8 +2351,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2360,8 +2360,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2369,7 +2369,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2377,8 +2377,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2386,14 +2386,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2402,8 +2402,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,8 +2411,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,8 +2420,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2429,8 +2429,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2438,8 +2438,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2447,8 +2447,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2456,8 +2456,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2465,8 +2465,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2474,8 +2474,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2483,8 +2483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,7 +2492,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2500,8 +2500,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2509,14 +2509,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2525,8 +2525,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2534,8 +2534,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2543,8 +2543,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2552,8 +2552,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2561,8 +2561,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2570,8 +2570,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2579,8 +2579,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2588,8 +2588,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2597,8 +2597,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2606,8 +2606,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2615,7 +2615,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2623,8 +2623,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2632,14 +2632,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2648,8 +2648,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for config maps in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for config maps in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2657,8 +2657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2666,8 +2666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for limits memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for limits memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2675,8 +2675,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for persistent volume claims in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for persistent volume claims in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2684,8 +2684,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for pods in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for pods in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2693,8 +2693,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for replication controllers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for replication controllers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2702,8 +2702,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests cpu in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests cpu in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2711,8 +2711,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests memory in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests memory in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2720,8 +2720,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for requests storage in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for requests storage in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2729,8 +2729,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for secrets in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for secrets in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2738,7 +2738,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2746,8 +2746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services load balancers in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services load balancers in project (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2755,11 +2755,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Limit for services node ports in project (string)
-{{% /md %}}</dd>
+    <dd>Limit for services node ports in project (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

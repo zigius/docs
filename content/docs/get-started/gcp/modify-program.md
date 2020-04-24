@@ -16,9 +16,9 @@ Now that we have an instance of our Pulumi program deployed, let's add some labe
 
 Replace the entire contents of {{< langfile >}} with the following:
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 "use strict";
@@ -34,8 +34,8 @@ const bucket = new gcp.storage.Bucket("my-bucket", {
 exports.bucketName = bucket.url;
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
@@ -50,8 +50,8 @@ const bucket = new gcp.storage.Bucket("my-bucket", {
 export const bucketName = bucket.url;
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi
@@ -65,8 +65,8 @@ bucket = storage.Bucket('my-bucket',
 pulumi.export('bucket_name',  bucket.url)
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 package main
@@ -95,8 +95,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using Pulumi;
@@ -123,7 +123,7 @@ class MyStack : Stack
 }
 ```
 
-{{% /choosable %}}
+
 
 Next, we'll deploy the changes.
 

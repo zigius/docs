@@ -51,29 +51,29 @@ const example = pulumi.output(azuread.getServicePrincipal({
 
 ## Using GetServicePrincipal {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getServicePrincipal<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azuread/#GetServicePrincipalArgs">GetServicePrincipalArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azuread/#GetServicePrincipalResult">GetServicePrincipalResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_service_principal(</span>application_id=None<span class="p">, </span>display_name=None<span class="p">, </span>oauth2_permissions=None<span class="p">, </span>object_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupServicePrincipal<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azuread/sdk/v2/go/azuread/?tab=doc#GetServicePrincipalArgs">GetServicePrincipalArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azuread/sdk/v2/go/azuread/?tab=doc#LookupServicePrincipalResult">LookupServicePrincipalResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetServicePrincipal </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azuread/Pulumi.Azuread.GetServicePrincipalResult.html">GetServicePrincipalResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azuread/Pulumi.AzureAD.GetServicePrincipalArgs.html">GetServicePrincipalArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -81,7 +81,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -90,8 +90,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Azure AD Application.
-{{% /md %}}</dd>
+    <dd>The ID of the Azure AD Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -99,8 +99,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Display Name of the Azure AD Application associated with this Service Principal.
-{{% /md %}}</dd>
+    <dd>The Display Name of the Azure AD Application associated with this Service Principal.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -108,8 +108,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipaloauth2permission">List&lt;Pulumi.<wbr>Azure<wbr>AD.<wbr>Inputs.<wbr>Get<wbr>Service<wbr>Principal<wbr>Oauth2Permission<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A collection of OAuth 2.0 permissions exposed by the associated application. Each permission is covered by a `oauth2_permission` block as documented below.
-{{% /md %}}</dd>
+    <dd>A collection of OAuth 2.0 permissions exposed by the associated application. Each permission is covered by a `oauth2_permission` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -117,14 +117,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Azure AD Service Principal.
-{{% /md %}}</dd>
+    <dd>The ID of the Azure AD Service Principal.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Azure AD Application.
-{{% /md %}}</dd>
+    <dd>The ID of the Azure AD Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -142,8 +142,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Display Name of the Azure AD Application associated with this Service Principal.
-{{% /md %}}</dd>
+    <dd>The Display Name of the Azure AD Application associated with this Service Principal.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -151,8 +151,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipaloauth2permission">[]Get<wbr>Service<wbr>Principal<wbr>Oauth2Permission</a></span>
     </dt>
-    <dd>{{% md %}}A collection of OAuth 2.0 permissions exposed by the associated application. Each permission is covered by a `oauth2_permission` block as documented below.
-{{% /md %}}</dd>
+    <dd>A collection of OAuth 2.0 permissions exposed by the associated application. Each permission is covered by a `oauth2_permission` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -160,14 +160,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Azure AD Service Principal.
-{{% /md %}}</dd>
+    <dd>The ID of the Azure AD Service Principal.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -176,8 +176,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Azure AD Application.
-{{% /md %}}</dd>
+    <dd>The ID of the Azure AD Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -185,8 +185,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Display Name of the Azure AD Application associated with this Service Principal.
-{{% /md %}}</dd>
+    <dd>The Display Name of the Azure AD Application associated with this Service Principal.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -194,8 +194,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipaloauth2permission">Get<wbr>Service<wbr>Principal<wbr>Oauth2Permission[]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of OAuth 2.0 permissions exposed by the associated application. Each permission is covered by a `oauth2_permission` block as documented below.
-{{% /md %}}</dd>
+    <dd>A collection of OAuth 2.0 permissions exposed by the associated application. Each permission is covered by a `oauth2_permission` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -203,14 +203,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Azure AD Service Principal.
-{{% /md %}}</dd>
+    <dd>The ID of the Azure AD Service Principal.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -219,8 +219,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Azure AD Application.
-{{% /md %}}</dd>
+    <dd>The ID of the Azure AD Application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,8 +228,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Display Name of the Azure AD Application associated with this Service Principal.
-{{% /md %}}</dd>
+    <dd>The Display Name of the Azure AD Application associated with this Service Principal.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,8 +237,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipaloauth2permission">List[Get<wbr>Service<wbr>Principal<wbr>Oauth2Permission]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of OAuth 2.0 permissions exposed by the associated application. Each permission is covered by a `oauth2_permission` block as documented below.
-{{% /md %}}</dd>
+    <dd>A collection of OAuth 2.0 permissions exposed by the associated application. Each permission is covered by a `oauth2_permission` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,11 +246,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Azure AD Service Principal.
-{{% /md %}}</dd>
+    <dd>The ID of the Azure AD Service Principal.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -266,7 +266,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -275,7 +275,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipalapprole">List&lt;Pulumi.<wbr>Azure<wbr>AD.<wbr>Outputs.<wbr>Get<wbr>Service<wbr>Principal<wbr>App<wbr>Role&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -283,7 +283,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -291,8 +291,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Display name for the permission that appears in the admin consent and app assignment experiences.
-{{% /md %}}</dd>
+    <dd>Display name for the permission that appears in the admin consent and app assignment experiences.
+</dd>
 
     <dt class="property-"
             title="">
@@ -300,8 +300,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -309,7 +309,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipaloauth2permission">List&lt;Pulumi.<wbr>Azure<wbr>AD.<wbr>Outputs.<wbr>Get<wbr>Service<wbr>Principal<wbr>Oauth2Permission&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -317,13 +317,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -332,7 +332,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipalapprole">[]Get<wbr>Service<wbr>Principal<wbr>App<wbr>Role</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -340,7 +340,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -348,8 +348,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Display name for the permission that appears in the admin consent and app assignment experiences.
-{{% /md %}}</dd>
+    <dd>Display name for the permission that appears in the admin consent and app assignment experiences.
+</dd>
 
     <dt class="property-"
             title="">
@@ -357,8 +357,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -366,7 +366,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipaloauth2permission">[]Get<wbr>Service<wbr>Principal<wbr>Oauth2Permission</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -374,13 +374,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -389,7 +389,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipalapprole">Get<wbr>Service<wbr>Principal<wbr>App<wbr>Role[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -397,7 +397,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -405,8 +405,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Display name for the permission that appears in the admin consent and app assignment experiences.
-{{% /md %}}</dd>
+    <dd>Display name for the permission that appears in the admin consent and app assignment experiences.
+</dd>
 
     <dt class="property-"
             title="">
@@ -414,8 +414,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -423,7 +423,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipaloauth2permission">Get<wbr>Service<wbr>Principal<wbr>Oauth2Permission[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -431,13 +431,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -446,7 +446,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipalapprole">List[Get<wbr>Service<wbr>Principal<wbr>App<wbr>Role]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -454,7 +454,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -462,8 +462,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Display name for the permission that appears in the admin consent and app assignment experiences.
-{{% /md %}}</dd>
+    <dd>Display name for the permission that appears in the admin consent and app assignment experiences.
+</dd>
 
     <dt class="property-"
             title="">
@@ -471,8 +471,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,7 +480,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getserviceprincipaloauth2permission">List[Get<wbr>Service<wbr>Principal<wbr>Oauth2Permission]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -488,10 +488,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -504,18 +504,18 @@ The following output properties are available:
 
 
 <h4 id="getserviceprincipalapprole">Get<wbr>Service<wbr>Principal<wbr>App<wbr>Role</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azuread/types/output/#GetServicePrincipalAppRole">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azuread/sdk/v2/go/azuread/?tab=doc#GetServicePrincipalAppRole">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -524,8 +524,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether this app role definition can be assigned to users and groups, or to other applications (that are accessing this application in daemon service scenarios). Possible values are: `User` and `Application`, or both.
-{{% /md %}}</dd>
+    <dd>Specifies whether this app role definition can be assigned to users and groups, or to other applications (that are accessing this application in daemon service scenarios). Possible values are: `User` and `Application`, or both.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -533,8 +533,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Permission help text that appears in the admin app assignment and consent experiences.
-{{% /md %}}</dd>
+    <dd>Permission help text that appears in the admin app assignment and consent experiences.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -542,8 +542,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Display Name of the Azure AD Application associated with this Service Principal.
-{{% /md %}}</dd>
+    <dd>The Display Name of the Azure AD Application associated with this Service Principal.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -551,8 +551,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier of the `app_role`.
-{{% /md %}}</dd>
+    <dd>The unique identifier of the `app_role`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -560,8 +560,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines if the app role is enabled.
-{{% /md %}}</dd>
+    <dd>Determines if the app role is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -569,14 +569,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
-{{% /md %}}</dd>
+    <dd>Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -585,8 +585,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether this app role definition can be assigned to users and groups, or to other applications (that are accessing this application in daemon service scenarios). Possible values are: `User` and `Application`, or both.
-{{% /md %}}</dd>
+    <dd>Specifies whether this app role definition can be assigned to users and groups, or to other applications (that are accessing this application in daemon service scenarios). Possible values are: `User` and `Application`, or both.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -594,8 +594,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Permission help text that appears in the admin app assignment and consent experiences.
-{{% /md %}}</dd>
+    <dd>Permission help text that appears in the admin app assignment and consent experiences.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -603,8 +603,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Display Name of the Azure AD Application associated with this Service Principal.
-{{% /md %}}</dd>
+    <dd>The Display Name of the Azure AD Application associated with this Service Principal.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -612,8 +612,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier of the `app_role`.
-{{% /md %}}</dd>
+    <dd>The unique identifier of the `app_role`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -621,8 +621,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines if the app role is enabled.
-{{% /md %}}</dd>
+    <dd>Determines if the app role is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -630,14 +630,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
-{{% /md %}}</dd>
+    <dd>Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -646,8 +646,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether this app role definition can be assigned to users and groups, or to other applications (that are accessing this application in daemon service scenarios). Possible values are: `User` and `Application`, or both.
-{{% /md %}}</dd>
+    <dd>Specifies whether this app role definition can be assigned to users and groups, or to other applications (that are accessing this application in daemon service scenarios). Possible values are: `User` and `Application`, or both.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -655,8 +655,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Permission help text that appears in the admin app assignment and consent experiences.
-{{% /md %}}</dd>
+    <dd>Permission help text that appears in the admin app assignment and consent experiences.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -664,8 +664,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Display Name of the Azure AD Application associated with this Service Principal.
-{{% /md %}}</dd>
+    <dd>The Display Name of the Azure AD Application associated with this Service Principal.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -673,8 +673,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier of the `app_role`.
-{{% /md %}}</dd>
+    <dd>The unique identifier of the `app_role`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -682,8 +682,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Determines if the app role is enabled.
-{{% /md %}}</dd>
+    <dd>Determines if the app role is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -691,14 +691,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
-{{% /md %}}</dd>
+    <dd>Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -707,8 +707,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether this app role definition can be assigned to users and groups, or to other applications (that are accessing this application in daemon service scenarios). Possible values are: `User` and `Application`, or both.
-{{% /md %}}</dd>
+    <dd>Specifies whether this app role definition can be assigned to users and groups, or to other applications (that are accessing this application in daemon service scenarios). Possible values are: `User` and `Application`, or both.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -716,8 +716,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Permission help text that appears in the admin app assignment and consent experiences.
-{{% /md %}}</dd>
+    <dd>Permission help text that appears in the admin app assignment and consent experiences.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -725,8 +725,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Display Name of the Azure AD Application associated with this Service Principal.
-{{% /md %}}</dd>
+    <dd>The Display Name of the Azure AD Application associated with this Service Principal.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -734,8 +734,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier of the `app_role`.
-{{% /md %}}</dd>
+    <dd>The unique identifier of the `app_role`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -743,8 +743,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines if the app role is enabled.
-{{% /md %}}</dd>
+    <dd>Determines if the app role is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -752,29 +752,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
-{{% /md %}}</dd>
+    <dd>Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getserviceprincipaloauth2permission">Get<wbr>Service<wbr>Principal<wbr>Oauth2Permission</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azuread/types/input/#GetServicePrincipalOauth2Permission">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azuread/types/output/#GetServicePrincipalOauth2Permission">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azuread/sdk/v2/go/azuread/?tab=doc#GetServicePrincipalOauth2PermissionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azuread/sdk/v2/go/azuread/?tab=doc#GetServicePrincipalOauth2Permission">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -783,8 +783,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the admin consent
-{{% /md %}}</dd>
+    <dd>The description of the admin consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -792,8 +792,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the admin consent
-{{% /md %}}</dd>
+    <dd>The display name of the admin consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -801,8 +801,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier of the `app_role`.
-{{% /md %}}</dd>
+    <dd>The unique identifier of the `app_role`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -810,8 +810,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines if the app role is enabled.
-{{% /md %}}</dd>
+    <dd>Determines if the app role is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -819,8 +819,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the permission
-{{% /md %}}</dd>
+    <dd>The type of the permission
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -828,8 +828,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the user consent
-{{% /md %}}</dd>
+    <dd>The description of the user consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -837,8 +837,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the user consent
-{{% /md %}}</dd>
+    <dd>The display name of the user consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -846,14 +846,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
-{{% /md %}}</dd>
+    <dd>Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -862,8 +862,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the admin consent
-{{% /md %}}</dd>
+    <dd>The description of the admin consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -871,8 +871,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the admin consent
-{{% /md %}}</dd>
+    <dd>The display name of the admin consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -880,8 +880,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier of the `app_role`.
-{{% /md %}}</dd>
+    <dd>The unique identifier of the `app_role`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -889,8 +889,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines if the app role is enabled.
-{{% /md %}}</dd>
+    <dd>Determines if the app role is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -898,8 +898,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the permission
-{{% /md %}}</dd>
+    <dd>The type of the permission
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -907,8 +907,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the user consent
-{{% /md %}}</dd>
+    <dd>The description of the user consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -916,8 +916,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the user consent
-{{% /md %}}</dd>
+    <dd>The display name of the user consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -925,14 +925,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
-{{% /md %}}</dd>
+    <dd>Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -941,8 +941,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the admin consent
-{{% /md %}}</dd>
+    <dd>The description of the admin consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -950,8 +950,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the admin consent
-{{% /md %}}</dd>
+    <dd>The display name of the admin consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -959,8 +959,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier of the `app_role`.
-{{% /md %}}</dd>
+    <dd>The unique identifier of the `app_role`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -968,8 +968,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Determines if the app role is enabled.
-{{% /md %}}</dd>
+    <dd>Determines if the app role is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -977,8 +977,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the permission
-{{% /md %}}</dd>
+    <dd>The type of the permission
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -986,8 +986,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the user consent
-{{% /md %}}</dd>
+    <dd>The description of the user consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -995,8 +995,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the user consent
-{{% /md %}}</dd>
+    <dd>The display name of the user consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1004,14 +1004,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
-{{% /md %}}</dd>
+    <dd>Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1020,8 +1020,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the admin consent
-{{% /md %}}</dd>
+    <dd>The description of the admin consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1029,8 +1029,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the admin consent
-{{% /md %}}</dd>
+    <dd>The display name of the admin consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1038,8 +1038,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier of the `app_role`.
-{{% /md %}}</dd>
+    <dd>The unique identifier of the `app_role`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1047,8 +1047,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines if the app role is enabled.
-{{% /md %}}</dd>
+    <dd>Determines if the app role is enabled.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1056,8 +1056,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the permission
-{{% /md %}}</dd>
+    <dd>The type of the permission
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1065,8 +1065,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the user consent
-{{% /md %}}</dd>
+    <dd>The description of the user consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1074,8 +1074,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The display name of the user consent
-{{% /md %}}</dd>
+    <dd>The display name of the user consent
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1083,11 +1083,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
-{{% /md %}}</dd>
+    <dd>Specifies the value of the roles claim that the application should expect in the authentication and access tokens.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -18,26 +18,26 @@ Provides a DigitalOcean Kubernetes node pool resource. While the default node po
 
 
 ## Create a KubernetesNodePool Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#KubernetesNodePool">KubernetesNodePool</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#KubernetesNodePoolArgs">KubernetesNodePoolArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">KubernetesNodePool</span><span class="p">(resource_name, opts=None, </span>auto_scale=None<span class="p">, </span>cluster_id=None<span class="p">, </span>labels=None<span class="p">, </span>max_nodes=None<span class="p">, </span>min_nodes=None<span class="p">, </span>name=None<span class="p">, </span>node_count=None<span class="p">, </span>size=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewKubernetesNodePool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#KubernetesNodePoolArgs">KubernetesNodePoolArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#KubernetesNodePool">KubernetesNodePool</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean.KubernetesNodePool.html">KubernetesNodePool</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.DigitalOcean.KubernetesNodePoolArgs.html">KubernetesNodePoolArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Provides a DigitalOcean Kubernetes node pool resource. While the default node po
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Provides a DigitalOcean Kubernetes node pool resource. While the default node po
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Provides a DigitalOcean Kubernetes node pool resource. While the default node po
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Provides a DigitalOcean Kubernetes node pool resource. While the default node po
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## KubernetesNodePool Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Kubernetes cluster to which the node pool is associated.
-{{% /md %}}</dd>
+    <dd>The ID of the Kubernetes cluster to which the node pool is associated.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The slug identifier for the type of Droplet to be used as workers in the node pool.
-{{% /md %}}</dd>
+    <dd>The slug identifier for the type of Droplet to be used as workers in the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
-{{% /md %}}</dd>
+    <dd>Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
-{{% /md %}}</dd>
+    <dd>A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
-{{% /md %}}</dd>
+    <dd>The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,14 +276,14 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag names to be applied to the Kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>A list of tag names to be applied to the Kubernetes cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -292,8 +292,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Kubernetes cluster to which the node pool is associated.
-{{% /md %}}</dd>
+    <dd>The ID of the Kubernetes cluster to which the node pool is associated.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -301,8 +301,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The slug identifier for the type of Droplet to be used as workers in the node pool.
-{{% /md %}}</dd>
+    <dd>The slug identifier for the type of Droplet to be used as workers in the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
-{{% /md %}}</dd>
+    <dd>Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
-{{% /md %}}</dd>
+    <dd>A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,8 +328,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
-{{% /md %}}</dd>
+    <dd>The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,14 +364,14 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag names to be applied to the Kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>A list of tag names to be applied to the Kubernetes cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -380,8 +380,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Kubernetes cluster to which the node pool is associated.
-{{% /md %}}</dd>
+    <dd>The ID of the Kubernetes cluster to which the node pool is associated.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -389,8 +389,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">Droplet<wbr>Slug</span>
     </dt>
-    <dd>{{% md %}}The slug identifier for the type of Droplet to be used as workers in the node pool.
-{{% /md %}}</dd>
+    <dd>The slug identifier for the type of Droplet to be used as workers in the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
-{{% /md %}}</dd>
+    <dd>Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,8 +407,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
-{{% /md %}}</dd>
+    <dd>A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,8 +416,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,8 +425,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,8 +434,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
-{{% /md %}}</dd>
+    <dd>The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,14 +452,14 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag names to be applied to the Kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>A list of tag names to be applied to the Kubernetes cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -468,8 +468,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Kubernetes cluster to which the node pool is associated.
-{{% /md %}}</dd>
+    <dd>The ID of the Kubernetes cluster to which the node pool is associated.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -477,8 +477,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The slug identifier for the type of Droplet to be used as workers in the node pool.
-{{% /md %}}</dd>
+    <dd>The slug identifier for the type of Droplet to be used as workers in the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
-{{% /md %}}</dd>
+    <dd>Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
-{{% /md %}}</dd>
+    <dd>A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,8 +513,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,8 +522,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -531,8 +531,8 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
-{{% /md %}}</dd>
+    <dd>The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -540,11 +540,11 @@ The KubernetesNodePool resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag names to be applied to the Kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>A list of tag names to be applied to the Kubernetes cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -558,7 +558,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -567,8 +567,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
-{{% /md %}}</dd>
+    <dd>A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -576,7 +576,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -584,20 +584,20 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesnodepoolnode">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Outputs.<wbr>Kubernetes<wbr>Node<wbr>Pool<wbr>Node&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of nodes in the pool. Each node exports the following attributes:
+    <dd>A list of nodes in the pool. Each node exports the following attributes:
 - `id` -  A unique ID that can be used to identify and reference the node.
 - `name` - The auto-generated name for the node.
 - `status` -  A string indicating the current status of the individual node.
 - `droplet_id` - The id of the node's droplet
 - `created_at` - The date and time when the node was created.
 - `updated_at` - The date and time when the node was last updated.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -606,8 +606,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
-{{% /md %}}</dd>
+    <dd>A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -615,7 +615,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -623,20 +623,20 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesnodepoolnode">[]Kubernetes<wbr>Node<wbr>Pool<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}A list of nodes in the pool. Each node exports the following attributes:
+    <dd>A list of nodes in the pool. Each node exports the following attributes:
 - `id` -  A unique ID that can be used to identify and reference the node.
 - `name` - The auto-generated name for the node.
 - `status` -  A string indicating the current status of the individual node.
 - `droplet_id` - The id of the node's droplet
 - `created_at` - The date and time when the node was created.
 - `updated_at` - The date and time when the node was last updated.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -645,8 +645,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
-{{% /md %}}</dd>
+    <dd>A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -654,7 +654,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -662,20 +662,20 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesnodepoolnode">Kubernetes<wbr>Node<wbr>Pool<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of nodes in the pool. Each node exports the following attributes:
+    <dd>A list of nodes in the pool. Each node exports the following attributes:
 - `id` -  A unique ID that can be used to identify and reference the node.
 - `name` - The auto-generated name for the node.
 - `status` -  A string indicating the current status of the individual node.
 - `droplet_id` - The id of the node's droplet
 - `created_at` - The date and time when the node was created.
 - `updated_at` - The date and time when the node was last updated.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -684,8 +684,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
-{{% /md %}}</dd>
+    <dd>A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,7 +693,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -701,17 +701,17 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesnodepoolnode">List[Kubernetes<wbr>Node<wbr>Pool<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}A list of nodes in the pool. Each node exports the following attributes:
+    <dd>A list of nodes in the pool. Each node exports the following attributes:
 - `id` -  A unique ID that can be used to identify and reference the node.
 - `name` - The auto-generated name for the node.
 - `status` -  A string indicating the current status of the individual node.
 - `droplet_id` - The id of the node's droplet
 - `created_at` - The date and time when the node was created.
 - `updated_at` - The date and time when the node was last updated.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -722,25 +722,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing KubernetesNodePool Resource {#look-up}
 
 Get an existing KubernetesNodePool resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#KubernetesNodePoolState">KubernetesNodePoolState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#KubernetesNodePool">KubernetesNodePool</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>actual_node_count=None<span class="p">, </span>auto_scale=None<span class="p">, </span>cluster_id=None<span class="p">, </span>labels=None<span class="p">, </span>max_nodes=None<span class="p">, </span>min_nodes=None<span class="p">, </span>name=None<span class="p">, </span>node_count=None<span class="p">, </span>nodes=None<span class="p">, </span>size=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetKubernetesNodePool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#KubernetesNodePoolState">KubernetesNodePoolState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#KubernetesNodePool">KubernetesNodePool</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean.KubernetesNodePool.html">KubernetesNodePool</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean..KubernetesNodePoolState.html">KubernetesNodePoolState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -765,9 +765,9 @@ Get an existing KubernetesNodePool resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -780,36 +780,9 @@ Get an existing KubernetesNodePool resource's state with the given name, ID, and
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -834,13 +807,40 @@ Get an existing KubernetesNodePool resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -849,8 +849,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
-{{% /md %}}</dd>
+    <dd>A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -858,8 +858,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
-{{% /md %}}</dd>
+    <dd>Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -867,8 +867,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Kubernetes cluster to which the node pool is associated.
-{{% /md %}}</dd>
+    <dd>The ID of the Kubernetes cluster to which the node pool is associated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -876,8 +876,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
-{{% /md %}}</dd>
+    <dd>A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -885,8 +885,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -894,8 +894,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -903,8 +903,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -912,8 +912,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
-{{% /md %}}</dd>
+    <dd>The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,14 +921,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesnodepoolnode">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Inputs.<wbr>Kubernetes<wbr>Node<wbr>Pool<wbr>Node<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of nodes in the pool. Each node exports the following attributes:
+    <dd>A list of nodes in the pool. Each node exports the following attributes:
 - `id` -  A unique ID that can be used to identify and reference the node.
 - `name` - The auto-generated name for the node.
 - `status` -  A string indicating the current status of the individual node.
 - `droplet_id` - The id of the node's droplet
 - `created_at` - The date and time when the node was created.
 - `updated_at` - The date and time when the node was last updated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,8 +936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The slug identifier for the type of Droplet to be used as workers in the node pool.
-{{% /md %}}</dd>
+    <dd>The slug identifier for the type of Droplet to be used as workers in the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,14 +945,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag names to be applied to the Kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>A list of tag names to be applied to the Kubernetes cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -961,8 +961,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
-{{% /md %}}</dd>
+    <dd>A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,8 +970,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
-{{% /md %}}</dd>
+    <dd>Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,8 +979,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Kubernetes cluster to which the node pool is associated.
-{{% /md %}}</dd>
+    <dd>The ID of the Kubernetes cluster to which the node pool is associated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -988,8 +988,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
-{{% /md %}}</dd>
+    <dd>A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -997,8 +997,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1006,8 +1006,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1015,8 +1015,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1024,8 +1024,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
-{{% /md %}}</dd>
+    <dd>The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,14 +1033,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesnodepoolnode">[]Kubernetes<wbr>Node<wbr>Pool<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}A list of nodes in the pool. Each node exports the following attributes:
+    <dd>A list of nodes in the pool. Each node exports the following attributes:
 - `id` -  A unique ID that can be used to identify and reference the node.
 - `name` - The auto-generated name for the node.
 - `status` -  A string indicating the current status of the individual node.
 - `droplet_id` - The id of the node's droplet
 - `created_at` - The date and time when the node was created.
 - `updated_at` - The date and time when the node was last updated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The slug identifier for the type of Droplet to be used as workers in the node pool.
-{{% /md %}}</dd>
+    <dd>The slug identifier for the type of Droplet to be used as workers in the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,14 +1057,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag names to be applied to the Kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>A list of tag names to be applied to the Kubernetes cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1073,8 +1073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
-{{% /md %}}</dd>
+    <dd>A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
-{{% /md %}}</dd>
+    <dd>Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Kubernetes cluster to which the node pool is associated.
-{{% /md %}}</dd>
+    <dd>The ID of the Kubernetes cluster to which the node pool is associated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
-{{% /md %}}</dd>
+    <dd>A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
-{{% /md %}}</dd>
+    <dd>The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,14 +1145,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesnodepoolnode">Kubernetes<wbr>Node<wbr>Pool<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of nodes in the pool. Each node exports the following attributes:
+    <dd>A list of nodes in the pool. Each node exports the following attributes:
 - `id` -  A unique ID that can be used to identify and reference the node.
 - `name` - The auto-generated name for the node.
 - `status` -  A string indicating the current status of the individual node.
 - `droplet_id` - The id of the node's droplet
 - `created_at` - The date and time when the node was created.
 - `updated_at` - The date and time when the node was last updated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,8 +1160,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Droplet<wbr>Slug</span>
     </dt>
-    <dd>{{% md %}}The slug identifier for the type of Droplet to be used as workers in the node pool.
-{{% /md %}}</dd>
+    <dd>The slug identifier for the type of Droplet to be used as workers in the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,14 +1169,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag names to be applied to the Kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>A list of tag names to be applied to the Kubernetes cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1185,8 +1185,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
-{{% /md %}}</dd>
+    <dd>A computed field representing the actual number of nodes in the node pool, which is especially useful when auto-scaling is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,8 +1194,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
-{{% /md %}}</dd>
+    <dd>Enable auto-scaling of the number of nodes in the node pool within the given min/max range.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,8 +1203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Kubernetes cluster to which the node pool is associated.
-{{% /md %}}</dd>
+    <dd>The ID of the Kubernetes cluster to which the node pool is associated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1212,8 +1212,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
-{{% /md %}}</dd>
+    <dd>A map of key/value pairs to apply to nodes in the pool. The labels are exposed in the Kubernetes API as labels in the metadata of the corresponding [Node resources](https://kubernetes.io/docs/concepts/architecture/nodes/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,8 +1221,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the maximum number of nodes that the node pool can be scaled up to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,8 +1230,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
-{{% /md %}}</dd>
+    <dd>If auto-scaling is enabled, this represents the minimum number of nodes that the node pool can be scaled down to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,8 +1239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1248,8 +1248,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
-{{% /md %}}</dd>
+    <dd>The number of Droplet instances in the node pool. If auto-scaling is enabled, this should only be set if the desired result is to explicitly reset the number of nodes to this value. If auto-scaling is enabled, and the node count is outside of the given min/max range, it will use the min nodes value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1257,14 +1257,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#kubernetesnodepoolnode">List[Kubernetes<wbr>Node<wbr>Pool<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}A list of nodes in the pool. Each node exports the following attributes:
+    <dd>A list of nodes in the pool. Each node exports the following attributes:
 - `id` -  A unique ID that can be used to identify and reference the node.
 - `name` - The auto-generated name for the node.
 - `status` -  A string indicating the current status of the individual node.
 - `droplet_id` - The id of the node's droplet
 - `created_at` - The date and time when the node was created.
 - `updated_at` - The date and time when the node was last updated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,8 +1272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The slug identifier for the type of Droplet to be used as workers in the node pool.
-{{% /md %}}</dd>
+    <dd>The slug identifier for the type of Droplet to be used as workers in the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,11 +1281,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of tag names to be applied to the Kubernetes cluster.
-{{% /md %}}</dd>
+    <dd>A list of tag names to be applied to the Kubernetes cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1300,18 +1300,18 @@ The following state arguments are supported:
 
 
 <h4 id="kubernetesnodepoolnode">Kubernetes<wbr>Node<wbr>Pool<wbr>Node</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/output/#KubernetesNodePoolNode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#KubernetesNodePoolNodeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1320,7 +1320,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,7 +1328,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1336,8 +1336,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID that can be used to identify and reference the node pool.
-{{% /md %}}</dd>
+    <dd>A unique ID that can be used to identify and reference the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1345,8 +1345,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,7 +1354,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1362,13 +1362,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1377,7 +1377,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,7 +1385,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,8 +1393,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID that can be used to identify and reference the node pool.
-{{% /md %}}</dd>
+    <dd>A unique ID that can be used to identify and reference the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1402,8 +1402,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1411,7 +1411,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,13 +1419,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1434,7 +1434,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,7 +1442,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,8 +1450,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID that can be used to identify and reference the node pool.
-{{% /md %}}</dd>
+    <dd>A unique ID that can be used to identify and reference the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1459,8 +1459,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,7 +1468,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1476,13 +1476,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1491,7 +1491,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1499,7 +1499,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,8 +1507,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique ID that can be used to identify and reference the node pool.
-{{% /md %}}</dd>
+    <dd>A unique ID that can be used to identify and reference the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,8 +1516,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for the node pool.
-{{% /md %}}</dd>
+    <dd>A name for the node pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1525,7 +1525,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,10 +1533,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

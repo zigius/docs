@@ -20,29 +20,29 @@ The `consul..AclRole` data source returns the information related to a
 
 ## Using GetAclRole {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAclRole<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#GetAclRoleArgs">GetAclRoleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#GetAclRoleResult">GetAclRoleResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_acl_role(</span>description=None<span class="p">, </span>name=None<span class="p">, </span>namespace=None<span class="p">, </span>policies=None<span class="p">, </span>service_identities=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAclRole<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetAclRoleArgs">GetAclRoleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#LookupAclRoleResult">LookupAclRoleResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAclRole </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul.GetAclRoleResult.html">GetAclRoleResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul.GetAclRoleArgs.html">GetAclRoleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -50,7 +50,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -59,8 +59,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The name of the ACL Role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -68,8 +68,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The description of the ACL Role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -77,8 +77,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to lookup the role.
-{{% /md %}}</dd>
+    <dd>The namespace to lookup the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -86,9 +86,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclrolepolicy">List&lt;Get<wbr>Acl<wbr>Role<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of policies associated with the ACL Role. Each entry has
+    <dd>The list of policies associated with the ACL Role. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -96,15 +96,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclroleserviceidentity">List&lt;Get<wbr>Acl<wbr>Role<wbr>Service<wbr>Identity<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of service identities associated with the ACL
+    <dd>The list of service identities associated with the ACL
 Role. Each entry has a `service_name` attribute and a list of `datacenters`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -113,8 +113,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The name of the ACL Role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -122,8 +122,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The description of the ACL Role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -131,8 +131,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to lookup the role.
-{{% /md %}}</dd>
+    <dd>The namespace to lookup the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -140,9 +140,9 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclrolepolicy">[]Get<wbr>Acl<wbr>Role<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The list of policies associated with the ACL Role. Each entry has
+    <dd>The list of policies associated with the ACL Role. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -150,15 +150,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclroleserviceidentity">[]Get<wbr>Acl<wbr>Role<wbr>Service<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}The list of service identities associated with the ACL
+    <dd>The list of service identities associated with the ACL
 Role. Each entry has a `service_name` attribute and a list of `datacenters`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -167,8 +167,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The name of the ACL Role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -176,8 +176,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The description of the ACL Role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -185,8 +185,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to lookup the role.
-{{% /md %}}</dd>
+    <dd>The namespace to lookup the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -194,9 +194,9 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclrolepolicy">Get<wbr>Acl<wbr>Role<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of policies associated with the ACL Role. Each entry has
+    <dd>The list of policies associated with the ACL Role. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -204,15 +204,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclroleserviceidentity">Get<wbr>Acl<wbr>Role<wbr>Service<wbr>Identity[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of service identities associated with the ACL
+    <dd>The list of service identities associated with the ACL
 Role. Each entry has a `service_name` attribute and a list of `datacenters`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -221,8 +221,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The name of the ACL Role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,8 +230,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The description of the ACL Role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,8 +239,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to lookup the role.
-{{% /md %}}</dd>
+    <dd>The namespace to lookup the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,9 +248,9 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclrolepolicy">List[Get<wbr>Acl<wbr>Role<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}The list of policies associated with the ACL Role. Each entry has
+    <dd>The list of policies associated with the ACL Role. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,12 +258,12 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclroleserviceidentity">List[Get<wbr>Acl<wbr>Role<wbr>Service<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}The list of service identities associated with the ACL
+    <dd>The list of service identities associated with the ACL
 Role. Each entry has a `service_name` attribute and a list of `datacenters`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -279,7 +279,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -288,8 +288,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -297,7 +297,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -305,8 +305,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The description of the ACL Role.
+</dd>
 
     <dt class="property-"
             title="">
@@ -314,7 +314,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -322,9 +322,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclrolepolicy">List&lt;Get<wbr>Acl<wbr>Role<wbr>Policy&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of policies associated with the ACL Role. Each entry has
+    <dd>The list of policies associated with the ACL Role. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -332,15 +332,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclroleserviceidentity">List&lt;Get<wbr>Acl<wbr>Role<wbr>Service<wbr>Identity&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of service identities associated with the ACL
+    <dd>The list of service identities associated with the ACL
 Role. Each entry has a `service_name` attribute and a list of `datacenters`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -349,8 +349,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -358,7 +358,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -366,8 +366,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The description of the ACL Role.
+</dd>
 
     <dt class="property-"
             title="">
@@ -375,7 +375,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -383,9 +383,9 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclrolepolicy">[]Get<wbr>Acl<wbr>Role<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The list of policies associated with the ACL Role. Each entry has
+    <dd>The list of policies associated with the ACL Role. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -393,15 +393,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclroleserviceidentity">[]Get<wbr>Acl<wbr>Role<wbr>Service<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}The list of service identities associated with the ACL
+    <dd>The list of service identities associated with the ACL
 Role. Each entry has a `service_name` attribute and a list of `datacenters`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -410,8 +410,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -419,7 +419,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -427,8 +427,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The description of the ACL Role.
+</dd>
 
     <dt class="property-"
             title="">
@@ -436,7 +436,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -444,9 +444,9 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclrolepolicy">Get<wbr>Acl<wbr>Role<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of policies associated with the ACL Role. Each entry has
+    <dd>The list of policies associated with the ACL Role. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -454,15 +454,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclroleserviceidentity">Get<wbr>Acl<wbr>Role<wbr>Service<wbr>Identity[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of service identities associated with the ACL
+    <dd>The list of service identities associated with the ACL
 Role. Each entry has a `service_name` attribute and a list of `datacenters`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -471,8 +471,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,7 +480,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -488,8 +488,8 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The description of the ACL Role.
+</dd>
 
     <dt class="property-"
             title="">
@@ -497,7 +497,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -505,9 +505,9 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclrolepolicy">List[Get<wbr>Acl<wbr>Role<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}The list of policies associated with the ACL Role. Each entry has
+    <dd>The list of policies associated with the ACL Role. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -515,12 +515,12 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaclroleserviceidentity">List[Get<wbr>Acl<wbr>Role<wbr>Service<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}The list of service identities associated with the ACL
+    <dd>The list of service identities associated with the ACL
 Role. Each entry has a `service_name` attribute and a list of `datacenters`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -533,18 +533,18 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
 
 
 <h4 id="getaclrolepolicy">Get<wbr>Acl<wbr>Role<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/input/#GetAclRolePolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/output/#GetAclRolePolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetAclRolePolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetAclRolePolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -553,7 +553,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -561,14 +561,14 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The name of the ACL Role.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -577,7 +577,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -585,14 +585,14 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The name of the ACL Role.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -601,7 +601,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -609,14 +609,14 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The name of the ACL Role.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -625,7 +625,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -633,29 +633,29 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ACL Role.
-{{% /md %}}</dd>
+    <dd>The name of the ACL Role.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getaclroleserviceidentity">Get<wbr>Acl<wbr>Role<wbr>Service<wbr>Identity</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/input/#GetAclRoleServiceIdentity">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/output/#GetAclRoleServiceIdentity">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetAclRoleServiceIdentityArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetAclRoleServiceIdentity">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -664,7 +664,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -672,13 +672,13 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -687,7 +687,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,13 +695,13 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -710,7 +710,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -718,13 +718,13 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -733,7 +733,7 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,10 +741,10 @@ Role. Each entry has a `service_name` attribute and a list of `datacenters`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

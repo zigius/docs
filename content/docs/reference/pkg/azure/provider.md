@@ -18,26 +18,26 @@ construction to achieve fine-grained programmatic control over provider settings
 
 
 ## Create a Provider Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/#Provider">Provider</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/#ProviderArgs">ProviderArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Provider</span><span class="p">(resource_name, opts=None, </span>auxiliary_tenant_ids=None<span class="p">, </span>client_certificate_password=None<span class="p">, </span>client_certificate_path=None<span class="p">, </span>client_id=None<span class="p">, </span>client_secret=None<span class="p">, </span>disable_correlation_request_id=None<span class="p">, </span>disable_terraform_partner_id=None<span class="p">, </span>environment=None<span class="p">, </span>features=None<span class="p">, </span>msi_endpoint=None<span class="p">, </span>partner_id=None<span class="p">, </span>skip_credentials_validation=None<span class="p">, </span>skip_provider_registration=None<span class="p">, </span>storage_use_azuread=None<span class="p">, </span>subscription_id=None<span class="p">, </span>tenant_id=None<span class="p">, </span>use_msi=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewProvider<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/?tab=doc#ProviderArgs">ProviderArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/?tab=doc#Provider">Provider</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Provider.html">Provider</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Pulumi.AzureArgs.html">ProviderArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ construction to achieve fine-grained programmatic control over provider settings
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ construction to achieve fine-grained programmatic control over provider settings
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ construction to achieve fine-grained programmatic control over provider settings
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ construction to achieve fine-grained programmatic control over provider settings
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Provider Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -204,7 +204,7 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -212,9 +212,9 @@ The Provider resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client
+    <dd>The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client
 Certificate
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,9 +222,9 @@ Certificate
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service
+    <dd>The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service
 Principal using a Client Certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -232,8 +232,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Client ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -241,8 +241,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
-{{% /md %}}</dd>
+    <dd>The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,8 +250,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This will disable the x-ms-correlation-request-id header.
-{{% /md %}}</dd>
+    <dd>This will disable the x-ms-correlation-request-id header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,8 +259,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
-{{% /md %}}</dd>
+    <dd>This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,9 +268,9 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud Environment which should be used. Possible values are public, usgovernment, german, and china. Defaults to
+    <dd>The Cloud Environment which should be used. Possible values are public, usgovernment, german, and china. Defaults to
 public.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,7 +278,7 @@ public.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeatures">Provider<wbr>Features<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -286,9 +286,9 @@ public.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected
+    <dd>The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected
 automatically.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
-{{% /md %}}</dd>
+    <dd>A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This will cause the AzureRM Provider to skip verifying the credentials being used are valid.
-{{% /md %}}</dd>
+    <dd>This will cause the AzureRM Provider to skip verifying the credentials being used are valid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,9 +314,9 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already
+    <dd>Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already
 registered?
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,8 +324,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the AzureRM Provider use AzureAD to access the Storage Data Plane API's?
-{{% /md %}}</dd>
+    <dd>Should the AzureRM Provider use AzureAD to access the Storage Data Plane API's?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -333,8 +333,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Subscription ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Subscription ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,8 +342,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Tenant ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,14 +351,14 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allowed Managed Service Identity be used for Authentication.
-{{% /md %}}</dd>
+    <dd>Allowed Managed Service Identity be used for Authentication.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -367,7 +367,7 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,9 +375,9 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client
+    <dd>The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client
 Certificate
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,9 +385,9 @@ Certificate
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service
+    <dd>The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service
 Principal using a Client Certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Client ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
-{{% /md %}}</dd>
+    <dd>The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This will disable the x-ms-correlation-request-id header.
-{{% /md %}}</dd>
+    <dd>This will disable the x-ms-correlation-request-id header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
-{{% /md %}}</dd>
+    <dd>This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,9 +431,9 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud Environment which should be used. Possible values are public, usgovernment, german, and china. Defaults to
+    <dd>The Cloud Environment which should be used. Possible values are public, usgovernment, german, and china. Defaults to
 public.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,7 +441,7 @@ public.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeatures">Provider<wbr>Features</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,9 +449,9 @@ public.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected
+    <dd>The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected
 automatically.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
-{{% /md %}}</dd>
+    <dd>A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This will cause the AzureRM Provider to skip verifying the credentials being used are valid.
-{{% /md %}}</dd>
+    <dd>This will cause the AzureRM Provider to skip verifying the credentials being used are valid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,9 +477,9 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already
+    <dd>Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already
 registered?
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,8 +487,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the AzureRM Provider use AzureAD to access the Storage Data Plane API's?
-{{% /md %}}</dd>
+    <dd>Should the AzureRM Provider use AzureAD to access the Storage Data Plane API's?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,8 +496,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Subscription ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Subscription ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Tenant ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,14 +514,14 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allowed Managed Service Identity be used for Authentication.
-{{% /md %}}</dd>
+    <dd>Allowed Managed Service Identity be used for Authentication.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -530,7 +530,7 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,9 +538,9 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client
+    <dd>The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client
 Certificate
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,9 +548,9 @@ Certificate
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service
+    <dd>The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service
 Principal using a Client Certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -558,8 +558,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Client ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -567,8 +567,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
-{{% /md %}}</dd>
+    <dd>The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,8 +576,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This will disable the x-ms-correlation-request-id header.
-{{% /md %}}</dd>
+    <dd>This will disable the x-ms-correlation-request-id header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,8 +585,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
-{{% /md %}}</dd>
+    <dd>This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -594,9 +594,9 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud Environment which should be used. Possible values are public, usgovernment, german, and china. Defaults to
+    <dd>The Cloud Environment which should be used. Possible values are public, usgovernment, german, and china. Defaults to
 public.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,7 +604,7 @@ public.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeatures">Provider<wbr>Features</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,9 +612,9 @@ public.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected
+    <dd>The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected
 automatically.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -622,8 +622,8 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
-{{% /md %}}</dd>
+    <dd>A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,8 +631,8 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This will cause the AzureRM Provider to skip verifying the credentials being used are valid.
-{{% /md %}}</dd>
+    <dd>This will cause the AzureRM Provider to skip verifying the credentials being used are valid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -640,9 +640,9 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already
+    <dd>Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already
 registered?
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the AzureRM Provider use AzureAD to access the Storage Data Plane API's?
-{{% /md %}}</dd>
+    <dd>Should the AzureRM Provider use AzureAD to access the Storage Data Plane API's?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,8 +659,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Subscription ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Subscription ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,8 +668,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Tenant ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -677,14 +677,14 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Allowed Managed Service Identity be used for Authentication.
-{{% /md %}}</dd>
+    <dd>Allowed Managed Service Identity be used for Authentication.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -693,7 +693,7 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -701,9 +701,9 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client
+    <dd>The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client
 Certificate
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,9 +711,9 @@ Certificate
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service
+    <dd>The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service
 Principal using a Client Certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,8 +721,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Client ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Client ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -730,8 +730,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
-{{% /md %}}</dd>
+    <dd>The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -739,8 +739,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This will disable the x-ms-correlation-request-id header.
-{{% /md %}}</dd>
+    <dd>This will disable the x-ms-correlation-request-id header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -748,8 +748,8 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
-{{% /md %}}</dd>
+    <dd>This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -757,9 +757,9 @@ Principal using a Client Certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Cloud Environment which should be used. Possible values are public, usgovernment, german, and china. Defaults to
+    <dd>The Cloud Environment which should be used. Possible values are public, usgovernment, german, and china. Defaults to
 public.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,7 +767,7 @@ public.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeatures">Dict[Provider<wbr>Features]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -775,9 +775,9 @@ public.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected
+    <dd>The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected
 automatically.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,8 +785,8 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
-{{% /md %}}</dd>
+    <dd>A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,8 +794,8 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This will cause the AzureRM Provider to skip verifying the credentials being used are valid.
-{{% /md %}}</dd>
+    <dd>This will cause the AzureRM Provider to skip verifying the credentials being used are valid.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,9 +803,9 @@ automatically.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already
+    <dd>Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already
 registered?
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -813,8 +813,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the AzureRM Provider use AzureAD to access the Storage Data Plane API's?
-{{% /md %}}</dd>
+    <dd>Should the AzureRM Provider use AzureAD to access the Storage Data Plane API's?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -822,8 +822,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Subscription ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Subscription ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -831,8 +831,8 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID which should be used.
-{{% /md %}}</dd>
+    <dd>The Tenant ID which should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -840,11 +840,11 @@ registered?
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allowed Managed Service Identity be used for Authentication.
-{{% /md %}}</dd>
+    <dd>Allowed Managed Service Identity be used for Authentication.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -858,7 +858,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -867,13 +867,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -882,13 +882,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -897,13 +897,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -912,10 +912,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -931,18 +931,18 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 <h4 id="providerfeatures">Provider<wbr>Features</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ProviderFeatures">input</a>   API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/?tab=doc#ProviderFeaturesArgs">input</a>   API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -951,7 +951,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeatureskeyvault">Provider<wbr>Features<wbr>Key<wbr>Vault<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,7 +959,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeaturesvirtualmachine">Provider<wbr>Features<wbr>Virtual<wbr>Machine<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,13 +967,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeaturesvirtualmachinescaleset">Provider<wbr>Features<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -982,7 +982,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeatureskeyvault">Provider<wbr>Features<wbr>Key<wbr>Vault</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -990,7 +990,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeaturesvirtualmachine">Provider<wbr>Features<wbr>Virtual<wbr>Machine</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,13 +998,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeaturesvirtualmachinescaleset">Provider<wbr>Features<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1013,7 +1013,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeatureskeyvault">Provider<wbr>Features<wbr>Key<wbr>Vault</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1021,7 +1021,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeaturesvirtualmachine">Provider<wbr>Features<wbr>Virtual<wbr>Machine</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,13 +1029,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeaturesvirtualmachinescaleset">Provider<wbr>Features<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1044,7 +1044,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeatureskeyvault">Dict[Provider<wbr>Features<wbr>Key<wbr>Vault]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1052,7 +1052,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeaturesvirtualmachine">Dict[Provider<wbr>Features<wbr>Virtual<wbr>Machine]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,28 +1060,28 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#providerfeaturesvirtualmachinescaleset">Dict[Provider<wbr>Features<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="providerfeatureskeyvault">Provider<wbr>Features<wbr>Key<wbr>Vault</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ProviderFeaturesKeyVault">input</a>   API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/?tab=doc#ProviderFeaturesKeyVaultArgs">input</a>   API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1090,7 +1090,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,13 +1098,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1113,7 +1113,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,13 +1121,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1136,7 +1136,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,13 +1144,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1159,7 +1159,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,28 +1167,28 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="providerfeaturesvirtualmachine">Provider<wbr>Features<wbr>Virtual<wbr>Machine</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ProviderFeaturesVirtualMachine">input</a>   API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/?tab=doc#ProviderFeaturesVirtualMachineArgs">input</a>   API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1197,13 +1197,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1212,13 +1212,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1227,13 +1227,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1242,28 +1242,28 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="providerfeaturesvirtualmachinescaleset">Provider<wbr>Features<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ProviderFeaturesVirtualMachineScaleSet">input</a>   API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/?tab=doc#ProviderFeaturesVirtualMachineScaleSetArgs">input</a>   API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1272,13 +1272,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1287,13 +1287,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1302,13 +1302,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1317,10 +1317,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

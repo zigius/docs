@@ -19,26 +19,26 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/instanceGroupMa
 
 
 ## Create a InstanceGroupManager Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#InstanceGroupManager">InstanceGroupManager</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#InstanceGroupManagerArgs">InstanceGroupManagerArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">InstanceGroupManager</span><span class="p">(resource_name, opts=None, </span>auto_healing_policies=None<span class="p">, </span>base_instance_name=None<span class="p">, </span>description=None<span class="p">, </span>name=None<span class="p">, </span>named_ports=None<span class="p">, </span>project=None<span class="p">, </span>target_pools=None<span class="p">, </span>target_size=None<span class="p">, </span>update_policy=None<span class="p">, </span>versions=None<span class="p">, </span>wait_for_instances=None<span class="p">, </span>zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewInstanceGroupManager<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerArgs">InstanceGroupManagerArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManager">InstanceGroupManager</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.InstanceGroupManager.html">InstanceGroupManager</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.InstanceGroupManagerArgs.html">InstanceGroupManagerArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -75,9 +75,9 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/instanceGroupMa
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -95,9 +95,9 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/instanceGroupMa
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -144,9 +144,9 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/instanceGroupMa
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -183,7 +183,7 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/instanceGroupMa
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## InstanceGroupManager Resource Properties {#properties}
 
@@ -196,7 +196,7 @@ The InstanceGroupManager resource accepts the following [input]({{< relref "/doc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -205,13 +205,13 @@ The InstanceGroupManager resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The base instance name to use for
+    <dd>The base instance name to use for
 instances in this group. The value must be a valid
 [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) name. Supported characters
 are lowercase letters, numbers, and hyphens (-). Instances are named by
 appending a hyphen and a random four-character string to the base instance
 name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -219,10 +219,10 @@ name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversion">List&lt;Instance<wbr>Group<wbr>Manager<wbr>Version<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Application versions managed by this instance group. Each
+    <dd>Application versions managed by this instance group. Each
 version deals with a specific instance template, allowing canary release scenarios.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,9 +230,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerautohealingpolicies">Instance<wbr>Group<wbr>Manager<wbr>Auto<wbr>Healing<wbr>Policies<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The autohealing policies for this managed instance
+    <dd>The autohealing policies for this managed instance
 group. You can specify only one value. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances#monitoring_groups).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,9 +240,9 @@ group. You can specify only one value. Structure is documented below. For more i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional textual description of the instance
+    <dd>An optional textual description of the instance
 group manager.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,8 +250,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,9 +259,9 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagernamedport">List&lt;Instance<wbr>Group<wbr>Manager<wbr>Named<wbr>Port<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The named port configuration. See the section below
+    <dd>The named port configuration. See the section below
 for details on configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,9 +269,9 @@ for details on configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,10 +279,10 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of all target pools to which new
+    <dd>The full URL of all target pools to which new
 instances in the group are added. Updating the target pools attribute does
 not affect existing instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,9 +299,9 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerupdatepolicy">Instance<wbr>Group<wbr>Manager<wbr>Update<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
+    <dd>The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
 - - -
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,10 +309,10 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to wait for all instances to be created/updated before
+    <dd>Whether to wait for all instances to be created/updated before
 returning. Note that if this is set to true and the operation does not succeed, this provider will
 continue trying until it times out.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,15 +320,15 @@ continue trying until it times out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that instances in this group should be created
+    <dd>The zone that instances in this group should be created
 in.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -337,13 +337,13 @@ in.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The base instance name to use for
+    <dd>The base instance name to use for
 instances in this group. The value must be a valid
 [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) name. Supported characters
 are lowercase letters, numbers, and hyphens (-). Instances are named by
 appending a hyphen and a random four-character string to the base instance
 name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -351,10 +351,10 @@ name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversion">[]Instance<wbr>Group<wbr>Manager<wbr>Version</a></span>
     </dt>
-    <dd>{{% md %}}Application versions managed by this instance group. Each
+    <dd>Application versions managed by this instance group. Each
 version deals with a specific instance template, allowing canary release scenarios.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,9 +362,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerautohealingpolicies">Instance<wbr>Group<wbr>Manager<wbr>Auto<wbr>Healing<wbr>Policies</a></span>
     </dt>
-    <dd>{{% md %}}The autohealing policies for this managed instance
+    <dd>The autohealing policies for this managed instance
 group. You can specify only one value. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances#monitoring_groups).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,9 +372,9 @@ group. You can specify only one value. Structure is documented below. For more i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional textual description of the instance
+    <dd>An optional textual description of the instance
 group manager.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,9 +391,9 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagernamedport">[]Instance<wbr>Group<wbr>Manager<wbr>Named<wbr>Port</a></span>
     </dt>
-    <dd>{{% md %}}The named port configuration. See the section below
+    <dd>The named port configuration. See the section below
 for details on configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,9 +401,9 @@ for details on configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,10 +411,10 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of all target pools to which new
+    <dd>The full URL of all target pools to which new
 instances in the group are added. Updating the target pools attribute does
 not affect existing instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,9 +431,9 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerupdatepolicy">Instance<wbr>Group<wbr>Manager<wbr>Update<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
+    <dd>The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
 - - -
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,10 +441,10 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to wait for all instances to be created/updated before
+    <dd>Whether to wait for all instances to be created/updated before
 returning. Note that if this is set to true and the operation does not succeed, this provider will
 continue trying until it times out.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,15 +452,15 @@ continue trying until it times out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that instances in this group should be created
+    <dd>The zone that instances in this group should be created
 in.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -469,13 +469,13 @@ in.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The base instance name to use for
+    <dd>The base instance name to use for
 instances in this group. The value must be a valid
 [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) name. Supported characters
 are lowercase letters, numbers, and hyphens (-). Instances are named by
 appending a hyphen and a random four-character string to the base instance
 name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -483,10 +483,10 @@ name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversion">Instance<wbr>Group<wbr>Manager<wbr>Version[]</a></span>
     </dt>
-    <dd>{{% md %}}Application versions managed by this instance group. Each
+    <dd>Application versions managed by this instance group. Each
 version deals with a specific instance template, allowing canary release scenarios.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -494,9 +494,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerautohealingpolicies">Instance<wbr>Group<wbr>Manager<wbr>Auto<wbr>Healing<wbr>Policies</a></span>
     </dt>
-    <dd>{{% md %}}The autohealing policies for this managed instance
+    <dd>The autohealing policies for this managed instance
 group. You can specify only one value. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances#monitoring_groups).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,9 +504,9 @@ group. You can specify only one value. Structure is documented below. For more i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional textual description of the instance
+    <dd>An optional textual description of the instance
 group manager.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,9 +523,9 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagernamedport">Instance<wbr>Group<wbr>Manager<wbr>Named<wbr>Port[]</a></span>
     </dt>
-    <dd>{{% md %}}The named port configuration. See the section below
+    <dd>The named port configuration. See the section below
 for details on configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,9 +533,9 @@ for details on configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -543,10 +543,10 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of all target pools to which new
+    <dd>The full URL of all target pools to which new
 instances in the group are added. Updating the target pools attribute does
 not affect existing instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,8 +554,8 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,9 +563,9 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerupdatepolicy">Instance<wbr>Group<wbr>Manager<wbr>Update<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
+    <dd>The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
 - - -
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,10 +573,10 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to wait for all instances to be created/updated before
+    <dd>Whether to wait for all instances to be created/updated before
 returning. Note that if this is set to true and the operation does not succeed, this provider will
 continue trying until it times out.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -584,15 +584,15 @@ continue trying until it times out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that instances in this group should be created
+    <dd>The zone that instances in this group should be created
 in.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -601,13 +601,13 @@ in.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The base instance name to use for
+    <dd>The base instance name to use for
 instances in this group. The value must be a valid
 [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) name. Supported characters
 are lowercase letters, numbers, and hyphens (-). Instances are named by
 appending a hyphen and a random four-character string to the base instance
 name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -615,10 +615,10 @@ name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversion">List[Instance<wbr>Group<wbr>Manager<wbr>Version]</a></span>
     </dt>
-    <dd>{{% md %}}Application versions managed by this instance group. Each
+    <dd>Application versions managed by this instance group. Each
 version deals with a specific instance template, allowing canary release scenarios.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,9 +626,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerautohealingpolicies">Dict[Instance<wbr>Group<wbr>Manager<wbr>Auto<wbr>Healing<wbr>Policies]</a></span>
     </dt>
-    <dd>{{% md %}}The autohealing policies for this managed instance
+    <dd>The autohealing policies for this managed instance
 group. You can specify only one value. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances#monitoring_groups).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -636,9 +636,9 @@ group. You can specify only one value. Structure is documented below. For more i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional textual description of the instance
+    <dd>An optional textual description of the instance
 group manager.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,8 +646,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,9 +655,9 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagernamedport">List[Instance<wbr>Group<wbr>Manager<wbr>Named<wbr>Port]</a></span>
     </dt>
-    <dd>{{% md %}}The named port configuration. See the section below
+    <dd>The named port configuration. See the section below
 for details on configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,9 +665,9 @@ for details on configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,10 +675,10 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of all target pools to which new
+    <dd>The full URL of all target pools to which new
 instances in the group are added. Updating the target pools attribute does
 not affect existing instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,9 +695,9 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerupdatepolicy">Dict[Instance<wbr>Group<wbr>Manager<wbr>Update<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
+    <dd>The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
 - - -
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -705,10 +705,10 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to wait for all instances to be created/updated before
+    <dd>Whether to wait for all instances to be created/updated before
 returning. Note that if this is set to true and the operation does not succeed, this provider will
 continue trying until it times out.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,12 +716,12 @@ continue trying until it times out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone that instances in this group should be created
+    <dd>The zone that instances in this group should be created
 in.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -735,7 +735,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -744,8 +744,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint of the instance group manager.
-{{% /md %}}</dd>
+    <dd>The fingerprint of the instance group manager.
+</dd>
 
     <dt class="property-"
             title="">
@@ -753,7 +753,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -761,8 +761,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of the instance group created by the manager.
-{{% /md %}}</dd>
+    <dd>The full URL of the instance group created by the manager.
+</dd>
 
     <dt class="property-"
             title="">
@@ -770,14 +770,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the created resource.
-{{% /md %}}</dd>
+    <dd>The URL of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -786,8 +786,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint of the instance group manager.
-{{% /md %}}</dd>
+    <dd>The fingerprint of the instance group manager.
+</dd>
 
     <dt class="property-"
             title="">
@@ -795,7 +795,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -803,8 +803,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of the instance group created by the manager.
-{{% /md %}}</dd>
+    <dd>The full URL of the instance group created by the manager.
+</dd>
 
     <dt class="property-"
             title="">
@@ -812,14 +812,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the created resource.
-{{% /md %}}</dd>
+    <dd>The URL of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -828,8 +828,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint of the instance group manager.
-{{% /md %}}</dd>
+    <dd>The fingerprint of the instance group manager.
+</dd>
 
     <dt class="property-"
             title="">
@@ -837,7 +837,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -845,8 +845,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of the instance group created by the manager.
-{{% /md %}}</dd>
+    <dd>The full URL of the instance group created by the manager.
+</dd>
 
     <dt class="property-"
             title="">
@@ -854,14 +854,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the created resource.
-{{% /md %}}</dd>
+    <dd>The URL of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -870,8 +870,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint of the instance group manager.
-{{% /md %}}</dd>
+    <dd>The fingerprint of the instance group manager.
+</dd>
 
     <dt class="property-"
             title="">
@@ -879,7 +879,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -887,8 +887,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of the instance group created by the manager.
-{{% /md %}}</dd>
+    <dd>The full URL of the instance group created by the manager.
+</dd>
 
     <dt class="property-"
             title="">
@@ -896,11 +896,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the created resource.
-{{% /md %}}</dd>
+    <dd>The URL of the created resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -911,25 +911,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing InstanceGroupManager Resource {#look-up}
 
 Get an existing InstanceGroupManager resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#InstanceGroupManagerState">InstanceGroupManagerState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#InstanceGroupManager">InstanceGroupManager</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>auto_healing_policies=None<span class="p">, </span>base_instance_name=None<span class="p">, </span>description=None<span class="p">, </span>fingerprint=None<span class="p">, </span>instance_group=None<span class="p">, </span>name=None<span class="p">, </span>named_ports=None<span class="p">, </span>project=None<span class="p">, </span>self_link=None<span class="p">, </span>target_pools=None<span class="p">, </span>target_size=None<span class="p">, </span>update_policy=None<span class="p">, </span>versions=None<span class="p">, </span>wait_for_instances=None<span class="p">, </span>zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetInstanceGroupManager<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerState">InstanceGroupManagerState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManager">InstanceGroupManager</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.InstanceGroupManager.html">InstanceGroupManager</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.InstanceGroupManagerState.html">InstanceGroupManagerState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -954,9 +954,9 @@ Get an existing InstanceGroupManager resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -969,36 +969,9 @@ Get an existing InstanceGroupManager resource's state with the given name, ID, a
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1023,13 +996,40 @@ Get an existing InstanceGroupManager resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1038,9 +1038,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerautohealingpolicies">Instance<wbr>Group<wbr>Manager<wbr>Auto<wbr>Healing<wbr>Policies<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The autohealing policies for this managed instance
+    <dd>The autohealing policies for this managed instance
 group. You can specify only one value. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances#monitoring_groups).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,13 +1048,13 @@ group. You can specify only one value. Structure is documented below. For more i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The base instance name to use for
+    <dd>The base instance name to use for
 instances in this group. The value must be a valid
 [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) name. Supported characters
 are lowercase letters, numbers, and hyphens (-). Instances are named by
 appending a hyphen and a random four-character string to the base instance
 name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,9 +1062,9 @@ name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional textual description of the instance
+    <dd>An optional textual description of the instance
 group manager.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,8 +1072,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint of the instance group manager.
-{{% /md %}}</dd>
+    <dd>The fingerprint of the instance group manager.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of the instance group created by the manager.
-{{% /md %}}</dd>
+    <dd>The full URL of the instance group created by the manager.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,8 +1090,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,9 +1099,9 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagernamedport">List&lt;Instance<wbr>Group<wbr>Manager<wbr>Named<wbr>Port<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The named port configuration. See the section below
+    <dd>The named port configuration. See the section below
 for details on configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,9 +1109,9 @@ for details on configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,8 +1119,8 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the created resource.
-{{% /md %}}</dd>
+    <dd>The URL of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1128,10 +1128,10 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of all target pools to which new
+    <dd>The full URL of all target pools to which new
 instances in the group are added. Updating the target pools attribute does
 not affect existing instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1139,8 +1139,8 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,9 +1148,9 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerupdatepolicy">Instance<wbr>Group<wbr>Manager<wbr>Update<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
+    <dd>The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
 - - -
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1158,10 +1158,10 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversion">List&lt;Instance<wbr>Group<wbr>Manager<wbr>Version<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Application versions managed by this instance group. Each
+    <dd>Application versions managed by this instance group. Each
 version deals with a specific instance template, allowing canary release scenarios.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,10 +1169,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to wait for all instances to be created/updated before
+    <dd>Whether to wait for all instances to be created/updated before
 returning. Note that if this is set to true and the operation does not succeed, this provider will
 continue trying until it times out.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,15 +1180,15 @@ continue trying until it times out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that instances in this group should be created
+    <dd>The zone that instances in this group should be created
 in.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1197,9 +1197,9 @@ in.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerautohealingpolicies">Instance<wbr>Group<wbr>Manager<wbr>Auto<wbr>Healing<wbr>Policies</a></span>
     </dt>
-    <dd>{{% md %}}The autohealing policies for this managed instance
+    <dd>The autohealing policies for this managed instance
 group. You can specify only one value. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances#monitoring_groups).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,13 +1207,13 @@ group. You can specify only one value. Structure is documented below. For more i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The base instance name to use for
+    <dd>The base instance name to use for
 instances in this group. The value must be a valid
 [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) name. Supported characters
 are lowercase letters, numbers, and hyphens (-). Instances are named by
 appending a hyphen and a random four-character string to the base instance
 name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,9 +1221,9 @@ name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional textual description of the instance
+    <dd>An optional textual description of the instance
 group manager.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,8 +1231,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint of the instance group manager.
-{{% /md %}}</dd>
+    <dd>The fingerprint of the instance group manager.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,8 +1240,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of the instance group created by the manager.
-{{% /md %}}</dd>
+    <dd>The full URL of the instance group created by the manager.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,8 +1249,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,9 +1258,9 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagernamedport">[]Instance<wbr>Group<wbr>Manager<wbr>Named<wbr>Port</a></span>
     </dt>
-    <dd>{{% md %}}The named port configuration. See the section below
+    <dd>The named port configuration. See the section below
 for details on configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1268,9 +1268,9 @@ for details on configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the created resource.
-{{% /md %}}</dd>
+    <dd>The URL of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,10 +1287,10 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of all target pools to which new
+    <dd>The full URL of all target pools to which new
 instances in the group are added. Updating the target pools attribute does
 not affect existing instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1298,8 +1298,8 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,9 +1307,9 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerupdatepolicy">Instance<wbr>Group<wbr>Manager<wbr>Update<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
+    <dd>The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
 - - -
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1317,10 +1317,10 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversion">[]Instance<wbr>Group<wbr>Manager<wbr>Version</a></span>
     </dt>
-    <dd>{{% md %}}Application versions managed by this instance group. Each
+    <dd>Application versions managed by this instance group. Each
 version deals with a specific instance template, allowing canary release scenarios.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,10 +1328,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to wait for all instances to be created/updated before
+    <dd>Whether to wait for all instances to be created/updated before
 returning. Note that if this is set to true and the operation does not succeed, this provider will
 continue trying until it times out.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,15 +1339,15 @@ continue trying until it times out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that instances in this group should be created
+    <dd>The zone that instances in this group should be created
 in.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1356,9 +1356,9 @@ in.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerautohealingpolicies">Instance<wbr>Group<wbr>Manager<wbr>Auto<wbr>Healing<wbr>Policies</a></span>
     </dt>
-    <dd>{{% md %}}The autohealing policies for this managed instance
+    <dd>The autohealing policies for this managed instance
 group. You can specify only one value. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances#monitoring_groups).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1366,13 +1366,13 @@ group. You can specify only one value. Structure is documented below. For more i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The base instance name to use for
+    <dd>The base instance name to use for
 instances in this group. The value must be a valid
 [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) name. Supported characters
 are lowercase letters, numbers, and hyphens (-). Instances are named by
 appending a hyphen and a random four-character string to the base instance
 name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,9 +1380,9 @@ name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional textual description of the instance
+    <dd>An optional textual description of the instance
 group manager.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,8 +1390,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint of the instance group manager.
-{{% /md %}}</dd>
+    <dd>The fingerprint of the instance group manager.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1399,8 +1399,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of the instance group created by the manager.
-{{% /md %}}</dd>
+    <dd>The full URL of the instance group created by the manager.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1408,8 +1408,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,9 +1417,9 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagernamedport">Instance<wbr>Group<wbr>Manager<wbr>Named<wbr>Port[]</a></span>
     </dt>
-    <dd>{{% md %}}The named port configuration. See the section below
+    <dd>The named port configuration. See the section below
 for details on configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,9 +1427,9 @@ for details on configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,8 +1437,8 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the created resource.
-{{% /md %}}</dd>
+    <dd>The URL of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,10 +1446,10 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of all target pools to which new
+    <dd>The full URL of all target pools to which new
 instances in the group are added. Updating the target pools attribute does
 not affect existing instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,8 +1457,8 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,9 +1466,9 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerupdatepolicy">Instance<wbr>Group<wbr>Manager<wbr>Update<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
+    <dd>The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
 - - -
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1476,10 +1476,10 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversion">Instance<wbr>Group<wbr>Manager<wbr>Version[]</a></span>
     </dt>
-    <dd>{{% md %}}Application versions managed by this instance group. Each
+    <dd>Application versions managed by this instance group. Each
 version deals with a specific instance template, allowing canary release scenarios.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1487,10 +1487,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to wait for all instances to be created/updated before
+    <dd>Whether to wait for all instances to be created/updated before
 returning. Note that if this is set to true and the operation does not succeed, this provider will
 continue trying until it times out.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,15 +1498,15 @@ continue trying until it times out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone that instances in this group should be created
+    <dd>The zone that instances in this group should be created
 in.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1515,9 +1515,9 @@ in.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerautohealingpolicies">Dict[Instance<wbr>Group<wbr>Manager<wbr>Auto<wbr>Healing<wbr>Policies]</a></span>
     </dt>
-    <dd>{{% md %}}The autohealing policies for this managed instance
+    <dd>The autohealing policies for this managed instance
 group. You can specify only one value. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances#monitoring_groups).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1525,13 +1525,13 @@ group. You can specify only one value. Structure is documented below. For more i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The base instance name to use for
+    <dd>The base instance name to use for
 instances in this group. The value must be a valid
 [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) name. Supported characters
 are lowercase letters, numbers, and hyphens (-). Instances are named by
 appending a hyphen and a random four-character string to the base instance
 name.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1539,9 +1539,9 @@ name.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional textual description of the instance
+    <dd>An optional textual description of the instance
 group manager.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,8 +1549,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint of the instance group manager.
-{{% /md %}}</dd>
+    <dd>The fingerprint of the instance group manager.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1558,8 +1558,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of the instance group created by the manager.
-{{% /md %}}</dd>
+    <dd>The full URL of the instance group created by the manager.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,8 +1567,8 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,9 +1576,9 @@ group manager.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagernamedport">List[Instance<wbr>Group<wbr>Manager<wbr>Named<wbr>Port]</a></span>
     </dt>
-    <dd>{{% md %}}The named port configuration. See the section below
+    <dd>The named port configuration. See the section below
 for details on configuration.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,9 +1586,9 @@ for details on configuration.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,8 +1596,8 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the created resource.
-{{% /md %}}</dd>
+    <dd>The URL of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,10 +1605,10 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The full URL of all target pools to which new
+    <dd>The full URL of all target pools to which new
 instances in the group are added. Updating the target pools attribute does
 not affect existing instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1616,8 +1616,8 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1625,9 +1625,9 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerupdatepolicy">Dict[Instance<wbr>Group<wbr>Manager<wbr>Update<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
+    <dd>The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers/patch)
 - - -
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1635,10 +1635,10 @@ not affect existing instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversion">List[Instance<wbr>Group<wbr>Manager<wbr>Version]</a></span>
     </dt>
-    <dd>{{% md %}}Application versions managed by this instance group. Each
+    <dd>Application versions managed by this instance group. Each
 version deals with a specific instance template, allowing canary release scenarios.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1646,10 +1646,10 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to wait for all instances to be created/updated before
+    <dd>Whether to wait for all instances to be created/updated before
 returning. Note that if this is set to true and the operation does not succeed, this provider will
 continue trying until it times out.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1657,12 +1657,12 @@ continue trying until it times out.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone that instances in this group should be created
+    <dd>The zone that instances in this group should be created
 in.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1677,18 +1677,18 @@ in.
 
 
 <h4 id="instancegroupmanagerautohealingpolicies">Instance<wbr>Group<wbr>Manager<wbr>Auto<wbr>Healing<wbr>Policies</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceGroupManagerAutoHealingPolicies">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceGroupManagerAutoHealingPolicies">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerAutoHealingPoliciesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerAutoHealingPoliciesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1697,8 +1697,8 @@ in.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The health check resource that signals autohealing.
-{{% /md %}}</dd>
+    <dd>The health check resource that signals autohealing.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1706,15 +1706,15 @@ in.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds that the managed instance group waits before
+    <dd>The number of seconds that the managed instance group waits before
 it applies autohealing policies to new instances or recently recreated instances. Between 0 and 3600.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1723,8 +1723,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The health check resource that signals autohealing.
-{{% /md %}}</dd>
+    <dd>The health check resource that signals autohealing.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1732,15 +1732,15 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds that the managed instance group waits before
+    <dd>The number of seconds that the managed instance group waits before
 it applies autohealing policies to new instances or recently recreated instances. Between 0 and 3600.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1749,8 +1749,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The health check resource that signals autohealing.
-{{% /md %}}</dd>
+    <dd>The health check resource that signals autohealing.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1758,15 +1758,15 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds that the managed instance group waits before
+    <dd>The number of seconds that the managed instance group waits before
 it applies autohealing policies to new instances or recently recreated instances. Between 0 and 3600.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1775,8 +1775,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The health check resource that signals autohealing.
-{{% /md %}}</dd>
+    <dd>The health check resource that signals autohealing.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1784,30 +1784,30 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds that the managed instance group waits before
+    <dd>The number of seconds that the managed instance group waits before
 it applies autohealing policies to new instances or recently recreated instances. Between 0 and 3600.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancegroupmanagernamedport">Instance<wbr>Group<wbr>Manager<wbr>Named<wbr>Port</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceGroupManagerNamedPort">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceGroupManagerNamedPort">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerNamedPortArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerNamedPortOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1816,8 +1816,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1825,15 +1825,15 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number.
+    <dd>The port number.
 - - -
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1842,8 +1842,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1851,15 +1851,15 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number.
+    <dd>The port number.
 - - -
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1868,8 +1868,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1877,15 +1877,15 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port number.
+    <dd>The port number.
 - - -
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1894,8 +1894,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1903,30 +1903,30 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port number.
+    <dd>The port number.
 - - -
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancegroupmanagerupdatepolicy">Instance<wbr>Group<wbr>Manager<wbr>Update<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceGroupManagerUpdatePolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceGroupManagerUpdatePolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerUpdatePolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerUpdatePolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1935,8 +1935,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
-{{% /md %}}</dd>
+    <dd>- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1944,8 +1944,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}- The type of update process. You can specify either `PROACTIVE` so that the instance group manager proactively executes actions in order to bring instances to their target versions or `OPPORTUNISTIC` so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).
-{{% /md %}}</dd>
+    <dd>- The type of update process. You can specify either `PROACTIVE` so that the instance group manager proactively executes actions in order to bring instances to their target versions or `OPPORTUNISTIC` so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1953,8 +1953,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with `max_surge_percent`. If neither is set, defaults to 1
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with `max_surge_percent`. If neither is set, defaults to 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1962,8 +1962,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances(calculated as percentage) that can be created above the specified targetSize during the update process. Conflicts with `max_surge_fixed`.
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances(calculated as percentage) that can be created above the specified targetSize during the update process. Conflicts with `max_surge_fixed`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,8 +1971,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances that can be unavailable during the update process. Conflicts with `max_unavailable_percent`. If neither is set, defaults to 1
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances that can be unavailable during the update process. Conflicts with `max_unavailable_percent`. If neither is set, defaults to 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1980,8 +1980,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances(calculated as percentage) that can be unavailable during the update process. Conflicts with `max_unavailable_fixed`.
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances(calculated as percentage) that can be unavailable during the update process. Conflicts with `max_unavailable_fixed`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1989,15 +1989,15 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}, Minimum number of seconds to wait for after a newly created instance becomes available. This value must be from range [0, 3600]
+    <dd>, Minimum number of seconds to wait for after a newly created instance becomes available. This value must be from range [0, 3600]
 - - -
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2006,8 +2006,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
-{{% /md %}}</dd>
+    <dd>- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2015,8 +2015,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}- The type of update process. You can specify either `PROACTIVE` so that the instance group manager proactively executes actions in order to bring instances to their target versions or `OPPORTUNISTIC` so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).
-{{% /md %}}</dd>
+    <dd>- The type of update process. You can specify either `PROACTIVE` so that the instance group manager proactively executes actions in order to bring instances to their target versions or `OPPORTUNISTIC` so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2024,8 +2024,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with `max_surge_percent`. If neither is set, defaults to 1
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with `max_surge_percent`. If neither is set, defaults to 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2033,8 +2033,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances(calculated as percentage) that can be created above the specified targetSize during the update process. Conflicts with `max_surge_fixed`.
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances(calculated as percentage) that can be created above the specified targetSize during the update process. Conflicts with `max_surge_fixed`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2042,8 +2042,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances that can be unavailable during the update process. Conflicts with `max_unavailable_percent`. If neither is set, defaults to 1
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances that can be unavailable during the update process. Conflicts with `max_unavailable_percent`. If neither is set, defaults to 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2051,8 +2051,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances(calculated as percentage) that can be unavailable during the update process. Conflicts with `max_unavailable_fixed`.
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances(calculated as percentage) that can be unavailable during the update process. Conflicts with `max_unavailable_fixed`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2060,15 +2060,15 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}, Minimum number of seconds to wait for after a newly created instance becomes available. This value must be from range [0, 3600]
+    <dd>, Minimum number of seconds to wait for after a newly created instance becomes available. This value must be from range [0, 3600]
 - - -
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2077,8 +2077,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
-{{% /md %}}</dd>
+    <dd>- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2086,8 +2086,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}- The type of update process. You can specify either `PROACTIVE` so that the instance group manager proactively executes actions in order to bring instances to their target versions or `OPPORTUNISTIC` so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).
-{{% /md %}}</dd>
+    <dd>- The type of update process. You can specify either `PROACTIVE` so that the instance group manager proactively executes actions in order to bring instances to their target versions or `OPPORTUNISTIC` so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2095,8 +2095,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with `max_surge_percent`. If neither is set, defaults to 1
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with `max_surge_percent`. If neither is set, defaults to 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2104,8 +2104,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances(calculated as percentage) that can be created above the specified targetSize during the update process. Conflicts with `max_surge_fixed`.
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances(calculated as percentage) that can be created above the specified targetSize during the update process. Conflicts with `max_surge_fixed`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2113,8 +2113,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances that can be unavailable during the update process. Conflicts with `max_unavailable_percent`. If neither is set, defaults to 1
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances that can be unavailable during the update process. Conflicts with `max_unavailable_percent`. If neither is set, defaults to 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2122,8 +2122,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances(calculated as percentage) that can be unavailable during the update process. Conflicts with `max_unavailable_fixed`.
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances(calculated as percentage) that can be unavailable during the update process. Conflicts with `max_unavailable_fixed`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2131,15 +2131,15 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}, Minimum number of seconds to wait for after a newly created instance becomes available. This value must be from range [0, 3600]
+    <dd>, Minimum number of seconds to wait for after a newly created instance becomes available. This value must be from range [0, 3600]
 - - -
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2148,8 +2148,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
-{{% /md %}}</dd>
+    <dd>- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2157,8 +2157,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}- The type of update process. You can specify either `PROACTIVE` so that the instance group manager proactively executes actions in order to bring instances to their target versions or `OPPORTUNISTIC` so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).
-{{% /md %}}</dd>
+    <dd>- The type of update process. You can specify either `PROACTIVE` so that the instance group manager proactively executes actions in order to bring instances to their target versions or `OPPORTUNISTIC` so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2166,8 +2166,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with `max_surge_percent`. If neither is set, defaults to 1
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with `max_surge_percent`. If neither is set, defaults to 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2175,8 +2175,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances(calculated as percentage) that can be created above the specified targetSize during the update process. Conflicts with `max_surge_fixed`.
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances(calculated as percentage) that can be created above the specified targetSize during the update process. Conflicts with `max_surge_fixed`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2184,8 +2184,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances that can be unavailable during the update process. Conflicts with `max_unavailable_percent`. If neither is set, defaults to 1
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances that can be unavailable during the update process. Conflicts with `max_unavailable_percent`. If neither is set, defaults to 1
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2193,8 +2193,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}, The maximum number of instances(calculated as percentage) that can be unavailable during the update process. Conflicts with `max_unavailable_fixed`.
-{{% /md %}}</dd>
+    <dd>, The maximum number of instances(calculated as percentage) that can be unavailable during the update process. Conflicts with `max_unavailable_fixed`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2202,30 +2202,30 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}, Minimum number of seconds to wait for after a newly created instance becomes available. This value must be from range [0, 3600]
+    <dd>, Minimum number of seconds to wait for after a newly created instance becomes available. This value must be from range [0, 3600]
 - - -
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancegroupmanagerversion">Instance<wbr>Group<wbr>Manager<wbr>Version</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceGroupManagerVersion">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceGroupManagerVersion">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerVersionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerVersionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2234,8 +2234,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}- The full URL to an instance template from which all new instances of this version will be created.
-{{% /md %}}</dd>
+    <dd>- The full URL to an instance template from which all new instances of this version will be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2243,8 +2243,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2252,14 +2252,14 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversiontargetsize">Instance<wbr>Group<wbr>Manager<wbr>Version<wbr>Target<wbr>Size<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2268,8 +2268,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}- The full URL to an instance template from which all new instances of this version will be created.
-{{% /md %}}</dd>
+    <dd>- The full URL to an instance template from which all new instances of this version will be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2277,8 +2277,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2286,14 +2286,14 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversiontargetsize">Instance<wbr>Group<wbr>Manager<wbr>Version<wbr>Target<wbr>Size</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2302,8 +2302,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}- The full URL to an instance template from which all new instances of this version will be created.
-{{% /md %}}</dd>
+    <dd>- The full URL to an instance template from which all new instances of this version will be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2311,8 +2311,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2320,14 +2320,14 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversiontargetsize">Instance<wbr>Group<wbr>Manager<wbr>Version<wbr>Target<wbr>Size</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2336,8 +2336,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}- The full URL to an instance template from which all new instances of this version will be created.
-{{% /md %}}</dd>
+    <dd>- The full URL to an instance template from which all new instances of this version will be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2345,8 +2345,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}- Version name.
-{{% /md %}}</dd>
+    <dd>- Version name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2354,29 +2354,29 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancegroupmanagerversiontargetsize">Dict[Instance<wbr>Group<wbr>Manager<wbr>Version<wbr>Target<wbr>Size]</a></span>
     </dt>
-    <dd>{{% md %}}- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="instancegroupmanagerversiontargetsize">Instance<wbr>Group<wbr>Manager<wbr>Version<wbr>Target<wbr>Size</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#InstanceGroupManagerVersionTargetSize">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#InstanceGroupManagerVersionTargetSize">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerVersionTargetSizeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#InstanceGroupManagerVersionTargetSizeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2385,8 +2385,8 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}, The number of instances which are managed for this version. Conflicts with `percent`.
-{{% /md %}}</dd>
+    <dd>, The number of instances which are managed for this version. Conflicts with `percent`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2394,16 +2394,16 @@ it applies autohealing policies to new instances or recently recreated instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}, The number of instances (calculated as percentage) which are managed for this version. Conflicts with `fixed`.
+    <dd>, The number of instances (calculated as percentage) which are managed for this version. Conflicts with `fixed`.
 Note that when using `percent`, rounding will be in favor of explicitly set `target_size` values; a managed instance group with 2 instances and 2 `version`s,
 one of which has a `target_size.percent` of `60` will create 2 instances of that `version`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2412,8 +2412,8 @@ one of which has a `target_size.percent` of `60` will create 2 instances of that
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}, The number of instances which are managed for this version. Conflicts with `percent`.
-{{% /md %}}</dd>
+    <dd>, The number of instances which are managed for this version. Conflicts with `percent`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2421,16 +2421,16 @@ one of which has a `target_size.percent` of `60` will create 2 instances of that
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}, The number of instances (calculated as percentage) which are managed for this version. Conflicts with `fixed`.
+    <dd>, The number of instances (calculated as percentage) which are managed for this version. Conflicts with `fixed`.
 Note that when using `percent`, rounding will be in favor of explicitly set `target_size` values; a managed instance group with 2 instances and 2 `version`s,
 one of which has a `target_size.percent` of `60` will create 2 instances of that `version`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2439,8 +2439,8 @@ one of which has a `target_size.percent` of `60` will create 2 instances of that
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}, The number of instances which are managed for this version. Conflicts with `percent`.
-{{% /md %}}</dd>
+    <dd>, The number of instances which are managed for this version. Conflicts with `percent`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2448,16 +2448,16 @@ one of which has a `target_size.percent` of `60` will create 2 instances of that
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}, The number of instances (calculated as percentage) which are managed for this version. Conflicts with `fixed`.
+    <dd>, The number of instances (calculated as percentage) which are managed for this version. Conflicts with `fixed`.
 Note that when using `percent`, rounding will be in favor of explicitly set `target_size` values; a managed instance group with 2 instances and 2 `version`s,
 one of which has a `target_size.percent` of `60` will create 2 instances of that `version`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2466,8 +2466,8 @@ one of which has a `target_size.percent` of `60` will create 2 instances of that
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}, The number of instances which are managed for this version. Conflicts with `percent`.
-{{% /md %}}</dd>
+    <dd>, The number of instances which are managed for this version. Conflicts with `percent`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2475,13 +2475,13 @@ one of which has a `target_size.percent` of `60` will create 2 instances of that
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}, The number of instances (calculated as percentage) which are managed for this version. Conflicts with `fixed`.
+    <dd>, The number of instances (calculated as percentage) which are managed for this version. Conflicts with `fixed`.
 Note that when using `percent`, rounding will be in favor of explicitly set `target_size` values; a managed instance group with 2 instances and 2 `version`s,
 one of which has a `target_size.percent` of `60` will create 2 instances of that `version`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

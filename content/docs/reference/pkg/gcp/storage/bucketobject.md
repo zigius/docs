@@ -39,26 +39,26 @@ const picture = new gcp.storage.BucketObject("picture", {
 
 
 ## Create a BucketObject Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/storage/#BucketObject">BucketObject</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/storage/#BucketObjectArgs">BucketObjectArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">BucketObject</span><span class="p">(resource_name, opts=None, </span>bucket=None<span class="p">, </span>cache_control=None<span class="p">, </span>content=None<span class="p">, </span>content_disposition=None<span class="p">, </span>content_encoding=None<span class="p">, </span>content_language=None<span class="p">, </span>content_type=None<span class="p">, </span>detect_md5hash=None<span class="p">, </span>metadata=None<span class="p">, </span>name=None<span class="p">, </span>source=None<span class="p">, </span>storage_class=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewBucketObject<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/storage?tab=doc#BucketObjectArgs">BucketObjectArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/storage?tab=doc#BucketObject">BucketObject</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Storage.BucketObject.html">BucketObject</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Storage.BucketObjectArgs.html">BucketObjectArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -95,9 +95,9 @@ const picture = new gcp.storage.BucketObject("picture", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -115,9 +115,9 @@ const picture = new gcp.storage.BucketObject("picture", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -164,9 +164,9 @@ const picture = new gcp.storage.BucketObject("picture", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -203,7 +203,7 @@ const picture = new gcp.storage.BucketObject("picture", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## BucketObject Resource Properties {#properties}
 
@@ -216,7 +216,7 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -225,8 +225,8 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the containing bucket.
-{{% /md %}}</dd>
+    <dd>The name of the containing bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -234,9 +234,9 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
+    <dd>[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
 directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,8 +244,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
-{{% /md %}}</dd>
+    <dd>Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,8 +253,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,8 +262,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,8 +280,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
-{{% /md %}}</dd>
+    <dd>[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,7 +289,7 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,8 +297,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}User-provided metadata, in key/value pairs.
-{{% /md %}}</dd>
+    <dd>User-provided metadata, in key/value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,8 +306,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the object. If you're interpolating the name of this object, see `output_name` instead.
-{{% /md %}}</dd>
+    <dd>The name of the object. If you're interpolating the name of this object, see `output_name` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,9 +315,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Asset<wbr>Or<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}A path to the data you want to upload. Must be defined
+    <dd>A path to the data you want to upload. Must be defined
 if `content` is not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -325,16 +325,16 @@ if `content` is not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
+    <dd>The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
 Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default
 storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -343,8 +343,8 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the containing bucket.
-{{% /md %}}</dd>
+    <dd>The name of the containing bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,9 +352,9 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
+    <dd>[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
 directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
-{{% /md %}}</dd>
+    <dd>Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
-{{% /md %}}</dd>
+    <dd>[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,7 +407,7 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,8 +415,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}User-provided metadata, in key/value pairs.
-{{% /md %}}</dd>
+    <dd>User-provided metadata, in key/value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,8 +424,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the object. If you're interpolating the name of this object, see `output_name` instead.
-{{% /md %}}</dd>
+    <dd>The name of the object. If you're interpolating the name of this object, see `output_name` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,9 +433,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Asset">pulumi.<wbr>Asset<wbr>Or<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}A path to the data you want to upload. Must be defined
+    <dd>A path to the data you want to upload. Must be defined
 if `content` is not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,16 +443,16 @@ if `content` is not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
+    <dd>The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
 Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default
 storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -461,8 +461,8 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the containing bucket.
-{{% /md %}}</dd>
+    <dd>The name of the containing bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,9 +470,9 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
+    <dd>[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
 directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,8 +480,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
-{{% /md %}}</dd>
+    <dd>Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,8 +489,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,8 +498,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,8 +507,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -516,8 +516,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
-{{% /md %}}</dd>
+    <dd>[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -525,7 +525,7 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,8 +533,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}User-provided metadata, in key/value pairs.
-{{% /md %}}</dd>
+    <dd>User-provided metadata, in key/value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the object. If you're interpolating the name of this object, see `output_name` instead.
-{{% /md %}}</dd>
+    <dd>The name of the object. If you're interpolating the name of this object, see `output_name` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,9 +551,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Asset">pulumi.asset.<wbr>Asset | pulumi.asset.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}A path to the data you want to upload. Must be defined
+    <dd>A path to the data you want to upload. Must be defined
 if `content` is not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -561,16 +561,16 @@ if `content` is not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
+    <dd>The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
 Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default
 storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -579,8 +579,8 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the containing bucket.
-{{% /md %}}</dd>
+    <dd>The name of the containing bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -588,9 +588,9 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
+    <dd>[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
 directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,8 +598,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
-{{% /md %}}</dd>
+    <dd>Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -607,8 +607,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,8 +616,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -625,8 +625,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -634,8 +634,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
-{{% /md %}}</dd>
+    <dd>[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -643,7 +643,7 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,8 +651,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}User-provided metadata, in key/value pairs.
-{{% /md %}}</dd>
+    <dd>User-provided metadata, in key/value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -660,8 +660,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the object. If you're interpolating the name of this object, see `output_name` instead.
-{{% /md %}}</dd>
+    <dd>The name of the object. If you're interpolating the name of this object, see `output_name` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,9 +669,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">Union[pulumi.<wbr>Asset, pulumi.<wbr>Archive]</a></span>
     </dt>
-    <dd>{{% md %}}A path to the data you want to upload. Must be defined
+    <dd>A path to the data you want to upload. Must be defined
 if `content` is not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -679,13 +679,13 @@ if `content` is not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
+    <dd>The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
 Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default
 storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -699,7 +699,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -708,8 +708,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 CRC32 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 CRC32 hash of the uploaded data.
+</dd>
 
     <dt class="property-"
             title="">
@@ -717,7 +717,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -725,8 +725,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 MD5 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 MD5 hash of the uploaded data.
+</dd>
 
     <dt class="property-"
             title="">
@@ -734,9 +734,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
+    <dd>(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
 `gcp.storage.ObjectACL` resources when your `gcp.storage.BucketObject` is recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -744,14 +744,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A url reference to this object.
-{{% /md %}}</dd>
+    <dd>(Computed) A url reference to this object.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -760,8 +760,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 CRC32 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 CRC32 hash of the uploaded data.
+</dd>
 
     <dt class="property-"
             title="">
@@ -769,7 +769,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -777,8 +777,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 MD5 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 MD5 hash of the uploaded data.
+</dd>
 
     <dt class="property-"
             title="">
@@ -786,9 +786,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
+    <dd>(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
 `gcp.storage.ObjectACL` resources when your `gcp.storage.BucketObject` is recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -796,14 +796,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A url reference to this object.
-{{% /md %}}</dd>
+    <dd>(Computed) A url reference to this object.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -812,8 +812,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 CRC32 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 CRC32 hash of the uploaded data.
+</dd>
 
     <dt class="property-"
             title="">
@@ -821,7 +821,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -829,8 +829,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 MD5 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 MD5 hash of the uploaded data.
+</dd>
 
     <dt class="property-"
             title="">
@@ -838,9 +838,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
+    <dd>(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
 `gcp.storage.ObjectACL` resources when your `gcp.storage.BucketObject` is recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -848,14 +848,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A url reference to this object.
-{{% /md %}}</dd>
+    <dd>(Computed) A url reference to this object.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -864,8 +864,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 CRC32 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 CRC32 hash of the uploaded data.
+</dd>
 
     <dt class="property-"
             title="">
@@ -873,7 +873,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -881,8 +881,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 MD5 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 MD5 hash of the uploaded data.
+</dd>
 
     <dt class="property-"
             title="">
@@ -890,9 +890,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
+    <dd>(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
 `gcp.storage.ObjectACL` resources when your `gcp.storage.BucketObject` is recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -900,11 +900,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A url reference to this object.
-{{% /md %}}</dd>
+    <dd>(Computed) A url reference to this object.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -915,25 +915,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing BucketObject Resource {#look-up}
 
 Get an existing BucketObject resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/storage/#BucketObjectState">BucketObjectState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/storage/#BucketObject">BucketObject</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>bucket=None<span class="p">, </span>cache_control=None<span class="p">, </span>content=None<span class="p">, </span>content_disposition=None<span class="p">, </span>content_encoding=None<span class="p">, </span>content_language=None<span class="p">, </span>content_type=None<span class="p">, </span>crc32c=None<span class="p">, </span>detect_md5hash=None<span class="p">, </span>md5hash=None<span class="p">, </span>metadata=None<span class="p">, </span>name=None<span class="p">, </span>output_name=None<span class="p">, </span>self_link=None<span class="p">, </span>source=None<span class="p">, </span>storage_class=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetBucketObject<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/storage?tab=doc#BucketObjectState">BucketObjectState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/storage?tab=doc#BucketObject">BucketObject</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Storage.BucketObject.html">BucketObject</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Storage.BucketObjectState.html">BucketObjectState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -958,9 +958,9 @@ Get an existing BucketObject resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -973,36 +973,9 @@ Get an existing BucketObject resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1027,13 +1000,40 @@ Get an existing BucketObject resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1042,8 +1042,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the containing bucket.
-{{% /md %}}</dd>
+    <dd>The name of the containing bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,9 +1051,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
+    <dd>[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
 directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1061,8 +1061,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
-{{% /md %}}</dd>
+    <dd>Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1070,8 +1070,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1079,8 +1079,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1088,8 +1088,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1097,8 +1097,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
-{{% /md %}}</dd>
+    <dd>[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1106,8 +1106,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 CRC32 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 CRC32 hash of the uploaded data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,7 +1115,7 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1123,8 +1123,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 MD5 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 MD5 hash of the uploaded data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1132,8 +1132,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}User-provided metadata, in key/value pairs.
-{{% /md %}}</dd>
+    <dd>User-provided metadata, in key/value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,8 +1141,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the object. If you're interpolating the name of this object, see `output_name` instead.
-{{% /md %}}</dd>
+    <dd>The name of the object. If you're interpolating the name of this object, see `output_name` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,9 +1150,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
+    <dd>(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
 `gcp.storage.ObjectACL` resources when your `gcp.storage.BucketObject` is recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,8 +1160,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A url reference to this object.
-{{% /md %}}</dd>
+    <dd>(Computed) A url reference to this object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,9 +1169,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Asset<wbr>Or<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}A path to the data you want to upload. Must be defined
+    <dd>A path to the data you want to upload. Must be defined
 if `content` is not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,16 +1179,16 @@ if `content` is not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
+    <dd>The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
 Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default
 storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1197,8 +1197,8 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the containing bucket.
-{{% /md %}}</dd>
+    <dd>The name of the containing bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1206,9 +1206,9 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
+    <dd>[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
 directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,8 +1216,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
-{{% /md %}}</dd>
+    <dd>Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,8 +1225,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,8 +1234,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,8 +1243,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,8 +1252,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
-{{% /md %}}</dd>
+    <dd>[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1261,8 +1261,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 CRC32 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 CRC32 hash of the uploaded data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1270,7 +1270,7 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 MD5 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 MD5 hash of the uploaded data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}User-provided metadata, in key/value pairs.
-{{% /md %}}</dd>
+    <dd>User-provided metadata, in key/value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the object. If you're interpolating the name of this object, see `output_name` instead.
-{{% /md %}}</dd>
+    <dd>The name of the object. If you're interpolating the name of this object, see `output_name` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,9 +1305,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
+    <dd>(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
 `gcp.storage.ObjectACL` resources when your `gcp.storage.BucketObject` is recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,8 +1315,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A url reference to this object.
-{{% /md %}}</dd>
+    <dd>(Computed) A url reference to this object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,9 +1324,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Asset">pulumi.<wbr>Asset<wbr>Or<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}A path to the data you want to upload. Must be defined
+    <dd>A path to the data you want to upload. Must be defined
 if `content` is not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1334,16 +1334,16 @@ if `content` is not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
+    <dd>The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
 Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default
 storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1352,8 +1352,8 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the containing bucket.
-{{% /md %}}</dd>
+    <dd>The name of the containing bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,9 +1361,9 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
+    <dd>[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
 directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1371,8 +1371,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
-{{% /md %}}</dd>
+    <dd>Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,8 +1380,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,8 +1389,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,8 +1407,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
-{{% /md %}}</dd>
+    <dd>[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1416,8 +1416,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 CRC32 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 CRC32 hash of the uploaded data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,7 +1425,7 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1433,8 +1433,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 MD5 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 MD5 hash of the uploaded data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,8 +1442,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}User-provided metadata, in key/value pairs.
-{{% /md %}}</dd>
+    <dd>User-provided metadata, in key/value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1451,8 +1451,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the object. If you're interpolating the name of this object, see `output_name` instead.
-{{% /md %}}</dd>
+    <dd>The name of the object. If you're interpolating the name of this object, see `output_name` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,9 +1460,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
+    <dd>(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
 `gcp.storage.ObjectACL` resources when your `gcp.storage.BucketObject` is recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1470,8 +1470,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A url reference to this object.
-{{% /md %}}</dd>
+    <dd>(Computed) A url reference to this object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1479,9 +1479,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Asset">pulumi.asset.<wbr>Asset | pulumi.asset.<wbr>Archive</a></span>
     </dt>
-    <dd>{{% md %}}A path to the data you want to upload. Must be defined
+    <dd>A path to the data you want to upload. Must be defined
 if `content` is not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1489,16 +1489,16 @@ if `content` is not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
+    <dd>The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
 Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default
 storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1507,8 +1507,8 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the containing bucket.
-{{% /md %}}</dd>
+    <dd>The name of the containing bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,9 +1516,9 @@ storage class or to a [standard](https://cloud.google.com/storage/docs/storage-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
+    <dd>[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
 directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1526,8 +1526,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
-{{% /md %}}</dd>
+    <dd>Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1535,8 +1535,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1544,8 +1544,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1553,8 +1553,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
-{{% /md %}}</dd>
+    <dd>[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2) of the object data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,8 +1562,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
-{{% /md %}}</dd>
+    <dd>[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,8 +1571,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 CRC32 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 CRC32 hash of the uploaded data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1580,7 +1580,7 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,8 +1588,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Base 64 MD5 hash of the uploaded data.
-{{% /md %}}</dd>
+    <dd>(Computed) Base 64 MD5 hash of the uploaded data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,8 +1597,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}User-provided metadata, in key/value pairs.
-{{% /md %}}</dd>
+    <dd>User-provided metadata, in key/value pairs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1606,8 +1606,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the object. If you're interpolating the name of this object, see `output_name` instead.
-{{% /md %}}</dd>
+    <dd>The name of the object. If you're interpolating the name of this object, see `output_name` instead.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1615,9 +1615,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
+    <dd>(Computed) The name of the object. Use this field in interpolations with `gcp.storage.ObjectACL` to recreate
 `gcp.storage.ObjectACL` resources when your `gcp.storage.BucketObject` is recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1625,8 +1625,8 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) A url reference to this object.
-{{% /md %}}</dd>
+    <dd>(Computed) A url reference to this object.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1634,9 +1634,9 @@ directive to specify caching behavior of object data. If omitted and object is a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">Union[pulumi.<wbr>Asset, pulumi.<wbr>Archive]</a></span>
     </dt>
-    <dd>{{% md %}}A path to the data you want to upload. Must be defined
+    <dd>A path to the data you want to upload. Must be defined
 if `content` is not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1644,13 +1644,13 @@ if `content` is not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
+    <dd>The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
 Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default
 storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

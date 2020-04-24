@@ -39,26 +39,26 @@ const example_zone = new gcp.dns.ManagedZone("example-zone", {
 
 
 ## Create a ManagedZone Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/dns/#ManagedZone">ManagedZone</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/dns/#ManagedZoneArgs">ManagedZoneArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ManagedZone</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>dns_name=None<span class="p">, </span>dnssec_config=None<span class="p">, </span>forwarding_config=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>peering_config=None<span class="p">, </span>private_visibility_config=None<span class="p">, </span>project=None<span class="p">, </span>reverse_lookup=None<span class="p">, </span>visibility=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewManagedZone<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneArgs">ManagedZoneArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZone">ManagedZone</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Dns.ManagedZone.html">ManagedZone</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Dns.ManagedZoneArgs.html">ManagedZoneArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -95,9 +95,9 @@ const example_zone = new gcp.dns.ManagedZone("example-zone", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -115,9 +115,9 @@ const example_zone = new gcp.dns.ManagedZone("example-zone", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -164,9 +164,9 @@ const example_zone = new gcp.dns.ManagedZone("example-zone", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -203,7 +203,7 @@ const example_zone = new gcp.dns.ManagedZone("example-zone", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ManagedZone Resource Properties {#properties}
 
@@ -216,7 +216,7 @@ The ManagedZone resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -225,8 +225,8 @@ The ManagedZone resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of this managed zone, for instance "example.com.".
-{{% /md %}}</dd>
+    <dd>The DNS name of this managed zone, for instance "example.com.".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -234,8 +234,8 @@ The ManagedZone resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A textual description field. Defaults to 'Managed by Terraform'.
-{{% /md %}}</dd>
+    <dd>A textual description field. Defaults to 'Managed by Terraform'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -243,8 +243,8 @@ The ManagedZone resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfig">Managed<wbr>Zone<wbr>Dnssec<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}DNSSEC configuration
-{{% /md %}}</dd>
+    <dd>DNSSEC configuration
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -252,9 +252,9 @@ The ManagedZone resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfig">Managed<wbr>Zone<wbr>Forwarding<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
+    <dd>The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
 contains the set of destinations to forward to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,8 +262,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs to assign to this ManagedZone.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs to assign to this ManagedZone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,8 +271,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User assigned name for this resource. Must be unique within the project.
-{{% /md %}}</dd>
+    <dd>User assigned name for this resource. Must be unique within the project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,9 +280,9 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfig">Managed<wbr>Zone<wbr>Peering<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
+    <dd>The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
 network to peer with.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfig">Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
-{{% /md %}}</dd>
+    <dd>For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,9 +299,9 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,10 +309,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
+    <dd>Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
 automatically configured records for VPC resources. This only applies to networks listed under
 'private_visibility_config'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,15 +320,15 @@ automatically configured records for VPC resources. This only applies to network
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
+    <dd>The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
 Cloud resources. Must be one of: 'public', 'private'.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -337,8 +337,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of this managed zone, for instance "example.com.".
-{{% /md %}}</dd>
+    <dd>The DNS name of this managed zone, for instance "example.com.".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A textual description field. Defaults to 'Managed by Terraform'.
-{{% /md %}}</dd>
+    <dd>A textual description field. Defaults to 'Managed by Terraform'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfig">Managed<wbr>Zone<wbr>Dnssec<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DNSSEC configuration
-{{% /md %}}</dd>
+    <dd>DNSSEC configuration
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,9 +364,9 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfig">Managed<wbr>Zone<wbr>Forwarding<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
+    <dd>The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
 contains the set of destinations to forward to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs to assign to this ManagedZone.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs to assign to this ManagedZone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User assigned name for this resource. Must be unique within the project.
-{{% /md %}}</dd>
+    <dd>User assigned name for this resource. Must be unique within the project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,9 +392,9 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfig">Managed<wbr>Zone<wbr>Peering<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
+    <dd>The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
 network to peer with.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,8 +402,8 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfig">Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
-{{% /md %}}</dd>
+    <dd>For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,9 +411,9 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -421,10 +421,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
+    <dd>Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
 automatically configured records for VPC resources. This only applies to networks listed under
 'private_visibility_config'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,15 +432,15 @@ automatically configured records for VPC resources. This only applies to network
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
+    <dd>The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
 Cloud resources. Must be one of: 'public', 'private'.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -449,8 +449,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of this managed zone, for instance "example.com.".
-{{% /md %}}</dd>
+    <dd>The DNS name of this managed zone, for instance "example.com.".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,8 +458,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A textual description field. Defaults to 'Managed by Terraform'.
-{{% /md %}}</dd>
+    <dd>A textual description field. Defaults to 'Managed by Terraform'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,8 +467,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfig">Managed<wbr>Zone<wbr>Dnssec<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DNSSEC configuration
-{{% /md %}}</dd>
+    <dd>DNSSEC configuration
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,9 +476,9 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfig">Managed<wbr>Zone<wbr>Forwarding<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
+    <dd>The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
 contains the set of destinations to forward to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs to assign to this ManagedZone.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs to assign to this ManagedZone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User assigned name for this resource. Must be unique within the project.
-{{% /md %}}</dd>
+    <dd>User assigned name for this resource. Must be unique within the project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,9 +504,9 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfig">Managed<wbr>Zone<wbr>Peering<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
+    <dd>The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
 network to peer with.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfig">Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
-{{% /md %}}</dd>
+    <dd>For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,9 +523,9 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,10 +533,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
+    <dd>Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
 automatically configured records for VPC resources. This only applies to networks listed under
 'private_visibility_config'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,15 +544,15 @@ automatically configured records for VPC resources. This only applies to network
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
+    <dd>The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
 Cloud resources. Must be one of: 'public', 'private'.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -561,8 +561,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of this managed zone, for instance "example.com.".
-{{% /md %}}</dd>
+    <dd>The DNS name of this managed zone, for instance "example.com.".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -570,8 +570,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A textual description field. Defaults to 'Managed by Terraform'.
-{{% /md %}}</dd>
+    <dd>A textual description field. Defaults to 'Managed by Terraform'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -579,8 +579,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfig">Dict[Managed<wbr>Zone<wbr>Dnssec<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}DNSSEC configuration
-{{% /md %}}</dd>
+    <dd>DNSSEC configuration
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -588,9 +588,9 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfig">Dict[Managed<wbr>Zone<wbr>Forwarding<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
+    <dd>The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
 contains the set of destinations to forward to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,8 +598,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs to assign to this ManagedZone.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs to assign to this ManagedZone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -607,8 +607,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User assigned name for this resource. Must be unique within the project.
-{{% /md %}}</dd>
+    <dd>User assigned name for this resource. Must be unique within the project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,9 +616,9 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfig">Dict[Managed<wbr>Zone<wbr>Peering<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
+    <dd>The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
 network to peer with.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,8 +626,8 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfig">Dict[Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
-{{% /md %}}</dd>
+    <dd>For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,9 +635,9 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -645,10 +645,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
+    <dd>Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
 automatically configured records for VPC resources. This only applies to networks listed under
 'private_visibility_config'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,12 +656,12 @@ automatically configured records for VPC resources. This only applies to network
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
+    <dd>The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
 Cloud resources. Must be one of: 'public', 'private'.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -675,7 +675,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -684,7 +684,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -692,14 +692,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Delegate your managed_zone to these virtual name servers; defined by the server
-{{% /md %}}</dd>
+    <dd>Delegate your managed_zone to these virtual name servers; defined by the server
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -708,7 +708,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -716,14 +716,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Delegate your managed_zone to these virtual name servers; defined by the server
-{{% /md %}}</dd>
+    <dd>Delegate your managed_zone to these virtual name servers; defined by the server
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -732,7 +732,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -740,14 +740,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Delegate your managed_zone to these virtual name servers; defined by the server
-{{% /md %}}</dd>
+    <dd>Delegate your managed_zone to these virtual name servers; defined by the server
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -756,7 +756,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -764,11 +764,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Delegate your managed_zone to these virtual name servers; defined by the server
-{{% /md %}}</dd>
+    <dd>Delegate your managed_zone to these virtual name servers; defined by the server
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -779,25 +779,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ManagedZone Resource {#look-up}
 
 Get an existing ManagedZone resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/dns/#ManagedZoneState">ManagedZoneState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/dns/#ManagedZone">ManagedZone</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>description=None<span class="p">, </span>dns_name=None<span class="p">, </span>dnssec_config=None<span class="p">, </span>forwarding_config=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>name_servers=None<span class="p">, </span>peering_config=None<span class="p">, </span>private_visibility_config=None<span class="p">, </span>project=None<span class="p">, </span>reverse_lookup=None<span class="p">, </span>visibility=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetManagedZone<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneState">ManagedZoneState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZone">ManagedZone</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Dns.ManagedZone.html">ManagedZone</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Dns.ManagedZoneState.html">ManagedZoneState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -822,9 +822,9 @@ Get an existing ManagedZone resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -837,36 +837,9 @@ Get an existing ManagedZone resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -891,13 +864,40 @@ Get an existing ManagedZone resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -906,8 +906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A textual description field. Defaults to 'Managed by Terraform'.
-{{% /md %}}</dd>
+    <dd>A textual description field. Defaults to 'Managed by Terraform'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,8 +915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of this managed zone, for instance "example.com.".
-{{% /md %}}</dd>
+    <dd>The DNS name of this managed zone, for instance "example.com.".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,8 +924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfig">Managed<wbr>Zone<wbr>Dnssec<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}DNSSEC configuration
-{{% /md %}}</dd>
+    <dd>DNSSEC configuration
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,9 +933,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfig">Managed<wbr>Zone<wbr>Forwarding<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
+    <dd>The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
 contains the set of destinations to forward to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -943,8 +943,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs to assign to this ManagedZone.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs to assign to this ManagedZone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -952,8 +952,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User assigned name for this resource. Must be unique within the project.
-{{% /md %}}</dd>
+    <dd>User assigned name for this resource. Must be unique within the project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -961,8 +961,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Delegate your managed_zone to these virtual name servers; defined by the server
-{{% /md %}}</dd>
+    <dd>Delegate your managed_zone to these virtual name servers; defined by the server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,9 +970,9 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfig">Managed<wbr>Zone<wbr>Peering<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
+    <dd>The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
 network to peer with.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,8 +980,8 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfig">Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
-{{% /md %}}</dd>
+    <dd>For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,9 +989,9 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,10 +999,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
+    <dd>Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
 automatically configured records for VPC resources. This only applies to networks listed under
 'private_visibility_config'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,15 +1010,15 @@ automatically configured records for VPC resources. This only applies to network
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
+    <dd>The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
 Cloud resources. Must be one of: 'public', 'private'.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1027,8 +1027,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A textual description field. Defaults to 'Managed by Terraform'.
-{{% /md %}}</dd>
+    <dd>A textual description field. Defaults to 'Managed by Terraform'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,8 +1036,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of this managed zone, for instance "example.com.".
-{{% /md %}}</dd>
+    <dd>The DNS name of this managed zone, for instance "example.com.".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfig">Managed<wbr>Zone<wbr>Dnssec<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DNSSEC configuration
-{{% /md %}}</dd>
+    <dd>DNSSEC configuration
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,9 +1054,9 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfig">Managed<wbr>Zone<wbr>Forwarding<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
+    <dd>The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
 contains the set of destinations to forward to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs to assign to this ManagedZone.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs to assign to this ManagedZone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User assigned name for this resource. Must be unique within the project.
-{{% /md %}}</dd>
+    <dd>User assigned name for this resource. Must be unique within the project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Delegate your managed_zone to these virtual name servers; defined by the server
-{{% /md %}}</dd>
+    <dd>Delegate your managed_zone to these virtual name servers; defined by the server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,9 +1091,9 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfig">Managed<wbr>Zone<wbr>Peering<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
+    <dd>The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
 network to peer with.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1101,8 +1101,8 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfig">Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
-{{% /md %}}</dd>
+    <dd>For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,9 +1110,9 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,10 +1120,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
+    <dd>Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
 automatically configured records for VPC resources. This only applies to networks listed under
 'private_visibility_config'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,15 +1131,15 @@ automatically configured records for VPC resources. This only applies to network
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
+    <dd>The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
 Cloud resources. Must be one of: 'public', 'private'.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1148,8 +1148,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A textual description field. Defaults to 'Managed by Terraform'.
-{{% /md %}}</dd>
+    <dd>A textual description field. Defaults to 'Managed by Terraform'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1157,8 +1157,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of this managed zone, for instance "example.com.".
-{{% /md %}}</dd>
+    <dd>The DNS name of this managed zone, for instance "example.com.".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1166,8 +1166,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfig">Managed<wbr>Zone<wbr>Dnssec<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DNSSEC configuration
-{{% /md %}}</dd>
+    <dd>DNSSEC configuration
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,9 +1175,9 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfig">Managed<wbr>Zone<wbr>Forwarding<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
+    <dd>The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
 contains the set of destinations to forward to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,8 +1185,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs to assign to this ManagedZone.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs to assign to this ManagedZone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,8 +1194,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User assigned name for this resource. Must be unique within the project.
-{{% /md %}}</dd>
+    <dd>User assigned name for this resource. Must be unique within the project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,8 +1203,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Delegate your managed_zone to these virtual name servers; defined by the server
-{{% /md %}}</dd>
+    <dd>Delegate your managed_zone to these virtual name servers; defined by the server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1212,9 +1212,9 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfig">Managed<wbr>Zone<wbr>Peering<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
+    <dd>The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
 network to peer with.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,8 +1222,8 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfig">Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
-{{% /md %}}</dd>
+    <dd>For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,9 +1231,9 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1241,10 +1241,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
+    <dd>Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
 automatically configured records for VPC resources. This only applies to networks listed under
 'private_visibility_config'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,15 +1252,15 @@ automatically configured records for VPC resources. This only applies to network
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
+    <dd>The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
 Cloud resources. Must be one of: 'public', 'private'.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1269,8 +1269,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A textual description field. Defaults to 'Managed by Terraform'.
-{{% /md %}}</dd>
+    <dd>A textual description field. Defaults to 'Managed by Terraform'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of this managed zone, for instance "example.com.".
-{{% /md %}}</dd>
+    <dd>The DNS name of this managed zone, for instance "example.com.".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfig">Dict[Managed<wbr>Zone<wbr>Dnssec<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}DNSSEC configuration
-{{% /md %}}</dd>
+    <dd>DNSSEC configuration
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,9 +1296,9 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfig">Dict[Managed<wbr>Zone<wbr>Forwarding<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
+    <dd>The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field
 contains the set of destinations to forward to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,8 +1306,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs to assign to this ManagedZone.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs to assign to this ManagedZone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,8 +1315,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User assigned name for this resource. Must be unique within the project.
-{{% /md %}}</dd>
+    <dd>User assigned name for this resource. Must be unique within the project.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,8 +1324,8 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Delegate your managed_zone to these virtual name servers; defined by the server
-{{% /md %}}</dd>
+    <dd>Delegate your managed_zone to these virtual name servers; defined by the server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,9 +1333,9 @@ contains the set of destinations to forward to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfig">Dict[Managed<wbr>Zone<wbr>Peering<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
+    <dd>The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the
 network to peer with.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,8 +1343,8 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfig">Dict[Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
-{{% /md %}}</dd>
+    <dd>For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1352,9 +1352,9 @@ network to peer with.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1362,10 +1362,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
+    <dd>Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse lookup queries using
 automatically configured records for VPC resources. This only applies to networks listed under
 'private_visibility_config'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,12 +1373,12 @@ automatically configured records for VPC resources. This only applies to network
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
+    <dd>The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private
 Cloud resources. Must be one of: 'public', 'private'.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1393,18 +1393,18 @@ Cloud resources. Must be one of: 'public', 'private'.
 
 
 <h4 id="managedzonednssecconfig">Managed<wbr>Zone<wbr>Dnssec<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#ManagedZoneDnssecConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#ManagedZoneDnssecConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneDnssecConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneDnssecConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1413,7 +1413,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfigdefaultkeyspec">List&lt;Managed<wbr>Zone<wbr>Dnssec<wbr>Config<wbr>Default<wbr>Key<wbr>Spec<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,7 +1421,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1429,7 +1429,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,13 +1437,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1452,7 +1452,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfigdefaultkeyspec">[]Managed<wbr>Zone<wbr>Dnssec<wbr>Config<wbr>Default<wbr>Key<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,7 +1460,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,7 +1468,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1476,13 +1476,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1491,7 +1491,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfigdefaultkeyspec">Managed<wbr>Zone<wbr>Dnssec<wbr>Config<wbr>Default<wbr>Key<wbr>Spec[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1499,7 +1499,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,7 +1507,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,13 +1515,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1530,7 +1530,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonednssecconfigdefaultkeyspec">List[Managed<wbr>Zone<wbr>Dnssec<wbr>Config<wbr>Default<wbr>Key<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,7 +1538,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1546,7 +1546,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1554,28 +1554,28 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedzonednssecconfigdefaultkeyspec">Managed<wbr>Zone<wbr>Dnssec<wbr>Config<wbr>Default<wbr>Key<wbr>Spec</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#ManagedZoneDnssecConfigDefaultKeySpec">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#ManagedZoneDnssecConfigDefaultKeySpec">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneDnssecConfigDefaultKeySpecArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneDnssecConfigDefaultKeySpecOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1584,7 +1584,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1592,7 +1592,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1600,7 +1600,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1608,13 +1608,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1623,7 +1623,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,7 +1631,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1639,7 +1639,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1647,13 +1647,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1662,7 +1662,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1670,7 +1670,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,7 +1678,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1686,13 +1686,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1701,7 +1701,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,7 +1709,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1717,7 +1717,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,28 +1725,28 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedzoneforwardingconfig">Managed<wbr>Zone<wbr>Forwarding<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#ManagedZoneForwardingConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#ManagedZoneForwardingConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneForwardingConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneForwardingConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1755,13 +1755,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfigtargetnameserver">List&lt;Managed<wbr>Zone<wbr>Forwarding<wbr>Config<wbr>Target<wbr>Name<wbr>Server<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1770,13 +1770,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfigtargetnameserver">[]Managed<wbr>Zone<wbr>Forwarding<wbr>Config<wbr>Target<wbr>Name<wbr>Server</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1785,13 +1785,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfigtargetnameserver">Managed<wbr>Zone<wbr>Forwarding<wbr>Config<wbr>Target<wbr>Name<wbr>Server[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1800,28 +1800,28 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneforwardingconfigtargetnameserver">List[Managed<wbr>Zone<wbr>Forwarding<wbr>Config<wbr>Target<wbr>Name<wbr>Server]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedzoneforwardingconfigtargetnameserver">Managed<wbr>Zone<wbr>Forwarding<wbr>Config<wbr>Target<wbr>Name<wbr>Server</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#ManagedZoneForwardingConfigTargetNameServer">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#ManagedZoneForwardingConfigTargetNameServer">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneForwardingConfigTargetNameServerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZoneForwardingConfigTargetNameServerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1830,7 +1830,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1838,13 +1838,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1853,7 +1853,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1861,13 +1861,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1876,7 +1876,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1884,13 +1884,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1899,7 +1899,7 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1907,28 +1907,28 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedzonepeeringconfig">Managed<wbr>Zone<wbr>Peering<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#ManagedZonePeeringConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#ManagedZonePeeringConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZonePeeringConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZonePeeringConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1937,13 +1937,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfigtargetnetwork">Managed<wbr>Zone<wbr>Peering<wbr>Config<wbr>Target<wbr>Network<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1952,13 +1952,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfigtargetnetwork">Managed<wbr>Zone<wbr>Peering<wbr>Config<wbr>Target<wbr>Network</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1967,13 +1967,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfigtargetnetwork">Managed<wbr>Zone<wbr>Peering<wbr>Config<wbr>Target<wbr>Network</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1982,28 +1982,28 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzonepeeringconfigtargetnetwork">Dict[Managed<wbr>Zone<wbr>Peering<wbr>Config<wbr>Target<wbr>Network]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedzonepeeringconfigtargetnetwork">Managed<wbr>Zone<wbr>Peering<wbr>Config<wbr>Target<wbr>Network</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#ManagedZonePeeringConfigTargetNetwork">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#ManagedZonePeeringConfigTargetNetwork">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZonePeeringConfigTargetNetworkArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZonePeeringConfigTargetNetworkOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2012,13 +2012,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2027,13 +2027,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2042,13 +2042,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2057,28 +2057,28 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedzoneprivatevisibilityconfig">Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#ManagedZonePrivateVisibilityConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#ManagedZonePrivateVisibilityConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZonePrivateVisibilityConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZonePrivateVisibilityConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2087,13 +2087,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfignetwork">List&lt;Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config<wbr>Network<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2102,13 +2102,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfignetwork">[]Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config<wbr>Network</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2117,13 +2117,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfignetwork">Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config<wbr>Network[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2132,28 +2132,28 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedzoneprivatevisibilityconfignetwork">List[Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config<wbr>Network]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="managedzoneprivatevisibilityconfignetwork">Managed<wbr>Zone<wbr>Private<wbr>Visibility<wbr>Config<wbr>Network</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#ManagedZonePrivateVisibilityConfigNetwork">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#ManagedZonePrivateVisibilityConfigNetwork">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZonePrivateVisibilityConfigNetworkArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dns?tab=doc#ManagedZonePrivateVisibilityConfigNetworkOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2162,13 +2162,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2177,13 +2177,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2192,13 +2192,13 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2207,10 +2207,10 @@ Cloud resources. Must be one of: 'public', 'private'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

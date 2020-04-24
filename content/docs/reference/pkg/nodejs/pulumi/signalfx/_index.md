@@ -16,22 +16,22 @@ git_sha: "8029fc3edbeb1d57e0b7ed04ad8a739841b3dbea"
 > please consult the source [`terraform-providers/terraform-provider-signalfx` repo](https://github.com/terraform-providers/terraform-provider-signalfx/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var signalfx = require("@pulumi/signalfx");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as signalfx from "@pulumi/signalfx";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

@@ -166,26 +166,26 @@ const exampleRecord = new aws.route53.Record("example", {
 
 
 ## Create a DomainName Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainName">DomainName</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainNameArgs">DomainNameArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">DomainName</span><span class="p">(resource_name, opts=None, </span>certificate_arn=None<span class="p">, </span>certificate_body=None<span class="p">, </span>certificate_chain=None<span class="p">, </span>certificate_name=None<span class="p">, </span>certificate_private_key=None<span class="p">, </span>domain_name=None<span class="p">, </span>endpoint_configuration=None<span class="p">, </span>regional_certificate_arn=None<span class="p">, </span>regional_certificate_name=None<span class="p">, </span>security_policy=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDomainName<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainNameArgs">DomainNameArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainName">DomainName</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainName.html">DomainName</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainNameArgs.html">DomainNameArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -222,9 +222,9 @@ const exampleRecord = new aws.route53.Record("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -242,9 +242,9 @@ const exampleRecord = new aws.route53.Record("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -291,9 +291,9 @@ const exampleRecord = new aws.route53.Record("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -330,7 +330,7 @@ const exampleRecord = new aws.route53.Record("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## DomainName Resource Properties {#properties}
 
@@ -343,7 +343,7 @@ The DomainName resource accepts the following [input]({{< relref "/docs/intro/co
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -352,8 +352,8 @@ The DomainName resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fully-qualified domain name to register
-{{% /md %}}</dd>
+    <dd>The fully-qualified domain name to register
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,8 +361,8 @@ The DomainName resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,10 +370,10 @@ The DomainName resource accepts the following [input]({{< relref "/docs/intro/co
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate issued for the domain name
+    <dd>The certificate issued for the domain name
 being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,11 +381,11 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate for the CA that issued the
+    <dd>The certificate for the CA that issued the
 certificate, along with any intermediate CA certificates required to
 create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
 `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,10 +393,10 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name to use when registering this
+    <dd>The unique name to use when registering this
 certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`. Required if `certificate_arn` is not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,9 +404,9 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private key associated with the
+    <dd>The private key associated with the
 domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block defining API endpoint information including type. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block defining API endpoint information including type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,9 +432,9 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
+    <dd>The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
 `certificate_private_key`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,8 +442,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
-{{% /md %}}</dd>
+    <dd>The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -451,14 +451,14 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -467,8 +467,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fully-qualified domain name to register
-{{% /md %}}</dd>
+    <dd>The fully-qualified domain name to register
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,8 +476,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -485,10 +485,10 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate issued for the domain name
+    <dd>The certificate issued for the domain name
 being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,11 +496,11 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate for the CA that issued the
+    <dd>The certificate for the CA that issued the
 certificate, along with any intermediate CA certificates required to
 create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
 `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,10 +508,10 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name to use when registering this
+    <dd>The unique name to use when registering this
 certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`. Required if `certificate_arn` is not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,9 +519,9 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private key associated with the
+    <dd>The private key associated with the
 domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,8 +529,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block defining API endpoint information including type. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block defining API endpoint information including type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,8 +538,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,9 +547,9 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
+    <dd>The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
 `certificate_private_key`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
-{{% /md %}}</dd>
+    <dd>The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,14 +566,14 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -582,8 +582,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fully-qualified domain name to register
-{{% /md %}}</dd>
+    <dd>The fully-qualified domain name to register
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -591,8 +591,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,10 +600,10 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate issued for the domain name
+    <dd>The certificate issued for the domain name
 being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,11 +611,11 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate for the CA that issued the
+    <dd>The certificate for the CA that issued the
 certificate, along with any intermediate CA certificates required to
 create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
 `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,10 +623,10 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name to use when registering this
+    <dd>The unique name to use when registering this
 certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`. Required if `certificate_arn` is not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -634,9 +634,9 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private key associated with the
+    <dd>The private key associated with the
 domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,8 +644,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block defining API endpoint information including type. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block defining API endpoint information including type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -653,8 +653,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,9 +662,9 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
+    <dd>The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
 `certificate_private_key`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -672,8 +672,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
-{{% /md %}}</dd>
+    <dd>The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -681,14 +681,14 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -697,8 +697,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fully-qualified domain name to register
-{{% /md %}}</dd>
+    <dd>The fully-qualified domain name to register
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -706,8 +706,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -715,10 +715,10 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The certificate issued for the domain name
+    <dd>The certificate issued for the domain name
 being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -726,11 +726,11 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The certificate for the CA that issued the
+    <dd>The certificate for the CA that issued the
 certificate, along with any intermediate CA certificates required to
 create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
 `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -738,10 +738,10 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique name to use when registering this
+    <dd>The unique name to use when registering this
 certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`. Required if `certificate_arn` is not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,9 +749,9 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private key associated with the
+    <dd>The private key associated with the
 domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -759,8 +759,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Dict[Domain<wbr>Name<wbr>Endpoint<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block defining API endpoint information including type. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block defining API endpoint information including type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,8 +768,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -777,9 +777,9 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
+    <dd>The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
 `certificate_private_key`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,8 +787,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
-{{% /md %}}</dd>
+    <dd>The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,11 +796,11 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -814,7 +814,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -823,8 +823,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -832,8 +832,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The upload date associated with the domain certificate.
-{{% /md %}}</dd>
+    <dd>The upload date associated with the domain certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -841,9 +841,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname created by Cloudfront to represent
+    <dd>The hostname created by Cloudfront to represent
 the distribution that implements this domain name mapping.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -851,9 +851,9 @@ the distribution that implements this domain name mapping.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
+    <dd>For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
 that can be used to create a Route53 alias record for the distribution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -861,7 +861,7 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -869,8 +869,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname for the custom domain's regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hostname for the custom domain's regional endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -878,14 +878,14 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -894,8 +894,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -903,8 +903,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The upload date associated with the domain certificate.
-{{% /md %}}</dd>
+    <dd>The upload date associated with the domain certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -912,9 +912,9 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname created by Cloudfront to represent
+    <dd>The hostname created by Cloudfront to represent
 the distribution that implements this domain name mapping.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -922,9 +922,9 @@ the distribution that implements this domain name mapping.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
+    <dd>For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
 that can be used to create a Route53 alias record for the distribution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -932,7 +932,7 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -940,8 +940,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname for the custom domain's regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hostname for the custom domain's regional endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -949,14 +949,14 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -965,8 +965,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -974,8 +974,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The upload date associated with the domain certificate.
-{{% /md %}}</dd>
+    <dd>The upload date associated with the domain certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -983,9 +983,9 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname created by Cloudfront to represent
+    <dd>The hostname created by Cloudfront to represent
 the distribution that implements this domain name mapping.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -993,9 +993,9 @@ the distribution that implements this domain name mapping.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
+    <dd>For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
 that can be used to create a Route53 alias record for the distribution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1003,7 +1003,7 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1011,8 +1011,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname for the custom domain's regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hostname for the custom domain's regional endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1020,14 +1020,14 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1036,8 +1036,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -1045,8 +1045,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The upload date associated with the domain certificate.
-{{% /md %}}</dd>
+    <dd>The upload date associated with the domain certificate.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1054,9 +1054,9 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname created by Cloudfront to represent
+    <dd>The hostname created by Cloudfront to represent
 the distribution that implements this domain name mapping.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1064,9 +1064,9 @@ the distribution that implements this domain name mapping.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
+    <dd>For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
 that can be used to create a Route53 alias record for the distribution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1074,7 +1074,7 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1082,8 +1082,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname for the custom domain's regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hostname for the custom domain's regional endpoint.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1091,11 +1091,11 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1106,25 +1106,25 @@ that can be used to create a Route53 alias record for the distribution.
 ## Look up an Existing DomainName Resource {#look-up}
 
 Get an existing DomainName resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainNameState">DomainNameState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainName">DomainName</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>certificate_arn=None<span class="p">, </span>certificate_body=None<span class="p">, </span>certificate_chain=None<span class="p">, </span>certificate_name=None<span class="p">, </span>certificate_private_key=None<span class="p">, </span>certificate_upload_date=None<span class="p">, </span>cloudfront_domain_name=None<span class="p">, </span>cloudfront_zone_id=None<span class="p">, </span>domain_name=None<span class="p">, </span>endpoint_configuration=None<span class="p">, </span>regional_certificate_arn=None<span class="p">, </span>regional_certificate_name=None<span class="p">, </span>regional_domain_name=None<span class="p">, </span>regional_zone_id=None<span class="p">, </span>security_policy=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDomainName<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainNameState">DomainNameState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainName">DomainName</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainName.html">DomainName</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainNameState.html">DomainNameState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1149,9 +1149,9 @@ Get an existing DomainName resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1164,36 +1164,9 @@ Get an existing DomainName resource's state with the given name, ID, and optiona
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1218,13 +1191,40 @@ Get an existing DomainName resource's state with the given name, ID, and optiona
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1233,8 +1233,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1242,8 +1242,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1251,10 +1251,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate issued for the domain name
+    <dd>The certificate issued for the domain name
 being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,11 +1262,11 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate for the CA that issued the
+    <dd>The certificate for the CA that issued the
 certificate, along with any intermediate CA certificates required to
 create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
 `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,10 +1274,10 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name to use when registering this
+    <dd>The unique name to use when registering this
 certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`. Required if `certificate_arn` is not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,9 +1285,9 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private key associated with the
+    <dd>The private key associated with the
 domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,8 +1295,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The upload date associated with the domain certificate.
-{{% /md %}}</dd>
+    <dd>The upload date associated with the domain certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1304,9 +1304,9 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname created by Cloudfront to represent
+    <dd>The hostname created by Cloudfront to represent
 the distribution that implements this domain name mapping.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,9 +1314,9 @@ the distribution that implements this domain name mapping.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
+    <dd>For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
 that can be used to create a Route53 alias record for the distribution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,8 +1324,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fully-qualified domain name to register
-{{% /md %}}</dd>
+    <dd>The fully-qualified domain name to register
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,8 +1333,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block defining API endpoint information including type. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block defining API endpoint information including type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,8 +1342,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1351,9 +1351,9 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
+    <dd>The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
 `certificate_private_key`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,8 +1361,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname for the custom domain's regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hostname for the custom domain's regional endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1370,8 +1370,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1379,8 +1379,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
-{{% /md %}}</dd>
+    <dd>The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,14 +1388,14 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1404,8 +1404,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1413,8 +1413,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1422,10 +1422,10 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate issued for the domain name
+    <dd>The certificate issued for the domain name
 being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1433,11 +1433,11 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate for the CA that issued the
+    <dd>The certificate for the CA that issued the
 certificate, along with any intermediate CA certificates required to
 create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
 `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1445,10 +1445,10 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name to use when registering this
+    <dd>The unique name to use when registering this
 certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`. Required if `certificate_arn` is not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,9 +1456,9 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private key associated with the
+    <dd>The private key associated with the
 domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,8 +1466,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The upload date associated with the domain certificate.
-{{% /md %}}</dd>
+    <dd>The upload date associated with the domain certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,9 +1475,9 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname created by Cloudfront to represent
+    <dd>The hostname created by Cloudfront to represent
 the distribution that implements this domain name mapping.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1485,9 +1485,9 @@ the distribution that implements this domain name mapping.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
+    <dd>For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
 that can be used to create a Route53 alias record for the distribution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,8 +1495,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fully-qualified domain name to register
-{{% /md %}}</dd>
+    <dd>The fully-qualified domain name to register
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block defining API endpoint information including type. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block defining API endpoint information including type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,8 +1513,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,9 +1522,9 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
+    <dd>The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
 `certificate_private_key`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1532,8 +1532,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname for the custom domain's regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hostname for the custom domain's regional endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,8 +1541,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1550,8 +1550,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
-{{% /md %}}</dd>
+    <dd>The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,14 +1559,14 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1575,8 +1575,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,8 +1584,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1593,10 +1593,10 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate issued for the domain name
+    <dd>The certificate issued for the domain name
 being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,11 +1604,11 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate for the CA that issued the
+    <dd>The certificate for the CA that issued the
 certificate, along with any intermediate CA certificates required to
 create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
 `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1616,10 +1616,10 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name to use when registering this
+    <dd>The unique name to use when registering this
 certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`. Required if `certificate_arn` is not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1627,9 +1627,9 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private key associated with the
+    <dd>The private key associated with the
 domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,8 +1637,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The upload date associated with the domain certificate.
-{{% /md %}}</dd>
+    <dd>The upload date associated with the domain certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1646,9 +1646,9 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname created by Cloudfront to represent
+    <dd>The hostname created by Cloudfront to represent
 the distribution that implements this domain name mapping.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1656,9 +1656,9 @@ the distribution that implements this domain name mapping.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
+    <dd>For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
 that can be used to create a Route53 alias record for the distribution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1666,8 +1666,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fully-qualified domain name to register
-{{% /md %}}</dd>
+    <dd>The fully-qualified domain name to register
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1675,8 +1675,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block defining API endpoint information including type. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block defining API endpoint information including type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,8 +1684,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1693,9 +1693,9 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
+    <dd>The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
 `certificate_private_key`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1703,8 +1703,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname for the custom domain's regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hostname for the custom domain's regional endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1712,8 +1712,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1721,8 +1721,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
-{{% /md %}}</dd>
+    <dd>The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1730,14 +1730,14 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1746,8 +1746,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1755,8 +1755,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,10 +1764,10 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The certificate issued for the domain name
+    <dd>The certificate issued for the domain name
 being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1775,11 +1775,11 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The certificate for the CA that issued the
+    <dd>The certificate for the CA that issued the
 certificate, along with any intermediate CA certificates required to
 create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
 `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1787,10 +1787,10 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique name to use when registering this
+    <dd>The unique name to use when registering this
 certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
 `regional_certificate_name`. Required if `certificate_arn` is not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1798,9 +1798,9 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private key associated with the
+    <dd>The private key associated with the
 domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1808,8 +1808,8 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The upload date associated with the domain certificate.
-{{% /md %}}</dd>
+    <dd>The upload date associated with the domain certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,9 +1817,9 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname created by Cloudfront to represent
+    <dd>The hostname created by Cloudfront to represent
 the distribution that implements this domain name mapping.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1827,9 +1827,9 @@ the distribution that implements this domain name mapping.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
+    <dd>For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
 that can be used to create a Route53 alias record for the distribution.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1837,8 +1837,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fully-qualified domain name to register
-{{% /md %}}</dd>
+    <dd>The fully-qualified domain name to register
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,8 +1846,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Dict[Domain<wbr>Name<wbr>Endpoint<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block defining API endpoint information including type. Defined below.
-{{% /md %}}</dd>
+    <dd>Configuration block defining API endpoint information including type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,8 +1855,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
-{{% /md %}}</dd>
+    <dd>The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1864,9 +1864,9 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
+    <dd>The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
 `certificate_private_key`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1874,8 +1874,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname for the custom domain's regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hostname for the custom domain's regional endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1883,8 +1883,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
-{{% /md %}}</dd>
+    <dd>The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1892,8 +1892,8 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
-{{% /md %}}</dd>
+    <dd>The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1901,11 +1901,11 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1920,18 +1920,18 @@ that can be used to create a Route53 alias record for the distribution.
 
 
 <h4 id="domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainNameEndpointConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainNameEndpointConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainNameEndpointConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainNameEndpointConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1940,14 +1940,14 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE` or `REGIONAL`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
-{{% /md %}}</dd>
+    <dd>A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE` or `REGIONAL`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1956,14 +1956,14 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE` or `REGIONAL`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
-{{% /md %}}</dd>
+    <dd>A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE` or `REGIONAL`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1972,14 +1972,14 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE` or `REGIONAL`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
-{{% /md %}}</dd>
+    <dd>A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE` or `REGIONAL`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1988,11 +1988,11 @@ that can be used to create a Route53 alias record for the distribution.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE` or `REGIONAL`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
-{{% /md %}}</dd>
+    <dd>A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE` or `REGIONAL`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

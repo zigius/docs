@@ -32,29 +32,29 @@ const database = pulumi.output(aws.rds.getInstance({
 
 ## Using GetInstance {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getInstance<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/rds/#GetInstanceArgs">GetInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/rds/#GetInstanceResult">GetInstanceResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_instance(</span>db_instance_identifier=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/rds?tab=doc#LookupInstanceArgs">LookupInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/rds?tab=doc#LookupInstanceResult">LookupInstanceResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetInstance </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Rds.GetInstanceResult.html">GetInstanceResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Rds.GetInstanceArgs.html">GetInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the RDS instance
-{{% /md %}}</dd>
+    <dd>The name of the RDS instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,13 +80,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -95,8 +95,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the RDS instance
-{{% /md %}}</dd>
+    <dd>The name of the RDS instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -104,13 +104,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -119,8 +119,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the RDS instance
-{{% /md %}}</dd>
+    <dd>The name of the RDS instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -128,13 +128,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -143,8 +143,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the RDS instance
-{{% /md %}}</dd>
+    <dd>The name of the RDS instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -152,10 +152,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -171,7 +171,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -180,8 +180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the RDS instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the RDS instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -189,8 +189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the allocated storage size specified in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the allocated storage size specified in gigabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -198,8 +198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor version patches are applied automatically.
-{{% /md %}}</dd>
+    <dd>Indicates that minor version patches are applied automatically.
+</dd>
 
     <dt class="property-"
             title="">
@@ -207,8 +207,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Availability Zone the DB instance is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Availability Zone the DB instance is located in.
+</dd>
 
     <dt class="property-"
             title="">
@@ -216,8 +216,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days for which automatic DB snapshots are retained.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days for which automatic DB snapshots are retained.
+</dd>
 
     <dt class="property-"
             title="">
@@ -225,8 +225,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -234,8 +234,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
-{{% /md %}}</dd>
+    <dd>If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
+</dd>
 
     <dt class="property-"
             title="">
@@ -243,8 +243,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the DB instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -252,8 +252,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the name of the compute and memory capacity class of the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the name of the compute and memory capacity class of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -261,7 +261,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -269,8 +269,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the port that the DB instance listens on.
-{{% /md %}}</dd>
+    <dd>Specifies the port that the DB instance listens on.
+</dd>
 
     <dt class="property-"
             title="">
@@ -278,8 +278,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the name of the initial database of this instance that was provided at create time, if one was specified when the DB instance was created. This same name is returned for the life of the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the name of the initial database of this instance that was provided at create time, if one was specified when the DB instance was created. This same name is returned for the life of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -287,8 +287,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Provides the list of DB parameter groups applied to this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the list of DB parameter groups applied to this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -296,8 +296,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Provides List of DB security groups associated to this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides List of DB security groups associated to this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -305,8 +305,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the subnet group associated with the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the subnet group associated with the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -314,8 +314,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of log types to export to cloudwatch.
-{{% /md %}}</dd>
+    <dd>List of log types to export to cloudwatch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -323,8 +323,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -332,8 +332,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the name of the database engine to be used for this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the name of the database engine to be used for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -341,8 +341,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the database engine version.
-{{% /md %}}</dd>
+    <dd>Indicates the database engine version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -350,8 +350,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).
+</dd>
 
     <dt class="property-"
             title="">
@@ -359,8 +359,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -368,8 +368,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Provisioned IOPS (I/O operations per second) value.
-{{% /md %}}</dd>
+    <dd>Specifies the Provisioned IOPS (I/O operations per second) value.
+</dd>
 
     <dt class="property-"
             title="">
@@ -377,8 +377,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
-{{% /md %}}</dd>
+    <dd>If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -386,8 +386,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}License model information for this DB instance.
-{{% /md %}}</dd>
+    <dd>License model information for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -395,8 +395,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the master username for the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the master username for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -404,8 +404,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -413,8 +413,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to CloudWatch Logs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -422,8 +422,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the DB instance is a Multi-AZ deployment.
-{{% /md %}}</dd>
+    <dd>Specifies if the DB instance is a Multi-AZ deployment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -431,8 +431,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Provides the list of option group memberships for this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the list of option group memberships for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -440,8 +440,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The database port.
-{{% /md %}}</dd>
+    <dd>The database port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -449,8 +449,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the daily time range during which automated backups are created.
-{{% /md %}}</dd>
+    <dd>Specifies the daily time range during which automated backups are created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -458,8 +458,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range during which system maintenance can occur in UTC.
-{{% /md %}}</dd>
+    <dd>Specifies the weekly time range during which system maintenance can occur in UTC.
+</dd>
 
     <dt class="property-"
             title="">
@@ -467,8 +467,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -476,8 +476,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the source DB that this is a replica of.
-{{% /md %}}</dd>
+    <dd>The identifier of the source DB that this is a replica of.
+</dd>
 
     <dt class="property-"
             title="">
@@ -485,8 +485,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RDS Resource ID of this instance.
-{{% /md %}}</dd>
+    <dd>The RDS Resource ID of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -494,8 +494,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB instance is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB instance is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -503,8 +503,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the storage type associated with DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the storage type associated with DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -512,7 +512,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -520,8 +520,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of the DB instance.
-{{% /md %}}</dd>
+    <dd>The time zone of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -529,14 +529,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Provides a list of VPC security group elements that the DB instance belongs to.
-{{% /md %}}</dd>
+    <dd>Provides a list of VPC security group elements that the DB instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -545,8 +545,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the RDS instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the RDS instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -554,8 +554,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the allocated storage size specified in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the allocated storage size specified in gigabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -563,8 +563,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor version patches are applied automatically.
-{{% /md %}}</dd>
+    <dd>Indicates that minor version patches are applied automatically.
+</dd>
 
     <dt class="property-"
             title="">
@@ -572,8 +572,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Availability Zone the DB instance is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Availability Zone the DB instance is located in.
+</dd>
 
     <dt class="property-"
             title="">
@@ -581,8 +581,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days for which automatic DB snapshots are retained.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days for which automatic DB snapshots are retained.
+</dd>
 
     <dt class="property-"
             title="">
@@ -590,8 +590,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -599,8 +599,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
-{{% /md %}}</dd>
+    <dd>If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the DB instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,8 +617,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the name of the compute and memory capacity class of the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the name of the compute and memory capacity class of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -626,7 +626,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -634,8 +634,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the port that the DB instance listens on.
-{{% /md %}}</dd>
+    <dd>Specifies the port that the DB instance listens on.
+</dd>
 
     <dt class="property-"
             title="">
@@ -643,8 +643,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the name of the initial database of this instance that was provided at create time, if one was specified when the DB instance was created. This same name is returned for the life of the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the name of the initial database of this instance that was provided at create time, if one was specified when the DB instance was created. This same name is returned for the life of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -652,8 +652,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the list of DB parameter groups applied to this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the list of DB parameter groups applied to this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -661,8 +661,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Provides List of DB security groups associated to this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides List of DB security groups associated to this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -670,8 +670,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the subnet group associated with the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the subnet group associated with the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -679,8 +679,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of log types to export to cloudwatch.
-{{% /md %}}</dd>
+    <dd>List of log types to export to cloudwatch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -688,8 +688,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -697,8 +697,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the name of the database engine to be used for this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the name of the database engine to be used for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -706,8 +706,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the database engine version.
-{{% /md %}}</dd>
+    <dd>Indicates the database engine version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -715,8 +715,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).
+</dd>
 
     <dt class="property-"
             title="">
@@ -724,8 +724,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -733,8 +733,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Provisioned IOPS (I/O operations per second) value.
-{{% /md %}}</dd>
+    <dd>Specifies the Provisioned IOPS (I/O operations per second) value.
+</dd>
 
     <dt class="property-"
             title="">
@@ -742,8 +742,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
-{{% /md %}}</dd>
+    <dd>If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -751,8 +751,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}License model information for this DB instance.
-{{% /md %}}</dd>
+    <dd>License model information for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -760,8 +760,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the master username for the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the master username for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -769,8 +769,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -778,8 +778,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to CloudWatch Logs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -787,8 +787,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the DB instance is a Multi-AZ deployment.
-{{% /md %}}</dd>
+    <dd>Specifies if the DB instance is a Multi-AZ deployment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -796,8 +796,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the list of option group memberships for this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the list of option group memberships for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -805,8 +805,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The database port.
-{{% /md %}}</dd>
+    <dd>The database port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -814,8 +814,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the daily time range during which automated backups are created.
-{{% /md %}}</dd>
+    <dd>Specifies the daily time range during which automated backups are created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -823,8 +823,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range during which system maintenance can occur in UTC.
-{{% /md %}}</dd>
+    <dd>Specifies the weekly time range during which system maintenance can occur in UTC.
+</dd>
 
     <dt class="property-"
             title="">
@@ -832,8 +832,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -841,8 +841,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the source DB that this is a replica of.
-{{% /md %}}</dd>
+    <dd>The identifier of the source DB that this is a replica of.
+</dd>
 
     <dt class="property-"
             title="">
@@ -850,8 +850,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RDS Resource ID of this instance.
-{{% /md %}}</dd>
+    <dd>The RDS Resource ID of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -859,8 +859,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB instance is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB instance is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -868,8 +868,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the storage type associated with DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the storage type associated with DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -877,7 +877,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -885,8 +885,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of the DB instance.
-{{% /md %}}</dd>
+    <dd>The time zone of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -894,14 +894,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Provides a list of VPC security group elements that the DB instance belongs to.
-{{% /md %}}</dd>
+    <dd>Provides a list of VPC security group elements that the DB instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -910,8 +910,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the RDS instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the RDS instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -919,8 +919,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the allocated storage size specified in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the allocated storage size specified in gigabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -928,8 +928,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor version patches are applied automatically.
-{{% /md %}}</dd>
+    <dd>Indicates that minor version patches are applied automatically.
+</dd>
 
     <dt class="property-"
             title="">
@@ -937,8 +937,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Availability Zone the DB instance is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Availability Zone the DB instance is located in.
+</dd>
 
     <dt class="property-"
             title="">
@@ -946,8 +946,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days for which automatic DB snapshots are retained.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days for which automatic DB snapshots are retained.
+</dd>
 
     <dt class="property-"
             title="">
@@ -955,8 +955,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -964,8 +964,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
-{{% /md %}}</dd>
+    <dd>If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
+</dd>
 
     <dt class="property-"
             title="">
@@ -973,8 +973,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the DB instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -982,8 +982,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the name of the compute and memory capacity class of the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the name of the compute and memory capacity class of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -991,7 +991,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -999,8 +999,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the port that the DB instance listens on.
-{{% /md %}}</dd>
+    <dd>Specifies the port that the DB instance listens on.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1008,8 +1008,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the name of the initial database of this instance that was provided at create time, if one was specified when the DB instance was created. This same name is returned for the life of the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the name of the initial database of this instance that was provided at create time, if one was specified when the DB instance was created. This same name is returned for the life of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1017,8 +1017,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Provides the list of DB parameter groups applied to this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the list of DB parameter groups applied to this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1026,8 +1026,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Provides List of DB security groups associated to this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides List of DB security groups associated to this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1035,8 +1035,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the subnet group associated with the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the subnet group associated with the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1044,8 +1044,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of log types to export to cloudwatch.
-{{% /md %}}</dd>
+    <dd>List of log types to export to cloudwatch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1053,8 +1053,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1062,8 +1062,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the name of the database engine to be used for this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the name of the database engine to be used for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1071,8 +1071,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the database engine version.
-{{% /md %}}</dd>
+    <dd>Indicates the database engine version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1080,8 +1080,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1089,8 +1089,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1098,8 +1098,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Provisioned IOPS (I/O operations per second) value.
-{{% /md %}}</dd>
+    <dd>Specifies the Provisioned IOPS (I/O operations per second) value.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1107,8 +1107,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
-{{% /md %}}</dd>
+    <dd>If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1116,8 +1116,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}License model information for this DB instance.
-{{% /md %}}</dd>
+    <dd>License model information for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1125,8 +1125,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Contains the master username for the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the master username for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1134,8 +1134,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1143,8 +1143,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to CloudWatch Logs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1152,8 +1152,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the DB instance is a Multi-AZ deployment.
-{{% /md %}}</dd>
+    <dd>Specifies if the DB instance is a Multi-AZ deployment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1161,8 +1161,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Provides the list of option group memberships for this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the list of option group memberships for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1170,8 +1170,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The database port.
-{{% /md %}}</dd>
+    <dd>The database port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1179,8 +1179,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the daily time range during which automated backups are created.
-{{% /md %}}</dd>
+    <dd>Specifies the daily time range during which automated backups are created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1188,8 +1188,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range during which system maintenance can occur in UTC.
-{{% /md %}}</dd>
+    <dd>Specifies the weekly time range during which system maintenance can occur in UTC.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1197,8 +1197,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1206,8 +1206,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the source DB that this is a replica of.
-{{% /md %}}</dd>
+    <dd>The identifier of the source DB that this is a replica of.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1215,8 +1215,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RDS Resource ID of this instance.
-{{% /md %}}</dd>
+    <dd>The RDS Resource ID of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1224,8 +1224,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB instance is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB instance is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1233,8 +1233,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the storage type associated with DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the storage type associated with DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1242,7 +1242,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1250,8 +1250,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of the DB instance.
-{{% /md %}}</dd>
+    <dd>The time zone of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1259,14 +1259,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Provides a list of VPC security group elements that the DB instance belongs to.
-{{% /md %}}</dd>
+    <dd>Provides a list of VPC security group elements that the DB instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1275,8 +1275,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname of the RDS instance. See also `endpoint` and `port`.
-{{% /md %}}</dd>
+    <dd>The hostname of the RDS instance. See also `endpoint` and `port`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1284,8 +1284,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the allocated storage size specified in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the allocated storage size specified in gigabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1293,8 +1293,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor version patches are applied automatically.
-{{% /md %}}</dd>
+    <dd>Indicates that minor version patches are applied automatically.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1302,8 +1302,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Availability Zone the DB instance is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Availability Zone the DB instance is located in.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1311,8 +1311,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days for which automatic DB snapshots are retained.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days for which automatic DB snapshots are retained.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1320,8 +1320,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1329,8 +1329,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
-{{% /md %}}</dd>
+    <dd>If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1338,8 +1338,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the DB instance.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1347,8 +1347,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Contains the name of the compute and memory capacity class of the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the name of the compute and memory capacity class of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1356,7 +1356,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1364,8 +1364,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the port that the DB instance listens on.
-{{% /md %}}</dd>
+    <dd>Specifies the port that the DB instance listens on.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1373,8 +1373,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Contains the name of the initial database of this instance that was provided at create time, if one was specified when the DB instance was created. This same name is returned for the life of the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the name of the initial database of this instance that was provided at create time, if one was specified when the DB instance was created. This same name is returned for the life of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1382,8 +1382,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Provides the list of DB parameter groups applied to this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the list of DB parameter groups applied to this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1391,8 +1391,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Provides List of DB security groups associated to this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides List of DB security groups associated to this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1400,8 +1400,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the subnet group associated with the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the subnet group associated with the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1409,8 +1409,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of log types to export to cloudwatch.
-{{% /md %}}</dd>
+    <dd>List of log types to export to cloudwatch.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1418,8 +1418,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection endpoint in `address:port` format.
-{{% /md %}}</dd>
+    <dd>The connection endpoint in `address:port` format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1427,8 +1427,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Provides the name of the database engine to be used for this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the name of the database engine to be used for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1436,8 +1436,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the database engine version.
-{{% /md %}}</dd>
+    <dd>Indicates the database engine version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1445,8 +1445,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1454,8 +1454,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1463,8 +1463,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Provisioned IOPS (I/O operations per second) value.
-{{% /md %}}</dd>
+    <dd>Specifies the Provisioned IOPS (I/O operations per second) value.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1472,8 +1472,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
-{{% /md %}}</dd>
+    <dd>If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1481,8 +1481,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}License model information for this DB instance.
-{{% /md %}}</dd>
+    <dd>License model information for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1490,8 +1490,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Contains the master username for the DB instance.
-{{% /md %}}</dd>
+    <dd>Contains the master username for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1499,8 +1499,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1508,8 +1508,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to CloudWatch Logs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1517,8 +1517,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the DB instance is a Multi-AZ deployment.
-{{% /md %}}</dd>
+    <dd>Specifies if the DB instance is a Multi-AZ deployment.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1526,8 +1526,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Provides the list of option group memberships for this DB instance.
-{{% /md %}}</dd>
+    <dd>Provides the list of option group memberships for this DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1535,8 +1535,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The database port.
-{{% /md %}}</dd>
+    <dd>The database port.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1544,8 +1544,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the daily time range during which automated backups are created.
-{{% /md %}}</dd>
+    <dd>Specifies the daily time range during which automated backups are created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1553,8 +1553,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range during which system maintenance can occur in UTC.
-{{% /md %}}</dd>
+    <dd>Specifies the weekly time range during which system maintenance can occur in UTC.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1562,8 +1562,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the accessibility options for the DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the accessibility options for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1571,8 +1571,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the source DB that this is a replica of.
-{{% /md %}}</dd>
+    <dd>The identifier of the source DB that this is a replica of.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1580,8 +1580,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RDS Resource ID of this instance.
-{{% /md %}}</dd>
+    <dd>The RDS Resource ID of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1589,8 +1589,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB instance is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB instance is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1598,8 +1598,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the storage type associated with DB instance.
-{{% /md %}}</dd>
+    <dd>Specifies the storage type associated with DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1607,7 +1607,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1615,8 +1615,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time zone of the DB instance.
-{{% /md %}}</dd>
+    <dd>The time zone of the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1624,11 +1624,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Provides a list of VPC security group elements that the DB instance belongs to.
-{{% /md %}}</dd>
+    <dd>Provides a list of VPC security group elements that the DB instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

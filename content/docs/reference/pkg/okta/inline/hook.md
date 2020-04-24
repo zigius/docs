@@ -44,26 +44,26 @@ const example = new okta.inline.Hook("example", {
 
 
 ## Create a Hook Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/inline/#Hook">Hook</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/inline/#HookArgs">HookArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Hook</span><span class="p">(resource_name, opts=None, </span>auth=None<span class="p">, </span>channel=None<span class="p">, </span>headers=None<span class="p">, </span>name=None<span class="p">, </span>status=None<span class="p">, </span>type=None<span class="p">, </span>version=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewHook<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#HookArgs">HookArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#Hook">Hook</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Inline.Hook.html">Hook</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Inline.HookArgs.html">HookArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -100,9 +100,9 @@ const example = new okta.inline.Hook("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -120,9 +120,9 @@ const example = new okta.inline.Hook("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -169,9 +169,9 @@ const example = new okta.inline.Hook("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -208,7 +208,7 @@ const example = new okta.inline.Hook("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Hook Resource Properties {#properties}
 
@@ -221,7 +221,7 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -230,8 +230,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -239,8 +239,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,8 +248,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookauth">Hook<wbr>Auth<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Authentication required for inline hook request.
-{{% /md %}}</dd>
+    <dd>Authentication required for inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,8 +257,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookchannel">Hook<wbr>Channel<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Details of the endpoint the inline hook will hit.
-{{% /md %}}</dd>
+    <dd>Details of the endpoint the inline hook will hit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookheader">List&lt;Hook<wbr>Header<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Map of headers to send along in inline hook request.
-{{% /md %}}</dd>
+    <dd>Map of headers to send along in inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The inline hook display name.
-{{% /md %}}</dd>
+    <dd>The inline hook display name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,13 +284,13 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -299,8 +299,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -308,8 +308,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookauth">Hook<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}Authentication required for inline hook request.
-{{% /md %}}</dd>
+    <dd>Authentication required for inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookchannel">Hook<wbr>Channel</a></span>
     </dt>
-    <dd>{{% md %}}Details of the endpoint the inline hook will hit.
-{{% /md %}}</dd>
+    <dd>Details of the endpoint the inline hook will hit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,8 +335,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookheader">[]Hook<wbr>Header</a></span>
     </dt>
-    <dd>{{% md %}}Map of headers to send along in inline hook request.
-{{% /md %}}</dd>
+    <dd>Map of headers to send along in inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,8 +344,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The inline hook display name.
-{{% /md %}}</dd>
+    <dd>The inline hook display name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,13 +353,13 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -368,8 +368,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -377,8 +377,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookauth">Hook<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}Authentication required for inline hook request.
-{{% /md %}}</dd>
+    <dd>Authentication required for inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookchannel">Hook<wbr>Channel</a></span>
     </dt>
-    <dd>{{% md %}}Details of the endpoint the inline hook will hit.
-{{% /md %}}</dd>
+    <dd>Details of the endpoint the inline hook will hit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookheader">Hook<wbr>Header[]</a></span>
     </dt>
-    <dd>{{% md %}}Map of headers to send along in inline hook request.
-{{% /md %}}</dd>
+    <dd>Map of headers to send along in inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The inline hook display name.
-{{% /md %}}</dd>
+    <dd>The inline hook display name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,13 +422,13 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -437,8 +437,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -446,8 +446,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,8 +455,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookauth">Dict[Hook<wbr>Auth]</a></span>
     </dt>
-    <dd>{{% md %}}Authentication required for inline hook request.
-{{% /md %}}</dd>
+    <dd>Authentication required for inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,8 +464,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookchannel">Dict[Hook<wbr>Channel]</a></span>
     </dt>
-    <dd>{{% md %}}Details of the endpoint the inline hook will hit.
-{{% /md %}}</dd>
+    <dd>Details of the endpoint the inline hook will hit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -473,8 +473,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookheader">List[Hook<wbr>Header]</a></span>
     </dt>
-    <dd>{{% md %}}Map of headers to send along in inline hook request.
-{{% /md %}}</dd>
+    <dd>Map of headers to send along in inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,8 +482,8 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The inline hook display name.
-{{% /md %}}</dd>
+    <dd>The inline hook display name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,10 +491,10 @@ The Hook resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -508,7 +508,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -517,13 +517,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -532,13 +532,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -547,13 +547,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -562,10 +562,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -576,25 +576,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Hook Resource {#look-up}
 
 Get an existing Hook resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/inline/#HookState">HookState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/inline/#Hook">Hook</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>auth=None<span class="p">, </span>channel=None<span class="p">, </span>headers=None<span class="p">, </span>name=None<span class="p">, </span>status=None<span class="p">, </span>type=None<span class="p">, </span>version=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetHook<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#HookState">HookState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#Hook">Hook</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Inline.Hook.html">Hook</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Inline.HookState.html">HookState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -619,9 +619,9 @@ Get an existing Hook resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -634,36 +634,9 @@ Get an existing Hook resource's state with the given name, ID, and optional extr
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -688,13 +661,40 @@ Get an existing Hook resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -703,8 +703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookauth">Hook<wbr>Auth<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Authentication required for inline hook request.
-{{% /md %}}</dd>
+    <dd>Authentication required for inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,8 +712,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookchannel">Hook<wbr>Channel<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Details of the endpoint the inline hook will hit.
-{{% /md %}}</dd>
+    <dd>Details of the endpoint the inline hook will hit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,8 +721,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookheader">List&lt;Hook<wbr>Header<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Map of headers to send along in inline hook request.
-{{% /md %}}</dd>
+    <dd>Map of headers to send along in inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -730,8 +730,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The inline hook display name.
-{{% /md %}}</dd>
+    <dd>The inline hook display name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -739,7 +739,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,8 +747,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,14 +756,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -772,8 +772,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookauth">Hook<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}Authentication required for inline hook request.
-{{% /md %}}</dd>
+    <dd>Authentication required for inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -781,8 +781,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookchannel">Hook<wbr>Channel</a></span>
     </dt>
-    <dd>{{% md %}}Details of the endpoint the inline hook will hit.
-{{% /md %}}</dd>
+    <dd>Details of the endpoint the inline hook will hit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -790,8 +790,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookheader">[]Hook<wbr>Header</a></span>
     </dt>
-    <dd>{{% md %}}Map of headers to send along in inline hook request.
-{{% /md %}}</dd>
+    <dd>Map of headers to send along in inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -799,8 +799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The inline hook display name.
-{{% /md %}}</dd>
+    <dd>The inline hook display name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -808,7 +808,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,14 +825,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -841,8 +841,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookauth">Hook<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}Authentication required for inline hook request.
-{{% /md %}}</dd>
+    <dd>Authentication required for inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookchannel">Hook<wbr>Channel</a></span>
     </dt>
-    <dd>{{% md %}}Details of the endpoint the inline hook will hit.
-{{% /md %}}</dd>
+    <dd>Details of the endpoint the inline hook will hit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookheader">Hook<wbr>Header[]</a></span>
     </dt>
-    <dd>{{% md %}}Map of headers to send along in inline hook request.
-{{% /md %}}</dd>
+    <dd>Map of headers to send along in inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The inline hook display name.
-{{% /md %}}</dd>
+    <dd>The inline hook display name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,7 +877,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -885,8 +885,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -894,14 +894,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -910,8 +910,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookauth">Dict[Hook<wbr>Auth]</a></span>
     </dt>
-    <dd>{{% md %}}Authentication required for inline hook request.
-{{% /md %}}</dd>
+    <dd>Authentication required for inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,8 +919,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookchannel">Dict[Hook<wbr>Channel]</a></span>
     </dt>
-    <dd>{{% md %}}Details of the endpoint the inline hook will hit.
-{{% /md %}}</dd>
+    <dd>Details of the endpoint the inline hook will hit.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -928,8 +928,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hookheader">List[Hook<wbr>Header]</a></span>
     </dt>
-    <dd>{{% md %}}Map of headers to send along in inline hook request.
-{{% /md %}}</dd>
+    <dd>Map of headers to send along in inline hook request.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -937,8 +937,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The inline hook display name.
-{{% /md %}}</dd>
+    <dd>The inline hook display name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -946,7 +946,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,11 +963,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -982,18 +982,18 @@ The following state arguments are supported:
 
 
 <h4 id="hookauth">Hook<wbr>Auth</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/input/#HookAuth">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/output/#HookAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#HookAuthArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#HookAuthOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1002,8 +1002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Key to use for authentication, usually the header name, for example `"Authorization"`.
-{{% /md %}}</dd>
+    <dd>Key to use for authentication, usually the header name, for example `"Authorization"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,14 +1020,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication secret.
-{{% /md %}}</dd>
+    <dd>Authentication secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1036,8 +1036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key to use for authentication, usually the header name, for example `"Authorization"`.
-{{% /md %}}</dd>
+    <dd>Key to use for authentication, usually the header name, for example `"Authorization"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,14 +1054,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication secret.
-{{% /md %}}</dd>
+    <dd>Authentication secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1070,8 +1070,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key to use for authentication, usually the header name, for example `"Authorization"`.
-{{% /md %}}</dd>
+    <dd>Key to use for authentication, usually the header name, for example `"Authorization"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1079,8 +1079,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1088,14 +1088,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication secret.
-{{% /md %}}</dd>
+    <dd>Authentication secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1104,8 +1104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Key to use for authentication, usually the header name, for example `"Authorization"`.
-{{% /md %}}</dd>
+    <dd>Key to use for authentication, usually the header name, for example `"Authorization"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1113,8 +1113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,29 +1122,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authentication secret.
-{{% /md %}}</dd>
+    <dd>Authentication secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="hookchannel">Hook<wbr>Channel</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/input/#HookChannel">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/output/#HookChannel">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#HookChannelArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#HookChannelOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1153,8 +1153,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI the hook will hit.
-{{% /md %}}</dd>
+    <dd>The URI the hook will hit.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1162,8 +1162,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1171,8 +1171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The request method to use. Default is `"POST"`.
-{{% /md %}}</dd>
+    <dd>The request method to use. Default is `"POST"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,14 +1180,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1196,8 +1196,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI the hook will hit.
-{{% /md %}}</dd>
+    <dd>The URI the hook will hit.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1205,8 +1205,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1214,8 +1214,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The request method to use. Default is `"POST"`.
-{{% /md %}}</dd>
+    <dd>The request method to use. Default is `"POST"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1223,14 +1223,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1239,8 +1239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI the hook will hit.
-{{% /md %}}</dd>
+    <dd>The URI the hook will hit.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1248,8 +1248,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1257,8 +1257,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The request method to use. Default is `"POST"`.
-{{% /md %}}</dd>
+    <dd>The request method to use. Default is `"POST"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1266,14 +1266,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1282,8 +1282,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI the hook will hit.
-{{% /md %}}</dd>
+    <dd>The URI the hook will hit.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1291,8 +1291,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the endpoint.
-{{% /md %}}</dd>
+    <dd>The version of the endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1300,8 +1300,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The request method to use. Default is `"POST"`.
-{{% /md %}}</dd>
+    <dd>The request method to use. Default is `"POST"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1309,29 +1309,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The type of hook to trigger. Currently only `"HTTP"` is supported.
-{{% /md %}}</dd>
+    <dd>The type of hook to trigger. Currently only `"HTTP"` is supported.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="hookheader">Hook<wbr>Header</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/input/#HookHeader">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/output/#HookHeader">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#HookHeaderArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/inline?tab=doc#HookHeaderOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1340,8 +1340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Key to use for authentication, usually the header name, for example `"Authorization"`.
-{{% /md %}}</dd>
+    <dd>Key to use for authentication, usually the header name, for example `"Authorization"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,14 +1349,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication secret.
-{{% /md %}}</dd>
+    <dd>Authentication secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1365,8 +1365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key to use for authentication, usually the header name, for example `"Authorization"`.
-{{% /md %}}</dd>
+    <dd>Key to use for authentication, usually the header name, for example `"Authorization"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1374,14 +1374,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication secret.
-{{% /md %}}</dd>
+    <dd>Authentication secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1390,8 +1390,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key to use for authentication, usually the header name, for example `"Authorization"`.
-{{% /md %}}</dd>
+    <dd>Key to use for authentication, usually the header name, for example `"Authorization"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1399,14 +1399,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication secret.
-{{% /md %}}</dd>
+    <dd>Authentication secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1415,8 +1415,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Key to use for authentication, usually the header name, for example `"Authorization"`.
-{{% /md %}}</dd>
+    <dd>Key to use for authentication, usually the header name, for example `"Authorization"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1424,11 +1424,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authentication secret.
-{{% /md %}}</dd>
+    <dd>Authentication secret.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -15,29 +15,29 @@ meta_desc: "Explore the GetAccessCredentials function of the aws module, includi
 
 ## Using GetAccessCredentials {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAccessCredentials<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/aws/#GetAccessCredentialsArgs">GetAccessCredentialsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/aws/#GetAccessCredentialsResult">GetAccessCredentialsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_access_credentials(</span>backend=None<span class="p">, </span>role=None<span class="p">, </span>role_arn=None<span class="p">, </span>type=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAccessCredentials<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/aws?tab=doc#LookupAccessCredentialsArgs">LookupAccessCredentialsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/aws?tab=doc#LookupAccessCredentialsResult">LookupAccessCredentialsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAccessCredentials </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Aws.GetAccessCredentialsResult.html">GetAccessCredentialsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Aws.GetAccessCredentialsArgs.html">GetAccessCredentialsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -45,7 +45,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -54,9 +54,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS secret backend to
+    <dd>The path to the AWS secret backend to
 read credentials from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -64,9 +64,9 @@ read credentials from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS secret backend role to read
+    <dd>The name of the AWS secret backend role to read
 credentials from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -74,10 +74,10 @@ credentials from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The specific AWS ARN to use
+    <dd>The specific AWS ARN to use
 from the configured role. If the role does not have multiple ARNs, this does
 not need to be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -85,17 +85,17 @@ not need to be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of credentials to read. Defaults
+    <dd>The type of credentials to read. Defaults
 to `"creds"`, which just returns an AWS Access Key ID and Secret
 Key. Can also be set to `"sts"`, which will return a security token
 in addition to the keys.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -104,9 +104,9 @@ in addition to the keys.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS secret backend to
+    <dd>The path to the AWS secret backend to
 read credentials from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -114,9 +114,9 @@ read credentials from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS secret backend role to read
+    <dd>The name of the AWS secret backend role to read
 credentials from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -124,10 +124,10 @@ credentials from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The specific AWS ARN to use
+    <dd>The specific AWS ARN to use
 from the configured role. If the role does not have multiple ARNs, this does
 not need to be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -135,17 +135,17 @@ not need to be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of credentials to read. Defaults
+    <dd>The type of credentials to read. Defaults
 to `"creds"`, which just returns an AWS Access Key ID and Secret
 Key. Can also be set to `"sts"`, which will return a security token
 in addition to the keys.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -154,9 +154,9 @@ in addition to the keys.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS secret backend to
+    <dd>The path to the AWS secret backend to
 read credentials from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -164,9 +164,9 @@ read credentials from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS secret backend role to read
+    <dd>The name of the AWS secret backend role to read
 credentials from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -174,10 +174,10 @@ credentials from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The specific AWS ARN to use
+    <dd>The specific AWS ARN to use
 from the configured role. If the role does not have multiple ARNs, this does
 not need to be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -185,17 +185,17 @@ not need to be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of credentials to read. Defaults
+    <dd>The type of credentials to read. Defaults
 to `"creds"`, which just returns an AWS Access Key ID and Secret
 Key. Can also be set to `"sts"`, which will return a security token
 in addition to the keys.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,9 +204,9 @@ in addition to the keys.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the AWS secret backend to
+    <dd>The path to the AWS secret backend to
 read credentials from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -214,9 +214,9 @@ read credentials from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the AWS secret backend role to read
+    <dd>The name of the AWS secret backend role to read
 credentials from, with no leading or trailing `/`s.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -224,10 +224,10 @@ credentials from, with no leading or trailing `/`s.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The specific AWS ARN to use
+    <dd>The specific AWS ARN to use
 from the configured role. If the role does not have multiple ARNs, this does
 not need to be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,14 +235,14 @@ not need to be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of credentials to read. Defaults
+    <dd>The type of credentials to read. Defaults
 to `"creds"`, which just returns an AWS Access Key ID and Secret
 Key. Can also be set to `"sts"`, which will return a security token
 in addition to the keys.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -258,7 +258,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -267,8 +267,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS Access Key ID returned by Vault.
-{{% /md %}}</dd>
+    <dd>The AWS Access Key ID returned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -276,7 +276,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -284,8 +284,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -293,10 +293,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The duration of the secret lease, in seconds relative
+    <dd>The duration of the secret lease, in seconds relative
 to the time the data was requested. Once this time has passed any plan
 generated with this data may fail to apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -304,8 +304,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The lease identifier assigned by Vault.
-{{% /md %}}</dd>
+    <dd>The lease identifier assigned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -313,7 +313,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -321,7 +321,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -329,7 +329,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -337,8 +337,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS Secret Key returned by Vault.
-{{% /md %}}</dd>
+    <dd>The AWS Secret Key returned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -346,8 +346,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The STS token returned by Vault, if any.
-{{% /md %}}</dd>
+    <dd>The STS token returned by Vault, if any.
+</dd>
 
     <dt class="property-"
             title="">
@@ -355,7 +355,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -363,13 +363,13 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -378,8 +378,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS Access Key ID returned by Vault.
-{{% /md %}}</dd>
+    <dd>The AWS Access Key ID returned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -387,7 +387,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -395,8 +395,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -404,10 +404,10 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The duration of the secret lease, in seconds relative
+    <dd>The duration of the secret lease, in seconds relative
 to the time the data was requested. Once this time has passed any plan
 generated with this data may fail to apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -415,8 +415,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The lease identifier assigned by Vault.
-{{% /md %}}</dd>
+    <dd>The lease identifier assigned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -424,7 +424,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -432,7 +432,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -440,7 +440,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -448,8 +448,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS Secret Key returned by Vault.
-{{% /md %}}</dd>
+    <dd>The AWS Secret Key returned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -457,8 +457,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The STS token returned by Vault, if any.
-{{% /md %}}</dd>
+    <dd>The STS token returned by Vault, if any.
+</dd>
 
     <dt class="property-"
             title="">
@@ -466,7 +466,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -474,13 +474,13 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -489,8 +489,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS Access Key ID returned by Vault.
-{{% /md %}}</dd>
+    <dd>The AWS Access Key ID returned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -498,7 +498,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -506,8 +506,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -515,10 +515,10 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The duration of the secret lease, in seconds relative
+    <dd>The duration of the secret lease, in seconds relative
 to the time the data was requested. Once this time has passed any plan
 generated with this data may fail to apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -526,8 +526,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The lease identifier assigned by Vault.
-{{% /md %}}</dd>
+    <dd>The lease identifier assigned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -535,7 +535,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -543,7 +543,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -551,7 +551,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -559,8 +559,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AWS Secret Key returned by Vault.
-{{% /md %}}</dd>
+    <dd>The AWS Secret Key returned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -568,8 +568,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The STS token returned by Vault, if any.
-{{% /md %}}</dd>
+    <dd>The STS token returned by Vault, if any.
+</dd>
 
     <dt class="property-"
             title="">
@@ -577,7 +577,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -585,13 +585,13 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -600,8 +600,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS Access Key ID returned by Vault.
-{{% /md %}}</dd>
+    <dd>The AWS Access Key ID returned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -609,7 +609,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -617,8 +617,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -626,10 +626,10 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The duration of the secret lease, in seconds relative
+    <dd>The duration of the secret lease, in seconds relative
 to the time the data was requested. Once this time has passed any plan
 generated with this data may fail to apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -637,8 +637,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The lease identifier assigned by Vault.
-{{% /md %}}</dd>
+    <dd>The lease identifier assigned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -646,7 +646,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -654,7 +654,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -662,7 +662,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -670,8 +670,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AWS Secret Key returned by Vault.
-{{% /md %}}</dd>
+    <dd>The AWS Secret Key returned by Vault.
+</dd>
 
     <dt class="property-"
             title="">
@@ -679,8 +679,8 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The STS token returned by Vault, if any.
-{{% /md %}}</dd>
+    <dd>The STS token returned by Vault, if any.
+</dd>
 
     <dt class="property-"
             title="">
@@ -688,7 +688,7 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -696,10 +696,10 @@ generated with this data may fail to apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

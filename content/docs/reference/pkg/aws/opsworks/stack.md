@@ -42,26 +42,26 @@ const main = new aws.opsworks.Stack("main", {
 
 
 ## Create a Stack Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Stack">Stack</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#StackArgs">StackArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Stack</span><span class="p">(resource_name, opts=None, </span>agent_version=None<span class="p">, </span>berkshelf_version=None<span class="p">, </span>color=None<span class="p">, </span>configuration_manager_name=None<span class="p">, </span>configuration_manager_version=None<span class="p">, </span>custom_cookbooks_sources=None<span class="p">, </span>custom_json=None<span class="p">, </span>default_availability_zone=None<span class="p">, </span>default_instance_profile_arn=None<span class="p">, </span>default_os=None<span class="p">, </span>default_root_device_type=None<span class="p">, </span>default_ssh_key_name=None<span class="p">, </span>default_subnet_id=None<span class="p">, </span>hostname_theme=None<span class="p">, </span>manage_berkshelf=None<span class="p">, </span>name=None<span class="p">, </span>region=None<span class="p">, </span>service_role_arn=None<span class="p">, </span>tags=None<span class="p">, </span>use_custom_cookbooks=None<span class="p">, </span>use_opsworks_security_groups=None<span class="p">, </span>vpc_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewStack<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#StackArgs">StackArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Stack">Stack</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Stack.html">Stack</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.StackArgs.html">StackArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -98,9 +98,9 @@ const main = new aws.opsworks.Stack("main", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -118,9 +118,9 @@ const main = new aws.opsworks.Stack("main", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -167,9 +167,9 @@ const main = new aws.opsworks.Stack("main", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -206,7 +206,7 @@ const main = new aws.opsworks.Stack("main", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Stack Resource Properties {#properties}
 
@@ -219,7 +219,7 @@ The Stack resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -228,9 +228,9 @@ The Stack resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM Instance Profile that created instances
+    <dd>The ARN of an IAM Instance Profile that created instances
 will have by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -238,8 +238,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the region where the stack will exist.
-{{% /md %}}</dd>
+    <dd>The name of the region where the stack will exist.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -247,8 +247,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that the OpsWorks service will act as.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that the OpsWorks service will act as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,8 +256,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If set to `"LATEST"`, OpsWorks will automatically install the latest version.
-{{% /md %}}</dd>
+    <dd>If set to `"LATEST"`, OpsWorks will automatically install the latest version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,8 +265,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If `manage_berkshelf` is enabled, the version of Berkshelf to use.
-{{% /md %}}</dd>
+    <dd>If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Color to paint next to the stack's resources in the OpsWorks console.
-{{% /md %}}</dd>
+    <dd>Color to paint next to the stack's resources in the OpsWorks console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the configuration manager to use. Defaults to "Chef".
-{{% /md %}}</dd>
+    <dd>Name of the configuration manager to use. Defaults to "Chef".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the configuration manager to use. Defaults to "11.4".
-{{% /md %}}</dd>
+    <dd>Version of the configuration manager to use. Defaults to "11.4".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,9 +301,9 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">List&lt;Stack<wbr>Custom<wbr>Cookbooks<wbr>Source<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}When `use_custom_cookbooks` is set, provide this sub-object as
+    <dd>When `use_custom_cookbooks` is set, provide this sub-object as
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,8 +311,8 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the entire stack.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the entire stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,9 +320,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default. This is required unless you set `vpc_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of OS that will be installed on instances by default.
-{{% /md %}}</dd>
+    <dd>Name of OS that will be installed on instances by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,8 +339,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,8 +348,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,9 +357,9 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Id of the subnet in which instances will be created by default. Mandatory
+    <dd>Id of the subnet in which instances will be created by default. Mandatory
 if `vpc_id` is set, and forbidden if it isn't.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,9 +367,9 @@ if `vpc_id` is set, and forbidden if it isn't.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword representing the naming scheme that will be used for instance hostnames
+    <dd>Keyword representing the naming scheme that will be used for instance hostnames
 within this stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,8 +377,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether Opsworks will run Berkshelf for this stack.
-{{% /md %}}</dd>
+    <dd>Boolean value controlling whether Opsworks will run Berkshelf for this stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stack.
-{{% /md %}}</dd>
+    <dd>The name of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,9 +404,9 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the custom cookbook settings are
+    <dd>Boolean value controlling whether the custom cookbook settings are
 enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,9 +414,9 @@ enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the standard OpsWorks
+    <dd>Boolean value controlling whether the standard OpsWorks
 security groups apply to created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,14 +424,14 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that this stack belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that this stack belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -440,9 +440,9 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM Instance Profile that created instances
+    <dd>The ARN of an IAM Instance Profile that created instances
 will have by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -450,8 +450,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the region where the stack will exist.
-{{% /md %}}</dd>
+    <dd>The name of the region where the stack will exist.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -459,8 +459,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that the OpsWorks service will act as.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that the OpsWorks service will act as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set to `"LATEST"`, OpsWorks will automatically install the latest version.
-{{% /md %}}</dd>
+    <dd>If set to `"LATEST"`, OpsWorks will automatically install the latest version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `manage_berkshelf` is enabled, the version of Berkshelf to use.
-{{% /md %}}</dd>
+    <dd>If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Color to paint next to the stack's resources in the OpsWorks console.
-{{% /md %}}</dd>
+    <dd>Color to paint next to the stack's resources in the OpsWorks console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the configuration manager to use. Defaults to "Chef".
-{{% /md %}}</dd>
+    <dd>Name of the configuration manager to use. Defaults to "Chef".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the configuration manager to use. Defaults to "11.4".
-{{% /md %}}</dd>
+    <dd>Version of the configuration manager to use. Defaults to "11.4".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,9 +513,9 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">[]Stack<wbr>Custom<wbr>Cookbooks<wbr>Source</a></span>
     </dt>
-    <dd>{{% md %}}When `use_custom_cookbooks` is set, provide this sub-object as
+    <dd>When `use_custom_cookbooks` is set, provide this sub-object as
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the entire stack.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the entire stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,9 +532,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default. This is required unless you set `vpc_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of OS that will be installed on instances by default.
-{{% /md %}}</dd>
+    <dd>Name of OS that will be installed on instances by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,8 +560,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,9 +569,9 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Id of the subnet in which instances will be created by default. Mandatory
+    <dd>Id of the subnet in which instances will be created by default. Mandatory
 if `vpc_id` is set, and forbidden if it isn't.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -579,9 +579,9 @@ if `vpc_id` is set, and forbidden if it isn't.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword representing the naming scheme that will be used for instance hostnames
+    <dd>Keyword representing the naming scheme that will be used for instance hostnames
 within this stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -589,8 +589,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether Opsworks will run Berkshelf for this stack.
-{{% /md %}}</dd>
+    <dd>Boolean value controlling whether Opsworks will run Berkshelf for this stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,8 +598,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stack.
-{{% /md %}}</dd>
+    <dd>The name of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -607,8 +607,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,9 +616,9 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the custom cookbook settings are
+    <dd>Boolean value controlling whether the custom cookbook settings are
 enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,9 +626,9 @@ enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the standard OpsWorks
+    <dd>Boolean value controlling whether the standard OpsWorks
 security groups apply to created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -636,14 +636,14 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that this stack belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that this stack belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -652,9 +652,9 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM Instance Profile that created instances
+    <dd>The ARN of an IAM Instance Profile that created instances
 will have by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -662,8 +662,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the region where the stack will exist.
-{{% /md %}}</dd>
+    <dd>The name of the region where the stack will exist.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -671,8 +671,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that the OpsWorks service will act as.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that the OpsWorks service will act as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,8 +680,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set to `"LATEST"`, OpsWorks will automatically install the latest version.
-{{% /md %}}</dd>
+    <dd>If set to `"LATEST"`, OpsWorks will automatically install the latest version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,8 +689,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `manage_berkshelf` is enabled, the version of Berkshelf to use.
-{{% /md %}}</dd>
+    <dd>If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,8 +698,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Color to paint next to the stack's resources in the OpsWorks console.
-{{% /md %}}</dd>
+    <dd>Color to paint next to the stack's resources in the OpsWorks console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the configuration manager to use. Defaults to "Chef".
-{{% /md %}}</dd>
+    <dd>Name of the configuration manager to use. Defaults to "Chef".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,8 +716,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the configuration manager to use. Defaults to "11.4".
-{{% /md %}}</dd>
+    <dd>Version of the configuration manager to use. Defaults to "11.4".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -725,9 +725,9 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">Stack<wbr>Custom<wbr>Cookbooks<wbr>Source[]</a></span>
     </dt>
-    <dd>{{% md %}}When `use_custom_cookbooks` is set, provide this sub-object as
+    <dd>When `use_custom_cookbooks` is set, provide this sub-object as
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -735,8 +735,8 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the entire stack.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the entire stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -744,9 +744,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default. This is required unless you set `vpc_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -754,8 +754,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of OS that will be installed on instances by default.
-{{% /md %}}</dd>
+    <dd>Name of OS that will be installed on instances by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -763,8 +763,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -772,8 +772,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -781,9 +781,9 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Id of the subnet in which instances will be created by default. Mandatory
+    <dd>Id of the subnet in which instances will be created by default. Mandatory
 if `vpc_id` is set, and forbidden if it isn't.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -791,9 +791,9 @@ if `vpc_id` is set, and forbidden if it isn't.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword representing the naming scheme that will be used for instance hostnames
+    <dd>Keyword representing the naming scheme that will be used for instance hostnames
 within this stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,8 +801,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether Opsworks will run Berkshelf for this stack.
-{{% /md %}}</dd>
+    <dd>Boolean value controlling whether Opsworks will run Berkshelf for this stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -810,8 +810,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stack.
-{{% /md %}}</dd>
+    <dd>The name of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -819,8 +819,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,9 +828,9 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the custom cookbook settings are
+    <dd>Boolean value controlling whether the custom cookbook settings are
 enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -838,9 +838,9 @@ enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the standard OpsWorks
+    <dd>Boolean value controlling whether the standard OpsWorks
 security groups apply to created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,14 +848,14 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that this stack belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that this stack belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -864,9 +864,9 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM Instance Profile that created instances
+    <dd>The ARN of an IAM Instance Profile that created instances
 will have by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -874,8 +874,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the region where the stack will exist.
-{{% /md %}}</dd>
+    <dd>The name of the region where the stack will exist.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -883,8 +883,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that the OpsWorks service will act as.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that the OpsWorks service will act as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -892,8 +892,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If set to `"LATEST"`, OpsWorks will automatically install the latest version.
-{{% /md %}}</dd>
+    <dd>If set to `"LATEST"`, OpsWorks will automatically install the latest version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -901,8 +901,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If `manage_berkshelf` is enabled, the version of Berkshelf to use.
-{{% /md %}}</dd>
+    <dd>If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -910,8 +910,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Color to paint next to the stack's resources in the OpsWorks console.
-{{% /md %}}</dd>
+    <dd>Color to paint next to the stack's resources in the OpsWorks console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,8 +919,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the configuration manager to use. Defaults to "Chef".
-{{% /md %}}</dd>
+    <dd>Name of the configuration manager to use. Defaults to "Chef".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -928,8 +928,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Version of the configuration manager to use. Defaults to "11.4".
-{{% /md %}}</dd>
+    <dd>Version of the configuration manager to use. Defaults to "11.4".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -937,9 +937,9 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">List[Stack<wbr>Custom<wbr>Cookbooks<wbr>Source]</a></span>
     </dt>
-    <dd>{{% md %}}When `use_custom_cookbooks` is set, provide this sub-object as
+    <dd>When `use_custom_cookbooks` is set, provide this sub-object as
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,8 +947,8 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the entire stack.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the entire stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,9 +956,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default. This is required unless you set `vpc_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -966,8 +966,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of OS that will be installed on instances by default.
-{{% /md %}}</dd>
+    <dd>Name of OS that will be installed on instances by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -975,8 +975,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -984,8 +984,8 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -993,9 +993,9 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Id of the subnet in which instances will be created by default. Mandatory
+    <dd>Id of the subnet in which instances will be created by default. Mandatory
 if `vpc_id` is set, and forbidden if it isn't.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1003,9 +1003,9 @@ if `vpc_id` is set, and forbidden if it isn't.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword representing the naming scheme that will be used for instance hostnames
+    <dd>Keyword representing the naming scheme that will be used for instance hostnames
 within this stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1013,8 +1013,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether Opsworks will run Berkshelf for this stack.
-{{% /md %}}</dd>
+    <dd>Boolean value controlling whether Opsworks will run Berkshelf for this stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1022,8 +1022,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stack.
-{{% /md %}}</dd>
+    <dd>The name of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1031,8 +1031,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1040,9 +1040,9 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the custom cookbook settings are
+    <dd>Boolean value controlling whether the custom cookbook settings are
 enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,9 +1050,9 @@ enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the standard OpsWorks
+    <dd>Boolean value controlling whether the standard OpsWorks
 security groups apply to created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,11 +1060,11 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that this stack belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that this stack belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1078,7 +1078,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1087,7 +1087,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1095,7 +1095,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1103,13 +1103,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1118,7 +1118,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1126,7 +1126,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1134,13 +1134,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1149,7 +1149,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1157,7 +1157,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1165,13 +1165,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1180,7 +1180,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1188,7 +1188,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1196,10 +1196,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1210,25 +1210,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Stack Resource {#look-up}
 
 Get an existing Stack resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#StackState">StackState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Stack">Stack</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>agent_version=None<span class="p">, </span>arn=None<span class="p">, </span>berkshelf_version=None<span class="p">, </span>color=None<span class="p">, </span>configuration_manager_name=None<span class="p">, </span>configuration_manager_version=None<span class="p">, </span>custom_cookbooks_sources=None<span class="p">, </span>custom_json=None<span class="p">, </span>default_availability_zone=None<span class="p">, </span>default_instance_profile_arn=None<span class="p">, </span>default_os=None<span class="p">, </span>default_root_device_type=None<span class="p">, </span>default_ssh_key_name=None<span class="p">, </span>default_subnet_id=None<span class="p">, </span>hostname_theme=None<span class="p">, </span>manage_berkshelf=None<span class="p">, </span>name=None<span class="p">, </span>region=None<span class="p">, </span>service_role_arn=None<span class="p">, </span>stack_endpoint=None<span class="p">, </span>tags=None<span class="p">, </span>use_custom_cookbooks=None<span class="p">, </span>use_opsworks_security_groups=None<span class="p">, </span>vpc_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetStack<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#StackState">StackState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Stack">Stack</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Stack.html">Stack</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.StackState.html">StackState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1253,9 +1253,9 @@ Get an existing Stack resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1268,36 +1268,9 @@ Get an existing Stack resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1322,13 +1295,40 @@ Get an existing Stack resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1337,8 +1337,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If set to `"LATEST"`, OpsWorks will automatically install the latest version.
-{{% /md %}}</dd>
+    <dd>If set to `"LATEST"`, OpsWorks will automatically install the latest version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,7 +1346,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,8 +1354,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If `manage_berkshelf` is enabled, the version of Berkshelf to use.
-{{% /md %}}</dd>
+    <dd>If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1363,8 +1363,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Color to paint next to the stack's resources in the OpsWorks console.
-{{% /md %}}</dd>
+    <dd>Color to paint next to the stack's resources in the OpsWorks console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,8 +1372,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the configuration manager to use. Defaults to "Chef".
-{{% /md %}}</dd>
+    <dd>Name of the configuration manager to use. Defaults to "Chef".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,8 +1381,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the configuration manager to use. Defaults to "11.4".
-{{% /md %}}</dd>
+    <dd>Version of the configuration manager to use. Defaults to "11.4".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,9 +1390,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">List&lt;Stack<wbr>Custom<wbr>Cookbooks<wbr>Source<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}When `use_custom_cookbooks` is set, provide this sub-object as
+    <dd>When `use_custom_cookbooks` is set, provide this sub-object as
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,8 +1400,8 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the entire stack.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the entire stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1409,9 +1409,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default. This is required unless you set `vpc_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,9 +1419,9 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM Instance Profile that created instances
+    <dd>The ARN of an IAM Instance Profile that created instances
 will have by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1429,8 +1429,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of OS that will be installed on instances by default.
-{{% /md %}}</dd>
+    <dd>Name of OS that will be installed on instances by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1438,8 +1438,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1447,8 +1447,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,9 +1456,9 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Id of the subnet in which instances will be created by default. Mandatory
+    <dd>Id of the subnet in which instances will be created by default. Mandatory
 if `vpc_id` is set, and forbidden if it isn't.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,9 +1466,9 @@ if `vpc_id` is set, and forbidden if it isn't.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword representing the naming scheme that will be used for instance hostnames
+    <dd>Keyword representing the naming scheme that will be used for instance hostnames
 within this stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1476,8 +1476,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether Opsworks will run Berkshelf for this stack.
-{{% /md %}}</dd>
+    <dd>Boolean value controlling whether Opsworks will run Berkshelf for this stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1485,8 +1485,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stack.
-{{% /md %}}</dd>
+    <dd>The name of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,8 +1494,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the region where the stack will exist.
-{{% /md %}}</dd>
+    <dd>The name of the region where the stack will exist.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1503,8 +1503,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that the OpsWorks service will act as.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that the OpsWorks service will act as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,7 +1512,7 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,8 +1520,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,9 +1529,9 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the custom cookbook settings are
+    <dd>Boolean value controlling whether the custom cookbook settings are
 enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1539,9 +1539,9 @@ enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the standard OpsWorks
+    <dd>Boolean value controlling whether the standard OpsWorks
 security groups apply to created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,14 +1549,14 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that this stack belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that this stack belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1565,8 +1565,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set to `"LATEST"`, OpsWorks will automatically install the latest version.
-{{% /md %}}</dd>
+    <dd>If set to `"LATEST"`, OpsWorks will automatically install the latest version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,7 +1574,7 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1582,8 +1582,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `manage_berkshelf` is enabled, the version of Berkshelf to use.
-{{% /md %}}</dd>
+    <dd>If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1591,8 +1591,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Color to paint next to the stack's resources in the OpsWorks console.
-{{% /md %}}</dd>
+    <dd>Color to paint next to the stack's resources in the OpsWorks console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1600,8 +1600,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the configuration manager to use. Defaults to "Chef".
-{{% /md %}}</dd>
+    <dd>Name of the configuration manager to use. Defaults to "Chef".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1609,8 +1609,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the configuration manager to use. Defaults to "11.4".
-{{% /md %}}</dd>
+    <dd>Version of the configuration manager to use. Defaults to "11.4".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1618,9 +1618,9 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">[]Stack<wbr>Custom<wbr>Cookbooks<wbr>Source</a></span>
     </dt>
-    <dd>{{% md %}}When `use_custom_cookbooks` is set, provide this sub-object as
+    <dd>When `use_custom_cookbooks` is set, provide this sub-object as
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,8 +1628,8 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the entire stack.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the entire stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,9 +1637,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default. This is required unless you set `vpc_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1647,9 +1647,9 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM Instance Profile that created instances
+    <dd>The ARN of an IAM Instance Profile that created instances
 will have by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1657,8 +1657,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of OS that will be installed on instances by default.
-{{% /md %}}</dd>
+    <dd>Name of OS that will be installed on instances by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1666,8 +1666,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1675,8 +1675,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,9 +1684,9 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Id of the subnet in which instances will be created by default. Mandatory
+    <dd>Id of the subnet in which instances will be created by default. Mandatory
 if `vpc_id` is set, and forbidden if it isn't.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1694,9 +1694,9 @@ if `vpc_id` is set, and forbidden if it isn't.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword representing the naming scheme that will be used for instance hostnames
+    <dd>Keyword representing the naming scheme that will be used for instance hostnames
 within this stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1704,8 +1704,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether Opsworks will run Berkshelf for this stack.
-{{% /md %}}</dd>
+    <dd>Boolean value controlling whether Opsworks will run Berkshelf for this stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1713,8 +1713,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stack.
-{{% /md %}}</dd>
+    <dd>The name of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1722,8 +1722,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the region where the stack will exist.
-{{% /md %}}</dd>
+    <dd>The name of the region where the stack will exist.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1731,8 +1731,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that the OpsWorks service will act as.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that the OpsWorks service will act as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1740,7 +1740,7 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1748,8 +1748,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1757,9 +1757,9 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the custom cookbook settings are
+    <dd>Boolean value controlling whether the custom cookbook settings are
 enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1767,9 +1767,9 @@ enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the standard OpsWorks
+    <dd>Boolean value controlling whether the standard OpsWorks
 security groups apply to created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1777,14 +1777,14 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that this stack belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that this stack belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1793,8 +1793,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set to `"LATEST"`, OpsWorks will automatically install the latest version.
-{{% /md %}}</dd>
+    <dd>If set to `"LATEST"`, OpsWorks will automatically install the latest version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1802,7 +1802,7 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,8 +1810,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `manage_berkshelf` is enabled, the version of Berkshelf to use.
-{{% /md %}}</dd>
+    <dd>If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1819,8 +1819,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Color to paint next to the stack's resources in the OpsWorks console.
-{{% /md %}}</dd>
+    <dd>Color to paint next to the stack's resources in the OpsWorks console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1828,8 +1828,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the configuration manager to use. Defaults to "Chef".
-{{% /md %}}</dd>
+    <dd>Name of the configuration manager to use. Defaults to "Chef".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1837,8 +1837,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the configuration manager to use. Defaults to "11.4".
-{{% /md %}}</dd>
+    <dd>Version of the configuration manager to use. Defaults to "11.4".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,9 +1846,9 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">Stack<wbr>Custom<wbr>Cookbooks<wbr>Source[]</a></span>
     </dt>
-    <dd>{{% md %}}When `use_custom_cookbooks` is set, provide this sub-object as
+    <dd>When `use_custom_cookbooks` is set, provide this sub-object as
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1856,8 +1856,8 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the entire stack.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the entire stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,9 +1865,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default. This is required unless you set `vpc_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1875,9 +1875,9 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM Instance Profile that created instances
+    <dd>The ARN of an IAM Instance Profile that created instances
 will have by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1885,8 +1885,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of OS that will be installed on instances by default.
-{{% /md %}}</dd>
+    <dd>Name of OS that will be installed on instances by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1894,8 +1894,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1903,8 +1903,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1912,9 +1912,9 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Id of the subnet in which instances will be created by default. Mandatory
+    <dd>Id of the subnet in which instances will be created by default. Mandatory
 if `vpc_id` is set, and forbidden if it isn't.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1922,9 +1922,9 @@ if `vpc_id` is set, and forbidden if it isn't.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword representing the naming scheme that will be used for instance hostnames
+    <dd>Keyword representing the naming scheme that will be used for instance hostnames
 within this stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1932,8 +1932,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether Opsworks will run Berkshelf for this stack.
-{{% /md %}}</dd>
+    <dd>Boolean value controlling whether Opsworks will run Berkshelf for this stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,8 +1941,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stack.
-{{% /md %}}</dd>
+    <dd>The name of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,8 +1950,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the region where the stack will exist.
-{{% /md %}}</dd>
+    <dd>The name of the region where the stack will exist.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1959,8 +1959,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that the OpsWorks service will act as.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that the OpsWorks service will act as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1968,7 +1968,7 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,8 +1976,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,9 +1985,9 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the custom cookbook settings are
+    <dd>Boolean value controlling whether the custom cookbook settings are
 enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1995,9 +1995,9 @@ enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the standard OpsWorks
+    <dd>Boolean value controlling whether the standard OpsWorks
 security groups apply to created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,14 +2005,14 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that this stack belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that this stack belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2021,8 +2021,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If set to `"LATEST"`, OpsWorks will automatically install the latest version.
-{{% /md %}}</dd>
+    <dd>If set to `"LATEST"`, OpsWorks will automatically install the latest version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2030,7 +2030,7 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2038,8 +2038,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If `manage_berkshelf` is enabled, the version of Berkshelf to use.
-{{% /md %}}</dd>
+    <dd>If `manage_berkshelf` is enabled, the version of Berkshelf to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2047,8 +2047,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Color to paint next to the stack's resources in the OpsWorks console.
-{{% /md %}}</dd>
+    <dd>Color to paint next to the stack's resources in the OpsWorks console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2056,8 +2056,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the configuration manager to use. Defaults to "Chef".
-{{% /md %}}</dd>
+    <dd>Name of the configuration manager to use. Defaults to "Chef".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2065,8 +2065,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Version of the configuration manager to use. Defaults to "11.4".
-{{% /md %}}</dd>
+    <dd>Version of the configuration manager to use. Defaults to "11.4".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,9 +2074,9 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">List[Stack<wbr>Custom<wbr>Cookbooks<wbr>Source]</a></span>
     </dt>
-    <dd>{{% md %}}When `use_custom_cookbooks` is set, provide this sub-object as
+    <dd>When `use_custom_cookbooks` is set, provide this sub-object as
 described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2084,8 +2084,8 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the entire stack.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the entire stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2093,9 +2093,9 @@ described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the availability zone where instances will be created
+    <dd>Name of the availability zone where instances will be created
 by default. This is required unless you set `vpc_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2103,9 +2103,9 @@ by default. This is required unless you set `vpc_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM Instance Profile that created instances
+    <dd>The ARN of an IAM Instance Profile that created instances
 will have by default.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2113,8 +2113,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of OS that will be installed on instances by default.
-{{% /md %}}</dd>
+    <dd>Name of OS that will be installed on instances by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2122,8 +2122,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the type of root device instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the type of root device instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2131,8 +2131,8 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the SSH keypair that instances will have by default.
-{{% /md %}}</dd>
+    <dd>Name of the SSH keypair that instances will have by default.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2140,9 +2140,9 @@ will have by default.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Id of the subnet in which instances will be created by default. Mandatory
+    <dd>Id of the subnet in which instances will be created by default. Mandatory
 if `vpc_id` is set, and forbidden if it isn't.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2150,9 +2150,9 @@ if `vpc_id` is set, and forbidden if it isn't.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword representing the naming scheme that will be used for instance hostnames
+    <dd>Keyword representing the naming scheme that will be used for instance hostnames
 within this stack.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2160,8 +2160,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether Opsworks will run Berkshelf for this stack.
-{{% /md %}}</dd>
+    <dd>Boolean value controlling whether Opsworks will run Berkshelf for this stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2169,8 +2169,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stack.
-{{% /md %}}</dd>
+    <dd>The name of the stack.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2178,8 +2178,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the region where the stack will exist.
-{{% /md %}}</dd>
+    <dd>The name of the region where the stack will exist.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2187,8 +2187,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM role that the OpsWorks service will act as.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM role that the OpsWorks service will act as.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2196,7 +2196,7 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2204,8 +2204,8 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2213,9 +2213,9 @@ within this stack.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the custom cookbook settings are
+    <dd>Boolean value controlling whether the custom cookbook settings are
 enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2223,9 +2223,9 @@ enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean value controlling whether the standard OpsWorks
+    <dd>Boolean value controlling whether the standard OpsWorks
 security groups apply to created instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2233,11 +2233,11 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the VPC that this stack belongs to.
-{{% /md %}}</dd>
+    <dd>The id of the VPC that this stack belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2252,18 +2252,18 @@ security groups apply to created instances.
 
 
 <h4 id="stackcustomcookbookssource">Stack<wbr>Custom<wbr>Cookbooks<wbr>Source</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#StackCustomCookbooksSource">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#StackCustomCookbooksSource">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#StackCustomCookbooksSourceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#StackCustomCookbooksSourceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2272,8 +2272,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of source to use. For example, "archive".
-{{% /md %}}</dd>
+    <dd>The type of source to use. For example, "archive".
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2281,8 +2281,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL where the cookbooks resource can be found.
-{{% /md %}}</dd>
+    <dd>The URL where the cookbooks resource can be found.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2290,8 +2290,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
-{{% /md %}}</dd>
+    <dd>Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2299,8 +2299,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}For sources that are version-aware, the revision to use.
-{{% /md %}}</dd>
+    <dd>For sources that are version-aware, the revision to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2308,8 +2308,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH key to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
-{{% /md %}}</dd>
+    <dd>SSH key to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2317,14 +2317,14 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username to use when authenticating to the source.
-{{% /md %}}</dd>
+    <dd>Username to use when authenticating to the source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2333,8 +2333,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of source to use. For example, "archive".
-{{% /md %}}</dd>
+    <dd>The type of source to use. For example, "archive".
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2342,8 +2342,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL where the cookbooks resource can be found.
-{{% /md %}}</dd>
+    <dd>The URL where the cookbooks resource can be found.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2351,8 +2351,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
-{{% /md %}}</dd>
+    <dd>Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2360,8 +2360,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}For sources that are version-aware, the revision to use.
-{{% /md %}}</dd>
+    <dd>For sources that are version-aware, the revision to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2369,8 +2369,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH key to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
-{{% /md %}}</dd>
+    <dd>SSH key to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2378,14 +2378,14 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username to use when authenticating to the source.
-{{% /md %}}</dd>
+    <dd>Username to use when authenticating to the source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2394,8 +2394,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of source to use. For example, "archive".
-{{% /md %}}</dd>
+    <dd>The type of source to use. For example, "archive".
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2403,8 +2403,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL where the cookbooks resource can be found.
-{{% /md %}}</dd>
+    <dd>The URL where the cookbooks resource can be found.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2412,8 +2412,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
-{{% /md %}}</dd>
+    <dd>Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2421,8 +2421,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}For sources that are version-aware, the revision to use.
-{{% /md %}}</dd>
+    <dd>For sources that are version-aware, the revision to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2430,8 +2430,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SSH key to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
-{{% /md %}}</dd>
+    <dd>SSH key to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2439,14 +2439,14 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username to use when authenticating to the source.
-{{% /md %}}</dd>
+    <dd>Username to use when authenticating to the source.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2455,8 +2455,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of source to use. For example, "archive".
-{{% /md %}}</dd>
+    <dd>The type of source to use. For example, "archive".
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2464,8 +2464,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL where the cookbooks resource can be found.
-{{% /md %}}</dd>
+    <dd>The URL where the cookbooks resource can be found.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2473,8 +2473,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
-{{% /md %}}</dd>
+    <dd>Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2482,8 +2482,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}For sources that are version-aware, the revision to use.
-{{% /md %}}</dd>
+    <dd>For sources that are version-aware, the revision to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2491,8 +2491,8 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SSH key to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
-{{% /md %}}</dd>
+    <dd>SSH key to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2500,11 +2500,11 @@ security groups apply to created instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username to use when authenticating to the source.
-{{% /md %}}</dd>
+    <dd>Username to use when authenticating to the source.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

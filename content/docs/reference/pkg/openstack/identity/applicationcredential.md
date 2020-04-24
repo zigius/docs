@@ -97,26 +97,26 @@ const monitoring = new openstack.identity.ApplicationCredential("monitoring", {
 
 
 ## Create a ApplicationCredential Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/identity/#ApplicationCredential">ApplicationCredential</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/identity/#ApplicationCredentialArgs">ApplicationCredentialArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ApplicationCredential</span><span class="p">(resource_name, opts=None, </span>access_rules=None<span class="p">, </span>description=None<span class="p">, </span>expires_at=None<span class="p">, </span>name=None<span class="p">, </span>region=None<span class="p">, </span>roles=None<span class="p">, </span>secret=None<span class="p">, </span>unrestricted=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewApplicationCredential<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/identity?tab=doc#ApplicationCredentialArgs">ApplicationCredentialArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/identity?tab=doc#ApplicationCredential">ApplicationCredential</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Identity.ApplicationCredential.html">ApplicationCredential</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Identity.ApplicationCredentialArgs.html">ApplicationCredentialArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -153,9 +153,9 @@ const monitoring = new openstack.identity.ApplicationCredential("monitoring", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -173,9 +173,9 @@ const monitoring = new openstack.identity.ApplicationCredential("monitoring", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -222,9 +222,9 @@ const monitoring = new openstack.identity.ApplicationCredential("monitoring", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -261,7 +261,7 @@ const monitoring = new openstack.identity.ApplicationCredential("monitoring", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ApplicationCredential Resource Properties {#properties}
 
@@ -274,7 +274,7 @@ The ApplicationCredential resource accepts the following [input]({{< relref "/do
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -283,10 +283,10 @@ The ApplicationCredential resource accepts the following [input]({{< relref "/do
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applicationcredentialaccessrule">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Identity.<wbr>Inputs.<wbr>Application<wbr>Credential<wbr>Access<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more access rules, which
+    <dd>A collection of one or more access rules, which
 this application credential allows to follow. The structure is described
 below. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,9 +294,9 @@ below. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the application credential.
+    <dd>A description of the application credential.
 Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,11 +304,11 @@ Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the application credential
+    <dd>The expiration time of the application credential
 in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted,
 an application credential will never expire. Changing this creates a new
 application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -316,9 +316,9 @@ application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name of the application credential. Changing this
+    <dd>A name of the application credential. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,10 +326,10 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V3 Keystone client.
+    <dd>The region in which to obtain the V3 Keystone client.
 If omitted, the `region` argument of the provider is used. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,12 +337,12 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more role names, which this
+    <dd>A collection of one or more role names, which this
 application credential has to be associated with its project. If omitted,
 all the current user's roles within the scoped project will be inherited by
 a new application credential. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,10 +350,10 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret for the application credential. If omitted,
+    <dd>The secret for the application credential. If omitted,
 it will be generated by the server. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,16 +361,16 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag indicating whether the application
+    <dd>A flag indicating whether the application
 credential may be used for creation or destruction of other application
 credentials or trusts. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -379,10 +379,10 @@ credentials or trusts. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applicationcredentialaccessrule">[]Application<wbr>Credential<wbr>Access<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more access rules, which
+    <dd>A collection of one or more access rules, which
 this application credential allows to follow. The structure is described
 below. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,9 +390,9 @@ below. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the application credential.
+    <dd>A description of the application credential.
 Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,11 +400,11 @@ Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the application credential
+    <dd>The expiration time of the application credential
 in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted,
 an application credential will never expire. Changing this creates a new
 application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,9 +412,9 @@ application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name of the application credential. Changing this
+    <dd>A name of the application credential. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,10 +422,10 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V3 Keystone client.
+    <dd>The region in which to obtain the V3 Keystone client.
 If omitted, the `region` argument of the provider is used. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,12 +433,12 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more role names, which this
+    <dd>A collection of one or more role names, which this
 application credential has to be associated with its project. If omitted,
 all the current user's roles within the scoped project will be inherited by
 a new application credential. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,10 +446,10 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret for the application credential. If omitted,
+    <dd>The secret for the application credential. If omitted,
 it will be generated by the server. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,16 +457,16 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag indicating whether the application
+    <dd>A flag indicating whether the application
 credential may be used for creation or destruction of other application
 credentials or trusts. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -475,10 +475,10 @@ credentials or trusts. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applicationcredentialaccessrule">Application<wbr>Credential<wbr>Access<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more access rules, which
+    <dd>A collection of one or more access rules, which
 this application credential allows to follow. The structure is described
 below. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,9 +486,9 @@ below. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the application credential.
+    <dd>A description of the application credential.
 Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,11 +496,11 @@ Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the application credential
+    <dd>The expiration time of the application credential
 in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted,
 an application credential will never expire. Changing this creates a new
 application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,9 +508,9 @@ application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name of the application credential. Changing this
+    <dd>A name of the application credential. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,10 +518,10 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V3 Keystone client.
+    <dd>The region in which to obtain the V3 Keystone client.
 If omitted, the `region` argument of the provider is used. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,12 +529,12 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more role names, which this
+    <dd>A collection of one or more role names, which this
 application credential has to be associated with its project. If omitted,
 all the current user's roles within the scoped project will be inherited by
 a new application credential. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,10 +542,10 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret for the application credential. If omitted,
+    <dd>The secret for the application credential. If omitted,
 it will be generated by the server. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,16 +553,16 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A flag indicating whether the application
+    <dd>A flag indicating whether the application
 credential may be used for creation or destruction of other application
 credentials or trusts. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -571,10 +571,10 @@ credentials or trusts. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applicationcredentialaccessrule">List[Application<wbr>Credential<wbr>Access<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more access rules, which
+    <dd>A collection of one or more access rules, which
 this application credential allows to follow. The structure is described
 below. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,9 +582,9 @@ below. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description of the application credential.
+    <dd>A description of the application credential.
 Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,11 +592,11 @@ Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the application credential
+    <dd>The expiration time of the application credential
 in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted,
 an application credential will never expire. Changing this creates a new
 application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,9 +604,9 @@ application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name of the application credential. Changing this
+    <dd>A name of the application credential. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,10 +614,10 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V3 Keystone client.
+    <dd>The region in which to obtain the V3 Keystone client.
 If omitted, the `region` argument of the provider is used. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -625,12 +625,12 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more role names, which this
+    <dd>A collection of one or more role names, which this
 application credential has to be associated with its project. If omitted,
 all the current user's roles within the scoped project will be inherited by
 a new application credential. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,10 +638,10 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secret for the application credential. If omitted,
+    <dd>The secret for the application credential. If omitted,
 it will be generated by the server. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,13 +649,13 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag indicating whether the application
+    <dd>A flag indicating whether the application
 credential may be used for creation or destruction of other application
 credentials or trusts. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -669,7 +669,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -678,7 +678,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -686,16 +686,16 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project the application credential was created
+    <dd>The ID of the project the application credential was created
 for and that authentication requests using this application credential will
 be scoped to.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -704,7 +704,7 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -712,16 +712,16 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project the application credential was created
+    <dd>The ID of the project the application credential was created
 for and that authentication requests using this application credential will
 be scoped to.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -730,7 +730,7 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -738,16 +738,16 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project the application credential was created
+    <dd>The ID of the project the application credential was created
 for and that authentication requests using this application credential will
 be scoped to.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -756,7 +756,7 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -764,13 +764,13 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project the application credential was created
+    <dd>The ID of the project the application credential was created
 for and that authentication requests using this application credential will
 be scoped to.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -781,25 +781,25 @@ be scoped to.
 ## Look up an Existing ApplicationCredential Resource {#look-up}
 
 Get an existing ApplicationCredential resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/identity/#ApplicationCredentialState">ApplicationCredentialState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/identity/#ApplicationCredential">ApplicationCredential</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>access_rules=None<span class="p">, </span>description=None<span class="p">, </span>expires_at=None<span class="p">, </span>name=None<span class="p">, </span>project_id=None<span class="p">, </span>region=None<span class="p">, </span>roles=None<span class="p">, </span>secret=None<span class="p">, </span>unrestricted=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetApplicationCredential<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/identity?tab=doc#ApplicationCredentialState">ApplicationCredentialState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/identity?tab=doc#ApplicationCredential">ApplicationCredential</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Identity.ApplicationCredential.html">ApplicationCredential</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Identity.ApplicationCredentialState.html">ApplicationCredentialState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -824,9 +824,9 @@ Get an existing ApplicationCredential resource's state with the given name, ID, 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -839,36 +839,9 @@ Get an existing ApplicationCredential resource's state with the given name, ID, 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -893,13 +866,40 @@ Get an existing ApplicationCredential resource's state with the given name, ID, 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -908,10 +908,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applicationcredentialaccessrule">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Identity.<wbr>Inputs.<wbr>Application<wbr>Credential<wbr>Access<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more access rules, which
+    <dd>A collection of one or more access rules, which
 this application credential allows to follow. The structure is described
 below. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,9 +919,9 @@ below. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the application credential.
+    <dd>A description of the application credential.
 Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,11 +929,11 @@ Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the application credential
+    <dd>The expiration time of the application credential
 in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted,
 an application credential will never expire. Changing this creates a new
 application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,9 +941,9 @@ application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name of the application credential. Changing this
+    <dd>A name of the application credential. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,10 +951,10 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project the application credential was created
+    <dd>The ID of the project the application credential was created
 for and that authentication requests using this application credential will
 be scoped to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,10 +962,10 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V3 Keystone client.
+    <dd>The region in which to obtain the V3 Keystone client.
 If omitted, the `region` argument of the provider is used. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -973,12 +973,12 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more role names, which this
+    <dd>A collection of one or more role names, which this
 application credential has to be associated with its project. If omitted,
 all the current user's roles within the scoped project will be inherited by
 a new application credential. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -986,10 +986,10 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret for the application credential. If omitted,
+    <dd>The secret for the application credential. If omitted,
 it will be generated by the server. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -997,16 +997,16 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag indicating whether the application
+    <dd>A flag indicating whether the application
 credential may be used for creation or destruction of other application
 credentials or trusts. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1015,10 +1015,10 @@ credentials or trusts. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applicationcredentialaccessrule">[]Application<wbr>Credential<wbr>Access<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more access rules, which
+    <dd>A collection of one or more access rules, which
 this application credential allows to follow. The structure is described
 below. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,9 +1026,9 @@ below. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the application credential.
+    <dd>A description of the application credential.
 Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,11 +1036,11 @@ Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the application credential
+    <dd>The expiration time of the application credential
 in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted,
 an application credential will never expire. Changing this creates a new
 application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,9 +1048,9 @@ application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name of the application credential. Changing this
+    <dd>A name of the application credential. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,10 +1058,10 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project the application credential was created
+    <dd>The ID of the project the application credential was created
 for and that authentication requests using this application credential will
 be scoped to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,10 +1069,10 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V3 Keystone client.
+    <dd>The region in which to obtain the V3 Keystone client.
 If omitted, the `region` argument of the provider is used. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,12 +1080,12 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more role names, which this
+    <dd>A collection of one or more role names, which this
 application credential has to be associated with its project. If omitted,
 all the current user's roles within the scoped project will be inherited by
 a new application credential. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,10 +1093,10 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret for the application credential. If omitted,
+    <dd>The secret for the application credential. If omitted,
 it will be generated by the server. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1104,16 +1104,16 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag indicating whether the application
+    <dd>A flag indicating whether the application
 credential may be used for creation or destruction of other application
 credentials or trusts. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1122,10 +1122,10 @@ credentials or trusts. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applicationcredentialaccessrule">Application<wbr>Credential<wbr>Access<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more access rules, which
+    <dd>A collection of one or more access rules, which
 this application credential allows to follow. The structure is described
 below. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,9 +1133,9 @@ below. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description of the application credential.
+    <dd>A description of the application credential.
 Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,11 +1143,11 @@ Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the application credential
+    <dd>The expiration time of the application credential
 in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted,
 an application credential will never expire. Changing this creates a new
 application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,9 +1155,9 @@ application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name of the application credential. Changing this
+    <dd>A name of the application credential. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,10 +1165,10 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project the application credential was created
+    <dd>The ID of the project the application credential was created
 for and that authentication requests using this application credential will
 be scoped to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,10 +1176,10 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V3 Keystone client.
+    <dd>The region in which to obtain the V3 Keystone client.
 If omitted, the `region` argument of the provider is used. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,12 +1187,12 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more role names, which this
+    <dd>A collection of one or more role names, which this
 application credential has to be associated with its project. If omitted,
 all the current user's roles within the scoped project will be inherited by
 a new application credential. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,10 +1200,10 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret for the application credential. If omitted,
+    <dd>The secret for the application credential. If omitted,
 it will be generated by the server. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,16 +1211,16 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A flag indicating whether the application
+    <dd>A flag indicating whether the application
 credential may be used for creation or destruction of other application
 credentials or trusts. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1229,10 +1229,10 @@ credentials or trusts. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#applicationcredentialaccessrule">List[Application<wbr>Credential<wbr>Access<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more access rules, which
+    <dd>A collection of one or more access rules, which
 this application credential allows to follow. The structure is described
 below. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,9 +1240,9 @@ below. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description of the application credential.
+    <dd>A description of the application credential.
 Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1250,11 +1250,11 @@ Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the application credential
+    <dd>The expiration time of the application credential
 in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted,
 an application credential will never expire. Changing this creates a new
 application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,9 +1262,9 @@ application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name of the application credential. Changing this
+    <dd>A name of the application credential. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,10 +1272,10 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project the application credential was created
+    <dd>The ID of the project the application credential was created
 for and that authentication requests using this application credential will
 be scoped to.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1283,10 +1283,10 @@ be scoped to.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V3 Keystone client.
+    <dd>The region in which to obtain the V3 Keystone client.
 If omitted, the `region` argument of the provider is used. Changing this
 creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,12 +1294,12 @@ creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A collection of one or more role names, which this
+    <dd>A collection of one or more role names, which this
 application credential has to be associated with its project. If omitted,
 all the current user's roles within the scoped project will be inherited by
 a new application credential. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,10 +1307,10 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secret for the application credential. If omitted,
+    <dd>The secret for the application credential. If omitted,
 it will be generated by the server. Changing this creates a new application
 credential.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1318,13 +1318,13 @@ credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag indicating whether the application
+    <dd>A flag indicating whether the application
 credential may be used for creation or destruction of other application
 credentials or trusts. Changing this creates a new application credential.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1339,18 +1339,18 @@ credentials or trusts. Changing this creates a new application credential.
 
 
 <h4 id="applicationcredentialaccessrule">Application<wbr>Credential<wbr>Access<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#ApplicationCredentialAccessRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#ApplicationCredentialAccessRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/identity?tab=doc#ApplicationCredentialAccessRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/identity?tab=doc#ApplicationCredentialAccessRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1359,10 +1359,10 @@ credentials or trusts. Changing this creates a new application credential.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The request method that the application credential is
+    <dd>The request method that the application credential is
 permitted to use for a given API endpoint. Allowed values: `POST`, `GET`,
 `HEAD`, `PATCH`, `PUT` and `DELETE`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1370,11 +1370,11 @@ permitted to use for a given API endpoint. Allowed values: `POST`, `GET`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The API path that the application credential is permitted
+    <dd>The API path that the application credential is permitted
 to access. May use named wildcards such as **{tag}** or the unnamed wildcard
 **\*** to match against any string in the path up to a **/**, or the recursive
 wildcard **\*\*** to include **/** in the matched path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1382,12 +1382,12 @@ wildcard **\*\*** to include **/** in the matched path.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service type identifier for the service that the
+    <dd>The service type identifier for the service that the
 application credential is granted to access. Must be a service type that is
 listed in the service catalog and not a code name for a service. E.g.
 **identity**, **compute**, **volumev3**, **image**, **network**,
 **object-store**, **sharev2**, **dns**, **key-manager**, **monitoring**, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,15 +1395,15 @@ listed in the service catalog and not a code name for a service. E.g.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the existing access rule. The access rule ID of
+    <dd>The ID of the existing access rule. The access rule ID of
 another application credential can be provided.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1412,10 +1412,10 @@ another application credential can be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The request method that the application credential is
+    <dd>The request method that the application credential is
 permitted to use for a given API endpoint. Allowed values: `POST`, `GET`,
 `HEAD`, `PATCH`, `PUT` and `DELETE`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1423,11 +1423,11 @@ permitted to use for a given API endpoint. Allowed values: `POST`, `GET`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API path that the application credential is permitted
+    <dd>The API path that the application credential is permitted
 to access. May use named wildcards such as **{tag}** or the unnamed wildcard
 **\*** to match against any string in the path up to a **/**, or the recursive
 wildcard **\*\*** to include **/** in the matched path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1435,12 +1435,12 @@ wildcard **\*\*** to include **/** in the matched path.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service type identifier for the service that the
+    <dd>The service type identifier for the service that the
 application credential is granted to access. Must be a service type that is
 listed in the service catalog and not a code name for a service. E.g.
 **identity**, **compute**, **volumev3**, **image**, **network**,
 **object-store**, **sharev2**, **dns**, **key-manager**, **monitoring**, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,15 +1448,15 @@ listed in the service catalog and not a code name for a service. E.g.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the existing access rule. The access rule ID of
+    <dd>The ID of the existing access rule. The access rule ID of
 another application credential can be provided.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1465,10 +1465,10 @@ another application credential can be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The request method that the application credential is
+    <dd>The request method that the application credential is
 permitted to use for a given API endpoint. Allowed values: `POST`, `GET`,
 `HEAD`, `PATCH`, `PUT` and `DELETE`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1476,11 +1476,11 @@ permitted to use for a given API endpoint. Allowed values: `POST`, `GET`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The API path that the application credential is permitted
+    <dd>The API path that the application credential is permitted
 to access. May use named wildcards such as **{tag}** or the unnamed wildcard
 **\*** to match against any string in the path up to a **/**, or the recursive
 wildcard **\*\*** to include **/** in the matched path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1488,12 +1488,12 @@ wildcard **\*\*** to include **/** in the matched path.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service type identifier for the service that the
+    <dd>The service type identifier for the service that the
 application credential is granted to access. Must be a service type that is
 listed in the service catalog and not a code name for a service. E.g.
 **identity**, **compute**, **volumev3**, **image**, **network**,
 **object-store**, **sharev2**, **dns**, **key-manager**, **monitoring**, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,15 +1501,15 @@ listed in the service catalog and not a code name for a service. E.g.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the existing access rule. The access rule ID of
+    <dd>The ID of the existing access rule. The access rule ID of
 another application credential can be provided.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1518,10 +1518,10 @@ another application credential can be provided.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The request method that the application credential is
+    <dd>The request method that the application credential is
 permitted to use for a given API endpoint. Allowed values: `POST`, `GET`,
 `HEAD`, `PATCH`, `PUT` and `DELETE`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1529,11 +1529,11 @@ permitted to use for a given API endpoint. Allowed values: `POST`, `GET`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The API path that the application credential is permitted
+    <dd>The API path that the application credential is permitted
 to access. May use named wildcards such as **{tag}** or the unnamed wildcard
 **\*** to match against any string in the path up to a **/**, or the recursive
 wildcard **\*\*** to include **/** in the matched path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1541,12 +1541,12 @@ wildcard **\*\*** to include **/** in the matched path.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service type identifier for the service that the
+    <dd>The service type identifier for the service that the
 application credential is granted to access. Must be a service type that is
 listed in the service catalog and not a code name for a service. E.g.
 **identity**, **compute**, **volumev3**, **image**, **network**,
 **object-store**, **sharev2**, **dns**, **key-manager**, **monitoring**, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1554,12 +1554,12 @@ listed in the service catalog and not a code name for a service. E.g.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the existing access rule. The access rule ID of
+    <dd>The ID of the existing access rule. The access rule ID of
 another application credential can be provided.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

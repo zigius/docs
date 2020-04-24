@@ -34,26 +34,26 @@ The `nrql` attribute supports the following arguments:
 
 
 ## Create a NrqlAlertCondition Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/newrelic/#NrqlAlertCondition">NrqlAlertCondition</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/newrelic/#NrqlAlertConditionArgs">NrqlAlertConditionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">NrqlAlertCondition</span><span class="p">(resource_name, opts=None, </span>enabled=None<span class="p">, </span>expected_groups=None<span class="p">, </span>ignore_overlap=None<span class="p">, </span>name=None<span class="p">, </span>nrql=None<span class="p">, </span>policy_id=None<span class="p">, </span>runbook_url=None<span class="p">, </span>terms=None<span class="p">, </span>type=None<span class="p">, </span>value_function=None<span class="p">, </span>violation_time_limit_seconds=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewNrqlAlertCondition<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#NrqlAlertConditionArgs">NrqlAlertConditionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#NrqlAlertCondition">NrqlAlertCondition</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Newrelic/Pulumi.Newrelic.NrqlAlertCondition.html">NrqlAlertCondition</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Newrelic/Pulumi.NewRelic.NrqlAlertConditionArgs.html">NrqlAlertConditionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -90,9 +90,9 @@ The `nrql` attribute supports the following arguments:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -110,9 +110,9 @@ The `nrql` attribute supports the following arguments:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -159,9 +159,9 @@ The `nrql` attribute supports the following arguments:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -198,7 +198,7 @@ The `nrql` attribute supports the following arguments:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## NrqlAlertCondition Resource Properties {#properties}
 
@@ -211,7 +211,7 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -220,8 +220,8 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionnrql">Pulumi.<wbr>New<wbr>Relic.<wbr>Inputs.<wbr>Nrql<wbr>Alert<wbr>Condition<wbr>Nrql<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A NRQL query.
-{{% /md %}}</dd>
+    <dd>A NRQL query.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -229,8 +229,8 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy where this condition should be used.
-{{% /md %}}</dd>
+    <dd>The ID of the policy where this condition should be used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -238,8 +238,8 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionterm">List&lt;Pulumi.<wbr>New<wbr>Relic.<wbr>Inputs.<wbr>Nrql<wbr>Alert<wbr>Condition<wbr>Term<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of terms for this condition.
-{{% /md %}}</dd>
+    <dd>A list of terms for this condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -247,8 +247,8 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable the alert condition.
-{{% /md %}}</dd>
+    <dd>Whether to enable the alert condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,8 +256,8 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of expected groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Number of expected groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,8 +265,8 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to look for a convergence of groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Whether to look for a convergence of groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The title of the condition.
-{{% /md %}}</dd>
+    <dd>The title of the condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Runbook URL to display in notifications.
-{{% /md %}}</dd>
+    <dd>Runbook URL to display in notifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,7 +292,7 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are single_value, sum.
-{{% /md %}}</dd>
+    <dd>Possible values are single_value, sum.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,15 +309,15 @@ The NrqlAlertCondition resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
+    <dd>Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
 select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -326,8 +326,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionnrql">Nrql<wbr>Alert<wbr>Condition<wbr>Nrql</a></span>
     </dt>
-    <dd>{{% md %}}A NRQL query.
-{{% /md %}}</dd>
+    <dd>A NRQL query.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -335,8 +335,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy where this condition should be used.
-{{% /md %}}</dd>
+    <dd>The ID of the policy where this condition should be used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -344,8 +344,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionterm">[]Nrql<wbr>Alert<wbr>Condition<wbr>Term</a></span>
     </dt>
-    <dd>{{% md %}}A list of terms for this condition.
-{{% /md %}}</dd>
+    <dd>A list of terms for this condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,8 +353,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable the alert condition.
-{{% /md %}}</dd>
+    <dd>Whether to enable the alert condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of expected groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Number of expected groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to look for a convergence of groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Whether to look for a convergence of groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The title of the condition.
-{{% /md %}}</dd>
+    <dd>The title of the condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Runbook URL to display in notifications.
-{{% /md %}}</dd>
+    <dd>Runbook URL to display in notifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,7 +398,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,8 +406,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are single_value, sum.
-{{% /md %}}</dd>
+    <dd>Possible values are single_value, sum.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,15 +415,15 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
+    <dd>Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
 select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -432,8 +432,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionnrql">Nrql<wbr>Alert<wbr>Condition<wbr>Nrql</a></span>
     </dt>
-    <dd>{{% md %}}A NRQL query.
-{{% /md %}}</dd>
+    <dd>A NRQL query.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -441,8 +441,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy where this condition should be used.
-{{% /md %}}</dd>
+    <dd>The ID of the policy where this condition should be used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -450,8 +450,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionterm">Nrql<wbr>Alert<wbr>Condition<wbr>Term[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of terms for this condition.
-{{% /md %}}</dd>
+    <dd>A list of terms for this condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable the alert condition.
-{{% /md %}}</dd>
+    <dd>Whether to enable the alert condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of expected groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Number of expected groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to look for a convergence of groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Whether to look for a convergence of groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The title of the condition.
-{{% /md %}}</dd>
+    <dd>The title of the condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Runbook URL to display in notifications.
-{{% /md %}}</dd>
+    <dd>Runbook URL to display in notifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,7 +504,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -512,8 +512,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are single_value, sum.
-{{% /md %}}</dd>
+    <dd>Possible values are single_value, sum.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -521,15 +521,15 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
+    <dd>Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
 select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -538,8 +538,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionnrql">Dict[Nrql<wbr>Alert<wbr>Condition<wbr>Nrql]</a></span>
     </dt>
-    <dd>{{% md %}}A NRQL query.
-{{% /md %}}</dd>
+    <dd>A NRQL query.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -547,8 +547,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy where this condition should be used.
-{{% /md %}}</dd>
+    <dd>The ID of the policy where this condition should be used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -556,8 +556,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionterm">List[Nrql<wbr>Alert<wbr>Condition<wbr>Term]</a></span>
     </dt>
-    <dd>{{% md %}}A list of terms for this condition.
-{{% /md %}}</dd>
+    <dd>A list of terms for this condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,8 +565,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable the alert condition.
-{{% /md %}}</dd>
+    <dd>Whether to enable the alert condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of expected groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Number of expected groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,8 +583,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to look for a convergence of groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Whether to look for a convergence of groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The title of the condition.
-{{% /md %}}</dd>
+    <dd>The title of the condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Runbook URL to display in notifications.
-{{% /md %}}</dd>
+    <dd>Runbook URL to display in notifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,7 +610,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,8 +618,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are single_value, sum.
-{{% /md %}}</dd>
+    <dd>Possible values are single_value, sum.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,12 +627,12 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
+    <dd>Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
 select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -646,7 +646,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -655,13 +655,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -670,13 +670,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -685,13 +685,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -700,10 +700,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -714,25 +714,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing NrqlAlertCondition Resource {#look-up}
 
 Get an existing NrqlAlertCondition resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/newrelic/#NrqlAlertConditionState">NrqlAlertConditionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/newrelic/#NrqlAlertCondition">NrqlAlertCondition</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>enabled=None<span class="p">, </span>expected_groups=None<span class="p">, </span>ignore_overlap=None<span class="p">, </span>name=None<span class="p">, </span>nrql=None<span class="p">, </span>policy_id=None<span class="p">, </span>runbook_url=None<span class="p">, </span>terms=None<span class="p">, </span>type=None<span class="p">, </span>value_function=None<span class="p">, </span>violation_time_limit_seconds=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetNrqlAlertCondition<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#NrqlAlertConditionState">NrqlAlertConditionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#NrqlAlertCondition">NrqlAlertCondition</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Newrelic/Pulumi.Newrelic.NrqlAlertCondition.html">NrqlAlertCondition</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Newrelic/Pulumi.Newrelic..NrqlAlertConditionState.html">NrqlAlertConditionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -757,9 +757,9 @@ Get an existing NrqlAlertCondition resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -772,36 +772,9 @@ Get an existing NrqlAlertCondition resource's state with the given name, ID, and
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -826,13 +799,40 @@ Get an existing NrqlAlertCondition resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -841,8 +841,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable the alert condition.
-{{% /md %}}</dd>
+    <dd>Whether to enable the alert condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of expected groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Number of expected groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to look for a convergence of groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Whether to look for a convergence of groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The title of the condition.
-{{% /md %}}</dd>
+    <dd>The title of the condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionnrql">Pulumi.<wbr>New<wbr>Relic.<wbr>Inputs.<wbr>Nrql<wbr>Alert<wbr>Condition<wbr>Nrql<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A NRQL query.
-{{% /md %}}</dd>
+    <dd>A NRQL query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy where this condition should be used.
-{{% /md %}}</dd>
+    <dd>The ID of the policy where this condition should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Runbook URL to display in notifications.
-{{% /md %}}</dd>
+    <dd>Runbook URL to display in notifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionterm">List&lt;Pulumi.<wbr>New<wbr>Relic.<wbr>Inputs.<wbr>Nrql<wbr>Alert<wbr>Condition<wbr>Term<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of terms for this condition.
-{{% /md %}}</dd>
+    <dd>A list of terms for this condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,7 +913,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,8 +921,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are single_value, sum.
-{{% /md %}}</dd>
+    <dd>Possible values are single_value, sum.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -930,15 +930,15 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
+    <dd>Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
 select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -947,8 +947,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable the alert condition.
-{{% /md %}}</dd>
+    <dd>Whether to enable the alert condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,8 +956,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of expected groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Number of expected groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,8 +965,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to look for a convergence of groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Whether to look for a convergence of groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The title of the condition.
-{{% /md %}}</dd>
+    <dd>The title of the condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionnrql">Nrql<wbr>Alert<wbr>Condition<wbr>Nrql</a></span>
     </dt>
-    <dd>{{% md %}}A NRQL query.
-{{% /md %}}</dd>
+    <dd>A NRQL query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy where this condition should be used.
-{{% /md %}}</dd>
+    <dd>The ID of the policy where this condition should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Runbook URL to display in notifications.
-{{% /md %}}</dd>
+    <dd>Runbook URL to display in notifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionterm">[]Nrql<wbr>Alert<wbr>Condition<wbr>Term</a></span>
     </dt>
-    <dd>{{% md %}}A list of terms for this condition.
-{{% /md %}}</dd>
+    <dd>A list of terms for this condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,7 +1019,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1027,8 +1027,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are single_value, sum.
-{{% /md %}}</dd>
+    <dd>Possible values are single_value, sum.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,15 +1036,15 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
+    <dd>Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
 select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1053,8 +1053,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable the alert condition.
-{{% /md %}}</dd>
+    <dd>Whether to enable the alert condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of expected groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Number of expected groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,8 +1071,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to look for a convergence of groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Whether to look for a convergence of groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,8 +1080,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The title of the condition.
-{{% /md %}}</dd>
+    <dd>The title of the condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,8 +1089,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionnrql">Nrql<wbr>Alert<wbr>Condition<wbr>Nrql</a></span>
     </dt>
-    <dd>{{% md %}}A NRQL query.
-{{% /md %}}</dd>
+    <dd>A NRQL query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,8 +1098,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy where this condition should be used.
-{{% /md %}}</dd>
+    <dd>The ID of the policy where this condition should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,8 +1107,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Runbook URL to display in notifications.
-{{% /md %}}</dd>
+    <dd>Runbook URL to display in notifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,8 +1116,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionterm">Nrql<wbr>Alert<wbr>Condition<wbr>Term[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of terms for this condition.
-{{% /md %}}</dd>
+    <dd>A list of terms for this condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,7 +1125,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,8 +1133,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are single_value, sum.
-{{% /md %}}</dd>
+    <dd>Possible values are single_value, sum.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,15 +1142,15 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
+    <dd>Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
 select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1159,8 +1159,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable the alert condition.
-{{% /md %}}</dd>
+    <dd>Whether to enable the alert condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,8 +1168,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of expected groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Number of expected groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,8 +1177,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to look for a convergence of groups when using outlier detection.
-{{% /md %}}</dd>
+    <dd>Whether to look for a convergence of groups when using outlier detection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,8 +1186,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The title of the condition.
-{{% /md %}}</dd>
+    <dd>The title of the condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,8 +1195,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionnrql">Dict[Nrql<wbr>Alert<wbr>Condition<wbr>Nrql]</a></span>
     </dt>
-    <dd>{{% md %}}A NRQL query.
-{{% /md %}}</dd>
+    <dd>A NRQL query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1204,8 +1204,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the policy where this condition should be used.
-{{% /md %}}</dd>
+    <dd>The ID of the policy where this condition should be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,8 +1213,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Runbook URL to display in notifications.
-{{% /md %}}</dd>
+    <dd>Runbook URL to display in notifications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,8 +1222,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#nrqlalertconditionterm">List[Nrql<wbr>Alert<wbr>Condition<wbr>Term]</a></span>
     </dt>
-    <dd>{{% md %}}A list of terms for this condition.
-{{% /md %}}</dd>
+    <dd>A list of terms for this condition.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,7 +1231,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,8 +1239,8 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Possible values are single_value, sum.
-{{% /md %}}</dd>
+    <dd>Possible values are single_value, sum.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1248,12 +1248,12 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
+    <dd>Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you
 select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1268,18 +1268,18 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
 
 
 <h4 id="nrqlalertconditionnrql">Nrql<wbr>Alert<wbr>Condition<wbr>Nrql</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/newrelic/types/input/#NrqlAlertConditionNrql">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/newrelic/types/output/#NrqlAlertConditionNrql">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#NrqlAlertConditionNrqlArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#NrqlAlertConditionNrqlOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1288,7 +1288,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1296,13 +1296,13 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1311,7 +1311,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1319,13 +1319,13 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1334,7 +1334,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1342,13 +1342,13 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1357,7 +1357,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1365,28 +1365,28 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="nrqlalertconditionterm">Nrql<wbr>Alert<wbr>Condition<wbr>Term</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/newrelic/types/input/#NrqlAlertConditionTerm">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/newrelic/types/output/#NrqlAlertConditionTerm">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#NrqlAlertConditionTermArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-newrelic/sdk/v2/go/newrelic/?tab=doc#NrqlAlertConditionTermOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1395,7 +1395,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1403,7 +1403,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1411,7 +1411,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,7 +1419,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,13 +1427,13 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1442,7 +1442,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1450,7 +1450,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1458,7 +1458,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,7 +1466,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1474,13 +1474,13 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1489,7 +1489,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1497,7 +1497,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1505,7 +1505,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,7 +1513,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1521,13 +1521,13 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1536,7 +1536,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1544,7 +1544,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1552,7 +1552,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1560,7 +1560,7 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,10 +1568,10 @@ select. Possible values are 3600, 7200, 14400, 28800, 43200, and 86400.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

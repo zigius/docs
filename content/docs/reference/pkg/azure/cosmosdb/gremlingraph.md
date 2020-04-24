@@ -18,26 +18,26 @@ Manages a Gremlin Graph within a Cosmos DB Account.
 
 
 ## Create a GremlinGraph Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/cosmosdb/#GremlinGraph">GremlinGraph</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/cosmosdb/#GremlinGraphArgs">GremlinGraphArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">GremlinGraph</span><span class="p">(resource_name, opts=None, </span>account_name=None<span class="p">, </span>conflict_resolution_policies=None<span class="p">, </span>database_name=None<span class="p">, </span>index_policies=None<span class="p">, </span>name=None<span class="p">, </span>partition_key_path=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>throughput=None<span class="p">, </span>unique_keys=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewGremlinGraph<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraphArgs">GremlinGraphArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraph">GremlinGraph</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.CosmosDB.GremlinGraph.html">GremlinGraph</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.CosmosDB.GremlinGraphArgs.html">GremlinGraphArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages a Gremlin Graph within a Cosmos DB Account.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages a Gremlin Graph within a Cosmos DB Account.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages a Gremlin Graph within a Cosmos DB Account.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages a Gremlin Graph within a Cosmos DB Account.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## GremlinGraph Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphconflictresolutionpolicy">List&lt;Gremlin<wbr>Graph<wbr>Conflict<wbr>Resolution<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -231,8 +231,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphindexpolicy">List&lt;Gremlin<wbr>Graph<wbr>Index<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -240,8 +240,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Define a partition key. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Define a partition key. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
-{{% /md %}}</dd>
+    <dd>The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,14 +276,14 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphuniquekey">List&lt;Gremlin<wbr>Graph<wbr>Unique<wbr>Key<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -292,8 +292,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -301,8 +301,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphconflictresolutionpolicy">[]Gremlin<wbr>Graph<wbr>Conflict<wbr>Resolution<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -310,8 +310,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -319,8 +319,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphindexpolicy">[]Gremlin<wbr>Graph<wbr>Index<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -328,8 +328,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Define a partition key. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Define a partition key. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
-{{% /md %}}</dd>
+    <dd>The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,14 +364,14 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphuniquekey">[]Gremlin<wbr>Graph<wbr>Unique<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -380,8 +380,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -389,8 +389,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphconflictresolutionpolicy">Gremlin<wbr>Graph<wbr>Conflict<wbr>Resolution<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -398,8 +398,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -407,8 +407,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphindexpolicy">Gremlin<wbr>Graph<wbr>Index<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -416,8 +416,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,8 +425,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,8 +434,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Define a partition key. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Define a partition key. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
-{{% /md %}}</dd>
+    <dd>The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,14 +452,14 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphuniquekey">Gremlin<wbr>Graph<wbr>Unique<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -468,8 +468,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -477,8 +477,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphconflictresolutionpolicy">List[Gremlin<wbr>Graph<wbr>Conflict<wbr>Resolution<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -486,8 +486,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -495,8 +495,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphindexpolicy">List[Gremlin<wbr>Graph<wbr>Index<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -504,8 +504,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,8 +513,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,8 +522,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Define a partition key. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Define a partition key. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -531,8 +531,8 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
-{{% /md %}}</dd>
+    <dd>The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -540,11 +540,11 @@ The GremlinGraph resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphuniquekey">List[Gremlin<wbr>Graph<wbr>Unique<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -558,7 +558,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -567,13 +567,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -582,13 +582,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -597,13 +597,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -612,10 +612,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -626,25 +626,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing GremlinGraph Resource {#look-up}
 
 Get an existing GremlinGraph resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/cosmosdb/#GremlinGraphState">GremlinGraphState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/cosmosdb/#GremlinGraph">GremlinGraph</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>account_name=None<span class="p">, </span>conflict_resolution_policies=None<span class="p">, </span>database_name=None<span class="p">, </span>index_policies=None<span class="p">, </span>name=None<span class="p">, </span>partition_key_path=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>throughput=None<span class="p">, </span>unique_keys=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetGremlinGraph<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraphState">GremlinGraphState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraph">GremlinGraph</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.CosmosDB.GremlinGraph.html">GremlinGraph</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.CosmosDB.GremlinGraphState.html">GremlinGraphState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -669,9 +669,9 @@ Get an existing GremlinGraph resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -684,36 +684,9 @@ Get an existing GremlinGraph resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -738,13 +711,40 @@ Get an existing GremlinGraph resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -753,8 +753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -762,8 +762,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphconflictresolutionpolicy">List&lt;Gremlin<wbr>Graph<wbr>Conflict<wbr>Resolution<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -771,8 +771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,8 +780,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphindexpolicy">List&lt;Gremlin<wbr>Graph<wbr>Index<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,8 +789,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Define a partition key. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Define a partition key. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,8 +807,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
-{{% /md %}}</dd>
+    <dd>The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,14 +825,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphuniquekey">List&lt;Gremlin<wbr>Graph<wbr>Unique<wbr>Key<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -841,8 +841,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphconflictresolutionpolicy">[]Gremlin<wbr>Graph<wbr>Conflict<wbr>Resolution<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphindexpolicy">[]Gremlin<wbr>Graph<wbr>Index<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Define a partition key. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Define a partition key. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
-{{% /md %}}</dd>
+    <dd>The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,14 +913,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphuniquekey">[]Gremlin<wbr>Graph<wbr>Unique<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -929,8 +929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -938,8 +938,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphconflictresolutionpolicy">Gremlin<wbr>Graph<wbr>Conflict<wbr>Resolution<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,8 +947,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,8 +956,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphindexpolicy">Gremlin<wbr>Graph<wbr>Index<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,8 +965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Define a partition key. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Define a partition key. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
-{{% /md %}}</dd>
+    <dd>The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,14 +1001,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphuniquekey">Gremlin<wbr>Graph<wbr>Unique<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1017,8 +1017,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,8 +1026,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphconflictresolutionpolicy">List[Gremlin<wbr>Graph<wbr>Conflict<wbr>Resolution<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphindexpolicy">List[Gremlin<wbr>Graph<wbr>Index<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Define a partition key. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Define a partition key. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,8 +1071,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,8 +1080,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
-{{% /md %}}</dd>
+    <dd>The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual resource destroy-apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,11 +1089,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#gremlingraphuniquekey">List[Gremlin<wbr>Graph<wbr>Unique<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1108,18 +1108,18 @@ The following state arguments are supported:
 
 
 <h4 id="gremlingraphconflictresolutionpolicy">Gremlin<wbr>Graph<wbr>Conflict<wbr>Resolution<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#GremlinGraphConflictResolutionPolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GremlinGraphConflictResolutionPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraphConflictResolutionPolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraphConflictResolutionPolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1128,8 +1128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the conflict resolution mode. Possible values include: `LastWriterWins`, `Custom`.
-{{% /md %}}</dd>
+    <dd>Indicates the conflict resolution mode. Possible values include: `LastWriterWins`, `Custom`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,8 +1137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution path in the case of LastWriterWins mode.
-{{% /md %}}</dd>
+    <dd>The conflict resolution path in the case of LastWriterWins mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1146,14 +1146,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The procedure to resolve conflicts in the case of custom mode.
-{{% /md %}}</dd>
+    <dd>The procedure to resolve conflicts in the case of custom mode.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1162,8 +1162,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the conflict resolution mode. Possible values include: `LastWriterWins`, `Custom`.
-{{% /md %}}</dd>
+    <dd>Indicates the conflict resolution mode. Possible values include: `LastWriterWins`, `Custom`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1171,8 +1171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution path in the case of LastWriterWins mode.
-{{% /md %}}</dd>
+    <dd>The conflict resolution path in the case of LastWriterWins mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,14 +1180,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The procedure to resolve conflicts in the case of custom mode.
-{{% /md %}}</dd>
+    <dd>The procedure to resolve conflicts in the case of custom mode.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1196,8 +1196,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the conflict resolution mode. Possible values include: `LastWriterWins`, `Custom`.
-{{% /md %}}</dd>
+    <dd>Indicates the conflict resolution mode. Possible values include: `LastWriterWins`, `Custom`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,8 +1205,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution path in the case of LastWriterWins mode.
-{{% /md %}}</dd>
+    <dd>The conflict resolution path in the case of LastWriterWins mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1214,14 +1214,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The procedure to resolve conflicts in the case of custom mode.
-{{% /md %}}</dd>
+    <dd>The procedure to resolve conflicts in the case of custom mode.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1230,8 +1230,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the conflict resolution mode. Possible values include: `LastWriterWins`, `Custom`.
-{{% /md %}}</dd>
+    <dd>Indicates the conflict resolution mode. Possible values include: `LastWriterWins`, `Custom`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,8 +1239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The conflict resolution path in the case of LastWriterWins mode.
-{{% /md %}}</dd>
+    <dd>The conflict resolution path in the case of LastWriterWins mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1248,29 +1248,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The procedure to resolve conflicts in the case of custom mode.
-{{% /md %}}</dd>
+    <dd>The procedure to resolve conflicts in the case of custom mode.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="gremlingraphindexpolicy">Gremlin<wbr>Graph<wbr>Index<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#GremlinGraphIndexPolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GremlinGraphIndexPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraphIndexPolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraphIndexPolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1279,8 +1279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the indexing mode. Possible values include: `Consistent`, `Lazy`, `None`.
-{{% /md %}}</dd>
+    <dd>Indicates the indexing mode. Possible values include: `Consistent`, `Lazy`, `None`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,8 +1288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if the indexing policy is automatic. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates if the indexing policy is automatic. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,8 +1297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of paths to exclude from indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
-{{% /md %}}</dd>
+    <dd>List of paths to exclude from indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,14 +1306,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of paths to include in the indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
-{{% /md %}}</dd>
+    <dd>List of paths to include in the indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1322,8 +1322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the indexing mode. Possible values include: `Consistent`, `Lazy`, `None`.
-{{% /md %}}</dd>
+    <dd>Indicates the indexing mode. Possible values include: `Consistent`, `Lazy`, `None`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1331,8 +1331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if the indexing policy is automatic. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates if the indexing policy is automatic. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1340,8 +1340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of paths to exclude from indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
-{{% /md %}}</dd>
+    <dd>List of paths to exclude from indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,14 +1349,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of paths to include in the indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
-{{% /md %}}</dd>
+    <dd>List of paths to include in the indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1365,8 +1365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the indexing mode. Possible values include: `Consistent`, `Lazy`, `None`.
-{{% /md %}}</dd>
+    <dd>Indicates the indexing mode. Possible values include: `Consistent`, `Lazy`, `None`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1374,8 +1374,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if the indexing policy is automatic. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates if the indexing policy is automatic. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1383,8 +1383,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of paths to exclude from indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
-{{% /md %}}</dd>
+    <dd>List of paths to exclude from indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1392,14 +1392,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of paths to include in the indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
-{{% /md %}}</dd>
+    <dd>List of paths to include in the indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1408,8 +1408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the indexing mode. Possible values include: `Consistent`, `Lazy`, `None`.
-{{% /md %}}</dd>
+    <dd>Indicates the indexing mode. Possible values include: `Consistent`, `Lazy`, `None`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,8 +1417,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates if the indexing policy is automatic. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates if the indexing policy is automatic. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1426,8 +1426,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of paths to exclude from indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
-{{% /md %}}</dd>
+    <dd>List of paths to exclude from indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1435,29 +1435,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of paths to include in the indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
-{{% /md %}}</dd>
+    <dd>List of paths to include in the indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="gremlingraphuniquekey">Gremlin<wbr>Graph<wbr>Unique<wbr>Key</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#GremlinGraphUniqueKey">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GremlinGraphUniqueKey">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraphUniqueKeyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cosmosdb?tab=doc#GremlinGraphUniqueKeyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1466,14 +1466,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of paths to use for this unique key.
-{{% /md %}}</dd>
+    <dd>A list of paths to use for this unique key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1482,14 +1482,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of paths to use for this unique key.
-{{% /md %}}</dd>
+    <dd>A list of paths to use for this unique key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1498,14 +1498,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of paths to use for this unique key.
-{{% /md %}}</dd>
+    <dd>A list of paths to use for this unique key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1514,11 +1514,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of paths to use for this unique key.
-{{% /md %}}</dd>
+    <dd>A list of paths to use for this unique key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

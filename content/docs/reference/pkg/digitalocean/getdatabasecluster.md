@@ -19,29 +19,29 @@ Provides information on a DigitalOcean database cluster resource.
 
 ## Using GetDatabaseCluster {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getDatabaseCluster<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#GetDatabaseClusterArgs">GetDatabaseClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#GetDatabaseClusterResult">GetDatabaseClusterResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_database_cluster(</span>name=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupDatabaseCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetDatabaseClusterArgs">GetDatabaseClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#LookupDatabaseClusterResult">LookupDatabaseClusterResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetDatabaseCluster </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean.GetDatabaseClusterResult.html">GetDatabaseClusterResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.DigitalOcean.GetDatabaseClusterArgs.html">GetDatabaseClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database cluster.
-{{% /md %}}</dd>
+    <dd>The name of the database cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -67,13 +67,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -82,8 +82,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database cluster.
-{{% /md %}}</dd>
+    <dd>The name of the database cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -91,13 +91,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -106,8 +106,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database cluster.
-{{% /md %}}</dd>
+    <dd>The name of the database cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -115,13 +115,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -130,8 +130,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the database cluster.
-{{% /md %}}</dd>
+    <dd>The name of the database cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -139,10 +139,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -158,7 +158,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -167,8 +167,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the cluster's default database.
-{{% /md %}}</dd>
+    <dd>Name of the cluster's default database.
+</dd>
 
     <dt class="property-"
             title="">
@@ -176,8 +176,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database engine used by the cluster (ex. `pg` for PostreSQL).
-{{% /md %}}</dd>
+    <dd>Database engine used by the cluster (ex. `pg` for PostreSQL).
+</dd>
 
     <dt class="property-"
             title="">
@@ -185,8 +185,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database cluster's hostname.
-{{% /md %}}</dd>
+    <dd>Database cluster's hostname.
+</dd>
 
     <dt class="property-"
             title="">
@@ -194,8 +194,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -203,8 +203,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdatabaseclustermaintenancewindow">List&lt;Pulumi.<wbr>Digital<wbr>Ocean.<wbr>Outputs.<wbr>Get<wbr>Database<wbr>Cluster<wbr>Maintenance<wbr>Window&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines when the automatic maintenance should be performed for the database cluster.
-{{% /md %}}</dd>
+    <dd>Defines when the automatic maintenance should be performed for the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -212,7 +212,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -220,8 +220,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of nodes that will be included in the cluster.
-{{% /md %}}</dd>
+    <dd>Number of nodes that will be included in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -229,8 +229,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for the cluster's default user.
-{{% /md %}}</dd>
+    <dd>Password for the cluster's default user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -238,8 +238,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Network port that the database cluster is listening on.
-{{% /md %}}</dd>
+    <dd>Network port that the database cluster is listening on.
+</dd>
 
     <dt class="property-"
             title="">
@@ -247,8 +247,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Same as `host`, but only accessible from resources within the account and in the same region.
-{{% /md %}}</dd>
+    <dd>Same as `host`, but only accessible from resources within the account and in the same region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -256,8 +256,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the database cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the database cluster is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -265,8 +265,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Same as `uri`, but only accessible from resources within the account and in the same region.
-{{% /md %}}</dd>
+    <dd>Same as `uri`, but only accessible from resources within the account and in the same region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -274,8 +274,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean region where the cluster will reside.
-{{% /md %}}</dd>
+    <dd>DigitalOcean region where the cluster will reside.
+</dd>
 
     <dt class="property-"
             title="">
@@ -283,8 +283,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database droplet size associated with the cluster (ex. `db-s-1vcpu-1gb`).
-{{% /md %}}</dd>
+    <dd>Database droplet size associated with the cluster (ex. `db-s-1vcpu-1gb`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -292,8 +292,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full URI for connecting to the database cluster.
-{{% /md %}}</dd>
+    <dd>The full URI for connecting to the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -301,8 +301,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the database cluster.
-{{% /md %}}</dd>
+    <dd>The uniform resource name of the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -310,8 +310,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username for the cluster's default user.
-{{% /md %}}</dd>
+    <dd>Username for the cluster's default user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -319,8 +319,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Engine version used by the cluster (ex. `11` for PostgreSQL 11).
-{{% /md %}}</dd>
+    <dd>Engine version used by the cluster (ex. `11` for PostgreSQL 11).
+</dd>
 
     <dt class="property-"
             title="">
@@ -328,13 +328,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -343,8 +343,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the cluster's default database.
-{{% /md %}}</dd>
+    <dd>Name of the cluster's default database.
+</dd>
 
     <dt class="property-"
             title="">
@@ -352,8 +352,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database engine used by the cluster (ex. `pg` for PostreSQL).
-{{% /md %}}</dd>
+    <dd>Database engine used by the cluster (ex. `pg` for PostreSQL).
+</dd>
 
     <dt class="property-"
             title="">
@@ -361,8 +361,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database cluster's hostname.
-{{% /md %}}</dd>
+    <dd>Database cluster's hostname.
+</dd>
 
     <dt class="property-"
             title="">
@@ -370,8 +370,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -379,8 +379,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdatabaseclustermaintenancewindow">[]Get<wbr>Database<wbr>Cluster<wbr>Maintenance<wbr>Window</a></span>
     </dt>
-    <dd>{{% md %}}Defines when the automatic maintenance should be performed for the database cluster.
-{{% /md %}}</dd>
+    <dd>Defines when the automatic maintenance should be performed for the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -388,7 +388,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -396,8 +396,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of nodes that will be included in the cluster.
-{{% /md %}}</dd>
+    <dd>Number of nodes that will be included in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -405,8 +405,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for the cluster's default user.
-{{% /md %}}</dd>
+    <dd>Password for the cluster's default user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -414,8 +414,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Network port that the database cluster is listening on.
-{{% /md %}}</dd>
+    <dd>Network port that the database cluster is listening on.
+</dd>
 
     <dt class="property-"
             title="">
@@ -423,8 +423,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Same as `host`, but only accessible from resources within the account and in the same region.
-{{% /md %}}</dd>
+    <dd>Same as `host`, but only accessible from resources within the account and in the same region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -432,8 +432,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the database cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the database cluster is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -441,8 +441,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Same as `uri`, but only accessible from resources within the account and in the same region.
-{{% /md %}}</dd>
+    <dd>Same as `uri`, but only accessible from resources within the account and in the same region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -450,8 +450,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean region where the cluster will reside.
-{{% /md %}}</dd>
+    <dd>DigitalOcean region where the cluster will reside.
+</dd>
 
     <dt class="property-"
             title="">
@@ -459,8 +459,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database droplet size associated with the cluster (ex. `db-s-1vcpu-1gb`).
-{{% /md %}}</dd>
+    <dd>Database droplet size associated with the cluster (ex. `db-s-1vcpu-1gb`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -468,8 +468,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full URI for connecting to the database cluster.
-{{% /md %}}</dd>
+    <dd>The full URI for connecting to the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -477,8 +477,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the database cluster.
-{{% /md %}}</dd>
+    <dd>The uniform resource name of the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -486,8 +486,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username for the cluster's default user.
-{{% /md %}}</dd>
+    <dd>Username for the cluster's default user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -495,8 +495,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Engine version used by the cluster (ex. `11` for PostgreSQL 11).
-{{% /md %}}</dd>
+    <dd>Engine version used by the cluster (ex. `11` for PostgreSQL 11).
+</dd>
 
     <dt class="property-"
             title="">
@@ -504,13 +504,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -519,8 +519,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the cluster's default database.
-{{% /md %}}</dd>
+    <dd>Name of the cluster's default database.
+</dd>
 
     <dt class="property-"
             title="">
@@ -528,8 +528,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database engine used by the cluster (ex. `pg` for PostreSQL).
-{{% /md %}}</dd>
+    <dd>Database engine used by the cluster (ex. `pg` for PostreSQL).
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,8 +537,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database cluster's hostname.
-{{% /md %}}</dd>
+    <dd>Database cluster's hostname.
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,8 +546,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -555,8 +555,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdatabaseclustermaintenancewindow">Get<wbr>Database<wbr>Cluster<wbr>Maintenance<wbr>Window[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines when the automatic maintenance should be performed for the database cluster.
-{{% /md %}}</dd>
+    <dd>Defines when the automatic maintenance should be performed for the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,7 +564,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -572,8 +572,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of nodes that will be included in the cluster.
-{{% /md %}}</dd>
+    <dd>Number of nodes that will be included in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -581,8 +581,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for the cluster's default user.
-{{% /md %}}</dd>
+    <dd>Password for the cluster's default user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -590,8 +590,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Network port that the database cluster is listening on.
-{{% /md %}}</dd>
+    <dd>Network port that the database cluster is listening on.
+</dd>
 
     <dt class="property-"
             title="">
@@ -599,8 +599,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Same as `host`, but only accessible from resources within the account and in the same region.
-{{% /md %}}</dd>
+    <dd>Same as `host`, but only accessible from resources within the account and in the same region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the database cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the database cluster is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,8 +617,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Same as `uri`, but only accessible from resources within the account and in the same region.
-{{% /md %}}</dd>
+    <dd>Same as `uri`, but only accessible from resources within the account and in the same region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -626,8 +626,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean region where the cluster will reside.
-{{% /md %}}</dd>
+    <dd>DigitalOcean region where the cluster will reside.
+</dd>
 
     <dt class="property-"
             title="">
@@ -635,8 +635,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database droplet size associated with the cluster (ex. `db-s-1vcpu-1gb`).
-{{% /md %}}</dd>
+    <dd>Database droplet size associated with the cluster (ex. `db-s-1vcpu-1gb`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -644,8 +644,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full URI for connecting to the database cluster.
-{{% /md %}}</dd>
+    <dd>The full URI for connecting to the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -653,8 +653,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the database cluster.
-{{% /md %}}</dd>
+    <dd>The uniform resource name of the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -662,8 +662,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username for the cluster's default user.
-{{% /md %}}</dd>
+    <dd>Username for the cluster's default user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -671,8 +671,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Engine version used by the cluster (ex. `11` for PostgreSQL 11).
-{{% /md %}}</dd>
+    <dd>Engine version used by the cluster (ex. `11` for PostgreSQL 11).
+</dd>
 
     <dt class="property-"
             title="">
@@ -680,13 +680,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -695,8 +695,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the cluster's default database.
-{{% /md %}}</dd>
+    <dd>Name of the cluster's default database.
+</dd>
 
     <dt class="property-"
             title="">
@@ -704,8 +704,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database engine used by the cluster (ex. `pg` for PostreSQL).
-{{% /md %}}</dd>
+    <dd>Database engine used by the cluster (ex. `pg` for PostreSQL).
+</dd>
 
     <dt class="property-"
             title="">
@@ -713,8 +713,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database cluster's hostname.
-{{% /md %}}</dd>
+    <dd>Database cluster's hostname.
+</dd>
 
     <dt class="property-"
             title="">
@@ -722,8 +722,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -731,8 +731,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdatabaseclustermaintenancewindow">List[Get<wbr>Database<wbr>Cluster<wbr>Maintenance<wbr>Window]</a></span>
     </dt>
-    <dd>{{% md %}}Defines when the automatic maintenance should be performed for the database cluster.
-{{% /md %}}</dd>
+    <dd>Defines when the automatic maintenance should be performed for the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -740,7 +740,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -748,8 +748,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of nodes that will be included in the cluster.
-{{% /md %}}</dd>
+    <dd>Number of nodes that will be included in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -757,8 +757,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password for the cluster's default user.
-{{% /md %}}</dd>
+    <dd>Password for the cluster's default user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -766,8 +766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Network port that the database cluster is listening on.
-{{% /md %}}</dd>
+    <dd>Network port that the database cluster is listening on.
+</dd>
 
     <dt class="property-"
             title="">
@@ -775,8 +775,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Same as `host`, but only accessible from resources within the account and in the same region.
-{{% /md %}}</dd>
+    <dd>Same as `host`, but only accessible from resources within the account and in the same region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -784,8 +784,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the database cluster is located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the database cluster is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -793,8 +793,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Same as `uri`, but only accessible from resources within the account and in the same region.
-{{% /md %}}</dd>
+    <dd>Same as `uri`, but only accessible from resources within the account and in the same region.
+</dd>
 
     <dt class="property-"
             title="">
@@ -802,8 +802,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean region where the cluster will reside.
-{{% /md %}}</dd>
+    <dd>DigitalOcean region where the cluster will reside.
+</dd>
 
     <dt class="property-"
             title="">
@@ -811,8 +811,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database droplet size associated with the cluster (ex. `db-s-1vcpu-1gb`).
-{{% /md %}}</dd>
+    <dd>Database droplet size associated with the cluster (ex. `db-s-1vcpu-1gb`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -820,8 +820,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full URI for connecting to the database cluster.
-{{% /md %}}</dd>
+    <dd>The full URI for connecting to the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -829,8 +829,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the database cluster.
-{{% /md %}}</dd>
+    <dd>The uniform resource name of the database cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -838,8 +838,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username for the cluster's default user.
-{{% /md %}}</dd>
+    <dd>Username for the cluster's default user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -847,8 +847,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Engine version used by the cluster (ex. `11` for PostgreSQL 11).
-{{% /md %}}</dd>
+    <dd>Engine version used by the cluster (ex. `11` for PostgreSQL 11).
+</dd>
 
     <dt class="property-"
             title="">
@@ -856,10 +856,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -872,18 +872,18 @@ The following output properties are available:
 
 
 <h4 id="getdatabaseclustermaintenancewindow">Get<wbr>Database<wbr>Cluster<wbr>Maintenance<wbr>Window</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/types/output/#GetDatabaseClusterMaintenanceWindow">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#GetDatabaseClusterMaintenanceWindow">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -892,8 +892,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The day of the week on which to apply maintenance updates.
-{{% /md %}}</dd>
+    <dd>The day of the week on which to apply maintenance updates.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -901,14 +901,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hour in UTC at which maintenance updates will be applied in 24 hour format.
-{{% /md %}}</dd>
+    <dd>The hour in UTC at which maintenance updates will be applied in 24 hour format.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -917,8 +917,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The day of the week on which to apply maintenance updates.
-{{% /md %}}</dd>
+    <dd>The day of the week on which to apply maintenance updates.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -926,14 +926,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hour in UTC at which maintenance updates will be applied in 24 hour format.
-{{% /md %}}</dd>
+    <dd>The hour in UTC at which maintenance updates will be applied in 24 hour format.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -942,8 +942,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The day of the week on which to apply maintenance updates.
-{{% /md %}}</dd>
+    <dd>The day of the week on which to apply maintenance updates.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -951,14 +951,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hour in UTC at which maintenance updates will be applied in 24 hour format.
-{{% /md %}}</dd>
+    <dd>The hour in UTC at which maintenance updates will be applied in 24 hour format.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -967,8 +967,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The day of the week on which to apply maintenance updates.
-{{% /md %}}</dd>
+    <dd>The day of the week on which to apply maintenance updates.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -976,11 +976,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hour in UTC at which maintenance updates will be applied in 24 hour format.
-{{% /md %}}</dd>
+    <dd>The hour in UTC at which maintenance updates will be applied in 24 hour format.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

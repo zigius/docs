@@ -33,29 +33,29 @@ const clustertemplate1 = pulumi.output(openstack.containerinfra.getClusterTempla
 
 ## Using GetClusterTemplate {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getClusterTemplate<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/containerinfra/#GetClusterTemplateArgs">GetClusterTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/containerinfra/#GetClusterTemplateResult">GetClusterTemplateResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_cluster_template(</span>name=None<span class="p">, </span>region=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupClusterTemplate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/containerinfra?tab=doc#LookupClusterTemplateArgs">LookupClusterTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/containerinfra?tab=doc#LookupClusterTemplateResult">LookupClusterTemplateResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetClusterTemplate </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Containerinfra.GetClusterTemplateResult.html">GetClusterTemplateResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.ContainerInfra.GetClusterTemplateArgs.html">GetClusterTemplateArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -63,7 +63,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -72,8 +72,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster template.
-{{% /md %}}</dd>
+    <dd>The name of the cluster template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -81,16 +81,16 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 Container Infra
+    <dd>The region in which to obtain the V1 Container Infra
 client.
 If omitted, the `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -99,8 +99,8 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster template.
-{{% /md %}}</dd>
+    <dd>The name of the cluster template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -108,16 +108,16 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 Container Infra
+    <dd>The region in which to obtain the V1 Container Infra
 client.
 If omitted, the `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -126,8 +126,8 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster template.
-{{% /md %}}</dd>
+    <dd>The name of the cluster template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -135,16 +135,16 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 Container Infra
+    <dd>The region in which to obtain the V1 Container Infra
 client.
 If omitted, the `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -153,8 +153,8 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster template.
-{{% /md %}}</dd>
+    <dd>The name of the cluster template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -162,13 +162,13 @@ If omitted, the `region` argument of the provider is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 Container Infra
+    <dd>The region in which to obtain the V1 Container Infra
 client.
 If omitted, the `region` argument of the provider is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -184,7 +184,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -193,9 +193,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The API server port for the Container Orchestration
+    <dd>The API server port for the Container Orchestration
 Engine for this cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -203,8 +203,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The distro for the cluster (fedora-atomic, coreos, etc.).
-{{% /md %}}</dd>
+    <dd>The distro for the cluster (fedora-atomic, coreos, etc.).
+</dd>
 
     <dt class="property-"
             title="">
@@ -212,8 +212,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container Orchestration Engine for this cluster template.
-{{% /md %}}</dd>
+    <dd>The Container Orchestration Engine for this cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -221,8 +221,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster template was created.
-{{% /md %}}</dd>
+    <dd>The time at which cluster template was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -230,9 +230,9 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Address of the DNS nameserver that is used in nodes of the
+    <dd>Address of the DNS nameserver that is used in nodes of the
 cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -240,9 +240,9 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker storage driver. Changing this updates the
+    <dd>Docker storage driver. Changing this updates the
 Docker storage driver of the existing cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -250,8 +250,8 @@ Docker storage driver of the existing cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size (in GB) of the Docker volume.
-{{% /md %}}</dd>
+    <dd>The size (in GB) of the Docker volume.
+</dd>
 
     <dt class="property-"
             title="">
@@ -259,9 +259,9 @@ Docker storage driver of the existing cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the external network that will be used for
+    <dd>The ID of the external network that will be used for
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -269,8 +269,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fixed network that will be attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed network that will be attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -278,8 +278,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}=The fixed subnet that will be attached to the cluster.
-{{% /md %}}</dd>
+    <dd>=The fixed subnet that will be attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -287,8 +287,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The flavor for the nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -296,9 +296,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether created cluster should create IP
+    <dd>Indicates whether created cluster should create IP
 floating IP for every node or not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -306,9 +306,9 @@ floating IP for every node or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of a proxy for receiving all HTTP requests and
+    <dd>The address of a proxy for receiving all HTTP requests and
 relay them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -316,9 +316,9 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of a proxy for receiving all HTTPS requests and
+    <dd>The address of a proxy for receiving all HTTPS requests and
 relay them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -326,8 +326,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -335,8 +335,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The reference to an image that is used for nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The reference to an image that is used for nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -344,8 +344,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The insecure registry URL for the cluster template.
-{{% /md %}}</dd>
+    <dd>The insecure registry URL for the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -353,8 +353,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Compute service SSH keypair.
-{{% /md %}}</dd>
+    <dd>The name of the Compute service SSH keypair.
+</dd>
 
     <dt class="property-"
             title="">
@@ -362,9 +362,9 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of key value pairs representing additional properties
+    <dd>The list of key value pairs representing additional properties
 of the cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -372,8 +372,8 @@ of the cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the master nodes.
-{{% /md %}}</dd>
+    <dd>The flavor for the master nodes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -381,9 +381,9 @@ of the cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether created cluster should has a
+    <dd>Indicates whether created cluster should has a
 loadbalancer for master nodes or not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -391,8 +391,8 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -400,8 +400,8 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the driver for the container network.
-{{% /md %}}</dd>
+    <dd>The name of the driver for the container network.
+</dd>
 
     <dt class="property-"
             title="">
@@ -409,9 +409,9 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of IP addresses that shouldn't be used in
+    <dd>A comma-separated list of IP addresses that shouldn't be used in
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -419,8 +419,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project of the cluster template.
-{{% /md %}}</dd>
+    <dd>The project of the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -428,8 +428,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether cluster template should be public.
-{{% /md %}}</dd>
+    <dd>Indicates whether cluster template should be public.
+</dd>
 
     <dt class="property-"
             title="">
@@ -437,8 +437,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -446,9 +446,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Docker registry is enabled in the
+    <dd>Indicates whether Docker registry is enabled in the
 cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -456,8 +456,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The server type for the cluster template.
-{{% /md %}}</dd>
+    <dd>The server type for the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -465,8 +465,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the TLS should be disabled in the cluster.
-{{% /md %}}</dd>
+    <dd>Indicates whether the TLS should be disabled in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -474,8 +474,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster template was updated.
-{{% /md %}}</dd>
+    <dd>The time at which cluster template was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -483,8 +483,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user of the cluster template.
-{{% /md %}}</dd>
+    <dd>The user of the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -492,15 +492,15 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the driver that is used for the volumes of the
+    <dd>The name of the driver that is used for the volumes of the
 cluster nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -509,9 +509,9 @@ cluster nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The API server port for the Container Orchestration
+    <dd>The API server port for the Container Orchestration
 Engine for this cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -519,8 +519,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The distro for the cluster (fedora-atomic, coreos, etc.).
-{{% /md %}}</dd>
+    <dd>The distro for the cluster (fedora-atomic, coreos, etc.).
+</dd>
 
     <dt class="property-"
             title="">
@@ -528,8 +528,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container Orchestration Engine for this cluster template.
-{{% /md %}}</dd>
+    <dd>The Container Orchestration Engine for this cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,8 +537,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster template was created.
-{{% /md %}}</dd>
+    <dd>The time at which cluster template was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,9 +546,9 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Address of the DNS nameserver that is used in nodes of the
+    <dd>Address of the DNS nameserver that is used in nodes of the
 cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -556,9 +556,9 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker storage driver. Changing this updates the
+    <dd>Docker storage driver. Changing this updates the
 Docker storage driver of the existing cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -566,8 +566,8 @@ Docker storage driver of the existing cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size (in GB) of the Docker volume.
-{{% /md %}}</dd>
+    <dd>The size (in GB) of the Docker volume.
+</dd>
 
     <dt class="property-"
             title="">
@@ -575,9 +575,9 @@ Docker storage driver of the existing cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the external network that will be used for
+    <dd>The ID of the external network that will be used for
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -585,8 +585,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fixed network that will be attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed network that will be attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -594,8 +594,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}=The fixed subnet that will be attached to the cluster.
-{{% /md %}}</dd>
+    <dd>=The fixed subnet that will be attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -603,8 +603,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The flavor for the nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -612,9 +612,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether created cluster should create IP
+    <dd>Indicates whether created cluster should create IP
 floating IP for every node or not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,9 +622,9 @@ floating IP for every node or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of a proxy for receiving all HTTP requests and
+    <dd>The address of a proxy for receiving all HTTP requests and
 relay them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -632,9 +632,9 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of a proxy for receiving all HTTPS requests and
+    <dd>The address of a proxy for receiving all HTTPS requests and
 relay them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,8 +642,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,8 +651,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reference to an image that is used for nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The reference to an image that is used for nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -660,8 +660,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The insecure registry URL for the cluster template.
-{{% /md %}}</dd>
+    <dd>The insecure registry URL for the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -669,8 +669,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Compute service SSH keypair.
-{{% /md %}}</dd>
+    <dd>The name of the Compute service SSH keypair.
+</dd>
 
     <dt class="property-"
             title="">
@@ -678,9 +678,9 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of key value pairs representing additional properties
+    <dd>The list of key value pairs representing additional properties
 of the cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -688,8 +688,8 @@ of the cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the master nodes.
-{{% /md %}}</dd>
+    <dd>The flavor for the master nodes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -697,9 +697,9 @@ of the cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether created cluster should has a
+    <dd>Indicates whether created cluster should has a
 loadbalancer for master nodes or not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -707,8 +707,8 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -716,8 +716,8 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the driver for the container network.
-{{% /md %}}</dd>
+    <dd>The name of the driver for the container network.
+</dd>
 
     <dt class="property-"
             title="">
@@ -725,9 +725,9 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of IP addresses that shouldn't be used in
+    <dd>A comma-separated list of IP addresses that shouldn't be used in
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -735,8 +735,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project of the cluster template.
-{{% /md %}}</dd>
+    <dd>The project of the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -744,8 +744,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether cluster template should be public.
-{{% /md %}}</dd>
+    <dd>Indicates whether cluster template should be public.
+</dd>
 
     <dt class="property-"
             title="">
@@ -753,8 +753,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,9 +762,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Docker registry is enabled in the
+    <dd>Indicates whether Docker registry is enabled in the
 cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -772,8 +772,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The server type for the cluster template.
-{{% /md %}}</dd>
+    <dd>The server type for the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -781,8 +781,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the TLS should be disabled in the cluster.
-{{% /md %}}</dd>
+    <dd>Indicates whether the TLS should be disabled in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -790,8 +790,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster template was updated.
-{{% /md %}}</dd>
+    <dd>The time at which cluster template was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -799,8 +799,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user of the cluster template.
-{{% /md %}}</dd>
+    <dd>The user of the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -808,15 +808,15 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the driver that is used for the volumes of the
+    <dd>The name of the driver that is used for the volumes of the
 cluster nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -825,9 +825,9 @@ cluster nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The API server port for the Container Orchestration
+    <dd>The API server port for the Container Orchestration
 Engine for this cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -835,8 +835,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The distro for the cluster (fedora-atomic, coreos, etc.).
-{{% /md %}}</dd>
+    <dd>The distro for the cluster (fedora-atomic, coreos, etc.).
+</dd>
 
     <dt class="property-"
             title="">
@@ -844,8 +844,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Container Orchestration Engine for this cluster template.
-{{% /md %}}</dd>
+    <dd>The Container Orchestration Engine for this cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -853,8 +853,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster template was created.
-{{% /md %}}</dd>
+    <dd>The time at which cluster template was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -862,9 +862,9 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Address of the DNS nameserver that is used in nodes of the
+    <dd>Address of the DNS nameserver that is used in nodes of the
 cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -872,9 +872,9 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Docker storage driver. Changing this updates the
+    <dd>Docker storage driver. Changing this updates the
 Docker storage driver of the existing cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -882,8 +882,8 @@ Docker storage driver of the existing cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size (in GB) of the Docker volume.
-{{% /md %}}</dd>
+    <dd>The size (in GB) of the Docker volume.
+</dd>
 
     <dt class="property-"
             title="">
@@ -891,9 +891,9 @@ Docker storage driver of the existing cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the external network that will be used for
+    <dd>The ID of the external network that will be used for
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -901,8 +901,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fixed network that will be attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed network that will be attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -910,8 +910,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}=The fixed subnet that will be attached to the cluster.
-{{% /md %}}</dd>
+    <dd>=The fixed subnet that will be attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -919,8 +919,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The flavor for the nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -928,9 +928,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether created cluster should create IP
+    <dd>Indicates whether created cluster should create IP
 floating IP for every node or not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -938,9 +938,9 @@ floating IP for every node or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of a proxy for receiving all HTTP requests and
+    <dd>The address of a proxy for receiving all HTTP requests and
 relay them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,9 +948,9 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of a proxy for receiving all HTTPS requests and
+    <dd>The address of a proxy for receiving all HTTPS requests and
 relay them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -958,8 +958,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -967,8 +967,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The reference to an image that is used for nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The reference to an image that is used for nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -976,8 +976,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The insecure registry URL for the cluster template.
-{{% /md %}}</dd>
+    <dd>The insecure registry URL for the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -985,8 +985,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Compute service SSH keypair.
-{{% /md %}}</dd>
+    <dd>The name of the Compute service SSH keypair.
+</dd>
 
     <dt class="property-"
             title="">
@@ -994,9 +994,9 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The list of key value pairs representing additional properties
+    <dd>The list of key value pairs representing additional properties
 of the cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1004,8 +1004,8 @@ of the cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the master nodes.
-{{% /md %}}</dd>
+    <dd>The flavor for the master nodes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1013,9 +1013,9 @@ of the cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether created cluster should has a
+    <dd>Indicates whether created cluster should has a
 loadbalancer for master nodes or not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1023,8 +1023,8 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1032,8 +1032,8 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the driver for the container network.
-{{% /md %}}</dd>
+    <dd>The name of the driver for the container network.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1041,9 +1041,9 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of IP addresses that shouldn't be used in
+    <dd>A comma-separated list of IP addresses that shouldn't be used in
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1051,8 +1051,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project of the cluster template.
-{{% /md %}}</dd>
+    <dd>The project of the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1060,8 +1060,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether cluster template should be public.
-{{% /md %}}</dd>
+    <dd>Indicates whether cluster template should be public.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1069,8 +1069,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1078,9 +1078,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Docker registry is enabled in the
+    <dd>Indicates whether Docker registry is enabled in the
 cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1088,8 +1088,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The server type for the cluster template.
-{{% /md %}}</dd>
+    <dd>The server type for the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1097,8 +1097,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the TLS should be disabled in the cluster.
-{{% /md %}}</dd>
+    <dd>Indicates whether the TLS should be disabled in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1106,8 +1106,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster template was updated.
-{{% /md %}}</dd>
+    <dd>The time at which cluster template was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1115,8 +1115,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user of the cluster template.
-{{% /md %}}</dd>
+    <dd>The user of the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1124,15 +1124,15 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the driver that is used for the volumes of the
+    <dd>The name of the driver that is used for the volumes of the
 cluster nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1141,9 +1141,9 @@ cluster nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The API server port for the Container Orchestration
+    <dd>The API server port for the Container Orchestration
 Engine for this cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1151,8 +1151,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The distro for the cluster (fedora-atomic, coreos, etc.).
-{{% /md %}}</dd>
+    <dd>The distro for the cluster (fedora-atomic, coreos, etc.).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1160,8 +1160,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Container Orchestration Engine for this cluster template.
-{{% /md %}}</dd>
+    <dd>The Container Orchestration Engine for this cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1169,8 +1169,8 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster template was created.
-{{% /md %}}</dd>
+    <dd>The time at which cluster template was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1178,9 +1178,9 @@ Engine for this cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Address of the DNS nameserver that is used in nodes of the
+    <dd>Address of the DNS nameserver that is used in nodes of the
 cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1188,9 +1188,9 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Docker storage driver. Changing this updates the
+    <dd>Docker storage driver. Changing this updates the
 Docker storage driver of the existing cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1198,8 +1198,8 @@ Docker storage driver of the existing cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size (in GB) of the Docker volume.
-{{% /md %}}</dd>
+    <dd>The size (in GB) of the Docker volume.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1207,9 +1207,9 @@ Docker storage driver of the existing cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the external network that will be used for
+    <dd>The ID of the external network that will be used for
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1217,8 +1217,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fixed network that will be attached to the cluster.
-{{% /md %}}</dd>
+    <dd>The fixed network that will be attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1226,8 +1226,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}=The fixed subnet that will be attached to the cluster.
-{{% /md %}}</dd>
+    <dd>=The fixed subnet that will be attached to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1235,8 +1235,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The flavor for the nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1244,9 +1244,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether created cluster should create IP
+    <dd>Indicates whether created cluster should create IP
 floating IP for every node or not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1254,9 +1254,9 @@ floating IP for every node or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The address of a proxy for receiving all HTTP requests and
+    <dd>The address of a proxy for receiving all HTTP requests and
 relay them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1264,9 +1264,9 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The address of a proxy for receiving all HTTPS requests and
+    <dd>The address of a proxy for receiving all HTTPS requests and
 relay them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1274,8 +1274,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1283,8 +1283,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The reference to an image that is used for nodes of the cluster.
-{{% /md %}}</dd>
+    <dd>The reference to an image that is used for nodes of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1292,8 +1292,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The insecure registry URL for the cluster template.
-{{% /md %}}</dd>
+    <dd>The insecure registry URL for the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1301,8 +1301,8 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Compute service SSH keypair.
-{{% /md %}}</dd>
+    <dd>The name of the Compute service SSH keypair.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1310,9 +1310,9 @@ relay them.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The list of key value pairs representing additional properties
+    <dd>The list of key value pairs representing additional properties
 of the cluster template.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1320,8 +1320,8 @@ of the cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The flavor for the master nodes.
-{{% /md %}}</dd>
+    <dd>The flavor for the master nodes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1329,9 +1329,9 @@ of the cluster template.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether created cluster should has a
+    <dd>Indicates whether created cluster should has a
 loadbalancer for master nodes or not.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1339,8 +1339,8 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1348,8 +1348,8 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the driver for the container network.
-{{% /md %}}</dd>
+    <dd>The name of the driver for the container network.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1357,9 +1357,9 @@ loadbalancer for master nodes or not.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of IP addresses that shouldn't be used in
+    <dd>A comma-separated list of IP addresses that shouldn't be used in
 the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1367,8 +1367,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project of the cluster template.
-{{% /md %}}</dd>
+    <dd>The project of the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1376,8 +1376,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether cluster template should be public.
-{{% /md %}}</dd>
+    <dd>Indicates whether cluster template should be public.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1385,8 +1385,8 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}See Argument Reference above.
-{{% /md %}}</dd>
+    <dd>See Argument Reference above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1394,9 +1394,9 @@ the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Docker registry is enabled in the
+    <dd>Indicates whether Docker registry is enabled in the
 cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1404,8 +1404,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The server type for the cluster template.
-{{% /md %}}</dd>
+    <dd>The server type for the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1413,8 +1413,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether the TLS should be disabled in the cluster.
-{{% /md %}}</dd>
+    <dd>Indicates whether the TLS should be disabled in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1422,8 +1422,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time at which cluster template was updated.
-{{% /md %}}</dd>
+    <dd>The time at which cluster template was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1431,8 +1431,8 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user of the cluster template.
-{{% /md %}}</dd>
+    <dd>The user of the cluster template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1440,12 +1440,12 @@ cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the driver that is used for the volumes of the
+    <dd>The name of the driver that is used for the volumes of the
 cluster nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

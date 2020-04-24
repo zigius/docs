@@ -48,26 +48,26 @@ const main = new aws.ec2.Vpc("main", {
 
 
 ## Create a Vpc Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Vpc">Vpc</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#VpcArgs">VpcArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Vpc</span><span class="p">(resource_name, opts=None, </span>assign_generated_ipv6_cidr_block=None<span class="p">, </span>cidr_block=None<span class="p">, </span>enable_classiclink=None<span class="p">, </span>enable_classiclink_dns_support=None<span class="p">, </span>enable_dns_hostnames=None<span class="p">, </span>enable_dns_support=None<span class="p">, </span>instance_tenancy=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewVpc<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#VpcArgs">VpcArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Vpc">Vpc</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Vpc.html">Vpc</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.VpcArgs.html">VpcArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -104,9 +104,9 @@ const main = new aws.ec2.Vpc("main", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -124,9 +124,9 @@ const main = new aws.ec2.Vpc("main", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -173,9 +173,9 @@ const main = new aws.ec2.Vpc("main", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -212,7 +212,7 @@ const main = new aws.ec2.Vpc("main", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Vpc Resource Properties {#properties}
 
@@ -225,7 +225,7 @@ The Vpc resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -234,8 +234,8 @@ The Vpc resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the VPC.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -243,10 +243,10 @@ The Vpc resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requests an Amazon-provided IPv6 CIDR
+    <dd>Requests an Amazon-provided IPv6 CIDR
 block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
 the size of the CIDR block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,10 +254,10 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink
+    <dd>A boolean flag to enable/disable ClassicLink
 for the VPC. Only valid in regions and accounts that support EC2 Classic.
 See the [ClassicLink documentation][1] for more information. Defaults false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,9 +265,9 @@ See the [ClassicLink documentation][1] for more information. Defaults false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
+    <dd>A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
 Only valid in regions and accounts that support EC2 Classic.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS support in the VPC. Defaults true.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A tenancy option for instances launched into the VPC
-{{% /md %}}</dd>
+    <dd>A tenancy option for instances launched into the VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,14 +302,14 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -318,8 +318,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the VPC.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,10 +327,10 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requests an Amazon-provided IPv6 CIDR
+    <dd>Requests an Amazon-provided IPv6 CIDR
 block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
 the size of the CIDR block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,10 +338,10 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink
+    <dd>A boolean flag to enable/disable ClassicLink
 for the VPC. Only valid in regions and accounts that support EC2 Classic.
 See the [ClassicLink documentation][1] for more information. Defaults false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,9 +349,9 @@ See the [ClassicLink documentation][1] for more information. Defaults false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
+    <dd>A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
 Only valid in regions and accounts that support EC2 Classic.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,8 +359,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,8 +368,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS support in the VPC. Defaults true.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,8 +377,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A tenancy option for instances launched into the VPC
-{{% /md %}}</dd>
+    <dd>A tenancy option for instances launched into the VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,14 +386,14 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -402,8 +402,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the VPC.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,10 +411,10 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Requests an Amazon-provided IPv6 CIDR
+    <dd>Requests an Amazon-provided IPv6 CIDR
 block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
 the size of the CIDR block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,10 +422,10 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink
+    <dd>A boolean flag to enable/disable ClassicLink
 for the VPC. Only valid in regions and accounts that support EC2 Classic.
 See the [ClassicLink documentation][1] for more information. Defaults false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,9 +433,9 @@ See the [ClassicLink documentation][1] for more information. Defaults false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
+    <dd>A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
 Only valid in regions and accounts that support EC2 Classic.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,8 +452,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS support in the VPC. Defaults true.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A tenancy option for instances launched into the VPC
-{{% /md %}}</dd>
+    <dd>A tenancy option for instances launched into the VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,14 +470,14 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -486,8 +486,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the VPC.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,10 +495,10 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requests an Amazon-provided IPv6 CIDR
+    <dd>Requests an Amazon-provided IPv6 CIDR
 block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
 the size of the CIDR block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,10 +506,10 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink
+    <dd>A boolean flag to enable/disable ClassicLink
 for the VPC. Only valid in regions and accounts that support EC2 Classic.
 See the [ClassicLink documentation][1] for more information. Defaults false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,9 +517,9 @@ See the [ClassicLink documentation][1] for more information. Defaults false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
+    <dd>A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
 Only valid in regions and accounts that support EC2 Classic.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -527,8 +527,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,8 +536,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS support in the VPC. Defaults true.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -545,8 +545,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A tenancy option for instances launched into the VPC
-{{% /md %}}</dd>
+    <dd>A tenancy option for instances launched into the VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,11 +554,11 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -572,7 +572,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -581,8 +581,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of VPC
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of VPC
+</dd>
 
     <dt class="property-"
             title="">
@@ -590,8 +590,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network ACL created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the network ACL created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -599,8 +599,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the route table created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the route table created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,7 +617,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -625,7 +625,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -633,8 +633,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The association ID for the IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The association ID for the IPv6 CIDR block.
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,8 +642,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,10 +651,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the main route table associated with
+    <dd>The ID of the main route table associated with
 this VPC. Note that you can change a VPC's main route table by using an
 [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -662,14 +662,14 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -678,8 +678,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of VPC
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of VPC
+</dd>
 
     <dt class="property-"
             title="">
@@ -687,8 +687,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network ACL created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the network ACL created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -696,8 +696,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the route table created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the route table created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -705,8 +705,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -714,7 +714,7 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -722,7 +722,7 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -730,8 +730,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The association ID for the IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The association ID for the IPv6 CIDR block.
+</dd>
 
     <dt class="property-"
             title="">
@@ -739,8 +739,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
     <dt class="property-"
             title="">
@@ -748,10 +748,10 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the main route table associated with
+    <dd>The ID of the main route table associated with
 this VPC. Note that you can change a VPC's main route table by using an
 [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -759,14 +759,14 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -775,8 +775,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of VPC
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of VPC
+</dd>
 
     <dt class="property-"
             title="">
@@ -784,8 +784,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network ACL created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the network ACL created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -793,8 +793,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the route table created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the route table created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -802,8 +802,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -811,7 +811,7 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -819,7 +819,7 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -827,8 +827,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The association ID for the IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The association ID for the IPv6 CIDR block.
+</dd>
 
     <dt class="property-"
             title="">
@@ -836,8 +836,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
     <dt class="property-"
             title="">
@@ -845,10 +845,10 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the main route table associated with
+    <dd>The ID of the main route table associated with
 this VPC. Note that you can change a VPC's main route table by using an
 [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -856,14 +856,14 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -872,8 +872,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of VPC
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of VPC
+</dd>
 
     <dt class="property-"
             title="">
@@ -881,8 +881,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network ACL created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the network ACL created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -890,8 +890,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the route table created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the route table created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -899,8 +899,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by default on VPC creation
+</dd>
 
     <dt class="property-"
             title="">
@@ -908,7 +908,7 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -916,7 +916,7 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -924,8 +924,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The association ID for the IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The association ID for the IPv6 CIDR block.
+</dd>
 
     <dt class="property-"
             title="">
@@ -933,8 +933,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
     <dt class="property-"
             title="">
@@ -942,10 +942,10 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the main route table associated with
+    <dd>The ID of the main route table associated with
 this VPC. Note that you can change a VPC's main route table by using an
 [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -953,11 +953,11 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -968,25 +968,25 @@ this VPC. Note that you can change a VPC's main route table by using an
 ## Look up an Existing Vpc Resource {#look-up}
 
 Get an existing Vpc resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#VpcState">VpcState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Vpc">Vpc</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>assign_generated_ipv6_cidr_block=None<span class="p">, </span>cidr_block=None<span class="p">, </span>default_network_acl_id=None<span class="p">, </span>default_route_table_id=None<span class="p">, </span>default_security_group_id=None<span class="p">, </span>dhcp_options_id=None<span class="p">, </span>enable_classiclink=None<span class="p">, </span>enable_classiclink_dns_support=None<span class="p">, </span>enable_dns_hostnames=None<span class="p">, </span>enable_dns_support=None<span class="p">, </span>instance_tenancy=None<span class="p">, </span>ipv6_association_id=None<span class="p">, </span>ipv6_cidr_block=None<span class="p">, </span>main_route_table_id=None<span class="p">, </span>owner_id=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetVpc<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#VpcState">VpcState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Vpc">Vpc</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Vpc.html">Vpc</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.VpcState.html">VpcState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1011,9 +1011,9 @@ Get an existing Vpc resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1026,36 +1026,9 @@ Get an existing Vpc resource's state with the given name, ID, and optional extra
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1080,13 +1053,40 @@ Get an existing Vpc resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1095,8 +1095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of VPC
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1104,10 +1104,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requests an Amazon-provided IPv6 CIDR
+    <dd>Requests an Amazon-provided IPv6 CIDR
 block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
 the size of the CIDR block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,8 +1115,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the VPC.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1124,8 +1124,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network ACL created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the network ACL created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,8 +1133,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the route table created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the route table created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,8 +1142,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,7 +1151,7 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,10 +1159,10 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink
+    <dd>A boolean flag to enable/disable ClassicLink
 for the VPC. Only valid in regions and accounts that support EC2 Classic.
 See the [ClassicLink documentation][1] for more information. Defaults false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1170,9 +1170,9 @@ See the [ClassicLink documentation][1] for more information. Defaults false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
+    <dd>A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
 Only valid in regions and accounts that support EC2 Classic.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,8 +1180,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1189,8 +1189,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS support in the VPC. Defaults true.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,8 +1198,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A tenancy option for instances launched into the VPC
-{{% /md %}}</dd>
+    <dd>A tenancy option for instances launched into the VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,8 +1207,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The association ID for the IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The association ID for the IPv6 CIDR block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,8 +1216,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,10 +1225,10 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the main route table associated with
+    <dd>The ID of the main route table associated with
 this VPC. Note that you can change a VPC's main route table by using an
 [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,8 +1236,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,14 +1245,14 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1261,8 +1261,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of VPC
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1270,10 +1270,10 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requests an Amazon-provided IPv6 CIDR
+    <dd>Requests an Amazon-provided IPv6 CIDR
 block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
 the size of the CIDR block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,8 +1281,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the VPC.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,8 +1290,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network ACL created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the network ACL created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,8 +1299,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the route table created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the route table created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1308,8 +1308,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1317,7 +1317,7 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1325,10 +1325,10 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink
+    <dd>A boolean flag to enable/disable ClassicLink
 for the VPC. Only valid in regions and accounts that support EC2 Classic.
 See the [ClassicLink documentation][1] for more information. Defaults false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1336,9 +1336,9 @@ See the [ClassicLink documentation][1] for more information. Defaults false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
+    <dd>A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
 Only valid in regions and accounts that support EC2 Classic.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,8 +1346,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,8 +1355,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS support in the VPC. Defaults true.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1364,8 +1364,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A tenancy option for instances launched into the VPC
-{{% /md %}}</dd>
+    <dd>A tenancy option for instances launched into the VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,8 +1373,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The association ID for the IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The association ID for the IPv6 CIDR block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,8 +1382,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1391,10 +1391,10 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the main route table associated with
+    <dd>The ID of the main route table associated with
 this VPC. Note that you can change a VPC's main route table by using an
 [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1402,8 +1402,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1411,14 +1411,14 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1427,8 +1427,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of VPC
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1436,10 +1436,10 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Requests an Amazon-provided IPv6 CIDR
+    <dd>Requests an Amazon-provided IPv6 CIDR
 block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
 the size of the CIDR block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1447,8 +1447,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the VPC.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,8 +1456,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network ACL created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the network ACL created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1465,8 +1465,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the route table created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the route table created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1474,8 +1474,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1483,7 +1483,7 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,10 +1491,10 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink
+    <dd>A boolean flag to enable/disable ClassicLink
 for the VPC. Only valid in regions and accounts that support EC2 Classic.
 See the [ClassicLink documentation][1] for more information. Defaults false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,9 +1502,9 @@ See the [ClassicLink documentation][1] for more information. Defaults false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
+    <dd>A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
 Only valid in regions and accounts that support EC2 Classic.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,8 +1512,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1521,8 +1521,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS support in the VPC. Defaults true.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1530,8 +1530,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A tenancy option for instances launched into the VPC
-{{% /md %}}</dd>
+    <dd>A tenancy option for instances launched into the VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1539,8 +1539,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The association ID for the IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The association ID for the IPv6 CIDR block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1548,8 +1548,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1557,10 +1557,10 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the main route table associated with
+    <dd>The ID of the main route table associated with
 this VPC. Note that you can change a VPC's main route table by using an
 [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,8 +1568,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,14 +1577,14 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1593,8 +1593,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of VPC
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1602,10 +1602,10 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requests an Amazon-provided IPv6 CIDR
+    <dd>Requests an Amazon-provided IPv6 CIDR
 block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
 the size of the CIDR block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,8 +1613,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR block for the VPC.
-{{% /md %}}</dd>
+    <dd>The CIDR block for the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network ACL created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the network ACL created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,8 +1631,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the route table created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the route table created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,8 +1640,8 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by default on VPC creation
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by default on VPC creation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,7 +1649,7 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1657,10 +1657,10 @@ the size of the CIDR block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink
+    <dd>A boolean flag to enable/disable ClassicLink
 for the VPC. Only valid in regions and accounts that support EC2 Classic.
 See the [ClassicLink documentation][1] for more information. Defaults false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1668,9 +1668,9 @@ See the [ClassicLink documentation][1] for more information. Defaults false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
+    <dd>A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
 Only valid in regions and accounts that support EC2 Classic.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,8 +1687,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean flag to enable/disable DNS support in the VPC. Defaults true.
-{{% /md %}}</dd>
+    <dd>A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A tenancy option for instances launched into the VPC
-{{% /md %}}</dd>
+    <dd>A tenancy option for instances launched into the VPC
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,8 +1705,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The association ID for the IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The association ID for the IPv6 CIDR block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1714,8 +1714,8 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 CIDR block.
-{{% /md %}}</dd>
+    <dd>The IPv6 CIDR block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,10 +1723,10 @@ Only valid in regions and accounts that support EC2 Classic.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the main route table associated with
+    <dd>The ID of the main route table associated with
 this VPC. Note that you can change a VPC's main route table by using an
 [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1734,8 +1734,8 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the AWS account that owns the VPC.
-{{% /md %}}</dd>
+    <dd>The ID of the AWS account that owns the VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,11 +1743,11 @@ this VPC. Note that you can change a VPC's main route table by using an
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

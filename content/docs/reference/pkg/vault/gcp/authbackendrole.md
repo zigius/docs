@@ -18,26 +18,26 @@ Provides a resource to create a role in an [GCP auth backend within Vault](https
 
 
 ## Create a AuthBackendRole Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/gcp/#AuthBackendRole">AuthBackendRole</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/gcp/#AuthBackendRoleArgs">AuthBackendRoleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AuthBackendRole</span><span class="p">(resource_name, opts=None, </span>add_group_aliases=None<span class="p">, </span>allow_gce_inference=None<span class="p">, </span>backend=None<span class="p">, </span>bound_instance_groups=None<span class="p">, </span>bound_labels=None<span class="p">, </span>bound_projects=None<span class="p">, </span>bound_regions=None<span class="p">, </span>bound_service_accounts=None<span class="p">, </span>bound_zones=None<span class="p">, </span>max_jwt_exp=None<span class="p">, </span>max_ttl=None<span class="p">, </span>period=None<span class="p">, </span>policies=None<span class="p">, </span>role=None<span class="p">, </span>token_bound_cidrs=None<span class="p">, </span>token_explicit_max_ttl=None<span class="p">, </span>token_max_ttl=None<span class="p">, </span>token_no_default_policy=None<span class="p">, </span>token_num_uses=None<span class="p">, </span>token_period=None<span class="p">, </span>token_policies=None<span class="p">, </span>token_ttl=None<span class="p">, </span>token_type=None<span class="p">, </span>ttl=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAuthBackendRole<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/gcp?tab=doc#AuthBackendRoleArgs">AuthBackendRoleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/gcp?tab=doc#AuthBackendRole">AuthBackendRole</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Gcp.AuthBackendRole.html">AuthBackendRole</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Gcp.AuthBackendRoleArgs.html">AuthBackendRoleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Provides a resource to create a role in an [GCP auth backend within Vault](https
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Provides a resource to create a role in an [GCP auth backend within Vault](https
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Provides a resource to create a role in an [GCP auth backend within Vault](https
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Provides a resource to create a role in an [GCP auth backend within Vault](https
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## AuthBackendRole Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the GCP role
-{{% /md %}}</dd>
+    <dd>Name of the GCP role
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of GCP authentication role (either `gce` or `iam`)
-{{% /md %}}</dd>
+    <dd>Type of GCP authentication role (either `gce` or `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,7 +222,7 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,8 +230,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
-{{% /md %}}</dd>
+    <dd>A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,8 +239,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the mounted GCP auth backend
-{{% /md %}}</dd>
+    <dd>Path to the mounted GCP auth backend
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,8 +248,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
-{{% /md %}}</dd>
+    <dd>The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,8 +257,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}GCP Projects that the role exists within
-{{% /md %}}</dd>
+    <dd>GCP Projects that the role exists within
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
-{{% /md %}}</dd>
+    <dd>The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
-{{% /md %}}</dd>
+    <dd>GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
-{{% /md %}}</dd>
+    <dd>The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,8 +302,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
-{{% /md %}}</dd>
+    <dd>The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -311,9 +311,9 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -321,11 +321,11 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -333,9 +333,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,10 +343,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,11 +354,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -366,9 +366,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,9 +376,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,10 +386,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,11 +397,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,9 +409,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,9 +419,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,12 +429,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -442,15 +442,15 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -459,8 +459,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the GCP role
-{{% /md %}}</dd>
+    <dd>Name of the GCP role
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -468,8 +468,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of GCP authentication role (either `gce` or `iam`)
-{{% /md %}}</dd>
+    <dd>Type of GCP authentication role (either `gce` or `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,7 +477,7 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -485,8 +485,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
-{{% /md %}}</dd>
+    <dd>A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -494,8 +494,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the mounted GCP auth backend
-{{% /md %}}</dd>
+    <dd>Path to the mounted GCP auth backend
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -503,8 +503,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
-{{% /md %}}</dd>
+    <dd>The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -512,8 +512,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -521,8 +521,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}GCP Projects that the role exists within
-{{% /md %}}</dd>
+    <dd>GCP Projects that the role exists within
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,8 +530,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
-{{% /md %}}</dd>
+    <dd>The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,8 +539,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
-{{% /md %}}</dd>
+    <dd>GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
-{{% /md %}}</dd>
+    <dd>The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
-{{% /md %}}</dd>
+    <dd>The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -566,9 +566,9 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -576,11 +576,11 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -588,9 +588,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,10 +598,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -609,11 +609,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,9 +621,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -631,9 +631,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,10 +641,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -652,11 +652,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -664,9 +664,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,9 +674,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -684,12 +684,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -697,15 +697,15 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -714,8 +714,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the GCP role
-{{% /md %}}</dd>
+    <dd>Name of the GCP role
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -723,8 +723,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of GCP authentication role (either `gce` or `iam`)
-{{% /md %}}</dd>
+    <dd>Type of GCP authentication role (either `gce` or `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,7 +732,7 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,8 +740,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
-{{% /md %}}</dd>
+    <dd>A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,8 +749,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the mounted GCP auth backend
-{{% /md %}}</dd>
+    <dd>Path to the mounted GCP auth backend
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,8 +758,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
-{{% /md %}}</dd>
+    <dd>The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,8 +767,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,8 +776,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}GCP Projects that the role exists within
-{{% /md %}}</dd>
+    <dd>GCP Projects that the role exists within
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,8 +785,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
-{{% /md %}}</dd>
+    <dd>The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,8 +794,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
-{{% /md %}}</dd>
+    <dd>GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,8 +803,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
-{{% /md %}}</dd>
+    <dd>The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -812,8 +812,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
-{{% /md %}}</dd>
+    <dd>The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -821,9 +821,9 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -831,11 +831,11 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -843,9 +843,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -853,10 +853,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,11 +864,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -876,9 +876,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,9 +886,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -896,10 +896,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,11 +907,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,9 +919,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,9 +929,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,12 +939,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -952,15 +952,15 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -969,8 +969,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the GCP role
-{{% /md %}}</dd>
+    <dd>Name of the GCP role
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -978,8 +978,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of GCP authentication role (either `gce` or `iam`)
-{{% /md %}}</dd>
+    <dd>Type of GCP authentication role (either `gce` or `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,7 +987,7 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -995,8 +995,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
-{{% /md %}}</dd>
+    <dd>A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1004,8 +1004,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to the mounted GCP auth backend
-{{% /md %}}</dd>
+    <dd>Path to the mounted GCP auth backend
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1013,8 +1013,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
-{{% /md %}}</dd>
+    <dd>The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1022,8 +1022,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1031,8 +1031,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}GCP Projects that the role exists within
-{{% /md %}}</dd>
+    <dd>GCP Projects that the role exists within
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1040,8 +1040,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
-{{% /md %}}</dd>
+    <dd>The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1049,8 +1049,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
-{{% /md %}}</dd>
+    <dd>GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,8 +1058,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
-{{% /md %}}</dd>
+    <dd>The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,8 +1067,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
-{{% /md %}}</dd>
+    <dd>The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1076,9 +1076,9 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1086,11 +1086,11 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1098,9 +1098,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1108,10 +1108,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,11 +1119,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,9 +1131,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,9 +1141,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,10 +1151,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1162,11 +1162,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,9 +1174,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,9 +1184,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,12 +1194,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1207,12 +1207,12 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1226,7 +1226,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1235,13 +1235,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1250,13 +1250,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1265,13 +1265,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1280,10 +1280,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1294,25 +1294,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing AuthBackendRole Resource {#look-up}
 
 Get an existing AuthBackendRole resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/gcp/#AuthBackendRoleState">AuthBackendRoleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/gcp/#AuthBackendRole">AuthBackendRole</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>add_group_aliases=None<span class="p">, </span>allow_gce_inference=None<span class="p">, </span>backend=None<span class="p">, </span>bound_instance_groups=None<span class="p">, </span>bound_labels=None<span class="p">, </span>bound_projects=None<span class="p">, </span>bound_regions=None<span class="p">, </span>bound_service_accounts=None<span class="p">, </span>bound_zones=None<span class="p">, </span>max_jwt_exp=None<span class="p">, </span>max_ttl=None<span class="p">, </span>period=None<span class="p">, </span>policies=None<span class="p">, </span>role=None<span class="p">, </span>token_bound_cidrs=None<span class="p">, </span>token_explicit_max_ttl=None<span class="p">, </span>token_max_ttl=None<span class="p">, </span>token_no_default_policy=None<span class="p">, </span>token_num_uses=None<span class="p">, </span>token_period=None<span class="p">, </span>token_policies=None<span class="p">, </span>token_ttl=None<span class="p">, </span>token_type=None<span class="p">, </span>ttl=None<span class="p">, </span>type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAuthBackendRole<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/gcp?tab=doc#AuthBackendRoleState">AuthBackendRoleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/gcp?tab=doc#AuthBackendRole">AuthBackendRole</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Gcp.AuthBackendRole.html">AuthBackendRole</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Gcp.AuthBackendRoleState.html">AuthBackendRoleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1337,9 +1337,9 @@ Get an existing AuthBackendRole resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1352,36 +1352,9 @@ Get an existing AuthBackendRole resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1406,13 +1379,40 @@ Get an existing AuthBackendRole resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1421,7 +1421,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1429,8 +1429,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
-{{% /md %}}</dd>
+    <dd>A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1438,8 +1438,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the mounted GCP auth backend
-{{% /md %}}</dd>
+    <dd>Path to the mounted GCP auth backend
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1447,8 +1447,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
-{{% /md %}}</dd>
+    <dd>The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,8 +1456,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1465,8 +1465,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}GCP Projects that the role exists within
-{{% /md %}}</dd>
+    <dd>GCP Projects that the role exists within
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1474,8 +1474,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
-{{% /md %}}</dd>
+    <dd>The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1483,8 +1483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
-{{% /md %}}</dd>
+    <dd>GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,8 +1492,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
-{{% /md %}}</dd>
+    <dd>The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,8 +1501,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
-{{% /md %}}</dd>
+    <dd>The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1510,9 +1510,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1520,11 +1520,11 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1532,9 +1532,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1542,8 +1542,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the GCP role
-{{% /md %}}</dd>
+    <dd>Name of the GCP role
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,10 +1551,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,11 +1562,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,9 +1574,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,9 +1584,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,10 +1594,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,11 +1605,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,9 +1617,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1627,9 +1627,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,12 +1637,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1650,9 +1650,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,14 +1660,14 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of GCP authentication role (either `gce` or `iam`)
-{{% /md %}}</dd>
+    <dd>Type of GCP authentication role (either `gce` or `iam`)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1676,7 +1676,7 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,8 +1684,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
-{{% /md %}}</dd>
+    <dd>A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1693,8 +1693,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the mounted GCP auth backend
-{{% /md %}}</dd>
+    <dd>Path to the mounted GCP auth backend
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1702,8 +1702,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
-{{% /md %}}</dd>
+    <dd>The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1711,8 +1711,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1720,8 +1720,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}GCP Projects that the role exists within
-{{% /md %}}</dd>
+    <dd>GCP Projects that the role exists within
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1729,8 +1729,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
-{{% /md %}}</dd>
+    <dd>The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1738,8 +1738,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
-{{% /md %}}</dd>
+    <dd>GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1747,8 +1747,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
-{{% /md %}}</dd>
+    <dd>The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1756,8 +1756,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
-{{% /md %}}</dd>
+    <dd>The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1765,9 +1765,9 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1775,11 +1775,11 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1787,9 +1787,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1797,8 +1797,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the GCP role
-{{% /md %}}</dd>
+    <dd>Name of the GCP role
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1806,10 +1806,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,11 +1817,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1829,9 +1829,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1839,9 +1839,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1849,10 +1849,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,11 +1860,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1872,9 +1872,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1882,9 +1882,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1892,12 +1892,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1905,9 +1905,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1915,14 +1915,14 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of GCP authentication role (either `gce` or `iam`)
-{{% /md %}}</dd>
+    <dd>Type of GCP authentication role (either `gce` or `iam`)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1931,7 +1931,7 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1939,8 +1939,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
-{{% /md %}}</dd>
+    <dd>A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1948,8 +1948,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to the mounted GCP auth backend
-{{% /md %}}</dd>
+    <dd>Path to the mounted GCP auth backend
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1957,8 +1957,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
-{{% /md %}}</dd>
+    <dd>The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1966,8 +1966,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1975,8 +1975,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}GCP Projects that the role exists within
-{{% /md %}}</dd>
+    <dd>GCP Projects that the role exists within
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1984,8 +1984,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
-{{% /md %}}</dd>
+    <dd>The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1993,8 +1993,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
-{{% /md %}}</dd>
+    <dd>GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2002,8 +2002,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
-{{% /md %}}</dd>
+    <dd>The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2011,8 +2011,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
-{{% /md %}}</dd>
+    <dd>The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2020,9 +2020,9 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2030,11 +2030,11 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2042,9 +2042,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2052,8 +2052,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the GCP role
-{{% /md %}}</dd>
+    <dd>Name of the GCP role
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2061,10 +2061,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2072,11 +2072,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2084,9 +2084,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2094,9 +2094,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2104,10 +2104,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2115,11 +2115,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2127,9 +2127,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2137,9 +2137,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,12 +2147,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2160,9 +2160,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2170,14 +2170,14 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of GCP authentication role (either `gce` or `iam`)
-{{% /md %}}</dd>
+    <dd>Type of GCP authentication role (either `gce` or `iam`)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2186,7 +2186,7 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2194,8 +2194,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
-{{% /md %}}</dd>
+    <dd>A flag to determine if this role should allow GCE instances to authenticate by inferring service accounts from the GCE identity metadata token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2203,8 +2203,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to the mounted GCP auth backend
-{{% /md %}}</dd>
+    <dd>Path to the mounted GCP auth backend
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2212,8 +2212,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
-{{% /md %}}</dd>
+    <dd>The instance groups that an authorized instance must belong to in order to be authenticated. If specified, either `bound_zones` or `bound_regions` must be set too.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2221,8 +2221,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
-{{% /md %}}</dd>
+    <dd>A comma-separated list of GCP labels formatted as `"key:value"` strings that must be set on authorized GCE instances. Because GCP labels are not currently ACL'd, we recommend that this be used in conjunction with other restrictions.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2230,8 +2230,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}GCP Projects that the role exists within
-{{% /md %}}</dd>
+    <dd>GCP Projects that the role exists within
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2239,8 +2239,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
-{{% /md %}}</dd>
+    <dd>The list of regions that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a regional group and the group must belong to this region. If bound_zones are provided, this attribute is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2248,8 +2248,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
-{{% /md %}}</dd>
+    <dd>GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2257,8 +2257,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
-{{% /md %}}</dd>
+    <dd>The list of zones that a GCE instance must belong to in order to be authenticated. If bound_instance_groups is provided, it is assumed to be a zonal group and the group must belong to this zone.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2266,8 +2266,8 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
-{{% /md %}}</dd>
+    <dd>The number of seconds past the time of authentication that the login param JWT must expire within. For example, if a user attempts to login with a token that expires within an hour and this is set to 15 minutes, Vault will return an error prompting the user to create a new signed JWT with a shorter `exp`. The GCE metadata tokens currently do not allow the `exp` claim to be customized.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2275,9 +2275,9 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2285,11 +2285,11 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2297,9 +2297,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2307,8 +2307,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the GCP role
-{{% /md %}}</dd>
+    <dd>Name of the GCP role
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2316,10 +2316,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2327,11 +2327,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2339,9 +2339,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2349,9 +2349,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,10 +2359,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2370,11 +2370,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2382,9 +2382,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2392,9 +2392,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2402,12 +2402,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2415,9 +2415,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2425,11 +2425,11 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of GCP authentication role (either `gce` or `iam`)
-{{% /md %}}</dd>
+    <dd>Type of GCP authentication role (either `gce` or `iam`)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

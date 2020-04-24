@@ -10,7 +10,7 @@ menu:
     parent: crossguard
 ---
 
-{{< chooser language "typescript,python" />}}
+
 
 {{% notes %}}
 Python support is currently in preview.
@@ -47,9 +47,9 @@ A resource validation is passed `args` with more information about the resource 
 
 An example resource validation policy is shown below:
 
-{{< chooser language "typescript,python" >}}
 
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 const s3NoPublicRead: ResourceValidationPolicy = {
@@ -64,8 +64,8 @@ const s3NoPublicRead: ResourceValidationPolicy = {
 };
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 def s3_no_public_read_validator(args: ResourceValidationArgs, report_violation: ReportViolation):
@@ -83,15 +83,15 @@ s3_no_public_read = ResourceValidationPolicy(
 )
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 If you have multiple resources that require a similar policy, you can group them together under one policy. This is possible by setting {{< policy-validateresource >}} to an array of `ResourceValidationPolicy`. The example below shows a case where we want to run similar checks against multiple types of resources.
 
-{{< chooser language "typescript,python" >}}
 
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 const elbLoggingEnabled: ResourceValidationPolicy = {
@@ -118,8 +118,8 @@ const elbLoggingEnabled: ResourceValidationPolicy = {
 };
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 def elb_logging_enabled_elb_validator(args: ResourceValidationArgs, report_violation: ReportViolation):
@@ -149,9 +149,9 @@ elb_logging_enabled = ResourceValidationPolicy(
 )
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ### Stack Validation Policy
 
@@ -159,9 +159,9 @@ Policies of `StackValidationPolicy` are run against all the resources in a stack
 
 The below example requires that all dynamoDB tables have an App Autoscaling Policy associated with it.
 
-{{< chooser language "typescript,python" >}}
 
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 const dynamodbTableAutoscalingRequired: StackValidationPolicy = {
@@ -186,8 +186,8 @@ const dynamodbTableAutoscalingRequired: StackValidationPolicy = {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 def dynamodb_autoscaling_required_validator(args: StackValidationArgs, report_violation: ReportViolation):
@@ -210,9 +210,9 @@ dynamodb_autoscaling_required = StackValidationPolicy(
 )
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 A `StackValidationPolicy` can also be used to make validations against a resource that must already be created to validate. For example, a policy that
 checks whether an Amazon Certificate Manager (ACM) certificate has expired would require the certificate already be created as it relies on its outputs.

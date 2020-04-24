@@ -131,26 +131,26 @@ const riUtilization = new aws.budgets.Budget("ri_utilization", {
 
 
 ## Create a Budget Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/budgets/#Budget">Budget</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/budgets/#BudgetArgs">BudgetArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Budget</span><span class="p">(resource_name, opts=None, </span>account_id=None<span class="p">, </span>budget_type=None<span class="p">, </span>cost_filters=None<span class="p">, </span>cost_types=None<span class="p">, </span>limit_amount=None<span class="p">, </span>limit_unit=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>notifications=None<span class="p">, </span>time_period_end=None<span class="p">, </span>time_period_start=None<span class="p">, </span>time_unit=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewBudget<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/budgets?tab=doc#BudgetArgs">BudgetArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/budgets?tab=doc#Budget">Budget</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Budgets.Budget.html">Budget</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Budgets.BudgetArgs.html">BudgetArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -187,9 +187,9 @@ const riUtilization = new aws.budgets.Budget("ri_utilization", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -207,9 +207,9 @@ const riUtilization = new aws.budgets.Budget("ri_utilization", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -256,9 +256,9 @@ const riUtilization = new aws.budgets.Budget("ri_utilization", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -295,7 +295,7 @@ const riUtilization = new aws.budgets.Budget("ri_utilization", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Budget Resource Properties {#properties}
 
@@ -308,7 +308,7 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -317,8 +317,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether this budget tracks monetary cost or usage.
-{{% /md %}}</dd>
+    <dd>Whether this budget tracks monetary cost or usage.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -326,8 +326,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount of cost or usage being measured for a budget.
-{{% /md %}}</dd>
+    <dd>The amount of cost or usage being measured for a budget.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -335,8 +335,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
-{{% /md %}}</dd>
+    <dd>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -344,8 +344,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -353,8 +353,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
-{{% /md %}}</dd>
+    <dd>The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,8 +362,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the target account for budget. Will use current user's account_id by default if omitted.
-{{% /md %}}</dd>
+    <dd>The ID of the target account for budget. Will use current user's account_id by default if omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -371,8 +371,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of CostFilters key/value pairs to apply to the budget.
-{{% /md %}}</dd>
+    <dd>Map of CostFilters key/value pairs to apply to the budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,8 +380,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetcosttypes">Budget<wbr>Cost<wbr>Types<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
-{{% /md %}}</dd>
+    <dd>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,8 +398,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix of the name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The prefix of the name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,8 +407,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetnotification">List&lt;Budget<wbr>Notification<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
-{{% /md %}}</dd>
+    <dd>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,14 +416,14 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -432,8 +432,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether this budget tracks monetary cost or usage.
-{{% /md %}}</dd>
+    <dd>Whether this budget tracks monetary cost or usage.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -441,8 +441,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount of cost or usage being measured for a budget.
-{{% /md %}}</dd>
+    <dd>The amount of cost or usage being measured for a budget.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -450,8 +450,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
-{{% /md %}}</dd>
+    <dd>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -459,8 +459,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -468,8 +468,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
-{{% /md %}}</dd>
+    <dd>The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the target account for budget. Will use current user's account_id by default if omitted.
-{{% /md %}}</dd>
+    <dd>The ID of the target account for budget. Will use current user's account_id by default if omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of CostFilters key/value pairs to apply to the budget.
-{{% /md %}}</dd>
+    <dd>Map of CostFilters key/value pairs to apply to the budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetcosttypes">Budget<wbr>Cost<wbr>Types</a></span>
     </dt>
-    <dd>{{% md %}}Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
-{{% /md %}}</dd>
+    <dd>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,8 +513,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix of the name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The prefix of the name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,8 +522,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetnotification">[]Budget<wbr>Notification</a></span>
     </dt>
-    <dd>{{% md %}}Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
-{{% /md %}}</dd>
+    <dd>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -531,14 +531,14 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -547,8 +547,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether this budget tracks monetary cost or usage.
-{{% /md %}}</dd>
+    <dd>Whether this budget tracks monetary cost or usage.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -556,8 +556,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount of cost or usage being measured for a budget.
-{{% /md %}}</dd>
+    <dd>The amount of cost or usage being measured for a budget.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -565,8 +565,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
-{{% /md %}}</dd>
+    <dd>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -574,8 +574,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -583,8 +583,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
-{{% /md %}}</dd>
+    <dd>The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the target account for budget. Will use current user's account_id by default if omitted.
-{{% /md %}}</dd>
+    <dd>The ID of the target account for budget. Will use current user's account_id by default if omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of CostFilters key/value pairs to apply to the budget.
-{{% /md %}}</dd>
+    <dd>Map of CostFilters key/value pairs to apply to the budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetcosttypes">Budget<wbr>Cost<wbr>Types</a></span>
     </dt>
-    <dd>{{% md %}}Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
-{{% /md %}}</dd>
+    <dd>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix of the name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The prefix of the name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetnotification">Budget<wbr>Notification[]</a></span>
     </dt>
-    <dd>{{% md %}}Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
-{{% /md %}}</dd>
+    <dd>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,14 +646,14 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -662,8 +662,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether this budget tracks monetary cost or usage.
-{{% /md %}}</dd>
+    <dd>Whether this budget tracks monetary cost or usage.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -671,8 +671,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The amount of cost or usage being measured for a budget.
-{{% /md %}}</dd>
+    <dd>The amount of cost or usage being measured for a budget.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -680,8 +680,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
-{{% /md %}}</dd>
+    <dd>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -689,8 +689,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -698,8 +698,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
-{{% /md %}}</dd>
+    <dd>The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the target account for budget. Will use current user's account_id by default if omitted.
-{{% /md %}}</dd>
+    <dd>The ID of the target account for budget. Will use current user's account_id by default if omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,8 +716,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of CostFilters key/value pairs to apply to the budget.
-{{% /md %}}</dd>
+    <dd>Map of CostFilters key/value pairs to apply to the budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -725,8 +725,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetcosttypes">Dict[Budget<wbr>Cost<wbr>Types]</a></span>
     </dt>
-    <dd>{{% md %}}Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
-{{% /md %}}</dd>
+    <dd>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -734,8 +734,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,8 +743,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The prefix of the name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The prefix of the name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -752,8 +752,8 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetnotification">List[Budget<wbr>Notification]</a></span>
     </dt>
-    <dd>{{% md %}}Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
-{{% /md %}}</dd>
+    <dd>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,11 +761,11 @@ The Budget resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -779,7 +779,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -788,13 +788,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -803,13 +803,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -818,13 +818,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -833,10 +833,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -847,25 +847,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Budget Resource {#look-up}
 
 Get an existing Budget resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/budgets/#BudgetState">BudgetState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/budgets/#Budget">Budget</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>account_id=None<span class="p">, </span>budget_type=None<span class="p">, </span>cost_filters=None<span class="p">, </span>cost_types=None<span class="p">, </span>limit_amount=None<span class="p">, </span>limit_unit=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>notifications=None<span class="p">, </span>time_period_end=None<span class="p">, </span>time_period_start=None<span class="p">, </span>time_unit=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetBudget<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/budgets?tab=doc#BudgetState">BudgetState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/budgets?tab=doc#Budget">Budget</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Budgets.Budget.html">Budget</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Budgets.BudgetState.html">BudgetState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -890,9 +890,9 @@ Get an existing Budget resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -905,36 +905,9 @@ Get an existing Budget resource's state with the given name, ID, and optional ex
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -959,13 +932,40 @@ Get an existing Budget resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -974,8 +974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the target account for budget. Will use current user's account_id by default if omitted.
-{{% /md %}}</dd>
+    <dd>The ID of the target account for budget. Will use current user's account_id by default if omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether this budget tracks monetary cost or usage.
-{{% /md %}}</dd>
+    <dd>Whether this budget tracks monetary cost or usage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of CostFilters key/value pairs to apply to the budget.
-{{% /md %}}</dd>
+    <dd>Map of CostFilters key/value pairs to apply to the budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetcosttypes">Budget<wbr>Cost<wbr>Types<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
-{{% /md %}}</dd>
+    <dd>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount of cost or usage being measured for a budget.
-{{% /md %}}</dd>
+    <dd>The amount of cost or usage being measured for a budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
-{{% /md %}}</dd>
+    <dd>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix of the name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The prefix of the name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetnotification">List&lt;Budget<wbr>Notification<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
-{{% /md %}}</dd>
+    <dd>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,14 +1073,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
-{{% /md %}}</dd>
+    <dd>The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1089,8 +1089,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the target account for budget. Will use current user's account_id by default if omitted.
-{{% /md %}}</dd>
+    <dd>The ID of the target account for budget. Will use current user's account_id by default if omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,8 +1098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether this budget tracks monetary cost or usage.
-{{% /md %}}</dd>
+    <dd>Whether this budget tracks monetary cost or usage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,8 +1107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of CostFilters key/value pairs to apply to the budget.
-{{% /md %}}</dd>
+    <dd>Map of CostFilters key/value pairs to apply to the budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,8 +1116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetcosttypes">Budget<wbr>Cost<wbr>Types</a></span>
     </dt>
-    <dd>{{% md %}}Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
-{{% /md %}}</dd>
+    <dd>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,8 +1125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount of cost or usage being measured for a budget.
-{{% /md %}}</dd>
+    <dd>The amount of cost or usage being measured for a budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,8 +1134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
-{{% /md %}}</dd>
+    <dd>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,8 +1143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,8 +1152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix of the name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The prefix of the name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,8 +1161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetnotification">[]Budget<wbr>Notification</a></span>
     </dt>
-    <dd>{{% md %}}Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
-{{% /md %}}</dd>
+    <dd>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1170,8 +1170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,8 +1179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,14 +1188,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
-{{% /md %}}</dd>
+    <dd>The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1204,8 +1204,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the target account for budget. Will use current user's account_id by default if omitted.
-{{% /md %}}</dd>
+    <dd>The ID of the target account for budget. Will use current user's account_id by default if omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,8 +1213,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether this budget tracks monetary cost or usage.
-{{% /md %}}</dd>
+    <dd>Whether this budget tracks monetary cost or usage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,8 +1222,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of CostFilters key/value pairs to apply to the budget.
-{{% /md %}}</dd>
+    <dd>Map of CostFilters key/value pairs to apply to the budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,8 +1231,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetcosttypes">Budget<wbr>Cost<wbr>Types</a></span>
     </dt>
-    <dd>{{% md %}}Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
-{{% /md %}}</dd>
+    <dd>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,8 +1240,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The amount of cost or usage being measured for a budget.
-{{% /md %}}</dd>
+    <dd>The amount of cost or usage being measured for a budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,8 +1249,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
-{{% /md %}}</dd>
+    <dd>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,8 +1258,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,8 +1267,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix of the name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The prefix of the name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,8 +1276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetnotification">Budget<wbr>Notification[]</a></span>
     </dt>
-    <dd>{{% md %}}Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
-{{% /md %}}</dd>
+    <dd>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,8 +1285,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,8 +1294,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,14 +1303,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
-{{% /md %}}</dd>
+    <dd>The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1319,8 +1319,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the target account for budget. Will use current user's account_id by default if omitted.
-{{% /md %}}</dd>
+    <dd>The ID of the target account for budget. Will use current user's account_id by default if omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,8 +1328,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether this budget tracks monetary cost or usage.
-{{% /md %}}</dd>
+    <dd>Whether this budget tracks monetary cost or usage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,8 +1337,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of CostFilters key/value pairs to apply to the budget.
-{{% /md %}}</dd>
+    <dd>Map of CostFilters key/value pairs to apply to the budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,8 +1346,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetcosttypes">Dict[Budget<wbr>Cost<wbr>Types]</a></span>
     </dt>
-    <dd>{{% md %}}Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
-{{% /md %}}</dd>
+    <dd>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,8 +1355,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The amount of cost or usage being measured for a budget.
-{{% /md %}}</dd>
+    <dd>The amount of cost or usage being measured for a budget.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1364,8 +1364,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
-{{% /md %}}</dd>
+    <dd>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,8 +1373,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,8 +1382,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The prefix of the name of a budget. Unique within accounts.
-{{% /md %}}</dd>
+    <dd>The prefix of the name of a budget. Unique within accounts.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1391,8 +1391,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#budgetnotification">List[Budget<wbr>Notification]</a></span>
     </dt>
-    <dd>{{% md %}}Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
-{{% /md %}}</dd>
+    <dd>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,8 +1400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1409,8 +1409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
-{{% /md %}}</dd>
+    <dd>The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1418,11 +1418,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
-{{% /md %}}</dd>
+    <dd>The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1437,18 +1437,18 @@ The following state arguments are supported:
 
 
 <h4 id="budgetcosttypes">Budget<wbr>Cost<wbr>Types</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#BudgetCostTypes">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#BudgetCostTypes">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/budgets?tab=doc#BudgetCostTypesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/budgets?tab=doc#BudgetCostTypesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1457,8 +1457,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include credits in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include credits in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,8 +1466,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a budget includes discounts. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Specifies whether a budget includes discounts. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,8 +1475,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include other subscription costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include other subscription costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,8 +1484,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include recurring costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include recurring costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1493,8 +1493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include refunds in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include refunds in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,8 +1502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include subscriptions in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include subscriptions in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,8 +1511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include support costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include support costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,8 +1520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include tax in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include tax in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,8 +1529,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include upfront costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include upfront costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,8 +1538,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a budget uses the amortized rate. Defaults to `false`
-{{% /md %}}</dd>
+    <dd>Specifies whether a budget uses the amortized rate. Defaults to `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1547,14 +1547,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to use blended costs in the cost budget. Defaults to `false`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to use blended costs in the cost budget. Defaults to `false`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1563,8 +1563,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include credits in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include credits in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1572,8 +1572,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a budget includes discounts. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Specifies whether a budget includes discounts. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1581,8 +1581,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include other subscription costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include other subscription costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1590,8 +1590,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include recurring costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include recurring costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1599,8 +1599,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include refunds in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include refunds in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1608,8 +1608,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include subscriptions in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include subscriptions in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,8 +1617,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include support costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include support costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,8 +1626,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include tax in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include tax in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1635,8 +1635,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include upfront costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include upfront costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1644,8 +1644,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a budget uses the amortized rate. Defaults to `false`
-{{% /md %}}</dd>
+    <dd>Specifies whether a budget uses the amortized rate. Defaults to `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1653,14 +1653,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to use blended costs in the cost budget. Defaults to `false`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to use blended costs in the cost budget. Defaults to `false`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1669,8 +1669,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include credits in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include credits in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a budget includes discounts. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Specifies whether a budget includes discounts. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,8 +1687,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include other subscription costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include other subscription costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include recurring costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include recurring costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,8 +1705,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include refunds in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include refunds in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1714,8 +1714,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include subscriptions in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include subscriptions in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,8 +1723,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include support costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include support costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1732,8 +1732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include tax in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include tax in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1741,8 +1741,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include upfront costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include upfront costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,8 +1750,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a budget uses the amortized rate. Defaults to `false`
-{{% /md %}}</dd>
+    <dd>Specifies whether a budget uses the amortized rate. Defaults to `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1759,14 +1759,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to use blended costs in the cost budget. Defaults to `false`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to use blended costs in the cost budget. Defaults to `false`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1775,8 +1775,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include credits in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include credits in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1784,8 +1784,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a budget includes discounts. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Specifies whether a budget includes discounts. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1793,8 +1793,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include other subscription costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include other subscription costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1802,8 +1802,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include recurring costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include recurring costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1811,8 +1811,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include refunds in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include refunds in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1820,8 +1820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include subscriptions in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include subscriptions in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1829,8 +1829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include support costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include support costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1838,8 +1838,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include tax in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include tax in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1847,8 +1847,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to include upfront costs in the cost budget. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to include upfront costs in the cost budget. Defaults to `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1856,8 +1856,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a budget uses the amortized rate. Defaults to `false`
-{{% /md %}}</dd>
+    <dd>Specifies whether a budget uses the amortized rate. Defaults to `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,29 +1865,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean value whether to use blended costs in the cost budget. Defaults to `false`
-{{% /md %}}</dd>
+    <dd>A boolean value whether to use blended costs in the cost budget. Defaults to `false`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="budgetnotification">Budget<wbr>Notification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#BudgetNotification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#BudgetNotification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/budgets?tab=doc#BudgetNotificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/budgets?tab=doc#BudgetNotificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1896,8 +1896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Required) Comparison operator to use to evaluate the condition. Can be `LESS_THAN`, `EQUAL_TO` or `GREATER_THAN`.
-{{% /md %}}</dd>
+    <dd>(Required) Comparison operator to use to evaluate the condition. Can be `LESS_THAN`, `EQUAL_TO` or `GREATER_THAN`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1905,8 +1905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Required) What kind of budget value to notify on. Can be `ACTUAL` or `FORECASTED`
-{{% /md %}}</dd>
+    <dd>(Required) What kind of budget value to notify on. Can be `ACTUAL` or `FORECASTED`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1914,8 +1914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}(Required) Threshold when the notification should be sent.
-{{% /md %}}</dd>
+    <dd>(Required) Threshold when the notification should be sent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1923,8 +1923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Required) What kind of threshold is defined. Can be `PERCENTAGE` OR `ABSOLUTE_VALUE`.
-{{% /md %}}</dd>
+    <dd>(Required) What kind of threshold is defined. Can be `PERCENTAGE` OR `ABSOLUTE_VALUE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1932,8 +1932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) E-Mail addresses to notify. Either this or `subscriber_sns_topic_arns` is required.
-{{% /md %}}</dd>
+    <dd>(Optional) E-Mail addresses to notify. Either this or `subscriber_sns_topic_arns` is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,14 +1941,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) SNS topics to notify. Either this or `subscriber_email_addresses` is required.
-{{% /md %}}</dd>
+    <dd>(Optional) SNS topics to notify. Either this or `subscriber_email_addresses` is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1957,8 +1957,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Required) Comparison operator to use to evaluate the condition. Can be `LESS_THAN`, `EQUAL_TO` or `GREATER_THAN`.
-{{% /md %}}</dd>
+    <dd>(Required) Comparison operator to use to evaluate the condition. Can be `LESS_THAN`, `EQUAL_TO` or `GREATER_THAN`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1966,8 +1966,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Required) What kind of budget value to notify on. Can be `ACTUAL` or `FORECASTED`
-{{% /md %}}</dd>
+    <dd>(Required) What kind of budget value to notify on. Can be `ACTUAL` or `FORECASTED`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1975,8 +1975,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}(Required) Threshold when the notification should be sent.
-{{% /md %}}</dd>
+    <dd>(Required) Threshold when the notification should be sent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1984,8 +1984,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Required) What kind of threshold is defined. Can be `PERCENTAGE` OR `ABSOLUTE_VALUE`.
-{{% /md %}}</dd>
+    <dd>(Required) What kind of threshold is defined. Can be `PERCENTAGE` OR `ABSOLUTE_VALUE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1993,8 +1993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) E-Mail addresses to notify. Either this or `subscriber_sns_topic_arns` is required.
-{{% /md %}}</dd>
+    <dd>(Optional) E-Mail addresses to notify. Either this or `subscriber_sns_topic_arns` is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2002,14 +2002,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) SNS topics to notify. Either this or `subscriber_email_addresses` is required.
-{{% /md %}}</dd>
+    <dd>(Optional) SNS topics to notify. Either this or `subscriber_email_addresses` is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2018,8 +2018,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Required) Comparison operator to use to evaluate the condition. Can be `LESS_THAN`, `EQUAL_TO` or `GREATER_THAN`.
-{{% /md %}}</dd>
+    <dd>(Required) Comparison operator to use to evaluate the condition. Can be `LESS_THAN`, `EQUAL_TO` or `GREATER_THAN`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2027,8 +2027,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Required) What kind of budget value to notify on. Can be `ACTUAL` or `FORECASTED`
-{{% /md %}}</dd>
+    <dd>(Required) What kind of budget value to notify on. Can be `ACTUAL` or `FORECASTED`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2036,8 +2036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}(Required) Threshold when the notification should be sent.
-{{% /md %}}</dd>
+    <dd>(Required) Threshold when the notification should be sent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2045,8 +2045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Required) What kind of threshold is defined. Can be `PERCENTAGE` OR `ABSOLUTE_VALUE`.
-{{% /md %}}</dd>
+    <dd>(Required) What kind of threshold is defined. Can be `PERCENTAGE` OR `ABSOLUTE_VALUE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2054,8 +2054,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) E-Mail addresses to notify. Either this or `subscriber_sns_topic_arns` is required.
-{{% /md %}}</dd>
+    <dd>(Optional) E-Mail addresses to notify. Either this or `subscriber_sns_topic_arns` is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2063,14 +2063,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) SNS topics to notify. Either this or `subscriber_email_addresses` is required.
-{{% /md %}}</dd>
+    <dd>(Optional) SNS topics to notify. Either this or `subscriber_email_addresses` is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2079,8 +2079,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Required) Comparison operator to use to evaluate the condition. Can be `LESS_THAN`, `EQUAL_TO` or `GREATER_THAN`.
-{{% /md %}}</dd>
+    <dd>(Required) Comparison operator to use to evaluate the condition. Can be `LESS_THAN`, `EQUAL_TO` or `GREATER_THAN`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2088,8 +2088,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Required) What kind of budget value to notify on. Can be `ACTUAL` or `FORECASTED`
-{{% /md %}}</dd>
+    <dd>(Required) What kind of budget value to notify on. Can be `ACTUAL` or `FORECASTED`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2097,8 +2097,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}(Required) Threshold when the notification should be sent.
-{{% /md %}}</dd>
+    <dd>(Required) Threshold when the notification should be sent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2106,8 +2106,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Required) What kind of threshold is defined. Can be `PERCENTAGE` OR `ABSOLUTE_VALUE`.
-{{% /md %}}</dd>
+    <dd>(Required) What kind of threshold is defined. Can be `PERCENTAGE` OR `ABSOLUTE_VALUE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2115,8 +2115,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) E-Mail addresses to notify. Either this or `subscriber_sns_topic_arns` is required.
-{{% /md %}}</dd>
+    <dd>(Optional) E-Mail addresses to notify. Either this or `subscriber_sns_topic_arns` is required.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2124,11 +2124,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) SNS topics to notify. Either this or `subscriber_email_addresses` is required.
-{{% /md %}}</dd>
+    <dd>(Optional) SNS topics to notify. Either this or `subscriber_email_addresses` is required.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

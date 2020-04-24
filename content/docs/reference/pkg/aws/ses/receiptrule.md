@@ -44,26 +44,26 @@ const store = new aws.ses.ReceiptRule("store", {
 
 
 ## Create a ReceiptRule Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ses/#ReceiptRule">ReceiptRule</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ses/#ReceiptRuleArgs">ReceiptRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ReceiptRule</span><span class="p">(resource_name, opts=None, </span>add_header_actions=None<span class="p">, </span>after=None<span class="p">, </span>bounce_actions=None<span class="p">, </span>enabled=None<span class="p">, </span>lambda_actions=None<span class="p">, </span>name=None<span class="p">, </span>recipients=None<span class="p">, </span>rule_set_name=None<span class="p">, </span>s3_actions=None<span class="p">, </span>scan_enabled=None<span class="p">, </span>sns_actions=None<span class="p">, </span>stop_actions=None<span class="p">, </span>tls_policy=None<span class="p">, </span>workmail_actions=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewReceiptRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleArgs">ReceiptRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRule">ReceiptRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ses.ReceiptRule.html">ReceiptRule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ses.ReceiptRuleArgs.html">ReceiptRuleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -100,9 +100,9 @@ const store = new aws.ses.ReceiptRule("store", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -120,9 +120,9 @@ const store = new aws.ses.ReceiptRule("store", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -169,9 +169,9 @@ const store = new aws.ses.ReceiptRule("store", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -208,7 +208,7 @@ const store = new aws.ses.ReceiptRule("store", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ReceiptRule Resource Properties {#properties}
 
@@ -221,7 +221,7 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -230,8 +230,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule set
-{{% /md %}}</dd>
+    <dd>The name of the rule set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,8 +239,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleaddheaderaction">List&lt;Receipt<wbr>Rule<wbr>Add<wbr>Header<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Add Header Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Add Header Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,8 +248,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule to place this rule after
-{{% /md %}}</dd>
+    <dd>The name of the rule to place this rule after
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,8 +257,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulebounceaction">List&lt;Receipt<wbr>Rule<wbr>Bounce<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Bounce Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Bounce Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the rule will be enabled
-{{% /md %}}</dd>
+    <dd>If true, the rule will be enabled
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulelambdaaction">List&lt;Receipt<wbr>Rule<wbr>Lambda<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule
-{{% /md %}}</dd>
+    <dd>The name of the rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of email addresses
-{{% /md %}}</dd>
+    <dd>A list of email addresses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,8 +302,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrules3action">List&lt;Receipt<wbr>Rule<wbr>S3Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of S3 Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of S3 Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,8 +311,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, incoming emails will be scanned for spam and viruses
-{{% /md %}}</dd>
+    <dd>If true, incoming emails will be scanned for spam and viruses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,8 +320,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulesnsaction">List&lt;Receipt<wbr>Rule<wbr>Sns<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SNS Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of SNS Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,8 +329,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulestopaction">List&lt;Receipt<wbr>Rule<wbr>Stop<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Stop Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Stop Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,8 +338,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Require or Optional
-{{% /md %}}</dd>
+    <dd>Require or Optional
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,14 +347,14 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleworkmailaction">List&lt;Receipt<wbr>Rule<wbr>Workmail<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of WorkMail Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of WorkMail Action blocks. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -363,8 +363,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule set
-{{% /md %}}</dd>
+    <dd>The name of the rule set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,8 +372,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleaddheaderaction">[]Receipt<wbr>Rule<wbr>Add<wbr>Header<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of Add Header Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Add Header Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,8 +381,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule to place this rule after
-{{% /md %}}</dd>
+    <dd>The name of the rule to place this rule after
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,8 +390,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulebounceaction">[]Receipt<wbr>Rule<wbr>Bounce<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of Bounce Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Bounce Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the rule will be enabled
-{{% /md %}}</dd>
+    <dd>If true, the rule will be enabled
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulelambdaaction">[]Receipt<wbr>Rule<wbr>Lambda<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule
-{{% /md %}}</dd>
+    <dd>The name of the rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,8 +426,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of email addresses
-{{% /md %}}</dd>
+    <dd>A list of email addresses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,8 +435,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrules3action">[]Receipt<wbr>Rule<wbr>S3Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of S3 Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of S3 Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -444,8 +444,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, incoming emails will be scanned for spam and viruses
-{{% /md %}}</dd>
+    <dd>If true, incoming emails will be scanned for spam and viruses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -453,8 +453,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulesnsaction">[]Receipt<wbr>Rule<wbr>Sns<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of SNS Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of SNS Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,8 +462,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulestopaction">[]Receipt<wbr>Rule<wbr>Stop<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of Stop Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Stop Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -471,8 +471,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Require or Optional
-{{% /md %}}</dd>
+    <dd>Require or Optional
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,14 +480,14 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleworkmailaction">[]Receipt<wbr>Rule<wbr>Workmail<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of WorkMail Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of WorkMail Action blocks. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -496,8 +496,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule set
-{{% /md %}}</dd>
+    <dd>The name of the rule set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleaddheaderaction">Receipt<wbr>Rule<wbr>Add<wbr>Header<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Add Header Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Add Header Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule to place this rule after
-{{% /md %}}</dd>
+    <dd>The name of the rule to place this rule after
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulebounceaction">Receipt<wbr>Rule<wbr>Bounce<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Bounce Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Bounce Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,8 +532,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, the rule will be enabled
-{{% /md %}}</dd>
+    <dd>If true, the rule will be enabled
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,8 +541,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulelambdaaction">Receipt<wbr>Rule<wbr>Lambda<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,8 +550,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule
-{{% /md %}}</dd>
+    <dd>The name of the rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,8 +559,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of email addresses
-{{% /md %}}</dd>
+    <dd>A list of email addresses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,8 +568,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrules3action">Receipt<wbr>Rule<wbr>S3Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of S3 Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of S3 Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -577,8 +577,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, incoming emails will be scanned for spam and viruses
-{{% /md %}}</dd>
+    <dd>If true, incoming emails will be scanned for spam and viruses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -586,8 +586,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulesnsaction">Receipt<wbr>Rule<wbr>Sns<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SNS Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of SNS Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,8 +595,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulestopaction">Receipt<wbr>Rule<wbr>Stop<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Stop Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Stop Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,8 +604,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Require or Optional
-{{% /md %}}</dd>
+    <dd>Require or Optional
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,14 +613,14 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleworkmailaction">Receipt<wbr>Rule<wbr>Workmail<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of WorkMail Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of WorkMail Action blocks. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -629,8 +629,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule set
-{{% /md %}}</dd>
+    <dd>The name of the rule set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,8 +638,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleaddheaderaction">List[Receipt<wbr>Rule<wbr>Add<wbr>Header<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Add Header Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Add Header Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,8 +647,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule to place this rule after
-{{% /md %}}</dd>
+    <dd>The name of the rule to place this rule after
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,8 +656,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulebounceaction">List[Receipt<wbr>Rule<wbr>Bounce<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Bounce Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Bounce Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,8 +665,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the rule will be enabled
-{{% /md %}}</dd>
+    <dd>If true, the rule will be enabled
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,8 +674,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulelambdaaction">List[Receipt<wbr>Rule<wbr>Lambda<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -683,8 +683,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule
-{{% /md %}}</dd>
+    <dd>The name of the rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -692,8 +692,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of email addresses
-{{% /md %}}</dd>
+    <dd>A list of email addresses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -701,8 +701,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrules3action">List[Receipt<wbr>Rule<wbr>S3Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of S3 Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of S3 Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,8 +710,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, incoming emails will be scanned for spam and viruses
-{{% /md %}}</dd>
+    <dd>If true, incoming emails will be scanned for spam and viruses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -719,8 +719,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulesnsaction">List[Receipt<wbr>Rule<wbr>Sns<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SNS Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of SNS Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -728,8 +728,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulestopaction">List[Receipt<wbr>Rule<wbr>Stop<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Stop Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Stop Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -737,8 +737,8 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Require or Optional
-{{% /md %}}</dd>
+    <dd>Require or Optional
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -746,11 +746,11 @@ The ReceiptRule resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleworkmailaction">List[Receipt<wbr>Rule<wbr>Workmail<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of WorkMail Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of WorkMail Action blocks. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -764,7 +764,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -773,13 +773,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -788,13 +788,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -803,13 +803,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -818,10 +818,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -832,25 +832,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ReceiptRule Resource {#look-up}
 
 Get an existing ReceiptRule resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ses/#ReceiptRuleState">ReceiptRuleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ses/#ReceiptRule">ReceiptRule</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>add_header_actions=None<span class="p">, </span>after=None<span class="p">, </span>bounce_actions=None<span class="p">, </span>enabled=None<span class="p">, </span>lambda_actions=None<span class="p">, </span>name=None<span class="p">, </span>recipients=None<span class="p">, </span>rule_set_name=None<span class="p">, </span>s3_actions=None<span class="p">, </span>scan_enabled=None<span class="p">, </span>sns_actions=None<span class="p">, </span>stop_actions=None<span class="p">, </span>tls_policy=None<span class="p">, </span>workmail_actions=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetReceiptRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleState">ReceiptRuleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRule">ReceiptRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ses.ReceiptRule.html">ReceiptRule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ses.ReceiptRuleState.html">ReceiptRuleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -875,9 +875,9 @@ Get an existing ReceiptRule resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -890,36 +890,9 @@ Get an existing ReceiptRule resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -944,13 +917,40 @@ Get an existing ReceiptRule resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -959,8 +959,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleaddheaderaction">List&lt;Receipt<wbr>Rule<wbr>Add<wbr>Header<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Add Header Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Add Header Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -968,8 +968,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule to place this rule after
-{{% /md %}}</dd>
+    <dd>The name of the rule to place this rule after
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -977,8 +977,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulebounceaction">List&lt;Receipt<wbr>Rule<wbr>Bounce<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Bounce Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Bounce Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -986,8 +986,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the rule will be enabled
-{{% /md %}}</dd>
+    <dd>If true, the rule will be enabled
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -995,8 +995,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulelambdaaction">List&lt;Receipt<wbr>Rule<wbr>Lambda<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1004,8 +1004,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule
-{{% /md %}}</dd>
+    <dd>The name of the rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1013,8 +1013,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of email addresses
-{{% /md %}}</dd>
+    <dd>A list of email addresses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1022,8 +1022,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule set
-{{% /md %}}</dd>
+    <dd>The name of the rule set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1031,8 +1031,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrules3action">List&lt;Receipt<wbr>Rule<wbr>S3Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of S3 Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of S3 Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1040,8 +1040,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, incoming emails will be scanned for spam and viruses
-{{% /md %}}</dd>
+    <dd>If true, incoming emails will be scanned for spam and viruses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1049,8 +1049,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulesnsaction">List&lt;Receipt<wbr>Rule<wbr>Sns<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SNS Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of SNS Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,8 +1058,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulestopaction">List&lt;Receipt<wbr>Rule<wbr>Stop<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Stop Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Stop Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,8 +1067,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Require or Optional
-{{% /md %}}</dd>
+    <dd>Require or Optional
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1076,14 +1076,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleworkmailaction">List&lt;Receipt<wbr>Rule<wbr>Workmail<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of WorkMail Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of WorkMail Action blocks. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1092,8 +1092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleaddheaderaction">[]Receipt<wbr>Rule<wbr>Add<wbr>Header<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of Add Header Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Add Header Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1101,8 +1101,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule to place this rule after
-{{% /md %}}</dd>
+    <dd>The name of the rule to place this rule after
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,8 +1110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulebounceaction">[]Receipt<wbr>Rule<wbr>Bounce<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of Bounce Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Bounce Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,8 +1119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the rule will be enabled
-{{% /md %}}</dd>
+    <dd>If true, the rule will be enabled
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1128,8 +1128,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulelambdaaction">[]Receipt<wbr>Rule<wbr>Lambda<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,8 +1137,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule
-{{% /md %}}</dd>
+    <dd>The name of the rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1146,8 +1146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of email addresses
-{{% /md %}}</dd>
+    <dd>A list of email addresses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule set
-{{% /md %}}</dd>
+    <dd>The name of the rule set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,8 +1164,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrules3action">[]Receipt<wbr>Rule<wbr>S3Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of S3 Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of S3 Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,8 +1173,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, incoming emails will be scanned for spam and viruses
-{{% /md %}}</dd>
+    <dd>If true, incoming emails will be scanned for spam and viruses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,8 +1182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulesnsaction">[]Receipt<wbr>Rule<wbr>Sns<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of SNS Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of SNS Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,8 +1191,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulestopaction">[]Receipt<wbr>Rule<wbr>Stop<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of Stop Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Stop Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,8 +1200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Require or Optional
-{{% /md %}}</dd>
+    <dd>Require or Optional
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,14 +1209,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleworkmailaction">[]Receipt<wbr>Rule<wbr>Workmail<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A list of WorkMail Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of WorkMail Action blocks. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1225,8 +1225,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleaddheaderaction">Receipt<wbr>Rule<wbr>Add<wbr>Header<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Add Header Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Add Header Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,8 +1234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule to place this rule after
-{{% /md %}}</dd>
+    <dd>The name of the rule to place this rule after
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,8 +1243,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulebounceaction">Receipt<wbr>Rule<wbr>Bounce<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Bounce Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Bounce Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,8 +1252,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, the rule will be enabled
-{{% /md %}}</dd>
+    <dd>If true, the rule will be enabled
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1261,8 +1261,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulelambdaaction">Receipt<wbr>Rule<wbr>Lambda<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1270,8 +1270,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule
-{{% /md %}}</dd>
+    <dd>The name of the rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1279,8 +1279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of email addresses
-{{% /md %}}</dd>
+    <dd>A list of email addresses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,8 +1288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule set
-{{% /md %}}</dd>
+    <dd>The name of the rule set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,8 +1297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrules3action">Receipt<wbr>Rule<wbr>S3Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of S3 Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of S3 Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,8 +1306,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, incoming emails will be scanned for spam and viruses
-{{% /md %}}</dd>
+    <dd>If true, incoming emails will be scanned for spam and viruses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,8 +1315,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulesnsaction">Receipt<wbr>Rule<wbr>Sns<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SNS Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of SNS Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,8 +1324,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulestopaction">Receipt<wbr>Rule<wbr>Stop<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Stop Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Stop Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,8 +1333,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Require or Optional
-{{% /md %}}</dd>
+    <dd>Require or Optional
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,14 +1342,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleworkmailaction">Receipt<wbr>Rule<wbr>Workmail<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of WorkMail Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of WorkMail Action blocks. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1358,8 +1358,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleaddheaderaction">List[Receipt<wbr>Rule<wbr>Add<wbr>Header<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Add Header Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Add Header Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,8 +1367,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule to place this rule after
-{{% /md %}}</dd>
+    <dd>The name of the rule to place this rule after
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,8 +1376,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulebounceaction">List[Receipt<wbr>Rule<wbr>Bounce<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Bounce Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Bounce Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,8 +1385,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, the rule will be enabled
-{{% /md %}}</dd>
+    <dd>If true, the rule will be enabled
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1394,8 +1394,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulelambdaaction">List[Receipt<wbr>Rule<wbr>Lambda<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,8 +1403,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule
-{{% /md %}}</dd>
+    <dd>The name of the rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1412,8 +1412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of email addresses
-{{% /md %}}</dd>
+    <dd>A list of email addresses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,8 +1421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the rule set
-{{% /md %}}</dd>
+    <dd>The name of the rule set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,8 +1430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrules3action">List[Receipt<wbr>Rule<wbr>S3Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of S3 Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of S3 Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1439,8 +1439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, incoming emails will be scanned for spam and viruses
-{{% /md %}}</dd>
+    <dd>If true, incoming emails will be scanned for spam and viruses
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,8 +1448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulesnsaction">List[Receipt<wbr>Rule<wbr>Sns<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SNS Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of SNS Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,8 +1457,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptrulestopaction">List[Receipt<wbr>Rule<wbr>Stop<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Stop Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of Stop Action blocks. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,8 +1466,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Require or Optional
-{{% /md %}}</dd>
+    <dd>Require or Optional
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,11 +1475,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#receiptruleworkmailaction">List[Receipt<wbr>Rule<wbr>Workmail<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A list of WorkMail Action blocks. Documented below.
-{{% /md %}}</dd>
+    <dd>A list of WorkMail Action blocks. Documented below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1494,18 +1494,18 @@ The following state arguments are supported:
 
 
 <h4 id="receiptruleaddheaderaction">Receipt<wbr>Rule<wbr>Add<wbr>Header<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ReceiptRuleAddHeaderAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ReceiptRuleAddHeaderAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleAddHeaderActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleAddHeaderActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1514,8 +1514,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header to add
-{{% /md %}}</dd>
+    <dd>The name of the header to add
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1523,8 +1523,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header to add
-{{% /md %}}</dd>
+    <dd>The value of the header to add
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1532,14 +1532,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1548,8 +1548,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header to add
-{{% /md %}}</dd>
+    <dd>The name of the header to add
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1557,8 +1557,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header to add
-{{% /md %}}</dd>
+    <dd>The value of the header to add
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1566,14 +1566,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1582,8 +1582,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header to add
-{{% /md %}}</dd>
+    <dd>The name of the header to add
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1591,8 +1591,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header to add
-{{% /md %}}</dd>
+    <dd>The value of the header to add
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1600,14 +1600,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1616,8 +1616,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header to add
-{{% /md %}}</dd>
+    <dd>The name of the header to add
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1625,8 +1625,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header to add
-{{% /md %}}</dd>
+    <dd>The value of the header to add
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1634,29 +1634,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="receiptrulebounceaction">Receipt<wbr>Rule<wbr>Bounce<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ReceiptRuleBounceAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ReceiptRuleBounceAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleBounceActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleBounceActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1665,8 +1665,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The message to send
-{{% /md %}}</dd>
+    <dd>The message to send
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1674,8 +1674,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1683,8 +1683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The email address of the sender
-{{% /md %}}</dd>
+    <dd>The email address of the sender
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1692,8 +1692,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 5321 SMTP reply code
-{{% /md %}}</dd>
+    <dd>The RFC 5321 SMTP reply code
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,8 +1701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 3463 SMTP enhanced status code
-{{% /md %}}</dd>
+    <dd>The RFC 3463 SMTP enhanced status code
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1710,14 +1710,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1726,8 +1726,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The message to send
-{{% /md %}}</dd>
+    <dd>The message to send
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1735,8 +1735,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1744,8 +1744,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email address of the sender
-{{% /md %}}</dd>
+    <dd>The email address of the sender
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1753,8 +1753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 5321 SMTP reply code
-{{% /md %}}</dd>
+    <dd>The RFC 5321 SMTP reply code
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1762,8 +1762,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 3463 SMTP enhanced status code
-{{% /md %}}</dd>
+    <dd>The RFC 3463 SMTP enhanced status code
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1771,14 +1771,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1787,8 +1787,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The message to send
-{{% /md %}}</dd>
+    <dd>The message to send
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1796,8 +1796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1805,8 +1805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email address of the sender
-{{% /md %}}</dd>
+    <dd>The email address of the sender
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1814,8 +1814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 5321 SMTP reply code
-{{% /md %}}</dd>
+    <dd>The RFC 5321 SMTP reply code
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1823,8 +1823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 3463 SMTP enhanced status code
-{{% /md %}}</dd>
+    <dd>The RFC 3463 SMTP enhanced status code
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1832,14 +1832,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1848,8 +1848,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The message to send
-{{% /md %}}</dd>
+    <dd>The message to send
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1857,8 +1857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1866,8 +1866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The email address of the sender
-{{% /md %}}</dd>
+    <dd>The email address of the sender
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1875,8 +1875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 5321 SMTP reply code
-{{% /md %}}</dd>
+    <dd>The RFC 5321 SMTP reply code
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1884,8 +1884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RFC 3463 SMTP enhanced status code
-{{% /md %}}</dd>
+    <dd>The RFC 3463 SMTP enhanced status code
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,29 +1893,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="receiptrulelambdaaction">Receipt<wbr>Rule<wbr>Lambda<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ReceiptRuleLambdaAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ReceiptRuleLambdaAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleLambdaActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleLambdaActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1924,8 +1924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function to invoke
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function to invoke
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1933,8 +1933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1942,8 +1942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Event or RequestResponse
-{{% /md %}}</dd>
+    <dd>Event or RequestResponse
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1951,14 +1951,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1967,8 +1967,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function to invoke
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function to invoke
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1976,8 +1976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,8 +1985,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Event or RequestResponse
-{{% /md %}}</dd>
+    <dd>Event or RequestResponse
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,14 +1994,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2010,8 +2010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function to invoke
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function to invoke
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2019,8 +2019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2028,8 +2028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Event or RequestResponse
-{{% /md %}}</dd>
+    <dd>Event or RequestResponse
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2037,14 +2037,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2053,8 +2053,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Lambda function to invoke
-{{% /md %}}</dd>
+    <dd>The ARN of the Lambda function to invoke
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2062,8 +2062,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2071,8 +2071,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Event or RequestResponse
-{{% /md %}}</dd>
+    <dd>Event or RequestResponse
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2080,29 +2080,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="receiptrules3action">Receipt<wbr>Rule<wbr>S3Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ReceiptRuleS3Action">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ReceiptRuleS3Action">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleS3ActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleS3ActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2111,8 +2111,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the S3 bucket
-{{% /md %}}</dd>
+    <dd>The name of the S3 bucket
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2120,8 +2120,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2129,8 +2129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the KMS key
-{{% /md %}}</dd>
+    <dd>The ARN of the KMS key
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2138,8 +2138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key prefix of the S3 bucket
-{{% /md %}}</dd>
+    <dd>The key prefix of the S3 bucket
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,14 +2147,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2163,8 +2163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the S3 bucket
-{{% /md %}}</dd>
+    <dd>The name of the S3 bucket
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2172,8 +2172,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2181,8 +2181,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the KMS key
-{{% /md %}}</dd>
+    <dd>The ARN of the KMS key
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2190,8 +2190,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key prefix of the S3 bucket
-{{% /md %}}</dd>
+    <dd>The key prefix of the S3 bucket
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2199,14 +2199,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2215,8 +2215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the S3 bucket
-{{% /md %}}</dd>
+    <dd>The name of the S3 bucket
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2224,8 +2224,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2233,8 +2233,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the KMS key
-{{% /md %}}</dd>
+    <dd>The ARN of the KMS key
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2242,8 +2242,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key prefix of the S3 bucket
-{{% /md %}}</dd>
+    <dd>The key prefix of the S3 bucket
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2251,14 +2251,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2267,8 +2267,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the S3 bucket
-{{% /md %}}</dd>
+    <dd>The name of the S3 bucket
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2276,8 +2276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2285,8 +2285,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the KMS key
-{{% /md %}}</dd>
+    <dd>The ARN of the KMS key
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2294,8 +2294,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key prefix of the S3 bucket
-{{% /md %}}</dd>
+    <dd>The key prefix of the S3 bucket
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2303,29 +2303,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="receiptrulesnsaction">Receipt<wbr>Rule<wbr>Sns<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ReceiptRuleSnsAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ReceiptRuleSnsAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleSnsActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleSnsActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2334,8 +2334,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2343,14 +2343,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2359,8 +2359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2368,14 +2368,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2384,8 +2384,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2393,14 +2393,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2409,8 +2409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2418,29 +2418,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="receiptrulestopaction">Receipt<wbr>Rule<wbr>Stop<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ReceiptRuleStopAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ReceiptRuleStopAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleStopActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleStopActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2449,8 +2449,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2458,8 +2458,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The scope to apply
-{{% /md %}}</dd>
+    <dd>The scope to apply
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2467,14 +2467,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2483,8 +2483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2492,8 +2492,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scope to apply
-{{% /md %}}</dd>
+    <dd>The scope to apply
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2501,14 +2501,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2517,8 +2517,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2526,8 +2526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scope to apply
-{{% /md %}}</dd>
+    <dd>The scope to apply
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,14 +2535,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2551,8 +2551,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2560,8 +2560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The scope to apply
-{{% /md %}}</dd>
+    <dd>The scope to apply
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2569,29 +2569,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="receiptruleworkmailaction">Receipt<wbr>Rule<wbr>Workmail<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ReceiptRuleWorkmailAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ReceiptRuleWorkmailAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleWorkmailActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ses?tab=doc#ReceiptRuleWorkmailActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2600,8 +2600,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the WorkMail organization
-{{% /md %}}</dd>
+    <dd>The ARN of the WorkMail organization
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2609,8 +2609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2618,14 +2618,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2634,8 +2634,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the WorkMail organization
-{{% /md %}}</dd>
+    <dd>The ARN of the WorkMail organization
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2643,8 +2643,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2652,14 +2652,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2668,8 +2668,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the WorkMail organization
-{{% /md %}}</dd>
+    <dd>The ARN of the WorkMail organization
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2677,8 +2677,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2686,14 +2686,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2702,8 +2702,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the WorkMail organization
-{{% /md %}}</dd>
+    <dd>The ARN of the WorkMail organization
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2711,8 +2711,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The position of the action in the receipt rule
-{{% /md %}}</dd>
+    <dd>The position of the action in the receipt rule
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2720,11 +2720,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SNS topic to notify
-{{% /md %}}</dd>
+    <dd>The ARN of an SNS topic to notify
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

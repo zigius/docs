@@ -16,22 +16,22 @@ git_sha: "b8826fd5426cd6de4e3f8adccebd88128882cf20"
 > please consult the source [`mrparkers/terraform-provider-keycloak` repo](https://github.com/mrparkers/terraform-provider-keycloak/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var keycloak = require("@pulumi/keycloak");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as keycloak from "@pulumi/keycloak";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

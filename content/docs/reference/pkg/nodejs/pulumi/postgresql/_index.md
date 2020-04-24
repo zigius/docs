@@ -16,22 +16,22 @@ git_sha: "d19fd5be8a8596b12361503990407813d78e71a7"
 > please consult the source [`terraform-providers/terraform-provider-postgresql` repo](https://github.com/terraform-providers/terraform-provider-postgresql/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var postgresql = require("@pulumi/postgresql");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as postgresql from "@pulumi/postgresql";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

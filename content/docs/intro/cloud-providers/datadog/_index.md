@@ -21,9 +21,9 @@ The Datadog provider supports several options for providing access to Datadog cr
 
 ## Example
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 const datadog = require("@pulumi/datadog")
@@ -35,8 +35,8 @@ const user = new datadog.User("my-user", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as datadog from "@pulumi/datadog";
@@ -48,8 +48,8 @@ const user = new datadog.User("my-policy", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi_datadog as datadog
@@ -61,8 +61,8 @@ user = datadog.User("my-policy",
 )
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 import (
@@ -76,8 +76,8 @@ user, _ := datadog.NewUser(ctx, "my-user", &datadog.UserArgs{
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Collections.Generic;
@@ -99,9 +99,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ## Libraries
 

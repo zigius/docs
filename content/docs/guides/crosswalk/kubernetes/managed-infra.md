@@ -5,9 +5,9 @@ meta_desc: This page provides an overview of Managed Infrastructure services tha
 linktitle: Managed Infrastructure
 ---
 
-{{< chooser cloud "aws,azure,gcp" / >}}
 
-{{% choosable cloud aws %}}
+
+
 
 AWS has a catalog of [managed infrastructure][aws-managed-svcs] services that
 support and complement Kubernetes clusters and their workloads.
@@ -34,9 +34,9 @@ The full code for this stack is on [GitHub][gh-repo-stack].
 [aws-sgs]: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html
 <!-- markdownlint-enable url -->
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 
 Azure has a catalog of [managed infrastructure][azure-managed-svcs] services that
 support and complement Kubernetes clusters and their workloads.
@@ -58,9 +58,9 @@ The full code for this stack is on [GitHub][gh-repo-stack].
 [azure-vpn-gw]: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-vnet-vnet-rm-ps
 [gh-repo-stack]: https://github.com/pulumi/kubernetes-guides/tree/master/azure/02-managed-infra
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 GCP has a catalog of [managed infrastructure][gcp-managed-svcs] services that
 support and complement Kubernetes clusters and their workloads.
@@ -84,7 +84,7 @@ The full code for this stack is on [GitHub][gh-repo-stack].
 [gh-repo-stack]: https://github.com/pulumi/kubernetes-guides/tree/master/gcp/02-managed-infra
 <!-- markdownlint-enable url -->
 
-{{% /choosable %}}
+
 
 ## Overview
 
@@ -95,7 +95,7 @@ We'll configure and deploy:
 
 ## Networking
 
-{{% choosable cloud aws %}}
+
 
 In [Crosswalk for AWS][crosswalk-aws] we showcase how to define networking:
 
@@ -134,9 +134,9 @@ export const privateSubnetIds = vpc.privateSubnetIds;
 [vpc-gw]: {{< relref "/docs/guides/crosswalk/aws/vpc#configuring-internet-and-nat-gateways-for-subnets-in-a-vpc" >}}
 [vpc-sg]: {{< relref "/docs/guides/crosswalk/aws/vpc#configuring-security-groups-for-a-vpc" >}}
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 
 ### Create a New Virtual Network for Kubernetes
 
@@ -158,9 +158,9 @@ const subnet = new azure.network.Subnet(name, {
 });
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 <!-- markdownlint-disable no-duplicate-heading -->
 ### Create a New VPC for Kubernetes
@@ -193,9 +193,9 @@ const subnet = new gcp.compute.Subnetwork(name, {
 export const subnetworkName = subnet.name;
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud aws %}}
+
+
 
 #### Use the Default VPC with Kubernetes
 
@@ -213,9 +213,9 @@ export const defaultPublicSubnetIds = defaultVpc.publicSubnetIds;
 export const defaultPrivateSubnetIds = defaultVpc.privateSubnetIds;
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud aws %}}
+
+
 
 #### Use an Existing VPC with Kubernetes
 
@@ -239,33 +239,33 @@ export const existingPublicSubnetIds = existingVpc.publicSubnetIds;
 export const existingPrivateSubnetIds = existingVpc.privateSubnetIds;
 ```
 
-{{% /choosable %}}
+
 
 ### Requirements & Recommendations
 
-{{% choosable cloud aws %}}
+
 
 See the official docs [EKS Network Requirements](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html)
 and [AWS VPC Recommendations](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario2.html) for more details.
 
 [eks-tagging]: https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html#vpc-subnet-tagging
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 
 See the official Networking [docs][azure-net-docs] for more details.
 
 [azure-net-docs]: https://docs.microsoft.com/en-us/azure/aks/concepts-network
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 See the official Networking [docs][gke-net-docs] for more details.
 
 [gke-net-docs]: https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-admin-overview
 
-{{% /choosable %}}
+
 
 ## Storage
 
@@ -284,7 +284,7 @@ or [App Services][crosswalk-app-svcs]. Those higher layers tend to primarily foc
 the direct needs of a **given** Kubernetes cluster and its apps, rather than the
 needs of your complete architecture.
 
-{{% choosable cloud aws %}}
+
 
 ### Amazon Simple Storage Service (S3)
 
@@ -308,9 +308,9 @@ See [Persisting Kubernetes Workloads with Amazon EFS][pulumi-efs] and the
 [aws-s3]: https://aws.amazon.com/s3
 <!-- markdownlint-enable url -->
 
-{{% /choosable %}}
 
-{{% choosable cloud azure %}}
+
+
 
 ### Azure Blob Storage
 
@@ -388,9 +388,9 @@ const appImage = new docker.Image(customImage, {
 });
 ```
 
-{{% /choosable %}}
 
-{{% choosable cloud gcp %}}
+
+
 
 ### Google Container Registry (GCR)
 
@@ -442,7 +442,7 @@ const picture = new gcp.storage.BucketObject("picture", {
 });
 ```
 
-{{% /choosable %}}
+
 
 <!-- markdownlint-disable url -->
 [crosswalk-cluster-svcs]: {{< relref "/docs/guides/crosswalk/kubernetes/cluster-services" >}}

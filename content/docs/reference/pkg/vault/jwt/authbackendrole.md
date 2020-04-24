@@ -20,26 +20,26 @@ information.
 
 
 ## Create a AuthBackendRole Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/jwt/#AuthBackendRole">AuthBackendRole</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/jwt/#AuthBackendRoleArgs">AuthBackendRoleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AuthBackendRole</span><span class="p">(resource_name, opts=None, </span>allowed_redirect_uris=None<span class="p">, </span>backend=None<span class="p">, </span>bound_audiences=None<span class="p">, </span>bound_cidrs=None<span class="p">, </span>bound_claims=None<span class="p">, </span>bound_subject=None<span class="p">, </span>claim_mappings=None<span class="p">, </span>clock_skew_leeway=None<span class="p">, </span>expiration_leeway=None<span class="p">, </span>groups_claim=None<span class="p">, </span>groups_claim_delimiter_pattern=None<span class="p">, </span>max_ttl=None<span class="p">, </span>not_before_leeway=None<span class="p">, </span>num_uses=None<span class="p">, </span>oidc_scopes=None<span class="p">, </span>period=None<span class="p">, </span>policies=None<span class="p">, </span>role_name=None<span class="p">, </span>role_type=None<span class="p">, </span>token_bound_cidrs=None<span class="p">, </span>token_explicit_max_ttl=None<span class="p">, </span>token_max_ttl=None<span class="p">, </span>token_no_default_policy=None<span class="p">, </span>token_num_uses=None<span class="p">, </span>token_period=None<span class="p">, </span>token_policies=None<span class="p">, </span>token_ttl=None<span class="p">, </span>token_type=None<span class="p">, </span>ttl=None<span class="p">, </span>user_claim=None<span class="p">, </span>verbose_oidc_logging=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAuthBackendRole<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/jwt?tab=doc#AuthBackendRoleArgs">AuthBackendRoleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/jwt?tab=doc#AuthBackendRole">AuthBackendRole</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Jwt.AuthBackendRole.html">AuthBackendRole</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Jwt.AuthBackendRoleArgs.html">AuthBackendRoleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -76,9 +76,9 @@ information.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -96,9 +96,9 @@ information.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -145,9 +145,9 @@ information.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -184,7 +184,7 @@ information.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## AuthBackendRole Resource Properties {#properties}
 
@@ -197,7 +197,7 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -206,8 +206,8 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role.
-{{% /md %}}</dd>
+    <dd>The name of the role.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -215,10 +215,10 @@ The AuthBackendRole resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the user; this will be used as the name for the Identity entity alias created
 due to a successful login.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,9 +226,9 @@ due to a successful login.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of allowed values for redirect_uri during OIDC logins.
+    <dd>The list of allowed values for redirect_uri during OIDC logins.
 Required for OIDC roles
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,9 +236,9 @@ Required for OIDC roles
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the auth backend to configure.
+    <dd>The unique name of the auth backend to configure.
 Defaults to `jwt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,9 +246,9 @@ Defaults to `jwt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of `aud` claims to match
+    <dd>List of `aud` claims to match
 against. Any match is sufficient.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -256,9 +256,9 @@ against. Any match is sufficient.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of
+    <dd>If set, a list of
 CIDRs valid as the source address for login requests. This value is also encoded into any resulting token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,9 +266,9 @@ CIDRs valid as the source address for login requests. This value is also encoded
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims/values to match against.
+    <dd>If set, a map of claims/values to match against.
 The expected value may be a single string or a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,9 +276,9 @@ The expected value may be a single string or a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, requires that the `sub` claim matches
+    <dd>If set, requires that the `sub` claim matches
 this value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -286,9 +286,9 @@ this value.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims (keys) to be copied
+    <dd>If set, a map of claims (keys) to be copied
 to specified metadata fields (values).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,10 +296,10 @@ to specified metadata fields (values).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to all claims to account for clock skew, in
+    <dd>The amount of leeway to add to all claims to account for clock skew, in
 seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,10 +307,10 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to expiration (`exp`) claims to account for
+    <dd>The amount of leeway to add to expiration (`exp`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,11 +318,11 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the set of groups to which the user belongs; this will be used as the names
 for the Identity group aliases created due to a successful login. The claim
 value must be a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -330,7 +330,7 @@ value must be a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional; Deprecated. This field has been
+    <dd>(Optional; Deprecated. This field has been
 removed since Vault 1.1. If the groups claim is not at the top level, it can
 now be specified as a [JSONPointer](https://tools.ietf.org/html/rfc6901).)
 A pattern of delimiters
@@ -339,7 +339,7 @@ For instance, a groups_claim of meta/user.name/groups with this field
 set to // will expect nested structures named meta, user.name, and groups.
 If this field was set to /./ the groups information would expect to be
 via nested structures of meta, user, name, and groups.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}`groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: `groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -347,9 +347,9 @@ via nested structures of meta, user, name, and groups.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,10 +357,10 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to not before (`nbf`) claims to account for
+    <dd>The amount of leeway to add to not before (`nbf`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -368,9 +368,9 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, puts a use-count
+    <dd>If set, puts a use-count
 limitation on the issued token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_num_uses` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_num_uses` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,9 +378,9 @@ limitation on the issued token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of OIDC scopes to be used with an OIDC role.
+    <dd>If set, a list of OIDC scopes to be used with an OIDC role.
 The standard scope "openid" is automatically included and need not be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -388,11 +388,11 @@ The standard scope "openid" is automatically included and need not be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -400,9 +400,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -410,8 +410,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of role, either "oidc" (default) or "jwt".
-{{% /md %}}</dd>
+    <dd>Type of role, either "oidc" (default) or "jwt".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,10 +419,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,11 +430,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,9 +442,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,9 +452,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,10 +462,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -473,11 +473,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -485,9 +485,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,9 +495,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,12 +505,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -518,9 +518,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,16 +528,16 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Log received OIDC tokens and claims when debug-level
+    <dd>Log received OIDC tokens and claims when debug-level
 logging is active. Not recommended in production since sensitive information may be present
 in OIDC responses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -546,8 +546,8 @@ in OIDC responses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role.
-{{% /md %}}</dd>
+    <dd>The name of the role.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -555,10 +555,10 @@ in OIDC responses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the user; this will be used as the name for the Identity entity alias created
 due to a successful login.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,9 +566,9 @@ due to a successful login.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of allowed values for redirect_uri during OIDC logins.
+    <dd>The list of allowed values for redirect_uri during OIDC logins.
 Required for OIDC roles
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,9 +576,9 @@ Required for OIDC roles
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the auth backend to configure.
+    <dd>The unique name of the auth backend to configure.
 Defaults to `jwt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -586,9 +586,9 @@ Defaults to `jwt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of `aud` claims to match
+    <dd>List of `aud` claims to match
 against. Any match is sufficient.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -596,9 +596,9 @@ against. Any match is sufficient.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of
+    <dd>If set, a list of
 CIDRs valid as the source address for login requests. This value is also encoded into any resulting token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -606,9 +606,9 @@ CIDRs valid as the source address for login requests. This value is also encoded
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims/values to match against.
+    <dd>If set, a map of claims/values to match against.
 The expected value may be a single string or a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,9 +616,9 @@ The expected value may be a single string or a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, requires that the `sub` claim matches
+    <dd>If set, requires that the `sub` claim matches
 this value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,9 +626,9 @@ this value.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims (keys) to be copied
+    <dd>If set, a map of claims (keys) to be copied
 to specified metadata fields (values).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -636,10 +636,10 @@ to specified metadata fields (values).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to all claims to account for clock skew, in
+    <dd>The amount of leeway to add to all claims to account for clock skew, in
 seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,10 +647,10 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to expiration (`exp`) claims to account for
+    <dd>The amount of leeway to add to expiration (`exp`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,11 +658,11 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the set of groups to which the user belongs; this will be used as the names
 for the Identity group aliases created due to a successful login. The claim
 value must be a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -670,7 +670,7 @@ value must be a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional; Deprecated. This field has been
+    <dd>(Optional; Deprecated. This field has been
 removed since Vault 1.1. If the groups claim is not at the top level, it can
 now be specified as a [JSONPointer](https://tools.ietf.org/html/rfc6901).)
 A pattern of delimiters
@@ -679,7 +679,7 @@ For instance, a groups_claim of meta/user.name/groups with this field
 set to // will expect nested structures named meta, user.name, and groups.
 If this field was set to /./ the groups information would expect to be
 via nested structures of meta, user, name, and groups.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}`groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: `groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -687,9 +687,9 @@ via nested structures of meta, user, name, and groups.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -697,10 +697,10 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to not before (`nbf`) claims to account for
+    <dd>The amount of leeway to add to not before (`nbf`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -708,9 +708,9 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, puts a use-count
+    <dd>If set, puts a use-count
 limitation on the issued token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_num_uses` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_num_uses` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -718,9 +718,9 @@ limitation on the issued token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of OIDC scopes to be used with an OIDC role.
+    <dd>If set, a list of OIDC scopes to be used with an OIDC role.
 The standard scope "openid" is automatically included and need not be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -728,11 +728,11 @@ The standard scope "openid" is automatically included and need not be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -740,9 +740,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -750,8 +750,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of role, either "oidc" (default) or "jwt".
-{{% /md %}}</dd>
+    <dd>Type of role, either "oidc" (default) or "jwt".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -759,10 +759,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -770,11 +770,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -782,9 +782,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,9 +792,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -802,10 +802,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -813,11 +813,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,9 +825,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,9 +835,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -845,12 +845,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -858,9 +858,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,16 +868,16 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Log received OIDC tokens and claims when debug-level
+    <dd>Log received OIDC tokens and claims when debug-level
 logging is active. Not recommended in production since sensitive information may be present
 in OIDC responses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -886,8 +886,8 @@ in OIDC responses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role.
-{{% /md %}}</dd>
+    <dd>The name of the role.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -895,10 +895,10 @@ in OIDC responses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the user; this will be used as the name for the Identity entity alias created
 due to a successful login.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,9 +906,9 @@ due to a successful login.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of allowed values for redirect_uri during OIDC logins.
+    <dd>The list of allowed values for redirect_uri during OIDC logins.
 Required for OIDC roles
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -916,9 +916,9 @@ Required for OIDC roles
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the auth backend to configure.
+    <dd>The unique name of the auth backend to configure.
 Defaults to `jwt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,9 +926,9 @@ Defaults to `jwt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of `aud` claims to match
+    <dd>List of `aud` claims to match
 against. Any match is sufficient.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -936,9 +936,9 @@ against. Any match is sufficient.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of
+    <dd>If set, a list of
 CIDRs valid as the source address for login requests. This value is also encoded into any resulting token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -946,9 +946,9 @@ CIDRs valid as the source address for login requests. This value is also encoded
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims/values to match against.
+    <dd>If set, a map of claims/values to match against.
 The expected value may be a single string or a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,9 +956,9 @@ The expected value may be a single string or a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, requires that the `sub` claim matches
+    <dd>If set, requires that the `sub` claim matches
 this value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -966,9 +966,9 @@ this value.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims (keys) to be copied
+    <dd>If set, a map of claims (keys) to be copied
 to specified metadata fields (values).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -976,10 +976,10 @@ to specified metadata fields (values).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to all claims to account for clock skew, in
+    <dd>The amount of leeway to add to all claims to account for clock skew, in
 seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,10 +987,10 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to expiration (`exp`) claims to account for
+    <dd>The amount of leeway to add to expiration (`exp`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,11 +998,11 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the set of groups to which the user belongs; this will be used as the names
 for the Identity group aliases created due to a successful login. The claim
 value must be a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1010,7 +1010,7 @@ value must be a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional; Deprecated. This field has been
+    <dd>(Optional; Deprecated. This field has been
 removed since Vault 1.1. If the groups claim is not at the top level, it can
 now be specified as a [JSONPointer](https://tools.ietf.org/html/rfc6901).)
 A pattern of delimiters
@@ -1019,7 +1019,7 @@ For instance, a groups_claim of meta/user.name/groups with this field
 set to // will expect nested structures named meta, user.name, and groups.
 If this field was set to /./ the groups information would expect to be
 via nested structures of meta, user, name, and groups.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}`groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: `groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1027,9 +1027,9 @@ via nested structures of meta, user, name, and groups.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,10 +1037,10 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to not before (`nbf`) claims to account for
+    <dd>The amount of leeway to add to not before (`nbf`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1048,9 +1048,9 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, puts a use-count
+    <dd>If set, puts a use-count
 limitation on the issued token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_num_uses` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_num_uses` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,9 +1058,9 @@ limitation on the issued token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of OIDC scopes to be used with an OIDC role.
+    <dd>If set, a list of OIDC scopes to be used with an OIDC role.
 The standard scope "openid" is automatically included and need not be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1068,11 +1068,11 @@ The standard scope "openid" is automatically included and need not be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1080,9 +1080,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,8 +1090,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of role, either "oidc" (default) or "jwt".
-{{% /md %}}</dd>
+    <dd>Type of role, either "oidc" (default) or "jwt".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,10 +1099,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1110,11 +1110,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,9 +1122,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1132,9 +1132,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,10 +1142,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,11 +1153,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,9 +1165,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,9 +1175,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,12 +1185,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1198,9 +1198,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,16 +1208,16 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Log received OIDC tokens and claims when debug-level
+    <dd>Log received OIDC tokens and claims when debug-level
 logging is active. Not recommended in production since sensitive information may be present
 in OIDC responses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1226,8 +1226,8 @@ in OIDC responses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role.
-{{% /md %}}</dd>
+    <dd>The name of the role.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1235,10 +1235,10 @@ in OIDC responses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the user; this will be used as the name for the Identity entity alias created
 due to a successful login.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,9 +1246,9 @@ due to a successful login.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of allowed values for redirect_uri during OIDC logins.
+    <dd>The list of allowed values for redirect_uri during OIDC logins.
 Required for OIDC roles
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,9 +1256,9 @@ Required for OIDC roles
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the auth backend to configure.
+    <dd>The unique name of the auth backend to configure.
 Defaults to `jwt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1266,9 +1266,9 @@ Defaults to `jwt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of `aud` claims to match
+    <dd>List of `aud` claims to match
 against. Any match is sufficient.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1276,9 +1276,9 @@ against. Any match is sufficient.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of
+    <dd>If set, a list of
 CIDRs valid as the source address for login requests. This value is also encoded into any resulting token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,9 +1286,9 @@ CIDRs valid as the source address for login requests. This value is also encoded
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims/values to match against.
+    <dd>If set, a map of claims/values to match against.
 The expected value may be a single string or a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,9 +1296,9 @@ The expected value may be a single string or a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If set, requires that the `sub` claim matches
+    <dd>If set, requires that the `sub` claim matches
 this value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,9 +1306,9 @@ this value.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims (keys) to be copied
+    <dd>If set, a map of claims (keys) to be copied
 to specified metadata fields (values).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1316,10 +1316,10 @@ to specified metadata fields (values).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to all claims to account for clock skew, in
+    <dd>The amount of leeway to add to all claims to account for clock skew, in
 seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1327,10 +1327,10 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to expiration (`exp`) claims to account for
+    <dd>The amount of leeway to add to expiration (`exp`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1338,11 +1338,11 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the set of groups to which the user belongs; this will be used as the names
 for the Identity group aliases created due to a successful login. The claim
 value must be a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1350,7 +1350,7 @@ value must be a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Optional; Deprecated. This field has been
+    <dd>(Optional; Deprecated. This field has been
 removed since Vault 1.1. If the groups claim is not at the top level, it can
 now be specified as a [JSONPointer](https://tools.ietf.org/html/rfc6901).)
 A pattern of delimiters
@@ -1359,7 +1359,7 @@ For instance, a groups_claim of meta/user.name/groups with this field
 set to // will expect nested structures named meta, user.name, and groups.
 If this field was set to /./ the groups information would expect to be
 via nested structures of meta, user, name, and groups.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}`groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: `groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1367,9 +1367,9 @@ via nested structures of meta, user, name, and groups.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,10 +1377,10 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to not before (`nbf`) claims to account for
+    <dd>The amount of leeway to add to not before (`nbf`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1388,9 +1388,9 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, puts a use-count
+    <dd>If set, puts a use-count
 limitation on the issued token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_num_uses` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_num_uses` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,9 +1398,9 @@ limitation on the issued token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of OIDC scopes to be used with an OIDC role.
+    <dd>If set, a list of OIDC scopes to be used with an OIDC role.
 The standard scope "openid" is automatically included and need not be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1408,11 +1408,11 @@ The standard scope "openid" is automatically included and need not be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1420,9 +1420,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,8 +1430,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of role, either "oidc" (default) or "jwt".
-{{% /md %}}</dd>
+    <dd>Type of role, either "oidc" (default) or "jwt".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1439,10 +1439,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,11 +1450,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,9 +1462,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1472,9 +1472,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,10 +1482,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1493,11 +1493,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1505,9 +1505,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,9 +1515,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1525,12 +1525,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1538,9 +1538,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1548,13 +1548,13 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Log received OIDC tokens and claims when debug-level
+    <dd>Log received OIDC tokens and claims when debug-level
 logging is active. Not recommended in production since sensitive information may be present
 in OIDC responses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1568,7 +1568,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1577,13 +1577,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1592,13 +1592,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1607,13 +1607,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1622,10 +1622,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1636,25 +1636,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing AuthBackendRole Resource {#look-up}
 
 Get an existing AuthBackendRole resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/jwt/#AuthBackendRoleState">AuthBackendRoleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/jwt/#AuthBackendRole">AuthBackendRole</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>allowed_redirect_uris=None<span class="p">, </span>backend=None<span class="p">, </span>bound_audiences=None<span class="p">, </span>bound_cidrs=None<span class="p">, </span>bound_claims=None<span class="p">, </span>bound_subject=None<span class="p">, </span>claim_mappings=None<span class="p">, </span>clock_skew_leeway=None<span class="p">, </span>expiration_leeway=None<span class="p">, </span>groups_claim=None<span class="p">, </span>groups_claim_delimiter_pattern=None<span class="p">, </span>max_ttl=None<span class="p">, </span>not_before_leeway=None<span class="p">, </span>num_uses=None<span class="p">, </span>oidc_scopes=None<span class="p">, </span>period=None<span class="p">, </span>policies=None<span class="p">, </span>role_name=None<span class="p">, </span>role_type=None<span class="p">, </span>token_bound_cidrs=None<span class="p">, </span>token_explicit_max_ttl=None<span class="p">, </span>token_max_ttl=None<span class="p">, </span>token_no_default_policy=None<span class="p">, </span>token_num_uses=None<span class="p">, </span>token_period=None<span class="p">, </span>token_policies=None<span class="p">, </span>token_ttl=None<span class="p">, </span>token_type=None<span class="p">, </span>ttl=None<span class="p">, </span>user_claim=None<span class="p">, </span>verbose_oidc_logging=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAuthBackendRole<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/jwt?tab=doc#AuthBackendRoleState">AuthBackendRoleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/jwt?tab=doc#AuthBackendRole">AuthBackendRole</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Jwt.AuthBackendRole.html">AuthBackendRole</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Jwt.AuthBackendRoleState.html">AuthBackendRoleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1679,9 +1679,9 @@ Get an existing AuthBackendRole resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1694,36 +1694,9 @@ Get an existing AuthBackendRole resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1748,13 +1721,40 @@ Get an existing AuthBackendRole resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1763,9 +1763,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of allowed values for redirect_uri during OIDC logins.
+    <dd>The list of allowed values for redirect_uri during OIDC logins.
 Required for OIDC roles
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1773,9 +1773,9 @@ Required for OIDC roles
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the auth backend to configure.
+    <dd>The unique name of the auth backend to configure.
 Defaults to `jwt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,9 +1783,9 @@ Defaults to `jwt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of `aud` claims to match
+    <dd>List of `aud` claims to match
 against. Any match is sufficient.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1793,9 +1793,9 @@ against. Any match is sufficient.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of
+    <dd>If set, a list of
 CIDRs valid as the source address for login requests. This value is also encoded into any resulting token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,9 +1803,9 @@ CIDRs valid as the source address for login requests. This value is also encoded
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims/values to match against.
+    <dd>If set, a map of claims/values to match against.
 The expected value may be a single string or a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1813,9 +1813,9 @@ The expected value may be a single string or a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, requires that the `sub` claim matches
+    <dd>If set, requires that the `sub` claim matches
 this value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1823,9 +1823,9 @@ this value.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims (keys) to be copied
+    <dd>If set, a map of claims (keys) to be copied
 to specified metadata fields (values).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1833,10 +1833,10 @@ to specified metadata fields (values).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to all claims to account for clock skew, in
+    <dd>The amount of leeway to add to all claims to account for clock skew, in
 seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,10 +1844,10 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to expiration (`exp`) claims to account for
+    <dd>The amount of leeway to add to expiration (`exp`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,11 +1855,11 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the set of groups to which the user belongs; this will be used as the names
 for the Identity group aliases created due to a successful login. The claim
 value must be a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1867,7 +1867,7 @@ value must be a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional; Deprecated. This field has been
+    <dd>(Optional; Deprecated. This field has been
 removed since Vault 1.1. If the groups claim is not at the top level, it can
 now be specified as a [JSONPointer](https://tools.ietf.org/html/rfc6901).)
 A pattern of delimiters
@@ -1876,7 +1876,7 @@ For instance, a groups_claim of meta/user.name/groups with this field
 set to // will expect nested structures named meta, user.name, and groups.
 If this field was set to /./ the groups information would expect to be
 via nested structures of meta, user, name, and groups.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}`groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: `groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1884,9 +1884,9 @@ via nested structures of meta, user, name, and groups.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1894,10 +1894,10 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to not before (`nbf`) claims to account for
+    <dd>The amount of leeway to add to not before (`nbf`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1905,9 +1905,9 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, puts a use-count
+    <dd>If set, puts a use-count
 limitation on the issued token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_num_uses` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_num_uses` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1915,9 +1915,9 @@ limitation on the issued token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of OIDC scopes to be used with an OIDC role.
+    <dd>If set, a list of OIDC scopes to be used with an OIDC role.
 The standard scope "openid" is automatically included and need not be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1925,11 +1925,11 @@ The standard scope "openid" is automatically included and need not be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1937,9 +1937,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,8 +1947,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role.
-{{% /md %}}</dd>
+    <dd>The name of the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1956,8 +1956,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of role, either "oidc" (default) or "jwt".
-{{% /md %}}</dd>
+    <dd>Type of role, either "oidc" (default) or "jwt".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1965,10 +1965,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,11 +1976,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1988,9 +1988,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1998,9 +1998,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2008,10 +2008,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,11 +2019,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2031,9 +2031,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2041,9 +2041,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2051,12 +2051,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2064,9 +2064,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,10 +2074,10 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the user; this will be used as the name for the Identity entity alias created
 due to a successful login.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,16 +2085,16 @@ due to a successful login.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Log received OIDC tokens and claims when debug-level
+    <dd>Log received OIDC tokens and claims when debug-level
 logging is active. Not recommended in production since sensitive information may be present
 in OIDC responses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2103,9 +2103,9 @@ in OIDC responses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of allowed values for redirect_uri during OIDC logins.
+    <dd>The list of allowed values for redirect_uri during OIDC logins.
 Required for OIDC roles
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2113,9 +2113,9 @@ Required for OIDC roles
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the auth backend to configure.
+    <dd>The unique name of the auth backend to configure.
 Defaults to `jwt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2123,9 +2123,9 @@ Defaults to `jwt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of `aud` claims to match
+    <dd>List of `aud` claims to match
 against. Any match is sufficient.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2133,9 +2133,9 @@ against. Any match is sufficient.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of
+    <dd>If set, a list of
 CIDRs valid as the source address for login requests. This value is also encoded into any resulting token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,9 +2143,9 @@ CIDRs valid as the source address for login requests. This value is also encoded
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims/values to match against.
+    <dd>If set, a map of claims/values to match against.
 The expected value may be a single string or a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2153,9 +2153,9 @@ The expected value may be a single string or a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, requires that the `sub` claim matches
+    <dd>If set, requires that the `sub` claim matches
 this value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2163,9 +2163,9 @@ this value.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims (keys) to be copied
+    <dd>If set, a map of claims (keys) to be copied
 to specified metadata fields (values).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2173,10 +2173,10 @@ to specified metadata fields (values).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to all claims to account for clock skew, in
+    <dd>The amount of leeway to add to all claims to account for clock skew, in
 seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2184,10 +2184,10 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to expiration (`exp`) claims to account for
+    <dd>The amount of leeway to add to expiration (`exp`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2195,11 +2195,11 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the set of groups to which the user belongs; this will be used as the names
 for the Identity group aliases created due to a successful login. The claim
 value must be a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2207,7 +2207,7 @@ value must be a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional; Deprecated. This field has been
+    <dd>(Optional; Deprecated. This field has been
 removed since Vault 1.1. If the groups claim is not at the top level, it can
 now be specified as a [JSONPointer](https://tools.ietf.org/html/rfc6901).)
 A pattern of delimiters
@@ -2216,7 +2216,7 @@ For instance, a groups_claim of meta/user.name/groups with this field
 set to // will expect nested structures named meta, user.name, and groups.
 If this field was set to /./ the groups information would expect to be
 via nested structures of meta, user, name, and groups.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}`groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: `groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2224,9 +2224,9 @@ via nested structures of meta, user, name, and groups.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2234,10 +2234,10 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to not before (`nbf`) claims to account for
+    <dd>The amount of leeway to add to not before (`nbf`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2245,9 +2245,9 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, puts a use-count
+    <dd>If set, puts a use-count
 limitation on the issued token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_num_uses` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_num_uses` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2255,9 +2255,9 @@ limitation on the issued token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of OIDC scopes to be used with an OIDC role.
+    <dd>If set, a list of OIDC scopes to be used with an OIDC role.
 The standard scope "openid" is automatically included and need not be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2265,11 +2265,11 @@ The standard scope "openid" is automatically included and need not be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2277,9 +2277,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2287,8 +2287,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role.
-{{% /md %}}</dd>
+    <dd>The name of the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2296,8 +2296,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of role, either "oidc" (default) or "jwt".
-{{% /md %}}</dd>
+    <dd>Type of role, either "oidc" (default) or "jwt".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2305,10 +2305,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2316,11 +2316,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2328,9 +2328,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2338,9 +2338,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2348,10 +2348,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,11 +2359,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,9 +2371,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2381,9 +2381,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2391,12 +2391,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2404,9 +2404,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2414,10 +2414,10 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the user; this will be used as the name for the Identity entity alias created
 due to a successful login.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2425,16 +2425,16 @@ due to a successful login.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Log received OIDC tokens and claims when debug-level
+    <dd>Log received OIDC tokens and claims when debug-level
 logging is active. Not recommended in production since sensitive information may be present
 in OIDC responses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2443,9 +2443,9 @@ in OIDC responses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of allowed values for redirect_uri during OIDC logins.
+    <dd>The list of allowed values for redirect_uri during OIDC logins.
 Required for OIDC roles
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2453,9 +2453,9 @@ Required for OIDC roles
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the auth backend to configure.
+    <dd>The unique name of the auth backend to configure.
 Defaults to `jwt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2463,9 +2463,9 @@ Defaults to `jwt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of `aud` claims to match
+    <dd>List of `aud` claims to match
 against. Any match is sufficient.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2473,9 +2473,9 @@ against. Any match is sufficient.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of
+    <dd>If set, a list of
 CIDRs valid as the source address for login requests. This value is also encoded into any resulting token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2483,9 +2483,9 @@ CIDRs valid as the source address for login requests. This value is also encoded
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims/values to match against.
+    <dd>If set, a map of claims/values to match against.
 The expected value may be a single string or a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2493,9 +2493,9 @@ The expected value may be a single string or a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If set, requires that the `sub` claim matches
+    <dd>If set, requires that the `sub` claim matches
 this value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2503,9 +2503,9 @@ this value.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims (keys) to be copied
+    <dd>If set, a map of claims (keys) to be copied
 to specified metadata fields (values).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2513,10 +2513,10 @@ to specified metadata fields (values).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to all claims to account for clock skew, in
+    <dd>The amount of leeway to add to all claims to account for clock skew, in
 seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2524,10 +2524,10 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to expiration (`exp`) claims to account for
+    <dd>The amount of leeway to add to expiration (`exp`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,11 +2535,11 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the set of groups to which the user belongs; this will be used as the names
 for the Identity group aliases created due to a successful login. The claim
 value must be a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2547,7 +2547,7 @@ value must be a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional; Deprecated. This field has been
+    <dd>(Optional; Deprecated. This field has been
 removed since Vault 1.1. If the groups claim is not at the top level, it can
 now be specified as a [JSONPointer](https://tools.ietf.org/html/rfc6901).)
 A pattern of delimiters
@@ -2556,7 +2556,7 @@ For instance, a groups_claim of meta/user.name/groups with this field
 set to // will expect nested structures named meta, user.name, and groups.
 If this field was set to /./ the groups information would expect to be
 via nested structures of meta, user, name, and groups.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}`groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: `groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2564,9 +2564,9 @@ via nested structures of meta, user, name, and groups.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2574,10 +2574,10 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to not before (`nbf`) claims to account for
+    <dd>The amount of leeway to add to not before (`nbf`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2585,9 +2585,9 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, puts a use-count
+    <dd>If set, puts a use-count
 limitation on the issued token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_num_uses` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_num_uses` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2595,9 +2595,9 @@ limitation on the issued token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of OIDC scopes to be used with an OIDC role.
+    <dd>If set, a list of OIDC scopes to be used with an OIDC role.
 The standard scope "openid" is automatically included and need not be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2605,11 +2605,11 @@ The standard scope "openid" is automatically included and need not be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2617,9 +2617,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2627,8 +2627,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role.
-{{% /md %}}</dd>
+    <dd>The name of the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2636,8 +2636,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of role, either "oidc" (default) or "jwt".
-{{% /md %}}</dd>
+    <dd>Type of role, either "oidc" (default) or "jwt".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2645,10 +2645,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2656,11 +2656,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2668,9 +2668,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2678,9 +2678,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2688,10 +2688,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2699,11 +2699,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2711,9 +2711,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2721,9 +2721,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2731,12 +2731,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2744,9 +2744,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2754,10 +2754,10 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the user; this will be used as the name for the Identity entity alias created
 due to a successful login.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2765,16 +2765,16 @@ due to a successful login.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Log received OIDC tokens and claims when debug-level
+    <dd>Log received OIDC tokens and claims when debug-level
 logging is active. Not recommended in production since sensitive information may be present
 in OIDC responses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2783,9 +2783,9 @@ in OIDC responses.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of allowed values for redirect_uri during OIDC logins.
+    <dd>The list of allowed values for redirect_uri during OIDC logins.
 Required for OIDC roles
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2793,9 +2793,9 @@ Required for OIDC roles
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique name of the auth backend to configure.
+    <dd>The unique name of the auth backend to configure.
 Defaults to `jwt`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2803,9 +2803,9 @@ Defaults to `jwt`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of `aud` claims to match
+    <dd>List of `aud` claims to match
 against. Any match is sufficient.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2813,9 +2813,9 @@ against. Any match is sufficient.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of
+    <dd>If set, a list of
 CIDRs valid as the source address for login requests. This value is also encoded into any resulting token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_bound_cidrs` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2823,9 +2823,9 @@ CIDRs valid as the source address for login requests. This value is also encoded
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims/values to match against.
+    <dd>If set, a map of claims/values to match against.
 The expected value may be a single string or a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2833,9 +2833,9 @@ The expected value may be a single string or a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If set, requires that the `sub` claim matches
+    <dd>If set, requires that the `sub` claim matches
 this value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2843,9 +2843,9 @@ this value.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}If set, a map of claims (keys) to be copied
+    <dd>If set, a map of claims (keys) to be copied
 to specified metadata fields (values).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2853,10 +2853,10 @@ to specified metadata fields (values).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to all claims to account for clock skew, in
+    <dd>The amount of leeway to add to all claims to account for clock skew, in
 seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2864,10 +2864,10 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to expiration (`exp`) claims to account for
+    <dd>The amount of leeway to add to expiration (`exp`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2875,11 +2875,11 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the set of groups to which the user belongs; this will be used as the names
 for the Identity group aliases created due to a successful login. The claim
 value must be a list of strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2887,7 +2887,7 @@ value must be a list of strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Optional; Deprecated. This field has been
+    <dd>(Optional; Deprecated. This field has been
 removed since Vault 1.1. If the groups claim is not at the top level, it can
 now be specified as a [JSONPointer](https://tools.ietf.org/html/rfc6901).)
 A pattern of delimiters
@@ -2896,7 +2896,7 @@ For instance, a groups_claim of meta/user.name/groups with this field
 set to // will expect nested structures named meta, user.name, and groups.
 If this field was set to /./ the groups information would expect to be
 via nested structures of meta, user, name, and groups.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}`groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: `groups_claim_delimiter_pattern` has been removed since Vault 1.1. If the groups claim is not at the top level, it can now be specified as a JSONPointer.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2904,9 +2904,9 @@ via nested structures of meta, user, name, and groups.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum allowed lifetime of tokens
+    <dd>The maximum allowed lifetime of tokens
 issued using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_max_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_max_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2914,10 +2914,10 @@ issued using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of leeway to add to not before (`nbf`) claims to account for
+    <dd>The amount of leeway to add to not before (`nbf`) claims to account for
 clock skew, in seconds. Defaults to `60` seconds if set to `0` and can be disabled if set to `-1`.
 Only applicable with "jwt" roles.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2925,9 +2925,9 @@ Only applicable with "jwt" roles.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, puts a use-count
+    <dd>If set, puts a use-count
 limitation on the issued token.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_num_uses` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_num_uses` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2935,9 +2935,9 @@ limitation on the issued token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}If set, a list of OIDC scopes to be used with an OIDC role.
+    <dd>If set, a list of OIDC scopes to be used with an OIDC role.
 The standard scope "openid" is automatically included and need not be specified.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2945,11 +2945,11 @@ The standard scope "openid" is automatically included and need not be specified.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_period` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_period` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2957,9 +2957,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings
+    <dd>An array of strings
 specifying the policies to be set on tokens issued using this role.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_policies` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_policies` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2967,8 +2967,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the role.
-{{% /md %}}</dd>
+    <dd>The name of the role.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2976,8 +2976,8 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of role, either "oidc" (default) or "jwt".
-{{% /md %}}</dd>
+    <dd>Type of role, either "oidc" (default) or "jwt".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2985,10 +2985,10 @@ specifying the policies to be set on tokens issued using this role.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of CIDR blocks; if set, specifies blocks of IP
+    <dd>List of CIDR blocks; if set, specifies blocks of IP
 addresses which can authenticate successfully, and ties the resulting token to these blocks
 as well.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2996,11 +2996,11 @@ as well.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, will encode an
+    <dd>If set, will encode an
 [explicit max TTL](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls)
 onto the token in number of seconds. This is a hard cap even if `token_ttl` and
 `token_max_ttl` would otherwise allow a renewal.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3008,9 +3008,9 @@ onto the token in number of seconds. This is a hard cap even if `token_ttl` and
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum lifetime for generated tokens in number of seconds.
+    <dd>The maximum lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3018,9 +3018,9 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set, the default policy will not be set on
+    <dd>If set, the default policy will not be set on
 generated tokens; otherwise it will be added to the policies set in token_policies.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3028,10 +3028,10 @@ generated tokens; otherwise it will be added to the policies set in token_polici
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The
+    <dd>The
 [period](https://www.vaultproject.io/docs/concepts/tokens.html#token-time-to-live-periodic-tokens-and-explicit-max-ttls),
 if any, in number of seconds to set on the token.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3039,11 +3039,11 @@ if any, in number of seconds to set on the token.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If set, indicates that the
+    <dd>If set, indicates that the
 token generated using this role should never expire. The token should be renewed within the
 duration specified by this value. At each renewal, the token's TTL will be set to the
 value of this field. Specified in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3051,9 +3051,9 @@ value of this field. Specified in seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies to encode onto generated tokens. Depending
+    <dd>List of policies to encode onto generated tokens. Depending
 on the auth method, this list may be supplemented by user/group/other values.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3061,9 +3061,9 @@ on the auth method, this list may be supplemented by user/group/other values.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The incremental lifetime for generated tokens in number of seconds.
+    <dd>The incremental lifetime for generated tokens in number of seconds.
 Its current value will be referenced at renewal time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3071,12 +3071,12 @@ Its current value will be referenced at renewal time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of token that should be generated. Can be `service`,
+    <dd>The type of token that should be generated. Can be `service`,
 `batch`, or `default` to use the mount's tuned default (which unless changed will be
 `service` tokens). For token store roles, there are two additional possibilities:
 `default-service` and `default-batch` which specify the type to return unless the client
 requests a different type at generation time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3084,9 +3084,9 @@ requests a different type at generation time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The TTL period of tokens issued
+    <dd>The TTL period of tokens issued
 using this role, provided as a number of seconds.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}use `token_ttl` instead if you are running Vault &gt;= 1.2{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: use `token_ttl` instead if you are running Vault &gt;= 1.2</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3094,10 +3094,10 @@ using this role, provided as a number of seconds.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The claim to use to uniquely identify
+    <dd>The claim to use to uniquely identify
 the user; this will be used as the name for the Identity entity alias created
 due to a successful login.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3105,13 +3105,13 @@ due to a successful login.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Log received OIDC tokens and claims when debug-level
+    <dd>Log received OIDC tokens and claims when debug-level
 logging is active. Not recommended in production since sensitive information may be present
 in OIDC responses.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

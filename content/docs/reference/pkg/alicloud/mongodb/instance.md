@@ -14,26 +14,26 @@ meta_desc: "Explore the Instance resource of the mongodb module, including examp
 
 
 ## Create a Instance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/mongodb/#Instance">Instance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/mongodb/#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Instance</span><span class="p">(resource_name, opts=None, </span>account_password=None<span class="p">, </span>backup_periods=None<span class="p">, </span>backup_time=None<span class="p">, </span>db_instance_class=None<span class="p">, </span>db_instance_storage=None<span class="p">, </span>engine_version=None<span class="p">, </span>instance_charge_type=None<span class="p">, </span>kms_encrypted_password=None<span class="p">, </span>kms_encryption_context=None<span class="p">, </span>maintain_end_time=None<span class="p">, </span>maintain_start_time=None<span class="p">, </span>name=None<span class="p">, </span>period=None<span class="p">, </span>replication_factor=None<span class="p">, </span>security_group_id=None<span class="p">, </span>security_ip_lists=None<span class="p">, </span>ssl_action=None<span class="p">, </span>storage_engine=None<span class="p">, </span>tags=None<span class="p">, </span>tde_status=None<span class="p">, </span>vswitch_id=None<span class="p">, </span>zone_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/mongodb?tab=doc#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/mongodb?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.MongoDB.Instance.html">Instance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.MongoDB.InstanceArgs.html">InstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Instance resource of the mongodb module, including examp
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Instance resource of the mongodb module, including examp
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Instance resource of the mongodb module, including examp
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Instance resource of the mongodb module, including examp
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Instance Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
-{{% /md %}}</dd>
+    <dd>Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,10 +209,10 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}User-defined DB instance storage space.Unit: GB. Value range:
+    <dd>User-defined DB instance storage space.Unit: GB. Value range:
 - Custom storage space; value range: [10,2000]
 - 10-GB increments.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -220,8 +220,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
-{{% /md %}}</dd>
+    <dd>Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -229,8 +229,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
-{{% /md %}}</dd>
+    <dd>Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -238,8 +238,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
-{{% /md %}}</dd>
+    <dd>MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -247,8 +247,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
-{{% /md %}}</dd>
+    <dd>MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,8 +256,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
-{{% /md %}}</dd>
+    <dd>Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,8 +265,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,8 +292,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,8 +301,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of DB instance. It a string of 2 to 256 characters.
-{{% /md %}}</dd>
+    <dd>The name of DB instance. It a string of 2 to 256 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
-{{% /md %}}</dd>
+    <dd>The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,9 +319,9 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of replica set nodes. Valid values: [3, 5, 7]
+    <dd>Number of replica set nodes. Valid values: [3, 5, 7]
 * `storage_engine` (Optional, ForceNew) Storage engine: WiredTiger or RocksDB. System Default value: WiredTiger.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,8 +329,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Security Group ID of ECS.
-{{% /md %}}</dd>
+    <dd>The Security Group ID of ECS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,8 +338,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
-{{% /md %}}</dd>
+    <dd>List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,8 +347,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
-{{% /md %}}</dd>
+    <dd>Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,7 +356,7 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The TDE(Transparent Data Encryption) status.
-{{% /md %}}</dd>
+    <dd>The TDE(Transparent Data Encryption) status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual switch ID to launch DB instances in one VPC.
-{{% /md %}}</dd>
+    <dd>The virtual switch ID to launch DB instances in one VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,16 +391,16 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone to launch the DB instance. it supports multiple zone.
+    <dd>The Zone to launch the DB instance. it supports multiple zone.
 If it is a multi-zone and `vswitch_id` is specified, the vswitch must in one of them.
 The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `alicloud..getZones`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -409,8 +409,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
-{{% /md %}}</dd>
+    <dd>Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -418,10 +418,10 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}User-defined DB instance storage space.Unit: GB. Value range:
+    <dd>User-defined DB instance storage space.Unit: GB. Value range:
 - Custom storage space; value range: [10,2000]
 - 10-GB increments.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -429,8 +429,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
-{{% /md %}}</dd>
+    <dd>Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
-{{% /md %}}</dd>
+    <dd>Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
-{{% /md %}}</dd>
+    <dd>MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
-{{% /md %}}</dd>
+    <dd>MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
-{{% /md %}}</dd>
+    <dd>Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,8 +483,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,8 +492,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -501,8 +501,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,8 +510,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of DB instance. It a string of 2 to 256 characters.
-{{% /md %}}</dd>
+    <dd>The name of DB instance. It a string of 2 to 256 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,8 +519,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
-{{% /md %}}</dd>
+    <dd>The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,9 +528,9 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of replica set nodes. Valid values: [3, 5, 7]
+    <dd>Number of replica set nodes. Valid values: [3, 5, 7]
 * `storage_engine` (Optional, ForceNew) Storage engine: WiredTiger or RocksDB. System Default value: WiredTiger.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,8 +538,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Security Group ID of ECS.
-{{% /md %}}</dd>
+    <dd>The Security Group ID of ECS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
-{{% /md %}}</dd>
+    <dd>List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,8 +556,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
-{{% /md %}}</dd>
+    <dd>Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,7 +565,7 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,8 +573,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,8 +582,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TDE(Transparent Data Encryption) status.
-{{% /md %}}</dd>
+    <dd>The TDE(Transparent Data Encryption) status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -591,8 +591,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual switch ID to launch DB instances in one VPC.
-{{% /md %}}</dd>
+    <dd>The virtual switch ID to launch DB instances in one VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,16 +600,16 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone to launch the DB instance. it supports multiple zone.
+    <dd>The Zone to launch the DB instance. it supports multiple zone.
 If it is a multi-zone and `vswitch_id` is specified, the vswitch must in one of them.
 The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `alicloud..getZones`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -618,8 +618,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
-{{% /md %}}</dd>
+    <dd>Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -627,10 +627,10 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}User-defined DB instance storage space.Unit: GB. Value range:
+    <dd>User-defined DB instance storage space.Unit: GB. Value range:
 - Custom storage space; value range: [10,2000]
 - 10-GB increments.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -638,8 +638,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
-{{% /md %}}</dd>
+    <dd>Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,8 +647,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
-{{% /md %}}</dd>
+    <dd>Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,8 +656,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
-{{% /md %}}</dd>
+    <dd>MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,8 +665,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
-{{% /md %}}</dd>
+    <dd>MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,8 +674,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
-{{% /md %}}</dd>
+    <dd>Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -683,8 +683,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -692,8 +692,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -701,8 +701,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,8 +710,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -719,8 +719,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of DB instance. It a string of 2 to 256 characters.
-{{% /md %}}</dd>
+    <dd>The name of DB instance. It a string of 2 to 256 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -728,8 +728,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
-{{% /md %}}</dd>
+    <dd>The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -737,9 +737,9 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of replica set nodes. Valid values: [3, 5, 7]
+    <dd>Number of replica set nodes. Valid values: [3, 5, 7]
 * `storage_engine` (Optional, ForceNew) Storage engine: WiredTiger or RocksDB. System Default value: WiredTiger.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,8 +747,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Security Group ID of ECS.
-{{% /md %}}</dd>
+    <dd>The Security Group ID of ECS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,8 +756,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
-{{% /md %}}</dd>
+    <dd>List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,8 +765,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
-{{% /md %}}</dd>
+    <dd>Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,7 +774,7 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -782,8 +782,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -791,8 +791,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TDE(Transparent Data Encryption) status.
-{{% /md %}}</dd>
+    <dd>The TDE(Transparent Data Encryption) status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -800,8 +800,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual switch ID to launch DB instances in one VPC.
-{{% /md %}}</dd>
+    <dd>The virtual switch ID to launch DB instances in one VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,16 +809,16 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone to launch the DB instance. it supports multiple zone.
+    <dd>The Zone to launch the DB instance. it supports multiple zone.
 If it is a multi-zone and `vswitch_id` is specified, the vswitch must in one of them.
 The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `alicloud..getZones`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -827,8 +827,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
-{{% /md %}}</dd>
+    <dd>Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -836,10 +836,10 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}User-defined DB instance storage space.Unit: GB. Value range:
+    <dd>User-defined DB instance storage space.Unit: GB. Value range:
 - Custom storage space; value range: [10,2000]
 - 10-GB increments.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -847,8 +847,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
-{{% /md %}}</dd>
+    <dd>Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -856,8 +856,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
-{{% /md %}}</dd>
+    <dd>Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -865,8 +865,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
-{{% /md %}}</dd>
+    <dd>MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -874,8 +874,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
-{{% /md %}}</dd>
+    <dd>MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,8 +883,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
-{{% /md %}}</dd>
+    <dd>Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -892,8 +892,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -901,8 +901,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -910,8 +910,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,8 +919,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -928,8 +928,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of DB instance. It a string of 2 to 256 characters.
-{{% /md %}}</dd>
+    <dd>The name of DB instance. It a string of 2 to 256 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -937,8 +937,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
-{{% /md %}}</dd>
+    <dd>The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -946,9 +946,9 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of replica set nodes. Valid values: [3, 5, 7]
+    <dd>Number of replica set nodes. Valid values: [3, 5, 7]
 * `storage_engine` (Optional, ForceNew) Storage engine: WiredTiger or RocksDB. System Default value: WiredTiger.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,8 +956,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Security Group ID of ECS.
-{{% /md %}}</dd>
+    <dd>The Security Group ID of ECS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,8 +965,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
-{{% /md %}}</dd>
+    <dd>List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
-{{% /md %}}</dd>
+    <dd>Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,7 +983,7 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,8 +991,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1000,8 +1000,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The TDE(Transparent Data Encryption) status.
-{{% /md %}}</dd>
+    <dd>The TDE(Transparent Data Encryption) status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1009,8 +1009,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The virtual switch ID to launch DB instances in one VPC.
-{{% /md %}}</dd>
+    <dd>The virtual switch ID to launch DB instances in one VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1018,13 +1018,13 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Zone to launch the DB instance. it supports multiple zone.
+    <dd>The Zone to launch the DB instance. it supports multiple zone.
 If it is a multi-zone and `vswitch_id` is specified, the vswitch must in one of them.
 The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `alicloud..getZones`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1038,7 +1038,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1047,7 +1047,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1055,8 +1055,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the mongo replica set
-{{% /md %}}</dd>
+    <dd>The name of the mongo replica set
+</dd>
 
     <dt class="property-"
             title="">
@@ -1064,8 +1064,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Instance log backup retention days. Available in 1.42.0+.
-{{% /md %}}</dd>
+    <dd>Instance log backup retention days. Available in 1.42.0+.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1073,14 +1073,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
-{{% /md %}}</dd>
+    <dd>Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1089,7 +1089,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1097,8 +1097,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the mongo replica set
-{{% /md %}}</dd>
+    <dd>The name of the mongo replica set
+</dd>
 
     <dt class="property-"
             title="">
@@ -1106,8 +1106,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Instance log backup retention days. Available in 1.42.0+.
-{{% /md %}}</dd>
+    <dd>Instance log backup retention days. Available in 1.42.0+.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1115,14 +1115,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
-{{% /md %}}</dd>
+    <dd>Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1131,7 +1131,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1139,8 +1139,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the mongo replica set
-{{% /md %}}</dd>
+    <dd>The name of the mongo replica set
+</dd>
 
     <dt class="property-"
             title="">
@@ -1148,8 +1148,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Instance log backup retention days. Available in 1.42.0+.
-{{% /md %}}</dd>
+    <dd>Instance log backup retention days. Available in 1.42.0+.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1157,14 +1157,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
-{{% /md %}}</dd>
+    <dd>Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1173,7 +1173,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1181,8 +1181,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the mongo replica set
-{{% /md %}}</dd>
+    <dd>The name of the mongo replica set
+</dd>
 
     <dt class="property-"
             title="">
@@ -1190,8 +1190,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Instance log backup retention days. Available in 1.42.0+.
-{{% /md %}}</dd>
+    <dd>Instance log backup retention days. Available in 1.42.0+.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1199,11 +1199,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
-{{% /md %}}</dd>
+    <dd>Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1214,25 +1214,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Instance Resource {#look-up}
 
 Get an existing Instance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/mongodb/#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/mongodb/#Instance">Instance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>account_password=None<span class="p">, </span>backup_periods=None<span class="p">, </span>backup_time=None<span class="p">, </span>db_instance_class=None<span class="p">, </span>db_instance_storage=None<span class="p">, </span>engine_version=None<span class="p">, </span>instance_charge_type=None<span class="p">, </span>kms_encrypted_password=None<span class="p">, </span>kms_encryption_context=None<span class="p">, </span>maintain_end_time=None<span class="p">, </span>maintain_start_time=None<span class="p">, </span>name=None<span class="p">, </span>period=None<span class="p">, </span>replica_set_name=None<span class="p">, </span>replication_factor=None<span class="p">, </span>retention_period=None<span class="p">, </span>security_group_id=None<span class="p">, </span>security_ip_lists=None<span class="p">, </span>ssl_action=None<span class="p">, </span>ssl_status=None<span class="p">, </span>storage_engine=None<span class="p">, </span>tags=None<span class="p">, </span>tde_status=None<span class="p">, </span>vswitch_id=None<span class="p">, </span>zone_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/mongodb?tab=doc#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/mongodb?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.MongoDB.Instance.html">Instance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.MongoDB.InstanceState.html">InstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1257,9 +1257,9 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1272,36 +1272,9 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1326,13 +1299,40 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1341,8 +1341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
-{{% /md %}}</dd>
+    <dd>Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
-{{% /md %}}</dd>
+    <dd>MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,8 +1359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
-{{% /md %}}</dd>
+    <dd>MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1368,8 +1368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
-{{% /md %}}</dd>
+    <dd>Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,10 +1377,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}User-defined DB instance storage space.Unit: GB. Value range:
+    <dd>User-defined DB instance storage space.Unit: GB. Value range:
 - Custom storage space; value range: [10,2000]
 - 10-GB increments.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,8 +1388,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
-{{% /md %}}</dd>
+    <dd>Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1397,8 +1397,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
-{{% /md %}}</dd>
+    <dd>Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1406,8 +1406,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1415,8 +1415,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1424,8 +1424,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1433,8 +1433,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,8 +1442,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of DB instance. It a string of 2 to 256 characters.
-{{% /md %}}</dd>
+    <dd>The name of DB instance. It a string of 2 to 256 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1451,8 +1451,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
-{{% /md %}}</dd>
+    <dd>The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,8 +1460,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the mongo replica set
-{{% /md %}}</dd>
+    <dd>The name of the mongo replica set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1469,9 +1469,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of replica set nodes. Valid values: [3, 5, 7]
+    <dd>Number of replica set nodes. Valid values: [3, 5, 7]
 * `storage_engine` (Optional, ForceNew) Storage engine: WiredTiger or RocksDB. System Default value: WiredTiger.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1479,8 +1479,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Instance log backup retention days. Available in 1.42.0+.
-{{% /md %}}</dd>
+    <dd>Instance log backup retention days. Available in 1.42.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1488,8 +1488,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Security Group ID of ECS.
-{{% /md %}}</dd>
+    <dd>The Security Group ID of ECS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1497,8 +1497,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
-{{% /md %}}</dd>
+    <dd>List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1506,8 +1506,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
-{{% /md %}}</dd>
+    <dd>Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,8 +1515,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
-{{% /md %}}</dd>
+    <dd>Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,7 +1524,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1532,8 +1532,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,8 +1541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The TDE(Transparent Data Encryption) status.
-{{% /md %}}</dd>
+    <dd>The TDE(Transparent Data Encryption) status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1550,8 +1550,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual switch ID to launch DB instances in one VPC.
-{{% /md %}}</dd>
+    <dd>The virtual switch ID to launch DB instances in one VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,16 +1559,16 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone to launch the DB instance. it supports multiple zone.
+    <dd>The Zone to launch the DB instance. it supports multiple zone.
 If it is a multi-zone and `vswitch_id` is specified, the vswitch must in one of them.
 The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `alicloud..getZones`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1577,8 +1577,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
-{{% /md %}}</dd>
+    <dd>Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
-{{% /md %}}</dd>
+    <dd>MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,8 +1595,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
-{{% /md %}}</dd>
+    <dd>MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,8 +1604,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
-{{% /md %}}</dd>
+    <dd>Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,10 +1613,10 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}User-defined DB instance storage space.Unit: GB. Value range:
+    <dd>User-defined DB instance storage space.Unit: GB. Value range:
 - Custom storage space; value range: [10,2000]
 - 10-GB increments.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1624,8 +1624,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
-{{% /md %}}</dd>
+    <dd>Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1633,8 +1633,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
-{{% /md %}}</dd>
+    <dd>Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,8 +1642,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,8 +1651,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,8 +1660,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,8 +1669,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of DB instance. It a string of 2 to 256 characters.
-{{% /md %}}</dd>
+    <dd>The name of DB instance. It a string of 2 to 256 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,8 +1687,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
-{{% /md %}}</dd>
+    <dd>The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the mongo replica set
-{{% /md %}}</dd>
+    <dd>The name of the mongo replica set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,9 +1705,9 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of replica set nodes. Valid values: [3, 5, 7]
+    <dd>Number of replica set nodes. Valid values: [3, 5, 7]
 * `storage_engine` (Optional, ForceNew) Storage engine: WiredTiger or RocksDB. System Default value: WiredTiger.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1715,8 +1715,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Instance log backup retention days. Available in 1.42.0+.
-{{% /md %}}</dd>
+    <dd>Instance log backup retention days. Available in 1.42.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1724,8 +1724,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Security Group ID of ECS.
-{{% /md %}}</dd>
+    <dd>The Security Group ID of ECS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,8 +1733,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
-{{% /md %}}</dd>
+    <dd>List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1742,8 +1742,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
-{{% /md %}}</dd>
+    <dd>Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1751,8 +1751,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
-{{% /md %}}</dd>
+    <dd>Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,7 +1760,7 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1768,8 +1768,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1777,8 +1777,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TDE(Transparent Data Encryption) status.
-{{% /md %}}</dd>
+    <dd>The TDE(Transparent Data Encryption) status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1786,8 +1786,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual switch ID to launch DB instances in one VPC.
-{{% /md %}}</dd>
+    <dd>The virtual switch ID to launch DB instances in one VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1795,16 +1795,16 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone to launch the DB instance. it supports multiple zone.
+    <dd>The Zone to launch the DB instance. it supports multiple zone.
 If it is a multi-zone and `vswitch_id` is specified, the vswitch must in one of them.
 The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `alicloud..getZones`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1813,8 +1813,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
-{{% /md %}}</dd>
+    <dd>Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,8 +1822,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
-{{% /md %}}</dd>
+    <dd>MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,8 +1831,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
-{{% /md %}}</dd>
+    <dd>MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,8 +1840,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
-{{% /md %}}</dd>
+    <dd>Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1849,10 +1849,10 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}User-defined DB instance storage space.Unit: GB. Value range:
+    <dd>User-defined DB instance storage space.Unit: GB. Value range:
 - Custom storage space; value range: [10,2000]
 - 10-GB increments.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,8 +1860,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
-{{% /md %}}</dd>
+    <dd>Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1869,8 +1869,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
-{{% /md %}}</dd>
+    <dd>Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,8 +1878,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1887,8 +1887,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1896,8 +1896,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1905,8 +1905,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1914,8 +1914,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of DB instance. It a string of 2 to 256 characters.
-{{% /md %}}</dd>
+    <dd>The name of DB instance. It a string of 2 to 256 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1923,8 +1923,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
-{{% /md %}}</dd>
+    <dd>The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1932,8 +1932,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the mongo replica set
-{{% /md %}}</dd>
+    <dd>The name of the mongo replica set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,9 +1941,9 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of replica set nodes. Valid values: [3, 5, 7]
+    <dd>Number of replica set nodes. Valid values: [3, 5, 7]
 * `storage_engine` (Optional, ForceNew) Storage engine: WiredTiger or RocksDB. System Default value: WiredTiger.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1951,8 +1951,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Instance log backup retention days. Available in 1.42.0+.
-{{% /md %}}</dd>
+    <dd>Instance log backup retention days. Available in 1.42.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1960,8 +1960,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Security Group ID of ECS.
-{{% /md %}}</dd>
+    <dd>The Security Group ID of ECS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1969,8 +1969,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
-{{% /md %}}</dd>
+    <dd>List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1978,8 +1978,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
-{{% /md %}}</dd>
+    <dd>Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,8 +1987,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
-{{% /md %}}</dd>
+    <dd>Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,7 +1996,7 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2004,8 +2004,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2013,8 +2013,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TDE(Transparent Data Encryption) status.
-{{% /md %}}</dd>
+    <dd>The TDE(Transparent Data Encryption) status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2022,8 +2022,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual switch ID to launch DB instances in one VPC.
-{{% /md %}}</dd>
+    <dd>The virtual switch ID to launch DB instances in one VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2031,16 +2031,16 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Zone to launch the DB instance. it supports multiple zone.
+    <dd>The Zone to launch the DB instance. it supports multiple zone.
 If it is a multi-zone and `vswitch_id` is specified, the vswitch must in one of them.
 The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `alicloud..getZones`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2049,8 +2049,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
-{{% /md %}}</dd>
+    <dd>Password of the root account. It is a string of 6 to 32 characters and is composed of letters, numbers, and underlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2058,8 +2058,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
-{{% /md %}}</dd>
+    <dd>MongoDB Instance backup period. It is required when `backup_time` was existed. Valid values: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]. Default to [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2067,8 +2067,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
-{{% /md %}}</dd>
+    <dd>MongoDB instance backup time. It is required when `backup_period` was existed. In the format of HH:mmZ- HH:mmZ. Time setting interval is one hour. If not set, the system will return a default, like "23:00Z-24:00Z".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2076,8 +2076,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
-{{% /md %}}</dd>
+    <dd>Instance specification. see [Instance specifications](https://www.alibabacloud.com/help/doc-detail/57141.htm).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,10 +2085,10 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}User-defined DB instance storage space.Unit: GB. Value range:
+    <dd>User-defined DB instance storage space.Unit: GB. Value range:
 - Custom storage space; value range: [10,2000]
 - 10-GB increments.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2096,8 +2096,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
-{{% /md %}}</dd>
+    <dd>Database version. Value options can refer to the latest docs [CreateDBInstance](https://www.alibabacloud.com/help/doc-detail/61763.htm) `EngineVersion`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2105,8 +2105,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
-{{% /md %}}</dd>
+    <dd>Valid values are `PrePaid`, `PostPaid`, System default to `PostPaid`. It can be modified from `PostPaid` to `PrePaid` after version 1.63.0.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2114,8 +2114,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
-{{% /md %}}</dd>
+    <dd>An KMS encrypts password used to a instance. If the `account_password` is filled in, this field will be ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2123,8 +2123,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
-{{% /md %}}</dd>
+    <dd>An KMS encryption context used to decrypt `kms_encrypted_password` before creating or updating instance with `kms_encrypted_password`. See [Encryption Context](https://www.alibabacloud.com/help/doc-detail/42975.htm). It is valid when `kms_encrypted_password` is set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2132,8 +2132,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The end time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2141,8 +2141,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
-{{% /md %}}</dd>
+    <dd>The start time of the operation and maintenance time period of the instance, in the format of HH:mmZ (UTC time).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2150,8 +2150,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of DB instance. It a string of 2 to 256 characters.
-{{% /md %}}</dd>
+    <dd>The name of DB instance. It a string of 2 to 256 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2159,8 +2159,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
-{{% /md %}}</dd>
+    <dd>The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. System default to 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2168,8 +2168,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the mongo replica set
-{{% /md %}}</dd>
+    <dd>The name of the mongo replica set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2177,9 +2177,9 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of replica set nodes. Valid values: [3, 5, 7]
+    <dd>Number of replica set nodes. Valid values: [3, 5, 7]
 * `storage_engine` (Optional, ForceNew) Storage engine: WiredTiger or RocksDB. System Default value: WiredTiger.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2187,8 +2187,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Instance log backup retention days. Available in 1.42.0+.
-{{% /md %}}</dd>
+    <dd>Instance log backup retention days. Available in 1.42.0+.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2196,8 +2196,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Security Group ID of ECS.
-{{% /md %}}</dd>
+    <dd>The Security Group ID of ECS.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2205,8 +2205,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
-{{% /md %}}</dd>
+    <dd>List of IP addresses allowed to access all databases of an instance. The list contains up to 1,000 IP addresses, separated by commas. Supported formats include 0.0.0.0/0, 10.23.12.24 (IP), and 10.23.12.24/24 (Classless Inter-Domain Routing (CIDR) mode. /24 represents the length of the prefix in an IP address. The range of the prefix length is [1,32]).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2214,8 +2214,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
-{{% /md %}}</dd>
+    <dd>Actions performed on SSL functions, Valid values: `Open`: turn on SSL encryption; `Close`: turn off SSL encryption; `Update`: update SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2223,8 +2223,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
-{{% /md %}}</dd>
+    <dd>Status of the SSL feature. `Open`: SSL is turned on; `Closed`: SSL is turned off.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2232,7 +2232,7 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2240,8 +2240,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2249,8 +2249,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The TDE(Transparent Data Encryption) status.
-{{% /md %}}</dd>
+    <dd>The TDE(Transparent Data Encryption) status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2258,8 +2258,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The virtual switch ID to launch DB instances in one VPC.
-{{% /md %}}</dd>
+    <dd>The virtual switch ID to launch DB instances in one VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2267,13 +2267,13 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Zone to launch the DB instance. it supports multiple zone.
+    <dd>The Zone to launch the DB instance. it supports multiple zone.
 If it is a multi-zone and `vswitch_id` is specified, the vswitch must in one of them.
 The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `alicloud..getZones`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -51,26 +51,26 @@ const serviceb = new aws.appmesh.VirtualRouter("serviceb", {
 
 
 ## Create a VirtualRouter Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#VirtualRouter">VirtualRouter</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#VirtualRouterArgs">VirtualRouterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">VirtualRouter</span><span class="p">(resource_name, opts=None, </span>mesh_name=None<span class="p">, </span>name=None<span class="p">, </span>spec=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewVirtualRouter<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouterArgs">VirtualRouterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouter">VirtualRouter</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.VirtualRouter.html">VirtualRouter</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.VirtualRouterArgs.html">VirtualRouterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -107,9 +107,9 @@ const serviceb = new aws.appmesh.VirtualRouter("serviceb", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -127,9 +127,9 @@ const serviceb = new aws.appmesh.VirtualRouter("serviceb", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -176,9 +176,9 @@ const serviceb = new aws.appmesh.VirtualRouter("serviceb", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -215,7 +215,7 @@ const serviceb = new aws.appmesh.VirtualRouter("serviceb", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## VirtualRouter Resource Properties {#properties}
 
@@ -228,7 +228,7 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -237,8 +237,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual router.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual router.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -246,8 +246,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspec">Virtual<wbr>Router<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The virtual router specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual router specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,8 +255,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual router.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,14 +264,14 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -280,8 +280,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual router.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual router.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -289,8 +289,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspec">Virtual<wbr>Router<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The virtual router specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual router specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,8 +298,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual router.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,14 +307,14 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -323,8 +323,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual router.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual router.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -332,8 +332,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspec">Virtual<wbr>Router<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The virtual router specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual router specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual router.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,14 +350,14 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -366,8 +366,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual router.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual router.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -375,8 +375,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspec">Dict[Virtual<wbr>Router<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}The virtual router specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual router specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,8 +384,8 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual router.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,11 +393,11 @@ The VirtualRouter resource accepts the following [input]({{< relref "/docs/intro
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -411,7 +411,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -420,8 +420,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual router.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual router.
+</dd>
 
     <dt class="property-"
             title="">
@@ -429,8 +429,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual router.
+</dd>
 
     <dt class="property-"
             title="">
@@ -438,7 +438,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -446,14 +446,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual router.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -462,8 +462,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual router.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual router.
+</dd>
 
     <dt class="property-"
             title="">
@@ -471,8 +471,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual router.
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,7 +480,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -488,14 +488,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual router.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -504,8 +504,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual router.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual router.
+</dd>
 
     <dt class="property-"
             title="">
@@ -513,8 +513,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual router.
+</dd>
 
     <dt class="property-"
             title="">
@@ -522,7 +522,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -530,14 +530,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual router.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -546,8 +546,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual router.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual router.
+</dd>
 
     <dt class="property-"
             title="">
@@ -555,8 +555,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual router.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,7 +564,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -572,11 +572,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual router.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -587,25 +587,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing VirtualRouter Resource {#look-up}
 
 Get an existing VirtualRouter resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#VirtualRouterState">VirtualRouterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#VirtualRouter">VirtualRouter</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>created_date=None<span class="p">, </span>last_updated_date=None<span class="p">, </span>mesh_name=None<span class="p">, </span>name=None<span class="p">, </span>spec=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetVirtualRouter<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouterState">VirtualRouterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouter">VirtualRouter</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.VirtualRouter.html">VirtualRouter</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.VirtualRouterState.html">VirtualRouterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -630,9 +630,9 @@ Get an existing VirtualRouter resource's state with the given name, ID, and opti
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -645,36 +645,9 @@ Get an existing VirtualRouter resource's state with the given name, ID, and opti
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -699,13 +672,40 @@ Get an existing VirtualRouter resource's state with the given name, ID, and opti
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -714,8 +714,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual router.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,8 +723,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,8 +732,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,8 +741,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual router.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -750,8 +750,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual router.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -759,8 +759,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspec">Virtual<wbr>Router<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The virtual router specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual router specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,14 +768,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -784,8 +784,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual router.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -793,8 +793,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -802,8 +802,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -811,8 +811,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual router.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -820,8 +820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual router.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -829,8 +829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspec">Virtual<wbr>Router<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The virtual router specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual router specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -838,14 +838,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -854,8 +854,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual router.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -863,8 +863,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -872,8 +872,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -881,8 +881,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual router.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -890,8 +890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual router.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -899,8 +899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspec">Virtual<wbr>Router<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The virtual router specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual router specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -908,14 +908,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -924,8 +924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the virtual router.
-{{% /md %}}</dd>
+    <dd>The ARN of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,8 +933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The creation date of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the virtual router.
-{{% /md %}}</dd>
+    <dd>The last update date of the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,8 +951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the virtual router.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,8 +960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the virtual router.
-{{% /md %}}</dd>
+    <dd>The name to use for the virtual router.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -969,8 +969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspec">Dict[Virtual<wbr>Router<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}The virtual router specification to apply.
-{{% /md %}}</dd>
+    <dd>The virtual router specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,11 +978,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -997,18 +997,18 @@ The following state arguments are supported:
 
 
 <h4 id="virtualrouterspec">Virtual<wbr>Router<wbr>Spec</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualRouterSpec">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualRouterSpec">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouterSpecArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouterSpecOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1017,15 +1017,15 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspeclistener">Virtual<wbr>Router<wbr>Spec<wbr>Listener<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The listeners that the virtual router is expected to receive inbound traffic from.
+    <dd>The listeners that the virtual router is expected to receive inbound traffic from.
 Currently only one listener is supported per virtual router.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1034,15 +1034,15 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspeclistener">Virtual<wbr>Router<wbr>Spec<wbr>Listener</a></span>
     </dt>
-    <dd>{{% md %}}The listeners that the virtual router is expected to receive inbound traffic from.
+    <dd>The listeners that the virtual router is expected to receive inbound traffic from.
 Currently only one listener is supported per virtual router.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1051,15 +1051,15 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspeclistener">Virtual<wbr>Router<wbr>Spec<wbr>Listener</a></span>
     </dt>
-    <dd>{{% md %}}The listeners that the virtual router is expected to receive inbound traffic from.
+    <dd>The listeners that the virtual router is expected to receive inbound traffic from.
 Currently only one listener is supported per virtual router.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1068,30 +1068,30 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspeclistener">Dict[Virtual<wbr>Router<wbr>Spec<wbr>Listener]</a></span>
     </dt>
-    <dd>{{% md %}}The listeners that the virtual router is expected to receive inbound traffic from.
+    <dd>The listeners that the virtual router is expected to receive inbound traffic from.
 Currently only one listener is supported per virtual router.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualrouterspeclistener">Virtual<wbr>Router<wbr>Spec<wbr>Listener</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualRouterSpecListener">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualRouterSpecListener">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouterSpecListenerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouterSpecListenerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1100,14 +1100,14 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspeclistenerportmapping">Virtual<wbr>Router<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The port mapping information for the listener.
-{{% /md %}}</dd>
+    <dd>The port mapping information for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1116,14 +1116,14 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspeclistenerportmapping">Virtual<wbr>Router<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping</a></span>
     </dt>
-    <dd>{{% md %}}The port mapping information for the listener.
-{{% /md %}}</dd>
+    <dd>The port mapping information for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1132,14 +1132,14 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspeclistenerportmapping">Virtual<wbr>Router<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping</a></span>
     </dt>
-    <dd>{{% md %}}The port mapping information for the listener.
-{{% /md %}}</dd>
+    <dd>The port mapping information for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1148,29 +1148,29 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualrouterspeclistenerportmapping">Dict[Virtual<wbr>Router<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping]</a></span>
     </dt>
-    <dd>{{% md %}}The port mapping information for the listener.
-{{% /md %}}</dd>
+    <dd>The port mapping information for the listener.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualrouterspeclistenerportmapping">Virtual<wbr>Router<wbr>Spec<wbr>Listener<wbr>Port<wbr>Mapping</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#VirtualRouterSpecListenerPortMapping">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#VirtualRouterSpecListenerPortMapping">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouterSpecListenerPortMappingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#VirtualRouterSpecListenerPortMappingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1179,8 +1179,8 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used for the port mapping.
-{{% /md %}}</dd>
+    <dd>The port used for the port mapping.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1188,14 +1188,14 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used for the port mapping. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol used for the port mapping. Valid values are `http` and `tcp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1204,8 +1204,8 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used for the port mapping.
-{{% /md %}}</dd>
+    <dd>The port used for the port mapping.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1213,14 +1213,14 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used for the port mapping. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol used for the port mapping. Valid values are `http` and `tcp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1229,8 +1229,8 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port used for the port mapping.
-{{% /md %}}</dd>
+    <dd>The port used for the port mapping.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1238,14 +1238,14 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used for the port mapping. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol used for the port mapping. Valid values are `http` and `tcp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1254,8 +1254,8 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port used for the port mapping.
-{{% /md %}}</dd>
+    <dd>The port used for the port mapping.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1263,11 +1263,11 @@ Currently only one listener is supported per virtual router.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol used for the port mapping. Valid values are `http` and `tcp`.
-{{% /md %}}</dd>
+    <dd>The protocol used for the port mapping. Valid values are `http` and `tcp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

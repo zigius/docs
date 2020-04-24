@@ -16,29 +16,29 @@ Use this data source to access information about an existing Redis Cache
 
 ## Using GetCache {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getCache<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/redis/#GetCacheArgs">GetCacheArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/redis/#GetCacheResult">GetCacheResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_cache(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>zones=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupCache<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#LookupCacheArgs">LookupCacheArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#LookupCacheResult">LookupCacheResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetCache </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Redis.GetCacheResult.html">GetCacheResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Redis.GetCacheArgs.html">GetCacheArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -46,7 +46,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -55,8 +55,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis cache
-{{% /md %}}</dd>
+    <dd>The name of the Redis cache
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -64,8 +64,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group the Redis cache instance is located in.
-{{% /md %}}</dd>
+    <dd>The name of the resource group the Redis cache instance is located in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -73,13 +73,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -88,8 +88,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis cache
-{{% /md %}}</dd>
+    <dd>The name of the Redis cache
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -97,8 +97,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group the Redis cache instance is located in.
-{{% /md %}}</dd>
+    <dd>The name of the resource group the Redis cache instance is located in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -106,13 +106,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -121,8 +121,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis cache
-{{% /md %}}</dd>
+    <dd>The name of the Redis cache
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -130,8 +130,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group the Redis cache instance is located in.
-{{% /md %}}</dd>
+    <dd>The name of the resource group the Redis cache instance is located in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -139,13 +139,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -154,8 +154,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis cache
-{{% /md %}}</dd>
+    <dd>The name of the Redis cache
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -163,8 +163,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group the Redis cache instance is located in.
-{{% /md %}}</dd>
+    <dd>The name of the resource group the Redis cache instance is located in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -172,10 +172,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -191,7 +191,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -200,8 +200,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis Cache deployed.
-{{% /md %}}</dd>
+    <dd>The size of the Redis Cache deployed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -209,8 +209,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the SSL port is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the SSL port is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -218,8 +218,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group used. Possible values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group used. Possible values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-"
             title="">
@@ -227,8 +227,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -236,8 +236,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -245,8 +245,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the Redis Cache.
-{{% /md %}}</dd>
+    <dd>The location of the Redis Cache.
+</dd>
 
     <dt class="property-"
             title="">
@@ -254,8 +254,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -263,7 +263,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -271,8 +271,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcachepatchschedule">List&lt;Get<wbr>Cache<wbr>Patch<wbr>Schedule&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-"
             title="">
@@ -280,8 +280,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -289,8 +289,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -298,8 +298,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -307,7 +307,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -315,8 +315,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcacheredisconfiguration">List&lt;Get<wbr>Cache<wbr>Redis<wbr>Configuration&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -324,7 +324,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -332,8 +332,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -341,8 +341,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -350,7 +350,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -358,8 +358,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis used. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis used. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -367,8 +367,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -376,7 +376,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -384,7 +384,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -392,13 +392,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -407,8 +407,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis Cache deployed.
-{{% /md %}}</dd>
+    <dd>The size of the Redis Cache deployed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -416,8 +416,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the SSL port is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the SSL port is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -425,8 +425,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group used. Possible values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group used. Possible values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-"
             title="">
@@ -434,8 +434,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -443,8 +443,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -452,8 +452,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the Redis Cache.
-{{% /md %}}</dd>
+    <dd>The location of the Redis Cache.
+</dd>
 
     <dt class="property-"
             title="">
@@ -461,8 +461,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -470,7 +470,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -478,8 +478,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcachepatchschedule">[]Get<wbr>Cache<wbr>Patch<wbr>Schedule</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-"
             title="">
@@ -487,8 +487,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -496,8 +496,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -505,8 +505,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -514,7 +514,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -522,8 +522,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcacheredisconfiguration">[]Get<wbr>Cache<wbr>Redis<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -531,7 +531,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -539,8 +539,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -548,8 +548,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -557,7 +557,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -565,8 +565,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis used. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis used. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -574,8 +574,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -583,7 +583,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -591,7 +591,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -599,13 +599,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -614,8 +614,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis Cache deployed.
-{{% /md %}}</dd>
+    <dd>The size of the Redis Cache deployed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -623,8 +623,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the SSL port is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the SSL port is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -632,8 +632,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group used. Possible values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group used. Possible values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-"
             title="">
@@ -641,8 +641,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -650,8 +650,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -659,8 +659,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the Redis Cache.
-{{% /md %}}</dd>
+    <dd>The location of the Redis Cache.
+</dd>
 
     <dt class="property-"
             title="">
@@ -668,8 +668,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -677,7 +677,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -685,8 +685,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcachepatchschedule">Get<wbr>Cache<wbr>Patch<wbr>Schedule[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-"
             title="">
@@ -694,8 +694,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -703,8 +703,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -712,8 +712,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -721,7 +721,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -729,8 +729,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcacheredisconfiguration">Get<wbr>Cache<wbr>Redis<wbr>Configuration[]</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -738,7 +738,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -746,8 +746,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -755,8 +755,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -764,7 +764,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -772,8 +772,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis used. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis used. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -781,8 +781,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -790,7 +790,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -798,7 +798,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -806,13 +806,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -821,8 +821,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Redis Cache deployed.
-{{% /md %}}</dd>
+    <dd>The size of the Redis Cache deployed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -830,8 +830,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the SSL port is enabled.
-{{% /md %}}</dd>
+    <dd>Whether the SSL port is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -839,8 +839,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU family/pricing group used. Possible values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
-{{% /md %}}</dd>
+    <dd>The SKU family/pricing group used. Possible values are `C` (for Basic/Standard SKU family) and `P` (for `Premium`)
+</dd>
 
     <dt class="property-"
             title="">
@@ -848,8 +848,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Hostname of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Hostname of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -857,8 +857,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -866,8 +866,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location of the Redis Cache.
-{{% /md %}}</dd>
+    <dd>The location of the Redis Cache.
+</dd>
 
     <dt class="property-"
             title="">
@@ -875,8 +875,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The minimum TLS version.
-{{% /md %}}</dd>
+    <dd>The minimum TLS version.
+</dd>
 
     <dt class="property-"
             title="">
@@ -884,7 +884,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -892,8 +892,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcachepatchschedule">List[Get<wbr>Cache<wbr>Patch<wbr>Schedule]</a></span>
     </dt>
-    <dd>{{% md %}}A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.
+</dd>
 
     <dt class="property-"
             title="">
@@ -901,8 +901,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The non-SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The non-SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -910,8 +910,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Primary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Primary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -919,8 +919,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The primary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -928,7 +928,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -936,8 +936,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcacheredisconfiguration">List[Get<wbr>Cache<wbr>Redis<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A `redis_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `redis_configuration` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -945,7 +945,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -953,8 +953,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secondary Access Key for the Redis Instance
-{{% /md %}}</dd>
+    <dd>The Secondary Access Key for the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -962,8 +962,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary connection string of the Redis Instance.
-{{% /md %}}</dd>
+    <dd>The secondary connection string of the Redis Instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -971,7 +971,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -979,8 +979,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU of Redis used. Possible values are `Basic`, `Standard` and `Premium`.
-{{% /md %}}</dd>
+    <dd>The SKU of Redis used. Possible values are `Basic`, `Standard` and `Premium`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -988,8 +988,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The SSL Port of the Redis Instance
-{{% /md %}}</dd>
+    <dd>The SSL Port of the Redis Instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -997,7 +997,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1005,7 +1005,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1013,10 +1013,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1029,18 +1029,18 @@ The following output properties are available:
 
 
 <h4 id="getcachepatchschedule">Get<wbr>Cache<wbr>Patch<wbr>Schedule</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetCachePatchSchedule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#GetCachePatchSchedule">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1049,8 +1049,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the Weekday name for the patch item
-{{% /md %}}</dd>
+    <dd>the Weekday name for the patch item
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1058,14 +1058,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Start Hour for maintenance in UTC
-{{% /md %}}</dd>
+    <dd>The Start Hour for maintenance in UTC
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1074,8 +1074,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the Weekday name for the patch item
-{{% /md %}}</dd>
+    <dd>the Weekday name for the patch item
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1083,14 +1083,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Start Hour for maintenance in UTC
-{{% /md %}}</dd>
+    <dd>The Start Hour for maintenance in UTC
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1099,8 +1099,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the Weekday name for the patch item
-{{% /md %}}</dd>
+    <dd>the Weekday name for the patch item
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1108,14 +1108,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Start Hour for maintenance in UTC
-{{% /md %}}</dd>
+    <dd>The Start Hour for maintenance in UTC
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1124,8 +1124,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the Weekday name for the patch item
-{{% /md %}}</dd>
+    <dd>the Weekday name for the patch item
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1133,29 +1133,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Start Hour for maintenance in UTC
-{{% /md %}}</dd>
+    <dd>The Start Hour for maintenance in UTC
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getcacheredisconfiguration">Get<wbr>Cache<wbr>Redis<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetCacheRedisConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/redis?tab=doc#GetCacheRedisConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1164,7 +1164,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1172,7 +1172,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1180,7 +1180,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1188,8 +1188,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if authentication is enabled
-{{% /md %}}</dd>
+    <dd>Specifies if authentication is enabled
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1197,7 +1197,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1205,8 +1205,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved to accommodate for memory fragmentation.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved to accommodate for memory fragmentation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1214,8 +1214,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The max-memory delta for this Redis instance.
-{{% /md %}}</dd>
+    <dd>The max-memory delta for this Redis instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1223,8 +1223,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How Redis will select what to remove when `maxmemory` is reached.
-{{% /md %}}</dd>
+    <dd>How Redis will select what to remove when `maxmemory` is reached.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1232,8 +1232,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The value in megabytes reserved for non-cache usage e.g. failover
-{{% /md %}}</dd>
+    <dd>The value in megabytes reserved for non-cache usage e.g. failover
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1241,7 +1241,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1249,8 +1249,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Backup Enabled? Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>Is Backup Enabled? Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1258,8 +1258,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Backup Frequency in Minutes. Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The Backup Frequency in Minutes. Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1267,8 +1267,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of snapshots that can be created as a backup.
-{{% /md %}}</dd>
+    <dd>The maximum number of snapshots that can be created as a backup.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1276,14 +1276,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String to the Storage Account. Only supported for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The Connection String to the Storage Account. Only supported for Premium SKU's.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1292,7 +1292,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1300,7 +1300,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1308,7 +1308,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1316,8 +1316,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if authentication is enabled
-{{% /md %}}</dd>
+    <dd>Specifies if authentication is enabled
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1325,7 +1325,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1333,8 +1333,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved to accommodate for memory fragmentation.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved to accommodate for memory fragmentation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1342,8 +1342,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The max-memory delta for this Redis instance.
-{{% /md %}}</dd>
+    <dd>The max-memory delta for this Redis instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1351,8 +1351,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How Redis will select what to remove when `maxmemory` is reached.
-{{% /md %}}</dd>
+    <dd>How Redis will select what to remove when `maxmemory` is reached.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1360,8 +1360,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The value in megabytes reserved for non-cache usage e.g. failover
-{{% /md %}}</dd>
+    <dd>The value in megabytes reserved for non-cache usage e.g. failover
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1369,7 +1369,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1377,8 +1377,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Backup Enabled? Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>Is Backup Enabled? Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1386,8 +1386,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Backup Frequency in Minutes. Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The Backup Frequency in Minutes. Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1395,8 +1395,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of snapshots that can be created as a backup.
-{{% /md %}}</dd>
+    <dd>The maximum number of snapshots that can be created as a backup.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1404,14 +1404,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String to the Storage Account. Only supported for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The Connection String to the Storage Account. Only supported for Premium SKU's.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1420,7 +1420,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1428,7 +1428,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1436,7 +1436,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1444,8 +1444,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if authentication is enabled
-{{% /md %}}</dd>
+    <dd>Specifies if authentication is enabled
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1453,7 +1453,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1461,8 +1461,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved to accommodate for memory fragmentation.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved to accommodate for memory fragmentation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1470,8 +1470,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The max-memory delta for this Redis instance.
-{{% /md %}}</dd>
+    <dd>The max-memory delta for this Redis instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1479,8 +1479,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How Redis will select what to remove when `maxmemory` is reached.
-{{% /md %}}</dd>
+    <dd>How Redis will select what to remove when `maxmemory` is reached.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1488,8 +1488,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The value in megabytes reserved for non-cache usage e.g. failover
-{{% /md %}}</dd>
+    <dd>The value in megabytes reserved for non-cache usage e.g. failover
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1497,7 +1497,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1505,8 +1505,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is Backup Enabled? Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>Is Backup Enabled? Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1514,8 +1514,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Backup Frequency in Minutes. Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The Backup Frequency in Minutes. Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1523,8 +1523,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of snapshots that can be created as a backup.
-{{% /md %}}</dd>
+    <dd>The maximum number of snapshots that can be created as a backup.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1532,14 +1532,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String to the Storage Account. Only supported for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The Connection String to the Storage Account. Only supported for Premium SKU's.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1548,7 +1548,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1556,7 +1556,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1564,7 +1564,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1572,8 +1572,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if authentication is enabled
-{{% /md %}}</dd>
+    <dd>Specifies if authentication is enabled
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1581,7 +1581,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1589,8 +1589,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Value in megabytes reserved to accommodate for memory fragmentation.
-{{% /md %}}</dd>
+    <dd>Value in megabytes reserved to accommodate for memory fragmentation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1598,8 +1598,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The max-memory delta for this Redis instance.
-{{% /md %}}</dd>
+    <dd>The max-memory delta for this Redis instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1607,8 +1607,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How Redis will select what to remove when `maxmemory` is reached.
-{{% /md %}}</dd>
+    <dd>How Redis will select what to remove when `maxmemory` is reached.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1616,8 +1616,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The value in megabytes reserved for non-cache usage e.g. failover
-{{% /md %}}</dd>
+    <dd>The value in megabytes reserved for non-cache usage e.g. failover
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1625,7 +1625,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1633,8 +1633,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Backup Enabled? Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>Is Backup Enabled? Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1642,8 +1642,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Backup Frequency in Minutes. Only supported on Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The Backup Frequency in Minutes. Only supported on Premium SKU's.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1651,8 +1651,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of snapshots that can be created as a backup.
-{{% /md %}}</dd>
+    <dd>The maximum number of snapshots that can be created as a backup.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1660,11 +1660,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String to the Storage Account. Only supported for Premium SKU's.
-{{% /md %}}</dd>
+    <dd>The Connection String to the Storage Account. Only supported for Premium SKU's.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

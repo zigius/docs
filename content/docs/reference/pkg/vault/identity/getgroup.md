@@ -15,29 +15,29 @@ meta_desc: "Explore the GetGroup function of the identity module, including exam
 
 ## Using GetGroup {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getGroup<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/identity/#GetGroupArgs">GetGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vault/identity/#GetGroupResult">GetGroupResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_group(</span>alias_id=None<span class="p">, </span>alias_mount_accessor=None<span class="p">, </span>alias_name=None<span class="p">, </span>group_id=None<span class="p">, </span>group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/identity?tab=doc#LookupGroupArgs">LookupGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/v2/go/vault/identity?tab=doc#LookupGroupResult">LookupGroupResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetGroup </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Identity.GetGroupResult.html">GetGroupResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.Identity.GetGroupArgs.html">GetGroupArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -45,7 +45,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -54,8 +54,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the alias.
-{{% /md %}}</dd>
+    <dd>ID of the alias.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -63,9 +63,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Accessor of the mount to which the alias belongs to.
+    <dd>Accessor of the mount to which the alias belongs to.
 This should be supplied in conjunction with `alias_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -73,9 +73,9 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the alias. This should be supplied in conjunction with
+    <dd>Name of the alias. This should be supplied in conjunction with
 `alias_mount_accessor`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -83,8 +83,8 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the group.
-{{% /md %}}</dd>
+    <dd>ID of the group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -92,14 +92,14 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the group.
-{{% /md %}}</dd>
+    <dd>Name of the group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -108,8 +108,8 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the alias.
-{{% /md %}}</dd>
+    <dd>ID of the alias.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -117,9 +117,9 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Accessor of the mount to which the alias belongs to.
+    <dd>Accessor of the mount to which the alias belongs to.
 This should be supplied in conjunction with `alias_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -127,9 +127,9 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the alias. This should be supplied in conjunction with
+    <dd>Name of the alias. This should be supplied in conjunction with
 `alias_mount_accessor`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -137,8 +137,8 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the group.
-{{% /md %}}</dd>
+    <dd>ID of the group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -146,14 +146,14 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the group.
-{{% /md %}}</dd>
+    <dd>Name of the group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -162,8 +162,8 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the alias.
-{{% /md %}}</dd>
+    <dd>ID of the alias.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -171,9 +171,9 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Accessor of the mount to which the alias belongs to.
+    <dd>Accessor of the mount to which the alias belongs to.
 This should be supplied in conjunction with `alias_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -181,9 +181,9 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the alias. This should be supplied in conjunction with
+    <dd>Name of the alias. This should be supplied in conjunction with
 `alias_mount_accessor`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -191,8 +191,8 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the group.
-{{% /md %}}</dd>
+    <dd>ID of the group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -200,14 +200,14 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the group.
-{{% /md %}}</dd>
+    <dd>Name of the group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -216,8 +216,8 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the alias.
-{{% /md %}}</dd>
+    <dd>ID of the alias.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -225,9 +225,9 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Accessor of the mount to which the alias belongs to.
+    <dd>Accessor of the mount to which the alias belongs to.
 This should be supplied in conjunction with `alias_name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,9 +235,9 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the alias. This should be supplied in conjunction with
+    <dd>Name of the alias. This should be supplied in conjunction with
 `alias_mount_accessor`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the group.
-{{% /md %}}</dd>
+    <dd>ID of the group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,11 +254,11 @@ This should be supplied in conjunction with `alias_name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the group.
-{{% /md %}}</dd>
+    <dd>Name of the group.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -274,7 +274,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -283,8 +283,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Canonical ID of the Alias
-{{% /md %}}</dd>
+    <dd>Canonical ID of the Alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -292,8 +292,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the Alias
-{{% /md %}}</dd>
+    <dd>Creation time of the Alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -301,7 +301,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -309,8 +309,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Last update time of the alias
-{{% /md %}}</dd>
+    <dd>Last update time of the alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -318,8 +318,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of canonical IDs merged with this alias
-{{% /md %}}</dd>
+    <dd>List of canonical IDs merged with this alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -327,8 +327,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Arbitrary metadata
-{{% /md %}}</dd>
+    <dd>Arbitrary metadata
+</dd>
 
     <dt class="property-"
             title="">
@@ -336,7 +336,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -344,8 +344,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication mount path which this alias belongs to
-{{% /md %}}</dd>
+    <dd>Authentication mount path which this alias belongs to
+</dd>
 
     <dt class="property-"
             title="">
@@ -353,8 +353,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication mount type which this alias belongs to
-{{% /md %}}</dd>
+    <dd>Authentication mount type which this alias belongs to
+</dd>
 
     <dt class="property-"
             title="">
@@ -362,7 +362,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -370,8 +370,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp of the group
-{{% /md %}}</dd>
+    <dd>Creation timestamp of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -379,9 +379,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string containing the full data payload retrieved from
+    <dd>A string containing the full data payload retrieved from
 Vault, serialized in JSON format.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -389,7 +389,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -397,7 +397,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -405,8 +405,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -414,8 +414,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Last updated time of the group
-{{% /md %}}</dd>
+    <dd>Last updated time of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -423,8 +423,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Entity IDs which are members of this group
-{{% /md %}}</dd>
+    <dd>List of Entity IDs which are members of this group
+</dd>
 
     <dt class="property-"
             title="">
@@ -432,8 +432,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs which are members of this group
-{{% /md %}}</dd>
+    <dd>List of Group IDs which are members of this group
+</dd>
 
     <dt class="property-"
             title="">
@@ -441,8 +441,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Arbitrary metadata
-{{% /md %}}</dd>
+    <dd>Arbitrary metadata
+</dd>
 
     <dt class="property-"
             title="">
@@ -450,8 +450,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Modify index of the group
-{{% /md %}}</dd>
+    <dd>Modify index of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -459,8 +459,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Namespace of which the group is part of
-{{% /md %}}</dd>
+    <dd>Namespace of which the group is part of
+</dd>
 
     <dt class="property-"
             title="">
@@ -468,8 +468,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs which are parents of this group.
-{{% /md %}}</dd>
+    <dd>List of Group IDs which are parents of this group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -477,8 +477,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of policies attached to the group
-{{% /md %}}</dd>
+    <dd>List of policies attached to the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -486,14 +486,14 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of group
-{{% /md %}}</dd>
+    <dd>Type of group
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -502,8 +502,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Canonical ID of the Alias
-{{% /md %}}</dd>
+    <dd>Canonical ID of the Alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -511,8 +511,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the Alias
-{{% /md %}}</dd>
+    <dd>Creation time of the Alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -520,7 +520,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -528,8 +528,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Last update time of the alias
-{{% /md %}}</dd>
+    <dd>Last update time of the alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,8 +537,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of canonical IDs merged with this alias
-{{% /md %}}</dd>
+    <dd>List of canonical IDs merged with this alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,8 +546,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Arbitrary metadata
-{{% /md %}}</dd>
+    <dd>Arbitrary metadata
+</dd>
 
     <dt class="property-"
             title="">
@@ -555,7 +555,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -563,8 +563,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication mount path which this alias belongs to
-{{% /md %}}</dd>
+    <dd>Authentication mount path which this alias belongs to
+</dd>
 
     <dt class="property-"
             title="">
@@ -572,8 +572,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication mount type which this alias belongs to
-{{% /md %}}</dd>
+    <dd>Authentication mount type which this alias belongs to
+</dd>
 
     <dt class="property-"
             title="">
@@ -581,7 +581,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -589,8 +589,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp of the group
-{{% /md %}}</dd>
+    <dd>Creation timestamp of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -598,9 +598,9 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string containing the full data payload retrieved from
+    <dd>A string containing the full data payload retrieved from
 Vault, serialized in JSON format.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,7 +608,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -616,7 +616,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -624,8 +624,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -633,8 +633,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Last updated time of the group
-{{% /md %}}</dd>
+    <dd>Last updated time of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,8 +642,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Entity IDs which are members of this group
-{{% /md %}}</dd>
+    <dd>List of Entity IDs which are members of this group
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,8 +651,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs which are members of this group
-{{% /md %}}</dd>
+    <dd>List of Group IDs which are members of this group
+</dd>
 
     <dt class="property-"
             title="">
@@ -660,8 +660,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Arbitrary metadata
-{{% /md %}}</dd>
+    <dd>Arbitrary metadata
+</dd>
 
     <dt class="property-"
             title="">
@@ -669,8 +669,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Modify index of the group
-{{% /md %}}</dd>
+    <dd>Modify index of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -678,8 +678,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Namespace of which the group is part of
-{{% /md %}}</dd>
+    <dd>Namespace of which the group is part of
+</dd>
 
     <dt class="property-"
             title="">
@@ -687,8 +687,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs which are parents of this group.
-{{% /md %}}</dd>
+    <dd>List of Group IDs which are parents of this group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -696,8 +696,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of policies attached to the group
-{{% /md %}}</dd>
+    <dd>List of policies attached to the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -705,14 +705,14 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of group
-{{% /md %}}</dd>
+    <dd>Type of group
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -721,8 +721,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Canonical ID of the Alias
-{{% /md %}}</dd>
+    <dd>Canonical ID of the Alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -730,8 +730,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the Alias
-{{% /md %}}</dd>
+    <dd>Creation time of the Alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -739,7 +739,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -747,8 +747,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Last update time of the alias
-{{% /md %}}</dd>
+    <dd>Last update time of the alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -756,8 +756,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of canonical IDs merged with this alias
-{{% /md %}}</dd>
+    <dd>List of canonical IDs merged with this alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -765,8 +765,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Arbitrary metadata
-{{% /md %}}</dd>
+    <dd>Arbitrary metadata
+</dd>
 
     <dt class="property-"
             title="">
@@ -774,7 +774,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -782,8 +782,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication mount path which this alias belongs to
-{{% /md %}}</dd>
+    <dd>Authentication mount path which this alias belongs to
+</dd>
 
     <dt class="property-"
             title="">
@@ -791,8 +791,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authentication mount type which this alias belongs to
-{{% /md %}}</dd>
+    <dd>Authentication mount type which this alias belongs to
+</dd>
 
     <dt class="property-"
             title="">
@@ -800,7 +800,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -808,8 +808,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp of the group
-{{% /md %}}</dd>
+    <dd>Creation timestamp of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -817,9 +817,9 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string containing the full data payload retrieved from
+    <dd>A string containing the full data payload retrieved from
 Vault, serialized in JSON format.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -827,7 +827,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -835,7 +835,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -843,8 +843,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -852,8 +852,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Last updated time of the group
-{{% /md %}}</dd>
+    <dd>Last updated time of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -861,8 +861,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Entity IDs which are members of this group
-{{% /md %}}</dd>
+    <dd>List of Entity IDs which are members of this group
+</dd>
 
     <dt class="property-"
             title="">
@@ -870,8 +870,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs which are members of this group
-{{% /md %}}</dd>
+    <dd>List of Group IDs which are members of this group
+</dd>
 
     <dt class="property-"
             title="">
@@ -879,8 +879,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Arbitrary metadata
-{{% /md %}}</dd>
+    <dd>Arbitrary metadata
+</dd>
 
     <dt class="property-"
             title="">
@@ -888,8 +888,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Modify index of the group
-{{% /md %}}</dd>
+    <dd>Modify index of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -897,8 +897,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Namespace of which the group is part of
-{{% /md %}}</dd>
+    <dd>Namespace of which the group is part of
+</dd>
 
     <dt class="property-"
             title="">
@@ -906,8 +906,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs which are parents of this group.
-{{% /md %}}</dd>
+    <dd>List of Group IDs which are parents of this group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -915,8 +915,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies attached to the group
-{{% /md %}}</dd>
+    <dd>List of policies attached to the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -924,14 +924,14 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of group
-{{% /md %}}</dd>
+    <dd>Type of group
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -940,8 +940,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Canonical ID of the Alias
-{{% /md %}}</dd>
+    <dd>Canonical ID of the Alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -949,8 +949,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the Alias
-{{% /md %}}</dd>
+    <dd>Creation time of the Alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -958,7 +958,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -966,8 +966,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Last update time of the alias
-{{% /md %}}</dd>
+    <dd>Last update time of the alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -975,8 +975,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of canonical IDs merged with this alias
-{{% /md %}}</dd>
+    <dd>List of canonical IDs merged with this alias
+</dd>
 
     <dt class="property-"
             title="">
@@ -984,8 +984,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Arbitrary metadata
-{{% /md %}}</dd>
+    <dd>Arbitrary metadata
+</dd>
 
     <dt class="property-"
             title="">
@@ -993,7 +993,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1001,8 +1001,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authentication mount path which this alias belongs to
-{{% /md %}}</dd>
+    <dd>Authentication mount path which this alias belongs to
+</dd>
 
     <dt class="property-"
             title="">
@@ -1010,8 +1010,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authentication mount type which this alias belongs to
-{{% /md %}}</dd>
+    <dd>Authentication mount type which this alias belongs to
+</dd>
 
     <dt class="property-"
             title="">
@@ -1019,7 +1019,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1027,8 +1027,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp of the group
-{{% /md %}}</dd>
+    <dd>Creation timestamp of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1036,9 +1036,9 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string containing the full data payload retrieved from
+    <dd>A string containing the full data payload retrieved from
 Vault, serialized in JSON format.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1046,7 +1046,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1054,7 +1054,7 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1062,8 +1062,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1071,8 +1071,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Last updated time of the group
-{{% /md %}}</dd>
+    <dd>Last updated time of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1080,8 +1080,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Entity IDs which are members of this group
-{{% /md %}}</dd>
+    <dd>List of Entity IDs which are members of this group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1089,8 +1089,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs which are members of this group
-{{% /md %}}</dd>
+    <dd>List of Group IDs which are members of this group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1098,8 +1098,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Arbitrary metadata
-{{% /md %}}</dd>
+    <dd>Arbitrary metadata
+</dd>
 
     <dt class="property-"
             title="">
@@ -1107,8 +1107,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Modify index of the group
-{{% /md %}}</dd>
+    <dd>Modify index of the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1116,8 +1116,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Namespace of which the group is part of
-{{% /md %}}</dd>
+    <dd>Namespace of which the group is part of
+</dd>
 
     <dt class="property-"
             title="">
@@ -1125,8 +1125,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Group IDs which are parents of this group.
-{{% /md %}}</dd>
+    <dd>List of Group IDs which are parents of this group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1134,8 +1134,8 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of policies attached to the group
-{{% /md %}}</dd>
+    <dd>List of policies attached to the group
+</dd>
 
     <dt class="property-"
             title="">
@@ -1143,11 +1143,11 @@ Vault, serialized in JSON format.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of group
-{{% /md %}}</dd>
+    <dd>Type of group
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

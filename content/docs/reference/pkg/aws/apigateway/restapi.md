@@ -50,26 +50,26 @@ const example = new aws.apigateway.RestApi("example", {
 
 
 ## Create a RestApi Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#RestApi">RestApi</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#RestApiArgs">RestApiArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">RestApi</span><span class="p">(resource_name, opts=None, </span>api_key_source=None<span class="p">, </span>binary_media_types=None<span class="p">, </span>body=None<span class="p">, </span>description=None<span class="p">, </span>endpoint_configuration=None<span class="p">, </span>minimum_compression_size=None<span class="p">, </span>name=None<span class="p">, </span>policy=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRestApi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#RestApiArgs">RestApiArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#RestApi">RestApi</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.RestApi.html">RestApi</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.RestApiArgs.html">RestApiArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -106,9 +106,9 @@ const example = new aws.apigateway.RestApi("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -126,9 +126,9 @@ const example = new aws.apigateway.RestApi("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -175,9 +175,9 @@ const example = new aws.apigateway.RestApi("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -214,7 +214,7 @@ const example = new aws.apigateway.RestApi("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## RestApi Resource Properties {#properties}
 
@@ -227,7 +227,7 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -236,8 +236,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
-{{% /md %}}</dd>
+    <dd>The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
-{{% /md %}}</dd>
+    <dd>The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
-{{% /md %}}</dd>
+    <dd>An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the REST API
-{{% /md %}}</dd>
+    <dd>The description of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#restapiendpointconfiguration">Rest<wbr>Api<wbr>Endpoint<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defining API endpoint configuration including endpoint type. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defining API endpoint configuration including endpoint type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
-{{% /md %}}</dd>
+    <dd>Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the REST API
-{{% /md %}}</dd>
+    <dd>The name of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON formatted policy document that controls access to the API Gateway.
-{{% /md %}}</dd>
+    <dd>JSON formatted policy document that controls access to the API Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,14 +308,14 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -324,8 +324,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
-{{% /md %}}</dd>
+    <dd>The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -333,8 +333,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
-{{% /md %}}</dd>
+    <dd>The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,8 +342,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
-{{% /md %}}</dd>
+    <dd>An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,8 +351,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the REST API
-{{% /md %}}</dd>
+    <dd>The description of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,8 +360,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#restapiendpointconfiguration">Rest<wbr>Api<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defining API endpoint configuration including endpoint type. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defining API endpoint configuration including endpoint type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -369,8 +369,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
-{{% /md %}}</dd>
+    <dd>Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,8 +378,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the REST API
-{{% /md %}}</dd>
+    <dd>The name of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON formatted policy document that controls access to the API Gateway.
-{{% /md %}}</dd>
+    <dd>JSON formatted policy document that controls access to the API Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,14 +396,14 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -412,8 +412,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
-{{% /md %}}</dd>
+    <dd>The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -421,8 +421,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
-{{% /md %}}</dd>
+    <dd>The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,8 +430,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
-{{% /md %}}</dd>
+    <dd>An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,8 +439,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the REST API
-{{% /md %}}</dd>
+    <dd>The description of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,8 +448,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#restapiendpointconfiguration">Rest<wbr>Api<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defining API endpoint configuration including endpoint type. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defining API endpoint configuration including endpoint type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,8 +457,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
-{{% /md %}}</dd>
+    <dd>Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,8 +466,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the REST API
-{{% /md %}}</dd>
+    <dd>The name of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,8 +475,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON formatted policy document that controls access to the API Gateway.
-{{% /md %}}</dd>
+    <dd>JSON formatted policy document that controls access to the API Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,14 +484,14 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -500,8 +500,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
-{{% /md %}}</dd>
+    <dd>The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
-{{% /md %}}</dd>
+    <dd>The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,8 +518,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
-{{% /md %}}</dd>
+    <dd>An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -527,8 +527,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the REST API
-{{% /md %}}</dd>
+    <dd>The description of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,8 +536,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#restapiendpointconfiguration">Dict[Rest<wbr>Api<wbr>Endpoint<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defining API endpoint configuration including endpoint type. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defining API endpoint configuration including endpoint type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -545,8 +545,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
-{{% /md %}}</dd>
+    <dd>Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,8 +554,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the REST API
-{{% /md %}}</dd>
+    <dd>The name of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,8 +563,8 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}JSON formatted policy document that controls access to the API Gateway.
-{{% /md %}}</dd>
+    <dd>JSON formatted policy document that controls access to the API Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -572,11 +572,11 @@ The RestApi resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -590,7 +590,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -599,8 +599,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the REST API
-{{% /md %}}</dd>
+    <dd>The creation date of the REST API
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,10 +617,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -628,7 +628,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -636,14 +636,14 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource ID of the REST API's root
-{{% /md %}}</dd>
+    <dd>The resource ID of the REST API's root
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -652,8 +652,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -661,8 +661,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the REST API
-{{% /md %}}</dd>
+    <dd>The creation date of the REST API
+</dd>
 
     <dt class="property-"
             title="">
@@ -670,10 +670,10 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -681,7 +681,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -689,14 +689,14 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource ID of the REST API's root
-{{% /md %}}</dd>
+    <dd>The resource ID of the REST API's root
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -705,8 +705,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -714,8 +714,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the REST API
-{{% /md %}}</dd>
+    <dd>The creation date of the REST API
+</dd>
 
     <dt class="property-"
             title="">
@@ -723,10 +723,10 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -734,7 +734,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -742,14 +742,14 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource ID of the REST API's root
-{{% /md %}}</dd>
+    <dd>The resource ID of the REST API's root
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -758,8 +758,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -767,8 +767,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the REST API
-{{% /md %}}</dd>
+    <dd>The creation date of the REST API
+</dd>
 
     <dt class="property-"
             title="">
@@ -776,10 +776,10 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -787,7 +787,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -795,11 +795,11 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The resource ID of the REST API's root
-{{% /md %}}</dd>
+    <dd>The resource ID of the REST API's root
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -810,25 +810,25 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
 ## Look up an Existing RestApi Resource {#look-up}
 
 Get an existing RestApi resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#RestApiState">RestApiState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#RestApi">RestApi</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>api_key_source=None<span class="p">, </span>arn=None<span class="p">, </span>binary_media_types=None<span class="p">, </span>body=None<span class="p">, </span>created_date=None<span class="p">, </span>description=None<span class="p">, </span>endpoint_configuration=None<span class="p">, </span>execution_arn=None<span class="p">, </span>minimum_compression_size=None<span class="p">, </span>name=None<span class="p">, </span>policy=None<span class="p">, </span>root_resource_id=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRestApi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#RestApiState">RestApiState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#RestApi">RestApi</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.RestApi.html">RestApi</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.RestApiState.html">RestApiState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -853,9 +853,9 @@ Get an existing RestApi resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -868,36 +868,9 @@ Get an existing RestApi resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -922,13 +895,40 @@ Get an existing RestApi resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -937,8 +937,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
-{{% /md %}}</dd>
+    <dd>The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -946,8 +946,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -955,8 +955,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
-{{% /md %}}</dd>
+    <dd>The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -964,8 +964,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
-{{% /md %}}</dd>
+    <dd>An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -973,8 +973,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the REST API
-{{% /md %}}</dd>
+    <dd>The creation date of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -982,8 +982,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the REST API
-{{% /md %}}</dd>
+    <dd>The description of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,8 +991,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#restapiendpointconfiguration">Rest<wbr>Api<wbr>Endpoint<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defining API endpoint configuration including endpoint type. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defining API endpoint configuration including endpoint type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1000,10 +1000,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
-{{% /md %}}</dd>
+    <dd>Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,8 +1020,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the REST API
-{{% /md %}}</dd>
+    <dd>The name of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,8 +1029,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON formatted policy document that controls access to the API Gateway.
-{{% /md %}}</dd>
+    <dd>JSON formatted policy document that controls access to the API Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,8 +1038,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource ID of the REST API's root
-{{% /md %}}</dd>
+    <dd>The resource ID of the REST API's root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,14 +1047,14 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1063,8 +1063,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
-{{% /md %}}</dd>
+    <dd>The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,8 +1072,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
-{{% /md %}}</dd>
+    <dd>The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,8 +1090,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
-{{% /md %}}</dd>
+    <dd>An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,8 +1099,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the REST API
-{{% /md %}}</dd>
+    <dd>The creation date of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1108,8 +1108,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the REST API
-{{% /md %}}</dd>
+    <dd>The description of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1117,8 +1117,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#restapiendpointconfiguration">Rest<wbr>Api<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defining API endpoint configuration including endpoint type. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defining API endpoint configuration including endpoint type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1126,10 +1126,10 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,8 +1137,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
-{{% /md %}}</dd>
+    <dd>Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1146,8 +1146,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the REST API
-{{% /md %}}</dd>
+    <dd>The name of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON formatted policy document that controls access to the API Gateway.
-{{% /md %}}</dd>
+    <dd>JSON formatted policy document that controls access to the API Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,8 +1164,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource ID of the REST API's root
-{{% /md %}}</dd>
+    <dd>The resource ID of the REST API's root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,14 +1173,14 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1189,8 +1189,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
-{{% /md %}}</dd>
+    <dd>The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,8 +1198,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,8 +1207,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
-{{% /md %}}</dd>
+    <dd>The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,8 +1216,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
-{{% /md %}}</dd>
+    <dd>An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,8 +1225,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the REST API
-{{% /md %}}</dd>
+    <dd>The creation date of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,8 +1234,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the REST API
-{{% /md %}}</dd>
+    <dd>The description of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,8 +1243,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#restapiendpointconfiguration">Rest<wbr>Api<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defining API endpoint configuration including endpoint type. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defining API endpoint configuration including endpoint type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,10 +1252,10 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,8 +1263,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
-{{% /md %}}</dd>
+    <dd>Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,8 +1272,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the REST API
-{{% /md %}}</dd>
+    <dd>The name of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,8 +1281,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}JSON formatted policy document that controls access to the API Gateway.
-{{% /md %}}</dd>
+    <dd>JSON formatted policy document that controls access to the API Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,8 +1290,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource ID of the REST API's root
-{{% /md %}}</dd>
+    <dd>The resource ID of the REST API's root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,14 +1299,14 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1315,8 +1315,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
-{{% /md %}}</dd>
+    <dd>The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,8 +1324,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,8 +1333,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
-{{% /md %}}</dd>
+    <dd>The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,8 +1342,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
-{{% /md %}}</dd>
+    <dd>An OpenAPI specification that defines the set of routes and integrations to create as part of the REST API.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1351,8 +1351,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the REST API
-{{% /md %}}</dd>
+    <dd>The creation date of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1360,8 +1360,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the REST API
-{{% /md %}}</dd>
+    <dd>The description of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,8 +1369,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#restapiendpointconfiguration">Dict[Rest<wbr>Api<wbr>Endpoint<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}Nested argument defining API endpoint configuration including endpoint type. Defined below.
-{{% /md %}}</dd>
+    <dd>Nested argument defining API endpoint configuration including endpoint type. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,10 +1378,10 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN part to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,8 +1389,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
-{{% /md %}}</dd>
+    <dd>Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the REST API
-{{% /md %}}</dd>
+    <dd>The name of the REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,8 +1407,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}JSON formatted policy document that controls access to the API Gateway.
-{{% /md %}}</dd>
+    <dd>JSON formatted policy document that controls access to the API Gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1416,8 +1416,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The resource ID of the REST API's root
-{{% /md %}}</dd>
+    <dd>The resource ID of the REST API's root
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,11 +1425,11 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value mapping of resource tags
-{{% /md %}}</dd>
+    <dd>Key-value mapping of resource tags
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1444,18 +1444,18 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
 
 
 <h4 id="restapiendpointconfiguration">Rest<wbr>Api<wbr>Endpoint<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RestApiEndpointConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RestApiEndpointConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#RestApiEndpointConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#RestApiEndpointConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1464,8 +1464,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
-{{% /md %}}</dd>
+    <dd>A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,14 +1473,14 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
-{{% /md %}}</dd>
+    <dd>A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1489,8 +1489,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
-{{% /md %}}</dd>
+    <dd>A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,14 +1498,14 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
-{{% /md %}}</dd>
+    <dd>A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1514,8 +1514,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
-{{% /md %}}</dd>
+    <dd>A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,14 +1523,14 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
-{{% /md %}}</dd>
+    <dd>A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1539,8 +1539,8 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
-{{% /md %}}</dd>
+    <dd>A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1548,11 +1548,11 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be conca
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
-{{% /md %}}</dd>
+    <dd>A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -41,29 +41,29 @@ export const firstScalingRule = alicloud_alarms_alarm_ds.configurations.0.id;
 
 ## Using GetAlarms {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAlarms<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#GetAlarmsArgs">GetAlarmsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#GetAlarmsResult">GetAlarmsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_alarms(</span>ids=None<span class="p">, </span>metric_type=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>scaling_group_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAlarms<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#LookupAlarmsArgs">LookupAlarmsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#LookupAlarmsResult">LookupAlarmsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAlarms </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.GetAlarmsResult.html">GetAlarmsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ess.GetAlarmsArgs.html">GetAlarmsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -71,7 +71,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -80,8 +80,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm IDs.
-{{% /md %}}</dd>
+    <dd>A list of alarm IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -89,8 +89,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -98,8 +98,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting alarms by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting alarms by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -107,7 +107,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -115,14 +115,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the alarms belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the alarms belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -131,8 +131,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm IDs.
-{{% /md %}}</dd>
+    <dd>A list of alarm IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -140,8 +140,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -149,8 +149,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting alarms by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting alarms by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -158,7 +158,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -166,14 +166,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the alarms belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the alarms belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -182,8 +182,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm IDs.
-{{% /md %}}</dd>
+    <dd>A list of alarm IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -191,8 +191,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -200,8 +200,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting alarms by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting alarms by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,7 +209,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -217,14 +217,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the alarms belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the alarms belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -233,8 +233,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm IDs.
-{{% /md %}}</dd>
+    <dd>A list of alarm IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting alarms by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting alarms by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,7 +260,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,11 +268,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the alarms belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the alarms belong to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -288,7 +288,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -297,8 +297,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getalarmsalarm">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Outputs.<wbr>Get<wbr>Alarms<wbr>Alarm&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarms. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of alarms. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -306,8 +306,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -315,8 +315,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm ids.
-{{% /md %}}</dd>
+    <dd>A list of alarm ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -324,8 +324,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm names.
-{{% /md %}}</dd>
+    <dd>A list of alarm names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -333,8 +333,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -342,7 +342,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -350,7 +350,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -358,14 +358,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The scaling group associated with this alarm.
-{{% /md %}}</dd>
+    <dd>The scaling group associated with this alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -374,8 +374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getalarmsalarm">[]Get<wbr>Alarms<wbr>Alarm</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarms. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of alarms. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -383,8 +383,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -392,8 +392,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm ids.
-{{% /md %}}</dd>
+    <dd>A list of alarm ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -401,8 +401,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm names.
-{{% /md %}}</dd>
+    <dd>A list of alarm names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -410,8 +410,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -419,7 +419,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -427,7 +427,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -435,14 +435,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scaling group associated with this alarm.
-{{% /md %}}</dd>
+    <dd>The scaling group associated with this alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -451,8 +451,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getalarmsalarm">Get<wbr>Alarms<wbr>Alarm[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarms. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of alarms. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -460,8 +460,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -469,8 +469,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm ids.
-{{% /md %}}</dd>
+    <dd>A list of alarm ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -478,8 +478,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm names.
-{{% /md %}}</dd>
+    <dd>A list of alarm names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -487,8 +487,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -496,7 +496,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -504,7 +504,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -512,14 +512,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scaling group associated with this alarm.
-{{% /md %}}</dd>
+    <dd>The scaling group associated with this alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -528,8 +528,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getalarmsalarm">List[Get<wbr>Alarms<wbr>Alarm]</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarms. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of alarms. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,8 +537,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,8 +546,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm ids.
-{{% /md %}}</dd>
+    <dd>A list of alarm ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -555,8 +555,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of alarm names.
-{{% /md %}}</dd>
+    <dd>A list of alarm names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,8 +564,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,7 +573,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -581,7 +581,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -589,11 +589,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The scaling group associated with this alarm.
-{{% /md %}}</dd>
+    <dd>The scaling group associated with this alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -606,18 +606,18 @@ The following output properties are available:
 
 
 <h4 id="getalarmsalarm">Get<wbr>Alarms<wbr>Alarm</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetAlarmsAlarm">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#GetAlarmsAlarm">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -626,8 +626,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transition into an ALARM state. Each action is specified as ess scaling rule ari.
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transition into an ALARM state. Each action is specified as ess scaling rule ari.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -635,8 +635,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Defines the application group id defined by CMS which is assigned when you upload custom metric to CMS, only available for custom metirc.
-{{% /md %}}</dd>
+    <dd>Defines the application group id defined by CMS which is assigned when you upload custom metric to CMS, only available for custom metirc.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -644,8 +644,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. 
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -653,8 +653,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -662,8 +662,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The dimension map for the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The dimension map for the alarm's associated metric. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -671,8 +671,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable specific ess alarm.
-{{% /md %}}</dd>
+    <dd>Whether to enable specific ess alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -680,8 +680,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of times that needs to satisfies comparison condition before transition into ALARM state. 
-{{% /md %}}</dd>
+    <dd>The number of times that needs to satisfies comparison condition before transition into ALARM state. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -689,8 +689,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of alarm.
-{{% /md %}}</dd>
+    <dd>The id of alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -698,8 +698,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for the alarm's associated metric. See Block_metricNames_and_dimensions below for details.
-{{% /md %}}</dd>
+    <dd>The name for the alarm's associated metric. See Block_metricNames_and_dimensions below for details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -707,8 +707,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -716,8 +716,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for ess alarm.
-{{% /md %}}</dd>
+    <dd>The name for ess alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -725,8 +725,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified statistic is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified statistic is applied.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -734,8 +734,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the alarms belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the alarms belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -743,8 +743,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of alarm task. 
-{{% /md %}}</dd>
+    <dd>The state of alarm task. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -752,8 +752,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The statistic to apply to the alarm's associated metric. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -761,14 +761,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistics is compared.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistics is compared.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -777,8 +777,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transition into an ALARM state. Each action is specified as ess scaling rule ari.
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transition into an ALARM state. Each action is specified as ess scaling rule ari.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -786,8 +786,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Defines the application group id defined by CMS which is assigned when you upload custom metric to CMS, only available for custom metirc.
-{{% /md %}}</dd>
+    <dd>Defines the application group id defined by CMS which is assigned when you upload custom metric to CMS, only available for custom metirc.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -795,8 +795,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. 
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -804,8 +804,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -813,8 +813,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The dimension map for the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The dimension map for the alarm's associated metric. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -822,8 +822,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable specific ess alarm.
-{{% /md %}}</dd>
+    <dd>Whether to enable specific ess alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -831,8 +831,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of times that needs to satisfies comparison condition before transition into ALARM state. 
-{{% /md %}}</dd>
+    <dd>The number of times that needs to satisfies comparison condition before transition into ALARM state. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -840,8 +840,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of alarm.
-{{% /md %}}</dd>
+    <dd>The id of alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -849,8 +849,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for the alarm's associated metric. See Block_metricNames_and_dimensions below for details.
-{{% /md %}}</dd>
+    <dd>The name for the alarm's associated metric. See Block_metricNames_and_dimensions below for details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -858,8 +858,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -867,8 +867,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for ess alarm.
-{{% /md %}}</dd>
+    <dd>The name for ess alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -876,8 +876,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified statistic is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified statistic is applied.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -885,8 +885,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the alarms belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the alarms belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -894,8 +894,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of alarm task. 
-{{% /md %}}</dd>
+    <dd>The state of alarm task. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -903,8 +903,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The statistic to apply to the alarm's associated metric. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -912,14 +912,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistics is compared.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistics is compared.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -928,8 +928,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transition into an ALARM state. Each action is specified as ess scaling rule ari.
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transition into an ALARM state. Each action is specified as ess scaling rule ari.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -937,8 +937,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Defines the application group id defined by CMS which is assigned when you upload custom metric to CMS, only available for custom metirc.
-{{% /md %}}</dd>
+    <dd>Defines the application group id defined by CMS which is assigned when you upload custom metric to CMS, only available for custom metirc.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -946,8 +946,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. 
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -955,8 +955,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -964,8 +964,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The dimension map for the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The dimension map for the alarm's associated metric. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -973,8 +973,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable specific ess alarm.
-{{% /md %}}</dd>
+    <dd>Whether to enable specific ess alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -982,8 +982,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of times that needs to satisfies comparison condition before transition into ALARM state. 
-{{% /md %}}</dd>
+    <dd>The number of times that needs to satisfies comparison condition before transition into ALARM state. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -991,8 +991,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of alarm.
-{{% /md %}}</dd>
+    <dd>The id of alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1000,8 +1000,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for the alarm's associated metric. See Block_metricNames_and_dimensions below for details.
-{{% /md %}}</dd>
+    <dd>The name for the alarm's associated metric. See Block_metricNames_and_dimensions below for details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1009,8 +1009,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1018,8 +1018,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for ess alarm.
-{{% /md %}}</dd>
+    <dd>The name for ess alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1027,8 +1027,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified statistic is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified statistic is applied.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1036,8 +1036,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the alarms belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the alarms belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1045,8 +1045,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The state of alarm task. 
-{{% /md %}}</dd>
+    <dd>The state of alarm task. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1054,8 +1054,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The statistic to apply to the alarm's associated metric. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1063,14 +1063,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistics is compared.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistics is compared.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1079,8 +1079,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transition into an ALARM state. Each action is specified as ess scaling rule ari.
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transition into an ALARM state. Each action is specified as ess scaling rule ari.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1088,8 +1088,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Defines the application group id defined by CMS which is assigned when you upload custom metric to CMS, only available for custom metirc.
-{{% /md %}}</dd>
+    <dd>Defines the application group id defined by CMS which is assigned when you upload custom metric to CMS, only available for custom metirc.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1097,8 +1097,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. 
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1106,8 +1106,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1115,8 +1115,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The dimension map for the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The dimension map for the alarm's associated metric. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1124,8 +1124,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable specific ess alarm.
-{{% /md %}}</dd>
+    <dd>Whether to enable specific ess alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1133,8 +1133,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of times that needs to satisfies comparison condition before transition into ALARM state. 
-{{% /md %}}</dd>
+    <dd>The number of times that needs to satisfies comparison condition before transition into ALARM state. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1142,8 +1142,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of alarm.
-{{% /md %}}</dd>
+    <dd>The id of alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1151,8 +1151,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name for the alarm's associated metric. See Block_metricNames_and_dimensions below for details.
-{{% /md %}}</dd>
+    <dd>The name for the alarm's associated metric. See Block_metricNames_and_dimensions below for details.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1160,8 +1160,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
-{{% /md %}}</dd>
+    <dd>The type for the alarm's associated metric. Supported value: system, custom. "system" means the metric data is collected by Aliyun Cloud Monitor Service(CMS), "custom" means the metric data is upload to CMS by users. Defaults to system.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1169,8 +1169,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name for ess alarm.
-{{% /md %}}</dd>
+    <dd>The name for ess alarm.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1178,8 +1178,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified statistic is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified statistic is applied.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1187,8 +1187,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Scaling group id the alarms belong to.
-{{% /md %}}</dd>
+    <dd>Scaling group id the alarms belong to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1196,8 +1196,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The state of alarm task. 
-{{% /md %}}</dd>
+    <dd>The state of alarm task. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1205,8 +1205,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric. 
-{{% /md %}}</dd>
+    <dd>The statistic to apply to the alarm's associated metric. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1214,11 +1214,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistics is compared.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistics is compared.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

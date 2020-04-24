@@ -74,26 +74,26 @@ const test_prefix = new aws.s3.Inventory("test-prefix", {
 
 
 ## Create a Inventory Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#Inventory">Inventory</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#InventoryArgs">InventoryArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Inventory</span><span class="p">(resource_name, opts=None, </span>bucket=None<span class="p">, </span>destination=None<span class="p">, </span>enabled=None<span class="p">, </span>filter=None<span class="p">, </span>included_object_versions=None<span class="p">, </span>name=None<span class="p">, </span>optional_fields=None<span class="p">, </span>schedule=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewInventory<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryArgs">InventoryArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#Inventory">Inventory</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.Inventory.html">Inventory</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.InventoryArgs.html">InventoryArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -130,9 +130,9 @@ const test_prefix = new aws.s3.Inventory("test-prefix", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -150,9 +150,9 @@ const test_prefix = new aws.s3.Inventory("test-prefix", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -199,9 +199,9 @@ const test_prefix = new aws.s3.Inventory("test-prefix", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -238,7 +238,7 @@ const test_prefix = new aws.s3.Inventory("test-prefix", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Inventory Resource Properties {#properties}
 
@@ -251,7 +251,7 @@ The Inventory resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -260,8 +260,8 @@ The Inventory resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket where the inventory configuration will be stored.
-{{% /md %}}</dd>
+    <dd>The name of the bucket where the inventory configuration will be stored.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -269,8 +269,8 @@ The Inventory resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestination">Inventory<wbr>Destination<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Contains information about where to publish the inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Contains information about where to publish the inventory results (documented below).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -278,8 +278,8 @@ The Inventory resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Object versions to include in the inventory list. Valid values: `All`, `Current`.
-{{% /md %}}</dd>
+    <dd>Object versions to include in the inventory list. Valid values: `All`, `Current`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -287,8 +287,8 @@ The Inventory resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryschedule">Inventory<wbr>Schedule<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the schedule for generating inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies the schedule for generating inventory results (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The Inventory resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the inventory is enabled or disabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the inventory is enabled or disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The Inventory resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryfilter">Inventory<wbr>Filter<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ The Inventory resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier of the inventory configuration for the bucket.
-{{% /md %}}</dd>
+    <dd>Unique identifier of the inventory configuration for the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,15 +323,15 @@ The Inventory resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of optional fields that are included in the inventory results.
+    <dd>List of optional fields that are included in the inventory results.
 Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -340,8 +340,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket where the inventory configuration will be stored.
-{{% /md %}}</dd>
+    <dd>The name of the bucket where the inventory configuration will be stored.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -349,8 +349,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestination">Inventory<wbr>Destination</a></span>
     </dt>
-    <dd>{{% md %}}Contains information about where to publish the inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Contains information about where to publish the inventory results (documented below).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -358,8 +358,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Object versions to include in the inventory list. Valid values: `All`, `Current`.
-{{% /md %}}</dd>
+    <dd>Object versions to include in the inventory list. Valid values: `All`, `Current`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -367,8 +367,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryschedule">Inventory<wbr>Schedule</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the schedule for generating inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies the schedule for generating inventory results (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the inventory is enabled or disabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the inventory is enabled or disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryfilter">Inventory<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,8 +394,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier of the inventory configuration for the bucket.
-{{% /md %}}</dd>
+    <dd>Unique identifier of the inventory configuration for the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,15 +403,15 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of optional fields that are included in the inventory results.
+    <dd>List of optional fields that are included in the inventory results.
 Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -420,8 +420,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket where the inventory configuration will be stored.
-{{% /md %}}</dd>
+    <dd>The name of the bucket where the inventory configuration will be stored.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -429,8 +429,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestination">Inventory<wbr>Destination</a></span>
     </dt>
-    <dd>{{% md %}}Contains information about where to publish the inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Contains information about where to publish the inventory results (documented below).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -438,8 +438,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Object versions to include in the inventory list. Valid values: `All`, `Current`.
-{{% /md %}}</dd>
+    <dd>Object versions to include in the inventory list. Valid values: `All`, `Current`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -447,8 +447,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryschedule">Inventory<wbr>Schedule</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the schedule for generating inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies the schedule for generating inventory results (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the inventory is enabled or disabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the inventory is enabled or disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryfilter">Inventory<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier of the inventory configuration for the bucket.
-{{% /md %}}</dd>
+    <dd>Unique identifier of the inventory configuration for the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,15 +483,15 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of optional fields that are included in the inventory results.
+    <dd>List of optional fields that are included in the inventory results.
 Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -500,8 +500,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket where the inventory configuration will be stored.
-{{% /md %}}</dd>
+    <dd>The name of the bucket where the inventory configuration will be stored.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -509,8 +509,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestination">Dict[Inventory<wbr>Destination]</a></span>
     </dt>
-    <dd>{{% md %}}Contains information about where to publish the inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Contains information about where to publish the inventory results (documented below).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -518,8 +518,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Object versions to include in the inventory list. Valid values: `All`, `Current`.
-{{% /md %}}</dd>
+    <dd>Object versions to include in the inventory list. Valid values: `All`, `Current`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -527,8 +527,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryschedule">Dict[Inventory<wbr>Schedule]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the schedule for generating inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies the schedule for generating inventory results (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,8 +536,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the inventory is enabled or disabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the inventory is enabled or disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -545,8 +545,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryfilter">Dict[Inventory<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,8 +554,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier of the inventory configuration for the bucket.
-{{% /md %}}</dd>
+    <dd>Unique identifier of the inventory configuration for the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,12 +563,12 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of optional fields that are included in the inventory results.
+    <dd>List of optional fields that are included in the inventory results.
 Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -582,7 +582,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -591,13 +591,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -606,13 +606,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -621,13 +621,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -636,10 +636,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -650,25 +650,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Inventory Resource {#look-up}
 
 Get an existing Inventory resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#InventoryState">InventoryState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#Inventory">Inventory</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>bucket=None<span class="p">, </span>destination=None<span class="p">, </span>enabled=None<span class="p">, </span>filter=None<span class="p">, </span>included_object_versions=None<span class="p">, </span>name=None<span class="p">, </span>optional_fields=None<span class="p">, </span>schedule=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetInventory<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryState">InventoryState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#Inventory">Inventory</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.Inventory.html">Inventory</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.InventoryState.html">InventoryState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -693,9 +693,9 @@ Get an existing Inventory resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -708,36 +708,9 @@ Get an existing Inventory resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -762,13 +735,40 @@ Get an existing Inventory resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -777,8 +777,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket where the inventory configuration will be stored.
-{{% /md %}}</dd>
+    <dd>The name of the bucket where the inventory configuration will be stored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,8 +786,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestination">Inventory<wbr>Destination<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Contains information about where to publish the inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Contains information about where to publish the inventory results (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,8 +795,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the inventory is enabled or disabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the inventory is enabled or disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -804,8 +804,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryfilter">Inventory<wbr>Filter<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -813,8 +813,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Object versions to include in the inventory list. Valid values: `All`, `Current`.
-{{% /md %}}</dd>
+    <dd>Object versions to include in the inventory list. Valid values: `All`, `Current`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -822,8 +822,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier of the inventory configuration for the bucket.
-{{% /md %}}</dd>
+    <dd>Unique identifier of the inventory configuration for the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -831,9 +831,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of optional fields that are included in the inventory results.
+    <dd>List of optional fields that are included in the inventory results.
 Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,14 +841,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryschedule">Inventory<wbr>Schedule<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the schedule for generating inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies the schedule for generating inventory results (documented below).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -857,8 +857,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket where the inventory configuration will be stored.
-{{% /md %}}</dd>
+    <dd>The name of the bucket where the inventory configuration will be stored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -866,8 +866,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestination">Inventory<wbr>Destination</a></span>
     </dt>
-    <dd>{{% md %}}Contains information about where to publish the inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Contains information about where to publish the inventory results (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,8 +875,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the inventory is enabled or disabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the inventory is enabled or disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -884,8 +884,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryfilter">Inventory<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,8 +893,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Object versions to include in the inventory list. Valid values: `All`, `Current`.
-{{% /md %}}</dd>
+    <dd>Object versions to include in the inventory list. Valid values: `All`, `Current`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier of the inventory configuration for the bucket.
-{{% /md %}}</dd>
+    <dd>Unique identifier of the inventory configuration for the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,9 +911,9 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of optional fields that are included in the inventory results.
+    <dd>List of optional fields that are included in the inventory results.
 Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,14 +921,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryschedule">Inventory<wbr>Schedule</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the schedule for generating inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies the schedule for generating inventory results (documented below).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -937,8 +937,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket where the inventory configuration will be stored.
-{{% /md %}}</dd>
+    <dd>The name of the bucket where the inventory configuration will be stored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -946,8 +946,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestination">Inventory<wbr>Destination</a></span>
     </dt>
-    <dd>{{% md %}}Contains information about where to publish the inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Contains information about where to publish the inventory results (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -955,8 +955,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the inventory is enabled or disabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the inventory is enabled or disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -964,8 +964,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryfilter">Inventory<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -973,8 +973,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Object versions to include in the inventory list. Valid values: `All`, `Current`.
-{{% /md %}}</dd>
+    <dd>Object versions to include in the inventory list. Valid values: `All`, `Current`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -982,8 +982,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier of the inventory configuration for the bucket.
-{{% /md %}}</dd>
+    <dd>Unique identifier of the inventory configuration for the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,9 +991,9 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of optional fields that are included in the inventory results.
+    <dd>List of optional fields that are included in the inventory results.
 Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,14 +1001,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryschedule">Inventory<wbr>Schedule</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the schedule for generating inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies the schedule for generating inventory results (documented below).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1017,8 +1017,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket where the inventory configuration will be stored.
-{{% /md %}}</dd>
+    <dd>The name of the bucket where the inventory configuration will be stored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,8 +1026,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestination">Dict[Inventory<wbr>Destination]</a></span>
     </dt>
-    <dd>{{% md %}}Contains information about where to publish the inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Contains information about where to publish the inventory results (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the inventory is enabled or disabled.
-{{% /md %}}</dd>
+    <dd>Specifies whether the inventory is enabled or disabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryfilter">Dict[Inventory<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Object versions to include in the inventory list. Valid values: `All`, `Current`.
-{{% /md %}}</dd>
+    <dd>Object versions to include in the inventory list. Valid values: `All`, `Current`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier of the inventory configuration for the bucket.
-{{% /md %}}</dd>
+    <dd>Unique identifier of the inventory configuration for the bucket.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,9 +1071,9 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of optional fields that are included in the inventory results.
+    <dd>List of optional fields that are included in the inventory results.
 Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,11 +1081,11 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventoryschedule">Dict[Inventory<wbr>Schedule]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the schedule for generating inventory results (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies the schedule for generating inventory results (documented below).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1100,18 +1100,18 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
 
 
 <h4 id="inventorydestination">Inventory<wbr>Destination</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#InventoryDestination">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#InventoryDestination">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryDestinationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryDestinationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1120,14 +1120,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucket">Inventory<wbr>Destination<wbr>Bucket<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket configuration where inventory results are published (documented below).
-{{% /md %}}</dd>
+    <dd>The S3 bucket configuration where inventory results are published (documented below).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1136,14 +1136,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucket">Inventory<wbr>Destination<wbr>Bucket</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket configuration where inventory results are published (documented below).
-{{% /md %}}</dd>
+    <dd>The S3 bucket configuration where inventory results are published (documented below).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1152,14 +1152,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucket">Inventory<wbr>Destination<wbr>Bucket</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket configuration where inventory results are published (documented below).
-{{% /md %}}</dd>
+    <dd>The S3 bucket configuration where inventory results are published (documented below).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1168,29 +1168,29 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucket">Dict[Inventory<wbr>Destination<wbr>Bucket]</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket configuration where inventory results are published (documented below).
-{{% /md %}}</dd>
+    <dd>The S3 bucket configuration where inventory results are published (documented below).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="inventorydestinationbucket">Inventory<wbr>Destination<wbr>Bucket</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#InventoryDestinationBucket">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#InventoryDestinationBucket">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryDestinationBucketArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryDestinationBucketOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1199,8 +1199,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket ARN of the destination.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket ARN of the destination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1208,8 +1208,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
-{{% /md %}}</dd>
+    <dd>Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
-{{% /md %}}</dd>
+    <dd>The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryption">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Contains the type of server-side encryption to use to encrypt the inventory (documented below).
-{{% /md %}}</dd>
+    <dd>Contains the type of server-side encryption to use to encrypt the inventory (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,14 +1235,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix that is prepended to all inventory results.
-{{% /md %}}</dd>
+    <dd>The prefix that is prepended to all inventory results.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1251,8 +1251,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket ARN of the destination.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket ARN of the destination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1260,8 +1260,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
-{{% /md %}}</dd>
+    <dd>Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
-{{% /md %}}</dd>
+    <dd>The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryption">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Contains the type of server-side encryption to use to encrypt the inventory (documented below).
-{{% /md %}}</dd>
+    <dd>Contains the type of server-side encryption to use to encrypt the inventory (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,14 +1287,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix that is prepended to all inventory results.
-{{% /md %}}</dd>
+    <dd>The prefix that is prepended to all inventory results.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1303,8 +1303,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket ARN of the destination.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket ARN of the destination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1312,8 +1312,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
-{{% /md %}}</dd>
+    <dd>Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1321,8 +1321,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
-{{% /md %}}</dd>
+    <dd>The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1330,8 +1330,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryption">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Contains the type of server-side encryption to use to encrypt the inventory (documented below).
-{{% /md %}}</dd>
+    <dd>Contains the type of server-side encryption to use to encrypt the inventory (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,14 +1339,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix that is prepended to all inventory results.
-{{% /md %}}</dd>
+    <dd>The prefix that is prepended to all inventory results.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1355,8 +1355,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 bucket ARN of the destination.
-{{% /md %}}</dd>
+    <dd>The Amazon S3 bucket ARN of the destination.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1364,8 +1364,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
-{{% /md %}}</dd>
+    <dd>Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,8 +1373,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
-{{% /md %}}</dd>
+    <dd>The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1382,8 +1382,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryption">Dict[Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption]</a></span>
     </dt>
-    <dd>{{% md %}}Contains the type of server-side encryption to use to encrypt the inventory (documented below).
-{{% /md %}}</dd>
+    <dd>Contains the type of server-side encryption to use to encrypt the inventory (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1391,29 +1391,29 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The prefix that is prepended to all inventory results.
-{{% /md %}}</dd>
+    <dd>The prefix that is prepended to all inventory results.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="inventorydestinationbucketencryption">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#InventoryDestinationBucketEncryption">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#InventoryDestinationBucketEncryption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryDestinationBucketEncryptionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryDestinationBucketEncryptionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1422,8 +1422,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryptionssekms">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Sse<wbr>Kms<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1431,14 +1431,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryptionsses3">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Sse<wbr>S3Args</a></span>
     </dt>
-    <dd>{{% md %}}Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
-{{% /md %}}</dd>
+    <dd>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1447,8 +1447,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryptionssekms">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Sse<wbr>Kms</a></span>
     </dt>
-    <dd>{{% md %}}Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,14 +1456,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryptionsses3">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Sse<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
-{{% /md %}}</dd>
+    <dd>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1472,8 +1472,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryptionssekms">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Sse<wbr>Kms</a></span>
     </dt>
-    <dd>{{% md %}}Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1481,14 +1481,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryptionsses3">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Sse<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
-{{% /md %}}</dd>
+    <dd>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1497,8 +1497,8 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryptionssekms">Dict[Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Sse<wbr>Kms]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
-{{% /md %}}</dd>
+    <dd>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1506,29 +1506,29 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#inventorydestinationbucketencryptionsses3">Dict[Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Sse<wbr>S3]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
-{{% /md %}}</dd>
+    <dd>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="inventorydestinationbucketencryptionssekms">Inventory<wbr>Destination<wbr>Bucket<wbr>Encryption<wbr>Sse<wbr>Kms</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#InventoryDestinationBucketEncryptionSseKms">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#InventoryDestinationBucketEncryptionSseKms">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryDestinationBucketEncryptionSseKmsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryDestinationBucketEncryptionSseKmsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1537,14 +1537,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
-{{% /md %}}</dd>
+    <dd>The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1553,14 +1553,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
-{{% /md %}}</dd>
+    <dd>The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1569,14 +1569,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
-{{% /md %}}</dd>
+    <dd>The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1585,29 +1585,29 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
-{{% /md %}}</dd>
+    <dd>The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="inventoryfilter">Inventory<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#InventoryFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#InventoryFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1616,14 +1616,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix that an object must have to be included in the inventory results.
-{{% /md %}}</dd>
+    <dd>The prefix that an object must have to be included in the inventory results.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1632,14 +1632,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix that an object must have to be included in the inventory results.
-{{% /md %}}</dd>
+    <dd>The prefix that an object must have to be included in the inventory results.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1648,14 +1648,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix that an object must have to be included in the inventory results.
-{{% /md %}}</dd>
+    <dd>The prefix that an object must have to be included in the inventory results.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1664,29 +1664,29 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The prefix that an object must have to be included in the inventory results.
-{{% /md %}}</dd>
+    <dd>The prefix that an object must have to be included in the inventory results.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="inventoryschedule">Inventory<wbr>Schedule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#InventorySchedule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#InventorySchedule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryScheduleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#InventoryScheduleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1695,14 +1695,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1711,14 +1711,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1727,14 +1727,14 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1743,11 +1743,11 @@ Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUp
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
-{{% /md %}}</dd>
+    <dd>Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

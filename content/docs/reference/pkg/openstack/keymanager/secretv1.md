@@ -14,26 +14,26 @@ meta_desc: "Explore the SecretV1 resource of the keymanager module, including ex
 
 
 ## Create a SecretV1 Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/keymanager/#SecretV1">SecretV1</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/keymanager/#SecretV1Args">SecretV1Args</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SecretV1</span><span class="p">(resource_name, opts=None, </span>acl=None<span class="p">, </span>algorithm=None<span class="p">, </span>bit_length=None<span class="p">, </span>expiration=None<span class="p">, </span>metadata=None<span class="p">, </span>mode=None<span class="p">, </span>name=None<span class="p">, </span>payload=None<span class="p">, </span>payload_content_encoding=None<span class="p">, </span>payload_content_type=None<span class="p">, </span>region=None<span class="p">, </span>secret_type=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSecretV1<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#SecretV1Args">SecretV1Args</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#SecretV1">SecretV1</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.KeyManager.SecretV1.html">SecretV1</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.KeyManager.SecretV1Args.html">SecretV1Args</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the SecretV1 resource of the keymanager module, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the SecretV1 resource of the keymanager module, including ex
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the SecretV1 resource of the keymanager module, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the SecretV1 resource of the keymanager module, including ex
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## SecretV1 Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The SecretV1 resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -200,10 +200,10 @@ The SecretV1 resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1acl">Pulumi.<wbr>Open<wbr>Stack.<wbr>Key<wbr>Manager.<wbr>Inputs.<wbr>Secret<wbr>V1Acl<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Allows to control an access to a secret. Currently only the
+    <dd>Allows to control an access to a secret. Currently only the
 `read` operation is supported. If not specified, the secret is accessible
 project wide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -211,8 +211,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -220,8 +220,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -229,8 +229,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
-{{% /md %}}</dd>
+    <dd>The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -238,8 +238,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Additional Metadata for the secret.
-{{% /md %}}</dd>
+    <dd>Additional Metadata for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -247,8 +247,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,9 +256,9 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the Secret. Does not have
+    <dd>Human-readable name for the Secret. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
-{{% /md %}}</dd>
+    <dd>The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,11 +293,11 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to create a secret. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 V1 secret.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,14 +305,14 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
-{{% /md %}}</dd>
+    <dd>Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -321,10 +321,10 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1acl">Secret<wbr>V1Acl</a></span>
     </dt>
-    <dd>{{% md %}}Allows to control an access to a secret. Currently only the
+    <dd>Allows to control an access to a secret. Currently only the
 `read` operation is supported. If not specified, the secret is accessible
 project wide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,8 +350,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
-{{% /md %}}</dd>
+    <dd>The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,8 +359,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Additional Metadata for the secret.
-{{% /md %}}</dd>
+    <dd>Additional Metadata for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,8 +368,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,9 +377,9 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the Secret. Does not have
+    <dd>Human-readable name for the Secret. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
-{{% /md %}}</dd>
+    <dd>The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,11 +414,11 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to create a secret. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 V1 secret.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,14 +426,14 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
-{{% /md %}}</dd>
+    <dd>Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -442,10 +442,10 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1acl">Secret<wbr>V1Acl</a></span>
     </dt>
-    <dd>{{% md %}}Allows to control an access to a secret. Currently only the
+    <dd>Allows to control an access to a secret. Currently only the
 `read` operation is supported. If not specified, the secret is accessible
 project wide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -453,8 +453,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,8 +462,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -471,8 +471,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
-{{% /md %}}</dd>
+    <dd>The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,8 +480,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Additional Metadata for the secret.
-{{% /md %}}</dd>
+    <dd>Additional Metadata for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,8 +489,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,9 +498,9 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the Secret. Does not have
+    <dd>Human-readable name for the Secret. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
-{{% /md %}}</dd>
+    <dd>The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,11 +535,11 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to create a secret. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 V1 secret.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,14 +547,14 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
-{{% /md %}}</dd>
+    <dd>Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -563,10 +563,10 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1acl">Dict[Secret<wbr>V1Acl]</a></span>
     </dt>
-    <dd>{{% md %}}Allows to control an access to a secret. Currently only the
+    <dd>Allows to control an access to a secret. Currently only the
 `read` operation is supported. If not specified, the secret is accessible
 project wide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,8 +583,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
-{{% /md %}}</dd>
+    <dd>The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Additional Metadata for the secret.
-{{% /md %}}</dd>
+    <dd>Additional Metadata for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,9 +619,9 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the Secret. Does not have
+    <dd>Human-readable name for the Secret. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,8 +629,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
-{{% /md %}}</dd>
+    <dd>The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,8 +638,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,8 +647,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,11 +656,11 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to create a secret. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 V1 secret.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,11 +668,11 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
-{{% /md %}}</dd>
+    <dd>Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -686,7 +686,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -695,9 +695,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the secret, which has been
+    <dd>The map of metadata, assigned on the secret, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -705,8 +705,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The map of the content types, assigned on the secret.
-{{% /md %}}</dd>
+    <dd>The map of the content types, assigned on the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -714,8 +714,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -723,8 +723,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the secret.
-{{% /md %}}</dd>
+    <dd>The creator of the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -732,7 +732,7 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -740,8 +740,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -749,8 +749,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the secret.
-{{% /md %}}</dd>
+    <dd>The status of the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -758,14 +758,14 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -774,9 +774,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the secret, which has been
+    <dd>The map of metadata, assigned on the secret, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -784,8 +784,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The map of the content types, assigned on the secret.
-{{% /md %}}</dd>
+    <dd>The map of the content types, assigned on the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -793,8 +793,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -802,8 +802,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the secret.
-{{% /md %}}</dd>
+    <dd>The creator of the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -811,7 +811,7 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -819,8 +819,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -828,8 +828,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the secret.
-{{% /md %}}</dd>
+    <dd>The status of the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -837,14 +837,14 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -853,9 +853,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the secret, which has been
+    <dd>The map of metadata, assigned on the secret, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -863,8 +863,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The map of the content types, assigned on the secret.
-{{% /md %}}</dd>
+    <dd>The map of the content types, assigned on the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -872,8 +872,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -881,8 +881,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the secret.
-{{% /md %}}</dd>
+    <dd>The creator of the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -890,7 +890,7 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -898,8 +898,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -907,8 +907,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the secret.
-{{% /md %}}</dd>
+    <dd>The status of the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -916,14 +916,14 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -932,9 +932,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the secret, which has been
+    <dd>The map of metadata, assigned on the secret, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -942,8 +942,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The map of the content types, assigned on the secret.
-{{% /md %}}</dd>
+    <dd>The map of the content types, assigned on the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -951,8 +951,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -960,8 +960,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the secret.
-{{% /md %}}</dd>
+    <dd>The creator of the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -969,7 +969,7 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -977,8 +977,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -986,8 +986,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the secret.
-{{% /md %}}</dd>
+    <dd>The status of the secret.
+</dd>
 
     <dt class="property-"
             title="">
@@ -995,11 +995,11 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1010,25 +1010,25 @@ explicitly and implicitly added.
 ## Look up an Existing SecretV1 Resource {#look-up}
 
 Get an existing SecretV1 resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/keymanager/#SecretV1State">SecretV1State</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/keymanager/#SecretV1">SecretV1</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>acl=None<span class="p">, </span>algorithm=None<span class="p">, </span>all_metadata=None<span class="p">, </span>bit_length=None<span class="p">, </span>content_types=None<span class="p">, </span>created_at=None<span class="p">, </span>creator_id=None<span class="p">, </span>expiration=None<span class="p">, </span>metadata=None<span class="p">, </span>mode=None<span class="p">, </span>name=None<span class="p">, </span>payload=None<span class="p">, </span>payload_content_encoding=None<span class="p">, </span>payload_content_type=None<span class="p">, </span>region=None<span class="p">, </span>secret_ref=None<span class="p">, </span>secret_type=None<span class="p">, </span>status=None<span class="p">, </span>updated_at=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSecretV1<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#SecretV1State">SecretV1State</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#SecretV1">SecretV1</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.KeyManager.SecretV1.html">SecretV1</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.KeyManager.SecretV1State.html">SecretV1State</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1053,9 +1053,9 @@ Get an existing SecretV1 resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1068,36 +1068,9 @@ Get an existing SecretV1 resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1122,13 +1095,40 @@ Get an existing SecretV1 resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1137,10 +1137,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1acl">Pulumi.<wbr>Open<wbr>Stack.<wbr>Key<wbr>Manager.<wbr>Inputs.<wbr>Secret<wbr>V1Acl<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Allows to control an access to a secret. Currently only the
+    <dd>Allows to control an access to a secret. Currently only the
 `read` operation is supported. If not specified, the secret is accessible
 project wide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,8 +1148,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1157,9 +1157,9 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the secret, which has been
+    <dd>The map of metadata, assigned on the secret, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,8 +1167,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,8 +1176,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The map of the content types, assigned on the secret.
-{{% /md %}}</dd>
+    <dd>The map of the content types, assigned on the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,8 +1185,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,8 +1194,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the secret.
-{{% /md %}}</dd>
+    <dd>The creator of the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,8 +1203,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
-{{% /md %}}</dd>
+    <dd>The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1212,8 +1212,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Additional Metadata for the secret.
-{{% /md %}}</dd>
+    <dd>Additional Metadata for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,8 +1221,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,9 +1230,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the Secret. Does not have
+    <dd>Human-readable name for the Secret. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,8 +1240,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
-{{% /md %}}</dd>
+    <dd>The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,8 +1249,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,8 +1258,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,11 +1267,11 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to create a secret. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 V1 secret.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1279,8 +1279,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,8 +1288,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
-{{% /md %}}</dd>
+    <dd>Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,8 +1297,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the secret.
-{{% /md %}}</dd>
+    <dd>The status of the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,14 +1306,14 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1322,10 +1322,10 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1acl">Secret<wbr>V1Acl</a></span>
     </dt>
-    <dd>{{% md %}}Allows to control an access to a secret. Currently only the
+    <dd>Allows to control an access to a secret. Currently only the
 `read` operation is supported. If not specified, the secret is accessible
 project wide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,8 +1333,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,9 +1342,9 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the secret, which has been
+    <dd>The map of metadata, assigned on the secret, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1352,8 +1352,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,8 +1361,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The map of the content types, assigned on the secret.
-{{% /md %}}</dd>
+    <dd>The map of the content types, assigned on the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1370,8 +1370,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1379,8 +1379,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the secret.
-{{% /md %}}</dd>
+    <dd>The creator of the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,8 +1388,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
-{{% /md %}}</dd>
+    <dd>The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1397,8 +1397,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Additional Metadata for the secret.
-{{% /md %}}</dd>
+    <dd>Additional Metadata for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1406,8 +1406,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1415,9 +1415,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the Secret. Does not have
+    <dd>Human-readable name for the Secret. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,8 +1425,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
-{{% /md %}}</dd>
+    <dd>The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,8 +1434,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,8 +1443,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,11 +1452,11 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to create a secret. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 V1 secret.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,8 +1464,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
-{{% /md %}}</dd>
+    <dd>Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the secret.
-{{% /md %}}</dd>
+    <dd>The status of the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,14 +1491,14 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1507,10 +1507,10 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1acl">Secret<wbr>V1Acl</a></span>
     </dt>
-    <dd>{{% md %}}Allows to control an access to a secret. Currently only the
+    <dd>Allows to control an access to a secret. Currently only the
 `read` operation is supported. If not specified, the secret is accessible
 project wide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1518,8 +1518,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1527,9 +1527,9 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the secret, which has been
+    <dd>The map of metadata, assigned on the secret, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1537,8 +1537,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1546,8 +1546,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The map of the content types, assigned on the secret.
-{{% /md %}}</dd>
+    <dd>The map of the content types, assigned on the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1555,8 +1555,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1564,8 +1564,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the secret.
-{{% /md %}}</dd>
+    <dd>The creator of the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1573,8 +1573,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
-{{% /md %}}</dd>
+    <dd>The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1582,8 +1582,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Additional Metadata for the secret.
-{{% /md %}}</dd>
+    <dd>Additional Metadata for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1591,8 +1591,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1600,9 +1600,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the Secret. Does not have
+    <dd>Human-readable name for the Secret. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1610,8 +1610,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
-{{% /md %}}</dd>
+    <dd>The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,8 +1619,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,8 +1628,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,11 +1637,11 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to create a secret. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 V1 secret.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,8 +1649,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,8 +1658,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
-{{% /md %}}</dd>
+    <dd>Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,8 +1667,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the secret.
-{{% /md %}}</dd>
+    <dd>The status of the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,14 +1676,14 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1692,10 +1692,10 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1acl">Dict[Secret<wbr>V1Acl]</a></span>
     </dt>
-    <dd>{{% md %}}Allows to control an access to a secret. Currently only the
+    <dd>Allows to control an access to a secret. Currently only the
 `read` operation is supported. If not specified, the secret is accessible
 project wide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1703,8 +1703,8 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1712,9 +1712,9 @@ project wide.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the secret, which has been
+    <dd>The map of metadata, assigned on the secret, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1722,8 +1722,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1731,8 +1731,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The map of the content types, assigned on the secret.
-{{% /md %}}</dd>
+    <dd>The map of the content types, assigned on the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1740,8 +1740,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1749,8 +1749,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creator of the secret.
-{{% /md %}}</dd>
+    <dd>The creator of the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1758,8 +1758,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
-{{% /md %}}</dd>
+    <dd>The expiration time of the secret in the RFC3339 timestamp format (e.g. `2019-03-09T12:58:49Z`). If omitted, a secret will never expire. Changing this creates a new secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1767,8 +1767,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Additional Metadata for the secret.
-{{% /md %}}</dd>
+    <dd>Additional Metadata for the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1776,8 +1776,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Metadata provided by a user or system for informational purposes.
-{{% /md %}}</dd>
+    <dd>Metadata provided by a user or system for informational purposes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1785,9 +1785,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable name for the Secret. Does not have
+    <dd>Human-readable name for the Secret. Does not have
 to be unique.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1795,8 +1795,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
-{{% /md %}}</dd>
+    <dd>The secret's data to be stored. **payload\_content\_type** must also be supplied if **payload** is included.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1804,8 +1804,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is encoded) The encoding used for the payload to be able to include it in the JSON request. Must be either `base64` or `binary`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1813,8 +1813,8 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
-{{% /md %}}</dd>
+    <dd>(required if **payload** is included) The media type for the content of the payload. Must be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`, `application/octet-stream`, `application/pkcs8`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,11 +1822,11 @@ to be unique.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V1 KeyManager client.
+    <dd>The region in which to obtain the V1 KeyManager client.
 A KeyManager client is needed to create a secret. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 V1 secret.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1834,8 +1834,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secret reference / where to find the secret.
-{{% /md %}}</dd>
+    <dd>The secret reference / where to find the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1843,8 +1843,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
-{{% /md %}}</dd>
+    <dd>Used to indicate the type of secret being stored. For more information see [Secret types](https://docs.openstack.org/barbican/latest/api/reference/secret_types.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1852,8 +1852,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the secret.
-{{% /md %}}</dd>
+    <dd>The status of the secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1861,11 +1861,11 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1880,18 +1880,18 @@ V1 secret.
 
 
 <h4 id="secretv1acl">Secret<wbr>V1Acl</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#SecretV1Acl">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#SecretV1Acl">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#SecretV1AclArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#SecretV1AclOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1900,13 +1900,13 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1aclread">Pulumi.<wbr>Open<wbr>Stack.<wbr>Key<wbr>Manager.<wbr>Inputs.<wbr>Secret<wbr>V1Acl<wbr>Read<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1915,13 +1915,13 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1aclread">Secret<wbr>V1Acl<wbr>Read</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1930,13 +1930,13 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1aclread">Secret<wbr>V1Acl<wbr>Read</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1945,28 +1945,28 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#secretv1aclread">Dict[Secret<wbr>V1Acl<wbr>Read]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="secretv1aclread">Secret<wbr>V1Acl<wbr>Read</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#SecretV1AclRead">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#SecretV1AclRead">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#SecretV1AclReadArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/keymanager?tab=doc#SecretV1AclReadOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1975,8 +1975,8 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1984,9 +1984,9 @@ V1 secret.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the secret is accessible project wide.
+    <dd>Whether the secret is accessible project wide.
 Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,8 +1994,8 @@ Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2003,15 +2003,15 @@ Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of user IDs, which are allowed to access the
+    <dd>The list of user IDs, which are allowed to access the
 secret, when `project_access` is set to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2020,8 +2020,8 @@ secret, when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2029,9 +2029,9 @@ secret, when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the secret is accessible project wide.
+    <dd>Whether the secret is accessible project wide.
 Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2039,8 +2039,8 @@ Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2048,15 +2048,15 @@ Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of user IDs, which are allowed to access the
+    <dd>The list of user IDs, which are allowed to access the
 secret, when `project_access` is set to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2065,8 +2065,8 @@ secret, when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,9 +2074,9 @@ secret, when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the secret is accessible project wide.
+    <dd>Whether the secret is accessible project wide.
 Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2084,8 +2084,8 @@ Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2093,15 +2093,15 @@ Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of user IDs, which are allowed to access the
+    <dd>The list of user IDs, which are allowed to access the
 secret, when `project_access` is set to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2110,8 +2110,8 @@ secret, when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was created.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2119,9 +2119,9 @@ secret, when `project_access` is set to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the secret is accessible project wide.
+    <dd>Whether the secret is accessible project wide.
 Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2129,8 +2129,8 @@ Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date the secret ACL was last updated.
-{{% /md %}}</dd>
+    <dd>The date the secret ACL was last updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2138,12 +2138,12 @@ Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of user IDs, which are allowed to access the
+    <dd>The list of user IDs, which are allowed to access the
 secret, when `project_access` is set to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

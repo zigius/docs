@@ -47,26 +47,26 @@ const share1 = new openstack.sharedfilesystem.Share("share_1", {
 
 
 ## Create a Share Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#Share">Share</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#ShareArgs">ShareArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Share</span><span class="p">(resource_name, opts=None, </span>availability_zone=None<span class="p">, </span>description=None<span class="p">, </span>is_public=None<span class="p">, </span>metadata=None<span class="p">, </span>name=None<span class="p">, </span>region=None<span class="p">, </span>share_network_id=None<span class="p">, </span>share_proto=None<span class="p">, </span>share_type=None<span class="p">, </span>size=None<span class="p">, </span>snapshot_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewShare<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#ShareArgs">ShareArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#Share">Share</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.SharedFileSystem.Share.html">Share</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.SharedFileSystem.ShareArgs.html">ShareArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -103,9 +103,9 @@ const share1 = new openstack.sharedfilesystem.Share("share_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -123,9 +123,9 @@ const share1 = new openstack.sharedfilesystem.Share("share_1", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -172,9 +172,9 @@ const share1 = new openstack.sharedfilesystem.Share("share_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -211,7 +211,7 @@ const share1 = new openstack.sharedfilesystem.Share("share_1", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Share Resource Properties {#properties}
 
@@ -224,7 +224,7 @@ The Share resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -233,9 +233,9 @@ The Share resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share protocol - can either be NFS, CIFS,
+    <dd>The share protocol - can either be NFS, CIFS,
 CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -243,9 +243,9 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The share size, in GBs. The requested share size cannot be greater
+    <dd>The share size, in GBs. The requested share size cannot be greater
 than the allowed GB quota. Changing this resizes the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,9 +253,9 @@ than the allowed GB quota. Changing this resizes the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share availability zone. Changing this creates a
+    <dd>The share availability zone. Changing this creates a
 new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,9 +263,9 @@ new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the share.
+    <dd>The human-readable description for the share.
 Changing this updates the description of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,10 +273,10 @@ Changing this updates the description of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The level of visibility for the share. Set to true to make
+    <dd>The level of visibility for the share. Set to true to make
 share public. Set to false to make it private. Default value is false. Changing this
 updates the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,9 +284,9 @@ updates the existing share.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}One or more metadata key and value pairs as a dictionary of
+    <dd>One or more metadata key and value pairs as a dictionary of
 strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,9 +294,9 @@ strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share. Changing this updates the name
+    <dd>The name of the share. Changing this updates the name
 of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,10 +304,10 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share. Changing this
 creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,10 +315,10 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of a share network where the share server exists
+    <dd>The UUID of a share network where the share server exists
 or will be created. If `share_network_id` is not set and you provide a `snapshot_id`,
 the share_network_id value from the snapshot is used. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,9 +326,9 @@ the share_network_id value from the snapshot is used. Changing this creates a ne
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share type name. If you omit this parameter, the default
+    <dd>The share type name. If you omit this parameter, the default
 share type is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,15 +336,15 @@ share type is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share's base snapshot. Changing this creates
+    <dd>The UUID of the share's base snapshot. Changing this creates
 a new share.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -353,9 +353,9 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share protocol - can either be NFS, CIFS,
+    <dd>The share protocol - can either be NFS, CIFS,
 CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -363,9 +363,9 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The share size, in GBs. The requested share size cannot be greater
+    <dd>The share size, in GBs. The requested share size cannot be greater
 than the allowed GB quota. Changing this resizes the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,9 +373,9 @@ than the allowed GB quota. Changing this resizes the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share availability zone. Changing this creates a
+    <dd>The share availability zone. Changing this creates a
 new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,9 +383,9 @@ new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the share.
+    <dd>The human-readable description for the share.
 Changing this updates the description of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,10 +393,10 @@ Changing this updates the description of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The level of visibility for the share. Set to true to make
+    <dd>The level of visibility for the share. Set to true to make
 share public. Set to false to make it private. Default value is false. Changing this
 updates the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,9 +404,9 @@ updates the existing share.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}One or more metadata key and value pairs as a dictionary of
+    <dd>One or more metadata key and value pairs as a dictionary of
 strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,9 +414,9 @@ strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share. Changing this updates the name
+    <dd>The name of the share. Changing this updates the name
 of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,10 +424,10 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share. Changing this
 creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,10 +435,10 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of a share network where the share server exists
+    <dd>The UUID of a share network where the share server exists
 or will be created. If `share_network_id` is not set and you provide a `snapshot_id`,
 the share_network_id value from the snapshot is used. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,9 +446,9 @@ the share_network_id value from the snapshot is used. Changing this creates a ne
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share type name. If you omit this parameter, the default
+    <dd>The share type name. If you omit this parameter, the default
 share type is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,15 +456,15 @@ share type is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share's base snapshot. Changing this creates
+    <dd>The UUID of the share's base snapshot. Changing this creates
 a new share.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -473,9 +473,9 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share protocol - can either be NFS, CIFS,
+    <dd>The share protocol - can either be NFS, CIFS,
 CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -483,9 +483,9 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The share size, in GBs. The requested share size cannot be greater
+    <dd>The share size, in GBs. The requested share size cannot be greater
 than the allowed GB quota. Changing this resizes the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,9 +493,9 @@ than the allowed GB quota. Changing this resizes the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share availability zone. Changing this creates a
+    <dd>The share availability zone. Changing this creates a
 new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -503,9 +503,9 @@ new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the share.
+    <dd>The human-readable description for the share.
 Changing this updates the description of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,10 +513,10 @@ Changing this updates the description of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The level of visibility for the share. Set to true to make
+    <dd>The level of visibility for the share. Set to true to make
 share public. Set to false to make it private. Default value is false. Changing this
 updates the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,9 +524,9 @@ updates the existing share.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}One or more metadata key and value pairs as a dictionary of
+    <dd>One or more metadata key and value pairs as a dictionary of
 strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -534,9 +534,9 @@ strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share. Changing this updates the name
+    <dd>The name of the share. Changing this updates the name
 of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,10 +544,10 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share. Changing this
 creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,10 +555,10 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of a share network where the share server exists
+    <dd>The UUID of a share network where the share server exists
 or will be created. If `share_network_id` is not set and you provide a `snapshot_id`,
 the share_network_id value from the snapshot is used. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,9 +566,9 @@ the share_network_id value from the snapshot is used. Changing this creates a ne
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share type name. If you omit this parameter, the default
+    <dd>The share type name. If you omit this parameter, the default
 share type is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,15 +576,15 @@ share type is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share's base snapshot. Changing this creates
+    <dd>The UUID of the share's base snapshot. Changing this creates
 a new share.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -593,9 +593,9 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share protocol - can either be NFS, CIFS,
+    <dd>The share protocol - can either be NFS, CIFS,
 CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -603,9 +603,9 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The share size, in GBs. The requested share size cannot be greater
+    <dd>The share size, in GBs. The requested share size cannot be greater
 than the allowed GB quota. Changing this resizes the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,9 +613,9 @@ than the allowed GB quota. Changing this resizes the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share availability zone. Changing this creates a
+    <dd>The share availability zone. Changing this creates a
 new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,9 +623,9 @@ new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the share.
+    <dd>The human-readable description for the share.
 Changing this updates the description of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -633,10 +633,10 @@ Changing this updates the description of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The level of visibility for the share. Set to true to make
+    <dd>The level of visibility for the share. Set to true to make
 share public. Set to false to make it private. Default value is false. Changing this
 updates the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,9 +644,9 @@ updates the existing share.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}One or more metadata key and value pairs as a dictionary of
+    <dd>One or more metadata key and value pairs as a dictionary of
 strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -654,9 +654,9 @@ strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share. Changing this updates the name
+    <dd>The name of the share. Changing this updates the name
 of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -664,10 +664,10 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share. Changing this
 creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,10 +675,10 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of a share network where the share server exists
+    <dd>The UUID of a share network where the share server exists
 or will be created. If `share_network_id` is not set and you provide a `snapshot_id`,
 the share_network_id value from the snapshot is used. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,9 +686,9 @@ the share_network_id value from the snapshot is used. Changing this creates a ne
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share type name. If you omit this parameter, the default
+    <dd>The share type name. If you omit this parameter, the default
 share type is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -696,12 +696,12 @@ share type is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share's base snapshot. Changing this creates
+    <dd>The UUID of the share's base snapshot. Changing this creates
 a new share.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -715,7 +715,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -724,9 +724,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the share, which has been
+    <dd>The map of metadata, assigned on the share, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -734,9 +734,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#shareexportlocation">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Shared<wbr>File<wbr>System.<wbr>Outputs.<wbr>Share<wbr>Export<wbr>Location&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of export locations. For example, when a share server
+    <dd>A list of export locations. For example, when a share server
 has more than one network interface, it can have multiple export locations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -744,8 +744,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether a share has replicas or not.
-{{% /md %}}</dd>
+    <dd>Indicates whether a share has replicas or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -753,8 +753,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share host name.
-{{% /md %}}</dd>
+    <dd>The share host name.
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,7 +762,7 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -770,8 +770,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share.
-{{% /md %}}</dd>
+    <dd>The owner of the Share.
+</dd>
 
     <dt class="property-"
             title="">
@@ -779,8 +779,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share replication type.
-{{% /md %}}</dd>
+    <dd>The share replication type.
+</dd>
 
     <dt class="property-"
             title="">
@@ -788,14 +788,14 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share server.
-{{% /md %}}</dd>
+    <dd>The UUID of the share server.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -804,9 +804,9 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the share, which has been
+    <dd>The map of metadata, assigned on the share, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -814,9 +814,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#shareexportlocation">[]Share<wbr>Export<wbr>Location</a></span>
     </dt>
-    <dd>{{% md %}}A list of export locations. For example, when a share server
+    <dd>A list of export locations. For example, when a share server
 has more than one network interface, it can have multiple export locations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -824,8 +824,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether a share has replicas or not.
-{{% /md %}}</dd>
+    <dd>Indicates whether a share has replicas or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -833,8 +833,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share host name.
-{{% /md %}}</dd>
+    <dd>The share host name.
+</dd>
 
     <dt class="property-"
             title="">
@@ -842,7 +842,7 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -850,8 +850,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share.
-{{% /md %}}</dd>
+    <dd>The owner of the Share.
+</dd>
 
     <dt class="property-"
             title="">
@@ -859,8 +859,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share replication type.
-{{% /md %}}</dd>
+    <dd>The share replication type.
+</dd>
 
     <dt class="property-"
             title="">
@@ -868,14 +868,14 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share server.
-{{% /md %}}</dd>
+    <dd>The UUID of the share server.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -884,9 +884,9 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the share, which has been
+    <dd>The map of metadata, assigned on the share, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -894,9 +894,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#shareexportlocation">Share<wbr>Export<wbr>Location[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of export locations. For example, when a share server
+    <dd>A list of export locations. For example, when a share server
 has more than one network interface, it can have multiple export locations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -904,8 +904,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether a share has replicas or not.
-{{% /md %}}</dd>
+    <dd>Indicates whether a share has replicas or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -913,8 +913,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share host name.
-{{% /md %}}</dd>
+    <dd>The share host name.
+</dd>
 
     <dt class="property-"
             title="">
@@ -922,7 +922,7 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -930,8 +930,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share.
-{{% /md %}}</dd>
+    <dd>The owner of the Share.
+</dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share replication type.
-{{% /md %}}</dd>
+    <dd>The share replication type.
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,14 +948,14 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share server.
-{{% /md %}}</dd>
+    <dd>The UUID of the share server.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -964,9 +964,9 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the share, which has been
+    <dd>The map of metadata, assigned on the share, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -974,9 +974,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#shareexportlocation">List[Share<wbr>Export<wbr>Location]</a></span>
     </dt>
-    <dd>{{% md %}}A list of export locations. For example, when a share server
+    <dd>A list of export locations. For example, when a share server
 has more than one network interface, it can have multiple export locations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -984,8 +984,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether a share has replicas or not.
-{{% /md %}}</dd>
+    <dd>Indicates whether a share has replicas or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -993,8 +993,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share host name.
-{{% /md %}}</dd>
+    <dd>The share host name.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1002,7 +1002,7 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1010,8 +1010,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share.
-{{% /md %}}</dd>
+    <dd>The owner of the Share.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1019,8 +1019,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share replication type.
-{{% /md %}}</dd>
+    <dd>The share replication type.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1028,11 +1028,11 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share server.
-{{% /md %}}</dd>
+    <dd>The UUID of the share server.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1043,25 +1043,25 @@ has more than one network interface, it can have multiple export locations.
 ## Look up an Existing Share Resource {#look-up}
 
 Get an existing Share resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#ShareState">ShareState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#Share">Share</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>all_metadata=None<span class="p">, </span>availability_zone=None<span class="p">, </span>description=None<span class="p">, </span>export_locations=None<span class="p">, </span>has_replicas=None<span class="p">, </span>host=None<span class="p">, </span>is_public=None<span class="p">, </span>metadata=None<span class="p">, </span>name=None<span class="p">, </span>project_id=None<span class="p">, </span>region=None<span class="p">, </span>replication_type=None<span class="p">, </span>share_network_id=None<span class="p">, </span>share_proto=None<span class="p">, </span>share_server_id=None<span class="p">, </span>share_type=None<span class="p">, </span>size=None<span class="p">, </span>snapshot_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetShare<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#ShareState">ShareState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#Share">Share</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.SharedFileSystem.Share.html">Share</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.SharedFileSystem.ShareState.html">ShareState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1086,9 +1086,9 @@ Get an existing Share resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1101,36 +1101,9 @@ Get an existing Share resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1155,13 +1128,40 @@ Get an existing Share resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1170,9 +1170,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the share, which has been
+    <dd>The map of metadata, assigned on the share, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1180,9 +1180,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share availability zone. Changing this creates a
+    <dd>The share availability zone. Changing this creates a
 new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,9 +1190,9 @@ new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the share.
+    <dd>The human-readable description for the share.
 Changing this updates the description of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,9 +1200,9 @@ Changing this updates the description of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#shareexportlocation">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Shared<wbr>File<wbr>System.<wbr>Inputs.<wbr>Share<wbr>Export<wbr>Location<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of export locations. For example, when a share server
+    <dd>A list of export locations. For example, when a share server
 has more than one network interface, it can have multiple export locations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,8 +1210,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether a share has replicas or not.
-{{% /md %}}</dd>
+    <dd>Indicates whether a share has replicas or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share host name.
-{{% /md %}}</dd>
+    <dd>The share host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,10 +1228,10 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The level of visibility for the share. Set to true to make
+    <dd>The level of visibility for the share. Set to true to make
 share public. Set to false to make it private. Default value is false. Changing this
 updates the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,9 +1239,9 @@ updates the existing share.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}One or more metadata key and value pairs as a dictionary of
+    <dd>One or more metadata key and value pairs as a dictionary of
 strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,9 +1249,9 @@ strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share. Changing this updates the name
+    <dd>The name of the share. Changing this updates the name
 of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1259,8 +1259,8 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share.
-{{% /md %}}</dd>
+    <dd>The owner of the Share.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1268,10 +1268,10 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share. Changing this
 creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1279,8 +1279,8 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share replication type.
-{{% /md %}}</dd>
+    <dd>The share replication type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,10 +1288,10 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of a share network where the share server exists
+    <dd>The UUID of a share network where the share server exists
 or will be created. If `share_network_id` is not set and you provide a `snapshot_id`,
 the share_network_id value from the snapshot is used. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,9 +1299,9 @@ the share_network_id value from the snapshot is used. Changing this creates a ne
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share protocol - can either be NFS, CIFS,
+    <dd>The share protocol - can either be NFS, CIFS,
 CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1309,8 +1309,8 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share server.
-{{% /md %}}</dd>
+    <dd>The UUID of the share server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1318,9 +1318,9 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The share type name. If you omit this parameter, the default
+    <dd>The share type name. If you omit this parameter, the default
 share type is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,9 +1328,9 @@ share type is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The share size, in GBs. The requested share size cannot be greater
+    <dd>The share size, in GBs. The requested share size cannot be greater
 than the allowed GB quota. Changing this resizes the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1338,15 +1338,15 @@ than the allowed GB quota. Changing this resizes the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share's base snapshot. Changing this creates
+    <dd>The UUID of the share's base snapshot. Changing this creates
 a new share.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1355,9 +1355,9 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the share, which has been
+    <dd>The map of metadata, assigned on the share, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1365,9 +1365,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share availability zone. Changing this creates a
+    <dd>The share availability zone. Changing this creates a
 new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1375,9 +1375,9 @@ new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the share.
+    <dd>The human-readable description for the share.
 Changing this updates the description of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,9 +1385,9 @@ Changing this updates the description of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#shareexportlocation">[]Share<wbr>Export<wbr>Location</a></span>
     </dt>
-    <dd>{{% md %}}A list of export locations. For example, when a share server
+    <dd>A list of export locations. For example, when a share server
 has more than one network interface, it can have multiple export locations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,8 +1395,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether a share has replicas or not.
-{{% /md %}}</dd>
+    <dd>Indicates whether a share has replicas or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1404,8 +1404,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share host name.
-{{% /md %}}</dd>
+    <dd>The share host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1413,10 +1413,10 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The level of visibility for the share. Set to true to make
+    <dd>The level of visibility for the share. Set to true to make
 share public. Set to false to make it private. Default value is false. Changing this
 updates the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1424,9 +1424,9 @@ updates the existing share.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}One or more metadata key and value pairs as a dictionary of
+    <dd>One or more metadata key and value pairs as a dictionary of
 strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,9 +1434,9 @@ strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share. Changing this updates the name
+    <dd>The name of the share. Changing this updates the name
 of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1444,8 +1444,8 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share.
-{{% /md %}}</dd>
+    <dd>The owner of the Share.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1453,10 +1453,10 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share. Changing this
 creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,8 +1464,8 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share replication type.
-{{% /md %}}</dd>
+    <dd>The share replication type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,10 +1473,10 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of a share network where the share server exists
+    <dd>The UUID of a share network where the share server exists
 or will be created. If `share_network_id` is not set and you provide a `snapshot_id`,
 the share_network_id value from the snapshot is used. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,9 +1484,9 @@ the share_network_id value from the snapshot is used. Changing this creates a ne
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share protocol - can either be NFS, CIFS,
+    <dd>The share protocol - can either be NFS, CIFS,
 CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,8 +1494,8 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share server.
-{{% /md %}}</dd>
+    <dd>The UUID of the share server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1503,9 +1503,9 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share type name. If you omit this parameter, the default
+    <dd>The share type name. If you omit this parameter, the default
 share type is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,9 +1513,9 @@ share type is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The share size, in GBs. The requested share size cannot be greater
+    <dd>The share size, in GBs. The requested share size cannot be greater
 than the allowed GB quota. Changing this resizes the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,15 +1523,15 @@ than the allowed GB quota. Changing this resizes the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share's base snapshot. Changing this creates
+    <dd>The UUID of the share's base snapshot. Changing this creates
 a new share.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1540,9 +1540,9 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the share, which has been
+    <dd>The map of metadata, assigned on the share, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1550,9 +1550,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share availability zone. Changing this creates a
+    <dd>The share availability zone. Changing this creates a
 new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1560,9 +1560,9 @@ new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the share.
+    <dd>The human-readable description for the share.
 Changing this updates the description of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1570,9 +1570,9 @@ Changing this updates the description of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#shareexportlocation">Share<wbr>Export<wbr>Location[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of export locations. For example, when a share server
+    <dd>A list of export locations. For example, when a share server
 has more than one network interface, it can have multiple export locations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1580,8 +1580,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether a share has replicas or not.
-{{% /md %}}</dd>
+    <dd>Indicates whether a share has replicas or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1589,8 +1589,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share host name.
-{{% /md %}}</dd>
+    <dd>The share host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1598,10 +1598,10 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The level of visibility for the share. Set to true to make
+    <dd>The level of visibility for the share. Set to true to make
 share public. Set to false to make it private. Default value is false. Changing this
 updates the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1609,9 +1609,9 @@ updates the existing share.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}One or more metadata key and value pairs as a dictionary of
+    <dd>One or more metadata key and value pairs as a dictionary of
 strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,9 +1619,9 @@ strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share. Changing this updates the name
+    <dd>The name of the share. Changing this updates the name
 of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1629,8 +1629,8 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share.
-{{% /md %}}</dd>
+    <dd>The owner of the Share.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1638,10 +1638,10 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share. Changing this
 creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,8 +1649,8 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share replication type.
-{{% /md %}}</dd>
+    <dd>The share replication type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,10 +1658,10 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of a share network where the share server exists
+    <dd>The UUID of a share network where the share server exists
 or will be created. If `share_network_id` is not set and you provide a `snapshot_id`,
 the share_network_id value from the snapshot is used. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,9 +1669,9 @@ the share_network_id value from the snapshot is used. Changing this creates a ne
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share protocol - can either be NFS, CIFS,
+    <dd>The share protocol - can either be NFS, CIFS,
 CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1679,8 +1679,8 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share server.
-{{% /md %}}</dd>
+    <dd>The UUID of the share server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1688,9 +1688,9 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The share type name. If you omit this parameter, the default
+    <dd>The share type name. If you omit this parameter, the default
 share type is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1698,9 +1698,9 @@ share type is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The share size, in GBs. The requested share size cannot be greater
+    <dd>The share size, in GBs. The requested share size cannot be greater
 than the allowed GB quota. Changing this resizes the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1708,15 +1708,15 @@ than the allowed GB quota. Changing this resizes the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share's base snapshot. Changing this creates
+    <dd>The UUID of the share's base snapshot. Changing this creates
 a new share.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1725,9 +1725,9 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The map of metadata, assigned on the share, which has been
+    <dd>The map of metadata, assigned on the share, which has been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1735,9 +1735,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share availability zone. Changing this creates a
+    <dd>The share availability zone. Changing this creates a
 new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1745,9 +1745,9 @@ new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the share.
+    <dd>The human-readable description for the share.
 Changing this updates the description of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1755,9 +1755,9 @@ Changing this updates the description of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#shareexportlocation">List[Share<wbr>Export<wbr>Location]</a></span>
     </dt>
-    <dd>{{% md %}}A list of export locations. For example, when a share server
+    <dd>A list of export locations. For example, when a share server
 has more than one network interface, it can have multiple export locations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1765,8 +1765,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether a share has replicas or not.
-{{% /md %}}</dd>
+    <dd>Indicates whether a share has replicas or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,8 +1774,8 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share host name.
-{{% /md %}}</dd>
+    <dd>The share host name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,10 +1783,10 @@ has more than one network interface, it can have multiple export locations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The level of visibility for the share. Set to true to make
+    <dd>The level of visibility for the share. Set to true to make
 share public. Set to false to make it private. Default value is false. Changing this
 updates the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,9 +1794,9 @@ updates the existing share.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}One or more metadata key and value pairs as a dictionary of
+    <dd>One or more metadata key and value pairs as a dictionary of
 strings.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1804,9 +1804,9 @@ strings.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the share. Changing this updates the name
+    <dd>The name of the share. Changing this updates the name
 of the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1814,8 +1814,8 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Share.
-{{% /md %}}</dd>
+    <dd>The owner of the Share.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1823,10 +1823,10 @@ of the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share. Changing this
 creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1834,8 +1834,8 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share replication type.
-{{% /md %}}</dd>
+    <dd>The share replication type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1843,10 +1843,10 @@ creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of a share network where the share server exists
+    <dd>The UUID of a share network where the share server exists
 or will be created. If `share_network_id` is not set and you provide a `snapshot_id`,
 the share_network_id value from the snapshot is used. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1854,9 +1854,9 @@ the share_network_id value from the snapshot is used. Changing this creates a ne
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share protocol - can either be NFS, CIFS,
+    <dd>The share protocol - can either be NFS, CIFS,
 CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1864,8 +1864,8 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share server.
-{{% /md %}}</dd>
+    <dd>The UUID of the share server.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1873,9 +1873,9 @@ CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The share type name. If you omit this parameter, the default
+    <dd>The share type name. If you omit this parameter, the default
 share type is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1883,9 +1883,9 @@ share type is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The share size, in GBs. The requested share size cannot be greater
+    <dd>The share size, in GBs. The requested share size cannot be greater
 than the allowed GB quota. Changing this resizes the existing share.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,12 +1893,12 @@ than the allowed GB quota. Changing this resizes the existing share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share's base snapshot. Changing this creates
+    <dd>The UUID of the share's base snapshot. Changing this creates
 a new share.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1913,18 +1913,18 @@ a new share.
 
 
 <h4 id="shareexportlocation">Share<wbr>Export<wbr>Location</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#ShareExportLocation">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#ShareExportLocationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1933,7 +1933,7 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,13 +1941,13 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1956,7 +1956,7 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1964,13 +1964,13 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1979,7 +1979,7 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,13 +1987,13 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2002,7 +2002,7 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2010,10 +2010,10 @@ a new share.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

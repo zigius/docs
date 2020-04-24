@@ -14,26 +14,26 @@ meta_desc: "Explore the NasDatastore resource of the vSphere package, including 
 
 
 ## Create a NasDatastore Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#NasDatastore">NasDatastore</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#NasDatastoreArgs">NasDatastoreArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">NasDatastore</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>access_mode=None<span class="p">, </span>custom_attributes=None<span class="p">, </span>datastore_cluster_id=None<span class="p">, </span>folder=None<span class="p">, </span>host_system_ids=None<span class="p">, </span>name=None<span class="p">, </span>remote_hosts=None<span class="p">, </span>remote_path=None<span class="p">, </span>security_type=None<span class="p">, </span>tags=None<span class="p">, </span>type=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewNasDatastore<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#NasDatastoreArgs">NasDatastoreArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#NasDatastore">NasDatastore</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.Vsphere.NasDatastore.html">NasDatastore</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.VSphere.NasDatastoreArgs.html">NasDatastoreArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the NasDatastore resource of the vSphere package, including 
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the NasDatastore resource of the vSphere package, including 
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the NasDatastore resource of the vSphere package, including 
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the NasDatastore resource of the vSphere package, including 
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## NasDatastore Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The NasDatastore resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,9 +200,9 @@ The NasDatastore resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to mount the datastore on.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -210,10 +210,10 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The hostnames or IP addresses of the remote
+    <dd>The hostnames or IP addresses of the remote
 server or servers. Only one element should be present for NFS v3 but multiple
 can be present for NFS v4.1. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -221,9 +221,9 @@ can be present for NFS v4.1. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The remote path of the mount point. Forces a new
+    <dd>The remote path of the mount point. Forces a new
 resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,11 +231,11 @@ resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for the mount point. Can be one of
+    <dd>Access mode for the mount point. Can be one of
 `readOnly` or `readWrite`. Note that `readWrite` does not necessarily mean
 that the datastore will be read-write depending on the permissions of the
 actual share. Default: `readWrite`. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -243,11 +243,11 @@ actual share. Default: `readWrite`. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of custom attribute ids to attribute 
+    <dd>Map of custom attribute ids to attribute 
 value strings to set on datasource resource. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,10 +255,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object
+    <dd>The [managed object
 ID][docs-about-morefs] of a datastore cluster to put this datastore in.
 Conflicts with `folder`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,8 +266,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the datastore folder to put the datastore in.
-{{% /md %}}</dd>
+    <dd>The path to the datastore folder to put the datastore in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,9 +275,9 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore. Forces a new resource if
+    <dd>The name of the datastore. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,10 +285,10 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The security type to use when using NFS v4.1.
+    <dd>The security type to use when using NFS v4.1.
 Can be one of `AUTH_SYS`, `SEC_KRB5`, or `SEC_KRB5I`. Forces a new resource
 if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,9 +296,9 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,16 +306,16 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of NAS volume. Can be one of `NFS` (to denote
+    <dd>The type of NAS volume. Can be one of `NFS` (to denote
 v3) or `NFS41` (to denote NFS v4.1). Default: `NFS`. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -324,9 +324,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to mount the datastore on.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -334,10 +334,10 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The hostnames or IP addresses of the remote
+    <dd>The hostnames or IP addresses of the remote
 server or servers. Only one element should be present for NFS v3 but multiple
 can be present for NFS v4.1. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -345,9 +345,9 @@ can be present for NFS v4.1. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The remote path of the mount point. Forces a new
+    <dd>The remote path of the mount point. Forces a new
 resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,11 +355,11 @@ resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for the mount point. Can be one of
+    <dd>Access mode for the mount point. Can be one of
 `readOnly` or `readWrite`. Note that `readWrite` does not necessarily mean
 that the datastore will be read-write depending on the permissions of the
 actual share. Default: `readWrite`. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,11 +367,11 @@ actual share. Default: `readWrite`. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Map of custom attribute ids to attribute 
+    <dd>Map of custom attribute ids to attribute 
 value strings to set on datasource resource. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,10 +379,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object
+    <dd>The [managed object
 ID][docs-about-morefs] of a datastore cluster to put this datastore in.
 Conflicts with `folder`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,8 +390,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the datastore folder to put the datastore in.
-{{% /md %}}</dd>
+    <dd>The path to the datastore folder to put the datastore in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,9 +399,9 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore. Forces a new resource if
+    <dd>The name of the datastore. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,10 +409,10 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The security type to use when using NFS v4.1.
+    <dd>The security type to use when using NFS v4.1.
 Can be one of `AUTH_SYS`, `SEC_KRB5`, or `SEC_KRB5I`. Forces a new resource
 if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,9 +420,9 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,16 +430,16 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of NAS volume. Can be one of `NFS` (to denote
+    <dd>The type of NAS volume. Can be one of `NFS` (to denote
 v3) or `NFS41` (to denote NFS v4.1). Default: `NFS`. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -448,9 +448,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to mount the datastore on.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -458,10 +458,10 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The hostnames or IP addresses of the remote
+    <dd>The hostnames or IP addresses of the remote
 server or servers. Only one element should be present for NFS v3 but multiple
 can be present for NFS v4.1. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -469,9 +469,9 @@ can be present for NFS v4.1. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The remote path of the mount point. Forces a new
+    <dd>The remote path of the mount point. Forces a new
 resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,11 +479,11 @@ resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for the mount point. Can be one of
+    <dd>Access mode for the mount point. Can be one of
 `readOnly` or `readWrite`. Note that `readWrite` does not necessarily mean
 that the datastore will be read-write depending on the permissions of the
 actual share. Default: `readWrite`. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,11 +491,11 @@ actual share. Default: `readWrite`. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Map of custom attribute ids to attribute 
+    <dd>Map of custom attribute ids to attribute 
 value strings to set on datasource resource. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -503,10 +503,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object
+    <dd>The [managed object
 ID][docs-about-morefs] of a datastore cluster to put this datastore in.
 Conflicts with `folder`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the datastore folder to put the datastore in.
-{{% /md %}}</dd>
+    <dd>The path to the datastore folder to put the datastore in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,9 +523,9 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore. Forces a new resource if
+    <dd>The name of the datastore. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,10 +533,10 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The security type to use when using NFS v4.1.
+    <dd>The security type to use when using NFS v4.1.
 Can be one of `AUTH_SYS`, `SEC_KRB5`, or `SEC_KRB5I`. Forces a new resource
 if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,9 +544,9 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,16 +554,16 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of NAS volume. Can be one of `NFS` (to denote
+    <dd>The type of NAS volume. Can be one of `NFS` (to denote
 v3) or `NFS41` (to denote NFS v4.1). Default: `NFS`. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -572,9 +572,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to mount the datastore on.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -582,10 +582,10 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The hostnames or IP addresses of the remote
+    <dd>The hostnames or IP addresses of the remote
 server or servers. Only one element should be present for NFS v3 but multiple
 can be present for NFS v4.1. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -593,9 +593,9 @@ can be present for NFS v4.1. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The remote path of the mount point. Forces a new
+    <dd>The remote path of the mount point. Forces a new
 resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,11 +603,11 @@ resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for the mount point. Can be one of
+    <dd>Access mode for the mount point. Can be one of
 `readOnly` or `readWrite`. Note that `readWrite` does not necessarily mean
 that the datastore will be read-write depending on the permissions of the
 actual share. Default: `readWrite`. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -615,11 +615,11 @@ actual share. Default: `readWrite`. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Map of custom attribute ids to attribute 
+    <dd>Map of custom attribute ids to attribute 
 value strings to set on datasource resource. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,10 +627,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object
+    <dd>The [managed object
 ID][docs-about-morefs] of a datastore cluster to put this datastore in.
 Conflicts with `folder`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,8 +638,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the datastore folder to put the datastore in.
-{{% /md %}}</dd>
+    <dd>The path to the datastore folder to put the datastore in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,9 +647,9 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore. Forces a new resource if
+    <dd>The name of the datastore. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -657,10 +657,10 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The security type to use when using NFS v4.1.
+    <dd>The security type to use when using NFS v4.1.
 Can be one of `AUTH_SYS`, `SEC_KRB5`, or `SEC_KRB5I`. Forces a new resource
 if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,9 +668,9 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -678,13 +678,13 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of NAS volume. Can be one of `NFS` (to denote
+    <dd>The type of NAS volume. Can be one of `NFS` (to denote
 v3) or `NFS41` (to denote NFS v4.1). Default: `NFS`. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -698,7 +698,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -707,9 +707,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The connectivity status of the datastore. If this is `false`,
+    <dd>The connectivity status of the datastore. If this is `false`,
 some other computed attributes may be out of date.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -717,8 +717,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum capacity of the datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Maximum capacity of the datastore, in megabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -726,8 +726,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Available space of this datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Available space of this datastore, in megabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -735,7 +735,7 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -743,8 +743,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current maintenance mode state of the datastore.
-{{% /md %}}</dd>
+    <dd>The current maintenance mode state of the datastore.
+</dd>
 
     <dt class="property-"
             title="">
@@ -752,9 +752,9 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, more than one host in the datacenter has
+    <dd>If `true`, more than one host in the datacenter has
 been configured with access to the datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,9 +762,9 @@ been configured with access to the datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that this NAS volume is a protocol endpoint.
+    <dd>Indicates that this NAS volume is a protocol endpoint.
 This field is only populated if the host supports virtual datastores.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -772,9 +772,9 @@ This field is only populated if the host supports virtual datastores.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Total additional storage space, in megabytes,
+    <dd>Total additional storage space, in megabytes,
 potentially used by all virtual machines on this datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -782,14 +782,14 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique locator for the datastore.
-{{% /md %}}</dd>
+    <dd>The unique locator for the datastore.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -798,9 +798,9 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The connectivity status of the datastore. If this is `false`,
+    <dd>The connectivity status of the datastore. If this is `false`,
 some other computed attributes may be out of date.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -808,8 +808,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum capacity of the datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Maximum capacity of the datastore, in megabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -817,8 +817,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Available space of this datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Available space of this datastore, in megabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -826,7 +826,7 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -834,8 +834,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current maintenance mode state of the datastore.
-{{% /md %}}</dd>
+    <dd>The current maintenance mode state of the datastore.
+</dd>
 
     <dt class="property-"
             title="">
@@ -843,9 +843,9 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, more than one host in the datacenter has
+    <dd>If `true`, more than one host in the datacenter has
 been configured with access to the datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -853,9 +853,9 @@ been configured with access to the datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that this NAS volume is a protocol endpoint.
+    <dd>Indicates that this NAS volume is a protocol endpoint.
 This field is only populated if the host supports virtual datastores.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -863,9 +863,9 @@ This field is only populated if the host supports virtual datastores.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Total additional storage space, in megabytes,
+    <dd>Total additional storage space, in megabytes,
 potentially used by all virtual machines on this datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -873,14 +873,14 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique locator for the datastore.
-{{% /md %}}</dd>
+    <dd>The unique locator for the datastore.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -889,9 +889,9 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The connectivity status of the datastore. If this is `false`,
+    <dd>The connectivity status of the datastore. If this is `false`,
 some other computed attributes may be out of date.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -899,8 +899,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum capacity of the datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Maximum capacity of the datastore, in megabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -908,8 +908,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Available space of this datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Available space of this datastore, in megabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -917,7 +917,7 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -925,8 +925,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current maintenance mode state of the datastore.
-{{% /md %}}</dd>
+    <dd>The current maintenance mode state of the datastore.
+</dd>
 
     <dt class="property-"
             title="">
@@ -934,9 +934,9 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, more than one host in the datacenter has
+    <dd>If `true`, more than one host in the datacenter has
 been configured with access to the datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -944,9 +944,9 @@ been configured with access to the datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that this NAS volume is a protocol endpoint.
+    <dd>Indicates that this NAS volume is a protocol endpoint.
 This field is only populated if the host supports virtual datastores.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -954,9 +954,9 @@ This field is only populated if the host supports virtual datastores.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Total additional storage space, in megabytes,
+    <dd>Total additional storage space, in megabytes,
 potentially used by all virtual machines on this datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -964,14 +964,14 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique locator for the datastore.
-{{% /md %}}</dd>
+    <dd>The unique locator for the datastore.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -980,9 +980,9 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The connectivity status of the datastore. If this is `false`,
+    <dd>The connectivity status of the datastore. If this is `false`,
 some other computed attributes may be out of date.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -990,8 +990,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum capacity of the datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Maximum capacity of the datastore, in megabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -999,8 +999,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Available space of this datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Available space of this datastore, in megabytes.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1008,7 +1008,7 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1016,8 +1016,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current maintenance mode state of the datastore.
-{{% /md %}}</dd>
+    <dd>The current maintenance mode state of the datastore.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1025,9 +1025,9 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, more than one host in the datacenter has
+    <dd>If `true`, more than one host in the datacenter has
 been configured with access to the datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1035,9 +1035,9 @@ been configured with access to the datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that this NAS volume is a protocol endpoint.
+    <dd>Indicates that this NAS volume is a protocol endpoint.
 This field is only populated if the host supports virtual datastores.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1045,9 +1045,9 @@ This field is only populated if the host supports virtual datastores.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Total additional storage space, in megabytes,
+    <dd>Total additional storage space, in megabytes,
 potentially used by all virtual machines on this datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1055,11 +1055,11 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique locator for the datastore.
-{{% /md %}}</dd>
+    <dd>The unique locator for the datastore.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1070,25 +1070,25 @@ potentially used by all virtual machines on this datastore.
 ## Look up an Existing NasDatastore Resource {#look-up}
 
 Get an existing NasDatastore resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#NasDatastoreState">NasDatastoreState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#NasDatastore">NasDatastore</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>access_mode=None<span class="p">, </span>accessible=None<span class="p">, </span>capacity=None<span class="p">, </span>custom_attributes=None<span class="p">, </span>datastore_cluster_id=None<span class="p">, </span>folder=None<span class="p">, </span>free_space=None<span class="p">, </span>host_system_ids=None<span class="p">, </span>maintenance_mode=None<span class="p">, </span>multiple_host_access=None<span class="p">, </span>name=None<span class="p">, </span>protocol_endpoint=None<span class="p">, </span>remote_hosts=None<span class="p">, </span>remote_path=None<span class="p">, </span>security_type=None<span class="p">, </span>tags=None<span class="p">, </span>type=None<span class="p">, </span>uncommitted_space=None<span class="p">, </span>url=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetNasDatastore<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#NasDatastoreState">NasDatastoreState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#NasDatastore">NasDatastore</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.Vsphere.NasDatastore.html">NasDatastore</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.Vsphere..NasDatastoreState.html">NasDatastoreState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1113,9 +1113,9 @@ Get an existing NasDatastore resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1128,36 +1128,9 @@ Get an existing NasDatastore resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1182,13 +1155,40 @@ Get an existing NasDatastore resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1197,11 +1197,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for the mount point. Can be one of
+    <dd>Access mode for the mount point. Can be one of
 `readOnly` or `readWrite`. Note that `readWrite` does not necessarily mean
 that the datastore will be read-write depending on the permissions of the
 actual share. Default: `readWrite`. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,9 +1209,9 @@ actual share. Default: `readWrite`. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The connectivity status of the datastore. If this is `false`,
+    <dd>The connectivity status of the datastore. If this is `false`,
 some other computed attributes may be out of date.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum capacity of the datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Maximum capacity of the datastore, in megabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,11 +1228,11 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of custom attribute ids to attribute 
+    <dd>Map of custom attribute ids to attribute 
 value strings to set on datasource resource. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,10 +1240,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object
+    <dd>The [managed object
 ID][docs-about-morefs] of a datastore cluster to put this datastore in.
 Conflicts with `folder`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1251,8 +1251,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the datastore folder to put the datastore in.
-{{% /md %}}</dd>
+    <dd>The path to the datastore folder to put the datastore in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Available space of this datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Available space of this datastore, in megabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,9 +1269,9 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to mount the datastore on.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1279,8 +1279,8 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current maintenance mode state of the datastore.
-{{% /md %}}</dd>
+    <dd>The current maintenance mode state of the datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,9 +1288,9 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, more than one host in the datacenter has
+    <dd>If `true`, more than one host in the datacenter has
 been configured with access to the datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1298,9 +1298,9 @@ been configured with access to the datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore. Forces a new resource if
+    <dd>The name of the datastore. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1308,9 +1308,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that this NAS volume is a protocol endpoint.
+    <dd>Indicates that this NAS volume is a protocol endpoint.
 This field is only populated if the host supports virtual datastores.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1318,10 +1318,10 @@ This field is only populated if the host supports virtual datastores.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The hostnames or IP addresses of the remote
+    <dd>The hostnames or IP addresses of the remote
 server or servers. Only one element should be present for NFS v3 but multiple
 can be present for NFS v4.1. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1329,9 +1329,9 @@ can be present for NFS v4.1. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The remote path of the mount point. Forces a new
+    <dd>The remote path of the mount point. Forces a new
 resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,10 +1339,10 @@ resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The security type to use when using NFS v4.1.
+    <dd>The security type to use when using NFS v4.1.
 Can be one of `AUTH_SYS`, `SEC_KRB5`, or `SEC_KRB5I`. Forces a new resource
 if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,9 +1350,9 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1360,10 +1360,10 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of NAS volume. Can be one of `NFS` (to denote
+    <dd>The type of NAS volume. Can be one of `NFS` (to denote
 v3) or `NFS41` (to denote NFS v4.1). Default: `NFS`. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1371,9 +1371,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Total additional storage space, in megabytes,
+    <dd>Total additional storage space, in megabytes,
 potentially used by all virtual machines on this datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,14 +1381,14 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique locator for the datastore.
-{{% /md %}}</dd>
+    <dd>The unique locator for the datastore.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1397,11 +1397,11 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for the mount point. Can be one of
+    <dd>Access mode for the mount point. Can be one of
 `readOnly` or `readWrite`. Note that `readWrite` does not necessarily mean
 that the datastore will be read-write depending on the permissions of the
 actual share. Default: `readWrite`. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1409,9 +1409,9 @@ actual share. Default: `readWrite`. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The connectivity status of the datastore. If this is `false`,
+    <dd>The connectivity status of the datastore. If this is `false`,
 some other computed attributes may be out of date.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum capacity of the datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Maximum capacity of the datastore, in megabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,11 +1428,11 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Map of custom attribute ids to attribute 
+    <dd>Map of custom attribute ids to attribute 
 value strings to set on datasource resource. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1440,10 +1440,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object
+    <dd>The [managed object
 ID][docs-about-morefs] of a datastore cluster to put this datastore in.
 Conflicts with `folder`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1451,8 +1451,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the datastore folder to put the datastore in.
-{{% /md %}}</dd>
+    <dd>The path to the datastore folder to put the datastore in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,8 +1460,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Available space of this datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Available space of this datastore, in megabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1469,9 +1469,9 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to mount the datastore on.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1479,8 +1479,8 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current maintenance mode state of the datastore.
-{{% /md %}}</dd>
+    <dd>The current maintenance mode state of the datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1488,9 +1488,9 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, more than one host in the datacenter has
+    <dd>If `true`, more than one host in the datacenter has
 been configured with access to the datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,9 +1498,9 @@ been configured with access to the datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore. Forces a new resource if
+    <dd>The name of the datastore. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1508,9 +1508,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that this NAS volume is a protocol endpoint.
+    <dd>Indicates that this NAS volume is a protocol endpoint.
 This field is only populated if the host supports virtual datastores.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1518,10 +1518,10 @@ This field is only populated if the host supports virtual datastores.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The hostnames or IP addresses of the remote
+    <dd>The hostnames or IP addresses of the remote
 server or servers. Only one element should be present for NFS v3 but multiple
 can be present for NFS v4.1. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,9 +1529,9 @@ can be present for NFS v4.1. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The remote path of the mount point. Forces a new
+    <dd>The remote path of the mount point. Forces a new
 resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1539,10 +1539,10 @@ resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The security type to use when using NFS v4.1.
+    <dd>The security type to use when using NFS v4.1.
 Can be one of `AUTH_SYS`, `SEC_KRB5`, or `SEC_KRB5I`. Forces a new resource
 if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1550,9 +1550,9 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1560,10 +1560,10 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of NAS volume. Can be one of `NFS` (to denote
+    <dd>The type of NAS volume. Can be one of `NFS` (to denote
 v3) or `NFS41` (to denote NFS v4.1). Default: `NFS`. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,9 +1571,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Total additional storage space, in megabytes,
+    <dd>Total additional storage space, in megabytes,
 potentially used by all virtual machines on this datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1581,14 +1581,14 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique locator for the datastore.
-{{% /md %}}</dd>
+    <dd>The unique locator for the datastore.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1597,11 +1597,11 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for the mount point. Can be one of
+    <dd>Access mode for the mount point. Can be one of
 `readOnly` or `readWrite`. Note that `readWrite` does not necessarily mean
 that the datastore will be read-write depending on the permissions of the
 actual share. Default: `readWrite`. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1609,9 +1609,9 @@ actual share. Default: `readWrite`. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The connectivity status of the datastore. If this is `false`,
+    <dd>The connectivity status of the datastore. If this is `false`,
 some other computed attributes may be out of date.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,8 +1619,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum capacity of the datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Maximum capacity of the datastore, in megabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,11 +1628,11 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Map of custom attribute ids to attribute 
+    <dd>Map of custom attribute ids to attribute 
 value strings to set on datasource resource. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,10 +1640,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object
+    <dd>The [managed object
 ID][docs-about-morefs] of a datastore cluster to put this datastore in.
 Conflicts with `folder`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,8 +1651,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the datastore folder to put the datastore in.
-{{% /md %}}</dd>
+    <dd>The path to the datastore folder to put the datastore in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,8 +1660,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Available space of this datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Available space of this datastore, in megabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,9 +1669,9 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to mount the datastore on.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1679,8 +1679,8 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current maintenance mode state of the datastore.
-{{% /md %}}</dd>
+    <dd>The current maintenance mode state of the datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1688,9 +1688,9 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, more than one host in the datacenter has
+    <dd>If `true`, more than one host in the datacenter has
 been configured with access to the datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1698,9 +1698,9 @@ been configured with access to the datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore. Forces a new resource if
+    <dd>The name of the datastore. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1708,9 +1708,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that this NAS volume is a protocol endpoint.
+    <dd>Indicates that this NAS volume is a protocol endpoint.
 This field is only populated if the host supports virtual datastores.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,10 +1718,10 @@ This field is only populated if the host supports virtual datastores.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The hostnames or IP addresses of the remote
+    <dd>The hostnames or IP addresses of the remote
 server or servers. Only one element should be present for NFS v3 but multiple
 can be present for NFS v4.1. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1729,9 +1729,9 @@ can be present for NFS v4.1. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The remote path of the mount point. Forces a new
+    <dd>The remote path of the mount point. Forces a new
 resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1739,10 +1739,10 @@ resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The security type to use when using NFS v4.1.
+    <dd>The security type to use when using NFS v4.1.
 Can be one of `AUTH_SYS`, `SEC_KRB5`, or `SEC_KRB5I`. Forces a new resource
 if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,9 +1750,9 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,10 +1760,10 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of NAS volume. Can be one of `NFS` (to denote
+    <dd>The type of NAS volume. Can be one of `NFS` (to denote
 v3) or `NFS41` (to denote NFS v4.1). Default: `NFS`. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1771,9 +1771,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Total additional storage space, in megabytes,
+    <dd>Total additional storage space, in megabytes,
 potentially used by all virtual machines on this datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1781,14 +1781,14 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique locator for the datastore.
-{{% /md %}}</dd>
+    <dd>The unique locator for the datastore.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1797,11 +1797,11 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Access mode for the mount point. Can be one of
+    <dd>Access mode for the mount point. Can be one of
 `readOnly` or `readWrite`. Note that `readWrite` does not necessarily mean
 that the datastore will be read-write depending on the permissions of the
 actual share. Default: `readWrite`. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1809,9 +1809,9 @@ actual share. Default: `readWrite`. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The connectivity status of the datastore. If this is `false`,
+    <dd>The connectivity status of the datastore. If this is `false`,
 some other computed attributes may be out of date.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1819,8 +1819,8 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum capacity of the datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Maximum capacity of the datastore, in megabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1828,11 +1828,11 @@ some other computed attributes may be out of date.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Map of custom attribute ids to attribute 
+    <dd>Map of custom attribute ids to attribute 
 value strings to set on datasource resource. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,10 +1840,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object
+    <dd>The [managed object
 ID][docs-about-morefs] of a datastore cluster to put this datastore in.
 Conflicts with `folder`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1851,8 +1851,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the datastore folder to put the datastore in.
-{{% /md %}}</dd>
+    <dd>The path to the datastore folder to put the datastore in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,8 +1860,8 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Available space of this datastore, in megabytes.
-{{% /md %}}</dd>
+    <dd>Available space of this datastore, in megabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1869,9 +1869,9 @@ Conflicts with `folder`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to mount the datastore on.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1879,8 +1879,8 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current maintenance mode state of the datastore.
-{{% /md %}}</dd>
+    <dd>The current maintenance mode state of the datastore.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1888,9 +1888,9 @@ the hosts to mount the datastore on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, more than one host in the datacenter has
+    <dd>If `true`, more than one host in the datacenter has
 been configured with access to the datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1898,9 +1898,9 @@ been configured with access to the datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the datastore. Forces a new resource if
+    <dd>The name of the datastore. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1908,9 +1908,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that this NAS volume is a protocol endpoint.
+    <dd>Indicates that this NAS volume is a protocol endpoint.
 This field is only populated if the host supports virtual datastores.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1918,10 +1918,10 @@ This field is only populated if the host supports virtual datastores.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The hostnames or IP addresses of the remote
+    <dd>The hostnames or IP addresses of the remote
 server or servers. Only one element should be present for NFS v3 but multiple
 can be present for NFS v4.1. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,9 +1929,9 @@ can be present for NFS v4.1. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The remote path of the mount point. Forces a new
+    <dd>The remote path of the mount point. Forces a new
 resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1939,10 +1939,10 @@ resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The security type to use when using NFS v4.1.
+    <dd>The security type to use when using NFS v4.1.
 Can be one of `AUTH_SYS`, `SEC_KRB5`, or `SEC_KRB5I`. Forces a new resource
 if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,9 +1950,9 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1960,10 +1960,10 @@ if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of NAS volume. Can be one of `NFS` (to denote
+    <dd>The type of NAS volume. Can be one of `NFS` (to denote
 v3) or `NFS41` (to denote NFS v4.1). Default: `NFS`. Forces a new resource if
 changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,9 +1971,9 @@ changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Total additional storage space, in megabytes,
+    <dd>Total additional storage space, in megabytes,
 potentially used by all virtual machines on this datastore.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1981,11 +1981,11 @@ potentially used by all virtual machines on this datastore.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique locator for the datastore.
-{{% /md %}}</dd>
+    <dd>The unique locator for the datastore.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

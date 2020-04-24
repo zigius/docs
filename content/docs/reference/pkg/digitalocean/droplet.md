@@ -36,26 +36,26 @@ const web = new digitalocean.Droplet("web", {
 
 
 ## Create a Droplet Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#Droplet">Droplet</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#DropletArgs">DropletArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Droplet</span><span class="p">(resource_name, opts=None, </span>backups=None<span class="p">, </span>image=None<span class="p">, </span>ipv6=None<span class="p">, </span>monitoring=None<span class="p">, </span>name=None<span class="p">, </span>private_networking=None<span class="p">, </span>region=None<span class="p">, </span>resize_disk=None<span class="p">, </span>size=None<span class="p">, </span>ssh_keys=None<span class="p">, </span>tags=None<span class="p">, </span>user_data=None<span class="p">, </span>volume_ids=None<span class="p">, </span>vpc_uuid=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDroplet<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#DropletArgs">DropletArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#Droplet">Droplet</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean.Droplet.html">Droplet</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.DigitalOcean.DropletArgs.html">DropletArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -92,9 +92,9 @@ const web = new digitalocean.Droplet("web", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -112,9 +112,9 @@ const web = new digitalocean.Droplet("web", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -161,9 +161,9 @@ const web = new digitalocean.Droplet("web", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -200,7 +200,7 @@ const web = new digitalocean.Droplet("web", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Droplet Resource Properties {#properties}
 
@@ -213,7 +213,7 @@ The Droplet resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -222,8 +222,8 @@ The Droplet resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet image ID or slug.
-{{% /md %}}</dd>
+    <dd>The Droplet image ID or slug.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -231,8 +231,8 @@ The Droplet resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The region to start in.
-{{% /md %}}</dd>
+    <dd>The region to start in.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -240,8 +240,8 @@ The Droplet resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
-{{% /md %}}</dd>
+    <dd>The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,9 +249,9 @@ The Droplet resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if backups are made. Defaults to
+    <dd>Boolean controlling if backups are made. Defaults to
 false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,8 +259,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if IPv6 is enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Boolean controlling if IPv6 is enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,9 +268,9 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether monitoring agent is installed.
+    <dd>Boolean controlling whether monitoring agent is installed.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet name.
-{{% /md %}}</dd>
+    <dd>The Droplet name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,11 +287,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if private networking
+    <dd>Boolean controlling if private networking
 is enabled. When VPC is enabled on an account, this will provision the
 Droplet inside of your account's default VPC for the region. Use the
 `vpc_uuid` attribute to specify a different VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,11 +299,11 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether to increase the disk
+    <dd>Boolean controlling whether to increase the disk
 size when resizing a Droplet. It defaults to `true`. When set to `false`,
 only the Droplet's RAM and CPU will be resized. **Increasing a Droplet's disk
 size is a permanent change**. Increasing only RAM and CPU is reversible.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,11 +311,11 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH IDs or fingerprints to enable in
+    <dd>A list of SSH IDs or fingerprints to enable in
 the format `[12345, 123456]`. To retrieve this info, use a tool such
 as `curl` with the [DigitalOcean API](https://developers.digitalocean.com/documentation/v2/#ssh-keys),
 to retrieve them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the tags to be applied to this Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the tags to be applied to this Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string of the desired User Data for the Droplet.
-{{% /md %}}</dd>
+    <dd>A string of the desired User Data for the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,14 +350,14 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the Droplet will be located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the Droplet will be located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -366,8 +366,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet image ID or slug.
-{{% /md %}}</dd>
+    <dd>The Droplet image ID or slug.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -375,8 +375,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The region to start in.
-{{% /md %}}</dd>
+    <dd>The region to start in.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -384,8 +384,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
-{{% /md %}}</dd>
+    <dd>The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,9 +393,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if backups are made. Defaults to
+    <dd>Boolean controlling if backups are made. Defaults to
 false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,8 +403,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if IPv6 is enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Boolean controlling if IPv6 is enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,9 +412,9 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether monitoring agent is installed.
+    <dd>Boolean controlling whether monitoring agent is installed.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet name.
-{{% /md %}}</dd>
+    <dd>The Droplet name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,11 +431,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if private networking
+    <dd>Boolean controlling if private networking
 is enabled. When VPC is enabled on an account, this will provision the
 Droplet inside of your account's default VPC for the region. Use the
 `vpc_uuid` attribute to specify a different VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,11 +443,11 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether to increase the disk
+    <dd>Boolean controlling whether to increase the disk
 size when resizing a Droplet. It defaults to `true`. When set to `false`,
 only the Droplet's RAM and CPU will be resized. **Increasing a Droplet's disk
 size is a permanent change**. Increasing only RAM and CPU is reversible.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,11 +455,11 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH IDs or fingerprints to enable in
+    <dd>A list of SSH IDs or fingerprints to enable in
 the format `[12345, 123456]`. To retrieve this info, use a tool such
 as `curl` with the [DigitalOcean API](https://developers.digitalocean.com/documentation/v2/#ssh-keys),
 to retrieve them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,8 +467,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the tags to be applied to this Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the tags to be applied to this Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,8 +476,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string of the desired User Data for the Droplet.
-{{% /md %}}</dd>
+    <dd>A string of the desired User Data for the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -485,8 +485,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -494,14 +494,14 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the Droplet will be located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the Droplet will be located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -510,8 +510,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet image ID or slug.
-{{% /md %}}</dd>
+    <dd>The Droplet image ID or slug.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -519,8 +519,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type">Region</span>
     </dt>
-    <dd>{{% md %}}The region to start in.
-{{% /md %}}</dd>
+    <dd>The region to start in.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -528,8 +528,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type">Droplet<wbr>Slug</span>
     </dt>
-    <dd>{{% md %}}The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
-{{% /md %}}</dd>
+    <dd>The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,9 +537,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if backups are made. Defaults to
+    <dd>Boolean controlling if backups are made. Defaults to
 false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if IPv6 is enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Boolean controlling if IPv6 is enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,9 +556,9 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether monitoring agent is installed.
+    <dd>Boolean controlling whether monitoring agent is installed.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet name.
-{{% /md %}}</dd>
+    <dd>The Droplet name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,11 +575,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if private networking
+    <dd>Boolean controlling if private networking
 is enabled. When VPC is enabled on an account, this will provision the
 Droplet inside of your account's default VPC for the region. Use the
 `vpc_uuid` attribute to specify a different VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,11 +587,11 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether to increase the disk
+    <dd>Boolean controlling whether to increase the disk
 size when resizing a Droplet. It defaults to `true`. When set to `false`,
 only the Droplet's RAM and CPU will be resized. **Increasing a Droplet's disk
 size is a permanent change**. Increasing only RAM and CPU is reversible.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,11 +599,11 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH IDs or fingerprints to enable in
+    <dd>A list of SSH IDs or fingerprints to enable in
 the format `[12345, 123456]`. To retrieve this info, use a tool such
 as `curl` with the [DigitalOcean API](https://developers.digitalocean.com/documentation/v2/#ssh-keys),
 to retrieve them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,8 +611,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the tags to be applied to this Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the tags to be applied to this Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -620,8 +620,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string of the desired User Data for the Droplet.
-{{% /md %}}</dd>
+    <dd>A string of the desired User Data for the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,8 +629,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,14 +638,14 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the Droplet will be located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the Droplet will be located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -654,8 +654,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet image ID or slug.
-{{% /md %}}</dd>
+    <dd>The Droplet image ID or slug.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -663,8 +663,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The region to start in.
-{{% /md %}}</dd>
+    <dd>The region to start in.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -672,8 +672,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
-{{% /md %}}</dd>
+    <dd>The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -681,9 +681,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if backups are made. Defaults to
+    <dd>Boolean controlling if backups are made. Defaults to
 false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -691,8 +691,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if IPv6 is enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Boolean controlling if IPv6 is enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -700,9 +700,9 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether monitoring agent is installed.
+    <dd>Boolean controlling whether monitoring agent is installed.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,8 +710,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet name.
-{{% /md %}}</dd>
+    <dd>The Droplet name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -719,11 +719,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if private networking
+    <dd>Boolean controlling if private networking
 is enabled. When VPC is enabled on an account, this will provision the
 Droplet inside of your account's default VPC for the region. Use the
 `vpc_uuid` attribute to specify a different VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,11 +731,11 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether to increase the disk
+    <dd>Boolean controlling whether to increase the disk
 size when resizing a Droplet. It defaults to `true`. When set to `false`,
 only the Droplet's RAM and CPU will be resized. **Increasing a Droplet's disk
 size is a permanent change**. Increasing only RAM and CPU is reversible.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,11 +743,11 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH IDs or fingerprints to enable in
+    <dd>A list of SSH IDs or fingerprints to enable in
 the format `[12345, 123456]`. To retrieve this info, use a tool such
 as `curl` with the [DigitalOcean API](https://developers.digitalocean.com/documentation/v2/#ssh-keys),
 to retrieve them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -755,8 +755,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the tags to be applied to this Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the tags to be applied to this Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -764,8 +764,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string of the desired User Data for the Droplet.
-{{% /md %}}</dd>
+    <dd>A string of the desired User Data for the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -773,8 +773,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -782,11 +782,11 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the Droplet will be located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the Droplet will be located.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -800,7 +800,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -809,7 +809,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -817,8 +817,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the instance's disk in GB
-{{% /md %}}</dd>
+    <dd>The size of the instance's disk in GB
+</dd>
 
     <dt class="property-"
             title="">
@@ -826,7 +826,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -834,8 +834,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv4 address
-{{% /md %}}</dd>
+    <dd>The IPv4 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -843,8 +843,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private networking IPv4 address
-{{% /md %}}</dd>
+    <dd>The private networking IPv4 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -852,8 +852,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 address
-{{% /md %}}</dd>
+    <dd>The IPv6 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -861,8 +861,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Droplet locked
-{{% /md %}}</dd>
+    <dd>Is the Droplet locked
+</dd>
 
     <dt class="property-"
             title="">
@@ -870,7 +870,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -878,8 +878,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Droplet hourly price
-{{% /md %}}</dd>
+    <dd>Droplet hourly price
+</dd>
 
     <dt class="property-"
             title="">
@@ -887,8 +887,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Droplet monthly price
-{{% /md %}}</dd>
+    <dd>Droplet monthly price
+</dd>
 
     <dt class="property-"
             title="">
@@ -896,8 +896,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the Droplet
-{{% /md %}}</dd>
+    <dd>The status of the Droplet
+</dd>
 
     <dt class="property-"
             title="">
@@ -905,9 +905,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the Droplet
+    <dd>The uniform resource name of the Droplet
 * `name`- The name of the Droplet
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -915,14 +915,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the instance's virtual CPUs
-{{% /md %}}</dd>
+    <dd>The number of the instance's virtual CPUs
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -931,7 +931,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the instance's disk in GB
-{{% /md %}}</dd>
+    <dd>The size of the instance's disk in GB
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,7 +948,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -956,8 +956,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv4 address
-{{% /md %}}</dd>
+    <dd>The IPv4 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -965,8 +965,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private networking IPv4 address
-{{% /md %}}</dd>
+    <dd>The private networking IPv4 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -974,8 +974,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 address
-{{% /md %}}</dd>
+    <dd>The IPv6 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -983,8 +983,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Droplet locked
-{{% /md %}}</dd>
+    <dd>Is the Droplet locked
+</dd>
 
     <dt class="property-"
             title="">
@@ -992,7 +992,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1000,8 +1000,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Droplet hourly price
-{{% /md %}}</dd>
+    <dd>Droplet hourly price
+</dd>
 
     <dt class="property-"
             title="">
@@ -1009,8 +1009,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Droplet monthly price
-{{% /md %}}</dd>
+    <dd>Droplet monthly price
+</dd>
 
     <dt class="property-"
             title="">
@@ -1018,8 +1018,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the Droplet
-{{% /md %}}</dd>
+    <dd>The status of the Droplet
+</dd>
 
     <dt class="property-"
             title="">
@@ -1027,9 +1027,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the Droplet
+    <dd>The uniform resource name of the Droplet
 * `name`- The name of the Droplet
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1037,14 +1037,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the instance's virtual CPUs
-{{% /md %}}</dd>
+    <dd>The number of the instance's virtual CPUs
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1053,7 +1053,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1061,8 +1061,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the instance's disk in GB
-{{% /md %}}</dd>
+    <dd>The size of the instance's disk in GB
+</dd>
 
     <dt class="property-"
             title="">
@@ -1070,7 +1070,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1078,8 +1078,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv4 address
-{{% /md %}}</dd>
+    <dd>The IPv4 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -1087,8 +1087,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private networking IPv4 address
-{{% /md %}}</dd>
+    <dd>The private networking IPv4 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -1096,8 +1096,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 address
-{{% /md %}}</dd>
+    <dd>The IPv6 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -1105,8 +1105,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the Droplet locked
-{{% /md %}}</dd>
+    <dd>Is the Droplet locked
+</dd>
 
     <dt class="property-"
             title="">
@@ -1114,7 +1114,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1122,8 +1122,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Droplet hourly price
-{{% /md %}}</dd>
+    <dd>Droplet hourly price
+</dd>
 
     <dt class="property-"
             title="">
@@ -1131,8 +1131,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Droplet monthly price
-{{% /md %}}</dd>
+    <dd>Droplet monthly price
+</dd>
 
     <dt class="property-"
             title="">
@@ -1140,8 +1140,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the Droplet
-{{% /md %}}</dd>
+    <dd>The status of the Droplet
+</dd>
 
     <dt class="property-"
             title="">
@@ -1149,9 +1149,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the Droplet
+    <dd>The uniform resource name of the Droplet
 * `name`- The name of the Droplet
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1159,14 +1159,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of the instance's virtual CPUs
-{{% /md %}}</dd>
+    <dd>The number of the instance's virtual CPUs
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1175,7 +1175,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1183,8 +1183,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the instance's disk in GB
-{{% /md %}}</dd>
+    <dd>The size of the instance's disk in GB
+</dd>
 
     <dt class="property-"
             title="">
@@ -1192,7 +1192,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1200,8 +1200,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPv4 address
-{{% /md %}}</dd>
+    <dd>The IPv4 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -1209,8 +1209,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private networking IPv4 address
-{{% /md %}}</dd>
+    <dd>The private networking IPv4 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -1218,8 +1218,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 address
-{{% /md %}}</dd>
+    <dd>The IPv6 address
+</dd>
 
     <dt class="property-"
             title="">
@@ -1227,8 +1227,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Droplet locked
-{{% /md %}}</dd>
+    <dd>Is the Droplet locked
+</dd>
 
     <dt class="property-"
             title="">
@@ -1236,7 +1236,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1244,8 +1244,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Droplet hourly price
-{{% /md %}}</dd>
+    <dd>Droplet hourly price
+</dd>
 
     <dt class="property-"
             title="">
@@ -1253,8 +1253,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Droplet monthly price
-{{% /md %}}</dd>
+    <dd>Droplet monthly price
+</dd>
 
     <dt class="property-"
             title="">
@@ -1262,8 +1262,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the Droplet
-{{% /md %}}</dd>
+    <dd>The status of the Droplet
+</dd>
 
     <dt class="property-"
             title="">
@@ -1271,9 +1271,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the Droplet
+    <dd>The uniform resource name of the Droplet
 * `name`- The name of the Droplet
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1281,11 +1281,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of the instance's virtual CPUs
-{{% /md %}}</dd>
+    <dd>The number of the instance's virtual CPUs
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1296,25 +1296,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Droplet Resource {#look-up}
 
 Get an existing Droplet resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#DropletState">DropletState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/digitalocean/#Droplet">Droplet</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>backups=None<span class="p">, </span>created_at=None<span class="p">, </span>disk=None<span class="p">, </span>image=None<span class="p">, </span>ipv4_address=None<span class="p">, </span>ipv4_address_private=None<span class="p">, </span>ipv6=None<span class="p">, </span>ipv6_address=None<span class="p">, </span>locked=None<span class="p">, </span>memory=None<span class="p">, </span>monitoring=None<span class="p">, </span>name=None<span class="p">, </span>price_hourly=None<span class="p">, </span>price_monthly=None<span class="p">, </span>private_networking=None<span class="p">, </span>region=None<span class="p">, </span>resize_disk=None<span class="p">, </span>size=None<span class="p">, </span>ssh_keys=None<span class="p">, </span>status=None<span class="p">, </span>tags=None<span class="p">, </span>urn=None<span class="p">, </span>user_data=None<span class="p">, </span>vcpus=None<span class="p">, </span>volume_ids=None<span class="p">, </span>vpc_uuid=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDroplet<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#DropletState">DropletState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-digitalocean/sdk/v2/go/digitalocean/?tab=doc#Droplet">Droplet</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean.Droplet.html">Droplet</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Digitalocean/Pulumi.Digitalocean..DropletState.html">DropletState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1339,9 +1339,9 @@ Get an existing Droplet resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1354,36 +1354,9 @@ Get an existing Droplet resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1408,13 +1381,40 @@ Get an existing Droplet resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1423,9 +1423,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if backups are made. Defaults to
+    <dd>Boolean controlling if backups are made. Defaults to
 false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1433,7 +1433,7 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,8 +1441,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the instance's disk in GB
-{{% /md %}}</dd>
+    <dd>The size of the instance's disk in GB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1450,8 +1450,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet image ID or slug.
-{{% /md %}}</dd>
+    <dd>The Droplet image ID or slug.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1459,8 +1459,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv4 address
-{{% /md %}}</dd>
+    <dd>The IPv4 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1468,8 +1468,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private networking IPv4 address
-{{% /md %}}</dd>
+    <dd>The private networking IPv4 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,8 +1477,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if IPv6 is enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Boolean controlling if IPv6 is enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,8 +1486,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 address
-{{% /md %}}</dd>
+    <dd>The IPv6 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,8 +1495,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Droplet locked
-{{% /md %}}</dd>
+    <dd>Is the Droplet locked
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,7 +1504,7 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,9 +1512,9 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether monitoring agent is installed.
+    <dd>Boolean controlling whether monitoring agent is installed.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,8 +1522,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet name.
-{{% /md %}}</dd>
+    <dd>The Droplet name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,8 +1531,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Droplet hourly price
-{{% /md %}}</dd>
+    <dd>Droplet hourly price
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,8 +1540,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Droplet monthly price
-{{% /md %}}</dd>
+    <dd>Droplet monthly price
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,11 +1549,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if private networking
+    <dd>Boolean controlling if private networking
 is enabled. When VPC is enabled on an account, this will provision the
 Droplet inside of your account's default VPC for the region. Use the
 `vpc_uuid` attribute to specify a different VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1561,8 +1561,8 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The region to start in.
-{{% /md %}}</dd>
+    <dd>The region to start in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1570,11 +1570,11 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether to increase the disk
+    <dd>Boolean controlling whether to increase the disk
 size when resizing a Droplet. It defaults to `true`. When set to `false`,
 only the Droplet's RAM and CPU will be resized. **Increasing a Droplet's disk
 size is a permanent change**. Increasing only RAM and CPU is reversible.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1582,8 +1582,8 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
-{{% /md %}}</dd>
+    <dd>The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1591,11 +1591,11 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH IDs or fingerprints to enable in
+    <dd>A list of SSH IDs or fingerprints to enable in
 the format `[12345, 123456]`. To retrieve this info, use a tool such
 as `curl` with the [DigitalOcean API](https://developers.digitalocean.com/documentation/v2/#ssh-keys),
 to retrieve them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,8 +1603,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the Droplet
-{{% /md %}}</dd>
+    <dd>The status of the Droplet
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1612,8 +1612,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the tags to be applied to this Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the tags to be applied to this Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1621,9 +1621,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the Droplet
+    <dd>The uniform resource name of the Droplet
 * `name`- The name of the Droplet
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,8 +1631,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string of the desired User Data for the Droplet.
-{{% /md %}}</dd>
+    <dd>A string of the desired User Data for the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,8 +1640,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the instance's virtual CPUs
-{{% /md %}}</dd>
+    <dd>The number of the instance's virtual CPUs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,8 +1649,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,14 +1658,14 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the Droplet will be located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the Droplet will be located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1674,9 +1674,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if backups are made. Defaults to
+    <dd>Boolean controlling if backups are made. Defaults to
 false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,7 +1684,7 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,8 +1692,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the instance's disk in GB
-{{% /md %}}</dd>
+    <dd>The size of the instance's disk in GB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,8 +1701,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet image ID or slug.
-{{% /md %}}</dd>
+    <dd>The Droplet image ID or slug.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1710,8 +1710,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv4 address
-{{% /md %}}</dd>
+    <dd>The IPv4 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1719,8 +1719,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private networking IPv4 address
-{{% /md %}}</dd>
+    <dd>The private networking IPv4 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1728,8 +1728,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if IPv6 is enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Boolean controlling if IPv6 is enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1737,8 +1737,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 address
-{{% /md %}}</dd>
+    <dd>The IPv6 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1746,8 +1746,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Droplet locked
-{{% /md %}}</dd>
+    <dd>Is the Droplet locked
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1755,7 +1755,7 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,9 +1763,9 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether monitoring agent is installed.
+    <dd>Boolean controlling whether monitoring agent is installed.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1773,8 +1773,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet name.
-{{% /md %}}</dd>
+    <dd>The Droplet name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1782,8 +1782,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Droplet hourly price
-{{% /md %}}</dd>
+    <dd>Droplet hourly price
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1791,8 +1791,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Droplet monthly price
-{{% /md %}}</dd>
+    <dd>Droplet monthly price
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1800,11 +1800,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if private networking
+    <dd>Boolean controlling if private networking
 is enabled. When VPC is enabled on an account, this will provision the
 Droplet inside of your account's default VPC for the region. Use the
 `vpc_uuid` attribute to specify a different VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,8 +1812,8 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The region to start in.
-{{% /md %}}</dd>
+    <dd>The region to start in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1821,11 +1821,11 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether to increase the disk
+    <dd>Boolean controlling whether to increase the disk
 size when resizing a Droplet. It defaults to `true`. When set to `false`,
 only the Droplet's RAM and CPU will be resized. **Increasing a Droplet's disk
 size is a permanent change**. Increasing only RAM and CPU is reversible.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1833,8 +1833,8 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
-{{% /md %}}</dd>
+    <dd>The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1842,11 +1842,11 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH IDs or fingerprints to enable in
+    <dd>A list of SSH IDs or fingerprints to enable in
 the format `[12345, 123456]`. To retrieve this info, use a tool such
 as `curl` with the [DigitalOcean API](https://developers.digitalocean.com/documentation/v2/#ssh-keys),
 to retrieve them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1854,8 +1854,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the Droplet
-{{% /md %}}</dd>
+    <dd>The status of the Droplet
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1863,8 +1863,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the tags to be applied to this Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the tags to be applied to this Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1872,9 +1872,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the Droplet
+    <dd>The uniform resource name of the Droplet
 * `name`- The name of the Droplet
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1882,8 +1882,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string of the desired User Data for the Droplet.
-{{% /md %}}</dd>
+    <dd>A string of the desired User Data for the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1891,8 +1891,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the instance's virtual CPUs
-{{% /md %}}</dd>
+    <dd>The number of the instance's virtual CPUs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1900,8 +1900,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1909,14 +1909,14 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the Droplet will be located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the Droplet will be located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1925,9 +1925,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if backups are made. Defaults to
+    <dd>Boolean controlling if backups are made. Defaults to
 false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1935,7 +1935,7 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1943,8 +1943,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the instance's disk in GB
-{{% /md %}}</dd>
+    <dd>The size of the instance's disk in GB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1952,8 +1952,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet image ID or slug.
-{{% /md %}}</dd>
+    <dd>The Droplet image ID or slug.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1961,8 +1961,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv4 address
-{{% /md %}}</dd>
+    <dd>The IPv4 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1970,8 +1970,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private networking IPv4 address
-{{% /md %}}</dd>
+    <dd>The private networking IPv4 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1979,8 +1979,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if IPv6 is enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Boolean controlling if IPv6 is enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1988,8 +1988,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 address
-{{% /md %}}</dd>
+    <dd>The IPv6 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1997,8 +1997,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the Droplet locked
-{{% /md %}}</dd>
+    <dd>Is the Droplet locked
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2006,7 +2006,7 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2014,9 +2014,9 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether monitoring agent is installed.
+    <dd>Boolean controlling whether monitoring agent is installed.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2024,8 +2024,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet name.
-{{% /md %}}</dd>
+    <dd>The Droplet name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2033,8 +2033,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Droplet hourly price
-{{% /md %}}</dd>
+    <dd>Droplet hourly price
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2042,8 +2042,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Droplet monthly price
-{{% /md %}}</dd>
+    <dd>Droplet monthly price
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2051,11 +2051,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if private networking
+    <dd>Boolean controlling if private networking
 is enabled. When VPC is enabled on an account, this will provision the
 Droplet inside of your account's default VPC for the region. Use the
 `vpc_uuid` attribute to specify a different VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2063,8 +2063,8 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type">Region</span>
     </dt>
-    <dd>{{% md %}}The region to start in.
-{{% /md %}}</dd>
+    <dd>The region to start in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2072,11 +2072,11 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether to increase the disk
+    <dd>Boolean controlling whether to increase the disk
 size when resizing a Droplet. It defaults to `true`. When set to `false`,
 only the Droplet's RAM and CPU will be resized. **Increasing a Droplet's disk
 size is a permanent change**. Increasing only RAM and CPU is reversible.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2084,8 +2084,8 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type">Droplet<wbr>Slug</span>
     </dt>
-    <dd>{{% md %}}The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
-{{% /md %}}</dd>
+    <dd>The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2093,11 +2093,11 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH IDs or fingerprints to enable in
+    <dd>A list of SSH IDs or fingerprints to enable in
 the format `[12345, 123456]`. To retrieve this info, use a tool such
 as `curl` with the [DigitalOcean API](https://developers.digitalocean.com/documentation/v2/#ssh-keys),
 to retrieve them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2105,8 +2105,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The status of the Droplet
-{{% /md %}}</dd>
+    <dd>The status of the Droplet
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2114,8 +2114,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the tags to be applied to this Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the tags to be applied to this Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2123,9 +2123,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the Droplet
+    <dd>The uniform resource name of the Droplet
 * `name`- The name of the Droplet
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2133,8 +2133,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string of the desired User Data for the Droplet.
-{{% /md %}}</dd>
+    <dd>A string of the desired User Data for the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2142,8 +2142,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of the instance's virtual CPUs
-{{% /md %}}</dd>
+    <dd>The number of the instance's virtual CPUs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2151,8 +2151,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2160,14 +2160,14 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the Droplet will be located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the Droplet will be located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2176,9 +2176,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if backups are made. Defaults to
+    <dd>Boolean controlling if backups are made. Defaults to
 false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2186,7 +2186,7 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2194,8 +2194,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the instance's disk in GB
-{{% /md %}}</dd>
+    <dd>The size of the instance's disk in GB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2203,8 +2203,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet image ID or slug.
-{{% /md %}}</dd>
+    <dd>The Droplet image ID or slug.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2212,8 +2212,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPv4 address
-{{% /md %}}</dd>
+    <dd>The IPv4 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2221,8 +2221,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private networking IPv4 address
-{{% /md %}}</dd>
+    <dd>The private networking IPv4 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2230,8 +2230,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if IPv6 is enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Boolean controlling if IPv6 is enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2239,8 +2239,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPv6 address
-{{% /md %}}</dd>
+    <dd>The IPv6 address
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2248,8 +2248,8 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Droplet locked
-{{% /md %}}</dd>
+    <dd>Is the Droplet locked
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2257,7 +2257,7 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2265,9 +2265,9 @@ false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether monitoring agent is installed.
+    <dd>Boolean controlling whether monitoring agent is installed.
 Defaults to false.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2275,8 +2275,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Droplet name.
-{{% /md %}}</dd>
+    <dd>The Droplet name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2284,8 +2284,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Droplet hourly price
-{{% /md %}}</dd>
+    <dd>Droplet hourly price
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2293,8 +2293,8 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Droplet monthly price
-{{% /md %}}</dd>
+    <dd>Droplet monthly price
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2302,11 +2302,11 @@ Defaults to false.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling if private networking
+    <dd>Boolean controlling if private networking
 is enabled. When VPC is enabled on an account, this will provision the
 Droplet inside of your account's default VPC for the region. Use the
 `vpc_uuid` attribute to specify a different VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2314,8 +2314,8 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The region to start in.
-{{% /md %}}</dd>
+    <dd>The region to start in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2323,11 +2323,11 @@ Droplet inside of your account's default VPC for the region. Use the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether to increase the disk
+    <dd>Boolean controlling whether to increase the disk
 size when resizing a Droplet. It defaults to `true`. When set to `false`,
 only the Droplet's RAM and CPU will be resized. **Increasing a Droplet's disk
 size is a permanent change**. Increasing only RAM and CPU is reversible.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,8 +2335,8 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
-{{% /md %}}</dd>
+    <dd>The unique slug that indentifies the type of Droplet. You can find a list of available slugs on [DigitalOcean API documentation](https://developers.digitalocean.com/documentation/v2/#list-all-sizes).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2344,11 +2344,11 @@ size is a permanent change**. Increasing only RAM and CPU is reversible.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH IDs or fingerprints to enable in
+    <dd>A list of SSH IDs or fingerprints to enable in
 the format `[12345, 123456]`. To retrieve this info, use a tool such
 as `curl` with the [DigitalOcean API](https://developers.digitalocean.com/documentation/v2/#ssh-keys),
 to retrieve them.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2356,8 +2356,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The status of the Droplet
-{{% /md %}}</dd>
+    <dd>The status of the Droplet
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2365,8 +2365,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the tags to be applied to this Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the tags to be applied to this Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2374,9 +2374,9 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The uniform resource name of the Droplet
+    <dd>The uniform resource name of the Droplet
 * `name`- The name of the Droplet
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2384,8 +2384,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string of the desired User Data for the Droplet.
-{{% /md %}}</dd>
+    <dd>A string of the desired User Data for the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2393,8 +2393,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of the instance's virtual CPUs
-{{% /md %}}</dd>
+    <dd>The number of the instance's virtual CPUs
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2402,8 +2402,8 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
-{{% /md %}}</dd>
+    <dd>A list of the IDs of each [block storage volume](https://www.terraform.io/docs/providers/do/r/volume.html) to be attached to the Droplet.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,11 +2411,11 @@ to retrieve them.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC where the Droplet will be located.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC where the Droplet will be located.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

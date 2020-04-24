@@ -55,26 +55,26 @@ const fwd = new aws.route53.ResolverRule("fwd", {
 
 
 ## Create a ResolverRule Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#ResolverRule">ResolverRule</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#ResolverRuleArgs">ResolverRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ResolverRule</span><span class="p">(resource_name, opts=None, </span>domain_name=None<span class="p">, </span>name=None<span class="p">, </span>resolver_endpoint_id=None<span class="p">, </span>rule_type=None<span class="p">, </span>tags=None<span class="p">, </span>target_ips=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewResolverRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#ResolverRuleArgs">ResolverRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#ResolverRule">ResolverRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.ResolverRule.html">ResolverRule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.ResolverRuleArgs.html">ResolverRuleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -111,9 +111,9 @@ const fwd = new aws.route53.ResolverRule("fwd", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -131,9 +131,9 @@ const fwd = new aws.route53.ResolverRule("fwd", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -180,9 +180,9 @@ const fwd = new aws.route53.ResolverRule("fwd", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -219,7 +219,7 @@ const fwd = new aws.route53.ResolverRule("fwd", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ResolverRule Resource Properties {#properties}
 
@@ -232,7 +232,7 @@ The ResolverRule resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -241,8 +241,8 @@ The ResolverRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
-{{% /md %}}</dd>
+    <dd>DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -250,8 +250,8 @@ The ResolverRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
-{{% /md %}}</dd>
+    <dd>The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,8 +259,8 @@ The ResolverRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
-{{% /md %}}</dd>
+    <dd>A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,9 +268,9 @@ The ResolverRule resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    <dd>The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,15 +287,15 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resolverruletargetip">List&lt;Resolver<wbr>Rule<wbr>Target<wbr>Ip<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
+    <dd>Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -304,8 +304,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
-{{% /md %}}</dd>
+    <dd>DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -313,8 +313,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
-{{% /md %}}</dd>
+    <dd>The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
-{{% /md %}}</dd>
+    <dd>A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,9 +331,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    <dd>The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,15 +350,15 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resolverruletargetip">[]Resolver<wbr>Rule<wbr>Target<wbr>Ip</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
+    <dd>Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -367,8 +367,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
-{{% /md %}}</dd>
+    <dd>DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -376,8 +376,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
-{{% /md %}}</dd>
+    <dd>The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
-{{% /md %}}</dd>
+    <dd>A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,9 +394,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    <dd>The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,15 +413,15 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resolverruletargetip">Resolver<wbr>Rule<wbr>Target<wbr>Ip[]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
+    <dd>Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -430,8 +430,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
-{{% /md %}}</dd>
+    <dd>DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -439,8 +439,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
-{{% /md %}}</dd>
+    <dd>The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,8 +448,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
-{{% /md %}}</dd>
+    <dd>A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,9 +457,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    <dd>The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,8 +467,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,12 +476,12 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resolverruletargetip">List[Resolver<wbr>Rule<wbr>Target<wbr>Ip]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
+    <dd>Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -495,7 +495,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -504,8 +504,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN (Amazon Resource Name) for the resolver rule.
-{{% /md %}}</dd>
+    <dd>The ARN (Amazon Resource Name) for the resolver rule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -513,7 +513,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -521,8 +521,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
-{{% /md %}}</dd>
+    <dd>When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
+</dd>
 
     <dt class="property-"
             title="">
@@ -530,15 +530,15 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
+    <dd>Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
 Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -547,8 +547,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN (Amazon Resource Name) for the resolver rule.
-{{% /md %}}</dd>
+    <dd>The ARN (Amazon Resource Name) for the resolver rule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -556,7 +556,7 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -564,8 +564,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
-{{% /md %}}</dd>
+    <dd>When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,15 +573,15 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
+    <dd>Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
 Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -590,8 +590,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN (Amazon Resource Name) for the resolver rule.
-{{% /md %}}</dd>
+    <dd>The ARN (Amazon Resource Name) for the resolver rule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -599,7 +599,7 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -607,8 +607,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
-{{% /md %}}</dd>
+    <dd>When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
+</dd>
 
     <dt class="property-"
             title="">
@@ -616,15 +616,15 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
+    <dd>Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
 Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -633,8 +633,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN (Amazon Resource Name) for the resolver rule.
-{{% /md %}}</dd>
+    <dd>The ARN (Amazon Resource Name) for the resolver rule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,7 +642,7 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -650,8 +650,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
-{{% /md %}}</dd>
+    <dd>When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
+</dd>
 
     <dt class="property-"
             title="">
@@ -659,12 +659,12 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
+    <dd>Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
 Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -675,25 +675,25 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
 ## Look up an Existing ResolverRule Resource {#look-up}
 
 Get an existing ResolverRule resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#ResolverRuleState">ResolverRuleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#ResolverRule">ResolverRule</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>domain_name=None<span class="p">, </span>name=None<span class="p">, </span>owner_id=None<span class="p">, </span>resolver_endpoint_id=None<span class="p">, </span>rule_type=None<span class="p">, </span>share_status=None<span class="p">, </span>tags=None<span class="p">, </span>target_ips=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetResolverRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#ResolverRuleState">ResolverRuleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#ResolverRule">ResolverRule</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.ResolverRule.html">ResolverRule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.ResolverRuleState.html">ResolverRuleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -718,9 +718,9 @@ Get an existing ResolverRule resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -733,36 +733,9 @@ Get an existing ResolverRule resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -787,13 +760,40 @@ Get an existing ResolverRule resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -802,8 +802,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN (Amazon Resource Name) for the resolver rule.
-{{% /md %}}</dd>
+    <dd>The ARN (Amazon Resource Name) for the resolver rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -811,8 +811,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
-{{% /md %}}</dd>
+    <dd>DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -820,8 +820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
-{{% /md %}}</dd>
+    <dd>A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -829,8 +829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
-{{% /md %}}</dd>
+    <dd>When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -838,9 +838,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    <dd>The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,8 +848,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
-{{% /md %}}</dd>
+    <dd>The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,9 +857,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
+    <dd>Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
 Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -867,8 +867,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -876,15 +876,15 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resolverruletargetip">List&lt;Resolver<wbr>Rule<wbr>Target<wbr>Ip<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
+    <dd>Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -893,8 +893,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN (Amazon Resource Name) for the resolver rule.
-{{% /md %}}</dd>
+    <dd>The ARN (Amazon Resource Name) for the resolver rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
-{{% /md %}}</dd>
+    <dd>DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,8 +911,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
-{{% /md %}}</dd>
+    <dd>A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,8 +920,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
-{{% /md %}}</dd>
+    <dd>When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -929,9 +929,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    <dd>The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,8 +939,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
-{{% /md %}}</dd>
+    <dd>The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -948,9 +948,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
+    <dd>Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
 Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,8 +958,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,15 +967,15 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resolverruletargetip">[]Resolver<wbr>Rule<wbr>Target<wbr>Ip</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
+    <dd>Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -984,8 +984,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN (Amazon Resource Name) for the resolver rule.
-{{% /md %}}</dd>
+    <dd>The ARN (Amazon Resource Name) for the resolver rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -993,8 +993,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
-{{% /md %}}</dd>
+    <dd>DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,8 +1002,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
-{{% /md %}}</dd>
+    <dd>A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
-{{% /md %}}</dd>
+    <dd>When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,9 +1020,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    <dd>The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
-{{% /md %}}</dd>
+    <dd>The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,9 +1039,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
+    <dd>Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
 Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1049,8 +1049,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,15 +1058,15 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resolverruletargetip">Resolver<wbr>Rule<wbr>Target<wbr>Ip[]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
+    <dd>Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1075,8 +1075,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN (Amazon Resource Name) for the resolver rule.
-{{% /md %}}</dd>
+    <dd>The ARN (Amazon Resource Name) for the resolver rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
-{{% /md %}}</dd>
+    <dd>DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
-{{% /md %}}</dd>
+    <dd>A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
-{{% /md %}}</dd>
+    <dd>When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,9 +1111,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
+    <dd>The ID of the outbound resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify using `target_ip`.
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,8 +1121,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
-{{% /md %}}</dd>
+    <dd>The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,9 +1130,9 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
+    <dd>Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
 Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,8 +1140,8 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1149,12 +1149,12 @@ Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resolverruletargetip">List[Resolver<wbr>Rule<wbr>Target<wbr>Ip]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
+    <dd>Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
 This argument should only be specified for `FORWARD` type rules.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1169,18 +1169,18 @@ This argument should only be specified for `FORWARD` type rules.
 
 
 <h4 id="resolverruletargetip">Resolver<wbr>Rule<wbr>Target<wbr>Ip</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ResolverRuleTargetIp">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ResolverRuleTargetIp">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#ResolverRuleTargetIpArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#ResolverRuleTargetIpOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1189,8 +1189,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
-{{% /md %}}</dd>
+    <dd>One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,14 +1198,14 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port at `ip` that you want to forward DNS queries to. Default value is `53`
-{{% /md %}}</dd>
+    <dd>The port at `ip` that you want to forward DNS queries to. Default value is `53`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1214,8 +1214,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
-{{% /md %}}</dd>
+    <dd>One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1223,14 +1223,14 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port at `ip` that you want to forward DNS queries to. Default value is `53`
-{{% /md %}}</dd>
+    <dd>The port at `ip` that you want to forward DNS queries to. Default value is `53`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1239,8 +1239,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
-{{% /md %}}</dd>
+    <dd>One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1248,14 +1248,14 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port at `ip` that you want to forward DNS queries to. Default value is `53`
-{{% /md %}}</dd>
+    <dd>The port at `ip` that you want to forward DNS queries to. Default value is `53`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1264,8 +1264,8 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
-{{% /md %}}</dd>
+    <dd>One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,11 +1273,11 @@ This argument should only be specified for `FORWARD` type rules.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port at `ip` that you want to forward DNS queries to. Default value is `53`
-{{% /md %}}</dd>
+    <dd>The port at `ip` that you want to forward DNS queries to. Default value is `53`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

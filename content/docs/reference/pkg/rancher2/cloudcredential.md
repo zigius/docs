@@ -38,26 +38,26 @@ const foo = new rancher2.CloudCredential("foo", {
 
 
 ## Create a CloudCredential Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#CloudCredential">CloudCredential</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#CloudCredentialArgs">CloudCredentialArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">CloudCredential</span><span class="p">(resource_name, opts=None, </span>amazonec2_credential_config=None<span class="p">, </span>annotations=None<span class="p">, </span>azure_credential_config=None<span class="p">, </span>description=None<span class="p">, </span>digitalocean_credential_config=None<span class="p">, </span>labels=None<span class="p">, </span>linode_credential_config=None<span class="p">, </span>name=None<span class="p">, </span>openstack_credential_config=None<span class="p">, </span>vsphere_credential_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCloudCredential<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialArgs">CloudCredentialArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredential">CloudCredential</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.CloudCredential.html">CloudCredential</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.CloudCredentialArgs.html">CloudCredentialArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -94,9 +94,9 @@ const foo = new rancher2.CloudCredential("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -114,9 +114,9 @@ const foo = new rancher2.CloudCredential("foo", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -163,9 +163,9 @@ const foo = new rancher2.CloudCredential("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -202,7 +202,7 @@ const foo = new rancher2.CloudCredential("foo", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## CloudCredential Resource Properties {#properties}
 
@@ -215,7 +215,7 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -224,8 +224,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialamazonec2credentialconfig">Cloud<wbr>Credential<wbr>Amazonec2Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialazurecredentialconfig">Cloud<wbr>Credential<wbr>Azure<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>Description for the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialdigitaloceancredentialconfig">Cloud<wbr>Credential<wbr>Digitalocean<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>DigitalOcean config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentiallinodecredentialconfig">Cloud<wbr>Credential<wbr>Linode<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>The name of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialopenstackcredentialconfig">Cloud<wbr>Credential<wbr>Openstack<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>OpenStack config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,14 +305,14 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialvspherecredentialconfig">Cloud<wbr>Credential<wbr>Vsphere<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Cloud Credential (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -321,8 +321,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialamazonec2credentialconfig">Cloud<wbr>Credential<wbr>Amazonec2Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,8 +339,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialazurecredentialconfig">Cloud<wbr>Credential<wbr>Azure<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,8 +348,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>Description for the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,8 +357,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialdigitaloceancredentialconfig">Cloud<wbr>Credential<wbr>Digitalocean<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>DigitalOcean config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -366,8 +366,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,8 +375,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentiallinodecredentialconfig">Cloud<wbr>Credential<wbr>Linode<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,8 +384,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>The name of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,8 +393,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialopenstackcredentialconfig">Cloud<wbr>Credential<wbr>Openstack<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>OpenStack config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,14 +402,14 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialvspherecredentialconfig">Cloud<wbr>Credential<wbr>Vsphere<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Cloud Credential (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -418,8 +418,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialamazonec2credentialconfig">Cloud<wbr>Credential<wbr>Amazonec2Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,8 +427,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,8 +436,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialazurecredentialconfig">Cloud<wbr>Credential<wbr>Azure<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,8 +445,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>Description for the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,8 +454,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialdigitaloceancredentialconfig">Cloud<wbr>Credential<wbr>Digitalocean<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>DigitalOcean config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,8 +463,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,8 +472,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentiallinodecredentialconfig">Cloud<wbr>Credential<wbr>Linode<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,8 +481,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>The name of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,8 +490,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialopenstackcredentialconfig">Cloud<wbr>Credential<wbr>Openstack<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>OpenStack config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,14 +499,14 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialvspherecredentialconfig">Cloud<wbr>Credential<wbr>Vsphere<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Cloud Credential (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -515,8 +515,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialamazonec2credentialconfig">Dict[Cloud<wbr>Credential<wbr>Amazonec2Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,8 +533,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialazurecredentialconfig">Dict[Cloud<wbr>Credential<wbr>Azure<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>Description for the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialdigitaloceancredentialconfig">Dict[Cloud<wbr>Credential<wbr>Digitalocean<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>DigitalOcean config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,8 +560,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,8 +569,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentiallinodecredentialconfig">Dict[Cloud<wbr>Credential<wbr>Linode<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -578,8 +578,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>The name of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,8 +587,8 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialopenstackcredentialconfig">Dict[Cloud<wbr>Credential<wbr>Openstack<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>OpenStack config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -596,11 +596,11 @@ The CloudCredential resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialvspherecredentialconfig">Dict[Cloud<wbr>Credential<wbr>Vsphere<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Cloud Credential (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -614,7 +614,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -623,8 +623,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the Cloud Credential (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -632,13 +632,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -647,8 +647,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the Cloud Credential (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -656,13 +656,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -671,8 +671,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the Cloud Credential (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -680,13 +680,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -695,8 +695,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the Cloud Credential (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -704,10 +704,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -718,25 +718,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing CloudCredential Resource {#look-up}
 
 Get an existing CloudCredential resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#CloudCredentialState">CloudCredentialState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#CloudCredential">CloudCredential</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>amazonec2_credential_config=None<span class="p">, </span>annotations=None<span class="p">, </span>azure_credential_config=None<span class="p">, </span>description=None<span class="p">, </span>digitalocean_credential_config=None<span class="p">, </span>driver=None<span class="p">, </span>labels=None<span class="p">, </span>linode_credential_config=None<span class="p">, </span>name=None<span class="p">, </span>openstack_credential_config=None<span class="p">, </span>vsphere_credential_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCloudCredential<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialState">CloudCredentialState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredential">CloudCredential</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.CloudCredential.html">CloudCredential</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2..CloudCredentialState.html">CloudCredentialState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -761,9 +761,9 @@ Get an existing CloudCredential resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -776,36 +776,9 @@ Get an existing CloudCredential resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -830,13 +803,40 @@ Get an existing CloudCredential resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -845,8 +845,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialamazonec2credentialconfig">Cloud<wbr>Credential<wbr>Amazonec2Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -854,8 +854,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Annotations for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -863,8 +863,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialazurecredentialconfig">Cloud<wbr>Credential<wbr>Azure<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -872,8 +872,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>Description for the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -881,8 +881,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialdigitaloceancredentialconfig">Cloud<wbr>Credential<wbr>Digitalocean<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>DigitalOcean config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -890,8 +890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -899,8 +899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -908,8 +908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentiallinodecredentialconfig">Cloud<wbr>Credential<wbr>Linode<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>The name of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialopenstackcredentialconfig">Cloud<wbr>Credential<wbr>Openstack<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>OpenStack config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,14 +935,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialvspherecredentialconfig">Cloud<wbr>Credential<wbr>Vsphere<wbr>Credential<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Cloud Credential (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -951,8 +951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialamazonec2credentialconfig">Cloud<wbr>Credential<wbr>Amazonec2Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,8 +960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -969,8 +969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialazurecredentialconfig">Cloud<wbr>Credential<wbr>Azure<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,8 +978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>Description for the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,8 +987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialdigitaloceancredentialconfig">Cloud<wbr>Credential<wbr>Digitalocean<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>DigitalOcean config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,8 +996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,8 +1005,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Labels for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1014,8 +1014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentiallinodecredentialconfig">Cloud<wbr>Credential<wbr>Linode<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>The name of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialopenstackcredentialconfig">Cloud<wbr>Credential<wbr>Openstack<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>OpenStack config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,14 +1041,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialvspherecredentialconfig">Cloud<wbr>Credential<wbr>Vsphere<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Cloud Credential (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialamazonec2credentialconfig">Cloud<wbr>Credential<wbr>Amazonec2Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Annotations for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,8 +1075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialazurecredentialconfig">Cloud<wbr>Credential<wbr>Azure<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>Description for the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialdigitaloceancredentialconfig">Cloud<wbr>Credential<wbr>Digitalocean<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>DigitalOcean config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Labels for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,8 +1120,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentiallinodecredentialconfig">Cloud<wbr>Credential<wbr>Linode<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,8 +1129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>The name of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialopenstackcredentialconfig">Cloud<wbr>Credential<wbr>Openstack<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>OpenStack config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,14 +1147,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialvspherecredentialconfig">Cloud<wbr>Credential<wbr>Vsphere<wbr>Credential<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Cloud Credential (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1163,8 +1163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialamazonec2credentialconfig">Dict[Cloud<wbr>Credential<wbr>Amazonec2Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}AWS config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>AWS config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Annotations for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Annotations for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialazurecredentialconfig">Dict[Cloud<wbr>Credential<wbr>Azure<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Azure config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Azure config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,8 +1190,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description for the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>Description for the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,8 +1199,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialdigitaloceancredentialconfig">Dict[Cloud<wbr>Credential<wbr>Digitalocean<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>DigitalOcean config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The driver of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The driver of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Labels for Cloud Credential object (map)
-{{% /md %}}</dd>
+    <dd>Labels for Cloud Credential object (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentiallinodecredentialconfig">Dict[Cloud<wbr>Credential<wbr>Linode<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Linode config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>Linode config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Cloud Credential (string)
-{{% /md %}}</dd>
+    <dd>The name of the Cloud Credential (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialopenstackcredentialconfig">Dict[Cloud<wbr>Credential<wbr>Openstack<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}OpenStack config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>OpenStack config for the Cloud Credential (list maxitems:1)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,11 +1253,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#cloudcredentialvspherecredentialconfig">Dict[Cloud<wbr>Credential<wbr>Vsphere<wbr>Credential<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}vSphere config for the Cloud Credential (list maxitems:1)
-{{% /md %}}</dd>
+    <dd>vSphere config for the Cloud Credential (list maxitems:1)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1272,18 +1272,18 @@ The following state arguments are supported:
 
 
 <h4 id="cloudcredentialamazonec2credentialconfig">Cloud<wbr>Credential<wbr>Amazonec2Credential<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#CloudCredentialAmazonec2CredentialConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#CloudCredentialAmazonec2CredentialConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialAmazonec2CredentialConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialAmazonec2CredentialConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1292,8 +1292,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS access key (string)
-{{% /md %}}</dd>
+    <dd>AWS access key (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1301,14 +1301,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS secret key (string)
-{{% /md %}}</dd>
+    <dd>AWS secret key (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1317,8 +1317,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS access key (string)
-{{% /md %}}</dd>
+    <dd>AWS access key (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1326,14 +1326,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS secret key (string)
-{{% /md %}}</dd>
+    <dd>AWS secret key (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1342,8 +1342,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS access key (string)
-{{% /md %}}</dd>
+    <dd>AWS access key (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1351,14 +1351,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS secret key (string)
-{{% /md %}}</dd>
+    <dd>AWS secret key (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1367,8 +1367,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS access key (string)
-{{% /md %}}</dd>
+    <dd>AWS access key (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1376,29 +1376,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS secret key (string)
-{{% /md %}}</dd>
+    <dd>AWS secret key (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="cloudcredentialazurecredentialconfig">Cloud<wbr>Credential<wbr>Azure<wbr>Credential<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#CloudCredentialAzureCredentialConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#CloudCredentialAzureCredentialConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialAzureCredentialConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialAzureCredentialConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1407,8 +1407,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account ID (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account ID (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1416,8 +1416,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account password (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account password (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1425,14 +1425,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subscription ID (string)
-{{% /md %}}</dd>
+    <dd>Azure Subscription ID (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1441,8 +1441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account ID (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account ID (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1450,8 +1450,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account password (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account password (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1459,14 +1459,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subscription ID (string)
-{{% /md %}}</dd>
+    <dd>Azure Subscription ID (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1475,8 +1475,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account ID (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account ID (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1484,8 +1484,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account password (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account password (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1493,14 +1493,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subscription ID (string)
-{{% /md %}}</dd>
+    <dd>Azure Subscription ID (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1509,8 +1509,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account ID (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account ID (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1518,8 +1518,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Service Principal Account password (string)
-{{% /md %}}</dd>
+    <dd>Azure Service Principal Account password (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1527,29 +1527,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Azure Subscription ID (string)
-{{% /md %}}</dd>
+    <dd>Azure Subscription ID (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="cloudcredentialdigitaloceancredentialconfig">Cloud<wbr>Credential<wbr>Digitalocean<wbr>Credential<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#CloudCredentialDigitaloceanCredentialConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#CloudCredentialDigitaloceanCredentialConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialDigitaloceanCredentialConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialDigitaloceanCredentialConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1558,14 +1558,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean access token (string)
-{{% /md %}}</dd>
+    <dd>DigitalOcean access token (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1574,14 +1574,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean access token (string)
-{{% /md %}}</dd>
+    <dd>DigitalOcean access token (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1590,14 +1590,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean access token (string)
-{{% /md %}}</dd>
+    <dd>DigitalOcean access token (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1606,29 +1606,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}DigitalOcean access token (string)
-{{% /md %}}</dd>
+    <dd>DigitalOcean access token (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="cloudcredentiallinodecredentialconfig">Cloud<wbr>Credential<wbr>Linode<wbr>Credential<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#CloudCredentialLinodeCredentialConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#CloudCredentialLinodeCredentialConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialLinodeCredentialConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialLinodeCredentialConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1637,14 +1637,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode API token (string)
-{{% /md %}}</dd>
+    <dd>Linode API token (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1653,14 +1653,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode API token (string)
-{{% /md %}}</dd>
+    <dd>Linode API token (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1669,14 +1669,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linode API token (string)
-{{% /md %}}</dd>
+    <dd>Linode API token (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1685,29 +1685,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Linode API token (string)
-{{% /md %}}</dd>
+    <dd>Linode API token (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="cloudcredentialopenstackcredentialconfig">Cloud<wbr>Credential<wbr>Openstack<wbr>Credential<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#CloudCredentialOpenstackCredentialConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#CloudCredentialOpenstackCredentialConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialOpenstackCredentialConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialOpenstackCredentialConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1716,14 +1716,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password (string)
-{{% /md %}}</dd>
+    <dd>vSphere password (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1732,14 +1732,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password (string)
-{{% /md %}}</dd>
+    <dd>vSphere password (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1748,14 +1748,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password (string)
-{{% /md %}}</dd>
+    <dd>vSphere password (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1764,29 +1764,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password (string)
-{{% /md %}}</dd>
+    <dd>vSphere password (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="cloudcredentialvspherecredentialconfig">Cloud<wbr>Credential<wbr>Vsphere<wbr>Credential<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/input/#CloudCredentialVsphereCredentialConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/rancher2/types/output/#CloudCredentialVsphereCredentialConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialVsphereCredentialConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#CloudCredentialVsphereCredentialConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1795,8 +1795,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password (string)
-{{% /md %}}</dd>
+    <dd>vSphere password (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1804,8 +1804,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username (string)
-{{% /md %}}</dd>
+    <dd>vSphere username (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1813,8 +1813,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere IP/hostname for vCenter (string)
-{{% /md %}}</dd>
+    <dd>vSphere IP/hostname for vCenter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,14 +1822,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere Port for vCenter. Default `443` (string)
-{{% /md %}}</dd>
+    <dd>vSphere Port for vCenter. Default `443` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1838,8 +1838,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password (string)
-{{% /md %}}</dd>
+    <dd>vSphere password (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1847,8 +1847,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username (string)
-{{% /md %}}</dd>
+    <dd>vSphere username (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1856,8 +1856,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere IP/hostname for vCenter (string)
-{{% /md %}}</dd>
+    <dd>vSphere IP/hostname for vCenter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,14 +1865,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere Port for vCenter. Default `443` (string)
-{{% /md %}}</dd>
+    <dd>vSphere Port for vCenter. Default `443` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1881,8 +1881,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password (string)
-{{% /md %}}</dd>
+    <dd>vSphere password (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1890,8 +1890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username (string)
-{{% /md %}}</dd>
+    <dd>vSphere username (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1899,8 +1899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere IP/hostname for vCenter (string)
-{{% /md %}}</dd>
+    <dd>vSphere IP/hostname for vCenter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1908,14 +1908,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}vSphere Port for vCenter. Default `443` (string)
-{{% /md %}}</dd>
+    <dd>vSphere Port for vCenter. Default `443` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1924,8 +1924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere password (string)
-{{% /md %}}</dd>
+    <dd>vSphere password (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1933,8 +1933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere username (string)
-{{% /md %}}</dd>
+    <dd>vSphere username (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1942,8 +1942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere IP/hostname for vCenter (string)
-{{% /md %}}</dd>
+    <dd>vSphere IP/hostname for vCenter (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1951,11 +1951,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}vSphere Port for vCenter. Default `443` (string)
-{{% /md %}}</dd>
+    <dd>vSphere Port for vCenter. Default `443` (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

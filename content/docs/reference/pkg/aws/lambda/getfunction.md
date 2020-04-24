@@ -35,29 +35,29 @@ const existing = pulumi.output(aws.lambda.getFunction({
 
 ## Using GetFunction {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getFunction<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#GetFunctionArgs">GetFunctionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#GetFunctionResult">GetFunctionResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_function(</span>function_name=None<span class="p">, </span>qualifier=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupFunction<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#LookupFunctionArgs">LookupFunctionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#LookupFunctionResult">LookupFunctionResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetFunction </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.GetFunctionResult.html">GetFunctionResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.GetFunctionArgs.html">GetFunctionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -65,7 +65,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -74,8 +74,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the lambda function.
-{{% /md %}}</dd>
+    <dd>Name of the lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias name or version number of the lambda function. e.g. `$LATEST`, `my-alias`, or `1`
-{{% /md %}}</dd>
+    <dd>Alias name or version number of the lambda function. e.g. `$LATEST`, `my-alias`, or `1`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -92,13 +92,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -107,8 +107,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the lambda function.
-{{% /md %}}</dd>
+    <dd>Name of the lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -116,8 +116,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias name or version number of the lambda function. e.g. `$LATEST`, `my-alias`, or `1`
-{{% /md %}}</dd>
+    <dd>Alias name or version number of the lambda function. e.g. `$LATEST`, `my-alias`, or `1`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -125,13 +125,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -140,8 +140,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the lambda function.
-{{% /md %}}</dd>
+    <dd>Name of the lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -149,8 +149,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alias name or version number of the lambda function. e.g. `$LATEST`, `my-alias`, or `1`
-{{% /md %}}</dd>
+    <dd>Alias name or version number of the lambda function. e.g. `$LATEST`, `my-alias`, or `1`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -158,13 +158,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -173,8 +173,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the lambda function.
-{{% /md %}}</dd>
+    <dd>Name of the lambda function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -182,8 +182,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alias name or version number of the lambda function. e.g. `$LATEST`, `my-alias`, or `1`
-{{% /md %}}</dd>
+    <dd>Alias name or version number of the lambda function. e.g. `$LATEST`, `my-alias`, or `1`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -191,10 +191,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -210,7 +210,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -219,8 +219,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
-{{% /md %}}</dd>
+    <dd>Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -228,8 +228,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctiondeadletterconfig">Get<wbr>Function<wbr>Dead<wbr>Letter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Configure the function's *dead letter queue*.
-{{% /md %}}</dd>
+    <dd>Configure the function's *dead letter queue*.
+</dd>
 
     <dt class="property-"
             title="">
@@ -237,8 +237,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-"
             title="">
@@ -246,8 +246,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctionenvironment">Get<wbr>Function<wbr>Environment</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings.
+</dd>
 
     <dt class="property-"
             title="">
@@ -255,7 +255,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -263,8 +263,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The function entrypoint in your code.
-{{% /md %}}</dd>
+    <dd>The function entrypoint in your code.
+</dd>
 
     <dt class="property-"
             title="">
@@ -272,8 +272,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -281,8 +281,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway.
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -290,8 +290,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -299,8 +299,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-"
             title="">
@@ -308,8 +308,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Layer ARNs attached to your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Layer ARNs attached to your Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -317,8 +317,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime.
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime.
+</dd>
 
     <dt class="property-"
             title="">
@@ -326,8 +326,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
-{{% /md %}}</dd>
+    <dd>Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -335,8 +335,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
+</dd>
 
     <dt class="property-"
             title="">
@@ -344,8 +344,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -353,8 +353,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime environment for the Lambda function..
-{{% /md %}}</dd>
+    <dd>The runtime environment for the Lambda function..
+</dd>
 
     <dt class="property-"
             title="">
@@ -362,8 +362,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded representation of raw SHA-256 sum of the zip file.
-{{% /md %}}</dd>
+    <dd>Base64-encoded representation of raw SHA-256 sum of the zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -371,8 +371,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -380,7 +380,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -388,8 +388,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The function execution time at which Lambda should terminate the function.
-{{% /md %}}</dd>
+    <dd>The function execution time at which Lambda should terminate the function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -397,8 +397,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctiontracingconfig">Get<wbr>Function<wbr>Tracing<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Tracing settings of the function.
-{{% /md %}}</dd>
+    <dd>Tracing settings of the function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -406,8 +406,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The version of the Lambda function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -415,8 +415,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctionvpcconfig">Get<wbr>Function<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}VPC configuration associated with your Lambda function.
-{{% /md %}}</dd>
+    <dd>VPC configuration associated with your Lambda function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -424,13 +424,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -439,8 +439,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
-{{% /md %}}</dd>
+    <dd>Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -448,8 +448,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctiondeadletterconfig">Get<wbr>Function<wbr>Dead<wbr>Letter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Configure the function's *dead letter queue*.
-{{% /md %}}</dd>
+    <dd>Configure the function's *dead letter queue*.
+</dd>
 
     <dt class="property-"
             title="">
@@ -457,8 +457,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-"
             title="">
@@ -466,8 +466,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctionenvironment">Get<wbr>Function<wbr>Environment</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings.
+</dd>
 
     <dt class="property-"
             title="">
@@ -475,7 +475,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -483,8 +483,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function entrypoint in your code.
-{{% /md %}}</dd>
+    <dd>The function entrypoint in your code.
+</dd>
 
     <dt class="property-"
             title="">
@@ -492,8 +492,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -501,8 +501,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway.
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -510,8 +510,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -519,8 +519,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-"
             title="">
@@ -528,8 +528,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Layer ARNs attached to your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Layer ARNs attached to your Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,8 +537,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime.
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime.
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,8 +546,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
-{{% /md %}}</dd>
+    <dd>Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -555,8 +555,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,8 +564,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,8 +573,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime environment for the Lambda function..
-{{% /md %}}</dd>
+    <dd>The runtime environment for the Lambda function..
+</dd>
 
     <dt class="property-"
             title="">
@@ -582,8 +582,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded representation of raw SHA-256 sum of the zip file.
-{{% /md %}}</dd>
+    <dd>Base64-encoded representation of raw SHA-256 sum of the zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -591,8 +591,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -600,7 +600,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The function execution time at which Lambda should terminate the function.
-{{% /md %}}</dd>
+    <dd>The function execution time at which Lambda should terminate the function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,8 +617,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctiontracingconfig">Get<wbr>Function<wbr>Tracing<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Tracing settings of the function.
-{{% /md %}}</dd>
+    <dd>Tracing settings of the function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -626,8 +626,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The version of the Lambda function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -635,8 +635,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctionvpcconfig">Get<wbr>Function<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}VPC configuration associated with your Lambda function.
-{{% /md %}}</dd>
+    <dd>VPC configuration associated with your Lambda function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -644,13 +644,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -659,8 +659,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
-{{% /md %}}</dd>
+    <dd>Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -668,8 +668,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctiondeadletterconfig">Get<wbr>Function<wbr>Dead<wbr>Letter<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Configure the function's *dead letter queue*.
-{{% /md %}}</dd>
+    <dd>Configure the function's *dead letter queue*.
+</dd>
 
     <dt class="property-"
             title="">
@@ -677,8 +677,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-"
             title="">
@@ -686,8 +686,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctionenvironment">Get<wbr>Function<wbr>Environment</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings.
+</dd>
 
     <dt class="property-"
             title="">
@@ -695,7 +695,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -703,8 +703,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function entrypoint in your code.
-{{% /md %}}</dd>
+    <dd>The function entrypoint in your code.
+</dd>
 
     <dt class="property-"
             title="">
@@ -712,8 +712,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -721,8 +721,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway.
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -730,8 +730,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -739,8 +739,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-"
             title="">
@@ -748,8 +748,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Layer ARNs attached to your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Layer ARNs attached to your Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -757,8 +757,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime.
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime.
+</dd>
 
     <dt class="property-"
             title="">
@@ -766,8 +766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
-{{% /md %}}</dd>
+    <dd>Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -775,8 +775,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
+</dd>
 
     <dt class="property-"
             title="">
@@ -784,8 +784,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -793,8 +793,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime environment for the Lambda function..
-{{% /md %}}</dd>
+    <dd>The runtime environment for the Lambda function..
+</dd>
 
     <dt class="property-"
             title="">
@@ -802,8 +802,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded representation of raw SHA-256 sum of the zip file.
-{{% /md %}}</dd>
+    <dd>Base64-encoded representation of raw SHA-256 sum of the zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -811,8 +811,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -820,7 +820,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -828,8 +828,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The function execution time at which Lambda should terminate the function.
-{{% /md %}}</dd>
+    <dd>The function execution time at which Lambda should terminate the function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -837,8 +837,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctiontracingconfig">Get<wbr>Function<wbr>Tracing<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Tracing settings of the function.
-{{% /md %}}</dd>
+    <dd>Tracing settings of the function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -846,8 +846,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The version of the Lambda function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -855,8 +855,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctionvpcconfig">Get<wbr>Function<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}VPC configuration associated with your Lambda function.
-{{% /md %}}</dd>
+    <dd>VPC configuration associated with your Lambda function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -864,13 +864,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -879,8 +879,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
-{{% /md %}}</dd>
+    <dd>Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -888,8 +888,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctiondeadletterconfig">Dict[Get<wbr>Function<wbr>Dead<wbr>Letter<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Configure the function's *dead letter queue*.
-{{% /md %}}</dd>
+    <dd>Configure the function's *dead letter queue*.
+</dd>
 
     <dt class="property-"
             title="">
@@ -897,8 +897,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of what your Lambda Function does.
-{{% /md %}}</dd>
+    <dd>Description of what your Lambda Function does.
+</dd>
 
     <dt class="property-"
             title="">
@@ -906,8 +906,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctionenvironment">Dict[Get<wbr>Function<wbr>Environment]</a></span>
     </dt>
-    <dd>{{% md %}}The Lambda environment's configuration settings.
-{{% /md %}}</dd>
+    <dd>The Lambda environment's configuration settings.
+</dd>
 
     <dt class="property-"
             title="">
@@ -915,7 +915,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -923,8 +923,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The function entrypoint in your code.
-{{% /md %}}</dd>
+    <dd>The function entrypoint in your code.
+</dd>
 
     <dt class="property-"
             title="">
@@ -932,8 +932,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -941,8 +941,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN to be used for invoking Lambda Function from API Gateway.
-{{% /md %}}</dd>
+    <dd>The ARN to be used for invoking Lambda Function from API Gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -950,8 +950,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -959,8 +959,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date this resource was last modified.
-{{% /md %}}</dd>
+    <dd>The date this resource was last modified.
+</dd>
 
     <dt class="property-"
             title="">
@@ -968,8 +968,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Lambda Layer ARNs attached to your Lambda Function.
-{{% /md %}}</dd>
+    <dd>A list of Lambda Layer ARNs attached to your Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -977,8 +977,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Amount of memory in MB your Lambda Function can use at runtime.
-{{% /md %}}</dd>
+    <dd>Amount of memory in MB your Lambda Function can use at runtime.
+</dd>
 
     <dt class="property-"
             title="">
@@ -986,8 +986,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
-{{% /md %}}</dd>
+    <dd>Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -995,8 +995,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
-{{% /md %}}</dd>
+    <dd>The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1004,8 +1004,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}IAM role attached to the Lambda Function.
-{{% /md %}}</dd>
+    <dd>IAM role attached to the Lambda Function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1013,8 +1013,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The runtime environment for the Lambda function..
-{{% /md %}}</dd>
+    <dd>The runtime environment for the Lambda function..
+</dd>
 
     <dt class="property-"
             title="">
@@ -1022,8 +1022,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Base64-encoded representation of raw SHA-256 sum of the zip file.
-{{% /md %}}</dd>
+    <dd>Base64-encoded representation of raw SHA-256 sum of the zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1031,8 +1031,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size in bytes of the function .zip file.
-{{% /md %}}</dd>
+    <dd>The size in bytes of the function .zip file.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1040,7 +1040,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1048,8 +1048,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The function execution time at which Lambda should terminate the function.
-{{% /md %}}</dd>
+    <dd>The function execution time at which Lambda should terminate the function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1057,8 +1057,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctiontracingconfig">Dict[Get<wbr>Function<wbr>Tracing<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Tracing settings of the function.
-{{% /md %}}</dd>
+    <dd>Tracing settings of the function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1066,8 +1066,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Lambda function.
-{{% /md %}}</dd>
+    <dd>The version of the Lambda function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1075,8 +1075,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getfunctionvpcconfig">Dict[Get<wbr>Function<wbr>Vpc<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}VPC configuration associated with your Lambda function.
-{{% /md %}}</dd>
+    <dd>VPC configuration associated with your Lambda function.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1084,10 +1084,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1100,18 +1100,18 @@ The following output properties are available:
 
 
 <h4 id="getfunctiondeadletterconfig">Get<wbr>Function<wbr>Dead<wbr>Letter<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetFunctionDeadLetterConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#GetFunctionDeadLetterConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1120,13 +1120,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1135,13 +1135,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1150,13 +1150,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1165,28 +1165,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getfunctionenvironment">Get<wbr>Function<wbr>Environment</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetFunctionEnvironment">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#GetFunctionEnvironment">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1195,13 +1195,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1210,13 +1210,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1225,13 +1225,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1240,28 +1240,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getfunctiontracingconfig">Get<wbr>Function<wbr>Tracing<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetFunctionTracingConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#GetFunctionTracingConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1270,13 +1270,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1285,13 +1285,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1300,13 +1300,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1315,28 +1315,28 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getfunctionvpcconfig">Get<wbr>Function<wbr>Vpc<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetFunctionVpcConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#GetFunctionVpcConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1345,7 +1345,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1353,7 +1353,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1361,13 +1361,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1376,7 +1376,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1384,7 +1384,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1392,13 +1392,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1407,7 +1407,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1415,7 +1415,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1423,13 +1423,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1438,7 +1438,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1446,7 +1446,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1454,10 +1454,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

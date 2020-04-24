@@ -107,26 +107,26 @@ the vserver_group supports the following:
 
 
 ## Create a ScalingGroupVServerGroups Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#ScalingGroupVServerGroups">ScalingGroupVServerGroups</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#ScalingGroupVServerGroupsArgs">ScalingGroupVServerGroupsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ScalingGroupVServerGroups</span><span class="p">(resource_name, opts=None, </span>force=None<span class="p">, </span>scaling_group_id=None<span class="p">, </span>vserver_groups=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewScalingGroupVServerGroups<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingGroupVServerGroupsArgs">ScalingGroupVServerGroupsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingGroupVServerGroups">ScalingGroupVServerGroups</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.ScalingGroupVServerGroups.html">ScalingGroupVServerGroups</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ess.ScalingGroupVServerGroupsArgs.html">ScalingGroupVServerGroupsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -163,9 +163,9 @@ the vserver_group supports the following:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -183,9 +183,9 @@ the vserver_group supports the following:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -232,9 +232,9 @@ the vserver_group supports the following:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -271,7 +271,7 @@ the vserver_group supports the following:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ScalingGroupVServerGroups Resource Properties {#properties}
 
@@ -284,7 +284,7 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -293,8 +293,8 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -302,8 +302,8 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroup">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Inputs.<wbr>Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of vserver groups attached on scaling group. See Block vserver_group below for details.
-{{% /md %}}</dd>
+    <dd>A list of vserver groups attached on scaling group. See Block vserver_group below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,14 +311,14 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
-{{% /md %}}</dd>
+    <dd>If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -327,8 +327,8 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -336,8 +336,8 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroup">[]Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group</a></span>
     </dt>
-    <dd>{{% md %}}A list of vserver groups attached on scaling group. See Block vserver_group below for details.
-{{% /md %}}</dd>
+    <dd>A list of vserver groups attached on scaling group. See Block vserver_group below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,14 +345,14 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
-{{% /md %}}</dd>
+    <dd>If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -361,8 +361,8 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -370,8 +370,8 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroup">Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of vserver groups attached on scaling group. See Block vserver_group below for details.
-{{% /md %}}</dd>
+    <dd>A list of vserver groups attached on scaling group. See Block vserver_group below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,14 +379,14 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
-{{% /md %}}</dd>
+    <dd>If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -395,8 +395,8 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -404,8 +404,8 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroup">List[Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group]</a></span>
     </dt>
-    <dd>{{% md %}}A list of vserver groups attached on scaling group. See Block vserver_group below for details.
-{{% /md %}}</dd>
+    <dd>A list of vserver groups attached on scaling group. See Block vserver_group below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,11 +413,11 @@ The ScalingGroupVServerGroups resource accepts the following [input]({{< relref 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
-{{% /md %}}</dd>
+    <dd>If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -431,7 +431,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -440,13 +440,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -455,13 +455,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -470,13 +470,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -485,10 +485,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -499,25 +499,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ScalingGroupVServerGroups Resource {#look-up}
 
 Get an existing ScalingGroupVServerGroups resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#ScalingGroupVServerGroupsState">ScalingGroupVServerGroupsState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#ScalingGroupVServerGroups">ScalingGroupVServerGroups</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>force=None<span class="p">, </span>scaling_group_id=None<span class="p">, </span>vserver_groups=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetScalingGroupVServerGroups<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingGroupVServerGroupsState">ScalingGroupVServerGroupsState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingGroupVServerGroups">ScalingGroupVServerGroups</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.ScalingGroupVServerGroups.html">ScalingGroupVServerGroups</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.ScalingGroupVServerGroupsState.html">ScalingGroupVServerGroupsState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -542,9 +542,9 @@ Get an existing ScalingGroupVServerGroups resource's state with the given name, 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -557,36 +557,9 @@ Get an existing ScalingGroupVServerGroups resource's state with the given name, 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -611,13 +584,40 @@ Get an existing ScalingGroupVServerGroups resource's state with the given name, 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -626,8 +626,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
-{{% /md %}}</dd>
+    <dd>If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,8 +635,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,14 +644,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroup">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Inputs.<wbr>Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of vserver groups attached on scaling group. See Block vserver_group below for details.
-{{% /md %}}</dd>
+    <dd>A list of vserver groups attached on scaling group. See Block vserver_group below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -660,8 +660,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
-{{% /md %}}</dd>
+    <dd>If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,8 +669,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -678,14 +678,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroup">[]Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group</a></span>
     </dt>
-    <dd>{{% md %}}A list of vserver groups attached on scaling group. See Block vserver_group below for details.
-{{% /md %}}</dd>
+    <dd>A list of vserver groups attached on scaling group. See Block vserver_group below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -694,8 +694,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
-{{% /md %}}</dd>
+    <dd>If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -703,8 +703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,14 +712,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroup">Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of vserver groups attached on scaling group. See Block vserver_group below for details.
-{{% /md %}}</dd>
+    <dd>A list of vserver groups attached on scaling group. See Block vserver_group below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -728,8 +728,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
-{{% /md %}}</dd>
+    <dd>If instances of scaling group are attached/removed from slb backend server when attach/detach vserver group from scaling group. Default to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -737,8 +737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -746,11 +746,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroup">List[Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group]</a></span>
     </dt>
-    <dd>{{% md %}}A list of vserver groups attached on scaling group. See Block vserver_group below for details.
-{{% /md %}}</dd>
+    <dd>A list of vserver groups attached on scaling group. See Block vserver_group below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -765,18 +765,18 @@ The following state arguments are supported:
 
 
 <h4 id="scalinggroupvservergroupsvservergroup">Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ScalingGroupVServerGroupsVserverGroup">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ScalingGroupVServerGroupsVserverGroup">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingGroupVServerGroupsVserverGroupArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingGroupVServerGroupsVserverGroupOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -785,7 +785,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -793,13 +793,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroupvserverattribute">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Inputs.<wbr>Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group<wbr>Vserver<wbr>Attribute<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -808,7 +808,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -816,13 +816,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroupvserverattribute">[]Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group<wbr>Vserver<wbr>Attribute</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -831,7 +831,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -839,13 +839,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroupvserverattribute">Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group<wbr>Vserver<wbr>Attribute[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -854,7 +854,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -862,28 +862,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scalinggroupvservergroupsvservergroupvserverattribute">List[Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group<wbr>Vserver<wbr>Attribute]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="scalinggroupvservergroupsvservergroupvserverattribute">Scaling<wbr>Group<wbr>VServer<wbr>Groups<wbr>Vserver<wbr>Group<wbr>Vserver<wbr>Attribute</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/input/#ScalingGroupVServerGroupsVserverGroupVserverAttribute">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#ScalingGroupVServerGroupsVserverGroupVserverAttribute">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingGroupVServerGroupsVserverGroupVserverAttributeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#ScalingGroupVServerGroupsVserverGroupVserverAttributeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -892,7 +892,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -900,7 +900,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -908,13 +908,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -923,7 +923,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -931,7 +931,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -939,13 +939,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -954,7 +954,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -962,7 +962,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -970,13 +970,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -985,7 +985,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -993,7 +993,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1001,10 +1001,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -34,29 +34,29 @@ export const firstDiskId = disksDs.disks[0].id;
 
 ## Using GetDisks {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getDisks<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetDisksArgs">GetDisksArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetDisksResult">GetDisksResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_disks(</span>category=None<span class="p">, </span>encrypted=None<span class="p">, </span>ids=None<span class="p">, </span>instance_id=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>resource_group_id=None<span class="p">, </span>tags=None<span class="p">, </span>type=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupDisks<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupDisksArgs">LookupDisksArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupDisksResult">LookupDisksResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetDisks </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ecs.GetDisksResult.html">GetDisksResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ecs.GetDisksArgs.html">GetDisksArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -64,7 +64,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -73,8 +73,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -82,8 +82,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -91,8 +91,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of disks IDs.
-{{% /md %}}</dd>
+    <dd>A list of disks IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -100,8 +100,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by the specified ECS instance ID.
-{{% /md %}}</dd>
+    <dd>Filter the results by the specified ECS instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -109,8 +109,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by disk name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by disk name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -118,7 +118,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -126,8 +126,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the disk belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the disk belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -135,7 +135,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disks. It must be in the format:
+    <dd>A map of tags assigned to the disks. It must be in the format:
 ```
 data "alicloud.ecs.getDisks" "disks_ds" {
 tags = {
@@ -144,7 +144,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -152,14 +152,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -168,8 +168,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -177,8 +177,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -186,8 +186,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of disks IDs.
-{{% /md %}}</dd>
+    <dd>A list of disks IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -195,8 +195,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by the specified ECS instance ID.
-{{% /md %}}</dd>
+    <dd>Filter the results by the specified ECS instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -204,8 +204,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by disk name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by disk name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -213,7 +213,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -221,8 +221,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the disk belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the disk belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,7 +230,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disks. It must be in the format:
+    <dd>A map of tags assigned to the disks. It must be in the format:
 ```
 data "alicloud.ecs.getDisks" "disks_ds" {
 tags = {
@@ -239,7 +239,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -247,14 +247,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -263,8 +263,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of disks IDs.
-{{% /md %}}</dd>
+    <dd>A list of disks IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by the specified ECS instance ID.
-{{% /md %}}</dd>
+    <dd>Filter the results by the specified ECS instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by disk name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by disk name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,7 +308,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -316,8 +316,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the disk belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the disk belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -325,7 +325,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disks. It must be in the format:
+    <dd>A map of tags assigned to the disks. It must be in the format:
 ```
 data "alicloud.ecs.getDisks" "disks_ds" {
 tags = {
@@ -334,7 +334,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,14 +342,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -358,8 +358,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,8 +367,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,8 +376,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of disks IDs.
-{{% /md %}}</dd>
+    <dd>A list of disks IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by the specified ECS instance ID.
-{{% /md %}}</dd>
+    <dd>Filter the results by the specified ECS instance ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,8 +394,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by disk name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by disk name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,7 +403,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,8 +411,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the disk belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the disk belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,7 +420,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disks. It must be in the format:
+    <dd>A map of tags assigned to the disks. It must be in the format:
 ```
 data "alicloud.ecs.getDisks" "disks_ds" {
 tags = {
@@ -429,7 +429,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,11 +437,11 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -457,7 +457,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -466,8 +466,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdisksdisk">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Outputs.<wbr>Get<wbr>Disks<wbr>Disk&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of disks. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of disks. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -475,8 +475,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -484,7 +484,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -492,8 +492,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-"
             title="">
@@ -501,8 +501,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -510,8 +510,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the related instance. It is `null` unless the `status` is `In_use`.
-{{% /md %}}</dd>
+    <dd>ID of the related instance. It is `null` unless the `status` is `In_use`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -519,7 +519,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -527,7 +527,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -535,8 +535,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -544,8 +544,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disk.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the disk.
+</dd>
 
     <dt class="property-"
             title="">
@@ -553,14 +553,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -569,8 +569,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdisksdisk">[]Get<wbr>Disks<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}A list of disks. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of disks. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -578,8 +578,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -587,7 +587,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,8 +604,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -613,8 +613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the related instance. It is `null` unless the `status` is `In_use`.
-{{% /md %}}</dd>
+    <dd>ID of the related instance. It is `null` unless the `status` is `In_use`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,7 +622,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -630,7 +630,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -638,8 +638,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -647,8 +647,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disk.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the disk.
+</dd>
 
     <dt class="property-"
             title="">
@@ -656,14 +656,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -672,8 +672,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdisksdisk">Get<wbr>Disks<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of disks. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of disks. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -681,8 +681,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -690,7 +690,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -698,8 +698,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-"
             title="">
@@ -707,8 +707,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -716,8 +716,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the related instance. It is `null` unless the `status` is `In_use`.
-{{% /md %}}</dd>
+    <dd>ID of the related instance. It is `null` unless the `status` is `In_use`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -725,7 +725,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -733,7 +733,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -741,8 +741,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -750,8 +750,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disk.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the disk.
+</dd>
 
     <dt class="property-"
             title="">
@@ -759,14 +759,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -775,8 +775,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdisksdisk">List[Get<wbr>Disks<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}A list of disks. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of disks. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -784,8 +784,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -793,7 +793,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -801,8 +801,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-"
             title="">
@@ -810,8 +810,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -819,8 +819,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the related instance. It is `null` unless the `status` is `In_use`.
-{{% /md %}}</dd>
+    <dd>ID of the related instance. It is `null` unless the `status` is `In_use`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -828,7 +828,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -836,7 +836,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -844,8 +844,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -853,8 +853,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disk.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the disk.
+</dd>
 
     <dt class="property-"
             title="">
@@ -862,11 +862,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -879,18 +879,18 @@ The following output properties are available:
 
 
 <h4 id="getdisksdisk">Get<wbr>Disks<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetDisksDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetDisksDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -899,8 +899,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk attachment time.
-{{% /md %}}</dd>
+    <dd>Disk attachment time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -908,8 +908,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone of the disk.
-{{% /md %}}</dd>
+    <dd>Availability zone of the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -917,8 +917,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -926,8 +926,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk creation time.
-{{% /md %}}</dd>
+    <dd>Disk creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -935,8 +935,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk description.
-{{% /md %}}</dd>
+    <dd>Disk description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -944,8 +944,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk detachment time.
-{{% /md %}}</dd>
+    <dd>Disk detachment time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -953,8 +953,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -962,8 +962,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk expiration time.
-{{% /md %}}</dd>
+    <dd>Disk expiration time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -971,8 +971,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the disk.
-{{% /md %}}</dd>
+    <dd>ID of the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -980,8 +980,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image from which the disk is created. It is null unless the disk is created using an image.
-{{% /md %}}</dd>
+    <dd>ID of the image from which the disk is created. It is null unless the disk is created using an image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -989,8 +989,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by the specified ECS instance ID.
-{{% /md %}}</dd>
+    <dd>Filter the results by the specified ECS instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -998,8 +998,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk name.
-{{% /md %}}</dd>
+    <dd>Disk name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1007,8 +1007,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the disk belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the disk belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1016,8 +1016,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the disk belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the disk belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1025,8 +1025,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Disk size in GiB.
-{{% /md %}}</dd>
+    <dd>Disk size in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1034,8 +1034,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot used to create the disk. It is null if no snapshot is used to create the disk.
-{{% /md %}}</dd>
+    <dd>Snapshot used to create the disk. It is null if no snapshot is used to create the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1043,8 +1043,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current status. Possible values: `In_use`, `Available`, `Attaching`, `Detaching`, `Creating` and `ReIniting`.
-{{% /md %}}</dd>
+    <dd>Current status. Possible values: `In_use`, `Available`, `Attaching`, `Detaching`, `Creating` and `ReIniting`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1052,8 +1052,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1061,7 +1061,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disks. It must be in the format:
+    <dd>A map of tags assigned to the disks. It must be in the format:
 ```
 data "alicloud.ecs.getDisks" "disks_ds" {
 tags = {
@@ -1070,13 +1070,13 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1085,8 +1085,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk attachment time.
-{{% /md %}}</dd>
+    <dd>Disk attachment time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1094,8 +1094,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone of the disk.
-{{% /md %}}</dd>
+    <dd>Availability zone of the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1103,8 +1103,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1112,8 +1112,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk creation time.
-{{% /md %}}</dd>
+    <dd>Disk creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1121,8 +1121,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk description.
-{{% /md %}}</dd>
+    <dd>Disk description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1130,8 +1130,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk detachment time.
-{{% /md %}}</dd>
+    <dd>Disk detachment time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1139,8 +1139,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1148,8 +1148,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk expiration time.
-{{% /md %}}</dd>
+    <dd>Disk expiration time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1157,8 +1157,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the disk.
-{{% /md %}}</dd>
+    <dd>ID of the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1166,8 +1166,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image from which the disk is created. It is null unless the disk is created using an image.
-{{% /md %}}</dd>
+    <dd>ID of the image from which the disk is created. It is null unless the disk is created using an image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1175,8 +1175,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by the specified ECS instance ID.
-{{% /md %}}</dd>
+    <dd>Filter the results by the specified ECS instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1184,8 +1184,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk name.
-{{% /md %}}</dd>
+    <dd>Disk name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1193,8 +1193,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the disk belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the disk belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1202,8 +1202,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the disk belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the disk belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1211,8 +1211,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Disk size in GiB.
-{{% /md %}}</dd>
+    <dd>Disk size in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1220,8 +1220,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot used to create the disk. It is null if no snapshot is used to create the disk.
-{{% /md %}}</dd>
+    <dd>Snapshot used to create the disk. It is null if no snapshot is used to create the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1229,8 +1229,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current status. Possible values: `In_use`, `Available`, `Attaching`, `Detaching`, `Creating` and `ReIniting`.
-{{% /md %}}</dd>
+    <dd>Current status. Possible values: `In_use`, `Available`, `Attaching`, `Detaching`, `Creating` and `ReIniting`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1238,8 +1238,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,7 +1247,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disks. It must be in the format:
+    <dd>A map of tags assigned to the disks. It must be in the format:
 ```
 data "alicloud.ecs.getDisks" "disks_ds" {
 tags = {
@@ -1256,13 +1256,13 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1271,8 +1271,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk attachment time.
-{{% /md %}}</dd>
+    <dd>Disk attachment time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1280,8 +1280,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone of the disk.
-{{% /md %}}</dd>
+    <dd>Availability zone of the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1289,8 +1289,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1298,8 +1298,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk creation time.
-{{% /md %}}</dd>
+    <dd>Disk creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1307,8 +1307,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk description.
-{{% /md %}}</dd>
+    <dd>Disk description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1316,8 +1316,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk detachment time.
-{{% /md %}}</dd>
+    <dd>Disk detachment time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1325,8 +1325,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1334,8 +1334,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk expiration time.
-{{% /md %}}</dd>
+    <dd>Disk expiration time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1343,8 +1343,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the disk.
-{{% /md %}}</dd>
+    <dd>ID of the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1352,8 +1352,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image from which the disk is created. It is null unless the disk is created using an image.
-{{% /md %}}</dd>
+    <dd>ID of the image from which the disk is created. It is null unless the disk is created using an image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1361,8 +1361,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by the specified ECS instance ID.
-{{% /md %}}</dd>
+    <dd>Filter the results by the specified ECS instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1370,8 +1370,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk name.
-{{% /md %}}</dd>
+    <dd>Disk name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1379,8 +1379,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the disk belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the disk belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1388,8 +1388,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the disk belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the disk belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1397,8 +1397,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Disk size in GiB.
-{{% /md %}}</dd>
+    <dd>Disk size in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1406,8 +1406,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot used to create the disk. It is null if no snapshot is used to create the disk.
-{{% /md %}}</dd>
+    <dd>Snapshot used to create the disk. It is null if no snapshot is used to create the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1415,8 +1415,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current status. Possible values: `In_use`, `Available`, `Attaching`, `Detaching`, `Creating` and `ReIniting`.
-{{% /md %}}</dd>
+    <dd>Current status. Possible values: `In_use`, `Available`, `Attaching`, `Detaching`, `Creating` and `ReIniting`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1424,8 +1424,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1433,7 +1433,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disks. It must be in the format:
+    <dd>A map of tags assigned to the disks. It must be in the format:
 ```
 data "alicloud.ecs.getDisks" "disks_ds" {
 tags = {
@@ -1442,13 +1442,13 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1457,8 +1457,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk attachment time.
-{{% /md %}}</dd>
+    <dd>Disk attachment time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1466,8 +1466,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone of the disk.
-{{% /md %}}</dd>
+    <dd>Availability zone of the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1475,8 +1475,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
-{{% /md %}}</dd>
+    <dd>Disk category. Possible values: `cloud` (basic cloud disk), `cloud_efficiency` (ultra cloud disk), `ephemeral_ssd` (local SSD cloud disk), `cloud_ssd` (SSD cloud disk), and `cloud_essd` (ESSD cloud disk).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1484,8 +1484,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk creation time.
-{{% /md %}}</dd>
+    <dd>Disk creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1493,8 +1493,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk description.
-{{% /md %}}</dd>
+    <dd>Disk description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1502,8 +1502,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk detachment time.
-{{% /md %}}</dd>
+    <dd>Disk detachment time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1511,8 +1511,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the disk is encrypted or not. Possible values: `on` and `off`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1520,8 +1520,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk expiration time.
-{{% /md %}}</dd>
+    <dd>Disk expiration time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1529,8 +1529,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the disk.
-{{% /md %}}</dd>
+    <dd>ID of the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1538,8 +1538,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the image from which the disk is created. It is null unless the disk is created using an image.
-{{% /md %}}</dd>
+    <dd>ID of the image from which the disk is created. It is null unless the disk is created using an image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1547,8 +1547,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter the results by the specified ECS instance ID.
-{{% /md %}}</dd>
+    <dd>Filter the results by the specified ECS instance ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1556,8 +1556,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk name.
-{{% /md %}}</dd>
+    <dd>Disk name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1565,8 +1565,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the disk belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the disk belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1574,8 +1574,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the disk belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the disk belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1583,8 +1583,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Disk size in GiB.
-{{% /md %}}</dd>
+    <dd>Disk size in GiB.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1592,8 +1592,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot used to create the disk. It is null if no snapshot is used to create the disk.
-{{% /md %}}</dd>
+    <dd>Snapshot used to create the disk. It is null if no snapshot is used to create the disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1601,8 +1601,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current status. Possible values: `In_use`, `Available`, `Attaching`, `Detaching`, `Creating` and `ReIniting`.
-{{% /md %}}</dd>
+    <dd>Current status. Possible values: `In_use`, `Available`, `Attaching`, `Detaching`, `Creating` and `ReIniting`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1610,8 +1610,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Disk type. Possible values: `system` and `data`.
-{{% /md %}}</dd>
+    <dd>Disk type. Possible values: `system` and `data`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,7 +1619,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the disks. It must be in the format:
+    <dd>A map of tags assigned to the disks. It must be in the format:
 ```
 data "alicloud.ecs.getDisks" "disks_ds" {
 tags = {
@@ -1628,10 +1628,10 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

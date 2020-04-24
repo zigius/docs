@@ -90,26 +90,26 @@ const exampleStage = new aws.apigateway.Stage("example", {
 
 
 ## Create a Stage Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Stage">Stage</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#StageArgs">StageArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Stage</span><span class="p">(resource_name, opts=None, </span>access_log_settings=None<span class="p">, </span>cache_cluster_enabled=None<span class="p">, </span>cache_cluster_size=None<span class="p">, </span>client_certificate_id=None<span class="p">, </span>deployment=None<span class="p">, </span>description=None<span class="p">, </span>documentation_version=None<span class="p">, </span>rest_api=None<span class="p">, </span>stage_name=None<span class="p">, </span>tags=None<span class="p">, </span>variables=None<span class="p">, </span>xray_tracing_enabled=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewStage<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#StageArgs">StageArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Stage">Stage</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Stage.html">Stage</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.StageArgs.html">StageArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -146,9 +146,9 @@ const exampleStage = new aws.apigateway.Stage("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -166,9 +166,9 @@ const exampleStage = new aws.apigateway.Stage("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -215,9 +215,9 @@ const exampleStage = new aws.apigateway.Stage("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -254,7 +254,7 @@ const exampleStage = new aws.apigateway.Stage("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Stage Resource Properties {#properties}
 
@@ -267,7 +267,7 @@ The Stage resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -276,8 +276,8 @@ The Stage resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ID of the deployment that the stage points to
-{{% /md %}}</dd>
+    <dd>The ID of the deployment that the stage points to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -285,8 +285,8 @@ The Stage resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -294,8 +294,8 @@ The Stage resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage
-{{% /md %}}</dd>
+    <dd>The name of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The Stage resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Enables access logs for the API stage. Detailed below.
-{{% /md %}}</dd>
+    <dd>Enables access logs for the API stage. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ The Stage resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a cache cluster is enabled for the stage
-{{% /md %}}</dd>
+    <dd>Specifies whether a cache cluster is enabled for the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,9 +321,9 @@ The Stage resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of the cache cluster for the stage, if enabled.
+    <dd>The size of the cache cluster for the stage, if enabled.
 Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,8 +331,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of a client certificate for the stage.
-{{% /md %}}</dd>
+    <dd>The identifier of a client certificate for the stage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,8 +340,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,8 +349,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the associated API documentation
-{{% /md %}}</dd>
+    <dd>The version of the associated API documentation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,8 +358,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,8 +367,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map that defines the stage variables
-{{% /md %}}</dd>
+    <dd>A map that defines the stage variables
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,14 +376,14 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active tracing with X-ray is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active tracing with X-ray is enabled. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -392,8 +392,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The ID of the deployment that the stage points to
-{{% /md %}}</dd>
+    <dd>The ID of the deployment that the stage points to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -401,8 +401,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -410,8 +410,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage
-{{% /md %}}</dd>
+    <dd>The name of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,8 +419,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}Enables access logs for the API stage. Detailed below.
-{{% /md %}}</dd>
+    <dd>Enables access logs for the API stage. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a cache cluster is enabled for the stage
-{{% /md %}}</dd>
+    <dd>Specifies whether a cache cluster is enabled for the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,9 +437,9 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of the cache cluster for the stage, if enabled.
+    <dd>The size of the cache cluster for the stage, if enabled.
 Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of a client certificate for the stage.
-{{% /md %}}</dd>
+    <dd>The identifier of a client certificate for the stage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the associated API documentation
-{{% /md %}}</dd>
+    <dd>The version of the associated API documentation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,8 +483,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map that defines the stage variables
-{{% /md %}}</dd>
+    <dd>A map that defines the stage variables
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,14 +492,14 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active tracing with X-ray is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active tracing with X-ray is enabled. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -508,8 +508,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">string | Deployment</span>
     </dt>
-    <dd>{{% md %}}The ID of the deployment that the stage points to
-{{% /md %}}</dd>
+    <dd>The ID of the deployment that the stage points to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -517,8 +517,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">string | Rest<wbr>Api</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -526,8 +526,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage
-{{% /md %}}</dd>
+    <dd>The name of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}Enables access logs for the API stage. Detailed below.
-{{% /md %}}</dd>
+    <dd>Enables access logs for the API stage. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a cache cluster is enabled for the stage
-{{% /md %}}</dd>
+    <dd>Specifies whether a cache cluster is enabled for the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,9 +553,9 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of the cache cluster for the stage, if enabled.
+    <dd>The size of the cache cluster for the stage, if enabled.
 Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,8 +563,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of a client certificate for the stage.
-{{% /md %}}</dd>
+    <dd>The identifier of a client certificate for the stage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -572,8 +572,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,8 +581,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the associated API documentation
-{{% /md %}}</dd>
+    <dd>The version of the associated API documentation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,8 +590,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,8 +599,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map that defines the stage variables
-{{% /md %}}</dd>
+    <dd>A map that defines the stage variables
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,14 +608,14 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether active tracing with X-ray is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active tracing with X-ray is enabled. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -624,8 +624,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The ID of the deployment that the stage points to
-{{% /md %}}</dd>
+    <dd>The ID of the deployment that the stage points to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -633,8 +633,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -642,8 +642,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage
-{{% /md %}}</dd>
+    <dd>The name of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,8 +651,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Dict[Stage<wbr>Access<wbr>Log<wbr>Settings]</a></span>
     </dt>
-    <dd>{{% md %}}Enables access logs for the API stage. Detailed below.
-{{% /md %}}</dd>
+    <dd>Enables access logs for the API stage. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -660,8 +660,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a cache cluster is enabled for the stage
-{{% /md %}}</dd>
+    <dd>Specifies whether a cache cluster is enabled for the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -669,9 +669,9 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The size of the cache cluster for the stage, if enabled.
+    <dd>The size of the cache cluster for the stage, if enabled.
 Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -679,8 +679,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of a client certificate for the stage.
-{{% /md %}}</dd>
+    <dd>The identifier of a client certificate for the stage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -688,8 +688,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -697,8 +697,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the associated API documentation
-{{% /md %}}</dd>
+    <dd>The version of the associated API documentation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -706,8 +706,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -715,8 +715,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map that defines the stage variables
-{{% /md %}}</dd>
+    <dd>A map that defines the stage variables
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -724,11 +724,11 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active tracing with X-ray is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active tracing with X-ray is enabled. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -742,7 +742,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -751,8 +751,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -760,10 +760,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -771,7 +771,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -779,15 +779,15 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -796,8 +796,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -805,10 +805,10 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -816,7 +816,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -824,15 +824,15 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -841,8 +841,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -850,10 +850,10 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -861,7 +861,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -869,15 +869,15 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -886,8 +886,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-"
             title="">
@@ -895,10 +895,10 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -906,7 +906,7 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -914,12 +914,12 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -930,25 +930,25 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
 ## Look up an Existing Stage Resource {#look-up}
 
 Get an existing Stage resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#StageState">StageState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Stage">Stage</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>access_log_settings=None<span class="p">, </span>arn=None<span class="p">, </span>cache_cluster_enabled=None<span class="p">, </span>cache_cluster_size=None<span class="p">, </span>client_certificate_id=None<span class="p">, </span>deployment=None<span class="p">, </span>description=None<span class="p">, </span>documentation_version=None<span class="p">, </span>execution_arn=None<span class="p">, </span>invoke_url=None<span class="p">, </span>rest_api=None<span class="p">, </span>stage_name=None<span class="p">, </span>tags=None<span class="p">, </span>variables=None<span class="p">, </span>xray_tracing_enabled=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetStage<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#StageState">StageState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Stage">Stage</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Stage.html">Stage</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.StageState.html">StageState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -973,9 +973,9 @@ Get an existing Stage resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -988,36 +988,9 @@ Get an existing Stage resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1042,13 +1015,40 @@ Get an existing Stage resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Enables access logs for the API stage. Detailed below.
-{{% /md %}}</dd>
+    <dd>Enables access logs for the API stage. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,8 +1075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a cache cluster is enabled for the stage
-{{% /md %}}</dd>
+    <dd>Specifies whether a cache cluster is enabled for the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,9 +1084,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of the cache cluster for the stage, if enabled.
+    <dd>The size of the cache cluster for the stage, if enabled.
 Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1094,8 +1094,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of a client certificate for the stage.
-{{% /md %}}</dd>
+    <dd>The identifier of a client certificate for the stage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,8 +1103,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ID of the deployment that the stage points to
-{{% /md %}}</dd>
+    <dd>The ID of the deployment that the stage points to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,8 +1112,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,8 +1121,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the associated API documentation
-{{% /md %}}</dd>
+    <dd>The version of the associated API documentation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,10 +1130,10 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,9 +1141,9 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,8 +1151,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,8 +1160,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage
-{{% /md %}}</dd>
+    <dd>The name of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,8 +1169,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,8 +1178,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map that defines the stage variables
-{{% /md %}}</dd>
+    <dd>A map that defines the stage variables
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,14 +1187,14 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active tracing with X-ray is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active tracing with X-ray is enabled. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1203,8 +1203,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}Enables access logs for the API stage. Detailed below.
-{{% /md %}}</dd>
+    <dd>Enables access logs for the API stage. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1212,8 +1212,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,8 +1221,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a cache cluster is enabled for the stage
-{{% /md %}}</dd>
+    <dd>Specifies whether a cache cluster is enabled for the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,9 +1230,9 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of the cache cluster for the stage, if enabled.
+    <dd>The size of the cache cluster for the stage, if enabled.
 Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,8 +1240,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of a client certificate for the stage.
-{{% /md %}}</dd>
+    <dd>The identifier of a client certificate for the stage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,8 +1249,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The ID of the deployment that the stage points to
-{{% /md %}}</dd>
+    <dd>The ID of the deployment that the stage points to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,8 +1258,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,8 +1267,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the associated API documentation
-{{% /md %}}</dd>
+    <dd>The version of the associated API documentation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,10 +1276,10 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,9 +1287,9 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,8 +1297,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,8 +1306,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage
-{{% /md %}}</dd>
+    <dd>The name of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1315,8 +1315,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1324,8 +1324,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map that defines the stage variables
-{{% /md %}}</dd>
+    <dd>A map that defines the stage variables
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1333,14 +1333,14 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active tracing with X-ray is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active tracing with X-ray is enabled. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1349,8 +1349,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}Enables access logs for the API stage. Detailed below.
-{{% /md %}}</dd>
+    <dd>Enables access logs for the API stage. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1358,8 +1358,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,8 +1367,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a cache cluster is enabled for the stage
-{{% /md %}}</dd>
+    <dd>Specifies whether a cache cluster is enabled for the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,9 +1376,9 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The size of the cache cluster for the stage, if enabled.
+    <dd>The size of the cache cluster for the stage, if enabled.
 Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1386,8 +1386,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of a client certificate for the stage.
-{{% /md %}}</dd>
+    <dd>The identifier of a client certificate for the stage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,8 +1395,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">string | Deployment</span>
     </dt>
-    <dd>{{% md %}}The ID of the deployment that the stage points to
-{{% /md %}}</dd>
+    <dd>The ID of the deployment that the stage points to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1404,8 +1404,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1413,8 +1413,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the associated API documentation
-{{% /md %}}</dd>
+    <dd>The version of the associated API documentation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1422,10 +1422,10 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1433,9 +1433,9 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,8 +1443,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">string | Rest<wbr>Api</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,8 +1452,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage
-{{% /md %}}</dd>
+    <dd>The name of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,8 +1461,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1470,8 +1470,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map that defines the stage variables
-{{% /md %}}</dd>
+    <dd>A map that defines the stage variables
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1479,14 +1479,14 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether active tracing with X-ray is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active tracing with X-ray is enabled. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1495,8 +1495,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Dict[Stage<wbr>Access<wbr>Log<wbr>Settings]</a></span>
     </dt>
-    <dd>{{% md %}}Enables access logs for the API stage. Detailed below.
-{{% /md %}}</dd>
+    <dd>Enables access logs for the API stage. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN)
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,8 +1513,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether a cache cluster is enabled for the stage
-{{% /md %}}</dd>
+    <dd>Specifies whether a cache cluster is enabled for the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,9 +1522,9 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The size of the cache cluster for the stage, if enabled.
+    <dd>The size of the cache cluster for the stage, if enabled.
 Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1532,8 +1532,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of a client certificate for the stage.
-{{% /md %}}</dd>
+    <dd>The identifier of a client certificate for the stage.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,8 +1541,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The ID of the deployment that the stage points to
-{{% /md %}}</dd>
+    <dd>The ID of the deployment that the stage points to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1550,8 +1550,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the stage
-{{% /md %}}</dd>
+    <dd>The description of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,8 +1559,8 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the associated API documentation
-{{% /md %}}</dd>
+    <dd>The version of the associated API documentation
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,10 +1568,10 @@ Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `2
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
+    <dd>The execution ARN to be used in [`lambda_permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `source_arn`
 when allowing API Gateway to invoke a Lambda function,
 e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1579,9 +1579,9 @@ e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL to invoke the API pointing to the stage,
+    <dd>The URL to invoke the API pointing to the stage,
 e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1589,8 +1589,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The ID of the associated REST API
-{{% /md %}}</dd>
+    <dd>The ID of the associated REST API
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1598,8 +1598,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the stage
-{{% /md %}}</dd>
+    <dd>The name of the stage
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1607,8 +1607,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1616,8 +1616,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map that defines the stage variables
-{{% /md %}}</dd>
+    <dd>A map that defines the stage variables
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1625,11 +1625,11 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether active tracing with X-ray is enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether active tracing with X-ray is enabled. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1644,18 +1644,18 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
 
 
 <h4 id="stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#StageAccessLogSettings">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#StageAccessLogSettings">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#StageAccessLogSettingsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#StageAccessLogSettingsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1664,8 +1664,8 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1673,15 +1673,15 @@ e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The formatting and values recorded in the logs. 
+    <dd>The formatting and values recorded in the logs. 
 For more information on configuring the log format rules visit the AWS [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1690,8 +1690,8 @@ For more information on configuring the log format rules visit the AWS [document
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1699,15 +1699,15 @@ For more information on configuring the log format rules visit the AWS [document
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The formatting and values recorded in the logs. 
+    <dd>The formatting and values recorded in the logs. 
 For more information on configuring the log format rules visit the AWS [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1716,8 +1716,8 @@ For more information on configuring the log format rules visit the AWS [document
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1725,15 +1725,15 @@ For more information on configuring the log format rules visit the AWS [document
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The formatting and values recorded in the logs. 
+    <dd>The formatting and values recorded in the logs. 
 For more information on configuring the log format rules visit the AWS [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1742,8 +1742,8 @@ For more information on configuring the log format rules visit the AWS [document
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1751,12 +1751,12 @@ For more information on configuring the log format rules visit the AWS [document
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The formatting and values recorded in the logs. 
+    <dd>The formatting and values recorded in the logs. 
 For more information on configuring the log format rules visit the AWS [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

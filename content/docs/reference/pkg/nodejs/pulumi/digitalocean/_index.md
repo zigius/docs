@@ -16,22 +16,22 @@ git_sha: "461be719ea8e60ce756dac8940b4553d153b08dc"
 > please consult the source [`terraform-providers/terraform-provider-digitalocean` repo](https://github.com/terraform-providers/terraform-provider-digitalocean/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var digitalocean = require("@pulumi/digitalocean");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as digitalocean from "@pulumi/digitalocean";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

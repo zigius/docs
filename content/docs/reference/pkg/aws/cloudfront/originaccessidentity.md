@@ -91,26 +91,26 @@ const example = new aws.s3.BucketPolicy("example", {
 
 
 ## Create a OriginAccessIdentity Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#OriginAccessIdentity">OriginAccessIdentity</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#OriginAccessIdentityArgs">OriginAccessIdentityArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">OriginAccessIdentity</span><span class="p">(resource_name, opts=None, </span>comment=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewOriginAccessIdentity<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#OriginAccessIdentityArgs">OriginAccessIdentityArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#OriginAccessIdentity">OriginAccessIdentity</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.OriginAccessIdentity.html">OriginAccessIdentity</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.OriginAccessIdentityArgs.html">OriginAccessIdentityArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -147,9 +147,9 @@ const example = new aws.s3.BucketPolicy("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -167,9 +167,9 @@ const example = new aws.s3.BucketPolicy("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -216,9 +216,9 @@ const example = new aws.s3.BucketPolicy("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -255,7 +255,7 @@ const example = new aws.s3.BucketPolicy("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## OriginAccessIdentity Resource Properties {#properties}
 
@@ -268,7 +268,7 @@ The OriginAccessIdentity resource accepts the following [input]({{< relref "/doc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -277,14 +277,14 @@ The OriginAccessIdentity resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment for the origin access identity.
-{{% /md %}}</dd>
+    <dd>An optional comment for the origin access identity.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -293,14 +293,14 @@ The OriginAccessIdentity resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment for the origin access identity.
-{{% /md %}}</dd>
+    <dd>An optional comment for the origin access identity.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -309,14 +309,14 @@ The OriginAccessIdentity resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment for the origin access identity.
-{{% /md %}}</dd>
+    <dd>An optional comment for the origin access identity.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -325,11 +325,11 @@ The OriginAccessIdentity resource accepts the following [input]({{< relref "/doc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment for the origin access identity.
-{{% /md %}}</dd>
+    <dd>An optional comment for the origin access identity.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -343,7 +343,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -352,9 +352,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal value used by CloudFront to allow future
+    <dd>Internal value used by CloudFront to allow future
 updates to the origin access identity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -362,9 +362,9 @@ updates to the origin access identity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A shortcut to the full path for the
+    <dd>A shortcut to the full path for the
 origin access identity to use in CloudFront, see below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -372,9 +372,9 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current version of the origin access identity's information.
+    <dd>The current version of the origin access identity's information.
 For example: `E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -382,10 +382,10 @@ For example: `E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A pre-generated ARN for use in S3 bucket policies (see below).
+    <dd>A pre-generated ARN for use in S3 bucket policies (see below).
 Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
 E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -393,7 +393,7 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -401,16 +401,16 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 canonical user ID for the origin
+    <dd>The Amazon S3 canonical user ID for the origin
 access identity, which you use when giving the origin access identity read
 permission to an object in Amazon S3.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -419,9 +419,9 @@ permission to an object in Amazon S3.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal value used by CloudFront to allow future
+    <dd>Internal value used by CloudFront to allow future
 updates to the origin access identity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -429,9 +429,9 @@ updates to the origin access identity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A shortcut to the full path for the
+    <dd>A shortcut to the full path for the
 origin access identity to use in CloudFront, see below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -439,9 +439,9 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current version of the origin access identity's information.
+    <dd>The current version of the origin access identity's information.
 For example: `E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -449,10 +449,10 @@ For example: `E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A pre-generated ARN for use in S3 bucket policies (see below).
+    <dd>A pre-generated ARN for use in S3 bucket policies (see below).
 Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
 E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -460,7 +460,7 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -468,16 +468,16 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 canonical user ID for the origin
+    <dd>The Amazon S3 canonical user ID for the origin
 access identity, which you use when giving the origin access identity read
 permission to an object in Amazon S3.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -486,9 +486,9 @@ permission to an object in Amazon S3.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal value used by CloudFront to allow future
+    <dd>Internal value used by CloudFront to allow future
 updates to the origin access identity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -496,9 +496,9 @@ updates to the origin access identity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A shortcut to the full path for the
+    <dd>A shortcut to the full path for the
 origin access identity to use in CloudFront, see below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -506,9 +506,9 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current version of the origin access identity's information.
+    <dd>The current version of the origin access identity's information.
 For example: `E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -516,10 +516,10 @@ For example: `E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A pre-generated ARN for use in S3 bucket policies (see below).
+    <dd>A pre-generated ARN for use in S3 bucket policies (see below).
 Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
 E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -527,7 +527,7 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -535,16 +535,16 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 canonical user ID for the origin
+    <dd>The Amazon S3 canonical user ID for the origin
 access identity, which you use when giving the origin access identity read
 permission to an object in Amazon S3.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -553,9 +553,9 @@ permission to an object in Amazon S3.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Internal value used by CloudFront to allow future
+    <dd>Internal value used by CloudFront to allow future
 updates to the origin access identity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -563,9 +563,9 @@ updates to the origin access identity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A shortcut to the full path for the
+    <dd>A shortcut to the full path for the
 origin access identity to use in CloudFront, see below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,9 +573,9 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current version of the origin access identity's information.
+    <dd>The current version of the origin access identity's information.
 For example: `E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -583,10 +583,10 @@ For example: `E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A pre-generated ARN for use in S3 bucket policies (see below).
+    <dd>A pre-generated ARN for use in S3 bucket policies (see below).
 Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
 E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -594,7 +594,7 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -602,13 +602,13 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 canonical user ID for the origin
+    <dd>The Amazon S3 canonical user ID for the origin
 access identity, which you use when giving the origin access identity read
 permission to an object in Amazon S3.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -619,25 +619,25 @@ permission to an object in Amazon S3.
 ## Look up an Existing OriginAccessIdentity Resource {#look-up}
 
 Get an existing OriginAccessIdentity resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#OriginAccessIdentityState">OriginAccessIdentityState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#OriginAccessIdentity">OriginAccessIdentity</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>caller_reference=None<span class="p">, </span>cloudfront_access_identity_path=None<span class="p">, </span>comment=None<span class="p">, </span>etag=None<span class="p">, </span>iam_arn=None<span class="p">, </span>s3_canonical_user_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetOriginAccessIdentity<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#OriginAccessIdentityState">OriginAccessIdentityState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#OriginAccessIdentity">OriginAccessIdentity</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.OriginAccessIdentity.html">OriginAccessIdentity</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.OriginAccessIdentityState.html">OriginAccessIdentityState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -662,9 +662,9 @@ Get an existing OriginAccessIdentity resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -677,36 +677,9 @@ Get an existing OriginAccessIdentity resource's state with the given name, ID, a
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -731,13 +704,40 @@ Get an existing OriginAccessIdentity resource's state with the given name, ID, a
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -746,9 +746,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal value used by CloudFront to allow future
+    <dd>Internal value used by CloudFront to allow future
 updates to the origin access identity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,9 +756,9 @@ updates to the origin access identity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A shortcut to the full path for the
+    <dd>A shortcut to the full path for the
 origin access identity to use in CloudFront, see below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -766,8 +766,8 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment for the origin access identity.
-{{% /md %}}</dd>
+    <dd>An optional comment for the origin access identity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -775,9 +775,9 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current version of the origin access identity's information.
+    <dd>The current version of the origin access identity's information.
 For example: `E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,10 +785,10 @@ For example: `E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A pre-generated ARN for use in S3 bucket policies (see below).
+    <dd>A pre-generated ARN for use in S3 bucket policies (see below).
 Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
 E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,16 +796,16 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 canonical user ID for the origin
+    <dd>The Amazon S3 canonical user ID for the origin
 access identity, which you use when giving the origin access identity read
 permission to an object in Amazon S3.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -814,9 +814,9 @@ permission to an object in Amazon S3.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal value used by CloudFront to allow future
+    <dd>Internal value used by CloudFront to allow future
 updates to the origin access identity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -824,9 +824,9 @@ updates to the origin access identity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A shortcut to the full path for the
+    <dd>A shortcut to the full path for the
 origin access identity to use in CloudFront, see below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,8 +834,8 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment for the origin access identity.
-{{% /md %}}</dd>
+    <dd>An optional comment for the origin access identity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,9 +843,9 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current version of the origin access identity's information.
+    <dd>The current version of the origin access identity's information.
 For example: `E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -853,10 +853,10 @@ For example: `E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A pre-generated ARN for use in S3 bucket policies (see below).
+    <dd>A pre-generated ARN for use in S3 bucket policies (see below).
 Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
 E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,16 +864,16 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 canonical user ID for the origin
+    <dd>The Amazon S3 canonical user ID for the origin
 access identity, which you use when giving the origin access identity read
 permission to an object in Amazon S3.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -882,9 +882,9 @@ permission to an object in Amazon S3.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Internal value used by CloudFront to allow future
+    <dd>Internal value used by CloudFront to allow future
 updates to the origin access identity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -892,9 +892,9 @@ updates to the origin access identity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A shortcut to the full path for the
+    <dd>A shortcut to the full path for the
 origin access identity to use in CloudFront, see below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -902,8 +902,8 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment for the origin access identity.
-{{% /md %}}</dd>
+    <dd>An optional comment for the origin access identity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -911,9 +911,9 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current version of the origin access identity's information.
+    <dd>The current version of the origin access identity's information.
 For example: `E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,10 +921,10 @@ For example: `E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A pre-generated ARN for use in S3 bucket policies (see below).
+    <dd>A pre-generated ARN for use in S3 bucket policies (see below).
 Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
 E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,16 +932,16 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 canonical user ID for the origin
+    <dd>The Amazon S3 canonical user ID for the origin
 access identity, which you use when giving the origin access identity read
 permission to an object in Amazon S3.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -950,9 +950,9 @@ permission to an object in Amazon S3.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Internal value used by CloudFront to allow future
+    <dd>Internal value used by CloudFront to allow future
 updates to the origin access identity.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,9 +960,9 @@ updates to the origin access identity.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A shortcut to the full path for the
+    <dd>A shortcut to the full path for the
 origin access identity to use in CloudFront, see below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,8 +970,8 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment for the origin access identity.
-{{% /md %}}</dd>
+    <dd>An optional comment for the origin access identity.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,9 +979,9 @@ origin access identity to use in CloudFront, see below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current version of the origin access identity's information.
+    <dd>The current version of the origin access identity's information.
 For example: `E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,10 +989,10 @@ For example: `E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A pre-generated ARN for use in S3 bucket policies (see below).
+    <dd>A pre-generated ARN for use in S3 bucket policies (see below).
 Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
 E2QWRUHAPOMQZL`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1000,13 +1000,13 @@ E2QWRUHAPOMQZL`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon S3 canonical user ID for the origin
+    <dd>The Amazon S3 canonical user ID for the origin
 access identity, which you use when giving the origin access identity read
 permission to an object in Amazon S3.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

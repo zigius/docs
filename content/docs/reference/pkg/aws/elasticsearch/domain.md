@@ -188,26 +188,26 @@ const esDomain = new aws.elasticsearch.Domain("es", {
 
 
 ## Create a Domain Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#Domain">Domain</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#DomainArgs">DomainArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Domain</span><span class="p">(resource_name, opts=None, </span>access_policies=None<span class="p">, </span>advanced_options=None<span class="p">, </span>cluster_config=None<span class="p">, </span>cognito_options=None<span class="p">, </span>domain_endpoint_options=None<span class="p">, </span>domain_name=None<span class="p">, </span>ebs_options=None<span class="p">, </span>elasticsearch_version=None<span class="p">, </span>encrypt_at_rest=None<span class="p">, </span>log_publishing_options=None<span class="p">, </span>node_to_node_encryption=None<span class="p">, </span>snapshot_options=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_options=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDomain<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainArgs">DomainArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#Domain">Domain</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.Domain.html">Domain</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.DomainArgs.html">DomainArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -244,9 +244,9 @@ const esDomain = new aws.elasticsearch.Domain("es", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -264,9 +264,9 @@ const esDomain = new aws.elasticsearch.Domain("es", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -313,9 +313,9 @@ const esDomain = new aws.elasticsearch.Domain("es", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -352,7 +352,7 @@ const esDomain = new aws.elasticsearch.Domain("es", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Domain Resource Properties {#properties}
 
@@ -365,7 +365,7 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -374,8 +374,8 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}IAM policy document specifying the access policies for the domain
-{{% /md %}}</dd>
+    <dd>IAM policy document specifying the access policies for the domain
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,11 +383,11 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value string pairs to specify advanced configuration options.
+    <dd>Key-value string pairs to specify advanced configuration options.
 Note that the values for these configuration options must be strings (wrapped in quotes) or they
 may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
 domain on every apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Cluster configuration of the domain, see below.
-{{% /md %}}</dd>
+    <dd>Cluster configuration of the domain, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,7 +404,7 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,8 +412,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Domain endpoint HTTP(S) related options. See below.
-{{% /md %}}</dd>
+    <dd>Domain endpoint HTTP(S) related options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -421,8 +421,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the domain.
-{{% /md %}}</dd>
+    <dd>Name of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,8 +430,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
-{{% /md %}}</dd>
+    <dd>EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,8 +439,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Elasticsearch to deploy. Defaults to `1.5`
-{{% /md %}}</dd>
+    <dd>The version of Elasticsearch to deploy. Defaults to `1.5`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,8 +448,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,8 +457,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">List&lt;Domain<wbr>Log<wbr>Publishing<wbr>Option<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Options for publishing slow logs to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>Options for publishing slow logs to CloudWatch Logs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,8 +466,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Node-to-node encryption options. See below.
-{{% /md %}}</dd>
+    <dd>Node-to-node encryption options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,8 +475,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot related options, see below.
-{{% /md %}}</dd>
+    <dd>Snapshot related options, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,8 +484,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,14 +493,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
-{{% /md %}}</dd>
+    <dd>VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -509,8 +509,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}IAM policy document specifying the access policies for the domain
-{{% /md %}}</dd>
+    <dd>IAM policy document specifying the access policies for the domain
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,11 +518,11 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value string pairs to specify advanced configuration options.
+    <dd>Key-value string pairs to specify advanced configuration options.
 Note that the values for these configuration options must be strings (wrapped in quotes) or they
 may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
 domain on every apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,8 +530,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Cluster configuration of the domain, see below.
-{{% /md %}}</dd>
+    <dd>Cluster configuration of the domain, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -539,7 +539,7 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Domain endpoint HTTP(S) related options. See below.
-{{% /md %}}</dd>
+    <dd>Domain endpoint HTTP(S) related options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,8 +556,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the domain.
-{{% /md %}}</dd>
+    <dd>Name of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,8 +565,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
-{{% /md %}}</dd>
+    <dd>EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Elasticsearch to deploy. Defaults to `1.5`
-{{% /md %}}</dd>
+    <dd>The version of Elasticsearch to deploy. Defaults to `1.5`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,8 +583,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">[]Domain<wbr>Log<wbr>Publishing<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}Options for publishing slow logs to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>Options for publishing slow logs to CloudWatch Logs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Node-to-node encryption options. See below.
-{{% /md %}}</dd>
+    <dd>Node-to-node encryption options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot related options, see below.
-{{% /md %}}</dd>
+    <dd>Snapshot related options, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,14 +628,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
-{{% /md %}}</dd>
+    <dd>VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -644,8 +644,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">string | Policy<wbr>Document</span>
     </dt>
-    <dd>{{% md %}}IAM policy document specifying the access policies for the domain
-{{% /md %}}</dd>
+    <dd>IAM policy document specifying the access policies for the domain
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -653,11 +653,11 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value string pairs to specify advanced configuration options.
+    <dd>Key-value string pairs to specify advanced configuration options.
 Note that the values for these configuration options must be strings (wrapped in quotes) or they
 may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
 domain on every apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,8 +665,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Cluster configuration of the domain, see below.
-{{% /md %}}</dd>
+    <dd>Cluster configuration of the domain, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,7 +674,7 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -682,8 +682,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Domain endpoint HTTP(S) related options. See below.
-{{% /md %}}</dd>
+    <dd>Domain endpoint HTTP(S) related options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -691,8 +691,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the domain.
-{{% /md %}}</dd>
+    <dd>Name of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -700,8 +700,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
-{{% /md %}}</dd>
+    <dd>EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -709,8 +709,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Elasticsearch to deploy. Defaults to `1.5`
-{{% /md %}}</dd>
+    <dd>The version of Elasticsearch to deploy. Defaults to `1.5`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -718,8 +718,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -727,8 +727,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">Domain<wbr>Log<wbr>Publishing<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}Options for publishing slow logs to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>Options for publishing slow logs to CloudWatch Logs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -736,8 +736,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Node-to-node encryption options. See below.
-{{% /md %}}</dd>
+    <dd>Node-to-node encryption options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -745,8 +745,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot related options, see below.
-{{% /md %}}</dd>
+    <dd>Snapshot related options, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -754,8 +754,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -763,14 +763,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
-{{% /md %}}</dd>
+    <dd>VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -779,8 +779,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}IAM policy document specifying the access policies for the domain
-{{% /md %}}</dd>
+    <dd>IAM policy document specifying the access policies for the domain
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,11 +788,11 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value string pairs to specify advanced configuration options.
+    <dd>Key-value string pairs to specify advanced configuration options.
 Note that the values for these configuration options must be strings (wrapped in quotes) or they
 may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
 domain on every apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -800,8 +800,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Dict[Domain<wbr>Cluster<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Cluster configuration of the domain, see below.
-{{% /md %}}</dd>
+    <dd>Cluster configuration of the domain, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,7 +809,7 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Dict[Domain<wbr>Cognito<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -817,8 +817,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Dict[Domain<wbr>Domain<wbr>Endpoint<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Domain endpoint HTTP(S) related options. See below.
-{{% /md %}}</dd>
+    <dd>Domain endpoint HTTP(S) related options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -826,8 +826,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the domain.
-{{% /md %}}</dd>
+    <dd>Name of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,8 +835,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Dict[Domain<wbr>Ebs<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
-{{% /md %}}</dd>
+    <dd>EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,8 +844,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of Elasticsearch to deploy. Defaults to `1.5`
-{{% /md %}}</dd>
+    <dd>The version of Elasticsearch to deploy. Defaults to `1.5`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -853,8 +853,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Dict[Domain<wbr>Encrypt<wbr>At<wbr>Rest]</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -862,8 +862,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">List[Domain<wbr>Log<wbr>Publishing<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}Options for publishing slow logs to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>Options for publishing slow logs to CloudWatch Logs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,8 +871,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Dict[Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption]</a></span>
     </dt>
-    <dd>{{% md %}}Node-to-node encryption options. See below.
-{{% /md %}}</dd>
+    <dd>Node-to-node encryption options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,8 +880,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Dict[Domain<wbr>Snapshot<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot related options, see below.
-{{% /md %}}</dd>
+    <dd>Snapshot related options, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -889,8 +889,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,11 +898,11 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Dict[Domain<wbr>Vpc<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
-{{% /md %}}</dd>
+    <dd>VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -916,7 +916,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -925,8 +925,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the domain.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the domain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -934,8 +934,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier for the domain.
-{{% /md %}}</dd>
+    <dd>Unique identifier for the domain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -943,8 +943,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint used to submit index, search, and data upload requests.
-{{% /md %}}</dd>
+    <dd>Domain-specific endpoint used to submit index, search, and data upload requests.
+</dd>
 
     <dt class="property-"
             title="">
@@ -952,7 +952,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -960,16 +960,16 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint for kibana without https scheme.
+    <dd>Domain-specific endpoint for kibana without https scheme.
 * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
 * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -978,8 +978,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the domain.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the domain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -987,8 +987,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier for the domain.
-{{% /md %}}</dd>
+    <dd>Unique identifier for the domain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -996,8 +996,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint used to submit index, search, and data upload requests.
-{{% /md %}}</dd>
+    <dd>Domain-specific endpoint used to submit index, search, and data upload requests.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1005,7 +1005,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1013,16 +1013,16 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint for kibana without https scheme.
+    <dd>Domain-specific endpoint for kibana without https scheme.
 * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
 * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1031,8 +1031,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the domain.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the domain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1040,8 +1040,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier for the domain.
-{{% /md %}}</dd>
+    <dd>Unique identifier for the domain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1049,8 +1049,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint used to submit index, search, and data upload requests.
-{{% /md %}}</dd>
+    <dd>Domain-specific endpoint used to submit index, search, and data upload requests.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1058,7 +1058,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1066,16 +1066,16 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint for kibana without https scheme.
+    <dd>Domain-specific endpoint for kibana without https scheme.
 * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
 * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1084,8 +1084,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the domain.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the domain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1093,8 +1093,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier for the domain.
-{{% /md %}}</dd>
+    <dd>Unique identifier for the domain.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1102,8 +1102,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint used to submit index, search, and data upload requests.
-{{% /md %}}</dd>
+    <dd>Domain-specific endpoint used to submit index, search, and data upload requests.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1111,7 +1111,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1119,13 +1119,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint for kibana without https scheme.
+    <dd>Domain-specific endpoint for kibana without https scheme.
 * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
 * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1136,25 +1136,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Domain Resource {#look-up}
 
 Get an existing Domain resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#DomainState">DomainState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#Domain">Domain</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>access_policies=None<span class="p">, </span>advanced_options=None<span class="p">, </span>arn=None<span class="p">, </span>cluster_config=None<span class="p">, </span>cognito_options=None<span class="p">, </span>domain_endpoint_options=None<span class="p">, </span>domain_id=None<span class="p">, </span>domain_name=None<span class="p">, </span>ebs_options=None<span class="p">, </span>elasticsearch_version=None<span class="p">, </span>encrypt_at_rest=None<span class="p">, </span>endpoint=None<span class="p">, </span>kibana_endpoint=None<span class="p">, </span>log_publishing_options=None<span class="p">, </span>node_to_node_encryption=None<span class="p">, </span>snapshot_options=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_options=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDomain<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainState">DomainState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#Domain">Domain</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.Domain.html">Domain</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.DomainState.html">DomainState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1179,9 +1179,9 @@ Get an existing Domain resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1194,36 +1194,9 @@ Get an existing Domain resource's state with the given name, ID, and optional ex
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1248,13 +1221,40 @@ Get an existing Domain resource's state with the given name, ID, and optional ex
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1263,8 +1263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}IAM policy document specifying the access policies for the domain
-{{% /md %}}</dd>
+    <dd>IAM policy document specifying the access policies for the domain
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,11 +1272,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key-value string pairs to specify advanced configuration options.
+    <dd>Key-value string pairs to specify advanced configuration options.
 Note that the values for these configuration options must be strings (wrapped in quotes) or they
 may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
 domain on every apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1284,8 +1284,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the domain.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1293,8 +1293,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Cluster configuration of the domain, see below.
-{{% /md %}}</dd>
+    <dd>Cluster configuration of the domain, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1302,7 +1302,7 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1310,8 +1310,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Domain endpoint HTTP(S) related options. See below.
-{{% /md %}}</dd>
+    <dd>Domain endpoint HTTP(S) related options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1319,8 +1319,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier for the domain.
-{{% /md %}}</dd>
+    <dd>Unique identifier for the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,8 +1328,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the domain.
-{{% /md %}}</dd>
+    <dd>Name of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,8 +1337,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
-{{% /md %}}</dd>
+    <dd>EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,8 +1346,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Elasticsearch to deploy. Defaults to `1.5`
-{{% /md %}}</dd>
+    <dd>The version of Elasticsearch to deploy. Defaults to `1.5`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,8 +1355,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1364,8 +1364,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint used to submit index, search, and data upload requests.
-{{% /md %}}</dd>
+    <dd>Domain-specific endpoint used to submit index, search, and data upload requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1373,10 +1373,10 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint for kibana without https scheme.
+    <dd>Domain-specific endpoint for kibana without https scheme.
 * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
 * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1384,8 +1384,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">List&lt;Domain<wbr>Log<wbr>Publishing<wbr>Option<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Options for publishing slow logs to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>Options for publishing slow logs to CloudWatch Logs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,8 +1393,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Node-to-node encryption options. See below.
-{{% /md %}}</dd>
+    <dd>Node-to-node encryption options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1402,8 +1402,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot related options, see below.
-{{% /md %}}</dd>
+    <dd>Snapshot related options, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1411,8 +1411,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1420,14 +1420,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
-{{% /md %}}</dd>
+    <dd>VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1436,8 +1436,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}IAM policy document specifying the access policies for the domain
-{{% /md %}}</dd>
+    <dd>IAM policy document specifying the access policies for the domain
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1445,11 +1445,11 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key-value string pairs to specify advanced configuration options.
+    <dd>Key-value string pairs to specify advanced configuration options.
 Note that the values for these configuration options must be strings (wrapped in quotes) or they
 may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
 domain on every apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,8 +1457,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the domain.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,8 +1466,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Cluster configuration of the domain, see below.
-{{% /md %}}</dd>
+    <dd>Cluster configuration of the domain, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,7 +1475,7 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1483,8 +1483,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Domain endpoint HTTP(S) related options. See below.
-{{% /md %}}</dd>
+    <dd>Domain endpoint HTTP(S) related options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,8 +1492,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier for the domain.
-{{% /md %}}</dd>
+    <dd>Unique identifier for the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,8 +1501,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the domain.
-{{% /md %}}</dd>
+    <dd>Name of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1510,8 +1510,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
-{{% /md %}}</dd>
+    <dd>EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,8 +1519,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Elasticsearch to deploy. Defaults to `1.5`
-{{% /md %}}</dd>
+    <dd>The version of Elasticsearch to deploy. Defaults to `1.5`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,8 +1528,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1537,8 +1537,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint used to submit index, search, and data upload requests.
-{{% /md %}}</dd>
+    <dd>Domain-specific endpoint used to submit index, search, and data upload requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1546,10 +1546,10 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint for kibana without https scheme.
+    <dd>Domain-specific endpoint for kibana without https scheme.
 * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
 * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1557,8 +1557,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">[]Domain<wbr>Log<wbr>Publishing<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}Options for publishing slow logs to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>Options for publishing slow logs to CloudWatch Logs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1566,8 +1566,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Node-to-node encryption options. See below.
-{{% /md %}}</dd>
+    <dd>Node-to-node encryption options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1575,8 +1575,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot related options, see below.
-{{% /md %}}</dd>
+    <dd>Snapshot related options, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,8 +1584,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1593,14 +1593,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
-{{% /md %}}</dd>
+    <dd>VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1609,8 +1609,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">string | Policy<wbr>Document</span>
     </dt>
-    <dd>{{% md %}}IAM policy document specifying the access policies for the domain
-{{% /md %}}</dd>
+    <dd>IAM policy document specifying the access policies for the domain
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1618,11 +1618,11 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key-value string pairs to specify advanced configuration options.
+    <dd>Key-value string pairs to specify advanced configuration options.
 Note that the values for these configuration options must be strings (wrapped in quotes) or they
 may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
 domain on every apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1630,8 +1630,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the domain.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1639,8 +1639,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Cluster configuration of the domain, see below.
-{{% /md %}}</dd>
+    <dd>Cluster configuration of the domain, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1648,7 +1648,7 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1656,8 +1656,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Domain endpoint HTTP(S) related options. See below.
-{{% /md %}}</dd>
+    <dd>Domain endpoint HTTP(S) related options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1665,8 +1665,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier for the domain.
-{{% /md %}}</dd>
+    <dd>Unique identifier for the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,8 +1674,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the domain.
-{{% /md %}}</dd>
+    <dd>Name of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,8 +1683,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
-{{% /md %}}</dd>
+    <dd>EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,8 +1692,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Elasticsearch to deploy. Defaults to `1.5`
-{{% /md %}}</dd>
+    <dd>The version of Elasticsearch to deploy. Defaults to `1.5`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,8 +1701,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1710,8 +1710,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint used to submit index, search, and data upload requests.
-{{% /md %}}</dd>
+    <dd>Domain-specific endpoint used to submit index, search, and data upload requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1719,10 +1719,10 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint for kibana without https scheme.
+    <dd>Domain-specific endpoint for kibana without https scheme.
 * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
 * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1730,8 +1730,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">Domain<wbr>Log<wbr>Publishing<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}Options for publishing slow logs to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>Options for publishing slow logs to CloudWatch Logs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1739,8 +1739,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Node-to-node encryption options. See below.
-{{% /md %}}</dd>
+    <dd>Node-to-node encryption options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1748,8 +1748,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot related options, see below.
-{{% /md %}}</dd>
+    <dd>Snapshot related options, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1757,8 +1757,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1766,14 +1766,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
-{{% /md %}}</dd>
+    <dd>VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1782,8 +1782,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}IAM policy document specifying the access policies for the domain
-{{% /md %}}</dd>
+    <dd>IAM policy document specifying the access policies for the domain
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1791,11 +1791,11 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key-value string pairs to specify advanced configuration options.
+    <dd>Key-value string pairs to specify advanced configuration options.
 Note that the values for these configuration options must be strings (wrapped in quotes) or they
 may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
 domain on every apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,8 +1803,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the domain.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,8 +1812,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Dict[Domain<wbr>Cluster<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Cluster configuration of the domain, see below.
-{{% /md %}}</dd>
+    <dd>Cluster configuration of the domain, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1821,7 +1821,7 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Dict[Domain<wbr>Cognito<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1829,8 +1829,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Dict[Domain<wbr>Domain<wbr>Endpoint<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Domain endpoint HTTP(S) related options. See below.
-{{% /md %}}</dd>
+    <dd>Domain endpoint HTTP(S) related options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1838,8 +1838,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Unique identifier for the domain.
-{{% /md %}}</dd>
+    <dd>Unique identifier for the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1847,8 +1847,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the domain.
-{{% /md %}}</dd>
+    <dd>Name of the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1856,8 +1856,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Dict[Domain<wbr>Ebs<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
-{{% /md %}}</dd>
+    <dd>EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,8 +1865,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of Elasticsearch to deploy. Defaults to `1.5`
-{{% /md %}}</dd>
+    <dd>The version of Elasticsearch to deploy. Defaults to `1.5`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1874,8 +1874,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Dict[Domain<wbr>Encrypt<wbr>At<wbr>Rest]</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1883,8 +1883,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint used to submit index, search, and data upload requests.
-{{% /md %}}</dd>
+    <dd>Domain-specific endpoint used to submit index, search, and data upload requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1892,10 +1892,10 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain-specific endpoint for kibana without https scheme.
+    <dd>Domain-specific endpoint for kibana without https scheme.
 * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
 * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1903,8 +1903,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">List[Domain<wbr>Log<wbr>Publishing<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}Options for publishing slow logs to CloudWatch Logs.
-{{% /md %}}</dd>
+    <dd>Options for publishing slow logs to CloudWatch Logs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1912,8 +1912,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Dict[Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption]</a></span>
     </dt>
-    <dd>{{% md %}}Node-to-node encryption options. See below.
-{{% /md %}}</dd>
+    <dd>Node-to-node encryption options. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1921,8 +1921,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Dict[Domain<wbr>Snapshot<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Snapshot related options, see below.
-{{% /md %}}</dd>
+    <dd>Snapshot related options, see below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1930,8 +1930,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1939,11 +1939,11 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Dict[Domain<wbr>Vpc<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
-{{% /md %}}</dd>
+    <dd>VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1958,18 +1958,18 @@ domain on every apply.
 
 
 <h4 id="domainclusterconfig">Domain<wbr>Cluster<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainClusterConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainClusterConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainClusterConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainClusterConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1978,8 +1978,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of dedicated master nodes in the cluster
-{{% /md %}}</dd>
+    <dd>Number of dedicated master nodes in the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,8 +1987,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether dedicated master nodes are enabled for the cluster.
-{{% /md %}}</dd>
+    <dd>Indicates whether dedicated master nodes are enabled for the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,8 +1996,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of the dedicated master nodes in the cluster.
-{{% /md %}}</dd>
+    <dd>Instance type of the dedicated master nodes in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,8 +2005,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of instances in the cluster.
-{{% /md %}}</dd>
+    <dd>Number of instances in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2014,8 +2014,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of data nodes in the cluster.
-{{% /md %}}</dd>
+    <dd>Instance type of data nodes in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2023,8 +2023,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfigzoneawarenessconfig">Domain<wbr>Cluster<wbr>Config<wbr>Zone<wbr>Awareness<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing zone awareness settings. Documented below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing zone awareness settings. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2032,14 +2032,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availability_zone_count` within the `zone_awareness_config` must be set to `3`.
-{{% /md %}}</dd>
+    <dd>Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availability_zone_count` within the `zone_awareness_config` must be set to `3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2048,8 +2048,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of dedicated master nodes in the cluster
-{{% /md %}}</dd>
+    <dd>Number of dedicated master nodes in the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2057,8 +2057,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether dedicated master nodes are enabled for the cluster.
-{{% /md %}}</dd>
+    <dd>Indicates whether dedicated master nodes are enabled for the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2066,8 +2066,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of the dedicated master nodes in the cluster.
-{{% /md %}}</dd>
+    <dd>Instance type of the dedicated master nodes in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2075,8 +2075,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of instances in the cluster.
-{{% /md %}}</dd>
+    <dd>Number of instances in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2084,8 +2084,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of data nodes in the cluster.
-{{% /md %}}</dd>
+    <dd>Instance type of data nodes in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2093,8 +2093,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfigzoneawarenessconfig">Domain<wbr>Cluster<wbr>Config<wbr>Zone<wbr>Awareness<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing zone awareness settings. Documented below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing zone awareness settings. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2102,14 +2102,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availability_zone_count` within the `zone_awareness_config` must be set to `3`.
-{{% /md %}}</dd>
+    <dd>Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availability_zone_count` within the `zone_awareness_config` must be set to `3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2118,8 +2118,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of dedicated master nodes in the cluster
-{{% /md %}}</dd>
+    <dd>Number of dedicated master nodes in the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2127,8 +2127,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether dedicated master nodes are enabled for the cluster.
-{{% /md %}}</dd>
+    <dd>Indicates whether dedicated master nodes are enabled for the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2136,8 +2136,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of the dedicated master nodes in the cluster.
-{{% /md %}}</dd>
+    <dd>Instance type of the dedicated master nodes in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,8 +2145,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of instances in the cluster.
-{{% /md %}}</dd>
+    <dd>Number of instances in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2154,8 +2154,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of data nodes in the cluster.
-{{% /md %}}</dd>
+    <dd>Instance type of data nodes in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2163,8 +2163,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfigzoneawarenessconfig">Domain<wbr>Cluster<wbr>Config<wbr>Zone<wbr>Awareness<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing zone awareness settings. Documented below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing zone awareness settings. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2172,14 +2172,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availability_zone_count` within the `zone_awareness_config` must be set to `3`.
-{{% /md %}}</dd>
+    <dd>Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availability_zone_count` within the `zone_awareness_config` must be set to `3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2188,8 +2188,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of dedicated master nodes in the cluster
-{{% /md %}}</dd>
+    <dd>Number of dedicated master nodes in the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2197,8 +2197,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether dedicated master nodes are enabled for the cluster.
-{{% /md %}}</dd>
+    <dd>Indicates whether dedicated master nodes are enabled for the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2206,8 +2206,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of the dedicated master nodes in the cluster.
-{{% /md %}}</dd>
+    <dd>Instance type of the dedicated master nodes in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2215,8 +2215,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of instances in the cluster.
-{{% /md %}}</dd>
+    <dd>Number of instances in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2224,8 +2224,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance type of data nodes in the cluster.
-{{% /md %}}</dd>
+    <dd>Instance type of data nodes in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2233,8 +2233,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfigzoneawarenessconfig">Dict[Domain<wbr>Cluster<wbr>Config<wbr>Zone<wbr>Awareness<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing zone awareness settings. Documented below.
-{{% /md %}}</dd>
+    <dd>Configuration block containing zone awareness settings. Documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2242,29 +2242,29 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availability_zone_count` within the `zone_awareness_config` must be set to `3`.
-{{% /md %}}</dd>
+    <dd>Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availability_zone_count` within the `zone_awareness_config` must be set to `3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainclusterconfigzoneawarenessconfig">Domain<wbr>Cluster<wbr>Config<wbr>Zone<wbr>Awareness<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainClusterConfigZoneAwarenessConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainClusterConfigZoneAwarenessConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainClusterConfigZoneAwarenessConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainClusterConfigZoneAwarenessConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2273,14 +2273,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of Availability Zones for the domain to use with `zone_awareness_enabled`. Defaults to `2`. Valid values: `2` or `3`.
-{{% /md %}}</dd>
+    <dd>Number of Availability Zones for the domain to use with `zone_awareness_enabled`. Defaults to `2`. Valid values: `2` or `3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2289,14 +2289,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of Availability Zones for the domain to use with `zone_awareness_enabled`. Defaults to `2`. Valid values: `2` or `3`.
-{{% /md %}}</dd>
+    <dd>Number of Availability Zones for the domain to use with `zone_awareness_enabled`. Defaults to `2`. Valid values: `2` or `3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2305,14 +2305,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of Availability Zones for the domain to use with `zone_awareness_enabled`. Defaults to `2`. Valid values: `2` or `3`.
-{{% /md %}}</dd>
+    <dd>Number of Availability Zones for the domain to use with `zone_awareness_enabled`. Defaults to `2`. Valid values: `2` or `3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2321,29 +2321,29 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of Availability Zones for the domain to use with `zone_awareness_enabled`. Defaults to `2`. Valid values: `2` or `3`.
-{{% /md %}}</dd>
+    <dd>Number of Availability Zones for the domain to use with `zone_awareness_enabled`. Defaults to `2`. Valid values: `2` or `3`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domaincognitooptions">Domain<wbr>Cognito<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainCognitoOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainCognitoOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainCognitoOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainCognitoOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2352,8 +2352,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the Cognito Identity Pool to use
-{{% /md %}}</dd>
+    <dd>ID of the Cognito Identity Pool to use
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2361,8 +2361,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the IAM role that has the AmazonESCognitoAccess policy attached
-{{% /md %}}</dd>
+    <dd>ARN of the IAM role that has the AmazonESCognitoAccess policy attached
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2370,8 +2370,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the Cognito User Pool to use
-{{% /md %}}</dd>
+    <dd>ID of the Cognito User Pool to use
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2379,14 +2379,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2395,8 +2395,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the Cognito Identity Pool to use
-{{% /md %}}</dd>
+    <dd>ID of the Cognito Identity Pool to use
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2404,8 +2404,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the IAM role that has the AmazonESCognitoAccess policy attached
-{{% /md %}}</dd>
+    <dd>ARN of the IAM role that has the AmazonESCognitoAccess policy attached
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2413,8 +2413,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the Cognito User Pool to use
-{{% /md %}}</dd>
+    <dd>ID of the Cognito User Pool to use
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2422,14 +2422,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2438,8 +2438,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the Cognito Identity Pool to use
-{{% /md %}}</dd>
+    <dd>ID of the Cognito Identity Pool to use
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2447,8 +2447,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the IAM role that has the AmazonESCognitoAccess policy attached
-{{% /md %}}</dd>
+    <dd>ARN of the IAM role that has the AmazonESCognitoAccess policy attached
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2456,8 +2456,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the Cognito User Pool to use
-{{% /md %}}</dd>
+    <dd>ID of the Cognito User Pool to use
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2465,14 +2465,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2481,8 +2481,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the Cognito Identity Pool to use
-{{% /md %}}</dd>
+    <dd>ID of the Cognito Identity Pool to use
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2490,8 +2490,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the IAM role that has the AmazonESCognitoAccess policy attached
-{{% /md %}}</dd>
+    <dd>ARN of the IAM role that has the AmazonESCognitoAccess policy attached
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2499,8 +2499,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the Cognito User Pool to use
-{{% /md %}}</dd>
+    <dd>ID of the Cognito User Pool to use
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2508,29 +2508,29 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainDomainEndpointOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainDomainEndpointOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainDomainEndpointOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainDomainEndpointOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2539,8 +2539,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not to require HTTPS
-{{% /md %}}</dd>
+    <dd>Whether or not to require HTTPS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2548,14 +2548,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. This provider will only perform drift detection if a configuration value is provided.
-{{% /md %}}</dd>
+    <dd>The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. This provider will only perform drift detection if a configuration value is provided.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2564,8 +2564,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not to require HTTPS
-{{% /md %}}</dd>
+    <dd>Whether or not to require HTTPS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2573,14 +2573,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. This provider will only perform drift detection if a configuration value is provided.
-{{% /md %}}</dd>
+    <dd>The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. This provider will only perform drift detection if a configuration value is provided.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2589,8 +2589,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not to require HTTPS
-{{% /md %}}</dd>
+    <dd>Whether or not to require HTTPS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2598,14 +2598,14 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. This provider will only perform drift detection if a configuration value is provided.
-{{% /md %}}</dd>
+    <dd>The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. This provider will only perform drift detection if a configuration value is provided.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2614,8 +2614,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not to require HTTPS
-{{% /md %}}</dd>
+    <dd>Whether or not to require HTTPS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2623,29 +2623,29 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. This provider will only perform drift detection if a configuration value is provided.
-{{% /md %}}</dd>
+    <dd>The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. This provider will only perform drift detection if a configuration value is provided.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainebsoptions">Domain<wbr>Ebs<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainEbsOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainEbsOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainEbsOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainEbsOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2654,8 +2654,8 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether EBS volumes are attached to data nodes in the domain.
-{{% /md %}}</dd>
+    <dd>Whether EBS volumes are attached to data nodes in the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2663,9 +2663,9 @@ domain on every apply.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The baseline input/output (I/O) performance of EBS volumes
+    <dd>The baseline input/output (I/O) performance of EBS volumes
 attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2673,9 +2673,9 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of EBS volumes attached to data nodes (in GB).
+    <dd>The size of EBS volumes attached to data nodes (in GB).
 **Required** if `ebs_enabled` is set to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2683,14 +2683,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of EBS volumes attached to data nodes.
-{{% /md %}}</dd>
+    <dd>The type of EBS volumes attached to data nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2699,8 +2699,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether EBS volumes are attached to data nodes in the domain.
-{{% /md %}}</dd>
+    <dd>Whether EBS volumes are attached to data nodes in the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2708,9 +2708,9 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The baseline input/output (I/O) performance of EBS volumes
+    <dd>The baseline input/output (I/O) performance of EBS volumes
 attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2718,9 +2718,9 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of EBS volumes attached to data nodes (in GB).
+    <dd>The size of EBS volumes attached to data nodes (in GB).
 **Required** if `ebs_enabled` is set to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2728,14 +2728,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of EBS volumes attached to data nodes.
-{{% /md %}}</dd>
+    <dd>The type of EBS volumes attached to data nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2744,8 +2744,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether EBS volumes are attached to data nodes in the domain.
-{{% /md %}}</dd>
+    <dd>Whether EBS volumes are attached to data nodes in the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2753,9 +2753,9 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The baseline input/output (I/O) performance of EBS volumes
+    <dd>The baseline input/output (I/O) performance of EBS volumes
 attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2763,9 +2763,9 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of EBS volumes attached to data nodes (in GB).
+    <dd>The size of EBS volumes attached to data nodes (in GB).
 **Required** if `ebs_enabled` is set to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2773,14 +2773,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of EBS volumes attached to data nodes.
-{{% /md %}}</dd>
+    <dd>The type of EBS volumes attached to data nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2789,8 +2789,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether EBS volumes are attached to data nodes in the domain.
-{{% /md %}}</dd>
+    <dd>Whether EBS volumes are attached to data nodes in the domain.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2798,9 +2798,9 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The baseline input/output (I/O) performance of EBS volumes
+    <dd>The baseline input/output (I/O) performance of EBS volumes
 attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2808,8 +2808,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of EBS volumes attached to data nodes.
-{{% /md %}}</dd>
+    <dd>The type of EBS volumes attached to data nodes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2817,30 +2817,30 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of EBS volumes attached to data nodes (in GB).
+    <dd>The size of EBS volumes attached to data nodes (in GB).
 **Required** if `ebs_enabled` is set to `true`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainEncryptAtRest">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainEncryptAtRest">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainEncryptAtRestArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainEncryptAtRestOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2849,8 +2849,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2858,14 +2858,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
-{{% /md %}}</dd>
+    <dd>The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2874,8 +2874,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2883,14 +2883,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
-{{% /md %}}</dd>
+    <dd>The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2899,8 +2899,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2908,14 +2908,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
-{{% /md %}}</dd>
+    <dd>The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2924,8 +2924,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2933,29 +2933,29 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
-{{% /md %}}</dd>
+    <dd>The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainlogpublishingoption">Domain<wbr>Log<wbr>Publishing<wbr>Option</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainLogPublishingOption">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainLogPublishingOption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainLogPublishingOptionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainLogPublishingOptionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2964,8 +2964,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the Cloudwatch log group to which log needs to be published.
-{{% /md %}}</dd>
+    <dd>ARN of the Cloudwatch log group to which log needs to be published.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2973,8 +2973,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS
-{{% /md %}}</dd>
+    <dd>A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2982,14 +2982,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2998,8 +2998,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the Cloudwatch log group to which log needs to be published.
-{{% /md %}}</dd>
+    <dd>ARN of the Cloudwatch log group to which log needs to be published.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3007,8 +3007,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS
-{{% /md %}}</dd>
+    <dd>A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3016,14 +3016,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3032,8 +3032,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the Cloudwatch log group to which log needs to be published.
-{{% /md %}}</dd>
+    <dd>ARN of the Cloudwatch log group to which log needs to be published.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3041,8 +3041,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS
-{{% /md %}}</dd>
+    <dd>A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3050,14 +3050,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3066,8 +3066,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the Cloudwatch log group to which log needs to be published.
-{{% /md %}}</dd>
+    <dd>ARN of the Cloudwatch log group to which log needs to be published.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3075,8 +3075,8 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS
-{{% /md %}}</dd>
+    <dd>A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3084,29 +3084,29 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainNodeToNodeEncryption">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainNodeToNodeEncryption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainNodeToNodeEncryptionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainNodeToNodeEncryptionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3115,14 +3115,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3131,14 +3131,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3147,14 +3147,14 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3163,29 +3163,29 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Amazon Cognito authentication with Kibana is enabled or not
-{{% /md %}}</dd>
+    <dd>Specifies whether Amazon Cognito authentication with Kibana is enabled or not
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainSnapshotOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainSnapshotOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainSnapshotOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainSnapshotOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3194,15 +3194,15 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Hour during which the service takes an automated daily
+    <dd>Hour during which the service takes an automated daily
 snapshot of the indices in the domain.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3211,15 +3211,15 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Hour during which the service takes an automated daily
+    <dd>Hour during which the service takes an automated daily
 snapshot of the indices in the domain.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3228,15 +3228,15 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Hour during which the service takes an automated daily
+    <dd>Hour during which the service takes an automated daily
 snapshot of the indices in the domain.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3245,30 +3245,30 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Hour during which the service takes an automated daily
+    <dd>Hour during which the service takes an automated daily
 snapshot of the indices in the domain.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="domainvpcoptions">Domain<wbr>Vpc<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#DomainVpcOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#DomainVpcOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainVpcOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainVpcOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3277,7 +3277,7 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3285,8 +3285,8 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
-{{% /md %}}</dd>
+    <dd>List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3294,8 +3294,8 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
-{{% /md %}}</dd>
+    <dd>List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3303,13 +3303,13 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3318,7 +3318,7 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3326,8 +3326,8 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
-{{% /md %}}</dd>
+    <dd>List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3335,8 +3335,8 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
-{{% /md %}}</dd>
+    <dd>List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3344,13 +3344,13 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3359,7 +3359,7 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3367,8 +3367,8 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
-{{% /md %}}</dd>
+    <dd>List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3376,8 +3376,8 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
-{{% /md %}}</dd>
+    <dd>List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3385,13 +3385,13 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3400,7 +3400,7 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3408,8 +3408,8 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
-{{% /md %}}</dd>
+    <dd>List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3417,8 +3417,8 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
-{{% /md %}}</dd>
+    <dd>List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3426,10 +3426,10 @@ snapshot of the indices in the domain.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

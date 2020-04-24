@@ -19,29 +19,29 @@ Use this data source to access information about an existing Storage Account.
 
 ## Using GetAccount {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAccount<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/storage/#GetAccountArgs">GetAccountArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/storage/#GetAccountResult">GetAccountResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_account(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAccount<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#LookupAccountArgs">LookupAccountArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#LookupAccountResult">LookupAccountResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAccount </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Storage.GetAccountResult.html">GetAccountResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Storage.GetAccountArgs.html">GetAccountArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage Account
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage Account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -67,14 +67,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Storage Account is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Storage Account is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage Account
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage Account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -92,14 +92,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Storage Account is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Storage Account is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -108,8 +108,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage Account
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage Account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -117,14 +117,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Storage Account is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Storage Account is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage Account
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage Account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -142,11 +142,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Storage Account is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Storage Account is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -162,7 +162,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -171,8 +171,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The access tier for `BlobStorage` accounts.
-{{% /md %}}</dd>
+    <dd>The access tier for `BlobStorage` accounts.
+</dd>
 
     <dt class="property-"
             title="">
@@ -180,8 +180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Kind of account.
-{{% /md %}}</dd>
+    <dd>The Kind of account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -189,8 +189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of replication used for this storage account.
-{{% /md %}}</dd>
+    <dd>The type of replication used for this storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -198,8 +198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tier of this storage account.
-{{% /md %}}</dd>
+    <dd>The Tier of this storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -207,8 +207,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountcustomdomain">List&lt;Get<wbr>Account<wbr>Custom<wbr>Domain&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -216,9 +216,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is traffic only allowed via HTTPS? See [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Is traffic only allowed via HTTPS? See [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -226,8 +226,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -235,8 +235,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled?
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -244,8 +244,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Storage Account exists
-{{% /md %}}</dd>
+    <dd>The Azure location where the Storage Account exists
+</dd>
 
     <dt class="property-"
             title="">
@@ -253,8 +253,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Custom Domain Name used for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The Custom Domain Name used for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -262,8 +262,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -271,8 +271,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location
+</dd>
 
     <dt class="property-"
             title="">
@@ -280,8 +280,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -289,8 +289,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -298,8 +298,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location
+</dd>
 
     <dt class="property-"
             title="">
@@ -307,8 +307,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -316,8 +316,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -325,8 +325,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -334,8 +334,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -343,8 +343,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The primary location of the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -352,8 +352,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -361,8 +361,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -370,8 +370,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -379,8 +379,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -388,8 +388,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -397,8 +397,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -406,7 +406,7 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -414,8 +414,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -423,8 +423,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location
+</dd>
 
     <dt class="property-"
             title="">
@@ -432,8 +432,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -441,8 +441,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -450,8 +450,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location
+</dd>
 
     <dt class="property-"
             title="">
@@ -459,8 +459,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -468,8 +468,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -477,8 +477,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -486,8 +486,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -495,8 +495,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -504,8 +504,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -513,8 +513,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -522,8 +522,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -531,8 +531,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -540,8 +540,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -549,8 +549,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -558,14 +558,14 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assigned to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assigned to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -574,8 +574,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access tier for `BlobStorage` accounts.
-{{% /md %}}</dd>
+    <dd>The access tier for `BlobStorage` accounts.
+</dd>
 
     <dt class="property-"
             title="">
@@ -583,8 +583,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Kind of account.
-{{% /md %}}</dd>
+    <dd>The Kind of account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -592,8 +592,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of replication used for this storage account.
-{{% /md %}}</dd>
+    <dd>The type of replication used for this storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -601,8 +601,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tier of this storage account.
-{{% /md %}}</dd>
+    <dd>The Tier of this storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -610,8 +610,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountcustomdomain">[]Get<wbr>Account<wbr>Custom<wbr>Domain</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -619,9 +619,9 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is traffic only allowed via HTTPS? See [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Is traffic only allowed via HTTPS? See [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -629,8 +629,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -638,8 +638,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled?
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -647,8 +647,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Storage Account exists
-{{% /md %}}</dd>
+    <dd>The Azure location where the Storage Account exists
+</dd>
 
     <dt class="property-"
             title="">
@@ -656,8 +656,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Custom Domain Name used for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The Custom Domain Name used for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -665,8 +665,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -674,8 +674,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location
+</dd>
 
     <dt class="property-"
             title="">
@@ -683,8 +683,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -692,8 +692,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -701,8 +701,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location
+</dd>
 
     <dt class="property-"
             title="">
@@ -710,8 +710,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -719,8 +719,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -728,8 +728,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -737,8 +737,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -746,8 +746,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The primary location of the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -755,8 +755,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -764,8 +764,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -773,8 +773,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -782,8 +782,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -791,8 +791,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -800,8 +800,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -809,7 +809,7 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -817,8 +817,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -826,8 +826,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location
+</dd>
 
     <dt class="property-"
             title="">
@@ -835,8 +835,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -844,8 +844,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -853,8 +853,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location
+</dd>
 
     <dt class="property-"
             title="">
@@ -862,8 +862,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -871,8 +871,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -880,8 +880,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -889,8 +889,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -898,8 +898,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -907,8 +907,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -916,8 +916,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -925,8 +925,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -934,8 +934,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -943,8 +943,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -952,8 +952,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -961,14 +961,14 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assigned to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assigned to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -977,8 +977,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access tier for `BlobStorage` accounts.
-{{% /md %}}</dd>
+    <dd>The access tier for `BlobStorage` accounts.
+</dd>
 
     <dt class="property-"
             title="">
@@ -986,8 +986,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Kind of account.
-{{% /md %}}</dd>
+    <dd>The Kind of account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -995,8 +995,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of replication used for this storage account.
-{{% /md %}}</dd>
+    <dd>The type of replication used for this storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1004,8 +1004,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tier of this storage account.
-{{% /md %}}</dd>
+    <dd>The Tier of this storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1013,8 +1013,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountcustomdomain">Get<wbr>Account<wbr>Custom<wbr>Domain[]</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1022,9 +1022,9 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is traffic only allowed via HTTPS? See [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Is traffic only allowed via HTTPS? See [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1032,8 +1032,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1041,8 +1041,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled?
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -1050,8 +1050,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Storage Account exists
-{{% /md %}}</dd>
+    <dd>The Azure location where the Storage Account exists
+</dd>
 
     <dt class="property-"
             title="">
@@ -1059,8 +1059,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Custom Domain Name used for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The Custom Domain Name used for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1068,8 +1068,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1077,8 +1077,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location
+</dd>
 
     <dt class="property-"
             title="">
@@ -1086,8 +1086,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1095,8 +1095,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1104,8 +1104,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location
+</dd>
 
     <dt class="property-"
             title="">
@@ -1113,8 +1113,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1122,8 +1122,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1131,8 +1131,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1140,8 +1140,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1149,8 +1149,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The primary location of the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1158,8 +1158,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1167,8 +1167,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1176,8 +1176,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1185,8 +1185,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1194,8 +1194,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1203,8 +1203,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1212,7 +1212,7 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1220,8 +1220,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1229,8 +1229,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location
+</dd>
 
     <dt class="property-"
             title="">
@@ -1238,8 +1238,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1247,8 +1247,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1256,8 +1256,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location
+</dd>
 
     <dt class="property-"
             title="">
@@ -1265,8 +1265,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1274,8 +1274,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1283,8 +1283,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1292,8 +1292,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1301,8 +1301,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1310,8 +1310,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1319,8 +1319,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1328,8 +1328,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1337,8 +1337,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1346,8 +1346,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1355,8 +1355,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1364,14 +1364,14 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assigned to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assigned to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1380,8 +1380,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The access tier for `BlobStorage` accounts.
-{{% /md %}}</dd>
+    <dd>The access tier for `BlobStorage` accounts.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1389,8 +1389,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Kind of account.
-{{% /md %}}</dd>
+    <dd>The Kind of account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1398,8 +1398,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of replication used for this storage account.
-{{% /md %}}</dd>
+    <dd>The type of replication used for this storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1407,8 +1407,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Tier of this storage account.
-{{% /md %}}</dd>
+    <dd>The Tier of this storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1416,8 +1416,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccountcustomdomain">List[Get<wbr>Account<wbr>Custom<wbr>Domain]</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1425,9 +1425,9 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is traffic only allowed via HTTPS? See [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Is traffic only allowed via HTTPS? See [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1435,8 +1435,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1444,8 +1444,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled?
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -1453,8 +1453,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Storage Account exists
-{{% /md %}}</dd>
+    <dd>The Azure location where the Storage Account exists
+</dd>
 
     <dt class="property-"
             title="">
@@ -1462,8 +1462,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Custom Domain Name used for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The Custom Domain Name used for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1471,8 +1471,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1480,8 +1480,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location
+</dd>
 
     <dt class="property-"
             title="">
@@ -1489,8 +1489,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1498,8 +1498,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1507,8 +1507,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location
+</dd>
 
     <dt class="property-"
             title="">
@@ -1516,8 +1516,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1525,8 +1525,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1534,8 +1534,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1543,8 +1543,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1552,8 +1552,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The primary location of the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1561,8 +1561,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1570,8 +1570,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1579,8 +1579,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1588,8 +1588,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1597,8 +1597,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1606,8 +1606,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1615,7 +1615,7 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1623,8 +1623,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the Storage Account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1632,8 +1632,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location
+</dd>
 
     <dt class="property-"
             title="">
@@ -1641,8 +1641,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1650,8 +1650,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1659,8 +1659,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location
+</dd>
 
     <dt class="property-"
             title="">
@@ -1668,8 +1668,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1677,8 +1677,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1686,8 +1686,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1695,8 +1695,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1704,8 +1704,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the Storage Account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the Storage Account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1713,8 +1713,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1722,8 +1722,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1731,8 +1731,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1740,8 +1740,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1749,8 +1749,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1758,8 +1758,8 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1767,11 +1767,11 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assigned to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assigned to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1784,18 +1784,18 @@ for more information.
 
 
 <h4 id="getaccountcustomdomain">Get<wbr>Account<wbr>Custom<wbr>Domain</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetAccountCustomDomain">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#GetAccountCustomDomain">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1804,14 +1804,14 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage Account
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage Account
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1820,14 +1820,14 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage Account
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage Account
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1836,14 +1836,14 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage Account
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage Account
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1852,11 +1852,11 @@ for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage Account
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage Account
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

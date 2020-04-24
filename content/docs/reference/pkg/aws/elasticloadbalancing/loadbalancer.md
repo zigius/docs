@@ -87,26 +87,26 @@ browser.
 
 
 ## Create a LoadBalancer Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticloadbalancing/#LoadBalancer">LoadBalancer</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticloadbalancing/#LoadBalancerArgs">LoadBalancerArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">LoadBalancer</span><span class="p">(resource_name, opts=None, </span>access_logs=None<span class="p">, </span>availability_zones=None<span class="p">, </span>connection_draining=None<span class="p">, </span>connection_draining_timeout=None<span class="p">, </span>cross_zone_load_balancing=None<span class="p">, </span>health_check=None<span class="p">, </span>idle_timeout=None<span class="p">, </span>instances=None<span class="p">, </span>internal=None<span class="p">, </span>listeners=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>security_groups=None<span class="p">, </span>source_security_group=None<span class="p">, </span>subnets=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewLoadBalancer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancerArgs">LoadBalancerArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancer">LoadBalancer</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticLoadBalancing.LoadBalancer.html">LoadBalancer</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticLoadBalancing.LoadBalancerArgs.html">LoadBalancerArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ browser.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -163,9 +163,9 @@ browser.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -212,9 +212,9 @@ browser.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -251,7 +251,7 @@ browser.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## LoadBalancer Resource Properties {#properties}
 
@@ -264,7 +264,7 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -273,8 +273,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerlistener">List&lt;Load<wbr>Balancer<wbr>Listener<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of listener blocks. Listeners documented below.
-{{% /md %}}</dd>
+    <dd>A list of listener blocks. Listeners documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,8 +282,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalanceraccesslogs">Load<wbr>Balancer<wbr>Access<wbr>Logs<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An Access Logs block. Access Logs documented below.
-{{% /md %}}</dd>
+    <dd>An Access Logs block. Access Logs documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The AZ's to serve traffic in.
-{{% /md %}}</dd>
+    <dd>The AZ's to serve traffic in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable connection draining. Default: `false`
-{{% /md %}}</dd>
+    <dd>Boolean to enable connection draining. Default: `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow for connections to drain. Default: `300`
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow for connections to drain. Default: `300`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,8 +318,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable cross-zone load balancing. Default: `true`
-{{% /md %}}</dd>
+    <dd>Enable cross-zone load balancing. Default: `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,8 +327,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerhealthcheck">Load<wbr>Balancer<wbr>Health<wbr>Check<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A health_check block. Health Check documented below.
-{{% /md %}}</dd>
+    <dd>A health_check block. Health Check documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,8 +336,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds that the connection is allowed to be idle. Default: `60`
-{{% /md %}}</dd>
+    <dd>The time in seconds that the connection is allowed to be idle. Default: `60`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,8 +345,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance ids to place in the ELB pool.
-{{% /md %}}</dd>
+    <dd>A list of instance ids to place in the ELB pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,8 +354,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, ELB will be an internal ELB.
-{{% /md %}}</dd>
+    <dd>If true, ELB will be an internal ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -363,8 +363,8 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ELB. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the ELB. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,9 +372,9 @@ The LoadBalancer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,9 +382,9 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to assign to the ELB.
+    <dd>A list of security group IDs to assign to the ELB.
 Only valid if creating an ELB within a VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,10 +392,10 @@ Only valid if creating an ELB within a VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that you can use as
+    <dd>The name of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Use this for Classic or Default VPC only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,8 +403,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to attach to the ELB.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to attach to the ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,14 +412,14 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -428,8 +428,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerlistener">[]Load<wbr>Balancer<wbr>Listener</a></span>
     </dt>
-    <dd>{{% md %}}A list of listener blocks. Listeners documented below.
-{{% /md %}}</dd>
+    <dd>A list of listener blocks. Listeners documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,8 +437,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalanceraccesslogs">Load<wbr>Balancer<wbr>Access<wbr>Logs</a></span>
     </dt>
-    <dd>{{% md %}}An Access Logs block. Access Logs documented below.
-{{% /md %}}</dd>
+    <dd>An Access Logs block. Access Logs documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,8 +446,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The AZ's to serve traffic in.
-{{% /md %}}</dd>
+    <dd>The AZ's to serve traffic in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,8 +455,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable connection draining. Default: `false`
-{{% /md %}}</dd>
+    <dd>Boolean to enable connection draining. Default: `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -464,8 +464,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow for connections to drain. Default: `300`
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow for connections to drain. Default: `300`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -473,8 +473,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable cross-zone load balancing. Default: `true`
-{{% /md %}}</dd>
+    <dd>Enable cross-zone load balancing. Default: `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,8 +482,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerhealthcheck">Load<wbr>Balancer<wbr>Health<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}A health_check block. Health Check documented below.
-{{% /md %}}</dd>
+    <dd>A health_check block. Health Check documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,8 +491,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds that the connection is allowed to be idle. Default: `60`
-{{% /md %}}</dd>
+    <dd>The time in seconds that the connection is allowed to be idle. Default: `60`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,8 +500,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance ids to place in the ELB pool.
-{{% /md %}}</dd>
+    <dd>A list of instance ids to place in the ELB pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, ELB will be an internal ELB.
-{{% /md %}}</dd>
+    <dd>If true, ELB will be an internal ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,8 +518,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ELB. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the ELB. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -527,9 +527,9 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,9 +537,9 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to assign to the ELB.
+    <dd>A list of security group IDs to assign to the ELB.
 Only valid if creating an ELB within a VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,10 +547,10 @@ Only valid if creating an ELB within a VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that you can use as
+    <dd>The name of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Use this for Classic or Default VPC only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -558,8 +558,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to attach to the ELB.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to attach to the ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -567,14 +567,14 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -583,8 +583,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerlistener">Load<wbr>Balancer<wbr>Listener[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of listener blocks. Listeners documented below.
-{{% /md %}}</dd>
+    <dd>A list of listener blocks. Listeners documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalanceraccesslogs">Load<wbr>Balancer<wbr>Access<wbr>Logs</a></span>
     </dt>
-    <dd>{{% md %}}An Access Logs block. Access Logs documented below.
-{{% /md %}}</dd>
+    <dd>An Access Logs block. Access Logs documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The AZ's to serve traffic in.
-{{% /md %}}</dd>
+    <dd>The AZ's to serve traffic in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable connection draining. Default: `false`
-{{% /md %}}</dd>
+    <dd>Boolean to enable connection draining. Default: `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow for connections to drain. Default: `300`
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow for connections to drain. Default: `300`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable cross-zone load balancing. Default: `true`
-{{% /md %}}</dd>
+    <dd>Enable cross-zone load balancing. Default: `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerhealthcheck">Load<wbr>Balancer<wbr>Health<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}A health_check block. Health Check documented below.
-{{% /md %}}</dd>
+    <dd>A health_check block. Health Check documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,8 +646,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds that the connection is allowed to be idle. Default: `60`
-{{% /md %}}</dd>
+    <dd>The time in seconds that the connection is allowed to be idle. Default: `60`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,8 +655,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance ids to place in the ELB pool.
-{{% /md %}}</dd>
+    <dd>A list of instance ids to place in the ELB pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -664,8 +664,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, ELB will be an internal ELB.
-{{% /md %}}</dd>
+    <dd>If true, ELB will be an internal ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -673,8 +673,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ELB. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the ELB. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -682,9 +682,9 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -692,9 +692,9 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to assign to the ELB.
+    <dd>A list of security group IDs to assign to the ELB.
 Only valid if creating an ELB within a VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -702,10 +702,10 @@ Only valid if creating an ELB within a VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that you can use as
+    <dd>The name of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Use this for Classic or Default VPC only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,8 +713,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to attach to the ELB.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to attach to the ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,14 +722,14 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -738,8 +738,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerlistener">List[Load<wbr>Balancer<wbr>Listener]</a></span>
     </dt>
-    <dd>{{% md %}}A list of listener blocks. Listeners documented below.
-{{% /md %}}</dd>
+    <dd>A list of listener blocks. Listeners documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,8 +747,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalanceraccesslogs">Dict[Load<wbr>Balancer<wbr>Access<wbr>Logs]</a></span>
     </dt>
-    <dd>{{% md %}}An Access Logs block. Access Logs documented below.
-{{% /md %}}</dd>
+    <dd>An Access Logs block. Access Logs documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,8 +756,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The AZ's to serve traffic in.
-{{% /md %}}</dd>
+    <dd>The AZ's to serve traffic in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,8 +765,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable connection draining. Default: `false`
-{{% /md %}}</dd>
+    <dd>Boolean to enable connection draining. Default: `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,8 +774,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow for connections to drain. Default: `300`
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow for connections to drain. Default: `300`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,8 +783,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable cross-zone load balancing. Default: `true`
-{{% /md %}}</dd>
+    <dd>Enable cross-zone load balancing. Default: `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,8 +792,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerhealthcheck">Dict[Load<wbr>Balancer<wbr>Health<wbr>Check]</a></span>
     </dt>
-    <dd>{{% md %}}A health_check block. Health Check documented below.
-{{% /md %}}</dd>
+    <dd>A health_check block. Health Check documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,8 +801,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds that the connection is allowed to be idle. Default: `60`
-{{% /md %}}</dd>
+    <dd>The time in seconds that the connection is allowed to be idle. Default: `60`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -810,8 +810,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance ids to place in the ELB pool.
-{{% /md %}}</dd>
+    <dd>A list of instance ids to place in the ELB pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -819,8 +819,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, ELB will be an internal ELB.
-{{% /md %}}</dd>
+    <dd>If true, ELB will be an internal ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,8 +828,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ELB. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the ELB. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,9 +837,9 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -847,9 +847,9 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to assign to the ELB.
+    <dd>A list of security group IDs to assign to the ELB.
 Only valid if creating an ELB within a VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,10 +857,10 @@ Only valid if creating an ELB within a VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that you can use as
+    <dd>The name of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Use this for Classic or Default VPC only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to attach to the ELB.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to attach to the ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,11 +877,11 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -895,7 +895,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -904,8 +904,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the ELB
-{{% /md %}}</dd>
+    <dd>The ARN of the ELB
+</dd>
 
     <dt class="property-"
             title="">
@@ -913,8 +913,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the ELB
-{{% /md %}}</dd>
+    <dd>The DNS name of the ELB
+</dd>
 
     <dt class="property-"
             title="">
@@ -922,7 +922,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -930,10 +930,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that you can use as
+    <dd>The ID of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Only available on ELBs launched in a VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -941,14 +941,14 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -957,8 +957,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the ELB
-{{% /md %}}</dd>
+    <dd>The ARN of the ELB
+</dd>
 
     <dt class="property-"
             title="">
@@ -966,8 +966,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the ELB
-{{% /md %}}</dd>
+    <dd>The DNS name of the ELB
+</dd>
 
     <dt class="property-"
             title="">
@@ -975,7 +975,7 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -983,10 +983,10 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that you can use as
+    <dd>The ID of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Only available on ELBs launched in a VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -994,14 +994,14 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1010,8 +1010,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the ELB
-{{% /md %}}</dd>
+    <dd>The ARN of the ELB
+</dd>
 
     <dt class="property-"
             title="">
@@ -1019,8 +1019,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the ELB
-{{% /md %}}</dd>
+    <dd>The DNS name of the ELB
+</dd>
 
     <dt class="property-"
             title="">
@@ -1028,7 +1028,7 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1036,10 +1036,10 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that you can use as
+    <dd>The ID of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Only available on ELBs launched in a VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1047,14 +1047,14 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1063,8 +1063,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the ELB
-{{% /md %}}</dd>
+    <dd>The ARN of the ELB
+</dd>
 
     <dt class="property-"
             title="">
@@ -1072,8 +1072,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the ELB
-{{% /md %}}</dd>
+    <dd>The DNS name of the ELB
+</dd>
 
     <dt class="property-"
             title="">
@@ -1081,7 +1081,7 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1089,10 +1089,10 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that you can use as
+    <dd>The ID of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Only available on ELBs launched in a VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1100,11 +1100,11 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1115,25 +1115,25 @@ instances. Only available on ELBs launched in a VPC.
 ## Look up an Existing LoadBalancer Resource {#look-up}
 
 Get an existing LoadBalancer resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticloadbalancing/#LoadBalancerState">LoadBalancerState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticloadbalancing/#LoadBalancer">LoadBalancer</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>access_logs=None<span class="p">, </span>arn=None<span class="p">, </span>availability_zones=None<span class="p">, </span>connection_draining=None<span class="p">, </span>connection_draining_timeout=None<span class="p">, </span>cross_zone_load_balancing=None<span class="p">, </span>dns_name=None<span class="p">, </span>health_check=None<span class="p">, </span>idle_timeout=None<span class="p">, </span>instances=None<span class="p">, </span>internal=None<span class="p">, </span>listeners=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>security_groups=None<span class="p">, </span>source_security_group=None<span class="p">, </span>source_security_group_id=None<span class="p">, </span>subnets=None<span class="p">, </span>tags=None<span class="p">, </span>zone_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLoadBalancer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancerState">LoadBalancerState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancer">LoadBalancer</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticLoadBalancing.LoadBalancer.html">LoadBalancer</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticLoadBalancing.LoadBalancerState.html">LoadBalancerState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1158,9 +1158,9 @@ Get an existing LoadBalancer resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1173,36 +1173,9 @@ Get an existing LoadBalancer resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1227,13 +1200,40 @@ Get an existing LoadBalancer resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1242,8 +1242,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalanceraccesslogs">Load<wbr>Balancer<wbr>Access<wbr>Logs<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An Access Logs block. Access Logs documented below.
-{{% /md %}}</dd>
+    <dd>An Access Logs block. Access Logs documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1251,8 +1251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the ELB
-{{% /md %}}</dd>
+    <dd>The ARN of the ELB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1260,8 +1260,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The AZ's to serve traffic in.
-{{% /md %}}</dd>
+    <dd>The AZ's to serve traffic in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable connection draining. Default: `false`
-{{% /md %}}</dd>
+    <dd>Boolean to enable connection draining. Default: `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow for connections to drain. Default: `300`
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow for connections to drain. Default: `300`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable cross-zone load balancing. Default: `true`
-{{% /md %}}</dd>
+    <dd>Enable cross-zone load balancing. Default: `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the ELB
-{{% /md %}}</dd>
+    <dd>The DNS name of the ELB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerhealthcheck">Load<wbr>Balancer<wbr>Health<wbr>Check<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A health_check block. Health Check documented below.
-{{% /md %}}</dd>
+    <dd>A health_check block. Health Check documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds that the connection is allowed to be idle. Default: `60`
-{{% /md %}}</dd>
+    <dd>The time in seconds that the connection is allowed to be idle. Default: `60`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance ids to place in the ELB pool.
-{{% /md %}}</dd>
+    <dd>A list of instance ids to place in the ELB pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, ELB will be an internal ELB.
-{{% /md %}}</dd>
+    <dd>If true, ELB will be an internal ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,8 +1341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerlistener">List&lt;Load<wbr>Balancer<wbr>Listener<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of listener blocks. Listeners documented below.
-{{% /md %}}</dd>
+    <dd>A list of listener blocks. Listeners documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ELB. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the ELB. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,9 +1359,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,9 +1369,9 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to assign to the ELB.
+    <dd>A list of security group IDs to assign to the ELB.
 Only valid if creating an ELB within a VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1379,10 +1379,10 @@ Only valid if creating an ELB within a VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that you can use as
+    <dd>The name of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Use this for Classic or Default VPC only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,10 +1390,10 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that you can use as
+    <dd>The ID of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Only available on ELBs launched in a VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,8 +1401,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to attach to the ELB.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to attach to the ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,8 +1410,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,14 +1419,14 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1435,8 +1435,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalanceraccesslogs">Load<wbr>Balancer<wbr>Access<wbr>Logs</a></span>
     </dt>
-    <dd>{{% md %}}An Access Logs block. Access Logs documented below.
-{{% /md %}}</dd>
+    <dd>An Access Logs block. Access Logs documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1444,8 +1444,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the ELB
-{{% /md %}}</dd>
+    <dd>The ARN of the ELB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1453,8 +1453,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The AZ's to serve traffic in.
-{{% /md %}}</dd>
+    <dd>The AZ's to serve traffic in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,8 +1462,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable connection draining. Default: `false`
-{{% /md %}}</dd>
+    <dd>Boolean to enable connection draining. Default: `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,8 +1471,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow for connections to drain. Default: `300`
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow for connections to drain. Default: `300`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1480,8 +1480,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable cross-zone load balancing. Default: `true`
-{{% /md %}}</dd>
+    <dd>Enable cross-zone load balancing. Default: `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1489,8 +1489,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the ELB
-{{% /md %}}</dd>
+    <dd>The DNS name of the ELB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,8 +1498,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerhealthcheck">Load<wbr>Balancer<wbr>Health<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}A health_check block. Health Check documented below.
-{{% /md %}}</dd>
+    <dd>A health_check block. Health Check documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,8 +1507,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds that the connection is allowed to be idle. Default: `60`
-{{% /md %}}</dd>
+    <dd>The time in seconds that the connection is allowed to be idle. Default: `60`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,8 +1516,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance ids to place in the ELB pool.
-{{% /md %}}</dd>
+    <dd>A list of instance ids to place in the ELB pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1525,8 +1525,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, ELB will be an internal ELB.
-{{% /md %}}</dd>
+    <dd>If true, ELB will be an internal ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1534,8 +1534,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerlistener">[]Load<wbr>Balancer<wbr>Listener</a></span>
     </dt>
-    <dd>{{% md %}}A list of listener blocks. Listeners documented below.
-{{% /md %}}</dd>
+    <dd>A list of listener blocks. Listeners documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1543,8 +1543,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ELB. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the ELB. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1552,9 +1552,9 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,9 +1562,9 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to assign to the ELB.
+    <dd>A list of security group IDs to assign to the ELB.
 Only valid if creating an ELB within a VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1572,10 +1572,10 @@ Only valid if creating an ELB within a VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that you can use as
+    <dd>The name of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Use this for Classic or Default VPC only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1583,10 +1583,10 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that you can use as
+    <dd>The ID of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Only available on ELBs launched in a VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,8 +1594,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to attach to the ELB.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to attach to the ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,8 +1603,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1612,14 +1612,14 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1628,8 +1628,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalanceraccesslogs">Load<wbr>Balancer<wbr>Access<wbr>Logs</a></span>
     </dt>
-    <dd>{{% md %}}An Access Logs block. Access Logs documented below.
-{{% /md %}}</dd>
+    <dd>An Access Logs block. Access Logs documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1637,8 +1637,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the ELB
-{{% /md %}}</dd>
+    <dd>The ARN of the ELB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1646,8 +1646,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The AZ's to serve traffic in.
-{{% /md %}}</dd>
+    <dd>The AZ's to serve traffic in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1655,8 +1655,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable connection draining. Default: `false`
-{{% /md %}}</dd>
+    <dd>Boolean to enable connection draining. Default: `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1664,8 +1664,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow for connections to drain. Default: `300`
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow for connections to drain. Default: `300`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1673,8 +1673,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable cross-zone load balancing. Default: `true`
-{{% /md %}}</dd>
+    <dd>Enable cross-zone load balancing. Default: `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1682,8 +1682,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the ELB
-{{% /md %}}</dd>
+    <dd>The DNS name of the ELB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1691,8 +1691,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerhealthcheck">Load<wbr>Balancer<wbr>Health<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}A health_check block. Health Check documented below.
-{{% /md %}}</dd>
+    <dd>A health_check block. Health Check documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,8 +1700,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds that the connection is allowed to be idle. Default: `60`
-{{% /md %}}</dd>
+    <dd>The time in seconds that the connection is allowed to be idle. Default: `60`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,8 +1709,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance ids to place in the ELB pool.
-{{% /md %}}</dd>
+    <dd>A list of instance ids to place in the ELB pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,8 +1718,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If true, ELB will be an internal ELB.
-{{% /md %}}</dd>
+    <dd>If true, ELB will be an internal ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1727,8 +1727,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerlistener">Load<wbr>Balancer<wbr>Listener[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of listener blocks. Listeners documented below.
-{{% /md %}}</dd>
+    <dd>A list of listener blocks. Listeners documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,8 +1736,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ELB. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the ELB. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1745,9 +1745,9 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1755,9 +1755,9 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to assign to the ELB.
+    <dd>A list of security group IDs to assign to the ELB.
 Only valid if creating an ELB within a VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1765,10 +1765,10 @@ Only valid if creating an ELB within a VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that you can use as
+    <dd>The name of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Use this for Classic or Default VPC only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1776,10 +1776,10 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that you can use as
+    <dd>The ID of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Only available on ELBs launched in a VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1787,8 +1787,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to attach to the ELB.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to attach to the ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1796,8 +1796,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1805,14 +1805,14 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1821,8 +1821,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalanceraccesslogs">Dict[Load<wbr>Balancer<wbr>Access<wbr>Logs]</a></span>
     </dt>
-    <dd>{{% md %}}An Access Logs block. Access Logs documented below.
-{{% /md %}}</dd>
+    <dd>An Access Logs block. Access Logs documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1830,8 +1830,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the ELB
-{{% /md %}}</dd>
+    <dd>The ARN of the ELB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1839,8 +1839,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The AZ's to serve traffic in.
-{{% /md %}}</dd>
+    <dd>The AZ's to serve traffic in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1848,8 +1848,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable connection draining. Default: `false`
-{{% /md %}}</dd>
+    <dd>Boolean to enable connection draining. Default: `false`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1857,8 +1857,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds to allow for connections to drain. Default: `300`
-{{% /md %}}</dd>
+    <dd>The time in seconds to allow for connections to drain. Default: `300`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1866,8 +1866,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable cross-zone load balancing. Default: `true`
-{{% /md %}}</dd>
+    <dd>Enable cross-zone load balancing. Default: `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1875,8 +1875,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the ELB
-{{% /md %}}</dd>
+    <dd>The DNS name of the ELB
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1884,8 +1884,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerhealthcheck">Dict[Load<wbr>Balancer<wbr>Health<wbr>Check]</a></span>
     </dt>
-    <dd>{{% md %}}A health_check block. Health Check documented below.
-{{% /md %}}</dd>
+    <dd>A health_check block. Health Check documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,8 +1893,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time in seconds that the connection is allowed to be idle. Default: `60`
-{{% /md %}}</dd>
+    <dd>The time in seconds that the connection is allowed to be idle. Default: `60`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,8 +1902,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instance ids to place in the ELB pool.
-{{% /md %}}</dd>
+    <dd>A list of instance ids to place in the ELB pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,8 +1911,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If true, ELB will be an internal ELB.
-{{% /md %}}</dd>
+    <dd>If true, ELB will be an internal ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,8 +1920,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#loadbalancerlistener">List[Load<wbr>Balancer<wbr>Listener]</a></span>
     </dt>
-    <dd>{{% md %}}A list of listener blocks. Listeners documented below.
-{{% /md %}}</dd>
+    <dd>A list of listener blocks. Listeners documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,8 +1929,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the ELB. By default generated by this provider.
-{{% /md %}}</dd>
+    <dd>The name of the ELB. By default generated by this provider.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,9 +1938,9 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified
+    <dd>Creates a unique name beginning with the specified
 prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1948,9 +1948,9 @@ prefix. Conflicts with `name`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to assign to the ELB.
+    <dd>A list of security group IDs to assign to the ELB.
 Only valid if creating an ELB within a VPC
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1958,10 +1958,10 @@ Only valid if creating an ELB within a VPC
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that you can use as
+    <dd>The name of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Use this for Classic or Default VPC only.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1969,10 +1969,10 @@ instances. Use this for Classic or Default VPC only.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that you can use as
+    <dd>The ID of the security group that you can use as
 part of your inbound rules for your load balancer's back-end application
 instances. Only available on ELBs launched in a VPC.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1980,8 +1980,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnet IDs to attach to the ELB.
-{{% /md %}}</dd>
+    <dd>A list of subnet IDs to attach to the ELB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1989,8 +1989,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1998,11 +1998,11 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
-{{% /md %}}</dd>
+    <dd>The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2017,18 +2017,18 @@ instances. Only available on ELBs launched in a VPC.
 
 
 <h4 id="loadbalanceraccesslogs">Load<wbr>Balancer<wbr>Access<wbr>Logs</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LoadBalancerAccessLogs">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LoadBalancerAccessLogs">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancerAccessLogsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancerAccessLogsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2037,8 +2037,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket name to store the logs in.
-{{% /md %}}</dd>
+    <dd>The S3 bucket name to store the logs in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2046,8 +2046,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket prefix. Logs are stored in the root if not configured.
-{{% /md %}}</dd>
+    <dd>The S3 bucket prefix. Logs are stored in the root if not configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2055,8 +2055,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable / disable `access_logs`. Default is `true`
-{{% /md %}}</dd>
+    <dd>Boolean to enable / disable `access_logs`. Default is `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2064,14 +2064,14 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The publishing interval in minutes. Default: 60 minutes.
-{{% /md %}}</dd>
+    <dd>The publishing interval in minutes. Default: 60 minutes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2080,8 +2080,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket name to store the logs in.
-{{% /md %}}</dd>
+    <dd>The S3 bucket name to store the logs in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2089,8 +2089,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket prefix. Logs are stored in the root if not configured.
-{{% /md %}}</dd>
+    <dd>The S3 bucket prefix. Logs are stored in the root if not configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2098,8 +2098,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable / disable `access_logs`. Default is `true`
-{{% /md %}}</dd>
+    <dd>Boolean to enable / disable `access_logs`. Default is `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,14 +2107,14 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The publishing interval in minutes. Default: 60 minutes.
-{{% /md %}}</dd>
+    <dd>The publishing interval in minutes. Default: 60 minutes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2123,8 +2123,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket name to store the logs in.
-{{% /md %}}</dd>
+    <dd>The S3 bucket name to store the logs in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2132,8 +2132,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket prefix. Logs are stored in the root if not configured.
-{{% /md %}}</dd>
+    <dd>The S3 bucket prefix. Logs are stored in the root if not configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2141,8 +2141,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable / disable `access_logs`. Default is `true`
-{{% /md %}}</dd>
+    <dd>Boolean to enable / disable `access_logs`. Default is `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2150,14 +2150,14 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The publishing interval in minutes. Default: 60 minutes.
-{{% /md %}}</dd>
+    <dd>The publishing interval in minutes. Default: 60 minutes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2166,8 +2166,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket name to store the logs in.
-{{% /md %}}</dd>
+    <dd>The S3 bucket name to store the logs in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2175,8 +2175,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 bucket prefix. Logs are stored in the root if not configured.
-{{% /md %}}</dd>
+    <dd>The S3 bucket prefix. Logs are stored in the root if not configured.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2184,8 +2184,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean to enable / disable `access_logs`. Default is `true`
-{{% /md %}}</dd>
+    <dd>Boolean to enable / disable `access_logs`. Default is `true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2193,29 +2193,29 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The publishing interval in minutes. Default: 60 minutes.
-{{% /md %}}</dd>
+    <dd>The publishing interval in minutes. Default: 60 minutes.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="loadbalancerhealthcheck">Load<wbr>Balancer<wbr>Health<wbr>Check</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LoadBalancerHealthCheck">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LoadBalancerHealthCheck">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancerHealthCheckArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancerHealthCheckOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2224,8 +2224,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of checks before the instance is declared healthy.
-{{% /md %}}</dd>
+    <dd>The number of checks before the instance is declared healthy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2233,8 +2233,8 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The interval between checks.
-{{% /md %}}</dd>
+    <dd>The interval between checks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2242,11 +2242,11 @@ instances. Only available on ELBs launched in a VPC.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
+    <dd>The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
 values are:
 * `HTTP`, `HTTPS` - PORT and PATH are required
 * `TCP`, `SSL` - PORT is required, PATH is not supported
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2254,8 +2254,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The length of time before the check times out.
-{{% /md %}}</dd>
+    <dd>The length of time before the check times out.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2263,14 +2263,14 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of checks before the instance is declared unhealthy.
-{{% /md %}}</dd>
+    <dd>The number of checks before the instance is declared unhealthy.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2279,8 +2279,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of checks before the instance is declared healthy.
-{{% /md %}}</dd>
+    <dd>The number of checks before the instance is declared healthy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2288,8 +2288,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The interval between checks.
-{{% /md %}}</dd>
+    <dd>The interval between checks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2297,11 +2297,11 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
+    <dd>The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
 values are:
 * `HTTP`, `HTTPS` - PORT and PATH are required
 * `TCP`, `SSL` - PORT is required, PATH is not supported
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2309,8 +2309,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The length of time before the check times out.
-{{% /md %}}</dd>
+    <dd>The length of time before the check times out.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2318,14 +2318,14 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of checks before the instance is declared unhealthy.
-{{% /md %}}</dd>
+    <dd>The number of checks before the instance is declared unhealthy.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2334,8 +2334,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of checks before the instance is declared healthy.
-{{% /md %}}</dd>
+    <dd>The number of checks before the instance is declared healthy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2343,8 +2343,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The interval between checks.
-{{% /md %}}</dd>
+    <dd>The interval between checks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2352,11 +2352,11 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
+    <dd>The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
 values are:
 * `HTTP`, `HTTPS` - PORT and PATH are required
 * `TCP`, `SSL` - PORT is required, PATH is not supported
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2364,8 +2364,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The length of time before the check times out.
-{{% /md %}}</dd>
+    <dd>The length of time before the check times out.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2373,14 +2373,14 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of checks before the instance is declared unhealthy.
-{{% /md %}}</dd>
+    <dd>The number of checks before the instance is declared unhealthy.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2389,8 +2389,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of checks before the instance is declared healthy.
-{{% /md %}}</dd>
+    <dd>The number of checks before the instance is declared healthy.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2398,8 +2398,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The interval between checks.
-{{% /md %}}</dd>
+    <dd>The interval between checks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2407,11 +2407,11 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
+    <dd>The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
 values are:
 * `HTTP`, `HTTPS` - PORT and PATH are required
 * `TCP`, `SSL` - PORT is required, PATH is not supported
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2419,8 +2419,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The length of time before the check times out.
-{{% /md %}}</dd>
+    <dd>The length of time before the check times out.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2428,29 +2428,29 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of checks before the instance is declared unhealthy.
-{{% /md %}}</dd>
+    <dd>The number of checks before the instance is declared unhealthy.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="loadbalancerlistener">Load<wbr>Balancer<wbr>Listener</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LoadBalancerListener">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LoadBalancerListener">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancerListenerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticloadbalancing?tab=doc#LoadBalancerListenerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2459,8 +2459,8 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port on the instance to route to
-{{% /md %}}</dd>
+    <dd>The port on the instance to route to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2468,9 +2468,9 @@ values are:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to use to the instance. Valid
+    <dd>The protocol to use to the instance. Valid
 values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2478,8 +2478,8 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port to listen on for the load balancer
-{{% /md %}}</dd>
+    <dd>The port to listen on for the load balancer
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2487,9 +2487,9 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to listen on. Valid values are `HTTP`,
+    <dd>The protocol to listen on. Valid values are `HTTP`,
 `HTTPS`, `TCP`, or `SSL`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2497,15 +2497,15 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SSL certificate you have
+    <dd>The ARN of an SSL certificate you have
 uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when `lb_protocol` is either HTTPS or SSL**
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2514,8 +2514,8 @@ uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port on the instance to route to
-{{% /md %}}</dd>
+    <dd>The port on the instance to route to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2523,9 +2523,9 @@ uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to use to the instance. Valid
+    <dd>The protocol to use to the instance. Valid
 values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2533,8 +2533,8 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port to listen on for the load balancer
-{{% /md %}}</dd>
+    <dd>The port to listen on for the load balancer
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2542,9 +2542,9 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to listen on. Valid values are `HTTP`,
+    <dd>The protocol to listen on. Valid values are `HTTP`,
 `HTTPS`, `TCP`, or `SSL`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2552,15 +2552,15 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SSL certificate you have
+    <dd>The ARN of an SSL certificate you have
 uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when `lb_protocol` is either HTTPS or SSL**
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2569,8 +2569,8 @@ uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port on the instance to route to
-{{% /md %}}</dd>
+    <dd>The port on the instance to route to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2578,9 +2578,9 @@ uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to use to the instance. Valid
+    <dd>The protocol to use to the instance. Valid
 values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2588,8 +2588,8 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port to listen on for the load balancer
-{{% /md %}}</dd>
+    <dd>The port to listen on for the load balancer
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2597,9 +2597,9 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to listen on. Valid values are `HTTP`,
+    <dd>The protocol to listen on. Valid values are `HTTP`,
 `HTTPS`, `TCP`, or `SSL`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2607,15 +2607,15 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SSL certificate you have
+    <dd>The ARN of an SSL certificate you have
 uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when `lb_protocol` is either HTTPS or SSL**
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2624,9 +2624,9 @@ uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to use to the instance. Valid
+    <dd>The protocol to use to the instance. Valid
 values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2634,8 +2634,8 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port on the instance to route to
-{{% /md %}}</dd>
+    <dd>The port on the instance to route to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2643,9 +2643,9 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol to listen on. Valid values are `HTTP`,
+    <dd>The protocol to listen on. Valid values are `HTTP`,
 `HTTPS`, `TCP`, or `SSL`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2653,8 +2653,8 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port to listen on for the load balancer
-{{% /md %}}</dd>
+    <dd>The port to listen on for the load balancer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2662,12 +2662,12 @@ values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an SSL certificate you have
+    <dd>The ARN of an SSL certificate you have
 uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when `lb_protocol` is either HTTPS or SSL**
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

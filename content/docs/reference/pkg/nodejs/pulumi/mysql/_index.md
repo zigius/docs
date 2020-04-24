@@ -16,22 +16,22 @@ git_sha: "c53e36765587de626a55914e9509b32fb6976310"
 > please consult the source [`terraform-providers/terraform-provider-mysql` repo](https://github.com/terraform-providers/terraform-provider-mysql/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var mysql = require("@pulumi/mysql");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as mysql from "@pulumi/mysql";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

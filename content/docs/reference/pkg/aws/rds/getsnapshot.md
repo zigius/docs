@@ -53,29 +53,29 @@ const dev = new aws.rds.Instance("dev", {
 
 ## Using GetSnapshot {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSnapshot<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/rds/#GetSnapshotArgs">GetSnapshotArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/rds/#GetSnapshotResult">GetSnapshotResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_snapshot(</span>db_instance_identifier=None<span class="p">, </span>db_snapshot_identifier=None<span class="p">, </span>include_public=None<span class="p">, </span>include_shared=None<span class="p">, </span>most_recent=None<span class="p">, </span>snapshot_type=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSnapshot<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/rds?tab=doc#LookupSnapshotArgs">LookupSnapshotArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/rds?tab=doc#LookupSnapshotResult">LookupSnapshotResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSnapshot </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Rds.GetSnapshotResult.html">GetSnapshotResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Rds.GetSnapshotArgs.html">GetSnapshotArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -83,7 +83,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -92,8 +92,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Returns the list of snapshots created by the specific db_instance
-{{% /md %}}</dd>
+    <dd>Returns the list of snapshots created by the specific db_instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -101,8 +101,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Returns information on a specific snapshot_id.
-{{% /md %}}</dd>
+    <dd>Returns information on a specific snapshot_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -110,9 +110,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this value to true to include manual DB snapshots that are public and can be
+    <dd>Set this value to true to include manual DB snapshots that are public and can be
 copied or restored by any AWS account, otherwise set this value to false. The default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -120,10 +120,10 @@ copied or restored by any AWS account, otherwise set this value to false. The de
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this value to true to include shared manual DB snapshots from other
+    <dd>Set this value to true to include shared manual DB snapshots from other
 AWS accounts that this AWS account has been given permission to copy or restore, otherwise set this value to false.
 The default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -131,9 +131,9 @@ The default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent Snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -141,16 +141,16 @@ recent Snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of snapshots to be returned. If you don't specify a SnapshotType
+    <dd>The type of snapshots to be returned. If you don't specify a SnapshotType
 value, then both automated and manual snapshots are returned. Shared and public DB snapshots are not
 included in the returned results by default. Possible values are, `automated`, `manual`, `shared` and `public`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -159,8 +159,8 @@ included in the returned results by default. Possible values are, `automated`, `
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Returns the list of snapshots created by the specific db_instance
-{{% /md %}}</dd>
+    <dd>Returns the list of snapshots created by the specific db_instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -168,8 +168,8 @@ included in the returned results by default. Possible values are, `automated`, `
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Returns information on a specific snapshot_id.
-{{% /md %}}</dd>
+    <dd>Returns information on a specific snapshot_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -177,9 +177,9 @@ included in the returned results by default. Possible values are, `automated`, `
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this value to true to include manual DB snapshots that are public and can be
+    <dd>Set this value to true to include manual DB snapshots that are public and can be
 copied or restored by any AWS account, otherwise set this value to false. The default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -187,10 +187,10 @@ copied or restored by any AWS account, otherwise set this value to false. The de
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this value to true to include shared manual DB snapshots from other
+    <dd>Set this value to true to include shared manual DB snapshots from other
 AWS accounts that this AWS account has been given permission to copy or restore, otherwise set this value to false.
 The default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -198,9 +198,9 @@ The default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent Snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -208,16 +208,16 @@ recent Snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of snapshots to be returned. If you don't specify a SnapshotType
+    <dd>The type of snapshots to be returned. If you don't specify a SnapshotType
 value, then both automated and manual snapshots are returned. Shared and public DB snapshots are not
 included in the returned results by default. Possible values are, `automated`, `manual`, `shared` and `public`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -226,8 +226,8 @@ included in the returned results by default. Possible values are, `automated`, `
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Returns the list of snapshots created by the specific db_instance
-{{% /md %}}</dd>
+    <dd>Returns the list of snapshots created by the specific db_instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,8 +235,8 @@ included in the returned results by default. Possible values are, `automated`, `
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Returns information on a specific snapshot_id.
-{{% /md %}}</dd>
+    <dd>Returns information on a specific snapshot_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,9 +244,9 @@ included in the returned results by default. Possible values are, `automated`, `
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Set this value to true to include manual DB snapshots that are public and can be
+    <dd>Set this value to true to include manual DB snapshots that are public and can be
 copied or restored by any AWS account, otherwise set this value to false. The default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,10 +254,10 @@ copied or restored by any AWS account, otherwise set this value to false. The de
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Set this value to true to include shared manual DB snapshots from other
+    <dd>Set this value to true to include shared manual DB snapshots from other
 AWS accounts that this AWS account has been given permission to copy or restore, otherwise set this value to false.
 The default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,9 +265,9 @@ The default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent Snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,16 +275,16 @@ recent Snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of snapshots to be returned. If you don't specify a SnapshotType
+    <dd>The type of snapshots to be returned. If you don't specify a SnapshotType
 value, then both automated and manual snapshots are returned. Shared and public DB snapshots are not
 included in the returned results by default. Possible values are, `automated`, `manual`, `shared` and `public`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -293,8 +293,8 @@ included in the returned results by default. Possible values are, `automated`, `
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Returns the list of snapshots created by the specific db_instance
-{{% /md %}}</dd>
+    <dd>Returns the list of snapshots created by the specific db_instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,8 +302,8 @@ included in the returned results by default. Possible values are, `automated`, `
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Returns information on a specific snapshot_id.
-{{% /md %}}</dd>
+    <dd>Returns information on a specific snapshot_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,9 +311,9 @@ included in the returned results by default. Possible values are, `automated`, `
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this value to true to include manual DB snapshots that are public and can be
+    <dd>Set this value to true to include manual DB snapshots that are public and can be
 copied or restored by any AWS account, otherwise set this value to false. The default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,10 +321,10 @@ copied or restored by any AWS account, otherwise set this value to false. The de
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Set this value to true to include shared manual DB snapshots from other
+    <dd>Set this value to true to include shared manual DB snapshots from other
 AWS accounts that this AWS account has been given permission to copy or restore, otherwise set this value to false.
 The default is `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,9 +332,9 @@ The default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If more than one result is returned, use the most
+    <dd>If more than one result is returned, use the most
 recent Snapshot.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,13 +342,13 @@ recent Snapshot.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of snapshots to be returned. If you don't specify a SnapshotType
+    <dd>The type of snapshots to be returned. If you don't specify a SnapshotType
 value, then both automated and manual snapshots are returned. Shared and public DB snapshots are not
 included in the returned results by default. Possible values are, `automated`, `manual`, `shared` and `public`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -364,7 +364,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -373,8 +373,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the allocated storage size in gigabytes (GB).
-{{% /md %}}</dd>
+    <dd>Specifies the allocated storage size in gigabytes (GB).
+</dd>
 
     <dt class="property-"
             title="">
@@ -382,8 +382,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -391,8 +391,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the DB snapshot.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -400,8 +400,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB snapshot is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB snapshot is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -409,8 +409,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the database engine.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the database engine.
+</dd>
 
     <dt class="property-"
             title="">
@@ -418,8 +418,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the version of the database engine.
-{{% /md %}}</dd>
+    <dd>Specifies the version of the database engine.
+</dd>
 
     <dt class="property-"
             title="">
@@ -427,8 +427,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -436,8 +436,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -445,8 +445,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -454,8 +454,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}License model information for the restored DB instance.
-{{% /md %}}</dd>
+    <dd>License model information for the restored DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -463,8 +463,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the option group name for the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Provides the option group name for the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -472,7 +472,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -480,8 +480,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-"
             title="">
@@ -489,8 +489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
-{{% /md %}}</dd>
+    <dd>The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -498,8 +498,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region that the DB snapshot was created in or copied from.
-{{% /md %}}</dd>
+    <dd>The region that the DB snapshot was created in or copied from.
+</dd>
 
     <dt class="property-"
             title="">
@@ -507,8 +507,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the status of this DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the status of this DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -516,8 +516,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the storage type associated with DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the storage type associated with DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -525,8 +525,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the VPC associated with the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the VPC associated with the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -534,7 +534,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -542,7 +542,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -550,7 +550,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -558,7 +558,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -566,7 +566,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -574,13 +574,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -589,8 +589,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the allocated storage size in gigabytes (GB).
-{{% /md %}}</dd>
+    <dd>Specifies the allocated storage size in gigabytes (GB).
+</dd>
 
     <dt class="property-"
             title="">
@@ -598,8 +598,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -607,8 +607,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the DB snapshot.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -616,8 +616,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB snapshot is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB snapshot is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -625,8 +625,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the database engine.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the database engine.
+</dd>
 
     <dt class="property-"
             title="">
@@ -634,8 +634,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the version of the database engine.
-{{% /md %}}</dd>
+    <dd>Specifies the version of the database engine.
+</dd>
 
     <dt class="property-"
             title="">
@@ -643,8 +643,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -652,8 +652,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -661,8 +661,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -670,8 +670,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}License model information for the restored DB instance.
-{{% /md %}}</dd>
+    <dd>License model information for the restored DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -679,8 +679,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the option group name for the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Provides the option group name for the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -688,7 +688,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -696,8 +696,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-"
             title="">
@@ -705,8 +705,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
-{{% /md %}}</dd>
+    <dd>The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -714,8 +714,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region that the DB snapshot was created in or copied from.
-{{% /md %}}</dd>
+    <dd>The region that the DB snapshot was created in or copied from.
+</dd>
 
     <dt class="property-"
             title="">
@@ -723,8 +723,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the status of this DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the status of this DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -732,8 +732,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the storage type associated with DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the storage type associated with DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -741,8 +741,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the VPC associated with the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the VPC associated with the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -750,7 +750,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -758,7 +758,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -766,7 +766,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -774,7 +774,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -782,7 +782,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -790,13 +790,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -805,8 +805,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the allocated storage size in gigabytes (GB).
-{{% /md %}}</dd>
+    <dd>Specifies the allocated storage size in gigabytes (GB).
+</dd>
 
     <dt class="property-"
             title="">
@@ -814,8 +814,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -823,8 +823,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the DB snapshot.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -832,8 +832,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB snapshot is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB snapshot is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -841,8 +841,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the database engine.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the database engine.
+</dd>
 
     <dt class="property-"
             title="">
@@ -850,8 +850,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the version of the database engine.
-{{% /md %}}</dd>
+    <dd>Specifies the version of the database engine.
+</dd>
 
     <dt class="property-"
             title="">
@@ -859,8 +859,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -868,8 +868,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -877,8 +877,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -886,8 +886,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}License model information for the restored DB instance.
-{{% /md %}}</dd>
+    <dd>License model information for the restored DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -895,8 +895,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the option group name for the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Provides the option group name for the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -904,7 +904,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -912,8 +912,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-"
             title="">
@@ -921,8 +921,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
-{{% /md %}}</dd>
+    <dd>The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -930,8 +930,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region that the DB snapshot was created in or copied from.
-{{% /md %}}</dd>
+    <dd>The region that the DB snapshot was created in or copied from.
+</dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the status of this DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the status of this DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,8 +948,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the storage type associated with DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the storage type associated with DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -957,8 +957,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the VPC associated with the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the VPC associated with the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -966,7 +966,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -974,7 +974,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -982,7 +982,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -990,7 +990,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -998,7 +998,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1006,13 +1006,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1021,8 +1021,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the allocated storage size in gigabytes (GB).
-{{% /md %}}</dd>
+    <dd>Specifies the allocated storage size in gigabytes (GB).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1030,8 +1030,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1039,8 +1039,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) for the DB snapshot.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) for the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1048,8 +1048,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB snapshot is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB snapshot is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1057,8 +1057,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the database engine.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the database engine.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1066,8 +1066,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the version of the database engine.
-{{% /md %}}</dd>
+    <dd>Specifies the version of the database engine.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1075,8 +1075,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1084,8 +1084,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1093,8 +1093,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1102,8 +1102,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}License model information for the restored DB instance.
-{{% /md %}}</dd>
+    <dd>License model information for the restored DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1111,8 +1111,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Provides the option group name for the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Provides the option group name for the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1120,7 +1120,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1128,8 +1128,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
-{{% /md %}}</dd>
+    <dd>Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
+</dd>
 
     <dt class="property-"
             title="">
@@ -1137,8 +1137,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
-{{% /md %}}</dd>
+    <dd>The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1146,8 +1146,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region that the DB snapshot was created in or copied from.
-{{% /md %}}</dd>
+    <dd>The region that the DB snapshot was created in or copied from.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1155,8 +1155,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the status of this DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the status of this DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1164,8 +1164,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the storage type associated with DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the storage type associated with DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1173,8 +1173,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the VPC associated with the DB snapshot.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the VPC associated with the DB snapshot.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1182,7 +1182,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1190,7 +1190,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1198,7 +1198,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1206,7 +1206,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1214,7 +1214,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1222,10 +1222,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

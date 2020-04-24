@@ -21,26 +21,26 @@ Manages a Virtual Machine.
 
 
 ## Create a VirtualMachine Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#VirtualMachine">VirtualMachine</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#VirtualMachineArgs">VirtualMachineArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">VirtualMachine</span><span class="p">(resource_name, opts=None, </span>additional_capabilities=None<span class="p">, </span>availability_set_id=None<span class="p">, </span>boot_diagnostics=None<span class="p">, </span>delete_data_disks_on_termination=None<span class="p">, </span>delete_os_disk_on_termination=None<span class="p">, </span>identity=None<span class="p">, </span>license_type=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>network_interface_ids=None<span class="p">, </span>os_profile=None<span class="p">, </span>os_profile_linux_config=None<span class="p">, </span>os_profile_secrets=None<span class="p">, </span>os_profile_windows_config=None<span class="p">, </span>plan=None<span class="p">, </span>primary_network_interface_id=None<span class="p">, </span>proximity_placement_group_id=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>storage_data_disks=None<span class="p">, </span>storage_image_reference=None<span class="p">, </span>storage_os_disk=None<span class="p">, </span>tags=None<span class="p">, </span>vm_size=None<span class="p">, </span>zones=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewVirtualMachine<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineArgs">VirtualMachineArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachine">VirtualMachine</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.VirtualMachine.html">VirtualMachine</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.VirtualMachineArgs.html">VirtualMachineArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -77,9 +77,9 @@ Manages a Virtual Machine.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -97,9 +97,9 @@ Manages a Virtual Machine.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -146,9 +146,9 @@ Manages a Virtual Machine.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -185,7 +185,7 @@ Manages a Virtual Machine.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## VirtualMachine Resource Properties {#properties}
 
@@ -198,7 +198,7 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -207,8 +207,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Network Interface ID's which should be associated with the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A list of Network Interface ID's which should be associated with the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -216,8 +216,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -225,8 +225,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageosdisk">Virtual<wbr>Machine<wbr>Storage<wbr>Os<wbr>Disk<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_os_disk` block.
-{{% /md %}}</dd>
+    <dd>A `storage_os_disk` block.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -234,8 +234,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
-{{% /md %}}</dd>
+    <dd>Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -243,8 +243,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineadditionalcapabilities">Virtual<wbr>Machine<wbr>Additional<wbr>Capabilities<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -252,8 +252,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,8 +261,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinebootdiagnostics">Virtual<wbr>Machine<wbr>Boot<wbr>Diagnostics<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,8 +270,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,8 +279,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,8 +288,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineidentity">Virtual<wbr>Machine<wbr>Identity<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block.
-{{% /md %}}</dd>
+    <dd>A `identity` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,8 +297,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
-{{% /md %}}</dd>
+    <dd>Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,8 +306,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,8 +315,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,8 +324,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofile">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
-{{% /md %}}</dd>
+    <dd>An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -333,8 +333,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_linux_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_linux_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,8 +342,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecret">List&lt;Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `os_profile_secrets` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `os_profile_secrets` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,8 +351,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_windows_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_windows_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,8 +360,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineplan">Virtual<wbr>Machine<wbr>Plan<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `plan` block.
-{{% /md %}}</dd>
+    <dd>A `plan` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -369,8 +369,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,8 +378,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestoragedatadisk">List&lt;Virtual<wbr>Machine<wbr>Storage<wbr>Data<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_data_disk` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `storage_data_disk` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,8 +396,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageimagereference">Virtual<wbr>Machine<wbr>Storage<wbr>Image<wbr>Reference<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_image_reference` block.
-{{% /md %}}</dd>
+    <dd>A `storage_image_reference` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,8 +405,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,14 +414,14 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -430,8 +430,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Network Interface ID's which should be associated with the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A list of Network Interface ID's which should be associated with the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -439,8 +439,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -448,8 +448,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageosdisk">Virtual<wbr>Machine<wbr>Storage<wbr>Os<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_os_disk` block.
-{{% /md %}}</dd>
+    <dd>A `storage_os_disk` block.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -457,8 +457,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
-{{% /md %}}</dd>
+    <dd>Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,8 +466,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineadditionalcapabilities">Virtual<wbr>Machine<wbr>Additional<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -475,8 +475,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,8 +484,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinebootdiagnostics">Virtual<wbr>Machine<wbr>Boot<wbr>Diagnostics</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,8 +493,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineidentity">Virtual<wbr>Machine<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block.
-{{% /md %}}</dd>
+    <dd>A `identity` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,8 +520,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
-{{% /md %}}</dd>
+    <dd>Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,8 +529,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,8 +538,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofile">Virtual<wbr>Machine<wbr>Os<wbr>Profile</a></span>
     </dt>
-    <dd>{{% md %}}An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
-{{% /md %}}</dd>
+    <dd>An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,8 +556,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_linux_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_linux_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,8 +565,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecret">[]Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret</a></span>
     </dt>
-    <dd>{{% md %}}One or more `os_profile_secrets` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `os_profile_secrets` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_windows_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_windows_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,8 +583,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineplan">Virtual<wbr>Machine<wbr>Plan</a></span>
     </dt>
-    <dd>{{% md %}}A `plan` block.
-{{% /md %}}</dd>
+    <dd>A `plan` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestoragedatadisk">[]Virtual<wbr>Machine<wbr>Storage<wbr>Data<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_data_disk` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `storage_data_disk` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageimagereference">Virtual<wbr>Machine<wbr>Storage<wbr>Image<wbr>Reference</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_image_reference` block.
-{{% /md %}}</dd>
+    <dd>A `storage_image_reference` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,14 +637,14 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -653,8 +653,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Network Interface ID's which should be associated with the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A list of Network Interface ID's which should be associated with the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -662,8 +662,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -671,8 +671,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageosdisk">Virtual<wbr>Machine<wbr>Storage<wbr>Os<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_os_disk` block.
-{{% /md %}}</dd>
+    <dd>A `storage_os_disk` block.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -680,8 +680,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
-{{% /md %}}</dd>
+    <dd>Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,8 +689,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineadditionalcapabilities">Virtual<wbr>Machine<wbr>Additional<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,8 +698,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinebootdiagnostics">Virtual<wbr>Machine<wbr>Boot<wbr>Diagnostics</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,8 +716,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -725,8 +725,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -734,8 +734,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineidentity">Virtual<wbr>Machine<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block.
-{{% /md %}}</dd>
+    <dd>A `identity` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,8 +743,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
-{{% /md %}}</dd>
+    <dd>Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -752,8 +752,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,8 +761,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -770,8 +770,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofile">Virtual<wbr>Machine<wbr>Os<wbr>Profile</a></span>
     </dt>
-    <dd>{{% md %}}An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
-{{% /md %}}</dd>
+    <dd>An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -779,8 +779,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_linux_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_linux_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,8 +788,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecret">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `os_profile_secrets` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `os_profile_secrets` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -797,8 +797,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_windows_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_windows_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -806,8 +806,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineplan">Virtual<wbr>Machine<wbr>Plan</a></span>
     </dt>
-    <dd>{{% md %}}A `plan` block.
-{{% /md %}}</dd>
+    <dd>A `plan` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -815,8 +815,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -824,8 +824,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -833,8 +833,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestoragedatadisk">Virtual<wbr>Machine<wbr>Storage<wbr>Data<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_data_disk` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `storage_data_disk` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -842,8 +842,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageimagereference">Virtual<wbr>Machine<wbr>Storage<wbr>Image<wbr>Reference</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_image_reference` block.
-{{% /md %}}</dd>
+    <dd>A `storage_image_reference` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,8 +851,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -860,14 +860,14 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -876,8 +876,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Network Interface ID's which should be associated with the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A list of Network Interface ID's which should be associated with the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -885,8 +885,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -894,8 +894,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageosdisk">Dict[Virtual<wbr>Machine<wbr>Storage<wbr>Os<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_os_disk` block.
-{{% /md %}}</dd>
+    <dd>A `storage_os_disk` block.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -903,8 +903,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
-{{% /md %}}</dd>
+    <dd>Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -912,8 +912,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineadditionalcapabilities">Dict[Virtual<wbr>Machine<wbr>Additional<wbr>Capabilities]</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -921,8 +921,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -930,8 +930,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinebootdiagnostics">Dict[Virtual<wbr>Machine<wbr>Boot<wbr>Diagnostics]</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,8 +939,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -948,8 +948,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -957,8 +957,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineidentity">Dict[Virtual<wbr>Machine<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block.
-{{% /md %}}</dd>
+    <dd>A `identity` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -966,8 +966,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
-{{% /md %}}</dd>
+    <dd>Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -975,8 +975,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -984,8 +984,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -993,8 +993,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofile">Dict[Virtual<wbr>Machine<wbr>Os<wbr>Profile]</a></span>
     </dt>
-    <dd>{{% md %}}An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
-{{% /md %}}</dd>
+    <dd>An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,8 +1002,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfig">Dict[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_linux_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_linux_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecret">List[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `os_profile_secrets` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `os_profile_secrets` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,8 +1020,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfig">Dict[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_windows_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_windows_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,8 +1029,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineplan">Dict[Virtual<wbr>Machine<wbr>Plan]</a></span>
     </dt>
-    <dd>{{% md %}}A `plan` block.
-{{% /md %}}</dd>
+    <dd>A `plan` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,8 +1038,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,8 +1047,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1056,8 +1056,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestoragedatadisk">List[Virtual<wbr>Machine<wbr>Storage<wbr>Data<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_data_disk` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `storage_data_disk` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1065,8 +1065,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageimagereference">Dict[Virtual<wbr>Machine<wbr>Storage<wbr>Image<wbr>Reference]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_image_reference` block.
-{{% /md %}}</dd>
+    <dd>A `storage_image_reference` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1074,8 +1074,8 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,11 +1083,11 @@ The VirtualMachine resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1101,7 +1101,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1110,13 +1110,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1125,13 +1125,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1140,13 +1140,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1155,10 +1155,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1169,25 +1169,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing VirtualMachine Resource {#look-up}
 
 Get an existing VirtualMachine resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#VirtualMachineState">VirtualMachineState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#VirtualMachine">VirtualMachine</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>additional_capabilities=None<span class="p">, </span>availability_set_id=None<span class="p">, </span>boot_diagnostics=None<span class="p">, </span>delete_data_disks_on_termination=None<span class="p">, </span>delete_os_disk_on_termination=None<span class="p">, </span>identity=None<span class="p">, </span>license_type=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>network_interface_ids=None<span class="p">, </span>os_profile=None<span class="p">, </span>os_profile_linux_config=None<span class="p">, </span>os_profile_secrets=None<span class="p">, </span>os_profile_windows_config=None<span class="p">, </span>plan=None<span class="p">, </span>primary_network_interface_id=None<span class="p">, </span>proximity_placement_group_id=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>storage_data_disks=None<span class="p">, </span>storage_image_reference=None<span class="p">, </span>storage_os_disk=None<span class="p">, </span>tags=None<span class="p">, </span>vm_size=None<span class="p">, </span>zones=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetVirtualMachine<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineState">VirtualMachineState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachine">VirtualMachine</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.VirtualMachine.html">VirtualMachine</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.VirtualMachineState.html">VirtualMachineState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1212,9 +1212,9 @@ Get an existing VirtualMachine resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1227,36 +1227,9 @@ Get an existing VirtualMachine resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1281,13 +1254,40 @@ Get an existing VirtualMachine resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineadditionalcapabilities">Virtual<wbr>Machine<wbr>Additional<wbr>Capabilities<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinebootdiagnostics">Virtual<wbr>Machine<wbr>Boot<wbr>Diagnostics<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,8 +1341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineidentity">Virtual<wbr>Machine<wbr>Identity<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block.
-{{% /md %}}</dd>
+    <dd>A `identity` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
-{{% /md %}}</dd>
+    <dd>Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,8 +1359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1368,8 +1368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,8 +1377,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Network Interface ID's which should be associated with the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A list of Network Interface ID's which should be associated with the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1386,8 +1386,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofile">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
-{{% /md %}}</dd>
+    <dd>An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,8 +1395,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_linux_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_linux_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1404,8 +1404,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecret">List&lt;Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `os_profile_secrets` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `os_profile_secrets` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1413,8 +1413,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_windows_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_windows_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1422,8 +1422,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineplan">Virtual<wbr>Machine<wbr>Plan<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `plan` block.
-{{% /md %}}</dd>
+    <dd>A `plan` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1431,8 +1431,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1440,8 +1440,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1449,8 +1449,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1458,8 +1458,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestoragedatadisk">List&lt;Virtual<wbr>Machine<wbr>Storage<wbr>Data<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_data_disk` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `storage_data_disk` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1467,8 +1467,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageimagereference">Virtual<wbr>Machine<wbr>Storage<wbr>Image<wbr>Reference<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_image_reference` block.
-{{% /md %}}</dd>
+    <dd>A `storage_image_reference` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1476,8 +1476,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageosdisk">Virtual<wbr>Machine<wbr>Storage<wbr>Os<wbr>Disk<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_os_disk` block.
-{{% /md %}}</dd>
+    <dd>A `storage_os_disk` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1485,8 +1485,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,8 +1494,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
-{{% /md %}}</dd>
+    <dd>Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1503,14 +1503,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1519,8 +1519,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineadditionalcapabilities">Virtual<wbr>Machine<wbr>Additional<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,8 +1528,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1537,8 +1537,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinebootdiagnostics">Virtual<wbr>Machine<wbr>Boot<wbr>Diagnostics</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1546,8 +1546,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1555,8 +1555,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1564,8 +1564,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineidentity">Virtual<wbr>Machine<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block.
-{{% /md %}}</dd>
+    <dd>A `identity` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1573,8 +1573,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
-{{% /md %}}</dd>
+    <dd>Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1582,8 +1582,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1591,8 +1591,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1600,8 +1600,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Network Interface ID's which should be associated with the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A list of Network Interface ID's which should be associated with the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1609,8 +1609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofile">Virtual<wbr>Machine<wbr>Os<wbr>Profile</a></span>
     </dt>
-    <dd>{{% md %}}An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
-{{% /md %}}</dd>
+    <dd>An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1618,8 +1618,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_linux_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_linux_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1627,8 +1627,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecret">[]Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret</a></span>
     </dt>
-    <dd>{{% md %}}One or more `os_profile_secrets` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `os_profile_secrets` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1636,8 +1636,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_windows_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_windows_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1645,8 +1645,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineplan">Virtual<wbr>Machine<wbr>Plan</a></span>
     </dt>
-    <dd>{{% md %}}A `plan` block.
-{{% /md %}}</dd>
+    <dd>A `plan` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1654,8 +1654,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1663,8 +1663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1672,8 +1672,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1681,8 +1681,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestoragedatadisk">[]Virtual<wbr>Machine<wbr>Storage<wbr>Data<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_data_disk` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `storage_data_disk` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,8 +1690,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageimagereference">Virtual<wbr>Machine<wbr>Storage<wbr>Image<wbr>Reference</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_image_reference` block.
-{{% /md %}}</dd>
+    <dd>A `storage_image_reference` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1699,8 +1699,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageosdisk">Virtual<wbr>Machine<wbr>Storage<wbr>Os<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_os_disk` block.
-{{% /md %}}</dd>
+    <dd>A `storage_os_disk` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1708,8 +1708,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1717,8 +1717,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
-{{% /md %}}</dd>
+    <dd>Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1726,14 +1726,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1742,8 +1742,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineadditionalcapabilities">Virtual<wbr>Machine<wbr>Additional<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1751,8 +1751,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,8 +1760,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinebootdiagnostics">Virtual<wbr>Machine<wbr>Boot<wbr>Diagnostics</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1769,8 +1769,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1778,8 +1778,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1787,8 +1787,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineidentity">Virtual<wbr>Machine<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block.
-{{% /md %}}</dd>
+    <dd>A `identity` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1796,8 +1796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
-{{% /md %}}</dd>
+    <dd>Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1805,8 +1805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1814,8 +1814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1823,8 +1823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Network Interface ID's which should be associated with the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A list of Network Interface ID's which should be associated with the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1832,8 +1832,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofile">Virtual<wbr>Machine<wbr>Os<wbr>Profile</a></span>
     </dt>
-    <dd>{{% md %}}An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
-{{% /md %}}</dd>
+    <dd>An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1841,8 +1841,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_linux_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_linux_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1850,8 +1850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecret">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `os_profile_secrets` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `os_profile_secrets` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1859,8 +1859,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_windows_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_windows_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1868,8 +1868,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineplan">Virtual<wbr>Machine<wbr>Plan</a></span>
     </dt>
-    <dd>{{% md %}}A `plan` block.
-{{% /md %}}</dd>
+    <dd>A `plan` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1877,8 +1877,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1886,8 +1886,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1895,8 +1895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1904,8 +1904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestoragedatadisk">Virtual<wbr>Machine<wbr>Storage<wbr>Data<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_data_disk` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `storage_data_disk` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1913,8 +1913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageimagereference">Virtual<wbr>Machine<wbr>Storage<wbr>Image<wbr>Reference</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_image_reference` block.
-{{% /md %}}</dd>
+    <dd>A `storage_image_reference` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1922,8 +1922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageosdisk">Virtual<wbr>Machine<wbr>Storage<wbr>Os<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_os_disk` block.
-{{% /md %}}</dd>
+    <dd>A `storage_os_disk` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1931,8 +1931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1940,8 +1940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
-{{% /md %}}</dd>
+    <dd>Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1949,14 +1949,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1965,8 +1965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineadditionalcapabilities">Dict[Virtual<wbr>Machine<wbr>Additional<wbr>Capabilities]</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1974,8 +1974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Availability Set in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1983,8 +1983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinebootdiagnostics">Dict[Virtual<wbr>Machine<wbr>Boot<wbr>Diagnostics]</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1992,8 +1992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2001,8 +2001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the OS Disk (either the Managed Disk / VHD Blob) be deleted when the Virtual Machine is destroyed? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2010,8 +2010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineidentity">Dict[Virtual<wbr>Machine<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block.
-{{% /md %}}</dd>
+    <dd>A `identity` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,8 +2019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
-{{% /md %}}</dd>
+    <dd>Specifies the BYOL Type for this Virtual Machine. This is only applicable to Windows Virtual Machines. Possible values are `Windows_Client` and `Windows_Server`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2028,8 +2028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2037,8 +2037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2046,8 +2046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Network Interface ID's which should be associated with the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A list of Network Interface ID's which should be associated with the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2055,8 +2055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofile">Dict[Virtual<wbr>Machine<wbr>Os<wbr>Profile]</a></span>
     </dt>
-    <dd>{{% md %}}An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
-{{% /md %}}</dd>
+    <dd>An `os_profile` block. Required when `create_option` in the `storage_os_disk` block is set to `FromImage`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2064,8 +2064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfig">Dict[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_linux_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_linux_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2073,8 +2073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecret">List[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `os_profile_secrets` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `os_profile_secrets` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2082,8 +2082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfig">Dict[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `os_profile_windows_config` block.
-{{% /md %}}</dd>
+    <dd>A `os_profile_windows_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2091,8 +2091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineplan">Dict[Virtual<wbr>Machine<wbr>Plan]</a></span>
     </dt>
-    <dd>{{% md %}}A `plan` block.
-{{% /md %}}</dd>
+    <dd>A `plan` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2100,8 +2100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The ID of the Network Interface (which must be attached to the Virtual Machine) which should be the Primary Network Interface for this Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2109,8 +2109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group to which this Virtual Machine should be assigned. Changing this forces a new resource to be created
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2118,8 +2118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2127,8 +2127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestoragedatadisk">List[Virtual<wbr>Machine<wbr>Storage<wbr>Data<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_data_disk` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `storage_data_disk` blocks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2136,8 +2136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageimagereference">Dict[Virtual<wbr>Machine<wbr>Storage<wbr>Image<wbr>Reference]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_image_reference` block.
-{{% /md %}}</dd>
+    <dd>A `storage_image_reference` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,8 +2145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachinestorageosdisk">Dict[Virtual<wbr>Machine<wbr>Storage<wbr>Os<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_os_disk` block.
-{{% /md %}}</dd>
+    <dd>A `storage_os_disk` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2154,8 +2154,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2163,8 +2163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
-{{% /md %}}</dd>
+    <dd>Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2172,11 +2172,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
-{{% /md %}}</dd>
+    <dd>A list of a single item of the Availability Zone which the Virtual Machine should be allocated in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2191,18 +2191,18 @@ The following state arguments are supported:
 
 
 <h4 id="virtualmachineadditionalcapabilities">Virtual<wbr>Machine<wbr>Additional<wbr>Capabilities</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineAdditionalCapabilities">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineAdditionalCapabilities">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineAdditionalCapabilitiesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineAdditionalCapabilitiesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2211,14 +2211,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Ultra SSD disk be enabled for this Virtual Machine?
-{{% /md %}}</dd>
+    <dd>Should Ultra SSD disk be enabled for this Virtual Machine?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2227,14 +2227,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Ultra SSD disk be enabled for this Virtual Machine?
-{{% /md %}}</dd>
+    <dd>Should Ultra SSD disk be enabled for this Virtual Machine?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2243,14 +2243,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Ultra SSD disk be enabled for this Virtual Machine?
-{{% /md %}}</dd>
+    <dd>Should Ultra SSD disk be enabled for this Virtual Machine?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2259,29 +2259,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Ultra SSD disk be enabled for this Virtual Machine?
-{{% /md %}}</dd>
+    <dd>Should Ultra SSD disk be enabled for this Virtual Machine?
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachinebootdiagnostics">Virtual<wbr>Machine<wbr>Boot<wbr>Diagnostics</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineBootDiagnostics">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineBootDiagnostics">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineBootDiagnosticsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineBootDiagnosticsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2290,8 +2290,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Boot Diagnostics be enabled for this Virtual Machine?
-{{% /md %}}</dd>
+    <dd>Should Boot Diagnostics be enabled for this Virtual Machine?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2299,14 +2299,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
-{{% /md %}}</dd>
+    <dd>The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2315,8 +2315,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Boot Diagnostics be enabled for this Virtual Machine?
-{{% /md %}}</dd>
+    <dd>Should Boot Diagnostics be enabled for this Virtual Machine?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2324,14 +2324,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
-{{% /md %}}</dd>
+    <dd>The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2340,8 +2340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Boot Diagnostics be enabled for this Virtual Machine?
-{{% /md %}}</dd>
+    <dd>Should Boot Diagnostics be enabled for this Virtual Machine?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2349,14 +2349,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
-{{% /md %}}</dd>
+    <dd>The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2365,8 +2365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Boot Diagnostics be enabled for this Virtual Machine?
-{{% /md %}}</dd>
+    <dd>Should Boot Diagnostics be enabled for this Virtual Machine?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2374,29 +2374,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
-{{% /md %}}</dd>
+    <dd>The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineidentity">Virtual<wbr>Machine<wbr>Identity</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineIdentity">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineIdentity">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineIdentityArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineIdentityOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2405,8 +2405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
-{{% /md %}}</dd>
+    <dd>The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2414,8 +2414,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a list of user managed identity ids to be assigned to the VM. Required if `type` is `UserAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies a list of user managed identity ids to be assigned to the VM. Required if `type` is `UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2423,14 +2423,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Managed Service Identity of this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Managed Service Identity of this Virtual Machine.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2439,8 +2439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
-{{% /md %}}</dd>
+    <dd>The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2448,8 +2448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a list of user managed identity ids to be assigned to the VM. Required if `type` is `UserAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies a list of user managed identity ids to be assigned to the VM. Required if `type` is `UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2457,14 +2457,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Managed Service Identity of this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Managed Service Identity of this Virtual Machine.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2473,8 +2473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
-{{% /md %}}</dd>
+    <dd>The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2482,8 +2482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a list of user managed identity ids to be assigned to the VM. Required if `type` is `UserAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies a list of user managed identity ids to be assigned to the VM. Required if `type` is `UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2491,14 +2491,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Managed Service Identity of this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Managed Service Identity of this Virtual Machine.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2507,8 +2507,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
-{{% /md %}}</dd>
+    <dd>The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2516,8 +2516,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a list of user managed identity ids to be assigned to the VM. Required if `type` is `UserAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies a list of user managed identity ids to be assigned to the VM. Required if `type` is `UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2525,29 +2525,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Managed Service Identity of this Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Managed Service Identity of this Virtual Machine.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineosprofile">Virtual<wbr>Machine<wbr>Os<wbr>Profile</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineOsProfile">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineOsProfile">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2556,8 +2556,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the local administrator account.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the local administrator account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2565,8 +2565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2574,8 +2574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the local administrator account.
-{{% /md %}}</dd>
+    <dd>The password associated with the local administrator account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2583,14 +2583,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, this provider will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
-{{% /md %}}</dd>
+    <dd>Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, this provider will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2599,8 +2599,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the local administrator account.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the local administrator account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2608,8 +2608,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2617,8 +2617,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the local administrator account.
-{{% /md %}}</dd>
+    <dd>The password associated with the local administrator account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2626,14 +2626,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, this provider will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
-{{% /md %}}</dd>
+    <dd>Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, this provider will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2642,8 +2642,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the local administrator account.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the local administrator account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2651,8 +2651,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2660,8 +2660,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the local administrator account.
-{{% /md %}}</dd>
+    <dd>The password associated with the local administrator account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2669,14 +2669,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, this provider will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
-{{% /md %}}</dd>
+    <dd>Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, this provider will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2685,8 +2685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the local administrator account.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the local administrator account.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2694,8 +2694,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2703,8 +2703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the local administrator account.
-{{% /md %}}</dd>
+    <dd>The password associated with the local administrator account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2712,29 +2712,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, this provider will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
-{{% /md %}}</dd>
+    <dd>Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, this provider will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineosprofilelinuxconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineOsProfileLinuxConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineOsProfileLinuxConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileLinuxConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileLinuxConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2743,8 +2743,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether password authentication should be disabled. If set to `false`, an `admin_password` must be specified.
-{{% /md %}}</dd>
+    <dd>Specifies whether password authentication should be disabled. If set to `false`, an `admin_password` must be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2752,14 +2752,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfigsshkey">List&lt;Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config<wbr>Ssh<wbr>Key<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ssh_keys` blocks. This field is required if `disable_password_authentication` is set to `true`.
-{{% /md %}}</dd>
+    <dd>One or more `ssh_keys` blocks. This field is required if `disable_password_authentication` is set to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2768,8 +2768,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether password authentication should be disabled. If set to `false`, an `admin_password` must be specified.
-{{% /md %}}</dd>
+    <dd>Specifies whether password authentication should be disabled. If set to `false`, an `admin_password` must be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2777,14 +2777,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfigsshkey">[]Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config<wbr>Ssh<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ssh_keys` blocks. This field is required if `disable_password_authentication` is set to `true`.
-{{% /md %}}</dd>
+    <dd>One or more `ssh_keys` blocks. This field is required if `disable_password_authentication` is set to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2793,8 +2793,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether password authentication should be disabled. If set to `false`, an `admin_password` must be specified.
-{{% /md %}}</dd>
+    <dd>Specifies whether password authentication should be disabled. If set to `false`, an `admin_password` must be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2802,14 +2802,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfigsshkey">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config<wbr>Ssh<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ssh_keys` blocks. This field is required if `disable_password_authentication` is set to `true`.
-{{% /md %}}</dd>
+    <dd>One or more `ssh_keys` blocks. This field is required if `disable_password_authentication` is set to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2818,8 +2818,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether password authentication should be disabled. If set to `false`, an `admin_password` must be specified.
-{{% /md %}}</dd>
+    <dd>Specifies whether password authentication should be disabled. If set to `false`, an `admin_password` must be specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2827,29 +2827,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilelinuxconfigsshkey">List[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config<wbr>Ssh<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ssh_keys` blocks. This field is required if `disable_password_authentication` is set to `true`.
-{{% /md %}}</dd>
+    <dd>One or more `ssh_keys` blocks. This field is required if `disable_password_authentication` is set to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineosprofilelinuxconfigsshkey">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Linux<wbr>Config<wbr>Ssh<wbr>Key</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineOsProfileLinuxConfigSshKey">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineOsProfileLinuxConfigSshKey">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileLinuxConfigSshKeyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileLinuxConfigSshKeyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2858,8 +2858,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Public SSH Key which should be written to the `path` defined above.
-{{% /md %}}</dd>
+    <dd>The Public SSH Key which should be written to the `path` defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2867,14 +2867,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of the destination file on the virtual machine
-{{% /md %}}</dd>
+    <dd>The path of the destination file on the virtual machine
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2883,8 +2883,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Public SSH Key which should be written to the `path` defined above.
-{{% /md %}}</dd>
+    <dd>The Public SSH Key which should be written to the `path` defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2892,14 +2892,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of the destination file on the virtual machine
-{{% /md %}}</dd>
+    <dd>The path of the destination file on the virtual machine
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2908,8 +2908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Public SSH Key which should be written to the `path` defined above.
-{{% /md %}}</dd>
+    <dd>The Public SSH Key which should be written to the `path` defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2917,14 +2917,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path of the destination file on the virtual machine
-{{% /md %}}</dd>
+    <dd>The path of the destination file on the virtual machine
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2933,8 +2933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Public SSH Key which should be written to the `path` defined above.
-{{% /md %}}</dd>
+    <dd>The Public SSH Key which should be written to the `path` defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2942,29 +2942,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path of the destination file on the virtual machine
-{{% /md %}}</dd>
+    <dd>The path of the destination file on the virtual machine
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineosprofilesecret">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineOsProfileSecret">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineOsProfileSecret">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileSecretArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileSecretOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2973,8 +2973,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the Key Vault to use.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the Key Vault to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2982,14 +2982,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecretvaultcertificate">List&lt;Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret<wbr>Vault<wbr>Certificate<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `vault_certificates` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `vault_certificates` blocks.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2998,8 +2998,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the Key Vault to use.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the Key Vault to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3007,14 +3007,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecretvaultcertificate">[]Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret<wbr>Vault<wbr>Certificate</a></span>
     </dt>
-    <dd>{{% md %}}One or more `vault_certificates` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `vault_certificates` blocks.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3023,8 +3023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the Key Vault to use.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the Key Vault to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3032,14 +3032,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecretvaultcertificate">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret<wbr>Vault<wbr>Certificate[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `vault_certificates` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `vault_certificates` blocks.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3048,8 +3048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the Key Vault to use.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the Key Vault to use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3057,29 +3057,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilesecretvaultcertificate">List[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret<wbr>Vault<wbr>Certificate]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `vault_certificates` blocks.
-{{% /md %}}</dd>
+    <dd>One or more `vault_certificates` blocks.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineosprofilesecretvaultcertificate">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Secret<wbr>Vault<wbr>Certificate</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineOsProfileSecretVaultCertificate">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineOsProfileSecretVaultCertificate">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileSecretVaultCertificateArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileSecretVaultCertificateOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3088,8 +3088,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault Secret. Stored secret is the Base64 encoding of a JSON Object that which is encoded in UTF-8 of which the contents need to be:
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault Secret. Stored secret is the Base64 encoding of a JSON Object that which is encoded in UTF-8 of which the contents need to be:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3097,14 +3097,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
-{{% /md %}}</dd>
+    <dd>Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3113,8 +3113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault Secret. Stored secret is the Base64 encoding of a JSON Object that which is encoded in UTF-8 of which the contents need to be:
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault Secret. Stored secret is the Base64 encoding of a JSON Object that which is encoded in UTF-8 of which the contents need to be:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3122,14 +3122,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
-{{% /md %}}</dd>
+    <dd>Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3138,8 +3138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault Secret. Stored secret is the Base64 encoding of a JSON Object that which is encoded in UTF-8 of which the contents need to be:
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault Secret. Stored secret is the Base64 encoding of a JSON Object that which is encoded in UTF-8 of which the contents need to be:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3147,14 +3147,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
-{{% /md %}}</dd>
+    <dd>Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3163,8 +3163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault Secret. Stored secret is the Base64 encoding of a JSON Object that which is encoded in UTF-8 of which the contents need to be:
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault Secret. Stored secret is the Base64 encoding of a JSON Object that which is encoded in UTF-8 of which the contents need to be:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3172,29 +3172,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
-{{% /md %}}</dd>
+    <dd>Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineosprofilewindowsconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineOsProfileWindowsConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineOsProfileWindowsConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileWindowsConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileWindowsConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3203,8 +3203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfigadditionalunattendconfig">List&lt;Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Additional<wbr>Unattend<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_unattend_config` block.
-{{% /md %}}</dd>
+    <dd>A `additional_unattend_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3212,8 +3212,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled on this Virtual Machine? Defaults to `false.`
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled on this Virtual Machine? Defaults to `false.`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3221,8 +3221,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure Virtual Machine Guest Agent be installed on this Virtual Machine? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Azure Virtual Machine Guest Agent be installed on this Virtual Machine? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3230,8 +3230,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](http://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](http://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3239,14 +3239,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfigwinrm">List&lt;Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Winrm<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm` block.
-{{% /md %}}</dd>
+    <dd>One or more `winrm` block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3255,8 +3255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfigadditionalunattendconfig">[]Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Additional<wbr>Unattend<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_unattend_config` block.
-{{% /md %}}</dd>
+    <dd>A `additional_unattend_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3264,8 +3264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled on this Virtual Machine? Defaults to `false.`
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled on this Virtual Machine? Defaults to `false.`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3273,8 +3273,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure Virtual Machine Guest Agent be installed on this Virtual Machine? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Azure Virtual Machine Guest Agent be installed on this Virtual Machine? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3282,8 +3282,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](http://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](http://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3291,14 +3291,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfigwinrm">[]Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Winrm</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm` block.
-{{% /md %}}</dd>
+    <dd>One or more `winrm` block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3307,8 +3307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfigadditionalunattendconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Additional<wbr>Unattend<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_unattend_config` block.
-{{% /md %}}</dd>
+    <dd>A `additional_unattend_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3316,8 +3316,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled on this Virtual Machine? Defaults to `false.`
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled on this Virtual Machine? Defaults to `false.`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3325,8 +3325,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure Virtual Machine Guest Agent be installed on this Virtual Machine? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Azure Virtual Machine Guest Agent be installed on this Virtual Machine? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3334,8 +3334,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](http://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](http://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3343,14 +3343,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfigwinrm">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Winrm[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm` block.
-{{% /md %}}</dd>
+    <dd>One or more `winrm` block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3359,8 +3359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfigadditionalunattendconfig">List[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Additional<wbr>Unattend<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_unattend_config` block.
-{{% /md %}}</dd>
+    <dd>A `additional_unattend_config` block.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3368,8 +3368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled on this Virtual Machine? Defaults to `false.`
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled on this Virtual Machine? Defaults to `false.`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3377,8 +3377,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure Virtual Machine Guest Agent be installed on this Virtual Machine? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Azure Virtual Machine Guest Agent be installed on this Virtual Machine? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3386,8 +3386,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](http://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](http://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3395,29 +3395,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualmachineosprofilewindowsconfigwinrm">List[Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Winrm]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm` block.
-{{% /md %}}</dd>
+    <dd>One or more `winrm` block.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineosprofilewindowsconfigadditionalunattendconfig">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Additional<wbr>Unattend<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3426,8 +3426,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3435,8 +3435,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
-{{% /md %}}</dd>
+    <dd>Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3444,8 +3444,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3453,14 +3453,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3469,8 +3469,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3478,8 +3478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
-{{% /md %}}</dd>
+    <dd>Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3487,8 +3487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3496,14 +3496,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3512,8 +3512,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3521,8 +3521,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
-{{% /md %}}</dd>
+    <dd>Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3530,8 +3530,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3539,14 +3539,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3555,8 +3555,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3564,8 +3564,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
-{{% /md %}}</dd>
+    <dd>Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3573,8 +3573,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3582,29 +3582,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineosprofilewindowsconfigwinrm">Virtual<wbr>Machine<wbr>Os<wbr>Profile<wbr>Windows<wbr>Config<wbr>Winrm</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineOsProfileWindowsConfigWinrm">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineOsProfileWindowsConfigWinrm">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileWindowsConfigWinrmArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineOsProfileWindowsConfigWinrmOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3613,8 +3613,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3622,14 +3622,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `vault_certificates` block within the `os_profile_secrets` block.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `vault_certificates` block within the `os_profile_secrets` block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3638,8 +3638,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3647,14 +3647,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `vault_certificates` block within the `os_profile_secrets` block.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `vault_certificates` block within the `os_profile_secrets` block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3663,8 +3663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3672,14 +3672,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `vault_certificates` block within the `os_profile_secrets` block.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `vault_certificates` block within the `os_profile_secrets` block.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3688,8 +3688,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3697,29 +3697,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `vault_certificates` block within the `os_profile_secrets` block.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `vault_certificates` block within the `os_profile_secrets` block.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachineplan">Virtual<wbr>Machine<wbr>Plan</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachinePlan">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachinePlan">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachinePlanArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachinePlanOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3728,8 +3728,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the image from the marketplace.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the image from the marketplace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3737,8 +3737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the product of the image from the marketplace.
-{{% /md %}}</dd>
+    <dd>Specifies the product of the image from the marketplace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3746,14 +3746,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the publisher of the image.
-{{% /md %}}</dd>
+    <dd>Specifies the publisher of the image.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3762,8 +3762,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the image from the marketplace.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the image from the marketplace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3771,8 +3771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the product of the image from the marketplace.
-{{% /md %}}</dd>
+    <dd>Specifies the product of the image from the marketplace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3780,14 +3780,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the publisher of the image.
-{{% /md %}}</dd>
+    <dd>Specifies the publisher of the image.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3796,8 +3796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the image from the marketplace.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the image from the marketplace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3805,8 +3805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the product of the image from the marketplace.
-{{% /md %}}</dd>
+    <dd>Specifies the product of the image from the marketplace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3814,14 +3814,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the publisher of the image.
-{{% /md %}}</dd>
+    <dd>Specifies the publisher of the image.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3830,8 +3830,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the image from the marketplace.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the image from the marketplace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3839,8 +3839,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the product of the image from the marketplace.
-{{% /md %}}</dd>
+    <dd>Specifies the product of the image from the marketplace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3848,29 +3848,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the publisher of the image.
-{{% /md %}}</dd>
+    <dd>Specifies the publisher of the image.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachinestoragedatadisk">Virtual<wbr>Machine<wbr>Storage<wbr>Data<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineStorageDataDisk">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineStorageDataDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineStorageDataDiskArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineStorageDataDiskOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3879,8 +3879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
-{{% /md %}}</dd>
+    <dd>Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3888,8 +3888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3897,8 +3897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Data Disk.
-{{% /md %}}</dd>
+    <dd>The name of the Data Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3906,8 +3906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the caching requirements for the Data Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>Specifies the caching requirements for the Data Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3915,8 +3915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the size of the data disk in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the size of the data disk in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3924,8 +3924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of an Existing Managed Disk which should be attached to this Virtual Machine. When this field is set `create_option` must be set to `Attach`.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of an Existing Managed Disk which should be attached to this Virtual Machine. When this field is set `create_option` must be set to `Attach`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3933,8 +3933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of managed disk to create. Possible values are either `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` or `UltraSSD_LRS`.
-{{% /md %}}</dd>
+    <dd>Specifies the type of managed disk to create. Possible values are either `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` or `UltraSSD_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3942,8 +3942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the URI of the VHD file backing this Unmanaged Data Disk. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the URI of the VHD file backing this Unmanaged Data Disk. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3951,14 +3951,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3967,8 +3967,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
-{{% /md %}}</dd>
+    <dd>Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3976,8 +3976,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3985,8 +3985,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Data Disk.
-{{% /md %}}</dd>
+    <dd>The name of the Data Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3994,8 +3994,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the caching requirements for the Data Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>Specifies the caching requirements for the Data Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4003,8 +4003,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the size of the data disk in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the size of the data disk in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4012,8 +4012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of an Existing Managed Disk which should be attached to this Virtual Machine. When this field is set `create_option` must be set to `Attach`.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of an Existing Managed Disk which should be attached to this Virtual Machine. When this field is set `create_option` must be set to `Attach`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4021,8 +4021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of managed disk to create. Possible values are either `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` or `UltraSSD_LRS`.
-{{% /md %}}</dd>
+    <dd>Specifies the type of managed disk to create. Possible values are either `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` or `UltraSSD_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4030,8 +4030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the URI of the VHD file backing this Unmanaged Data Disk. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the URI of the VHD file backing this Unmanaged Data Disk. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4039,14 +4039,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4055,8 +4055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
-{{% /md %}}</dd>
+    <dd>Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4064,8 +4064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4073,8 +4073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Data Disk.
-{{% /md %}}</dd>
+    <dd>The name of the Data Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4082,8 +4082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the caching requirements for the Data Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>Specifies the caching requirements for the Data Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4091,8 +4091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the size of the data disk in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the size of the data disk in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4100,8 +4100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of an Existing Managed Disk which should be attached to this Virtual Machine. When this field is set `create_option` must be set to `Attach`.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of an Existing Managed Disk which should be attached to this Virtual Machine. When this field is set `create_option` must be set to `Attach`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4109,8 +4109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of managed disk to create. Possible values are either `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` or `UltraSSD_LRS`.
-{{% /md %}}</dd>
+    <dd>Specifies the type of managed disk to create. Possible values are either `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` or `UltraSSD_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4118,8 +4118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the URI of the VHD file backing this Unmanaged Data Disk. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the URI of the VHD file backing this Unmanaged Data Disk. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4127,14 +4127,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4143,8 +4143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
-{{% /md %}}</dd>
+    <dd>Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4152,8 +4152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4161,8 +4161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Data Disk.
-{{% /md %}}</dd>
+    <dd>The name of the Data Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4170,8 +4170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the caching requirements for the Data Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>Specifies the caching requirements for the Data Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4179,8 +4179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the size of the data disk in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the size of the data disk in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4188,8 +4188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of managed disk to create. Possible values are either `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` or `UltraSSD_LRS`.
-{{% /md %}}</dd>
+    <dd>Specifies the type of managed disk to create. Possible values are either `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` or `UltraSSD_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4197,8 +4197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of an Existing Managed Disk which should be attached to this Virtual Machine. When this field is set `create_option` must be set to `Attach`.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of an Existing Managed Disk which should be attached to this Virtual Machine. When this field is set `create_option` must be set to `Attach`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4206,8 +4206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the URI of the VHD file backing this Unmanaged Data Disk. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the URI of the VHD file backing this Unmanaged Data Disk. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4215,29 +4215,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachinestorageimagereference">Virtual<wbr>Machine<wbr>Storage<wbr>Image<wbr>Reference</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineStorageImageReference">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineStorageImageReference">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineStorageImageReferenceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineStorageImageReferenceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4246,8 +4246,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4255,8 +4255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4264,8 +4264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4273,8 +4273,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4282,14 +4282,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4298,8 +4298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4307,8 +4307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4316,8 +4316,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4325,8 +4325,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4334,14 +4334,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4350,8 +4350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4359,8 +4359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4368,8 +4368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4377,8 +4377,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4386,14 +4386,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4402,8 +4402,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4411,8 +4411,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4420,8 +4420,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4429,8 +4429,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4438,29 +4438,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="virtualmachinestorageosdisk">Virtual<wbr>Machine<wbr>Storage<wbr>Os<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualMachineStorageOsDisk">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualMachineStorageOsDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineStorageOsDiskArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#VirtualMachineStorageOsDiskOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4469,8 +4469,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only) and `FromImage`.
-{{% /md %}}</dd>
+    <dd>Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only) and `FromImage`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4478,8 +4478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the OS Disk.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the OS Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4487,8 +4487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the caching requirements for the OS Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>Specifies the caching requirements for the OS Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4496,8 +4496,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the size of the OS Disk in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the size of the OS Disk in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4505,8 +4505,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Image URI in the format `publisherName:offer:skus:version`. This field can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a Custom (Unmanaged) Disk Image the `os_type` field must be set.
-{{% /md %}}</dd>
+    <dd>Specifies the Image URI in the format `publisherName:offer:skus:version`. This field can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a Custom (Unmanaged) Disk Image the `os_type` field must be set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4514,8 +4514,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of an existing Managed Disk which should be attached as the OS Disk of this Virtual Machine. If this is set then the `create_option` must be set to `Attach`.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of an existing Managed Disk which should be attached as the OS Disk of this Virtual Machine. If this is set then the `create_option` must be set to `Attach`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4523,8 +4523,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of Managed Disk which should be created. Possible values are `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
-{{% /md %}}</dd>
+    <dd>Specifies the type of Managed Disk which should be created. Possible values are `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4532,8 +4532,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Operating System on the OS Disk. Possible values are `Linux` and `Windows`.
-{{% /md %}}</dd>
+    <dd>Specifies the Operating System on the OS Disk. Possible values are `Linux` and `Windows`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4541,8 +4541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the URI of the VHD file backing this Unmanaged OS Disk. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the URI of the VHD file backing this Unmanaged OS Disk. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4550,14 +4550,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4566,8 +4566,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only) and `FromImage`.
-{{% /md %}}</dd>
+    <dd>Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only) and `FromImage`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4575,8 +4575,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the OS Disk.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the OS Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4584,8 +4584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the caching requirements for the OS Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>Specifies the caching requirements for the OS Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4593,8 +4593,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the size of the OS Disk in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the size of the OS Disk in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4602,8 +4602,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Image URI in the format `publisherName:offer:skus:version`. This field can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a Custom (Unmanaged) Disk Image the `os_type` field must be set.
-{{% /md %}}</dd>
+    <dd>Specifies the Image URI in the format `publisherName:offer:skus:version`. This field can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a Custom (Unmanaged) Disk Image the `os_type` field must be set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4611,8 +4611,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of an existing Managed Disk which should be attached as the OS Disk of this Virtual Machine. If this is set then the `create_option` must be set to `Attach`.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of an existing Managed Disk which should be attached as the OS Disk of this Virtual Machine. If this is set then the `create_option` must be set to `Attach`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4620,8 +4620,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of Managed Disk which should be created. Possible values are `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
-{{% /md %}}</dd>
+    <dd>Specifies the type of Managed Disk which should be created. Possible values are `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4629,8 +4629,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Operating System on the OS Disk. Possible values are `Linux` and `Windows`.
-{{% /md %}}</dd>
+    <dd>Specifies the Operating System on the OS Disk. Possible values are `Linux` and `Windows`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4638,8 +4638,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the URI of the VHD file backing this Unmanaged OS Disk. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the URI of the VHD file backing this Unmanaged OS Disk. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4647,14 +4647,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4663,8 +4663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only) and `FromImage`.
-{{% /md %}}</dd>
+    <dd>Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only) and `FromImage`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4672,8 +4672,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the OS Disk.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the OS Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4681,8 +4681,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the caching requirements for the OS Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>Specifies the caching requirements for the OS Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4690,8 +4690,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the size of the OS Disk in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the size of the OS Disk in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4699,8 +4699,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Image URI in the format `publisherName:offer:skus:version`. This field can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a Custom (Unmanaged) Disk Image the `os_type` field must be set.
-{{% /md %}}</dd>
+    <dd>Specifies the Image URI in the format `publisherName:offer:skus:version`. This field can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a Custom (Unmanaged) Disk Image the `os_type` field must be set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4708,8 +4708,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of an existing Managed Disk which should be attached as the OS Disk of this Virtual Machine. If this is set then the `create_option` must be set to `Attach`.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of an existing Managed Disk which should be attached as the OS Disk of this Virtual Machine. If this is set then the `create_option` must be set to `Attach`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4717,8 +4717,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of Managed Disk which should be created. Possible values are `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
-{{% /md %}}</dd>
+    <dd>Specifies the type of Managed Disk which should be created. Possible values are `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4726,8 +4726,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Operating System on the OS Disk. Possible values are `Linux` and `Windows`.
-{{% /md %}}</dd>
+    <dd>Specifies the Operating System on the OS Disk. Possible values are `Linux` and `Windows`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4735,8 +4735,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the URI of the VHD file backing this Unmanaged OS Disk. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the URI of the VHD file backing this Unmanaged OS Disk. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4744,14 +4744,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4760,8 +4760,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only) and `FromImage`.
-{{% /md %}}</dd>
+    <dd>Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only) and `FromImage`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4769,8 +4769,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the OS Disk.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the OS Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4778,8 +4778,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the caching requirements for the OS Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>Specifies the caching requirements for the OS Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4787,8 +4787,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the size of the OS Disk in gigabytes.
-{{% /md %}}</dd>
+    <dd>Specifies the size of the OS Disk in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4796,8 +4796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Image URI in the format `publisherName:offer:skus:version`. This field can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a Custom (Unmanaged) Disk Image the `os_type` field must be set.
-{{% /md %}}</dd>
+    <dd>Specifies the Image URI in the format `publisherName:offer:skus:version`. This field can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a Custom (Unmanaged) Disk Image the `os_type` field must be set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4805,8 +4805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of Managed Disk which should be created. Possible values are `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
-{{% /md %}}</dd>
+    <dd>Specifies the type of Managed Disk which should be created. Possible values are `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4814,8 +4814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the ID of an existing Managed Disk which should be attached as the OS Disk of this Virtual Machine. If this is set then the `create_option` must be set to `Attach`.
-{{% /md %}}</dd>
+    <dd>Specifies the ID of an existing Managed Disk which should be attached as the OS Disk of this Virtual Machine. If this is set then the `create_option` must be set to `Attach`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4823,8 +4823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Operating System on the OS Disk. Possible values are `Linux` and `Windows`.
-{{% /md %}}</dd>
+    <dd>Specifies the Operating System on the OS Disk. Possible values are `Linux` and `Windows`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4832,8 +4832,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the URI of the VHD file backing this Unmanaged OS Disk. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the URI of the VHD file backing this Unmanaged OS Disk. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4841,11 +4841,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

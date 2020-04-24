@@ -34,29 +34,29 @@ const rancher2App = pulumi.output(rancher2.getApp({
 
 ## Using GetApp {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getApp<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#GetAppArgs">GetAppArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/rancher2/#GetAppResult">GetAppResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_app(</span>annotations=None<span class="p">, </span>name=None<span class="p">, </span>project_id=None<span class="p">, </span>target_namespace=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#GetAppArgs">GetAppArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-rancher2/sdk/v2/go/rancher2/?tab=doc#LookupAppResult">LookupAppResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetApp </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.GetAppResult.html">GetAppResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Rancher2/Pulumi.Rancher2.GetAppArgs.html">GetAppArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -64,7 +64,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -73,8 +73,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The app name (string)
-{{% /md %}}</dd>
+    <dd>The app name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -82,8 +82,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the project where the app is deployed (string)
-{{% /md %}}</dd>
+    <dd>The id of the project where the app is deployed (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -91,8 +91,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -100,14 +100,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace name where the app is deployed (string)
-{{% /md %}}</dd>
+    <dd>The namespace name where the app is deployed (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -116,8 +116,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The app name (string)
-{{% /md %}}</dd>
+    <dd>The app name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -125,8 +125,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the project where the app is deployed (string)
-{{% /md %}}</dd>
+    <dd>The id of the project where the app is deployed (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -134,8 +134,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -143,14 +143,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace name where the app is deployed (string)
-{{% /md %}}</dd>
+    <dd>The namespace name where the app is deployed (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -159,8 +159,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The app name (string)
-{{% /md %}}</dd>
+    <dd>The app name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -168,8 +168,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the project where the app is deployed (string)
-{{% /md %}}</dd>
+    <dd>The id of the project where the app is deployed (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -177,8 +177,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -186,14 +186,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace name where the app is deployed (string)
-{{% /md %}}</dd>
+    <dd>The namespace name where the app is deployed (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -202,8 +202,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The app name (string)
-{{% /md %}}</dd>
+    <dd>The app name (string)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -211,8 +211,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the project where the app is deployed (string)
-{{% /md %}}</dd>
+    <dd>The id of the project where the app is deployed (string)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -220,8 +220,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -229,11 +229,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace name where the app is deployed (string)
-{{% /md %}}</dd>
+    <dd>The namespace name where the app is deployed (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -249,7 +249,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -258,8 +258,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -267,8 +267,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}(Computed) Answers for the app (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Answers for the app (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -276,8 +276,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Catalog name of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Catalog name of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -285,8 +285,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Description for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Description for the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -294,8 +294,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The URL of the helm catalog app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The URL of the helm catalog app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -303,8 +303,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -312,8 +312,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -321,7 +321,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -329,7 +329,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -337,8 +337,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Current revision id for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Current revision id for the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -346,7 +346,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -354,8 +354,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Template name of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Template name of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -363,8 +363,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Template version of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Template version of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -372,14 +372,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) values.yaml base64 encoded file content for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) values.yaml base64 encoded file content for the app (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -388,8 +388,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -397,8 +397,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Answers for the app (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Answers for the app (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -406,8 +406,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Catalog name of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Catalog name of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -415,8 +415,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Description for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Description for the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -424,8 +424,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The URL of the helm catalog app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The URL of the helm catalog app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -433,8 +433,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -442,8 +442,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -451,7 +451,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -459,7 +459,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -467,8 +467,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Current revision id for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Current revision id for the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -476,7 +476,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -484,8 +484,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Template name of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Template name of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -493,8 +493,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Template version of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Template version of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -502,14 +502,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) values.yaml base64 encoded file content for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) values.yaml base64 encoded file content for the app (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -518,8 +518,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -527,8 +527,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Answers for the app (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Answers for the app (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -536,8 +536,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Catalog name of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Catalog name of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -545,8 +545,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Description for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Description for the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -554,8 +554,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The URL of the helm catalog app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The URL of the helm catalog app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -563,8 +563,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -572,8 +572,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -581,7 +581,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -589,7 +589,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -597,8 +597,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Current revision id for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Current revision id for the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -606,7 +606,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -614,8 +614,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Template name of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Template name of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -623,8 +623,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Template version of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Template version of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -632,14 +632,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) values.yaml base64 encoded file content for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) values.yaml base64 encoded file content for the app (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -648,8 +648,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}(Computed) Annotations for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Annotations for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -657,8 +657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}(Computed) Answers for the app (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Answers for the app (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -666,8 +666,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Catalog name of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Catalog name of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -675,8 +675,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Description for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Description for the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -684,8 +684,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) The URL of the helm catalog app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) The URL of the helm catalog app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,8 +693,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -702,8 +702,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}(Computed) Labels for the catalog (map)
-{{% /md %}}</dd>
+    <dd>(Computed) Labels for the catalog (map)
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,7 +711,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -719,7 +719,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -727,8 +727,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Current revision id for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Current revision id for the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -736,7 +736,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -744,8 +744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Template name of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Template name of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -753,8 +753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) Template version of the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) Template version of the app (string)
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,11 +762,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Computed) values.yaml base64 encoded file content for the app (string)
-{{% /md %}}</dd>
+    <dd>(Computed) values.yaml base64 encoded file content for the app (string)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

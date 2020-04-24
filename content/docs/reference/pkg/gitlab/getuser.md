@@ -32,29 +32,29 @@ const example = pulumi.output(gitlab.getUser({
 
 ## Using GetUser {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getUser<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gitlab/#GetUserArgs">GetUserArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gitlab/#GetUserResult">GetUserResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_user(</span>email=None<span class="p">, </span>user_id=None<span class="p">, </span>username=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupUser<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gitlab/sdk/v2/go/gitlab/?tab=doc#GetUserArgs">GetUserArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gitlab/sdk/v2/go/gitlab/?tab=doc#LookupUserResult">LookupUserResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetUser </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gitlab/Pulumi.Gitlab.GetUserResult.html">GetUserResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gitlab/Pulumi.GitLab.GetUserArgs.html">GetUserArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The e-mail address of the user. (Requires administrator privileges)
-{{% /md %}}</dd>
+    <dd>The e-mail address of the user. (Requires administrator privileges)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,8 +80,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the user.
-{{% /md %}}</dd>
+    <dd>The ID of the user.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -89,14 +89,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the user.
-{{% /md %}}</dd>
+    <dd>The username of the user.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -105,8 +105,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The e-mail address of the user. (Requires administrator privileges)
-{{% /md %}}</dd>
+    <dd>The e-mail address of the user. (Requires administrator privileges)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -114,8 +114,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the user.
-{{% /md %}}</dd>
+    <dd>The ID of the user.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -123,14 +123,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the user.
-{{% /md %}}</dd>
+    <dd>The username of the user.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -139,8 +139,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The e-mail address of the user. (Requires administrator privileges)
-{{% /md %}}</dd>
+    <dd>The e-mail address of the user. (Requires administrator privileges)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -148,8 +148,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the user.
-{{% /md %}}</dd>
+    <dd>The ID of the user.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -157,14 +157,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the user.
-{{% /md %}}</dd>
+    <dd>The username of the user.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -173,8 +173,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The e-mail address of the user. (Requires administrator privileges)
-{{% /md %}}</dd>
+    <dd>The e-mail address of the user. (Requires administrator privileges)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -182,8 +182,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the user.
-{{% /md %}}</dd>
+    <dd>The ID of the user.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -191,11 +191,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username of the user.
-{{% /md %}}</dd>
+    <dd>The username of the user.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -211,7 +211,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -220,8 +220,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The avatar URL of the user.
-{{% /md %}}</dd>
+    <dd>The avatar URL of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -229,8 +229,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The bio of the user.
-{{% /md %}}</dd>
+    <dd>The bio of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -238,8 +238,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user can create groups.
-{{% /md %}}</dd>
+    <dd>Whether the user can create groups.
+</dd>
 
     <dt class="property-"
             title="">
@@ -247,8 +247,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user can create projects.
-{{% /md %}}</dd>
+    <dd>Whether the user can create projects.
+</dd>
 
     <dt class="property-"
             title="">
@@ -256,8 +256,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}User's color scheme ID.
-{{% /md %}}</dd>
+    <dd>User's color scheme ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -265,8 +265,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Date the user was created at.
-{{% /md %}}</dd>
+    <dd>Date the user was created at.
+</dd>
 
     <dt class="property-"
             title="">
@@ -274,8 +274,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current user's sign-in date.
-{{% /md %}}</dd>
+    <dd>Current user's sign-in date.
+</dd>
 
     <dt class="property-"
             title="">
@@ -283,8 +283,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The e-mail address of the user.
-{{% /md %}}</dd>
+    <dd>The e-mail address of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -292,8 +292,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The external UID of the user.
-{{% /md %}}</dd>
+    <dd>The external UID of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -301,8 +301,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is external.
-{{% /md %}}</dd>
+    <dd>Whether the user is external.
+</dd>
 
     <dt class="property-"
             title="">
@@ -310,8 +310,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -319,8 +319,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is an admin.
-{{% /md %}}</dd>
+    <dd>Whether the user is an admin.
+</dd>
 
     <dt class="property-"
             title="">
@@ -328,8 +328,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Last user's sign-in date.
-{{% /md %}}</dd>
+    <dd>Last user's sign-in date.
+</dd>
 
     <dt class="property-"
             title="">
@@ -337,8 +337,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Linkedin profile of the user.
-{{% /md %}}</dd>
+    <dd>Linkedin profile of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -346,8 +346,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the user.
-{{% /md %}}</dd>
+    <dd>The location of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -355,8 +355,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the user.
-{{% /md %}}</dd>
+    <dd>The name of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -364,8 +364,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The organization of the user.
-{{% /md %}}</dd>
+    <dd>The organization of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -373,8 +373,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of projects the user can create.
-{{% /md %}}</dd>
+    <dd>Number of projects the user can create.
+</dd>
 
     <dt class="property-"
             title="">
@@ -382,8 +382,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Skype username of the user.
-{{% /md %}}</dd>
+    <dd>Skype username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -391,8 +391,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is active or blocked.
-{{% /md %}}</dd>
+    <dd>Whether the user is active or blocked.
+</dd>
 
     <dt class="property-"
             title="">
@@ -400,8 +400,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}User's theme ID.
-{{% /md %}}</dd>
+    <dd>User's theme ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -409,8 +409,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Twitter username of the user.
-{{% /md %}}</dd>
+    <dd>Twitter username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -418,8 +418,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether user's two factor auth is enabled.
-{{% /md %}}</dd>
+    <dd>Whether user's two factor auth is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -427,7 +427,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -435,8 +435,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UID provider of the user.
-{{% /md %}}</dd>
+    <dd>The UID provider of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -444,8 +444,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the user.
-{{% /md %}}</dd>
+    <dd>The username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -453,14 +453,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}User's website URL.
-{{% /md %}}</dd>
+    <dd>User's website URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -469,8 +469,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The avatar URL of the user.
-{{% /md %}}</dd>
+    <dd>The avatar URL of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -478,8 +478,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bio of the user.
-{{% /md %}}</dd>
+    <dd>The bio of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -487,8 +487,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user can create groups.
-{{% /md %}}</dd>
+    <dd>Whether the user can create groups.
+</dd>
 
     <dt class="property-"
             title="">
@@ -496,8 +496,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user can create projects.
-{{% /md %}}</dd>
+    <dd>Whether the user can create projects.
+</dd>
 
     <dt class="property-"
             title="">
@@ -505,8 +505,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}User's color scheme ID.
-{{% /md %}}</dd>
+    <dd>User's color scheme ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -514,8 +514,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Date the user was created at.
-{{% /md %}}</dd>
+    <dd>Date the user was created at.
+</dd>
 
     <dt class="property-"
             title="">
@@ -523,8 +523,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current user's sign-in date.
-{{% /md %}}</dd>
+    <dd>Current user's sign-in date.
+</dd>
 
     <dt class="property-"
             title="">
@@ -532,8 +532,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The e-mail address of the user.
-{{% /md %}}</dd>
+    <dd>The e-mail address of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -541,8 +541,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The external UID of the user.
-{{% /md %}}</dd>
+    <dd>The external UID of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -550,8 +550,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is external.
-{{% /md %}}</dd>
+    <dd>Whether the user is external.
+</dd>
 
     <dt class="property-"
             title="">
@@ -559,8 +559,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -568,8 +568,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is an admin.
-{{% /md %}}</dd>
+    <dd>Whether the user is an admin.
+</dd>
 
     <dt class="property-"
             title="">
@@ -577,8 +577,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Last user's sign-in date.
-{{% /md %}}</dd>
+    <dd>Last user's sign-in date.
+</dd>
 
     <dt class="property-"
             title="">
@@ -586,8 +586,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linkedin profile of the user.
-{{% /md %}}</dd>
+    <dd>Linkedin profile of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the user.
-{{% /md %}}</dd>
+    <dd>The location of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,8 +604,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the user.
-{{% /md %}}</dd>
+    <dd>The name of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -613,8 +613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The organization of the user.
-{{% /md %}}</dd>
+    <dd>The organization of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of projects the user can create.
-{{% /md %}}</dd>
+    <dd>Number of projects the user can create.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,8 +631,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Skype username of the user.
-{{% /md %}}</dd>
+    <dd>Skype username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -640,8 +640,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is active or blocked.
-{{% /md %}}</dd>
+    <dd>Whether the user is active or blocked.
+</dd>
 
     <dt class="property-"
             title="">
@@ -649,8 +649,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}User's theme ID.
-{{% /md %}}</dd>
+    <dd>User's theme ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -658,8 +658,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Twitter username of the user.
-{{% /md %}}</dd>
+    <dd>Twitter username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -667,8 +667,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether user's two factor auth is enabled.
-{{% /md %}}</dd>
+    <dd>Whether user's two factor auth is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -676,7 +676,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -684,8 +684,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UID provider of the user.
-{{% /md %}}</dd>
+    <dd>The UID provider of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,8 +693,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the user.
-{{% /md %}}</dd>
+    <dd>The username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -702,14 +702,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}User's website URL.
-{{% /md %}}</dd>
+    <dd>User's website URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -718,8 +718,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The avatar URL of the user.
-{{% /md %}}</dd>
+    <dd>The avatar URL of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -727,8 +727,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The bio of the user.
-{{% /md %}}</dd>
+    <dd>The bio of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -736,8 +736,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user can create groups.
-{{% /md %}}</dd>
+    <dd>Whether the user can create groups.
+</dd>
 
     <dt class="property-"
             title="">
@@ -745,8 +745,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user can create projects.
-{{% /md %}}</dd>
+    <dd>Whether the user can create projects.
+</dd>
 
     <dt class="property-"
             title="">
@@ -754,8 +754,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}User's color scheme ID.
-{{% /md %}}</dd>
+    <dd>User's color scheme ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -763,8 +763,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Date the user was created at.
-{{% /md %}}</dd>
+    <dd>Date the user was created at.
+</dd>
 
     <dt class="property-"
             title="">
@@ -772,8 +772,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current user's sign-in date.
-{{% /md %}}</dd>
+    <dd>Current user's sign-in date.
+</dd>
 
     <dt class="property-"
             title="">
@@ -781,8 +781,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The e-mail address of the user.
-{{% /md %}}</dd>
+    <dd>The e-mail address of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -790,8 +790,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The external UID of the user.
-{{% /md %}}</dd>
+    <dd>The external UID of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -799,8 +799,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is external.
-{{% /md %}}</dd>
+    <dd>Whether the user is external.
+</dd>
 
     <dt class="property-"
             title="">
@@ -808,8 +808,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -817,8 +817,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is an admin.
-{{% /md %}}</dd>
+    <dd>Whether the user is an admin.
+</dd>
 
     <dt class="property-"
             title="">
@@ -826,8 +826,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Last user's sign-in date.
-{{% /md %}}</dd>
+    <dd>Last user's sign-in date.
+</dd>
 
     <dt class="property-"
             title="">
@@ -835,8 +835,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linkedin profile of the user.
-{{% /md %}}</dd>
+    <dd>Linkedin profile of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -844,8 +844,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location of the user.
-{{% /md %}}</dd>
+    <dd>The location of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -853,8 +853,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the user.
-{{% /md %}}</dd>
+    <dd>The name of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -862,8 +862,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The organization of the user.
-{{% /md %}}</dd>
+    <dd>The organization of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -871,8 +871,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of projects the user can create.
-{{% /md %}}</dd>
+    <dd>Number of projects the user can create.
+</dd>
 
     <dt class="property-"
             title="">
@@ -880,8 +880,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Skype username of the user.
-{{% /md %}}</dd>
+    <dd>Skype username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -889,8 +889,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is active or blocked.
-{{% /md %}}</dd>
+    <dd>Whether the user is active or blocked.
+</dd>
 
     <dt class="property-"
             title="">
@@ -898,8 +898,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}User's theme ID.
-{{% /md %}}</dd>
+    <dd>User's theme ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -907,8 +907,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Twitter username of the user.
-{{% /md %}}</dd>
+    <dd>Twitter username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -916,8 +916,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether user's two factor auth is enabled.
-{{% /md %}}</dd>
+    <dd>Whether user's two factor auth is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -925,7 +925,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -933,8 +933,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UID provider of the user.
-{{% /md %}}</dd>
+    <dd>The UID provider of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -942,8 +942,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the user.
-{{% /md %}}</dd>
+    <dd>The username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -951,14 +951,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}User's website URL.
-{{% /md %}}</dd>
+    <dd>User's website URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -967,8 +967,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The avatar URL of the user.
-{{% /md %}}</dd>
+    <dd>The avatar URL of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -976,8 +976,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The bio of the user.
-{{% /md %}}</dd>
+    <dd>The bio of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -985,8 +985,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user can create groups.
-{{% /md %}}</dd>
+    <dd>Whether the user can create groups.
+</dd>
 
     <dt class="property-"
             title="">
@@ -994,8 +994,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user can create projects.
-{{% /md %}}</dd>
+    <dd>Whether the user can create projects.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1003,8 +1003,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}User's color scheme ID.
-{{% /md %}}</dd>
+    <dd>User's color scheme ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1012,8 +1012,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Date the user was created at.
-{{% /md %}}</dd>
+    <dd>Date the user was created at.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1021,8 +1021,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current user's sign-in date.
-{{% /md %}}</dd>
+    <dd>Current user's sign-in date.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1030,8 +1030,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The e-mail address of the user.
-{{% /md %}}</dd>
+    <dd>The e-mail address of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1039,8 +1039,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The external UID of the user.
-{{% /md %}}</dd>
+    <dd>The external UID of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1048,8 +1048,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is external.
-{{% /md %}}</dd>
+    <dd>Whether the user is external.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1057,8 +1057,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1066,8 +1066,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is an admin.
-{{% /md %}}</dd>
+    <dd>Whether the user is an admin.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1075,8 +1075,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Last user's sign-in date.
-{{% /md %}}</dd>
+    <dd>Last user's sign-in date.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1084,8 +1084,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Linkedin profile of the user.
-{{% /md %}}</dd>
+    <dd>Linkedin profile of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1093,8 +1093,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location of the user.
-{{% /md %}}</dd>
+    <dd>The location of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1102,8 +1102,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the user.
-{{% /md %}}</dd>
+    <dd>The name of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1111,8 +1111,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The organization of the user.
-{{% /md %}}</dd>
+    <dd>The organization of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1120,8 +1120,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of projects the user can create.
-{{% /md %}}</dd>
+    <dd>Number of projects the user can create.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1129,8 +1129,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Skype username of the user.
-{{% /md %}}</dd>
+    <dd>Skype username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1138,8 +1138,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether the user is active or blocked.
-{{% /md %}}</dd>
+    <dd>Whether the user is active or blocked.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1147,8 +1147,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}User's theme ID.
-{{% /md %}}</dd>
+    <dd>User's theme ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1156,8 +1156,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Twitter username of the user.
-{{% /md %}}</dd>
+    <dd>Twitter username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1165,8 +1165,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether user's two factor auth is enabled.
-{{% /md %}}</dd>
+    <dd>Whether user's two factor auth is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1174,7 +1174,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1182,8 +1182,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UID provider of the user.
-{{% /md %}}</dd>
+    <dd>The UID provider of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1191,8 +1191,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username of the user.
-{{% /md %}}</dd>
+    <dd>The username of the user.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1200,11 +1200,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}User's website URL.
-{{% /md %}}</dd>
+    <dd>User's website URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

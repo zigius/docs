@@ -19,29 +19,29 @@ Use this data source to access information about an existing Image.
 
 ## Using GetImage {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getImage<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#GetImageArgs">GetImageArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#GetImageResult">GetImageResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_image(</span>name=None<span class="p">, </span>name_regex=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>sort_descending=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupImage<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#LookupImageArgs">LookupImageArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#LookupImageResult">LookupImageResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetImage </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.GetImageResult.html">GetImageResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.GetImageArgs.html">GetImageArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where this Image exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where this Image exists.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -67,8 +67,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Image.
-{{% /md %}}</dd>
+    <dd>The name of the Image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -76,8 +76,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Regex pattern of the image to match.
-{{% /md %}}</dd>
+    <dd>Regex pattern of the image to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -85,14 +85,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}By default when matching by regex, images are sorted by name in ascending order and the first match is chosen, to sort descending, set this flag.
-{{% /md %}}</dd>
+    <dd>By default when matching by regex, images are sorted by name in ascending order and the first match is chosen, to sort descending, set this flag.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -101,8 +101,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where this Image exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where this Image exists.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -110,8 +110,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Image.
-{{% /md %}}</dd>
+    <dd>The name of the Image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -119,8 +119,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Regex pattern of the image to match.
-{{% /md %}}</dd>
+    <dd>Regex pattern of the image to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -128,14 +128,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}By default when matching by regex, images are sorted by name in ascending order and the first match is chosen, to sort descending, set this flag.
-{{% /md %}}</dd>
+    <dd>By default when matching by regex, images are sorted by name in ascending order and the first match is chosen, to sort descending, set this flag.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -144,8 +144,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where this Image exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where this Image exists.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -153,8 +153,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Image.
-{{% /md %}}</dd>
+    <dd>The name of the Image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -162,8 +162,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Regex pattern of the image to match.
-{{% /md %}}</dd>
+    <dd>Regex pattern of the image to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -171,14 +171,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}By default when matching by regex, images are sorted by name in ascending order and the first match is chosen, to sort descending, set this flag.
-{{% /md %}}</dd>
+    <dd>By default when matching by regex, images are sorted by name in ascending order and the first match is chosen, to sort descending, set this flag.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -187,8 +187,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Resource Group where this Image exists.
-{{% /md %}}</dd>
+    <dd>The Name of the Resource Group where this Image exists.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -196,8 +196,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Image.
-{{% /md %}}</dd>
+    <dd>The name of the Image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -205,8 +205,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Regex pattern of the image to match.
-{{% /md %}}</dd>
+    <dd>Regex pattern of the image to match.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -214,11 +214,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}By default when matching by regex, images are sorted by name in ascending order and the first match is chosen, to sort descending, set this flag.
-{{% /md %}}</dd>
+    <dd>By default when matching by regex, images are sorted by name in ascending order and the first match is chosen, to sort descending, set this flag.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -234,7 +234,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -243,8 +243,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getimagedatadisk">List&lt;Get<wbr>Image<wbr>Data<wbr>Disk&gt;</a></span>
     </dt>
-    <dd>{{% md %}}a collection of `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>a collection of `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -252,8 +252,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -261,8 +261,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the Azure Location where this Image exists.
-{{% /md %}}</dd>
+    <dd>the Azure Location where this Image exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -270,8 +270,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getimageosdisk">List&lt;Get<wbr>Image<wbr>Os<wbr>Disk&gt;</a></span>
     </dt>
-    <dd>{{% md %}}a `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>a `os_disk` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -279,7 +279,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -287,8 +287,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}a mapping of tags to assigned to the resource.
-{{% /md %}}</dd>
+    <dd>a mapping of tags to assigned to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -296,8 +296,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}is zone resiliency enabled?
-{{% /md %}}</dd>
+    <dd>is zone resiliency enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -305,8 +305,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the name of the Image.
-{{% /md %}}</dd>
+    <dd>the name of the Image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -314,7 +314,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -322,13 +322,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -337,8 +337,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getimagedatadisk">[]Get<wbr>Image<wbr>Data<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}a collection of `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>a collection of `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -346,8 +346,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -355,8 +355,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the Azure Location where this Image exists.
-{{% /md %}}</dd>
+    <dd>the Azure Location where this Image exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -364,8 +364,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getimageosdisk">[]Get<wbr>Image<wbr>Os<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}a `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>a `os_disk` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -373,7 +373,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -381,8 +381,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}a mapping of tags to assigned to the resource.
-{{% /md %}}</dd>
+    <dd>a mapping of tags to assigned to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -390,8 +390,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}is zone resiliency enabled?
-{{% /md %}}</dd>
+    <dd>is zone resiliency enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -399,8 +399,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the name of the Image.
-{{% /md %}}</dd>
+    <dd>the name of the Image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -408,7 +408,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -416,13 +416,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -431,8 +431,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getimagedatadisk">Get<wbr>Image<wbr>Data<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}a collection of `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>a collection of `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -440,8 +440,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -449,8 +449,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the Azure Location where this Image exists.
-{{% /md %}}</dd>
+    <dd>the Azure Location where this Image exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -458,8 +458,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getimageosdisk">Get<wbr>Image<wbr>Os<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}a `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>a `os_disk` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -467,7 +467,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -475,8 +475,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}a mapping of tags to assigned to the resource.
-{{% /md %}}</dd>
+    <dd>a mapping of tags to assigned to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -484,8 +484,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}is zone resiliency enabled?
-{{% /md %}}</dd>
+    <dd>is zone resiliency enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -493,8 +493,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the name of the Image.
-{{% /md %}}</dd>
+    <dd>the name of the Image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -502,7 +502,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -510,13 +510,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -525,8 +525,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getimagedatadisk">List[Get<wbr>Image<wbr>Data<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}a collection of `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>a collection of `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -534,8 +534,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -543,8 +543,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the Azure Location where this Image exists.
-{{% /md %}}</dd>
+    <dd>the Azure Location where this Image exists.
+</dd>
 
     <dt class="property-"
             title="">
@@ -552,8 +552,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getimageosdisk">List[Get<wbr>Image<wbr>Os<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}a `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>a `os_disk` block as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -561,7 +561,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -569,8 +569,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}a mapping of tags to assigned to the resource.
-{{% /md %}}</dd>
+    <dd>a mapping of tags to assigned to the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -578,8 +578,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}is zone resiliency enabled?
-{{% /md %}}</dd>
+    <dd>is zone resiliency enabled?
+</dd>
 
     <dt class="property-"
             title="">
@@ -587,8 +587,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the name of the Image.
-{{% /md %}}</dd>
+    <dd>the name of the Image.
+</dd>
 
     <dt class="property-"
             title="">
@@ -596,7 +596,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -604,10 +604,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -620,18 +620,18 @@ The following output properties are available:
 
 
 <h4 id="getimagedatadisk">Get<wbr>Image<wbr>Data<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetImageDataDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#GetImageDataDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -640,8 +640,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the URI in Azure storage of the blob used to create the image.
-{{% /md %}}</dd>
+    <dd>the URI in Azure storage of the blob used to create the image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -649,8 +649,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
-{{% /md %}}</dd>
+    <dd>the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -658,8 +658,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}the logical unit number of the data disk.
-{{% /md %}}</dd>
+    <dd>the logical unit number of the data disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -667,8 +667,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the ID of the Managed Disk used as the Data Disk Image.
-{{% /md %}}</dd>
+    <dd>the ID of the Managed Disk used as the Data Disk Image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -676,14 +676,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}the size of this Data Disk in GB.
-{{% /md %}}</dd>
+    <dd>the size of this Data Disk in GB.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -692,8 +692,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the URI in Azure storage of the blob used to create the image.
-{{% /md %}}</dd>
+    <dd>the URI in Azure storage of the blob used to create the image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -701,8 +701,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
-{{% /md %}}</dd>
+    <dd>the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -710,8 +710,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}the logical unit number of the data disk.
-{{% /md %}}</dd>
+    <dd>the logical unit number of the data disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -719,8 +719,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the ID of the Managed Disk used as the Data Disk Image.
-{{% /md %}}</dd>
+    <dd>the ID of the Managed Disk used as the Data Disk Image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -728,14 +728,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}the size of this Data Disk in GB.
-{{% /md %}}</dd>
+    <dd>the size of this Data Disk in GB.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -744,8 +744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the URI in Azure storage of the blob used to create the image.
-{{% /md %}}</dd>
+    <dd>the URI in Azure storage of the blob used to create the image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -753,8 +753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
-{{% /md %}}</dd>
+    <dd>the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -762,8 +762,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}the logical unit number of the data disk.
-{{% /md %}}</dd>
+    <dd>the logical unit number of the data disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -771,8 +771,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the ID of the Managed Disk used as the Data Disk Image.
-{{% /md %}}</dd>
+    <dd>the ID of the Managed Disk used as the Data Disk Image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -780,14 +780,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}the size of this Data Disk in GB.
-{{% /md %}}</dd>
+    <dd>the size of this Data Disk in GB.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -796,8 +796,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the URI in Azure storage of the blob used to create the image.
-{{% /md %}}</dd>
+    <dd>the URI in Azure storage of the blob used to create the image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -805,8 +805,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
-{{% /md %}}</dd>
+    <dd>the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -814,8 +814,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}the logical unit number of the data disk.
-{{% /md %}}</dd>
+    <dd>the logical unit number of the data disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -823,8 +823,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the ID of the Managed Disk used as the Data Disk Image.
-{{% /md %}}</dd>
+    <dd>the ID of the Managed Disk used as the Data Disk Image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -832,29 +832,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}the size of this Data Disk in GB.
-{{% /md %}}</dd>
+    <dd>the size of this Data Disk in GB.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getimageosdisk">Get<wbr>Image<wbr>Os<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetImageOsDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#GetImageOsDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -863,8 +863,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the URI in Azure storage of the blob used to create the image.
-{{% /md %}}</dd>
+    <dd>the URI in Azure storage of the blob used to create the image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -872,8 +872,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
-{{% /md %}}</dd>
+    <dd>the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -881,8 +881,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the ID of the Managed Disk used as the Data Disk Image.
-{{% /md %}}</dd>
+    <dd>the ID of the Managed Disk used as the Data Disk Image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -890,8 +890,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the State of the OS used in the Image, such as `Generalized`.
-{{% /md %}}</dd>
+    <dd>the State of the OS used in the Image, such as `Generalized`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -899,8 +899,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the type of Operating System used on the OS Disk. such as `Linux` or `Windows`.
-{{% /md %}}</dd>
+    <dd>the type of Operating System used on the OS Disk. such as `Linux` or `Windows`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -908,14 +908,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}the size of this Data Disk in GB.
-{{% /md %}}</dd>
+    <dd>the size of this Data Disk in GB.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -924,8 +924,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the URI in Azure storage of the blob used to create the image.
-{{% /md %}}</dd>
+    <dd>the URI in Azure storage of the blob used to create the image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -933,8 +933,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
-{{% /md %}}</dd>
+    <dd>the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -942,8 +942,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the ID of the Managed Disk used as the Data Disk Image.
-{{% /md %}}</dd>
+    <dd>the ID of the Managed Disk used as the Data Disk Image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -951,8 +951,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the State of the OS used in the Image, such as `Generalized`.
-{{% /md %}}</dd>
+    <dd>the State of the OS used in the Image, such as `Generalized`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -960,8 +960,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the type of Operating System used on the OS Disk. such as `Linux` or `Windows`.
-{{% /md %}}</dd>
+    <dd>the type of Operating System used on the OS Disk. such as `Linux` or `Windows`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -969,14 +969,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}the size of this Data Disk in GB.
-{{% /md %}}</dd>
+    <dd>the size of this Data Disk in GB.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -985,8 +985,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the URI in Azure storage of the blob used to create the image.
-{{% /md %}}</dd>
+    <dd>the URI in Azure storage of the blob used to create the image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -994,8 +994,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
-{{% /md %}}</dd>
+    <dd>the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1003,8 +1003,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the ID of the Managed Disk used as the Data Disk Image.
-{{% /md %}}</dd>
+    <dd>the ID of the Managed Disk used as the Data Disk Image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1012,8 +1012,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the State of the OS used in the Image, such as `Generalized`.
-{{% /md %}}</dd>
+    <dd>the State of the OS used in the Image, such as `Generalized`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1021,8 +1021,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the type of Operating System used on the OS Disk. such as `Linux` or `Windows`.
-{{% /md %}}</dd>
+    <dd>the type of Operating System used on the OS Disk. such as `Linux` or `Windows`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1030,14 +1030,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}the size of this Data Disk in GB.
-{{% /md %}}</dd>
+    <dd>the size of this Data Disk in GB.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1046,8 +1046,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the URI in Azure storage of the blob used to create the image.
-{{% /md %}}</dd>
+    <dd>the URI in Azure storage of the blob used to create the image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1055,8 +1055,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
-{{% /md %}}</dd>
+    <dd>the caching mode for the Data Disk, such as `ReadWrite`, `ReadOnly`, or `None`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1064,8 +1064,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the ID of the Managed Disk used as the Data Disk Image.
-{{% /md %}}</dd>
+    <dd>the ID of the Managed Disk used as the Data Disk Image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1073,8 +1073,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the State of the OS used in the Image, such as `Generalized`.
-{{% /md %}}</dd>
+    <dd>the State of the OS used in the Image, such as `Generalized`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1082,8 +1082,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the type of Operating System used on the OS Disk. such as `Linux` or `Windows`.
-{{% /md %}}</dd>
+    <dd>the type of Operating System used on the OS Disk. such as `Linux` or `Windows`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1091,11 +1091,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}the size of this Data Disk in GB.
-{{% /md %}}</dd>
+    <dd>the size of this Data Disk in GB.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

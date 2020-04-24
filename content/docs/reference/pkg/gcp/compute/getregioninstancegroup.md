@@ -26,29 +26,29 @@ The most common use of this datasource will be to fetch information about the in
 
 ## Using GetRegionInstanceGroup {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getRegionInstanceGroup<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#GetRegionInstanceGroupArgs">GetRegionInstanceGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#GetRegionInstanceGroupResult">GetRegionInstanceGroupResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_region_instance_group(</span>name=None<span class="p">, </span>project=None<span class="p">, </span>region=None<span class="p">, </span>self_link=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupRegionInstanceGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#LookupRegionInstanceGroupArgs">LookupRegionInstanceGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#LookupRegionInstanceGroupResult">LookupRegionInstanceGroupResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetRegionInstanceGroup </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.GetRegionInstanceGroupResult.html">GetRegionInstanceGroupResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.GetRegionInstanceGroupArgs.html">GetRegionInstanceGroupArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -56,7 +56,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -65,8 +65,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -74,10 +74,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If `self_link` is provided, this value is ignored.  If neither `self_link`
 nor `project` are provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -85,10 +85,10 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the resource belongs.  If `self_link`
+    <dd>The region in which the resource belongs.  If `self_link`
 is provided, this value is ignored.  If neither `self_link` nor `region` are
 provided, the provider region is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -96,14 +96,14 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The link to the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The link to the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -112,8 +112,8 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -121,10 +121,10 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If `self_link` is provided, this value is ignored.  If neither `self_link`
 nor `project` are provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -132,10 +132,10 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the resource belongs.  If `self_link`
+    <dd>The region in which the resource belongs.  If `self_link`
 is provided, this value is ignored.  If neither `self_link` nor `region` are
 provided, the provider region is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -143,14 +143,14 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The link to the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The link to the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -159,8 +159,8 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -168,10 +168,10 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If `self_link` is provided, this value is ignored.  If neither `self_link`
 nor `project` are provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -179,10 +179,10 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the resource belongs.  If `self_link`
+    <dd>The region in which the resource belongs.  If `self_link`
 is provided, this value is ignored.  If neither `self_link` nor `region` are
 provided, the provider region is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -190,14 +190,14 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The link to the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The link to the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -206,8 +206,8 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -215,10 +215,10 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If `self_link` is provided, this value is ignored.  If neither `self_link`
 nor `project` are provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,10 +226,10 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which the resource belongs.  If `self_link`
+    <dd>The region in which the resource belongs.  If `self_link`
 is provided, this value is ignored.  If neither `self_link` nor `region` are
 provided, the provider region is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,11 +237,11 @@ provided, the provider region is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The link to the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The link to the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -257,7 +257,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -266,8 +266,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -275,8 +275,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregioninstancegroupinstance">List&lt;Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of instances in the group, as a list of resources, each containing:
-{{% /md %}}</dd>
+    <dd>List of instances in the group, as a list of resources, each containing:
+</dd>
 
     <dt class="property-"
             title="">
@@ -284,8 +284,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}String port name
-{{% /md %}}</dd>
+    <dd>String port name
+</dd>
 
     <dt class="property-"
             title="">
@@ -293,7 +293,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -301,7 +301,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -309,7 +309,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -317,14 +317,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances in the group.
-{{% /md %}}</dd>
+    <dd>The number of instances in the group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -333,8 +333,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -342,8 +342,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregioninstancegroupinstance">[]Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance</a></span>
     </dt>
-    <dd>{{% md %}}List of instances in the group, as a list of resources, each containing:
-{{% /md %}}</dd>
+    <dd>List of instances in the group, as a list of resources, each containing:
+</dd>
 
     <dt class="property-"
             title="">
@@ -351,8 +351,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}String port name
-{{% /md %}}</dd>
+    <dd>String port name
+</dd>
 
     <dt class="property-"
             title="">
@@ -360,7 +360,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -368,7 +368,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -376,7 +376,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -384,14 +384,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances in the group.
-{{% /md %}}</dd>
+    <dd>The number of instances in the group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -400,8 +400,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -409,8 +409,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregioninstancegroupinstance">Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance[]</a></span>
     </dt>
-    <dd>{{% md %}}List of instances in the group, as a list of resources, each containing:
-{{% /md %}}</dd>
+    <dd>List of instances in the group, as a list of resources, each containing:
+</dd>
 
     <dt class="property-"
             title="">
@@ -418,8 +418,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}String port name
-{{% /md %}}</dd>
+    <dd>String port name
+</dd>
 
     <dt class="property-"
             title="">
@@ -427,7 +427,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -435,7 +435,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -443,7 +443,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -451,14 +451,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances in the group.
-{{% /md %}}</dd>
+    <dd>The number of instances in the group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -467,8 +467,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -476,8 +476,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregioninstancegroupinstance">List[Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance]</a></span>
     </dt>
-    <dd>{{% md %}}List of instances in the group, as a list of resources, each containing:
-{{% /md %}}</dd>
+    <dd>List of instances in the group, as a list of resources, each containing:
+</dd>
 
     <dt class="property-"
             title="">
@@ -485,8 +485,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}String port name
-{{% /md %}}</dd>
+    <dd>String port name
+</dd>
 
     <dt class="property-"
             title="">
@@ -494,7 +494,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -502,7 +502,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -510,7 +510,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -518,11 +518,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances in the group.
-{{% /md %}}</dd>
+    <dd>The number of instances in the group.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -535,18 +535,18 @@ The following output properties are available:
 
 
 <h4 id="getregioninstancegroupinstance">Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetRegionInstanceGroupInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetRegionInstanceGroupInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -555,8 +555,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to the instance.
-{{% /md %}}</dd>
+    <dd>URL to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -564,8 +564,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregioninstancegroupinstancenamedport">List&lt;Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance<wbr>Named<wbr>Port<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of named ports in the group, as a list of resources, each containing:
-{{% /md %}}</dd>
+    <dd>List of named ports in the group, as a list of resources, each containing:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -573,14 +573,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}String description of current state of the instance.
-{{% /md %}}</dd>
+    <dd>String description of current state of the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -589,8 +589,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to the instance.
-{{% /md %}}</dd>
+    <dd>URL to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -598,8 +598,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregioninstancegroupinstancenamedport">[]Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance<wbr>Named<wbr>Port</a></span>
     </dt>
-    <dd>{{% md %}}List of named ports in the group, as a list of resources, each containing:
-{{% /md %}}</dd>
+    <dd>List of named ports in the group, as a list of resources, each containing:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -607,14 +607,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}String description of current state of the instance.
-{{% /md %}}</dd>
+    <dd>String description of current state of the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -623,8 +623,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URL to the instance.
-{{% /md %}}</dd>
+    <dd>URL to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -632,8 +632,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregioninstancegroupinstancenamedport">Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance<wbr>Named<wbr>Port[]</a></span>
     </dt>
-    <dd>{{% md %}}List of named ports in the group, as a list of resources, each containing:
-{{% /md %}}</dd>
+    <dd>List of named ports in the group, as a list of resources, each containing:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -641,14 +641,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}String description of current state of the instance.
-{{% /md %}}</dd>
+    <dd>String description of current state of the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -657,8 +657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URL to the instance.
-{{% /md %}}</dd>
+    <dd>URL to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -666,8 +666,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getregioninstancegroupinstancenamedport">List[Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance<wbr>Named<wbr>Port]</a></span>
     </dt>
-    <dd>{{% md %}}List of named ports in the group, as a list of resources, each containing:
-{{% /md %}}</dd>
+    <dd>List of named ports in the group, as a list of resources, each containing:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -675,29 +675,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}String description of current state of the instance.
-{{% /md %}}</dd>
+    <dd>String description of current state of the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getregioninstancegroupinstancenamedport">Get<wbr>Region<wbr>Instance<wbr>Group<wbr>Instance<wbr>Named<wbr>Port</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetRegionInstanceGroupInstanceNamedPort">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetRegionInstanceGroupInstanceNamedPort">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -706,8 +706,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -715,14 +715,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Integer port number
-{{% /md %}}</dd>
+    <dd>Integer port number
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -731,8 +731,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -740,14 +740,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Integer port number
-{{% /md %}}</dd>
+    <dd>Integer port number
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -756,8 +756,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -765,14 +765,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Integer port number
-{{% /md %}}</dd>
+    <dd>Integer port number
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -781,8 +781,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance group.  One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance group.  One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -790,11 +790,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Integer port number
-{{% /md %}}</dd>
+    <dd>Integer port number
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

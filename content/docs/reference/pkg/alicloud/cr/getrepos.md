@@ -38,29 +38,29 @@ export const output = myRepos.repos;
 
 ## Using GetRepos {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getRepos<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cr/#GetReposArgs">GetReposArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/cr/#GetReposResult">GetReposResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_repos(</span>enable_details=None<span class="p">, </span>name_regex=None<span class="p">, </span>namespace=None<span class="p">, </span>output_file=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupRepos<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cr?tab=doc#LookupReposArgs">LookupReposArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cr?tab=doc#LookupReposResult">LookupReposResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetRepos </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Cr.GetReposResult.html">GetReposResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.CR.GetReposArgs.html">GetReposArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -68,7 +68,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -77,8 +77,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean, false by default, only repository attributes are exported. Set to true if domain list and tags belong to this repository are needed. See `tags` in attributes.
-{{% /md %}}</dd>
+    <dd>Boolean, false by default, only repository attributes are exported. Set to true if domain list and tags belong to this repository are needed. See `tags` in attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -86,8 +86,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by repository name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by repository name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -95,8 +95,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where the repositories are located in.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where the repositories are located in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -104,13 +104,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -119,8 +119,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean, false by default, only repository attributes are exported. Set to true if domain list and tags belong to this repository are needed. See `tags` in attributes.
-{{% /md %}}</dd>
+    <dd>Boolean, false by default, only repository attributes are exported. Set to true if domain list and tags belong to this repository are needed. See `tags` in attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -128,8 +128,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by repository name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by repository name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -137,8 +137,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where the repositories are located in.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where the repositories are located in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -146,13 +146,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -161,8 +161,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean, false by default, only repository attributes are exported. Set to true if domain list and tags belong to this repository are needed. See `tags` in attributes.
-{{% /md %}}</dd>
+    <dd>Boolean, false by default, only repository attributes are exported. Set to true if domain list and tags belong to this repository are needed. See `tags` in attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -170,8 +170,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by repository name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by repository name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -179,8 +179,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where the repositories are located in.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where the repositories are located in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -188,13 +188,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -203,8 +203,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean, false by default, only repository attributes are exported. Set to true if domain list and tags belong to this repository are needed. See `tags` in attributes.
-{{% /md %}}</dd>
+    <dd>Boolean, false by default, only repository attributes are exported. Set to true if domain list and tags belong to this repository are needed. See `tags` in attributes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -212,8 +212,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by repository name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by repository name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -221,8 +221,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where the repositories are located in.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where the repositories are located in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,10 +230,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -249,7 +249,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -258,8 +258,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -267,8 +267,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of matched Container Registry Repositories. Its element is set to `names`.
-{{% /md %}}</dd>
+    <dd>A list of matched Container Registry Repositories. Its element is set to `names`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -276,8 +276,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of repository names.
-{{% /md %}}</dd>
+    <dd>A list of repository names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -285,8 +285,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepo">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CR.<wbr>Outputs.<wbr>Get<wbr>Repos<wbr>Repo&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of matched Container Registry Namespaces. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of matched Container Registry Namespaces. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -294,7 +294,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -302,7 +302,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -310,8 +310,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where repo is located.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where repo is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -319,13 +319,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -334,8 +334,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -343,8 +343,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of matched Container Registry Repositories. Its element is set to `names`.
-{{% /md %}}</dd>
+    <dd>A list of matched Container Registry Repositories. Its element is set to `names`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -352,8 +352,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of repository names.
-{{% /md %}}</dd>
+    <dd>A list of repository names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -361,8 +361,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepo">[]Get<wbr>Repos<wbr>Repo</a></span>
     </dt>
-    <dd>{{% md %}}A list of matched Container Registry Namespaces. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of matched Container Registry Namespaces. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -370,7 +370,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -378,7 +378,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -386,8 +386,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where repo is located.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where repo is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -395,13 +395,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -410,8 +410,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -419,8 +419,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of matched Container Registry Repositories. Its element is set to `names`.
-{{% /md %}}</dd>
+    <dd>A list of matched Container Registry Repositories. Its element is set to `names`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -428,8 +428,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of repository names.
-{{% /md %}}</dd>
+    <dd>A list of repository names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -437,8 +437,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepo">Get<wbr>Repos<wbr>Repo[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of matched Container Registry Namespaces. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of matched Container Registry Namespaces. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -446,7 +446,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -454,7 +454,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -462,8 +462,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where repo is located.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where repo is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -471,13 +471,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -486,8 +486,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -495,8 +495,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of matched Container Registry Repositories. Its element is set to `names`.
-{{% /md %}}</dd>
+    <dd>A list of matched Container Registry Repositories. Its element is set to `names`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -504,8 +504,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of repository names.
-{{% /md %}}</dd>
+    <dd>A list of repository names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -513,8 +513,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepo">List[Get<wbr>Repos<wbr>Repo]</a></span>
     </dt>
-    <dd>{{% md %}}A list of matched Container Registry Namespaces. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of matched Container Registry Namespaces. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -522,7 +522,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -530,7 +530,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -538,8 +538,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where repo is located.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where repo is located.
+</dd>
 
     <dt class="property-"
             title="">
@@ -547,10 +547,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -563,18 +563,18 @@ The following output properties are available:
 
 
 <h4 id="getreposrepo">Get<wbr>Repos<wbr>Repo</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetReposRepo">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cr?tab=doc#GetReposRepo">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -583,8 +583,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepodomainlist">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CR.<wbr>Inputs.<wbr>Get<wbr>Repos<wbr>Repo<wbr>Domain<wbr>List<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The repository domain list.
-{{% /md %}}</dd>
+    <dd>The repository domain list.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -592,8 +592,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -601,8 +601,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where the repositories are located in.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where the repositories are located in.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -610,8 +610,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`PUBLIC` or `PRIVATE`, repository's visibility.
-{{% /md %}}</dd>
+    <dd>`PUBLIC` or `PRIVATE`, repository's visibility.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -619,8 +619,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The repository general information.
-{{% /md %}}</dd>
+    <dd>The repository general information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -628,14 +628,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepotag">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>CR.<wbr>Inputs.<wbr>Get<wbr>Repos<wbr>Repo<wbr>Tag<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of image tags belong to this repository. Each contains several attributes, see `Block Tag`.
-{{% /md %}}</dd>
+    <dd>A list of image tags belong to this repository. Each contains several attributes, see `Block Tag`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -644,8 +644,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepodomainlist">Get<wbr>Repos<wbr>Repo<wbr>Domain<wbr>List</a></span>
     </dt>
-    <dd>{{% md %}}The repository domain list.
-{{% /md %}}</dd>
+    <dd>The repository domain list.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -653,8 +653,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -662,8 +662,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where the repositories are located in.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where the repositories are located in.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -671,8 +671,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`PUBLIC` or `PRIVATE`, repository's visibility.
-{{% /md %}}</dd>
+    <dd>`PUBLIC` or `PRIVATE`, repository's visibility.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -680,8 +680,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The repository general information.
-{{% /md %}}</dd>
+    <dd>The repository general information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -689,14 +689,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepotag">[]Get<wbr>Repos<wbr>Repo<wbr>Tag</a></span>
     </dt>
-    <dd>{{% md %}}A list of image tags belong to this repository. Each contains several attributes, see `Block Tag`.
-{{% /md %}}</dd>
+    <dd>A list of image tags belong to this repository. Each contains several attributes, see `Block Tag`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -705,8 +705,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepodomainlist">Get<wbr>Repos<wbr>Repo<wbr>Domain<wbr>List</a></span>
     </dt>
-    <dd>{{% md %}}The repository domain list.
-{{% /md %}}</dd>
+    <dd>The repository domain list.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -714,8 +714,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -723,8 +723,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where the repositories are located in.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where the repositories are located in.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -732,8 +732,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`PUBLIC` or `PRIVATE`, repository's visibility.
-{{% /md %}}</dd>
+    <dd>`PUBLIC` or `PRIVATE`, repository's visibility.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -741,8 +741,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The repository general information.
-{{% /md %}}</dd>
+    <dd>The repository general information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -750,14 +750,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepotag">Get<wbr>Repos<wbr>Repo<wbr>Tag[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of image tags belong to this repository. Each contains several attributes, see `Block Tag`.
-{{% /md %}}</dd>
+    <dd>A list of image tags belong to this repository. Each contains several attributes, see `Block Tag`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -766,8 +766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepodomainlist">Dict[Get<wbr>Repos<wbr>Repo<wbr>Domain<wbr>List]</a></span>
     </dt>
-    <dd>{{% md %}}The repository domain list.
-{{% /md %}}</dd>
+    <dd>The repository domain list.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -775,8 +775,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -784,8 +784,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of container registry namespace where the repositories are located in.
-{{% /md %}}</dd>
+    <dd>Name of container registry namespace where the repositories are located in.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -793,8 +793,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`PUBLIC` or `PRIVATE`, repository's visibility.
-{{% /md %}}</dd>
+    <dd>`PUBLIC` or `PRIVATE`, repository's visibility.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -802,8 +802,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The repository general information.
-{{% /md %}}</dd>
+    <dd>The repository general information.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -811,29 +811,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getreposrepotag">List[Get<wbr>Repos<wbr>Repo<wbr>Tag]</a></span>
     </dt>
-    <dd>{{% md %}}A list of image tags belong to this repository. Each contains several attributes, see `Block Tag`.
-{{% /md %}}</dd>
+    <dd>A list of image tags belong to this repository. Each contains several attributes, see `Block Tag`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getreposrepodomainlist">Get<wbr>Repos<wbr>Repo<wbr>Domain<wbr>List</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetReposRepoDomainList">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cr?tab=doc#GetReposRepoDomainList">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -842,8 +842,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain of internal endpoint, only in some regions.
-{{% /md %}}</dd>
+    <dd>Domain of internal endpoint, only in some regions.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -851,8 +851,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain of public endpoint.
-{{% /md %}}</dd>
+    <dd>Domain of public endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -860,14 +860,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain of vpc endpoint.
-{{% /md %}}</dd>
+    <dd>Domain of vpc endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -876,8 +876,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain of internal endpoint, only in some regions.
-{{% /md %}}</dd>
+    <dd>Domain of internal endpoint, only in some regions.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -885,8 +885,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain of public endpoint.
-{{% /md %}}</dd>
+    <dd>Domain of public endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -894,14 +894,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain of vpc endpoint.
-{{% /md %}}</dd>
+    <dd>Domain of vpc endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -910,8 +910,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain of internal endpoint, only in some regions.
-{{% /md %}}</dd>
+    <dd>Domain of internal endpoint, only in some regions.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -919,8 +919,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain of public endpoint.
-{{% /md %}}</dd>
+    <dd>Domain of public endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -928,14 +928,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain of vpc endpoint.
-{{% /md %}}</dd>
+    <dd>Domain of vpc endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -944,8 +944,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain of internal endpoint, only in some regions.
-{{% /md %}}</dd>
+    <dd>Domain of internal endpoint, only in some regions.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -953,8 +953,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain of public endpoint.
-{{% /md %}}</dd>
+    <dd>Domain of public endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -962,29 +962,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain of vpc endpoint.
-{{% /md %}}</dd>
+    <dd>Domain of vpc endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getreposrepotag">Get<wbr>Repos<wbr>Repo<wbr>Tag</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetReposRepoTag">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/cr?tab=doc#GetReposRepoTag">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -993,8 +993,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Digest of this image.
-{{% /md %}}</dd>
+    <dd>Digest of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1002,8 +1002,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Create time of this image, unix time in nanoseconds.
-{{% /md %}}</dd>
+    <dd>Create time of this image, unix time in nanoseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1011,8 +1011,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Id of this image.
-{{% /md %}}</dd>
+    <dd>Id of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1020,8 +1020,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Status of this image, in bytes.
-{{% /md %}}</dd>
+    <dd>Status of this image, in bytes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1029,8 +1029,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Last update time of this image, unix time in nanoseconds.
-{{% /md %}}</dd>
+    <dd>Last update time of this image, unix time in nanoseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1038,8 +1038,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of this image.
-{{% /md %}}</dd>
+    <dd>Status of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1047,14 +1047,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Tag of this image.
-{{% /md %}}</dd>
+    <dd>Tag of this image.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1063,8 +1063,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Digest of this image.
-{{% /md %}}</dd>
+    <dd>Digest of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1072,8 +1072,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Create time of this image, unix time in nanoseconds.
-{{% /md %}}</dd>
+    <dd>Create time of this image, unix time in nanoseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1081,8 +1081,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Id of this image.
-{{% /md %}}</dd>
+    <dd>Id of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1090,8 +1090,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Status of this image, in bytes.
-{{% /md %}}</dd>
+    <dd>Status of this image, in bytes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1099,8 +1099,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Last update time of this image, unix time in nanoseconds.
-{{% /md %}}</dd>
+    <dd>Last update time of this image, unix time in nanoseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1108,8 +1108,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of this image.
-{{% /md %}}</dd>
+    <dd>Status of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1117,14 +1117,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Tag of this image.
-{{% /md %}}</dd>
+    <dd>Tag of this image.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1133,8 +1133,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Digest of this image.
-{{% /md %}}</dd>
+    <dd>Digest of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1142,8 +1142,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Create time of this image, unix time in nanoseconds.
-{{% /md %}}</dd>
+    <dd>Create time of this image, unix time in nanoseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1151,8 +1151,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Id of this image.
-{{% /md %}}</dd>
+    <dd>Id of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1160,8 +1160,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Status of this image, in bytes.
-{{% /md %}}</dd>
+    <dd>Status of this image, in bytes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1169,8 +1169,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Last update time of this image, unix time in nanoseconds.
-{{% /md %}}</dd>
+    <dd>Last update time of this image, unix time in nanoseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1178,8 +1178,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of this image.
-{{% /md %}}</dd>
+    <dd>Status of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1187,14 +1187,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Tag of this image.
-{{% /md %}}</dd>
+    <dd>Tag of this image.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1203,8 +1203,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Digest of this image.
-{{% /md %}}</dd>
+    <dd>Digest of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1212,8 +1212,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Create time of this image, unix time in nanoseconds.
-{{% /md %}}</dd>
+    <dd>Create time of this image, unix time in nanoseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1221,8 +1221,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Status of this image, in bytes.
-{{% /md %}}</dd>
+    <dd>Status of this image, in bytes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1230,8 +1230,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Last update time of this image, unix time in nanoseconds.
-{{% /md %}}</dd>
+    <dd>Last update time of this image, unix time in nanoseconds.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1239,8 +1239,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Id of this image.
-{{% /md %}}</dd>
+    <dd>Id of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1248,8 +1248,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of this image.
-{{% /md %}}</dd>
+    <dd>Status of this image.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1257,11 +1257,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Tag of this image.
-{{% /md %}}</dd>
+    <dd>Tag of this image.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

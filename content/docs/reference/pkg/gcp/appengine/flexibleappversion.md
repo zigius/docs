@@ -27,26 +27,26 @@ To get more information about FlexibleAppVersion, see:
 
 
 ## Create a FlexibleAppVersion Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/appengine/#FlexibleAppVersion">FlexibleAppVersion</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/appengine/#FlexibleAppVersionArgs">FlexibleAppVersionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">FlexibleAppVersion</span><span class="p">(resource_name, opts=None, </span>api_config=None<span class="p">, </span>automatic_scaling=None<span class="p">, </span>beta_settings=None<span class="p">, </span>default_expiration=None<span class="p">, </span>delete_service_on_destroy=None<span class="p">, </span>deployment=None<span class="p">, </span>endpoints_api_service=None<span class="p">, </span>entrypoint=None<span class="p">, </span>env_variables=None<span class="p">, </span>inbound_services=None<span class="p">, </span>instance_class=None<span class="p">, </span>liveness_check=None<span class="p">, </span>manual_scaling=None<span class="p">, </span>network=None<span class="p">, </span>nobuild_files_regex=None<span class="p">, </span>noop_on_destroy=None<span class="p">, </span>project=None<span class="p">, </span>readiness_check=None<span class="p">, </span>resources=None<span class="p">, </span>runtime=None<span class="p">, </span>runtime_api_version=None<span class="p">, </span>runtime_channel=None<span class="p">, </span>runtime_main_executable_path=None<span class="p">, </span>service=None<span class="p">, </span>serving_status=None<span class="p">, </span>version_id=None<span class="p">, </span>vpc_access_connector=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewFlexibleAppVersion<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionArgs">FlexibleAppVersionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersion">FlexibleAppVersion</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.AppEngine.FlexibleAppVersion.html">FlexibleAppVersion</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.AppEngine.FlexibleAppVersionArgs.html">FlexibleAppVersionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -83,9 +83,9 @@ To get more information about FlexibleAppVersion, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -103,9 +103,9 @@ To get more information about FlexibleAppVersion, see:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -152,9 +152,9 @@ To get more information about FlexibleAppVersion, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -191,7 +191,7 @@ To get more information about FlexibleAppVersion, see:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## FlexibleAppVersion Resource Properties {#properties}
 
@@ -204,7 +204,7 @@ The FlexibleAppVersion resource accepts the following [input]({{< relref "/docs/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -213,8 +213,8 @@ The FlexibleAppVersion resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionlivenesscheck">Flexible<wbr>App<wbr>Version<wbr>Liveness<wbr>Check<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
-{{% /md %}}</dd>
+    <dd>Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The FlexibleAppVersion resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionreadinesscheck">Flexible<wbr>App<wbr>Version<wbr>Readiness<wbr>Check<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
-{{% /md %}}</dd>
+    <dd>Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -231,8 +231,8 @@ The FlexibleAppVersion resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired runtime. Example python27.
-{{% /md %}}</dd>
+    <dd>Desired runtime. Example python27.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The FlexibleAppVersion resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionapiconfig">Flexible<wbr>App<wbr>Version<wbr>Api<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Serving configuration for Google Cloud Endpoints.
-{{% /md %}}</dd>
+    <dd>Serving configuration for Google Cloud Endpoints.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The FlexibleAppVersion resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscaling">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Automatic scaling is based on request rate, response latencies, and other application metrics.
-{{% /md %}}</dd>
+    <dd>Automatic scaling is based on request rate, response latencies, and other application metrics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The FlexibleAppVersion resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Metadata settings that are supplied to this version to enable beta runtime features.
-{{% /md %}}</dd>
+    <dd>Metadata settings that are supplied to this version to enable beta runtime features.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,9 +267,9 @@ The FlexibleAppVersion resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
+    <dd>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
 StaticFilesHandler does not specify its own expiration time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,8 +277,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the service will be deleted if it is the last version.    
-{{% /md %}}</dd>
+    <dd>If set to `true`, the service will be deleted if it is the last version.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -286,8 +286,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeployment">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -295,8 +295,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionendpointsapiservice">Flexible<wbr>App<wbr>Version<wbr>Endpoints<wbr>Api<wbr>Service<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,8 +304,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionentrypoint">Flexible<wbr>App<wbr>Version<wbr>Entrypoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The entrypoint for the application.
-{{% /md %}}</dd>
+    <dd>The entrypoint for the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,9 +313,9 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Environment variables available to the application. As these are not returned in the API request, Terraform will not
+    <dd>Environment variables available to the application. As these are not returned in the API request, Terraform will not
 detect any changes made outside of the Terraform config.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Before an application can receive email or XMPP messages, the application must be configured to enable the service.
-{{% /md %}}</dd>
+    <dd>Before an application can receive email or XMPP messages, the application must be configured to enable the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,9 +332,9 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
+    <dd>Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
 B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,9 +342,9 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionmanualscaling">Flexible<wbr>App<wbr>Version<wbr>Manual<wbr>Scaling<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
+    <dd>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
 its memory over time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,8 +352,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionnetwork">Flexible<wbr>App<wbr>Version<wbr>Network<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Extra network settings
-{{% /md %}}</dd>
+    <dd>Extra network settings
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -361,8 +361,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
-{{% /md %}}</dd>
+    <dd>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -370,8 +370,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the application version will not be deleted.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the application version will not be deleted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,9 +379,9 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresources">Flexible<wbr>App<wbr>Version<wbr>Resources<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Machine resources for a version.
-{{% /md %}}</dd>
+    <dd>Machine resources for a version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,9 +398,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
+    <dd>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
 https://cloud.google.com/appengine/docs/standard//config/appref
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The channel of the runtime to use. Only available for some runtimes.
-{{% /md %}}</dd>
+    <dd>The channel of the runtime to use. Only available for some runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path or name of the app's main executable.
-{{% /md %}}</dd>
+    <dd>The path or name of the app's main executable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,8 +426,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AppEngine service resource
-{{% /md %}}</dd>
+    <dd>AppEngine service resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,9 +435,9 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
+    <dd>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
 Defaults to SERVING.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,9 +445,9 @@ Defaults to SERVING.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
+    <dd>Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
 numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -455,14 +455,14 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionvpcaccessconnector">Flexible<wbr>App<wbr>Version<wbr>Vpc<wbr>Access<wbr>Connector<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Enables VPC connectivity for standard apps.
-{{% /md %}}</dd>
+    <dd>Enables VPC connectivity for standard apps.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -471,8 +471,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionlivenesscheck">Flexible<wbr>App<wbr>Version<wbr>Liveness<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
-{{% /md %}}</dd>
+    <dd>Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -480,8 +480,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionreadinesscheck">Flexible<wbr>App<wbr>Version<wbr>Readiness<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
-{{% /md %}}</dd>
+    <dd>Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -489,8 +489,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired runtime. Example python27.
-{{% /md %}}</dd>
+    <dd>Desired runtime. Example python27.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,8 +498,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionapiconfig">Flexible<wbr>App<wbr>Version<wbr>Api<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Serving configuration for Google Cloud Endpoints.
-{{% /md %}}</dd>
+    <dd>Serving configuration for Google Cloud Endpoints.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,8 +507,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscaling">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling</a></span>
     </dt>
-    <dd>{{% md %}}Automatic scaling is based on request rate, response latencies, and other application metrics.
-{{% /md %}}</dd>
+    <dd>Automatic scaling is based on request rate, response latencies, and other application metrics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -516,8 +516,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Metadata settings that are supplied to this version to enable beta runtime features.
-{{% /md %}}</dd>
+    <dd>Metadata settings that are supplied to this version to enable beta runtime features.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -525,9 +525,9 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
+    <dd>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
 StaticFilesHandler does not specify its own expiration time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the service will be deleted if it is the last version.    
-{{% /md %}}</dd>
+    <dd>If set to `true`, the service will be deleted if it is the last version.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeployment">Flexible<wbr>App<wbr>Version<wbr>Deployment</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,8 +553,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionendpointsapiservice">Flexible<wbr>App<wbr>Version<wbr>Endpoints<wbr>Api<wbr>Service</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionentrypoint">Flexible<wbr>App<wbr>Version<wbr>Entrypoint</a></span>
     </dt>
-    <dd>{{% md %}}The entrypoint for the application.
-{{% /md %}}</dd>
+    <dd>The entrypoint for the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,9 +571,9 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Environment variables available to the application. As these are not returned in the API request, Terraform will not
+    <dd>Environment variables available to the application. As these are not returned in the API request, Terraform will not
 detect any changes made outside of the Terraform config.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,8 +581,8 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Before an application can receive email or XMPP messages, the application must be configured to enable the service.
-{{% /md %}}</dd>
+    <dd>Before an application can receive email or XMPP messages, the application must be configured to enable the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,9 +590,9 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
+    <dd>Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
 B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,9 +600,9 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionmanualscaling">Flexible<wbr>App<wbr>Version<wbr>Manual<wbr>Scaling</a></span>
     </dt>
-    <dd>{{% md %}}A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
+    <dd>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
 its memory over time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionnetwork">Flexible<wbr>App<wbr>Version<wbr>Network</a></span>
     </dt>
-    <dd>{{% md %}}Extra network settings
-{{% /md %}}</dd>
+    <dd>Extra network settings
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
-{{% /md %}}</dd>
+    <dd>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the application version will not be deleted.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the application version will not be deleted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,9 +637,9 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,8 +647,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresources">Flexible<wbr>App<wbr>Version<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}Machine resources for a version.
-{{% /md %}}</dd>
+    <dd>Machine resources for a version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,9 +656,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
+    <dd>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
 https://cloud.google.com/appengine/docs/standard//config/appref
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,8 +666,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The channel of the runtime to use. Only available for some runtimes.
-{{% /md %}}</dd>
+    <dd>The channel of the runtime to use. Only available for some runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,8 +675,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path or name of the app's main executable.
-{{% /md %}}</dd>
+    <dd>The path or name of the app's main executable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -684,8 +684,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AppEngine service resource
-{{% /md %}}</dd>
+    <dd>AppEngine service resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,9 +693,9 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
+    <dd>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
 Defaults to SERVING.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -703,9 +703,9 @@ Defaults to SERVING.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
+    <dd>Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
 numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -713,14 +713,14 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionvpcaccessconnector">Flexible<wbr>App<wbr>Version<wbr>Vpc<wbr>Access<wbr>Connector</a></span>
     </dt>
-    <dd>{{% md %}}Enables VPC connectivity for standard apps.
-{{% /md %}}</dd>
+    <dd>Enables VPC connectivity for standard apps.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -729,8 +729,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionlivenesscheck">Flexible<wbr>App<wbr>Version<wbr>Liveness<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
-{{% /md %}}</dd>
+    <dd>Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -738,8 +738,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionreadinesscheck">Flexible<wbr>App<wbr>Version<wbr>Readiness<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
-{{% /md %}}</dd>
+    <dd>Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -747,8 +747,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired runtime. Example python27.
-{{% /md %}}</dd>
+    <dd>Desired runtime. Example python27.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,8 +756,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionapiconfig">Flexible<wbr>App<wbr>Version<wbr>Api<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Serving configuration for Google Cloud Endpoints.
-{{% /md %}}</dd>
+    <dd>Serving configuration for Google Cloud Endpoints.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,8 +765,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscaling">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling</a></span>
     </dt>
-    <dd>{{% md %}}Automatic scaling is based on request rate, response latencies, and other application metrics.
-{{% /md %}}</dd>
+    <dd>Automatic scaling is based on request rate, response latencies, and other application metrics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,8 +774,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Metadata settings that are supplied to this version to enable beta runtime features.
-{{% /md %}}</dd>
+    <dd>Metadata settings that are supplied to this version to enable beta runtime features.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,9 +783,9 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
+    <dd>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
 StaticFilesHandler does not specify its own expiration time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -793,8 +793,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the service will be deleted if it is the last version.    
-{{% /md %}}</dd>
+    <dd>If set to `true`, the service will be deleted if it is the last version.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -802,8 +802,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeployment">Flexible<wbr>App<wbr>Version<wbr>Deployment</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -811,8 +811,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionendpointsapiservice">Flexible<wbr>App<wbr>Version<wbr>Endpoints<wbr>Api<wbr>Service</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -820,8 +820,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionentrypoint">Flexible<wbr>App<wbr>Version<wbr>Entrypoint</a></span>
     </dt>
-    <dd>{{% md %}}The entrypoint for the application.
-{{% /md %}}</dd>
+    <dd>The entrypoint for the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -829,9 +829,9 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Environment variables available to the application. As these are not returned in the API request, Terraform will not
+    <dd>Environment variables available to the application. As these are not returned in the API request, Terraform will not
 detect any changes made outside of the Terraform config.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,8 +839,8 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Before an application can receive email or XMPP messages, the application must be configured to enable the service.
-{{% /md %}}</dd>
+    <dd>Before an application can receive email or XMPP messages, the application must be configured to enable the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,9 +848,9 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
+    <dd>Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
 B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -858,9 +858,9 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionmanualscaling">Flexible<wbr>App<wbr>Version<wbr>Manual<wbr>Scaling</a></span>
     </dt>
-    <dd>{{% md %}}A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
+    <dd>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
 its memory over time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionnetwork">Flexible<wbr>App<wbr>Version<wbr>Network</a></span>
     </dt>
-    <dd>{{% md %}}Extra network settings
-{{% /md %}}</dd>
+    <dd>Extra network settings
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
-{{% /md %}}</dd>
+    <dd>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the application version will not be deleted.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the application version will not be deleted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,9 +895,9 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,8 +905,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresources">Flexible<wbr>App<wbr>Version<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}Machine resources for a version.
-{{% /md %}}</dd>
+    <dd>Machine resources for a version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,9 +914,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
+    <dd>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
 https://cloud.google.com/appengine/docs/standard//config/appref
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,8 +924,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The channel of the runtime to use. Only available for some runtimes.
-{{% /md %}}</dd>
+    <dd>The channel of the runtime to use. Only available for some runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,8 +933,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path or name of the app's main executable.
-{{% /md %}}</dd>
+    <dd>The path or name of the app's main executable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AppEngine service resource
-{{% /md %}}</dd>
+    <dd>AppEngine service resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,9 +951,9 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
+    <dd>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
 Defaults to SERVING.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -961,9 +961,9 @@ Defaults to SERVING.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
+    <dd>Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
 numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,14 +971,14 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionvpcaccessconnector">Flexible<wbr>App<wbr>Version<wbr>Vpc<wbr>Access<wbr>Connector</a></span>
     </dt>
-    <dd>{{% md %}}Enables VPC connectivity for standard apps.
-{{% /md %}}</dd>
+    <dd>Enables VPC connectivity for standard apps.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -987,8 +987,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionlivenesscheck">Dict[Flexible<wbr>App<wbr>Version<wbr>Liveness<wbr>Check]</a></span>
     </dt>
-    <dd>{{% md %}}Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
-{{% /md %}}</dd>
+    <dd>Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -996,8 +996,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionreadinesscheck">Dict[Flexible<wbr>App<wbr>Version<wbr>Readiness<wbr>Check]</a></span>
     </dt>
-    <dd>{{% md %}}Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
-{{% /md %}}</dd>
+    <dd>Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1005,8 +1005,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Desired runtime. Example python27.
-{{% /md %}}</dd>
+    <dd>Desired runtime. Example python27.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1014,8 +1014,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionapiconfig">Dict[Flexible<wbr>App<wbr>Version<wbr>Api<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Serving configuration for Google Cloud Endpoints.
-{{% /md %}}</dd>
+    <dd>Serving configuration for Google Cloud Endpoints.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscaling">Dict[Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling]</a></span>
     </dt>
-    <dd>{{% md %}}Automatic scaling is based on request rate, response latencies, and other application metrics.
-{{% /md %}}</dd>
+    <dd>Automatic scaling is based on request rate, response latencies, and other application metrics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Metadata settings that are supplied to this version to enable beta runtime features.
-{{% /md %}}</dd>
+    <dd>Metadata settings that are supplied to this version to enable beta runtime features.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,9 +1041,9 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
+    <dd>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
 StaticFilesHandler does not specify its own expiration time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,8 +1051,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the service will be deleted if it is the last version.    
-{{% /md %}}</dd>
+    <dd>If set to `true`, the service will be deleted if it is the last version.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeployment">Dict[Flexible<wbr>App<wbr>Version<wbr>Deployment]</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionendpointsapiservice">Dict[Flexible<wbr>App<wbr>Version<wbr>Endpoints<wbr>Api<wbr>Service]</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,8 +1078,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionentrypoint">Dict[Flexible<wbr>App<wbr>Version<wbr>Entrypoint]</a></span>
     </dt>
-    <dd>{{% md %}}The entrypoint for the application.
-{{% /md %}}</dd>
+    <dd>The entrypoint for the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,9 +1087,9 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Environment variables available to the application. As these are not returned in the API request, Terraform will not
+    <dd>Environment variables available to the application. As these are not returned in the API request, Terraform will not
 detect any changes made outside of the Terraform config.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1097,8 +1097,8 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Before an application can receive email or XMPP messages, the application must be configured to enable the service.
-{{% /md %}}</dd>
+    <dd>Before an application can receive email or XMPP messages, the application must be configured to enable the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1106,9 +1106,9 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
+    <dd>Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
 B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,9 +1116,9 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionmanualscaling">Dict[Flexible<wbr>App<wbr>Version<wbr>Manual<wbr>Scaling]</a></span>
     </dt>
-    <dd>{{% md %}}A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
+    <dd>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
 its memory over time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1126,8 +1126,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionnetwork">Dict[Flexible<wbr>App<wbr>Version<wbr>Network]</a></span>
     </dt>
-    <dd>{{% md %}}Extra network settings
-{{% /md %}}</dd>
+    <dd>Extra network settings
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1135,8 +1135,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
-{{% /md %}}</dd>
+    <dd>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1144,8 +1144,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the application version will not be deleted.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the application version will not be deleted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,9 +1153,9 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresources">Dict[Flexible<wbr>App<wbr>Version<wbr>Resources]</a></span>
     </dt>
-    <dd>{{% md %}}Machine resources for a version.
-{{% /md %}}</dd>
+    <dd>Machine resources for a version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,9 +1172,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
+    <dd>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
 https://cloud.google.com/appengine/docs/standard//config/appref
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,8 +1182,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The channel of the runtime to use. Only available for some runtimes.
-{{% /md %}}</dd>
+    <dd>The channel of the runtime to use. Only available for some runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,8 +1191,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path or name of the app's main executable.
-{{% /md %}}</dd>
+    <dd>The path or name of the app's main executable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,8 +1200,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AppEngine service resource
-{{% /md %}}</dd>
+    <dd>AppEngine service resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,9 +1209,9 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
+    <dd>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
 Defaults to SERVING.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,9 +1219,9 @@ Defaults to SERVING.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
+    <dd>Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
 numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,11 +1229,11 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionvpcaccessconnector">Dict[Flexible<wbr>App<wbr>Version<wbr>Vpc<wbr>Access<wbr>Connector]</a></span>
     </dt>
-    <dd>{{% md %}}Enables VPC connectivity for standard apps.
-{{% /md %}}</dd>
+    <dd>Enables VPC connectivity for standard apps.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1247,7 +1247,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1256,7 +1256,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1264,14 +1264,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1280,7 +1280,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1288,14 +1288,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1304,7 +1304,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1312,14 +1312,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1328,7 +1328,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1336,11 +1336,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1351,25 +1351,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing FlexibleAppVersion Resource {#look-up}
 
 Get an existing FlexibleAppVersion resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/appengine/#FlexibleAppVersionState">FlexibleAppVersionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/appengine/#FlexibleAppVersion">FlexibleAppVersion</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>api_config=None<span class="p">, </span>automatic_scaling=None<span class="p">, </span>beta_settings=None<span class="p">, </span>default_expiration=None<span class="p">, </span>delete_service_on_destroy=None<span class="p">, </span>deployment=None<span class="p">, </span>endpoints_api_service=None<span class="p">, </span>entrypoint=None<span class="p">, </span>env_variables=None<span class="p">, </span>inbound_services=None<span class="p">, </span>instance_class=None<span class="p">, </span>liveness_check=None<span class="p">, </span>manual_scaling=None<span class="p">, </span>name=None<span class="p">, </span>network=None<span class="p">, </span>nobuild_files_regex=None<span class="p">, </span>noop_on_destroy=None<span class="p">, </span>project=None<span class="p">, </span>readiness_check=None<span class="p">, </span>resources=None<span class="p">, </span>runtime=None<span class="p">, </span>runtime_api_version=None<span class="p">, </span>runtime_channel=None<span class="p">, </span>runtime_main_executable_path=None<span class="p">, </span>service=None<span class="p">, </span>serving_status=None<span class="p">, </span>version_id=None<span class="p">, </span>vpc_access_connector=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetFlexibleAppVersion<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionState">FlexibleAppVersionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersion">FlexibleAppVersion</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.AppEngine.FlexibleAppVersion.html">FlexibleAppVersion</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.AppEngine.FlexibleAppVersionState.html">FlexibleAppVersionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1394,9 +1394,9 @@ Get an existing FlexibleAppVersion resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1409,36 +1409,9 @@ Get an existing FlexibleAppVersion resource's state with the given name, ID, and
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1463,13 +1436,40 @@ Get an existing FlexibleAppVersion resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1478,8 +1478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionapiconfig">Flexible<wbr>App<wbr>Version<wbr>Api<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Serving configuration for Google Cloud Endpoints.
-{{% /md %}}</dd>
+    <dd>Serving configuration for Google Cloud Endpoints.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1487,8 +1487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscaling">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Automatic scaling is based on request rate, response latencies, and other application metrics.
-{{% /md %}}</dd>
+    <dd>Automatic scaling is based on request rate, response latencies, and other application metrics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,8 +1496,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Metadata settings that are supplied to this version to enable beta runtime features.
-{{% /md %}}</dd>
+    <dd>Metadata settings that are supplied to this version to enable beta runtime features.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1505,9 +1505,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
+    <dd>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
 StaticFilesHandler does not specify its own expiration time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,8 +1515,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the service will be deleted if it is the last version.    
-{{% /md %}}</dd>
+    <dd>If set to `true`, the service will be deleted if it is the last version.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,8 +1524,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeployment">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,8 +1533,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionendpointsapiservice">Flexible<wbr>App<wbr>Version<wbr>Endpoints<wbr>Api<wbr>Service<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1542,8 +1542,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionentrypoint">Flexible<wbr>App<wbr>Version<wbr>Entrypoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The entrypoint for the application.
-{{% /md %}}</dd>
+    <dd>The entrypoint for the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,9 +1551,9 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Environment variables available to the application. As these are not returned in the API request, Terraform will not
+    <dd>Environment variables available to the application. As these are not returned in the API request, Terraform will not
 detect any changes made outside of the Terraform config.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1561,8 +1561,8 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Before an application can receive email or XMPP messages, the application must be configured to enable the service.
-{{% /md %}}</dd>
+    <dd>Before an application can receive email or XMPP messages, the application must be configured to enable the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1570,9 +1570,9 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
+    <dd>Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
 B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1580,8 +1580,8 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionlivenesscheck">Flexible<wbr>App<wbr>Version<wbr>Liveness<wbr>Check<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
-{{% /md %}}</dd>
+    <dd>Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1589,9 +1589,9 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionmanualscaling">Flexible<wbr>App<wbr>Version<wbr>Manual<wbr>Scaling<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
+    <dd>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
 its memory over time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1599,8 +1599,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1608,8 +1608,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionnetwork">Flexible<wbr>App<wbr>Version<wbr>Network<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Extra network settings
-{{% /md %}}</dd>
+    <dd>Extra network settings
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,8 +1617,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
-{{% /md %}}</dd>
+    <dd>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,8 +1626,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the application version will not be deleted.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the application version will not be deleted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1635,9 +1635,9 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1645,8 +1645,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionreadinesscheck">Flexible<wbr>App<wbr>Version<wbr>Readiness<wbr>Check<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
-{{% /md %}}</dd>
+    <dd>Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1654,8 +1654,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresources">Flexible<wbr>App<wbr>Version<wbr>Resources<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Machine resources for a version.
-{{% /md %}}</dd>
+    <dd>Machine resources for a version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1663,8 +1663,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired runtime. Example python27.
-{{% /md %}}</dd>
+    <dd>Desired runtime. Example python27.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1672,9 +1672,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
+    <dd>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
 https://cloud.google.com/appengine/docs/standard//config/appref
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1682,8 +1682,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The channel of the runtime to use. Only available for some runtimes.
-{{% /md %}}</dd>
+    <dd>The channel of the runtime to use. Only available for some runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1691,8 +1691,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path or name of the app's main executable.
-{{% /md %}}</dd>
+    <dd>The path or name of the app's main executable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,8 +1700,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AppEngine service resource
-{{% /md %}}</dd>
+    <dd>AppEngine service resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,9 +1709,9 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
+    <dd>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
 Defaults to SERVING.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1719,9 +1719,9 @@ Defaults to SERVING.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
+    <dd>Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
 numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1729,14 +1729,14 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionvpcaccessconnector">Flexible<wbr>App<wbr>Version<wbr>Vpc<wbr>Access<wbr>Connector<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Enables VPC connectivity for standard apps.
-{{% /md %}}</dd>
+    <dd>Enables VPC connectivity for standard apps.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1745,8 +1745,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionapiconfig">Flexible<wbr>App<wbr>Version<wbr>Api<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Serving configuration for Google Cloud Endpoints.
-{{% /md %}}</dd>
+    <dd>Serving configuration for Google Cloud Endpoints.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,8 +1754,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscaling">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling</a></span>
     </dt>
-    <dd>{{% md %}}Automatic scaling is based on request rate, response latencies, and other application metrics.
-{{% /md %}}</dd>
+    <dd>Automatic scaling is based on request rate, response latencies, and other application metrics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,8 +1763,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Metadata settings that are supplied to this version to enable beta runtime features.
-{{% /md %}}</dd>
+    <dd>Metadata settings that are supplied to this version to enable beta runtime features.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1772,9 +1772,9 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
+    <dd>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
 StaticFilesHandler does not specify its own expiration time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1782,8 +1782,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the service will be deleted if it is the last version.    
-{{% /md %}}</dd>
+    <dd>If set to `true`, the service will be deleted if it is the last version.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1791,8 +1791,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeployment">Flexible<wbr>App<wbr>Version<wbr>Deployment</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1800,8 +1800,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionendpointsapiservice">Flexible<wbr>App<wbr>Version<wbr>Endpoints<wbr>Api<wbr>Service</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1809,8 +1809,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionentrypoint">Flexible<wbr>App<wbr>Version<wbr>Entrypoint</a></span>
     </dt>
-    <dd>{{% md %}}The entrypoint for the application.
-{{% /md %}}</dd>
+    <dd>The entrypoint for the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1818,9 +1818,9 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Environment variables available to the application. As these are not returned in the API request, Terraform will not
+    <dd>Environment variables available to the application. As these are not returned in the API request, Terraform will not
 detect any changes made outside of the Terraform config.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1828,8 +1828,8 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Before an application can receive email or XMPP messages, the application must be configured to enable the service.
-{{% /md %}}</dd>
+    <dd>Before an application can receive email or XMPP messages, the application must be configured to enable the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1837,9 +1837,9 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
+    <dd>Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
 B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1847,8 +1847,8 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionlivenesscheck">Flexible<wbr>App<wbr>Version<wbr>Liveness<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
-{{% /md %}}</dd>
+    <dd>Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1856,9 +1856,9 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionmanualscaling">Flexible<wbr>App<wbr>Version<wbr>Manual<wbr>Scaling</a></span>
     </dt>
-    <dd>{{% md %}}A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
+    <dd>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
 its memory over time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1866,8 +1866,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1875,8 +1875,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionnetwork">Flexible<wbr>App<wbr>Version<wbr>Network</a></span>
     </dt>
-    <dd>{{% md %}}Extra network settings
-{{% /md %}}</dd>
+    <dd>Extra network settings
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1884,8 +1884,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
-{{% /md %}}</dd>
+    <dd>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,8 +1893,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the application version will not be deleted.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the application version will not be deleted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,9 +1902,9 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1912,8 +1912,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionreadinesscheck">Flexible<wbr>App<wbr>Version<wbr>Readiness<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
-{{% /md %}}</dd>
+    <dd>Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1921,8 +1921,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresources">Flexible<wbr>App<wbr>Version<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}Machine resources for a version.
-{{% /md %}}</dd>
+    <dd>Machine resources for a version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1930,8 +1930,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired runtime. Example python27.
-{{% /md %}}</dd>
+    <dd>Desired runtime. Example python27.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1939,9 +1939,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
+    <dd>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
 https://cloud.google.com/appengine/docs/standard//config/appref
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1949,8 +1949,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The channel of the runtime to use. Only available for some runtimes.
-{{% /md %}}</dd>
+    <dd>The channel of the runtime to use. Only available for some runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1958,8 +1958,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path or name of the app's main executable.
-{{% /md %}}</dd>
+    <dd>The path or name of the app's main executable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1967,8 +1967,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AppEngine service resource
-{{% /md %}}</dd>
+    <dd>AppEngine service resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,9 +1976,9 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
+    <dd>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
 Defaults to SERVING.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1986,9 +1986,9 @@ Defaults to SERVING.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
+    <dd>Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
 numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,14 +1996,14 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionvpcaccessconnector">Flexible<wbr>App<wbr>Version<wbr>Vpc<wbr>Access<wbr>Connector</a></span>
     </dt>
-    <dd>{{% md %}}Enables VPC connectivity for standard apps.
-{{% /md %}}</dd>
+    <dd>Enables VPC connectivity for standard apps.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2012,8 +2012,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionapiconfig">Flexible<wbr>App<wbr>Version<wbr>Api<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Serving configuration for Google Cloud Endpoints.
-{{% /md %}}</dd>
+    <dd>Serving configuration for Google Cloud Endpoints.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2021,8 +2021,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscaling">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling</a></span>
     </dt>
-    <dd>{{% md %}}Automatic scaling is based on request rate, response latencies, and other application metrics.
-{{% /md %}}</dd>
+    <dd>Automatic scaling is based on request rate, response latencies, and other application metrics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2030,8 +2030,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Metadata settings that are supplied to this version to enable beta runtime features.
-{{% /md %}}</dd>
+    <dd>Metadata settings that are supplied to this version to enable beta runtime features.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2039,9 +2039,9 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
+    <dd>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
 StaticFilesHandler does not specify its own expiration time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2049,8 +2049,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the service will be deleted if it is the last version.    
-{{% /md %}}</dd>
+    <dd>If set to `true`, the service will be deleted if it is the last version.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2058,8 +2058,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeployment">Flexible<wbr>App<wbr>Version<wbr>Deployment</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2067,8 +2067,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionendpointsapiservice">Flexible<wbr>App<wbr>Version<wbr>Endpoints<wbr>Api<wbr>Service</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2076,8 +2076,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionentrypoint">Flexible<wbr>App<wbr>Version<wbr>Entrypoint</a></span>
     </dt>
-    <dd>{{% md %}}The entrypoint for the application.
-{{% /md %}}</dd>
+    <dd>The entrypoint for the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,9 +2085,9 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Environment variables available to the application. As these are not returned in the API request, Terraform will not
+    <dd>Environment variables available to the application. As these are not returned in the API request, Terraform will not
 detect any changes made outside of the Terraform config.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2095,8 +2095,8 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Before an application can receive email or XMPP messages, the application must be configured to enable the service.
-{{% /md %}}</dd>
+    <dd>Before an application can receive email or XMPP messages, the application must be configured to enable the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2104,9 +2104,9 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
+    <dd>Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
 B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2114,8 +2114,8 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionlivenesscheck">Flexible<wbr>App<wbr>Version<wbr>Liveness<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
-{{% /md %}}</dd>
+    <dd>Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2123,9 +2123,9 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionmanualscaling">Flexible<wbr>App<wbr>Version<wbr>Manual<wbr>Scaling</a></span>
     </dt>
-    <dd>{{% md %}}A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
+    <dd>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
 its memory over time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2133,8 +2133,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2142,8 +2142,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionnetwork">Flexible<wbr>App<wbr>Version<wbr>Network</a></span>
     </dt>
-    <dd>{{% md %}}Extra network settings
-{{% /md %}}</dd>
+    <dd>Extra network settings
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2151,8 +2151,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
-{{% /md %}}</dd>
+    <dd>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2160,8 +2160,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the application version will not be deleted.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the application version will not be deleted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2169,9 +2169,9 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2179,8 +2179,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionreadinesscheck">Flexible<wbr>App<wbr>Version<wbr>Readiness<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
-{{% /md %}}</dd>
+    <dd>Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2188,8 +2188,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresources">Flexible<wbr>App<wbr>Version<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}Machine resources for a version.
-{{% /md %}}</dd>
+    <dd>Machine resources for a version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2197,8 +2197,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Desired runtime. Example python27.
-{{% /md %}}</dd>
+    <dd>Desired runtime. Example python27.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2206,9 +2206,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
+    <dd>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
 https://cloud.google.com/appengine/docs/standard//config/appref
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2216,8 +2216,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The channel of the runtime to use. Only available for some runtimes.
-{{% /md %}}</dd>
+    <dd>The channel of the runtime to use. Only available for some runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2225,8 +2225,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path or name of the app's main executable.
-{{% /md %}}</dd>
+    <dd>The path or name of the app's main executable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2234,8 +2234,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AppEngine service resource
-{{% /md %}}</dd>
+    <dd>AppEngine service resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2243,9 +2243,9 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
+    <dd>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
 Defaults to SERVING.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2253,9 +2253,9 @@ Defaults to SERVING.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
+    <dd>Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
 numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2263,14 +2263,14 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionvpcaccessconnector">Flexible<wbr>App<wbr>Version<wbr>Vpc<wbr>Access<wbr>Connector</a></span>
     </dt>
-    <dd>{{% md %}}Enables VPC connectivity for standard apps.
-{{% /md %}}</dd>
+    <dd>Enables VPC connectivity for standard apps.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2279,8 +2279,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionapiconfig">Dict[Flexible<wbr>App<wbr>Version<wbr>Api<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Serving configuration for Google Cloud Endpoints.
-{{% /md %}}</dd>
+    <dd>Serving configuration for Google Cloud Endpoints.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,8 +2288,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscaling">Dict[Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling]</a></span>
     </dt>
-    <dd>{{% md %}}Automatic scaling is based on request rate, response latencies, and other application metrics.
-{{% /md %}}</dd>
+    <dd>Automatic scaling is based on request rate, response latencies, and other application metrics.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2297,8 +2297,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Metadata settings that are supplied to this version to enable beta runtime features.
-{{% /md %}}</dd>
+    <dd>Metadata settings that are supplied to this version to enable beta runtime features.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2306,9 +2306,9 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
+    <dd>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding
 StaticFilesHandler does not specify its own expiration time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2316,8 +2316,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the service will be deleted if it is the last version.    
-{{% /md %}}</dd>
+    <dd>If set to `true`, the service will be deleted if it is the last version.    
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2325,8 +2325,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeployment">Dict[Flexible<wbr>App<wbr>Version<wbr>Deployment]</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2334,8 +2334,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionendpointsapiservice">Dict[Flexible<wbr>App<wbr>Version<wbr>Endpoints<wbr>Api<wbr>Service]</a></span>
     </dt>
-    <dd>{{% md %}}Code and application artifacts that make up this version.
-{{% /md %}}</dd>
+    <dd>Code and application artifacts that make up this version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2343,8 +2343,8 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionentrypoint">Dict[Flexible<wbr>App<wbr>Version<wbr>Entrypoint]</a></span>
     </dt>
-    <dd>{{% md %}}The entrypoint for the application.
-{{% /md %}}</dd>
+    <dd>The entrypoint for the application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2352,9 +2352,9 @@ StaticFilesHandler does not specify its own expiration time.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Environment variables available to the application. As these are not returned in the API request, Terraform will not
+    <dd>Environment variables available to the application. As these are not returned in the API request, Terraform will not
 detect any changes made outside of the Terraform config.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2362,8 +2362,8 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Before an application can receive email or XMPP messages, the application must be configured to enable the service.
-{{% /md %}}</dd>
+    <dd>Before an application can receive email or XMPP messages, the application must be configured to enable the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,9 +2371,9 @@ detect any changes made outside of the Terraform config.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
+    <dd>Instance class that is used to run this version. Valid values are AutomaticScaling: F1, F2, F4, F4_1G ManualScaling: B1,
 B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2381,8 +2381,8 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionlivenesscheck">Dict[Flexible<wbr>App<wbr>Version<wbr>Liveness<wbr>Check]</a></span>
     </dt>
-    <dd>{{% md %}}Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
-{{% /md %}}</dd>
+    <dd>Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2390,9 +2390,9 @@ B2, B4, B8, B4_1G Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionmanualscaling">Dict[Flexible<wbr>App<wbr>Version<wbr>Manual<wbr>Scaling]</a></span>
     </dt>
-    <dd>{{% md %}}A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
+    <dd>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of
 its memory over time.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2400,8 +2400,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2409,8 +2409,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionnetwork">Dict[Flexible<wbr>App<wbr>Version<wbr>Network]</a></span>
     </dt>
-    <dd>{{% md %}}Extra network settings
-{{% /md %}}</dd>
+    <dd>Extra network settings
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2418,8 +2418,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
-{{% /md %}}</dd>
+    <dd>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2427,8 +2427,8 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the application version will not be deleted.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the application version will not be deleted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2436,9 +2436,9 @@ its memory over time.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2446,8 +2446,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionreadinesscheck">Dict[Flexible<wbr>App<wbr>Version<wbr>Readiness<wbr>Check]</a></span>
     </dt>
-    <dd>{{% md %}}Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
-{{% /md %}}</dd>
+    <dd>Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2455,8 +2455,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresources">Dict[Flexible<wbr>App<wbr>Version<wbr>Resources]</a></span>
     </dt>
-    <dd>{{% md %}}Machine resources for a version.
-{{% /md %}}</dd>
+    <dd>Machine resources for a version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2464,8 +2464,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Desired runtime. Example python27.
-{{% /md %}}</dd>
+    <dd>Desired runtime. Example python27.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2473,9 +2473,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
+    <dd>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at
 https://cloud.google.com/appengine/docs/standard//config/appref
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2483,8 +2483,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The channel of the runtime to use. Only available for some runtimes.
-{{% /md %}}</dd>
+    <dd>The channel of the runtime to use. Only available for some runtimes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,8 +2492,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path or name of the app's main executable.
-{{% /md %}}</dd>
+    <dd>The path or name of the app's main executable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2501,8 +2501,8 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AppEngine service resource
-{{% /md %}}</dd>
+    <dd>AppEngine service resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2510,9 +2510,9 @@ https://cloud.google.com/appengine/docs/standard//config/appref
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
+    <dd>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.
 Defaults to SERVING.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2520,9 +2520,9 @@ Defaults to SERVING.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
+    <dd>Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters,
 numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2530,11 +2530,11 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionvpcaccessconnector">Dict[Flexible<wbr>App<wbr>Version<wbr>Vpc<wbr>Access<wbr>Connector]</a></span>
     </dt>
-    <dd>{{% md %}}Enables VPC connectivity for standard apps.
-{{% /md %}}</dd>
+    <dd>Enables VPC connectivity for standard apps.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2549,18 +2549,18 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
 
 
 <h4 id="flexibleappversionapiconfig">Flexible<wbr>App<wbr>Version<wbr>Api<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionApiConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionApiConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionApiConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionApiConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2569,7 +2569,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2577,7 +2577,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2585,7 +2585,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2593,7 +2593,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2601,13 +2601,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2616,7 +2616,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2624,7 +2624,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2632,7 +2632,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2640,7 +2640,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2648,13 +2648,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2663,7 +2663,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2671,7 +2671,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2679,7 +2679,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2687,7 +2687,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2695,13 +2695,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2710,7 +2710,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2718,7 +2718,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2726,7 +2726,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2734,7 +2734,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2742,28 +2742,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionautomaticscaling">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionAutomaticScaling">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionAutomaticScaling">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2772,7 +2772,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingcpuutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Cpu<wbr>Utilization<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2780,7 +2780,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2788,7 +2788,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingdiskutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Disk<wbr>Utilization<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2796,7 +2796,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2804,7 +2804,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2812,7 +2812,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2820,7 +2820,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2828,7 +2828,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2836,7 +2836,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2844,7 +2844,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2852,7 +2852,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingnetworkutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Network<wbr>Utilization<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2860,13 +2860,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingrequestutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Request<wbr>Utilization<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2875,7 +2875,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingcpuutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Cpu<wbr>Utilization</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2883,7 +2883,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2891,7 +2891,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingdiskutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Disk<wbr>Utilization</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2899,7 +2899,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2907,7 +2907,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2915,7 +2915,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2923,7 +2923,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2931,7 +2931,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2939,7 +2939,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2947,7 +2947,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2955,7 +2955,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingnetworkutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Network<wbr>Utilization</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2963,13 +2963,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingrequestutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Request<wbr>Utilization</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2978,7 +2978,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingcpuutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Cpu<wbr>Utilization</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2986,7 +2986,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2994,7 +2994,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingdiskutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Disk<wbr>Utilization</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3002,7 +3002,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3010,7 +3010,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3018,7 +3018,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3026,7 +3026,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3034,7 +3034,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3042,7 +3042,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3050,7 +3050,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3058,7 +3058,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingnetworkutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Network<wbr>Utilization</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3066,13 +3066,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingrequestutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Request<wbr>Utilization</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3081,7 +3081,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingcpuutilization">Dict[Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Cpu<wbr>Utilization]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3089,7 +3089,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3097,7 +3097,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingdiskutilization">Dict[Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Disk<wbr>Utilization]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3105,7 +3105,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3113,7 +3113,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3121,7 +3121,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3129,7 +3129,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3137,7 +3137,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3145,7 +3145,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3153,7 +3153,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3161,7 +3161,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingnetworkutilization">Dict[Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Network<wbr>Utilization]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3169,28 +3169,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionautomaticscalingrequestutilization">Dict[Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Request<wbr>Utilization]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionautomaticscalingcpuutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Cpu<wbr>Utilization</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionAutomaticScalingCpuUtilization">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionAutomaticScalingCpuUtilization">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingCpuUtilizationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingCpuUtilizationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3199,7 +3199,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3207,13 +3207,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3222,7 +3222,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3230,13 +3230,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3245,7 +3245,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3253,13 +3253,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3268,7 +3268,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3276,28 +3276,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionautomaticscalingdiskutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Disk<wbr>Utilization</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionAutomaticScalingDiskUtilization">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionAutomaticScalingDiskUtilization">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingDiskUtilizationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingDiskUtilizationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3306,7 +3306,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3314,7 +3314,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3322,7 +3322,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3330,13 +3330,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3345,7 +3345,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3353,7 +3353,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3361,7 +3361,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3369,13 +3369,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3384,7 +3384,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3392,7 +3392,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3400,7 +3400,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3408,13 +3408,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3423,7 +3423,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3431,7 +3431,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3439,7 +3439,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3447,28 +3447,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionautomaticscalingnetworkutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Network<wbr>Utilization</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionAutomaticScalingNetworkUtilization">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionAutomaticScalingNetworkUtilization">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingNetworkUtilizationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingNetworkUtilizationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3477,7 +3477,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3485,7 +3485,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3493,7 +3493,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3501,13 +3501,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3516,7 +3516,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3524,7 +3524,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3532,7 +3532,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3540,13 +3540,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3555,7 +3555,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3563,7 +3563,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3571,7 +3571,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3579,13 +3579,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3594,7 +3594,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3602,7 +3602,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3610,7 +3610,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3618,28 +3618,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionautomaticscalingrequestutilization">Flexible<wbr>App<wbr>Version<wbr>Automatic<wbr>Scaling<wbr>Request<wbr>Utilization</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionAutomaticScalingRequestUtilization">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionAutomaticScalingRequestUtilization">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingRequestUtilizationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionAutomaticScalingRequestUtilizationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3648,7 +3648,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3656,13 +3656,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3671,7 +3671,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3679,13 +3679,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3694,7 +3694,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3702,13 +3702,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3717,7 +3717,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3725,28 +3725,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversiondeployment">Flexible<wbr>App<wbr>Version<wbr>Deployment</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionDeployment">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionDeployment">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3755,7 +3755,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentcloudbuildoptions">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Cloud<wbr>Build<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3763,7 +3763,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentcontainer">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Container<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3771,7 +3771,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentfile">List&lt;Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>File<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3779,13 +3779,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentzip">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Zip<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3794,7 +3794,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentcloudbuildoptions">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Cloud<wbr>Build<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3802,7 +3802,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentcontainer">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Container</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3810,7 +3810,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentfile">[]Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>File</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3818,13 +3818,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentzip">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Zip</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3833,7 +3833,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentcloudbuildoptions">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Cloud<wbr>Build<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3841,7 +3841,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentcontainer">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Container</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3849,7 +3849,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentfile">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>File[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3857,13 +3857,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentzip">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Zip</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3872,7 +3872,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentcloudbuildoptions">Dict[Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Cloud<wbr>Build<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3880,7 +3880,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentcontainer">Dict[Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Container]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3888,7 +3888,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentfile">List[Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>File]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3896,28 +3896,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversiondeploymentzip">Dict[Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Zip]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversiondeploymentcloudbuildoptions">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Cloud<wbr>Build<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionDeploymentCloudBuildOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionDeploymentCloudBuildOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentCloudBuildOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentCloudBuildOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3926,7 +3926,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3934,13 +3934,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3949,7 +3949,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3957,13 +3957,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3972,7 +3972,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3980,13 +3980,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3995,7 +3995,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4003,28 +4003,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversiondeploymentcontainer">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Container</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionDeploymentContainer">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionDeploymentContainer">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentContainerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentContainerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4033,13 +4033,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4048,13 +4048,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4063,13 +4063,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4078,28 +4078,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversiondeploymentfile">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>File</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionDeploymentFile">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionDeploymentFile">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentFileArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentFileOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4108,8 +4108,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4117,7 +4117,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4125,13 +4125,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4140,8 +4140,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4149,7 +4149,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4157,13 +4157,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4172,8 +4172,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4181,7 +4181,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4189,13 +4189,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4204,8 +4204,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4213,7 +4213,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4221,28 +4221,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversiondeploymentzip">Flexible<wbr>App<wbr>Version<wbr>Deployment<wbr>Zip</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionDeploymentZip">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionDeploymentZip">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentZipArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionDeploymentZipOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4251,7 +4251,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4259,13 +4259,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4274,7 +4274,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4282,13 +4282,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4297,7 +4297,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4305,13 +4305,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4320,7 +4320,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4328,28 +4328,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionendpointsapiservice">Flexible<wbr>App<wbr>Version<wbr>Endpoints<wbr>Api<wbr>Service</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionEndpointsApiService">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionEndpointsApiService">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionEndpointsApiServiceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionEndpointsApiServiceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4358,8 +4358,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4367,7 +4367,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4375,7 +4375,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4383,13 +4383,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4398,8 +4398,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4407,7 +4407,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4415,7 +4415,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4423,13 +4423,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4438,8 +4438,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4447,7 +4447,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4455,7 +4455,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4463,13 +4463,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4478,8 +4478,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4487,7 +4487,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4495,7 +4495,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4503,28 +4503,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionentrypoint">Flexible<wbr>App<wbr>Version<wbr>Entrypoint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionEntrypoint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionEntrypoint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionEntrypointArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionEntrypointOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4533,13 +4533,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4548,13 +4548,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4563,13 +4563,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4578,28 +4578,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionlivenesscheck">Flexible<wbr>App<wbr>Version<wbr>Liveness<wbr>Check</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionLivenessCheck">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionLivenessCheck">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionLivenessCheckArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionLivenessCheckOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4608,7 +4608,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4616,7 +4616,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4624,7 +4624,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4632,7 +4632,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4640,7 +4640,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4648,7 +4648,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4656,13 +4656,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4671,7 +4671,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4679,7 +4679,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4687,7 +4687,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4695,7 +4695,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4703,7 +4703,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4711,7 +4711,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4719,13 +4719,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4734,7 +4734,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4742,7 +4742,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4750,7 +4750,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4758,7 +4758,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4766,7 +4766,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4774,7 +4774,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4782,13 +4782,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4797,7 +4797,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4805,7 +4805,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4813,7 +4813,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4821,7 +4821,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4829,7 +4829,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4837,7 +4837,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4845,28 +4845,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionmanualscaling">Flexible<wbr>App<wbr>Version<wbr>Manual<wbr>Scaling</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionManualScaling">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionManualScaling">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionManualScalingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionManualScalingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4875,13 +4875,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4890,13 +4890,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4905,13 +4905,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4920,28 +4920,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionnetwork">Flexible<wbr>App<wbr>Version<wbr>Network</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionNetwork">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionNetwork">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionNetworkArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionNetworkOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4950,8 +4950,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4959,7 +4959,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4967,7 +4967,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4975,7 +4975,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4983,13 +4983,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4998,8 +4998,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5007,7 +5007,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5015,7 +5015,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5023,7 +5023,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5031,13 +5031,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5046,8 +5046,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5055,7 +5055,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5063,7 +5063,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5071,7 +5071,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5079,13 +5079,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5094,8 +5094,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5103,7 +5103,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5111,7 +5111,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5119,7 +5119,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5127,28 +5127,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionreadinesscheck">Flexible<wbr>App<wbr>Version<wbr>Readiness<wbr>Check</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionReadinessCheck">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionReadinessCheck">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionReadinessCheckArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionReadinessCheckOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5157,7 +5157,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5165,7 +5165,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5173,7 +5173,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5181,7 +5181,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5189,7 +5189,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5197,7 +5197,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5205,13 +5205,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5220,7 +5220,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5228,7 +5228,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5236,7 +5236,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5244,7 +5244,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5252,7 +5252,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5260,7 +5260,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5268,13 +5268,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5283,7 +5283,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5291,7 +5291,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5299,7 +5299,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5307,7 +5307,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5315,7 +5315,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5323,7 +5323,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5331,13 +5331,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5346,7 +5346,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5354,7 +5354,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5362,7 +5362,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5370,7 +5370,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5378,7 +5378,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5386,7 +5386,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5394,28 +5394,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionresources">Flexible<wbr>App<wbr>Version<wbr>Resources</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionResources">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionResources">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionResourcesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionResourcesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5424,7 +5424,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5432,7 +5432,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5440,7 +5440,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5448,13 +5448,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresourcesvolume">List&lt;Flexible<wbr>App<wbr>Version<wbr>Resources<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5463,7 +5463,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5471,7 +5471,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5479,7 +5479,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5487,13 +5487,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresourcesvolume">[]Flexible<wbr>App<wbr>Version<wbr>Resources<wbr>Volume</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5502,7 +5502,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5510,7 +5510,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5518,7 +5518,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5526,13 +5526,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresourcesvolume">Flexible<wbr>App<wbr>Version<wbr>Resources<wbr>Volume[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5541,7 +5541,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5549,7 +5549,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5557,7 +5557,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5565,28 +5565,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#flexibleappversionresourcesvolume">List[Flexible<wbr>App<wbr>Version<wbr>Resources<wbr>Volume]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionresourcesvolume">Flexible<wbr>App<wbr>Version<wbr>Resources<wbr>Volume</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionResourcesVolume">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionResourcesVolume">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionResourcesVolumeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionResourcesVolumeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5595,8 +5595,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5604,7 +5604,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5612,13 +5612,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5627,8 +5627,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5636,7 +5636,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5644,13 +5644,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5659,8 +5659,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5668,7 +5668,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5676,13 +5676,13 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5691,8 +5691,8 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5700,7 +5700,7 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5708,28 +5708,28 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="flexibleappversionvpcaccessconnector">Flexible<wbr>App<wbr>Version<wbr>Vpc<wbr>Access<wbr>Connector</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#FlexibleAppVersionVpcAccessConnector">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#FlexibleAppVersionVpcAccessConnector">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionVpcAccessConnectorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/appengine?tab=doc#FlexibleAppVersionVpcAccessConnectorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5738,14 +5738,14 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5754,14 +5754,14 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5770,14 +5770,14 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5786,11 +5786,11 @@ numbers, or hyphens. Reserved names,"default", "latest", and any name with the p
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier for this object. Format specified above.
-{{% /md %}}</dd>
+    <dd>The identifier for this object. Format specified above.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -14,26 +14,26 @@ meta_desc: "Explore the StackScript resource of the Linode package, including ex
 
 
 ## Create a StackScript Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/linode/#StackScript">StackScript</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/linode/#StackScriptArgs">StackScriptArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">StackScript</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>images=None<span class="p">, </span>is_public=None<span class="p">, </span>label=None<span class="p">, </span>rev_note=None<span class="p">, </span>script=None<span class="p">, </span>user_defined_fields=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewStackScript<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-linode/sdk/v2/go/linode/?tab=doc#StackScriptArgs">StackScriptArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-linode/sdk/v2/go/linode/?tab=doc#StackScript">StackScript</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Linode/Pulumi.Linode.StackScript.html">StackScript</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Linode/Pulumi.Linode.StackScriptArgs.html">StackScriptArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the StackScript resource of the Linode package, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the StackScript resource of the Linode package, including ex
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the StackScript resource of the Linode package, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the StackScript resource of the Linode package, including ex
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## StackScript Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The StackScript resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The StackScript resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description for the StackScript.
-{{% /md %}}</dd>
+    <dd>A description for the StackScript.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The StackScript resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
-{{% /md %}}</dd>
+    <dd>An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -218,8 +218,8 @@ The StackScript resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -227,8 +227,8 @@ The StackScript resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The script to execute when provisioning a new Linode with this StackScript.
-{{% /md %}}</dd>
+    <dd>The script to execute when provisioning a new Linode with this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The StackScript resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
-{{% /md %}}</dd>
+    <dd>This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The StackScript resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This field allows you to add notes for the set of revisions made to this StackScript.
-{{% /md %}}</dd>
+    <dd>This field allows you to add notes for the set of revisions made to this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,15 +254,15 @@ The StackScript resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackscriptuserdefinedfield">List&lt;Stack<wbr>Script<wbr>User<wbr>Defined<wbr>Field<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
+    <dd>This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
 parameters during deployment.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -271,8 +271,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description for the StackScript.
-{{% /md %}}</dd>
+    <dd>A description for the StackScript.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -280,8 +280,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
-{{% /md %}}</dd>
+    <dd>An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -289,8 +289,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -298,8 +298,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The script to execute when provisioning a new Linode with this StackScript.
-{{% /md %}}</dd>
+    <dd>The script to execute when provisioning a new Linode with this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,8 +307,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
-{{% /md %}}</dd>
+    <dd>This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -316,8 +316,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This field allows you to add notes for the set of revisions made to this StackScript.
-{{% /md %}}</dd>
+    <dd>This field allows you to add notes for the set of revisions made to this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -325,15 +325,15 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackscriptuserdefinedfield">[]Stack<wbr>Script<wbr>User<wbr>Defined<wbr>Field</a></span>
     </dt>
-    <dd>{{% md %}}This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
+    <dd>This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
 parameters during deployment.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -342,8 +342,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description for the StackScript.
-{{% /md %}}</dd>
+    <dd>A description for the StackScript.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -351,8 +351,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
-{{% /md %}}</dd>
+    <dd>An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -360,8 +360,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -369,8 +369,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The script to execute when provisioning a new Linode with this StackScript.
-{{% /md %}}</dd>
+    <dd>The script to execute when provisioning a new Linode with this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,8 +378,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
-{{% /md %}}</dd>
+    <dd>This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This field allows you to add notes for the set of revisions made to this StackScript.
-{{% /md %}}</dd>
+    <dd>This field allows you to add notes for the set of revisions made to this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,15 +396,15 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackscriptuserdefinedfield">Stack<wbr>Script<wbr>User<wbr>Defined<wbr>Field[]</a></span>
     </dt>
-    <dd>{{% md %}}This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
+    <dd>This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
 parameters during deployment.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -413,8 +413,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description for the StackScript.
-{{% /md %}}</dd>
+    <dd>A description for the StackScript.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -422,8 +422,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
-{{% /md %}}</dd>
+    <dd>An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -431,8 +431,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -440,8 +440,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The script to execute when provisioning a new Linode with this StackScript.
-{{% /md %}}</dd>
+    <dd>The script to execute when provisioning a new Linode with this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,8 +449,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
-{{% /md %}}</dd>
+    <dd>This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,8 +458,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This field allows you to add notes for the set of revisions made to this StackScript.
-{{% /md %}}</dd>
+    <dd>This field allows you to add notes for the set of revisions made to this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,12 +467,12 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackscriptuserdefinedfield">List[Stack<wbr>Script<wbr>User<wbr>Defined<wbr>Field]</a></span>
     </dt>
-    <dd>{{% md %}}This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
+    <dd>This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
 parameters during deployment.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -486,7 +486,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -495,8 +495,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was created.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -504,8 +504,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Count of currently active, deployed Linodes created from this StackScript.
-{{% /md %}}</dd>
+    <dd>Count of currently active, deployed Linodes created from this StackScript.
+</dd>
 
     <dt class="property-"
             title="">
@@ -513,8 +513,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The total number of times this StackScript has been deployed.
-{{% /md %}}</dd>
+    <dd>The total number of times this StackScript has been deployed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -522,7 +522,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -530,8 +530,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was updated.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -539,8 +539,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Gravatar ID for the User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The Gravatar ID for the User who created the StackScript.
+</dd>
 
     <dt class="property-"
             title="">
@@ -548,14 +548,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The User who created the StackScript.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -564,8 +564,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was created.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,8 +573,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Count of currently active, deployed Linodes created from this StackScript.
-{{% /md %}}</dd>
+    <dd>Count of currently active, deployed Linodes created from this StackScript.
+</dd>
 
     <dt class="property-"
             title="">
@@ -582,8 +582,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The total number of times this StackScript has been deployed.
-{{% /md %}}</dd>
+    <dd>The total number of times this StackScript has been deployed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -591,7 +591,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -599,8 +599,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was updated.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -608,8 +608,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Gravatar ID for the User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The Gravatar ID for the User who created the StackScript.
+</dd>
 
     <dt class="property-"
             title="">
@@ -617,14 +617,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The User who created the StackScript.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -633,8 +633,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was created.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -642,8 +642,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Count of currently active, deployed Linodes created from this StackScript.
-{{% /md %}}</dd>
+    <dd>Count of currently active, deployed Linodes created from this StackScript.
+</dd>
 
     <dt class="property-"
             title="">
@@ -651,8 +651,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The total number of times this StackScript has been deployed.
-{{% /md %}}</dd>
+    <dd>The total number of times this StackScript has been deployed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -660,7 +660,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -668,8 +668,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was updated.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -677,8 +677,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Gravatar ID for the User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The Gravatar ID for the User who created the StackScript.
+</dd>
 
     <dt class="property-"
             title="">
@@ -686,14 +686,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The User who created the StackScript.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -702,8 +702,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was created.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,8 +711,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Count of currently active, deployed Linodes created from this StackScript.
-{{% /md %}}</dd>
+    <dd>Count of currently active, deployed Linodes created from this StackScript.
+</dd>
 
     <dt class="property-"
             title="">
@@ -720,8 +720,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The total number of times this StackScript has been deployed.
-{{% /md %}}</dd>
+    <dd>The total number of times this StackScript has been deployed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -729,7 +729,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -737,8 +737,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was updated.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was updated.
+</dd>
 
     <dt class="property-"
             title="">
@@ -746,8 +746,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Gravatar ID for the User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The Gravatar ID for the User who created the StackScript.
+</dd>
 
     <dt class="property-"
             title="">
@@ -755,11 +755,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The User who created the StackScript.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -770,25 +770,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing StackScript Resource {#look-up}
 
 Get an existing StackScript resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/linode/#StackScriptState">StackScriptState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/linode/#StackScript">StackScript</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>created=None<span class="p">, </span>deployments_active=None<span class="p">, </span>deployments_total=None<span class="p">, </span>description=None<span class="p">, </span>images=None<span class="p">, </span>is_public=None<span class="p">, </span>label=None<span class="p">, </span>rev_note=None<span class="p">, </span>script=None<span class="p">, </span>updated=None<span class="p">, </span>user_defined_fields=None<span class="p">, </span>user_gravatar_id=None<span class="p">, </span>username=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetStackScript<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-linode/sdk/v2/go/linode/?tab=doc#StackScriptState">StackScriptState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-linode/sdk/v2/go/linode/?tab=doc#StackScript">StackScript</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Linode/Pulumi.Linode.StackScript.html">StackScript</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Linode/Pulumi.Linode..StackScriptState.html">StackScriptState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -813,9 +813,9 @@ Get an existing StackScript resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -828,36 +828,9 @@ Get an existing StackScript resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -882,13 +855,40 @@ Get an existing StackScript resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -897,8 +897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was created.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,8 +906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Count of currently active, deployed Linodes created from this StackScript.
-{{% /md %}}</dd>
+    <dd>Count of currently active, deployed Linodes created from this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,8 +915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The total number of times this StackScript has been deployed.
-{{% /md %}}</dd>
+    <dd>The total number of times this StackScript has been deployed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,8 +924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A description for the StackScript.
-{{% /md %}}</dd>
+    <dd>A description for the StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,8 +933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
-{{% /md %}}</dd>
+    <dd>An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
-{{% /md %}}</dd>
+    <dd>This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,8 +951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,8 +960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This field allows you to add notes for the set of revisions made to this StackScript.
-{{% /md %}}</dd>
+    <dd>This field allows you to add notes for the set of revisions made to this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -969,8 +969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The script to execute when provisioning a new Linode with this StackScript.
-{{% /md %}}</dd>
+    <dd>The script to execute when provisioning a new Linode with this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,8 +978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was updated.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,9 +987,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackscriptuserdefinedfield">List&lt;Stack<wbr>Script<wbr>User<wbr>Defined<wbr>Field<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
+    <dd>This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
 parameters during deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -997,8 +997,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Gravatar ID for the User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The Gravatar ID for the User who created the StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1006,14 +1006,14 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The User who created the StackScript.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1022,8 +1022,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was created.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1031,8 +1031,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Count of currently active, deployed Linodes created from this StackScript.
-{{% /md %}}</dd>
+    <dd>Count of currently active, deployed Linodes created from this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1040,8 +1040,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The total number of times this StackScript has been deployed.
-{{% /md %}}</dd>
+    <dd>The total number of times this StackScript has been deployed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1049,8 +1049,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description for the StackScript.
-{{% /md %}}</dd>
+    <dd>A description for the StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,8 +1058,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
-{{% /md %}}</dd>
+    <dd>An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,8 +1067,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
-{{% /md %}}</dd>
+    <dd>This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1076,8 +1076,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1085,8 +1085,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This field allows you to add notes for the set of revisions made to this StackScript.
-{{% /md %}}</dd>
+    <dd>This field allows you to add notes for the set of revisions made to this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1094,8 +1094,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The script to execute when provisioning a new Linode with this StackScript.
-{{% /md %}}</dd>
+    <dd>The script to execute when provisioning a new Linode with this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,8 +1103,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was updated.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,9 +1112,9 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackscriptuserdefinedfield">[]Stack<wbr>Script<wbr>User<wbr>Defined<wbr>Field</a></span>
     </dt>
-    <dd>{{% md %}}This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
+    <dd>This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
 parameters during deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,8 +1122,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Gravatar ID for the User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The Gravatar ID for the User who created the StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,14 +1131,14 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The User who created the StackScript.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1147,8 +1147,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was created.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,8 +1156,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Count of currently active, deployed Linodes created from this StackScript.
-{{% /md %}}</dd>
+    <dd>Count of currently active, deployed Linodes created from this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1165,8 +1165,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The total number of times this StackScript has been deployed.
-{{% /md %}}</dd>
+    <dd>The total number of times this StackScript has been deployed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,8 +1174,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A description for the StackScript.
-{{% /md %}}</dd>
+    <dd>A description for the StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1183,8 +1183,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
-{{% /md %}}</dd>
+    <dd>An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1192,8 +1192,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
-{{% /md %}}</dd>
+    <dd>This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1201,8 +1201,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,8 +1210,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This field allows you to add notes for the set of revisions made to this StackScript.
-{{% /md %}}</dd>
+    <dd>This field allows you to add notes for the set of revisions made to this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The script to execute when provisioning a new Linode with this StackScript.
-{{% /md %}}</dd>
+    <dd>The script to execute when provisioning a new Linode with this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,8 +1228,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was updated.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1237,9 +1237,9 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackscriptuserdefinedfield">Stack<wbr>Script<wbr>User<wbr>Defined<wbr>Field[]</a></span>
     </dt>
-    <dd>{{% md %}}This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
+    <dd>This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
 parameters during deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,8 +1247,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Gravatar ID for the User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The Gravatar ID for the User who created the StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,14 +1256,14 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The User who created the StackScript.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1272,8 +1272,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was created.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,8 +1281,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Count of currently active, deployed Linodes created from this StackScript.
-{{% /md %}}</dd>
+    <dd>Count of currently active, deployed Linodes created from this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,8 +1290,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The total number of times this StackScript has been deployed.
-{{% /md %}}</dd>
+    <dd>The total number of times this StackScript has been deployed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,8 +1299,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A description for the StackScript.
-{{% /md %}}</dd>
+    <dd>A description for the StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1308,8 +1308,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
-{{% /md %}}</dd>
+    <dd>An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1317,8 +1317,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
-{{% /md %}}</dd>
+    <dd>This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `is_public` forces the creation of a new StackScript*
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1326,8 +1326,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1335,8 +1335,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This field allows you to add notes for the set of revisions made to this StackScript.
-{{% /md %}}</dd>
+    <dd>This field allows you to add notes for the set of revisions made to this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1344,8 +1344,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The script to execute when provisioning a new Linode with this StackScript.
-{{% /md %}}</dd>
+    <dd>The script to execute when provisioning a new Linode with this StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1353,8 +1353,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The date this StackScript was updated.
-{{% /md %}}</dd>
+    <dd>The date this StackScript was updated.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1362,9 +1362,9 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackscriptuserdefinedfield">List[Stack<wbr>Script<wbr>User<wbr>Defined<wbr>Field]</a></span>
     </dt>
-    <dd>{{% md %}}This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
+    <dd>This is a list of fields defined with a special syntax inside this StackScript that allow for supplying customized
 parameters during deployment.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,8 +1372,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Gravatar ID for the User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The Gravatar ID for the User who created the StackScript.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,11 +1381,11 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The User who created the StackScript.
-{{% /md %}}</dd>
+    <dd>The User who created the StackScript.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1400,18 +1400,18 @@ parameters during deployment.
 
 
 <h4 id="stackscriptuserdefinedfield">Stack<wbr>Script<wbr>User<wbr>Defined<wbr>Field</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/linode/types/input/#StackScriptUserDefinedField">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/linode/types/output/#StackScriptUserDefinedField">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-linode/sdk/v2/go/linode/?tab=doc#StackScriptUserDefinedFieldArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-linode/sdk/v2/go/linode/?tab=doc#StackScriptUserDefinedFieldOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1420,7 +1420,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,7 +1428,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1436,8 +1436,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1445,7 +1445,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1453,7 +1453,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,13 +1461,13 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1476,7 +1476,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,7 +1484,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,8 +1492,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,7 +1501,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1509,7 +1509,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1517,13 +1517,13 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1532,7 +1532,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,7 +1540,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1548,8 +1548,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1557,7 +1557,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1565,7 +1565,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1573,13 +1573,13 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1588,7 +1588,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,7 +1596,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,8 +1604,8 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The StackScript's label is for display purposes only.
-{{% /md %}}</dd>
+    <dd>The StackScript's label is for display purposes only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,7 +1613,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1621,7 +1621,7 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1629,10 +1629,10 @@ parameters during deployment.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

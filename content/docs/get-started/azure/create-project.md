@@ -14,41 +14,41 @@ aliases: ["/docs/quickstart/azure/create-project/"]
 
 Let's get started with a new project in a new directory.
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```bash
 $ mkdir quickstart && cd quickstart
 $ pulumi new azure-javascript
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```bash
 $ mkdir quickstart && cd quickstart
 $ pulumi new azure-typescript
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```bash
 $ mkdir quickstart && cd quickstart
 $ pulumi new azure-python
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```bash
 $ mkdir quickstart && cd quickstart
 $ pulumi new azure-csharp
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```bash
 # from within your $GOPATH
@@ -56,7 +56,7 @@ $ mkdir quickstart && cd quickstart
 $ pulumi new azure-go
 ```
 
-{{% /choosable %}}
+
 
 {{< cli-note >}}
 
@@ -89,21 +89,21 @@ Next, you will be prompted for some configuration values for the stack.
 
 For Azure projects, you will be prompted for the Azure location. You can accept the default value of `WestUS` or choose another location.
 
-{{% choosable language "javascript,typescript" %}}
+
 After some dependency installations from `npm`, the project and stack will be ready.
-{{% /choosable %}}
 
-{{% choosable language python %}}
-After the command completes, the project and stack will be ready.
-{{% /choosable %}}
 
-{{% choosable language go %}}
-After the command completes, the project and stack will be ready.
-{{% /choosable %}}
 
-{{% choosable language "csharp,fsharp,visualbasic" %}}
 After the command completes, the project and stack will be ready.
-{{% /choosable %}}
+
+
+
+After the command completes, the project and stack will be ready.
+
+
+
+After the command completes, the project and stack will be ready.
+
 
 Next, we'll review the generated project files.
 

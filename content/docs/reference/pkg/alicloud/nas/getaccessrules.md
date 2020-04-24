@@ -39,29 +39,29 @@ export const alicloudNasAccessRulesId = foo.rules[0].id;
 
 ## Using GetAccessRules {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAccessRules<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/nas/#GetAccessRulesArgs">GetAccessRulesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/nas/#GetAccessRulesResult">GetAccessRulesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_access_rules(</span>access_group_name=None<span class="p">, </span>ids=None<span class="p">, </span>output_file=None<span class="p">, </span>rw_access=None<span class="p">, </span>source_cidr_ip=None<span class="p">, </span>user_access=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAccessRules<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/nas?tab=doc#LookupAccessRulesArgs">LookupAccessRulesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/nas?tab=doc#LookupAccessRulesResult">LookupAccessRulesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAccessRules </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Nas.GetAccessRulesResult.html">GetAccessRulesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Nas.GetAccessRulesArgs.html">GetAccessRulesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -69,7 +69,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -78,8 +78,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -87,8 +87,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of rule IDs.
-{{% /md %}}</dd>
+    <dd>A list of rule IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -96,7 +96,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -104,8 +104,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific RWAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific RWAccess. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -113,8 +113,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific SourceCidrIp. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific SourceCidrIp. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -122,14 +122,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific UserAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific UserAccess. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -138,8 +138,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -147,8 +147,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of rule IDs.
-{{% /md %}}</dd>
+    <dd>A list of rule IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -156,7 +156,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -164,8 +164,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific RWAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific RWAccess. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -173,8 +173,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific SourceCidrIp. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific SourceCidrIp. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -182,14 +182,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific UserAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific UserAccess. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -198,8 +198,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -207,8 +207,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of rule IDs.
-{{% /md %}}</dd>
+    <dd>A list of rule IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -216,7 +216,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -224,8 +224,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific RWAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific RWAccess. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific SourceCidrIp. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific SourceCidrIp. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,14 +242,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific UserAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific UserAccess. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -258,8 +258,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific AccessGroupName.
-{{% /md %}}</dd>
+    <dd>Filter results by a specific AccessGroupName.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of rule IDs.
-{{% /md %}}</dd>
+    <dd>A list of rule IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,7 +276,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific RWAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific RWAccess. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific SourceCidrIp. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific SourceCidrIp. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,11 +302,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific UserAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific UserAccess. 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -322,7 +322,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -331,7 +331,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -339,8 +339,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -348,8 +348,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of rule IDs, Each element set to `access_rule_id` (Each element formats as `<access_group_name>:<access rule id>` before 1.53.0).
-{{% /md %}}</dd>
+    <dd>A list of rule IDs, Each element set to `access_rule_id` (Each element formats as `<access_group_name>:<access rule id>` before 1.53.0).
+</dd>
 
     <dt class="property-"
             title="">
@@ -357,8 +357,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccessrulesrule">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Nas.<wbr>Outputs.<wbr>Get<wbr>Access<wbr>Rules<wbr>Rule&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of AccessRules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of AccessRules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -366,7 +366,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -374,8 +374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}RWAccess of the AccessRule.
-{{% /md %}}</dd>
+    <dd>RWAccess of the AccessRule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -383,8 +383,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SourceCidrIp of the AccessRule.
-{{% /md %}}</dd>
+    <dd>SourceCidrIp of the AccessRule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -392,14 +392,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}UserAccess of the AccessRule
-{{% /md %}}</dd>
+    <dd>UserAccess of the AccessRule
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -408,7 +408,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -416,8 +416,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -425,8 +425,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of rule IDs, Each element set to `access_rule_id` (Each element formats as `<access_group_name>:<access rule id>` before 1.53.0).
-{{% /md %}}</dd>
+    <dd>A list of rule IDs, Each element set to `access_rule_id` (Each element formats as `<access_group_name>:<access rule id>` before 1.53.0).
+</dd>
 
     <dt class="property-"
             title="">
@@ -434,8 +434,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccessrulesrule">[]Get<wbr>Access<wbr>Rules<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A list of AccessRules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of AccessRules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -443,7 +443,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -451,8 +451,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}RWAccess of the AccessRule.
-{{% /md %}}</dd>
+    <dd>RWAccess of the AccessRule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -460,8 +460,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SourceCidrIp of the AccessRule.
-{{% /md %}}</dd>
+    <dd>SourceCidrIp of the AccessRule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -469,14 +469,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}UserAccess of the AccessRule
-{{% /md %}}</dd>
+    <dd>UserAccess of the AccessRule
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -485,7 +485,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -493,8 +493,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -502,8 +502,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of rule IDs, Each element set to `access_rule_id` (Each element formats as `<access_group_name>:<access rule id>` before 1.53.0).
-{{% /md %}}</dd>
+    <dd>A list of rule IDs, Each element set to `access_rule_id` (Each element formats as `<access_group_name>:<access rule id>` before 1.53.0).
+</dd>
 
     <dt class="property-"
             title="">
@@ -511,8 +511,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccessrulesrule">Get<wbr>Access<wbr>Rules<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of AccessRules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of AccessRules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -520,7 +520,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -528,8 +528,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}RWAccess of the AccessRule.
-{{% /md %}}</dd>
+    <dd>RWAccess of the AccessRule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -537,8 +537,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SourceCidrIp of the AccessRule.
-{{% /md %}}</dd>
+    <dd>SourceCidrIp of the AccessRule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,14 +546,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}UserAccess of the AccessRule
-{{% /md %}}</dd>
+    <dd>UserAccess of the AccessRule
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -562,7 +562,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -570,8 +570,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -579,8 +579,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of rule IDs, Each element set to `access_rule_id` (Each element formats as `<access_group_name>:<access rule id>` before 1.53.0).
-{{% /md %}}</dd>
+    <dd>A list of rule IDs, Each element set to `access_rule_id` (Each element formats as `<access_group_name>:<access rule id>` before 1.53.0).
+</dd>
 
     <dt class="property-"
             title="">
@@ -588,8 +588,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getaccessrulesrule">List[Get<wbr>Access<wbr>Rules<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A list of AccessRules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of AccessRules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -597,7 +597,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -605,8 +605,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}RWAccess of the AccessRule.
-{{% /md %}}</dd>
+    <dd>RWAccess of the AccessRule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -614,8 +614,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SourceCidrIp of the AccessRule.
-{{% /md %}}</dd>
+    <dd>SourceCidrIp of the AccessRule.
+</dd>
 
     <dt class="property-"
             title="">
@@ -623,11 +623,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}UserAccess of the AccessRule
-{{% /md %}}</dd>
+    <dd>UserAccess of the AccessRule
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -640,18 +640,18 @@ The following output properties are available:
 
 
 <h4 id="getaccessrulesrule">Get<wbr>Access<wbr>Rules<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetAccessRulesRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/nas?tab=doc#GetAccessRulesRule">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -660,8 +660,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AccessRuleId of the AccessRule.
-{{% /md %}}</dd>
+    <dd>AccessRuleId of the AccessRule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -669,8 +669,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority of the AccessRule.
-{{% /md %}}</dd>
+    <dd>Priority of the AccessRule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -678,8 +678,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific RWAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific RWAccess. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -687,8 +687,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific SourceCidrIp. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific SourceCidrIp. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -696,14 +696,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific UserAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific UserAccess. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -712,8 +712,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AccessRuleId of the AccessRule.
-{{% /md %}}</dd>
+    <dd>AccessRuleId of the AccessRule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -721,8 +721,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority of the AccessRule.
-{{% /md %}}</dd>
+    <dd>Priority of the AccessRule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -730,8 +730,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific RWAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific RWAccess. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -739,8 +739,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific SourceCidrIp. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific SourceCidrIp. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -748,14 +748,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific UserAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific UserAccess. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -764,8 +764,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AccessRuleId of the AccessRule.
-{{% /md %}}</dd>
+    <dd>AccessRuleId of the AccessRule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -773,8 +773,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Priority of the AccessRule.
-{{% /md %}}</dd>
+    <dd>Priority of the AccessRule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -782,8 +782,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific RWAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific RWAccess. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -791,8 +791,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific SourceCidrIp. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific SourceCidrIp. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -800,14 +800,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific UserAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific UserAccess. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -816,8 +816,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AccessRuleId of the AccessRule.
-{{% /md %}}</dd>
+    <dd>AccessRuleId of the AccessRule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -825,8 +825,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Priority of the AccessRule.
-{{% /md %}}</dd>
+    <dd>Priority of the AccessRule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -834,8 +834,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific RWAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific RWAccess. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -843,8 +843,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific SourceCidrIp. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific SourceCidrIp. 
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -852,11 +852,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter results by a specific UserAccess. 
-{{% /md %}}</dd>
+    <dd>Filter results by a specific UserAccess. 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

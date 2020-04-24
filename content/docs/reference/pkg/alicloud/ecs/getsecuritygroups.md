@@ -41,29 +41,29 @@ export const firstGroupId = primarySecGroupsDs.groups[0].id;
 
 ## Using GetSecurityGroups {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSecurityGroups<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetSecurityGroupsArgs">GetSecurityGroupsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetSecurityGroupsResult">GetSecurityGroupsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_security_groups(</span>ids=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>resource_group_id=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSecurityGroups<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupSecurityGroupsArgs">LookupSecurityGroupsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupSecurityGroupsResult">LookupSecurityGroupsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSecurityGroups </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ecs.GetSecurityGroupsResult.html">GetSecurityGroupsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ecs.GetSecurityGroupsArgs.html">GetSecurityGroupsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -71,7 +71,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -80,8 +80,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group IDs.
-{{% /md %}}</dd>
+    <dd>A list of Security Group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -89,8 +89,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter the resulting security groups by their names.
-{{% /md %}}</dd>
+    <dd>A regex string to filter the resulting security groups by their names.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -98,7 +98,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -106,8 +106,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -115,7 +115,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getSecurityGroups" "taggedSecurityGroups" {
 tags = {
@@ -124,7 +124,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -132,14 +132,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve security groups that belong to the specified VPC ID.
-{{% /md %}}</dd>
+    <dd>Used to retrieve security groups that belong to the specified VPC ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -148,8 +148,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group IDs.
-{{% /md %}}</dd>
+    <dd>A list of Security Group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -157,8 +157,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter the resulting security groups by their names.
-{{% /md %}}</dd>
+    <dd>A regex string to filter the resulting security groups by their names.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -166,7 +166,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -174,8 +174,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -183,7 +183,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getSecurityGroups" "taggedSecurityGroups" {
 tags = {
@@ -192,7 +192,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -200,14 +200,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve security groups that belong to the specified VPC ID.
-{{% /md %}}</dd>
+    <dd>Used to retrieve security groups that belong to the specified VPC ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -216,8 +216,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group IDs.
-{{% /md %}}</dd>
+    <dd>A list of Security Group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -225,8 +225,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter the resulting security groups by their names.
-{{% /md %}}</dd>
+    <dd>A regex string to filter the resulting security groups by their names.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -234,7 +234,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,7 +251,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getSecurityGroups" "taggedSecurityGroups" {
 tags = {
@@ -260,7 +260,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,14 +268,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve security groups that belong to the specified VPC ID.
-{{% /md %}}</dd>
+    <dd>Used to retrieve security groups that belong to the specified VPC ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -284,8 +284,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group IDs.
-{{% /md %}}</dd>
+    <dd>A list of Security Group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter the resulting security groups by their names.
-{{% /md %}}</dd>
+    <dd>A regex string to filter the resulting security groups by their names.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,7 +302,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,7 +319,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getSecurityGroups" "taggedSecurityGroups" {
 tags = {
@@ -328,7 +328,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,11 +336,11 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve security groups that belong to the specified VPC ID.
-{{% /md %}}</dd>
+    <dd>Used to retrieve security groups that belong to the specified VPC ID.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -356,7 +356,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -365,8 +365,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecuritygroupsgroup">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Outputs.<wbr>Get<wbr>Security<wbr>Groups<wbr>Group&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Groups. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of Security Groups. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -374,8 +374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -383,8 +383,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group IDs.
-{{% /md %}}</dd>
+    <dd>A list of Security Group IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -392,8 +392,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group names.
-{{% /md %}}</dd>
+    <dd>A list of Security Group names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -401,7 +401,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -409,7 +409,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -417,8 +417,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -426,8 +426,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instance.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ECS instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -435,14 +435,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that owns the security group.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that owns the security group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -451,8 +451,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecuritygroupsgroup">[]Get<wbr>Security<wbr>Groups<wbr>Group</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Groups. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of Security Groups. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -460,8 +460,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -469,8 +469,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group IDs.
-{{% /md %}}</dd>
+    <dd>A list of Security Group IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -478,8 +478,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group names.
-{{% /md %}}</dd>
+    <dd>A list of Security Group names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -487,7 +487,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -495,7 +495,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -503,8 +503,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -512,8 +512,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instance.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ECS instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -521,14 +521,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that owns the security group.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that owns the security group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -537,8 +537,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecuritygroupsgroup">Get<wbr>Security<wbr>Groups<wbr>Group[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Groups. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of Security Groups. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,8 +546,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -555,8 +555,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group IDs.
-{{% /md %}}</dd>
+    <dd>A list of Security Group IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -564,8 +564,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group names.
-{{% /md %}}</dd>
+    <dd>A list of Security Group names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -573,7 +573,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -581,7 +581,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -589,8 +589,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -598,8 +598,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instance.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ECS instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -607,14 +607,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that owns the security group.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that owns the security group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -623,8 +623,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecuritygroupsgroup">List[Get<wbr>Security<wbr>Groups<wbr>Group]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Groups. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of Security Groups. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -632,8 +632,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -641,8 +641,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group IDs.
-{{% /md %}}</dd>
+    <dd>A list of Security Group IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -650,8 +650,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Security Group names.
-{{% /md %}}</dd>
+    <dd>A list of Security Group names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -659,7 +659,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -667,7 +667,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -675,8 +675,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -684,8 +684,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instance.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ECS instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,11 +693,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that owns the security group.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that owns the security group.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -710,18 +710,18 @@ The following output properties are available:
 
 
 <h4 id="getsecuritygroupsgroup">Get<wbr>Security<wbr>Groups<wbr>Group</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetSecurityGroupsGroup">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetSecurityGroupsGroup">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -730,8 +730,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the security group.
-{{% /md %}}</dd>
+    <dd>Creation time of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -739,8 +739,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the security group.
-{{% /md %}}</dd>
+    <dd>The description of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -748,8 +748,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group.
-{{% /md %}}</dd>
+    <dd>The ID of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -757,8 +757,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow inner network access.
-{{% /md %}}</dd>
+    <dd>Whether to allow inner network access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -766,8 +766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group.
-{{% /md %}}</dd>
+    <dd>The name of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -775,8 +775,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -784,8 +784,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the security group.
-{{% /md %}}</dd>
+    <dd>The type of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -793,8 +793,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve security groups that belong to the specified VPC ID.
-{{% /md %}}</dd>
+    <dd>Used to retrieve security groups that belong to the specified VPC ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -802,7 +802,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getSecurityGroups" "taggedSecurityGroups" {
 tags = {
@@ -811,13 +811,13 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -826,8 +826,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the security group.
-{{% /md %}}</dd>
+    <dd>Creation time of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -835,8 +835,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the security group.
-{{% /md %}}</dd>
+    <dd>The description of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -844,8 +844,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group.
-{{% /md %}}</dd>
+    <dd>The ID of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -853,8 +853,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow inner network access.
-{{% /md %}}</dd>
+    <dd>Whether to allow inner network access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -862,8 +862,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group.
-{{% /md %}}</dd>
+    <dd>The name of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -871,8 +871,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -880,8 +880,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the security group.
-{{% /md %}}</dd>
+    <dd>The type of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -889,8 +889,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve security groups that belong to the specified VPC ID.
-{{% /md %}}</dd>
+    <dd>Used to retrieve security groups that belong to the specified VPC ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,7 +898,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getSecurityGroups" "taggedSecurityGroups" {
 tags = {
@@ -907,13 +907,13 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -922,8 +922,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the security group.
-{{% /md %}}</dd>
+    <dd>Creation time of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -931,8 +931,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the security group.
-{{% /md %}}</dd>
+    <dd>The description of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -940,8 +940,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group.
-{{% /md %}}</dd>
+    <dd>The ID of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -949,8 +949,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow inner network access.
-{{% /md %}}</dd>
+    <dd>Whether to allow inner network access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -958,8 +958,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group.
-{{% /md %}}</dd>
+    <dd>The name of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -967,8 +967,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -976,8 +976,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the security group.
-{{% /md %}}</dd>
+    <dd>The type of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -985,8 +985,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve security groups that belong to the specified VPC ID.
-{{% /md %}}</dd>
+    <dd>Used to retrieve security groups that belong to the specified VPC ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -994,7 +994,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getSecurityGroups" "taggedSecurityGroups" {
 tags = {
@@ -1003,13 +1003,13 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1018,8 +1018,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the security group.
-{{% /md %}}</dd>
+    <dd>Creation time of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1027,8 +1027,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the security group.
-{{% /md %}}</dd>
+    <dd>The description of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1036,8 +1036,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group.
-{{% /md %}}</dd>
+    <dd>The ID of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1045,8 +1045,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow inner network access.
-{{% /md %}}</dd>
+    <dd>Whether to allow inner network access.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1054,8 +1054,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group.
-{{% /md %}}</dd>
+    <dd>The name of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1063,8 +1063,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the security_group belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the security_group belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1072,8 +1072,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the security group.
-{{% /md %}}</dd>
+    <dd>The type of the security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1081,8 +1081,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve security groups that belong to the specified VPC ID.
-{{% /md %}}</dd>
+    <dd>Used to retrieve security groups that belong to the specified VPC ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,7 +1090,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getSecurityGroups" "taggedSecurityGroups" {
 tags = {
@@ -1099,10 +1099,10 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -16,22 +16,22 @@ git_sha: "406558c5decd461aa562d0719481124524bd365e"
 > please consult the source [`terraform-providers/terraform-provider-rancher2` repo](https://github.com/terraform-providers/terraform-provider-rancher2/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var rancher2 = require("@pulumi/rancher2");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as rancher2 from "@pulumi/rancher2";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

@@ -38,26 +38,26 @@ const yada = new aws.cloudwatch.LogMetricFilter("yada", {
 
 
 ## Create a LogMetricFilter Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#LogMetricFilter">LogMetricFilter</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#LogMetricFilterArgs">LogMetricFilterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">LogMetricFilter</span><span class="p">(resource_name, opts=None, </span>log_group_name=None<span class="p">, </span>metric_transformation=None<span class="p">, </span>name=None<span class="p">, </span>pattern=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewLogMetricFilter<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#LogMetricFilterArgs">LogMetricFilterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#LogMetricFilter">LogMetricFilter</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.LogMetricFilter.html">LogMetricFilter</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.LogMetricFilterArgs.html">LogMetricFilterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -94,9 +94,9 @@ const yada = new aws.cloudwatch.LogMetricFilter("yada", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -114,9 +114,9 @@ const yada = new aws.cloudwatch.LogMetricFilter("yada", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -163,9 +163,9 @@ const yada = new aws.cloudwatch.LogMetricFilter("yada", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -202,7 +202,7 @@ const yada = new aws.cloudwatch.LogMetricFilter("yada", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## LogMetricFilter Resource Properties {#properties}
 
@@ -215,7 +215,7 @@ The LogMetricFilter resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -224,8 +224,8 @@ The LogMetricFilter resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the log group to associate the metric filter with.
-{{% /md %}}</dd>
+    <dd>The name of the log group to associate the metric filter with.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -233,9 +233,9 @@ The LogMetricFilter resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logmetricfiltermetrictransformation">Log<wbr>Metric<wbr>Filter<wbr>Metric<wbr>Transformation<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A block defining collection of information
+    <dd>A block defining collection of information
 needed to define how metric data gets emitted. See below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -243,9 +243,9 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
+    <dd>A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
 for extracting metric data out of ingested log events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,14 +253,14 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the metric filter.
-{{% /md %}}</dd>
+    <dd>A name for the metric filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -269,8 +269,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the log group to associate the metric filter with.
-{{% /md %}}</dd>
+    <dd>The name of the log group to associate the metric filter with.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -278,9 +278,9 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logmetricfiltermetrictransformation">Log<wbr>Metric<wbr>Filter<wbr>Metric<wbr>Transformation</a></span>
     </dt>
-    <dd>{{% md %}}A block defining collection of information
+    <dd>A block defining collection of information
 needed to define how metric data gets emitted. See below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -288,9 +288,9 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
+    <dd>A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
 for extracting metric data out of ingested log events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,14 +298,14 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the metric filter.
-{{% /md %}}</dd>
+    <dd>A name for the metric filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -314,8 +314,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the log group to associate the metric filter with.
-{{% /md %}}</dd>
+    <dd>The name of the log group to associate the metric filter with.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -323,9 +323,9 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logmetricfiltermetrictransformation">Log<wbr>Metric<wbr>Filter<wbr>Metric<wbr>Transformation</a></span>
     </dt>
-    <dd>{{% md %}}A block defining collection of information
+    <dd>A block defining collection of information
 needed to define how metric data gets emitted. See below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -333,9 +333,9 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
+    <dd>A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
 for extracting metric data out of ingested log events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,14 +343,14 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the metric filter.
-{{% /md %}}</dd>
+    <dd>A name for the metric filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -359,8 +359,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the log group to associate the metric filter with.
-{{% /md %}}</dd>
+    <dd>The name of the log group to associate the metric filter with.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -368,9 +368,9 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logmetricfiltermetrictransformation">Dict[Log<wbr>Metric<wbr>Filter<wbr>Metric<wbr>Transformation]</a></span>
     </dt>
-    <dd>{{% md %}}A block defining collection of information
+    <dd>A block defining collection of information
 needed to define how metric data gets emitted. See below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -378,9 +378,9 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
+    <dd>A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
 for extracting metric data out of ingested log events.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,11 +388,11 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for the metric filter.
-{{% /md %}}</dd>
+    <dd>A name for the metric filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -406,7 +406,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -415,13 +415,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -430,13 +430,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -445,13 +445,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -460,10 +460,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -474,25 +474,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing LogMetricFilter Resource {#look-up}
 
 Get an existing LogMetricFilter resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#LogMetricFilterState">LogMetricFilterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#LogMetricFilter">LogMetricFilter</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>log_group_name=None<span class="p">, </span>metric_transformation=None<span class="p">, </span>name=None<span class="p">, </span>pattern=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLogMetricFilter<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#LogMetricFilterState">LogMetricFilterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#LogMetricFilter">LogMetricFilter</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.LogMetricFilter.html">LogMetricFilter</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.LogMetricFilterState.html">LogMetricFilterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -517,9 +517,9 @@ Get an existing LogMetricFilter resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -532,36 +532,9 @@ Get an existing LogMetricFilter resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -586,13 +559,40 @@ Get an existing LogMetricFilter resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -601,8 +601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the log group to associate the metric filter with.
-{{% /md %}}</dd>
+    <dd>The name of the log group to associate the metric filter with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,9 +610,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logmetricfiltermetrictransformation">Log<wbr>Metric<wbr>Filter<wbr>Metric<wbr>Transformation<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A block defining collection of information
+    <dd>A block defining collection of information
 needed to define how metric data gets emitted. See below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -620,8 +620,8 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the metric filter.
-{{% /md %}}</dd>
+    <dd>A name for the metric filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,15 +629,15 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
+    <dd>A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
 for extracting metric data out of ingested log events.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -646,8 +646,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the log group to associate the metric filter with.
-{{% /md %}}</dd>
+    <dd>The name of the log group to associate the metric filter with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,9 +655,9 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logmetricfiltermetrictransformation">Log<wbr>Metric<wbr>Filter<wbr>Metric<wbr>Transformation</a></span>
     </dt>
-    <dd>{{% md %}}A block defining collection of information
+    <dd>A block defining collection of information
 needed to define how metric data gets emitted. See below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,8 +665,8 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the metric filter.
-{{% /md %}}</dd>
+    <dd>A name for the metric filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,15 +674,15 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
+    <dd>A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
 for extracting metric data out of ingested log events.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -691,8 +691,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the log group to associate the metric filter with.
-{{% /md %}}</dd>
+    <dd>The name of the log group to associate the metric filter with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -700,9 +700,9 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logmetricfiltermetrictransformation">Log<wbr>Metric<wbr>Filter<wbr>Metric<wbr>Transformation</a></span>
     </dt>
-    <dd>{{% md %}}A block defining collection of information
+    <dd>A block defining collection of information
 needed to define how metric data gets emitted. See below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,8 +710,8 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the metric filter.
-{{% /md %}}</dd>
+    <dd>A name for the metric filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -719,15 +719,15 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
+    <dd>A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
 for extracting metric data out of ingested log events.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -736,8 +736,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the log group to associate the metric filter with.
-{{% /md %}}</dd>
+    <dd>The name of the log group to associate the metric filter with.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -745,9 +745,9 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logmetricfiltermetrictransformation">Dict[Log<wbr>Metric<wbr>Filter<wbr>Metric<wbr>Transformation]</a></span>
     </dt>
-    <dd>{{% md %}}A block defining collection of information
+    <dd>A block defining collection of information
 needed to define how metric data gets emitted. See below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -755,8 +755,8 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for the metric filter.
-{{% /md %}}</dd>
+    <dd>A name for the metric filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -764,12 +764,12 @@ needed to define how metric data gets emitted. See below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
+    <dd>A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
 for extracting metric data out of ingested log events.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -784,18 +784,18 @@ for extracting metric data out of ingested log events.
 
 
 <h4 id="logmetricfiltermetrictransformation">Log<wbr>Metric<wbr>Filter<wbr>Metric<wbr>Transformation</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LogMetricFilterMetricTransformation">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LogMetricFilterMetricTransformation">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#LogMetricFilterMetricTransformationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#LogMetricFilterMetricTransformationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -804,8 +804,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
-{{% /md %}}</dd>
+    <dd>The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -813,8 +813,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination namespace of the CloudWatch metric.
-{{% /md %}}</dd>
+    <dd>The destination namespace of the CloudWatch metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -822,8 +822,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
-{{% /md %}}</dd>
+    <dd>What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -831,14 +831,14 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to emit when a filter pattern does not match a log event.
-{{% /md %}}</dd>
+    <dd>The value to emit when a filter pattern does not match a log event.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -847,8 +847,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
-{{% /md %}}</dd>
+    <dd>The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -856,8 +856,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination namespace of the CloudWatch metric.
-{{% /md %}}</dd>
+    <dd>The destination namespace of the CloudWatch metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -865,8 +865,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
-{{% /md %}}</dd>
+    <dd>What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -874,14 +874,14 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to emit when a filter pattern does not match a log event.
-{{% /md %}}</dd>
+    <dd>The value to emit when a filter pattern does not match a log event.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -890,8 +890,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
-{{% /md %}}</dd>
+    <dd>The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -899,8 +899,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination namespace of the CloudWatch metric.
-{{% /md %}}</dd>
+    <dd>The destination namespace of the CloudWatch metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -908,8 +908,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
-{{% /md %}}</dd>
+    <dd>What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,14 +917,14 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to emit when a filter pattern does not match a log event.
-{{% /md %}}</dd>
+    <dd>The value to emit when a filter pattern does not match a log event.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -933,8 +933,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
-{{% /md %}}</dd>
+    <dd>The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -942,8 +942,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination namespace of the CloudWatch metric.
-{{% /md %}}</dd>
+    <dd>The destination namespace of the CloudWatch metric.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -951,8 +951,8 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
-{{% /md %}}</dd>
+    <dd>What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,11 +960,11 @@ for extracting metric data out of ingested log events.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value to emit when a filter pattern does not match a log event.
-{{% /md %}}</dd>
+    <dd>The value to emit when a filter pattern does not match a log event.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

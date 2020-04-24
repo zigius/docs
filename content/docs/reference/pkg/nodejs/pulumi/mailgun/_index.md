@@ -16,22 +16,22 @@ git_sha: "da0a6c7517bb2c19d2d270fd5c2104d55d1bb87b"
 > please consult the source [`terraform-providers/terraform-provider-mailgun` repo](https://github.com/terraform-providers/terraform-provider-mailgun/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var mailgun = require("@pulumi/mailgun");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as mailgun from "@pulumi/mailgun";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

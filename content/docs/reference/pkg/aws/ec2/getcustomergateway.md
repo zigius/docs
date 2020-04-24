@@ -45,29 +45,29 @@ const transit = new aws.ec2.VpnConnection("transit", {
 
 ## Using GetCustomerGateway {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getCustomerGateway<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetCustomerGatewayArgs">GetCustomerGatewayArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetCustomerGatewayResult">GetCustomerGatewayResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_customer_gateway(</span>filters=None<span class="p">, </span>id=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupCustomerGateway<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupCustomerGatewayArgs">LookupCustomerGatewayArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupCustomerGatewayResult">LookupCustomerGatewayResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetCustomerGateway </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetCustomerGatewayResult.html">GetCustomerGatewayResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetCustomerGatewayArgs.html">GetCustomerGatewayArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -75,7 +75,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -84,8 +84,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcustomergatewayfilter">List&lt;Get<wbr>Customer<wbr>Gateway<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more [name-value pairs][dcg-filters] to filter by.
-{{% /md %}}</dd>
+    <dd>One or more [name-value pairs][dcg-filters] to filter by.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -93,8 +93,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -102,14 +102,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of key-value pairs assigned to the gateway.
-{{% /md %}}</dd>
+    <dd>Map of key-value pairs assigned to the gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -118,8 +118,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcustomergatewayfilter">[]Get<wbr>Customer<wbr>Gateway<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}One or more [name-value pairs][dcg-filters] to filter by.
-{{% /md %}}</dd>
+    <dd>One or more [name-value pairs][dcg-filters] to filter by.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -127,8 +127,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -136,14 +136,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of key-value pairs assigned to the gateway.
-{{% /md %}}</dd>
+    <dd>Map of key-value pairs assigned to the gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -152,8 +152,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcustomergatewayfilter">Get<wbr>Customer<wbr>Gateway<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more [name-value pairs][dcg-filters] to filter by.
-{{% /md %}}</dd>
+    <dd>One or more [name-value pairs][dcg-filters] to filter by.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -161,8 +161,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -170,14 +170,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of key-value pairs assigned to the gateway.
-{{% /md %}}</dd>
+    <dd>Map of key-value pairs assigned to the gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -186,8 +186,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcustomergatewayfilter">List[Get<wbr>Customer<wbr>Gateway<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}One or more [name-value pairs][dcg-filters] to filter by.
-{{% /md %}}</dd>
+    <dd>One or more [name-value pairs][dcg-filters] to filter by.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -195,8 +195,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the gateway.
-{{% /md %}}</dd>
+    <dd>The ID of the gateway.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -204,11 +204,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of key-value pairs assigned to the gateway.
-{{% /md %}}</dd>
+    <dd>Map of key-value pairs assigned to the gateway.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -224,7 +224,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -233,8 +233,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
-{{% /md %}}</dd>
+    <dd>(Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
+</dd>
 
     <dt class="property-"
             title="">
@@ -242,8 +242,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The IP address of the gateway's Internet-routable external interface.
-{{% /md %}}</dd>
+    <dd>(Optional) The IP address of the gateway's Internet-routable external interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -251,8 +251,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of key-value pairs assigned to the gateway.
-{{% /md %}}</dd>
+    <dd>Map of key-value pairs assigned to the gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -260,8 +260,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>(Optional) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-"
             title="">
@@ -269,7 +269,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcustomergatewayfilter">List&lt;Get<wbr>Customer<wbr>Gateway<wbr>Filter&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -277,13 +277,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -292,8 +292,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
-{{% /md %}}</dd>
+    <dd>(Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
+</dd>
 
     <dt class="property-"
             title="">
@@ -301,8 +301,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The IP address of the gateway's Internet-routable external interface.
-{{% /md %}}</dd>
+    <dd>(Optional) The IP address of the gateway's Internet-routable external interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -310,8 +310,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of key-value pairs assigned to the gateway.
-{{% /md %}}</dd>
+    <dd>Map of key-value pairs assigned to the gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -319,8 +319,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>(Optional) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-"
             title="">
@@ -328,7 +328,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcustomergatewayfilter">[]Get<wbr>Customer<wbr>Gateway<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -336,13 +336,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -351,8 +351,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
-{{% /md %}}</dd>
+    <dd>(Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
+</dd>
 
     <dt class="property-"
             title="">
@@ -360,8 +360,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The IP address of the gateway's Internet-routable external interface.
-{{% /md %}}</dd>
+    <dd>(Optional) The IP address of the gateway's Internet-routable external interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -369,8 +369,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of key-value pairs assigned to the gateway.
-{{% /md %}}</dd>
+    <dd>Map of key-value pairs assigned to the gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -378,8 +378,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>(Optional) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-"
             title="">
@@ -387,7 +387,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcustomergatewayfilter">Get<wbr>Customer<wbr>Gateway<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -395,13 +395,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -410,8 +410,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
-{{% /md %}}</dd>
+    <dd>(Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
+</dd>
 
     <dt class="property-"
             title="">
@@ -419,8 +419,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The IP address of the gateway's Internet-routable external interface.
-{{% /md %}}</dd>
+    <dd>(Optional) The IP address of the gateway's Internet-routable external interface.
+</dd>
 
     <dt class="property-"
             title="">
@@ -428,8 +428,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of key-value pairs assigned to the gateway.
-{{% /md %}}</dd>
+    <dd>Map of key-value pairs assigned to the gateway.
+</dd>
 
     <dt class="property-"
             title="">
@@ -437,8 +437,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
-{{% /md %}}</dd>
+    <dd>(Optional) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
+</dd>
 
     <dt class="property-"
             title="">
@@ -446,7 +446,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcustomergatewayfilter">List[Get<wbr>Customer<wbr>Gateway<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -454,10 +454,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -470,18 +470,18 @@ The following output properties are available:
 
 
 <h4 id="getcustomergatewayfilter">Get<wbr>Customer<wbr>Gateway<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#GetCustomerGatewayFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetCustomerGatewayFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetCustomerGatewayFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetCustomerGatewayFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -490,7 +490,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -498,13 +498,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -513,7 +513,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -521,13 +521,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -536,7 +536,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -544,13 +544,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -559,7 +559,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -567,10 +567,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
